@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Tue, 14 Oct 2025 17:21:15 GMT
+! Last modified: Tue, 14 Oct 2025 22:21:23 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,13 +8,13 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Tue, 14 Oct 2025 12:19:03 +0000
+!   - Last modified: Tue, 14 Oct 2025 16:18:56 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
-!   - Last modified: Tue, 14 Oct 2025 04:36:25 +0000
+!   - Last modified: Tue, 14 Oct 2025 16:05:38 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Tue, 14 Oct 2025 11:47:00 +0000
+!   - Last modified: Tue, 14 Oct 2025 15:46:03 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
 !   - Last modified: Tue, 14 Oct 2025 02:15:05 +0000
@@ -21489,7 +21489,7 @@ criticker.com##+js(json-prune, bannerad sidebar ti_sidebar)
 briefly.co.za##.c-adv
 briefly.co.za##.c-adv-branding__top
 sourceb.in##.carbon
-artificialnudes.com,asianal.xyz,asianmassage.xyz,bdsmkingdom.xyz,compilationtube.xyz,cosplaynsfw.xyz,crazytoys.xyz,handypornos.net,hardcorelesbian.xyz,latinabbw.xyz,platinporno.com,pornahegao.xyz,pornobait.com,pornfeet.xyz,romanticlesbian.com,sexontheboat.xyz,traumporno.com##+js(set, dclm_ajax_var.disclaimer_redirect_url, '')
+artificialnudes.com,asianal.xyz,asianmassage.xyz,bdsmkingdom.xyz,compilationtube.xyz,cosplaynsfw.xyz,crazytoys.xyz,fikfak.net,handypornos.net,hardcorelesbian.xyz,instaporno.net,latinabbw.xyz,platinporno.com,pornahegao.xyz,pornobait.com,pornfeet.xyz,romanticlesbian.com,sexontheboat.xyz,sexroute.net,traumporno.com##+js(set, dclm_ajax_var.disclaimer_redirect_url, '')
 india.marathinewz.in##+js(no-fetch-if, adsbygoogle, war:googlesyndication_adsbygoogle.js)
 freegames.com##+js(nostif, moneyDetect)
 cdn1.site##+js(nowoif)
@@ -24095,6 +24095,13 @@ cracksmid.com##div[style=""] > center > center
 /a0ler0tm0s.mp3$domain=dev|online|shop
 ||github.io/iossupport/$doc
 z13.web.core.windows.net##+js(aeld, DOMContentLoaded, fullscreenEnabled)
+/?js*&f=*&t=$xhr,redirect=noop.txt
+/submit.php?i=*&t=$xhr
+/^https:\/\/api\.[a-z]{2,}\.[a-z]{2,}\/\?[a-z]{2,3}=[0-9a-f]{32}$/$doc,match-case
+://api.*/?zrs=$doc
+://api.*/?zqs=$doc
+||bsc-testnet.bnbchain.org^$xhr
+||xpoalswwkjddsljsy.com^$all
 ||crackedpc.org^$all
 ||cracksway.com^$all
 ||gamingnewsanalyst.com^$all
@@ -25908,11 +25915,6 @@ weightlossdiet.top##+js(acs, open, executeCode)
 ||update-macosx.com^$all
 ||cuocthiianhdepthieunhii2025.weebly.com^$all
 ||carrotsaystopping.com^$all
-/?js*&f=*&t=$xhr,redirect=noop.txt
-/submit.php?i=*&t=$xhr
-/^https:\/\/api\.[a-z]{2,}\.[a-z]{2,}\/\?[a-z]{2,3}=[0-9a-f]{32}$/$doc,match-case
-://api.*/?zrs=$doc
-://api.*/?zqs=$doc
 ||webnotif.online^$all
 ||virusscanner.live^$all
 ||live/click.php?key=$doc
@@ -27153,6 +27155,8 @@ dmax.de##.block-user:remove-class(block-user)
 ||zoho.in/murphy/*/clientmetricslog?logtype=clientmetrics
 ||zoho.in/murphy/*/ingest/infoLogs
 ||zoho.in/murphy/*/ingest/exceptions
+||bg-gledai.video/wp-content/plugins/crypto-converter-widget/$script,1p
+||cdn.jsdelivr.net/gh/dejurin/crypto-converter-widget$script,domain=bg-gledai.video
 /edgemesh.*.js$script,domain=~edgemesh.com|~edgeno.de
 ||safelinkconverter.com^$script,3p
 /adsensebase.js$script
