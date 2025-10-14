@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Filters
-! Last modified: Tue, 14 Oct 2025 09:23:33 GMT
+! Last modified: Tue, 14 Oct 2025 12:28:42 GMT
 ! Expires: 1 hours
 ! Description: The filters from Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -181,7 +181,6 @@ blog.csdn.net###recommend-right
 hanime1.me##+js(rpnt, script, location.href = , window.redirect_prevented =)
 hanimeone.me##+js(rpnt, script, location.href = , window.redirect_prevented =)
 av.tube4us.top##a[href*="youtube.com/watch"]
-av.tube4us.top##a[href*="youtube.com/watch"]
 av4us.uk##a[href*="youtube.com/watch"]
 av4us.top##a[href*="youtube.com/watch"]
 ||silca.cc/*/pro-tire-pressure-calculator^$csp=script-src 'unsafe-eval' 'unsafe-inline'
@@ -209,6 +208,7 @@ windy.com##.premium-button
 hanime1.me##a[href*="//l.labsda.com"]
 ##iframe[src*="//union."]
 ##[src*="trialhd.com"]
+#@#.footer-cta
 bilibili.com##+js(sukka-disable-av1)
 ||reddit.com$uritransform=/tl=.*//
 abema.tv##+js(trusted-prevent-xhr, ds-linear-abematv.akamaized.net/region, '')
@@ -246,7 +246,6 @@ dfzy.xyz##+js(trusted-set, window.navigator.userAgent, json:"Mozilla/5.0 quark/1
 ||18comic.vip/static/*/AD
 ||bootcss.com^$all,badfilter
 ||bootcdn.net^$all,badfilter
-||bootcss.com^$all,badfilter
 ||staticfile.net^$all,badfilter
 ||staticfile.org^$all,badfilter
 /edgecastcdn.net$badfilter
