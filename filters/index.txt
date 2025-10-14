@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Filters
-! Last modified: Tue, 14 Oct 2025 12:30:51 GMT
+! Last modified: Tue, 14 Oct 2025 12:37:12 GMT
 ! Expires: 1 hours
 ! Description: The filters from Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -240,7 +240,7 @@ dfzy.xyz##+js(trusted-set, window.navigator.userAgent, json:"Mozilla/5.0 quark/1
 ||hostedseal.trustarc.com/privacy-seal/seal$3p
 ||cdn.lgrckt-in.com/logger
 ||visitor.leadsourcing.co$3p
-||at.adtech.redventures.io^$important
+||adtech.redventures.io^$important
 ||coinbase.com/sw.js
 ||yorgio-chat-backend-v2.herokuapp.com$subdocument
 ||18comic.vip/static/*/AD
