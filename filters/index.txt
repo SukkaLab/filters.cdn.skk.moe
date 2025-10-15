@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Filters
-! Last modified: Wed, 15 Oct 2025 07:50:38 GMT
+! Last modified: Wed, 15 Oct 2025 11:57:34 GMT
 ! Expires: 1 hours
 ! Description: The filters from Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -281,6 +281,7 @@ t66y.com##+js(nostif)
 ||app.planhat.com/analytics/
 ||learn.microsoft.com/static/third-party/adobe-target/at-js/*/at.js
 @@||captcha.qq.com^
+||huatuo.qq.com^
 btrace.qq.com$script,redirect=noop.js
 cloud.tencent.com/act/common/report$redirect=noop.txt
 huatuo*.weiyun.com
@@ -376,6 +377,7 @@ justauth.cn##+js(set, window._AdBlockInit, true)
 ||scripts.scriptwrapper.com$3p
 ||dubcdn.com/analytics
 ||storry.tv/sw_.js
+||simplelocalize.io/*/event^
 ||static.rfsvr.net/headimg/
 /template/pc/default/images/pc_ad*
 ||qno.com.tw/ad/$script,redirect=noop.js
@@ -445,6 +447,7 @@ www.deepl.com###dl_quotes_container
 ip.sb##.wwads_abp
 ||www.ip138.com/mp/list/new/*$important
 date-fns.org##a[href*="https://cutt.ly"]
+||jobs.date-fns.org^
 webpack.js.org##.sponsors
 goshacmd.com##.sign-up-form
 ||render.alipay.com/p/s/taobaonpm_click
@@ -632,6 +635,3 @@ www.windy.com###startup-promo
 learn.microsoft.com##.is-success.alert:has([href^="https://security.microsoft.com/trialHorizontalHub"])
 www.reddit.com###games_section
 vite.dev##.vp-sponsor-grid
-||jobs.date-fns.org^
-||simplelocalize.io^
-||huatuo.qq.com^
