@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Filters
-! Last modified: Wed, 15 Oct 2025 07:19:44 GMT
+! Last modified: Wed, 15 Oct 2025 07:50:38 GMT
 ! Expires: 1 hours
 ! Description: The filters from Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -87,6 +87,8 @@ lingchenzi.com#@#.category-share
 ||map.qq.com$3p
 /ajax/libs/nosleep/*
 ||baidu.com$3p
+||unpkg.com/orejime
+||jsdelivr.net/npm/orejime
 /*/sign_d?*$all
 /*/resolve?*$all
 ://223.5.5.5$important
