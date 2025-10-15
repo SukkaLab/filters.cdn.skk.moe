@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Wed, 15 Oct 2025 11:57:34 GMT
+! Last modified: Wed, 15 Oct 2025 22:19:59 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.92.93
+!   - Version: 2.0.92.96
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/refs/heads/master/cjx-annoyance.txt
 !   - Version: 202510081500
@@ -216,6 +216,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||stats.fluorescent.co^
 ||wurflcloud.com^
 ||tvspix.com^
 ||events.stylux.io^
@@ -114559,6 +114560,10 @@ dlsdk.appsflyer.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||dxp.baidu.com^
+||nsclickvideo.xiaodutv.com^
+||api-access.pangolin-sdk-toutiao1.com^
+||xda.xiaodutv.com^
 ||analytics-ccu.qpyou.cn^
 ||analytics-log.withhive.com^
 ||prebid-server-canary.ifunny.co^
@@ -117988,6 +117993,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||captivatingillusion.com^
 ||captivatingpanorama.com^
 ||captivatingperformance.com^
+||cardmethod.com^
 ||carefuldolls.com^
 ||caringcast.com^
 ||carloforward.com^
@@ -118474,6 +118480,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||gulliblegrip.com^
 ||gustocooking.com^
 ||gustygrandmother.com^
+||haikusoap.com^
 ||halcyoncanyon.com^
 ||halcyonsculpture.com^
 ||haltingbadge.com^
@@ -118873,6 +118880,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||pickmicro.com^
 ||pietexture.com^
 ||pigeonsetc.com^
+||pigmentpaper.com^
 ||pinchsquirrel.com^
 ||pincourse.com^
 ||piquantgrove.com^
@@ -119462,6 +119470,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||toomanyalts.com^
 ||topbookgifts.com^
 ||topcrazypress.com^
+||topthrowbacks.com^
 ||touristfuel.com^
 ||toysbasics.com^
 ||toytakeover.com^
