@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Tue, 14 Oct 2025 22:21:23 GMT
+! Last modified: Wed, 15 Oct 2025 07:19:46 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,10 +8,10 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Tue, 14 Oct 2025 16:18:56 +0000
+!   - Last modified: Wed, 15 Oct 2025 00:28:08 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
-!   - Last modified: Tue, 14 Oct 2025 16:05:38 +0000
+!   - Last modified: Wed, 15 Oct 2025 00:07:19 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
 !   - Last modified: Tue, 14 Oct 2025 15:46:03 +0000
@@ -20,7 +20,7 @@
 !   - Last modified: Tue, 14 Oct 2025 02:15:05 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Tue, 14 Oct 2025 15:18:54 +0000
+!   - Last modified: Tue, 14 Oct 2025 22:36:50 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
 !   - Last modified: Tue, 14 Oct 2025 11:30:32 +0000
@@ -414,20 +414,6 @@ kbb.com##[id^="kbbAds"], [id^="kbbAds"] + p
 dfiles.eu,downsub.com,j.gs,macserial.com,microify.com,minecraft-forum.net,onmovies.*,pirateproxy.*,psarips.*,solidfiles.com,thepiratebay.org,uptobox.com##+js(aopw, Fingerprint2)
 solidfiles.com##.remove
 thepiratebay.org##[href^="http://www.coiwqe.site/"]
-watchcartoononline.*,wcostream.*##+js(nofab)
-watchcartoononline.*,wcostream.*##+js(noeval)
-watchcartoononline.*,watchcartoonsonline.*,wcostream.*##+js(acs, document.createElement, jsc.mgid.com)
-wcostream.*##+js(nowoif)
-watchcartoononline.bz##.BorderColorChangeElement
-@@||wcoanimedub.tv^$ghide
-@@||wcoanimesub.tv^$ghide
-watchanimesub.net,wcoanimesub.tv,wcoforever.net##+js(set, isAdBlockActive, false)
-wcoanimedub.tv,wcoforever.net##+js(nostif, google_jobrunner)
-wcoforever.net##.anti-ad
-wcoforever.net###sidebar_r1
-@@||embed.watchanimesub.net^$script,1p
-@@||embed.wcostream.com^$ghide
-embed.wcostream.com##+js(remove-cookie, PHPSESSID)
 handelsblatt.com##+js(no-xhr-if, request=adb)
 @@||handelsblatt.com^$ghide
 ||handelsblatt.com/*/empty.js$script,1p
@@ -20610,6 +20596,19 @@ pornoxo.com##.wgt-container
 ||pornoxo.com/pxo/www/js-v*.min.js?url=
 ||pornoxo.com/link/out/
 ||pornoxo.com/ads/
+watchcartoononline.*,wcostream.*##+js(nofab)
+watchcartoononline.*,watchcartoonsonline.*,wcostream.*##+js(acs, document.createElement, jsc.mgid.com)
+wcostream.*##+js(nowoif)
+watchcartoononline.bz##.BorderColorChangeElement
+@@||wcoanimedub.tv^$ghide
+@@||wcoanimesub.tv^$ghide
+watchanimesub.net,wcoanimesub.tv,wcoforever.net##+js(set, isAdBlockActive, false)
+wcoanimedub.tv,wcoforever.net##+js(nostif, google_jobrunner)
+wcoforever.net##.anti-ad
+wcoforever.net###sidebar_r1
+@@||embed.watchanimesub.net^$script,1p
+@@||embed.wcostream.com^$ghide
+embed.wcostream.com##+js(remove-cookie, PHPSESSID)
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=vtvgo.vn
 m.shuhaige.net##+js(rmnt, script, return a.split)
 m.shuhaige.net##^script:has-text(return a.split)
@@ -21755,6 +21754,8 @@ mangaread.org###promo-mobile
 mobygames.com##.square-ad-wrapper
 ||smallencode.me/small.js
 /^https:\/\/smallencode\.me\/[a-zA-Z0-9]+\/[0-9]+\.js$/$script,1p,domain=smallencode.me
+pogift.click,povast.click###ageModal
+pogift.click,povast.click##.modal-open:remove-class(modal-open)
 ||01net.com/telecharger/$doc
 ||vlc.de^$doc
 ||audacity.de^$doc
@@ -26079,6 +26080,7 @@ $doc,ipaddress=185.216.143.121
 ||unpkg.com/redirect-*/beamglea.js$script
 .com/article/auth=$doc
 ||stylexlab.ru^$doc
+||marktplaats.ch^$doc
 ||google-analytics.com/analytics.js$script,redirect=google-analytics_analytics.js:5
 ||google-analytics.com/cx/api.js$script,redirect=google-analytics.com/cx/api.js:5
 ||googletagmanager.com/gtag/js$script,xhr,redirect=googletagmanager_gtm.js:5
@@ -29882,10 +29884,10 @@ nontonx.com###rules-nontonx
 @@||embed.wcostream.com^$script,1p
 embed.wcostream.com##^script:has-text(/google_jobrunner|AdBlock|pubadx|embed\.html/i)
 embed.wcostream.com##+js(rmnt, script, /google_jobrunner|AdBlock|pubadx|embed\.html/i)
-client.falixnodes.net##+js(rmnt, script, /aps_csm|snigelweb|gettheName|YWRuZ2lu|adngin|earthmoon|neptunebetaalpha|ad block|document\.body\.style/)
+client.falixnodes.net##+js(rmnt, script, /aps_csm|snigelweb|gettheName|YWRuZ2lu|adngin|heytycoon|\>Please disable|body\.style \=/)
 client.falixnodes.net##+js(rpnt, script, /googletag.*?enableServices\(\)\;/s)
 client.falixnodes.net##+js(rpnt, script, /googletag\.pubads\(\).*rewardedSlot\)\;\s+\}\)\;/s)
-client.falixnodes.net##+js(rpnt, script, / \=\= \"undefined\"/, == "undefined" && false)
+client.falixnodes.net##+js(rmnt, script, /^\s*setTimeout.{300\,800}/s)
 ||rm.freex2line.online/*.js|$domain=cimanow.cc
 ||global.novelpia.com/_nuxt/*.js|$script,replace=/if\(\w\.check_is_ad_free\(\)\)/if(true)/
 @@||global.novelpia.com^$ghide
@@ -35445,9 +35447,6 @@ imleagues.com##.hasAd
 ||d19f0dp1dh77jq.cloudfront.net^
 ||ddacn6pr5v0tl.cloudfront.net^
 ||ad.responsad1.space^
-||javenglish.cc^
-||ad-shield.cc^
-||ebd.cda-hd.cc^
 ||algosit.com^
 ||google-analyticals.com^
 ||wgplayer.com^
@@ -35531,6 +35530,7 @@ imleagues.com##.hasAd
 ||non.arabshentai.com^
 ||assets.tusachmanga.com^
 ||boaststockingsaucer.com^
+||bloxplay.com^
 ||dmads.dailymotion.com^
 ||dmxleo.dailymotion.com^
 ||zonedummy.com^
@@ -35660,4 +35660,6 @@ imleagues.com##.hasAd
 ||adblockenterpriseedition.com^
 ||adn.porndig.com^
 ||doathair.com^
-||bloxplay.com^
+||javenglish.cc^
+||ad-shield.cc^
+||ebd.cda-hd.cc^
