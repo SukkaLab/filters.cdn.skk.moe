@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Filters
-! Last modified: Tue, 14 Oct 2025 17:08:37 GMT
+! Last modified: Wed, 15 Oct 2025 07:19:44 GMT
 ! Expires: 1 hours
 ! Description: The filters from Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -161,7 +161,6 @@ crdroid.net###dl-links:style(display: block !important)
 crdroid.net###dl-ads
 ||accounts.google.com/gsi/$frame,redirect=click2load.html
 ||accounts.google.com/gsi/$3p
-@@||accounts.google.com/gsi/$3p,script
 yorg.io###adVideoBg
 yorg.io###adblockHint
 yorg.io###ingame_chat
