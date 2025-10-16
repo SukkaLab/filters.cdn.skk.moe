@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Wed, 15 Oct 2025 22:19:59 GMT
+! Last modified: Thu, 16 Oct 2025 10:14:15 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.92.96
+!   - Version: 2.0.92.99
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/refs/heads/master/cjx-annoyance.txt
 !   - Version: 202510081500
@@ -216,6 +216,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||analytics.metriko.app^
 ||stats.fluorescent.co^
 ||wurflcloud.com^
 ||tvspix.com^
@@ -109130,6 +109131,11 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xmlhttprequest,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$third-party,object,redirect=noop.js,script
+||bunshun.jp/*/analytics.js
+bunshun.jp##.recommend-articles
+||play.*.com/vendor/$domain=play.aetv.com|play.mylifetime.com
+||vbr.ru/next/api/v2/n/help/*/view
+||vbr.ru/init-z.bmp
 ||redfast.com/ping/
 ||statix.business-gazeta.ru/js/components/metrics.js
 ||statix.business-gazeta.ru/js/components/murmur.js
@@ -114560,6 +114566,9 @@ dlsdk.appsflyer.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||experiment.pixverse.ai^
+||capture.pixverse.ai^
+||report.pixverse.ai^
 ||dxp.baidu.com^
 ||nsclickvideo.xiaodutv.com^
 ||api-access.pangolin-sdk-toutiao1.com^
@@ -115532,6 +115541,7 @@ d4?appid*type*
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
 @@||googletagmanager.com/gtm.js$domain=expressvpn.com
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics_analytics.js,domain=expressvpn.com
+@@||play.*.com/vendor/VisitorAPI.js$domain=play.aetv.com|play.mylifetime.com
 @@||analytics.prensaiberica.es/api/delivery/recommendations$domain=farodevigo.es
 @@||cdn.cxense.com/cx*.js$domain=farodevigo.es
 @@||api.cxense.com/public/widget/$domain=farodevigo.es
@@ -118441,6 +118451,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||gloriousbeef.com^
 ||glowingmeadow.com^
 ||gluedpixel.com^
+||goddesslamps.com^
 ||godseedband.com^
 ||goldfishgrowth.com^
 ||goldstudies.com^
@@ -118573,6 +118584,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||intentlens.com^
 ||internalcondition.com^
 ||internalsink.com^
+||inventorycache.com^
 ||inventtango.com^
 ||iotapool.com^
 ||irelandroad.com^
@@ -118742,6 +118754,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||mindfulgem.com^
 ||mindlessmark.com^
 ||mineinvoice.com^
+||minibilling.com^
 ||minorcattle.com^
 ||minuteburst.com^
 ||miscreantmoon.com^
@@ -118808,6 +118821,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||notcardboard.com^
 ||notconscious.com^
 ||notifyglass.com^
+||notrealcat.com^
 ||noundictionary.com^
 ||novaseekers.com^
 ||nowaymail.com^
@@ -118983,6 +118997,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||quizzicalzephyr.com^
 ||rabbitbreath.com^
 ||rabbitrifle.com^
+||rackforstorage.com^
 ||radiantcanopy.com^
 ||radiantlullaby.com^
 ||radiateprose.com^
@@ -119624,6 +119639,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||wrongwound.com^
 ||wtaccesscontrol.com^
 ||yieldingwoman.com^
+||youcandrawanything.com^
 ||yourlifedream.com^
 ||zephyrcatalyst.com^
 ||zephyrlabyrinth.com^
