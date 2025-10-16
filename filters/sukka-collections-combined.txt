@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Thu, 16 Oct 2025 10:14:15 GMT
+! Last modified: Thu, 16 Oct 2025 22:18:21 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,14 +18,11 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202510161001
+!   - Version: 202510162211
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 16 Oct 2025 10:01 UTC
-! * Bypass Paywalls Clean filter
-!   - URL: https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters/blob/raw?file=bpc-paywall-filter.txt
-!   - Version: 4.2.2.7
-!   - Homepage: https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters
+!   - Last modified: 16 Oct 2025 22:11 UTC
+! * https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters/blob/raw?file=bpc-paywall-filter.txt
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
@@ -91,7 +88,7 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * ➗ Actually Legitimate URL Shortener Tool
 !   - URL: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt
-!   - Version: 16October2025v1
+!   - Version: 16October2025v2
 !   - Homepage: https://github.com/DandelionSprout/adfilt/discussions/163
 ! * 🐊 Imgur: Pure Imagery Experience
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/ImgurPureImageryExperience.txt
@@ -111,7 +108,7 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 📱 Staying On The Phone Browser
 !   - URL: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/stayingonbrowser/Staying%20On%20The%20Phone%20Browser
-!   - Version: 22September2025v1
+!   - Version: 16October2025v2
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#english
 ! * 🎫 Ad Removal List for Unusual Ads
 !   - URL: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AdRemovalListForUnusualAds.txt
@@ -2104,706 +2101,835 @@ bigpuzzle.ru##td[valign="top"][width="240px"][height="600"]
 ||rusnext.ru/advar.js$script
 ||shellcat.ru^$third-party
 ||vazhno.ru/cdn-cgi/apps/head/*.js
-||amplitude.com^$xmlhttprequest,third-party
-||axate.io$script,third-party
-||loader.*.com/prod/*/loader.min.js$script
-||cdn.*.com/prod/*/loader.min.js$script
-||blueconic.net^$third-party
-/[a-z]{1}\d{2,3}\.\w+\.(co(m|\.uk)|net|org)\/script\.js/$script,~third-party
-||cxense.com^$script,third-party,domain=~journaldemontreal.com|~journaldequebec.com|~wsj.com
-||cxense.com^$script,domain=bizjournals.com,important
-||ensighten.com/*/Bootstrap.js$script,third-party
-||evolok.net^$third-party
-||fewcents.co/*/paywall*.js$script,third-party
-||hadrianpaywall.com^$third-party
-.de/sub/js/pc-offer-west.js$script,~third-party
-||js.matheranalytics.com^$script,third-party
-||newsmemory.com?meter$third-party
-||olytics.omeda.com^$third-party
-||onecount.net^$third-party
-||js.pelcro.com^$script,third-party
-/xbuilder/experience/execute$xmlhttprequest,~third-party,domain=~fortune.com
-||piano.io/xbuilder/experience/execute$xmlhttprequest,third-party,domain=~automobilwoche.de
-@@||piano.io^$domain=hbr.org|japantimes.co.jp
-@@||tinypass.com$script,domain=ajc.com|thelogic.co
-||api.pico.tools/client/query/*$xmlhttprequest,~third-party
-||api.pico.tools/popup/null/*$xmlhttprequest,~third-party
-gadget.pico.tools##+js(json-prune, locked)
-||poool.fr^$third-party
-||qiota.com^$xmlhttprequest,third-party
-||sophi.io^$third-party
-||steadyhq.com^$script,third-party
-||wallkit.net/js/$script,third-party
-||zephr.com/zephr-browser/$script,third-party
-/arc/subs/p.min.js$script,~third-party
-/c/assets/pigeon.js$script,~third-party
-/evolok/*ev-em.min.js$script,domain=~vikatan.com
-/evolok/*ev-widgets.min.js$script
-/paywall/evercookie_get.js$script,~third-party
-/shared-content/art/tncms/api/access.*.js$script,~third-party
-/wp-content/plugins/leaky-paywall/js/leaky-paywall-cookie.js$script,~third-party
-/wp-content/plugins/newspack-plugin/dist/memberships-gate-metering.js$script,~third-party
-/wp-content/*/plugins/rcp-view-limit/$script,~third-party
-/zephr/feature$xmlhttprequest
-||abril.com.br/*/abril-paywall/$script,~third-party
-adweek.com##+js(cookie-remover, blaize_session)
-||adweek.com/wp-content/plugins/adw-zephr/$script,~third-party
-ajc.com##+js(ra, class, div.story-paygate_placeholder, stay)
-ajc.com##div.video-blocker
-ajc.com##+js(set, window.Fusion.globalContent._id, 0)
-ajc.com##+js(set, window.Fusion.globalContent.content_restrictions.content_code, 0)
-alternatives-economiques.fr###temp-paywall
-alternatives-economiques.fr##+js(ra, style, div[data-ae-poool], stay)
-ambito.com##+js(cookie-remover, TDNotesRead)
-||americanaffairsjournal.org/wp-content/mu-plugins/app/src/paywall/paywall.js$script,~third-party
-apollo-magazine.com##+js(cookie-remover, blaize_session)
-apollo-magazine.com,spectator.co.uk###subscribe-ribbon,div.ad-slot
-artforum.com##+js(cookie-remover, /^/)
-||artnet.com/paywall-ajax.php$xmlhttprequest,~third-party
-artnet.com##div.article-body:style(display:block !important;)
-artnet.com##div[id^="issuem-leaky-paywall-"]
-asia.nikkei.com##div.tp-modal,div.tp-backdrop
-asia.nikkei.com##+js(rc, tp-modal-open, body.tp-modal-open, stay)
-magazine.atavist.com##+js(set-local-storage-item, /^/, $remove$)
-||tonos.gjirafa.tech/init/access$xmlhttprequest,domain=atlantico.fr
-automobilwoche.de##+js(set, window.Fusion.globalContent._id, 0)
-automobilwoche.de##+js(set, window.Fusion.globalContent.content_restrictions, {})
-axios.com##div[data-cy="pro-paywall"],div[class^="Modal_paywall"],div[class^="Modal_cta"]
-axios.com##+js(ra, style, html[style], stay)
-bhaskar.com##div.paywallBlockedContent~div:remove()
-bhaskar.com##article div:empty
-bhaskar.com##+js(ra, class, div.paywallBlockedContent, stay)
-bizjournals.com##+js(ra, style, .paywall-content[style], stay)
-bizjournals.com##+js(ra, style, html, stay)
-bizjournals.com##+js(rc, is-overlaid, html.is-overlaid, stay)
-bizjournals.com##+js(rc, is-overlaid, body.is-overlaid, stay)
-bizjournals.com##+js(ra, inert, div#__nuxt[inert])
-bizjournals.com##div[id^="headlessui-dialog-"],div.sheet-overlay
-||cm.bloomberg.com^$xmlhttprequest,~third-party
-||assets.bwbx.io/s3/javelin/public/javelin/js/foundation/transporter/foundation_transporter-*.js$script,domain=bloomberg.com
-bloomberg.com##+js(ra, data-paywall-overlay-status, body[data-paywall-overlay-status], stay)
-bloomberg.com##div[id^="fortress-"]
-bloomberg.com##+js(set-local-storage-item, history, $remove$)
-||bloombergadria.com/*/news$inline-script
-bloombergadria.com##+js(ra, style, article.single-news[style], stay)
-||meter.bostonglobe.com/js/meter.js$script,~third-party
-/\.businessinsider\.com\/chunks\/scripts\/\d.+\.js/$script,domain=businessinsider.com,~third-party
-businessinsider.jp##+js(ra, hidden, div.piano-paywall-container[hidden])
-||businessoffashion.com/arc-platform-proxy.js$script,~third-party
-||businesspost.ie/api/tinypass.min.js$script,~third-party
-||cambiocolombia.com/_next/static/chunks/1036.*.js$script,~third-party
-capital.fr##+js(ra, class|hidden, div#articleWall-paid, stay)
-capital.fr##div#articleWall-paid:style(margin-top: 40px !important;)
-capital.fr##+js(ra, class, div#articleWall, stay)
-capital.fr##div#articleWall-wrapper
-cartacapital.com.br##+js(rc, contentSoft, div.contentSoft)
-cartacapital.com.br##div[class^="s-freemium"],div.maggazine-add
-cen.acs.org##+js(cookie-remover, cenLoginP)
-cen.acs.org##.meteredBar
-challenges.fr##div.amorce.manual
-challenges.fr##+js(ra, class|hidden, .user-paying-content)
-||cdn.piano.io/api/tinypass.min.js$script,domain=clicrbs.com.br
-||clicrbs.com.br/paywall-api/count/$xmlhttprequest,~third-party
-cnbc.com##div.ArticleGate-proGate
-cnbc.com##+js(ra, class|hidden, span[hidden])
-cnn.com##div[data-component-id="subwall"]
-cnn.com##+js(ra, style, html[style], stay)
-cnn.com##+js(ra, style, body[style], stay)
-cnn.com##+js(set-local-storage-item, /reg_?wall/i, $remove$)
-columbian.com##+js(cookie-remover, blaize_session)
-columbian.com##div.modal,div#onesignal-slidedown-container
-chronicle.com,philanthropy.com##div[data-content-summary]
-chronicle.com,philanthropy.com##+js(ra, hidden|ppajfrg86rdhoubtirllb2bf1xsaknzus, div[class~="contentBody" i][hidden], stay)
-citywire.com##+js(rc, article-locked, .article-locked)
-citywire.com##+js(rc, m-article--locked, .m-article--locked)
-citywire.com##+js(rc, m-media-container--locked, .m-media-container--locked)
-citywire.com##+js(rc, m-article__body--locked, .m-article__body--locked)
-citywire.com##registration-widget,div.alert--locked
-||zonda.clarin.com^$script,domain=clarin.com|lavoz.com.ar|ole.com.ar
-||commentary.org/*/js/dg-locker-public.js$script,~third-party
-||connaissancedesarts.com/wp-content/*/vendor/iptools-jquery-inview.min.js$script,~third-party
-||paywall.correiodopovo.com.br$script,~third-party
-||corriereobjects.it/*/js/_paywall.sjs$script,domain=corriere.it
-/\.cronista\.com\/files\/cachefiles\/.+\.js\?\d/$script,~third-party
-csmonitor.com##+js(set-local-storage-item, /^/, $remove$)
-csmonitor.com##.paywall
-cyclingnews.com##+js(rc, paywall-locker, div.paywall-locker)
-dailywire.com###post-body-text > div > div:style(height: auto !important;)
-||denik.cz/*.html$inline-script
-discovermagazine.com##body:style(overflow: auto !important;)
-discovermagazine.com##div.fIkXwQ,div[style*="fadeIn"],div[role="button"][aria-label="Dismiss Dialog"]
-||dn.se/check-paywall-v2.js,~third-party
-||dwell.com/article/*?rel=plus$inline-script
-eastwest.eu##+js(ra, style, .paywall)
-eastwest.eu##+js(rc, paywall, .paywall)
-eastwest.eu###testo_articolo > p, #testo_articolo > h3
-eastwest.eu##.offerta_abbonamenti
-||economist.com/latest/wall-ui.js$script,~third-party
-||editorialedomani.it/pelcro.js$script,~third-party
-elespanol.com##+js(rc, content-not-granted-paywall, div.content-not-granted-paywall)
-elespanol.com##div.full-suscriptor-container
-elconfidencial.com##+js(rc, newsType__content--closed, div.newsType__content--closed)
-||elobservador.com.uy/shares$xmlhttprequest,~third-party
-||elpais.com.uy/user/authStatus$script,~third-party
-||verne.elpais.com/*.html$inline-script
-elpais.com##div#ctn_freemium_article:remove()
-elpais.com##div#ctn_premium_article:remove()
-eltiempo.com##+js(rc, modulos, div.modulos)
-||eltribuno.com/scripts/Bellhop/dist/bellhop.min.js$script,~third-party
-em.com.br##+js(rc, compress-text, .div.compress-text)
-enotes.com##section#enotes-paywall
-enotes.com##+js(ra, class, div.u-paywall)
-||estadao.com.br/paywall/$script,~third-party
-||estadao.com.br/access.js$script,~third-party
-etc.se##+js(rc, teaser-section, section.teaser-section)
-etc.se##+js(rc, hidden, section.prose-feature .hidden)
-etc.se##article section.font-sans
-euobserver.com##+js(rc, show, div.membership-upsell.show)
-exame.com##+js(set-local-storage-item, pywllcount, $remove$)
-fieldandstream.com##div[class^="mailmunch-"]
-fieldandstream.com##+js(ra, class, html[class])
-||financialexpress.com/*/min/premiumStoryContent.js$script,~third-party
-financialexpress.com##+js(rc, paywall, .paywall)
-financialexpress.com##div.pcl-wrap
-||folha.uol.com.br/paywall/js/$script,~third-party
-||paywall.folha.uol.com.br^$script,xmlhttprequest,~third-party
-forbes.com##+js(ra, class, html[class], stay)
-forbes.com##+js(ra, class, body[class], stay)
-forbes.com.au##+js(cookie-remover, blaize_session)
-||foreignaffairs.com/modules/custom/fa_paywall_js/js/paywall.js$script,~third-party
-||foreignaffairs.com/sites/default/files/assets/css/css_*.css*delta=0$stylesheet,~third-party
-foreignaffairs.com##.article-dropcap:style(height: auto !important;)
-foreignaffairs.com##.paywall,.loading-indicator,.messages--container--bottom
-foreignpolicy.com##body:not(.is-fp-insider) div.content-ungated
-foreignpolicy.com##+js(rc, content-gated, body:not(.is-fp-insider) div.content-gated.content-gated--main-article)
-fortune.com##+js(ra, class, div.paywallActive)
-fortune.com##+js(cookie-remover, xbc)
-fortune.com##+js(cookie-remover, pcid)
-fortune.com##div.tp-container-inner
-foxnews.com##+js(ra, class, div[class*="gated-overlay"])
-foxnews.com##div.article-gating-wrapper
-||ftm.eu/js/routing$script,~third-party
-||ftm.nl/js/routing$script,~third-party
-ftm.eu,ftm.nl##+js(rc, foldable, div.foldable)
-ftm.eu,ftm.nl##div.banner-pp
-gauchazh.clicrbs.com.br##+js(ra, class, div.m-paid-content>div.hidden, stay)
-groene.nl##+js(cookie-remover, rlist)
-harpers.org##+js(cookie-remover, hr_session)
-||harpers.org/wp-content/themes/timber/static/js/modal*.js
-||cdn.tinypass.com/api/tinypass.min.js$script,domain=hbr.org
-||hilltimes.com/*/js/loadingoverlay/loadingoverlay.min.js$script,~third-party
-hindustantimes.com##div[class^="sub-paywall-version"],.closeStory
-hindustantimes.com##+js(rc, freemiumText, .freemiumText)
-hindustantimes.com##+js(rc, open-popup, body.open-popup)
-ilfattoquotidiano.it##+js(rc, cropped, article[id].cropped)
-ilfattoquotidiano.it##div#ifq-paywall-metered
-ilsole24ore.com##+js(ra, style, body[style], stay)
-ilsole24ore.com##div.s24_adb
-||inc42.com/wp-admin/admin-ajax.php|$xmlhttprequest,~third-party
-indianexpress.com##+js(ra, style, div.ev-meter-content[style])
-indianexpress.com##+js(ra, class, p.first_intro_para)
-indianexpress.com##ev-engagement
-||liveapp.inews.co.uk/*/content.html$inline-script
-inkl.com##+js(ra, class, div.paywall)
-inkl.com##div.gradient-container
-interestingengineering.com##body:style(overflow: auto !important; position: relative !important; top: unset !important)
-interestingengineering.com##main>div[class*="t-hidden"],div.t-bg-black
-irishexaminer.com/##+js(cookie-remover, blaize_session)
-japantimes.co.jp##+js(cookie-remover, xbc)
-journaldemontreal.com,journaldequebec.com##+js(rc, composer-content, div.article-main-txt.composer-content)
-journaldunet.com##div.reg_wall
-journaldunet.com##+js(ra, style, div.entry_reg_wall[style])
-||jpost.com/js/js_article.min.js$script,~third-party
-||internazionale.it/templates_js_ajax.inc.php$xmlhttprequest,~third-party
-krautreporter.de##.js-article-paywall,.js-paywall-divider,#steady-checkout
-krautreporter.de##+js(rc, blurred, .blurred)
-krautreporter.de##+js(rc, json-ld-paywall-marker, .json-ld-paywall-marker, stay)
-ksta.de,rundschau-online.de##+js(cookie-remover, anon_cookie)
-ksta.de,rundschau-online.de##+js(ra, style, div[data-article-content], stay)
-ksta.de,rundschau-online.de##div.dm-paywall-wrapper,div.dm-slot,div.dm-zephr-banner
-||cdn.tinypass.com/api/tinypass.min.js$script,domain=kurier.at
-kurier.at##+js(ra, class|style, div.paywall)
-kurier.at##div#cfs-paywall-container
-||glanacion.com/*/metering/*.js$script,domain=lanacion.com.ar
-lanacion.com.ar##+js(cookie-remover, /^metering_arc/)
-lanacion.com.ar##+js(set-local-storage-item, /^/, $remove$)
-||latimes.com/meteringjs/$script,~third-party
-||ev.lavanguardia.com$xmlhttprequest,~third-party
-lavanguardia.com,mundodeportivo.com##span.content-ad,span.hidden-ad,span.ad-unit,div.ad-div
-ledevoir.com##+js(cookie-remover, pw6)
-legrandcontinent.eu##+js(rc, paywall|pw|softwall, body)
-lejdd.fr,parismatch.com,public.fr###poool-container,#poool-widget-content,#poool-widget,.forbidden
-lejdd.fr,parismatch.com,public.fr##+js(ra, data-poool-mode, .cnt[data-poool-mode="hide"])
-||livemint.com/lm-img/subscription/$script,~third-party
-livemint.com##+js(rc, paywall, div.paywall)
-livemint.com##div[class^="storyPaywall_paywallStory_"]:remove()
-labusinessjournal.com##+js(cookie-remover, /^/)
-labusinessjournal.com###css-only-modals
-||lavoz.com.ar/sites/*/paywall/*/pw.js$script,third-party
-letelegramme.fr##+js(rc, tlg-paywalled, div.tlg-paywalled)
-loebclassics.com##+js(cookie-remover, hupLclFreeReadsCookie)
-||cdn.loeildelaphotographie.com/wp-content/*/hague-child/js/script-$script,~third-party
-loeildelaphotographie.com##+js(ra, class, .paywall)
-loeildelaphotographie.com##.premium-pic-box,.membership-promo-container,.login_form_litle
-loeildelaphotographie.com##+js(ra, style, img[style*="blur"])
-||lrb.co.uk$inline-script
-marketwatch.com##+js(cookie-remover, cX_P)
-||medscapestatic.com/*/medscape-library.js$script,domain=medscape.com
-||wbmdstatic.com/*/chunk-vendors.*.js$script,domain=medscape.com
-medscape.com##.AdUnit,div[id^="ads-"]
-mexiconewsdaily.com##+js(rc, tdb-block-inner, body.single div.td-post-content > div.tdb-block-inner)
-||motorsportmagazine.com/wp-admin/admin-ajax.php$xmlhttprequest,~third-party
-||ev.mundodeportivo.com$xmlhttprequest,~third-party
-mv-voice.com##+js(cookie-remover, /^/)
-||cdn.registerdisney.go.com$script,domain=nationalgeographic.com
-||nautil.us/wp-content/themes/*/js/js.cookie.min.js$script,~third-party
-||loader.newsday.com$script,~third-party
-newsday.com##+js(ra, class, html[class])
-newrepublic.com##div.article-scheduled-modal
-||blink.net/*/blink-sdk.js$script,domain=newrepublic.com|thebaffler.com
-||townnews.com/*/tncms/*/scripts/engage.min.js$script,third-party,domain=nola.com|shreveportbossieradvocate.com|theadvocate.com
-nrc.nl##+js(cookie-remover, counter)
-||nrc.nl/paywall-api/api/zephr$xmlhttprequest,~third-party
-nrc.nl##div[id$="modal__overlay"],div.header__subscribe-bar,div.banner
-||nsctotal.com.br/wp-content/themes/nsctotal/js/paywall.min.js$script,~third-party
-||nybooks.com/wp-admin/admin-ajax.php$xmlhttprequest,~third-party
-nybooks.com##+js(rc, paywall-article, .paywall-article)
-nybooks.com##div.toast-cta
-||nysun.com/api/zephr/$xmlhttprequest,~third-party
-||meter-svc.nytimes.com/meter.js$xmlhttprequest,~third-party
-||nytimes.com/svc/onsite-messaging/query$xmlhttprequest,~third-party
-||mwcm.nyt.com/$script,domain=nytimes.com
-nytimes.com##div[data-testid="inline-message"],div[id^="ad-"],div#dock-container,div.pz-ad-box
-||cooking.nytimes.com/api/*/access$xmlhttprequest,~third-party
-||nzherald.co.nz/zephr/$xmlhttprequest,~third-party
-nzherald.co.nz##+js(set, window.Fusion.globalContent.isPremium, false)
-nzz.ch,themarket.ch##+js(rc, nzzinteraction, .nzzinteraction, stay)
-nzz.ch##+js(ra, class, div.barrier, stay)
-||cdn.piano.io/api/tinypass.min.js$script,domain=nzz.ch|themarket.ch
-||tms.danzz.ch/scripts/t.min.js$script,domain=nzz.ch|themarket.ch
-||observador.pt/wp-content/*/paywall-price-*.js$script,~third-party
-paloaltoonline.com##+js(cookie-remover, /^/)
-||pastemagazine.com/wp-content/cache/autoptimize/js/autoptimize_*.js$script,~third-party
-pb.pl##+js(ra, class, section.o-article-content, stay)
-pb.pl##div.o-piano-template-loader-box
-pourleco.com##+js(ra, style, div[class*="article-"][style])
-pourleco.com##div[data-pleco-poool^="paywall"],div[data-pleco-transition="fade"]
-philosophynow.org##+js(cookie-remover, /^/)
-profil.at##+js(ra, class|style, div.paywall)
-profil.at##div#cfs-paywall-container,div.consentOverlay
-||kinja-static.com/assets/*/regwalled-content.*.js$script,domain=qz.com
-||reviewjournal.com/wp-content/plugins/*/loader_prod.min.js$script,~third-party
-||revistaoeste.com/wp-content/*/js/app.*.js$script,~third-party
-||revistaoeste.com/revista/$inline-script
-revistaoeste.com##+js(ra, class, div.loading_content)
-revistaoeste.com##+js(rc, expandable, div.expandable)
-revistaoeste.com##svg.spinner-eclipse
-/\.rugbypass\.com\/plus\/\w/$inline-script,domain=rugbypass.com
-rugbypass.com##.plus-article-offer
-rugbypass.com##+js(rc, premium-fold-bottom, .premium-fold-bottom)
-rugbypass.com##+js(rc, fade, .fade)
-scholastic.com##+js(ra, class, body.modal-open, stay)
-scholastic.com##div.paywallModalElement,div.modal-backdrop
-schwaebische.de##+js(ra, style, body[style], stay)
-science.org##div.alert-read-limit
-science.org##+js(rc, alert-read-limit__overlay, body.alert-read-limit__overlay, stay)
-sciencenews.org##+js(cookie-remover, blaize_session)
-sciencesetavenir.fr##div.amorce.manual
-sciencesetavenir.fr##+js(ra, class|hidden, .user-paying-content)
-||scientificamerican.com/api/tinypass.min.js$script,~third-party
-scientificamerican.com##+js(cookie-remover, article_meter)
-scotsman.com,yorkshirepost.co.uk##+js(rc, premium|no-entitlement, div.premium.no-entitlement)
-||seattletimes.com/wp-content/*/st-advertising-bundle.js$script,~third-party
-||seattletimes.com/wp-content/*/st-user-messaging-main-bundle.js$script,~third-party
-||sfstandard.com/zephr/$xmlhttprequest,~third-party
-||sfstandard.com/api/content/decision/$xmlhttprequest,~third-party
-sfstandard.com##+js(cookie-remover, zephr-session)
-sfstandard.com##+js(acis, localStorage)
-sfstandard.com##+js(acis, sessionStorage)
-sfstandard.com##div.sticky
-slideshare.net##+js(rc, limit-overlay, .limit-overlay)
-slideshare.net##+js(set-local-storage-item, /^/, $remove$)
-sofrep.com##+js(cookie-remover, sofrep_news_ids)
-sofrep.com##+js(ra, class, div.paywall)
-sofrep.com##+js(rc, fader, div.fader)
-sofrep.com##div.non-paywall,div#paywall_wrap
-spektrum.de##+js(rc, pw-premium, article.pw-premium)
-spglobal.com##+js(cookie-remover, count)
-startribune.com##div.modal-backdrop
-startribune.com##body[class]:style(overflow: auto !important; position: static !important;)
-study.com##+js(ra, class, div.faded-content)
-study.com##+js(ra, class, div.hidden[ng-non-bindable])
-study.com##div.article-cutoff-div
-||suomensotilas.fi/wp-content/plugins/epflpw/js/pw.js$script,~third-party
-suomensotilas.fi##+js(rc, epfl-pw-obscured, div.epfl-pw-obscured)
-||telegraph.co.uk/martech/js/$script,~third-party
-tes.com##+js(cookie-remover, /tg_paywall/)
-tes.com##+js(ra, class, div.tg-paywall-body-overlay)
-tes.com##div.js-paywall-info,div.tg-paywall-message
-||texasmonthly.com/script.js$script,~third-party
-texasmonthly.com##div.promo-in-body
-the-scientist.com##+js(rc, paywall, div.paywall)
-the-scientist.com##div.gated-fader,div#Modal
-||theartnewspaper.com/_next/static/chunks/pages/access-allowed-*.js$script,~third-party
-||theatlantic.com/zephr/decision-engine$xmlhttprequest,~third-party
-theatlantic.com##aside#paywall,div[class^="LostInventoryMessage_"]
-||cloudfunctions.net/gated-countView$xmlhttprequest,domain=thediplomat.com
-theglobeandmail.com##+js(set, window.Fusion.globalContent._id, 0)
-thehindu.com,thehindubusinessline.com##+js(set, window.Adblock, false)
-thehindu.com,thehindubusinessline.com##+js(set, window.isNonSubcribed, false)
-||theintercept.com$inline-script
-thelampmagazine.com##+js(ra, class, div.paywall-gradient)
-thelampmagazine.com##section.p-8
-thelogic.co##+js(cookie-remover, firstarticle)
-||thenewatlantis.com/*/thenewatlantis/js/gate.js$script,~third-party
-||thenewatlantis.com/*/thenewatlantis/js/donate.js$script,~third-party
-thenewworld.co.uk##div[data-show-fade-on-noaccess],div[data-show-subs-blocked]
-thenewworld.co.uk##+js(ra, data-show-has-access, div[data-show-has-access])
-thepointmag.com##+js(cookie-remover, monthly_history)
-thepointmag.com##div.overlay,div#tpopup-
-thequint.com##div.zsqcu
-thequint.com##+js(ra, class|style, div#story-body-wrapper, stay)
-||thesaturdaypaper.com.au/sites/all/modules/custom/node_meter/pw.js$~third-party
-/\.thesaturdaypaper\.com\.au\/.+\/(\w+-){3,}/$inline-script,domain=thesaturdaypaper.com.au
-thesaturdaypaper.com.au##div.paywall-hard-always-show
-thespectator.com##+js(rc, ev-meter-content-class, div.ev-meter-content-class)
-thetimes.com##html:style(overflow: auto !important;)
-thetimes.com##body:style(overflow: auto !important;)
-thetimes.com##+js(rc, TeaserPage, body.TeaserPage)
-theweek.com##+js(rc, paywall-locker, div.paywall-locker)
-theweek.com##div.kiosq-main-layer
-thewrap.com##+js(cookie-remover, blaize_session)
-timeshighereducation.com##+js(rc, paywall-fade, div.paywall-fade)
-timeshighereducation.com##div.paywall-active
-tt.com##+js(rc, exclusive-elem, .exclusive-elem)
-tt.com##div.adblock-warning
-unherd.com##+js(ra, id, div#premiumcontent)
-unherd.com##div#premiumpreview
-valeursactuelles.com##div.qiota
-valeursactuelles.com##+js(ra, class, div.qiota_reserve, stay)
-/\.vn\.at\/.+\/\d{4}\//$inline-script,domain=vn.at
-||washingtonpost.com/*/tetro-client/$script,~third-party
-||account.winnipegfreepress.com/api/v*/auth/identify$xmlhttprequest,~third-party
-winnipegfreepress.com##.billboard-ad-space,.ad,.article-ad,.fixed-sky
-al.com,cleveland.com,lehighvalleylive.com,masslive.com,mlive.com,nj.com,oregonlive.com,pennlive.com,silive.com,syracuse.com##+js(set, window.adiData.entryTags, 0)
-bendigoadvertiser.com.au,bordermail.com.au,canberratimes.com.au,centralwesterndaily.com.au,dailyadvertiser.com.au,dailyliberal.com.au,examiner.com.au,illawarramercury.com.au,newcastleherald.com.au,northerndailyleader.com.au,standard.net.au,theadvocate.com.au,thecourier.com.au,westernadvocate.com.au##+js(rc, subscribe-truncate, .subscribe-truncate)
-bendigoadvertiser.com.au,bordermail.com.au,canberratimes.com.au,centralwesterndaily.com.au,dailyadvertiser.com.au,dailyliberal.com.au,examiner.com.au,illawarramercury.com.au,newcastleherald.com.au,northerndailyleader.com.au,standard.net.au,theadvocate.com.au,thecourier.com.au,westernadvocate.com.au##+js(rc, subscriber-hider, .subscriber-hider)
-bendigoadvertiser.com.au,bordermail.com.au,canberratimes.com.au,centralwesterndaily.com.au,dailyadvertiser.com.au,dailyliberal.com.au,examiner.com.au,illawarramercury.com.au,newcastleherald.com.au,northerndailyleader.com.au,standard.net.au,theadvocate.com.au,thecourier.com.au,westernadvocate.com.au##+js(rc, hidden, div.flex-col div.hidden, stay)
-bendigoadvertiser.com.au,bordermail.com.au,canberratimes.com.au,centralwesterndaily.com.au,dailyadvertiser.com.au,dailyliberal.com.au,examiner.com.au,illawarramercury.com.au,newcastleherald.com.au,northerndailyleader.com.au,standard.net.au,theadvocate.com.au,thecourier.com.au,westernadvocate.com.au##+js(ra, style, html[style], stay)
-bendigoadvertiser.com.au,bordermail.com.au,canberratimes.com.au,centralwesterndaily.com.au,dailyadvertiser.com.au,dailyliberal.com.au,examiner.com.au,illawarramercury.com.au,newcastleherald.com.au,northerndailyleader.com.au,standard.net.au,theadvocate.com.au,thecourier.com.au,westernadvocate.com.au##+js(ra, style, body[style], stay)
-bendigoadvertiser.com.au,bordermail.com.au,canberratimes.com.au,centralwesterndaily.com.au,dailyadvertiser.com.au,dailyliberal.com.au,examiner.com.au,illawarramercury.com.au,newcastleherald.com.au,northerndailyleader.com.au,standard.net.au,theadvocate.com.au,thecourier.com.au,westernadvocate.com.au##+js(ra, class, div[class^="gradient-mask-"], stay)
-bendigoadvertiser.com.au,bordermail.com.au,canberratimes.com.au,centralwesterndaily.com.au,dailyadvertiser.com.au,dailyliberal.com.au,examiner.com.au,illawarramercury.com.au,newcastleherald.com.au,northerndailyleader.com.au,standard.net.au,theadvocate.com.au,thecourier.com.au,westernadvocate.com.au##div.blocker,.story-generic__iframe,div.transition-all,div[id^="headlessui-dialog"]
-accountingtoday.com,americanbanker.com,benefitnews.com,bondbuyer.com,dig-in.com,financial-planning.com,nationalmortgagenews.com##+js(set, window.contentGating.ungate, true)
-/\.com\/[-\w]+$/$script,~third-party,domain=architecturaldigest.com|bonappetit.com|cntraveler.com|epicurious.com|gq.com|newyorker.com|vanityfair.com|vogue.com|wired.com
-/www\.vogue\.co\.uk\/[-\w]+$/$script,~third-party
-||voguebusiness.com/journey/compiler/build-*.js$script,~third-party
-voguebusiness.com##+js(cookie-remover, userId)
-adage.com,autonews.com,pionline.com##+js(set, window.Fusion.globalContent._id, 0)
-adage.com,autonews.com,pionline.com##+js(set, window.Fusion.globalContent.content_restrictions, {})
-.com/profiles/*/crain_pelcro_user.js$script,~third-party,domain=360dx.com|chicagobusiness.com|crainscleveland.com|crainsdetroit.com|crainsgrandrapids.com|crainsnewyork.com|genomeweb.com|modernhealthcare.com|plasticsnews.com|precisionmedicineonline.com|sustainableplastics.com|tirebusiness.com|utech-polyurethane.com
-.com/*/js_$script,~third-party,domain=rubbernews.com
-rubbernews.com##+js(ra, class, body[class], stay)
-european-rubber-journal.com##+js(rc, truncated, div.truncated)
-european-rubber-journal.com##div.article-overlay,div.gradient
-modernhealthcare.com##+js(rc, sponsored-article, div.sponsored-article)
-dailymail.co.uk,mailonsunday.co.uk,thisismoney.co.uk##+js(rc, is-paywalled-article, body.is-paywalled-article)
-||dailymail.co.uk/static/mol-adverts/$script
-||huffingtonpost.it/*/news/$inline-script
-||lastampa.it/*/news/$inline-script
-huffingtonpost.it,lastampa.it##+js(cookie-remover, blaize_session)
-huffingtonpost.it,lastampa.it##aside#widgetDP,div[id^="adv"]
-||scripts.repubblica.it/pw/pw.js$script,domain=italian.tech|moda.it
-italian.tech,moda.it##div#ph-paywall:remove()
-italian.tech,moda.it##+js(ra, style, div#article-body, stay)
-centrepresseaveyron.fr,journaldemillau.fr,ladepeche.fr,lindependant.fr,midilibre.fr,nrpyrenees.fr,petitbleu.fr,rugbyrama.fr##+js(ra, style|data-state, div.p402_premium)
-centrepresseaveyron.fr,journaldemillau.fr,ladepeche.fr,lindependant.fr,midilibre.fr,nrpyrenees.fr,petitbleu.fr,rugbyrama.fr##div.paywall
-sudouest.fr,charentelibre.fr,larepubliquedespyrenees.fr##div.article-premium-footer,div.footer-premium,div.article-body-wrapper.visible-not-premium,div.pub,div.ph-easy-subscription
-sudouest.fr,charentelibre.fr,larepubliquedespyrenees.fr##+js(rc, visible-premium, div.visible-premium)
-||nicematin.com/build/js/viewpay.*.js$script,domain=monacomatin.mc|nicematin.com|varmatin.com
-||diariocorreo.pe/pf/dist/engine/react.js$script,~third-party
-||elcomercio.pe/pf/dist/engine/react.js$script,~third-party
-||gestion.pe/pf/dist/engine/react.js$script,~third-party
-diariocorreo.pe,elcomercio.pe,gestion.pe##+js(ra, class|style, .paywall)
-diariocorreo.pe,elcomercio.pe,gestion.pe##+js(rc, story-contents--fade, p.story-contents--fade)
-diariocorreo.pe,elcomercio.pe,gestion.pe##div[class^="content_gpt"]
-||elmercurio.com/assets/js/merPramV2.js$script,~third-party
-||elmercurio.com/assets/js/vendor/modal.js$script,~third-party
-||emol.cl/assets/js/merPramV2.js$script,domain=elmercurio.com
-||emol.cl/assets/js/vendor/modal.js$script,domain=elmercurio.com
-elmercurio.com##+js(rc, lessreadmore, article.lessreadmore, stay)
-elmercurio.com##div[id*="bt_readmore_"]
-||australvaldivia.cl/impresa/*/assets/vendor.js$script,~third-party
-||mercuriovalpo.cl/impresa/*/assets/vendor.js$script,~third-party
-||pasedigital.cl/API/User/Status$script,domain=australvaldivia.cl|mercuriovalpo.cl
-diaridegirona.cat,diariocordoba.com,diariodeibiza.es,diariodemallorca.es,elcorreogallego.es,elcorreoweb.es,eldia.es,elperiodico.com,elperiodicodearagon.com,elperiodicoextremadura.com,elperiodicomediterraneo.com,epe.es,farodevigo.es,informacion.es,laopinioncoruna.es,laopiniondemalaga.es,laopiniondemurcia.es,laopiniondezamora.es,laprovincia.es,levante-emv.com,lne.es,mallorcazeitung.es,regio7.cat,superdeporte.es##+js(rc, ft-helper-closenews, p.ft-helper-closenews, stay)
-gazzettadimodena.it,gazzettadireggio.it,iltirreno.it,lanuovaferrara.it,lanuovasardegna.it##+js(cookie-remover, /__mtr$/)
-gazzettadimodena.it,gazzettadireggio.it,iltirreno.it,lanuovaferrara.it,lanuovasardegna.it##div.MuiSnackbar-root
-.com/_assets/jam/$script,~third-party,domain=bicycling.com|cosmopolitan.com|countryliving.com|delish.com|elle.com|elledecor.com|esquire.com|goodhousekeeping.com|harpersbazaar.com|housebeautiful.com|menshealth.com|oprahdaily.com|popularmechanics.com|prevention.com|roadandtrack.com|runnersworld.com|townandcountrymag.com|womenshealthmag.com
-ctpost.com,expressnews.com,houstonchronicle.com,nhregister.com,sfchronicle.com,statesman.com,timesunion.com##div#mod-target-div
-ctpost.com,expressnews.com,houstonchronicle.com,nhregister.com,sfchronicle.com,statesman.com,timesunion.com##body:style(overflow: visible!important)
-||cedscdn.it/*/PaywallMeter.js$script,domain=corriereadriatico.it|ilgazzettino.it|ilmattino.it|ilmessaggero.it|quotidianodipuglia.it
-||cedsdigital.it/*/PaywallMeter.js$script,domain=corriereadriatico.it|ilgazzettino.it|ilmattino.it|ilmessaggero.it|quotidianodipuglia.it
-corriereadriatico.it,ilgazzettino.it,ilmattino.it,ilmessaggero.it,quotidianodipuglia.it##+js(ra, subscriptions-section, [subscriptions-section="content"])
-corriereadriatico.it,ilgazzettino.it,ilmattino.it,ilmessaggero.it,quotidianodipuglia.it##[subscriptions-section="content-not-granted"]
-||*dive.com/static/js/dist/contentGate.bundle.js$script,~third-party
-.com/static/js/dist/contentGate.bundle.js$script,~third-party,domain=cfo.com|pharmavoice.com|proformative.com|socialmediatoday.com
-profi.de,topagrar.com,wochenblatt.com##+js(ra, class|style, div.paywall-full-content[style])
-profi.de,wochenblatt.com##div.m-paywall__textFadeOut,div[id^="paymentprocess-"]
-||topagrar.com/*/news/$inline-script
-topagrar.com##div.paywall-package
-cz.de,dewezet.de,dieharke.de,dnn.de,gnz.de,goettinger-tageblatt.de,haz.de,kn-online.de,landeszeitung.de,ln-online.de,lvz.de,maz-online.de,ndz.de,neuepresse.de,op-marburg.de,ostsee-zeitung.de,paz-online.de,remszeitung.de,rga.de,rnd.de,saechsische.de,siegener-zeitung.de,szlz.de,sn-online.de,solinger-tageblatt.de,tah.de,torgauerzeitung.de,waz-online.de##+js(set, window.Fusion.globalContent.isPaid, false)
-||bc.*.com/script.js$script,~third-party,domain=centralmaine.com|pressherald.com|sunjournal.com
-||mcclatchy.com/mcc-paywall.js$script,third-party
-/extra/assets/resources/js/zephrIntegration.js$script,~third-party,domain=gva.be|hbvl.be|nieuwsblad.be|standaard.be
-||ndcmediagroep.nl/js/evolok/$script,third-party
-.nl/-api/zh/worker$xmlhttprequest,~third-party
-.com/wp-content/plugins/loader-wp/static/loader.min.js$script,~third-party
-bostonherald.com,denverpost.com,eastbaytimes.com,mercurynews.com,ocregister.com,pressenterprise.com,sandiegouniontribune.com,twincities.com##+js(ra, subscriptions-section, [subscriptions-section="content"])
-bostonherald.com,denverpost.com,eastbaytimes.com,mercurynews.com,ocregister.com,pressenterprise.com,sandiegouniontribune.com,twincities.com##[subscriptions-section="content-not-granted"]
-.de/thenewsbar/config/$xmlhttprequest,~third-party,domain=aerokurier.de|auto-motor-und-sport.de|flugrevue.de|motorradonline.de|womenshealth.de
-staradvertiser.com##div.fade
-staradvertiser.com##+js(ra, style, div#hsa-paywall-content[style], stay)
-staradvertiser.com##+js(rc, overflow-hidden, body.overflow-hidden, stay)
-hawaiitribune-herald.com,thegardenisland.com,westhawaiitoday.com##+js(ra, style, div#single-paywall, stay)
-hawaiitribune-herald.com,thegardenisland.com,westhawaiitoday.com##div#single-login-box,div#single-excerpt
-/temptation/resolve$xmlhttprequest,~third-party,domain=demorgen.be|flair.nl|humo.be|libelle.nl|margriet.nl|parool.nl|trouw.nl|volkskrant.nl
-||temptation.*/temptation.js$script,~third-party,domain=demorgen.be|flair.nl|humo.be|libelle.nl|margriet.nl|parool.nl|trouw.nl|volkskrant.nl
-@@||myprivacy-static.dpgmedia.net/consent.js$script,third-party
-@@/wrapperMessagingWithoutDetection.js$script,~third-party,domain=demorgen.be|flair.nl|humo.be|libelle.nl|margriet.nl|parool.nl|trouw.nl|volkskrant.nl
-||temptation.*/temptation.js$script,~third-party,domain=ad.nl|bd.nl|bndestem.nl|destentor.nl|ed.nl|gelderlander.nl|pzc.nl|tubantia.nl|hln.be
-||temptation.*/rest/$xmlhttprequest,~third-party,domain=ad.nl|bd.nl|bndestem.nl|destentor.nl|ed.nl|gelderlander.nl|pzc.nl|tubantia.nl|hln.be
-crikey.com.au,smartcompany.com.au,themandarin.com.au##+js(cookie-remover, blaize_session)
-auto-swiat.pl,businessinsider.com.pl,forbes.pl,komputerswiat.pl,newsweek.pl,onet.pl##+js(ra, class|style, div.contentPremium[style])
-businessinsider.com.pl##div#content-premium-offer
-||artsenkrant.com/js/responsive/rmgModal.js$script,~third-party
-||artsenkrant.com/js/responsive/rmgPaywall.js$script,~third-party
-artsenkrant.com##div.article-body > p
-artsenkrant.com##+js(ra, class, div.article-body > div)
-artsenkrant.com##+js(rc, locked, body.locked)
-artsenkrant.com,femmesdaujourdhui.be,flair.be,knack.be,kw.be,levif.be,libelle.be##div[id*="wall-modal"]
-artsenkrant.com,femmesdaujourdhui.be,flair.be,knack.be,kw.be,levif.be,libelle.be##+js(ra, class|style, html, stay)
-beleggersbelangen.nl##+js(rc, no-account, div.no-account)
-beleggersbelangen.nl##+js(ra, style, div.content-inner[style])
-beleggersbelangen.nl##div.unlimited-access
-/\.(femmesdaujourdhui|flair|knack|levif|libelle)\.be\/.+\/(\w+-){2,}/$inline-script
-24heures.ch,bazonline.ch,derbund.ch,tagesanzeiger.ch,tdg.ch##+js(cookie-remover, xbc)
-computerweekly.com,lemagit.fr,techtarget.com##+js(rc, paywall, div.paywall, stay)
-computerweekly.com,lemagit.fr,techtarget.com##p#firstP,div#inlineRegistrationWrapper
-||theepochtimes.com/rules/get$xmlhttprequest,~third-party
-||epochbase.com/libs/paywall*.js$script,third-party
-||epochbase.com/rules/get$xmlhttprequest,third-party
-||epochbase.eu/rules/get$xmlhttprequest,third-party
-/\/epoch\.org\.il\/.+\/\d{5,}\//$inline-script,domain=epoch.org.il
-thelocal.at,thelocal.ch,thelocal.com,thelocal.de,thelocal.dk,thelocal.es,thelocal.fr,thelocal.it,thelocal.no,thelocal.se##+js(ra, style, div#articleBody, stay)
-thelocal.at,thelocal.ch,thelocal.com,thelocal.de,thelocal.dk,thelocal.es,thelocal.fr,thelocal.it,thelocal.no,thelocal.se##p#articleBodyForbidden,div.tl-ad-container,div.ml-manual-widget-container
-||guidecent.com^$script,third-party
-||memberstack.com/scripts/v*/memberstack.js$script,third-party
-policorner.ca##div.free-text,div.subscribe-box
-/wp-content/plugins/incognito_dectector/$script,~third-party
-||jeuneafrique.com/cdn-cgi/trace$xmlhttprequest,~third-party
-||assets.guim.co.uk/assets/SignInGate*.js$script,domain=theguardian.com
-theguardian.com##[name="SlotBodyEnd"],div[data-cy="contributions-liveblog-epic"]
-@@||consentmanager.net$script,third-party
-#@#.cmpwrapper
-@@||cookielaw.org^$xmlhttprequest,domain=blick.ch
-@@||sdk.privacy-center.org^$script,third-party
-@@/wrapperMessagingWithoutDetection.js$script,~third-party,domain=handelsblatt.com
-##+js(rc, didomi-popup-open, body.didomi-popup-open)
-||htlbid.com$script,third-party
-||flip-pay.com/*/flip-pay.js$script,third-party,domain=clareecho.ie|thedailymash.co.uk
-clareecho.ie##+js(rc, td-post-content, div.td-post-content)
-##+js(ra, class, div.wkwp-paywall)
-##div.wkwp-paywall-block
-.com/webfiles/*/js/metering.js$script,third-party,domain=hbook.com|libraryjournal.com|slj.com
-20minutes.fr##+js(rc, qiota_reserve, div.qiota_reserve)
-||20minutes.fr/v-ajax/subscribe-modal$xmlhttprequest,~third-party
-aaii.com##+js(rc, fadeout, .fadeout)
-aaii.com##.greybox-signup
-aftenposten.no##div.hyperion-css-1cc2qe9,div[class^="advertory-"],button[aria-controls="summary-details"]
-aftenposten.no##body:style(overflow: auto !important)
-aftenposten.no##+js(ra, class, div#summary-details)
-amboss.com##+js(cookie-remover, ssobma)
-amboss.com##div#optly-remaining-articles-banner,div[class^="InfoBanner_InfoBanner"]
-||anandabazar.com/subscription-assets/js/paywall*.js$script,~third-party
-||anandabazar.com/*/cid/$inline-script
-anandabazar.com##div.paywallouterbox,div.readarticlebox,div.showmorebox
-anandabazar.com##+js(ra, class, div.readmoreouterbox, stay)
-anandabazar.com##+js(ra, id, article#outerboxarticlebox, stay)
-anandabazar.com##+js(ra, class, div.expcontainer, stay)
-||tinypass.com/api/tinypass.min.js$script,domain=arabianbusiness.com
-arabianbusiness.com##+js(ra, class, div.ev-meter-content, stay)
-||arktimes.com/wp-content/plugins/newspack-plugin/dist/memberships-gate-metering.js$script,~third-party
-||atribuna.com.br/assets/js-v*/story.js$script,~third-party
-babi.sh##+js(ra, style, div[style*="filter:blur"], stay)
-babi.sh##+js(ra, style, div[style*="; overflow: hidden"][style*="; height:"], stay)
-babi.sh##div[style="width: 100%; opacity: 1; transform: none;"]
-bisnow.com##+js(ra, style, div.story-container > p[style], stay)
-bisnow.com##div.storyLogin
-bizwest.com##div.fp-paywall
-bizwest.com##+js(ra, class, div.fp-content)
-boredpanda.com##+js(rc, open-list-items, div.open-list-items)
-boredpanda.com##div#show-all-images-block-premium
-brainly.com,brainly.com.br##+js(set-local-storage-item, /^/, $remove$)
-||account.brandonsun.com/api/v*/auth/identify$xmlhttprequest,~third-party
-brusselstimes.com##+js(ra, style, div[style*="height: 0;"], stay)
-businessden.com,richmondbizsense.com##+js(ra, class, div.cp-paywall-user)
-businessden.com,richmondbizsense.com##div#copperpress-paywall
-||nitrocdn.com/*/paywall.$script,domain=capitalaberto.com.br
-cardiologie-pratique.com##+js(ra, class, div.wrap-node, stay)
-cmcmarkets.com##+js(rc, activePaywall, .activePaywall)
-||cnv-medien.de$inline-script
-connexionfrance.com##+js(cookie-remover, /^/)
-connexionfrance.com##div#subscribe-banner
-||diariodonordeste.verdesmares.com.br/js/com.atex.gong.paywall.membership.js$script,~third-party
-divisare.com##div.blocker
-divisare.com##+js(ra, style, body[style], stay)
-dominionpost.com##+js(rc, entry-content, article > div.entry-content)
-elfinancierocr.com##+js(ra, style, div.article-body-wrapper__styled[style])
-elfinancierocr.com##div.post
-epaper.indiatimes.com##div.epaperBlockerWrap
-||eviemagazine.com/api/trpc/post.paywall$xmlhttprequest,~third-party
-expressandstar.com,shropshirestar.com##+js(set, window.Fusion.globalContent.paywallStatus, false)
-||fokus.se/app/plugins/sesamy-fpg/assets/js/sesamy-fpg.js$script,~third-party
-forbes.sk##+js(ra, style, div.post-content-soft-paywall, stay)
-forbes.sk##div#custom-html-locker
-||golf.com/wp-content/themes/golf/compiled/js/wsumApp.js$script,~third-party
-gothamist.com##+js(rc, leadin, div.leadin, stay)
-gothamist.com##div.wall-wrapper
-hartfordbusiness.com##+js(ra, style, div.expandable-paywall-premium-content[style], stay)
-hartfordbusiness.com##div.paywall-container
-hcn.org##+js(ra, content, meta[name="UID"])
-heatmap.news##+js(ra, style, div.body-description, stay)
-heatmap.news##div.regwall-container
-inman.com##+js(rc, paywalled-block, .paywalled-block)
-inman.com##+js(ra, class, div.entry-content-inner)
-inman.com##div.content-wrap > div:not([class]):style(margin: 5% !important)
-inman.com##.ism-article-block
-||cloudfront.net/imonkey-blog-*.min.js$script,domain=insidermonkey.com
-ipsoa.it##+js(ra, style, div.paywall)
-||jerseyeveningpost.com$inline-script
-||jewishinsider.com/wp-content/themes/jewish-insider/js/owl.carousel.min.js$script,~third-party
-||jornaldocomercio.com/*/json/paywall.json$xmlhttprequest,~third-party
-jornaljoca.com.br##+js(acis, $, paywall)
-kommersant.ru##+js(rc, doc--regwall, article.doc--regwall, stay)
-kommersant.ru##section.regwall
-kunststoffe.de,qz-online.de##+js(ra, style, div[style^="filter: blur"], stay)
-kunststoffe.de,qz-online.de##dialog#paywall-dialog
-||lapost.com$inline-script
-lapost.com##+js(ra, style, div.article-content, stay)
-||lasvegasadvisor.com/opt/*.js$script,~third-party
-||lasvegasadvisor.com/js/access.min.js$script,~third-party
-lavialibera.it##+js(ra, class, div.text-preview)
-lavialibera.it##div.save_modal
-legalbites.in##+js(ra, class, div.hide.paywall-content)
-legalbites.in##div#subscription_paid_message,div.restricted_message > div.story
-lepetitjournal.net##.message-restricted-woocommerce
-lepetitjournal.net##+js(rc, excerpt, div.excerpt)
-lydogbillede.dk,lydogbilde.no##+js(rc, thecontent, div.thecontent)
-lydogbillede.dk,lydogbilde.no##+js(ra, style, div#MoreLink_content-container[style])
-lydogbillede.dk,lydogbilde.no##div.paywallbox,div#MoreLink_fade-out-div
-marketnews.com##+js(ra, class, div.body-description)
-||cloudfront.net/js/prometeo-media/$script,domain=menorca.info|ultimahora.es
-meritnation.com##.view-full-answer 
-meritnation.com##+js(rc, maxHeight75px, div.exp_content.maxHeight75px)
-||moscout.com$inline-script
-museumsassociation.org##+js(rc, paywall, body.paywall)
-museumsassociation.org##+js(ra, style, body[style], stay)
-museumsassociation.org##div#paywall-wrapper,div.advertising
-||musicomh.com/wp-content/*/bundle.js$script,~third-party
-nacion.com##+js(ra, style, div.article-body-wrapper__styled[style], stay)
-nacion.com##div.post
-narcity.com##+js(ra, style, div.body-description[style], stay)
-narcity.com##div#login-wall,div#overlay,div.brid-container,div.brandsnippet-article,div[class$='ad-wrapper']
-||newbostonpost.com/*/paywall/js/main.js$script,~third-party
-newoxfordreview.org##+js(rc, not-viewable, div.not-viewable)
-nu.nl##+js(rc, authorized-content, div.authorized-content, stay)
-nu.nl##+js(rc, semi-authorized-content, div.semi-authorized-content, stay)
-nu.nl##article#LOGIN
-||odt.co.nz/bwtw/scripts/tw.js$script,~third-party
-odt.co.nz##+js(ra, property, div[property="content:encoded"])
-||opovo.com.br/*/js/auth/auth_new_menu.min.js$script,~third-party
-||pebmed.com.br/wp-content/*/paywall/dist/js/app.js$script,~third-party
-||perspectivemedia.com/wp-admin/admin-ajax.php$xmlhttprequest,~third-party
-perspectivemedia.com##div.hustle-ui
-popbitch.com##+js(ra, class, div[class*="-premium"])
-psypost.org##+js(cookie-remover, issuem_lp)
-publishersweekly.com##+js(ra,class|style,div#contentdiv.loggedInOnly,stay)
-publishersweekly.com##div#contentdiv.loggedOutOnly
-||rdhmag.com$inline-script
-rockdelux.com##+js(ra, class|style, body, stay)
-rockdelux.com##+js(ra, style, div#body, stay)
-rockdelux.com##div.bg-paywall
-rotowire.com##+js(ra, class, div.pw-content)
-rotowire.com##div.paywall-full,div.article-preview-fader
-||serenitymarkets.com/wp-content/themes/Divi-child/assets/js/encriptar.js$script,~third-party
-serenitymarkets.com##+js(ra, class, div.blur_content, stay)
-||shrm.org/*/js/paywall*.js$script,~third-party
-skepticalinquirer.org##+js(rc, google-bot, div.google-bot, stay)
-solarserver.de##+js(ra, style, div.paywall)
-solarserver.de##+js(ra, class, div.paywall-blurred)
-solarserver.de##div.paywall-box
-/\.solicitorsjournal\.com\/_next\/static\/chunks\/\d.+\.js/$script,domain=solicitorsjournal.com,~third-party
-||southernstar.ie/js/tollbridge.js$script,~third-party
-speakup.it##div.paywall-container
-||spectrejournal.com/wp-content/plugins/elementor/*/dialog.min.js$script,~third-party
-splainer.in##+js(rc, hide-section, .hide-section)
-splainer.in##.subscription-prompt
-||splinter.com/wp-content/themes/pastemagazine/js/pm_custom.js$script,~third-party
-standcolumbia.org##+js(ra, class, div.stu-lock-content, stay)
-standcolumbia.org##div.stu-blur-overlay
-stateaffairs.com##div.c-memberships-message
-stateaffairs.com##+js(rc, access-restricted, body.access-restricted)
-stockunlock.com##div[class*="-root"][class*="css-"]:style(filter: none !important; pointer-events: auto !important)
-stockunlock.com##div.css-coxdc8
-strangematters.coop##+js(cookie-remover, pmpro_lpv_count)
-subscriptioninsider.com##+js(rc, dialog-prevent-scroll, body.dialog-prevent-scroll, stay)
-subscriptioninsider.com##div.dialog-widget
-/\.subscriptioninsider\.com\/.+\/(\w+-){3,}/$inline-script,domain=subscriptioninsider.com
-thecore.in##+js(ra, class, div.paywall-content)
-thecore.in##div.story,div#subscription_paid_message,div#footer_login_wall
-thecountersignal.com##+js(ra, class, body.single div.elementor-widget-container)
-||thedriftmag.com/wp-content/plugins/drift-paywall-plugin/$script,~third-party
-theindianalawyer.com##+js(rc, restricted-non-subscriber, article.restricted-non-subscriber)
-theindianalawyer.com##+js(ra, style, article-content>p)
-theindianalawyer.com##div#vue-growler,div#js-modal
-thejc.com##+js(ra, class, div.paywall, stay)
-thejc.com##div.poool-widget
-||thenationalpulse.com/wp-content/*/assets/js/national-pulse.js$script,~third-party
-||theschooloflife.com/app/plugins/*/woocommerce.min.js$script,~third-party
-aap.thestreet.com##+js(rc, is-paywalled, body.is-paywalled)
-realmoney.thestreet.com##+js(cookie-remover, /^PWT/)
-||thetablet.org$inline-script
-thetablet.org##+js(rc, gated-content, body.gated-content)
-tidningenridsport.se##+js(ra, class|style, div.mctos)
-tidningenridsport.se##+js(rc, cli-barmodal-open, body.cli-barmodal-open)
-tidningenridsport.se##div.locked
-timeslive.co.za##+js(set, window.Fusion.globalContent.content_restrictions, {})
-trailsoffroad.com##.paywall
-||zeitzeichen.net/sites/default/files/js/js_*.js$script,~third-party
-||ampproject.org/*/amp-access-$script,domain=~cambridge.org|~cmjornal.pt
-||ampproject.org/*/amp-subscriptions-$script
-@@||ampproject.org/v0/amp-consent-$script
-artnet.com,bostonglobe.com,dallasnews.com,latimes.com,sandiegouniontribune.com##+js(ra, subscriptions-section, [subscriptions-section="content"])
-artnet.com,bostonglobe.com,dallasnews.com,latimes.com,sandiegouniontribune.com##[subscriptions-section="content-not-granted"]
-digiday.com,inc42.com,indianexpress.com,indiatoday.in,mid-day.com,telegraph.co.uk##+js(ra, amp-access-hide, [amp-access][amp-access-hide])
-amp.elle.fr,challenges.fr,sciencesetavenir.fr##+js(ra, amp-access-hide, [amp-access][amp-access-hide])
-dhnet.be,lalibre.be,lavenir.net,moustique.be##+js(rc, is-preview, div.preview)
-dhnet.be,lalibre.be,lavenir.net,moustique.be##+js(rc, is-hidden, div.is-hidden)
-adelaidenow.com.au,cairnspost.com.au,codesports.com.au,couriermail.com.au,dailytelegraph.com.au,geelongadvertiser.com.au,goldcoastbulletin.com.au,heraldsun.com.au,ntnews.com.au,theaustralian.com.au,thechronicle.com.au,themercury.com.au,townsvillebulletin.com.au,weeklytimesnow.com.au##+js(ra, subscriptions-section, [subscriptions-section="content"])
-adelaidenow.com.au,cairnspost.com.au,codesports.com.au,couriermail.com.au,dailytelegraph.com.au,geelongadvertiser.com.au,goldcoastbulletin.com.au,heraldsun.com.au,ntnews.com.au,theaustralian.com.au,thechronicle.com.au,themercury.com.au,townsvillebulletin.com.au,weeklytimesnow.com.au##[subscriptions-section="content-not-granted"]
-corriere.it,ilfattoquotidiano.it,ilfoglio.it##+js(ra, subscriptions-section, [subscriptions-section="content"])
-corriere.it,ilfattoquotidiano.it,ilfoglio.it##[subscriptions-section="content-not-granted"]
-ilgiorno.it,ilrestodelcarlino.it,iltelegrafolivorno.it,lanazione.it,quotidiano.net##+js(ra, amp-access-hide, [amp-access][amp-access-hide])
-amp.bnd.com,amp.charlotteobserver.com,amp.elnuevoherald.com,amp.fresnobee.com,amp.kansas.com,amp.kansascity.com,amp.kentucky.com,amp.mcclatchydc.com,amp.miamiherald.com,amp.newsobserver.com,amp.sacbee.com,amp.star-telegram.com,amp.thestate.com,amp.tri-cityherald.com##+js(ra, subscriptions-section, [subscriptions-section="content"])
-amp.bnd.com,amp.charlotteobserver.com,amp.elnuevoherald.com,amp.fresnobee.com,amp.kansas.com,amp.kansascity.com,amp.kentucky.com,amp.mcclatchydc.com,amp.miamiherald.com,amp.newsobserver.com,amp.sacbee.com,amp.star-telegram.com,amp.thestate.com,amp.tri-cityherald.com##[subscriptions-section="content-not-granted"]
-amp.sacbee.com##+js(ra, subscriptions-action, div[subscriptions-action][subscriptions-display="NOT data.hasError"])
-amp.brisbanetimes.com.au,amp.smh.com.au,amp.theage.com.au,amp.watoday.com.au##+js(ra, subscriptions-section, [subscriptions-section="content"])
-amp.brisbanetimes.com.au,amp.smh.com.au,amp.theage.com.au,amp.watoday.com.au##[subscriptions-section="content-not-granted"]
-amp.elmundo.es,amp.expansion.com,amp.marca.com,elespanol.com,em.com.br,folha.uol.com.br,gazetadopovo.com.br##+js(ra, subscriptions-section, [subscriptions-section="content"])
-amp.elmundo.es,amp.expansion.com,amp.marca.com,elespanol.com,em.com.br,folha.uol.com.br,gazetadopovo.com.br##[subscriptions-section="content-not-granted"]
-eldiario.es,elespectador.com,elpais.com,estadao.com.br,infolibre.es,sabado.pt##+js(ra, amp-access-hide, [amp-access][amp-access-hide])
-abc.es,canarias7.es,diariosur.es,diariovasco.com,elcomercio.es,elcorreo.com,eldiariomontanes.es,elnortedecastilla.es,hoy.es,ideal.es,larioja.com,lasprovincias.es,laverdad.es,lavozdigital.es##+js(ra, amp-access-hide, [amp-access][amp-access-hide])
-abc.es##+js(ra, id, body#top)
+// ==UserScript==
+// @name            Bypass Paywalls Clean - de/at/ch
+// @version         4.2.2.8
+// @description     Bypass Paywalls of news sites
+// @author          magnolia1234
+// @downloadURL     https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters/blob/raw?file=userscript/bpc.de.user.js
+// @updateURL       https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters/blob/raw?file=userscript/bpc.de.user.js
+// @homepageURL     https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters
+// @supportURL      https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters
+// @license         MIT; https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters/blob/raw?file=LICENSE
+// @noframes
+// @match           *://*.de/*
+// @match           *://*.beobachter.ch/*
+// @match           *://*.blick.ch/*
+// @match           *://*.handelsblatt.com/*
+// @match           *://*.handelszeitung.ch/*
+// @match           *://*.kurier.at/*
+// @match           *://*.nzz.ch/*
+// @match           *://*.profil.at/*
+// @match           *://*.schweizermonat.ch/*
+// @match           *://*.themarket.ch/*
+// @match           *://*.tt.com/*
+// @match           *://*.vn.at/*
+// @match           *://*.vol.at/*
+// @match           *://*.wochenblatt.com/*
+// @connect         archive.fo
+// @connect         archive.is
+// @connect         archive.li
+// @connect         archive.md
+// @connect         archive.ph
+// @connect         archive.vn
+// @connect         funkemedien.de
+// @grant           GM.xmlHttpRequest
+// @require         https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters/blob/raw?file=userscript/bpc_func.js
+// ==/UserScript==
+(function() {
+  //'use strict';
+if (matchDomain('automobilwoche.de')) {
+  function automobilwoche_main() {
+    if (window.Fusion) {
+      window.Fusion.globalContent._id = 0;
+      window.Fusion.globalContent.content_restrictions = {};
+    }
+  }
+  window.setTimeout(function () {
+    insert_script(automobilwoche_main);
+  }, 100);
+}
+window.setTimeout(function () {
+var de_funke_medien_domains = ['abendblatt.de', 'braunschweiger-zeitung.de', 'harzkurier.de', 'ikz-online.de', 'morgenpost.de', 'nrz.de', 'otz.de', 'thueringer-allgemeine.de', 'tlz.de', 'waz.de', 'wp.de', 'wr.de'];
+var de_ippen_media_domains = ['fr.de', 'merkur.de', 'ovb-online.de'];
+var de_lv_domains = ['profi.de', 'wochenblatt.com'];
+var de_madsack_domains = ['haz.de', 'kn-online.de', 'ln-online.de', 'lvz.de', 'maz-online.de', 'neuepresse.de', 'ostsee-zeitung.de', 'rnd.de', 'saechsische.de'];
+var de_motor_presse_domains = ['aerokurier.de', 'auto-motor-und-sport.de', 'flugrevue.de', 'motorradonline.de', 'womenshealth.de'];
+var de_rp_medien_domains = ['ga.de', 'rp-online.de', 'saarbruecker-zeitung.de', 'volksfreund.de'];
+var de_vrm_domains = ['allgemeine-zeitung.de', 'echo-online.de', 'wiesbadener-kurier.de'];
+var de_vrm_custom_domains = ['buerstaedter-zeitung.de', 'hochheimer-zeitung.de', 'lampertheimer-zeitung.de', 'lauterbacher-anzeiger.de', 'main-spitze.de', 'mittelhessen.de', 'oberhessische-zeitung.de', 'wormser-zeitung.de'];
+if (matchDomain('aachener-zeitung.de')) {
+  let url = window.location.href;
+  getArchive(url, 'div[data-testid="paywall-position-popover"]', '', 'article');
+  let shade = document.querySelector('div.paywalled-article');
+  if (shade)
+    shade.classList.remove('paywalled-article');
+  let noscroll = document.querySelectorAll('html[class], body[class]');
+  for (let elem of noscroll)
+    elem.removeAttribute('class');
+  let ads = 'section[data-theme-sponsored-content]';
+  hideDOMStyle(ads);
+else if (matchDomain('aerztezeitung.de')) {
+  let paywall = document.querySelector('div.AZLoginModule');
+  if (paywall) {
+    removeDOMElement(paywall);
+    let json_script = getArticleJsonScript();
+    if (json_script) {
+      let json = JSON.parse(json_script.text);
+      if (json) {
+        let json_text = json.articleBody;
+        let content = document.querySelector('p.intro');
+        if (json_text && content) {
+          let article_new = document.createElement('p');
+          article_new.innerText = json_text;
+          content.after(article_new);
+        }
+      }
+else if (matchDomain('automobilwoche.de')) {
+  let banners = 'div#piano-paywall-container';
+  hideDOMStyle(banners);
+else if (matchDomain(['beobachter.ch', 'handelszeitung.ch'])) {
+  let paywall = document.querySelector('div#piano-inlined');
+    let fade = document.querySelector('div.article-body > div.paywall-wrapper-with-print-info');
+    removeDOMElement(paywall, fade);
+    let json_script = document.querySelector('script#hydrationdata');
+      try {
+        let json = JSON.parse(json_script.text);
+        if (json) {
+          let url_id = json_script.text.includes('"gcid":"') ? json_script.text.split('"gcid":"')[1].split('"')[0] : '';
+          if (url_id && !window.location.pathname.endsWith(url_id))
+            refreshCurrentTab();
+          let pars = json.state;
+          let paragraphs = document.querySelectorAll('div.paragraph');
+          let article = paragraphs[0];
+          if (article) {
+            article.setAttribute('class', 'paragraph text-paragraph');
+            for (let paragraph of paragraphs)
+              paragraph.innerHTML = '';
+            let parser = new DOMParser();
+            let img_first = true;
+            let img_use = false;
+            let img_caption;
+            for (let par in pars) {
+              let par_elem = pars[par];
+              let elem = document.createElement('div');
+              elem.style = 'font-size: 1.7rem; margin: 25px;';
+              let sub_elem;
+              if (par_elem.__typename === 'TextParagraph' && par_elem.text) {
+                let content_new = parser.parseFromString('<div>' + par_elem.text + '</div>', 'text/html');
+                sub_elem = content_new.querySelector('div');
+              } else if (par_elem.__typename === 'EmbedParagraph' && par_elem.embedCode) {
+                let content_new = parser.parseFromString('<div>' + par_elem.embedCode + '</div>', 'text/html');
+                let iframe = sub_elem.querySelector('iframe[width]');
+                if (iframe) {
+                  let ratio = iframe.width / (mobile ? 320 : 640);
+                  iframe.width = iframe.width / ratio;
+                  iframe.height = iframe.height / ratio;
+                }
+              } else if (par_elem.__typename === 'ImageFile') {
+                if (par_elem.origin) {
+                  if (!img_first) {
+                    let img_attrib = {alt: par_elem.alt};
+                    if (par_elem.width) {
+                      let ratio = par_elem.width / (mobile ? 320 : 640);
+                      img_attrib.width = par_elem.width / ratio;
+                      img_attrib.height = par_elem.height / ratio;
+                    }
+                    sub_elem = makeFigure(par_elem.origin, '_', img_attrib);
+                    img_caption = sub_elem.querySelector('figcaption');
+                    img_use = true;
+                  } else
+                    img_first = false;
+              } else if (par_elem.__typename === 'Image') {
+                if (img_use && img_caption && par_elem.credit)
+                  img_caption.after('Quelle: ', par_elem.credit);
+              } else if (par_elem.__typename === 'ImageParagraph') {
+                if (img_use && img_caption && par_elem.caption)
+                  img_caption.innerText = par_elem.caption.replace(/(<\/?[^>]+>)/g, '');
+              } else if (par_elem.__typename === 'MinistageParagraph') {
+                if (par_elem.ministage && par_elem.ministage.headline) {
+                  sub_elem = document.createElement('p');
+                  sub_elem.append(par_elem.ministage.headline, ' - ' + par_elem.ministage.lead);
+                  if (par_elem.ministage.link) {
+                    let sub_link = document.createElement('a');
+                    sub_link.href = par_elem.ministage.link.path;
+                    sub_link.innerText = par_elem.ministage.link.label;
+                    sub_elem.append(document.createElement('br'), sub_link);
+                  }
+              } else if (par_elem.__typename === 'ListicleItemParagraph') {
+                if (par_elem.title &&par_elem.text && par_elem.link && par_elem.link.path) {
+                  sub_elem = document.createElement('a');
+                  sub_elem.href = par_elem.link.path;
+                  sub_elem.innerText = par_elem.title + ' - ' + par_elem.text.replace(/(<\/?[^>]+>)/g, '');
+              } else if (par_elem.__typename === 'Product') {
+                if (par_elem.title && par_elem.link && par_elem.link.path) {
+                  sub_elem.innerText = (par_elem.shortTitle ? par_elem.shortTitle + ' - ' : '') + par_elem.title;
+              } else if (!['Article', 'Author', 'BlockquoteParagraph', 'Channel', 'InfoBoxParagraph', 'LandingPage', 'Query', 'TeaserParagraph', 'TeaserStageParagraph'].includes(par_elem.__typename)) {
+                console.log(par_elem);
+              }
+              if (sub_elem) {
+                elem.appendChild(sub_elem);
+                article.appendChild(elem);
+            }
+          }
+      } catch (err) {
+        console.log(err);
+  }, 1000);
+  let ads = 'div.ad-wrapper, div[id^="apn-ad-slot-"], div[class^="piano-article-aside"]';
+else if (matchDomain('berliner-zeitung.de')) {
+  getArchive(url, 'div[class^="soft-paywall_wrapper_"]', '', 'div#articleBody');
+  let ads = 'div[class^="traffective_"], div[class^="article_billboard-"], div[class*="_ad_"], div[class^="outbrain_"], div[id^="qmn-ad-"], div[style]:empty';
+else if (matchDomain('bild.de')) {
+  func_post = function () {
+    if (mobile) {
+      let lazy_images = document.querySelectorAll('figure img[loading="lazy"][style]');
+      for (let elem of lazy_images) {
+        elem.style = 'width: 95%; margin: 10px;';
+        elem.parentNode.removeAttribute('style');
+      let header = document.querySelector('article > h2 > span:last-child');
+      if (header)
+        header.style = 'margin: 10px;';
+      let content = document.querySelector('article time ~ div');
+      if (content)
+        content.style = 'margin: 10px;';
+    let div_empty = document.querySelectorAll('div[style]');
+    for (let elem of div_empty)
+      if (!elem.innerText.length)
+        removeDOMElement(elem);
+    let article = document.querySelector('main > article');
+    if (article && article.innerText.length < 1000)
+      header_nofix('h2', '', 'BPC > no archive-fix');
+  getArchive(url, 'div.offer-module', '', 'article');
+else if (matchDomain('blick.ch')) {
+  let ads = 'aside[class*="slot-code"], aside[class*="_teaser_"][class*="slot-code"]';
+else if (matchDomain('boersen-zeitung.de')) {
+    let paywall = document.querySelector('storefront-section#paywall');
+    if (paywall) {
+      removeDOMElement(paywall);
+      let url = window.location.href;
+      replaceDomElementExt(url, false, false, 'article');
+  }, 2000);
+else if (matchDomain('freitag.de')) {
+  let paywall = document.querySelector('section.qa-paywall');
+    let related = document.querySelector('div.c-teaser-plus-related--paywall');
+    if (related)
+      related.classList.remove('c-teaser-plus-related--paywall');
+    let article = document.querySelector('div.bo-article-text');
+    if (article) {
+      let json_script = getArticleJsonScript();
+      if (json_script) {
+          let json_text = breakText_headers(json.articleBody);
+          let pars = json_text.split(/\n\n/g);
+          if (json_text) {
+            article.innerHTML = '';
+            for (let par of pars) {
+              if (!par.startsWith('Placeholder ')) {
+                let par_new = document.createElement('p');
+                par_new.innerText = par;
+                article.appendChild(par_new);
+      } else {
+        let hidden_article = document.querySelector('div.o-paywall');
+        if (hidden_article) {
+          let par_first = true;
+          let pars = breakText_headers(hidden_article.innerText).split(/\n\n/g);
+          for (let par of pars) {
+            let par_new = document.createElement('p');
+            let overlap = '';
+            if (par_first) {
+              let intro = article.querySelectorAll('p');
+              let intro_last = intro[intro.length - 1];
+              par = par.trim();
+              overlap = findOverlap(intro_last.innerText, par);
+              if (overlap)
+                intro_last.innerText = intro_last.innerText.replace(new RegExp(overlap + '$'), '') + par;
+              par_first = false;
+            if (!overlap && !par.startsWith('Placeholder ')) {
+              par_new.innerText = par;
+              article.appendChild(par_new);
+else if (matchDomain('handelsblatt.com')) {
+  let paywall = document.querySelector('app-paywall');
+    let article = document.querySelector('article');
+      article.after(googleSearchToolLink(url));
+      header_nofix('article', '', 'BPC > refresh page');
+  window.localStorage.removeItem('HB.METERING');
+  let overlay = document.querySelector('div[id^="sp_message_container_"]');
+  removeDOMElement(overlay);
+  let noscroll = document.querySelector('html[class]');
+  if (noscroll)
+    noscroll.removeAttribute('class');
+else if (matchDomain('heise.de')) {
+    header_nofix('article', paywall_sel, 'BPC > no archive-fix');
+    let dark_mode = document.querySelector('html.dark');
+    if (dark_mode)
+      dark_mode.classList.remove('dark');
+      document.querySelectorAll('figure img[loading="lazy"][style]').forEach(e => e.style = 'width: 95%;');
+  let paywall_sel = 'a-gift:has(div.paywall-delimiter)';
+  getArchive(url, paywall_sel, '', 'article');
+  let ads = 'div.ad-ldb-container, div.inread-cls-reduc, aside.img-ad';
+else if (matchDomain('jacobin.de')) {
+  let paywall = pageContains('h3.m-auto', 'Dieser Artikel ist nur mit Abo zugänglich.');
+  if (paywall.length) {
+    let slash = document.querySelector('div.slash');
+    removeDOMElement(paywall[0].parentNode, slash);
+    let json_script = document.querySelector('script#__NEXT_DATA__');
+        if (json && json.props.pageProps.sections && json.props.pageProps.sections[1].content) {
+          let url_next = json.query.slug;
+          if (url_next && !window.location.pathname.includes(url_next))
+          let pars = json.props.pageProps.sections[1].content;
+          let first_par = document.querySelector('body > div#__next p.bodyText');
+          if (first_par) {
+            let par_class = first_par.getAttribute('class');
+            let article = first_par.parentNode;
+            if (article) {
+              let add_par = false;
+              for (let par of pars) {
+                if (!add_par) {
+                  if (par.type === 'paywall')
+                    add_par = true;
+                } else {
+                  if (par.text) {
+                    let elem_type = 'p';
+                    let elem_class = par_class;
+                    let elem_style;
+                    if (['paragraph', 'quote'].includes(par.type)) {
+                      if (par.type === 'quote')
+                        elem_style = 'font-size: 36px; font-weight: bold;';
+                    } else if (par.type === 'header') {
+                      elem_type = 'h2';
+                      elem_class = 'content-element font-headline h2 my-1em';
+                    let content = par.text.replace(/&nbsp;/g, '');
+                    let parser = new DOMParser();
+                    let content_new = parser.parseFromString('<' + elem_type + ' class="' + elem_class + (elem_style ? '" style="' + elem_style : '') + '">' + content + '</' + elem_type + 'p>', 'text/html');
+                    article.appendChild(content_new.querySelector(elem_type));
+                    console.log(par);
+              let author_footer = article.querySelector('div.content-element > div > h3');
+              if (author_footer)
+                article.appendChild(author_footer.parentNode.parentNode);
+else if (matchDomain('krautreporter.de')) {
+  let paywall = document.querySelector('.js-article-paywall');
+    window.setTimeout(function () {
+      let paywall_divider = document.querySelector('.js-paywall-divider');
+      let steady_checkout = document.querySelector('#steady-checkout');
+      removeDOMElement(paywall_divider, steady_checkout);
+      let blurred = document.querySelectorAll('.blurred');
+      for (let elem of blurred)
+        elem.classList.remove('blurred', 'json-ld-paywall-marker', 'hidden@print');
+    }, 500);
+else if (domain = matchDomain(['ksta.de', 'rundschau-online.de'])) {
+  setCookie('anon_cookie', '', domain, '/', 0);
+  function unhide_article(node) {
+    removeDOMElement(node);
+    let article = document.querySelector('div[data-article-content][style]');
+    if (article)
+      article.removeAttribute('style');
+  waitDOMElement('div[data-type="paywall"]', 'DIV', unhide_article, true);
+  let banners = 'div.dm-slot, div.dm-zephr-banner';
+else if (matchDomain('kurier.at')) {
+  let paywall = document.querySelector('div#cfs-paywall-container');
+    let div_hidden = document.querySelector('div.paywall');
+    if (div_hidden) {
+      div_hidden.classList.remove('paywall');
+      div_hidden.removeAttribute('style');
+  let ads = 'div[data-ad], div[data-outbrain]';
+else if (matchDomain(['mittelbayerische.de', 'pnp.de'])) {
+  getArchive(url, 'div.paywall-layer', '', 'div#article-body');
+  let ads = 'div.d-sm-block';
+else if (matchDomain('mopo.de')) {
+  getJsonUrl('div#paywall', '', 'div.paywall-fade');
+else if (matchDomain('motorradonline.de')) {
+  if (window.location.pathname.endsWith('/amp/'))
+    ampToHtml();
+else if (matchDomain(['noz.de', 'shz.de'])) {
+    let podcasts = document.querySelectorAll('div > div[allow][old-src]');
+    for (let elem of podcasts) {
+      let iframe = document.createElement('iframe');
+      iframe.src = elem.getAttribute('old-src');
+      iframe.style = 'width: 100%; height: 300px;';
+      elem.parentNode.replaceChild(iframe, elem);
+      let lazy_images = document.querySelectorAll('div > figure > picture > img[loading="lazy"][style]');
+        elem.style = 'width: 95%;';
+        elem.parentNode.parentNode.parentNode.removeAttribute('style');
+  getArchive(url, 'div.paywall', '', 'article');
+  let ads = 'div.ad_label';
+else if (matchDomain('nw.de')) {
+  let paywall = document.querySelector('div#paywall');
+    paywall.removeAttribute('id');
+        let json_text = parseHtmlEntities(json.articleBody.replace(/\n/g, '\n\n').replace(/\.responsive[-@%{}()\.:;\w\s]+}\s?}/g, ''));
+        let article = paywall.querySelector('div[class*="paywall-overlay"]');
+        if (json_text && article)
+          article.innerText = json_text;
+else if (matchDomain('nwzonline.de')) {
+  let ads = 'div.adslot';
+else if (matchDomain(['nzz.ch', 'themarket.ch'])) {
+  let fade = document.querySelectorAll('.nzzinteraction');
+  for (let elem of fade)
+    elem.classList.remove('nzzinteraction');
+  let fade_new = document.querySelector('div.barrier');
+  if (fade_new)
+    fade_new.removeAttribute('class');
+  let ads = 'div.resor';
+else if (matchDomain('philomag.de')) {
+  let paywall = document.querySelector('div[id^="block-paywall"]');
+        let json_text = json.articlebody.replace(/%paywall%/g, '').replace(/(\\r)?\\n/g, '<br><br>');
+        let content = document.querySelector('div.content-center > div.description');
+          content.innerHTML = '';
+          content.appendChild(article_new);
+else if (matchDomain('profil.at')) {
+  let paywall = document.querySelector('div.paywall');
+    paywall.removeAttribute('class');
+    paywall.removeAttribute('style');
+    let fade = 'div#cfs-paywall-container';
+    hideDOMStyle(fade);
+  let overlay = 'div.consentOverlay';
+  hideDOMStyle(overlay, 2);
+else if (matchDomain('schweizermonat.ch')) {
+  getJsonUrl('div.entry-paywall-login', '', 'div.entry-main > div.entry__post-content');
+else if (matchDomain('spektrum.de')) {
+  let paywall = document.querySelector('article.pw-premium');
+  if (paywall)
+    paywall.classList.remove('pw-premium');
+else if (matchDomain(['spiegel.de', 'manager-magazin.de'])) {
+    let failed_iframes = document.querySelectorAll('div > div[x-show="!iframeIsLoaded"]');
+    for (let elem of failed_iframes)
+      hideDOMElement(elem.parentNode);
+    let body_dark = document.querySelector('body[class*="dark:"]');
+    if (body_dark)
+      removeClassesByPrefix(body_dark, 'dark:');
+    let charts = document.querySelectorAll('section div[x-data*="{isLoaded:"]');
+    for (let elem of charts)
+      elem.style.height = elem.offsetHeight + 'px';
+      let lazy_images = document.querySelectorAll('picture img[loading="lazy"][style]');
+      for (let elem of lazy_images)
+    header_nofix('article', 'svg[id*="-plus-paywall-"]', 'BPC > no archive-fix');
+  getArchive(url, 'div[data-area="paywall"]', '', 'article');
+else if (matchDomain('springermedizin.de')) {
+  let paywall = document.querySelector('div#pay-wall');
+        let article = document.querySelector('div > p.intro--paragraph');
+        if (json_text && article) {
+          article.parentNode.replaceChild(article_new, article);
+else if (matchDomain('stern.de')) {
+    header_nofix(link_sel, paywall_sel, 'BPC > no archive-fix');
+      let article = document.querySelector(article_src_sel);
+      if (article) {
+        let lazy_images = article.querySelectorAll('figure > img[loading="lazy"][style]');
+        for (let elem of lazy_images) {
+          elem.style = 'width: 95%;';
+          elem.parentNode.style = 'margin-bottom: 20px';
+          let caption = elem.parentNode.querySelector('figcaption');
+          if (caption)
+            caption.style = 'width: 95%;';
+        let article_recs = article.querySelectorAll('article');
+        for (let elem of article_recs)
+        let article_opulent = document.querySelector('div.page-opulent__body-inner > div > div');
+        if (article_opulent)
+          article_opulent.removeAttribute('style');
+    let charts = document.querySelectorAll('ws-socialwidget > slot > slot[slot="content"]');
+    for (let chart of charts) {
+      if (chart.innerText.includes('src="')) {
+        let chart_url = chart.innerText.split('src="')[1].split('"')[0];
+        let iframe = document.createElement('iframe');
+        iframe.src = chart_url;
+        iframe.style = "width: 100%; height: 600px; border: none;";
+        let container = chart.parentNode.parentNode;
+        container.parentNode.replaceChild(iframe, container);
+  let paywall_sel = 'ws-paywall';
+  let article_sel = 'div.article__body';
+  let article_src_sel = 'main > article > div:last-child';
+  let link_sel = 'div.page__content-inner, div.page-opulent';
+  getArchive(url, paywall_sel, '', article_sel, '', article_src_sel, link_sel);
+else if (matchDomain('sueddeutsche.de')) {
+  if (matchDomain('sz-magazin.sueddeutsche.de')) {
+    func_post = function () {
+      header_nofix('main', 'div#sz-paywall', 'BPC > no archive-fix');
+    getArchive(url, 'div.articlemain__inner--reduced', {rm_class: 'articlemain__inner--reduced'}, 'main');
+  } else if (window.location.pathname.startsWith('/projekte/artikel/')) {
+      let lazy_images = document.querySelectorAll('img[loading="lazy"][style*="min-width:"]');
+        elem.style = 'width: 80%; margin: auto;';
+      let sticky = document.querySelectorAll('div > div > div[old-position="sticky"]');
+      for (let elem of sticky) {
+        let div_hidden = elem.parentNode.parentNode.querySelector('div[style^="display:none;"]');
+        if (div_hidden)
+          div_hidden.removeAttribute('style');
+        removeDOMElement(elem.parentNode);
+      if (intro) {
+        let intro_old = document.querySelector(intro_sel);
+        if (intro_old && intro_old.parentNode)
+          intro_old.parentNode.replaceChild(intro, intro_old);
+    let intro_sel = 'section#module-0';
+    let intro = document.querySelector(intro_sel);
+    getArchive(url, 'div.offer-page', '', 'main');
+  } else {
+    let paywall = document.querySelector('head > meta[content="locked"]');
+      let article_sel = 'div[itemprop="articleBody"]';
+      let article = document.querySelector(article_sel);
+        let json_script = document.querySelector('script[data-hydration-props-component-name="ArticleBodyDDRum"]');
+        if (json_script) {
+          try {
+            let json = JSON.parse(decodeURIComponent(json_script.text));
+            if (json) {
+              let pars = json.uiArticleContent;
+              if (pars.length) {
+                article.innerHTML = '';
+                addStyle(article_sel + ' p {margin-bottom: 32px;}');
+              let parser = new DOMParser();
+                let elem = document.createElement('p');
+                if (['paragraph', 'datawrapper', 'youtube'].includes(par.component)) {
+                  if (par.content && par.content.html) {
+                    let elem_type = par.content.html.startsWith('<div>') ? 'div' : 'p';
+                    let content_new = parser.parseFromString('<' + elem_type + '>' + parseHtmlEntities(par.content.html) + '</' + elem_type + '>', 'text/html');
+                    let iframe = content_new.querySelector('iframe');
+                    if (iframe) {
+                      iframe.style = 'width: 100%; margin-bottom: 32px;';
+                      if (!iframe.height)
+                        iframe.height = '400px';
+                    elem = content_new.querySelector(elem_type);
+                } else if (par.component === 'ercms') {
+                  if (par.content && par.content.url) {
+                    elem = document.createElement('div');
+                    let iframe = document.createElement('iframe');
+                    iframe.src = par.content.url;
+                    iframe.style = 'width: 100%; height: 400px; margin-bottom: 32px;';
+                    elem.appendChild(iframe);
+                } else if (par.component === 'subheading') {
+                  if (par.content && par.content.text) {
+                    elem.innerText = par.content.text;
+                    elem.style = 'font-weight: bold;';
+                } else if (par.component === 'image') {
+                  if (par.image) {
+                    let caption = par.caption ? par.caption.html + ' (Foto: ' + par.imageSource + ')' : '';
+                    let sub_elem = makeFigure(par.image.url, caption);
+                    elem.appendChild(sub_elem);
+                } else if (!(['articleHeader', 'articleTeaserM', 'newsletterEmbed'].includes(par.component) || par.component.startsWith('iqadtile')))
+                  console.log(par);
+                if (elem.hasChildNodes())
+                  article.appendChild(elem);
+          } catch (err) {
+            console.log(err);
+  let ads = 'er-ad-slot, div.iqdcontainer';
+else if (matchDomain('suedkurier.de')) {
+    let article = document.querySelector(article_sel);
+      let pars = article.querySelectorAll('section > div > div[style^="box-sizing:"]');
+      if (pars && pars.length < 3)
+        header_nofix(article_sel, '', 'BPC > no archive-fix');
+  let article_sel = 'main > article';
+  getArchive(url, 'aside.article-paywall', '', article_sel);
+else if (matchDomain('t3n.de')) {
+  let paywall = document.querySelector('div.c-paywall__wrapper');
+        if (json_text.includes('[embed]'))
+          json_text = json_text.replace(/\[embed\]([^\[]+)\[\/embed\]/g, '$1\n');
+        json_text = json_text.replace(/\[[^\]]+\]/g, '');
+        let article = document.querySelector('div.paywall-blur > p');
+          article.innerText = parseHtmlEntities(json_text);
+          article.parentNode.removeAttribute('class');
+else if (matchDomain('tagesspiegel.de')) {
+  let paywall_sel = 'div#paywall';
+  if (matchDomain('www.tagesspiegel.de')) {
+      let opinionary = document.querySelector('div > div#opinary-automation-placeholder');
+      if (opinionary)
+        hideDOMElement(opinionary.parentNode);
+      if (mobile) {
+        let lazy_images = document.querySelectorAll('figure img[loading="lazy"][style]');
+        for (let elem of lazy_images)
+    getArchive(url, paywall_sel, '', 'div#story-elements');
+  } else if (matchDomain('interaktiv.tagesspiegel.de')) {
+    let paywall = document.querySelector(paywall_sel);
+      let article = document.querySelector('div.tslr-article > p');
+      if (article)
+        article.firstChild.before(archiveLink(url));
+  let ads = 'div.iqdcontainer';
+else if (matchDomain('tt.com')) {
+    let paywall = document.querySelector('div#piano-logwall');
+      let article = document.querySelector('div[data-io-article-url]');
+        let json_script = document.querySelector('script#tt-com-www-state');
+            let json = JSON.parse(json_script.text);
+            let json_article;
+            let relations;
+            for (let key in json) {
+              if (json[key].b && json[key].b.article && (json[key].b.article.canonical === window.location.pathname)) {
+                json_article = json[key].b.article;
+                relations = json[key].b.contentRelations;
+                break;
+            if (json_article) {
+              function addFigure(header_img_src, header_img_uuid, par) {
+                let elem;
+                if (header_img_src && header_img_uuid && par.uuid) {
+                  let caption = '';
+                  if (par.text)
+                    caption = par.text + (par.bylineAuthors && par.bylineAuthors[0] ? ' © ' + par.bylineAuthors[0] : '');
+                  elem = makeFigure(header_img_src.replace(header_img_uuid, par.uuid), caption, {style: 'width: 100%;'});
+                return elem
+              let header_img_src;
+              let header_img_uuid;
+              let header_img = document.querySelector('div.article-header img[src]');
+              if (header_img) {
+                header_img_src = header_img.src;
+                let match = header_img_src.match(/\/images\/(.+)\?/);
+                if (match)
+                  header_img_uuid = match[1];
+              let first_img = true;
+              let pars = json_article.elements;
+                if (['body', 'subheadline1'].includes(par.type)) {
+                  if (par.content) {
+                    let doc = parser.parseFromString('<p>' + par.content + '</p>', 'text/html');
+                    elem = doc.querySelector('p');
+                    if (par.type === 'subheadline1')
+                      elem.style = 'font-weight: bold;';
+                } else if (par.type = 'x-im/content-part') {
+                  if (par.elements) {
+                    elem = document.createElement('p');
+                    for (let item of par.elements) {
+                      if (item.content) {
+                        let doc = parser.parseFromString('<p>' + item.content + '</p>', 'text/html');
+                        sub_elem = doc.querySelector('p');
+                        elem.appendChild(sub_elem);
+                      }
+                  } else if (par.uuid && par.fileName) {
+                    if (!first_img) {
+                      elem = addFigure(header_img_src, header_img_uuid, par);
+                    } else
+                      first_img = false;
+                  } else if (par.galleryTitle) {
+                    let title = document.createElement('p');
+                    title.innerText = par.galleryTitle;
+                    title.style = 'font-weight: bold;';
+                    elem.appendChild(title);
+                    for (let img of par.images) {
+                      let sub_elem = addFigure(header_img_src, header_img_uuid, img);
+                      if (sub_elem)
+                  } else if (par.contentType === 'x-im/article') {
+                    if (par.uuid && relations) {
+                      let relation = relations.find(x => x.uuid === par.uuid);
+                      if (relation && relation.url && relation.title) {
+                        elem = document.createElement('p');
+                        let sub_elem = document.createElement('a');
+                        sub_elem.href = relation.url;
+                        sub_elem.innerText = relation.title;
+                  } else if (par.url) {
+                    if (par.url.startsWith('https://twitter.com/')) {
+                      elem = document.createElement('p');
+                      let sub_elem = document.createElement('a');
+                      sub_elem.href = sub_elem.innerText = par.url;
+                      sub_elem.target = '_blank';
+                      elem.appendChild(sub_elem);
+                    } else {
+                      elem = document.createElement('iframe');
+                      elem.src = par.url;
+                      elem.style = 'height: ' + article.offsetWidth + 'px; width: ' + article.offsetWidth + 'px;';
+                  } else if (!par.quote && Object.keys(par).length > 2)
+                } else
+                if (elem)
+            } else 
+              refreshCurrentTab();
+  }, 0);
+  let ads = 'div[class*="ads-container"], div.adblock-warning';
+else if (matchDomain('vn.at')) {
+  if (window.location.href.match(/\.vn\.at\/.+\/\d{4}\//)) {
+    let paywall = document.querySelector('div.paywalled-content');
+      let par = paywall.querySelector('p');
+      if (!par) {
+        refreshCurrentTab();
+        let lazy_images = document.querySelectorAll('img[src^="data:image/"][lazy-src]');
+          elem.src = elem.getAttribute('lazy-src');
+    } else
+      refreshCurrentTab();
+else if (matchDomain('vol.at')) {
+  if (!window.location.pathname.match(/\/amp\/?$/)) {
+      let paywall = document.querySelector('div.vodl-region-article__premium-content');
+      if (paywall) {
+        paywall.removeAttribute('class');
+        if (!paywall.hasChildNodes()) {
+          let json_script = document.querySelector('script#externalPostDataNode');
+          if (json_script) {
+            try {
+              let json = JSON.parse(json_script.text);
+              let json_text = json.content.data.post.content;
+              let doc = parser.parseFromString('<div class="entry-content">' + json_text + '</div>', 'text/html');
+              let article_new = doc.querySelector('div');
+              let hidden_images = article_new.querySelectorAll('img[src^="/"][srcset]');
+              let json_domain = json.content.data.post.thumbnail.src.match(/https:\/\/(www\.)?\w+\.at/)[0];
+              for (let elem of hidden_images) {
+                elem.src = elem.src.replace('https://www.vol.at', json_domain);
+                elem.removeAttribute('srcset');
+              let hidden_comments = document.querySelector('div[class*="backdrop-blur"]');
+              if (hidden_comments)
+                hidden_comments.removeAttribute('class');
+              let article = document.querySelector('div.article-body');
+              if (article) {
+                article.appendChild(article_new);
+            } catch (err) {
+              console.log(err);
+    let ads = 'div[id^="rm-adslot-"], div[id^="piano_rec"]';
+    hideDOMStyle(ads);
+  } else
+else if (matchDomain('weltkunst.de')) {
+  let paywall = document.querySelector('section.paywall');
+    let json_url_dom = document.querySelector('head > link[rel="alternate"][type="application/json"][href]');
+    if (json_url_dom) {
+      let json_url = json_url_dom.href;
+      fetch(json_url)
+      .then(response => {
+        if (response.ok) {
+          response.json().then(json => {
+            let json_text = json.content.rendered;
+            let content = document.querySelector('div.article div.text');
+            if (json_text) {
+              if (content) {
+                let parser = new DOMParser();
+                let doc = parser.parseFromString('<div>' + json_text + '</div>', 'text/html');
+                let content_new = doc.querySelector('div');
+                content.innerHTML = '';
+                content.appendChild(content_new);
+            } else
+              header_nofix(content);
+          });
+      });
+  let par_initial = document.querySelector('p.initial');
+  removeDOMElement(par_initial);
+else if (matchDomain('welt.de')) {
+      let headers = document.querySelectorAll('main header, main header ~ div');
+      for (let elem of headers)
+        elem.removeAttribute('style');
+      let main_divs = document.querySelectorAll('main div[style] > div > div[id]');
+      for (let elem of main_divs) {
+        if (elem.querySelector('img'))
+          elem.parentNode.parentNode.removeAttribute('style');
+      let lazy_images = document.querySelectorAll('main img[loading="lazy"][style]');
+    header_nofix('main header', 'img[alt^="WELTplus"][loading]', 'BPC > no archive-fix');
+    let ads = pageContains('span', 'Anzeige');
+    removeDOMElement(...ads);
+  getArchive(url, 'div.contains_walled_content, div.c-article-paywall', '', 'main header + div');
+  let ads = 'div[data-component="Outbrain"], div[class*="c-ad"]';
+else if (matchDomain('weser-kurier.de')) {
+  let ads = 'div.ad-wrapper, div.anyad, div.msn-ads';
+else if (matchDomain('wiwo.de')) {
+    let article = document.querySelector('app-blind-text');
+      article.before(googleSearchToolLink(url));
+          let json_text = json.find(x => x.articleBody).articleBody;
+          let article_new = document.createElement('div');
+          article_new.innerText = json_text.replace(/[\r\n]/g, '\r\n\r\n');
+          article_new.style = 'margin: 20px;';
+  let ads = 'div.iqadtile';
+else if (matchDomain('zeit.de')) {
+  let header_sel = 'article > header';
+  let header = document.querySelector(header_sel);
+    if (header) {
+      let header_new = document.querySelector(header_sel);
+      if (header_new)
+        header_new.parentNode.replaceChild(header, header_new);
+    let comments_link = document.querySelector('div[style*="align-items"] a[href$="#comments"]');
+    if (comments_link)
+      comments_link.href = '#comments';
+    let gst_link = false;
+    let figures = document.querySelectorAll('figure:has(img[loading="lazy"][style])');
+    for (let figure of figures) {
+      let lazy_image = figure.querySelector('img');
+      if (lazy_image.src.startsWith('data:image/')) {
+        let json_script = figure.querySelector('script[type="application/ld+json"]:not(:empty)');
+        if (json_script && json_script.text.match(/"url":\s?"/)) {
+          let img_url = json_script.text.split(/"url":\s?"/)[1].split('",')[0];
+          if (!img_url.includes('.zeit.de/newsletter/')) {
+            lazy_image.src = img_url;
+            lazy_image.style = 'width: 95%;';
+            figure.removeAttribute('style');
+        } else if (!gst_link && !figure.querySelector('figcaption[style*="display:none;"]')) {
+          gst_link = true;
+          header.append(googleSearchToolLink(url));
+          header_nofix('div#bpc_archive', '', 'BPC > no images (see GST-link)');
+      } else if (mobile)
+        lazy_image.style = 'width: 95%;';
+    let videos = document.querySelectorAll('div > div[allowfullscreen][old-src]');
+    for (let elem of videos) {
+      iframe.style = 'width: 100%; height: 400px;';
+    let charts = document.querySelectorAll('div > div[id^="datawrapper-chart-"][old-src]');
+    for (let elem of charts) {
+      iframe.style = 'width: 100%; height: 400px; border: none;';
+      let span_empty = document.querySelectorAll('span:empty');
+      removeDOMElement(...span_empty);
+    let ads = 'div[style*=";min-height:"]:has( > div[id^="iqadtile"])';
+    hideDOMStyle(ads, 2);
+  let url = window.location.href.split(/[#\?]/)[0];
+  if (document.querySelector('head > link[rel="next"]'))
+    url += '/komplettansicht';
+  getArchive(url, 'aside#paywall', '', 'main', '', 'main', 'article > div');
+  let ads = 'div[id^="iqadtile"], .iqdcontainer';
+else if (matchDomain(de_funke_medien_domains)) {
+  let paywall = document.querySelector('div#paywall-container');
+    let spark_script = document.querySelector('script#__SPARK__');
+    if (spark_script) {
+      let match = spark_script.text.match(/PUBLICATION:\s?'([\w-]+)',/);
+      if (match) {
+        func_post = function () {
+          document.querySelectorAll('div[data-carousel-id-slider]').forEach(x => x.removeAttribute('class'));
+          let embed_templates = document.querySelectorAll('div[data-embed-id] > template[data-embedbox-id-embed-template]');
+          for (let elem of embed_templates) {
+            let doc = parser.parseFromString('<div>' + elem.innerHTML + '</div>', 'text/html');
+            let blockquote = doc.querySelector('div');
+            elem.parentNode.before(blockquote);
+            removeDOMElement(elem.parentNode);
+          let charts = document.querySelectorAll('aside > div[id^="datawrapper-vis-"]');
+          for (let elem of charts) {
+            let img = elem.querySelector('noscript > img[src]');
+            if (img) {
+              elem.parentNode.before(img);
+              removeDOMElement(elem.parentNode);
+        let spark_domain = match[1];
+        let url_src = 'https://app-webview.sparknews.funkemedien.de/' + spark_domain + window.location.pathname;
+        fetch_headers = {"Authorization": "Basic YXBpOkNTeGxxRG1YM2xCTmRsS1l6allRcWZqTnFZMkhQVUVm"};
+        replaceDomElementExt(url_src, true, false, 'div.article-body', 'BPC > no fix (source file)');
+  let ads = 'aside.ad-slot-wrapper';
+else if (matchDomain(de_lv_domains)) {
+  let paywall = document.querySelector('div[id^="paymentprocess-"]');
+    let intro = document.querySelector('div.m-paywall__textFadeOut');
+    removeDOMElement(paywall, intro);
+    let div_hidden = document.querySelector('div.paywall-full-content[style]');
+      div_hidden.removeAttribute('class');
+  let ads = 'div.adZone';
+else if (matchDomain(de_motor_presse_domains)) {
+  let ads = 'div#ads-container, div.va-sponsored, div.mps_markAd';
+else if (matchDomain(de_rp_medien_domains)) {
+    header_nofix('article', 'div#park-paywall', 'BPC > no archive-fix');
+    let videos = 'glomex-player';
+    hideDOMStyle(videos, 5);
+  getArchive(url, 'div.park-paywall-content', '', 'article');
+  let ads = 'div.portal-slot';
+else if (matchDomain(de_madsack_domains) || document.querySelector('head > link[href*=".rndtech.de/"]')) {
+  if (!window.location.search.includes('outputType=valid_amp')) {
+    let ads = 'div[class^="Adstyled__AdWrapper"]';
+else if (matchDomain(de_ippen_media_domains) || document.querySelector('header a[href^="https://www.ippen.media"]')) {
+  let ads = 'div[class^="id-TBeepSlot-"], div[data-id-advertdfpconf]';
+else if (matchDomain(de_vrm_domains) || matchDomain(de_vrm_custom_domains)) {
+      article.querySelectorAll('div > div[role="button"]').forEach(e => removeDOMElement(e.parentNode));
+        let pictures = document.querySelectorAll('picture > img[style]');
+        for (let elem of pictures) {
+          elem.style = 'width: 95%; margin: 10px;';
+          elem.parentNode.removeAttribute('style');
+  let article_sel = 'article section';
+    getArchive(url, 'div.--blurredContent', {rm_attrib: 'class'}, article_sel);
+  let ads = 'div.adSlot, div.loadingBanner';
+ads_hide();
+leaky_paywall_unhide();
+}, 1000);
+// General Functions
+// import (see @require)
+function breakText_headers(str) {
+  str = breakText(str, true);
+  // exceptions: names with alternating lower/uppercase (no general fix)
+  let str_rep_arr = ['AstraZeneca', 'BaFin', 'BerlHG', 'BfArM', 'BilMoG', 'BioNTech', 'ChatGPT', 'DiGA', 'EuGH', 'FinTechRat', 'GlaxoSmithKline', 'IfSG', 'medRxiv', 'mmHg', 'OpenAI', 'PlosOne', 'StVO', 'TikTok'];
+  let str_rep_split;
+  let str_rep_src;
+  for (let str_rep of str_rep_arr) {
+    str_rep_split = str_rep.split(/([a-z]+)(?=[A-Z](?=[A-Za-z]+))/);
+    str_rep_src = str_rep_split.reduce(function (accumulator, currentValue) {
+        return accumulator + currentValue + ((currentValue !== currentValue.toUpperCase()) ? '\n\n' : '');
+    if (str_rep_src.endsWith('\n\n'))
+      str_rep_src = str_rep_src.slice(0, -2);
+    str = str.replace(new RegExp(str_rep_src, "g"), str_rep);
+  str = str.replace(/De\n\n([A-Z])/g, "De$1");
+  str = str.replace(/La\n\n([A-Z])/g, "La$1");
+  str = str.replace(/Le\n\n([A-Z])/g, "Le$1");
+  str = str.replace(/Mc\n\n([A-Z])/g, "Mc$1");
+  return str;
+})();
 ||functionalclam.com^
 ||119.29.196.104.bc.googleusercontent.com^
 ||175.220.196.104.bc.googleusercontent.com^
@@ -31396,6 +31522,7 @@ ecosia.org##article[data-test-id=images-result]:has(a[href*="//i.pinimg.com/"])
 ##.onp-sl-social-buttons:not(html, body)
 ##.onp-sl-overlap-background:not(html, body)
 ##.onp-sl-overlap-box:not(html, body)
+||blueconic.net^$third-party
 linustechtips.com,forum.malwarebytes.com,community.ccleaner.com##.cTopicPostArea:has(.cGuestTeaser):not(:has(.ipsComposeArea_editor))
 ||subs.youmaker.com^$third-party
 /plugins/pm-gating/*
@@ -33467,7 +33594,7 @@ $removeparam=phcursor
 $doc,removeparam=line_uid
 $removeparam=duckai
 $removeparam=/^ref=winstall$/
-$doc,image,removeparam=/^=$/
+$doc,image,removeparam=/^=$/,domain=discord.com|discordapp.net
 /auto-append-spmid.js
 $doc,removeparam=cid,domain=8days.sg|abcnews.go.com|adguard.com|adshares.net|ae.com|anntaylor.com|apple.com|bitdefender.*|blair.com|channelnewsasia.com|childrensplace.com|controld.com|dcard.tw|elmundo.es|emirates.com|factoryoutletstore.com|fifa.com|flipkart.com|gamestop.com|giphy.com|glasses.com|haband.com|intuit.com|jared.com|jcpenney.com|kay.com|kohls.com|lenovo.com|loft.com|marca.com|microsoft.com|nbcnews.com|nike.com|nyandcompany.com|overstock.com|persol.com|proshop.*|radissonhotelsamericas.com|ray-ban.com|rei.com|rightmove.co.uk|samsung.com|stadium.*|staples.com|telenor.no|todayonline.com|tokopedia.com|tommy.com|toms.com|totalbeauty.com|tractorsupply.com|underarmour.com|vineyardvines.com|voxi.co.uk|wine.com|wsj.com|xg4ken.com|zales.com
 $removeparam=ref,doc,domain=404media.co|abebooks.com|accounts.binance.com|adobe.com|akuankka.fi|albiononline.com|altcustoms.com|app.blockfi.com|arvopaperi.fi|audible.*|baidu.com|bestbuy.com|bing.com|bitlox.com|bitwarden.com|blinkforhome.com|blogit.fi|bookdepository.com|brave.com|browserstack.com|business.twitter.com|buzzfeed.com|buzzfeednews.com|bybit.com|catch.com.au|cmjornal.pt|codehs.com|comixology.*|coop.no|daily.dev|deal.no|dell.com|depot.dev|digidip.net|domains.ch|droix.net|eset.com|etsy.com|ettoday.net|eventbrite.*|emsisoft.com|expo.io|facebook.*|facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion|fairphone.com|fig.io|foreca.*|freebies.indiegala.com|gallery.so|geeksforgeeks.org|github.io|goodreads.com|greenhouse.io|hintaopas.fi|hintaseuranta.fi|hs.fi|idenati.com|ikea.com|iltapulu.fi|imdb.com|is.fi|jasonsavard.com|kauppalehti.fi|kesaduuni.org|kickstarter.com|ku.fi|lex.page|mastermind.ac|mediuutiset.fi|megapornfreehd.com|merrell.com|mikrobitti.fi|motouutiset.fi|nebula.tv|oikotie.fi|omataloyhtio.fi|proton.me|protonvpn.com|puutarha.net|rakentaja.fi|record.pt|reddit.com|reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion|remppatori.fi|sahkovertailu.fi|sanoma.fi|scandinavianphoto.fi|schibsted.fi|semrush.com|shein.com|shodan.io|shopping.google.*|sketch.com|spiegel.de|sportskeeda.com|snapchat.com|storyhouseegmont.fi|suomi24.fi|talouselama.fi|target.com|tekniikkatalous.fi|telsu.fi|thedailybeast.com|theregister.com|tivi.fi|tokenmetrics.com|twitch.tv|udemy.com|uusisuomi.fi|umami.is|vultr.com|webhallen.no|woot.com|wormhole.app|yle.fi|zappos.com|zulily.com|emag.ro|account.microsoft.com|tierlist.com|lastampa.it|repubblica.it|ilsecoloxix.it|gelocal.it|limesonline.com|huffingtonpost.*|hcaptcha.com|hola.org
@@ -35957,6 +36084,8 @@ deviantart.com##body.mobile > .ReactModalPortal + aside:last-of-type
 ##.footer__appButtonContainer:not(html,body,:empty)
 ###app-store-links
 ##div[data-reka-popper-content-wrapper]
+instagram.com##.html-div + div:not(.html-div) + .html-div:has(> [role=link][href^="intent://instagram.com"])
+instagram.com##div[class]:first-of-type:not(.html-div) + div.html-div:has(+ div:last-of-type:not([class])):has(a[href^="intent://"])
 ##a[href*=".app.link/"]
 imgur.com##.AppBanner-text
 imgur.com##.PopOverBannerSmall
