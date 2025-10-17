@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Fri, 17 Oct 2025 10:13:48 GMT
+! Last modified: Fri, 17 Oct 2025 22:20:33 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Fri, 17 Oct 2025 07:27:50 +0000
+!   - Last modified: Fri, 17 Oct 2025 10:54:54 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Fri, 17 Oct 2025 07:25:48 +0000
@@ -27,7 +27,7 @@
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Fri, 17 Oct 2025 07:44:34 +0000
+!   - Last modified: Fri, 17 Oct 2025 14:38:16 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
 !   - Last modified: Sun, 12 Oct 2025 09:00:18 +0000
@@ -22001,6 +22001,7 @@ djamix.net##+js(no-fetch-if, googlesyndication)
 mlbbox.me##+js(rmnt, script, /FingerprintJS|Adcash/)
 ||dl4d3y1ajyv3q.cloudfront.net^
 ||oundhertobeconsist.org^
+tsz.com.np##+js(nostif, googlesyndication)
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
 ||vlc.de^$doc
@@ -31682,7 +31683,7 @@ coway-usa.com##+js(trusted-click-element, span.gmt_refuse, , 1000)
 mojomortgages.com##+js(trusted-set-cookie, allow-cookies, essential-only)
 steiners.shop##+js(trusted-click-element, span.btn-btn-save, , 1500)
 javeahouses.com##+js(trusted-set-cookie, cookieControlPrefs, '["essential"]')
-ecmrecords.com,invidis.com,malaikaraiss.com,koch-mit.de,zeitreisen.zeit.de##+js(trusted-click-element, a#CookieBoxSaveButton, , 1000)
+ecmrecords.com,cigarjournal.com,invidis.com,malaikaraiss.com,koch-mit.de,zeitreisen.zeit.de##+js(trusted-click-element, a#CookieBoxSaveButton, , 1000)
 wefashion.com##+js(trusted-click-element, span[data-content="WEIGEREN"], , 1000)
 merkur.dk##+js(trusted-click-element, .is-open .o-cookie__overlay .o-cookie__container .o-cookie__actions .is-space-between button[data-action="save"], '', 1000)
 apk-vk.at##+js(trusted-set-cookie, cb_permissions, '["Notwendige"]')
@@ -32299,6 +32300,7 @@ accursia-capital.de##+js(trusted-click-element, button[data-hook="consent-banner
 joyn.de##+js(trusted-click-element, 'cmp-banner >>> cmp-dialog >>> cmp-button >>> .button.button--primary', , 1000)
 joyn.de##+js(rpnt, script, (self, (()=>{let t\,e=!1;const o=new MutationObserver(((e\,o)=>{const c=t?.querySelector('cmp-button[variant="primary"]');c&&(c.click()\,o.disconnect())}))\,c={apply:(c\,n\,a)=>{const r=Reflect.apply(c\,n\,a);return!e&&n.matches("cmp-dialog")&&(e=!0\,t=r)\,o.observe(r\,{subtree:!0\,childList:!0})\,r}};window.Element.prototype.attachShadow=new Proxy(window.Element.prototype.attachShadow\,c)})();(self, sedCount, 1)
 oeq.org##+js(trusted-click-element, button#c-t-bn)
+fireflies.ai##+js(trusted-set-cookie, consentMode, '{"ad_storage":"denied","analytics_storage":"denied","functionality_storage":"granted","personalization_storage":"denied","ad_user_data":"denied","ad_personalization":"denied","security_storage":"granted"}')
 mimaletadepeliculas.blogspot.com##+js(aopr, document.oncontextmenu)
 mimaletadepeliculas.blogspot.com##+js(acs, document.onselectstart)
 pelispedia.*##+js(aopw, document.oncontextmenu)
