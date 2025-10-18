@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Fri, 17 Oct 2025 22:20:33 GMT
+! Last modified: Sat, 18 Oct 2025 10:11:44 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.93.5
+!   - Version: 2.0.93.7
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/refs/heads/master/cjx-annoyance.txt
 !   - Version: 202510081500
@@ -216,6 +216,8 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||analysis.chatglm.cn^
+||*-default-cn.rum.aliyuncs.com^
 ||ping.pdst.fm^
 ||api.sae.systems^
 ||analytics.metriko.app^
@@ -70904,6 +70906,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||user-event-log.aminer.cn^
 ||pixel.dashfi.dev^
 ||c.quackr.io^
 ||xstat.gazeta.bo^
@@ -109533,7 +109536,6 @@ gq.com##+js(set-local-storage-item, /^avoinspector/, $remove$)
 ||check24.*/misc/tracking_gif.php
 ||check24.*/gif/*/info.gif
 ||check24.*/files/give_png.php
-nhk-ondemand.jp##+js(abort-on-property-write, wd.s_c_il)
 ||kma.go.kr/kma/resources/js/UserScriptConf.js
 ||kabu-sokuhou.com/js/cpv/
 4pda.to##+js(remove-attr, data-dotrack, a[data-dotrack])
