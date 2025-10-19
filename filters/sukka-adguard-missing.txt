@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sun, 19 Oct 2025 10:11:43 GMT
+! Last modified: Sun, 19 Oct 2025 22:20:44 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,10 +8,10 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sun, 19 Oct 2025 05:18:50 +0000
+!   - Last modified: Sun, 19 Oct 2025 19:15:15 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
-!   - Last modified: Fri, 17 Oct 2025 07:25:48 +0000
+!   - Last modified: Sun, 19 Oct 2025 16:25:39 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
 !   - Last modified: Sat, 18 Oct 2025 16:46:03 +0000
@@ -20,14 +20,14 @@
 !   - Last modified: Tue, 14 Oct 2025 02:15:05 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Sat, 18 Oct 2025 14:51:44 +0000
+!   - Last modified: Sun, 19 Oct 2025 14:30:54 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
 !   - Last modified: Sat, 18 Oct 2025 14:51:44 +0000
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Fri, 17 Oct 2025 14:38:16 +0000
+!   - Last modified: Sun, 19 Oct 2025 17:48:19 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
 !   - Last modified: Sun, 12 Oct 2025 09:00:18 +0000
@@ -50,7 +50,7 @@ m.youtube.com,music.youtube.com,tv.youtube.com,www.youtube.com,youtubekids.com,y
 m.youtube.com,music.youtube.com,tv.youtube.com,www.youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, playerResponse.adPlacements, undefined)
 m.youtube.com,music.youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, playerResponse.adPlacements playerResponse.playerAds playerResponse.adSlots adPlacements playerAds adSlots important)
 youtube.com##.ytlr-horizontal-list-renderer__items > .yt-virtual-list__container > .yt-virtual-list__item--visible.yt-virtual-list__item--selected.yt-virtual-list__item:has-text(Ad)
-||googlevideo.com/initplayback?source=youtube*&c=TVHTML5&oad=$xhr,domain=youtube.com
+||googlevideo.com/initplayback?source=youtube&*c=TVHTML5&*oad=$xhr,domain=youtube.com
 m.youtube.com,music.youtube.com,tv.youtube.com,www.youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune-fetch-response, reelWatchSequenceResponse.entries.[-].command.reelWatchEndpoint.adClientParams.isAd entries.[-].command.reelWatchEndpoint.adClientParams.isAd, , propsToMatch, url:/reel_watch_sequence?)
 m.youtube.com,music.youtube.com,tv.youtube.com,www.youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, entries.[-].command.reelWatchEndpoint.adClientParams.isAd)
 ||youtube.com/youtubei/v1/get_watch?$xhr,1p,replace=/"adPlacements"/"no_ads"/
@@ -7717,7 +7717,7 @@ hurriyet.com.tr##.mobileMasthead
 hdhub4u.fail,hubdrive.*,moviesubtitles.click,telegratuita.com##+js(aeld, DOMContentLoaded, script[data-domain=)
 141jav.com,moviesjoy-to.*##+js(acs, document.createElement, script[data-domain=)
 /\/[0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f]\/invoke\.js/$script,3p
-/\/[0-9a-z]{2}\/[0-9a-f]{32}\.js/$script,xhr,3p,match-case,method=get,to=com,from=ad|ag|app|bet|biz|blue|boo|by|bz|casa|cc|ceo|cx|click|club|com.se|cyou|dad|day|dev|download|fun|gdn|ge|hair|how|in|is|lat|link|live|lol|me|media|mobi|moe|monster|one|onl|online|pe|pro|re|red|sbs|sh|site|skin|stream|to|today|top|tube|tv|world|ws|xyz|~edu.ag|~edu.by|~edu.bz|~edu.ge|~edu.in|~edu.me|~edu.pe|~edu.so|~edu.ws|~gov.ag|~gov.by|~gov.bz|~gov.ge|~gov.in|~gov.me|~gov.sh|~gov.so|~gov.to|~gov.tv|~gov.ws|~proton.me|~twitch.tv
+/\/[0-9a-z]{2}\/[0-9a-f]{32}\.js/$script,xhr,3p,match-case,method=get,to=com,from=ad|ag|app|bet|biz|blue|boo|by|bz|casa|cc|ceo|cx|click|club|com.se|cyou|dad|day|dev|download|fun|gdn|ge|hair|how|in|is|lat|link|live|lol|me|media|mobi|moe|monster|one|onl|online|pe|pro|re|red|sbs|sh|site|skin|space|stream|to|today|top|tube|tv|world|ws|xyz|~edu.ag|~edu.by|~edu.bz|~edu.ge|~edu.in|~edu.me|~edu.pe|~edu.so|~edu.ws|~gov.ag|~gov.by|~gov.bz|~gov.ge|~gov.in|~gov.me|~gov.sh|~gov.so|~gov.to|~gov.tv|~gov.ws|~proton.me|~twitch.tv
 /\/[0-9a-z]{2}\/[0-9a-f]{32}\.js/$script,xhr,3p,match-case,method=get,to=com,from=123av.com|141jav.com|1piecemanga.com|4chanarchives.com|69shux.co|85po.com|animepelix.net|animerco.org|apkadmin.com|asiaflix.net|bigwarp.art|blogspot.com|bookfrom.net|cdn9mc.com|clicknupload.cfd|comohoy.com|d-pdf.com|desiupload.co|europixhd-official.com|filmnudes.com|fmovies24-to.com|fsportshd.net|fztvseries.ng|hdpornflix.com|hentai2read.com|hianime.nz|hubdrive.space|indi-share.com|ironhentai.com|javboys.com|javbraze.com|javhdporn.net|jgvdata.com|jpopsingles.eu|kisshentaiz.com|koshalworld.com|latinluchas.com|loadedfiles.org|madouqu.com|media.cm|megadiscografiascompletas.com|movielysium.net|monoschino2.com|moviemaniak.com|movies7.us|myxxgirl.com|nekopoi.care|neymartv.net|niraw.com|njav.com|nsfwgify.com|notunmovie.net|omegascans.org|onejav.com|pagalfree.com|pagalnew.com|pagalworld.us|photocalltv.org|pixvid.org|player.subespanolvip.com|plugincrack.com|poophd.pm|popcornmovies.org|pornhoarder.net|pornincest.net|raw.senmanga.com|seriesgod.com|sexiezpix.com|spotidownloader.com|streampoi.com|surrit.store|sxyprn.com|tapepops.com|thecakeboutiquect.com|thefantazy.com|thepiratebay.org|tokyomotion.net|torbobit.net|torrentgalaxy-official.com|torrentjogos.com.br|uniquestream.net|vidboys.com|xfantazy.com|xmegadrive.com
 /\/[0-9a-f]{32}\.js/$script,xhr,3p,to=com,from=bembed.net|embedv.net|listeamed.net|moflix-stream.day|moflix-stream.fans|v6embed.xyz|vid-guard.com
 /\.\d{1,2}\.[0-9a-f]{32}\.js$/$script,3p,to=js.txxx.tube,from=txxx.com
@@ -8557,7 +8557,7 @@ adblockstreamtape.*,adblockstrtape.*,adblockstrtech.*,komikcast.*,mavanimes.*,st
 123moviesonline.*,2embed.*,adblockeronstape.*,brbushare.*,cuatrolatastv.blogspot.com,direct-cloud.me,driveup.in,filmeseries.*,goved.org,hdmovies2.org,hdmovies50.*,seriezloaded.com.ng,skymovieshd.*,slink.bid,stapewithadblock.*,streamers.watch,upbam.org,uplinkto.*,uppit.com,vadbam.com,vadbom.com,vedbam.*,vidbam.org,vidshar.org##+js(acs, navigator, break;case $.)
 songspk.*##+js(aost, Object, /(?=^(?!.*(https)))/)
 0123movie.*,10starhub.com,11xmovies.*,123chill.*,123mkv.*,123movies-free.*,123movies-org.*,123movies.*,123moviesfree.*,123movieshub.*,123movieweb.*,190.115.18.20,1cloudfile.com,1direct-cloud.*,1hd.to,1movieshd.*,1qwebplay.xyz,1stream.*,1todaypk.*,1vid1shar.space,2kmovie.*,3kmovies.*,4movierulz.*,4movierulz1.*,5movies.*,5moviess.com,720pflix.*,7moviesrulz.*,7starhd.*,7starmv.com,9anime.pe,9goals.live,9kmovies.*,9xflix.*,a8ix.*,adblocktape.*,adslink.pw,aflizmovies.com,ak4eg.*,algodaodocescan.com.br,aliezstream.pro,amsmotoresllc.com,anihdplay.com,animeonline.ninja,animesultra.net,animixplay.*,aniwatch.*,antenasports.ru,antennasports.ru,arbsd.*,asianhdplay.*,atishmkv.*,b4ucast.com,backfirstwo.site,bdmusic28.*,blogesque.net,bolly2tolly.*,bollyflix.*,bowfile.com,buffstreams.*,capo5play.com,cinemabaz.com,claplivehdplay.ru,clickndownload.*,comedyshow.to,cool-etv.net,couchtuner.*,crackstreamshd.click,crvsport.ru,d0000d.com,d000d.com,d0o0d.com,daddylive1.*,daddylivehd.*,darkibox.com,defienietlynotme.com,direct-cloud.*,divicast.com,divxfilmeonline.net,dlhd.*,do0od.com,dood.*,doods.pro,dooood.*,downloadhub.*,ds2play.com,ds2video.com,dwlinks.buzz,egybest.*,embedme.*,embedpk.net,embedplayer.*,embedstream.me,embtaku.*,emovies.*,encurtandourl.com,engvideo.net,esportivos.*,exee.app,explorosity.net,extremosports.club,f123movies.com,faselhd-watch.*,faselhd.*,faselhdwatch.*,filemooon.*,film4e.com,filmeserialeonline.org,filmy-hit.*,filmygod.*,filmyhitt.com.in,finfang.*,fiveyardlab.com,flashsports.org,flixhq.*,flostreams.xyz,flybid.net,fmembed.cc,fmoonembed.*,fmoonembed.pro,fmoviesfree.*,focus4ca.com,footballandress.club,footybite.to,footyhunter.lol,forex-trnd.com,fr.streamon-sport.ru,freemovies.*,freemoviesfull.com,french-streams.cc,fsl-stream.lu,fullfreeimage.com,futemax.zip,game-2u.com,gamovideo.com,gdrivelatino.net,gdrivelatinohd.net,gdtot.*,globalstreams.xyz,gocast.pro,gocast2.com,godzcast.com,gogohd.*,gokutv.*,gomovies.*,hamburgerinsult.com,harimanga.com,hdfriday.*,hdhub4u.*,hdmoviehub.*,hdmovies23.*,hdtoday.tv,hellnaw.*,hexload.com,hihihaha1.xyz,hitsports.pro,hollymoviehd.*,hurawatchz.to,iflixmovies.*,imagelovers.com,instalker.org,isaidub6.net,itopmusic.com,itopmusics.com,japscan.lol,jockantv.com,jpopsingles.eu,kaido.to,kerapoxy.*,kickassanime.*,kinoger.*,klubsports.*,koora.vip,kunmanga.com,kuttymovies1.com,lewblivehdplay.ru,ligaset.com,likemanga.io,ling-online.*,linkedmoviehub.top,livestreames.us,locatedinfain.com,lrepacks.net,mangaraw.*,mangareader.to,mcrypto.club,medeberiyas.com,mega4upload.com,megadb.net,megafilmeshd50.com,megaupto.com,mhdsports.*,mhdsportstv.*,mhdtvsports.*,mkvcinemas.*,mkvmoviespoint.autos,mlwbd.*,mmastreams.me,moonembed.*,moviebaaz.*,moviekids.tv,movielinkhub.xyz,movieplay.*,movies2k.*,movies4u.*,movies4u3.*,moviesda4.*,movieshd.watch,moviesjoy.*,moviesrulz.*,moviestowatch.tv,moviesverse.*,movieuniverse.*,moviezwap.*,mp3fusion.net,mp4upload.com,mreader.co,multicanais.*,mydownloadtube.*,myflixertv.to,myflixerz.*,mylivestream.pro,naijachoice.com.ng,naijanowell.com,netfilmes.org,netizensbuzz.com,nflstreams.me,niadd.com,nizarstream.com,noblocktape.*,nowmaxtv.com,nowsports.me,nowsportv.nl,odiasia.sbs,ogomovies.*,oii.io,olalivehdplay.ru,onepiecepower.com,optimizepics.com,pahe.plus,pesktop.com,pkspeed.net,playgo1.cc,poophq.com,poscitechs.*,project-free-tv.*,projectfreetv.*,putlocker.*,qqwebplay.xyz,radamel.icu,rahim-soft.com,reddit-soccerstreams.com,repack-games.com,rgeyyddl.*,ronaldo7.pro,roystream.com,s.to,s3taku.com,sbnmp.bar,send.cm,serienstream.*,series2watch.*,seriesonline.*,shadowrangers.live,shahed4u.*,shaheed4u.*,share.filesh.site,sharedisk.*,shavetape.*,shinden.pl,shoot-yalla.live,shortenlinks.top,smoner.com,soap2day-online.com,soccerstream100.to,sportsbuff.stream,sportshub.*,ssoap2day.*,stfly.*,strcloud.*,streamadblocker.*,streamcloud.*,streamhd247.*,streamhub.*,streamnoads.com,streamonsport99.*,streamtape.*,streamvid.net,strtapewithadblock.*,sulleiman.com,swatchseries.*,swiftload.io,tamilprint30.*,tapeadsenjoyer.com,tapeadvertisement.com,tapeantiads.com,tapeblocker.com,tapelovesads.org,tapenoads.com,tapewithadblock.org,techgeek.digital,temp.modpro.co,tennisonline.me,theflixertv.to,thenextplanet1.*,tii.la,tnhitsda.net,todaypk.*,topcartoons.tv,torovalley.net,totalsportek.*,trendytalker.com,tvfutbol.info,tvpclive.com,up-4ever.net,upbaam.com,uploadhub.*,uproxy.*,uptomega.net,usgate.xyz,uupbom.com,vadbam.net,vavada5com.com,vdbtm.shop,veev.to,vegamovie.*,vid-guard.com,vidcloud9.*,videoplayer.*,vido.*,vidspeed.cc,vidsrc.*,vidstreams.net,vidtube.one,viidshar.com,vikistream.com,vixcloud.co,volokit2.com,watchcartoononline.*,watchmovierulz.*,watchmovies.*,watchomovies.*,watchonlinemoviespk.*,watchop.live,watchseries1.*,wecast.to,worldstreams.click,xoxocomic.com,xsportbox.com,yesmovies4u.*,yu2be.com,z12z0vla.*,zamundatv.com,zoechip.cc,zvision.link##+js(acs, document.documentElement, break;case $.)
-0vg9r.com,10hitmovies.com,11xmovies.*,1flix.to,1mov.lol,26efp.com,2tamilprint.pro,2024tv.ru,720pflix.*,7hitmovies.*,7starhd.*,9animetv.to,9xmoovies.com,advertisertape.com,afilmywapi.biz,all3do.com,alldownplay.xyz,alphatron.tv,andyday.*,anime3rb.com,animeflv.*,animenexus.in,animeunity.*,animeyabu.org,animez.org,anisaga.org,anitube.*,aniwatchtv.to,anroll.net,aparttent.com,apkship.shop,arc018.to,ask4movie.*,ate60vs7zcjhsjo5qgv8.com,avjosa.com,bigwarp.*,bollydrive.*,boxingstream.me,braflix.tube,capo4play.com,caq21harderv991gpluralplay.xyz,cardboardtranslation.com,cinedokan.top,clickndownload.*,cloudnestra.com,cookiewebplay.xyz,crackstreamsfree.com,cuevana.pro,curiosidadtop.com,daddylivestream.com,databasegdriveplayer.*,demonicscans.org,desicinema.org,dlolcast.pro,do7go.com,dooodster.com,doods.to,doply.net,dorawatch.net,dotflix.*,drakorkita73.kita.rest,dramanice.video,driveup.space,drop.download,dudefilms.*,ebook-hunter.org,edgedeliverynetwork.com,embasic.pro,embedcanais.com,embedtv.net,embdproxy.xyz,engstreams.shop,enorme.tv,fastdokan.*,fastdownload.top,file4go.*,filmyworlds.*,filmyzilla5.com,flixhd.cc,flostreams.xyz,fmoviesto.cc,fojik.*,footballstreams.lol,footybite.*,foreverquote.xyz,frembed.*,french-stream.*,freshwaterdell.com,fsportshd.net,futemais.net,fztvseries.ng,gdflix.*,gdriveplayer.*,gdrivelatinohd.net,gdtot.*,gidplayer.online,giize.com,goku.sx,gomovies.pk,hdfilme.*,hdhub4u.*,hakunamatata5.org,hdtodayz.to,hexload.com,hianime.*,hoca2.com,hoca6.com,hoca4u.xyz,hollymoviehd.cc,hunterscomics.com,joyousplay.xyz,jpopsingles.eu,jxoplay.xyz,kaa.mx,kingstreamz.site,lato.sx,likemanga.ink,linkmake.in,linksheild.site,lrepacks.net,luckypatchers.com,lulu.st,lulustream.*,luluvdo.com,luluvdoo.com,luluvid.com,mapple.tv,maxstream.*,mcloud.guru,medeberiya.site,mega4upload.net,messitv.org,mh.baxoi.buzz,mlbb.space,mlfbd.*,movieku.ink,movielair.cc,movielinkbdofficial.com,movies123.pk,movies4u.*,moviesapi.to,movieshdwatch.to,movieshubweb.com,moviesjoy.*,moviesnation.*,moviezwap.*,myflixerz.to,mywatchseries.*,nbabite.to,nexdrive.*,neymartv.net,nflbite.to,nmac.to,ogoplayer.xyz,olympustaff.com,onlinekosh.com,pahe.*,pelisflix2.*,pkembed.*,player.smashy.stream,playerflixapi.com,pondit.xyz,poophq.com,poscitechs.lol,pressplay.cam,pressplay.top,putlocker.*,reddit-streams.online,reliabletv.me,riedberg.tv,ripplestream4u.*,rojadirectaenhd.net,rubyvid.com,s2watch.link,safefileku.com,savefiles.com,seeflix.to,sflix.*,shazysport.pro,shopr.tv,showflix.*,skysetx.*,snowmtl.ru,soap2day.*,souq-design.com,spcdn.xyz,sportingsurge.com,sportsgames.today,sportshub.stream,sportsloverz.xyz,spotifylists.com,storynavigation.com,strcloud.in,streamblasters.*,streambtw.com,streameast.*,streamed.su,streaming-community.*,streamingcommunityz.*,streamingunity.to,streamlivetv.site,streamlord.com,streamruby.com,streamta.site,streamtape.*,streamup.ws,strmup.to,subtitlecat.com,swfr.tv,swiftload.io,tamilprint29.*,tamilprint30.*,tamilprint31.*,tapepops.com,telepisodes.org,tfp.is,thedaddy.*,thehesgoal.com,tinyzonetv.cc,topembed.pw,totalsportek.*,tous-sports.ru,tutvlive.ru,tvableon.me,tvsportslive.fr,updown.cam,ups2up.fun,uptomega.net,usgate.xyz,ustream.to,uqload.*,vcloud.lol,vecloud.eu,veev.to,vegamovies4u.*,veplay.top,vide0.net,video-seed.xyz,vidora.stream,vidply.com,vidsrc.*,vidtube.one,vidzy.org,vinovo.to,viprow.*,vixcloud.co,vodkapr3mium.com,volokit2.com,vvide0.com,watch.ug,watch32.sx,watchadsontape.com,watchf1full.com,watchonlinemovies.vercel.app,watchseries.*,watchseries8.to,watchug.to,way2movies.*,wdpglobal.com,weakstreams.online,wmovies.xyz,xcloud.*,y2mate.*,yoxplay.xyz,ythd.org,yuppow.com,zjet7.com,zorroplay.xyz##+js(acs, EventTarget.prototype.addEventListener, delete window)
+0vg9r.com,10hitmovies.com,11xmovies.*,1flix.to,1mov.lol,26efp.com,2tamilprint.pro,2024tv.ru,720pflix.*,7hitmovies.*,7starhd.*,9animetv.to,9xmoovies.com,advertisertape.com,afilmywapi.biz,all3do.com,alldownplay.xyz,alphatron.tv,andyday.*,anime3rb.com,animeflv.*,animenexus.in,animeunity.*,animeyabu.org,animez.org,anisaga.org,anitube.*,aniwatchtv.to,anroll.net,aparttent.com,apkship.shop,arc018.to,asd.*,ask4movie.*,ate60vs7zcjhsjo5qgv8.com,avjosa.com,bigwarp.*,bollydrive.*,boxingstream.me,braflix.tube,capo4play.com,caq21harderv991gpluralplay.xyz,cardboardtranslation.com,cinedokan.top,clickndownload.*,cloudnestra.com,cookiewebplay.xyz,crackstreamsfree.com,cuevana.pro,curiosidadtop.com,daddylivestream.com,databasegdriveplayer.*,demonicscans.org,desicinema.org,dlolcast.pro,do7go.com,dooodster.com,doods.to,doply.net,dorawatch.net,dotflix.*,drakorkita73.kita.rest,dramanice.video,driveup.space,drop.download,dudefilms.*,ebook-hunter.org,edgedeliverynetwork.com,embasic.pro,embedcanais.com,embedtv.net,embdproxy.xyz,engstreams.shop,enorme.tv,fastdokan.*,fastdownload.top,file4go.*,filmyworlds.*,filmyzilla5.com,flixhd.cc,flostreams.xyz,fmoviesto.cc,fojik.*,footballstreams.lol,footybite.*,foreverquote.xyz,frembed.*,french-stream.*,freshwaterdell.com,fsportshd.net,futemais.net,fztvseries.ng,gdflix.*,gdriveplayer.*,gdrivelatinohd.net,gdtot.*,gidplayer.online,giize.com,goku.sx,gomovies.pk,hdfilme.*,hdhub4u.*,hakunamatata5.org,hdtodayz.to,hexload.com,hianime.*,hoca2.com,hoca6.com,hoca4u.xyz,hollymoviehd.cc,hunterscomics.com,joyousplay.xyz,jpopsingles.eu,jxoplay.xyz,kaa.mx,kingstreamz.site,lato.sx,likemanga.ink,linkmake.in,linksheild.site,lrepacks.net,luckypatchers.com,lulu.st,lulustream.*,luluvdo.com,luluvdoo.com,luluvid.com,mapple.tv,maxstream.*,mcloud.guru,medeberiya.site,mega4upload.net,messitv.org,mh.baxoi.buzz,mlbb.space,mlfbd.*,movieku.ink,movielair.cc,movielinkbdofficial.com,movies123.pk,movies4u.*,moviesapi.to,movieshdwatch.to,movieshubweb.com,moviesjoy.*,moviesnation.*,moviezwap.*,myflixerz.to,mywatchseries.*,nbabite.to,nexdrive.*,neymartv.net,nflbite.to,nmac.to,ogoplayer.xyz,olympustaff.com,onlinekosh.com,pahe.*,pelisflix2.*,pkembed.*,player.smashy.stream,playerflixapi.com,pondit.xyz,poophq.com,poscitechs.lol,pressplay.cam,pressplay.top,putlocker.*,reddit-streams.online,reliabletv.me,riedberg.tv,ripplestream4u.*,rojadirectaenhd.net,rubyvid.com,s2watch.link,safefileku.com,savefiles.com,seeflix.to,sflix.*,shazysport.pro,shopr.tv,showflix.*,skysetx.*,snowmtl.ru,soap2day.*,souq-design.com,spcdn.xyz,sportingsurge.com,sportsgames.today,sportshub.stream,sportsloverz.xyz,spotifylists.com,storynavigation.com,strcloud.in,streamblasters.*,streambtw.com,streameast.*,streamed.su,streaming-community.*,streamingcommunityz.*,streamingunity.to,streamlivetv.site,streamlord.com,streamruby.com,streamta.site,streamtape.*,streamup.ws,strmup.to,subtitlecat.com,swfr.tv,swiftload.io,tamilprint29.*,tamilprint30.*,tamilprint31.*,tapepops.com,telepisodes.org,tfp.is,thedaddy.*,thehesgoal.com,tinyzonetv.cc,topembed.pw,totalsportek.*,tous-sports.ru,tutvlive.ru,tvableon.me,tvsportslive.fr,updown.cam,ups2up.fun,uptomega.net,usgate.xyz,ustream.to,uqload.*,vcloud.lol,vecloud.eu,veev.to,vegamovies4u.*,veplay.top,vide0.net,video-seed.xyz,vidora.stream,vidply.com,vidsrc.*,vidtube.one,vidzy.org,vinovo.to,viprow.*,vixcloud.co,vodkapr3mium.com,volokit2.com,vvide0.com,watch.ug,watch32.sx,watchadsontape.com,watchf1full.com,watchonlinemovies.vercel.app,watchseries.*,watchseries8.to,watchug.to,way2movies.*,wdpglobal.com,weakstreams.online,wmovies.xyz,xcloud.*,y2mate.*,yoxplay.xyz,ythd.org,yuppow.com,zjet7.com,zorroplay.xyz##+js(acs, EventTarget.prototype.addEventListener, delete window)
 11xmovies.*,1tamilprint.art,2024tv.ru,2tamilprint.pro,9xmoovies.com,apkship.shop,ask4movie.*,avjosa.com,bigwarp.io,bigwarp.cc,capo4play.com,checklinks.online,cinego.tv,clickndownload.*,clicknupload.*,cookiewebplay.xyz,crackstreamsfree.com,cricstream.me,dlolcast.pro,dokoembed.pw,dooodster.com,embasic.pro,engstreams.shop,ev01.to,fojik.*,footballstreams.lol,footybite.to,foreverquote.xyz,fstream365.com,fzmovies.*,futemais.net,gdtot.*,gostream.to,hdstream.one,hoca2.com,hoca4u.xyz,kingstreamz.site,linksheild.site,linkz.*,lulustream.com,luluvdo.com,messitv.org,mostream.us,moviedokan.*,movies4u.*,myflixer.*,nbabite.to,nexdrive.*,neymartv.net,nflbite.to,oii.la,pahe.*,pkembed.*,poscitechs.lol,prmovies.*,readcomiconline.li,reddit-streams.online,ripplestream4u.*,rojadirectaenhd.net,rubyvid.com,s2watch.link,s3embtaku.pro,sflix2.to,sflix.to,shazysport.pro,showflix.*,sportshub.stream,sportsloverz.xyz,streamblasters.*,streameast.*,streamed.su,streamingcommunity.*,streamlivetv.site,streamta.site,strikeout.*,thehesgoal.com,topcinema.cam,topembed.pw,totalsportek.*,uqload.*,usgate.xyz,vixcloud.co,weakstreams.online,xcloud.*,zonatmo.com##^script:has-text('{delete window[')
 11xmovies.*,cinego.tv,clicknupload.*,dokoembed.pw,ev01.to,fojik.*,fstream365.com,fzmovies.*,linkz.*,lulustream.com,minoplres.xyz,mostream.us,moviedokan.*,myflixer.*,oii.la,pahe.*,prmovies.*,readcomiconline.li,s3embtaku.pro,sflix2.to,sportshub.stream,streamblasters.*,streamingcommunity.*,strikeout.*,topcinema.cam,topembed.pw,webxzplay.cfd,zonatmo.com##+js(rmnt, script, '{delete window[')
 filecrypt.*,mediacast.click,playcast.click##+js(acs, EventTarget.prototype.addEventListener, key in document)
@@ -8604,15 +8604,15 @@ nekopoicare.*>>##+js(acs, EventTarget.prototype.addEventListener, delete window)
 ||smahxdfxxdc.com^
 ||staukaptaicm.net^
 ?oo=1^$xhr,3p
-||com/|$xhr,3p,method=head,domain=andyday.*|animeunity.*|bflix.*|dlhd.*|fojik.*|hianime.*|moviesjoy.*|mywatchseries.*|sportshub.*|streaming-community.*|streamingcommunityz.*|vipbox.*|way2movies.*|andyday.pe|anime3rb.com|animeflv.net|animez.org|bflix.sh|capo5play.com|cardboardtranslation.com|cloudnestra.com|curiosidadtop.com|dlhd.click|dokoembed.pw|dorawatch.net|ebook-hunter.org|embedcanais.com|embedtv.net|fbstreams.pm|fojik.com|freemoviesfull.com|futemais.net|giize.com|hoca6.com|instalker.org|kaa.mx|luckypatchers.com|luluvdoo.com|mlbb.space|olympustaff.com|playerflixapi.com|rivestream.org|souq-design.com|spotifylists.com|streamlord.com|telepisodes.org|tfp.is|tutvlive.ru|ups2up.fun|vecloud.eu|vipbox.lc|watchf1full.com|webxzplay.cfd|xoxocomic.com|yuppow.com
-||net/|$xhr,3p,method=head,domain=andyday.*|animeunity.*|bflix.*|dlhd.*|fojik.*|hianime.*|moviesjoy.*|mywatchseries.*|sportshub.*|streaming-community.*|streamingcommunityz.*|vipbox.*|way2movies.*|andyday.pe|anime3rb.com|animeflv.net|animez.org|bflix.sh|capo5play.com|cardboardtranslation.com|cloudnestra.com|curiosidadtop.com|dlhd.click|dokoembed.pw|dorawatch.net|ebook-hunter.org|embedcanais.com|embedtv.net|fbstreams.pm|fojik.com|freemoviesfull.com|futemais.net|giize.com|hoca6.com|instalker.org|kaa.mx|luckypatchers.com|luluvdoo.com|mlbb.space|olympustaff.com|playerflixapi.com|rivestream.org|souq-design.com|spotifylists.com|streamlord.com|telepisodes.org|tfp.is|tutvlive.ru|ups2up.fun|vecloud.eu|vipbox.lc|watchf1full.com|webxzplay.cfd|xoxocomic.com|yuppow.com
-||xyz/|$xhr,3p,method=head,domain=andyday.*|animeunity.*|bflix.*|dlhd.*|fojik.*|hianime.*|moviesjoy.*|mywatchseries.*|sportshub.*|streaming-community.*|streamingcommunityz.*|vipbox.*|way2movies.*|andyday.pe|anime3rb.com|animeflv.net|animez.org|bflix.sh|capo5play.com|cardboardtranslation.com|cloudnestra.com|curiosidadtop.com|dlhd.click|dokoembed.pw|dorawatch.net|ebook-hunter.org|embedcanais.com|embedtv.net|fbstreams.pm|fojik.com|freemoviesfull.com|futemais.net|giize.com|hoca6.com|instalker.org|kaa.mx|luckypatchers.com|luluvdoo.com|mlbb.space|olympustaff.com|playerflixapi.com|rivestream.org|souq-design.com|spotifylists.com|streamlord.com|telepisodes.org|tfp.is|tutvlive.ru|ups2up.fun|vecloud.eu|vipbox.lc|watchf1full.com|webxzplay.cfd|xoxocomic.com|yuppow.com
-/^https?:\/\/[a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z]?[a-z]?[a-z]?[a-z]?[a-z]?[a-z]?[a-z]?\.com\/$/$xhr,3p,method=head,to=com,from=buzz|cam|cc|cyou|dad|download|gg|in|ink|life|link|live|lol|me|ng|nz|pk|pro|rest|site|so|soccer|stream|sv|sx|to|today|top|tv|tube|ug|ws|xyz|~edu.in|~edu.me|~edu.ng|~edu.nz|~edu.pk|~edu.so|~edu.sv|~edu.ug|~edu.ws|~gov.gg|~gov.in|~gov.me|~gov.ng|~gov.nz|~gov.pk|~gov.so|~gov.sx|~gov.to|~gov.tv|~gov.ws|~proton.me|~twitch.tv
-/^https?:\/\/[a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z]?[a-z]?[a-z]?[a-z]?[a-z]?[a-z]?[a-z]?\.net\/$/$xhr,3p,method=head,to=net,from=buzz|cam|cc|cyou|dad|download|gg|in|ink|life|link|live|lol|me|ng|nz|pk|pro|rest|site|so|soccer|stream|sv|sx|to|today|top|tv|tube|ug|ws|xyz|~edu.in|~edu.me|~edu.ng|~edu.nz|~edu.pk|~edu.so|~edu.sv|~edu.ug|~edu.ws|~gov.gg|~gov.in|~gov.me|~gov.ng|~gov.nz|~gov.pk|~gov.so|~gov.sx|~gov.to|~gov.tv|~gov.ws|~proton.me|~twitch.tv
-/^https?:\/\/[a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z]?[a-z]?[a-z]?[a-z]?[a-z]?[a-z]?[a-z]?\.xyz\/$/$xhr,3p,method=head,to=xyz,from=buzz|cam|cc|cyou|dad|download|gg|in|ink|life|link|live|lol|me|ng|nz|pk|pro|rest|site|so|soccer|stream|sv|sx|to|today|top|tv|tube|ug|ws|xyz|~edu.in|~edu.me|~edu.ng|~edu.nz|~edu.pk|~edu.so|~edu.sv|~edu.ug|~edu.ws|~gov.gg|~gov.in|~gov.me|~gov.ng|~gov.nz|~gov.pk|~gov.so|~gov.sx|~gov.to|~gov.tv|~gov.ws|~proton.me|~twitch.tv
-/^https?:\/\/[a-z]{8,15}\.com\/$/$xhr,3p,method=head,to=com,from=buzz|cam|cc|cyou|dad|download|gg|in|ink|life|link|live|lol|me|ng|nz|pk|pro|rest|site|so|soccer|stream|sv|sx|to|today|top|tv|tube|ug|ws|xyz|~edu.in|~edu.me|~edu.ng|~edu.nz|~edu.pk|~edu.so|~edu.sv|~edu.ug|~edu.ws|~gov.gg|~gov.in|~gov.me|~gov.ng|~gov.nz|~gov.pk|~gov.so|~gov.sx|~gov.to|~gov.tv|~gov.ws|~proton.me|~twitch.tv
-/^https?:\/\/[a-z]{8,15}\.net\/$/$xhr,3p,method=head,to=net,from=buzz|cam|cc|cyou|dad|download|gg|in|ink|life|link|live|lol|me|ng|nz|pk|pro|rest|site|so|soccer|stream|sv|sx|to|today|top|tv|tube|ug|ws|xyz|~edu.in|~edu.me|~edu.ng|~edu.nz|~edu.pk|~edu.so|~edu.sv|~edu.ug|~edu.ws|~gov.gg|~gov.in|~gov.me|~gov.ng|~gov.nz|~gov.pk|~gov.so|~gov.sx|~gov.to|~gov.tv|~gov.ws|~proton.me|~twitch.tv
-/^https?:\/\/[a-z]{8,15}\.xyz\/$/$xhr,3p,method=head,to=xyz,from=buzz|cam|cc|cyou|dad|download|gg|in|ink|life|link|live|lol|me|ng|nz|pk|pro|rest|site|so|soccer|stream|sv|sx|to|today|top|tv|tube|ug|ws|xyz|~edu.in|~edu.me|~edu.ng|~edu.nz|~edu.pk|~edu.so|~edu.sv|~edu.ug|~edu.ws|~gov.gg|~gov.in|~gov.me|~gov.ng|~gov.nz|~gov.pk|~gov.so|~gov.sx|~gov.to|~gov.tv|~gov.ws|~proton.me|~twitch.tv
+||com/|$xhr,3p,method=head,domain=andyday.*|animeunity.*|asd.*|bflix.*|dlhd.*|fojik.*|hianime.*|moviesjoy.*|mywatchseries.*|sportshub.*|streaming-community.*|streamingcommunityz.*|vipbox.*|way2movies.*|andyday.pe|anime3rb.com|animeflv.net|animez.org|bflix.sh|capo5play.com|cardboardtranslation.com|cloudnestra.com|curiosidadtop.com|dlhd.click|dokoembed.pw|dorawatch.net|ebook-hunter.org|embedcanais.com|embedtv.net|fbstreams.pm|fojik.com|freemoviesfull.com|futemais.net|giize.com|hoca6.com|instalker.org|kaa.mx|luckypatchers.com|luluvdoo.com|mlbb.space|olympustaff.com|playerflixapi.com|rivestream.org|souq-design.com|spotifylists.com|streamlord.com|telepisodes.org|tfp.is|tutvlive.ru|ups2up.fun|vecloud.eu|vipbox.lc|watchf1full.com|webxzplay.cfd|xoxocomic.com|yuppow.com
+||net/|$xhr,3p,method=head,domain=andyday.*|animeunity.*|asd.*|bflix.*|dlhd.*|fojik.*|hianime.*|moviesjoy.*|mywatchseries.*|sportshub.*|streaming-community.*|streamingcommunityz.*|vipbox.*|way2movies.*|andyday.pe|anime3rb.com|animeflv.net|animez.org|bflix.sh|capo5play.com|cardboardtranslation.com|cloudnestra.com|curiosidadtop.com|dlhd.click|dokoembed.pw|dorawatch.net|ebook-hunter.org|embedcanais.com|embedtv.net|fbstreams.pm|fojik.com|freemoviesfull.com|futemais.net|giize.com|hoca6.com|instalker.org|kaa.mx|luckypatchers.com|luluvdoo.com|mlbb.space|olympustaff.com|playerflixapi.com|rivestream.org|souq-design.com|spotifylists.com|streamlord.com|telepisodes.org|tfp.is|tutvlive.ru|ups2up.fun|vecloud.eu|vipbox.lc|watchf1full.com|webxzplay.cfd|xoxocomic.com|yuppow.com
+||xyz/|$xhr,3p,method=head,domain=andyday.*|animeunity.*|asd.*|bflix.*|dlhd.*|fojik.*|hianime.*|moviesjoy.*|mywatchseries.*|sportshub.*|streaming-community.*|streamingcommunityz.*|vipbox.*|way2movies.*|andyday.pe|anime3rb.com|animeflv.net|animez.org|bflix.sh|capo5play.com|cardboardtranslation.com|cloudnestra.com|curiosidadtop.com|dlhd.click|dokoembed.pw|dorawatch.net|ebook-hunter.org|embedcanais.com|embedtv.net|fbstreams.pm|fojik.com|freemoviesfull.com|futemais.net|giize.com|hoca6.com|instalker.org|kaa.mx|luckypatchers.com|luluvdoo.com|mlbb.space|olympustaff.com|playerflixapi.com|rivestream.org|souq-design.com|spotifylists.com|streamlord.com|telepisodes.org|tfp.is|tutvlive.ru|ups2up.fun|vecloud.eu|vipbox.lc|watchf1full.com|webxzplay.cfd|xoxocomic.com|yuppow.com
+/^https?:\/\/[a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z]?[a-z]?[a-z]?[a-z]?[a-z]?[a-z]?[a-z]?\.com\/$/$xhr,3p,method=head,to=com,from=buzz|cam|cc|cyou|dad|download|gg|homes|in|ink|life|link|live|lol|me|ng|nz|pk|pro|rest|site|so|soccer|stream|sv|sx|to|today|top|tv|tube|ug|ws|xyz|~edu.in|~edu.me|~edu.ng|~edu.nz|~edu.pk|~edu.so|~edu.sv|~edu.ug|~edu.ws|~gov.gg|~gov.in|~gov.me|~gov.ng|~gov.nz|~gov.pk|~gov.so|~gov.sx|~gov.to|~gov.tv|~gov.ws|~proton.me|~twitch.tv
+/^https?:\/\/[a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z]?[a-z]?[a-z]?[a-z]?[a-z]?[a-z]?[a-z]?\.net\/$/$xhr,3p,method=head,to=net,from=buzz|cam|cc|cyou|dad|download|gg|homes|in|ink|life|link|live|lol|me|ng|nz|pk|pro|rest|site|so|soccer|stream|sv|sx|to|today|top|tv|tube|ug|ws|xyz|~edu.in|~edu.me|~edu.ng|~edu.nz|~edu.pk|~edu.so|~edu.sv|~edu.ug|~edu.ws|~gov.gg|~gov.in|~gov.me|~gov.ng|~gov.nz|~gov.pk|~gov.so|~gov.sx|~gov.to|~gov.tv|~gov.ws|~proton.me|~twitch.tv
+/^https?:\/\/[a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z]?[a-z]?[a-z]?[a-z]?[a-z]?[a-z]?[a-z]?\.xyz\/$/$xhr,3p,method=head,to=xyz,from=buzz|cam|cc|cyou|dad|download|gg|homes|in|ink|life|link|live|lol|me|ng|nz|pk|pro|rest|site|so|soccer|stream|sv|sx|to|today|top|tv|tube|ug|ws|xyz|~edu.in|~edu.me|~edu.ng|~edu.nz|~edu.pk|~edu.so|~edu.sv|~edu.ug|~edu.ws|~gov.gg|~gov.in|~gov.me|~gov.ng|~gov.nz|~gov.pk|~gov.so|~gov.sx|~gov.to|~gov.tv|~gov.ws|~proton.me|~twitch.tv
+/^https?:\/\/[a-z]{8,15}\.com\/$/$xhr,3p,method=head,to=com,from=buzz|cam|cc|cyou|dad|download|gg|homes|in|ink|life|link|live|lol|me|ng|nz|pk|pro|rest|site|so|soccer|stream|sv|sx|to|today|top|tv|tube|ug|ws|xyz|~edu.in|~edu.me|~edu.ng|~edu.nz|~edu.pk|~edu.so|~edu.sv|~edu.ug|~edu.ws|~gov.gg|~gov.in|~gov.me|~gov.ng|~gov.nz|~gov.pk|~gov.so|~gov.sx|~gov.to|~gov.tv|~gov.ws|~proton.me|~twitch.tv
+/^https?:\/\/[a-z]{8,15}\.net\/$/$xhr,3p,method=head,to=net,from=buzz|cam|cc|cyou|dad|download|gg|homes|in|ink|life|link|live|lol|me|ng|nz|pk|pro|rest|site|so|soccer|stream|sv|sx|to|today|top|tv|tube|ug|ws|xyz|~edu.in|~edu.me|~edu.ng|~edu.nz|~edu.pk|~edu.so|~edu.sv|~edu.ug|~edu.ws|~gov.gg|~gov.in|~gov.me|~gov.ng|~gov.nz|~gov.pk|~gov.so|~gov.sx|~gov.to|~gov.tv|~gov.ws|~proton.me|~twitch.tv
+/^https?:\/\/[a-z]{8,15}\.xyz\/$/$xhr,3p,method=head,to=xyz,from=buzz|cam|cc|cyou|dad|download|gg|homes|in|ink|life|link|live|lol|me|ng|nz|pk|pro|rest|site|so|soccer|stream|sv|sx|to|today|top|tv|tube|ug|ws|xyz|~edu.in|~edu.me|~edu.ng|~edu.nz|~edu.pk|~edu.so|~edu.sv|~edu.ug|~edu.ws|~gov.gg|~gov.in|~gov.me|~gov.ng|~gov.nz|~gov.pk|~gov.so|~gov.sx|~gov.to|~gov.tv|~gov.ws|~proton.me|~twitch.tv
 filmpertutti.*##.ads
 filmpertutti.*##.no_pop
 moviespapa.*##+js(aost, XMLHttpRequest, /inlineScript|stackDepth:1/)
@@ -8626,7 +8626,7 @@ aagmaal.*##+js(rpnt, script, break;case $.)
 *$xhr,3p,domain=nxbrew.com
 *$script,3p,from=minoplres.xyz,to=~jwpcdn.com
 ||y2mate.*/themes/js/pn.js
-18comic.vip,18comic-gquu.vip,adictox.com,anizm.net,archivebate.*,asiaon.*,asianporn.li,asiaontop.com,asmr18.fans,b-hentai.com,bebasbokep.online,bos21.site,bunkrr.*,cat3movie.org,cdn1.site,comohoy.com,cyberdrop.me,daftporn.com,daftsex.net,ddd-smart.net,dvdgayonline.com,ekasiwap.com,fapeza.com,fapfappy.com,g-porno.com,g-streaming.com,hhkungfu.*,hentai2read.com,hentai2w.com,hitomi.la,homemoviestube.com,jav-fun.cc,jav.direct,jav.si,javboys.com,javbraze.com,javfor.tv,javhat.tv,javhd.*,javhdz.today,javmenu.com,javmix.tv,javpas.com,javseen.tv,javtiful.com,klmanga.*,komikmanhwa.me,lovingsiren.com,luluvdoo.com,madouqu.com,manga1001.*,mangakakalot.gg,mangaraw.*,mangarawjp.*,movieffm.net,natomanga.com,nekopoi.*,nelomanga.*,netfapx.com,nsfwr34.com,nsfwyoutube.com,nudogram.com,nukibooks.com,qmh.sex,play.playkrx18.site,poapan.xyz,odporn.com,popjav.in,porn4fans.com,porntin.com,rawkuma.net,rule34.xyz,rule34vault.com,savefiles.com,sexdicted.com,shinshi-manga.net,spoilerplus.tv,streampoi.com,sxyprn.com,syosetu.*,taxi69.com,teenager365.to,thefappening.pro,thefappeningblog.com,tojav.net,turbocloud.xyz,turbovid.xyz,ups2up.fun,vegamoviese.*,vide0.net,videplay.us,x-fetish.tube,x-x-x.video,xanimeporn.com,xxgasm.com,xxxfree.watch,youwatch.monster##+js(acs, WebAssembly, atob)
+18comic.vip,18comic-gquu.vip,adictox.com,anizm.net,archivebate.*,asiaon.*,asianporn.li,asiaontop.com,asmr18.fans,b-hentai.com,bebasbokep.online,bos21.site,bunkrr.*,cat3movie.org,cdn1.site,comohoy.com,cyberdrop.me,daftporn.com,daftsex.net,ddd-smart.net,dvdgayonline.com,ekasiwap.com,fapeza.com,fapfappy.com,g-porno.com,g-streaming.com,hhkungfu.*,hentai2read.com,hentai2w.com,hitomi.la,homemoviestube.com,jav-fun.cc,jav.direct,jav.si,javboys.com,javbraze.com,javfor.tv,javhat.tv,javhd.*,javhdz.today,javmenu.com,javmix.tv,javpas.com,javseen.tv,javtiful.com,jpg6.su,klmanga.*,komikmanhwa.me,lovingsiren.com,luluvdoo.com,madouqu.com,manga1001.*,mangakakalot.gg,mangaraw.*,mangarawjp.*,movieffm.net,natomanga.com,nekopoi.*,nelomanga.*,netfapx.com,nsfwr34.com,nsfwyoutube.com,nudogram.com,nukibooks.com,qmh.sex,play.playkrx18.site,poapan.xyz,odporn.com,popjav.in,porn4fans.com,porntin.com,rawkuma.net,rule34.xyz,rule34vault.com,savefiles.com,sexdicted.com,shinshi-manga.net,spoilerplus.tv,streampoi.com,sxyprn.com,syosetu.*,taxi69.com,teenager365.to,thefappening.pro,thefappeningblog.com,tojav.net,turbocloud.xyz,turbovid.xyz,ups2up.fun,vegamoviese.*,vide0.net,videplay.us,x-fetish.tube,x-x-x.video,xanimeporn.com,xxgasm.com,xxxfree.watch,youwatch.monster##+js(acs, WebAssembly, atob)
 filmisub.cc##+js(acs, WebAssembly, atob, /^data:/)
 /aas/r45d/vki/*$script,redirect=noop.js
 /^https:\/\/[a-z]{8,12}\.com\/en\/(?:[a-z]{2,10}\/){0,2}[a-z]{2,}\?(?:[a-z]+=[^&=?\s]*?&)*?id=[12]\d{6}\b/$script,3p,match-case,to=com
@@ -9250,6 +9250,7 @@ alleveilingen.be,alleveilingen.nl##+js(acs, document.addEventListener, fakeAd)
 ||2mdn.net/instream/html5/ima3.js$redirect=google-ima.js,domain=puna.bbvms.com,important
 nos.nl##+js(json-prune-fetch-response, adUrl, , propsToMatch, .azurewebsites.net)
 @@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$domain=goplay.be|play.tv
+@@||pubads.g.doubleclick.net/ondemand/$xhr,domain=goplay.be|play.tv
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$redirect=noopjs,domain=goplay.be|play.tv
 ||pagead2.googlesyndication.com/omsdk/releases/live/omweb-v1.js$redirect=noopjs,domain=goplay.be|play.tv
 ||dai.google.com/ondemand/dash/content/*/time-events.json$domain=goplay.be|play.tv
@@ -9392,6 +9393,7 @@ pandaspor.live##[href^="https://go.aff."]
 pandaspor.live##[onclick^="trackBannerClick"]
 pandaspor.live##+js(rpnt, script, await runPreRollAds();)
 turkedebiyati.org##+js(rmnt, script, /adbl/i)
+/^https:\/\/apisplus2\.live\/v[0-9]\.[0-9]\/[a-z]+$/$xhr,domain=tr.sportplus.tv
 qmh.sex##+js(nowoif, _blank)
 qmh.sex##.vip1-play-overlay
 ||api.qmh.sex/api/banner/
@@ -17526,15 +17528,10 @@ history.com#@#.m-in-content-ad-row
 history.com##aside:has([class*="-ad-"])
 history.com##+js(no-xhr-if, time-events)
 @@||aetnd.com^$ghide
-@@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$domain=play.aetv.com
-@@||play.aetv.com/vendor/VisitorAPI.js$script,1p
-||play.aetv.com/vendor/conviva-thePlatform-plugin.js$script
-||play.aetv.com/vendor/conviva-core-sdk.js$script
-||play.aetv.com/vendor/branch.js$script
-||play.aetv.com/vendor/Samba.min.js$script
-||play.aetv.com/vendor/amplitude.js$script
-||play.aetv.com/vendor/MediaSDK.min.js$script
-||dai.google.com/ondemand/hls/content/*/time-events.json$domain=play.aetv.com
+@@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$domain=play.aetv.com|play.mylifetime.com
+@@||play.*.com/vendor/VisitorAPI.js$script,1p,domain=play.aetv.com|play.mylifetime.com
+||play.*.com/vendor/$domain=play.aetv.com|play.mylifetime.com
+||dai.google.com/ondemand/hls/content/*/time-events.json$domain=play.aetv.com|play.mylifetime.com
 ||ssiadnweb.securenetsystems.net^
 securenetsystems.net##+js(rmnt, script, adblock)
 edmdls.com,freshremix.net,scenedl.org##+js(set, loadpagecheck, noopFunc)
@@ -20569,11 +20566,12 @@ fbstream.*,fbstreams.*##.position-absolute
 vipleague.*##.bg-dark.ratio > .position-absolute
 */script/formula.js|$script
 vipleague.*##.m-1.btn-danger.btn
-buffsports.*,fbstreams.*,mlbbox.me,omuzaani.me,strikeout.im,vipleague.*,wavewalt.me##^script:has-text(/adserverDomain|delete window|FingerprintJS|probe|detected/)
-buffsports.*,fbstreams.*,mlbbox.me,omuzaani.me,strikeout.im,vipleague.*,wavewalt.me##+js(rmnt, script, /adserverDomain|delete window|FingerprintJS|probe|detected/)
+buffsports.*,fbstreams.*,mlbbox.me,omuzaani.me,strikeout.im,vipleague.*,wavewalt.me##^script:has-text(/adserverDomain|delete window|FingerprintJS/)
+buffsports.*,fbstreams.*,mlbbox.me,omuzaani.me,strikeout.im,vipleague.*,wavewalt.me##+js(rmnt, script, /adserverDomain|delete window|FingerprintJS/)
 buffsports.*,fbstreams.*,mlbbox.me,omuzaani.me,strikeout.im,vipleague.*,wavewalt.me##+js(acs, EventTarget.prototype.addEventListener, delete window)
 omuzaani.me,strikeout.im,wavewalt.me#@#.Ad-Container:not(.adsbygoogle)
 omuzaani.me##+js(rpnt, script, window.navigator.brave, undefined)
+@@||omuzaani.me^$ghide
 mma-core.*##+js(nostif, displayAdBlockedVideo)
 mma-core.*##+js(acs, $, /undefined|displayAdBlockedVideo/)
 mma-core.*###tlbrd
@@ -22014,6 +22012,12 @@ tsz.com.np##+js(nostif, googlesyndication)
 perverzija.com##+js(aeld, message, _0x)
 dameungrrr.videoid.baby##+js(aeld, popstate, window.location.href)
 viralpedia.pro##+js(nowoif)
+asd.*##+js(aeld, DOMContentLoaded, _0x)
+cmsdetect.com##+js(nowoif, _blank)
+cmsdetect.com##.results-bottom-banner
+||fiverr.com/gig_widgets?$3p
+mgeko.cc##+js(rmnt, script, /const ads/i)
+mgeko.cc###hero-ad
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
 ||vlc.de^$doc
@@ -22562,7 +22566,6 @@ howtoremove.guide###gray_de
 ||basesfiles.com^$all
 ||one-click.cc^$all
 ||descarga.pw^$doc
-||clc-link.me^$all
 ||mediafire.com/folder/ofa1qju50ffaz/$doc
 ||mediafire.com/folder/hm0b7x2593fh1/$doc
 ||mediafire.com/folder/86rkvkl7eswi2/$doc
@@ -22591,14 +22594,11 @@ howtoremove.guide###gray_de
 ||games-blacksoft.com^$doc
 ||freefiles-upload.com^$doc
 ||projecthygieia.com^$all
-||zxcprogs.shop^$all
 ||fusionhacks.cc^$doc
 ||phantomcorestudios.net^$doc
-||1wdrop5.com^$all
 ||mysoft.rest^$all
-||paradoxcheat.fun^$all
 ||syntaxwave.lol^$doc
-||eliteplayadvantage.shop^$all
+||gitzdownloadkm.cyou^$doc
 ||cloud-deployments.org^$doc
 ||tech-cloud.org^$doc
 .systems/signup?ad_domain=$doc,popup
@@ -30215,7 +30215,6 @@ cdn.gledaitv.*##+js(trusted-replace-argument, decodeURIComponent, 0, , condition
 cdn.gledaitv.*##+js(trusted-replace-outbound-text, atob, /.+/g, , condition, script.innerHTML)
 cdn.gledaitv.*##+js(no-fetch-if, method:/head/i)
 cdn.gledaitv.*##+js(nosiif, await)
-cdn.bg-gledai.*,cdn.gledaitv.*##[id^="anti-pedali-"]
 @@*$image,xhr,domain=cdn.bg-gledai.*|cdn.gledaitv.*|cdn.bg-gledai.video|cdn.gledaitv.fan|cdn.gledaitv.live
 cdn.bg-gledai.video,cdn.gledaitv.fan,cdn.gledaitv.live##+js(aost, document.createElement, createAdblockWarning)
 @@||cdn.gledaitv.$ghide
@@ -30263,10 +30262,9 @@ nontonx.com###rules-nontonx
 @@||embed.wcostream.com^$script,1p
 embed.wcostream.com##^script:has-text(/google_jobrunner|AdBlock|pubadx|embed\.html/i)
 embed.wcostream.com##+js(rmnt, script, /google_jobrunner|AdBlock|pubadx|embed\.html/i)
-client.falixnodes.net##+js(rmnt, script, /aps_csm|snigelweb|gettheName|YWRuZ2lu|adngin|heytycoon|\>Please disable|body\.style \= \"margin/)
+client.falixnodes.net##+js(rmnt, script, /aps_csm|snigelweb|gettheName|YWRuZ2lu|adngin|howyadoing|\>Disable your|body\.style \= \"padding/)
 client.falixnodes.net##+js(rpnt, script, /googletag.*?enableServices\(\)\;/s)
 client.falixnodes.net##+js(rpnt, script, /googletag\.pubads\(\).*rewardedSlot\)\;\s+\}\)\;/s)
-client.falixnodes.net##+js(rmnt, script, /^\s*setTimeout.{300\,800}/s)
 ||rm.freex2line.online/*.js|$domain=cimanow.cc
 ||global.novelpia.com/_nuxt/*.js|$script,replace=/if\(\w\.check_is_ad_free\(\)\)/if(true)/
 @@||global.novelpia.com^$ghide
@@ -30418,8 +30416,8 @@ aonsolutions.es##+js(trusted-set-cookie, cookies-consent, agree)
 launer.com##+js(trusted-set-cookie, cookie_consent, 100, 1year)
 bever.nl##+js(trusted-set-cookie, consent_setting, analytics%3A0%7Cfunctional%3A1%7Cmarketing%3A0, , , reload, 1)
 oem.no##+js(trusted-set-cookie, cookieConsent, functional=1&analytics=0&marketing=0, , , reload, 1)
-cdn.privacy-mgmt.com##+js(trusted-click-element, .message-container.global-font button.message-button.no-children.focusable.button-font.sp_choice_type_12[title="MORE OPTIONS")
-cdn.privacy-mgmt.com##+js(trusted-click-element, [data-choice="1683026410215"], , 500)
+tomsguide.com>>##+js(trusted-click-element, .message-container.global-font button.message-button.no-children.focusable.button-font.sp_choice_type_12[title="MORE OPTIONS")
+tomsguide.com>>##+js(trusted-click-element, [data-choice="1683026410215"], , 500)
 forums.tomsguide.com##+js(trusted-set-cookie, euconsent-v2, CP20-YAP20-YAAKAyBENAfEgAAAAAAAAAAwIAAAI8gBAGfAR4AAA.YAAAAAAAAAAA, 1year)
 forums.tomsguide.com##+js(trusted-set-local-storage-item, _cmpRepromptHash, CP20-YAP20-YAAKAyBENAfEgAAAAAAAAAAwIAAAI8gBAGfAR4AAA.YAAAAAAAAAAA.1.l4yppBwRRyXiPrnFNrkJzQ==.P21TmRP21TmRAKAaAB4AAAAA)
 forums.tomsguide.com##+js(trusted-set-local-storage-item, noniabvendorconsent, P21TmRP21TmRAKAaAB4AAAAA)
@@ -30568,7 +30566,7 @@ opendoors.org##+js(trusted-set-cookie, cookify, eyJuZWNlc3NhcnkiOnRydWUsIm1hcmtl
 eduskunta.fi,parliament.fi,riksdagen.fi##+js(trusted-set-cookie, eduskunta_cookie_consent, cookie-consent_rejected, 5259487)
 hus.fi##+js(trusted-set-cookie, cookiehub, eyJhbnN3ZXJlZCI6dHJ1ZSwicmV2aXNpb24iOjEsImRudCI6ZmFsc2UsImFsbG93U2FsZSI6dHJ1ZSwiaW1wbGljdCI6ZmFsc2UsInJlZ2lvbiI6IiIsInRva2VuIjoiUzZqU1p4bmtZcW5QaENqN3QxbkR4SXlkTnZtbFYxY2tmN1R6dXBhekQ1RWZoZjZ5MU45WHYxdnd6c2Z5UXJEMSIsInRpbWVzdGFtcCI6IjIwMjUtMDMtMjJUMjM6MDE6MjYuNDk0WiIsImFsbEFsbG93ZWQiOmZhbHNlLCJjYXRlZ29yaWVzIjpbXSwidmVuZG9ycyI6W10sInNlcnZpY2VzIjpbXSwiaW1wbGljaXQiOmZhbHNlfQ==, 1year)
 tvprofil.com##+js(trusted-set-cookie, gdpr_consent, necessary%3D1%26analytics%3D0, , , domain, tvprofil.com, reload, 1)
-cdn.privacy-mgmt.com##+js(trusted-click-element, button[title="I do not agree"])
+bbc.com>>##+js(trusted-click-element, button[title="I do not agree"])
 @@||cmp.inmobi.com/geoip$xhr,domain=ilgiornale.it
 @@||cmp.inmobi.com/GVL-v3/$domain=ilgiornale.it
 @@||cmp.inmobi.com/tcfv2/$domain=ilgiornale.it
@@ -30619,7 +30617,7 @@ evaair.com##+js(trusted-set-cookie, _EVAGDPRfunctional, Y, 1year)
 vkmag.com##+js(trusted-set-cookie, OptanonConsent, groups=C0004%3A0%2CC0003%3A1%2CC0002%3A0%2CC0001%3A1%2CSTACK42%3A0, 1year)
 vkmag.com##+js(trusted-set-cookie, eupubconsent-v2, CPt6LrpPt6LrpAcABBENDKCgAAAAAAAAAAYgGBtX_T5eb2vj-3ZcN_tkaYwP55y3o2wzhhaIke8NwIeH7BoGJ2MwvBV4JiACGBAkkiKBAQVlHGBcCQAAgIgRiSKMYk2MjzNKJLJAilMbO0NYCD9mnkHT2ZCY70-uO__zvneAAAAYJABAXmKgAgLzGQAQF5joAIC8yUAEBeZSACAvMAAA.YAAAAAAAAAAA, 1year, , reload, 1)
 mtvuutiset.fi##+js(trusted-set-cookie, OptanonConsent, groups=1%3A1%2C2%3A0%2C3%3A1%2C4%3A0%2C5%3A1%2CBG57%3A0%2CBG58%3A0%2CBG59%3A0, 1year)
-cdn.privacy-mgmt.com##+js(trusted-click-element, button.alma-cmp-button[title="Hyväksy"])
+almamedia.fi>>,ampparit.com>>,arvopaperi.fi>>,iltalehti.fi>>,kauppalehti.fi>>,mikrobitti.fi>>,talouselama.fi>>,tekniikkatalous.fi>>,tivi.fi>>,uusisuomi.fi>>##+js(trusted-click-element, button.alma-cmp-button[title="Hyväksy"])
 almamedia.fi,ampparit.com,arvopaperi.fi,iltalehti.fi,kauppalehti.fi,mikrobitti.fi,talouselama.fi,tekniikkatalous.fi,tivi.fi,uusisuomi.fi##html.sp-message-open:style(overflow: auto !important; width: initial !important)
 almamedia.fi,ampparit.com,arvopaperi.fi,iltalehti.fi,kauppalehti.fi,mikrobitti.fi,talouselama.fi,tekniikkatalous.fi,tivi.fi,uusisuomi.fi##html.sp-message-open > body:style(position: unset !important; margin-top: 0 !important; overflow: visible !important)
 almamedia.fi,ampparit.com,arvopaperi.fi,iltalehti.fi,kauppalehti.fi,mikrobitti.fi,talouselama.fi,tekniikkatalous.fi,tivi.fi,uusisuomi.fi##[title="SP Consent Message"]
@@ -30636,10 +30634,10 @@ gameinformer.com###onetrust-consent-sdk:style(visibility: collapse !important;)
 gameinformer.com###onetrust-banner-sdk
 gameinformer.com##+js(trusted-set-cookie, OptanonConsent, groups=C0001%3A1%2CC0003%3A1%2CSPD_BG%3A1%2CC0002%3A1%2CC0004%3A1%2CC0005%3A1, , , reload, 1)
 christianconcern.com##+js(trusted-set-cookie, STYXKEY_your_privacy_settings, %7B%22strict%22%3A%221%22%2C%22thirdparty%22%3A%221%22%2C%22advanced%22%3A%220%22%7D, 1year, , reload, 1)
-cdn.privacy-mgmt.com##+js(trusted-click-element, .sanoma-logo-container ~ .message-component.sticky-buttons button.sp_choice_type_12[title="Asetukset"])
-cdn.privacy-mgmt.com##+js(trusted-click-element, .sanoma-logo-container ~ .message-component.privacy-manager-tcfv2 .tcfv2-stack[title="Sanoman sisällönjakelukumppanit"] button.pm-switch[aria-checked="false"])
-cdn.privacy-mgmt.com##.sanoma-logo-container ~ .message-component.privacy-manager-tcfv2 .tcfv2-stack:not([title="Sanoman sisällönjakelukumppanit"]) button.pm-switch.checked:remove-class(checked)
-cdn.privacy-mgmt.com##+js(trusted-click-element, .sanoma-logo-container ~ .message-component button.sp_choice_type_SAVE_AND_EXIT[title="Tallenna"], , 1500)
+aamulehti.fi>>,etlehti.fi>>,gloria.fi>>,hs.fi>>,hyvaterveys.fi>>,is.fi>>,jamsanseutu.fi>>,janakkalansanomat.fi>>,kankaanpaanseutu.fi>>,kmvlehti.fi>>,kodinkuvalehti.fi>>,merikarvialehti.fi>>,nokianuutiset.fi>>,pelikone.fi>>,rannikkoseutu.fi>>,ruutu.fi>>,satakunnankansa.fi>>,soppa365.fi>>,suurkeuruu.fi>>,sydansatakunta.fi>>,tyrvaansanomat.fi>>,valkeakoskensanomat.fi>>,vauva.fi>>##+js(trusted-click-element, .sanoma-logo-container ~ .message-component.sticky-buttons button.sp_choice_type_12[title="Asetukset"])
+aamulehti.fi>>,etlehti.fi>>,gloria.fi>>,hs.fi>>,hyvaterveys.fi>>,is.fi>>,jamsanseutu.fi>>,janakkalansanomat.fi>>,kankaanpaanseutu.fi>>,kmvlehti.fi>>,kodinkuvalehti.fi>>,merikarvialehti.fi>>,nokianuutiset.fi>>,pelikone.fi>>,rannikkoseutu.fi>>,ruutu.fi>>,satakunnankansa.fi>>,soppa365.fi>>,suurkeuruu.fi>>,sydansatakunta.fi>>,tyrvaansanomat.fi>>,valkeakoskensanomat.fi>>,vauva.fi>>##+js(trusted-click-element, .sanoma-logo-container ~ .message-component.privacy-manager-tcfv2 .tcfv2-stack[title="Sanoman sisällönjakelukumppanit"] button.pm-switch[aria-checked="false"])
+aamulehti.fi>>,etlehti.fi>>,gloria.fi>>,hs.fi>>,hyvaterveys.fi>>,is.fi>>,jamsanseutu.fi>>,janakkalansanomat.fi>>,kankaanpaanseutu.fi>>,kmvlehti.fi>>,kodinkuvalehti.fi>>,merikarvialehti.fi>>,nokianuutiset.fi>>,pelikone.fi>>,rannikkoseutu.fi>>,ruutu.fi>>,satakunnankansa.fi>>,soppa365.fi>>,suurkeuruu.fi>>,sydansatakunta.fi>>,tyrvaansanomat.fi>>,valkeakoskensanomat.fi>>,vauva.fi>>##.sanoma-logo-container ~ .message-component.privacy-manager-tcfv2 .tcfv2-stack:not([title="Sanoman sisällönjakelukumppanit"]) button.pm-switch.checked:remove-class(checked)
+aamulehti.fi>>,etlehti.fi>>,gloria.fi>>,hs.fi>>,hyvaterveys.fi>>,is.fi>>,jamsanseutu.fi>>,janakkalansanomat.fi>>,kankaanpaanseutu.fi>>,kmvlehti.fi>>,kodinkuvalehti.fi>>,merikarvialehti.fi>>,nokianuutiset.fi>>,pelikone.fi>>,rannikkoseutu.fi>>,ruutu.fi>>,satakunnankansa.fi>>,soppa365.fi>>,suurkeuruu.fi>>,sydansatakunta.fi>>,tyrvaansanomat.fi>>,valkeakoskensanomat.fi>>,vauva.fi>>##+js(trusted-click-element, .sanoma-logo-container ~ .message-component button.sp_choice_type_SAVE_AND_EXIT[title="Tallenna"], , 1500)
 aamulehti.fi,etlehti.fi,gloria.fi,hs.fi,hyvaterveys.fi,is.fi,jamsanseutu.fi,janakkalansanomat.fi,kankaanpaanseutu.fi,kmvlehti.fi,kodinkuvalehti.fi,merikarvialehti.fi,nokianuutiset.fi,pelikone.fi,rannikkoseutu.fi,ruutu.fi,satakunnankansa.fi,soppa365.fi,suurkeuruu.fi,sydansatakunta.fi,tyrvaansanomat.fi,valkeakoskensanomat.fi,vauva.fi##[title="SP Consent Message"]
 aamulehti.fi,etlehti.fi,gloria.fi,hs.fi,hyvaterveys.fi,is.fi,jamsanseutu.fi,janakkalansanomat.fi,kankaanpaanseutu.fi,kmvlehti.fi,kodinkuvalehti.fi,merikarvialehti.fi,nokianuutiset.fi,pelikone.fi,rannikkoseutu.fi,ruutu.fi,satakunnankansa.fi,soppa365.fi,suurkeuruu.fi,sydansatakunta.fi,tyrvaansanomat.fi,valkeakoskensanomat.fi,vauva.fi##html.sp-message-open:style(overflow: auto !important; width: initial !important)
 aamulehti.fi,etlehti.fi,gloria.fi,hs.fi,hyvaterveys.fi,is.fi,jamsanseutu.fi,janakkalansanomat.fi,kankaanpaanseutu.fi,kmvlehti.fi,kodinkuvalehti.fi,merikarvialehti.fi,nokianuutiset.fi,pelikone.fi,rannikkoseutu.fi,ruutu.fi,satakunnankansa.fi,soppa365.fi,suurkeuruu.fi,sydansatakunta.fi,tyrvaansanomat.fi,valkeakoskensanomat.fi,vauva.fi##html.sp-message-open > body:style(position: unset !important; margin-top: 0 !important; overflow: visible !important)
@@ -30892,7 +30890,7 @@ money.it#@#.cky-consent-container
 gld.nl,omroepwest.nl,omroepzeeland.nl,omropfryslan.nl,rijnmond.nl,rtvdrenthe.nl,rtvnoord.nl,rtvutrecht.nl##+js(trusted-set-cookie, consent-cookie-toggles, [{%22type%22:%22social%22%2C%22value%22:3}%2C{%22type%22:%22remaining%22%2C%22value%22:3}])
 luminousindia.com##+js(trusted-set-local-storage-item, lms_cookies, nk9jfSLYwDn7O5xP0UhgFw==)
 stilord.com,stilord.pl,stilord.de,stilord.fr##+js(trusted-set-cookie, plenty-shop-cookie, '{"necessary":{"amazonPay":true,"consent":true,"consentActiveStatus":true,"externalId":true,"session":true,"csrf":true,"paypal-cookies":true},"tracking":{"googleanalytics":false,"bingads":false},"marketing":{"googleads":false,"facebookpixel":false,"pinterest":false},"media":{"reCaptcha":true},"convenience":{"languageDetection":false}}')
-cdn.privacy-mgmt.com##+js(trusted-click-element, button[aria-label="Agree"])
+imore.com>>##+js(trusted-click-element, button[aria-label="Agree"])
 esprit.*##+js(trusted-set-cookie, CONSENTMGR, 'c1:0|c2:0|c3:0|c4:0|c5:0|c6:0|c7:0|c8:0|c9:0|c10:0|c11:0|c12:0|c13:0|c14:0|c15:0|ts:1709021997479|consent:false|id:018de9a4f59200821a700cf146e80406f001906700ef8')
 lekarnalemon.cz##+js(trusted-set-cookie, cookiesSettings, %7B%22necessary%22%3Atrue%2C%22preferential%22%3Atrue%7D, , , reload, 1)
 ls-tc.de##+js(trusted-set-cookie, disclaimer, 2015040809)
@@ -30907,7 +30905,7 @@ transferxl.com##+js(trusted-set-cookie, txl_consent_status, functional, , , doma
 allocine.fr,jeuxvideo.com,ozap.com,le10sport.com,ouest-france.fr,xataka.com##+js(trusted-click-element, button[onclick="Didomi.setUserAgreeToAll();"], , 1800)
 postnl.nl##+js(trusted-set-cookie, CookiePermissionInfo, '{"LastModifiedDate":"1","ExpirationDate":"1","Allow":true,"CategoryPermission":[{"Category":"Cat.8","Permission":true},{"Category":"Cat.9","Permission":true},{"Category":"Cat.10","Permission":false},{"Category":"Cat.12","Permission":false}]}')
 pharmacieauterive-ropars.mesoigner.fr##+js(trusted-set-cookie, userconsent, '{"analytics":false,"youtube":true}')
-cmp.fitbook.de,cmp.autobild.de,sourcepoint.sport.de,cmp-sp.tagesspiegel.de,cmp.bz-berlin.de,cmp.cicero.de,cmp.techbook.de,cmp.stylebook.de,cmp2.bild.de,cmp2.freiepresse.de,sourcepoint.wetter.de,consent.finanzen.at,consent.finanzen.net,consent.up.welt.de,sourcepoint.n-tv.de,sourcepoint.kochbar.de,sourcepoint.rtl.de,cdn.privacy-mgmt.com,cmp.computerbild.de,cmp.petbook.de,cmp-sp.siegener-zeitung.de,cmp-sp.sportbuzzer.de,klarmobil.de##+js(trusted-click-element, button[title^="Alle akzeptieren" i], , 1000)
+cmp.fitbook.de,cmp.autobild.de,sourcepoint.sport.de,cmp-sp.tagesspiegel.de,cmp.bz-berlin.de,cmp.cicero.de,cmp.techbook.de,cmp.stylebook.de,cmp2.bild.de,cmp2.freiepresse.de,sourcepoint.wetter.de,consent.finanzen.at,consent.finanzen.net,consent.up.welt.de,sourcepoint.n-tv.de,sourcepoint.kochbar.de,sourcepoint.rtl.de,cmp.computerbild.de,cmp.petbook.de,cmp-sp.siegener-zeitung.de,cmp-sp.sportbuzzer.de,klarmobil.de##+js(trusted-click-element, button[title^="Alle akzeptieren" i], , 1000)
 technikum-wien.at##+js(trusted-click-element, button[aria-label="Alle akzeptieren"])
 seen.es##+js(trusted-set-cookie, aceptarCookiesSeen, '{"necesarias":true,"estadisticas":false}', , , reload, 1)
 extrudr.com##+js(trusted-set-cookie, cc_cookie,'{"categories":["necessary"],"level":["necessary"],"revision":1,"data":null,"rfc_cookie":true,"consent_date":"1","consent_uuid":"1","last_consent_update":"1"}')
@@ -30933,7 +30931,7 @@ white.market##+js(trusted-set-cookie, cookie-consent, '{"required":true,"optiona
 milwaukeetool.eu##+js(trusted-set-cookie, OptanonAlertBoxClosed, $currentDate$)
 milwaukeetool.eu##+js(trusted-set-cookie, OptanonConsent, groups=C1%3A1%2CC2%3A0%2CC3%3A0%2CC4%3A0%2CC5%3A0%2CC8%3A0%2CC9%3A0&hosts=H184%3A1%2CH108%3A1%2CH109%3A1%2CH36%3A1%2CH58%3A1%2CH159%3A1%2CH37%3A1%2CH112%3A1%2CH331%3A1%2CH39%3A1%2CH348%3A1%2CH67%3A1%2CH115%3A1%2CH306%3A1%2CH63%3A1%2CH117%3A1%2CH118%3A1%2CH119%3A1%2CH120%3A1%2CH121%3A1%2CH122%3A1%2CH66%3A1%2CH304%3A0%2CH338%3A0%2CH40%3A0%2CH43%3A0%2CH183%3A0%2CH60%3A0%2CH274%3A0%2CH97%3A0%2CH142%3A0%2CH48%3A0%2CH49%3A0%2CH149%3A0%2CH83%3A0%2CH38%3A0%2CH176%3A0%2CH150%3A0%2CH330%3A0%2CH85%3A0%2CH151%3A0%2CH324%3A0%2CH402%3A0%2CH272%3A0%2CH14%3A0%2CH275%3A0%2CH23%3A0%2CH41%3A0%2CH101%3A0%2CH153%3A0%2CH6%3A0%2CH283%3A0%2CH42%3A0%2CH32%3A0%2CH145%3A0%2CH15%3A0%2CH322%3A0%2CH148%3A0%2CH333%3A0%2CH104%3A0%2CH55%3A0%2CH143%3A0%2CH17%3A0%2CH18%3A0%2CH57%3A0%2CH359%3A0%2CH129%3A0, 1year, , reload, 1)
 saseurobonusmastercard.se##+js(trusted-click-element, .button--necessary-approve, , 4000)
-cdn.privacy-mgmt.com##+js(trusted-click-element, button.agree-btn, , 2000)
+barrons.com>>##+js(trusted-click-element, button.agree-btn, , 2000)
 tver.jp##+js(trusted-click-element, .ReactModal__Overlay button[class*="terms-modal_done__"])
 linkedin.com##+js(trusted-click-element, button.cookie-consent__accept-button, , 2000)
 webuyanycar.com##+js(trusted-set-cookie, OptanonAlertBoxClosed, $currentDate$, 1year)
@@ -30946,7 +30944,7 @@ immowelt.de,joyn.*,morenutrition.de##+js(trusted-click-element, #usercentrics-ro
 @@||cookiebot.com^$~image,3p,domain=fastnedcharging.com
 fastnedcharging.com##+js(trusted-set-cookie, CookieConsent, {necessary:true%2Cpreferences:false%2Cstatistics:false%2Cmarketing:true})
 mapillary.com##+js(trusted-click-element, [data-testid="cookie-policy-banner-accept"], , 500)
-cdn.privacy-mgmt.com##+js(trusted-click-element, button.accept-all, 1000)
+transfermarkt.com>>##+js(trusted-click-element, button.accept-all, 1000)
 costcobusinessdelivery.com##+js(trusted-set-cookie, OptanonConsent, groups=BG117%3A1%2CC0001%3A1%2CC0003%3A1%2CC0002%3A1%2CSPD_BG%3A1%2CC0004%3A1)
 costcobusinessdelivery.com##+js(trusted-set-cookie, OptanonAlertBoxClosed, $currentDate$)
 seznam.cz##+js(trusted-set-cookie, euconsent-v2, CQXRZAAQXRZAAD3ACQCSB6FsAP_gAEPgAATIJNQJgAFAAQAAqABkAEAAKAAZAA0ACSAEwAJwAWwAvwBhAGIAQEAggCEAEUAI4ATgAoQBxADuAIQAUgA04COgE2gKkAVkAtwBeYDGQGWAMuAf4BAcCMwEmgSrgKgAVABAADIAGgATAAxAB-AEIAI4ATgA7gCEAEWATaAqQBWQC3AF5gMsAZcBKsAA.YAAAAAAAAWAA, '', '', domain, seznam.cz)
@@ -31001,9 +30999,9 @@ ilgazzettino.it,ilmessaggero.it,ilsecoloxix.it##+js(trusted-click-element, butto
 ||utils.cedsdigital.it/src/js/cmpConsentWall.js^$domain=ilgazzettino.it|ilmessaggero.it
 ||iubenda.com^$domain=3bmeteo.com,important
 weather.com##+js(trusted-set-local-storage-item, userConsents, {"functional-technology":true})
-cdn.privacy-mgmt.com##+js(trusted-click-element, button[title="Aceitar todos"], , 1000)
-cdn.privacy-mgmt.com##+js(trusted-click-element, button.cta-button[title="Tümünü reddet"])
-privacy.motorradonline.de,cdn.privacy-mgmt.com,consent.watson.de,consent.kino.de,consent.desired.de,cmpv2.fn.de##+js(trusted-click-element, button[title="Akzeptieren und weiter"], , 1000)
+weather.com>>##+js(trusted-click-element, button[title="Aceitar todos"], , 1000)
+weather.com>>##+js(trusted-click-element, button.cta-button[title="Tümünü reddet"])
+privacy.motorradonline.de,impulse.de>>,consent.watson.de,consent.kino.de,consent.desired.de,cmpv2.fn.de##+js(trusted-click-element, button[title="Akzeptieren und weiter"], , 1000)
 freenet.de##+js(rc, fn-sp, body, stay)
 tedbaker.com##+js(trusted-set-cookie, CONSENTMGR, c1:0|c6:0|c9:0|ts:1718751098255|consent:false|id:01902d7e715a00551abb1b4878180206f003606700fb9, , , domain, .tedbaker.com)
 hetzner.com##+js(trusted-set-cookie, __Secure-HO_Cookie_Consent_Declined, 1)
@@ -31036,17 +31034,17 @@ americanexpress.com##+js(trusted-click-element, button[data-testid="granular-ban
 bergans.com##+js(trusted-set-cookie, cc, 2:f, , , reload, 1)
 utwente.nl##+js(trusted-set-cookie, utwente__avgconsent, '{"a":false,"c":true,"v":"1","lc":"$currentDate$","isset":true}', , , domain, utwente.nl)
 speedtest.vodafone.de##+js(trusted-set-local-storage-item, speedtestUI.Consent, '{"analytics":false,"bugReports":false,"timestamp":"$currentISODate$"}')
-cdn.privacy-mgmt.com##+js(trusted-click-element, button[aria-label*="Aceptar"], , 1000)
-cdn.privacy-mgmt.com##+js(trusted-click-element, button[title*="Accept"], , 1000)
-cdn.privacy-mgmt.com,consent.radiotimes.com##+js(trusted-click-element, button[title*="AGREE"], , 1000)
+rtvc.es>>##+js(trusted-click-element, button[aria-label*="Aceptar"], , 1000)
+beteve.cat>>,whatcar.com>>##+js(trusted-click-element, button[title*="Accept"], , 1000)
+bloodyelbow.com>>,consent.radiotimes.com##+js(trusted-click-element, button[title*="AGREE"], , 1000)
 sp-consent.szbz.de##+js(trusted-click-element, button[title="Alles akzeptieren"], , 1000)
 cmp.omni.se,cmp.svd.se,cmp.aftonbladet.se,cmp.tv.nu##+js(trusted-click-element, button[title="Godkänn alla cookies"], , 1000)
-cdn.privacy-mgmt.com##+js(trusted-click-element, button[title="ALLE AKZEPTIEREN"], , 1000)
+weltkunst.de>>##+js(trusted-click-element, button[title="ALLE AKZEPTIEREN"], , 1000)
 consent.economist.com,studentagency.cz##+js(trusted-click-element, button[title="Reject all"], , 1000)
-cdn.privacy-mgmt.com,cmpv2.foundryco.com,cmpv2.infoworld.com,cmpv2.arnnet.com.au##+js(trusted-click-element, button[title="I Agree"], , 1000)
-sp-cdn.pcgames.de,sp-cdn.pcgameshardware.de,consentv2.sport1.de,cdn.privacy-mgmt.com,cmp.mz.de##+js(trusted-click-element, button[title="AKZEPTIEREN UND WEITER"], , 1000)
+driving.co.uk>>,cmpv2.foundryco.com,cmpv2.infoworld.com,cmpv2.arnnet.com.au##+js(trusted-click-element, button[title="I Agree"], , 1000)
+sp-cdn.pcgames.de,sp-cdn.pcgameshardware.de,consentv2.sport1.de,boerse-online.de>>,cmp.mz.de##+js(trusted-click-element, button[title="AKZEPTIEREN UND WEITER"], , 1000)
 cmpv2.tori.fi##+js(trusted-click-element, button[title="Hyväksy kaikki"], , 1000)
-cdn.privacy-mgmt.com##+js(trusted-click-element, button[title="TILLAD NØDVENDIGE"], , 1000)
+tidende.dk>>##+js(trusted-click-element, button[title="TILLAD NØDVENDIGE"], , 1000)
 consent.spielaffe.de##+js(trusted-click-element, button[title="Accept All & Close"], ,1000)
 tfl.gov.uk###cb-cookieoverlay
 mineralstech.com##.consent-dialog-overlay
@@ -31071,7 +31069,7 @@ tvsyd.dk##+js(trusted-set-cookie, tv2reg_cookie_consent, '{"revision":1,"consent
 suedtirolerjobs.it,kaerntnerjobs.at,tirolerjobs.at,salzburgerjobs.at,wienerjobs.at##+js(trusted-set-cookie, cookieConsents, '{%22required%22:true%2C%22statistics%22:null%2C%22comfort%22:true%2C%22personalization%22:null}')
 bunte.de,chip.de,focus.de,tvspielfilm.de,tvtoday.de##[id^="sp_message_container"]
 bunte.de,chip.de,focus.de,tvspielfilm.de,tvtoday.de##html.sp-message-open > body:style(position: unset !important; overflow: unset !important)
-cmp.tvspielfilm.de,cmp.tvtoday.de,cmp.tvspielfilm.de,cmp.bunte.de,cmp.chip.de,cmp.focus.de,cdn.privacy-mgmt.com##+js(trusted-click-element, button[title="Akzeptieren"], , 1000)
+cmp.tvspielfilm.de,cmp.tvtoday.de,cmp.tvspielfilm.de,cmp.bunte.de,cmp.chip.de,cmp.focus.de,stol.it>>##+js(trusted-click-element, button[title="Akzeptieren"], , 1000)
 posti.fi##+js(trusted-set-cookie, OptanonAlertBoxClosed, $currentDate$, 1year, , domain, posti.fi)
 posti.fi##+js(trusted-set-cookie, OptanonConsent, groups=C0001%3A1%2CC0003%3A1%2CC0002%3A0%2CC0004%3A0%2CC0005%3A0, 1year, , domain, posti.fi)
 biomarkt.de##+js(trusted-set-cookie, CookieConsent, {stamp:%27WpKgN4qzUCpEZsz6QOUxyXrv30fnb7GdP7uhCS2+tW4zpN9MSRfCig==%27%2Cnecessary:true%2Cpreferences:true%2Cstatistics:false%2Cmarketing:false%2Cmethod:%27explicit%27%2Cver:1%2Cutc:$now$})
@@ -31133,7 +31131,7 @@ cmp-sp.goettinger-tageblatt.de,cmp-sp.saechsische.de,cmp-sp.ln-online.de,cz.de,d
 airfrance.*,klm.*##+js(trusted-set-cookie, bw_cookie_banner, '{"1":true,"2":false,"3":false,"timestamp":$now$}')
 golfdigest.com##+js(trusted-set-cookie, wbdLTP, 68e3a742)
 lancaster.ac.uk##+js(trusted-set-cookie, luCookieConsent, '{"analyticsConsent":false,"marketingConsent":false,"expires":"1"}')
-cdn.privacy-mgmt.com##+js(trusted-click-element, button[title="Dismiss"])
+refinery29.com>>##+js(trusted-click-element, button[title="Dismiss"])
 wavecon.de##+js(trusted-set-cookie, _pm_datenschutz_cookie, 80ce7170aa:false;4b086eb24b:true;3a0521a8ad:false, , , reload, 1)
 glamino.com##+js(trusted-set-cookie, accept, 20240307)
 glamino.com##+js(trusted-set-cookie, preference, '"necessary,preferences"')
@@ -31182,7 +31180,7 @@ verksamt.se##+js(trusted-click-element, [data-testid="consent-necessary"])
 acmemarkets.com,amtrak.com,beko.com,bepanthen.com.au,berocca.com.au,booking.com,carrefour.fr,centrum.sk,claratyne.com.au,credit-suisse.com,ceskatelevize.cz,deporvillage.*,de.vanguard,dhl.de,digikey.*,drafthouse.com,dunelm.com,eurosport.fr,fello.se,fielmann.*,flashscore.fr,flightradar24.com,fnac.es,foodandwine.com,fourseasons.com,khanacademy.org,konami.com,jll.*,jobs.redbull.com,hellenicbank.com,intersport.*,gemini.pl,groceries.asda.com,lamborghini.com,menshealth.com,n26.com,nintendo.com,nokia.com,oneweb.net,omnipod.com,oralb.*,panasonic.com,parkside-diy.com,pluto.tv,popularmechanics.com,polskieradio.pl,pringles.com,questdiagnostics.com,radissonhotels.com,ricardo.ch,rockstargames.com,rte.ie,salesforce.com,samsonite.*,spiele.heise.de,spirit.com,stenaline.co.uk,swisscom.ch,swisspass.ch,technologyfromsage.com,telenet.be,tntsports.co.uk,theepochtimes.com,toujeo.com,uber-platz.de,vinted.com,wallapop.com,wickes.co.uk,workingtitlefilms.com,vattenfall.de,winparts.fr,yoigo.com,zoominfo.com##+js(trusted-click-element, button[id="onetrust-reject-all-handler"], , 1500)
 allegiantair.com,hallmarkchannel.com,incorez.com,noovle.com,otter.ai,plarium.com,telsy.com,timenterprise.it,tim.it,tradersunion.com,fnac.*,yeti.com##+js(trusted-click-element, button.onetrust-close-btn-handler, , 1000)
 here.com,vodafone.com##+js(trusted-click-element, div[class="t_cm_ec_reject_button"], , 1000)
-cdn.privacy-mgmt.com##+js(trusted-click-element, button[aria-label="نعم انا موافق"])
+kooora.com>>##+js(trusted-click-element, button[aria-label="نعم انا موافق"])
 nizke-napeti.cz.abb.com##+js(trusted-set-cookie, cookiesConsent, '{"necessary":true,"statistical":false,"marketing":false}', , , reload, 1)
 privacy.maennersache.de##+js(trusted-click-element, button[title="Einwilligen und weiter"], , 1000)
 lovo.ai##+js(trusted-set-cookie, cookieConsent, '{"essential":true,"analytical":false,"functional":false,"marketing":false}')
@@ -31226,7 +31224,7 @@ adnkronos.com,cornwalllive.com,cyprus-mail.com,einthusan.tv,informazione.it,mymo
 adnkronos.com,cornwalllive.com,cyprus-mail.com,einthusan.tv,informazione.it,mymovies.it,tuttoeuropei.com,video.lacnews24.it,protothema.gr,flash.gr##+js(trusted-click-element, .qc-cmp2-summary-buttons > button[mode="primary"], , 2000)
 adnkronos.com,cornwalllive.com,cyprus-mail.com,einthusan.tv,informazione.it,mymovies.it,tuttoeuropei.com,video.lacnews24.it##+js(trusted-click-element, button[class*="cipa-accept-btn"], , 2000)
 taxscouts.com##+js(trusted-click-element, button[data-js="cookieConsentReject"], , 1000)
-cdn.privacy-mgmt.com##+js(trusted-click-element, button[title*="Jetzt zustimmen"], , 1600)
+heute.at>>##+js(trusted-click-element, button[title*="Jetzt zustimmen"], , 1600)
 online.no,telenor.no##+js(trusted-click-element, a[id="consent_prompt_decline"], , 1000)
 redcare.it##+js(trusted-set-cookie, usercentrics_consent, '{"ad_storage":0,"analytics_storage":0,"functional":0}')
 austrian.com,lufthansa.com##+js(trusted-click-element, button[id="cm-acceptNone"], , 1000)
@@ -31249,16 +31247,16 @@ bruendl.at##+js(trusted-click-element, button.cookie-notice__button--dismiss, , 
 sbk.org##+js(trusted-set-cookie, cookie-optIn, '{"required":true,"statistics":false,"thirdParty":true}')
 latamairlines.com##+js(trusted-click-element, button[data-testid="cookies-politics-reject-button--button"], , 1000)
 elisa.ee##+js(trusted-click-element, cds-button[id="cookie-allow-necessary-et"], , 1000)
-baseendpoint.brigitte.de,baseendpoint.gala.de,baseendpoint.haeuser.de,baseendpoint.stern.de,baseendpoint.urbia.de,cmp.tag24.de,cmp-sp.handelsblatt.com,cmpv2.berliner-zeitung.de,golem.de,gamestar.de,cdn.privacy-mgmt.com,consent.t-online.de,cmp-sp.handelsblatt.com##+js(trusted-click-element, button[title*="Zustimmen" i], ,  1000)
-sp-consent.stuttgarter-nachrichten.de,cdn.privacy-mgmt.com,sp-consent.stuttgarter-zeitung.de##+js(trusted-click-element, button[title="Ich bin einverstanden"], , ,1000)
+baseendpoint.brigitte.de,baseendpoint.gala.de,baseendpoint.haeuser.de,baseendpoint.stern.de,baseendpoint.urbia.de,cmp.tag24.de,cmp-sp.handelsblatt.com,cmpv2.berliner-zeitung.de,golem.de,gamestar.de,rockhard.de>>,consent.t-online.de,cmp-sp.handelsblatt.com##+js(trusted-click-element, button[title*="Zustimmen" i], ,  1000)
+sp-consent.stuttgarter-nachrichten.de,btc-echo.de>>,sp-consent.stuttgarter-zeitung.de##+js(trusted-click-element, button[title="Ich bin einverstanden"], , ,1000)
 regjeringen.no##+js(trusted-click-element, button[id="userSelectAll"], ,  1000)
 kanga.exchange##+js(trusted-set-cookie, cookies-consent|kanga, 1836378181|NECESSARY)
 pirelli.com##+js(trusted-set-cookie, cpc_en_ww, eyJhIjoxLCJtIjoxLCJ2IjoxLjl9)
 sp-manager-magazin-de.manager-magazin.de,consent.11freunde.de##+js(trusted-click-element, button[title="Consent and continue"], , 1000)
-cdn.privacy-mgmt.com##+js(trusted-click-element, button[title="Accept all"i], , 1000)
-cdn.privacy-mgmt.com##+js(trusted-click-element, button[title="Save & Exit"], , 1000)
-cdn.privacy-mgmt.com##+js(trusted-click-element, button[title="Akzeptieren & Schließen"], , 1000)
-cdn.privacy-mgmt.com##+js(trusted-click-element, button[title="Schließen & Akzeptieren"], , 1000)
+f1academy.com>>,timeout.com>>##+js(trusted-click-element, button[title="Accept all"i], , 1000)
+timeout.com>>##+js(trusted-click-element, button[title="Save & Exit"], , 1000)
+karlsruhe-insider.de>>##+js(trusted-click-element, button[title="Akzeptieren & Schließen"], , 1000)
+promiflash.de>>##+js(trusted-click-element, button[title="Schließen & Akzeptieren"], , 1000)
 blb-tourismus.de,outdooractive.com##+js(trusted-set-cookie, _consentCookie, '{"categories":["required"]}')
 stadtwerke-heidenheim.de##+js(trusted-set-local-storage-item, cookieConsent, '{"optional":[{"id":"google","accepted":false}]}')
 kreuzmayr.at##+js(trusted-set-cookie, CookieConsentSyreta, eyJ2ZXJzaW9uIjoxLCJjYXRlZ29yeSI6WyIxIl19)
@@ -31309,7 +31307,7 @@ vivenu-tickets-usa.sailgp.com##+js(trusted-set-local-storage-item, cookies-conse
 wells.pt##+js(trusted-click-element, button.CybotCookiebotDialogBodyButton, , 1000)
 dskdirect.bg##+js(trusted-click-element, a#CybotCookiebotDialogBodyButtonAcceptAll, , 1000)
 cmpv2.dba.dk##+js(trusted-click-element, button[title="Kun nødvendige"], , 2500)
-spcmp.crosswordsolver.com,cdn.privacy-mgmt.com##+js(trusted-click-element, button[title="Accept"], , 1000)
+spcmp.crosswordsolver.com,gbnews.com>>##+js(trusted-click-element, button[title="Accept"], , 1000)
 ecco.com##+js(trusted-click-element, button[onclick="CookieInformation.declineAllCategories()"], , 1000)
 typeform.com##+js(trusted-set-cookie, tf_respondent_cc, '{"groups":[],"timestamp":"1"}')
 thomann.*##+js(trusted-click-element, button.js-decline-all-cookies, , 1500)
@@ -31391,7 +31389,7 @@ simplea.sk##+js(trusted-click-element, button[aria-label="Vypnúť personalizác
 flip.bg##+js(trusted-click-element, .cookie-text > .large-btn, , 1000)
 kiertokanki.com##+js(trusted-click-element, button#zenEPrivacy_acceptAllBtn, , 1000)
 tallink.com##+js(trusted-set-cookie, tlnk_cwc, necessary_cookies=true)
-cdn.privacy-mgmt.com##+js(trusted-click-element, button[title="OK"], , 1000)
+supla.fi>>##+js(trusted-click-element, button[title="OK"], , 1000)
 leirovins.be##+js(trusted-click-element, .l-cookies-notice .btn-wrapper button[data-name="accept-all-cookies"], , 1000)
 vias.be##+js(trusted-click-element, button.btn-accept-necessary, , 1000)
 edf.fr,virbac.com,diners.hr,squarehabitat.fr##+js(trusted-click-element, button#popin_tc_privacy_button, , 1000)
@@ -31679,7 +31677,7 @@ shop.app,shopify.com##+js(trusted-click-element, button[data-component-name="rej
 wufoo.com##+js(trusted-click-element, button.fides-reject-all-button, , 1000)
 consent.dailymotion.com##+js(trusted-click-element, button[title="Continue without accepting"], , 1000)
 help.instagram.com##+js(trusted-click-element, div[aria-label="Only allow essential cookies"], , 1000)
-cdn.privacy-mgmt.com##+js(trusted-click-element, button[title="Agree & Continue"], , 1800)
+crazygames.com>>##+js(trusted-click-element, button[title="Agree & Continue"], , 1800)
 dashlane.com##+js(trusted-set-cookie, userPrivacyCookie, '{"analytics":{"enabled":false,"date":1},"marketing":{"enabled":false,"date":1}}')
 consent-manager.thenextweb.com##+js(trusted-click-element, button[title="Reject All"], , 1000)
 wildernesshotels.fi##+js(trusted-set-local-storage-item, cookiesManager, '{"acceptedCategories":["necessary"]}')
@@ -31948,7 +31946,7 @@ caixabank.es##+js(trusted-click-element, a[data-ref-origin="POLITICA-COOKIES-DEN
 thbaker.co.uk##+js(trusted-set-cookie, thbcookies, '{"1":0}')
 beatsperminuteonline.com##+js(trusted-set-local-storage-item, consent, '"granted"')
 helloprint.co.uk##+js(trusted-set-cookie, CMP, '{"categoryPreferences":{"essential":true,"analytics":false,"functional":false,"advertising":false}}', , , reload, 1)
-cdn.privacy-mgmt.com##+js(trusted-click-element, button[title="القبول والمتابعة"], , 1800)
+me.motorsport.com>>##+js(trusted-click-element, button[title="القبول والمتابعة"], , 1800)
 tavaratalohurrikaani.fi##+js(trusted-set-local-storage-item, consentMode, '{"functionality_storage":"granted","security_storage":"granted","analytics_storage":"denied","personalization_storage":"granted","ad_storage":"denied","ad_user_data":"denied","ad_personalization":"denied"}')
 tavaratalohurrikaani.fi##+js(trusted-set-cookie, user_allowed_save_cookie_v2, %7B%224%22%3A1%7D, 1year)
 tavaratalohurrikaani.fi##+js(trusted-set-cookie, user_allowed_save_cookie, %7B%224%22%3A1%7D, 1year)
@@ -31991,7 +31989,7 @@ druni.es,druni.pt##+js(trusted-click-element, button[aria-label="Rechazar"], , 1
 e-jumbo.gr##+js(trusted-click-element, a[data-vtest="reject-all"], , 2000)
 finya.de##+js(trusted-set-cookie, fyCcDecision, '{"ccStatistics":false}')
 alza.*##+js(trusted-click-element, a.js-cookies-info-reject, , 1000)
-cdn.privacy-mgmt.com##+js(trusted-click-element, button[title="Got it"], , 1000)
+gbnews.com>>##+js(trusted-click-element, button[title="Got it"], , 1000)
 rmf.fm,rmf24.pl##+js(trusted-click-element, button#gr-btn-agree, , 1000)
 printsimple.eu##+js(trusted-set-cookie, gdpr_c, c, , , reload, 1)
 hearthis.at##+js(trusted-set-cookie, CookieScriptConsent, '{"action":"reject","consenttime":1,"categories":"[]"}')
@@ -32066,7 +32064,7 @@ account.bhvr.com,everand.com,lucidchart.com,intercars.ro,scribd.com,guidepoint.c
 intercars.ro##+js(trusted-click-element, button[data-dismiss="modal"], , 1500)
 erlebnissennerei-zillertal.at,hintertuxergletscher.at,tiwag.at##+js(trusted-click-element, button.bh-cookies-popup-save-selection, , 1000)
 playseatstore.com##+js(trusted-click-element, a.avg-btn-allow, , 1000)
-cdn.privacy-mgmt.com##+js(trusted-click-element, button[title="ACEPTAR Y GUARDAR"], , 1000)
+tivify.tv>>##+js(trusted-click-element, button[title="ACEPTAR Y GUARDAR"], , 1000)
 swiss-sport.tv##+js(trusted-click-element, #cookiescript_reject, , 500)
 targobank-magazin.de,zeit-verlagsgruppe.de,online-physiotherapie.de##+js(trusted-click-element, ._brlbs-refuse-btn > ._brlbs-cursor._brlbs-btn, , 1000)
 kieferorthopaede-freisingsmile.de##+js(trusted-click-element, ._brlbs-accept > ._brlbs-btn-accept-all, , 1000)
@@ -32119,7 +32117,7 @@ evernote.com##+js(trusted-set-local-storage-item, cookie-preferences, '{"analyti
 evernote.com##+js(set-local-storage-item, cookie-notice-dismissed, true)
 evernote.com##+js(set-local-storage-item, cookie-notice-accepted-version, 1)
 evernote.com##+js(set-local-storage-item, accepts-cookie-notice, true)
-cdn.privacy-mgmt.com##+js(trusted-click-element, button[title="Reject All"], , 1800)
+crazygames.com>>##+js(trusted-click-element, button[title="Reject All"], , 1800)
 rehadat-gkv.de##+js(trusted-set-cookie, cookieInfo, ja)
 zoxs.de##+js(trusted-click-element, .show.gdpr-modal .gdpr-modal-dialog .js-gdpr-modal-1 .modal-body .row .justify-content-center .js-gdpr-accept-all, , 1000)
 offistore.fi##+js(trusted-click-element, '#cookietoggle, input[id="CookieFunctional"], [value="Hyväksy vain valitut"]')
