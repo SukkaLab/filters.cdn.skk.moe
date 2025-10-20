@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Sun, 19 Oct 2025 22:20:44 GMT
+! Last modified: Mon, 20 Oct 2025 10:14:07 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202510192212
+!   - Version: 202510201002
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 19 Oct 2025 22:12 UTC
+!   - Last modified: 20 Oct 2025 10:02 UTC
 ! * Bypass Paywalls Clean filter
 !   - URL: https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters/blob/raw?file=bpc-paywall-filter.txt
 !   - Version: 4.2.2.7
@@ -91,7 +91,7 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * ➗ Actually Legitimate URL Shortener Tool
 !   - URL: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt
-!   - Version: 19October2025v2
+!   - Version: 20October2025v1
 !   - Homepage: https://github.com/DandelionSprout/adfilt/discussions/163
 ! * 🐊 Imgur: Pure Imagery Experience
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/ImgurPureImageryExperience.txt
@@ -33752,6 +33752,12 @@ $doc,removeparam=sca_upv,domain=www.google.*|ipv6.google.com
 ||translate.google.com^$removeparam=/^tab=TT$/
 ||www.google.$doc,removeparam=sstk
 ||ipv6.google.com^$doc,removeparam=sstk
+://www.google.$removeparam=/^num=\d{2,}$/
+://ipv6.google.com^$removeparam=/^num=\d{2,}$/
+://www.google.$removeparam=aep
+://ipv6.google.com^$removeparam=aep
+://www.google.$removeparam=ntc
+://ipv6.google.com^$removeparam=ntc
 @@://www.google.*/maps^$removeparam=utm_campaign
 @@://ipv6.google.com/maps^$removeparam=utm_campaign
 $removeparam=share_ab_group
