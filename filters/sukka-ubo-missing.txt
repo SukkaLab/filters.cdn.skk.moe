@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Tue, 21 Oct 2025 10:13:44 GMT
+! Last modified: Tue, 21 Oct 2025 22:19:47 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.93.19
+!   - Version: 2.0.93.22
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/refs/heads/master/cjx-annoyance.txt
 !   - Version: 202510081500
@@ -216,6 +216,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||turbotargeting.io^
 ||inetstats.org^$third-party
 ||analysis.chatglm.cn^
 ||*-default-cn.rum.aliyuncs.com^
@@ -109852,6 +109853,8 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xmlhttprequest,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$third-party,object,redirect=noop.js,script
+||bitdefender.com/dtm/
+||bitdefender.com/cdp/
 ||fantasylandnews.com/wp-content/cache/min/*/analytics.js
 ||an.gr-wcon.com^$script
 ||storm.mg/api/logs/
@@ -116413,7 +116416,6 @@ campusfrance.org##+js(set-constant, pa.sendEvent, noopFunc)
 @@||polarbyte.com^$domain=cambridgeenglish.org
 larocheposay.co.kr##+js(set-constant, wptg_tagscript, noopFunc)
 larocheposay.co.kr##+js(set-constant, wptg_tagscript.exec, noopFunc)
-@@||cloud.polarbyte.com/webapps-api/api/v1/campaigns/$domain=cambridgeenglish.org
 @@||googletagmanager.com/gtm.js$domain=journaldunet.com
 @@||dpm.zebestof.com/*/tag.js^$domain=journaldunet.com
 @@||astatic.ccmbg.com/fc/js/prebid?v=$domain=journaldunet.com
@@ -116718,7 +116720,6 @@ abema.tv##+js(remove-node-text, script, NREUM)
 @@||googletagmanager.com/gtm.js$domain=tv-asahi.co.jp
 @@||sp0.baidu.com/*/finance.pae.baidu.com/vapi/async$domain=baidu.com
 @@||software.seek.intel.com^$document
-@@||linksynergy.com/minified_logic.js$xmlhttprequest
 @@||djtflbt20bdde.cloudfront.net^$domain=feedly.com
 @@||accaii.com^$domain=kyuusai2nd.net
 ||dl.reg.163.com^$subdocument,redirect-rule=noop.html
@@ -117238,6 +117239,7 @@ woman.excite.co.jp##+js(remove-attr, data-woman-ex, a[href][data-woman-ex])
 @@||googletagmanager.com/gtm.js$script,domain=kanaloco.jp
 @@||rtoaster.jp^$script,domain=kanaloco.jp
 @@||ssl.geoplugin.net/javascript.gp$domain=imalentstore.com
+@@||linksynergy.com/minified_logic.js$xmlhttprequest
 @@||googletagmanager.com/gtm.js$script,domain=dpoint.jp
 @@||googletagmanager.com/gtm.js$script,domain=maidonanews.jp
 jolie.de/sites/default/files/google_tag/google_tag_manager/google_tag.script.js
