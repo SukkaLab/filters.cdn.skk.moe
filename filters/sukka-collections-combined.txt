@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Mon, 20 Oct 2025 22:21:07 GMT
+! Last modified: Tue, 21 Oct 2025 10:13:44 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202510202211
+!   - Version: 202510211002
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 20 Oct 2025 22:11 UTC
+!   - Last modified: 21 Oct 2025 10:02 UTC
 ! * Bypass Paywalls Clean filter
 !   - URL: https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters/blob/raw?file=bpc-paywall-filter.txt
 !   - Version: 4.2.3.0
@@ -31,7 +31,7 @@
 !   - Homepage: https://paulgb.github.io/
 ! * ⚙️ Dandelion Sprout's Annoyances List
 !   - URL: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AnnoyancesList
-!   - Version: 13October2025v1-Compilation
+!   - Version: 21October2025v1-Compilation
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 🎯 DailyMotion Simplicity
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/DailyMotionSimplicity.txt
@@ -3490,6 +3490,7 @@ github.com##.clearfix:has(h1:has-text(/^Uploading files .* versions Anti-Malware
 github.com##.clearfix:has(h1:has-text(/^Uploading files .*NorwegianExperimentalList .*$/)):has(div.js-filename:has-text(/^AntiMalware.*$/)):style(background-color:red!important)
 *,~google.*,~eeconomy.gr##+js(acs, addEventListener, mouseleave)
 &client_ad_session_id=
+||anyclip.com^$app=TETR.IO.exe
 dailymotion.com##div[class^=DiscoveryQueueDisplay__sectionContainer]:has(a[class*=channelCard])
 dailymotion.com#?#div[class^=DiscoveryQueueDisplay__sectionContainer]:has(span:has-text(Trend))
 dailymotion.com#?#div[class^=DiscoveryQueueDisplay__sectionContainer]:has(div[class^=GenericCard]:has-text(Trend))

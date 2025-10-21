@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Mon, 20 Oct 2025 22:21:07 GMT
+! Last modified: Tue, 21 Oct 2025 10:13:44 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.93.17
+!   - Version: 2.0.93.19
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/refs/heads/master/cjx-annoyance.txt
 !   - Version: 202510081500
@@ -69402,6 +69402,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||leo.tridge.com^
 ||haystack.wavve.com^
 ||user-event-log.aminer.cn^
 ||pixel.dashfi.dev^
@@ -109548,6 +109549,7 @@ directtrack.*.js
 /diffuser.js
 /qlitics.js
 /api/increment-pv$xmlhttprequest
+/matomo.php$ping
 /matomo.php?idsite=
 /watch.*.js?key=*&kw=*&refer=
 /pv_count.
@@ -109850,6 +109852,7 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xmlhttprequest,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$third-party,object,redirect=noop.js,script
+||fantasylandnews.com/wp-content/cache/min/*/analytics.js
 ||an.gr-wcon.com^$script
 ||storm.mg/api/logs/
 ||storm.mg/avivid.js
