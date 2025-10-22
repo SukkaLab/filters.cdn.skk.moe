@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Wed, 22 Oct 2025 10:14:25 GMT
+! Last modified: Wed, 22 Oct 2025 22:18:19 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,13 +18,13 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202510221002
+!   - Version: 202510222211
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 22 Oct 2025 10:02 UTC
+!   - Last modified: 22 Oct 2025 22:11 UTC
 ! * Bypass Paywalls Clean filter
 !   - URL: https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters/blob/raw?file=bpc-paywall-filter.txt
-!   - Version: 4.2.3.0
+!   - Version: 4.2.3.1
 !   - Homepage: https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
@@ -2245,9 +2245,8 @@ elespanol.com##div.full-suscriptor-container
 elconfidencial.com##+js(rc, newsType__content--closed, div.newsType__content--closed)
 ||elobservador.com.uy/shares$xmlhttprequest,~third-party
 ||elpais.com.uy/user/authStatus$script,~third-party
+||prisa.com/dist/subs/pmwall/*/pmwall.min.js$script,domain=elpais.com
 ||verne.elpais.com/*.html$inline-script
-elpais.com##div#ctn_freemium_article:remove()
-elpais.com##div#ctn_premium_article:remove()
 eltiempo.com##+js(rc, modulos, div.modulos)
 ||eltribuno.com/scripts/Bellhop/dist/bellhop.min.js$script,~third-party
 em.com.br##+js(rc, compress-text, .div.compress-text)

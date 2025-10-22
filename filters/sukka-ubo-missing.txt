@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Wed, 22 Oct 2025 10:14:25 GMT
+! Last modified: Wed, 22 Oct 2025 22:18:19 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.93.28
+!   - Version: 2.0.93.31
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/refs/heads/master/cjx-annoyance.txt
 !   - Version: 202510081500
@@ -109359,6 +109359,7 @@ zjjz6lpv44aguszo.cloud.s11.sfmc-osl.com$image
 /zhugeio.js
 &l=dataLayer&cx=c
 /cdn-cgi/rum?
+/tr/lp/intg.js
 /op/analytics.js?domain=
 /send_ga4_params?
 &sst.sw_exp=
@@ -109851,12 +109852,13 @@ _tracking.php?b=
 ||adc.nine.com.au/?token=$redirect=noop.txt,important,domain=9now.com.au,image,media,subdocument,stylesheet,script,xmlhttprequest,other
 ||googleadservices.com/pagead/conversion_async.js$redirect=noop.js,domain=ffm.to,important,script
 /analytics.js$domain=tokyometro.jp|resumes.breakdownexpress.com|techcult.com|inbox.lv|kopeda.com|freexcafe.com|rusvideos.day|nakubani.ru|lun.com|songsara.net|newsmax.com|bolgehastanesi.com|ewtc.de|newsdig.tbs.co.jp|imore.com|city.kushiro.lg.jp|emeraldbridal.com.au|emarat-news.ae|imobie.jp|tikla.com.tr|jrkyushu.co.jp|amiunique.org|edit.ing|konami.com
-||assets.adobedtm.com^$domain=rottentomatoes.com|mcclatchydc.com|elnuevoherald.com|bellinghamherald.com|sacbee.com|charlotteobserver.com|newsobserver.com|miamiherald.com|ef.ru|algida.com.tr|bmw-motorrad.co.uk|cif.com.tr|clearhaircare.com|domestos.com|dove.com|elidor.com.tr|f1sport.autorevue.cz|geico.com|hellmanns.com.tr|herkessofraya.com|johnsonsbaby.com.tr|lipton.com|lnk.to|lux.com|magnumicecream.com|neutrogena.com.tr|omo.com|rexona.com|samsung.com|sap.com|schwarzkopf.com.tr|signalturkiye.com|msnbc.com|nbcnews.com|kbb.com|eurosport.ru|timgate.it|intermiles.com|oxfordmail.co.uk|spiegel.de|hp.com|deutschepost.de|thebay.com|s.shufoo.net|tsn.ca|tabelog.com|newshub.co.nz|fredmeyer.com|viabcp.com|carsales.com.au|falabella.com|aarp.org|thehill.com|realtor.com|nzherald.co.nz|aia.com.ph|baynews9.com|thesaurus.com|dhc.co.jp|0101.co.jp|staples.com|rikunabi.com|directscout.recruit.co.jp|r-agent.com|sephora.com|chronicle.com|channelnewsasia.com|cnbc.com|bmw.hu|atu.de|songkick.com|worldshop.eu|t-mobile.com|philanthropy.com|otempo.com.br|webmotors.com.br|myglo.com.ua|meijer.com|mtvema.com|mtv.co.uk|mtv.de|mtv.it|edp24.co.uk|cloudflare.com|transfermarkt.com.tr|abbott.com|ubs.com
+||assets.adobedtm.com^$domain=rottentomatoes.com|mcclatchydc.com|elnuevoherald.com|bellinghamherald.com|sacbee.com|charlotteobserver.com|newsobserver.com|miamiherald.com|ef.ru|algida.com.tr|bmw-motorrad.co.uk|cif.com.tr|clearhaircare.com|domestos.com|dove.com|elidor.com.tr|f1sport.autorevue.cz|geico.com|hellmanns.com.tr|herkessofraya.com|johnsonsbaby.com.tr|lipton.com|lnk.to|lux.com|magnumicecream.com|neutrogena.com.tr|omo.com|rexona.com|samsung.com|sap.com|schwarzkopf.com.tr|signalturkiye.com|msnbc.com|nbcnews.com|kbb.com|eurosport.ru|timgate.it|intermiles.com|oxfordmail.co.uk|spiegel.de|hp.com|deutschepost.de|thebay.com|s.shufoo.net|tsn.ca|tabelog.com|newshub.co.nz|fredmeyer.com|viabcp.com|carsales.com.au|falabella.com|aarp.org|thehill.com|realtor.com|nzherald.co.nz|aia.com.ph|baynews9.com|thesaurus.com|dhc.co.jp|0101.co.jp|staples.com|rikunabi.com|directscout.recruit.co.jp|r-agent.com|sephora.com|chronicle.com|channelnewsasia.com|cnbc.com|bmw.hu|atu.de|songkick.com|worldshop.eu|t-mobile.com|philanthropy.com|otempo.com.br|webmotors.com.br|myglo.com.ua|meijer.com|mtvema.com|mtv.co.uk|mtv.de|mtv.it|edp24.co.uk|cloudflare.com|transfermarkt.com.tr|abbott.com|ubs.com|assets.adobedtm.com
 /prod/dfm/fp.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xmlhttprequest,other
 /prod/dfm/g2i.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xmlhttprequest,other
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xmlhttprequest,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$third-party,object,redirect=noop.js,script
+||media.flaticon.com/dist/js/ads.*.js
 ||kio.ac/analytics/
 indianexpress.com##+js(set-local-storage-item, ev_did, $remove$)
 indianexpress.com##+js(set-local-storage-item, ev_sid, $remove$)
@@ -116284,6 +116286,7 @@ d4?appid*type*
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
 @@||googletagmanager.com/gtm.js$domain=expressvpn.com
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics_analytics.js,domain=expressvpn.com
+@@||dev.visualwebsiteoptimizer.com/j.php$domain=dominos.jp
 @@||googletagmanager.com/gtm.js$domain=sferis.pl
 @@||googletagmanager.com/gtm.js$domain=tauron.pl
 @@||play.*.com/vendor/VisitorAPI.js$domain=play.aetv.com|play.mylifetime.com
