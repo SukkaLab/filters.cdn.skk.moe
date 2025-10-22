@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Tue, 21 Oct 2025 22:19:47 GMT
+! Last modified: Wed, 22 Oct 2025 10:14:25 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,19 +8,19 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Tue, 21 Oct 2025 16:30:20 +0000
+!   - Last modified: Tue, 21 Oct 2025 18:37:10 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Sun, 19 Oct 2025 22:43:50 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Tue, 21 Oct 2025 16:50:24 +0000
+!   - Last modified: Tue, 21 Oct 2025 23:00:05 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
 !   - Last modified: Tue, 14 Oct 2025 02:15:05 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Mon, 20 Oct 2025 10:04:47 +0000
+!   - Last modified: Tue, 21 Oct 2025 23:03:08 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
 !   - Last modified: Tue, 21 Oct 2025 13:31:10 +0000
@@ -20579,6 +20579,8 @@ buffsports.*,fbstreams.*,mlbbox.me,omuzaani.me,strikeout.im,vipleague.*,wavewalt
 omuzaani.me,strikeout.im,wavewalt.me#@#.Ad-Container:not(.adsbygoogle)
 *$image,3p,domain=omuzaani.me,redirect=1x1.gif
 @@||omuzaani.me^$ghide
+omuzaani.me##+js(nostif, location.replace)
+omuzaani.me##+js(nowoif)
 mma-core.*##+js(nostif, displayAdBlockedVideo)
 mma-core.*##+js(acs, $, /undefined|displayAdBlockedVideo/)
 mma-core.*###tlbrd
@@ -26488,7 +26490,11 @@ search.brave.com##+js(no-fetch-if, body:browser)
 @@||nikitaeverywhere.com/static/js/main-*.js|$script,1p
 @@||nikitaeverywhere.com/nikitaeverywhere-com-content/data.json|$xhr,1p
 ||dataunlocker.com/d/$script,1p,redirect=noopjs
+||dataunlocker.com/_next/static/chunks/1296-b802d5205251cf39.js$script,1p
+docs.dataunlocker.com##div[class^="PageTransition_overlay__"]
+docs.dataunlocker.com##div[class^="PageTransition_inner__"]:style(opacity: 1 !important; transform: none !important;)
 dataunlocker.com##+js(nostif, [native code], 120000)
+stateless.me##+js(aeld, load, return void)
 ||dataunlocker.com/_next/static/chunks/$script,1p,replace=/\"use strict\".*?\{children:b\?null:e\}\)\)\}\}\}\]\)\;//
 ||dataunlocker.com/_next/static/chunks/431-d4c0cbdf7a75befd.js$script,1p
 cefirates.com,comicleaks.com,tapmyback.com,ping.gg,nookgaming.com,creatordrop.com,bitdomain.biz,fort-shop.kiev.ua,accuretawealth.com,resourceya.com,tracktheta.com,adaptive.marketing,camberlion.com,trybawaryjny.pl,segops.madisonspecs.com,stresshelden-coaching.de,controlconceptsusa.com,ryaktive.com,tip.etip-staging.etip.io##^script:has-text("join('')")
@@ -30279,7 +30285,7 @@ nontonx.com###rules-nontonx
 @@||embed.wcostream.com^$script,1p
 embed.wcostream.com##^script:has-text(/google_jobrunner|AdBlock|pubadx|embed\.html/i)
 embed.wcostream.com##+js(rmnt, script, /google_jobrunner|AdBlock|pubadx|embed\.html/i)
-client.falixnodes.net##+js(rmnt, script, /aps_csm|snigelweb|gettheName|YWRuZ2lu|adngin|heyaaaaaa|\>Disable your|\>Please disable|adblock\<|body\.style \= \"margin/)
+client.falixnodes.net##+js(rmnt, script, /aps_csm|snigelweb|gettheName|YWRuZ2lu|adngin|whyso|mycoolintervalyouknow|Disable ad block|body\.style \= \"margin|body\.style \= \"padding/)
 client.falixnodes.net##+js(rpnt, script, /googletag.*?enableServices\(\)\;/s)
 client.falixnodes.net##+js(rpnt, script, /googletag\.pubads\(\).*rewardedSlot\)\;\s+\}\)\;/s)
 ||rm.freex2line.online/*.js|$domain=cimanow.cc

@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Tue, 21 Oct 2025 22:19:47 GMT
+! Last modified: Wed, 22 Oct 2025 10:14:25 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202510212211
+!   - Version: 202510221002
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 21 Oct 2025 22:11 UTC
+!   - Last modified: 22 Oct 2025 10:02 UTC
 ! * Bypass Paywalls Clean filter
 !   - URL: https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters/blob/raw?file=bpc-paywall-filter.txt
 !   - Version: 4.2.3.0
@@ -31,7 +31,7 @@
 !   - Homepage: https://paulgb.github.io/
 ! * ⚙️ Dandelion Sprout's Annoyances List
 !   - URL: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AnnoyancesList
-!   - Version: 21October2025v2-Compilation
+!   - Version: 22October2025v2-Compilation
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 🎯 DailyMotion Simplicity
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/DailyMotionSimplicity.txt
@@ -39,7 +39,7 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 💊 Dandelion Sprout's Anti-Malware List
 !   - URL: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout's%20Anti-Malware%20List.txt
-!   - Version: 08October2025v3
+!   - Version: 22October2025v2
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 🛃 Anti-'Adoptables and Artsite NFTs' List
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/AntiAdoptablesList.txt
@@ -74,7 +74,7 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 💊 Dandelion Sprout's Anti-Malware List
 !   - URL: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout's%20Anti-Malware%20List.txt
-!   - Version: 08October2025v3
+!   - Version: 22October2025v2
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * ClearURLs for uBo (unofficial)
 !   - URL: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/ClearURLs%20for%20uBo/clear_urls_uboified.txt
@@ -3488,7 +3488,7 @@ teknikproffset.*##.seg-promotion-wrapper
 ||proshop.*/Images/Proshop-GIF-.gif^
 github.com##.clearfix:has(h1:has-text(/^Uploading files .* versions Anti-Malware List$/)):has(div.js-filename:has-text(/^NordicFilters.*$/)):style(background-color:red!important)
 github.com##.clearfix:has(h1:has-text(/^Uploading files .*NorwegianExperimentalList .*$/)):has(div.js-filename:has-text(/^AntiMalware.*$/)):style(background-color:red!important)
-~google.*,~eeconomy.gr##+js(acs, addEventListener, mouseleave)
+*,~google.*,~eeconomy.gr##+js(acs, addEventListener, mouseleave)
 &client_ad_session_id=
 ||anyclip.com^$app=TETR.IO.exe
 dailymotion.com##div[class^=DiscoveryQueueDisplay__sectionContainer]:has(a[class*=channelCard])
@@ -3871,8 +3871,8 @@ download.cnet.com##.c-globalCard:has(a[href*="/AdsCleaner/"])
 ||54.209.22.226^$doc
 ||54.91.125.197^$doc
 ||52.202.53.245^$doc
-||35.175.38.64^$doc
-||35.168.147.213^$doc
+://35.175.38.64^$doc
+://35.168.147.213^$doc
 ||34.230.160.215^$doc
 ||3.226.8.132^$doc
 ||3.216.243.46^$doc
@@ -4483,7 +4483,7 @@ zombooru.com##a[href$="ttp://www.hard55.com"]
 ||95.85.89.98^$all,~inline-font
 ||mediafire.com/file/pj9jdm7iznc4d51/tekhacksnet_multi_loader.rar^$doc
 ||139.28.37.49^$all,~inline-font
-||35.194.188.37^$all,~inline-font
+://35.194.188.37^$all,~inline-font
 ||91.243.121.19^$all,~inline-font
 ||103.169.90.205^$all,~inline-font
 ||125.44.43.45^$all,~inline-font
@@ -4545,7 +4545,7 @@ zombooru.com##a[href$="ttp://www.hard55.com"]
 ||125.120.13.184^$all,~inline-font
 ||120.12.138.133^$all,~inline-font
 ||27.194.115.185^$all,~inline-font
-||104.128.199.228^$all,~inline-font
+://104.128.199.228^$all,~inline-font
 ||183.92.123.145^$all,~inline-font
 ||110.89.8.126^$all,~inline-font
 ||125.43.211.184^$all,~inline-font
@@ -7787,9 +7787,9 @@ zombooru.com##a[href$="ttp://www.hard55.com"]
 ||wulfs-dcm.com^$all,~inline-font
 /zcvisitor/*?campaignid$doc
 ||3.231.116.86^$all,~inline-font
-||54.237.193.255^$all,~inline-font
 ||3.231.137.120^$all,~inline-font
 ||54.204.83.105^$all,~inline-font
+||54.237.193.255^$all,~inline-font
 ||jonathanbartz.com^$all,~inline-font
 ||jp.imonitorsoft.com^$all,~inline-font
 ||junk-bros.com^$all,~inline-font
@@ -9286,11 +9286,11 @@ zombooru.com##a[href$="ttp://www.hard55.com"]
 ||zybnzw.com^$all,~inline-font
 ||zzebuh.com^$all,~inline-font
 ||zzrgab.com^$all,~inline-font
-||37.1.223.231^$all,~inline-font
 ||139.45.197.167^$all,~inline-font
 ||139.45.197.245^$all,~inline-font
 ||159.223.137.164^$all,~inline-font
 ||185.56.234.205^$all,~inline-font
+||37.1.223.231^$all,~inline-font
 ||192.243.58.97^$all,~inline-font
 ||192.243.58.98^$all,~inline-font
 ||192.243.58.123^$all,~inline-font
@@ -25439,7 +25439,7 @@ cdburnerxp.se##[href*="/downloadsetup.exe"]
 ||neracti.com^$all,~inline-font
 ||nuouther.com^$all,~inline-font
 ||carpiesi.com^$all,~inline-font
-||104.206.252.90^$all,~inline-font
+://104.206.252.90^$all,~inline-font
 ||jNKmS0zFuEh.click^$all,~inline-font
 ||pjljo54uk.click^$all,~inline-font
 ||v1asy4ncr.click^$all,~inline-font
@@ -26407,7 +26407,7 @@ tumblr.com##div[tabindex][style]:has(a[href*="://cutt.ly/"])
 tumblr.com#?#div[tabindex][style]:has(a[href*="tinyurl."]:has-text(_1+8_))
 www.tumblr.com##div[style="margin-top: 0px;"][tabindex]:has-text(🔞):has-text(/Insta/i)
 www.tumblr.com##div[tabindex][style="margin-top: 0px;"]:not([class],[id]):has(a[target=_blank] > div > div:has-text(/^.*🔞.*insta( |gram).*\n.*$/i))
-||104.21.82.132^$doc,popup
+://104.21.82.132^$doc,popup
 ||172.67.158.57^$doc,popup
 ||198.12.86.90^$all
 ||2024ballondor.shop^$all
@@ -28728,6 +28728,33 @@ www.tumblr.com##div[data-timeline-id] div[style="margin-top: 0px;"]:has(a:is([hr
 ://old.sermitsiaq.ag^$doc,domain=subdomain_stolen_from_sermitsiaqs_owners.*
 ||xss.my.id^$third-party
 ||85.159.213.158^$all
+||23.170.252.196^$all
+||23.229.68.43^$all
+||23.229.68.44^$all
+||23.229.68.45^$all
+||23.229.68.46^$all
+||23.229.68.47^$all
+||23.229.69.124^$all
+||23.229.70.48^$all
+||23.82.169.37^$all
+||23.82.169.38^$all
+||23.82.169.39^$all
+||23.82.169.40^$all
+||23.82.169.41^$all
+||23.94.86.123^$all
+||51.15.3.223^$all
+||64.28.236.188^$all
+||69.162.70.109^$all
+||69.64.49.203^$all
+||69.64.52.249^$all
+||72.11.130.164^$all
+||72.11.130.170^$all
+||72.11.130.171^$all
+||72.11.130.173^$all
+||72.11.130.174^$all
+||72.9.157.254^$all
+||74.208.27.239^$all
+||79.143.181.251^$all
 ||107.161.189.164^$all
 ||138.128.161.250^$all
 ||138.128.161.251^$all
@@ -28780,45 +28807,18 @@ www.tumblr.com##div[data-timeline-id] div[style="margin-top: 0px;"]:has(a:is([hr
 ||212.83.190.41^$all
 ||213.202.211.30^$all
 ||213.202.211.38^$all
-||216.245.211.18^$all
-||216.245.216.178^$all
-||216.245.216.179^$all
-||216.245.216.180^$all
-||216.245.216.181^$all
-||216.245.216.182^$all
-||216.246.30.80^$all
-||216.246.30.81^$all
-||216.246.30.82^$all
-||216.246.30.83^$all
-||216.246.30.84^$all
-||23.170.252.196^$all
-||23.229.68.43^$all
-||23.229.68.44^$all
-||23.229.68.45^$all
-||23.229.68.46^$all
-||23.229.68.47^$all
-||23.229.69.124^$all
-||23.229.70.48^$all
-||23.82.169.37^$all
-||23.82.169.38^$all
-||23.82.169.39^$all
-||23.82.169.40^$all
-||23.82.169.41^$all
-||23.94.86.123^$all
-||51.15.3.223^$all
-||64.28.236.188^$all
-||69.162.70.109^$all
-||69.64.49.203^$all
-||69.64.52.249^$all
-||72.11.130.164^$all
-||72.11.130.170^$all
-||72.11.130.171^$all
-||72.11.130.173^$all
-||72.11.130.174^$all
-||72.9.157.254^$all
-||74.208.27.239^$all
-||79.143.181.251^$all
 ||[2a14:2d81:0:27::1]^$all
+://216.245.211.18^$all
+://216.245.216.178^$all
+://216.245.216.179^$all
+://216.245.216.180^$all
+://216.245.216.181^$all
+://216.245.216.182^$all
+://216.246.30.80^$all
+://216.246.30.81^$all
+://216.246.30.82^$all
+://216.246.30.83^$all
+://216.246.30.84^$all
 ||taylorcopies.com^$doc
 ||atypicalnorms.com^$doc
 ||beastlyendeavors.com^$doc

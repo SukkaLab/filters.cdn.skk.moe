@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Tue, 21 Oct 2025 22:19:47 GMT
+! Last modified: Wed, 22 Oct 2025 10:14:25 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.93.22
+!   - Version: 2.0.93.28
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/refs/heads/master/cjx-annoyance.txt
 !   - Version: 202510081500
@@ -216,6 +216,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||tryzens-analytics.com^
 ||turbotargeting.io^
 ||inetstats.org^$third-party
 ||analysis.chatglm.cn^
@@ -69403,6 +69404,8 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||hbrcv.adobe.com^
+||hbrt.adobe.com^
 ||leo.tridge.com^
 ||haystack.wavve.com^
 ||user-event-log.aminer.cn^
@@ -70756,7 +70759,6 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ||analytics.newscred.com^
 ||analytics.digitalpfizer.com^
 ||intg.snapchat.com^
-||p.ura.news^
 ||statsapi.tiendeo.com.tr^
 ||perf.hsforms.com^
 ||tr.www.cloudflare.com^
@@ -109191,6 +109193,8 @@ zjjz6lpv44aguszo.cloud.s11.sfmc-osl.com$image
 /^https?:\/\/(?!assets|script|static)(?:[0-9a-z]{10,13}|[0-9a-z]{6})\.[0-9A-Za-z.\-_]+\/(?=[0-9a-z+\/\-]*[A-Z])[0-9A-Za-z+\/\-]{80,106}$/$match-case,script,~third-party
 /^https:\/\/cs\d{3}\.\w+\.com\/cscript\/\d{3}\/[\w\d]+\.js$/$script,third-party,match-case
 /.well-known/private-click-measurement
+/home/new/v*/api/get-ip.php
+/home/new/v*/api/applogger.php
 /rum/events
 /gs/ccm/collect?
 /piano/engagement
@@ -109853,6 +109857,11 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xmlhttprequest,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$third-party,object,redirect=noop.js,script
+||kio.ac/analytics/
+indianexpress.com##+js(set-local-storage-item, ev_did, $remove$)
+indianexpress.com##+js(set-local-storage-item, ev_sid, $remove$)
+||indianexpress.com/wp-content/themes/indianexpress/js/ie-events-all.js
+||embed.reddit.com/svc/shreddit/events
 ||bitdefender.com/dtm/
 ||bitdefender.com/cdp/
 ||fantasylandnews.com/wp-content/cache/min/*/analytics.js
@@ -109908,7 +109917,6 @@ novakid.*,novakidschool.com##+js(set-local-storage-item, ftr, $remove$)
 ||events-proxy.mintlify.com/e/?ip=*&ver=$xmlhttprequest,redirect=noop.json
 ||icon.zol-img.com.cn/public/bdshare/static/api/js/trans/logger.js
 ||ws.cs.1worldsync.com/log?
-||fashionnova.com/api/search/events
 ||eneba.com/metrics/
 ||sdk.nsureapi.com/sdk.js
 ||ias.r10s.jp/grp15/lib/ichiba_frame.js
