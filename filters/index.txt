@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Filters
-! Last modified: Wed, 15 Oct 2025 11:57:34 GMT
+! Last modified: Thu, 23 Oct 2025 14:13:54 GMT
 ! Expires: 1 hours
 ! Description: The filters from Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -116,6 +116,8 @@ github.com##article[data-hydro-view*="MERGED_PULL_REQUEST"]
 github.com##article[data-hydro-view*="ADDED_TO_LIST"]
 github.com##article[data-hydro-view*="RELEASE"]
 github.com##article[data-hydro-view*="NEW_DISCUSSION"]
+npmjs.com##a[aria-labelledby*="repository-link"]:style(margin: 0 !important)
+npmjs.com##a[aria-labelledby*="homePage-link"]:style(margin: 0 !important)
 china-emu.cn##+js(aopw, window.onload)
 china-emu.cn##html:style(user-select: initial !important)
 bgp.he.net###graph4 img:style(max-width: 100% !important;)
@@ -163,6 +165,7 @@ crdroid.net###dl-links:style(display: block !important)
 crdroid.net###dl-ads
 ||accounts.google.com/gsi/$frame,redirect=click2load.html
 ||accounts.google.com/gsi/$3p
+||apis.google.com$3p,domain=udn.com
 yorg.io###adVideoBg
 yorg.io###adblockHint
 yorg.io###ingame_chat
@@ -400,6 +403,8 @@ justauth.cn##+js(set, window._AdBlockInit, true)
 ||xvideo-jp.com/adjs/
 /smartpop$frame
 ||.sf-syn.com/badge_js$3p
+||yastatic.net/share$3p
+||sniperl.ink$3p
 @@||e.customeriomail.com
 ||app.moegirl.org.cn/insight-assets/images/20230413-moepad/800x300.png
 ||storage.moegirl.org.cn/console-plus/uploads/2024/02/01/a475bee2aa57da0e65f5341b78ccf551.png
@@ -635,3 +640,11 @@ www.windy.com###startup-promo
 learn.microsoft.com##.is-success.alert:has([href^="https://security.microsoft.com/trialHorizontalHub"])
 www.reddit.com###games_section
 vite.dev##.vp-sponsor-grid
+www.g2.com##[href^="https://www.g2.com/external_clickthroughs"]
+www.capterra.com##iframe[id*="faas-modal"]
+||forms-as-a-service.capterra.com$script
+||lead-acquisition-service.softwareadvice.com$script
+zhuanlan.zhihu.com###Popover10-toggle
+www.campbellramble.ai##[aria-label*="Subscribe modal"]
+||ping0.cc/*/ad/$image
+||www.zoho.com/sites/zweb/images/workplace/home/sales-export-img.png
