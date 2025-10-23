@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Thu, 23 Oct 2025 10:14:14 GMT
+! Last modified: Thu, 23 Oct 2025 22:21:13 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.93.35
+!   - Version: 2.0.93.38
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/refs/heads/master/cjx-annoyance.txt
 !   - Version: 202510081500
@@ -2289,7 +2289,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ||adku.co^$third-party
 ||adku.com^$third-party
 ||admantx.com^$third-party
-||admitad.com^$third-party
+||ad.admitad.com^$third-party
 ||adobetag.com^$third-party
 ||adoftheyear.com^$third-party
 ||adrta.com^$third-party
@@ -69407,6 +69407,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||sgtm.yubico.com^
 ||ins.oberpfalzmedien.de^
 ||hbrcv.adobe.com^
 ||hbrt.adobe.com^
@@ -69440,7 +69441,6 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ||orderana*.spankbang.com^
 ||upsell.alphwidget.com^
 ||4hfvbao1ea.execute-api.ap-northeast-2.amazonaws.com^
-||static.alphwidget.com^
 ||error-analytics-sessions-production.shopifysvc.com^
 ||analytics.pesktop.com^
 ||cloudmetrics.xenforo.com^
@@ -70036,7 +70036,6 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ||sgtm.tagmanageritalia.it^
 ||sgtm.technikboerse.com^
 ||sgtm.tennis-point.de^
-||sgtm.yubico.com^
 ||sst.colemanfurniture.com^
 ||sst.shopware.com^
 ||stream.corporatefinanceinstitute.com^
