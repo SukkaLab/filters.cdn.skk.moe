@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Thu, 23 Oct 2025 22:21:13 GMT
+! Last modified: Fri, 24 Oct 2025 10:14:25 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Thu, 23 Oct 2025 15:34:51 +0000
+!   - Last modified: Fri, 24 Oct 2025 05:17:14 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Thu, 23 Oct 2025 09:44:43 +0000
@@ -20,7 +20,7 @@
 !   - Last modified: Thu, 23 Oct 2025 12:59:04 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Thu, 23 Oct 2025 15:29:21 +0000
+!   - Last modified: Fri, 24 Oct 2025 03:14:19 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
 !   - Last modified: Thu, 23 Oct 2025 15:29:21 +0000
@@ -8343,8 +8343,8 @@ brocoflix.com,brocoflix.xyz##+js(acs, document.createElement, l.appendChild(s))
 coinsbomb.com,daemon-hentai.com,daemonanime.net,everia.club,kurakura21.com##+js(acs, document.createElement, l.parentNode.insertBefore(s, /^data:/)
 yaoimangaonline.com##+js(trusted-suppress-native-method, Document.prototype.createElement, '"script"', prevent, litespeed/js)
 *$script,3p,denyallow=disqus.com|disquscdn.com|fastlylb.net,domain=cin.guru
-bebasbokep.online,besthdgayporn.com,bokepindo13.vin,dimensionalseduction.com,drivenime.com,erothots1.com,filegram.to,javbobo.com,javup.org,kaliscan.*,madouqu.com,savefiles.com,shemaleup.net,transflix.net,worthcrete.com,x-x-x.video##^script:has-text(/popMagic|pop1stp/)
-bebasbokep.online,besthdgayporn.com,bokepindo13.vin,dimensionalseduction.com,drivenime.com,erothots1.com,filegram.to,javbobo.com,javup.org,kaliscan.*,madouqu.com,savefiles.com,shemaleup.net,transflix.net,worthcrete.com,x-x-x.video##+js(rmnt, script, /popMagic|pop1stp/)
+bebasbokep.online,besthdgayporn.com,bokepindo13.*,dimensionalseduction.com,drivenime.com,erothots1.com,filegram.to,javbobo.com,javup.org,kaliscan.*,madouqu.com,savefiles.com,shemaleup.net,transflix.net,worthcrete.com,x-x-x.video##^script:has-text(/popMagic|pop1stp/)
+bebasbokep.online,besthdgayporn.com,bokepindo13.*,dimensionalseduction.com,drivenime.com,erothots1.com,filegram.to,javbobo.com,javup.org,kaliscan.*,madouqu.com,savefiles.com,shemaleup.net,transflix.net,worthcrete.com,x-x-x.video##+js(rmnt, script, /popMagic|pop1stp/)
 fucksporn.com###FloatingLayer
 fucksporn.com##.adv_banners
 fucksporn.com##.prefix-player-out
@@ -18759,6 +18759,7 @@ waaaw.*,waaw.*,waaw1.*##+js(aopr, BetterJsPop)
 /cdn-cgi/trace$xhr,domain=waaw.*|waaaw.*
 bombuj.*##+js(no-fetch-if, ads)
 bombuj.*##+js(nobab)
+bombuj.*##+js(rpnt, script, var debounceTimer;, `window.addEventListener("load",()=>{document.querySelector('#players div[id]:has(> a > div[class^="close_reklama"])')?.click?.()});var debounceTimer;`, sedCount, 1)
 @@||adserver.iprom.net/adserver7$xhr,domain=rtl.hr
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=rtl.hr
 @@||cdn.jsdelivr.net/npm/videojs-contrib-ads$script,domain=rtl.hr
@@ -22036,7 +22037,7 @@ destructoid.com##.wp-block-gamurs-ad
 sizecharts.net##+js(rmnt, #text, adinserter)
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$redirect=google-ima.js,domain=ted.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$domain=ted.com
-tvtropes.org##+js(set, valid_page_types, [])
+tvtropes.org##+js(rmnt, script, .innerWidth)
 talksport.com##+js(rmnt, script, AD_URL)
 pcoptimizedsettings.com##+js(aeld, wphb-load, ads)
 pcoptimizedsettings.com###tie-wrapper > div[style="margin: 15px auto; text-align: center; display: block; clear: both; height: 250px;"]
@@ -30304,7 +30305,7 @@ global.novelpia.com##div[id^="novelpia_"]:remove()
 @@||startpage.com/sp/search?*&sc=$doc,removeparam=sc
 .com/*.co.jp|$doc,badfilter
 omuzaani.me##+js(rmnt, script, adserverDomain, excludes, debugger)
-omuzaani.me##+js(trusted-replace-outbound-text, Array.prototype.join, /.+/gms, (()=>{})();, condition, encodeURIComponent)
+omuzaani.me##+js(trusted-replace-outbound-text, Headers.prototype.get, /.+/, image/png, condition, /^text\/plain;charset=UTF-8$/)
 omuzaani.me##+js(rpnt, script, /window.navigator.brave.+;/, false;)
 omuzaani.me##+js(no-fetch-if, summerday, length:10, {"type":"cors"})
 @@||region1.google-analytics.com/g/collect$xhr,domain=stateless.me
