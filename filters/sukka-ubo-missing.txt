@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Fri, 24 Oct 2025 10:14:25 GMT
+! Last modified: Fri, 24 Oct 2025 22:22:00 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.93.42
+!   - Version: 2.0.93.45
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/refs/heads/master/cjx-annoyance.txt
 !   - Version: 202510081500
@@ -216,6 +216,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||events.api.gamma.app^
 ||pirsch.io^$third-party
 ||d2g2u2795e3fzw.cloudfront.net^
 ||mobiexchange.com^$third-party
@@ -109864,6 +109865,9 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xmlhttprequest,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$third-party,object,redirect=noop.js,script
+||api.vortexscans.org/api/track-visit
+||api.vortexscans.org/api/analytics/updateViews
+||drive2.ru/_api/special/*/view|
 ||teknolojituru.com/api/tracking
 ||cloudfront.net/ecmtr-*.js
 ||lib.onet.pl/static/pixel/
@@ -111808,8 +111812,10 @@ nukigazo.com###text-2
 brasil247.com###taboola-mid-article-leia-mais
 ||libcdnjs.com/api/event
 ||api.snapchat.com/web/metrics
+||api-kit.snapchat.com/com.snap.camerakit.v3.Metrics^
 ||snapchat.com/web-analytics
 ||snapchat.com/report-metrics/
+||web.snapchat.com/web-blizzard/web/send^
 ||accounts.snapchat.com/accounts/static/scripts/pixel.js
 ||snap-api.arkoselabs.com/metrics/
 ||zona.plus/ajax/visit-stats
