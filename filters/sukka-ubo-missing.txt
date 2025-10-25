@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Fri, 24 Oct 2025 22:22:00 GMT
+! Last modified: Sat, 25 Oct 2025 10:11:35 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.93.45
+!   - Version: 2.0.93.47
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/refs/heads/master/cjx-annoyance.txt
 !   - Version: 202510081500
@@ -979,7 +979,6 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ||mediago.io^$third-party
 ||cra.hum.works^$third-party
 ||log.trackingio.com^
-||region1.analytics.google.com^$third-party
 ||google-analytics.com^
 ||iad.anm.co.uk^
 ||cdn.wgchrrammzv.com^
@@ -109265,7 +109264,6 @@ zjjz6lpv44aguszo.cloud.s11.sfmc-osl.com$image
 /plugins/wp-rocket/assets/js/wpr-beacon.
 /performance_tracking.min.js
 /attpro/a?
-/api/bfb_write_log
 /master-amg-plugin/assets/js/page-view-ga.js
 /plugins/wp-rocket/assets/js/lcp-beacon.
 /modules/kixelltag/views/js/kst-$script
@@ -109415,6 +109413,7 @@ zjjz6lpv44aguszo.cloud.s11.sfmc-osl.com$image
 /lasso-ga.
 /dist/owa.tracker.js
 /common_access/usercheck.php?muid=$xmlhttprequest
+/api/bfb_write_log
 /swell-ct-pv$xmlhttprequest
 /swell-ct-ad-data$xmlhttprequest
 /heatmap/js/clickheat.js
@@ -109865,6 +109864,7 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xmlhttprequest,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$third-party,object,redirect=noop.js,script
+||shop.app/pay/hop?analytics_trace_id=
 ||api.vortexscans.org/api/track-visit
 ||api.vortexscans.org/api/analytics/updateViews
 ||drive2.ru/_api/special/*/view|
@@ -111851,7 +111851,6 @@ brasil247.com###taboola-mid-article-leia-mais
 ||techcrunch.com/wp-json/wp/v*/tc_events
 ||hwp.com.tr/zrzga.js
 ||cdn.dsmcdn.com/frontend/web/production/dom-event-tracker-
-||mdjonline.com/shared-content/art/stats/common/tracker.js
 ||sentinel.defacto.com.tr/api/Tracking/
 ||unite.nike.com/auth/unite_session_cookies/
 ||ltbjeans.com/*/analyticsmediator.js
@@ -112538,7 +112537,6 @@ dumskaya.net,da-te.jp##.counter
 ||gets.faz.net/z.aspx
 ||quotiq.ru/api/client_events
 ||tbs.co.jp/js/gaaddons/
-||postguam.com/shared-content/art/stats/common/tracker.js
 ||pix2.services.tvn.pl^
 finders.me##.__popin
 finders.me##.__recommendedPosts
@@ -112993,7 +112991,6 @@ sports.goo.ne.jp###taboola-below-sokuho-thumbnails
 ||wazzup.me/libs/track.js
 ||imstream.jp/analytics/js/
 ||stbbs.sooplive.co.kr/api/*_log.php
-||wataugademocrat.com/shared-content/art/stats/common/tracker.js
 ||terabox.com/statistics^
 ||terabox.com/api/analytics
 ||video-library.showheroes.com/player/ad_tag?
@@ -114238,7 +114235,6 @@ znak.com##.relap
 ||id.rambler.ru/login-20/counters.js
 ||olympiaverlag.sc.omtrdc.net/b/ss/
 ||friends2follow.com/f2fi.php^
-||themonitor.com/shared-content/art/stats/common/tracker.js^
 ||cxo.name/collect?
 ||doublepimp.com/Scripts/Analytics/
 ||hmma.baidu.com/app.gif
@@ -114847,8 +114843,6 @@ github.com/notifications/beacon=*.gif$image
 dm-sg.aliyuncs.com/trace/*/report$image
 dm-sg.aliyuncs.com%2Ftrace%2F*%2Freport$image
 tk.seasungame.com$image
-s-pt.jp/mail/info/*/img/_.gif$image
-s-pt.jp%2Fmail%2Finfo%2F*%2Fimg%2F_.gif$image
 openedlog.smart-bdash.com/opened?aid=$image
 openedlog.smart-bdash.com%2Fopened%3Faid%3D$image
 willap.jp/t?r=$image
@@ -114907,6 +114901,8 @@ liens.newsletters.jeuxvideo.com%2Fm%2Fopening%2F$image
 cnt.mail.netbk.co.jp$image
 marketing.1password.co/trk?t$image
 marketing.1password.co%2Ftrk%3Ft$image
+s-pt.jp/mail/info/*/img/_.gif$image
+s-pt.jp%2Fmail%2Finfo%2F*%2Fimg%2F_.gif$image
 r.rakuten.co.jp/*.gif?mpe=
 r.rakuten.co.jp%2F*.gif%3Fmpe%3D
 shop.yushakobo.jp/_t/open/$image
