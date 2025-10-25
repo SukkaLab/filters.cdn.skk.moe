@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Filters
-! Last modified: Thu, 23 Oct 2025 14:13:54 GMT
+! Last modified: Sat, 25 Oct 2025 15:21:27 GMT
 ! Expires: 1 hours
 ! Description: The filters from Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -83,7 +83,7 @@ lingchenzi.com#@#.category-share
 ||bad.third-party.site
 ||playground.oxc.rs$important
 ||amap.com$3p,domain=~www.amap.com|~amap.com|~gaode.com|~bigdata.speedtest.cn|~cjia.com|~giant.com.cn
-||map.baidu.com$3p,domain=~map.baidu.com|~lecake.com|~58.com|~iguanyu.com|~iguanyu.com|~onelap.cn
+||map.baidu.com$3p,domain=~map.baidu.com|~lecake.com|~58.com|~iguanyu.com|~iguanyu.com|~onelap.cn|~assets.nxtrace.org
 ||map.qq.com$3p
 /ajax/libs/nosleep/*
 ||baidu.com$3p
