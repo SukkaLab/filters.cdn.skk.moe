@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sat, 25 Oct 2025 22:19:51 GMT
+! Last modified: Sun, 26 Oct 2025 10:11:44 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sat, 25 Oct 2025 17:54:56 +0000
+!   - Last modified: Sun, 26 Oct 2025 06:02:48 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Sat, 25 Oct 2025 10:09:14 +0000
@@ -20,7 +20,7 @@
 !   - Last modified: Fri, 24 Oct 2025 11:58:38 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Sat, 25 Oct 2025 15:16:28 +0000
+!   - Last modified: Sun, 26 Oct 2025 04:35:09 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
 !   - Last modified: Thu, 23 Oct 2025 15:29:21 +0000
@@ -7728,6 +7728,7 @@ hdhub4u.fail,hubdrive.*,moviesubtitles.click,telegratuita.com##+js(aeld, DOMCont
 ||dietaryyurilent.com^
 ||enraptureminims.com^
 ||exclusivelearnt.com^
+||facialleaflet.com^
 ||isabellaentire.com^
 ||stewportfoliomeaning.com^
 ||thingsmadenavy.com^
@@ -8728,8 +8729,8 @@ glodls.to,playfa.com##+js(acs, fetch, break;case)
 /^https:\/\/[a-z]{3,5}\.[a-z]{10,14}\.top\/[a-z]{10,16}\/[a-z]{5,6}(?:\?d=\d)?$/$script,xhr,3p,match-case,to=top
 /^https:\/\/[a-z]{3,5}\.[a-z]{10,14}\.top\/[A-Za-z]{10,16}\/[A-Za-z]{5,6}$/$popup,3p,to=top
 /^https:\/\/[a-z][a-z][a-z][a-z]?[a-z]?\.[a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z]?[a-z]?[a-z]?[a-z]?\.top\/[a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z]?[a-z]?[a-z]?[a-z]?[a-z]?[a-z]?\/[a-z][a-z][a-z][a-z][a-z][a-z]?\?d=[0-9]$/$script,xhr,3p,match-case
-123animehub.cc,123animes.ru,actvid.*,boosterx.stream,cataz.to,cineb.rs,cineb.gg,demonicscans.org,dopebox.to,flixhq.to,gomovies.sx,gomoviestv.to,himovies.sx,limetorrents.lol,luluvdoo.com,mangagun.net,mexa.sh,mgeko.cc,mkvcinemas.*,moflix-stream.fans,motchill29.com,mov18plus.cloud,moviesapi.to,movies2watch.tv,netmovies.to,nicomanga.com,phimlongtieng.net,rawinu.com,rawkuma.net,readcomiconline.*,seriesonline.sx,theflixertv.to,torrentdownload.*,toonily.com,torrentdownloads.*,tukipasti.com,vidfast.*,vidsrc.cc,weloma.art,welovemanga.one,zoechip.com,zoechip.gg##^script:has-text(HTMLAllCollection)
-123animehub.cc,123animes.ru,actvid.*,boosterx.stream,cataz.to,cineb.rs,cineb.gg,demonicscans.org,dopebox.to,flixhq.to,gomovies.sx,gomoviestv.to,himovies.sx,limetorrents.lol,luluvdoo.com,mangagun.net,mexa.sh,mgeko.cc,mkvcinemas.*,moflix-stream.fans,motchill29.com,mov18plus.cloud,moviesapi.to,movies2watch.tv,netmovies.to,nicomanga.com,phimlongtieng.net,rawinu.com,rawkuma.net,readcomiconline.*,seriesonline.sx,theflixertv.to,torrentdownload.*,toonily.com,torrentdownloads.*,tukipasti.com,vidfast.*,vidsrc.cc,weloma.art,welovemanga.one,zoechip.com,zoechip.gg##+js(acs, addEventListener, HTMLAllCollection)
+123animehub.cc,123animes.ru,actvid.*,boosterx.stream,cataz.to,cineb.rs,cineb.gg,demonicscans.org,dopebox.to,flixhq.to,gomovies.sx,gomoviestv.to,himovies.sx,limetorrents.lol,luluvdoo.com,mangagun.net,mexa.sh,mgeko.cc,mkvcinemas.*,moflix-stream.fans,motchill29.com,mov18plus.cloud,moviesapi.to,movies2watch.tv,netmovies.to,nicomanga.com,phimlongtieng.net,rawinu.com,rawkuma.net,readcomiconline.*,seriesonline.sx,theflixertv.to,torrentdownload.*,toonily.com,torrentdownloads.*,tukipasti.com,vidfast.*,vidsrc.cc,watchseries.*,weloma.art,welovemanga.one,zoechip.com,zoechip.gg##^script:has-text(HTMLAllCollection)
+123animehub.cc,123animes.ru,actvid.*,boosterx.stream,cataz.to,cineb.rs,cineb.gg,demonicscans.org,dopebox.to,flixhq.to,gomovies.sx,gomoviestv.to,himovies.sx,limetorrents.lol,luluvdoo.com,mangagun.net,mexa.sh,mgeko.cc,mkvcinemas.*,moflix-stream.fans,motchill29.com,mov18plus.cloud,moviesapi.to,movies2watch.tv,netmovies.to,nicomanga.com,phimlongtieng.net,rawinu.com,rawkuma.net,readcomiconline.*,seriesonline.sx,theflixertv.to,torrentdownload.*,toonily.com,torrentdownloads.*,tukipasti.com,vidfast.*,vidsrc.cc,watchseries.*,weloma.art,welovemanga.one,zoechip.com,zoechip.gg##+js(acs, addEventListener, HTMLAllCollection)
 cataz.to##+js(nowoif)
 cineb.rs,moviesjoyhd.to,rawkuma.com##+js(aeld, mousedown, shown_at)
 actvid.*##.block_area iframe:upward(.block_area)
@@ -9442,6 +9443,8 @@ vozer.io,vozer.vn##+js(acs, document.addEventListener, Popunder)
 ios.codevn.net##+js(rmnt, script, /popup/i)
 ios.codevn.net##+js(nowoif, _blank)
 watch.rkplayer.xyz##+js(set, adsPlayer, undefined)
+lokhung888.com##+js(rmnt, script, /popup|arrDirectLink/)
+lokhung888.com##+js(nowoif, _blank)
 /^https:\/\/[a-z0-9]{6,10}\.[a-z]{2,3}\/js\d?\/noadblocker\.js(?:\?v=\d)?$/$script,1p,match-case
 /^https:\/\/[a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9]?[a-z0-9]?[a-z0-9]?[a-z0-9]?\.[a-z][a-z][a-z]?\/js[0-9]?\/noadblocker\.js(\?v=[0-9])?$/$script,1p,match-case
 *$script,redirect-rule=noopjs,domain=arcai.com
@@ -14265,6 +14268,7 @@ fox.com,foxsports.com##+js(json-prune, ads)
 fox.com,foxsports.com##+js(m3u-prune, /\,ad\n.+?(?=#UPLYNK-SEGMENT)/gm, /uplynk\.com\/.*?\.m3u8/)
 ||link.theplatform.com/s/*/media/*=m3u&*_webdesktop_vod*$xhr,domain=foxsports.com,removeparam=/^((?!formats|profile).)*$/
 ://foxvideo-sports$xhr,3p,removeparam=ad.prof,domain=foxsports.com
+||digitalvideoplatform.com/vod/*/index.m3u8$xhr,removeparam=platform,domain=fox.com
 @@||wintub.com^$ghide
 poki-gdn.com##+js(aopr, alert)
 ||static.gamezop.com/creatives^$image,3p
@@ -30168,8 +30172,8 @@ nontonx.com###rules-nontonx
 @@||embed.wcostream.com^$script,1p
 embed.wcostream.com##^script:has-text(/google_jobrunner|AdBlock|pubadx|embed\.html/i)
 embed.wcostream.com##+js(rmnt, script, /google_jobrunner|AdBlock|pubadx|embed\.html/i)
-client.falixnodes.net##+js(rpnt, script, /function gettheName.*?appendChild\(loader\);/s)
-client.falixnodes.net##+js(rmnt, script, /aps_csm|neptune|function marsredirect/)
+client.falixnodes.net##+js(rmnt, script, /aps_csm|snigelweb|antiredirect|YWRuZ2lu|adngin|testtest|yupsigh|htmlelementcheck|101vh|Segoe UI|ffffff|style \= \"height|style\=\"text-shadow|Please disable adblock/)
+client.falixnodes.net##^script:has-text(aps_csm) + script
 client.falixnodes.net##+js(rpnt, script, /googletag.*?enableServices\(\)\;/s)
 client.falixnodes.net##+js(rpnt, script, /googletag\.pubads\(\).*rewardedSlot\)\;\s+\}\)\;/s)
 ||rm.freex2line.online/*.js|$domain=cimanow.cc
@@ -30183,6 +30187,7 @@ global.novelpia.com##div[id^="novelpia_"]:remove()
 .com/*.co.jp|$doc,badfilter
 omuzaani.me##+js(rmnt, script, adserverDomain, excludes, debugger)
 omuzaani.me##+js(trusted-replace-outbound-text, Headers.prototype.get, /.+/, image/png, condition, /^text\/plain;charset=UTF-8$/)
+omuzaani.me##+js(trusted-replace-argument, Headers.prototype.get, 0, json:"content-type", condition, cache-control)
 omuzaani.me##+js(trusted-replace-argument, Headers.prototype.has, 0, json:"content-type", condition, cache-control)
 omuzaani.me##+js(rpnt, script, /window.navigator.brave.+;/, false;)
 omuzaani.me##+js(no-fetch-if, summerday, length:10, {"type":"cors"})
