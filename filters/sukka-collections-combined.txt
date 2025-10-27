@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Sun, 26 Oct 2025 22:21:15 GMT
+! Last modified: Mon, 27 Oct 2025 10:15:53 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202510262211
+!   - Version: 202510271001
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 26 Oct 2025 22:11 UTC
+!   - Last modified: 27 Oct 2025 10:01 UTC
 ! * Bypass Paywalls Clean filter
 !   - URL: https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters/blob/raw?file=bpc-paywall-filter.txt
 !   - Version: 4.2.3.4
@@ -61966,7 +61966,7 @@ rjno1.com#?#div:-abp-has(> p:-abp-contains(ad block))
 ruanyifeng.com##+js(aopr, setTimeout)
 tingfm.com##+js(set, canRunAds, true)
 biquge.ac,zhuoshuge.com##+js(aopr,setTimeout)
-lakyworld.com,biquge543.com,biquge12345.com,biquge.ac,biquge321.com,20me.net,dingdian365.com,jinpai123.net,fwdadr.net,haijiaobooksw.top,bqug8.com,biqudd.com,biquge345.com,dingdian365.com,dingdian888.com,nicmar.net,xianguke.net,ykxs.cc,zhuoshuge.com,zuizhong.net##+js(acis, document.write, style)
+hutuxs.com,lakyworld.com,biquge543.com,biquge12345.com,biquge.ac,biquge321.com,20me.net,dingdian365.com,jinpai123.net,fwdadr.net,haijiaobooksw.top,bqug8.com,biqudd.com,biquge345.com,dingdian365.com,dingdian888.com,nicmar.net,xianguke.net,ykxs.cc,zhuoshuge.com,zuizhong.net##+js(acis, document.write, style)
 @@||tanx.com/ex?i=$script,domain=dlkoo.com,badfilter
 @@||bingfeng.tw^$generichide,badfilter
 ||cibntv.net/youku/*$media,redirect=noopmp3-0.1s,domain=youku.com

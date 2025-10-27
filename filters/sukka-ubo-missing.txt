@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Sun, 26 Oct 2025 22:21:15 GMT
+! Last modified: Mon, 27 Oct 2025 10:15:53 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.93.48
+!   - Version: 2.0.93.50
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/refs/heads/master/cjx-annoyance.txt
 !   - Version: 202510081500
@@ -216,6 +216,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||heidy.makeup^$third-party
 ||events.api.gamma.app^
 ||pirsch.io^$third-party
 ||d2g2u2795e3fzw.cloudfront.net^
@@ -69400,6 +69401,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||applytics.napps-1.com^
 ||z.cdn.protect-ad.com^
 ||sb1.mangataro.org^
 ||sgtm.yubico.com^
@@ -109849,6 +109851,7 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xmlhttprequest,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$third-party,object,redirect=noop.js,script
+||monitor-frontend-collector.a.bybit-aws.com/api/*/batch/
 ||shop.app/pay/hop?analytics_trace_id=
 ||api.vortexscans.org/api/track-visit
 ||api.vortexscans.org/api/analytics/updateViews
@@ -118567,6 +118570,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||basilfish.com^
 ||basketballbelieve.com^
 ||baskettexture.com^
+||bastingart.com^
 ||bawdybalance.com^
 ||beamvolcano.com^
 ||beancontrol.com^
@@ -119277,6 +119281,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||jazzwholesale.com^
 ||jetskiscovers.com^
 ||jewelryforest.com^
+||jewelrysprings.com^
 ||joblessdrum.com^
 ||jobmist.com^
 ||joyfulharbor.com^
@@ -119654,6 +119659,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||pumpedpurpose.com^
 ||punyplant.com^
 ||puppetcorp.com^
+||puppiesart.com^
 ||puppytooth.com^
 ||purposepipe.com^
 ||pyramidpaw.com^
