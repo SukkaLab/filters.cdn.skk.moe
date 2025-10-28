@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Mon, 27 Oct 2025 22:21:26 GMT
+! Last modified: Tue, 28 Oct 2025 10:14:31 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,26 +8,26 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Mon, 27 Oct 2025 15:52:34 +0000
+!   - Last modified: Tue, 28 Oct 2025 08:34:13 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
-!   - Last modified: Mon, 27 Oct 2025 02:46:00 +0000
+!   - Last modified: Tue, 28 Oct 2025 07:55:21 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Sun, 26 Oct 2025 16:43:01 +0000
+!   - Last modified: Tue, 28 Oct 2025 05:53:00 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
 !   - Last modified: Mon, 27 Oct 2025 11:38:37 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Mon, 27 Oct 2025 16:04:07 +0000
+!   - Last modified: Mon, 27 Oct 2025 19:37:24 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
 !   - Last modified: Thu, 23 Oct 2025 15:29:21 +0000
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Wed, 22 Oct 2025 19:34:28 +0000
+!   - Last modified: Tue, 28 Oct 2025 07:51:38 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
 !   - Last modified: Wed, 22 Oct 2025 05:59:46 +0000
@@ -8721,8 +8721,8 @@ glodls.to,playfa.com##+js(acs, fetch, break;case)
 /^https:\/\/[a-z]{3,5}\.[a-z]{10,14}\.top\/[a-z]{10,16}\/[a-z]{5,6}(?:\?d=\d)?$/$script,xhr,3p,match-case,to=top
 /^https:\/\/[a-z]{3,5}\.[a-z]{10,14}\.top\/[A-Za-z]{10,16}\/[A-Za-z]{5,6}$/$popup,3p,to=top
 /^https:\/\/[a-z][a-z][a-z][a-z]?[a-z]?\.[a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z]?[a-z]?[a-z]?[a-z]?\.top\/[a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z]?[a-z]?[a-z]?[a-z]?[a-z]?[a-z]?\/[a-z][a-z][a-z][a-z][a-z][a-z]?\?d=[0-9]$/$script,xhr,3p,match-case
-123animehub.cc,123animes.ru,actvid.*,boosterx.stream,cataz.to,cineb.rs,cineb.gg,demonicscans.org,dopebox.to,flixhq.to,gomovies.sx,gomoviestv.to,himovies.sx,limetorrents.lol,luluvdoo.com,mangagun.net,mexa.sh,mgeko.cc,mkvcinemas.*,moflix-stream.fans,motchill29.com,mov18plus.cloud,moviesapi.to,movies2watch.tv,netmovies.to,nicomanga.com,phimlongtieng.net,rawinu.com,rawkuma.net,readcomiconline.*,seriesonline.sx,theflixertv.to,torrentdownload.*,toonily.com,torrentdownloads.*,tukipasti.com,vidsrc.cc,watchasians.cc,watchseries.*,weloma.art,welovemanga.one,zoechip.com,zoechip.gg##^script:has-text(HTMLAllCollection)
-123animehub.cc,123animes.ru,actvid.*,boosterx.stream,cataz.to,cineb.rs,cineb.gg,demonicscans.org,dopebox.to,flixhq.to,gomovies.sx,gomoviestv.to,himovies.sx,limetorrents.lol,luluvdoo.com,mangagun.net,mexa.sh,mgeko.cc,mkvcinemas.*,moflix-stream.fans,motchill29.com,mov18plus.cloud,moviesapi.to,movies2watch.tv,netmovies.to,nicomanga.com,phimlongtieng.net,rawinu.com,rawkuma.net,readcomiconline.*,seriesonline.sx,theflixertv.to,torrentdownload.*,toonily.com,torrentdownloads.*,tukipasti.com,vidsrc.cc,watchasians.cc,watchseries.*,weloma.art,welovemanga.one,zoechip.com,zoechip.gg##+js(acs, addEventListener, HTMLAllCollection)
+123animehub.cc,123animes.ru,actvid.*,boosterx.stream,cataz.to,cineb.rs,cineb.gg,demonicscans.org,dopebox.to,flixhq.to,gomovies.sx,gomoviestv.to,himovies.sx,jkanime.net,limetorrents.lol,luluvdoo.com,mangagun.net,mexa.sh,mgeko.cc,mkvcinemas.*,moflix-stream.fans,motchill29.com,mov18plus.cloud,moviesapi.to,movies2watch.tv,netmovies.to,nicomanga.com,phimlongtieng.net,rawinu.com,rawkuma.net,readcomiconline.*,seriesonline.sx,theflixertv.to,torrentdownload.*,toonily.com,torrentdownloads.*,tukipasti.com,vidsrc.cc,watchasians.cc,watchseries.*,weloma.art,welovemanga.one,zoechip.com,zoechip.gg##^script:has-text(HTMLAllCollection)
+123animehub.cc,123animes.ru,actvid.*,boosterx.stream,cataz.to,cineb.rs,cineb.gg,demonicscans.org,dopebox.to,flixhq.to,gomovies.sx,gomoviestv.to,himovies.sx,jkanime.net,limetorrents.lol,luluvdoo.com,mangagun.net,mexa.sh,mgeko.cc,mkvcinemas.*,moflix-stream.fans,motchill29.com,mov18plus.cloud,moviesapi.to,movies2watch.tv,netmovies.to,nicomanga.com,phimlongtieng.net,rawinu.com,rawkuma.net,readcomiconline.*,seriesonline.sx,theflixertv.to,torrentdownload.*,toonily.com,torrentdownloads.*,tukipasti.com,vidsrc.cc,watchasians.cc,watchseries.*,weloma.art,welovemanga.one,zoechip.com,zoechip.gg##+js(acs, addEventListener, HTMLAllCollection)
 cataz.to##+js(nowoif)
 vidfast.*##+js(acs, addEventListener, HTMLAllCollection)
 cineb.rs,moviesjoyhd.to,rawkuma.com##+js(aeld, mousedown, shown_at)
@@ -26298,6 +26298,7 @@ weightlossdiet.top##+js(acs, open, executeCode)
 ||lastpassrecovery.com^$all
 ||mypasskey.info^$all
 ||passkeysetup.com^$all
+||kgms.top^$all
 ||google-analytics.com/analytics.js$script,redirect=google-analytics_analytics.js:5
 ||google-analytics.com/cx/api.js$script,redirect=google-analytics.com/cx/api.js:5
 ||googletagmanager.com/gtag/js$script,xhr,redirect=googletagmanager_gtm.js:5
@@ -26392,8 +26393,6 @@ search.brave.com##+js(no-fetch-if, body:browser)
 ||nikitaeverywhere.com^$script,xhr,1p
 @@||nikitaeverywhere.com/static/js/main-*.js|$script,1p
 @@||nikitaeverywhere.com/nikitaeverywhere-com-content/data.json|$xhr,1p
-||dataunlocker.com/d/$script,1p,redirect=noopjs
-||dataunlocker.com/_next/static/chunks/1296-b802d5205251cf39.js$script,1p
 docs.dataunlocker.com##div[class^="PageTransition_overlay__"]
 docs.dataunlocker.com##div[class^="PageTransition_inner__"]:style(opacity: 1 !important; transform: none !important;)
 dataunlocker.com##+js(nostif, [native code], 120000)
@@ -26402,8 +26401,9 @@ dataunlocker.com##+js(nostif, [native code], 120000)
 ||region1.google-analytics.com/g/collect?$removeparam,xhr,domain=stateless.me
 ||stats.g.doubleclick.net/g/collect?$removeparam,xhr,domain=stateless.me
 @@||stateless.me^$ghide
-||dataunlocker.com/_next/static/chunks/$script,1p,replace=/\"use strict\".*?\{children:b\?null:e\}\)\)\}\}\}\]\)\;//
-||dataunlocker.com/_next/static/chunks/431-d4c0cbdf7a75befd.js$script,1p
+||dataunlocker.com/d/$script,1p,replace=/Copyright .*//s
+dataunlocker.com##+js(set, _hjSettings, undefined)
+dataunlocker.com##+js(set, google_tag_manager, undefined)
 cefirates.com,comicleaks.com,tapmyback.com,ping.gg,nookgaming.com,creatordrop.com,bitdomain.biz,fort-shop.kiev.ua,accuretawealth.com,resourceya.com,tracktheta.com,adaptive.marketing,camberlion.com,trybawaryjny.pl,segops.madisonspecs.com,stresshelden-coaching.de,controlconceptsusa.com,ryaktive.com,tip.etip-staging.etip.io##^script:has-text("join('')")
 future-fortune.com,furucombo.app,bolighub.dk##^script:has-text('join("")')
 intercity.technology,freelancer.taxmachine.be,kodalia.com,adria.gg,fjlaboratories.com,abhijith.page,helpmonks.com##^script:has-text(api.dataunlocker.com)
@@ -27466,6 +27466,9 @@ dmax.de##.block-user:remove-class(block-user)
 ||zoho.in/murphy/*/ingest/exceptions
 ||socke7.com^
 ||pcoptimizedsettings.com/wp-json/caos/v1/proxy/stealth*page_view
+||grok.com/_data/v1/analytics/
+||grok.com/api/statsig/log_event
+||grok.com/api/log_metric
 /edgemesh.*.js$script,domain=~edgemesh.com|~edgeno.de
 ||safelinkconverter.com^$script,3p
 /adsensebase.js$script
@@ -30180,11 +30183,10 @@ embed.wcostream.com##+js(rmnt, script, /google_jobrunner|AdBlock|pubadx|embed\.h
 @@||cdn.snigelweb.com/adengine/falixnodes.net/loader.js$script,domain=client.falixnodes.net
 @@||amazon-adsystem.com/bao-csm/aps-comm/aps_csm.js$script,domain=client.falixnodes.net
 @@||adengine.snigelweb.com/falixnodes.net/$script,domain=client.falixnodes.net
-client.falixnodes.net##+js(rmnt, script, /aps_csm|snigelweb|yooooooo|yeahagainthisisavariable|sotrueredirect|YWRuZ2lu|adngin|window\.location\.replace|101vh|Segoe UI|ffffff|style \= \"height|style\=\"text-shadow|Please disable adblock/)
 client.falixnodes.net##+js(rpnt, script, /googletag.*?enableServices\(\)\;/s)
 client.falixnodes.net##+js(rpnt, script, /googletag\.pubads\(\).*rewardedSlot\)\;\s+\}\)\;/s)
-client.falixnodes.net##+js(rpnt, script, window.location.href = '/neptune';)
-client.falixnodes.net##+js(rpnt, script, window.location.href = '/disableadblock';)
+client.falixnodes.net##+js(rpnt, script, .onerror, .ffffff)
+*$script,redirect-rule=none:5,domain=client.falixnodes.net
 ||rm.freex2line.online/*.js|$domain=cimanow.cc
 ||global.novelpia.com/_nuxt/*.js|$script,replace=/if\(\w\.check_is_ad_free\(\)\)/if(true)/
 @@||global.novelpia.com^$ghide
@@ -31496,7 +31498,9 @@ easyparts.*,easyparts-recambios.es,easyparts-rollerteile.de##+js(trusted-click-e
 easyparts.*,easyparts-recambios.es,easyparts-rollerteile.de##+js(trusted-click-element, button.btn_cookie_savesettings, , 750)
 drimsim.com##+js(trusted-click-element, a[data-cookies-action="accept"], , 1000)
 canyon.com##+js(trusted-click-element, button.xlt-modalCookiesBtnAllowNecessary, , 1000)
-canyon.com##+js(trusted-click-element, button[data-closecause="close-by-submit"], , 1000)
+canyon.com##+js(trusted-click-element, button#js-data-privacy-manage-cookies, , 1000)
+canyon.com##+js(trusted-click-element, button#js-manage-data-privacy-save-button, 1500)
+sks-germany.com##+js(trusted-set-cookie, evendo_privacysettings, '{"confirmed":1,"level":2,"state":{"t":{"accept":1},"p":{"accept":0},"s":{"accept":0},"k":{"accept":0}}}')
 store.godox.pl##+js(trusted-set-cookie, _x13eucookie, '{"1":true,"2":false,"3":false,"4":false,"5":true}')
 vevovo.be,vendezvotrevoiture.be,wirkaufendeinauto.at,vikoberallebiler.dk,wijkopenautos.nl,vikoperdinbil.se,noicompriamoauto.it,vendezvotrevoiture.fr,compramostucoche.es,wijkopenautos.be##+js(trusted-click-element, span[data-qa-selector="gdpr-banner-configuration-button"], , 300)
 vevovo.be,vendezvotrevoiture.be,wirkaufendeinauto.at,vikoberallebiler.dk,wijkopenautos.nl,vikoperdinbil.se,noicompriamoauto.it,vendezvotrevoiture.fr,compramostucoche.es,wijkopenautos.be##+js(trusted-click-element, span[data-qa-selector="gdpr-banner-accept-selected-button"], , 500)
@@ -32239,6 +32243,7 @@ joyn.de##+js(trusted-click-element, 'cmp-banner >>> cmp-dialog >>> cmp-button >>
 joyn.de##+js(rpnt, script, (self, (()=>{let t\,e=!1;const o=new MutationObserver(((e\,o)=>{const c=t?.querySelector('cmp-button[variant="primary"]');c&&(c.click()\,o.disconnect())}))\,c={apply:(c\,n\,a)=>{const r=Reflect.apply(c\,n\,a);return!e&&n.matches("cmp-dialog")&&(e=!0\,t=r)\,o.observe(r\,{subtree:!0\,childList:!0})\,r}};window.Element.prototype.attachShadow=new Proxy(window.Element.prototype.attachShadow\,c)})();(self, sedCount, 1)
 oeq.org##+js(trusted-click-element, button#c-t-bn)
 fireflies.ai##+js(trusted-set-cookie, consentMode, '{"ad_storage":"denied","analytics_storage":"denied","functionality_storage":"granted","personalization_storage":"denied","ad_user_data":"denied","ad_personalization":"denied","security_storage":"granted"}')
+codewars.com##+js(trusted-click-element, a[fs-consent-element="deny"], , 2000)
 mimaletadepeliculas.blogspot.com##+js(aopr, document.oncontextmenu)
 mimaletadepeliculas.blogspot.com##+js(acs, document.onselectstart)
 pelispedia.*##+js(aopw, document.oncontextmenu)

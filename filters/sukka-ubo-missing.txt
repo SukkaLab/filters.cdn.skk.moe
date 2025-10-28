@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Mon, 27 Oct 2025 22:21:26 GMT
+! Last modified: Tue, 28 Oct 2025 10:14:31 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.93.56
+!   - Version: 2.0.93.60
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/refs/heads/master/cjx-annoyance.txt
 !   - Version: 202510081500
@@ -72420,7 +72420,6 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
-||curveshore.com^
 ||applytics.os4work.com^
 ||applytics.napps-1.com^
 ||z.cdn.protect-ad.com^
@@ -123170,6 +123169,8 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xmlhttprequest,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$third-party,object,redirect=noop.js,script
+||coolbe.*/api/*/events
+||app.notipack.com/pixel/
 ||monitor-frontend-collector.a.bybit-aws.com/api/*/batch/
 ||shop.app/pay/hop?analytics_trace_id=
 ||api.vortexscans.org/api/track-visit
@@ -131912,6 +131913,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||bilingualgeek.com^
 ||billowybead.com^
 ||billowybelief.com^
+||billtable.com^
 ||binarycrest.com^
 ||binspiredtees.com^
 ||birthdaybelief.com^
@@ -132161,6 +132163,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||currentcollar.com^
 ||curtaincows.com^
 ||curvedhoney.com^
+||curveshore.com^
 ||curvycry.com^
 ||cushiondrum.com^
 ||cutecalculator.com^
@@ -132747,6 +132750,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||merryopal.com^
 ||merryvault.com^
 ||mesaviewlodge.com^
+||messagelists.com^
 ||messmonster.com^
 ||messyoranges.com^
 ||metajaws.com^
