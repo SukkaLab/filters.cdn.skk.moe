@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Tue, 28 Oct 2025 10:14:31 GMT
+! Last modified: Tue, 28 Oct 2025 22:23:00 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,12 +8,12 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.93.60
+!   - Version: 2.0.93.65
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/refs/heads/master/cjx-annoyance.txt
-!   - Version: 202510081500
+!   - Version: 202510290615
 !   - Homepage: https://github.com/cjx82630/cjxlist
-!   - Last modified: 2025/10/08 15:00 +0800
+!   - Last modified: 2025/10/29 06:15 +0800
 ! --------------------------------------------------------------
 www.youtube.com##+js(no-xhr-if, /\/api\/stats\/atr\?.+?&rt=\d+\.\d+.+?&volume=\d+&cbr=.+?&fexp=v1%[-%0-9C]{300\,}&.+?&muted=\d(&vis=3)?&docid=/ method:POST)
 slobodnadalmacija.hr,meconomynews.com,brandbrief.co.kr,motorgraph.com##+js(abort-current-script, atob, eval(decodeURIComponent(escape(window.atob("KCgpPT5)
@@ -216,6 +216,8 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||sa.openmedia.co^
+||c1.prmonline.ru^
 ||heidy.makeup^$third-party
 ||events.api.gamma.app^
 ||pirsch.io^$third-party
@@ -72420,6 +72422,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||data-track*.yingxiong.com^
 ||applytics.os4work.com^
 ||applytics.napps-1.com^
 ||z.cdn.protect-ad.com^
@@ -123169,6 +123172,8 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xmlhttprequest,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$third-party,object,redirect=noop.js,script
+||weatherzone.*/*/scripts/hotjar.js
+||weatherzone.*/*/scripts/gtmHead.js
 ||coolbe.*/api/*/events
 ||app.notipack.com/pixel/
 ||monitor-frontend-collector.a.bybit-aws.com/api/*/batch/
@@ -126008,7 +126013,6 @@ bcnretail.com###_popIn_recommend
 ||hotels.com/taps/v*/PageView?
 ||kitbag.com/api/track|
 ||static.actu.fr/assets/js/smarttag*.js
-||sa.openmedia.co/collect?*tid=
 chaos2ch.com###sub div.plugin-memo:last-child
 ||kraken.com/analytics
 ||plusstyle.jp/js/common/analytics.js
@@ -128566,6 +128570,7 @@ dlsdk.appsflyer.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||t.usermaven.com/lib.js$script,redirect=noop.js,domain=revisemsra.com
 ||log.hiapkdownload.com^
 ||experiment.pixverse.ai^
 ||capture.pixverse.ai^
@@ -132396,6 +132401,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||framebanana.com^
 ||franksfloral.com^
 ||franticroof.com^
+||freedomgrail.com^
 ||freezeassets.com^
 ||freezingbuilding.com^
 ||frequentflesh.com^
@@ -132669,6 +132675,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||likethedog.com^
 ||limepeal.com^
 ||linkedleg.com^
+||linksoutside.com^
 ||livelumber.com^
 ||livelylaugh.com^
 ||livingsleet.com^
@@ -135229,6 +135236,7 @@ m.babytree.com##script + a[class]
 @@/adview_pic_$domain=doutula.com|fastadmin.net|toolfk.com|xclient.info
 @@||fm.ipinyou.$domain=ipinyou.com.cn
 @@||fm.p0y.cn^$domain=ipinyou.com.cn
+||shinpa.me^
 ||xuan5.com^$third-party
 ||com.day^
 .com/js/o.js$domain=qdmm.com|qdwenxue.com|qidian.com
