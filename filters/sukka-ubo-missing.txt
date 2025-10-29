@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Wed, 29 Oct 2025 10:14:20 GMT
+! Last modified: Wed, 29 Oct 2025 22:22:52 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.93.69
+!   - Version: 2.0.93.73
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/refs/heads/master/cjx-annoyance.txt
 !   - Version: 202510290615
@@ -72423,6 +72423,9 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||iot.skywayplatform.com^
+||rcu.skywayplatform.com^
+||tad.tygem.com^
 ||touch.yesim.
 ||uac.heraldcorp.com^
 ||applytics.my1337jog.run^
@@ -123176,6 +123179,13 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xmlhttprequest,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$third-party,object,redirect=noop.js,script
+||chatgpt.com/ces/statsc/
+||coupang.com/resources/*/np/js/modules/common/gnbWebLogger.js
+||coupang.com/resources/*/np/js/modules/search/searchWebLogSchemas.js
+||coupang.com/resources/*/np/js/modules/search/utils/weblogUtils-min.js
+||coupang.com/resources/*/np/js/modules/common/adsplatform/adsplatformLogger.js
+||tygem.com/js/tad/tadlog.min.js
+||goya.rutube.ru^$~image
 coloradoan.com##+js(set-local-storage-item, user_insights, $remove$)
 ||shallspark.com/athena/tracking/
 ||aoneroom.com/sdk/athena-unify.js

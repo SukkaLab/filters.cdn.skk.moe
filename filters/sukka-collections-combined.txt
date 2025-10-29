@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Wed, 29 Oct 2025 10:14:20 GMT
+! Last modified: Wed, 29 Oct 2025 22:22:52 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,13 +18,13 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202510291001
+!   - Version: 202510292211
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 29 Oct 2025 10:01 UTC
+!   - Last modified: 29 Oct 2025 22:11 UTC
 ! * Bypass Paywalls Clean filter
 !   - URL: https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters/blob/raw?file=bpc-paywall-filter.txt
-!   - Version: 4.2.3.5
+!   - Version: 4.2.3.6
 !   - Homepage: https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
@@ -2638,6 +2638,7 @@ bizwest.com##div.fp-paywall
 bizwest.com##+js(ra, class, div.fp-content)
 boredpanda.com##+js(rc, open-list-items, div.open-list-items)
 boredpanda.com##div#show-all-images-block-premium
+||boston.com/api/tinypass.min.js$script,~third-party
 brainly.com,brainly.com.br##+js(set-local-storage-item, /^/, $remove$)
 ||account.brandonsun.com/api/v*/auth/identify$xmlhttprequest,~third-party
 brusselstimes.com##+js(ra, style, div[style*="height: 0;"], stay)
@@ -2779,7 +2780,10 @@ timeslive.co.za##+js(set, window.Fusion.globalContent.content_restrictions, {})
 trailsoffroad.com##.paywall
 wbjournal.com##+js(ra, style, div.expandable-paywall-premium-content, stay)
 wbjournal.com##div.paywall-container
+wbez.org##div.email-wall-content-lock:remove()
 ||zeitzeichen.net/sites/default/files/js/js_*.js$script,~third-party
+businessday.co.za,dailydispatch.co.za,sowetan.co.za,theherald.co.za,timeslive.co.za##section.b-paywall__overlay
+businessday.co.za,dailydispatch.co.za,sowetan.co.za,theherald.co.za,timeslive.co.za##+js(ra, style, html, stay)
 ||ampproject.org/*/amp-access-$script,domain=~cambridge.org|~cmjornal.pt
 ||ampproject.org/*/amp-subscriptions-$script
 @@||ampproject.org/v0/amp-consent-$script
