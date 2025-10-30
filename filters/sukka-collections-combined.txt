@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Thu, 30 Oct 2025 10:13:51 GMT
+! Last modified: Thu, 30 Oct 2025 22:22:50 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,13 +18,13 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202510301001
+!   - Version: 202510302211
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 30 Oct 2025 10:01 UTC
+!   - Last modified: 30 Oct 2025 22:11 UTC
 ! * Bypass Paywalls Clean filter
 !   - URL: https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters/blob/raw?file=bpc-paywall-filter.txt
-!   - Version: 4.2.3.6
+!   - Version: 4.2.3.7
 !   - Homepage: https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
@@ -127,7 +127,7 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * ↖ Anti-'Custom cursors' List
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/Anti-'Custom%20cursors'%20List.txt
-!   - Version: 20September2025v1-Beta
+!   - Version: 29October2025v1-Beta
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 💬 Twitch: Pure Viewing Experience
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/TwitchPureViewingExperience.txt
@@ -2254,7 +2254,7 @@ etc.se##+js(rc, teaser-section, section.teaser-section)
 etc.se##+js(rc, hidden, section.prose-feature .hidden)
 etc.se##article section.font-sans
 euobserver.com##+js(rc, show, div.membership-upsell.show)
-exame.com##+js(set-local-storage-item, pywllcount, $remove$)
+||exame.com/_next/static/chunks/app/%5B*.js$script,~third-party
 fieldandstream.com##div[class^="mailmunch-"]
 fieldandstream.com##+js(ra, class, html[class])
 ||financialexpress.com/*/min/premiumStoryContent.js$script,~third-party
@@ -37181,6 +37181,7 @@ strategix.dk##.cursor
 /Cursor_Icon.png|
 /Indicator_Arrow_Icon.png|
 ||files.cargocollective.com/*_Plan-de-travail-$image,3p
+##.n-cursor:not(html,body)
 .ani|$domain=~pixiv.net|~deviantart.com
 .cursor|$domain=~pixiv.net|~deviantart.com
 www.twitch.tv##.recommended-channels

@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Thu, 30 Oct 2025 10:13:51 GMT
+! Last modified: Thu, 30 Oct 2025 22:22:50 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.93.74
+!   - Version: 2.0.93.78
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/refs/heads/master/cjx-annoyance.txt
 !   - Version: 202510290615
@@ -72423,6 +72423,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||scdata.51job.com^
 ||iot.skywayplatform.com^
 ||rcu.skywayplatform.com^
 ||tad.tygem.com^
@@ -123179,6 +123180,7 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xmlhttprequest,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$third-party,object,redirect=noop.js,script
+||ipleaks.io/public/google/gtag.js
 ||static-web.grammarly.com/web-heartbeat/
 ||chatgpt.com/ces/statsc/
 ||coupang.com/resources/*/np/js/modules/common/gnbWebLogger.js
@@ -129682,7 +129684,7 @@ mail.yandex.*#@#+js(set-constant, navigator.getBattery, noopPromiseResolve)
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=sncf-connect.com
 @@||f-tra.com^$script,domain=pokemoncenter-online.com
 @@||snowplow.swm.digital/com.snowplowanalytics.snowplow/$domain=7plus.com.au
-||85po.com/player/stats.php?event=$image,redirect=1x1.gif,domain=85po.com
+||85po.com/player/stats.php?event=$image,redirect=1x1.gif,domain=85po.com|85po.net|85xo.com|85xo.com
 @@||feliz-web.data.tm-awx.com/smile-web.min.js$domain=liverpoolecho.co.uk|mirror.co.uk|birminghammail.co.uk|dailystar.co.uk|manchestereveningnews.co.uk
 @@||feliz.data.tm-awx.com/smile-web-v2/rootEvent$domain=liverpoolecho.co.uk|mirror.co.uk|birminghammail.co.uk|dailystar.co.uk|manchestereveningnews.co.uk
 @@||googletagmanager.com/gtm.js$domain=canadiantire.ca
@@ -132177,6 +132179,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||cubchannel.com^
 ||cubepins.com^
 ||cuddlycake.com^
+||cuddlylab.com^
 ||cuddlylunchroom.com^
 ||culturedcamera.com^
 ||culturedfeather.com^
@@ -132525,6 +132528,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||haikusoap.com^
 ||halcyoncanyon.com^
 ||halcyonsculpture.com^
+||halocolor.com^
 ||haltingbadge.com^
 ||haltingdivision.com^
 ||hammerhearing.com^
@@ -132769,6 +132773,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||melodiousharmony.com^
 ||melodioussymphony.com^
 ||meltmilk.com^
+||memeorigin.com^
 ||memolight.com^
 ||memopilot.com^
 ||memorizematch.com^
@@ -132886,6 +132891,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||operationchicken.com^
 ||operationnail.com^
 ||optimallimit.com^
+||optionsnomad.com^
 ||opulentsylvan.com^
 ||orangebirdie.com^
 ||orientedargument.com^
@@ -133321,6 +133327,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||specialscissors.com^
 ||specialsnake.com^
 ||spectacularstamp.com^
+||spellingthoughts.com^
 ||spellknight.com^
 ||spellmist.com^
 ||spellsalsa.com^
@@ -133418,6 +133425,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||subseasecurity.com^
 ||subsequentstew.com^
 ||substantialgrade.com^
+||successbuffet.com^
 ||successfuelevents.com^
 ||suddensoda.com^
 ||suggestionbridge.com^
@@ -133447,6 +133455,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||syllablesight.com^
 ||synonymoussticks.com^
 ||synthesizescarecrow.com^
+||systemssummit.com^
 ||tabcarts.com^
 ||tackytrains.com^
 ||tacojournal.com^
@@ -133658,6 +133667,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||wildwoodavenue.com^
 ||wirecomic.com^
 ||wiredforcoffee.com^
+||wirenewsletter.com^
 ||wirypaste.com^
 ||wisedotcom.com^
 ||wispycity.com^
