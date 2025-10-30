@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Wed, 29 Oct 2025 22:22:52 GMT
+! Last modified: Thu, 30 Oct 2025 10:13:51 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,19 +8,19 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Wed, 29 Oct 2025 17:29:28 +0000
+!   - Last modified: Thu, 30 Oct 2025 06:17:33 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Wed, 29 Oct 2025 11:21:23 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Wed, 29 Oct 2025 07:38:21 +0000
+!   - Last modified: Thu, 30 Oct 2025 06:13:59 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
 !   - Last modified: Mon, 27 Oct 2025 11:38:37 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Wed, 29 Oct 2025 14:48:42 +0000
+!   - Last modified: Thu, 30 Oct 2025 05:35:45 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
 !   - Last modified: Thu, 23 Oct 2025 15:29:21 +0000
@@ -8623,7 +8623,7 @@ aagmaal.*##+js(rpnt, script, break;case $.)
 *$xhr,3p,domain=nxbrew.com
 *$script,3p,from=minoplres.xyz,to=~jwpcdn.com
 ||y2mate.*/themes/js/pn.js
-18comic.vip,18comic-gquu.vip,adictox.com,anizm.net,archivebate.*,asiaon.*,asianporn.li,asiaontop.com,asmr18.fans,b-hentai.com,bebasbokep.online,bos21.site,bunkrr.*,cat3movie.org,cdn1.site,comohoy.com,cyberdrop.me,daftporn.com,daftsex.net,ddd-smart.net,dvdgayonline.com,ekasiwap.com,fapeza.com,fapfappy.com,g-porno.com,g-streaming.com,hhkungfu.*,hentai2read.com,hentai2w.com,hitomi.la,homemoviestube.com,jav-fun.cc,jav.direct,jav.si,javboys.com,javbraze.com,javfc2.xyz,javfor.tv,javhat.tv,javhd.*,javhdz.today,javmenu.com,javmix.tv,javpas.com,javseen.tv,javtiful.com,jpg6.su,klmanga.*,komikmanhwa.me,lovingsiren.com,luluvdoo.com,madouqu.com,manga1001.*,mangakakalot.gg,mangaraw.*,mangarawjp.*,movieffm.net,natomanga.com,nekopoi.*,nelomanga.*,netfapx.com,nsfwr34.com,nsfwyoutube.com,nudogram.com,nukibooks.com,phimlongtieng.net,play.playkrx18.site,poapan.xyz,odporn.com,porn4fans.com,porntin.com,qmh.sex,rawkuma.net,rule34.xyz,rule34vault.com,savefiles.com,sexdicted.com,shinshi-manga.net,spoilerplus.tv,streampoi.com,sxyprn.com,syosetu.*,taxi69.com,teenager365.to,thefappening.pro,thefappeningblog.com,tojav.net,turbocloud.xyz,turbovid.xyz,ups2up.fun,vegamoviese.*,vide0.net,videplay.us,x-fetish.tube,x-x-x.video,xanimeporn.com,xxgasm.com,xxxfree.watch,youwatch.monster##+js(acs, WebAssembly, atob)
+18comic.vip,18comic-gquu.vip,adictox.com,anizm.net,archivebate.*,asiaon.*,asianporn.li,asiaontop.com,asmr18.fans,b-hentai.com,bebasbokep.online,bos21.site,bunkrr.*,cat3movie.org,cdn1.site,comohoy.com,cyberdrop.me,daftporn.com,daftsex.net,ddd-smart.net,dvdgayonline.com,ekasiwap.com,fapeza.com,fapfappy.com,g-porno.com,g-streaming.com,goctruyentranhvui17.com,hhkungfu.*,hentai2read.com,hentai2w.com,hitomi.la,homemoviestube.com,jav-fun.cc,jav.direct,jav.si,javboys.com,javbraze.com,javfc2.xyz,javfor.tv,javhat.tv,javhd.*,javhdz.today,javmenu.com,javmix.tv,javpas.com,javseen.tv,javtiful.com,jpg6.su,klmanga.*,komikmanhwa.me,lovingsiren.com,luluvdoo.com,madouqu.com,manga1001.*,mangakakalot.gg,mangaraw.*,mangarawjp.*,movieffm.net,natomanga.com,nekopoi.*,nelomanga.*,netfapx.com,nsfwr34.com,nsfwyoutube.com,nudogram.com,nukibooks.com,phimlongtieng.net,play.playkrx18.site,poapan.xyz,odporn.com,porn4fans.com,porntin.com,qmh.sex,rawkuma.net,rule34.xyz,rule34vault.com,savefiles.com,sexdicted.com,shinshi-manga.net,spoilerplus.tv,streampoi.com,sxyprn.com,syosetu.*,taxi69.com,teenager365.to,thefappening.pro,thefappeningblog.com,tojav.net,turbocloud.xyz,turbovid.xyz,ups2up.fun,vegamoviese.*,vide0.net,videplay.us,x-fetish.tube,x-x-x.video,xanimeporn.com,xxgasm.com,xxxfree.watch,youwatch.monster##+js(acs, WebAssembly, atob)
 filmisub.cc##+js(acs, WebAssembly, atob, /^data:/)
 /aas/r45d/vki/*$script,redirect=noop.js
 /^https:\/\/[a-z]{8,12}\.com\/en\/(?:[a-z]{2,10}\/){0,2}[a-z]{2,}\?(?:[a-z]+=[^&=?\s]*?&)*?id=[12]\d{6}\b/$script,3p,match-case,to=com
@@ -21753,6 +21753,7 @@ hydrogen.lat##+js(aeld, load, &&)
 ||bf-ad.net^$redirect=noopjs,domain=bike-magazin.de
 infomatricula.pt##+js(nostif, offsetHeight)
 infomatricula.pt##.container:has(.adsbygoogle)
+||fundingchoicesmessages.google.com/i/pub-$script,redirect=noopjs,domain=infomatricula.pt
 idlixku.com##+js(rmnt, script, /bait|adblock/i)
 idlixku.com##+js(trusted-set, dtGonza.playeradstime, json:"0")
 *.mp4$media,domain=jeniusplay.com,redirect=noopmp3-0.1s
@@ -22089,6 +22090,7 @@ animeyubi.com##+js(nowoif)
 temp-mail.lol##+js(no-fetch-if, method:/head/i)
 moviehax.biz###clickfakeplayer[href]:remove-attr(href)
 snopes.com##+js(aeld, DOMContentLoaded, ;setTimeout)
+mtv.fi##+js(trusted-json-edit-fetch-response, .metadata.hideAds=true, propsToMatch, a2d.tv/play/)
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
 ||vlc.de^$doc
@@ -26939,6 +26941,8 @@ $removeparam=fb_action_types
 $removeparam=fb_comment_id
 $removeparam=fb_ref
 $removeparam=fb_source
+||facebook.com^$removeparam=mibextid
+||facebook.com^$removeparam=rdid
 $removeparam=ymclid
 $removeparam=ysclid
 $removeparam=yclid
@@ -30064,7 +30068,7 @@ japscan.*##body > div.full-container > div.full-container.text-center > div.mt-2
 japscan.*#@#.navbar-nav > li.nav-item > a.text-truncate.nav-link.font-weight-bold[href*="?"]
 japscan.*#@#body > div.full-container > div.full-container.text-center > div.mt-2[style="margin: 0px auto; display: block;"] > a.Aikoi.donate[target="_blank"][rel][href^="https://www.longosto.shop/?utm_source="] > img.img-fluid
 japscan.*##+js(spoof-css, body > div.full-container > div.full-container.text-center > div.mt-2[style="margin: 0px auto; display: block;"] > a.Aikoi.donate[target="_blank"][rel][href^="https://www.longosto.shop/?utm_source="] > img.img-fluid, visibility, visible)
-japscan.*##+js(trusted-set, pubadxtag, json:'{"divIds":["bg-ssp-11335-293463248855","bg-ssp-11334-1480900913438"]}')
+japscan.*##+js(trusted-set, pubadxtag, 'json:{"divIds":["bg-ssp-11335-293463248855", "bg-ssp-11334-1480900913438"]}')
 poophq.com,veev.to,doods.to##+js(nowoif)
 poophq.com,veev.to,doods.to##+js(no-xhr-if, /vast.php?)
 poophq.com,veev.to,doods.to##+js(no-xhr-if, /click\.com|preroll|native_render\.js|acscdn/, length:10001)
