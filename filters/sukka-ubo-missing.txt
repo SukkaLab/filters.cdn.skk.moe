@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Fri, 31 Oct 2025 22:22:26 GMT
+! Last modified: Sat, 01 Nov 2025 10:11:44 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.93.89
+!   - Version: 2.0.93.90
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/refs/heads/master/cjx-annoyance.txt
 !   - Version: 202510290615
@@ -122643,7 +122643,7 @@ zjjz6lpv44aguszo.cloud.s11.sfmc-osl.com$image
 .jp/static/js/track.js
 /oo/cl.js|$~third-party
 /oo/cl*.js?rd=$~third-party
-/oo/*/lsync.js$~third-party
+/oo/*/lsync.$~third-party
 /oo/*/l.js|$~third-party
 ://ct1.*.com/sc/
 ://ct1.*.jp/sc/
@@ -123183,6 +123183,8 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xmlhttprequest,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$third-party,object,redirect=noop.js,script
+||leboncoin.fr/piano-analytics/
+||softonic.jp/web-stats
 ||chatgpt.com/ces/v1/i^
 ||holistic.news/3unw/
 ||sp-cdn.linux-magazin.de/wrapper/metrics/
