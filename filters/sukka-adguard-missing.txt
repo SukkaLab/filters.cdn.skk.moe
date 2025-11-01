@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sat, 01 Nov 2025 13:32:52 GMT
+! Last modified: Sat, 01 Nov 2025 22:19:54 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sat, 01 Nov 2025 11:20:18 +0000
+!   - Last modified: Sat, 01 Nov 2025 14:25:56 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Sat, 01 Nov 2025 10:07:15 +0000
@@ -8722,8 +8722,8 @@ glodls.to,playfa.com##+js(acs, fetch, break;case)
 /^https:\/\/[a-z]{3,5}\.[a-z]{10,14}\.top\/[a-z]{10,16}\/[a-z]{5,6}(?:\?d=\d)?$/$script,xhr,3p,match-case,to=top
 /^https:\/\/[a-z]{3,5}\.[a-z]{10,14}\.top\/[A-Za-z]{10,16}\/[A-Za-z]{5,6}$/$popup,3p,to=top
 /^https:\/\/[a-z][a-z][a-z][a-z]?[a-z]?\.[a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z]?[a-z]?[a-z]?[a-z]?\.top\/[a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z]?[a-z]?[a-z]?[a-z]?[a-z]?[a-z]?\/[a-z][a-z][a-z][a-z][a-z][a-z]?\?d=[0-9]$/$script,xhr,3p,match-case
-123animehub.cc,123animes.ru,actvid.*,boosterx.stream,cataz.to,cineb.rs,cineb.gg,demonicscans.org,dopebox.to,flixhq.to,gomovies.sx,gomoviestv.to,hdtoday.cc,himovies.sx,hurawatch.cc,hurawatchz.to,jkanime.net,limetorrents.lol,lulustream.com,luluvdoo.com,mangagun.net,mexa.sh,mgeko.cc,mkvcinemas.*,moflix-stream.fans,motchill29.com,mov18plus.cloud,moviesapi.to,movies2watch.tv,netmovies.to,nicomanga.com,phimlongtieng.net,rawinu.com,rawkuma.net,readcomiconline.*,seriesonline.sx,theflixertv.to,torrentdownload.*,toonily.com,torrentdownloads.*,tukipasti.com,vidsrc.cc,watchasians.cc,watch-movies.com.pk,watchseries.*,weloma.art,welovemanga.one,zoechip.com,zoechip.gg##^script:has-text(HTMLAllCollection)
-123animehub.cc,123animes.ru,actvid.*,boosterx.stream,cataz.to,cineb.rs,cineb.gg,demonicscans.org,dopebox.to,flixhq.to,gomovies.sx,gomoviestv.to,hdtoday.cc,himovies.sx,hurawatch.cc,hurawatchz.to,jkanime.net,limetorrents.lol,lulustream.com,luluvdoo.com,mangagun.net,mexa.sh,mgeko.cc,mkvcinemas.*,moflix-stream.fans,motchill29.com,mov18plus.cloud,moviesapi.to,movies2watch.tv,netmovies.to,nicomanga.com,phimlongtieng.net,rawinu.com,rawkuma.net,readcomiconline.*,seriesonline.sx,theflixertv.to,torrentdownload.*,toonily.com,torrentdownloads.*,tukipasti.com,vidsrc.cc,watchasians.cc,watch-movies.com.pk,watchseries.*,weloma.art,welovemanga.one,zoechip.com,zoechip.gg##+js(acs, addEventListener, HTMLAllCollection)
+123animehub.cc,123animes.ru,actvid.*,boosterx.stream,cataz.to,cineb.rs,cineb.gg,demonicscans.org,dopebox.to,flixhq.to,gomovies.sx,gomoviestv.to,hdtoday.cc,himovies.sx,hurawatch.cc,hurawatchz.to,jkanime.net,limetorrents.lol,lulustream.com,luluvdoo.com,luluvid.com,mangagun.net,mexa.sh,mgeko.cc,mkvcinemas.*,moflix-stream.fans,motchill29.com,mov18plus.cloud,moviesapi.to,movies2watch.tv,netmovies.to,nicomanga.com,phimlongtieng.net,rawinu.com,rawkuma.net,readcomiconline.*,seriesonline.sx,theflixertv.to,torrentdownload.*,toonily.com,torrentdownloads.*,tukipasti.com,vidsrc.cc,watchasians.cc,watch-movies.com.pk,watchseries.*,weloma.art,welovemanga.one,zoechip.com,zoechip.gg##^script:has-text(HTMLAllCollection)
+123animehub.cc,123animes.ru,actvid.*,boosterx.stream,cataz.to,cineb.rs,cineb.gg,demonicscans.org,dopebox.to,flixhq.to,gomovies.sx,gomoviestv.to,hdtoday.cc,himovies.sx,hurawatch.cc,hurawatchz.to,jkanime.net,limetorrents.lol,lulustream.com,luluvdoo.com,luluvid.com,mangagun.net,mexa.sh,mgeko.cc,mkvcinemas.*,moflix-stream.fans,motchill29.com,mov18plus.cloud,moviesapi.to,movies2watch.tv,netmovies.to,nicomanga.com,phimlongtieng.net,rawinu.com,rawkuma.net,readcomiconline.*,seriesonline.sx,theflixertv.to,torrentdownload.*,toonily.com,torrentdownloads.*,tukipasti.com,vidsrc.cc,watchasians.cc,watch-movies.com.pk,watchseries.*,weloma.art,welovemanga.one,zoechip.com,zoechip.gg##+js(acs, addEventListener, HTMLAllCollection)
 cataz.to##+js(nowoif)
 vidfast.*##+js(acs, addEventListener, HTMLAllCollection)
 cineb.rs,moviesjoyhd.to,rawkuma.com##+js(aeld, mousedown, shown_at)
@@ -8758,7 +8758,7 @@ nekolink.site##+js(aost, document.getElementsByTagName, _createCatchAllDiv)
 nekolink.site##+js(aeld, /click|mouse/, [native code], elements, document)
 nekolink.site##+js(set, PlayerConfig.trusted, true)
 nekolink.site##+js(set, PlayerConfig.config.AffiliateAdViewLevel, 3)
-141jav.com,141tube.com,aagmaal.com,camcam.cc,javneon.tv,javsaga.ninja,torrentkitty.one##+js(set, univresalP, noopFunc)
+141jav.com,141tube.com,aagmaal.com,camcam.cc,javneon.tv,javsaga.ninja,torrentkitty.one,webmaal.cfd##+js(set, univresalP, noopFunc)
 pahe.ink,pawastreams.pro,vikingf1le.us.to##+js(aeld, DOMContentLoaded, history.go)
 boobsrealm.com,dfilmizle.com##+js(aopr, initPu)
 asianpornjav.com##+js(set, puShown, true)
@@ -9602,7 +9602,10 @@ teachersguidetn.blogspot.com,bayaningfilipino.blogspot.com##+js(acs, addEventLis
 firefile.cc##+js(set, blockAdBlock._options.baitClass, null)
 @@||manhwa18.com^$ghide
 uploadhub.*##+js(nowoif)
+uploadhub.*##+js(no-fetch-if, adsbygoogle)
+uploadhub.*##+js(nostif, location.href, 1000)
 *$script,3p,denyallow=bootstrapcdn.com|cloudflare.com,domain=uploadhub.*
+uploadhub.*##[src^="https://blogger.googleusercontent.com/"]
 verteleseriesonline.com##+js(aopr, adBlockDetected)
 verteleseriesonline.com##+js(nosiif, visibility, 1000)
 flight-report.com##+js(aeld, load, /AdBlock/i)
@@ -11376,6 +11379,7 @@ hdhub4u.*##.hd-links
 hdhub4u.*##[href*="?aff"]
 superstream.*##+js(aopr, AaDetector)
 $script,3p,denyallow=bootstrapcdn.com,domain=uploadflix.*
+||bloggingworld.net/wp-content/plugins^$3p
 moviezwap.*##+js(nowoif)
 moviezwap.*##[style^=" width: 305px;"][type^="button"][onclick^="window.location.href"]
 ~xcloud.eu,~xcloud.host,xcloud.*##+js(rpnt, script, /window.open.*/gms, window.open(url\, "_self");})
@@ -21107,6 +21111,7 @@ rebajagratis.com,tv.latinlucha.es##+js(rmnt, script, /adsBlocked|"popundersPerIP
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$redirect=noopjs,domain=strp2p.com,important
 rpmplay.xyz##+js(aopr, open)
 ||boaststockingsaucer.com^
+easyvidplayer.com##+js(nowoif)
 bemyhole.com##+js(rmnt, script, egoTab)
 bemyhole.com##.headline-sidebar
 bemyhole.com##.cams-button

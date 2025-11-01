@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Sat, 01 Nov 2025 13:32:52 GMT
+! Last modified: Sat, 01 Nov 2025 22:19:54 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.93.92
+!   - Version: 2.0.93.94
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/refs/heads/master/cjx-annoyance.txt
 !   - Version: 202510290615
@@ -216,7 +216,6 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
-||rescuerhino.com^
 ||alphaupsell.s3.ap-northeast-2.amazonaws.com^
 ||trackingmyadsas.com^
 ||sa.openmedia.co^
@@ -72425,6 +72424,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||ipm.adblockplus.dev^
 ||log1.wanmei.com^
 ||log2.wanmei.com^
 ||stats.externulls.com^
@@ -122603,6 +122603,7 @@ zjjz6lpv44aguszo.cloud.s11.sfmc-osl.com$image
 /com.snowplowanalytics.$domain=~snowplowanalytics.com
 .com.br/tracking.set^|
 .com.br/cliente/trackRemote^|
+/sftouch?branchId=
 /_hcms/perf
 ||t.*/v1/lst/universal-script?ph=$script
 /analytics?ver=*&visitor_id=
@@ -133077,6 +133078,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||rentinfinity.com^
 ||repeatsweater.com^
 ||replaceroute.com^
+||rescuerhino.com^
 ||resonantbrush.com^
 ||resonantrock.com^
 ||respectrain.com^
