@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Sat, 01 Nov 2025 10:11:44 GMT
+! Last modified: Sat, 01 Nov 2025 13:32:52 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.93.90
+!   - Version: 2.0.93.92
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/refs/heads/master/cjx-annoyance.txt
 !   - Version: 202510290615
@@ -123183,6 +123183,7 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xmlhttprequest,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$third-party,object,redirect=noop.js,script
+business.nikkei.com###pianoRecommendBottom
 ||leboncoin.fr/piano-analytics/
 ||softonic.jp/web-stats
 ||chatgpt.com/ces/v1/i^
@@ -128606,6 +128607,7 @@ dlsdk.appsflyer.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||ads-api.x.com^
 ||t.usermaven.com/lib.js$script,redirect=noop.js,domain=revisemsra.com
 ||log.hiapkdownload.com^
 ||experiment.pixverse.ai^
