@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Sat, 01 Nov 2025 22:19:54 GMT
+! Last modified: Sun, 02 Nov 2025 10:11:32 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,12 +8,12 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.93.94
+!   - Version: 2.0.93.95
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/refs/heads/master/cjx-annoyance.txt
-!   - Version: 202510290615
+!   - Version: 202511021711
 !   - Homepage: https://github.com/cjx82630/cjxlist
-!   - Last modified: 2025/10/29 06:15 +0800
+!   - Last modified: 2025/11/02 17:11 +0800
 ! --------------------------------------------------------------
 www.youtube.com##+js(no-xhr-if, /\/api\/stats\/atr\?.+?&rt=\d+\.\d+.+?&volume=\d+&cbr=.+?&fexp=v1%[-%0-9C]{300\,}&.+?&muted=\d(&vis=3)?&docid=/ method:POST)
 slobodnadalmacija.hr,meconomynews.com,brandbrief.co.kr,motorgraph.com##+js(abort-current-script, atob, eval(decodeURIComponent(escape(window.atob("KCgpPT5)
@@ -132182,6 +132182,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||cushiondrum.com^
 ||cutecalculator.com^
 ||cutechin.com^
+||cyclinghere.com^
 ||cyclopsdial.com^
 ||damagedadvice.com^
 ||damageddistance.com^
@@ -132334,6 +132335,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||faithrowold.com^
 ||fakedisguise.com^
 ||fallaciousfifth.com^
+||fallingshoals.com^
 ||falseframe.com^
 ||falsesight.com^
 ||familiarrod.com^
@@ -133503,6 +133505,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||ticketssponge.com^
 ||ticklesign.com^
 ||tidymitten.com^
+||tidysprite.com^
 ||tightpowder.com^
 ||tinybluewhale.com^
 ||tinyswans.com^
@@ -135257,6 +135260,7 @@ m.babytree.com##script + a[class]
 @@||fm.ipinyou.$domain=ipinyou.com.cn
 @@||fm.p0y.cn^$domain=ipinyou.com.cn
 ||shinpa.me^
+||dytt8899.com/js/tj.js
 ||xuan5.com^$third-party
 ||com.day^
 .com/js/o.js$domain=qdmm.com|qdwenxue.com|qidian.com
