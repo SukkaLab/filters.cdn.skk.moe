@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Sun, 02 Nov 2025 22:20:16 GMT
+! Last modified: Mon, 03 Nov 2025 10:15:35 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,12 +8,12 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.93.97
+!   - Version: 2.0.93.99
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/refs/heads/master/cjx-annoyance.txt
-!   - Version: 202511021711
+!   - Version: 202511031606
 !   - Homepage: https://github.com/cjx82630/cjxlist
-!   - Last modified: 2025/11/02 17:11 +0800
+!   - Last modified: 2025/11/03 16:06 +0800
 ! --------------------------------------------------------------
 www.youtube.com##+js(no-xhr-if, /\/api\/stats\/atr\?.+?&rt=\d+\.\d+.+?&volume=\d+&cbr=.+?&fexp=v1%[-%0-9C]{300\,}&.+?&muted=\d(&vis=3)?&docid=/ method:POST)
 slobodnadalmacija.hr,meconomynews.com,brandbrief.co.kr,motorgraph.com##+js(abort-current-script, atob, eval(decodeURIComponent(escape(window.atob("KCgpPT5)
@@ -123185,6 +123185,8 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xmlhttprequest,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$third-party,object,redirect=noop.js,script
+||api.corr.life/public/metrics/
+||filmzie.com/api/v*/analytics/
 ||static.danawa.com/globaljs/static/targetPush/targetPushTracking.js
 ||static.danawa.com/globaljs/static/bdl/dsac.min.js
 ||static.danawa.com/globaljs/com/danawa/common/uxlog/
@@ -131925,6 +131927,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||bewilderedblade.com^
 ||bhcumsc.com^
 ||bidpapers.com^
+||bigworldfashion.com^
 ||bikepaws.com^
 ||bikesboard.com^
 ||bikinginspire.com^
@@ -132155,6 +132158,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||cratecamera.com^
 ||creatorcherry.com^
 ||creatorpassenger.com^
+||creatorsnote.com^
 ||creaturecabbage.com^
 ||crimsonmeadow.com^
 ||critictruck.com^
@@ -134181,6 +134185,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||bilinovel.com/scripts/m7lk48m5hgztxn.
 ||uiadmin.net/uview-plus/assets/js/3.1b3a95a0.
 ||eastmoney.com/trade/fundfavortonglan.
+eastmoney.com##p > a[href*="acttg.eastmoney.com"]
 5eplay.com##footer
 5eplay.com##.right-aside-box
 5eplay.com##.ad_img-bg-bg-p

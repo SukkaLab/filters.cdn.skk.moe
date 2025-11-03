@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Sun, 02 Nov 2025 22:20:16 GMT
+! Last modified: Mon, 03 Nov 2025 10:15:35 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202511022211
+!   - Version: 202511031001
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 02 Nov 2025 22:11 UTC
+!   - Last modified: 03 Nov 2025 10:01 UTC
 ! * Bypass Paywalls Clean filter
 !   - URL: https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters/blob/raw?file=bpc-paywall-filter.txt
 !   - Version: 4.2.3.9
@@ -141,7 +141,7 @@
 ! * uBlock filters – Mobile
 !   - URL: https://ublockorigin.github.io/uAssets/filters/filters-mobile.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Sat, 04 Oct 2025 00:28:30 +0000
+!   - Last modified: Mon, 03 Nov 2025 04:14:50 +0000
 ! * I don't care about cookies
 !   - URL: https://www.i-dont-care-about-cookies.eu/abp/
 !   - Version: 350.202311301133
@@ -37588,6 +37588,7 @@ m.dcinside.com,upload.dcinside.com##+js(set-cookie, _ga, OK, , reload, 1)
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$script,domain=thedailybeast.com
 thedailybeast.com##^html > head > meta[name="template"]:not([content="cheat"]):upward(1) > script[src*="doubleclick"]
 pornhub.com##+js(set-cookie, views, 1)
+pornhub.*##.watchpageAd
 apnews.com##.SovrnAd
 zaim.net##.ad-footer
 avclub.com,clickhole.com,deadspin.com,gizmodo.com,jalopnik.com,jezebel.com,kotaku.com,lifehacker.com,qz.com,splinternews.com,theinventory.com,theonion.com,theroot.com,thetakeout.com###splashy-ad-container-top
