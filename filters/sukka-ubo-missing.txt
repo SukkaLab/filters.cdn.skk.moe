@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Tue, 04 Nov 2025 10:15:11 GMT
+! Last modified: Tue, 04 Nov 2025 22:22:11 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.94.5
+!   - Version: 2.0.94.8
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/refs/heads/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -217,6 +217,8 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||audiencelab.io^$third-party
+||openpanel.dev^
 ||alphaupsell.s3.ap-northeast-2.amazonaws.com^
 ||trackingmyadsas.com^
 ||sa.openmedia.co^
@@ -124495,6 +124497,8 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xmlhttprequest,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$third-party,object,redirect=noop.js,script
+||pinterest.com/_/_/storage_report/
+||a.anoncity.cc/api/track
 ||assets.coupangcdn.com/customjs/cou-log/
 ||asset*.coupangcdn.com/customjs/mycoupang/fingerprint2/
 ||pics-view.com/ad-track
@@ -133973,6 +133977,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||justicejudo.com^
 ||justpickaname.com^
 ||justwebcards.com^
+||justwowjars.com^
 ||keenquill.com^
 ||kidpowers.com^
 ||kindasingle.com^
@@ -134567,6 +134572,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||siliconslow.com^
 ||sillyscrew.com^
 ||simplenaming.com^
+||simplesafari.com^
 ||simplesidewalk.com^
 ||simulateswing.com^
 ||sincerebuffalo.com^
@@ -134961,6 +134967,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||watersensible.com^
 ||waterywave.com^
 ||waveinverter.com^
+||wavesimple.com^
 ||wavesmachine.com^
 ||waxsirens.com^
 ||wayjoyfarm.com^
