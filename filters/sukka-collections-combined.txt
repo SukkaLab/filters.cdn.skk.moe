@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Mon, 03 Nov 2025 22:23:00 GMT
+! Last modified: Tue, 04 Nov 2025 10:15:11 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,13 +18,13 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202511032211
+!   - Version: 202511041001
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 03 Nov 2025 22:11 UTC
+!   - Last modified: 04 Nov 2025 10:01 UTC
 ! * Bypass Paywalls Clean filter
 !   - URL: https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters/blob/raw?file=bpc-paywall-filter.txt
-!   - Version: 4.2.3.9
+!   - Version: 4.2.4.0
 !   - Homepage: https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
@@ -111,7 +111,7 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 📱 Staying On The Phone Browser
 !   - URL: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/stayingonbrowser/Staying%20On%20The%20Phone%20Browser
-!   - Version: 16October2025v2
+!   - Version: 04November2025v1
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#english
 ! * 🎫 Ad Removal List for Unusual Ads
 !   - URL: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AdRemovalListForUnusualAds.txt
@@ -2478,6 +2478,7 @@ valeursactuelles.com##+js(ra, class, div.qiota_reserve, stay)
 ||washingtonpost.com/*/tetro-client/$script,~third-party
 ||account.winnipegfreepress.com/api/v*/auth/identify$xmlhttprequest,~third-party
 winnipegfreepress.com##.billboard-ad-space,.ad,.article-ad,.fixed-sky
+||ynet.co.il/*/article/*?rel=plus$inline-script
 al.com,cleveland.com,lehighvalleylive.com,masslive.com,mlive.com,nj.com,oregonlive.com,pennlive.com,silive.com,syracuse.com##+js(set, window.adiData.entryTags, 0)
 bendigoadvertiser.com.au,bordermail.com.au,canberratimes.com.au,centralwesterndaily.com.au,dailyadvertiser.com.au,dailyliberal.com.au,examiner.com.au,illawarramercury.com.au,newcastleherald.com.au,northerndailyleader.com.au,standard.net.au,theadvocate.com.au,thecourier.com.au,westernadvocate.com.au##+js(rc, subscribe-truncate, .subscribe-truncate)
 bendigoadvertiser.com.au,bordermail.com.au,canberratimes.com.au,centralwesterndaily.com.au,dailyadvertiser.com.au,dailyliberal.com.au,examiner.com.au,illawarramercury.com.au,newcastleherald.com.au,northerndailyleader.com.au,standard.net.au,theadvocate.com.au,thecourier.com.au,westernadvocate.com.au##+js(rc, subscriber-hider, .subscriber-hider)
@@ -36111,8 +36112,8 @@ rt.com#?#.header.header_top-interval_js:style(margin-top: 0 !important)
 rt.com#?#.layout__header_top-interval_js:style(height: 50px !important)
 rtcg.me##.footerBgrdImg
 rtcg.me##.footerStoreLinks
-rts.rs##.footer-download
-rts.rs##.boxRight:has(img[src*=ndroid-aplikacija])
+rts.rs,xn--p1acc.xn--90a3ac##.footer-download
+rts.rs,xn--p1acc.xn--90a3ac##.boxRight:has(img[src*=ndroid-aplikacija])
 schlaukopf.de#?#html:style(margin-top: 0 !important)
 schnaeppchenfuchs.com##.mobile-promo-apps__vertical-spacer
 shiftdelete.net##.e_magazine_mobile
@@ -36278,6 +36279,9 @@ deviantart.com##body.mobile > .ReactModalPortal + aside:last-of-type
 ##div[data-reka-popper-content-wrapper]
 instagram.com##.html-div + div:not(.html-div) + .html-div:has(> [role=link][href^="intent://instagram.com"])
 instagram.com##div[class]:first-of-type:not(.html-div) + div.html-div:has(+ div:last-of-type:not([class])):has(a[href^="intent://"])
+###android-app-prompt
+##.footer-app-icons:not(html,body,:empty)
+##a.both-badges.ai-app-badge
 ##a[href*=".app.link/"]
 imgur.com##.AppBanner-text
 imgur.com##.PopOverBannerSmall
