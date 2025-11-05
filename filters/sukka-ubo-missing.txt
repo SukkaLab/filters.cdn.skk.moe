@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Wed, 05 Nov 2025 10:15:03 GMT
+! Last modified: Wed, 05 Nov 2025 22:22:46 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.94.12
+!   - Version: 2.0.94.16
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/refs/heads/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -1829,6 +1829,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ||growthrx.in^$third-party
 ||clickcease.com^$third-party
 ||logs.juspay.in
+||http-intake.logs.datadoghq.com^
 ||logs.browser-intake-datadoghq.eu^
 ||logs.datadoghq.eu^
 ||logs.datadoghq.com^$third-party
@@ -75942,6 +75943,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ||applog.zaycev.net^
 ||appsanalytics.appideas.it^
 ||apptracker.gamedock.io^
+||service.minute.ly^
 ||apv-launcher.minute.ly^
 ||ariane.abtasty.com^
 ||astat.nikkei.co.jp^
@@ -123837,6 +123839,7 @@ zjjz6lpv44aguszo.cloud.s11.sfmc-osl.com$image
 /^https?:\/\/(?!assets|script|static)(?:[0-9a-z]{10,13}|[0-9a-z]{6})\.[0-9A-Za-z.\-_]+\/(?=[0-9a-z+\/\-]*[A-Z])[0-9A-Za-z+\/\-]{80,106}$/$match-case,script,~third-party
 /^https:\/\/cs\d{3}\.\w+\.com\/cscript\/\d{3}\/[\w\d]+\.js$/$script,third-party,match-case
 /.well-known/private-click-measurement
+/app/Eclog/js/cid.generate.js
 /home/new/v*/api/get-ip.php
 /home/new/v*/api/applogger.php
 /rum/events
@@ -124500,6 +124503,7 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xmlhttprequest,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$third-party,object,redirect=noop.js,script
+||motogonki.ru/js/google_service.js
 ||pinterest.com/_/_/storage_report/
 ||a.anoncity.cc/api/track
 ||assets.coupangcdn.com/customjs/cou-log/
@@ -124517,7 +124521,6 @@ business.nikkei.com###pianoRecommendBottom
 ||holistic.news/3unw/
 ||sp-cdn.linux-magazin.de/wrapper/metrics/
 ||static.alphwidget.com/script/Common-Script/PRODUCTION/alphacore_alpha_data.js
-||joymadam.com/app/Eclog/
 ||static.alphwidget.com/script/Push-Script/PRODUCTION/alphapush_GA.js
 ||wivismall.com/ux/js/comGroobee.js
 ||ipleaks.io/public/google/gtag.js
@@ -125308,7 +125311,6 @@ hindustantimes.com##+js(set-local-storage-item, ht_cdp, $remove$)
 ||content.kaspersky-labs.com/public/analytics-scripts/analytical_functions.js
 ||pcgames.de/webservices/edash/
 ||ca.cafe24data.com/analytics.js
-||comics-art.co.kr/app/Eclog/
 ||api.laftel.net/api/*/status/$xmlhttprequest,redirect=noop.js
 ||laftel.net/twitter-pixel.js
 ||capi.connatix.com/tr/$important
@@ -127807,7 +127809,6 @@ the-ans.jp##.side-reccomend
 ||at.cbsi.com/*/event?
 ||sprocket.bz/trackers/
 ||maillist-manage.com/wa/ActionLogger?
-/app/Eclog/js/cid.generate.js$domain=softland.co.kr|animegoods.co.kr|rabbits.kr|cafe24.com
 ||push.soft-com.biz/api/ui/metrics
 ||image.cauly.co.kr/script/caulytracker_async.js
 ||gate.upclick.com/btn/visitor.min.js
@@ -127819,7 +127820,6 @@ the-ans.jp##.side-reccomend
 ||img.sportsworldi.com/static/w_sportsworld/common/js/analytics.js
 ||crunchyroll.com/tracker
 ||sa.crunchyroll.com/analytics.js
-||laurenhi.com/app/Eclog/
 /lcslog*.js$domain=playentry.org
 ||ssl.pstatic.net/static.gn/js/clickcrD.js$domain=~search.naver.com
 ||paypal.com/xoplatform/logger/$domain=tapas.io
@@ -129935,6 +129935,10 @@ dlsdk.appsflyer.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||mon.capcutapi.us^
+||mssdk.capcutapi.us
+||mon16-normal-us-ttp.capcutapi.us^
+||log16-normal-us-ttp.capcutapi.us^
 ||jdlog.uu.cc^
 ||gid.tapapis.cn^
 ||dlog-config.uu.cc^
@@ -133814,6 +133818,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||golfersrow.com^
 ||gondolagnome.com^
 ||gorgeousedge.com^
+||gorillapage.com^
 ||gossamerwing.com^
 ||gracefulmilk.com^
 ||grainmass.com^
@@ -134367,6 +134372,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||rabbitbreath.com^
 ||rabbitrifle.com^
 ||rackforstorage.com^
+||radexports.com^
 ||radiantcanopy.com^
 ||radiantlullaby.com^
 ||radiateprose.com^
