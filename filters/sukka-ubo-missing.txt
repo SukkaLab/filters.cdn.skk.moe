@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Wed, 05 Nov 2025 22:22:46 GMT
+! Last modified: Thu, 06 Nov 2025 10:15:02 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.94.16
+!   - Version: 2.0.94.21
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/refs/heads/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -217,6 +217,13 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||event.marketap.io^
+||crm.marketap.io^
+||conviva.com^$third-party
+||gau.groobee.io^
+||gre.groobee.io^
+||monitoring.hackle.io^
+||event-api.hackle.io^
 ||tracking-api.g2.com^
 ||litix.io^
 ||audiencelab.io^$third-party
@@ -74347,6 +74354,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||events.asurion.com^
 ||collector.moderntv.eu^
 ||ipm.adblockplus.dev^
 ||log1.wanmei.com^
@@ -123839,6 +123847,8 @@ zjjz6lpv44aguszo.cloud.s11.sfmc-osl.com$image
 /^https?:\/\/(?!assets|script|static)(?:[0-9a-z]{10,13}|[0-9a-z]{6})\.[0-9A-Za-z.\-_]+\/(?=[0-9a-z+\/\-]*[A-Z])[0-9A-Za-z+\/\-]{80,106}$/$match-case,script,~third-party
 /^https:\/\/cs\d{3}\.\w+\.com\/cscript\/\d{3}\/[\w\d]+\.js$/$script,third-party,match-case
 /.well-known/private-click-measurement
+/mai-publisher-analytics.js
+/genesis/lib/js/skip-links.min.js
 /app/Eclog/js/cid.generate.js
 /home/new/v*/api/get-ip.php
 /home/new/v*/api/applogger.php
@@ -124503,6 +124513,12 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xmlhttprequest,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$third-party,object,redirect=noop.js,script
+||store.maaltalk.com/admin/gd_share/script/visit/gd_visit.js
+||usimsa.com/_nuxt/naverAdsScript.
+||usimsa.com/_nuxt/kakaoPixel.
+||static.tp-link.com/assets/js/ga.js
+||phoneclaim.com/api/*/logger/
+||adyen.com/*/analytics/
 ||motogonki.ru/js/google_service.js
 ||pinterest.com/_/_/storage_report/
 ||a.anoncity.cc/api/track
