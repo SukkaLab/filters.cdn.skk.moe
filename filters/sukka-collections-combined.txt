@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Thu, 06 Nov 2025 10:15:02 GMT
+! Last modified: Thu, 06 Nov 2025 22:22:44 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202511061001
+!   - Version: 202511062211
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 06 Nov 2025 10:01 UTC
+!   - Last modified: 06 Nov 2025 22:11 UTC
 ! * Bypass Paywalls Clean filter
 !   - URL: https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters/blob/raw?file=bpc-paywall-filter.txt
 !   - Version: 4.2.4.1
@@ -1958,7 +1958,6 @@ ria.ru##.antiblock
 fotoshop-online.org##.aslot
 mel.fm##.b-ad-space__placeholder
 irk.ru##.b-adblock-message
-d3.ru##.b-promo__placeholder
 cs-amba.ru##.banka
 medical-club.net##.blocker-notice,.blocker-overlay
 electric-house.ru##.blok_forum > div[style]
@@ -2076,8 +2075,6 @@ nv.ua##img[src="/images/dis_blocker_big.jpg"]
 drive2.ru##img[src^="https://avatars.mds.yandex.net/get-adfox-content/"]
 sdamgia.ru##main > div[class*=" "]:nth-child(-n+2) > div ~ div
 fotoshop-online.org##section > .col-full + script + center[class]
-d3.ru##section[data-uid="ad"]
-d3.ru##section[data-uid="extraAd"]
 ph4.ru##table[width][height="90"][style]
 savevideo.me##td > div[class]:not([id])[style*="important"]
 bigpuzzle.ru##td[valign="top"][width="200px"][height="600"] > div[style]

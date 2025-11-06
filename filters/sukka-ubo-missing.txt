@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Thu, 06 Nov 2025 10:15:02 GMT
+! Last modified: Thu, 06 Nov 2025 22:22:44 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.94.21
+!   - Version: 2.0.94.28
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/refs/heads/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -217,6 +217,8 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||delog.nestads.com^
+||deapi.nestads.com^
 ||event.marketap.io^
 ||crm.marketap.io^
 ||conviva.com^$third-party
@@ -74354,6 +74356,11 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||bizlog-gateway.myrealtrip.com^
+||api-ktm.kkday.com^
+||riskpoc.trip.com^
+||chloro.trip.com^
+||ubt-sgp.trip.com^
 ||events.asurion.com^
 ||collector.moderntv.eu^
 ||ipm.adblockplus.dev^
@@ -124513,6 +124520,17 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xmlhttprequest,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$third-party,object,redirect=noop.js,script
+||script.wikia.nocookie.net/fandom-ae-assets/odyssey/prebid/production/main.js
+||sketchfab.com/a/ramen
+||revopoint3d.com/api/collect
+||ak-s-cw.tripcdn.com/modules/ibu/gtm-loader/
+||image.hanatour.com/ice/fx/lib/nestads.js
+||image.hanatour.com/ice/fx/lib/appsflyer.js
+||image.hanatour.com/ice/fx/lib/amplitude.js
+||kkday.com/api/_nuxt/recommend/user-action-record
+||trip.com/restapi/soa2/*/tripAds.json
+||static.tripcdn.com/packages/ubt/websdk/*/ubt.minh.js
+||trip.com/restapi/soa2/*/clog
 ||store.maaltalk.com/admin/gd_share/script/visit/gd_visit.js
 ||usimsa.com/_nuxt/naverAdsScript.
 ||usimsa.com/_nuxt/kakaoPixel.
@@ -125614,7 +125632,7 @@ geinoukame.com##.ninja-recommend-block + hr
 ||wealthfront.com/track_next?p=
 ||gg.asuracomic.net/api/views/collect
 ||probance.jp/webtrax/public/probance_tracker.js
-/firebase-analytics.js$domain=furunavi.jp|mt.co.kr
+/firebase-analytics.js$domain=furunavi.jp|mt.co.kr|hanatour.com
 ||static.site24x7rum.jp/beacon/
 ||api.actagtracker.jp/tag|
 ||shop.post.japanpost.jp/js/analytics_cookie.js
@@ -129449,7 +129467,9 @@ gmarket.co.kr##+js(fingerprint2)
 ||rum-static.pingdom.net/*-*.js$script,redirect=noop.js,important,domain=leboncoin.fr
 ||ya.ru/clck/
 ||bing.com/fd/ls/
-/tf/o/$image
+mail.ferret-one.com/beacon$image
+mail.ferret-one.com%2Fbeacon$image
+/tf/o/*$image
 %2Ftf%2Fo%2F$image
 /via/o?h=
 %2Fvia%2Fo%3Fh%3D
@@ -133147,6 +133167,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||aboardamusement.com^
 ||aboardlevel.com^
 ||absentairport.com^
+||absolutering.com^
 ||absorbingband.com^
 ||absorbingprison.com^
 ||abstractedamount.com^
@@ -134046,6 +134067,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||limepeal.com^
 ||linkedleg.com^
 ||linksoutside.com^
+||linkstable.com^
 ||livelumber.com^
 ||livelylaugh.com^
 ||livingsleet.com^
@@ -134379,6 +134401,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||quietknowledge.com^
 ||quillkick.com^
 ||quiltquick.com^
+||quiltruler.com^
 ||quirkybliss.com^
 ||quirkybodega.com^
 ||quirkysugar.com^
