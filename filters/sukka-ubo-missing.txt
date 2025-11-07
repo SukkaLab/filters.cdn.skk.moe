@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Fri, 07 Nov 2025 10:14:32 GMT
+! Last modified: Fri, 07 Nov 2025 22:22:02 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.94.29
+!   - Version: 2.0.94.32
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/refs/heads/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -129971,6 +129971,7 @@ dlsdk.appsflyer.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||event.aimailhome.io^
 ||mon.capcutapi.us^
 ||mssdk.capcutapi.us
 ||mon16-normal-us-ttp.capcutapi.us^
@@ -130151,6 +130152,8 @@ d4?appid*type*
 ||bisrtb.vidazoo.com^
 ||t*.playdigo.live^
 ||tnc*.tiktokv.us^
+||tnc*.tiktokv.com^
+||log*-normal-*.tiktokv.com
 ||aws.userlogsanalytics.com^
 ||atb-stats-api.imolive.tv^
 ||i.mxplayer.j2inter.com^
@@ -130918,6 +130921,7 @@ d4?appid*type*
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
 @@||googletagmanager.com/gtm.js$domain=expressvpn.com
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics_analytics.js,domain=expressvpn.com
+@@||tags.stepstone.com/utag/de/prod/utag.js$domain=stepstone.de
 @@||static.vocstatic.com/voonto2/latest/voonto.js$domain=diariosur.es
 @@||cdn.cxense.com/cx*.js$domain=onetz.de
 @@||cdn.cxense.com/sp*.html$domain=onetz.de
@@ -133279,6 +133283,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||basketballbelieve.com^
 ||baskettexture.com^
 ||bastingart.com^
+||battlekite.com^
 ||bawdybalance.com^
 ||beamvolcano.com^
 ||beancontrol.com^
@@ -134026,6 +134031,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||justwebcards.com^
 ||justwowjars.com^
 ||keenquill.com^
+||kernellife.com^
 ||kidpowers.com^
 ||kindasingle.com^
 ||kindhush.com^
@@ -134490,6 +134496,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||ringsrecord.com^
 ||ritzyrepresentative.com^
 ||ritzyveil.com^
+||roaddynamics.com^
 ||roadwalks.com^
 ||robotgarages.com^
 ||rockagainst.com^
@@ -134740,6 +134747,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||stakingsmile.com^
 ||stalesummer.com^
 ||starkscale.com^
+||starsmarter.com^
 ||startercost.com^
 ||startingcars.com^
 ||statshunt.com^
