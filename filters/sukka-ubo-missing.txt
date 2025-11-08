@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Sat, 08 Nov 2025 10:11:42 GMT
+! Last modified: Sat, 08 Nov 2025 22:20:04 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.94.32
+!   - Version: 2.0.94.35
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/refs/heads/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -124520,6 +124520,8 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xmlhttprequest,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$third-party,object,redirect=noop.js,script
+||traveloka.com/api/v1/metrics
+||traveloka.com/api/v1/tvlk/events
 ||script.wikia.nocookie.net/fandom-ae-assets/odyssey/prebid/production/main.js
 ||sketchfab.com/a/ramen
 ||revopoint3d.com/api/collect
@@ -130921,6 +130923,7 @@ d4?appid*type*
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
 @@||googletagmanager.com/gtm.js$domain=expressvpn.com
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics_analytics.js,domain=expressvpn.com
+@@||googletagmanager.com/gtm.js$domain=cashier.dmm.co.jp|cashier.dmm.com
 @@||tags.stepstone.com/utag/de/prod/utag.js$domain=stepstone.de
 @@||static.vocstatic.com/voonto2/latest/voonto.js$domain=diariosur.es
 @@||cdn.cxense.com/cx*.js$domain=onetz.de
@@ -134597,6 +134600,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||settleshoes.com^
 ||sevenhalves.com^
 ||shadeship.com^
+||shadowmade.com^
 ||shaggytank.com^
 ||shakegoldfish.com^
 ||shakysurprise.com^
@@ -134739,6 +134743,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||squarecamel.com^
 ||squeakzinc.com^
 ||squealingturn.com^
+||squidlogic.com^
 ||squishybears.com^
 ||stageschine.com^
 ||stakedances.com^
@@ -135068,6 +135073,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||worriedwine.com^
 ||wrapstretch.com^
 ||wretchedfloor.com^
+||writerhubs.com^
 ||writewealth.com^
 ||wrongpotato.com^
 ||wrongwound.com^
