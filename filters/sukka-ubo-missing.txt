@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Sun, 09 Nov 2025 17:33:59 GMT
+! Last modified: Sun, 09 Nov 2025 22:20:44 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.94.36
+!   - Version: 2.0.94.39
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/refs/heads/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -124519,6 +124519,14 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xmlhttprequest,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$third-party,object,redirect=noop.js,script
+||skyscanner.co.kr/slipstream/grp/*/custom/public/acorn/mbd-web/user_behaviour_data_domain.ElementImpression
+||skyscanner.co.kr/slipstream/grp/*/custom/public/*/funnel_events/
+||gamebounty.world/api/logVisit
+||cdn.haymarketmedia.asia/shared/tracking.html?tc=*&adunit=
+||accounts.haymarket.media/tracking/drip-event
+||apis.usonar.jp/alog/alog.php
+||static.alphwidget.com/script/Review-Script/PRODUCTION/alpha_au.js
+||static.alphwidget.com/script/Review-Script/PRODUCTION/alphareview_GA
 ||traveloka.com/api/v1/metrics
 ||traveloka.com/api/v1/tvlk/events
 ||script.wikia.nocookie.net/fandom-ae-assets/odyssey/prebid/production/main.js
@@ -125144,7 +125152,6 @@ boredpanda.*##+js(set-local-storage-item, bp-analytics, $remove$)
 ||skyscanner.co.kr/g/aps/public/api/v1/pixel/
 ||wcs.naver.net/wcslog.js^
 ||player.javboys.cam/cdn-cgi/trace
-||skyscanner.co.kr/slipstream/grp/v1/custom/public/falcon/funnel_events/
 ||gateway.us.zip.co/analytics^
 ||wzzm13.com/taboola_
 ||restaurantguru.com/ajax/logAB
@@ -125633,7 +125640,7 @@ geinoukame.com##.ninja-recommend-block + hr
 ||wealthfront.com/track_next?p=
 ||gg.asuracomic.net/api/views/collect
 ||probance.jp/webtrax/public/probance_tracker.js
-/firebase-analytics.js$domain=furunavi.jp|mt.co.kr|hanatour.com
+/firebase-analytics.js$domain=furunavi.jp|mt.co.kr|hanatour.com|modetour.com
 ||static.site24x7rum.jp/beacon/
 ||api.actagtracker.jp/tag|
 ||shop.post.japanpost.jp/js/analytics_cookie.js
@@ -133471,6 +133478,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||coinsyouneed.com^
 ||coldbalance.com^
 ||coloradoserves.com^
+||colorfulpet.com^
 ||coloringisland.com^
 ||colossalclouds.com^
 ||colossalcoat.com^
@@ -134219,6 +134227,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||needyneedle.com^
 ||neighborlywatch.com^
 ||nervoussummer.com^
+||networklast.com^
 ||newarkdriving.com^
 ||newartreview.com^
 ||niftygraphs.com^
@@ -134784,6 +134793,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||stomachscience.com^
 ||stonechin.com^
 ||stopstomach.com^
+||stormyflower.com^
 ||straightnest.com^
 ||straindrinks.com^
 ||strangeclocks.com^
