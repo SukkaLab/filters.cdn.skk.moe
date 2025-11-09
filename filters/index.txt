@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Filters
-! Last modified: Sat, 01 Nov 2025 13:32:50 GMT
+! Last modified: Sun, 09 Nov 2025 17:34:04 GMT
 ! Expires: 1 hours
 ! Description: The filters from Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -27,6 +27,8 @@ urbtix.hk##+js(sukka-defuse-devtools-detector)
 hso108.xyz##+js(sukka-defuse-devtools-detector)
 tvbilibili.com##+js(sukka-defuse-devtools-detector)
 uouin.com##+js(sukka-defuse-devtools-detector)
+ggfw.hrss.gd.gov.cn##+js(sukka-defuse-devtools-detector)
+iplark.com##+js(sukka-defuse-devtools-detector)
 ||bbs.naixi.net/source/plugin/*_7ree/js/js_7ree.js
 ||tags.news.com.au/prod/adblock/adblock.js
 ###adb-mask
@@ -80,6 +82,7 @@ webcontainer.io#@#+js(sukka-defuse-service-worker)
 @@||turing.captcha.qcloud.com/TCaptcha.js$script,domain=sf-express.com
 lingchenzi.com#@#.category-share
 @@||sentry.io^$domain=ui.com
+*$script,from=thepiratebay.org,badfilter
 ||bad.third-party.site
 ||playground.oxc.rs$important
 ||amap.com$3p,domain=~www.amap.com|~amap.com|~gaode.com|~bigdata.speedtest.cn|~cjia.com|~giant.com.cn
@@ -137,6 +140,11 @@ www.bilibili.com##.r-con
 &os=mcdn
 /igd.xml$important
 ||biligame.com
+iknowwhatyoudownload.com##[href="/en/peer"]
+stripe.com##+js(no-fetch-if, r.stripe.com/b method:POST)
+||r.stripe.com/b^$redirect=noop.txt
+||archive.org/includes/donate
+@@||perfops.io/500b-bench.jpg$domain=localhost|ip.skk.moe
 ||adfoc.us$csp=script-src 'none'
 adfoc.us###showSkip:style(display: block!important)
 adfoc.us##+js(trusted-click-element, #showSkip > a.skip)
@@ -371,7 +379,6 @@ justauth.cn##+js(set, window._AdBlockInit, true)
 ||samsung.com/*/analytics.min.js
 ||appier.io$3p
 /ads.css
-||unifi.ui.com/sw.js
 ||tauri.app/service-worker.js
 ||dashboard.render.com/segcdn/
 ||dashboard.render.com/seg/cdn/
@@ -522,8 +529,6 @@ community.cloudflare.com##.d-modal__backdrop
 community.cloudflare.com##.modal-container
 ||img.draveness.me/2020-03-11-15839264230785-wechat-qr-code.png
 www.bandbbs.cn##.ad-container
-||static.zaobao.com.sg/s3fs-public/2024-06/pantry-news-talk-$image
-||static.zaobao.com.sg/s3fs-public/2024-06/lianhe-zaobao-club-$image
 ||ny528.com/APK/PNG/$image
 ||ny528.com/images/ad_$image
 www.youtube.com##.ytd-rich-section-renderer
@@ -647,3 +652,9 @@ zhuanlan.zhihu.com###Popover10-toggle
 www.campbellramble.ai##[aria-label*="Subscribe modal"]
 ||ping0.cc/*/ad/$image
 ||www.zoho.com/sites/zweb/images/workplace/home/sales-export-img.png
+||static.zaobao.com.sg/s3fs-public/2024-06/pantry-news-talk-$image
+||static.zaobao.com.sg/s3fs-public/2024-06/lianhe-zaobao-club-$image
+||static.zaobao.com.sg/s3fs-public/article-banner/website/$image
+||zhale.me/article/sponsor/$image
+zhale.me##.sponsor-card
+||tailwindcss.com/*book-promo$image
