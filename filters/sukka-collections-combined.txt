@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Sun, 09 Nov 2025 22:20:44 GMT
+! Last modified: Mon, 10 Nov 2025 10:15:30 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,13 +18,13 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202511092211
+!   - Version: 202511101001
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 09 Nov 2025 22:11 UTC
+!   - Last modified: 10 Nov 2025 10:01 UTC
 ! * Bypass Paywalls Clean filter
 !   - URL: https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters/blob/raw?file=bpc-paywall-filter.txt
-!   - Version: 4.2.4.2
+!   - Version: 4.2.4.3
 !   - Homepage: https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
@@ -99,11 +99,11 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 🎛 Reddit Trash Removal Service
 !   - URL: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/RedditTrashRemovalService.txt
-!   - Version: 12June2025v1-Beta
+!   - Version: 10November2025v1-Beta
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 🎛 Reddit Trash Removal Service
 !   - URL: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/RedditTrashRemovalService.txt
-!   - Version: 12June2025v1-Beta
+!   - Version: 10November2025v1-Beta
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 🎓 Wikia: Pure Browsing Experience
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/WikiaPureBrowsingExperience.txt
@@ -2184,7 +2184,6 @@ bloombergadria.com##+js(ra, style, article.single-news[style], stay)
 businessinsider.jp##+js(ra, hidden, div.piano-paywall-container[hidden])
 ||businessoffashion.com/arc-platform-proxy.js$script,~third-party
 ||businesspost.ie/api/tinypass.min.js$script,~third-party
-||cambiocolombia.com/_next/static/chunks/1036.*.js$script,~third-party
 capital.fr##+js(ra, class|hidden, div#articleWall-paid, stay)
 capital.fr##div#articleWall-paid:style(margin-top: 40px !important;)
 capital.fr##+js(ra, class, div#articleWall, stay)
@@ -24166,6 +24165,9 @@ reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion##div[s
 reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion##div:not([class]) > div:only-of-type > div[class$=" "][data-redditstyle=false]
 reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion,~old.reddit.com##.right-sidebar:has(> pdp-right-rail)
 reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion,~old.reddit.com##article:has(> [author-id="t2_g2unu1x5s" i][permalink^="/r/oddlyspecific/" i])
+reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion##search-telemetry-tracker a:remove-attr(href)
+reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion##search-telemetry-tracker a:style(color:unset!important;border-bottom-style:unset!important;cursor:text!important)
+reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion##search-telemetry-tracker .align-middle:has(> svg)
 reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion##.Post:has(a[href="/user/GallowBoob"])
 reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion##.Post:has(a[href="/user/pepsi_next"])
 reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion##.Post:has(a[href="/user/TooShiftyForYou"])

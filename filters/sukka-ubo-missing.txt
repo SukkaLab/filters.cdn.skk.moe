@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Sun, 09 Nov 2025 22:20:44 GMT
+! Last modified: Mon, 10 Nov 2025 10:15:30 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.94.39
+!   - Version: 2.0.94.42
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/refs/heads/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -217,6 +217,8 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||analytics.bomiv.com^
+||track.bomiv.com^
 ||delog.nestads.com^
 ||deapi.nestads.com^
 ||event.marketap.io^
@@ -124519,6 +124521,7 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xmlhttprequest,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$third-party,object,redirect=noop.js,script
+||cdn.shopify.com/extensions/*/assets/ba_ty_tracking.js
 ||skyscanner.co.kr/slipstream/grp/*/custom/public/acorn/mbd-web/user_behaviour_data_domain.ElementImpression
 ||skyscanner.co.kr/slipstream/grp/*/custom/public/*/funnel_events/
 ||gamebounty.world/api/logVisit
@@ -134006,6 +134009,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||irelandroad.com^
 ||iridescentdusk.com^
 ||irritatingfog.com^
+||islandwebhelp.com^
 ||itemslice.com^
 ||ivykiosk.com^
 ||j93557g.com^
