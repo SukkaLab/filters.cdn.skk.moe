@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Tue, 11 Nov 2025 10:14:36 GMT
+! Last modified: Tue, 11 Nov 2025 22:23:06 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.94.53
+!   - Version: 2.0.94.62
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/refs/heads/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -217,6 +217,10 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||logz.io^$third-party
+||beacon.coofis.com^
+||aditude.prebid-server.com^
+||cache.prebid-server.com^
 ||cdnm.techpump.com^
 ||analytics.bomiv.com^
 ||track.bomiv.com^
@@ -75547,6 +75551,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||tdum.alibaba.com^
 ||webpushstat-sgp.engagelab.com^
 ||analytics.simpler.so^
 ||bizlog-gateway.myrealtrip.com^
@@ -117440,6 +117445,7 @@ zjjz6lpv44aguszo.cloud.s11.sfmc-osl.com$image
 /zhugeio.js
 &l=dataLayer&cx=c
 /cdn-cgi/rum?
+/api/datafast/*
 /tr/lp/intg.js
 /op/analytics.js?domain=
 /send_ga4_params?
@@ -117937,6 +117943,9 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xmlhttprequest,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$third-party,object,redirect=noop.js,script
+||static.danawa.com/globaljs/static/Insight_WebAnalytics_
+/js/script.js$domain=codefa.st|datafa.st|fitymi.app|logofa.st|shipfa.st
+||micro.rubiconproject.com/prebid/dynamic/*.js$script,redirect=noop.js,domain=ole.com.ar
 prm.com##+js(set-local-storage-item, /deviceId/, $remove$)
 ||caesarsgames.com/dynamic/resources/common/js/functions/iframeTracker.js
 ||caesarsgames.com/dynamic/resources/common/js/functions/tracking.js
@@ -118162,7 +118171,6 @@ zdnet.com##+js(href-sanitizer, .c-articleContent p a[href^="https://cc.zdnet.com
 ||thermaltake.com/bannerslider/index/impress/
 ||spotifycdn.com/cdn/js/gtm.
 ||tworld.co.kr/web/service/xtractor.service.js
-||cfm.kt.com/js/integrate/kLogcode.js
 ||cfm.kt.com/js/common/global/oms.js
 ||static.gala.games/gal/fp/loader_v*.js
 gala.com##+js(set-local-storage-item, _gal1, $remove$)
@@ -118787,8 +118795,15 @@ hindustantimes.com##+js(set-local-storage-item, ht_cdp, $remove$)
 ||laftel.net/twitter-pixel.js
 ||capi.connatix.com/tr/$important
 ||g.alicdn.com/alilog/s/*/plugin/aplus_spmact.js
+||assets.aliexpress-media.com/g/ae-fe/cosmos/*/pc/local-data.js
+||assets.aliexpress-media.com/g/AWSC/fireyejs/*/fireyejs.js
+||assets.aliexpress-media.com/g/ae-fe/cosmos/*/pc/referral-insights.js
+||assets.aliexpress-media.com/g/ae-fe/cosmos/*/pc/gep-sdk.js
+||assets.aliexpress-media.com/g/AWSC/WebUMID/*/um.js
 ||assets.aliexpress-media.com/g/ae-fe/cosmos/*/pc/nano-ppc-media-tracking-YnuuQ.js
 ||assets.aliexpress-media.com/g/??alilog/aplus_plugin_aefront/index.js,alilog/mlog/aplus_int.js
+||assets.alicdn.com/g/lzd_sec/epssw/*/epssw.js
+||assets.alicdn.com/g/alilog/
 ||app.tag-plus.com/ja/api/v1/unison_planet/heat_map
 ||admin.microsoft.com/api/instrument/logclient
 ||xgp.pl/wp-content/themes/asona-child-theme/scripts/ga-script.js
@@ -122937,6 +122952,8 @@ mail.ferret-one.com%2Fbeacon$image
 %2FCI0%2F0$image
 /ss/o/*/ho.gif$image
 %2Fss%2Fo%2F*%2Fho.gif$image
+mailgun-tracking.ridi.com$image
+client-data.knak.io$image
 b.k3r.jp/?a=$image
 b.k3r.jp%2F%3Fa=$image
 github.com%2Fnotifications%2Fbeacon%3D*.gif$image
@@ -123411,6 +123428,8 @@ dlsdk.appsflyer.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||tnc16-normal-us-ttp.capcutapi.us^
+||mcs16-normal-us-ttp.capcutapi.us^
 ||appcpi.net^
 ||event.aimailhome.io^
 ||mon.capcutapi.us^
@@ -124362,6 +124381,7 @@ d4?appid*type*
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
 @@||googletagmanager.com/gtm.js$domain=expressvpn.com
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics_analytics.js,domain=expressvpn.com
+@@||tools.finra.org/monitoring/adrum_init.js$domain=tools.finra.org
 @@||caesarsgames.com/bundle/google-analytics.util.$domain=caesarsgames.com
 @@||googletagmanager.com/gtm.js$domain=cashier.dmm.co.jp|cashier.dmm.com
 @@||tags.stepstone.com/utag/de/prod/utag.js$domain=stepstone.de
@@ -126973,6 +126993,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||crafthenry.com^
 ||crashchance.com^
 ||cratecamera.com^
+||createdip.com^
 ||creatorcherry.com^
 ||creatorpassenger.com^
 ||creatorsnote.com^
@@ -127038,6 +127059,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||deliciousducks.com^
 ||deltafault.com^
 ||deluxecrate.com^
+||demorewards.com^
 ||dependenttrip.com^
 ||deployinput.com^
 ||desertgates.com^
@@ -128251,6 +128273,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||stupidscene.com^
 ||stupidsnake.com^
 ||sturdysnail.com^
+||stylelockers.com^
 ||stylishbuds.com^
 ||subjectivepoint.com^
 ||sublimequartz.com^
