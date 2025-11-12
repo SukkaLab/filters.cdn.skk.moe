@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Tue, 11 Nov 2025 22:23:06 GMT
+! Last modified: Wed, 12 Nov 2025 10:14:41 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,13 +18,13 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202511112211
+!   - Version: 202511121001
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 11 Nov 2025 22:11 UTC
+!   - Last modified: 12 Nov 2025 10:01 UTC
 ! * Bypass Paywalls Clean filter
 !   - URL: https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters/blob/raw?file=bpc-paywall-filter.txt
-!   - Version: 4.2.4.3
+!   - Version: 4.2.4.4
 !   - Homepage: https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
@@ -39,7 +39,7 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 💊 Dandelion Sprout's Anti-Malware List
 !   - URL: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout's%20Anti-Malware%20List.txt
-!   - Version: 08November2025v1
+!   - Version: 12November2025v1
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 🛃 Anti-'Adoptables and Artsite NFTs' List
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/AntiAdoptablesList.txt
@@ -74,7 +74,7 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 💊 Dandelion Sprout's Anti-Malware List
 !   - URL: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout's%20Anti-Malware%20List.txt
-!   - Version: 08November2025v1
+!   - Version: 12November2025v1
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * ClearURLs for uBo (unofficial)
 !   - URL: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/ClearURLs%20for%20uBo/clear_urls_uboified.txt
@@ -2423,6 +2423,7 @@ spektrum.de##+js(rc, pw-premium, article.pw-premium)
 spglobal.com##+js(cookie-remover, count)
 startribune.com##div.modal-backdrop
 startribune.com##body[class]:style(overflow: auto !important; position: static !important;)
+||stereogum.com/_next/static/chunks/pages/*/%5B*.js$script,~third-party
 study.com##+js(ra, class, div.faded-content)
 study.com##+js(ra, class, div.hidden[ng-non-bindable])
 study.com##div.article-cutoff-div
@@ -2641,6 +2642,8 @@ brainly.com,brainly.com.br##+js(set-local-storage-item, /^/, $remove$)
 brusselstimes.com##+js(ra, style, div[style*="height: 0;"], stay)
 businessden.com,richmondbizsense.com##+js(ra, class, div.cp-paywall-user)
 businessden.com,richmondbizsense.com##div#copperpress-paywall
+businesstoday.in##+js(cookie-remover, magazineSession)
+businesstoday.in##div#magazinePayWallStrip
 ||nitrocdn.com/*/paywall.$script,domain=capitalaberto.com.br
 cardiologie-pratique.com##+js(ra, class, div.wrap-node, stay)
 cmcmarkets.com##+js(rc, activePaywall, .activePaywall)
@@ -15788,6 +15791,9 @@ http://secured21.*.com/|$all
 ||158.94.209.89^$all
 ||158.94.209.90^$all
 ||223.29.226.200^$all
+/linkresolver.html?url=*p0$doc
+||creations.tools^$doc,domain=~believed_to_be_fraudsters.*
+||idtsoftware.com^$doc,domain=~believed_to_be_fraudsters.*
 ||downloadprovider.me^$all,~inline-font
 ##a[href*=".downloadprovider.me/"]
 toorgle.net##.join
