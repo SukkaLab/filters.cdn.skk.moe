@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Wed, 12 Nov 2025 10:14:41 GMT
+! Last modified: Wed, 12 Nov 2025 22:23:20 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,29 +8,29 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Wed, 12 Nov 2025 07:34:37 +0000
+!   - Last modified: Wed, 12 Nov 2025 17:15:31 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
-!   - Last modified: Mon, 10 Nov 2025 16:05:32 +0000
+!   - Last modified: Wed, 12 Nov 2025 16:31:18 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Tue, 11 Nov 2025 16:46:34 +0000
+!   - Last modified: Wed, 12 Nov 2025 16:53:04 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
 !   - Last modified: Tue, 11 Nov 2025 01:45:01 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Wed, 12 Nov 2025 07:11:15 +0000
+!   - Last modified: Wed, 12 Nov 2025 17:47:48 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
 !   - Last modified: Sat, 08 Nov 2025 04:03:16 +0000
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Sun, 09 Nov 2025 17:10:57 +0000
+!   - Last modified: Wed, 12 Nov 2025 10:33:27 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
-!   - Last modified: Fri, 07 Nov 2025 08:31:53 +0000
+!   - Last modified: Wed, 12 Nov 2025 10:53:25 +0000
 ! --------------------------------------------------------------
 *_ad_$media,domain=youtube.com,3p
 tv.youtube.com##+js(trusted-replace-xhr-response, '"adPlacements"', '"no_ads"', /playlist\?list=|\/player(?:\?.+)?$|watch\?[tv]=/)
@@ -9251,6 +9251,7 @@ hraparak.am##.big_advert
 ||advertere.zamunda.net^
 @@||seirsanduk.*?loader.js^$script,domain=seirsanduk.*
 @@||ads.poshtata.online/*.js|$script,domain=seirsanduk.*|seir-sanduk.com|seirsanduk.com|seirsanduk.net|seirsanduk.online
+@@||ads.poshtata.online/*.js?$script,domain=seirsanduk.*|seir-sanduk.com|seirsanduk.com|seirsanduk.net|seirsanduk.online
 @@||seirsanduk.*?loader.js^$script,domain=seirsanduk.com|seirsanduk.online
 seirsanduk.net##p:has-text(???????)
 @@||cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/js/adview_pic_cpc_cpm_cpa_guanggao_gg_guge__ads_300x250.js
@@ -13941,8 +13942,9 @@ sourceforge.net###mirror
 sourceforge.net###nels
 ||a.slashdotmedia.com^
 nova.cz##div.vjs-marker-ad
-||ads-twitter.com^$frame,redirect-rule=noopframe,domain=media.cms.nova.cz
+||ads-twitter.com^$frame,redirect=noopframe
 media.cms.nova.cz##+js(nano-stb, () => n(t), *)
+mediatn.cms.nova.cz##+js(nano-stb, () => t(), *)
 wplink.*##+js(set, blurred, false)
 samfirms.com##+js(set, startfrom, 0)
 lbprate.com##^script:has-text(Math.imul)
@@ -14614,7 +14616,7 @@ apkmaven.*###countdown
 apkmaven.*###download_link:style(display: block !important;)
 photopea.com##div[style]:has(> a[href*="photopea.com"][href*="ads"])
 ||photopea.com^$doc,replace=/<head>/<script>if (localStorage.length === 0 || typeof JSON.parse(localStorage._ppp)['0_uid'] === 'undefined') {Object.defineProperty(window\, 'innerWidth'\, {get() { return document.documentElement.offsetWidth + 320 }\,});}<\/script><head>/
-photopea.com##+js(trusted-create-html, head, <img src='/ad-choices.png' onerror='if (localStorage.length !== 0 || typeof JSON.parse(localStorage._ppp)["0_uid"] !== "undefined") {Object.defineProperty(window\, "innerWidth"\, {get() { return document.documentElement.offsetWidth + 320 }});}'></img>)
+photopea.com##+js(trusted-create-html, head, <img src='/ad-choices.png' onerror='if (localStorage.length !== 0 || typeof JSON.parse(localStorage._ppp)["0_uid"] !== "undefined") {Object.defineProperty(window\, "innerWidth"\, {get() { return document.documentElement.offsetWidth + 315 }});}'></img>)
 photopea.com##+js(set, __osw, undefined)
 photopea.com##+js(no-fetch-if, uniconsent.com)
 ||pagead2.googlesyndication.com^$3p,xhr,method=head,redirect-rule=noop.js,domain=photopea.com
@@ -26402,6 +26404,7 @@ sport.elwatannews.com##+js(aost, Array.prototype.indexOf, isWin)
 ||antitrojanwalls.live^$all
 ||prizecloud.sa.com^$all
 ||myshielstore.xyz^$all
+||7743832.cfd^$all
 ||google-analytics.com/analytics.js$script,redirect=google-analytics_analytics.js:5
 ||google-analytics.com/cx/api.js$script,redirect=google-analytics.com/cx/api.js:5
 ||googletagmanager.com/gtag/js$script,xhr,redirect=googletagmanager_gtm.js:5
@@ -27580,6 +27583,10 @@ dmax.de##.block-user:remove-class(block-user)
 ||amazon.com/follow/log-metrics
 ||amazon.*/stores/page/*?pageViewLogging
 ||ad2.trafficgate.net/t/r/*/-/https:$urlskip=/(https.*?)//
+||adjust.com^$doc,badfilter
+||prf.hn^$doc,badfilter
+||adjust.com^$doc,reason=tracker
+||prf.hn^$doc,reason=tracker
 /edgemesh.*.js$script,domain=~edgemesh.com|~edgeno.de
 ||safelinkconverter.com^$script,3p
 /adsensebase.js$script
@@ -30187,7 +30194,7 @@ japscan.*##+js(set, aclib.runInPagePush, noopFunc)
 japscan.*##+js(set, aclib.runBanner, {}, as, function)
 japscan.*##+js(set, aclib.runInterstitial, throwFunc)
 japscan.*##+js(trusted-suppress-native-method, Document.prototype.getElementById, '"/^[A-Z][-0-9A-Z_a-z]{3,}$/"')
-japscan.*##+js(trusted-suppress-native-method, Document.prototype.querySelector, '"/^#[A-Z][A-Za-z]+$/"')
+japscan.*##+js(trusted-suppress-native-method, Document.prototype.querySelector, '"/^#[A-Z][-A-Z_a-z]+$/"')
 poophq.com,veev.to,doods.to##+js(nowoif)
 poophq.com,veev.to,doods.to##+js(no-xhr-if, /vast.php?)
 poophq.com,veev.to,doods.to##+js(no-xhr-if, /click\.com|preroll|native_render\.js|acscdn/, length:10001)
@@ -30284,6 +30291,8 @@ pvpoke-re.com##+js(trusted-set-attr, ins.adsbygoogle:has(> #aswift_0_host), data
 pvpoke-re.com##+js(ra, data-instype, ins.adsbygoogle:has(> div#aswift_0_host), stay)
 pvpoke-re.com##+js(trusted-set-attr, *:not(.main-wrap:has(~ [id^="nitro-sidebar"] .nitro-side) #nitro-top\,.main-wrap:has(~ [id^="nitro-sidebar"] .nitro-side) #nitro-body-desktop\,[id^="nitro-sidebar"]:has(.nitro-side) ~ #nitro-header-mobile) > ins.adsbygoogle:not(:has(#aswift_0_host)), data-ad-status, filled)
 pvpoke-re.com##+js(no-fetch-if, url:https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-3497863494706299 method:HEAD mode:no-cors, , , throttle, 121)
+pvpoke-re.com##+js(trusted-replace-node-text, #text, /広告ブロックはエラーを|Werbeblocker können|Los bloqueadores de anuncios|Les bloqueurs de publicité|I blocchi pubblicitari|Os bloqueadores de/, "　　　　　　　　　　　")
+pvpoke-re.com##+js(trusted-replace-node-text, #text, /引き起こす場合があります|Fehler verursachen|pueden causar errores|peuvent provoquer des erreurs|possono causare errori|anúncios podem causar erros/, "　　　　　　　　　　　　")
 ||pvpoke-re.com/*.js?v=$replace=/([};])location(?:\[.+?\]|[.Oa-z]+){2}\(.+?\)===-(?:\(.+?\)|_?0x[0-9a-f]+|1)&&.*?location(?:\[.+?\]|[.Oa-z]+){2}\(.+?\)+(?:[\,>]|===)-(?:\(.+?\)+|_?0x[0-9a-f]+|1)\?/\$1 0 ?/
 ||pvpoke-re.com/*.js?v=$replace=/if\(location(?:\[.+?\]|[.Oa-z]+){2}\(.+?\).*?&&.*?location(?:\[.+?\]|[.Oa-z]+){2}\(.+?\)+(?:[\,>]|===)-(?:\(.+?\)+|_?0x[0-9a-f]+\)|1)/if(0)/
 ||pvpoke-re.com/*.js?v=$replace=/([};])_0x[0-9a-f]+\[(?:_0x[0-9a-f]+\([-0-9a-fx\,]+?\)|'[A-Za-z]+'|[.Oa-z]+)\]\(location(?:\[(?:_0x[0-9a-f]+\(.+?\)|'[A-Za-z]+'|[.Oa-z]+)\]){2}\(.+?\)\,-\(.+?\)\)&&.*?location(?:\[.+?\]|[.Oa-z]+){2}\(.+?\)+(?:[\,>]|===)-(?:\(.+?\)|1)\?/\$1 0 ?/
@@ -30318,8 +30327,8 @@ client.falixnodes.net##+js(rpnt, script, /googletag\.pubads\(\).*rewardedSlot\)\
 client.falixnodes.net##+js(rpnt, script, .onerror, .ffffff)
 client.falixnodes.net##+js(rpnt, script, /window\.location\.href \= ('|")\/(please-disable|neptune|disableadblock|yeahblock|yupblock|verypleasedisable)('|")\;/)
 client.falixnodes.net##+js(aeld, error, function, elements, [src])
-client.falixnodes.net##+js(nosiif, /didmyscriptloadyet|location|veryveryplease|verypleasedisable|click\(\)/)
-client.falixnodes.net##+js(nostif, /didmyscriptloadyet|location|veryveryplease|verypleasedisable|click\(\)/)
+client.falixnodes.net##+js(nosiif, /lovelylovely|location|veryveryplease|verypleasedisable|click\(\)|MouseEvent|dispatchEvent/)
+client.falixnodes.net##+js(nostif, /lovelylovely|location|veryveryplease|verypleasedisable|click\(\)|MouseEvent|dispatchEvent/)
 *$script,redirect-rule=none:5,domain=client.falixnodes.net
 cimanow.cc,freex2line.online##+js(norafif, ++)
 ||rm.freex2line.online/*.js|$domain=cimanow.cc
@@ -30338,7 +30347,7 @@ omuzaani.me##+js(no-fetch-if, summerday, length:10, {"type":"cors"})
 th.gl##+js(norafif, /\(\)=>[a-z]\(\)/)
 th.gl##+js(nosiif, /1===|\?void|&&/)
 th.gl##+js(nostif, /\+\+|setTimeout|\.close\(\)|Loading|&&delete/)
-th.gl##.hidden.md\:block.md\:rounded-md.rounded-none.shadow.text-card-foreground.bg-card.overflow-hidden.border.pointer-events-auto.relative
+th.gl##.overflow-hidden.border-\[1px\].pointer-events-auto:has-text(/Get AD Free/i)
 tvtropes.org##+js(nostif, /offsetHeight|loaded/)
 tvtropes.org##+js(set, HTMLScriptElement.prototype.onerror, undefined)
 ||rottentomatoes.com/assets/pizza-pie/javascripts/bundles/roma/rt-common.js$badfilter
@@ -31386,6 +31395,10 @@ wells.pt##+js(trusted-click-element, button.CybotCookiebotDialogBodyButton, , 10
 dskdirect.bg##+js(trusted-click-element, a#CybotCookiebotDialogBodyButtonAcceptAll, , 1000)
 cmpv2.dba.dk##+js(trusted-click-element, button[title="Kun nødvendige"], , 2500)
 spcmp.crosswordsolver.com,gbnews.com>>##+js(trusted-click-element, button[title="Accept"], , 1000)
+cdn.privacy-mgmt.com##+js(trusted-click-element, button[title="Accept"], , 1000)
+hfm.com##+js(trusted-set-cookie, orejime, '{"functional":true,"analytical":false,"marketing":false,"targeting":false,"analytical_and_marketing_and_targeting":false}')
+homary.com##+js(trusted-click-element, button.btn.customize, , 800)
+homary.com##+js(trusted-click-element, button.confirm-button, , 1200)
 ecco.com##+js(trusted-click-element, button[onclick="CookieInformation.declineAllCategories()"], , 1000)
 typeform.com##+js(trusted-set-cookie, tf_respondent_cc, '{"groups":[],"timestamp":"1"}')
 thomann.*##+js(trusted-click-element, button.js-decline-all-cookies, , 1500)
@@ -32477,6 +32490,11 @@ granfondo-cycling.com##+js(no-xhr-if, googlesyndication, length:10)
 vodafone.de###adbl
 flagle.io##+js(nostif, googlesyndication)
 roleplayer.me##+js(rmnt, script, __ADB_COOLDOWN__)
+duneawakening.th.gl,paxdei.th.gl##script[src^="https://s.nitropay.com/"] + div.fixed.inset-0[data-state="open"]:has(+ div.fixed[role="alertdialog"] > ul > li > a[href="https://www.th.gl/discord"])
+duneawakening.th.gl,paxdei.th.gl##script[src^="https://s.nitropay.com/"] + div.fixed.inset-0[data-state="open"] + div.fixed[role="alertdialog"]:has(> ul > li > a[href="https://www.th.gl/discord"])
+duneawakening.th.gl,paxdei.th.gl##+js(trusted-click-element, script[src^="https://s.nitropay.com/"] + div.fixed.inset-0[data-state="open"] + div.fixed[role="alertdialog"] button, , 3000)
+duneawakening.th.gl,paxdei.th.gl##+js(nano-stb, e-1, 1000, 0.001)
+duneawakening.th.gl,paxdei.th.gl##+js(nano-stb, e+1, 1001, 0.001)
 ||holyclock.com^$3p
 ||shomershabes.com^$3p
 ||shomershabes.co.il^$3p

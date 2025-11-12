@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Wed, 12 Nov 2025 10:14:41 GMT
+! Last modified: Wed, 12 Nov 2025 22:23:20 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.94.64
+!   - Version: 2.0.94.71
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/refs/heads/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -217,8 +217,8 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||data.pendo.io^
 ||api.statsigcdn.com^
-||logz.io^$third-party
 ||beacon.coofis.com^
 ||aditude.prebid-server.com^
 ||cache.prebid-server.com^
@@ -3850,7 +3850,6 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ||trackedweb.net^$third-party
 ||tracking202.com^$third-party
 ||trackinglabs.com^$third-party
-||trackjs.com^$third-party
 ||trackkas.com^$third-party
 ||trackmyweb.net^$third-party
 ||trackset.it^$third-party
@@ -75552,6 +75551,10 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||usage.trackjs.com^
+||coll.lovense.com^
+||bilog.lovense-api.com^
+||log.lovense-api.com^
 ||tms.hft.everyplate.com^
 ||tdum.alibaba.com^
 ||webpushstat-sgp.engagelab.com^
@@ -75636,7 +75639,6 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ||ek-tracker.ekitan.com^
 ||logstash-*.radio-canada.ca^
 ||leo.hepsiburada.com^
-||usage.trackjs.com^
 ||rainbow-prod-jdlog.ldoverseas.com^
 ||posthog.lingvanex.com^
 ||analytics.vgtimes.com^
@@ -117945,6 +117947,13 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xmlhttprequest,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$third-party,object,redirect=noop.js,script
+||img.enuri.info/images/partner/dsac.min.js
+||enuri.com/*/js/logTailFunc.js
+||enuri.com/view/Loginsert_
+||cdn.lovense.com/front/web-analytics-sdk/bundle.js
+||service.account.adobe.com/log|
+||sstats.adobe.com/ee/irl1/v1/interact?requestId=
+||sstats.adobe.com/ee/v2/interact?datastreamId=
 ||everyplate.com/gw/otlp/traces
 ||static.danawa.com/globaljs/static/Insight_WebAnalytics_
 /js/script.js$domain=codefa.st|datafa.st|fitymi.app|logofa.st|shipfa.st
@@ -122954,6 +122963,7 @@ mail.ferret-one.com%2Fbeacon$image
 %2FCI0%2F0$image
 /ss/o/*/ho.gif$image
 %2Fss%2Fo%2F*%2Fho.gif$image
+emailtracking.cashstar.com$image
 mailgun-tracking.ridi.com$image
 client-data.knak.io$image
 b.k3r.jp/?a=$image
@@ -123430,6 +123440,13 @@ dlsdk.appsflyer.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||xz.fbcdn.net^
+||xy.fbcdn.net^
+||data.eu.pendo.io^
+||client-log.box.com^
+||pendo-data-prod.box.com^
+||blink.fra-01.braze.eu^
+||api.monedata.io^
 ||tnc16-normal-us-ttp.capcutapi.us^
 ||mcs16-normal-us-ttp.capcutapi.us^
 ||appcpi.net^
@@ -124383,6 +124400,7 @@ d4?appid*type*
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
 @@||googletagmanager.com/gtm.js$domain=expressvpn.com
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics_analytics.js,domain=expressvpn.com
+||ct.pinterest.com^$subdocument,redirect=noop.html
 @@||tools.finra.org/monitoring/adrum_init.js$domain=tools.finra.org
 @@||caesarsgames.com/bundle/google-analytics.util.$domain=caesarsgames.com
 @@||googletagmanager.com/gtm.js$domain=cashier.dmm.co.jp|cashier.dmm.com
@@ -125415,7 +125433,6 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 @@||trc.taboola.com/ilmeteo-*/trc/$domain=ilmeteo.it
 @@||gapt.hit.gemius.pl/gplayer.js$domain=radiocomercial.iol.pt
 @@||googletagmanager.com/gtm.js$domain=kruidvat.nl
-||cdn.trackjs.com/agent/v*/latest/t.js$script,redirect=noop.js,domain=adshnk.com|adshrink.it
 @@||dpm.zebestof.com/*/tag.js$domain=commentcamarche.net
 ||dpm.zebestof.com/*/tag.js$script,redirect=noop.js,important,domain=commentcamarche.net
 ||googletagmanager.com/gtm.js$script,redirect=google-analytics_analytics.js,important,domain=flyingv.cc
@@ -125611,7 +125628,6 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 @@||googletagmanager.com/gtm.js$domain=scotsman.com
 @@||tag.aticdn.net/*/smarttag.js$domain=rte.ie
 @@||cdn.blueconic.net/salemmediagroup.js$domain=biblestudytools.com
-@@||cdn.trackjs.com/releases/current/tracker.js$domain=express.com
 @@||googletagmanager.com/gtm.js$domain=beterbed.nl
 @@||dw.cbsi.com/anonc.js$domain=cbs.com
 @@||googletagmanager.com/gtag/js$domain=nbc.com
@@ -126438,7 +126454,6 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 @@||track2.royalmail.com^
 @@||tracker.mattel.com/tracker.aspx?site=$script
 @@||tracker.mattel.com^$domain=barbie.com
-@@||trackjs.com^$~third-party
 @@||trc.taboolasyndication.com^$domain=bloomberg.com|breitbart.com|nme.com|slatev.com
 @@||turner.com/cnn/*/video/chartbeat.js$domain=cnn.com
 @@||ultimedia.com/js/common/jquery.gatracker.js
@@ -127252,6 +127267,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||flutteringfireman.com^
 ||foambench.com^
 ||followborder.com^
+||foodczar.com^
 ||foodfunfestivals.com^
 ||forecasttiger.com^
 ||foretellfifth.com^
@@ -127264,6 +127280,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||framebanana.com^
 ||franksfloral.com^
 ||franticroof.com^
+||fraysystems.com^
 ||freedomgrail.com^
 ||freezeassets.com^
 ||freezingbuilding.com^
@@ -128040,6 +128057,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||scribblestring.com^
 ||scrollservice.com^
 ||scrubswim.com^
+||sealtravels.com^
 ||seatsmoke.com^
 ||secondhandfall.com^
 ||secretivesheep.com^
