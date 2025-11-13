@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Wed, 12 Nov 2025 22:23:20 GMT
+! Last modified: Thu, 13 Nov 2025 10:14:41 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.94.71
+!   - Version: 2.0.94.76
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/refs/heads/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -75551,6 +75551,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||analytics.thekrazycouponlady.com^
 ||usage.trackjs.com^
 ||coll.lovense.com^
 ||bilog.lovense-api.com^
@@ -117947,6 +117948,16 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xmlhttprequest,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$third-party,object,redirect=noop.js,script
+||frysfood.com/assets/*/collect?
+||fredmeyer.com/static/*/collect?
+||ralphs.com/resources/*/collect?
+||smithsfoodanddrug.com/public/*/collect?
+/clickstream/*$domain=fredmeyer.com|frysfood.com|smithsfoodanddrug.com|ralphs.com
+/cdn/qualtrics.js$domain=fredmeyer.com|frysfood.com|smithsfoodanddrug.com|ralphs.com
+ralphs.com,smithsfoodanddrug.com,frysfood.com,fredmeyer.com##+js(set-local-storage-item, analytics-device, $remove$)
+||embeds.beehiiv.com/attribution.js
+thekrazycouponlady.com##+js(set-local-storage-item, /^ab\.storage\./, $remove$)
+thekrazycouponlady.com##+js(set-local-storage-item, __anon_id, $remove$)
 ||img.enuri.info/images/partner/dsac.min.js
 ||enuri.com/*/js/logTailFunc.js
 ||enuri.com/view/Loginsert_
@@ -126938,6 +126949,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||cleanhaircut.com^
 ||climbingright.com^
 ||cloisteredcurve.com^
+||cloudchickens.com^
 ||cloudguppy.com^
 ||cloudhustles.com^
 ||cloudjumbo.com^
