@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Thu, 13 Nov 2025 10:14:41 GMT
+! Last modified: Thu, 13 Nov 2025 22:23:15 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.94.76
+!   - Version: 2.0.94.85
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/refs/heads/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -217,6 +217,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||nlog.instajob.ai^
 ||data.pendo.io^
 ||api.statsigcdn.com^
 ||beacon.coofis.com^
@@ -75551,6 +75552,8 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||sp.aviasales.ru^
+||darnuid.netflix.com^
 ||analytics.thekrazycouponlady.com^
 ||usage.trackjs.com^
 ||coll.lovense.com^
@@ -117948,6 +117951,8 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xmlhttprequest,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$third-party,object,redirect=noop.js,script
+||search-api.fie.futurecdn.net/js/*/master-*/analytics-library-entry-getCustomTrackingId.js
+||grok.com/_data/v1/events
 ||frysfood.com/assets/*/collect?
 ||fredmeyer.com/static/*/collect?
 ||ralphs.com/resources/*/collect?
@@ -118717,7 +118722,6 @@ colliers.com##+js(set-local-storage-item, visitorId, $remove$)
 ||cbsivideo.com/cb-measurements/
 ||scv.band.us/jackpotlog/*/logs|$xmlhttprequest
 ||epicgames.com/id/api/analytics
-||app.launchdarkly.com/sdk/evalx/*/contexts/$domain=epicgames.com
 ||doppler.hulu.com/doppler/*/ingest?source=client-reporting-HTML
 ||terabox.app/sse/events?
 ||widget2.vreview.tv/js/amplitude.js
@@ -118747,7 +118751,6 @@ threads.net##+js(href-sanitizer, a[href*="?xmt="], [href], removeParam:xmt)
 ://cnstrc.com/js/
 ||freyr.futurecdn.net/freyr.js
 ||meta.com/*/fl?*comet_req=*&__user=
-||clientstream.launchdarkly.com/eval/
 ||app.cybba.solutions/event/*/pageview?
 ||script.gmarket.co.kr/js/mobile/main/common/montelena.js
 ||hmr.mrgcdn.ru/assets/js/logger.min.js
@@ -120615,7 +120618,6 @@ weekly-economist.mainichi.jp##iframe[id^="cxWidget_"]
 ||s-cdn.phonearena.com/js/ops/taina.js
 ||static.narrativ.com/tags/narrativ-pub.
 ||widgets.entireweb.com/pixel-track/
-/access.html$domain=2jigiri.net
 ||apis.naver.com/livecloud/livecloud/quantum/p2p/*/client/stat
 ||redditmedia.com/gtm?id=
 ||search-api.joongna.com/v*/ga/log|
@@ -121163,7 +121165,7 @@ sports.goo.ne.jp###taboola-below-sokuho-thumbnails
 ||bilanx.dtto.com/*/configs
 ||bilanx.dtto.com/*/events
 ||mt-wzb.clarin.com/weizenbock/pixel.fingerprint.gif
-itmedia.co.jp,mag.osdn.jp##div[id^="logly-lift-"]
+itmedia.co.jp##div[id^="logly-lift-"]
 ||mangapedia.com/js/abb.
 ||sf-syn.com/conversion_outbound_tracker$subdocument,domain=sourceforge.net
 ||tv3play.skaties.lv/static/scripts/trackdb/events.gif$image,redirect=1x1.gif
@@ -122321,6 +122323,7 @@ westnews.com.ua##a[href="http://www.bigmir.net/"]
 ||fiylo.de/typo3conf/ext/of_design/Resources/Public/JavaScript/Libs/smarttag_LIVE.js
 ||steampowered.com/default/usabilitytracking
 ||report.23video.com/api/analytics/
+||report.23video.com/report-batch
 ||mb.mtvnservices.com/data/collect/
 ||imgsmail.ru/gstat?
 ||slideplayer.biz.tr/slide/getviewscount/
@@ -123451,6 +123454,14 @@ dlsdk.appsflyer.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||fcm-collect-api.alyac.com^
+||service-api.flarelane.com^
+||mossturbo.com^
+||collect.wehearfm.com^
+||itracking.ikameglobal.com^
+||client-events-ingress.bookbub.com^
+||sdk.fra-*.braze.eu^
+||sdk.out.usbla.net^
 ||xz.fbcdn.net^
 ||xy.fbcdn.net^
 ||data.eu.pendo.io^
@@ -127121,6 +127132,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||dogcollarfavourbluff.com^
 ||doggieshome.com^
 ||dollardelta.com^
+||dollarthrill.com^
 ||doubledefend.com^
 ||doubtdrawer.com^
 ||dq95d35.com^
