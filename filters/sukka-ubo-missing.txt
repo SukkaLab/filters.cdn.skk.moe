@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Fri, 14 Nov 2025 10:15:02 GMT
+! Last modified: Fri, 14 Nov 2025 22:23:19 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.94.87
+!   - Version: 2.0.94.93
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/refs/heads/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -1988,7 +1988,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ||irxcm.com^$third-party
 ||unid.go.com^$third-party
 ||dataxpand.com^$third-party
-||connectif.cloud^$third-party
+||cdn.connectif.cloud^$third-party
 ||bandborder.com^$third-party
 ||lumitos.com^$third-party
 ||seedtag.com^$third-party
@@ -117951,6 +117951,9 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xmlhttprequest,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$third-party,object,redirect=noop.js,script
+||connectif.cloud/integration-type/
+||img1.wsimg.com/traffic-assets/js/tccl.min.js
+||neuron.cbssports.cloud/client.js?platform=tracking-manager
 ||famil.ru/bitrix/templates/aspro_max/js/yandex_metrika_
 ||search-api.fie.futurecdn.net/js/*/master-*/analytics-library-entry-getCustomTrackingId.js
 ||grok.com/_data/v1/events
@@ -123455,6 +123458,7 @@ dlsdk.appsflyer.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||federatedcompute-pa.googleapis.com^
 ||fcm-collect-api.alyac.com^
 ||service-api.flarelane.com^
 ||mossturbo.com^
@@ -123541,12 +123545,6 @@ dlsdk.appsflyer.com^
 ||qcloud-sg-datareceiver.kurogame.xyz^
 ||statistic-overseas.yunxinfw.com^
 ||perfsight.wetest.net^
-||gamedot.afafb.com^
-||tadata.afafb.com^
-||ecpm.afafb.com^
-||mediation-receiver.afafb.com^
-||df.afafb.com^
-||middle-defend.afafb.com^
 ||pangolin-sdk-toutiao.com^
 ||stat.tpns.sgp.tencent.com^
 ||guid.tpns.sgp.tencent.com^
@@ -124423,6 +124421,7 @@ d4?appid*type*
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
 @@||googletagmanager.com/gtm.js$domain=expressvpn.com
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics_analytics.js,domain=expressvpn.com
+@@||siteintercept.qualtrics.com^$domain=idealo.*
 ||ct.pinterest.com^$subdocument,redirect=noop.html
 @@||tools.finra.org/monitoring/adrum_init.js$domain=tools.finra.org
 @@||caesarsgames.com/bundle/google-analytics.util.$domain=caesarsgames.com
