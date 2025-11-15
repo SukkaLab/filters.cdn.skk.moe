@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Fri, 14 Nov 2025 22:23:19 GMT
+! Last modified: Sat, 15 Nov 2025 10:11:58 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Fri, 14 Nov 2025 12:18:14 +0000
+!   - Last modified: Sat, 15 Nov 2025 03:29:58 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Fri, 14 Nov 2025 17:04:03 +0000
@@ -30,7 +30,7 @@
 !   - Last modified: Thu, 13 Nov 2025 23:41:54 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
-!   - Last modified: Fri, 14 Nov 2025 10:13:15 +0000
+!   - Last modified: Sat, 15 Nov 2025 03:29:58 +0000
 ! --------------------------------------------------------------
 *_ad_$media,domain=youtube.com,3p
 tv.youtube.com##+js(trusted-replace-xhr-response, '"adPlacements"', '"no_ads"', /playlist\?list=|\/player(?:\?.+)?$|watch\?[tv]=/)
@@ -5562,15 +5562,6 @@ upzone.cc##+js(acs, document.getElementById, undefined)
 ##.rkads
 ###bt-ads
 @@||lutontoday.co.uk^$ghide
-@@||cdntvn.pl^$script,domain=player.pl
-@@||player.pl^$cname
-@@||player.pl^$ehide
-/ad.xml$xhr,badfilter
-player.pl#@#+js(json-prune, movie.advertising.ad_server)
-$xhr,redirect-rule=noopjs,domain=player.pl
-player.pl##div.adsbygoogle.prebid.adocean.ado.ad.ads.advert.banner.reklama.linkSponsorowany.adsense.advertisments.reklama-top.adv_container:style(display: block !important)
-*$media,domain=player.pl,redirect=noopmp3-0.1s
-@@||tvn.hit.gemius.pl^$xhr,domain=player.pl
 @@||jbzd.com.pl^$ghide
 ||rawgit.com/fahimraza/FK/master/ad-unblocker.js^$script
 ||cdn.jsdelivr.net/gh/Akshat-h/propeller/btagantiadb.js^$script
@@ -20964,6 +20955,17 @@ wcoforever.net###sidebar_r1
 @@||embed.watchanimesub.net^$script,1p
 @@||embed.wcostream.com^$ghide
 embed.wcostream.com##+js(remove-cookie, PHPSESSID)
+@@||cdntvn.pl^$script,domain=player.pl
+@@||player.pl^$cname
+@@||player.pl^$ehide
+/ad.xml$xhr,badfilter
+player.pl#@#+js(json-prune, movie.advertising.ad_server)
+$xhr,redirect-rule=noopjs,domain=player.pl
+player.pl##div.adsbygoogle.prebid.adocean.ado.ad.ads.advert.banner.reklama.linkSponsorowany.adsense.advertisments.reklama-top.adv_container:style(display: block !important)
+*$media,domain=player.pl,redirect=noopmp3-0.1s
+@@||tvn.hit.gemius.pl^$xhr,domain=player.pl
+player.pl##+js(json-prune-xhr-response, movie.advertising, , propsToMatch, /playlist?)
+player.pl##+js(trusted-json-edit-xhr-response, .mandatoryAdvertising=false, /player/configuration)
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=vtvgo.vn
 m.shuhaige.net##+js(rmnt, script, return a.split)
 m.shuhaige.net##^script:has-text(return a.split)
@@ -32503,8 +32505,8 @@ granfondo-cycling.com##+js(no-xhr-if, googlesyndication, length:10)
 vodafone.de###adbl
 flagle.io##+js(nostif, googlesyndication)
 roleplayer.me##+js(rmnt, script, __ADB_COOLDOWN__)
-duneawakening.th.gl,paxdei.th.gl##+js(trusted-click-element, script[src^="https://s.nitropay.com/"] + div.fixed.inset-0[data-state="open"] + div.fixed[role="alertdialog"] button, , 3500)
 duneawakening.th.gl,paxdei.th.gl##+js(nano-stb, t-1, 1000, 0.001)
+duneawakening.th.gl,paxdei.th.gl##+js(trusted-click-element, '3000,script[src^="https://s.nitropay.com/"] + div.fixed.inset-0[data-state="open"] + div.fixed[role="alertdialog"] button,500,script[src^="https://s.nitropay.com/"] + div.fixed.inset-0[data-state="open"] + div.fixed[role="alertdialog"] button,500,script[src^="https://s.nitropay.com/"] + div.fixed.inset-0[data-state="open"] + div.fixed[role="alertdialog"] button,500,script[src^="https://s.nitropay.com/"] + div.fixed.inset-0[data-state="open"] + div.fixed[role="alertdialog"] button')
 ||holyclock.com^$3p
 ||shomershabes.com^$3p
 ||shomershabes.co.il^$3p
