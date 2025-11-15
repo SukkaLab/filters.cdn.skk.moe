@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Sat, 15 Nov 2025 10:11:58 GMT
+! Last modified: Sat, 15 Nov 2025 22:18:58 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.94.94
+!   - Version: 2.0.94.97
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/refs/heads/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -123232,8 +123232,10 @@ news.samsung.com%2Fus%2F%3Fnoti%3D$image
 .awstrack.me$image
 esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 esputnik.com/repository/applications/commons/hidden.png
-ctrk.klclick2.com/o/$image
-ctrk.klclick2.com%2Fo%2F$image
+trk.*.com/o/$image
+trk.*.com%2Fo%2F$image
+ctrk.klclick*.com/o/$image
+ctrk.klclick*.com%2Fo%2F$image
 ct.klclick.com$image
 socauth.privatbank.ua*pixel.php$image
 mailing.pbank.com.ua$image
@@ -123458,6 +123460,8 @@ dlsdk.appsflyer.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||lw-c-log.lastwarapp.com^
+||bi-tracker-global.rivergame.net^
 ||federatedcompute-pa.googleapis.com^
 ||fcm-collect-api.alyac.com^
 ||service-api.flarelane.com^
@@ -126866,6 +126870,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||brotherslocket.com^
 ||brownboxgroup.com^
 ||bruisebaseball.com^
+||bubblyaction.com^
 ||bugpizza.com^
 ||buildingknife.com^
 ||bulbbait.com^
@@ -127520,6 +127525,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||jamexport.com^
 ||jazzstadium.com^
 ||jazzwholesale.com^
+||jellyfinstream.com^
 ||jetskiscovers.com^
 ||jewelryforest.com^
 ||jewelrysprings.com^
