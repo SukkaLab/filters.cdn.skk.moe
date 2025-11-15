@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Filters
-! Last modified: Sun, 09 Nov 2025 17:34:04 GMT
+! Last modified: Sat, 15 Nov 2025 18:33:03 GMT
 ! Expires: 1 hours
 ! Description: The filters from Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -91,8 +91,9 @@ lingchenzi.com#@#.category-share
 /ajax/libs/nosleep/*
 ||unpkg.com/orejime
 ||jsdelivr.net/npm/orejime
-/*/sign_d?*$all
-/*/resolve?*$all
+/*/sign_d?*$all,important
+/*/resolve?*$all,important
+/*/dns_resolve_backup?*$all,important
 ://223.5.5.5$important
 ://223.6.6.6$important
 ://180.76.76.*$important
@@ -135,9 +136,16 @@ www.bilibili.com##.pop-live-small-mode
 www.bilibili.com##.video-page-game-card-small
 www.bilibili.com##.carousel-box
 www.bilibili.com##.r-con
+||boss.hdslb.com
 /bili-user-fingerprint$script
 /track-collect.js
 &os=mcdn
+http://*$app=com.bilibili.app.in
+*://*:80$app=com.bilibili.app.in
+*:3478$app=com.bilibili.app.in
+http://*$app=tv.danmaku.bili
+*://*:80$app=tv.danmaku.bili
+*:3478$app=tv.danmaku.bili
 /igd.xml$important
 ||biligame.com
 iknowwhatyoudownload.com##[href="/en/peer"]
@@ -159,6 +167,7 @@ aliyun.com##+js(set, aplus.getPageSPM, noopFunc)
 aliyun.com##+js(set, aplus.getElementSPM, noopFunc)
 aliyun.com##+js(set, g_SPM, {})
 aliyun.com##+js(set, g_SPM.getParam, falseFunc)
+||item.taobao.com^$app=com.taobao.idlefish
 5w.fit##+js(nostif,redirect)
 5w.fit##+js(nosiif,redirect)
 reddit.com##shreddit-comment-tree:style(visibility: visible!important)
