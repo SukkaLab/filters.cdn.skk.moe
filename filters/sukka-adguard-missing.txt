@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Tue, 18 Nov 2025 10:57:23 GMT
+! Last modified: Tue, 18 Nov 2025 22:24:34 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Tue, 18 Nov 2025 10:16:57 +0000
+!   - Last modified: Tue, 18 Nov 2025 13:22:05 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Tue, 18 Nov 2025 04:29:36 +0000
@@ -9068,7 +9068,7 @@ a-ha.io,cboard.net,joongdo.co.kr,viva100.com##+js(noeval-if, /07c225f3\.online|c
 automobile-catalog.com,baseballchannel.jp,forum.mobilism.me,gbatemp.net,gentosha-go.com,hang.hu,hoyme.jp,motorbikecatalog.com,sharemods.com,wisevoter.com##+js(rmnt, script, error-report.com)
 divinedaolibrary.com,jaysbrickblog.com,oricon.co.jp,uranai.nosv.org,yakkun.com##+js(rmnt, script, html-load.com)
 oricon.co.jp##+js(rmnt, script, /\(async\(\)=>\{try\{(const|var)/)
-boardingarea.com,buzzfeed.com,buzzfeednews.com,computerbild.de,cults3d.com,dnevnik.hr,doviz.com,genialetricks.de,helpdeskgeek.com,leckerschmecker.me,moin.de,newatlas.com,nextchessmove.com,omnicalculator.com,oricon.co.jp,picrew.me,popdaily.com.tw,scribd.com,singjupost.com,sourceforge.net,thelayoff.com,welt.de,winfuture.de##+js(trusted-replace-argument, HTMLScriptElement.prototype.setAttribute, 1, , condition, error-report)
+boardingarea.com,buzzfeed.com,buzzfeednews.com,computerbild.de,cults3d.com,dnevnik.hr,doviz.com,genialetricks.de,helpdeskgeek.com,leckerschmecker.me,moin.de,newatlas.com,nextchessmove.com,omnicalculator.com,oricon.co.jp,picrew.me,popdaily.com.tw,scribd.com,singjupost.com,sourceforge.net,thefirearmblog.com,thelayoff.com,welt.de,winfuture.de##+js(trusted-replace-argument, HTMLScriptElement.prototype.setAttribute, 1, , condition, error-report)
 neowin.net,newatlas.com,razzball.com,tz.de##+js(nostif, [native code], 500)
 interfootball.co.kr,a-ha.io,cboard.net,jjang0u.com,joongdo.co.kr,viva100.com,maketecheasier.com,tweaksforgeeks.com,m.inven.co.kr,mlbpark.donga.com##^script:has-text(KCgpPT57bGV0IGU)
 badmouth1.com,boardingarea.com,computerbild.de,cruciverba.it,cults3d.com,dnevnik.hr,doviz.com,dziennik.pl,eurointegration.com.ua,flatpanelshd.com,footballtransfer.com.ua,footballtransfer.ru,freemcserver.net,gadgets360.com,gazetaprawna.pl,genialetricks.de,helpdeskgeek.com,hoyme.jp,issuya.com,iusm.co.kr,lamire.jp,leckerschmecker.me,logicieleducatif.fr,missyusa.com,moin.de,motscroises.fr,neowin.net,newatlas.com,onlinegdb.com,palabr.as,picrew.me,pravda.com.ua,pressian.com,razzball.com,reportera.co.kr,singjupost.com,sportanalytic.com,sportsrec.com,sportsseoul.com,text-compare.com,thelayoff.com,tweaksforgeeks.com,tz.de,w.grapps.me,welt.de,wfmz.com,winfuture.de,worldhistory.org##^script[onload*="error-report.com"]
@@ -19643,6 +19643,9 @@ lowcygier.pl##.tile-container-small:has(> a[href*="/?utm_term=index&utm_source=m
 lowcygier.pl##header.intro:style(margin-bottom: 0px !important;)
 538.nl,hartvannederland.nl,kijk.nl,shownieuws.nl,vandaaginside.nl##+js(set, Object.prototype.ADBLOCK_DETECTION, '')
 ||assets.prod.webx.talpa.digital/ad/banner.gif?$xhr
+@@||vandaaginside.nl^$ghide
+vandaaginside.nl##+js(no-fetch-if, /ad/)
+vandaaginside.nl##+js(no-xhr-if, /ad/)
 uhdmovies.*##+js(nowoif)
 tech.unblockedgames.world##+js(nano-sib, /count|verify|isCompleted/, , 0.001)
 ||uhdmovies.*/onewinpop.js
@@ -22230,6 +22233,9 @@ fit4art.com##+js(nostif, adblock)
 ||doubleclick.net^$script,redirect=noopjs,domain=synonimy.pl
 ||onlinestream.live/js/osb.js
 onlinestream.live##[src^="/banners/"]
+onepace.co##+js(nowoif)
+||aviatorreproducesauciness.com^
+onepace.co##.fake-player-overlay
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
 ||vlc.de^$doc
