@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Filters
-! Last modified: Tue, 18 Nov 2025 10:57:23 GMT
+! Last modified: Wed, 19 Nov 2025 17:20:15 GMT
 ! Expires: 1 hours
 ! Description: The filters from Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -151,6 +151,7 @@ http://*$app=tv.danmaku.bili
 iknowwhatyoudownload.com##[href="/en/peer"]
 stripe.com##+js(no-fetch-if, r.stripe.com/b method:POST)
 ||r.stripe.com/b^$redirect=noop.txt
+||ip.sb$domain=alicesw.com
 ||archive.org/includes/donate
 @@||perfops.io/500b-bench.jpg$domain=localhost|ip.skk.moe
 ||adfoc.us$csp=script-src 'none'
@@ -336,6 +337,7 @@ netflav.com/static/js/gtag.js$redirect=noop.js
 ||console.cast.ai/analytics
 ||api.vector.co/pixel
 ||www.google.com/adsense/domains/caf.js*$redirect=noop.js
+||www.googletagmanager.com$frame,redirect=noop.html
 ||urlstats.com/counter
 @@||humix.com/video.js$domain=humix.com
 ||18comic.vip/static/resources/*.gif
@@ -420,6 +422,18 @@ justauth.cn##+js(set, window._AdBlockInit, true)
 ||.sf-syn.com/badge_js$3p
 ||yastatic.net/share$3p
 ||sniperl.ink$3p
+||uhn.cx/api/v1/log
+/visittrack.js
+/prebid_$script
+||lf3-data.volccdn.com$redirect=noop.js
+/log-sdk/
+||res.wx.qq.com$3p
+||download.cnet.com/web-stats/
+||ad-delivery.net$image,redirect=1x1.gif
+||sp.pluto.tv$redirect=noop.txt
+||pluto.tv/v1/pixel$redirect=1x1.gif
+||esm.sh/@solana/$domain=v2ex.com,redirect=noop.js
+||wwads.cn$script,redirect=noop.js
 @@||e.customeriomail.com
 ||app.moegirl.org.cn/insight-assets/images/20230413-moepad/800x300.png
 ||storage.moegirl.org.cn/console-plus/uploads/2024/02/01/a475bee2aa57da0e65f5341b78ccf551.png
@@ -667,3 +681,4 @@ www.campbellramble.ai##[aria-label*="Subscribe modal"]
 ||zhale.me/article/sponsor/$image
 zhale.me##.sponsor-card
 ||tailwindcss.com/*book-promo$image
+||tube.hentaistream.com/wp-includes/images/hvilla/*.gif$image
