@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Wed, 19 Nov 2025 10:14:33 GMT
+! Last modified: Wed, 19 Nov 2025 22:23:09 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.95.15
+!   - Version: 2.0.95.19
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/refs/heads/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -27,6 +27,7 @@ traicy.com,hoyme.jp,collinsdictionary.com,pashplus.jp,freemcserver.net,oxfordlea
 traicy.com,hoyme.jp,collinsdictionary.com,pashplus.jp,freemcserver.net,oxfordlearnersdictionaries.com,nosv.org,niketalk.com,motor-talk.de,aucfree.com,muragon.com,373news.com,fxstreet.*,fxstreet-id.com,fxstreet.es,easyhindityping.com,relevantmagazine.com,dictionnaire.lerobert.com,footballtransfer.ru,thatgossip.com,donbalon.com,dropgame.jp,ufret.jp,gardeningsoul.com,si.com,niice-woker.com,blogmura.com,minkou.jp,lifehacker.jp,kinmaweb.jp,reptilesmagazine.com,buzzfeednews.com,lakeshowlife.com,thefreebieguy.com,autofrage.net,computerfrage.net,cocokara-next.com,cinetrafic.fr,malaymail.com,kyoteibiyori.com,chanto.jp.net,nana-press.com,kurashiru.com,samsungmagazine.eu,jablickar.cz,dailydot.com,watchdocumentaries.com,mariowiki.com,kompasiana.com,watchdocumentaries.com,j-cast.com,bg-mania.jp,j-town.net,ap7am.com,giornalone.it,convertcase.net,gloria.hr,slobodnadalmacija.hr,loawa.com,ygosu.com,sportalkorea.com,edaily.co.kr,economist.co.kr,etoday.co.kr,isplus.com,hometownstation.com,honkailab.com,genshinlab.com,thestockmarketwatch.com,thephoblographer.com,issuya.com,worldhistory.org,etnews.com,iusm.co.kr,dogdrip.net,etoland.co.kr,picrew.me,text-compare.com,fntimes.com,lamire.jp,bamgosu.site,etnewskorea.com,gadgets360.com,automobile-catalog.com,maketecheasier.com,thesaurus.net,wfmz.com,thestar.co.uk,yorkshirepost.co.uk,mydaily.co.kr,raenonx.cc,ndtvprofit.com,badmouth1.com,logicieleducatif.fr,taxguru.in,islamicfinder.org,aikatu.jp,secure-signup.net,globalrph.com,sportsrec.com,reportera.co.kr,carscoops.com,slobodnadalmacija.hr,flatpanelshd.com,videogamemods.com##+js(set-local-storage-item, /_fa_Y2FjaGVfYWRibG9ja19jaXJjdW12ZW50X3Njb3Jl$/, $remove$)
 spletnik.ru##+js(set-local-storage-item, /^_ym/, $remove$)
 spletnik.ru##+js(set-local-storage-item, adrcid, $remove$)
+southpark.*,southparkstudios.*##+js(set-constant, vtg, {})
 coupang.com##+js(json-prune-xhr-response, tracking, feeds, n-api/recommend/feeds)
 delta.com##+js(set-constant, TrackJS, {})
 delta.com##+js(set-constant, TrackJS.install, noopFunc)
@@ -74248,6 +74249,8 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xmlhttprequest,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$third-party,object,redirect=noop.js,script
+||checkmal.com/_res/js/Beusable.js
+||checkmal.com/_res/js/Naver.PremiumLog.js
 ||portalrwd.bm5.pl/Ajax/GetIloscWyswietlen.aspx
 ||portalrwd.bm5.pl/Stat/statystyki.aspx
 ||byn.kr/main/exec.php?*exec_file=
@@ -79773,6 +79776,9 @@ dlsdk.appsflyer.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||log.stickflow.xyz^
+||stats.us-light-edge.com^
+||log2.ihubgo.info^
 ||logreport-global-dual.coolhcloud.com^
 ||detaillog-global-dual.coolhcloud.com^
 ||tencentcs.com/structuredlog?
