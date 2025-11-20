@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Thu, 20 Nov 2025 10:14:15 GMT
+! Last modified: Thu, 20 Nov 2025 22:21:36 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,13 +8,13 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Thu, 20 Nov 2025 05:20:39 +0000
+!   - Last modified: Thu, 20 Nov 2025 11:58:09 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Tue, 18 Nov 2025 22:02:38 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Tue, 18 Nov 2025 19:30:07 +0000
+!   - Last modified: Thu, 20 Nov 2025 07:39:29 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
 !   - Last modified: Sun, 16 Nov 2025 16:50:30 +0000
@@ -27,7 +27,7 @@
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Thu, 13 Nov 2025 23:41:54 +0000
+!   - Last modified: Thu, 20 Nov 2025 11:42:48 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
 !   - Last modified: Sat, 15 Nov 2025 03:29:58 +0000
@@ -15955,8 +15955,10 @@ nicomanga.com,weloma.art##+js(nowoif)
 *key=$frame,3p,domain=nicomanga.com
 *$script,3p,denyallow=cloudflare.com|cloudflare.net|cloudfront.net|disqus.com|disquscdn.com|fastly.net|fastlylb.net|jsdelivr.net,domain=love4u.net|weloma.art
 *$frame,3p,denyallow=disqus.com,domain=love4u.net
-love4u.net,nicomanga.com,nihonkuni.com,rawinu.com,weloma.art##+js(set-cookie, smartlink_shown, 1)
-love4u.net,nicomanga.com,nihonkuni.com,rawinu.com,weloma.art##+js(set-cookie, smartlink_shown_guest, 1)
+love4u.net,nicomanga.com,nihonkuni.com,rawinu.com,weloma.art##+js(set-cookie, unlock_chapter_guest, 1)
+love4u.net,nicomanga.com,nihonkuni.com,rawinu.com,weloma.art##+js(trusted-replace-argument, String.prototype.includes, 0, json:"", condition, unlock)
+love4u.net,nicomanga.com,nihonkuni.com,rawinu.com,weloma.art##.chapter-content > #unlock-box
+love4u.net,nicomanga.com,nihonkuni.com,rawinu.com,weloma.art##.chapter-content > #unlock-box ~ #imgChapter[style*="none"]:style(display: block !important;)
 techpp.com##.tppAds
 techpp.com##.side-inserter
 techpp.com##.brxe-div > div[class="brxe-container"] .adsbygoogle:upward(.brxe-container)
@@ -22009,7 +22011,7 @@ justwatch.com##+js(json-prune, data.getFinalClickoutUrl data.sendSraBid)
 yespornpleasexxx.com##a[href^="https://landing.brazzersnetwork.com/"]
 yespornpleasexxx.com##a[href^="https://go.rmhfrtnd.com"]
 embed4me.com##+js(aeld, click, adId)
-embed4me.com##+js(nowoif, _blank)
+embed4me.com,4meplayer.com##+js(nowoif, _blank)
 /media/player/videojs/videojs.ima.js
 /media/player/videojs/videojs.ads.min.js
 ||camonster.io^$3p
@@ -26464,7 +26466,7 @@ sport.elwatannews.com##+js(aost, Array.prototype.indexOf, isWin)
 ||google-analytics.com/ga.js$script,redirect=google-analytics.com/ga.js:5
 ||addthis.com/*/addthis_widget.js$script
 ##.addthis_toolbox
-||googletagmanager.com/gtm.js$script,redirect=googletagmanager_gtm.js:5
+||googletagmanager.com/gtm.js$script,redirect=googletagmanager_gtm.js:5,domain=~nerc.com
 ||widgets.outbrain.com/outbrain.js$script,redirect=outbrain-widget.js:5,domain=~vice.com
 ||google-analytics.com/analytics.js$important,script,redirect=google-analytics.com/analytics.js,domain=support.amd.com
 ||googletagmanager.com/gtm.js$important,script,redirect=googletagmanager.com/gtm.js,domain=support.amd.com
@@ -31371,8 +31373,9 @@ austrian.com,lufthansa.com##+js(trusted-click-element, button[id="cm-acceptNone"
 kampfkunst-herz.de,glow25.de,h-f.at,hornetsecurity.com,kayzen.io,wasserkunst-hamburg.de,zahnspange-oelde.de###BorlabsCookieBox
 kampfkunst-herz.de,glow25.de,h-f.at,hornetsecurity.com,ifun.de,kayzen.io,wasserkunst-hamburg.de,zahnspange-oelde.de##+js(trusted-click-element, button.brlbs-btn-accept-only-essential, , 1000)
 xinedome.de##+js(trusted-click-element, button.brlbs-btn-save, , 1000)
-bnc.ca,decathlon.fr,egora.fr,engelvoelkers.com,estrategiasdeinversion.com,festo.com,francebleu.fr,francemediasmonde.com,geny.com,giphy.com,idealista.com,infolibre.es,inpost.pl,information.tv5monde.com,ing.es,knipex.de,laprovence.com,lemondeinformatique.fr,libertaddigital.com,mappy.com,marianne.net,orf.at,philibertnet.com,researchgate.net,rtbf.be,rtl.be,standaard.be,stroilioro.com,taxfix.de,telecinco.es,vistaalegre.com,zimbra.free.fr##+js(trusted-click-element, button[id="didomi-notice-disagree-button"], , 1000)
+bnc.ca,decathlon.fr,egora.fr,engelvoelkers.com,estrategiasdeinversion.com,festo.com,francebleu.fr,francemediasmonde.com,geny.com,giphy.com,idealista.com,infolibre.es,inpost.pl,information.tv5monde.com,ing.es,knipex.de,laprovence.com,lemondeinformatique.fr,libertaddigital.com,mappy.com,marianne.net,orf.at,philibertnet.com,researchgate.net,rtbf.be,rtl.be,standaard.be,stroilioro.com,taxfix.de,telecinco.es,vistaalegre.com,wsp.com,zimbra.free.fr##+js(trusted-click-element, button[id="didomi-notice-disagree-button"], , 1000)
 jeanmarcmorandini.com,europe1.fr##+js(trusted-click-element, a[href="javascript:Didomi.setUserDisagreeToAll()"], , 1000)
+tribecawine.com##+js(trusted-click-element, button[id="fupi_decline_cookies_btn"], , 1000)
 usinenouvelle.com##+js(trusted-click-element, button[onclick="Didomi.setUserDisagreeToAll();"], , 1000)
 boursier.com##+js(trusted-click-element, a#cookie-accept, , 1000)
 reussir.fr##+js(trusted-click-element, button.decline-button, , 1000)

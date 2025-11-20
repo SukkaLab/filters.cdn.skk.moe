@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Thu, 20 Nov 2025 10:14:15 GMT
+! Last modified: Thu, 20 Nov 2025 22:21:36 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.95.24
+!   - Version: 2.0.95.30
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/refs/heads/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -218,6 +218,9 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||data.thoughtmetric.io^
+||assets.9gtb.com^
+||cdn.logbase.io^
 ||lc.recopick.com^
 ||cv.aedi.ai^
 ||toup.net^$third-party
@@ -49797,6 +49800,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||conversionsapigateway.com^
 ||ebm.lfmall.co.kr^
 ||analytics.adjust.io^
 ||jitsu.ixbt.site^
@@ -74249,6 +74253,8 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xmlhttprequest,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$third-party,object,redirect=noop.js,script
+||chickencoopcompany.com/api/collect
+||p.hentaiforce.net/api/event
 itmedia.co.jp###endlinkConnection
 ||aosom.*/track/do
 ||cdn.aosomcdn.com/upload/js/dataflux-rum.js
@@ -77878,7 +77884,7 @@ animespirit.*###CollapsiblePanel_Statistics
 setafi.com##.footer_bl-3
 ||gamejolt.com/tick/
 ||chaturbate.com/api/adblocker/
-||evgnet.com/beacon/
+||cdn.evgnet.com/beacon/homedepotofcainc/engage/scripts/evergage.min.js$script,redirect=noop.js
 ||51nongyao.net/js/analytics.js
 kanobu.ru##a[href^="https://www.liveinternet.ru/click"]
 ||a24.biz/pixel/
@@ -79780,6 +79786,11 @@ dlsdk.appsflyer.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||datarangers-event.myrightone.com^
+||stats.*.ronghub.com^
+||stats.rong-edge.com^
+||config.toto.zipoapps.com^
+||tracking.ksztone.com^
 ||log.stickflow.xyz^
 ||stats.us-light-edge.com^
 ||log2.ihubgo.info^
@@ -83020,6 +83031,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||4jnzhl0d0.com^
 ||82o9v830.com^
 ||abilityscale.com^
+||abilitytoucan.com^
 ||abjectattempt.com^
 ||aboardamusement.com^
 ||aboardlevel.com^
@@ -84125,6 +84137,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||oafishobservation.com^
 ||objecthero.com^
 ||objectsnetwork.com^
+||oblivionfleet.com^
 ||obscenesidewalk.com^
 ||octaneblood.com^
 ||offerniche.com^
