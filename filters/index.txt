@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Filters
-! Last modified: Wed, 19 Nov 2025 17:20:15 GMT
+! Last modified: Thu, 20 Nov 2025 08:17:26 GMT
 ! Expires: 1 hours
 ! Description: The filters from Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -427,7 +427,7 @@ justauth.cn##+js(set, window._AdBlockInit, true)
 /prebid_$script
 ||lf3-data.volccdn.com$redirect=noop.js
 /log-sdk/
-||res.wx.qq.com$3p
+||res.wx.qq.com^$3p,domain=~ip.skk.moe|~localhost
 ||download.cnet.com/web-stats/
 ||ad-delivery.net$image,redirect=1x1.gif
 ||sp.pluto.tv$redirect=noop.txt
