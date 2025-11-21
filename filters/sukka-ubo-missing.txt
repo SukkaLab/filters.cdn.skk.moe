@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Fri, 21 Nov 2025 10:14:13 GMT
+! Last modified: Fri, 21 Nov 2025 22:23:39 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.95.30
+!   - Version: 2.0.95.33
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/refs/heads/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -218,6 +218,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||t.hyros.com^
 ||data.thoughtmetric.io^
 ||assets.9gtb.com^
 ||cdn.logbase.io^
@@ -79786,6 +79787,12 @@ dlsdk.appsflyer.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||sensor.emolm.com^
+||detaillog-global-dual.coolbcloud.com^
+||wslog-global-dual.coolccloud.com^
+||logreport-global-dual.coolbcloud.com^
+||dualstack-collection.rong-edge.com^
+||logdata.hatspotlight.asia^
 ||datarangers-event.myrightone.com^
 ||stats.*.ronghub.com^
 ||stats.rong-edge.com^
