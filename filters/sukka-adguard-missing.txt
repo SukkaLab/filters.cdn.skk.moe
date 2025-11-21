@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Thu, 20 Nov 2025 22:21:36 GMT
+! Last modified: Fri, 21 Nov 2025 10:14:13 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Thu, 20 Nov 2025 11:58:09 +0000
+!   - Last modified: Fri, 21 Nov 2025 06:15:01 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Tue, 18 Nov 2025 22:02:38 +0000
@@ -20,7 +20,7 @@
 !   - Last modified: Sun, 16 Nov 2025 16:50:30 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Thu, 20 Nov 2025 04:25:53 +0000
+!   - Last modified: Thu, 20 Nov 2025 19:19:43 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
 !   - Last modified: Sat, 08 Nov 2025 04:03:16 +0000
@@ -9059,9 +9059,9 @@ honkailab.com##body:style(background-color: #2D2D2D;)
 lifehacker.jp##+js(rpnt, script, /^.+/gms, '!function(){var e=Object.getOwnPropertyDescriptor(Element.prototype,"innerHTML").set;Object.defineProperty(Element.prototype,"innerHTML",{set:function(t){return t.includes("html-load.com")?e.call(this,""):e.call(this,t)}})}();', condition, html-load.com)
 a-ha.io,cboard.net,joongdo.co.kr,viva100.com##+js(noeval-if, /07c225f3\.online|content-loader\.com|css-load\.com|html-load\.com/)
 automobile-catalog.com,baseballchannel.jp,forum.mobilism.me,gbatemp.net,gentosha-go.com,hang.hu,hoyme.jp,motorbikecatalog.com,sharemods.com,wisevoter.com##+js(rmnt, script, error-report.com)
-divinedaolibrary.com,jaysbrickblog.com,oricon.co.jp,uranai.nosv.org,yakkun.com##+js(rmnt, script, html-load.com)
+divinedaolibrary.com,jaysbrickblog.com,mp1st.com,oricon.co.jp,uranai.nosv.org,yakkun.com##+js(rmnt, script, html-load.com)
 oricon.co.jp##+js(rmnt, script, /\(async\(\)=>\{try\{(const|var)/)
-boardingarea.com,buzzfeed.com,buzzfeednews.com,computerbild.de,cults3d.com,deadline.com,dnevnik.hr,doviz.com,genialetricks.de,helpdeskgeek.com,leckerschmecker.me,moin.de,newatlas.com,nextchessmove.com,omnicalculator.com,oricon.co.jp,picrew.me,popdaily.com.tw,scribd.com,singjupost.com,sourceforge.net,thefirearmblog.com,thelayoff.com,welt.de,winfuture.de##+js(trusted-replace-argument, HTMLScriptElement.prototype.setAttribute, 1, , condition, error-report)
+artnews.com,boardingarea.com,billboard.com,buzzfeed.com,buzzfeednews.com,computerbild.de,cults3d.com,deadline.com,dnevnik.hr,doviz.com,genialetricks.de,goldderby.com,helpdeskgeek.com,hollywoodreporter.com,indiewire.com,leckerschmecker.me,moin.de,newatlas.com,nextchessmove.com,omnicalculator.com,oricon.co.jp,picrew.me,popdaily.com.tw,robbreport.com,rollingstone.com,scribd.com,singjupost.com,sportico.com,sourceforge.net,thefirearmblog.com,thelayoff.com,variety.com,vibe.com,welt.de,winfuture.de,wwd.com##+js(trusted-replace-argument, HTMLScriptElement.prototype.setAttribute, 1, "", condition, error-report)
 neowin.net,newatlas.com,razzball.com,tz.de##+js(nostif, [native code], 500)
 interfootball.co.kr,a-ha.io,cboard.net,jjang0u.com,joongdo.co.kr,viva100.com,maketecheasier.com,tweaksforgeeks.com,m.inven.co.kr,mlbpark.donga.com##^script:has-text(KCgpPT57bGV0IGU)
 badmouth1.com,boardingarea.com,computerbild.de,cruciverba.it,cults3d.com,dnevnik.hr,doviz.com,dziennik.pl,eurointegration.com.ua,flatpanelshd.com,footballtransfer.com.ua,footballtransfer.ru,freemcserver.net,gadgets360.com,gazetaprawna.pl,genialetricks.de,helpdeskgeek.com,hoyme.jp,issuya.com,iusm.co.kr,lamire.jp,leckerschmecker.me,logicieleducatif.fr,missyusa.com,moin.de,motscroises.fr,neowin.net,newatlas.com,onlinegdb.com,palabr.as,picrew.me,pravda.com.ua,pressian.com,razzball.com,reportera.co.kr,singjupost.com,sportanalytic.com,sportsrec.com,sportsseoul.com,text-compare.com,thelayoff.com,tweaksforgeeks.com,tz.de,w.grapps.me,welt.de,wfmz.com,winfuture.de,worldhistory.org##^script[onload*="error-report.com"]
@@ -30399,12 +30399,11 @@ omuzaani.me##+js(trusted-replace-argument, Headers.prototype.get, 0, json:"conte
 omuzaani.me##+js(trusted-replace-argument, Headers.prototype.has, 0, json:"content-type", condition, cache-control)
 omuzaani.me##+js(rpnt, script, /window.navigator.brave.+;/, false;)
 omuzaani.me##+js(no-fetch-if, summerday, length:10, {"type":"cors"})
-th.gl##+js(norafif, /\(\)=>[a-z]\(\)/)
 th.gl##+js(nosiif, /1===|\?void|&&/)
 th.gl##+js(nostif, /\+\+|setTimeout|\.close\(\)|Loading|&&delete/)
 th.gl##+js(trusted-set-local-storage-item, account-storage, {"state":{"_hasHydrated":true,"userId":null,"decryptedUserId":null,"email":null,"perks":{"adRemoval":true,"comments":false,"premiumFeatures":true,"previewReleaseAccess":true},"showUserDialog":false},"version":2})
-th.gl##.hidden.overflow-hidden.border
-th.gl##.fixed.overflow-hidden.border
+th.gl##.hidden.pointer-events-auto.relative
+th.gl##.fixed.pointer-events-auto
 tvtropes.org##+js(nostif, /offsetHeight|loaded/)
 tvtropes.org##+js(set, HTMLScriptElement.prototype.onerror, undefined)
 ||rottentomatoes.com/assets/pizza-pie/javascripts/bundles/roma/rt-common.js$badfilter
