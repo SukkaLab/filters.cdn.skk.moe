@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sat, 22 Nov 2025 10:12:38 GMT
+! Last modified: Sat, 22 Nov 2025 22:22:05 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -14,13 +14,13 @@
 !   - Last modified: Sat, 22 Nov 2025 07:26:45 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Thu, 20 Nov 2025 07:39:29 +0000
+!   - Last modified: Sat, 22 Nov 2025 15:11:03 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
 !   - Last modified: Sat, 22 Nov 2025 06:18:56 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Sat, 22 Nov 2025 04:53:02 +0000
+!   - Last modified: Sat, 22 Nov 2025 19:14:47 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
 !   - Last modified: Sat, 08 Nov 2025 04:03:16 +0000
@@ -30,7 +30,7 @@
 !   - Last modified: Sat, 22 Nov 2025 07:45:44 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
-!   - Last modified: Sat, 22 Nov 2025 07:26:45 +0000
+!   - Last modified: Sat, 22 Nov 2025 11:51:52 +0000
 ! --------------------------------------------------------------
 *_ad_$media,domain=youtube.com,3p
 tv.youtube.com##+js(trusted-replace-xhr-response, '"adPlacements"', '"no_ads"', /playlist\?list=|\/player(?:\?.+)?$|watch\?[tv]=/)
@@ -26547,17 +26547,11 @@ search.brave.com##+js(no-fetch-if, body:browser)
 ||nikitaeverywhere.com^$script,xhr,1p
 @@||nikitaeverywhere.com/static/js/main-*.js|$script,1p
 @@||nikitaeverywhere.com/nikitaeverywhere-com-content/data.json|$xhr,1p
-docs.dataunlocker.com##div[class^="PageTransition_overlay__"]
-docs.dataunlocker.com##div[class^="PageTransition_inner__"]:style(opacity: 1 !important; transform: none !important;)
-dataunlocker.com##+js(nostif, [native code], 120000)
-@@||region1.google-analytics.com/g/collect$xhr,domain=stateless.me
-@@||stats.g.doubleclick.net/g/collect$xhr,domain=stateless.me
-||region1.google-analytics.com/g/collect?$removeparam,xhr,domain=stateless.me
-||stats.g.doubleclick.net/g/collect?$removeparam,xhr,domain=stateless.me
-@@||stateless.me^$ghide
+||stateless.me/yxz1/$script,1p
 ||dataunlocker.com/d/$script,1p,replace=/Copyright .*//s
-dataunlocker.com##+js(set, _hjSettings, undefined)
-dataunlocker.com##+js(set, google_tag_manager, undefined)
+/androidacy\.com\/[1-z0-9]{10,20}\/[1-z0-9]{100,200}/$script,1p,replace=/Copyright .*//s,domain=androidacy.com
+dataunlocker.com,androidacy.com##+js(set, _hjSettings, undefined)
+dataunlocker.com,androidacy.com##+js(set, google_tag_manager, undefined)
 cefirates.com,comicleaks.com,tapmyback.com,ping.gg,nookgaming.com,creatordrop.com,bitdomain.biz,fort-shop.kiev.ua,accuretawealth.com,resourceya.com,tracktheta.com,adaptive.marketing,camberlion.com,trybawaryjny.pl,segops.madisonspecs.com,stresshelden-coaching.de,controlconceptsusa.com,ryaktive.com,tip.etip-staging.etip.io##^script:has-text("join('')")
 future-fortune.com,furucombo.app,bolighub.dk##^script:has-text('join("")')
 intercity.technology,freelancer.taxmachine.be,kodalia.com,adria.gg,fjlaboratories.com,abhijith.page,helpmonks.com##^script:has-text(api.dataunlocker.com)
@@ -30411,6 +30405,9 @@ th.gl##+js(nostif, /\+\+|setTimeout|\.close\(\)|Loading|&&delete/)
 th.gl##+js(trusted-set-local-storage-item, account-storage, {"state":{"_hasHydrated":true,"userId":null,"decryptedUserId":null,"email":null,"perks":{"adRemoval":true,"comments":false,"premiumFeatures":true,"previewReleaseAccess":true},"showUserDialog":false},"version":2})
 th.gl##.hidden.relative
 th.gl##.fixed.border
+th.gl##script[src^="https://s.nitropay.com/"] + div
+th.gl##body:style(overflow:auto !important; pointer-events:auto !important)
+th.gl##next-route-announcer + div[style*="--destructive-foreground"]
 tvtropes.org##+js(nostif, /offsetHeight|loaded/)
 tvtropes.org##+js(set, HTMLScriptElement.prototype.onerror, undefined)
 ||rottentomatoes.com/assets/pizza-pie/javascripts/bundles/roma/rt-common.js$badfilter
@@ -35862,3 +35859,4 @@ nichepcgamer.com##+js(rc, dragscroll)
 nettv4u.com##+js(aeld, contextmenu)
 nettv4u.com##+js(aeld, copy)
 nettv4u.com##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important; -webkit-tap-highlight-color: revert !important; cursor: revert !important;)
+adressit.com##+js(rmnt, script, clipboard_disabled)
