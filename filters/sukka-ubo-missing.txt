@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Fri, 21 Nov 2025 22:23:39 GMT
+! Last modified: Sat, 22 Nov 2025 10:12:38 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.95.33
+!   - Version: 2.0.95.36
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/refs/heads/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -74254,9 +74254,9 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xmlhttprequest,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$third-party,object,redirect=noop.js,script
+||ats.vert.sh/js/script.js
 ||chickencoopcompany.com/api/collect
 ||p.hentaiforce.net/api/event
-itmedia.co.jp###endlinkConnection
 ||aosom.*/track/do
 ||cdn.aosomcdn.com/upload/js/dataflux-rum.js
 ||inven.co.kr/api/banner_tracking/banner_view.php
@@ -83670,6 +83670,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||flutteringfireman.com^
 ||foambench.com^
 ||followborder.com^
+||fontserif.com^
 ||foodczar.com^
 ||foodfunfestivals.com^
 ||forecasttiger.com^
@@ -84028,6 +84029,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||materialparcel.com^
 ||materialplayground.com^
 ||maxcruisers.com^
+||maybetony.com^
 ||meadowlullaby.com^
 ||measlymiddle.com^
 ||meatydime.com^
@@ -84301,6 +84303,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||quantumshine.com^
 ||queenjam.com^
 ||queenskart.com^
+||questionate.com^
 ||quicklyedit.com^
 ||quicksandear.com^
 ||quietknowledge.com^
