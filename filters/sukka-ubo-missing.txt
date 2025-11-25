@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Tue, 25 Nov 2025 10:15:39 GMT
+! Last modified: Tue, 25 Nov 2025 22:24:27 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.95.55
+!   - Version: 2.0.95.56
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/refs/heads/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -76804,6 +76804,9 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=saturn.de
 @@||metrics.us.playstation.com/b/ss/
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
+@@||integrations.fitanalytics.com/shop/modivo/pdp.js$domain=modivo.*
+@@||widget.fitanalytics.com/widget_pdp.js$domain=modivo.*
+@@||widget.fitanalytics.com/widget/api/$domain=modivo.*
 @@||st-eu.dynamicyield.com/st?sec=$domain=loropiana.com
 @@||googletagmanager.com/gtm.js$domain=gillette.de
 @@||canadiantire.tt.omtrdc.net/rest/$domain=marks.com|partycity.ca|sportchek.ca|lequipeur.com|canadiantire.ca
