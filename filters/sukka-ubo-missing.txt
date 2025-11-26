@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Tue, 25 Nov 2025 22:24:27 GMT
+! Last modified: Wed, 26 Nov 2025 10:15:25 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.95.56
+!   - Version: 2.0.95.62
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/refs/heads/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -218,6 +218,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||yext.com^$third-party
 ||hackle.io^$third-party
 ||track.aimroas.com^
 ||upsellit.com^$third-party
@@ -49437,6 +49438,10 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||y194.asics.com^
+||analytics.cosmicstack.org^
+||mgs.instacart.com^
+||c.ypcdn.com^
 ||ac2.tnaflix.com^
 ||web.analytics.metrobyt-mobile.com^
 ||conversionsapigateway.com^
@@ -70255,6 +70260,11 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xmlhttprequest,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$third-party,object,redirect=noop.js,script
+||cdn.calibermind.com/a.js
+||emma-matratze.de/metrics/
+||ypcdn.com/ypu/js/compiled/srp_adsense.js
+||ypcdn.com/ypu/vendor/VisitorAPI.js
+||yellowpages.com/*/impression
 ||pravilamag.ru/_stat/
 ||signals.turkcell.com.tr/r|
 ||musically.com/wp-content/plugins/jetpack/jetpack_vendor/automattic/woocommerce-analytics
@@ -76804,6 +76814,7 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=saturn.de
 @@||metrics.us.playstation.com/b/ss/
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
+@@||googletagservices.com/tag/js/gpt.js$xmlhttprequest,script,redirect=googletagservices_gpt.js,domain=cava.tw
 @@||integrations.fitanalytics.com/shop/modivo/pdp.js$domain=modivo.*
 @@||widget.fitanalytics.com/widget_pdp.js$domain=modivo.*
 @@||widget.fitanalytics.com/widget/api/$domain=modivo.*
@@ -80111,6 +80122,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||motionflowers.com^
 ||motionlessbelief.com^
 ||motionlessmeeting.com^
+||mountedbattery.com^
 ||movemeal.com^
 ||mowgoats.com^
 ||muddledaftermath.com^
@@ -80165,6 +80177,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||nowaymail.com^
 ||nudgeduck.com^
 ||nullnorth.com^
+||nullradar.com^
 ||numerousnest.com^
 ||nutritiousbean.com^
 ||oafishchance.com^
@@ -80569,6 +80582,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||sinkportal.com^
 ||sixauthority.com^
 ||sixpants.com^
+||sixquickrun.com^
 ||sixscissors.com^
 ||sizzlingsmoke.com^
 ||sketchpals.com^
