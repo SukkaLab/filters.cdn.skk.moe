@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Wed, 26 Nov 2025 10:15:25 GMT
+! Last modified: Wed, 26 Nov 2025 22:23:33 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Wed, 26 Nov 2025 02:40:25 +0000
+!   - Last modified: Wed, 26 Nov 2025 18:06:55 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Wed, 26 Nov 2025 02:14:04 +0000
@@ -27,7 +27,7 @@
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Tue, 25 Nov 2025 20:49:48 +0000
+!   - Last modified: Wed, 26 Nov 2025 10:18:13 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
 !   - Last modified: Sun, 23 Nov 2025 13:40:38 +0000
@@ -22252,12 +22252,20 @@ denverbroncos.com##+js(no-fetch-if, method:HEAD)
 webcamera.pl##+js(rmnt, script, .offsetLeft)
 webcamera.pl##.text-center.screening-background
 bokepsin.in.net##+js(nowoif, _blank)
+moenime.com##+js(set, HTMLScriptElement.prototype.onerror, undefined)
+moenime.com##[href^="https://terabox.onelink.me/"]
+moenime.com###ui-ctx-wrapper-01
 streamfree.to##+js(no-fetch-if, method:HEAD)
 streamfree.to##+js(no-xhr-if, method:HEAD)
 ||ads.$frame,redirect=noopframe,domain=streamfree.to
 starstreams.pro##+js(no-fetch-if, adsbygoogle)
 *$script,xhr,3p,denyallow=challenges.cloudflare.com,domain=huoqwk.com
 huoqwk.com##+js(nostif, touchstart, 1000)
+v2movies.me##+js(nowoif)
+||aj2403.online^
+||refpa58144.com^
+||serving.adserver.live^
+v2movies.me##[href^="https://refpa58144.com/"]
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
 ||vlc.de^$doc
@@ -30767,8 +30775,7 @@ everyeye.it##+js(trusted-click-element, #pubtech-cmp button[aria-label="Continue
 everyeye.it###tksfmcont
 everyeye.it###pubtech-cmp
 godtlevert.no##+js(trusted-set-local-storage-item, reduxStore, '{"tracking":{"consents":{"All":false,"functional":false,"Segment.io":false},"dialog":{"open":false,"dirty":false},"isConfigured":true},"loyalty":{"hasSeenLoyaltyPage":false}}')
-pepper.pl,dealabs.com,hotukdeals.com,chollometro.com##+js(trusted-click-element, button[data-t="continueWithoutAccepting"], , 1000)
-preisjaeger.at,mydealz.de##+js(trusted-click-element, button[data-t="rejectAll"], , 1000)
+reisjaeger.at,mydealz.de,pepper.pl,dealabs.com,hotukdeals.com,chollometro.com##+js(trusted-click-element, button[data-t="rejectAll"], , 1000)
 kleinanzeigen.de##+js(trusted-click-element, #gdpr-banner-cmp-button,, 1000)
 kleinanzeigen.de##+js(trusted-click-element, button[aria-label="Datenschutzbestimmungen und Einstellungen ablehnen"],, 1200)
 alehinta.fi##+js(trusted-set-cookie, cookie-consent, '{"categories":["analytics"],"level":["analytics"],"revision":0,"data":null,"rfc_cookie":false,"consent_date":"$currentISODate$","consent_uuid":"738928d9-c950-46d2-a732-700c986cf81a","last_consent_update":"$currentISODate$"}', 1year)
@@ -30787,13 +30794,13 @@ evaair.com##+js(trusted-set-cookie, _EVAGDPRfunctional, Y, 1year)
 vkmag.com##+js(trusted-set-cookie, OptanonConsent, groups=C0004%3A0%2CC0003%3A1%2CC0002%3A0%2CC0001%3A1%2CSTACK42%3A0, 1year)
 vkmag.com##+js(trusted-set-cookie, eupubconsent-v2, CPt6LrpPt6LrpAcABBENDKCgAAAAAAAAAAYgGBtX_T5eb2vj-3ZcN_tkaYwP55y3o2wzhhaIke8NwIeH7BoGJ2MwvBV4JiACGBAkkiKBAQVlHGBcCQAAgIgRiSKMYk2MjzNKJLJAilMbO0NYCD9mnkHT2ZCY70-uO__zvneAAAAYJABAXmKgAgLzGQAQF5joAIC8yUAEBeZSACAvMAAA.YAAAAAAAAAAA, 1year, , reload, 1)
 mtvuutiset.fi##+js(trusted-set-cookie, OptanonConsent, groups=1%3A1%2C2%3A0%2C3%3A1%2C4%3A0%2C5%3A1%2CBG57%3A0%2CBG58%3A0%2CBG59%3A0, 1year)
-almamedia.fi>>,ampparit.com>>,arvopaperi.fi>>,iltalehti.fi>>,kauppalehti.fi>>,mikrobitti.fi>>,talouselama.fi>>,tekniikkatalous.fi>>,tivi.fi>>,uusisuomi.fi>>##+js(trusted-click-element, button.alma-cmp-button[title="Hyväksy"])
-almamedia.fi,ampparit.com,arvopaperi.fi,iltalehti.fi,kauppalehti.fi,mikrobitti.fi,talouselama.fi,tekniikkatalous.fi,tivi.fi,uusisuomi.fi##html.sp-message-open:style(overflow: auto !important; width: initial !important)
-almamedia.fi,ampparit.com,arvopaperi.fi,iltalehti.fi,kauppalehti.fi,mikrobitti.fi,talouselama.fi,tekniikkatalous.fi,tivi.fi,uusisuomi.fi##html.sp-message-open > body:style(position: unset !important; margin-top: 0 !important; overflow: visible !important)
-almamedia.fi,ampparit.com,arvopaperi.fi,iltalehti.fi,kauppalehti.fi,mikrobitti.fi,talouselama.fi,tekniikkatalous.fi,tivi.fi,uusisuomi.fi#@#[title="SP Consent Message"]
-almamedia.fi,ampparit.com,arvopaperi.fi,iltalehti.fi,kauppalehti.fi,mikrobitti.fi,talouselama.fi,tekniikkatalous.fi,tivi.fi,uusisuomi.fi##+js(trusted-set-cookie, consentUUID, 84561898-f8ab-4872-8ae3-b46523df21ba_38, 1year)
-almamedia.fi,ampparit.com,arvopaperi.fi,iltalehti.fi,kauppalehti.fi,mikrobitti.fi,talouselama.fi,tekniikkatalous.fi,tivi.fi,uusisuomi.fi##+js(trusted-set-cookie, euconsent-v2, CQISSMAQISSMAAGABBENBOFsAP_gAAAAAApAAAAAAAAA.YAAAAAAAAAAA, 1year)
-almamedia.fi,ampparit.com,arvopaperi.fi,iltalehti.fi,kauppalehti.fi,mikrobitti.fi,talouselama.fi,tekniikkatalous.fi,tivi.fi,uusisuomi.fi##+js(trusted-set-cookie, consentDate, $currentISODate$, 1year)
+almamedia.fi>>,ampparit.com>>,arvopaperi.fi>>,kauppalehti.fi>>,mikrobitti.fi>>,talouselama.fi>>,tekniikkatalous.fi>>,tivi.fi>>,uusisuomi.fi>>##+js(trusted-click-element, button.alma-cmp-button[title="Hyväksy"])
+almamedia.fi,ampparit.com,arvopaperi.fi,kauppalehti.fi,mikrobitti.fi,talouselama.fi,tekniikkatalous.fi,tivi.fi,uusisuomi.fi##html.sp-message-open:style(overflow: auto !important; width: initial !important)
+almamedia.fi,ampparit.com,arvopaperi.fi,kauppalehti.fi,mikrobitti.fi,talouselama.fi,tekniikkatalous.fi,tivi.fi,uusisuomi.fi##html.sp-message-open > body:style(position: unset !important; margin-top: 0 !important; overflow: visible !important)
+almamedia.fi,ampparit.com,arvopaperi.fi,kauppalehti.fi,mikrobitti.fi,talouselama.fi,tekniikkatalous.fi,tivi.fi,uusisuomi.fi#@#[title="SP Consent Message"]
+almamedia.fi,ampparit.com,arvopaperi.fi,kauppalehti.fi,mikrobitti.fi,talouselama.fi,tekniikkatalous.fi,tivi.fi,uusisuomi.fi##+js(trusted-set-cookie, consentUUID, 84561898-f8ab-4872-8ae3-b46523df21ba_38, 1year)
+almamedia.fi,ampparit.com,arvopaperi.fi,kauppalehti.fi,mikrobitti.fi,talouselama.fi,tekniikkatalous.fi,tivi.fi,uusisuomi.fi##+js(trusted-set-cookie, euconsent-v2, CQISSMAQISSMAAGABBENBOFsAP_gAAAAAApAAAAAAAAA.YAAAAAAAAAAA, 1year)
+almamedia.fi,ampparit.com,arvopaperi.fi,kauppalehti.fi,mikrobitti.fi,talouselama.fi,tekniikkatalous.fi,tivi.fi,uusisuomi.fi##+js(trusted-set-cookie, consentDate, $currentISODate$, 1year)
 almamedia.fi##+js(trusted-set-cookie, gravitoData, '{"TCString":"CQJXf4AQJXf4ABUASAFIBTFgAAAAAAAAAApAAAAAAAChIBoACwAKgAeABBADIANAAiABMAD8AIQAbIBIgDFALzHQDwAFgAVABBADIANAAiABMAD8ANEAbIBFgCRAGKAOoAmQBeZCAGAAsAxQB1CUAcABYARAAmADZAMUAdQBeZSAcAAsACoAIIAZABoAEQAJgAfgBogDZAIsASIAxQB1AF5g.YAAAAAAAAIAA","NonTCFVendors":[{"id":1,"name":"Facebook","consent":true},{"id":3,"name":"Google","consent":true},{"id":9,"name":"Twitter","consent":true},{"id":10,"name":"Wordpress","consent":true},{"id":15,"name":"Linkedin","consent":true},{"id":19,"name":"Vimeo","consent":true},{"id":27,"name":"Apple","consent":true}]}', 1year)
 almamedia.fi##+js(trusted-set-cookie, TcString, CQJXf4AQJXf4ABUASAFIBTFsAP_gAAAAAApAAAAAAAChIBoACwAKgAeABBADIANAAiABMAD8AIQAbIBIgDFALzHQDwAFgAVABBADIANAAiABMAD8ANEAbIBFgCRAGKAOoAmQBeZCAGAAsAxQB1CUAcABYARAAmADZAMUAdQBeZSAcAAsACoAIIAZABoAEQAJgAfgBogDZAIsASIAxQB1AF5g.YAAAAAAAAIAA, 1year)
 gamespot.com##+js(trusted-set-cookie, OptanonConsent, groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A0%2CC0005%3A0, 1year)
@@ -30804,13 +30811,13 @@ gameinformer.com###onetrust-consent-sdk:style(visibility: collapse !important;)
 gameinformer.com###onetrust-banner-sdk
 gameinformer.com##+js(trusted-set-cookie, OptanonConsent, groups=C0001%3A1%2CC0003%3A1%2CSPD_BG%3A1%2CC0002%3A1%2CC0004%3A1%2CC0005%3A1, , , reload, 1)
 christianconcern.com##+js(trusted-set-cookie, STYXKEY_your_privacy_settings, %7B%22strict%22%3A%221%22%2C%22thirdparty%22%3A%221%22%2C%22advanced%22%3A%220%22%7D, 1year, , reload, 1)
-aamulehti.fi>>,etlehti.fi>>,gloria.fi>>,hs.fi>>,hyvaterveys.fi>>,is.fi>>,jamsanseutu.fi>>,janakkalansanomat.fi>>,kankaanpaanseutu.fi>>,kmvlehti.fi>>,kodinkuvalehti.fi>>,merikarvialehti.fi>>,nokianuutiset.fi>>,pelikone.fi>>,rannikkoseutu.fi>>,ruutu.fi>>,satakunnankansa.fi>>,soppa365.fi>>,suurkeuruu.fi>>,sydansatakunta.fi>>,tyrvaansanomat.fi>>,valkeakoskensanomat.fi>>,vauva.fi>>##+js(trusted-click-element, .sanoma-logo-container ~ .message-component.sticky-buttons button.sp_choice_type_12[title="Asetukset"])
-aamulehti.fi>>,etlehti.fi>>,gloria.fi>>,hs.fi>>,hyvaterveys.fi>>,is.fi>>,jamsanseutu.fi>>,janakkalansanomat.fi>>,kankaanpaanseutu.fi>>,kmvlehti.fi>>,kodinkuvalehti.fi>>,merikarvialehti.fi>>,nokianuutiset.fi>>,pelikone.fi>>,rannikkoseutu.fi>>,ruutu.fi>>,satakunnankansa.fi>>,soppa365.fi>>,suurkeuruu.fi>>,sydansatakunta.fi>>,tyrvaansanomat.fi>>,valkeakoskensanomat.fi>>,vauva.fi>>##+js(trusted-click-element, .sanoma-logo-container ~ .message-component.privacy-manager-tcfv2 .tcfv2-stack[title="Sanoman sisällönjakelukumppanit"] button.pm-switch[aria-checked="false"])
-aamulehti.fi>>,etlehti.fi>>,gloria.fi>>,hs.fi>>,hyvaterveys.fi>>,is.fi>>,jamsanseutu.fi>>,janakkalansanomat.fi>>,kankaanpaanseutu.fi>>,kmvlehti.fi>>,kodinkuvalehti.fi>>,merikarvialehti.fi>>,nokianuutiset.fi>>,pelikone.fi>>,rannikkoseutu.fi>>,ruutu.fi>>,satakunnankansa.fi>>,soppa365.fi>>,suurkeuruu.fi>>,sydansatakunta.fi>>,tyrvaansanomat.fi>>,valkeakoskensanomat.fi>>,vauva.fi>>##.sanoma-logo-container ~ .message-component.privacy-manager-tcfv2 .tcfv2-stack:not([title="Sanoman sisällönjakelukumppanit"]) button.pm-switch.checked:remove-class(checked)
-aamulehti.fi>>,etlehti.fi>>,gloria.fi>>,hs.fi>>,hyvaterveys.fi>>,is.fi>>,jamsanseutu.fi>>,janakkalansanomat.fi>>,kankaanpaanseutu.fi>>,kmvlehti.fi>>,kodinkuvalehti.fi>>,merikarvialehti.fi>>,nokianuutiset.fi>>,pelikone.fi>>,rannikkoseutu.fi>>,ruutu.fi>>,satakunnankansa.fi>>,soppa365.fi>>,suurkeuruu.fi>>,sydansatakunta.fi>>,tyrvaansanomat.fi>>,valkeakoskensanomat.fi>>,vauva.fi>>##+js(trusted-click-element, .sanoma-logo-container ~ .message-component button.sp_choice_type_SAVE_AND_EXIT[title="Tallenna"], , 1500)
-aamulehti.fi,etlehti.fi,gloria.fi,hs.fi,hyvaterveys.fi,is.fi,jamsanseutu.fi,janakkalansanomat.fi,kankaanpaanseutu.fi,kmvlehti.fi,kodinkuvalehti.fi,merikarvialehti.fi,nokianuutiset.fi,pelikone.fi,rannikkoseutu.fi,ruutu.fi,satakunnankansa.fi,soppa365.fi,suurkeuruu.fi,sydansatakunta.fi,tyrvaansanomat.fi,valkeakoskensanomat.fi,vauva.fi#@#[title="SP Consent Message"]
-aamulehti.fi,etlehti.fi,gloria.fi,hs.fi,hyvaterveys.fi,is.fi,jamsanseutu.fi,janakkalansanomat.fi,kankaanpaanseutu.fi,kmvlehti.fi,kodinkuvalehti.fi,merikarvialehti.fi,nokianuutiset.fi,pelikone.fi,rannikkoseutu.fi,ruutu.fi,satakunnankansa.fi,soppa365.fi,suurkeuruu.fi,sydansatakunta.fi,tyrvaansanomat.fi,valkeakoskensanomat.fi,vauva.fi##html.sp-message-open:style(overflow: auto !important; width: initial !important)
-aamulehti.fi,etlehti.fi,gloria.fi,hs.fi,hyvaterveys.fi,is.fi,jamsanseutu.fi,janakkalansanomat.fi,kankaanpaanseutu.fi,kmvlehti.fi,kodinkuvalehti.fi,merikarvialehti.fi,nokianuutiset.fi,pelikone.fi,rannikkoseutu.fi,ruutu.fi,satakunnankansa.fi,soppa365.fi,suurkeuruu.fi,sydansatakunta.fi,tyrvaansanomat.fi,valkeakoskensanomat.fi,vauva.fi##html.sp-message-open > body:style(position: unset !important; margin-top: 0 !important; overflow: visible !important)
+aamulehti.fi>>,etlehti.fi>>,gloria.fi>>,hyvaterveys.fi>>,jamsanseutu.fi>>,janakkalansanomat.fi>>,kankaanpaanseutu.fi>>,kmvlehti.fi>>,kodinkuvalehti.fi>>,merikarvialehti.fi>>,nokianuutiset.fi>>,pelikone.fi>>,rannikkoseutu.fi>>,ruutu.fi>>,satakunnankansa.fi>>,soppa365.fi>>,suurkeuruu.fi>>,sydansatakunta.fi>>,tyrvaansanomat.fi>>,valkeakoskensanomat.fi>>,vauva.fi>>##+js(trusted-click-element, .sanoma-logo-container ~ .message-component.sticky-buttons button.sp_choice_type_12[title="Asetukset"])
+aamulehti.fi>>,etlehti.fi>>,gloria.fi>>,hyvaterveys.fi>>,jamsanseutu.fi>>,janakkalansanomat.fi>>,kankaanpaanseutu.fi>>,kmvlehti.fi>>,kodinkuvalehti.fi>>,merikarvialehti.fi>>,nokianuutiset.fi>>,pelikone.fi>>,rannikkoseutu.fi>>,ruutu.fi>>,satakunnankansa.fi>>,soppa365.fi>>,suurkeuruu.fi>>,sydansatakunta.fi>>,tyrvaansanomat.fi>>,valkeakoskensanomat.fi>>,vauva.fi>>##+js(trusted-click-element, .sanoma-logo-container ~ .message-component.privacy-manager-tcfv2 .tcfv2-stack[title="Sanoman sisällönjakelukumppanit"] button.pm-switch[aria-checked="false"])
+aamulehti.fi>>,etlehti.fi>>,gloria.fi>>,hyvaterveys.fi>>,jamsanseutu.fi>>,janakkalansanomat.fi>>,kankaanpaanseutu.fi>>,kmvlehti.fi>>,kodinkuvalehti.fi>>,merikarvialehti.fi>>,nokianuutiset.fi>>,pelikone.fi>>,rannikkoseutu.fi>>,ruutu.fi>>,satakunnankansa.fi>>,soppa365.fi>>,suurkeuruu.fi>>,sydansatakunta.fi>>,tyrvaansanomat.fi>>,valkeakoskensanomat.fi>>,vauva.fi>>##.sanoma-logo-container ~ .message-component.privacy-manager-tcfv2 .tcfv2-stack:not([title="Sanoman sisällönjakelukumppanit"]) button.pm-switch.checked:remove-class(checked)
+aamulehti.fi>>,etlehti.fi>>,gloria.fi>>,hyvaterveys.fi>>,jamsanseutu.fi>>,janakkalansanomat.fi>>,kankaanpaanseutu.fi>>,kmvlehti.fi>>,kodinkuvalehti.fi>>,merikarvialehti.fi>>,nokianuutiset.fi>>,pelikone.fi>>,rannikkoseutu.fi>>,ruutu.fi>>,satakunnankansa.fi>>,soppa365.fi>>,suurkeuruu.fi>>,sydansatakunta.fi>>,tyrvaansanomat.fi>>,valkeakoskensanomat.fi>>,vauva.fi>>##+js(trusted-click-element, .sanoma-logo-container ~ .message-component button.sp_choice_type_SAVE_AND_EXIT[title="Tallenna"], , 1500)
+aamulehti.fi,etlehti.fi,gloria.fi,hyvaterveys.fi,jamsanseutu.fi,janakkalansanomat.fi,kankaanpaanseutu.fi,kmvlehti.fi,kodinkuvalehti.fi,merikarvialehti.fi,nokianuutiset.fi,pelikone.fi,rannikkoseutu.fi,ruutu.fi,satakunnankansa.fi,soppa365.fi,suurkeuruu.fi,sydansatakunta.fi,tyrvaansanomat.fi,valkeakoskensanomat.fi,vauva.fi#@#[title="SP Consent Message"]
+aamulehti.fi,etlehti.fi,gloria.fi,hyvaterveys.fi,jamsanseutu.fi,janakkalansanomat.fi,kankaanpaanseutu.fi,kmvlehti.fi,kodinkuvalehti.fi,merikarvialehti.fi,nokianuutiset.fi,pelikone.fi,rannikkoseutu.fi,ruutu.fi,satakunnankansa.fi,soppa365.fi,suurkeuruu.fi,sydansatakunta.fi,tyrvaansanomat.fi,valkeakoskensanomat.fi,vauva.fi##html.sp-message-open:style(overflow: auto !important; width: initial !important)
+aamulehti.fi,etlehti.fi,gloria.fi,hyvaterveys.fi,jamsanseutu.fi,janakkalansanomat.fi,kankaanpaanseutu.fi,kmvlehti.fi,kodinkuvalehti.fi,merikarvialehti.fi,nokianuutiset.fi,pelikone.fi,rannikkoseutu.fi,ruutu.fi,satakunnankansa.fi,soppa365.fi,suurkeuruu.fi,sydansatakunta.fi,tyrvaansanomat.fi,valkeakoskensanomat.fi,vauva.fi##html.sp-message-open > body:style(position: unset !important; margin-top: 0 !important; overflow: visible !important)
 vogue.co.uk,wired.com##+js(trusted-set-cookie, OptanonConsent, groups=C0001%3A1%2CC0009%3A0%2CC0002%3A0%2CC0003%3A1%2CC0004%3A1, 1year)
 jekabpils.lv##+js(trusted-set-cookie, allowCookies, '{"uvc":true,"__cfduid":true}')
 jekabpils.lv###cookieConsent
@@ -31194,6 +31201,10 @@ laprovincia.es,informacion.es,tportal.hr,ivoox.com,as.com,slam.nl,rmcbfmplay.com
 elpais.com##+js(trusted-click-element, #pmConsentWall .pmConsentWall-button:not([href]), '', 1000, reloadAfterClick:200)
 euronews.com###poool-fullscreen-widget
 vroomly.com##+js(trusted-set-cookie, cookie_consent_202401, '{"sentry":false,"braze":false,"userpilot":false,"googleAnalytics":false,"amplitude":false,"hotjar":false,"facebookPixel":false,"googleAds":false,"kwanko":false}')
+cdn.privacy-mgmt.com##+js(trusted-click-element, button[title="Hyväksy"], , 1000)
+nomonday.pl##+js(trusted-set-cookie, nmcmpv2, '{"ad":0,"analytics":0,"functionality":0,"personalization":0,"security":0}')
+cmp.motorsport-magazin.com##+js(trusted-click-element, button[title="Zustimmen und weiter"], , 1000)
+foodbooking.com##+js(trusted-set-cookie, glf.functionality_consent, '{"functionality":false,"advertising":false}', , , reload, 1)
 ryobitools.eu##+js(trusted-click-element, button#cookie-onetrust-show-info, , 900)
 ryobitools.eu##+js(trusted-click-element, .save-preference-btn-handler, , 1100)
 ryobitools.eu###onetrust-consent-sdk
@@ -31325,7 +31336,8 @@ cmpv2.independent.co.uk##+js(trusted-click-element, button[aria-label="Reject Al
 prospre.io##+js(trusted-set-cookie, cookieConsent, '{"adConsentGranted":false,"adUserDataConsentGranted":false,"adPersonalizationConsentGranted":false,"analyticsConsentGranted":false,"personalizationConsentGranted":false}', , , reload, 1)
 argos.co.uk##+js(trusted-click-element, button[id="explicit-consent-prompt-reject"], ,1000)
 joinrs.com##+js(trusted-set-cookie, cookie-consent-settings, %5B%5D)
-poco.de,moebelix.*,moemax.*,xxxlutz.*,xxxlesnina.*##+js(trusted-click-element, button[data-purpose="cookieBar.button.accept"], , 1000)
+poco.de,moemax.*,xxxlutz.*,xxxlesnina.*##+js(trusted-click-element, button[data-purpose="cookieBar.button.accept"], , 1000)
+moebel.de,mobi24.es,moebel24.ch,moebel24.at,meubelo.nl,mobi24.it,meubles.fr,moebel24.ch,living24.uk,living24.pl##+js(trusted-click-element, button[data-testid="uc-button-decline"], , 1000)
 moebel24.at,moebel24.ch,meubles.fr,meubelo.nl,moebel.de,poco.de##+js(trusted-click-element, button[data-testid="uc-button-accept-and-close"], , 1000)
 lipo.ch##+js(trusted-click-element, [data-testid="submit-login-button"].decline-consent, , 1000)
 schubiger.ch##+js(trusted-click-element, button[type="submit"].btn-deny , , 1000)
@@ -31400,7 +31412,7 @@ online.no,telenor.no##+js(trusted-click-element, a[id="consent_prompt_decline"],
 redcare.it##+js(trusted-set-cookie, usercentrics_consent, '{"ad_storage":0,"analytics_storage":0,"functional":0}')
 austrian.com,lufthansa.com##+js(trusted-click-element, button[id="cm-acceptNone"], , 1000)
 kampfkunst-herz.de,glow25.de,h-f.at,hornetsecurity.com,kayzen.io,wasserkunst-hamburg.de,zahnspange-oelde.de###BorlabsCookieBox
-kampfkunst-herz.de,glow25.de,h-f.at,hornetsecurity.com,ifun.de,kayzen.io,wasserkunst-hamburg.de,zahnspange-oelde.de##+js(trusted-click-element, button.brlbs-btn-accept-only-essential, , 1000)
+kampfkunst-herz.de,glow25.de,h-f.at,hornetsecurity.com,ifun.de,kayzen.io,straschu-ev.de,wasserkunst-hamburg.de,zahnspange-oelde.de##+js(trusted-click-element, button.brlbs-btn-accept-only-essential, , 1000)
 xinedome.de##+js(trusted-click-element, button.brlbs-btn-save, , 1000)
 bnc.ca,decathlon.fr,egora.fr,engelvoelkers.com,estrategiasdeinversion.com,festo.com,francebleu.fr,francemediasmonde.com,geny.com,giphy.com,idealista.com,infolibre.es,inpost.pl,information.tv5monde.com,ing.es,knipex.de,laprovence.com,lemondeinformatique.fr,libertaddigital.com,mappy.com,marianne.net,orf.at,philibertnet.com,researchgate.net,rtbf.be,rtl.be,standaard.be,stroilioro.com,taxfix.de,telecinco.es,vistaalegre.com,wsp.com,zimbra.free.fr##+js(trusted-click-element, button[id="didomi-notice-disagree-button"], , 1000)
 jeanmarcmorandini.com,europe1.fr##+js(trusted-click-element, a[href="javascript:Didomi.setUserDisagreeToAll()"], , 1000)
@@ -31604,7 +31616,7 @@ interhyp.de##+js(trusted-click-element, button#cm-btnRejectAll, , 1000)
 indigoneo.*##+js(trusted-click-element, button[data-cy="iUnderstand"], , 1000)
 stiwa.com##+js(trusted-set-cookie, siwa-cb, 'media=true,essentials=true')
 transparency.meta.com##+js(trusted-click-element, button[data-cookiebanner="accept_button"], , 1000)
-dojusagro.lt,eok.ee,kripa.it,nextdaycatering.co.uk,safran-group.com,sr-ramenendeuren.be,ilovefreegle.org,tribexr.com,understandingsociety.ac.uk##+js(trusted-click-element, button.cky-btn-reject, , 1000)
+dojusagro.lt,eok.ee,kripa.it,gameinformer.com,nextdaycatering.co.uk,safran-group.com,sr-ramenendeuren.be,ilovefreegle.org,tribexr.com,understandingsociety.ac.uk##+js(trusted-click-element, button.cky-btn-reject, , 1000)
 bestbuycyprus.com##+js(trusted-click-element, button#reject-all-gdpr, , 1000)
 naturesfinest.pt##+js(trusted-set-cookie, cookie_consent, agree_none, , , reload, 1)
 tatararazors.com##+js(trusted-set-cookie, cookie-concent, '{"marketing":false,"statistics":false}')
@@ -32246,7 +32258,10 @@ playseatstore.com##+js(trusted-click-element, a.avg-btn-allow, , 1000)
 tivify.tv>>##+js(trusted-click-element, button[title="ACEPTAR Y GUARDAR"], , 1000)
 swiss-sport.tv##+js(trusted-click-element, #cookiescript_reject, , 500)
 targobank-magazin.de,zeit-verlagsgruppe.de,online-physiotherapie.de##+js(trusted-click-element, ._brlbs-refuse-btn > ._brlbs-cursor._brlbs-btn, , 1000)
-kieferorthopaede-freisingsmile.de##+js(trusted-click-element, ._brlbs-accept > ._brlbs-btn-accept-all, , 1000)
+adisfaction.ch,kieferorthopaede-freisingsmile.de,jockenhoefer.de##+js(trusted-click-element, ._brlbs-accept > ._brlbs-btn-accept-all, , 1000)
+modivo.*##+js(set-local-storage-item, __MODIVO__consents_accepted, true)
+modivo.*##+js(set-local-storage-item, __MODIVO__hide_modal_consents, 1)
+modivo.*##+js(trusted-set-local-storage-item, __MODIVO__items_consents_codes, '["category_advertisement","category_analysis_and_research","category_location","category_processes","category_service_configuration","Zowie","Synerise","Double Take","Wirtualna Polska Media","Onet","Playlink","INIS sp z o.o.","Tradedoubler","Google Ads","Snowdog","Ringier Axel Springer Polska","Facebook","Verizon Media","Microsoft Corporation","Criteo GmbH","RTB House","TikTok","Hotjar"]')
 nltraining.nl##+js(trusted-click-element, .cookie-footer > button[type="submit"], , 1000)
 kmudigital.at##+js(trusted-click-element, button#cookie-banner-agree-all, , 1000)
 mintysquare.com##+js(trusted-click-element, button[class="amgdprcookie-button -allow"], , 1000)
