@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Thu, 27 Nov 2025 10:14:37 GMT
+! Last modified: Thu, 27 Nov 2025 22:22:52 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.95.69
+!   - Version: 2.0.95.72
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/refs/heads/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -70266,6 +70266,8 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xmlhttprequest,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$third-party,object,redirect=noop.js,script
+||xplay.gg/api/server/analytics/mixpanel
+kf.qq.com##+js(set-constant, Aegis, noopFunc)
 ||app-de-na1.niceincontact.com/logger-public
 /webruntime/log/*$domain=help.disneyplus.com|help.hulu.com
 ||storage.googleapis.com/shufoo-prod-imp-gif/
@@ -71890,7 +71892,6 @@ wanchan.jp##.recommend_header + div[style^="aspect-ratio:"]
 ||clarin.com/js/meter*.js
 ||st-wzb.clarin.com/weizenbock/amazon/min.js
 ||cdn.thinkindot.com/tracker/tracker-*.min.js
-||olympics.com/ddna-event-router/ddna-analytics.js
 ||k.p-n.io/event-stream
 ||rebuyengine.com/api/*/analytics/event/
 ||gstatic.com/devrel-devsite/*/js/devsite_*analytics*.js
@@ -79717,6 +79718,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||floweryoperation.com^
 ||flushingbeast.com^
 ||flutteringfireman.com^
+||flystranger.com^
 ||foambench.com^
 ||followborder.com^
 ||fontserif.com^
