@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Wed, 26 Nov 2025 22:23:33 GMT
+! Last modified: Thu, 27 Nov 2025 10:14:37 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Wed, 26 Nov 2025 18:06:55 +0000
+!   - Last modified: Thu, 27 Nov 2025 05:17:55 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Wed, 26 Nov 2025 02:14:04 +0000
@@ -20,14 +20,14 @@
 !   - Last modified: Tue, 25 Nov 2025 17:22:40 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Tue, 25 Nov 2025 17:01:30 +0000
+!   - Last modified: Thu, 27 Nov 2025 05:02:45 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
 !   - Last modified: Sat, 08 Nov 2025 04:03:16 +0000
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Wed, 26 Nov 2025 10:18:13 +0000
+!   - Last modified: Thu, 27 Nov 2025 04:52:52 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
 !   - Last modified: Sun, 23 Nov 2025 13:40:38 +0000
@@ -7618,6 +7618,7 @@ devicediary.online,gamesleech.com##+js(nowoif, _blank)
 ||90003cfd.cfd^
 ||securecloudtorrent.com^
 ||systemsecurenow.icu^
+app.link2unlock.com##+js(nowoif)
 xnxx.com,xvideos.com###ad-header-mobile
 jprime.jp##.ad-overlay
 apkdone.com##.adplaceholder-top
@@ -10374,6 +10375,7 @@ w3schools.com###tryitLeaderboard + #breadcrumb ~ #container:style(top: 84px!impo
 w3schools.com###tryitLeaderboard + .trytopnav ~ #dragbar + #container:style(top: 48px!important;)
 w3schools.com##.trytopnav:style(top: 0!important;)
 w3schools.com###tryitLeaderboard ~ #container:style(top: 48px!important;)
+||w3schools.com/lib/sparteo.css
 unionmanga.xyz##+js(nosiif, visibility, 1000)
 vviruslove.com##+js(nosiif, visibility, 1000)
 linksaya.com##+js(acs, addEventListener, google_ad_client)
@@ -22261,11 +22263,12 @@ streamfree.to##+js(no-xhr-if, method:HEAD)
 starstreams.pro##+js(no-fetch-if, adsbygoogle)
 *$script,xhr,3p,denyallow=challenges.cloudflare.com,domain=huoqwk.com
 huoqwk.com##+js(nostif, touchstart, 1000)
-v2movies.me##+js(nowoif)
+v2movies.click,v2movies.me##+js(nowoif)
 ||aj2403.online^
+||ffb7df5a878b59e42e257c042f54bed2.com^
 ||refpa58144.com^
 ||serving.adserver.live^
-v2movies.me##[href^="https://refpa58144.com/"]
+v2movies.click,v2movies.me##[href^="https://refpa58144.com/"]
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
 ||vlc.de^$doc
@@ -30276,8 +30279,10 @@ japscan.*##div[data-src]:remove()
 japscan.*##span ~ div[id]:not([class]):remove()
 japscan.*##+js(trusted-suppress-native-method, Document.prototype.querySelector, '"/^div\[/"')
 japscan.*##span ~ span[id][class]:remove()
-japscan.*###navHeader ~ div[id][class]:not(#chapters, #reader):remove()
-japscan.*##.w-100 > div[id][class]:not(#chapters, #reader):remove()
+japscan.*###navHeader ~ [id][class]:not(#chapters, #reader):remove()
+japscan.*##.w-100 > [id][class]:not(#chapters, #reader):remove()
+japscan.*##+js(set, aclib.runPop, 1)
+japscan.*##+js(trusted-suppress-native-method, Document.prototype.getElementsByTagName, '"i"')
 poophq.com,veev.to,doods.to##+js(nowoif)
 poophq.com,veev.to,doods.to##+js(no-xhr-if, /vast.php?)
 poophq.com,veev.to,doods.to##+js(no-xhr-if, /click\.com|preroll|native_render\.js|acscdn/, length:10001)
@@ -30940,7 +30945,7 @@ forbes.com##+js(trusted-click-element, button[aria-label="Accept All"], , 1000)
 snowandrock.com##+js(trusted-set-cookie, consent_identifier, 16f69085-c6f2-42f6-a4cd-807b24a37c0b, , , reload, 1)
 snowandrock.com##+js(trusted-set-cookie, consent_setting, analytics%3A0%7Cfunctional%3A1%7Cmarketing%3A0)
 dailybuzz.nl,bnn.de,dosenbach.ch,dw.com,kinepolis.*,mediaite.com,nzz.ch,winfuture.de,lippu.fi,racingnews365.com,reifendirekt.ch,vaillant.*##+js(trusted-click-element, #cmpwrapper >>> #cmpbntyestxt, , 1000)
-bauhaus.no,bauhaus.se,beko-group.de,billiger.de,burda.com,vanharen.nl,deichmann.com,meraluna.de,slashdot.org,hermann-saunierduval.it,protherm.cz,saunierduval.es,protherm.sk,protherm.ua,saunierduval.hu,saunierduval.ro,saunierduval.at,awb.nl##+js(trusted-click-element, #cmpwrapper >>> .cmptxt_btn_no, , 1000)
+bauhaus.no,bauhaus.se,beko-group.de,billiger.de,burda.com,continental-tires.com,vanharen.nl,deichmann.com,meraluna.de,slashdot.org,hermann-saunierduval.it,protherm.cz,saunierduval.es,protherm.sk,protherm.ua,saunierduval.hu,saunierduval.ro,saunierduval.at,awb.nl##+js(trusted-click-element, #cmpwrapper >>> .cmptxt_btn_no, , 1000)
 spar.hu,group.vattenfall.com##+js(trusted-click-element, #cmpwrapper >>> .cmptxt_btn_save, , 1000)
 zdf.de##+js(trusted-set-cookie, zdf_cmp_client, '{%22version%22:%22v1%22%2C%22iteration%22:1%2C%22consents%22:[{%22id%22:%22personalisierung%22%2C%22value%22:false}%2C{%22id%22:%22socialMedia%22%2C%22value%22:true}%2C{%22id%22:%22instagram%22%2C%22value%22:true}%2C{%22id%22:%22twitter%22%2C%22value%22:true}%2C{%22id%22:%22facebook%22%2C%22value%22:true}%2C{%22id%22:%22drittsysteme%22%2C%22value%22:true}%2C{%22id%22:%22erforderlich%22%2C%22value%22:true}%2C{%22id%22:%22erfolgsmessung%22%2C%22value%22:true}]}')
 microbit.org##+js(trusted-set-cookie, MBCC, %7B%22version%22%3A1%2C%22functional%22%3Atrue%2C%22analytics%22%3Afalse%7D)
