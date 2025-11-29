@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Filters
-! Last modified: Thu, 20 Nov 2025 08:17:26 GMT
+! Last modified: Sat, 29 Nov 2025 06:43:25 GMT
 ! Expires: 1 hours
 ! Description: The filters from Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -33,6 +33,10 @@ iplark.com##+js(sukka-defuse-devtools-detector)
 ||tags.news.com.au/prod/adblock/adblock.js
 ###adb-mask
 ||crackle.com/vendor/adex.js
+||everymac.com/javascripts/an.js
+||everyi.com/javascripts/an.js
+||everymac.com/templates/prompt.html
+||everyi.com/templates/prompt.html
 stackblitz.com#@#+js(sukka-defuse-service-worker)
 webcontainer.io#@#+js(sukka-defuse-service-worker)
 ||youtube.com/embed/$3p,frame,redirect=click2load.html
@@ -92,7 +96,7 @@ lingchenzi.com#@#.category-share
 ||unpkg.com/orejime
 ||jsdelivr.net/npm/orejime
 /*/sign_d?*$all,important
-/*/resolve?*$all,important
+/*/resolve?*$all,important,domain=~dnscontrol.org
 /*/dns_resolve_backup?*$all,important
 ://223.5.5.5$important
 ://223.6.6.6$important
@@ -434,6 +438,7 @@ justauth.cn##+js(set, window._AdBlockInit, true)
 ||pluto.tv/v1/pixel$redirect=1x1.gif
 ||esm.sh/@solana/$domain=v2ex.com,redirect=noop.js
 ||wwads.cn$script,redirect=noop.js
+||acquia.com/ct
 @@||e.customeriomail.com
 ||app.moegirl.org.cn/insight-assets/images/20230413-moepad/800x300.png
 ||storage.moegirl.org.cn/console-plus/uploads/2024/02/01/a475bee2aa57da0e65f5341b78ccf551.png
@@ -682,3 +687,7 @@ www.campbellramble.ai##[aria-label*="Subscribe modal"]
 zhale.me##.sponsor-card
 ||tailwindcss.com/*book-promo$image
 ||tube.hentaistream.com/wp-includes/images/hvilla/*.gif$image
+www.ip33.cn##.vps-widget-container
+everymac.com###contentsponleft
+seeklogo.com##.googlePartnersWp
+www.gl-inet.com##.fixed-video
