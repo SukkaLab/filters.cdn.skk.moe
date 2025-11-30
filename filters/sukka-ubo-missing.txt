@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Sun, 30 Nov 2025 10:12:42 GMT
+! Last modified: Sun, 30 Nov 2025 22:23:07 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.95.85
+!   - Version: 2.0.95.87
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/refs/heads/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -51963,7 +51963,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||stat.dealtime.com^
 ||stat.download.xunlei.com^
 ||stat.eagleplatform.com^
-||stat.i3.dmm.com^
 ||stat.kbs.co.kr^
 ||stat.kununu.cz^
 ||stat.mydaddy.cc^
@@ -70271,6 +70270,8 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||crosset.onward.co.jp/ajax/getExternalServiceWebTrackingTags
+||insight-x.tech/trackerlog-publisher-service/tracker-logs
 ||postmates.com/_events$redirect=noop.txt,image,media,subdocument,stylesheet,script,xhr,other
 ||postmates.com/_p/api/setRobotEvents
 ||wishabi.com/track.gif
@@ -76845,6 +76846,7 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=saturn.de
 @@||metrics.us.playstation.com/b/ss/
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
+@@||datadoghq-browser-agent.com/*/datadog-logs.js$domain=crosset.onward.co.jp
 @@||tags.tiqcdn.com/utag/pch/*/prod/utag.js$domain=pch.com
 @@||googletagservices.com/tag/js/gpt.js$xhr,script,redirect=googletagservices_gpt.js,domain=cava.tw
 @@||integrations.fitanalytics.com/shop/modivo/pdp.js$domain=modivo.*
