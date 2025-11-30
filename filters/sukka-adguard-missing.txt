@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sat, 29 Nov 2025 22:22:43 GMT
+! Last modified: Sun, 30 Nov 2025 10:12:42 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sat, 29 Nov 2025 20:46:06 +0000
+!   - Last modified: Sat, 29 Nov 2025 22:17:07 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Sat, 29 Nov 2025 05:34:06 +0000
@@ -22297,6 +22297,8 @@ inyatrust.co.in##+js(set, detectAdBlock, noopFunc)
 hentaimama.tv##+js(no-fetch-if, havenclick)
 superfastrelease.xyz##+js(aeld, load, /await|clientHeight/)
 superfastrelease.xyz##+js(nostif, Function)
+/images/ads/*.gif$image,1p,domain=lookmovie.pn|lookmovie2.la|lookmovie2.to
+lookmovie.pn,lookmovie2.la,lookmovie2.to##+js(trusted-json-edit-xhr-response, ..adTimeout=0, propsToMatch, /api/v)
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
 ||vlc.de^$doc
