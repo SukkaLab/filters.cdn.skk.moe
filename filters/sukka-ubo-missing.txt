@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Sun, 30 Nov 2025 22:23:07 GMT
+! Last modified: Mon, 01 Dec 2025 10:16:22 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.95.87
+!   - Version: 2.0.95.91
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/refs/heads/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -49442,6 +49442,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||htm*.hepsiburada.com^
 ||valencia-beacons.xumo.com^
 ||sync.getpublica.com^
 ||events-tracker.deliveroo.net^
@@ -70270,6 +70271,11 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+/wp-content/plugins/pmc-plugins/pmc-harmony-companion/build/ga.js$domain=wwd.com|sportico.com
+||zhihu.com/sc-profiler
+||zhihu.com/zbst/events/
+||datahub.zhihu.com/collector/
+||zxid-api.mobileservice.cn/sdk/base/report
 ||crosset.onward.co.jp/ajax/getExternalServiceWebTrackingTags
 ||insight-x.tech/trackerlog-publisher-service/tracker-logs
 ||postmates.com/_events$redirect=noop.txt,image,media,subdocument,stylesheet,script,xhr,other
@@ -71020,7 +71026,7 @@ raycast.com##+js(set-session-storage-item, /ph_phc_/, $remove$)
 ||ig-store.ru/site/record-modal-event
 ||cdn.jsdelivr.net/npm/@snowplow/
 ||anizmplayer.com/gMetrics/
-/metrics^|$script,domain=anizle.com|anizm.net|puffytr.com
+/metrics^|$script,domain=anizle.*|anizle.com|anizle.net|anizm.*|anizm.net|anizm.com.tr|anizm.pro|puffytr.com
 ||free.ranklet4.com/impression?
 ||joymaxtr.net/jc/gtm.js
 ||capi.elements.video/tr/
@@ -76846,6 +76852,7 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=saturn.de
 @@||metrics.us.playstation.com/b/ss/
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
+@@||cdn.clerk.io/clerk.js$domain=smnovella.com
 @@||datadoghq-browser-agent.com/*/datadog-logs.js$domain=crosset.onward.co.jp
 @@||tags.tiqcdn.com/utag/pch/*/prod/utag.js$domain=pch.com
 @@||googletagservices.com/tag/js/gpt.js$xhr,script,redirect=googletagservices_gpt.js,domain=cava.tw
@@ -79841,6 +79848,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||gravitykick.com^
 ||grayoranges.com^
 ||grayreceipt.com^
+||grayscaleart.com^
 ||greasegarden.com^
 ||greasysquare.com^
 ||gridbelow.com^
@@ -80551,6 +80559,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||scrollservice.com^
 ||scrubswim.com^
 ||sealtravels.com^
+||seamlesssalon.com^
 ||seatsmoke.com^
 ||secondhandfall.com^
 ||secretivesheep.com^
