@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Mon, 01 Dec 2025 22:23:26 GMT
+! Last modified: Tue, 02 Dec 2025 10:15:25 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.95.93
+!   - Version: 2.0.95.95
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/refs/heads/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -70872,6 +70872,7 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||audiocircuit.dk/koko-analytics-collect.php
 /wp-content/plugins/pmc-plugins/pmc-harmony-companion/build/ga.js$domain=wwd.com|sportico.com
 ||zhihu.com/sc-profiler
 ||zhihu.com/zbst/events/
@@ -79790,6 +79791,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||applyless.com^
 ||aquaticowl.com^
 ||archswimming.com^
+||arclet.net^
 ||aromamirror.com^
 ||arrivegrowth.com^
 ||arubahello.com^
@@ -80869,6 +80871,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||overratedchalk.com^
 ||owlreporter.com^
 ||owlsr.us^
+||owlstwo.com^
 ||oxygenfuse.com^
 ||pailcrime.com^
 ||pailpatch.com^
@@ -81380,6 +81383,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||stocktheme.com^
 ||stomachscience.com^
 ||stonechin.com^
+||stonepole.com^
 ||stopstomach.com^
 ||stormyflower.com^
 ||straightnest.com^
