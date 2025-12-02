@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Tue, 02 Dec 2025 10:15:25 GMT
+! Last modified: Tue, 02 Dec 2025 22:21:32 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.95.95
+!   - Version: 2.0.96.0
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/refs/heads/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -218,6 +218,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||tags.mlytics.com^
 ||tncid.app^
 ||rampanel.com^$3p
 ||l5id.com^
@@ -49853,6 +49854,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||advancedanalytics-websocket-pri-001.hexaglobe.net^
 ||htm*.hepsiburada.com^
 ||valencia-beacons.xumo.com^
 ||sync.getpublica.com^
@@ -50219,7 +50221,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||tracking.ringieraxelspringer.tech^
 ||event.*.shoplive.cloud^
 ||aidsvc.netflix.com^
-||sensor.grubhub.com^
 ||kloggyr-service.kyruus.com^
 ||geo.justwatch.com^
 ||sspnm.emol.com^
@@ -70872,6 +70873,9 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||kolesa.kz/ms/rum/v1/send
+||kcdn.online/empty.gif?r=
+lastminute.com.au/api/uisprime/track
 ||audiocircuit.dk/koko-analytics-collect.php
 /wp-content/plugins/pmc-plugins/pmc-harmony-companion/build/ga.js$domain=wwd.com|sportico.com
 ||zhihu.com/sc-profiler
@@ -75968,6 +75972,8 @@ mail.ferret-one.com%2Fbeacon$image
 %2FCI0%2F0$image
 /ss/o/*/ho.gif$image
 %2Fss%2Fo%2F*%2Fho.gif$image
+://t.paypal.com/ts?v=$image
+%3A%2F%2Ft.paypal.com%2Fts%3Fv%3D$image
 emailtracking.cashstar.com$image
 mailgun-tracking.ridi.com$image
 client-data.knak.io$image
@@ -76222,6 +76228,8 @@ news.samsung.com%2Fus%2F%3Fnoti%3D$image
 esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 esputnik.com/repository/applications/commons/hidden.png
 email.mail2.smartrmail.co$image
+email.*.com/o/$image
+email.*.com%2Fo%2F$image
 trk.*.com/o/$image
 trk.*.com%2Fo%2F$image
 ctrk.klclick*.com/o/$image
@@ -76451,6 +76459,7 @@ dlsdk.appsflyer.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||tc.vbnmhjlp.com^
 ||logrcv.adseyeservice.com^
 ||stats.cn.ronghub.com^
 ||statistic.live.126.net^
@@ -77454,6 +77463,7 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=saturn.de
 @@||metrics.us.playstation.com/b/ss/
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
+||tms.post.ch/*gtm.js|$script,redirect=google-analytics_analytics.js
 @@||cdn.clerk.io/clerk.js$domain=smnovella.com
 @@||datadoghq-browser-agent.com/*/datadog-logs.js$domain=crosset.onward.co.jp
 @@||tags.tiqcdn.com/utag/pch/*/prod/utag.js$domain=pch.com
