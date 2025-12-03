@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Wed, 03 Dec 2025 18:29:23 GMT
+! Last modified: Wed, 03 Dec 2025 22:25:39 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.96.4
+!   - Version: 2.0.96.7
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -219,6 +219,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||tracker.zmaticoo.com^
 ||tags.mlytics.com^
 ||tncid.app^
 ||rampanel.com^$3p
@@ -75943,6 +75944,8 @@ link.gmapp*.net$image
 ||rum-static.pingdom.net/*-*.js$script,redirect=noop.js,important,domain=leboncoin.fr
 ||ya.ru/clck/
 ||bing.com/fd/ls/
+%2Famsweb.php%3F
+/amsweb.php?$image
 mail.ferret-one.com/beacon$image
 mail.ferret-one.com%2Fbeacon$image
 /tf/o/*$image
@@ -80192,6 +80195,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||dinnerquartz.com^
 ||direfuldesk.com^
 ||disagreeabledrop.com^
+||discopond.com^
 ||discreetfield.com^
 ||discreetquarter.com^
 ||distributionpocket.com^
@@ -80349,6 +80353,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||fixedfold.com^
 ||flakyfeast.com^
 ||flameuncle.com^
+||flashtexting.com^
 ||fleetbegin.com^
 ||flimsycircle.com^
 ||flimsythought.com^
@@ -80781,6 +80786,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||modularmental.com^
 ||momentfilter.com^
 ||monacobeatles.com^
+||monkeyapes.com^
 ||monkeystyping.com^
 ||monstermemes.com^
 ||monthlyhat.com^
