@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Wed, 03 Dec 2025 14:22:26 GMT
+! Last modified: Wed, 03 Dec 2025 14:40:01 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202512031411
+!   - Version: 202512031431
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 03 Dec 2025 14:11 UTC
+!   - Last modified: 03 Dec 2025 14:31 UTC
 ! * Bypass Paywalls Clean filter
 !   - URL: https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters/blob/raw?file=bpc-paywall-filter.txt
 !   - Version: 4.2.5.1
@@ -69,7 +69,7 @@
 !   - Version: 21August2025v6-Beta
 !   - Homepage: https://github.com/DandelionSprout/adfilt
 ! * 🚪 Browse websites without logging in
-!   - URL: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/BrowseWebsitesWithoutLoggingIn.txt
+!   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/BrowseWebsitesWithoutLoggingIn.txt
 !   - Version: 08October2025v1
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 💡 Pro-LED List
@@ -89,7 +89,7 @@
 !   - Version: 22January2024v1-Beta
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 🎛 Reddit Trash Removal Service
-!   - URL: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/RedditTrashRemovalService.txt
+!   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/RedditTrashRemovalService.txt
 !   - Version: 10November2025v1-Beta
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 🎓 Wikia: Pure Browsing Experience
@@ -97,11 +97,11 @@
 !   - Version: 02April2024v1-Beta
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 📱 Staying On The Phone Browser
-!   - URL: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/stayingonbrowser/Staying%20On%20The%20Phone%20Browser
+!   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/stayingonbrowser/Staying%20On%20The%20Phone%20Browser
 !   - Version: 04November2025v1
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#english
 ! * 🎫 Ad Removal List for Unusual Ads
-!   - URL: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AdRemovalListForUnusualAds.txt
+!   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/AdRemovalListForUnusualAds.txt
 !   - Version: 25June2025v1-Beta
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * ☣️ Anti-Elsagate List
@@ -20174,7 +20174,7 @@ search.brave.com,search.brave4u7jddbv7cyviptqjc7jusxh72uik7zt6adtckl5f4nwy2v72qd
 startpage.com,startpagel6srwcjlue4zgq3zevrujfaow726kjytqbbjyrswwmjzcqd.onion##.image-container:has(.image-quick-details > span:has-text(/^.*(www\.)?[./]?pinterest\.[a-z]{2,4}$/))
 images.search.yahoo.com##li:has(> a.round-img:is([href*=".pinterest.com%2f"],[href*="%2fwww.pinterest."]))
 ecosia.org##article[data-test-id=images-result]:has(a[href*="//i.pinimg.com/"])
-! 🚪 Browse websites without logging in https://raw.githubusercontent.com/DandelionSprout/adfilt/master/BrowseWebsitesWithoutLoggingIn.txt
+! 🚪 Browse websites without logging in https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/BrowseWebsitesWithoutLoggingIn.txt
 ##.onp-sl-inner-wrap:not(html, body)
 ##.onp-sl-outer-wrap:not(html, body)
 ##.onp-sl-social-buttons:not(html, body)
@@ -23346,7 +23346,7 @@ m.imgur.com##.showComments
 m.imgur.com##.share
 m.imgur.com##.get-app-block
 m.imgur.com##.popOverAvatar:has(.getTheApp)
-! 🎛 Reddit Trash Removal Service https://raw.githubusercontent.com/DandelionSprout/adfilt/master/RedditTrashRemovalService.txt
+! 🎛 Reddit Trash Removal Service https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/RedditTrashRemovalService.txt
 reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion###focus-All
 reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion###focus-OC
 reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion###focus-Home
@@ -23564,7 +23564,7 @@ fandom.com##.global-footer__section-advertise
 fandom.com##nav.is-community-bar-in .mobile-global-navigation__left
 fandom.com##nav.is-community-bar-in .mobile-global-navigation__community-bar
 fandom.com##div:not([class],[id],[style]):has(> [data-testid^=QuizBanner i])
-! 📱 Staying On The Phone Browser https://raw.githubusercontent.com/DandelionSprout/adfilt/master/stayingonbrowser/Staying%20On%20The%20Phone%20Browser
+! 📱 Staying On The Phone Browser https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/stayingonbrowser/Staying%20On%20The%20Phone%20Browser
 ###androidAppBanner
 ###AndroidMobileAppBanner
 ###app-badges
@@ -24074,7 +24074,7 @@ quora.com#?#.PageWrapper:style(filter: none !important)
 quora.com##.modal_bg
 linkedin.com#?#html:style(overflow: auto !important)
 linkedin.com#?#body:style(overflow: auto !important)
-! 🎫 Ad Removal List for Unusual Ads https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AdRemovalListForUnusualAds.txt
+! 🎫 Ad Removal List for Unusual Ads https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/AdRemovalListForUnusualAds.txt
 aftenposten.no##.offer
 cuponation.*##.first .d.v
 e-rabattkode.no#?#.er-offer-item:has(.coupon-button:not([data-clip-code]))
