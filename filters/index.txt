@@ -1,9 +1,10 @@
 ! Title: [sukka] Sukka Filters
-! Last modified: Tue, 02 Dec 2025 20:14:56 GMT
+! Last modified: Wed, 03 Dec 2025 14:22:38 GMT
 ! Expires: 1 hours
 ! Description: The filters from Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
 ! Homepage: https://github.com/SukkaW/Filters
+! unknown filter
 mcoun.com##+js(aopr, window.stop)
 mcoun.com##+js(aopr, window.document.keydown)
 mcoun.com##+js(nosiif, /^/)
