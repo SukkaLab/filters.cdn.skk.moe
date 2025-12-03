@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Filters
-! Last modified: Wed, 03 Dec 2025 14:22:38 GMT
+! Last modified: Wed, 03 Dec 2025 14:36:52 GMT
 ! Expires: 1 hours
 ! Description: The filters from Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -83,6 +83,9 @@ webcontainer.io#@#+js(sukka-defuse-service-worker)
 @@||bilivideo.com^$removeparam
 @@||bilivideo.cn^$removeparam
 @@||cloudflare.com/cdn-cgi/trace$domain=skk.moe|localhost
+google.*#@#div[data-lhcontainer="1"][id][data-hveid] > div[data-mcpr][data-mg-cp][data-mcp]
+://www.google.*/async/folsrch?*&async=_basejs:*,_basecomb:*&q=$xhr,badfilter
+google.*#@#div[data-q][data-al]
 @@||awstrack.me^$badfilter
 @@||turing.captcha.qcloud.com/TCaptcha.js$script,domain=sf-express.com
 lingchenzi.com#@#.category-share
@@ -162,6 +165,7 @@ stripe.com##+js(no-fetch-if, r.stripe.com/b method:POST)
 ||adfoc.us$csp=script-src 'none'
 adfoc.us###showSkip:style(display: block!important)
 adfoc.us##+js(trusted-click-element, #showSkip > a.skip)
+imgur.com##.PostOptions-section.PostSubmit
 taobao.com##+js(set, aplus, {})
 taobao.com##+js(set, aplus.getPageSPM, noopFunc)
 taobao.com##+js(set, aplus.getElementSPM, noopFunc)
@@ -232,6 +236,7 @@ windy.com##.premium-button
 ##a[href*="//trwl1.com"]
 ##a[href^="https://ra7.xyz"]
 hanime1.me##a[href*="//l.labsda.com"]
+##* > a[href*="www.stopputin.net"]
 ##iframe[src*="//union."]
 ##[src*="trialhd.com"]
 #@#.footer-cta
