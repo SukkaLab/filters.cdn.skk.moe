@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Tue, 02 Dec 2025 22:21:32 GMT
+! Last modified: Wed, 03 Dec 2025 14:22:26 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,13 +8,14 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.96.0
+!   - Version: 2.0.96.4
 ! * CJX's Annoyance List
-!   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/refs/heads/master/cjx-annoyance.txt
+!   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202511031606
 !   - Homepage: https://github.com/cjx82630/cjxlist
 !   - Last modified: 2025/11/03 16:06 +0800
 ! --------------------------------------------------------------
+! AdGuard Tracking Protection filter (Optimized) https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
 www.youtube.com##+js(no-xhr-if, /\/api\/stats\/atr\?.+?&rt=\d+\.\d+.+?&volume=\d+&cbr=.+?&fexp=v1%[-%0-9C]{300\,}&.+?&muted=\d(&vis=3)?&docid=/ method:POST)
 slobodnadalmacija.hr,meconomynews.com,brandbrief.co.kr,motorgraph.com##+js(abort-current-script, atob, eval(decodeURIComponent(escape(window.atob("KCgpPT5)
 slobodnadalmacija.hr,meconomynews.com,brandbrief.co.kr,motorgraph.com##+js(noeval-if, /07c225f3\.online|content-loader\.com|css-load\.com|html-load\.com/)
@@ -224,7 +225,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||l5id.com^
 ||evorra.net^
 ||yext.com^$3p
-||hackle.io^$3p
 ||track.aimroas.com^
 ||upsellit.com^$3p
 ||assetsconfigcdn.org^
@@ -49854,6 +49854,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||tagbridge.vlp.cz^
 ||advancedanalytics-websocket-pri-001.hexaglobe.net^
 ||htm*.hepsiburada.com^
 ||valencia-beacons.xumo.com^
@@ -70873,6 +70874,8 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||sexyrealsexdolls.com/api/collect
+||wheelify-front.carecart.io/postimpression
 ||kolesa.kz/ms/rum/v1/send
 ||kcdn.online/empty.gif?r=
 lastminute.com.au/api/uisprime/track
@@ -79961,6 +79964,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||canvasandsocks.com^
 ||capablecup.com^
 ||capriciouscorn.com^
+||captainstick.com^
 ||captivatingcanyon.com^
 ||captivatingillusion.com^
 ||captivatingpanorama.com^
@@ -80451,6 +80455,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||gorgeousedge.com^
 ||gorillapage.com^
 ||gossamerwing.com^
+||gotlunched.com^
 ||gracefulmilk.com^
 ||grainmass.com^
 ||grandfatherguitar.com^
@@ -81706,6 +81711,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||zipthelake.com^
 ||zlp6s.pw^
 ||zonewedgeshaft.com^
+! CJX's Annoyance List https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 /wiseatom/banner/pack_
 /bbs/include/javascript/adblock.
 /template/bingfeng/statics/js/pingbi.js
@@ -83307,6 +83313,7 @@ m.babytree.com##script + a[class]
 ||sogou.com/dr/p1.gif
 ||stat.jc001.cn^
 ||ip.tianqiapi.com^
+||count.nuanyuehanxing.com^
 ||pconline.com.cn/ipJson.
 ||develenv.com^$third-party
 ||syzjxz2018.cn^
@@ -83389,6 +83396,7 @@ m.babytree.com##script + a[class]
 ||count.pcauto.com.cn^
 ||count.pcgames.com.cn^
 ||counter.pcauto.com.cn^
+||counter.tianjimedia.com^
 ||countpage.sznews.com^
 ||cpms.now.com^
 ||damai.cn/phpstat/
@@ -83427,6 +83435,7 @@ m.babytree.com##script + a[class]
 ||imp.zol.com.cn^
 ||iqiyi.com/etx?
 ||iqiyi.com/js/pingback/
+||iqiyi.com/track
 ||isdspeed.qq.com^
 ||it168.com/pv.js
 ||itc.cn/cache/lib/v2/odvmonitor/
@@ -83453,6 +83462,7 @@ m.babytree.com##script + a[class]
 ||news.cn/pc-log?
 ||newspage.xilu.com/model/visitlog.js
 ||nmgnews.com.cn/sys/online_calc.js
+||nsclick.baidu.com^
 ||olpv.onlylady.com^
 ||optaim.com^$third-party
 ||other.v.duowan.com^
@@ -83478,6 +83488,7 @@ m.babytree.com##script + a[class]
 ||s-msn.com/portal/js/vendor/manto/
 ||s.btime.com^
 ||s.so.360.cn^
+||s.union.360.cn^
 ||sina.cn*/view?
 ||sohu.com/mail/pv/
 ||stat.2u.com.cn/ol_2u.js
@@ -83485,6 +83496,7 @@ m.babytree.com##script + a[class]
 ||stat.cnmo.com^
 ||stat.cqwb.com.cn^
 ||stat.cutv.com^
+||stat.download.xunlei.com^
 ||stat.ea3w.com^
 ||stat.game.yy.com^
 ||stat.hebnews.cn^
