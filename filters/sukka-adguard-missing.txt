@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Thu, 04 Dec 2025 18:29:58 GMT
+! Last modified: Thu, 04 Dec 2025 22:22:27 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Thu, 04 Dec 2025 15:27:10 +0000
+!   - Last modified: Thu, 04 Dec 2025 18:50:15 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Mon, 01 Dec 2025 13:55:28 +0000
@@ -18796,6 +18796,7 @@ hentaihaven.xxx##+js(nowoif)
 hentaihaven.xxx##+js(set, PlayerLogic.prototype.detectADB, noopFunc)
 hentaihaven.xxx##+js(no-fetch-if, ads-twitter.com)
 hentaihaven.xxx##+js(json-prune, *, all)
+hentaihaven.xxx##+js(no-fetch-if, havenclick)
 hentaihaven.xxx##.hhzt
 hentaihaven.xxx##.code-block
 hentaihaven.xxx##.popecrazy
@@ -18931,6 +18932,7 @@ g9g.eu##+js(aopr, adBlockDetected)
 im9.eu##+js(rmnt, script, /adblock/i)
 im9.eu##+js(acs, eval, replace)
 im9.eu##+js(aeld, load, 0x)
+im9.eu##+js(nostif, setInterval)
 elamigosedition.com##+js(aost, document.addEventListener, blocker)
 elamigosedition.com##+js(nowoif)
 ||elamigosedition.com/templates/games/js/blocker.js^
@@ -22310,6 +22312,7 @@ thenewsdrill.com##+js(no-fetch-if, method:HEAD)
 csst.at##a[href^="https:"] > [alt*="banner"]
 fortnitetracker.com##+js(nostif, nitroAds)
 hentaila.tv##+js(json-prune, vast popup adblock)
+daozoid.com##+js(aost, document.getElementById, adsBlocked)
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
