@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Wed, 03 Dec 2025 22:25:39 GMT
+! Last modified: Thu, 04 Dec 2025 03:15:42 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -27,7 +27,7 @@
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Tue, 02 Dec 2025 18:23:05 +0000
+!   - Last modified: Wed, 03 Dec 2025 20:38:52 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
 !   - Last modified: Tue, 02 Dec 2025 17:19:32 +0000
@@ -30870,15 +30870,7 @@ evaair.com##+js(trusted-set-cookie, _EVAGDPRfunctional, Y, 1year)
 vkmag.com##+js(trusted-set-cookie, OptanonConsent, groups=C0004%3A0%2CC0003%3A1%2CC0002%3A0%2CC0001%3A1%2CSTACK42%3A0, 1year)
 vkmag.com##+js(trusted-set-cookie, eupubconsent-v2, CPt6LrpPt6LrpAcABBENDKCgAAAAAAAAAAYgGBtX_T5eb2vj-3ZcN_tkaYwP55y3o2wzhhaIke8NwIeH7BoGJ2MwvBV4JiACGBAkkiKBAQVlHGBcCQAAgIgRiSKMYk2MjzNKJLJAilMbO0NYCD9mnkHT2ZCY70-uO__zvneAAAAYJABAXmKgAgLzGQAQF5joAIC8yUAEBeZSACAvMAAA.YAAAAAAAAAAA, 1year, , reload, 1)
 mtvuutiset.fi##+js(trusted-set-cookie, OptanonConsent, groups=1%3A1%2C2%3A0%2C3%3A1%2C4%3A0%2C5%3A1%2CBG57%3A0%2CBG58%3A0%2CBG59%3A0, 1year)
-almamedia.fi>>,ampparit.com>>,arvopaperi.fi>>,kauppalehti.fi>>,mikrobitti.fi>>,talouselama.fi>>,tekniikkatalous.fi>>,tivi.fi>>,uusisuomi.fi>>##+js(trusted-click-element, button.alma-cmp-button[title="Hyväksy"])
-almamedia.fi,ampparit.com,arvopaperi.fi,kauppalehti.fi,mikrobitti.fi,talouselama.fi,tekniikkatalous.fi,tivi.fi,uusisuomi.fi##html.sp-message-open:style(overflow: auto !important; width: initial !important)
-almamedia.fi,ampparit.com,arvopaperi.fi,kauppalehti.fi,mikrobitti.fi,talouselama.fi,tekniikkatalous.fi,tivi.fi,uusisuomi.fi##html.sp-message-open > body:style(position: unset !important; margin-top: 0 !important; overflow: visible !important)
-almamedia.fi,ampparit.com,arvopaperi.fi,kauppalehti.fi,mikrobitti.fi,talouselama.fi,tekniikkatalous.fi,tivi.fi,uusisuomi.fi#@#[title="SP Consent Message"]
-almamedia.fi,ampparit.com,arvopaperi.fi,kauppalehti.fi,mikrobitti.fi,talouselama.fi,tekniikkatalous.fi,tivi.fi,uusisuomi.fi##+js(trusted-set-cookie, consentUUID, 84561898-f8ab-4872-8ae3-b46523df21ba_38, 1year)
-almamedia.fi,ampparit.com,arvopaperi.fi,kauppalehti.fi,mikrobitti.fi,talouselama.fi,tekniikkatalous.fi,tivi.fi,uusisuomi.fi##+js(trusted-set-cookie, euconsent-v2, CQISSMAQISSMAAGABBENBOFsAP_gAAAAAApAAAAAAAAA.YAAAAAAAAAAA, 1year)
-almamedia.fi,ampparit.com,arvopaperi.fi,kauppalehti.fi,mikrobitti.fi,talouselama.fi,tekniikkatalous.fi,tivi.fi,uusisuomi.fi##+js(trusted-set-cookie, consentDate, $currentISODate$, 1year)
-almamedia.fi##+js(trusted-set-cookie, gravitoData, '{"TCString":"CQJXf4AQJXf4ABUASAFIBTFgAAAAAAAAAApAAAAAAAChIBoACwAKgAeABBADIANAAiABMAD8AIQAbIBIgDFALzHQDwAFgAVABBADIANAAiABMAD8ANEAbIBFgCRAGKAOoAmQBeZCAGAAsAxQB1CUAcABYARAAmADZAMUAdQBeZSAcAAsACoAIIAZABoAEQAJgAfgBogDZAIsASIAxQB1AF5g.YAAAAAAAAIAA","NonTCFVendors":[{"id":1,"name":"Facebook","consent":true},{"id":3,"name":"Google","consent":true},{"id":9,"name":"Twitter","consent":true},{"id":10,"name":"Wordpress","consent":true},{"id":15,"name":"Linkedin","consent":true},{"id":19,"name":"Vimeo","consent":true},{"id":27,"name":"Apple","consent":true}]}', 1year)
-almamedia.fi##+js(trusted-set-cookie, TcString, CQJXf4AQJXf4ABUASAFIBTFsAP_gAAAAAApAAAAAAAChIBoACwAKgAeABBADIANAAiABMAD8AIQAbIBIgDFALzHQDwAFgAVABBADIANAAiABMAD8ANEAbIBFgCRAGKAOoAmQBeZCAGAAsAxQB1CUAcABYARAAmADZAMUAdQBeZSAcAAsACoAIIAZABoAEQAJgAfgBogDZAIsASIAxQB1AF5g.YAAAAAAAAIAA, 1year)
+almamedia.fi>>,ampparit.com>>,arvopaperi.fi>>,iltalehti.fi>>,kauppalehti.fi>>,mikrobitti.fi>>,talouselama.fi>>,tekniikkatalous.fi>>,tivi.fi>>,uusisuomi.fi>>##+js(trusted-click-element, button[title="Hyväksy"])
 gamespot.com##+js(trusted-set-cookie, OptanonConsent, groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A0%2CC0005%3A0, 1year)
 asialadies.de,avladies.de,badeladies.de,behaarteladies.de,bizarrladies.de,busenladies.de,deutscheladies.de,devoteladies.de,dominanteladies.de,erfahreneladies.de,escorts24.de,exklusivladies.de,fkk24.de,grosseladies.de,hobbyladies.de,jungeladies.de,kollegin.de,kussladies.de,ladies.de,latinaladies.de,massierendeladies.de,mollyladies.de,nsladies.de,nymphomaneladies.de,orientladies.de,osteuropaladies.de,piercingladies.de,rasierteladies.de,schokoladies.de,tattooladies.de,tsladies.de,zaertlicheladies.de,zierlicheladies.de##+js(trusted-set-cookie, ladies-cookies-overlay, %7B%22cookie-category-essential%22%3Atrue%2C%22cookie-category-stats%22%3Afalse%2C%22cookie-category-map_services%22%3Atrue%7D, , , reload, 1)
 1a-finanzmarkt.de,1a-immobilienmarkt.de,1a-reisemarkt.de,1a-singleboerse.de,1a-stellenmarkt.de##+js(trusted-set-cookie, opt_out, 'analyse,werbe')
@@ -31271,7 +31263,6 @@ laprovincia.es,informacion.es,tportal.hr,ivoox.com,as.com,slam.nl,rmcbfmplay.com
 elpais.com##+js(trusted-click-element, #pmConsentWall .pmConsentWall-button:not([href]), '', 1000, reloadAfterClick:200)
 euronews.com###poool-fullscreen-widget
 vroomly.com##+js(trusted-set-cookie, cookie_consent_202401, '{"sentry":false,"braze":false,"userpilot":false,"googleAnalytics":false,"amplitude":false,"hotjar":false,"facebookPixel":false,"googleAds":false,"kwanko":false}')
-cdn.privacy-mgmt.com##+js(trusted-click-element, button[title="Hyväksy"], , 1000)
 nomonday.pl##+js(trusted-set-cookie, nmcmpv2, '{"ad":0,"analytics":0,"functionality":0,"personalization":0,"security":0}')
 cmp.motorsport-magazin.com##+js(trusted-click-element, button[title="Zustimmen und weiter"], , 1000)
 foodbooking.com##+js(trusted-set-cookie, glf.functionality_consent, '{"functionality":false,"advertising":false}', , , reload, 1)
