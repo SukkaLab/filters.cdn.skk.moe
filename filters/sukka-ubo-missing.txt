@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Fri, 05 Dec 2025 03:15:31 GMT
+! Last modified: Fri, 05 Dec 2025 06:32:44 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.96.11
+!   - Version: 2.0.96.13
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -49855,6 +49855,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||phaseshift.almagrow.com^
 ||analytics.claudelog.com^
 ||i.go.sohu.com^
 ||tagbridge.vlp.cz^
@@ -77477,6 +77478,7 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=saturn.de
 @@||metrics.us.playstation.com/b/ss/
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
+@@||tags.tiqcdn.com/utag/bofa/ml/prod/utag.js$domain=ml.com
 ||tms.post.ch/*gtm.js|$script,redirect=google-analytics_analytics.js
 @@||cdn.clerk.io/clerk.js$domain=smnovella.com
 @@||datadoghq-browser-agent.com/*/datadog-logs.js$domain=crosset.onward.co.jp
