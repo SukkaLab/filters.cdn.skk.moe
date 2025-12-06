@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Sat, 06 Dec 2025 10:12:34 GMT
+! Last modified: Sat, 06 Dec 2025 14:23:44 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,13 +18,13 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202512061001
+!   - Version: 202512061411
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 06 Dec 2025 10:01 UTC
+!   - Last modified: 06 Dec 2025 14:11 UTC
 ! * Bypass Paywalls Clean filter
 !   - URL: https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters/blob/raw?file=bpc-paywall-filter.txt
-!   - Version: 4.2.6.0
+!   - Version: 4.2.6.1
 !   - Homepage: https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
@@ -51,7 +51,7 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 🤾🏼‍♂️ Anti-'Corrupt sports' List
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/AntiCorruptSportsList.txt
-!   - Version: 02December2025v2-Alpha
+!   - Version: 06December2025v1-Alpha
 ! * ♟ Anti-'Fake transparent images' List
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/AntiFakeTransparentImagesList.txt
 !   - Version: 02February2025v2-Alpha
@@ -2230,7 +2230,6 @@ elconfidencial.com##+js(rc, newsType__content--closed, div.newsType__content--cl
 ||verne.elpais.com/*.html$inline-script
 eltiempo.com##+js(rc, c-articulo-exclusivo, div.c-articulo-exclusivo, stay)
 eltiempo.com##+js(rc, modulos, div.modulos, stay)
-||eltribuno.com/scripts/Bellhop/dist/bellhop.min.js$script,~third-party
 em.com.br##+js(rc, compress-text, .div.compress-text)
 enotes.com##section#enotes-paywall
 enotes.com##+js(ra, class, div.u-paywall)
@@ -20075,7 +20074,9 @@ adressa.no,nrk.no,dr.dk,tv2.dk,ekstrabladet.dk,vg.no,dagbladet.no,svt.se,express
 adressa.no,nrk.no,dr.dk,tv2.dk,ekstrabladet.dk,vg.no,dagbladet.no,svt.se,expressen.se,aftonbladet.se,theguardian.com,bbc.*##a[href*="/pga" i]
 adressa.no,nrk.no,dr.dk,tv2.dk,ekstrabladet.dk,vg.no,dagbladet.no,svt.se,expressen.se,aftonbladet.se,theguardian.com,bbc.*##a[href*=hovland i]
 dr.dk,tv2.dk,ekstrabladet.dk##a[href*=motorcykel i][href*=oerken i]
-adressa.no,nrk.no,tv2.no,dr.dk,tv2.dk,ekstrabladet.dk,vg.no,dagbladet.no,svt.se,expressen.se,aftonbladet.se,www-nrk-no.translate.goog##a[href*=vm i]:is([href*=trekning i],[href*="2026"],[href*=fifa i],[href*=fotball],[href*=fodbold i],[href*=fotboll],[href*=haaland i],[href*=solbakken i],[href*=trkning i],[href*=usa i],[href*=rump i],[href*=infantin i])
+##a:is([href*=vm i],[href*=world-cup i],[href*=worldcup i]):is([href*=trekning i],[href*="2026"],[href*=fifa i],[href*=fotb],[href*=fodbold i],[href*=occer i],[href*=haaland i],[href*=solbakken i],[href*=trkning i],[href*=usa i],[href*=rump i],[href*=infantin i],[href*=ice i],[href*=stadion i],[href*=stadium i],[href*=fred i],[href*=peace i],[href*=sommer i],[href*=summer i],[href*=reise i],[href*=varm i],[href*=warm i],[href*=august i],[href*=kick i],[href*=gress i],[href*=grass i],[href*=turf i],[href*=ronaldo i],[href*=bappe i],[href*=messi i],[href*=yamal i],[href*=united i][href*=state i]):not([href*=hockey i],[href*=puck i],[href*=corrupt i],[href*=korrupt i],[href*=skandal i],[href*=scandal i],[href*=fraud i],[href*=evil i])
+~wikipedia.org##a:is([href*=fifa i],[href*=infantin i]):is([href*=peace i],[href*=fred i]):not([href*=corrupt i],[href*=korrupt i],[href*=skandal i],[href*=scandal i],[href*=fraud i],[href*=svindel i],[href*=svindler i],[href*=katastrof i],[href*=catastroph i],[href*=evil i],[href*=disast i])
+tv2.no##.column.article:has(a[href*="/mening_og_analyse/"])
 ! ♟ Anti-'Fake transparent images' List https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/AntiFakeTransparentImagesList.txt
 google.*##:is(div[data-attrid^="images "],.isv-r):has(a[href*="similarpng.com"])
 google.*##:is(div[data-attrid^="images "],.isv-r):has(a[href*="pngegg.com"])
