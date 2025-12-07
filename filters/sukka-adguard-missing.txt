@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sat, 06 Dec 2025 22:22:51 GMT
+! Last modified: Sun, 07 Dec 2025 03:23:27 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sat, 06 Dec 2025 18:20:52 +0000
+!   - Last modified: Sat, 06 Dec 2025 18:57:44 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Mon, 01 Dec 2025 13:55:28 +0000
@@ -18737,6 +18737,8 @@ imasdk.googleapis.com##+js(no-fetch-if, secure.adnxs.com/ptv, war:noop-vast4.xml
 a2zapk.*##+js(acs, atob, decodeURIComponent)
 a2zapk.*##+js(aopr, AaDetector)
 a2zapk.*##+js(set, notifyMe, noopFunc)
+a2zapk.io##+js(aeld, click, location.href)
+||prahmnatured.com^
 ||a2zapk.*/js/notification.js
 @@||a2zupload.com^$ghide
 @@||googlesyndication.com/pagead/$script,domain=a2zupload.com
