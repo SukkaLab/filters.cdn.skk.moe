@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Sun, 07 Dec 2025 14:24:06 GMT
+! Last modified: Sun, 07 Dec 2025 18:24:06 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.96.20
+!   - Version: 2.0.96.22
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -70887,6 +70887,7 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+entapark.jp##div[id$="-pickup"][style^="height"]
 virgule.lu##section[id^="recirculationAside-ArticleGroup-Recommandé-pour-vous-"]
 ||kaufland.de/api/uts/events
 ||kaufland.de/_/perf/
@@ -75997,6 +75998,8 @@ mail.ferret-one.com%2Fbeacon$image
 %2FCI0%2F0$image
 /ss/o/*/ho.gif$image
 %2Fss%2Fo%2F*%2Fho.gif$image
+onelink.soundcloud.com/v1/emailopen$image
+onelink.soundcloud.com%2Fv1%2Femailopen$image
 %3A%2F%2Fline.karte.io%2FCI0%2F$image
 ://line.karte.io/CI0/$image
 ://t.paypal.com/ts?v=$image
