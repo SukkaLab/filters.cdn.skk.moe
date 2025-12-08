@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Mon, 08 Dec 2025 06:35:38 GMT
+! Last modified: Mon, 08 Dec 2025 10:15:41 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.96.22
+!   - Version: 2.0.96.23
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -49855,6 +49855,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||pm.redbull.com^
 ||tracking-live.kr3m.com^
 ||gx-target-experiments-frontend-api.gx.nvidia.com^
 ||events.gfe.nvidia.com^
@@ -70887,6 +70888,8 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||redbull.com/btnt.js
+||smart-components-api.redbull.com/report-usage
 entapark.jp##div[id$="-pickup"][style^="height"]
 virgule.lu##section[id^="recirculationAside-ArticleGroup-Recommandé-pour-vous-"]
 ||kaufland.de/api/uts/events
