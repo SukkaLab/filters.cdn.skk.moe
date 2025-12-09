@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Mon, 08 Dec 2025 22:24:44 GMT
+! Last modified: Tue, 09 Dec 2025 03:15:15 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -11,7 +11,7 @@
 !   - Last modified: Mon, 08 Dec 2025 19:50:03 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
-!   - Last modified: Mon, 08 Dec 2025 18:01:26 +0000
+!   - Last modified: Mon, 08 Dec 2025 23:49:40 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
 !   - Last modified: Mon, 08 Dec 2025 14:05:02 +0000
@@ -26570,6 +26570,21 @@ sport.elwatannews.com##+js(aost, Array.prototype.indexOf, isWin)
 ||bestyupoo.com^$doc
 ||jerseyyupoo.com^$doc
 ||yupooclothes.com^$doc
+||yupoo.biz^$doc
+||ff-excharge.cyou^$doc
+||io-kly.com^$doc
+||legderhealth.com^$doc
+||ff-excharge.icu^$doc
+||kraken-exchange.com^$doc
+||phnto.com^$doc
+||nodego.network^$doc
+||yupooshoes.org^$doc
+||yupooclothing.com^$doc
+||insurebitbox.com^$doc
+||trezordevices.io^$doc
+||trezordevicesupport.com^$doc
+||helpwithledgerdevice.com^$doc
+||scanledgerapi.com^$doc
 ! uBlock filters – Privacy https://ublockorigin.pages.dev/filters/privacy.min.txt
 ||google-analytics.com/analytics.js$script,redirect=google-analytics_analytics.js:5
 ||google-analytics.com/cx/api.js$script,redirect=google-analytics.com/cx/api.js:5
