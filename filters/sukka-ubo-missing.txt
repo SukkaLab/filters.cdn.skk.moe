@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Tue, 09 Dec 2025 14:31:03 GMT
+! Last modified: Tue, 09 Dec 2025 18:24:18 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.96.32
+!   - Version: 2.0.96.34
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -49907,6 +49907,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||counter.tldw.me^
 ||analytics.blender.org^
 ||d.nordprotect.com^
 ||async-px-eu.dynamicyield.com^
@@ -69848,6 +69849,11 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+nikkei.com###pianoRecommendBottom
+itmedia.co.jp##.is-recommend:empty
+itmedia.co.jp##.format--subheading:has(+ .is-recommend:empty)
+||vortexgaming.io/ga_script.js
+||p-api.vortexgaming.io/api/log/
 ||usconcealedcarry.com/scripts/bundles/deltaAnalytics/
 ||usconcealedcarry.com/api/events?
 usatoday.com##.gnt_tb
@@ -70012,7 +70018,6 @@ dominos.jp###_vis_opt_path_hides
 ||static.danawa.com/globaljs/static/targetPush/targetPushTracking.js
 ||static.danawa.com/globaljs/static/bdl/dsac.min.js
 ||americantourister.co.kr/on/demandware.static/Sites-AmericanTouristerKR-Site/*/internal/jscript/dwac-*.js
-business.nikkei.com###pianoRecommendBottom
 ||leboncoin.fr/piano-analytics/
 ||softonic.jp/web-stats
 ||chatgpt.com/ces/v1/i^
@@ -76463,6 +76468,8 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=saturn.de
 @@||metrics.us.playstation.com/b/ss/
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
+@@||experience.ninetailed.co/v2/organizations/*/environments/main/profiles/$xhr,domain=dkb.de
+||googletagmanager.com/ns.html$subdocument,redirect=noop.html,domain=dkb.de
 @@||tags.tiqcdn.com/utag/cbsi/pluto-tv/prod/utag.js$domain=pluto.tv
 @@||st-eu.dynamicyield.com/st?sec=$domain=manor.ch
 @@||tags.tiqcdn.com/utag/bofa/ml/prod/utag.js$domain=ml.com

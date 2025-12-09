@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Tue, 09 Dec 2025 14:31:03 GMT
+! Last modified: Tue, 09 Dec 2025 18:24:18 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,10 +8,10 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Tue, 09 Dec 2025 08:59:05 +0000
+!   - Last modified: Tue, 09 Dec 2025 16:19:27 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
-!   - Last modified: Mon, 08 Dec 2025 23:49:40 +0000
+!   - Last modified: Tue, 09 Dec 2025 13:26:11 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
 !   - Last modified: Tue, 09 Dec 2025 05:38:26 +0000
@@ -20,7 +20,7 @@
 !   - Last modified: Mon, 08 Dec 2025 12:32:55 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Tue, 09 Dec 2025 10:11:29 +0000
+!   - Last modified: Tue, 09 Dec 2025 13:13:52 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
 !   - Last modified: Sat, 08 Nov 2025 04:03:16 +0000
@@ -30,7 +30,7 @@
 !   - Last modified: Tue, 09 Dec 2025 04:50:31 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
-!   - Last modified: Sun, 07 Dec 2025 11:15:53 +0000
+!   - Last modified: Tue, 09 Dec 2025 14:53:04 +0000
 ! --------------------------------------------------------------
 ! uBlock filters https://ublockorigin.pages.dev/filters/filters.min.txt
 *_ad_$media,domain=youtube.com,3p
@@ -8796,6 +8796,7 @@ www-daftarharga.blogspot.com##+js(nowoif)
 www-daftarharga.blogspot.com##+js(aeld, popstate)
 www-daftarharga.blogspot.com##+js(aeld, , focus)
 xbox360torrent.com##+js(nowoif)
+yoima2.hatenablog.com##+js(nostif, nextFunction, 2000)
 #@##advert-header
 #@##adSpecial
 #@##adzerk
@@ -19540,7 +19541,6 @@ limiteddollqjc.shop##+js(aost, document.getElementById, /(?=^(?!.*(orchestrate|c
 sportsonline.so,onloop.pro##+js(aopw, Adcash)
 eloshapes.com##header.v-toolbar--flat:has([id^="promo-slider-"])
 eloshapes.com##header.elevation-3:style(top: 0px !important;)
-eloshapes.com##main:style(--v-layout-top: 64px !important;)
 eloshapes.com##div[id^="promo-slider-"]
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=zloteprzeboje.pl|radiopogoda.pl
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,3p,redirect=google-ima.js,domain=animationdigitalnetwork.fr
@@ -26422,8 +26422,8 @@ sport.elwatannews.com##+js(aost, Array.prototype.indexOf, isWin)
 ||uniqlo-nz.com^$all
 ||git44share.quest^$all
 ||survey.dawn.com^$all
-/^https://d[0-9a-z]{19}\.[a-z]{3}-[a-z]{7,8}\.pro\/xm\/xm\d\/\?/$doc,to=pro
-/^https://d[0-9a-z][0-9a-z][0-9a-z][0-9a-z][0-9a-z][0-9a-z][0-9a-z][0-9a-z][0-9a-z][0-9a-z][0-9a-z][0-9a-z][0-9a-z][0-9a-z][0-9a-z][0-9a-z][0-9a-z][0-9a-z][0-9a-z]\.[a-z][a-z][a-z]-[a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z]?\.pro\/xm\/xm[0-9]\/\?/$doc
+/^https://d[0-9a-z]{19}\.[a-z]{3,4}-[a-z]{7,8}\.pro\/xm\/xm\d\/\?/$doc,to=pro
+/^https://d[0-9a-z][0-9a-z][0-9a-z][0-9a-z][0-9a-z][0-9a-z][0-9a-z][0-9a-z][0-9a-z][0-9a-z][0-9a-z][0-9a-z][0-9a-z][0-9a-z][0-9a-z][0-9a-z][0-9a-z][0-9a-z][0-9a-z]\.[a-z][a-z][a-z][a-z]?-[a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z]?\.pro\/xm\/xm[0-9]\/\?/$doc
 ||expleboted.com^$all
 ||hoplariumped.com^$all
 ||dsu-adguard.pro^$all
@@ -30522,8 +30522,8 @@ pvpoke-re.com##+js(trusted-set-attr, ins.adsbygoogle:has(> #aswift_0_host), data
 pvpoke-re.com##+js(ra, data-instype, ins.adsbygoogle:has(> div#aswift_0_host), stay)
 pvpoke-re.com##+js(trusted-set-attr, *:not(.main-wrap:has(~ [id^="nitro-sidebar"] .nitro-side) #nitro-top\,.main-wrap:has(~ [id^="nitro-sidebar"] .nitro-side) #nitro-body-desktop\,[id^="nitro-sidebar"]:has(.nitro-side) ~ #nitro-header-mobile) > ins.adsbygoogle:not(:has(#aswift_0_host)), data-ad-status, filled)
 pvpoke-re.com##+js(no-fetch-if, url:https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-3497863494706299 method:HEAD mode:no-cors, , , throttle, 121)
-pvpoke-re.com##+js(trusted-replace-node-text, #text, /広告ブロックはエラーを|Werbeblocker können|Los bloqueadores de anuncios|Les bloqueurs de publicité|I blocchi pubblicitari|Os bloqueadores de/, "＿＿＿＿＿＿＿＿＿＿＿")
-pvpoke-re.com##+js(trusted-replace-node-text, #text, /引き起こす場合があります|Fehler verursachen|pueden causar errores|peuvent provoquer des erreurs|possono causare errori|anúncios podem causar erros/, "＿＿＿＿＿＿＿＿＿＿＿＿＿")
+pvpoke-re.com##+js(trusted-replace-argument, String.prototype.indexOf, 0, json:"/", condition, /premium)
+pvpoke-re.com##body:has(#nitro-body-desktop > ins.adsbygoogle.nitro-body:not(:has(> div#aswift_1_host))) div:is(#nitro-body-desktop, #nitro-top, #nitro-header-mobile) > p
 ||pvpoke-re.com/*.js?v=$replace=/try\{GameMaster/try{return;GameMaster/
 royalroad.com##.dKKumhSnWiFq75vPUVtmTanQ:has(a[href^="https://www.royalroad.com/a/r?campaign="]:not([href*="&url=https%3A%2F%2Fwww.royalroad.com"]))
 mail.yahoo.com##+js(nostif, adblock)
@@ -36038,3 +36038,4 @@ nettv4u.com##*:style(-webkit-touch-callout: default !important; -webkit-user-sel
 adressit.com##+js(rmnt, script, clipboard_disabled)
 omnisets.com##+js(no-fetch-if, adsbygoogle)
 animedrive.hu##+js(aeld, contextmenu, return"undefined")
+abema.tv##+js(trusted-click-element, .com-onboarding-OnboardingWelcomeModal__button-wrapper > .com-a-Button--dark)
