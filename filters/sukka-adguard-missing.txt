@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Tue, 09 Dec 2025 10:16:03 GMT
+! Last modified: Tue, 09 Dec 2025 14:31:03 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Tue, 09 Dec 2025 05:38:26 +0000
+!   - Last modified: Tue, 09 Dec 2025 08:59:05 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Mon, 08 Dec 2025 23:49:40 +0000
@@ -20,7 +20,7 @@
 !   - Last modified: Mon, 08 Dec 2025 12:32:55 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Sun, 07 Dec 2025 14:37:08 +0000
+!   - Last modified: Tue, 09 Dec 2025 10:11:29 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
 !   - Last modified: Sat, 08 Nov 2025 04:03:16 +0000
@@ -7660,6 +7660,7 @@ investing.com##[class^="ad_ad-sticky_"]
 zdnet.com##.c-adDisplay_container
 zdnet.com##.c-adSkyBox
 nytimes.com###acm-wrapper
+nytimes.com##+js(trusted-json-edit-fetch-response, ..show_ads=false, propsToMatch, /statsig/initialize?)
 *##.ads_all > .ads_w
 liquipedia.net##.mobile-sticky-ad
 liquipedia.net##body.mobile-sticky-ad-is-active:style(padding: 3.125rem 0 0 0 !important;)
@@ -30576,15 +30577,10 @@ tvtropes.org##+js(set, HTMLScriptElement.prototype.onerror, undefined)
 ||rottentomatoes.com/assets/pizza-pie/javascripts/bundles/roma/rt-common.js$badfilter
 chzzkban.xyz##+js(no-fetch-if, pagead2.googlesyndication.com/pagead/js/adsbygoogle.js method:HEAD, emptyStr)
 chzzkban.xyz##+js(trusted-suppress-native-method, Node.prototype.contains, '{"className":"adsbygoogle"}', abort)
-@@||adblock1.static-cloudflare.workers.dev^$script,domain=axiang.cc
-||workers.dev^$domain=axiang.cc
-*$script,3p,denyallow=amazonaws.com|facebook.net|fbcdn.net|mdeianet.com,domain=axiang.cc
-axiang.cc##^script[id][async="async"][data-wp-strategy="async"]
 love4u.net,nicomanga.com,nihonkuni.com,rawinu.com,weloma.art##+js(set-cookie, unlock_chapter_guest, 1)
 love4u.net,nicomanga.com,nihonkuni.com,rawinu.com,weloma.art##+js(trusted-replace-argument, String.prototype.includes, 0, json:"", condition, unlock)
 love4u.net,nicomanga.com,nihonkuni.com,rawinu.com,weloma.art###unlock_box
 love4u.net,nicomanga.com,nihonkuni.com,rawinu.com,weloma.art###imgChapter[style*="none"]:style(display: block !important;)
-||ak-kurier.de/akkurier/www/upload/$badfilter
 ||www.youtube.com/youtubei/v1/player?prettyPrint=false|$badfilter
 ! uBlock filters – Experimental https://ublockorigin.pages.dev/filters/experimental.min.txt
 www.youtube.com#@#+js(trusted-rpnt, script, (function serverContract(), (()=>{if("YOUTUBE_PREMIUM_LOGO"===ytInitialData?.topbar?.desktopTopbarRenderer?.logo?.topbarLogoRenderer?.iconImage?.iconType||location.href.startsWith("https://www.youtube.com/tv#/")||location.href.startsWith("https://www.youtube.com/embed/"))return;document.addEventListener("DOMContentLoaded"\,(function(){const t=()=>{const t=document.getElementById("movie_player");if(!t)return;if(!t.getStatsForNerds?.()?.debug_info?.startsWith?.("SSAP\, AD"))return;const e=t.getProgressState?.();e&&e.duration>0&&(e.loaded<e.duration||e.duration-e.current>1)&&t.seekTo?.(e.duration)};t()\,new MutationObserver((()=>{t()})).observe(document\,{childList:!0\,subtree:!0})}));const t={apply:(t\,e\,o)=>{const n=o[0];return"function"==typeof n&&n.toString().includes("onAbnormalityDetected")&&(o[0]=function(){})\,Reflect.apply(t\,e\,o)}};window.Promise.prototype.then=new Proxy(window.Promise.prototype.then\,t)})();(function serverContract(), sedCount, 1)
