@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Tue, 09 Dec 2025 22:24:03 GMT
+! Last modified: Wed, 10 Dec 2025 03:19:00 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,10 +8,10 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Tue, 09 Dec 2025 16:19:27 +0000
+!   - Last modified: Tue, 09 Dec 2025 22:20:44 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
-!   - Last modified: Tue, 09 Dec 2025 13:26:11 +0000
+!   - Last modified: Tue, 09 Dec 2025 16:39:38 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
 !   - Last modified: Tue, 09 Dec 2025 05:38:26 +0000
@@ -30,7 +30,7 @@
 !   - Last modified: Tue, 09 Dec 2025 04:50:31 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
-!   - Last modified: Tue, 09 Dec 2025 14:53:04 +0000
+!   - Last modified: Tue, 09 Dec 2025 17:07:36 +0000
 ! --------------------------------------------------------------
 ! uBlock filters https://ublockorigin.pages.dev/filters/filters.min.txt
 *_ad_$media,domain=youtube.com,3p
@@ -9415,6 +9415,7 @@ gostyn24.pl##+js(set, arePiratesOnBoard, false)
 ||ogladajanime.pl/command_processor.php
 wirtualnemedia.pl##+js(set, __INIT_CONFIG__.randvar, undefined)
 wirtualnemedia.pl##+js(aeld, click, instanceof Event, elements, body)
+kobieta.wp.pl##+js(nostif, bait)
 ||static-cloud.mediaset.net/misc/ad/adanalytics.js^$redirect=noopjs
 ||static-cloud.mediaset.net/misc/ad/adanalytics.js^$redirect=noopjs,domain=mediasetinfinity.es,important
 download.kingtecnologia.com##+js(nostif, await _0x)
@@ -12932,7 +12933,6 @@ worldofbin.com##+js(aopr, adBlockDetected)
 tamilbrahmins.com##+js(acs, $, test)
 @@||panelist.cint.com/assets/embed.min.js^$script,domain=surveyrewardz.com
 @@||panelist.cint.com/$frame,domain=surveyrewardz.com
-gab.com##div[class] > span[class]:has-text(Sponsored):upward(5)
 gab.com#?#:matches-path(/\/posts/) div[data-comment*="gab-ad"]:has(span[class]:has-text(Sponsored))
 quizlet.com##.SetPageTerms-embeddedDesktopAdWrapper
 quizlet.com##.StickyAdz
@@ -15992,8 +15992,10 @@ diamond.jp###contents > div.sub-column > div.title:has(+ #cx-recommed)
 diamond.jp###cx-recommed
 baseballpost.jp###highschool-pickup
 s.response.jp##.aside-box-relation-arti
-business.nikkei.com###pianoRecommendBottom
+nikkei.com###pianoRecommendBottom
 entapark.jp##div[id$="-pickup"][style^="height"]
+itmedia.co.jp##.is-recommend:empty
+itmedia.co.jp##.format--subheading:has(+ .is-recommend:empty)
 jin115.com,livedoor.biz#?#.plugin-memo:has(> div.side > script[src*="ziyu.net/"])
 okutta.net##.article__footer > div[style="height:500px; overflow-y:scroll;"]
 cartune.me##.contents-inner > div:has(> div#taboola-alternating-thumbnails-a)
@@ -19423,6 +19425,8 @@ pimpandhost.com##+js(nano-stb, count)
 @@||cdnjs.cloudflare.com/ajax/libs/videojs-contrib-ads/6.9.0/videojs-contrib-ads.min.js$script,domain=tv.okezone.com
 ||redsky.target.com^$xhr,removeparam=include_sponsored
 target.com##+js(json-prune-fetch-response, data.search.products.[-].sponsored_ad.ad_source, , propsToMatch, url:/plp_search_v2?)
+target.com##div[class*="overlay"]:has(a[href*="health-policy"])
+target.com##body[style*="overflow"]:style(overflow-y: auto !important)
 animefever.cc##+js(no-xhr-if, googlesyndication)
 sinnerclownceviri.net##+js(nostif, nextFunction)
 flvto.com.co##+js(nowoif)
@@ -20972,7 +20976,8 @@ comdotgame.com##+js(trusted-set, document.referrer, json:"1")
 comdotgame.com##div[style]:has(> a[href^="https://tm-offers.gamingadult.com/"])
 comdotgame.com##[src^="https://a.adtng.com/"]
 ||comdotgame.com/static/ads/istripper/
-gorro-4go5b3nj.fun,premiumporn.org##+js(nowoif)
+gorro-4go5b3nj.fun,premiumporn.org>>##+js(nowoif)
+||worthwhile-draw.com^
 @@||securepubads.g.doubleclick.net/pagead/ppub_config$xhr,domain=kumparan.com
 hunterscomics.com##^script:has-text('{delete window[')
 hunterscomics.com##+js(rmnt, script, '{delete window[')
@@ -22221,6 +22226,9 @@ flacdownloader.com##+js(nowoif, _blank)
 flacdownloader.com##.promo-banner
 soccerfullmatch.com##+js(nowoif, !_self)
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=olevod.com
+g9r6.com##+js(nowoif)
+g9r6.com##+js(acs, EventTarget.prototype.addEventListener, delete window)
+g9r6.com##body.video-embed-mode > div[class][style]:not(#root)
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -26589,6 +26597,7 @@ sport.elwatannews.com##+js(aost, Array.prototype.indexOf, isWin)
 ||trezordevicesupport.com^$doc
 ||helpwithledgerdevice.com^$doc
 ||scanledgerapi.com^$doc
+||grabtrust.icu^
 ! uBlock filters – Privacy https://ublockorigin.pages.dev/filters/privacy.min.txt
 ||google-analytics.com/analytics.js$script,redirect=google-analytics_analytics.js:5
 ||google-analytics.com/cx/api.js$script,redirect=google-analytics.com/cx/api.js:5
@@ -35953,7 +35962,7 @@ astoryofmasasstruggles.com##style:has-text(@media print):remove()
 lemon8-app.com##+js(trusted-click-element, .seo-landing-modal-cancel-btn .design-system-button-container, , 500)
 lemon8-app.com##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important; -webkit-tap-highlight-color: revert !important; cursor: revert !important;)
 anikai.to,animekai.*,anigo.to,sflix.fi,yflix.to##+js(aeld, keydown, /^function\(.*\|\|.*}$/)
-anikai.to,animekai.*,anigo.to,megaup.cc,megaup.live,megaup.site,rapidshare.cc,sflix.fi,yflix.to##+js(set, console.clear, throwFunc)
+anikai.to,animekai.*,anigo.to,megaup.cc,megaup.live,megaup.site,megaup22.online,rapidshare.cc,sflix.fi,yflix.to##+js(set, console.clear, throwFunc)
 loverslab.com##+js(nano-sib)
 /akam/13/*$script,xhr,1p,domain=easyjet.com|ing.nl,important
 easyjet.com,ing.nl##+js(cookie-remover, ak_bmsc, when, scroll keydown)
