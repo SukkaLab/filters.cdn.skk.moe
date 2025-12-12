@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Fri, 12 Dec 2025 18:29:10 GMT
+! Last modified: Fri, 12 Dec 2025 22:24:44 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.96.52
+!   - Version: 2.0.96.55
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -241,7 +241,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||lc.recopick.com^
 ||cv.aedi.ai^
 ||toup.net^$3p
-||tags.tiqcdn.com^
 ||prebid.loopmertb.com^
 ||nlog.instajob.ai^
 ||data.pendo.io^
@@ -49908,6 +49907,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||metrics.media-amazon.com^
 ||metis.truecaller.com^
 ||fls-na.amazon.com^
 ||tag.poomang.com^
@@ -74950,6 +74950,10 @@ link.gmapp*.net$image
 ||rum-static.pingdom.net/*-*.js$script,redirect=noop.js,important,domain=leboncoin.fr
 ||ya.ru/clck/
 ||bing.com/fd/ls/
+/t/*/a^$image
+%2Ft%*%2Fa^$image
+/pix.gif?$image
+%2Fpix.gif%3F$image
 /oo/*/e.gif$image
 %2Foo%2F*%2Fe.gif$image
 %2Famsweb.php%3F
@@ -75022,6 +75026,8 @@ line.my.salesforce.com%2Fservlet%2Fservlet.ImageServer%3Foid=*%26esid=$image
 flask.us.nextdoor.com$image
 c.groovehq.com/*.gif$image
 c.groovehq.com%2F*.gif$image
+click.sender.yandex.ru/px/$image
+click.sender.yandex.ru%2Fpx%2F$image
 feedback.send.yandex.ru/px/$image
 feedback.send.yandex.ru%2Fpx%2F$image
 cl.mos.jp/q/$image
@@ -75324,7 +75330,9 @@ mailchimp.com%2Fmctx%2Fopens$image
 list-manage.com*track$image
 %2Ftrack%2Fopen.php%3Fu%3D$image
 /track/open.php?u=$image
+cmail1.com%2Ft$image
 cmail1.com/t$image
+pstmrk.it%2Fopen$image
 pstmrk.it/open$image
 click.icptrack.com/icp/$image
 infusionsoft.com/app/emailOpened$image
@@ -76491,6 +76499,7 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=saturn.de
 @@||metrics.us.playstation.com/b/ss/
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
+@@||cdn.taboola.com/libtrc/unpkg/tfa.js$domain=/anitube\d+\.vip/
 @@||awsstatic.com/*/orchestrate.js$domain=aws.amazon.com
 @@||experience.ninetailed.co/v2/organizations/*/environments/main/profiles/$xhr,domain=dkb.de
 ||googletagmanager.com/ns.html$subdocument,redirect=noop.html,domain=dkb.de
