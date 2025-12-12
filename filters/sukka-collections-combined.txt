@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Fri, 12 Dec 2025 14:26:08 GMT
+! Last modified: Fri, 12 Dec 2025 18:29:10 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,16 +18,16 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202512121411
+!   - Version: 202512121811
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 12 Dec 2025 14:11 UTC
+!   - Last modified: 12 Dec 2025 18:11 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
 ! * ⚙️ Dandelion Sprout's Annoyances List
 !   - URL: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AnnoyancesList
-!   - Version: 01December2025v1-Compilation
+!   - Version: 12December2025v1-Compilation
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 🎯 DailyMotion Simplicity
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/DailyMotionSimplicity.txt
@@ -2737,7 +2737,7 @@ valdemarsro.dk###recipe-intro p:last-of-type
 en.wikipedia.org,www.wikipedia.org#?#:is(p,a):has-text(/[ꯀ-꯹ꫠ-꫶]/):style(font-family:sans-serif,"Noto Sans Meetei Mayek","Eeyek","Eeyek Unicode","Nirmala UI")
 ||www.facebook.com/2008/$csp=upgrade-insecure-requests
 .bcbits.com/img/heartbreak.png^
-@@||gstatic.com/uservoice/surveys/resources/prod/js/survey/survey_binary$script
+@@||gstatic.com/uservoice/surveys/resources/prod/js/survey/survey_binary$script,domain~=support.google.com
 google.*#@##google-hats-survey
 ||appboycdn.com^$third-party
 independent.co.uk,indy100.com##.notification-prompt
