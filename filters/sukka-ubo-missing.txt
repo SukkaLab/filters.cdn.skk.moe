@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Sat, 13 Dec 2025 03:12:00 GMT
+! Last modified: Sat, 13 Dec 2025 06:30:34 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.96.55
+!   - Version: 2.0.96.56
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -79280,6 +79280,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||effulgentnook.com^
 ||effulgenttempest.com^
 ||eightgreens.com^
+||eighthlayer.net^
 ||elasticchange.com^
 ||elderlybean.com^
 ||elderlytown.com^
@@ -79604,6 +79605,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||hypnoticwound.com^
 ||hystericalcloth.com^
 ||hystericalfinger.com^
+||icywinter.com^
 ||idlecollect.com^
 ||idyllicjazz.com^
 ||illinvention.com^
@@ -80713,6 +80715,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||whisperingquasar.com^
 ||whisperingsummit.com^
 ||whispermeeting.com^
+||wholepagecache.com^
 ||whoogled.com^
 ||whymaze.com^
 ||wikiwhatwhere.com^
