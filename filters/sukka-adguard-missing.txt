@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sat, 13 Dec 2025 10:12:47 GMT
+! Last modified: Sat, 13 Dec 2025 14:24:50 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Fri, 12 Dec 2025 20:30:05 +0000
+!   - Last modified: Sat, 13 Dec 2025 08:26:31 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Fri, 12 Dec 2025 13:26:36 +0000
@@ -17,7 +17,7 @@
 !   - Last modified: Thu, 11 Dec 2025 08:00:24 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
-!   - Last modified: Mon, 08 Dec 2025 12:32:55 +0000
+!   - Last modified: Sat, 13 Dec 2025 06:59:32 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
 !   - Last modified: Tue, 09 Dec 2025 13:13:52 +0000
@@ -16892,9 +16892,10 @@ gamedrive.org##.code-block a[href][target="_blank"] > img[data-recalc-dims]
 gamedrive.org##a[href][target="_blank"][rel="noopener noreferrer"] > img
 gamedrive.org##.netflix-banner
 gamedrive.org##.hbo-banner
-crypt.cybar.xyz##+js(aeld, click, window.open)
-cybar.xyz##+js(nowoif, cpmecs)
+cybar.xyz,cybar.to##+js(aeld, click, open)
+cybar.xyz,cybar.to##+js(nowoif, cpmecs)
 filemirage.com##+js(nowoif)
+||cpmecs.cc^
 ||filestream.cloud^
 klz9.com##.float-ck
 klz9.com##center > center > a[target="_blank"][rel="noopener noreferrer"]
@@ -18590,6 +18591,8 @@ torrentdownload.*##TR:has-text(Stream:)
 torrentdownload.*##.table2:has-text(Sponsored)
 ||torrentdownload.*/*.gif$image
 katfile.*##+js(nowoif)
+katfile.*##+js(aeld, click, open)
+katfile.*###container > p > a[target="_blank"] > img
 katfile.*##+js(nano-stb, tick)
 katfile.*##+js(nostif, /adblock/i)
 katfile.*##+js(rpnt, script, (adEnable), (true))
@@ -30315,6 +30318,7 @@ homedepot.ca##body:style(opacity: 1 !important;)
 @@||btvplus.bg/static/bg/shared/vjs/videojs-contrib-ads.js$script,1p
 @@||msmedia.morningstar.com^$script,domain=morningstar.in
 nijie.info/ad_log.php#@#._banner_view
+@@||cdn.cxense.com/cx.js$script,domain=nikkansports.com
 ! uBlock filters – Quick fixes https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
 @@||hb.vntsm.com/v4/live/vms/sites/aternos.org/index.js$script,domain=aternos.org
 aternos.org##.header-center:style(margin-top:-5000px !important;)
