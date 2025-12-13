@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Filters
-! Last modified: Wed, 03 Dec 2025 14:36:52 GMT
+! Last modified: Sat, 13 Dec 2025 06:54:39 GMT
 ! Expires: 1 hours
 ! Description: The filters from Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -50,6 +50,7 @@ webcontainer.io#@#+js(sukka-defuse-service-worker)
 ||instagram.com/p/*/embed/$frame,redirect=click2load.html
 @@||instagram.com/p/$frame,3p,badfilter
 @@||instagram.com^$generichide,badfilter
+||statuspage.io/embed/frame$redirect=click2load.html
 ||scribd.com/embeds/$3p,frame,redirect=click2load.html
 ||player.vimeo.com/video/$3p,frame,redirect=click2load.html
 ||player.twitch.tv$redirect=click2load.html
@@ -86,6 +87,8 @@ webcontainer.io#@#+js(sukka-defuse-service-worker)
 google.*#@#div[data-lhcontainer="1"][id][data-hveid] > div[data-mcpr][data-mg-cp][data-mcp]
 ://www.google.*/async/folsrch?*&async=_basejs:*,_basecomb:*&q=$xhr,badfilter
 google.*#@#div[data-q][data-al]
+@@||geolocation-db.com^
+@@||e.customeriomail.com
 @@||awstrack.me^$badfilter
 @@||turing.captcha.qcloud.com/TCaptcha.js$script,domain=sf-express.com
 lingchenzi.com#@#.category-share
@@ -211,8 +214,7 @@ blog.csdn.net###recommend-right
 hanime1.me##+js(rpnt, script, location.href = , window.redirect_prevented =)
 hanimeone.me##+js(rpnt, script, location.href = , window.redirect_prevented =)
 av.tube4us.top##a[href*="youtube.com/watch"]
-av4us.uk##a[href*="youtube.com/watch"]
-av4us.top##a[href*="youtube.com/watch"]
+av4.homes##a[href*="youtube.com/watch"]
 ||silca.cc/*/pro-tire-pressure-calculator^$csp=script-src 'unsafe-eval' 'unsafe-inline'
 4khd.com##+js(sukka-defuse-devtools-detector)
 ||4khd.com/interstitial.js
@@ -445,7 +447,8 @@ justauth.cn##+js(set, window._AdBlockInit, true)
 ||esm.sh/@solana/$domain=v2ex.com,redirect=noop.js
 ||wwads.cn$script,redirect=noop.js
 ||acquia.com/ct
-@@||e.customeriomail.com
+||v.bytes.media/vs.js$redirect=noop.js
+/ad-shield*$3p
 ||app.moegirl.org.cn/insight-assets/images/20230413-moepad/800x300.png
 ||storage.moegirl.org.cn/console-plus/uploads/2024/02/01/a475bee2aa57da0e65f5341b78ccf551.png
 ||storage.moegirl.org.cn/console-plus/uploads/2024/01/16/b70a27db94200462fd06da4a5ab30b50.jpeg
@@ -697,3 +700,4 @@ www.ip33.cn##.vps-widget-container
 everymac.com###contentsponleft
 seeklogo.com##.googlePartnersWp
 www.gl-inet.com##.fixed-video
+||time.is/img/app_store_badge/$image
