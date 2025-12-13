@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Sat, 13 Dec 2025 14:24:50 GMT
+! Last modified: Sat, 13 Dec 2025 18:23:57 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,16 +18,16 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202512131411
+!   - Version: 202512131811
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 13 Dec 2025 14:11 UTC
+!   - Last modified: 13 Dec 2025 18:11 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
 ! * ⚙️ Dandelion Sprout's Annoyances List
 !   - URL: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AnnoyancesList
-!   - Version: 12December2025v1-Compilation
+!   - Version: 13December2025v2-Compilation
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 🎯 DailyMotion Simplicity
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/DailyMotionSimplicity.txt
@@ -2765,6 +2765,8 @@ github.com##.clearfix:has(h1:has-text(/^Uploading files .*NorwegianExperimentalL
 &client_ad_session_id=
 ||anyclip.com^$app=TETR.IO.exe
 duckduckgo.com,duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion##button:first-of-type + div:last-of-type[class*=" "]:has(button)
+||binarymark.com/products/*/thank-you-for-using^$popup
+||binarymark.com/products/*/uninstalled^$popup
 ! 🎯 DailyMotion Simplicity https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/DailyMotionSimplicity.txt
 dailymotion.com##div[class^=DiscoveryQueueDisplay__sectionContainer]:has(a[class*=channelCard])
 dailymotion.com#?#div[class^=DiscoveryQueueDisplay__sectionContainer]:has(span:has-text(Trend))

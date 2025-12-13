@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Sat, 13 Dec 2025 14:24:50 GMT
+! Last modified: Sat, 13 Dec 2025 18:23:57 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.96.57
+!   - Version: 2.0.96.59
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -69854,6 +69854,8 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||bookoff.co.jp/assets/js/ac/tag-analyze.js
+||bookoffonline.co.jp/files/tracking/
 ||api.20min.ch/kaia/v*/persist
 20min.ch##+js(set-local-storage-item, clientId, $remove$)
 ||temu.com/*/conversion/*beacon$ping
@@ -74950,8 +74952,8 @@ link.gmapp*.net$image
 ||rum-static.pingdom.net/*-*.js$script,redirect=noop.js,important,domain=leboncoin.fr
 ||ya.ru/clck/
 ||bing.com/fd/ls/
-/t/*/a^$image
 %2Ft%*%2Fa^$image
+/t/*/a^$image
 /pix.gif?$image
 %2Fpix.gif%3F$image
 /oo/*/e.gif$image
