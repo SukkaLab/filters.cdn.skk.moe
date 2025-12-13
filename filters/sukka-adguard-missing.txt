@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sat, 13 Dec 2025 18:23:57 GMT
+! Last modified: Sat, 13 Dec 2025 22:23:25 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sat, 13 Dec 2025 14:43:42 +0000
+!   - Last modified: Sat, 13 Dec 2025 19:43:48 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Sat, 13 Dec 2025 14:20:25 +0000
@@ -30,7 +30,7 @@
 !   - Last modified: Fri, 12 Dec 2025 11:54:16 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
-!   - Last modified: Tue, 09 Dec 2025 17:07:36 +0000
+!   - Last modified: Sat, 13 Dec 2025 20:24:58 +0000
 ! --------------------------------------------------------------
 ! uBlock filters https://ublockorigin.pages.dev/filters/filters.min.txt
 *_ad_$media,domain=youtube.com,3p
@@ -8777,6 +8777,7 @@ nekolink.site##+js(set, PlayerConfig.config.AffiliateAdViewLevel, 3)
 pahe.ink,pawastreams.pro,vikingf1le.us.to##+js(aeld, DOMContentLoaded, history.go)
 boobsrealm.com,dfilmizle.com##+js(aopr, initPu)
 asianpornjav.com##+js(set, puShown, true)
+jav.direct,javmix.tv##+js(aeld, load, puTS)
 pixsera.net##+js(nano-sib, timer)
 pixsera.net##+js(nowoif, !/prcf.fiyar|themes|pixsense|.jpg/)
 pixsera.net##+js(set, hold_click, false)
@@ -20579,7 +20580,7 @@ sbs.com.au##+js(trusted-prevent-xhr, securepubads.g.doubleclick.net/pagead/ima_p
 appnee.com##ins.adsbygoogle
 appnee.com###babasbmsgx
 appnee.com##[href^="https://appnee.com/advertising/"] > [src^="https://img.appnee.com/other/"][alt="Ads Place"]
-appnee.com##div[id*="overlay_"]
+appnee.com##div[id*="overlay"]
 appnee.com##+js(rmnt, script, /getComputedStyle|overlay/)
 ||msn.com/advertisement.ad.js$script,1p,important
 ||aolcdn.com/ads/adswrappermsni.js$script,domain=msn.com,important
@@ -22271,6 +22272,7 @@ fileq.net##+js(set, clicked, 2)
 ||s.nitropay.com/ads-*.js^$script,redirect=noopjs
 ||s.nitropay.com/ads-*.js$3p,script,redirect=nitropay_ads.js
 polseksongs.blogspot.com##+js(noeval-if, #fab)
+xsz-av.com##+js(nowoif)
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -36064,3 +36066,5 @@ adressit.com##+js(rmnt, script, clipboard_disabled)
 omnisets.com##+js(no-fetch-if, adsbygoogle)
 animedrive.hu##+js(aeld, contextmenu, return"undefined")
 abema.tv##+js(trusted-click-element, .com-onboarding-OnboardingWelcomeModal__button-wrapper > .com-a-Button--dark)
+adevarurisecrete.com##+js(rmnt, script, /oncontextmenu|wccp/)
+adevarurisecrete.com##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important; -webkit-tap-highlight-color: revert !important; cursor: revert !important;)
