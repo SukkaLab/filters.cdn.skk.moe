@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sun, 14 Dec 2025 18:25:40 GMT
+! Last modified: Sun, 14 Dec 2025 22:23:07 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,10 +8,10 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sun, 14 Dec 2025 15:12:46 +0000
+!   - Last modified: Sun, 14 Dec 2025 20:29:04 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
-!   - Last modified: Sat, 13 Dec 2025 14:20:25 +0000
+!   - Last modified: Sun, 14 Dec 2025 17:23:57 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
 !   - Last modified: Thu, 11 Dec 2025 08:00:24 +0000
@@ -8357,23 +8357,7 @@ brocoflix.com,brocoflix.xyz##+js(acs, document.createElement, l.appendChild(s))
 coinsbomb.com,daemon-hentai.com,daemonanime.net,everia.club,kurakura21.com##+js(acs, document.createElement, l.parentNode.insertBefore(s, /^data:/)
 yaoimangaonline.com##+js(trusted-suppress-native-method, Document.prototype.createElement, '"script"', prevent, litespeed/js)
 *$script,3p,denyallow=disqus.com|disquscdn.com|fastlylb.net,domain=cin.guru
-bebasbokep.online,besthdgayporn.com,bokepindo13.*,dimensionalseduction.com,drivenime.com,erothots1.com,javbobo.com,javup.org,kaliscan.*,likemanga.ink,madouqu.com,savefiles.com,shemaleup.net,transflix.net,worthcrete.com,x-x-x.video##^script:has-text(/popMagic|pop1stp/)
-bebasbokep.online,besthdgayporn.com,bokepindo13.*,dimensionalseduction.com,drivenime.com,erothots1.com,javbobo.com,javup.org,kaliscan.*,likemanga.ink,madouqu.com,savefiles.com,shemaleup.net,transflix.net,worthcrete.com,x-x-x.video##+js(rmnt, script, /popMagic|pop1stp/)
-fucksporn.com###FloatingLayer
-fucksporn.com##.adv_banners
-fucksporn.com##.prefix-player-out
-drivenime.com###stickyb
-socigames.com##.socig-target
-xhamster.fm##+js(acs, pop_init)
-gayxx.net##+js(aopr, adsbyjuicy)
-||flixbaba.net/utilsminhill.js
-||buoyantspecial.com^
-||essentialmost.com^
-||excitableknee.com^
-||hilariouseconomics.com^
-||lowtrainer.com^
-||supportiveheight.com^
-||whirlwindincrease.com^
+/^https:\/\/[-a-z]{6,}\.(?:com?|info|pro|xyz)\/[a-d][-.\/_A-Za-z][DHWXm][-.\/_A-Za-z][59FVZ][-.\/_A-Za-z][6swyz][-.\/_A-Za-z][-\/_0-9a-zA-Z][-.\/_A-Za-z][-\/_0-9a-zA-Z]{22,162}(?:$|\?)/$script,3p,match-case,to=co|com|info|pro|xyz,domain=jav.guru
 airsextube.com,asianbabestube.com,bigtitsxxxfree.com,blowjobpornset.com,entertubeporn.com,finexxxvideos.com,freesexvideos24.com,fuckhairygirls.com,gopornindian.com,grandmatube.pro,grannyfucko.com,grannyfuckxxx.com,hd-analporn.com,hiddencamhd.com,hindiporno.pro,indianbestporn.com,japanesemomsex.com,japanxxxass.com,massagefreetube.com,maturepussies.pro,megajapansex.com,new-xxxvideos.com,xxxblowjob.pro,xxxtubegain.com,xxxvideostrue.com,onlinegrannyporn.com,agedtubeporn.com,agedvideos.com,freebigboobsporn.com,tubeinterracial-porn.com,best-xxxvideos.com,bestanime-xxx.com,blowxxxtube.com,callfuck.com,teenhubxxx.com,tubepornasian.com,xxxtubedot.com,blowjobfucks.com,dirtyasiantube.com,maturewomenfucks.com,pornmaturetube.com,setfucktube.com,tourporno.com,do-xxx.com,dotfreesex.com,dotfreexxx.com,easymilftube.net,electsex.com,erospots.info,fineretroporn.com,freehqtube.com,freshmaturespussy.com,freshsexxvideos.com,fuckedporno.com,gallant-matures.com,hqhardcoreporno.com,girlssexxxx.com,glamourxxx-online.com,vintagepornnew.com,tubevintageporn.com,goxxxvideos.com,grouppornotube.com,hqxxxmovies.com,hqsex-xxx.com,hqamateurtubes.com,hotpussyhubs.com,hdpornteen.com,indecentvideos.com,ifreefuck.com,kittyfuckstube.com,lightxxxtube.com,momstube-porn.com,modelsxxxtube.com,milfpussy-sex.com,nudistube.com,nudisteens.com,nudismteens.com,nude-beach-tube.com,nicexxxtube.com,neatpornodot.com,neatfreeporn.com,bigtitsporn-tube.com,tubehqxxx.com,nakedbbw-sex.com,onlineteenhub.com,online-xxxmovies.com,pussyhothub.com,pornxxxplace.com,pornoteensex.com,pornonote.pro,pornoaid.com,pornclipshub.com,whitexxxtube.com,sweetadult-tube.com,sweet-maturewomen.com,sexymilfsearch.com,sextubedot.com,hqmaxporn.com,sexlargetube.com,sexhardtubes.com,tubepornstock.com,xfuckonline.com##+js(noeval)
 airsextube.com,asianbabestube.com,bigtitsxxxfree.com,blowjobpornset.com,entertubeporn.com,finexxxvideos.com,freesexvideos24.com,fuckhairygirls.com,gopornindian.com,grandmatube.pro,grannyfucko.com,grannyfuckxxx.com,hd-analporn.com,hiddencamhd.com,hindiporno.pro,indianbestporn.com,japanesemomsex.com,japanxxxass.com,massagefreetube.com,maturepussies.pro,megajapansex.com,new-xxxvideos.com,xxxblowjob.pro,xxxtubegain.com,xxxvideostrue.com,acutetube.net,agedtubeporn.com,agedvideos.com,onlinegrannyporn.com,freebigboobsporn.com,tubeinterracial-porn.com,best-xxxvideos.com,bestanime-xxx.com,blowxxxtube.com,callfuck.com,teenhubxxx.com,tubepornasian.com,xxxtubedot.com,blowjobfucks.com,dirtyasiantube.com,maturewomenfucks.com,pornmaturetube.com,setfucktube.com,tourporno.com,do-xxx.com,dotfreesex.com,dotfreexxx.com,easymilftube.net,electsex.com,fineretroporn.com,freehqtube.com,freshmaturespussy.com,freshsexxvideos.com,fuckedporno.com,gallant-matures.com,hqhardcoreporno.com,girlssexxxx.com,glamourxxx-online.com,vintagepornnew.com,tubevintageporn.com,goxxxvideos.com,grouppornotube.com,hqxxxmovies.com,hqsex-xxx.com,hqamateurtubes.com,hotpussyhubs.com,hdpornteen.com,indecentvideos.com,ifreefuck.com,kittyfuckstube.com,lightxxxtube.com,momstube-porn.com,modelsxxxtube.com,milfpussy-sex.com,nicexxxtube.com,neatpornodot.com,neatfreeporn.com,bigtitsporn-tube.com,tubehqxxx.com,nakedbbw-sex.com,onlineteenhub.com,online-xxxmovies.com,pussyhothub.com,pornxxxplace.com,pornoteensex.com,pornonote.pro,pornoaid.com,pornclipshub.com,whitexxxtube.com,sweetadult-tube.com,sweet-maturewomen.com,sexymilfsearch.com,sextubedot.com,hqmaxporn.com,sexlargetube.com,sexhardtubes.com,tubepornstock.com,xfuckonline.com##+js(aopr, Aloader.serve)
 activevoyeur.com,allbbwtube.com,alltstube.com,cockmeter.com##+js(acs, document.dispatchEvent, myEl)
@@ -8963,8 +8947,8 @@ dcleakers.com,esgeeks.com,pugliain.net,uplod.net,worldfreeware.com##+js(nostif, 
 *$script,redirect-rule=noopjs,domain=siamblockchain.com
 ||pugliain.net/wp-content/uploads/*.gif$image
 siamblockchain.com##.headerad-desk
-arabshentai.com,ariversegl.com,asia2tv.com,boyfuck.me,cehennemstream.xyz,cgtips.org,cybermania.ws,dvdgayporn.com,downloadcursos.gratis,dx-tv.com,filmyzones.com,freereadnovel.online,idlixvip.*,javboys.tv,magicgameworld.com,mangacrab.org,medicalstudyzone.com,netfuck.net,onezoo.net,readingpage.fun,shemalegape.net,tojimangas.com,tuktukcinma.com,vercanalesdominicanos.com##+js(no-fetch-if, /googlesyndication|doubleclick/, length:10, {"type": "cors"})
-arabshentai.com,ariversegl.com,asia2tv.com,boyfuck.me,cehennemstream.xyz,cgtips.org,cybermania.ws,dvdgayporn.com,downloadcursos.gratis,dx-tv.com,filmyzones.com,freereadnovel.online,idlixvip.*,javboys.tv,magicgameworld.com,mangacrab.org,medicalstudyzone.com,netfuck.net,onezoo.net,readingpage.fun,shemalegape.net,tojimangas.com,tuktukcinma.com,vercanalesdominicanos.com##+js(no-xhr-if, /googlesyndication|doubleclick/, length:10)
+arabshentai.com,ariversegl.com,asia2tv.com,boyfuck.me,cehennemstream.xyz,cgtips.org,cybermania.ws,dvdgayporn.com,downloadcursos.gratis,dx-tv.com,filmyzones.com,fitnessplanss.com,freereadnovel.online,idlixvip.*,javboys.tv,magicgameworld.com,mangacrab.org,medicalstudyzone.com,netfuck.net,onezoo.net,readingpage.fun,shemalegape.net,tojimangas.com,tuktukcinma.com,vercanalesdominicanos.com##+js(no-fetch-if, /googlesyndication|doubleclick/, length:10, {"type": "cors"})
+arabshentai.com,ariversegl.com,asia2tv.com,boyfuck.me,cehennemstream.xyz,cgtips.org,cybermania.ws,dvdgayporn.com,downloadcursos.gratis,dx-tv.com,filmyzones.com,fitnessplanss.com,freereadnovel.online,idlixvip.*,javboys.tv,magicgameworld.com,mangacrab.org,medicalstudyzone.com,netfuck.net,onezoo.net,readingpage.fun,shemalegape.net,tojimangas.com,tuktukcinma.com,vercanalesdominicanos.com##+js(no-xhr-if, /googlesyndication|doubleclick/, length:10)
 /\/wp-content\/plugins\/[a-f]{6}\.js\?ver=/$script,1p,match-case,domain=arabshentai.com|filmyzones.com
 /\/wp-content\/uploads(?:\/[a-f]{6}){2}\.js/$script,1p,match-case,domain=~edu|~gov
 /^https:\/\/[-a-z0-9]+\.[a-z]+\/uploads(?:\/[a-f]{6}){2}\.js\?ver=17\d{8}$/$script,1p,match-case,domain=~edu|~gov
@@ -9091,7 +9075,7 @@ a-ha.io,cboard.net,joongdo.co.kr,viva100.com##+js(noeval-if, /07c225f3\.online|c
 automobile-catalog.com,baseballchannel.jp,forum.mobilism.me,gbatemp.net,gentosha-go.com,hang.hu,hoyme.jp,motorbikecatalog.com,sharemods.com,wisevoter.com##+js(rmnt, script, error-report.com)
 computerbild.de,divinedaolibrary.com,jaysbrickblog.com,mp1st.com,oricon.co.jp,uranai.nosv.org,yakkun.com##+js(rmnt, script, html-load.com)
 oricon.co.jp##+js(rmnt, script, /\(async\(\)=>\{try\{(const|var)/)
-artnews.com,autobild.de,autofrage.net,billboard.com,boardingarea.com,buzzfeed.com,buzzfeednews.com,computerbild.de,computerfrage.net,cults3d.com,deadline.com,dnevnik.hr,doviz.com,exceljet.net,finanzfrage.net,fossbytes.com,genialetricks.de,gesundheitsfrage.net,goldderby.com,gutefrage.net,helpdeskgeek.com,hollywoodlife.com,hollywoodreporter.com,indiewire.com,infinityfree.com,kuruma-news.jp,leckerschmecker.me,moin.de,motorradfrage.net,neoseeker.com,newatlas.com,nextchessmove.com,omnicalculator.com,oricon.co.jp,perezhilton.com,picrew.me,popdaily.com.tw,reisefrage.net,robbreport.com,rollingstone.com,scribd.com,singjupost.com,slideshare.net,songfacts.com,sourceforge.net,sportico.com,sportlerfrage.net,thefirearmblog.com,thelayoff.com,toyokeizai.net,usaudiomart.com,variety.com,vibe.com,welt.de,winfuture.de,wwd.com##+js(trusted-replace-argument, HTMLScriptElement.prototype.setAttribute, 1, "", condition, error-report)
+artnews.com,autobild.de,autofrage.net,billboard.com,boardingarea.com,buzzfeed.com,buzzfeednews.com,computerbild.de,computerfrage.net,cults3d.com,deadline.com,dnevnik.hr,doviz.com,exceljet.net,finanzfrage.net,fossbytes.com,genialetricks.de,gesundheitsfrage.net,goldderby.com,gutefrage.net,helpdeskgeek.com,hollywoodlife.com,hollywoodreporter.com,indiewire.com,infinityfree.com,kuruma-news.jp,leckerschmecker.me,moin.de,motorradfrage.net,netflixlife.com,neoseeker.com,newatlas.com,nextchessmove.com,omnicalculator.com,oricon.co.jp,perezhilton.com,picrew.me,popdaily.com.tw,reisefrage.net,robbreport.com,rollingstone.com,scribd.com,singjupost.com,slideshare.net,songfacts.com,sourceforge.net,sportico.com,sportlerfrage.net,thefirearmblog.com,thelayoff.com,toyokeizai.net,usaudiomart.com,variety.com,vibe.com,welt.de,winfuture.de,winteriscoming.net,wwd.com##+js(trusted-replace-argument, HTMLScriptElement.prototype.setAttribute, 1, "", condition, error-report)
 neowin.net,newatlas.com,razzball.com,tz.de##+js(nostif, [native code], 500)
 interfootball.co.kr,a-ha.io,cboard.net,jjang0u.com,joongdo.co.kr,viva100.com,maketecheasier.com,tweaksforgeeks.com,m.inven.co.kr,mlbpark.donga.com##^script:has-text(KCgpPT57bGV0IGU)
 artnews.com,autobild.de,autofrage.net,badmouth1.com,boardingarea.com,computerbild.de,computerfrage.net,cruciverba.it,cults3d.com,dnevnik.hr,doviz.com,dziennik.pl,eurointegration.com.ua,exceljet.net,finanzfrage.net,flatpanelshd.com,footballtransfer.com.ua,footballtransfer.ru,fossbytes.com,freemcserver.net,gadgets360.com,gazetaprawna.pl,genialetricks.de,gesundheitsfrage.net,gutefrage.net,helpdeskgeek.com,hoyme.jp,infinityfree.com,issuya.com,iusm.co.kr,lamire.jp,leckerschmecker.me,logicieleducatif.fr,missyusa.com,moin.de,motorradfrage.net,motscroises.fr,neoseeker.com,neowin.net,newatlas.com,nextchessmove.com,onlinegdb.com,palabr.as,perezhilton.com,picrew.me,pravda.com.ua,pressian.com,razzball.com,reisefrage.net,reportera.co.kr,singjupost.com,sportanalytic.com,sportlerfrage.net,sportsrec.com,sportsseoul.com,text-compare.com,thelayoff.com,toyokeizai.net,tweaksforgeeks.com,tz.de,usaudiomart.com,w.grapps.me,welt.de,wfmz.com,winfuture.de,worldhistory.org##^script[onload*="error-report.com"]
@@ -9270,6 +9254,23 @@ yabaisub.cloud###fakeplayer
 yabaisub.cloud##+js(trusted-click-element, #player-option-1, , 500)
 3minx.com,555fap.com,ai18.pics,anime-jav.com,blackwidof.org,chinese-pics.com,cn-av.com,cnpics.org,cnxx.me,cosplay-xxx.com,cosplay18.pics,fc2ppv.stream,fikfok.net,gofile.download,hentai-sub.com,hentai4f.com,hentaicovid.com,hentaipig.com,hentaixnx.com,idol69.net,javball.com,javbee.*,javring.com,javsunday.com,javtele.net,kin8-av.com,kin8-jav.com,kr-av.com,ovabee.com,pig69.com,porn-pig.com,porn4f.org,sweetie-fox.com,xcamcovid.com,xxpics.org##+js(rmnt, script, /detectAdblock|WebAssembly|pop1stp|popMagic/i)
 ||ahskummakjt.com^
+bebasbokep.online,besthdgayporn.com,bokepindo13.*,dimensionalseduction.com,drivenime.com,erothots1.com,javbobo.com,javup.org,kaliscan.*,likemanga.ink,madouqu.com,savefiles.com,shemaleup.net,transflix.net,worthcrete.com,x-x-x.video##^script:has-text(/popMagic|pop1stp/)
+bebasbokep.online,besthdgayporn.com,bokepindo13.*,dimensionalseduction.com,drivenime.com,erothots1.com,javbobo.com,javup.org,kaliscan.*,likemanga.ink,madouqu.com,savefiles.com,shemaleup.net,transflix.net,worthcrete.com,x-x-x.video##+js(rmnt, script, /popMagic|pop1stp/)
+fucksporn.com###FloatingLayer
+fucksporn.com##.adv_banners
+fucksporn.com##.prefix-player-out
+drivenime.com###stickyb
+socigames.com##.socig-target
+xhamster.fm##+js(acs, pop_init)
+gayxx.net##+js(aopr, adsbyjuicy)
+||flixbaba.net/utilsminhill.js
+||buoyantspecial.com^
+||essentialmost.com^
+||excitableknee.com^
+||hilariouseconomics.com^
+||lowtrainer.com^
+||supportiveheight.com^
+||whirlwindincrease.com^
 ||auto.am/static/azd/
 auto.am##.azd-top
 auto.am##.bncont
@@ -20764,8 +20765,10 @@ daddylive.*##+js(nowebrtc)
 daddylive.*##+js(aopw, afStorage)
 daddylive.*##^script:has-text(decodeURIComponent)
 daddylive.*##+js(nowoif)
-daddylive.*>>,daddylivestream.com>>,dlhd.*>>,thedaddy.*>>,~chatango.com##+js(nowoif)
-daddylive.*>>,daddylivestream.com>>,dlhd.*>>,thedaddy.*>>,~chatango.com##+js(acs, EventTarget.prototype.addEventListener, delete window)
+daddyhd.*>>,daddylive.*>>,daddylivestream.com>>,dlhd.*>>,thedaddy.*>>,~chatango.com##+js(nowoif)
+daddyhd.*>>,daddylive.*>>,daddylivestream.com>>,dlhd.*>>,thedaddy.*>>,~chatango.com##+js(acs, EventTarget.prototype.addEventListener, delete window)
+daddyhd.*##+js(rmnt, script, /h=decodeURIComponent|popundersPerIP/)
+daddyhd.*##+js(aopr, Adcash)
 dlhd.sx##+js(aopw, u_cfg)
 /adblock.php$script,domain=dlhd.sx
 dlhd.sx##+js(nostif, (), 150)
@@ -26611,6 +26614,46 @@ sport.elwatannews.com##+js(aost, Array.prototype.indexOf, isWin)
 ||exoduwallet.io^$all
 ||scanledgerwallet.com^$all
 ||trezorwalletsupport.com^$all
+||face-it.co.com^$all
+||buff163.co.com^$all
+||skinsmonkye.com^$all
+||skinsmnky.com^$all
+||skinsmonkey.co.com^$all
+||secure-paymentech.co.com^$all
+||skrill-app.co.com^$all
+||slash-on.co.com^$all
+||join-slash.co.com^$all
+||app-slash.co.com^$all
+||slash-ap.co.com^$all
+||www-slash.co.com^$all
+||getmoss.co.com^$all
+||www-mechanicsbank.co.com^$all
+||treasury-simmonsbank.co.com^$all
+||bankplus.co.com^$all
+||www-tipalti.co.com^$all
+||ofx.co.com^$all
+||ofx-app.co.com^$all
+||payhawk.co.com^$all
+||paymentech.co.com^$all
+||spendesk.co.com^$all
+||www-simmonsbonk.top^$all
+||www-bankplus.top^$all
+||www-tipolti.top^$all
+||www-firsthorlzan.top^$all
+||www-getmass.top^$all
+||ofx-login.top^$all
+||www-simmonsbank.top^$all
+||convergepay.co.com^$all
+||www-payhawk.top^$all
+||www-firsthorlzon.top^$all
+||www-getmoss.top^$all
+||www-paymontech.top^$all
+||www-mechonics.top^$all
+||www-flrstherizen.top^$all
+||www-spendesk.top^$all
+||www-tipalti.top^$all
+||www-convergapay.top^$all
+||barclaycerdus.top^$all
 ! uBlock filters – Privacy https://ublockorigin.pages.dev/filters/privacy.min.txt
 ||google-analytics.com/analytics.js$script,redirect=google-analytics_analytics.js:5
 ||google-analytics.com/cx/api.js$script,redirect=google-analytics.com/cx/api.js:5
