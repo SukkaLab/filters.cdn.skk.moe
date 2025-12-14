@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sun, 14 Dec 2025 06:30:14 GMT
+! Last modified: Sun, 14 Dec 2025 10:12:48 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sat, 13 Dec 2025 21:57:21 +0000
+!   - Last modified: Sun, 14 Dec 2025 06:15:12 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Sat, 13 Dec 2025 14:20:25 +0000
@@ -9342,6 +9342,7 @@ nos.nl##+js(json-prune-fetch-response, adUrl, , propsToMatch, .azurewebsites.net
 ||shared.mediahuis.be/ka-ching/goplay/ka-ching.umd.js
 bnnvara.nl,npodoc.nl,vpro.nl##+js(json-prune-fetch-response, assets.preroll assets.prerollDebug, , propsToMatch, /stream-link)
 telegraaf.nl##+js(no-fetch-if, /doubleclick|ad-delivery|googlesyndication/)
+@@||securepubads.g.doubleclick.net/*gpt$script,domain=play.tv
 hentaivost.fr##+js(rmnt, script, _ADX_)
 ||hentaivost.fr/detect.js^
 ||gupload.xyz/data/player/adblock-detector.js^
@@ -21267,6 +21268,7 @@ drama-online.tv##+js(aost, document.readyState, drama-online)
 ||cdn.drama-online.tv/wp-content/plugins/eeacab.js
 esportstales.com##+js(aeld, DOMContentLoaded, detect)
 missavtv.com##+js(no-fetch-if, doubleclick)
+missavtv.com##+js(no-xhr-if, adsbygoogle)
 ||headerbidding.ai^$script,domain=gamehub.cam,redirect=noopjs
 weknowconquer.com##+js(nostif, getComputedStyle)
 dogsexporn.net,yomucomics.com##+js(no-xhr-if, /doubleclick|googlesyndication/)
