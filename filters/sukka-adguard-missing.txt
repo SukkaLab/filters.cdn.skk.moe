@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sat, 13 Dec 2025 22:23:25 GMT
+! Last modified: Sun, 14 Dec 2025 03:25:14 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sat, 13 Dec 2025 19:43:48 +0000
+!   - Last modified: Sat, 13 Dec 2025 21:57:21 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Sat, 13 Dec 2025 14:20:25 +0000
@@ -22232,7 +22232,7 @@ v2movies.click,v2movies.me##+js(nowoif)
 ||refpa58144.com^
 ||serving.adserver.live^
 v2movies.click,v2movies.me##[href^="https://refpa58144.com/"]
-goplay.su##+js(noeval-if, debugger)
+goplay.su##+js(nowoif)
 *$popup,3p,domain=goplay.su
 ||ssp.goplay.su^$xhr
 ||infolkwitness.shop^
