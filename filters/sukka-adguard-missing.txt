@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sun, 14 Dec 2025 10:12:48 GMT
+! Last modified: Sun, 14 Dec 2025 14:25:23 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -27,7 +27,7 @@
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Fri, 12 Dec 2025 11:54:16 +0000
+!   - Last modified: Sun, 14 Dec 2025 10:02:29 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
 !   - Last modified: Sat, 13 Dec 2025 20:24:58 +0000
@@ -32669,6 +32669,7 @@ hellozdrowie.pl#@##cookiescript_injected_wrapper
 hellozdrowie.pl,likumi.lv##+js(trusted-click-element, #cookiescript_accept)
 brawl360.com##+js(trusted-set-local-storage-item, brawl360-consent, '{"necessary":true,"analytics":false,"advertising":false,"functional":false}')
 brawl360.com##+js(trusted-set-local-storage-item, brawl360-consent-timestamp, $now$)
+dinox.fi##+js(trusted-set-local-storage-item, cookieConsent, necessary\,preferences)
 ! uBlock filters – Annoyances https://ublockorigin.pages.dev/filters/annoyances.min.txt
 mimaletadepeliculas.blogspot.com##+js(aopr, document.oncontextmenu)
 mimaletadepeliculas.blogspot.com##+js(acs, document.onselectstart)
