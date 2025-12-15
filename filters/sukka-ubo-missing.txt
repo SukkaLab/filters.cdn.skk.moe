@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Mon, 15 Dec 2025 06:35:56 GMT
+! Last modified: Mon, 15 Dec 2025 10:17:40 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.96.62
+!   - Version: 2.0.96.66
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -217,6 +217,8 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||cdn.particularaudience.com^$3p
+||pzapi-nb.com^
 ||ma-tag.com^
 ||dsp.groupminteraction.ru^
 ||decentriq.com^$3p
@@ -49908,6 +49910,8 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||log.goodnovel.com^
+||d2qxmykuaro8s3.cloudfront.net^
 ||tracking.cds.dmm.
 ||metrics.media-amazon.com^
 ||metis.truecaller.com^
@@ -69856,6 +69860,7 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+goodnovel.com##+js(set-local-storage-item, UUID, $remove$)
 ||bookoff.co.jp/assets/js/ac/tag-analyze.js
 ||bookoffonline.co.jp/files/tracking/
 ||api.20min.ch/kaia/v*/persist
@@ -76503,6 +76508,7 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=saturn.de
 @@||metrics.us.playstation.com/b/ss/
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
+@@||cdn.shopify.com/oxygen-v2/*/assets/Clarity-$domain=thegoodguys.com.au
 @@||cdn.taboola.com/libtrc/unpkg/tfa.js$domain=/anitube\d+\.vip/
 @@||awsstatic.com/*/orchestrate.js$domain=aws.amazon.com
 @@||experience.ninetailed.co/v2/organizations/*/environments/main/profiles/$xhr,domain=dkb.de
@@ -79127,6 +79133,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||coolestcatcare.com^
 ||coolguesthouse.com^
 ||coordinatedcoat.com^
+||copperstills.net^
 ||copycarpenter.com^
 ||copyfranchise.com^
 ||copyrightaccesscontrols.com^
@@ -79142,6 +79149,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||costwinner.com^
 ||courageousbaby.com^
 ||coverlayer.com^
+||cowbelltime.com^
 ||cozydusk.com^
 ||cozyhillside.com^
 ||cozytryst.com^
