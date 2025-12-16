@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Tue, 16 Dec 2025 03:20:39 GMT
+! Last modified: Tue, 16 Dec 2025 06:34:36 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.96.72
+!   - Version: 2.0.96.74
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -66662,6 +66662,9 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+arte.tv##+js(set-local-storage-item, /^oidc\./, $remove$)
+||full-count.jp/ssc.min.js
+||d.line-scdn.net/n/line_tag/$domain=full-count.jp
 /_api/tag-manager/api/*/tags/sites/*$xhr,domain=boraware.kr
 ||yastatic.net/partner-code-bundles/*.js$domain=russia-tv.online
 goodnovel.com##+js(set-local-storage-item, UUID, $remove$)
