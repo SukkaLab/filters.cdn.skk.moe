@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Wed, 17 Dec 2025 06:33:52 GMT
+! Last modified: Wed, 17 Dec 2025 10:15:50 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Tue, 16 Dec 2025 14:44:54 +0000
+!   - Last modified: Wed, 17 Dec 2025 09:33:47 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Wed, 17 Dec 2025 02:14:14 +0000
@@ -17,7 +17,7 @@
 !   - Last modified: Thu, 11 Dec 2025 08:00:24 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
-!   - Last modified: Tue, 16 Dec 2025 08:30:00 +0000
+!   - Last modified: Wed, 17 Dec 2025 09:20:49 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
 !   - Last modified: Sat, 13 Dec 2025 14:46:42 +0000
@@ -8232,6 +8232,7 @@ pillowcase.su##+js(rmnt, script, /h=decodeURIComponent|"popundersPerIP"/)
 watchluna.com##+js(trusted-replace-outbound-text, atob, /.+/, , condition, '/(www\.[a-z]{8,16}\.com|cloudfront\.net)\/.+\.(css|js)$/')
 hitomi.la##+js(rmnt, script, /h=decodeURIComponent|popundersPerIP/)
 akaihentai.com##+js(rmnt, script, popMagic)
+fsicomics.com##+js(aeld, click, popMagic)
 *$script,domain=megapornpics.com,3p,denyallow=wankgod.com
 /^https:\/\/www\.[a-z]{8,14}\.com\/[a-z]{1,4}\.js$/$script,3p,match-case,header=x-powered-by:Express,from=~edu|~gov,to=com|~exploretock.com|~photopea.com
 /^https:\/\/www\.[a-z]{8,16}\.com\/(?:[A-Za-z]+\/)*(?:[_0-9A-Za-z]{1,20}[-.])*[_0-9A-Za-z]{1,20}\.js$/$script,xhr,3p,match-case,to=com,header=popads-node
@@ -21607,6 +21608,8 @@ tubtic.com##+js(no-fetch-if, mode:no-cors)
 @@||wiadomosci.onet.pl^$ghide
 trueachievements.com,truesteamachievements.com,truetrophies.com##+js(set, HTMLScriptElement.prototype.onerror, undefined)
 trueachievements.com,truesteamachievements.com,truetrophies.com##.nn_player_w > .pro-upgrade
+trueachievements.com,truesteamachievements.com,truetrophies.com##[id^="pw_mobile_mpu"]:upward(1)
+trueachievements.com,truesteamachievements.com,truetrophies.com###pw_player
 nmac.to##.adslot_buttom_inner > a[href*="/4/"][target="_blank"]
 ||nmac.to/dl^$doc,urlskip=/\/dl\/(.+)/ -base64
 ||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$script,redirect=noopjs,domain=680thefan.com
@@ -30428,7 +30431,7 @@ homedepot.ca##body:style(opacity: 1 !important;)
 @@||msmedia.morningstar.com^$script,domain=morningstar.in
 nijie.info/ad_log.php#@#._banner_view
 @@||cdn.cxense.com/cx.js$script,domain=nikkansports.com
-@@||dev.visualwebsiteoptimizer.com/j.php$xhr,domain=dominos.com.my
+@@||dev.visualwebsiteoptimizer.com/j.php$xhr,domain=dominos.com.my|dominos.com.sg|dominoslk.com
 ||dev.visualwebsiteoptimizer.com^$badfilter
 personality-database.com##+js(set, freestar.newAdSlots, trueFunc)
 ! uBlock filters – Quick fixes https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
