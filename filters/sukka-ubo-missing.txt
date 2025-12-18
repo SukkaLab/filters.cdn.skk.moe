@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Thu, 18 Dec 2025 10:15:01 GMT
+! Last modified: Thu, 18 Dec 2025 14:31:00 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.96.86
+!   - Version: 2.0.96.89
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -46508,6 +46508,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||d.nordvpn.com^
 ||ingress.linktr.ee^
 ||browser-fp.production.linktr.ee^
 ||app-performance.music.amazon.dev^
@@ -65992,6 +65993,7 @@ zjjz6lpv44aguszo.cloud.s11.sfmc-osl.com$image
 /^https?:\/\/(?!assets|script|static)(?:[0-9a-z]{10,13}|[0-9a-z]{6})\.[0-9A-Za-z.\-_]+\/(?=[0-9a-z+\/\-]*[A-Z])[0-9A-Za-z+\/\-]{80,106}$/$match-case,script,~3p
 /^https:\/\/cs\d{3}\.\w+\.com\/cscript\/\d{3}\/[\w\d]+\.js$/$script,3p,match-case
 /.well-known/private-click-measurement
+/ajax/whereami$ping
 /wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-events-provider-contact-form-
 /web-vitals-tracker.js
 /.rum/@adobe/helix-
@@ -66668,6 +66670,7 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||nordvpn.com/static/TrackersRuntimeScript.
 ||letu.ru/api/rrs/v*/analytics
 ||api-statist.tinkoff.ru/gateway/v*/events
 ||assets.production.linktr.ee/cep/
@@ -71862,6 +71865,8 @@ click.sender.yandex.ru/px/$image
 click.sender.yandex.ru%2Fpx%2F$image
 feedback.send.yandex.ru/px/$image
 feedback.send.yandex.ru%2Fpx%2F$image
+api.peeper.plus.yandex.net/v1/p/$image
+api.peeper.plus.yandex.net%2Fv1%2Fp%2F$image
 cl.mos.jp/q/$image
 cl.mos.jp%2Fq%2F$image
 makeup.com.ua/amazon/opened/$image
@@ -73334,6 +73339,7 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=saturn.de
 @@||metrics.us.playstation.com/b/ss/
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
+@@||securepubads.g.doubleclick.net/tag/js/gpt.js$script,redirect=googletagservices_gpt.js,domain=heise.de
 @@||cdn.shopify.com/oxygen-v2/*/assets/Clarity-$domain=thegoodguys.com.au
 @@||cdn.taboola.com/libtrc/unpkg/tfa.js$domain=/anitube\d+\.vip/
 @@||awsstatic.com/*/orchestrate.js$domain=aws.amazon.com
