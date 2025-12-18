@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Thu, 18 Dec 2025 03:17:07 GMT
+! Last modified: Thu, 18 Dec 2025 06:34:00 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.96.85
+!   - Version: 2.0.96.86
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -46508,6 +46508,9 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||ingress.linktr.ee^
+||browser-fp.production.linktr.ee^
+||app-performance.music.amazon.dev^
 ||mp.imgur.com^
 ||a.apkeditor.io^
 ||log.goodnovel.com^
@@ -66665,6 +66668,9 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||letu.ru/api/rrs/v*/analytics
+||api-statist.tinkoff.ru/gateway/v*/events
+||assets.production.linktr.ee/cep/
 ||chatgpt.com/ces/v1/t$xhr,redirect=noop.json
 ||chatgpt.com/ces/v1/i^$xhr,redirect=noop.json
 ||chatgpt.com/ces/v1/p|$xhr,redirect=noop.json
@@ -71848,6 +71854,8 @@ email-link.adtidy.org%2Fopen%2F$image
 line.my.salesforce.com/servlet/servlet.ImageServer?oid=*&esid=$image
 line.my.salesforce.com%2Fservlet%2Fservlet.ImageServer%3Foid=*%26esid=$image
 flask.us.nextdoor.com$image
+i.groovehq.com/*@groovehq.com.gif$image
+i.groovehq.com%2F*%40groovehq.com.gif$image
 c.groovehq.com/*.gif$image
 c.groovehq.com%2F*.gif$image
 click.sender.yandex.ru/px/$image
