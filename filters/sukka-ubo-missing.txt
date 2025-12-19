@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Fri, 19 Dec 2025 10:14:41 GMT
+! Last modified: Fri, 19 Dec 2025 14:29:47 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.96.93
+!   - Version: 2.0.96.96
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -217,6 +217,10 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||collector-*.px-cloud.net^
+||collector-*.pxchk.net^
+||adfenix.com^$3p
+||boldmetrics.io^
 ||cdn.trakkr.ai^
 ||track.trakkr.ai^
 ||cdn.particularaudience.com^$3p
@@ -697,7 +701,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||fndrsp.net^
 ||positional.ai^
 ||positional-bucket.com^
-||collector-pxebumdlwe.px-cloud.net^
 ||collector-pxebumdlwe.px-cdn.net^
 ||s2s.adjust.com^
 ||view.adjust.com^
@@ -46508,6 +46511,10 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||metrics-config.icloud.com^
+||fingerprint.incodesmile.com^
+||fluffy-analytics.vercel.app^
+||stats.renet.io^
 ||metrics-ingress-web.svc.vinted.com^
 ||metrics.vinted.lt^
 ||d.nordvpn.com^
@@ -46660,7 +46667,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||analytics.shutterstock.com^
 ||plw6buurmlxhrlkm6wy3uk7cia0mprkq.lambda-url.ap-south-1.on.aws^
 ||collector-pxdojv695v.protechts.net^
-||collector-pxdojv695v.px-cloud.net^
 ||collector1.sooplive.co.kr^
 ||exlogcollector.sooplive.co.kr^
 ||snowflake.qq.com^
@@ -72326,6 +72332,9 @@ dlsdk.appsflyer.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||log.smartclearpro.com^
+||analytics.artworkout.net^
+||event.mwm-bs.com^
 ||events.backtrace.io^
 ||kbox-analytics-prod.s*.amazonaws.com^
 ||logs.classdojo.com^
