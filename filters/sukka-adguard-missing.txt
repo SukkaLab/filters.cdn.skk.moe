@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sat, 20 Dec 2025 10:12:51 GMT
+! Last modified: Sat, 20 Dec 2025 14:25:21 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sat, 20 Dec 2025 06:05:58 +0000
+!   - Last modified: Sat, 20 Dec 2025 12:25:55 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Fri, 19 Dec 2025 18:27:40 +0000
@@ -18867,6 +18867,7 @@ im9.eu##+js(rmnt, script, /adblock/i)
 im9.eu##+js(aeld, load, 0x)
 im9.eu##+js(nostif, ['id'])
 im9.eu##+js(nosiif, ads)
+im9.eu##+js(aopr, screen)
 @@||im9.eu^$image,ghide,1p
 elamigosedition.com##+js(aost, document.addEventListener, blocker)
 elamigosedition.com##+js(nowoif)
@@ -22301,6 +22302,7 @@ speedweek.com##+js(no-fetch-if, /\/js/)
 speedweek.com##[class*="Ads"]
 speedweek.com##[class*="banner"]
 speedweek.com##[class^="_ad1"]
+||kickass-anime.ru^$csp=sandbox allow-forms allow-same-origin allow-scripts allow-modals allow-orientation-lock allow-pointer-lock allow-presentation allow-top-navigation
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
