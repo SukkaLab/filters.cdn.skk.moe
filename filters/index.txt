@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Filters
-! Last modified: Sat, 13 Dec 2025 06:54:39 GMT
+! Last modified: Sat, 20 Dec 2025 15:50:12 GMT
 ! Expires: 1 hours
 ! Description: The filters from Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -65,6 +65,7 @@ webcontainer.io#@#+js(sukka-defuse-service-worker)
 @@||transcend-cdn.com$domain=1password.com
 @@||intercom.io$domain=namesilo.com|cdn77.com
 @@||zopim.com$domain=ui.com|account.ui.com
+@@||zopim.com^$3p,domain=slack.com
 ||versionbadg.es$domain=npmjs.com
 ||zz.bdstatic.com$redirect=noop.js
 ||youtube.com/sw.js
@@ -215,6 +216,9 @@ hanime1.me##+js(rpnt, script, location.href = , window.redirect_prevented =)
 hanimeone.me##+js(rpnt, script, location.href = , window.redirect_prevented =)
 av.tube4us.top##a[href*="youtube.com/watch"]
 av4.homes##a[href*="youtube.com/watch"]
+shirouto4.top##a[href*="youtube.com/watch"]
+favicon.ico$image,uritransform=/https:\/\/(.+)\/favicon.ico/https:\/\/favicone.com\/$1/,domain=av4.homes|shirouto4.top|av.tube4us.top,denyallow=cdn.staticdelivr.com|wp.com|favicone.com
+*$image,uritransform=/(.+)/https:\/\/cdn.staticdelivr.com\/img\/images?url=$1/,domain=av4.homes|shirouto4.top|av.tube4us.top,denyallow=cdn.staticdelivr.com|wp.com|favicone.com
 ||silca.cc/*/pro-tire-pressure-calculator^$csp=script-src 'unsafe-eval' 'unsafe-inline'
 4khd.com##+js(sukka-defuse-devtools-detector)
 ||4khd.com/interstitial.js
@@ -273,6 +277,9 @@ dfzy.xyz##+js(trusted-set, window.navigator.userAgent, json:"Mozilla/5.0 quark/1
 ||hostedseal.trustarc.com/privacy-seal/seal$3p
 ||cdn.lgrckt-in.com/logger
 ||visitor.leadsourcing.co$3p
+||mymediaing.my/sdk$3p
+||endorsely.com$3p
+||static.doubleclick.net/instream/ad_status.js$redirect=noop.js
 ||adtech.redventures.io^$important
 ||coinbase.com/sw.js
 ||yorgio-chat-backend-v2.herokuapp.com$subdocument
@@ -701,3 +708,4 @@ everymac.com###contentsponleft
 seeklogo.com##.googlePartnersWp
 www.gl-inet.com##.fixed-video
 ||time.is/img/app_store_badge/$image
+||digvps.com/*/sponsors/$image
