@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Sat, 20 Dec 2025 22:22:38 GMT
+! Last modified: Sun, 21 Dec 2025 03:25:42 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.97.2
+!   - Version: 2.0.97.4
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -217,6 +217,8 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||elitebidder.com^
+||adstk.io^
 ||collector-*.px-cloud.net^
 ||collector-*.pxchk.net^
 ||adfenix.com^$3p
@@ -46511,6 +46513,11 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||android-tv-beacons.xumo.com^
+||ams-beacons.xumo.com^
+||rtb-trk4.linkedin.com^
+||rtb-us-east.linkedin.com^
+||adservices.brandcdn.com^
 ||telemetry.microsoft.us^
 ||stats.urban-vpn.com^
 ||analytics.urban-vpn.com^
@@ -71840,6 +71847,8 @@ mail.ferret-one.com%2Fbeacon$image
 %2FCI0%2F0$image
 /ss/o/*/ho.gif$image
 %2Fss%2Fo%2F*%2Fho.gif$image
+deepl.qualtrics.com/subscription/watermark.gif?
+deepl.qualtrics.com%2Fsubscription%2Fwatermark.gif%3F
 onelink.soundcloud.com/v1/emailopen$image
 onelink.soundcloud.com%2Fv1%2Femailopen$image
 %3A%2F%2Fline.karte.io%2FCI0%2F$image
@@ -76145,6 +76154,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||eagerflame.com^
 ||eagerknight.com^
 ||earnbaht.com^
+||earthlybuzz.com^
 ||earthups.com^
 ||eatablesquare.com^
 ||echoacloud.com^
@@ -76249,6 +76259,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||fearlesstramp.com^
 ||featherstage.com^
 ||feeblestamp.com^
+||feedandpurr.com^
 ||feedten.com^
 ||feignedfaucet.com^
 ||fewjuice.com^

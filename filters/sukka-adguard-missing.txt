@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sat, 20 Dec 2025 22:22:38 GMT
+! Last modified: Sun, 21 Dec 2025 03:25:42 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sat, 20 Dec 2025 17:02:55 +0000
+!   - Last modified: Sat, 20 Dec 2025 18:07:12 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Sat, 20 Dec 2025 17:25:12 +0000
@@ -6694,19 +6694,20 @@ financenova.online,utkarshonlinetest.com,financewada.com##.no_display:style(disp
 v2links.me##.banner-page .container.links:style(height: fit-content! important;)
 v2links.me###footer
 financenova.online##.aside-top-ads
-/nt.js$domain=fc-lc.*
-fc-lc.*###iframe_id, .text-left:style(clip-path: circle(0) !important;)
+/nt.js$domain=fc-lc.*|jobzhub.store|fitdynamos.com|labgame.io
+fc-lc.*###iframe_id, .text-left, .py-4.text-center.footer-copyright
 fc-lc.*##+js(rmnt, script, /DName|#iframe_id/)
-/nt.js$domain=jobzhub.store|fitdynamos.com|labgame.io
 jobzhub.store,fitdynamos.com,labgame.io###surl:remove-class(disabled)
 jobzhub.store,fitdynamos.com,labgame.io##+js(rmnt, script, adblockDetector)
 jobzhub.store,fitdynamos.com,labgame.io##+js(rpnt, script, stopCountdown();, resumeCountdown();)
 jobzhub.store,fitdynamos.com,labgame.io##+js(rpnt, script, /initialTimeSeconds = \d+/, initialTimeSeconds = 7)
+jobzhub.store,fitdynamos.com,labgame.io##+js(rmnt, script, close-modal)
 jobzhub.store,fitdynamos.com,labgame.io##+js(nano-sib, tid, *, 0.02)
-jobzhub.store,fitdynamos.com,labgame.io##+js(trusted-set-cookie, ad_expire=true;, $now$)
 jobzhub.store,fitdynamos.com,labgame.io##+js(noeval-if, ppuQnty)
 jobzhub.store,fitdynamos.com,labgame.io##+js(aeld, blur, stopCountdown)
 jobzhub.store,fitdynamos.com,labgame.io###step, #next, #scroll, #glink, #countdown, #surl, #ctext, .btn-danger.btn:others()
+jobzhub.store,fitdynamos.com,labgame.io##+js(trusted-set-cookie, ad_expire=true;, $now$)
+||cdn.jsdelivr.net/npm/*/bulma.min.css$stylesheet,domain=jobzhub.store|fitdynamos.com|labgame.io
 ||curryfielddistribution.com^$all
 ||antonellapouncedcrewels.com^$all
 ||tophostingapp.com/dwn-$image
@@ -19726,6 +19727,7 @@ watch.shout-tv.com##+js(json-prune-fetch-response, adsConfiguration, , propsToMa
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$script,domain=tvaplus.ca
 ||imasdk.googleapis.com/js/sdkloader/ima3_debug.js$script,domain=tvaplus.ca,redirect=google-ima.js,important
 ||rubiconproject.com^$script,redirect=noopjs,domain=tvaplus.ca
+@@||ca.edge.optable.co^$xhr,domain=tvaplus.ca
 arldeemix.com##+js(noeval-if, adblock)
 authenticateme.xyz##+js(rpnt, script, /if.*Disable.*?;/g, , condition, blocker)
 club386.com##+js(set, td_ad_background_click_link)
