@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Mon, 22 Dec 2025 03:28:19 GMT
+! Last modified: Mon, 22 Dec 2025 06:35:30 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.97.5
+!   - Version: 2.0.97.7
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -217,6 +217,8 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||rapid-cdn.yottaa.com^$3p
+||rum-ingress-coralogix.com^
 ||elitebidder.com^
 ||adstk.io^
 ||collector-*.px-cloud.net^
@@ -66689,6 +66691,7 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||affirm.com/api/*/touch_track
 ||data.joongna.com/log/
 ||api.cmp.inmobi.com/?log=
 ||techlore.tech/public/ghost-stats.min.js
@@ -76294,6 +76297,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||flourishingendeavor.com^
 ||flourishinginnovation.com^
 ||flourishingpartnership.com^
+||flowersonthebay.com^
 ||flowersornament.com^
 ||flowerstreatment.com^
 ||flowerycreature.com^
@@ -76304,6 +76308,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||flutteringfireman.com^
 ||flystranger.com^
 ||foambench.com^
+||folderplan.com^
 ||followborder.com^
 ||fontserif.com^
 ||foodczar.com^
