@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Mon, 22 Dec 2025 18:28:36 GMT
+! Last modified: Mon, 22 Dec 2025 22:27:16 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Mon, 22 Dec 2025 13:25:55 +0000
+!   - Last modified: Mon, 22 Dec 2025 19:26:10 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Mon, 22 Dec 2025 12:04:50 +0000
@@ -27,7 +27,7 @@
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Mon, 22 Dec 2025 06:25:27 +0000
+!   - Last modified: Mon, 22 Dec 2025 14:42:59 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
 !   - Last modified: Mon, 15 Dec 2025 13:54:40 +0000
@@ -8266,6 +8266,7 @@ mdy48tn97.com##+js(nowoif)
 mdy48tn97.com##div[style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; z-index: 2147483646;"]
 mapple.tv,roshy.tv,vidfast.*##+js(acs, atob, /popundersPerIP[\s\S]*?Date[\s\S]*?getElementsByTagName[\s\S]*?insertBefore/)
 animefire.io##+js(trusted-replace-outbound-text, atob, /.+/, , condition, /www|cloudfront/)
+aether.mom##+js(trusted-create-html, head, <div id="popads-script" style="display: none;"></div>)
 canna.to,flexy.stream,fsx.monster##+js(aopw, _pop)
 141tube.com,18adultgames.com,18porncomic.com,19-days-manga.com,1teentubeporn.com,1youngteenporn.com,3dhentai.club,3gaytube.com,3prn.com,3xamatorszex.hu,3xfaktor.hu,4archive.org,4porn4.com,560pmovie.com,69games.xxx,6indianporn.com,7mmtv.sx,85po.com,8muses.xxx##+js(acs, document.querySelectorAll, popMagic)
 a-hentai.tv,ablefast.com,adslink.pw,adult-empire.com,adultoffline.com,adultporn.com.es,aflamsexnek.com,ahri8.*,akatsuki-no-yona.com,akutsu-san.com,al4a.com,algodaodocescan.com.br,allafricangirls.net,allcelebs.club,allporncartoons.com,allpussynow.com,allureamateurs.net,alotporn.com,amateur-mature.net,amateurfapper.com,amateurfun.net,amateurporn.co,amazingtrannies.com,amazon-love.com,animecast.net,animeidhentai.com,animesex.me,animetoast.cc,annoncesescorts.com,anusling.info,anybunny.com,aoashimanga.com,arabxforum.com,arabxnx.com,archivebate.com,arcjav.com,asiansex.life,asianpornfilms.com,asianpornphoto.net,asianstubefuck.com,asianteenagefucking.com,asiaon.*,asiaontop.com,assesphoto.com,axporn.com,azmen.com##+js(acs, document.querySelectorAll, popMagic)
@@ -18985,7 +18986,8 @@ postermockup.com##+js(aost, setTimeout, adsBlocked)
 ||check-host.net/images/naez-$image,1p
 ||check-host.net/images/*wcm.png$image,1p
 ||check-host.net/images/u1host.png$image,1p
-check-host.net###hostabq, .hostabq, [id^="amtpeayvraea"], .specjo, #antkeatvhaeaaeza-permnnt, #antpeayvraeaalexhost, #amtpeayvraeapp-liaryt, #amtpeayvraeapp-liaryt2, .relan, .ri-btive, a.cursor-pointer, a[onclick^="window.location"], [id^="antkeayvhaeap"], [class*="-elative"], [href*="?utm_"], a[href*="privatealps.net"], [onclick*="https://privatealps.net/"], [onclick*="https://aeza.net/"], [onclick*="https://alexhost.com"], [onclick*="https://justhost.asia"], [onclick*="https://u1host.com"], a[href^="https://aeza.net/"], a[href^="https://alexhost.com/"]
+||check-host.net/images/thehosting$image,1p
+check-host.net###hostabq, .hostabq, [id^="amtpeayv"], .specjo, .telan, #antkeatvhaeaaeza-permnnt, #antpeayvraeaalexhost, #amtpeayvrkebpp-liaryt, #amtpeayvrkebpp-liaryt2, .relan, .ri-btive, a.cursor-pointer, a[onclick^="window.location"], [id^="antkeayvhaeap"], [class*="-elative"], [href*="?utm_"], a[href*="privatealps.net"], [onclick*="https://privatealps.net/"], [onclick*="https://aeza.net/"], [onclick*="https://alexhost.com"], [onclick*="https://justhost.asia"], [onclick*="https://u1host.com"], a[href^="https://aeza.net/"], a[href^="https://alexhost.com/"], a[href^="https://the.hosting"]
 check-host.net##[class$="-4"]:has(> .border-cyan-600 > p[onclick])
 @@||conceptartworld.com^$ghide
 pomofocus.io##+js(no-xhr-if, adsbygoogle, length:10)
@@ -22326,6 +22328,9 @@ rfi.fr##.u-has-adblock:remove-class(u-has-adblock)
 rfi.fr##div[data-video-player-handled][data-hidden-video-player]:remove-attr(data-hidden-video-player)
 rfi.fr##div[data-video-player-handled] ~ figure.m-item-image
 rfi.fr##div[id$="main-ad"]
+iptvpulse.top##+js(no-fetch-if, /googlesyndication|doubleclick|adsterra/)
+chess.com##.sidebar-component:style(width:190%!important)
+aether.mom##+js(trusted-replace-argument, String.prototype.split, this, , condition, 'null,http')
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -32872,6 +32877,7 @@ bwelcome.hr.bnpparibas##+js(trusted-set-cookie, userCookieConsent-15, '{"1":true
 gorans.fi##+js(trusted-set-cookie, gds-consent-hash, 0d7555b001c8bc3a6837585c5cebc0f6, 1year)
 gorans.fi##+js(trusted-set-cookie, gds-consent, '{"consents":{"necessary":true,"preferences":true,"statistics":false,"marketing":false}}', 1year)
 akt.no##+js(trusted-set-cookie, cookie-consent-1, '{"1":true,"2":false,"3":false,"4":false}')
+auctionet.com##+js(trusted-set-cookie, cookie_consent, %7B%22functionality_storage%22%3Atrue%2C%22statistics_storage%22%3Afalse%2C%22ad_storage%22%3Afalse%7D, 1year, , reload, 1)
 ! uBlock filters – Annoyances https://ublockorigin.pages.dev/filters/annoyances.min.txt
 mimaletadepeliculas.blogspot.com##+js(aopr, document.oncontextmenu)
 mimaletadepeliculas.blogspot.com##+js(acs, document.onselectstart)
