@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Mon, 22 Dec 2025 14:29:11 GMT
+! Last modified: Mon, 22 Dec 2025 18:28:36 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,13 +8,13 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Mon, 22 Dec 2025 06:36:05 +0000
+!   - Last modified: Mon, 22 Dec 2025 13:25:55 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
-!   - Last modified: Sat, 20 Dec 2025 17:25:12 +0000
+!   - Last modified: Mon, 22 Dec 2025 12:04:50 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Sat, 20 Dec 2025 14:36:29 +0000
+!   - Last modified: Mon, 22 Dec 2025 12:57:53 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
 !   - Last modified: Mon, 22 Dec 2025 04:38:16 +0000
@@ -22311,6 +22311,7 @@ hentaihaven.*##+js(no-fetch-if, www/delivery)
 ||havenclick.com/www/delivery/$xhr,redirect=noopvast-2.0
 forum.thresholdx.net##+js(no-fetch-if, googlesyndication)
 ||anime-phoenix.com/wp-content/plugins/wp-anti-adblock/$script,1p
+||speedweek.com/_astro/performAdBlockerDetection.
 speedweek.com##+js(no-fetch-if, /\/js/)
 @@||speedweek.com^$ghide
 speedweek.com##[class*="Ads"]
@@ -22320,6 +22321,11 @@ speedweek.com##[class^="_ad1"]
 fastpeoplesearch.com##+js(set, prads, [])
 steamclouds.online##+js(rmnt, script, "'hidden'")
 steamclouds.online##.ads:style(visibility:hidden !important)
+||imasdk.googleapis.com/js/sdkloader/ima3.js$important,domain=rfi.fr
+rfi.fr##.u-has-adblock:remove-class(u-has-adblock)
+rfi.fr##div[data-video-player-handled][data-hidden-video-player]:remove-attr(data-hidden-video-player)
+rfi.fr##div[data-video-player-handled] ~ figure.m-item-image
+rfi.fr##div[id$="main-ad"]
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -26793,6 +26799,7 @@ sport.elwatannews.com##+js(aost, Array.prototype.indexOf, isWin)
 ||shop-bitboxswiss.de^$all
 ||bifboxswiss.de^$all
 ||srvclouds.com^$all
+||gitcompiler.com^$all
 ! uBlock filters – Privacy https://ublockorigin.pages.dev/filters/privacy.min.txt
 ||google-analytics.com/analytics.js$script,redirect=google-analytics_analytics.js:5
 ||google-analytics.com/cx/api.js$script,redirect=google-analytics.com/cx/api.js:5
@@ -27985,6 +27992,7 @@ roblox.com##+js(href-sanitizer, a[href^="https://cts.businesswire.com/ct/CT?"][h
 ||lb.j-a-net.jp/*//https:$urlskip=/\/\/(https:.+)/
 ||click.linksynergy.com/fs-bin/click?id=*&RD_PARM1=http%$urlskip=?RD_PARM1 -uricomponent
 dailydot.com##+js(no-fetch-if, url:/undefined method:POST)
+||spezialklinik-neukirchen.de/matomo/matomo.js$important
 /edgemesh.*.js$script,domain=~edgemesh.com|~edgeno.de
 ||safelinkconverter.com^$script,3p
 /adsensebase.js$script
