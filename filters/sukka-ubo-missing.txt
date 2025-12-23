@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Tue, 23 Dec 2025 06:34:50 GMT
+! Last modified: Tue, 23 Dec 2025 10:15:30 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.97.14
+!   - Version: 2.0.97.15
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -66357,6 +66357,9 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+businessinsider.com##+js(set-local-storage-item, fenrir_anonymous_id, $remove$)
+businessinsider.com##+js(set-local-storage-item, anonymous_id, $remove$)
+businessinsider.com##+js(set-local-storage-item, universal_id, $remove$)
 ||affirm.com/api/*/touch_track
 ||data.joongna.com/log/
 ||api.cmp.inmobi.com/?log=
@@ -71478,7 +71481,7 @@ link.gmapp*.net$image
 /a360/public/statistic/*$image
 %2Fa360%2Fpublic%2Fstatistic%2F$image
 %2Ft%*%2Fa^$image
-/t/*/a^$image
+/t/*/a^$image,domain=~permies.com
 /pix.gif?$image
 %2Fpix.gif%3F$image
 /oo/*/e.gif$image
@@ -73043,6 +73046,7 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=saturn.de
 @@||metrics.us.playstation.com/b/ss/
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
+@@||collector-*.px-cloud.net^$xhr,domain=ifood.com.br
 @@||static.vocstatic.com/voonto2/latest/voonto.js$script,domain=lagacetadesalamanca.es
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$script,redirect=googletagservices_gpt.js,domain=heise.de
 @@||cdn.shopify.com/oxygen-v2/*/assets/Clarity-$domain=thegoodguys.com.au
