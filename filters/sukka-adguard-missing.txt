@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Tue, 23 Dec 2025 18:28:14 GMT
+! Last modified: Tue, 23 Dec 2025 22:24:38 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Tue, 23 Dec 2025 14:12:49 +0000
+!   - Last modified: Tue, 23 Dec 2025 15:47:45 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Mon, 22 Dec 2025 12:04:50 +0000
@@ -20,14 +20,14 @@
 !   - Last modified: Mon, 22 Dec 2025 04:38:16 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Tue, 23 Dec 2025 14:52:39 +0000
+!   - Last modified: Tue, 23 Dec 2025 17:30:17 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
 !   - Last modified: Tue, 23 Dec 2025 15:03:38 +0000
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Mon, 22 Dec 2025 14:42:59 +0000
+!   - Last modified: Tue, 23 Dec 2025 15:50:08 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
 !   - Last modified: Mon, 15 Dec 2025 13:54:40 +0000
@@ -18037,6 +18037,8 @@ terrylove.com##+js(nostif, prompt, 1000)
 yourlifeupdated.net##+js(noeval-if, ads)
 app.studysmarter.de,app.vaia.com##+js(trusted-replace-xhr-response, "ads_disabled":false, "ads_disabled":true, payments)
 app.studysmarter.de,app.vaia.com##aside > .ng-star-inserted
+||prod.studysmarter.de/affiliate/
+||prod.studysmarter.de/joboffers/
 111.90.141.252##+js(acs, $, noConflict)
 111.90.141.252##+js(aopr, preroll_helper.advs)
 */dyasds/$media,redirect=noopmp3-0.1s,domain=111.90.141.252
@@ -30759,7 +30761,7 @@ pvpoke-re.com##+js(ra, data-instype, ins.adsbygoogle:has(> div#aswift_0_host), s
 pvpoke-re.com##+js(trusted-set-attr, *:not(.main-wrap:has(~ [id^="nitro-sidebar"] .nitro-side) #nitro-top\,.main-wrap:has(~ [id^="nitro-sidebar"] .nitro-side) #nitro-body-desktop\,[id^="nitro-sidebar"]:has(.nitro-side) ~ #nitro-header-mobile) > ins.adsbygoogle:not(:has(#aswift_0_host)), data-ad-status, filled)
 pvpoke-re.com##+js(no-fetch-if, url:https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-3497863494706299 method:HEAD mode:no-cors, , , throttle, 121)
 pvpoke-re.com##+js(trusted-replace-argument, String.prototype.indexOf, 0, json:"/", condition, /premium)
-pvpoke-re.com##+js(trusted-replace-node-text, script, var menuSlideProtection, (()=>{const t=Promise.prototype.then;Promise.prototype.then=new Proxy(t\,{apply:(t\,e\,o)=>{const n=o[0];return"function"!=typeof n||(o[0]=new Proxy(n\,{apply:(t\,e\,o)=>{let n=o[0];if(n&&"object"==typeof n){const t=Object.keys(n);if(4===t.length&&"totalMessages"in n){const e=t.find((t=>"boolean"==typeof n[t]));e&&!1===n[e]&&(n[e]=!0)}}return Reflect.apply(t\,e\,o)}}))\,Reflect.apply(t\,e\,o)}});try{Promise.prototype.then.toString=()=>"function then() { [native code] }"}catch(t){}})();var menuSlideProtection, sedCount, 1)
+pvpoke-re.com##+js(trusted-replace-node-text, script, var menuSlideProtection, /*start*/(()=>{const t=Promise.prototype.then;Promise.prototype.then=new Proxy(t\,{apply:(t\,e\,o)=>{const n=o[0];return"function"!=typeof n||(o[0]=new Proxy(n\,{apply:(t\,e\,o)=>{let n=o[0];if(n&&"object"==typeof n){const t=Object.keys(n);if(4===t.length&&"totalMessages"in n){const e=t.find((t=>"boolean"==typeof n[t]));e&&!1===n[e]&&(n[e]=!0)}}return Reflect.apply(t\,e\,o)}}))\,Reflect.apply(t\,e\,o)}});try{Promise.prototype.then.toString=()=>"function then() { [native code] }"}catch(t){}})();document.currentScript.textContent=document.currentScript.textContent.replace(/\/\*start\*\/(.*)\/\*end\*\//\,"");/*end*/var menuSlideProtection, sedCount, 1)
 pvpoke-re.com##body:has(#nitro-body-desktop > ins.adsbygoogle.nitro-body:not(:has(> div#aswift_1_host))) div:is(#nitro-body-desktop, #nitro-top, #nitro-header-mobile) > p
 ||pvpoke-re.com/*.js?v=$replace=/try\{GameMaster/try{return;GameMaster/
 royalroad.com##.dKKumhSnWiFq75vPUVtmTanQ:has(a[href^="https://www.royalroad.com/a/r?campaign="]:not([href*="&url=https%3A%2F%2Fwww.royalroad.com"]))
@@ -32890,6 +32892,7 @@ gorans.fi##+js(trusted-set-cookie, gds-consent-hash, 0d7555b001c8bc3a6837585c5ce
 gorans.fi##+js(trusted-set-cookie, gds-consent, '{"consents":{"necessary":true,"preferences":true,"statistics":false,"marketing":false}}', 1year)
 akt.no##+js(trusted-set-cookie, cookie-consent-1, '{"1":true,"2":false,"3":false,"4":false}')
 auctionet.com##+js(trusted-set-cookie, cookie_consent, %7B%22functionality_storage%22%3Atrue%2C%22statistics_storage%22%3Afalse%2C%22ad_storage%22%3Afalse%7D, 1year, , reload, 1)
+dedeman.ro##+js(trusted-set-cookie, DDM2_cookie_management, '{"statistics":0,"comfort":0,"version":3}')
 ! uBlock filters – Annoyances https://ublockorigin.pages.dev/filters/annoyances.min.txt
 mimaletadepeliculas.blogspot.com##+js(aopr, document.oncontextmenu)
 mimaletadepeliculas.blogspot.com##+js(acs, document.onselectstart)
