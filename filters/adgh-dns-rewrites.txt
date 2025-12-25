@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka AdGuardHome Rewrites
-! Last modified: Sat, 20 Dec 2025 17:41:33 GMT
+! Last modified: Thu, 25 Dec 2025 13:38:30 GMT
 ! Expires: 1 hours
 ! Description: The filters from Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -7,6 +7,7 @@
 ! unknown filter
 ||*^$dnstype=HTTPS,dnsrewrite=NXDOMAIN
 ||*^$dnstype=TYPE65,dnsrewrite=NXDOMAIN
+||updates.cdn-apple.com$dnsrewrite=updates.cdn-apple.com.w.kunlunca.com
 ||pool.ntp.org$dnsrewrite=time.edu.cn
 ||time.apple.com$dnsrewrite=time.windows.com
 ||time.asia.apple.com$dnsrewrite=time.windows.com
