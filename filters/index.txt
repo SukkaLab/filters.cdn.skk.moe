@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Filters
-! Last modified: Fri, 26 Dec 2025 15:49:37 GMT
+! Last modified: Fri, 26 Dec 2025 15:50:31 GMT
 ! Expires: 1 hours
 ! Description: The filters from Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -398,6 +398,7 @@ producthunt.com##[data-sentry-component='Ad']
 ||usefathom.com^$script
 ||usefathom.com^$3p
 /.netlify/scripts/rum
+||mozilla.org/*/gtm-
 justauth.cn##+js(set, window._AdBlockInit, true)
 ||tankeai.com$3p
 ||hsforms.com/*/counters.gif$redirect=1x1.gif
