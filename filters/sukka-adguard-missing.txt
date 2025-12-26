@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Fri, 26 Dec 2025 06:32:59 GMT
+! Last modified: Fri, 26 Dec 2025 10:14:30 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Fri, 26 Dec 2025 00:06:48 +0000
+!   - Last modified: Fri, 26 Dec 2025 06:19:50 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Wed, 24 Dec 2025 15:03:40 +0000
@@ -21556,6 +21556,7 @@ streamup.ws##+js(set, detectSandbox, noopFunc)
 streamup.ws##+js(aeld, DOMContentLoaded, Promise)
 streamup.ws##+js(nostif, push)
 s1p1cd.com,strmup.to,strmup.cc,strmup.ws,vidnest.io##+js(nowoif)
+vidnest.io##+js(acs, EventTarget.prototype.addEventListener, open)
 strmup.to,strmup.ws##+js(rmnt, script, popundersPerIP)
 strmup.to##+js(acs, document.createElement, "'script'")
 *$script,3p,denyallow=cloudflare.com|cloudflare.net|fastly.net|gstatic.com|jsdelivr.net|jwpcdn.com,domain=s1p1cd.com|streamup.ws|strmup.to
