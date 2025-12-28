@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Sat, 27 Dec 2025 22:23:44 GMT
+! Last modified: Sun, 28 Dec 2025 03:43:31 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,16 +18,16 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202512272211
+!   - Version: 202512280331
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 27 Dec 2025 22:11 UTC
+!   - Last modified: 28 Dec 2025 03:31 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
 ! * ⚙️ Dandelion Sprout's Annoyances List
 !   - URL: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AnnoyancesList
-!   - Version: 16December2025v1-Compilation
+!   - Version: 27December2025v1-Compilation
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 🎯 DailyMotion Simplicity
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/DailyMotionSimplicity.txt
@@ -2769,6 +2769,7 @@ duckduckgo.com,duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion##b
 ||binarymark.com/products/*/thank-you-for-using^$popup
 ||binarymark.com/products/*/uninstalled^$popup
 ||diskpart.com/*?source=auto-popup^$popup
+www.qwant.com###root:has(a[href*=goo]) section div[class]:not([data-testid],[style],[class*=" "],[class*=_]):has([id^=Piwik_])
 ! 🎯 DailyMotion Simplicity https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/DailyMotionSimplicity.txt
 dailymotion.com##div[class^=DiscoveryQueueDisplay__sectionContainer]:has(a[class*=channelCard])
 dailymotion.com#?#div[class^=DiscoveryQueueDisplay__sectionContainer]:has(span:has-text(Trend))
