@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Mon, 29 Dec 2025 03:44:42 GMT
+! Last modified: Mon, 29 Dec 2025 06:36:08 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.97.48
+!   - Version: 2.0.97.49
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -73095,6 +73095,7 @@ enedis.fr##+js(set-constant, window.tc_vars, {})
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$script,redirect=googletagservices_gpt.js,domain=heise.de
 @@||cdn.shopify.com/oxygen-v2/*/assets/Clarity-$domain=thegoodguys.com.au
 @@||cdn.taboola.com/libtrc/unpkg/tfa.js$domain=/anitube\d+\.vip/
+@@||awsstatic.com/libra/*/vendor/web-vitals.attribution.iife.js$domain=aws.amazon.com
 @@||awsstatic.com/*/orchestrate.js$domain=aws.amazon.com
 @@||experience.ninetailed.co/v2/organizations/*/environments/main/profiles/$xhr,domain=dkb.de
 ||googletagmanager.com/ns.html$subdocument,redirect=noop.html,domain=dkb.de
