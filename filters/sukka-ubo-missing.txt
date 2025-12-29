@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Mon, 29 Dec 2025 18:28:10 GMT
+! Last modified: Mon, 29 Dec 2025 22:24:58 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.97.55
+!   - Version: 2.0.97.57
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -74204,6 +74204,7 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=saturn.de
 @@||metrics.us.playstation.com/b/ss/
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
+@@||st-marks-yoga.recess.tv/_app/immutable/chunks/pixelTracker
 @@||cdn.tagcommander.com/*/tc_ENEDIS_*.js$domain=frontend-mes-prms-part-cloud.enedis.fr
 enedis.fr##+js(set-constant, window.tc_vars, {})
 @@||collector-*.px-cloud.net^$xhr,domain=ifood.com.br
@@ -77484,6 +77485,8 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||lovelydrum.com^
 ||loveseashore.com^
 ||lowercases.com^
+||lowerthewatts.net^
+||luckyshelf.com^
 ||ludicrousarch.com^
 ||lumberamount.com^
 ||luminousboulevard.com^
