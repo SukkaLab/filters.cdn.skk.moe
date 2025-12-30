@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Tue, 30 Dec 2025 14:29:46 GMT
+! Last modified: Tue, 30 Dec 2025 18:28:29 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202512301421
+!   - Version: 202512301821
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 30 Dec 2025 14:21 UTC
+!   - Last modified: 30 Dec 2025 18:21 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
@@ -124,7 +124,7 @@
 ! * uBlock filters – Mobile
 !   - URL: https://ublockorigin.github.io/uAssets/filters/filters-mobile.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Tue, 30 Dec 2025 08:46:48 +0000
+!   - Last modified: Tue, 30 Dec 2025 16:48:11 +0000
 ! * CJX's uBlock list
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-ublock.txt
 !   - Homepage: https://github.com/cjx82630/cjxlist
@@ -24724,9 +24724,10 @@ redd.tube###closeable_widget
 mdpr.jp##+js(trusted-set-attr, #gn-rwd-target-hidden, class, rewareded)
 outlook.live.com##main > div[style] .vPfg_:has(.wOYnU) ~ *:style(transform: translateY(-80px) !important)
 ||googlevideo.com/videoplayback*ctier=L&*%2Cxpc%2Cctier%2C$xhr,3p,domain=m.youtube.com|music.youtube.com
-dailymotion.com##+js(xml-prune, [breakId], , _VMAP_)
 dailymotion.com##+js(json-prune-fetch-response, advertising, , propsToMatch, /player/metadata)
 dailymotion.com##+js(json-prune-xhr-response, advertising, , propsToMatch, .json)
+geo.dailymotion.com##+js(xml-prune, [breakId], , _VMAP_)
+geo.dailymotion.com##+js(set, DMP_ENABLE_ADS, false)
 hurriyet.com.tr##.mobileMasthead
 yts.mx##.home-content > div[class]:not([id]):has(> div > a[rel="noindex, nofollow"])
 superporn.com##.intensive-add

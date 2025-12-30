@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Tue, 30 Dec 2025 14:29:46 GMT
+! Last modified: Tue, 30 Dec 2025 18:28:29 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.97.61
+!   - Version: 2.0.97.63
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -67526,7 +67526,6 @@ businessinsider.com##+js(set-local-storage-item, universal_id, $remove$)
 ||chatgpt.com/ces/statsc/$xhr,redirect=noop.json
 /v1/rgstr?k=client-$xhr,redirect=noop.json,domain=chatgpt.com
 ||contents.kyobobook.co.kr/resources/lib/kbb-js/kbb.stats.js
-arte.tv##+js(set-local-storage-item, /^oidc\./, $remove$)
 ||full-count.jp/ssc.min.js
 ||d.line-scdn.net/n/line_tag/$domain=full-count.jp
 /_api/tag-manager/api/*/tags/sites/*$xhr,domain=boraware.kr
@@ -73173,6 +73172,8 @@ dlsdk.appsflyer.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||log.eufylife.com^
+||dts-log.anker.com^
 ||perf.bblmw.com^
 ||event.bblmw.com^
 ||vsn-analytics.aparentmedia.com^
