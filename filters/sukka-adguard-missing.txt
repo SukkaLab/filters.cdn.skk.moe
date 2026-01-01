@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Thu, 01 Jan 2026 06:34:04 GMT
+! Last modified: Thu, 01 Jan 2026 10:14:56 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,13 +8,13 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Wed, 31 Dec 2025 05:34:20 +0000
+!   - Last modified: Thu, 01 Jan 2026 08:24:26 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Tue, 30 Dec 2025 16:42:21 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Tue, 30 Dec 2025 05:39:45 +0000
+!   - Last modified: Thu, 01 Jan 2026 05:33:05 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
 !   - Last modified: Sun, 28 Dec 2025 06:11:52 +0000
@@ -27,7 +27,7 @@
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Wed, 31 Dec 2025 05:46:03 +0000
+!   - Last modified: Thu, 01 Jan 2026 08:05:29 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
 !   - Last modified: Tue, 30 Dec 2025 08:03:46 +0000
@@ -8711,8 +8711,8 @@ glodls.to,playfa.com##+js(acs, fetch, break;case)
 /^https:\/\/[a-z]{3,5}\.[a-z]{10,14}\.top\/[a-z]{10,16}\/[a-z]{5,6}(?:\?d=\d)?$/$script,xhr,3p,match-case,to=top
 /^https:\/\/[a-z]{3,5}\.[a-z]{10,14}\.top\/[A-Za-z]{10,16}\/[A-Za-z]{5,6}$/$popup,3p,to=top
 /^https:\/\/[a-z][a-z][a-z][a-z]?[a-z]?\.[a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z]?[a-z]?[a-z]?[a-z]?\.top\/[a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z]?[a-z]?[a-z]?[a-z]?[a-z]?[a-z]?\/[a-z][a-z][a-z][a-z][a-z][a-z]?\?d=[0-9]$/$script,xhr,3p,match-case
-123animehub.cc,123animes.ru,actvid.*,boosterx.stream,cataz.to,cineb.rs,cineb.gg,demonicscans.org,dopebox.to,fbsquadx.com,flixhq.to,gomovies.*,gomoviestv.to,hdtoday.cc,hentai2read.com,himovies.sx,hurawatch.cc,hurawatchz.to,jkanime.net,lectormangaa.com,limetorrents.lol,lulustream.com,luluvdoo.com,luluvid.com,mangagun.net,mexa.sh,mgeko.cc,mkvcinemas.*,moflix-stream.fans,motchill29.com,mov18plus.cloud,moviesapi.to,movies2watch.tv,musichq.cc,netmovies.to,nicomanga.com,phimlongtieng.net,rawinu.com,rawkuma.net,readcomiconline.*,seriesonline.sx,stream18.net,theflixertv.to,torrentdownload.*,toonily.com,torrentdownloads.*,tukipasti.com,updown.icu,vidora.stream,vidsrc.cc,watchasians.cc,watch-movies.com.pk,watchseries.*,weloma.art,welovemanga.one,zoechip.com,zoechip.gg##^script:has-text(HTMLAllCollection)
-123animehub.cc,123animes.ru,actvid.*,boosterx.stream,cataz.to,cineb.rs,cineb.gg,demonicscans.org,dopebox.to,fbsquadx.com,flixhq.to,gomovies.*,gomoviestv.to,hdtoday.cc,hentai2read.com,himovies.sx,hurawatch.cc,hurawatchz.to,jkanime.net,lectormangaa.com,limetorrents.lol,lulustream.com,luluvdoo.com,luluvid.com,mangagun.net,mexa.sh,mgeko.cc,mkvcinemas.*,moflix-stream.fans,motchill29.com,mov18plus.cloud,moviesapi.to,movies2watch.tv,musichq.cc,netmovies.to,nicomanga.com,phimlongtieng.net,rawinu.com,rawkuma.net,readcomiconline.*,seriesonline.sx,stream18.net,theflixertv.to,torrentdownload.*,toonily.com,torrentdownloads.*,tukipasti.com,updown.icu,vidora.stream,vidsrc.cc,watchasians.cc,watch-movies.com.pk,watchseries.*,weloma.art,welovemanga.one,zoechip.com,zoechip.gg##+js(acs, addEventListener, HTMLAllCollection)
+123animehub.cc,123animes.ru,actvid.*,boosterx.stream,cataz.to,cineb.rs,cineb.gg,demonicscans.org,dopebox.to,fbsquadx.com,flixhq.to,gomovies.*,gomoviestv.to,hdtoday.cc,hentai2read.com,himovies.sx,hurawatch.cc,hurawatchz.to,jkanime.net,lectormangaa.com,limetorrents.lol,lulustream.com,luluvdoo.com,luluvid.com,mangagun.net,mexa.sh,mgeko.cc,mkvcinemas.*,moflix-stream.fans,motchill29.com,mov18plus.cloud,movies4us.co,moviesapi.to,movies2watch.tv,musichq.cc,netmovies.to,nicomanga.com,phimlongtieng.net,rawinu.com,rawkuma.net,readcomiconline.*,seriesonline.sx,stream18.net,theflixertv.to,torrentdownload.*,toonily.com,torrentdownloads.*,tukipasti.com,updown.icu,vidora.stream,vidsrc.cc,watchasians.cc,watch-movies.com.pk,watchseries.*,weloma.art,welovemanga.one,zoechip.com,zoechip.gg##^script:has-text(HTMLAllCollection)
+123animehub.cc,123animes.ru,actvid.*,boosterx.stream,cataz.to,cineb.rs,cineb.gg,demonicscans.org,dopebox.to,fbsquadx.com,flixhq.to,gomovies.*,gomoviestv.to,hdtoday.cc,hentai2read.com,himovies.sx,hurawatch.cc,hurawatchz.to,jkanime.net,lectormangaa.com,limetorrents.lol,lulustream.com,luluvdoo.com,luluvid.com,mangagun.net,mexa.sh,mgeko.cc,mkvcinemas.*,moflix-stream.fans,motchill29.com,mov18plus.cloud,moviesapi.to,movies2watch.tv,movies4us.co,musichq.cc,netmovies.to,nicomanga.com,phimlongtieng.net,rawinu.com,rawkuma.net,readcomiconline.*,seriesonline.sx,stream18.net,theflixertv.to,torrentdownload.*,toonily.com,torrentdownloads.*,tukipasti.com,updown.icu,vidora.stream,vidsrc.cc,watchasians.cc,watch-movies.com.pk,watchseries.*,weloma.art,welovemanga.one,zoechip.com,zoechip.gg##+js(acs, addEventListener, HTMLAllCollection)
 cataz.to##+js(nowoif)
 vidfast.*##+js(acs, addEventListener, HTMLAllCollection)
 cineb.rs,moviesjoyhd.to,rawkuma.com##+js(aeld, mousedown, shown_at)
@@ -8940,8 +8940,8 @@ dcleakers.com,esgeeks.com,pugliain.net,uplod.net,worldfreeware.com##+js(nostif, 
 *$script,redirect-rule=noopjs,domain=siamblockchain.com
 ||pugliain.net/wp-content/uploads/*.gif$image
 siamblockchain.com##.headerad-desk
-arabshentai.com,ariversegl.com,asia2tv.com,boyfuck.me,cehennemstream.xyz,cgtips.org,cybermania.ws,daozoid.com,dvdgayporn.com,downloadcursos.gratis,dx-tv.com,filmyzones.com,fitnessplanss.com,freereadnovel.online,idlixvip.*,javboys.tv,magicgameworld.com,mangacrab.org,medicalstudyzone.com,netfuck.net,onezoo.net,readingpage.fun,sharedwebs.com,shemalegape.net,tojimangas.com,tuktukcinma.com,vercanalesdominicanos.com##+js(no-fetch-if, /googlesyndication|doubleclick/, length:10, {"type": "cors"})
-arabshentai.com,ariversegl.com,asia2tv.com,boyfuck.me,cehennemstream.xyz,cgtips.org,cybermania.ws,daozoid.com,dvdgayporn.com,downloadcursos.gratis,dx-tv.com,filmyzones.com,fitnessplanss.com,freereadnovel.online,idlixvip.*,javboys.tv,magicgameworld.com,mangacrab.org,medicalstudyzone.com,netfuck.net,onezoo.net,readingpage.fun,sharedwebs.com,shemalegape.net,tojimangas.com,tuktukcinma.com,vercanalesdominicanos.com##+js(no-xhr-if, /googlesyndication|doubleclick/, length:10)
+arabshentai.com,ariversegl.com,asia2tv.com,boyfuck.me,cehennemstream.xyz,cgtips.org,cloudhostingz.com,cybermania.ws,daozoid.com,dvdgayporn.com,downloadcursos.gratis,dx-tv.com,filmyzones.com,fitnessplanss.com,freereadnovel.online,idlixvip.*,javboys.tv,magicgameworld.com,mangacrab.org,medicalstudyzone.com,netfuck.net,onezoo.net,readingpage.fun,sharedwebs.com,shemalegape.net,tojimangas.com,tuktukcinma.com,vercanalesdominicanos.com##+js(no-fetch-if, /googlesyndication|doubleclick/, length:10, {"type": "cors"})
+arabshentai.com,ariversegl.com,asia2tv.com,boyfuck.me,cehennemstream.xyz,cgtips.org,cloudhostingz.com,cybermania.ws,daozoid.com,dvdgayporn.com,downloadcursos.gratis,dx-tv.com,filmyzones.com,fitnessplanss.com,freereadnovel.online,idlixvip.*,javboys.tv,magicgameworld.com,mangacrab.org,medicalstudyzone.com,netfuck.net,onezoo.net,readingpage.fun,sharedwebs.com,shemalegape.net,tojimangas.com,tuktukcinma.com,vercanalesdominicanos.com##+js(no-xhr-if, /googlesyndication|doubleclick/, length:10)
 /\/wp-content\/plugins\/[a-f]{6}\.js\?ver=/$script,1p,match-case,domain=arabshentai.com|filmyzones.com
 /\/wp-content\/uploads(?:\/[a-f]{6}){2}\.js/$script,1p,match-case,domain=~edu|~gov
 /^https:\/\/[-a-z0-9]+\.[a-z]+\/uploads(?:\/[a-f]{6}){2}\.js\?ver=17\d{8}$/$script,1p,match-case,domain=~edu|~gov
@@ -15835,8 +15835,9 @@ xxxshake.com###headC
 xxxshake.com##.fluid-b
 ||xxxshake.com/*pop/|$script,1p
 @@||emailn.de^$ghide
-bravedown.com##+js(no-fetch-if, adskeeper)
+bravedown.com##+js(no-fetch-if, /adskeeper|cloudflare/)
 bravedown.com##+js(set-local-storage-item, a_render, true)
+bravedown.com##+js(rmnt, script, /adbl/i)
 proappapk.com##+js(ra, disabled, #gotolink)
 proappapk.com###gotolink:style(display: block !important;)
 proappapk.com##.blogContent:has(#verify) .postBody
@@ -27874,6 +27875,7 @@ dmax.de##.block-user:remove-class(block-user)
 ||grok.com/_data/v1/analytics/
 ||grok.com/api/statsig/log_event
 ||grok.com/api/log_metric
+||grokipedia.com/api/log
 ||novizer.org/api/send
 ||amazon.com/follow/log-metrics
 ||amazon.*/stores/page/*?pageViewLogging
@@ -31083,7 +31085,7 @@ vogue.co.uk,wired.com##+js(trusted-set-cookie, OptanonConsent, groups=C0001%3A1%
 jekabpils.lv##+js(trusted-set-cookie, allowCookies, '{"uvc":true,"__cfduid":true}')
 jekabpils.lv###cookieConsent
 zdnet.com##+js(trusted-set-cookie, OptanonConsent, groups=C0001%3A1%2CC0002%3A0%2CC0003%3A1%2CC0004%3A0%2CC0005%3A1, 1year)
-||privacy-mgmt.com^$domain=news.sky.com
+||privacy-mgmt.com^$domain=news.sky.com,important
 news.sky.com##+js(trusted-set-cookie, consents, :4:6:7:8:9:10:11:12:13:19:)
 lippu.fi##+js(trusted-set-cookie, __cmpcpc, __1_2__)
 lippu.fi##+js(trusted-set-cookie, __cmpcvc, __c24599_s94_c24102_s40_s1052_s65_c24103_s23_c9953_c24290_c24098_s26_s2612_s135_s1104_s1409_s905_s24_c24202_c22143_c21373_s77_s30_U__)
