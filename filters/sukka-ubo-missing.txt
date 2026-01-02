@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Fri, 02 Jan 2026 06:34:11 GMT
+! Last modified: Fri, 02 Jan 2026 10:14:08 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.97.70
+!   - Version: 2.0.97.72
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -217,6 +217,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||data.deep-content.io^
 ||pingpong.us^
 ||protected-api.branch.io^
 ||pixel.visitiq.io^
@@ -67493,6 +67494,7 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||static.speisekarte.de/build/ub-tracker.js
 ||omtrdc.net/rest/$ping
 ||hotpepper.jp/DEV/DEV_OPEN/CSP/log/
 ||uts-front.line-apps.com/event-web
@@ -74898,7 +74900,6 @@ goodwillfinds.com##+js(set-constant, _etmc, [])
 @@||googletagmanager.com/gtm.js?id=GTM-TSHZLHD$domain=cyclingnews.com
 @@||video.qq.com/getvinfo?*&otype=*&host=*&refer=htt$domain=v.qq.com
 @@||jssdkcdns.mparticle.com/js/v*/*/mparticle.js$domain=weather.com
-||googletagservices.com/tag/js/gpt.js$xhr,script,redirect=googletagservices_gpt.js,domain=thedailybeast.com,badfilter
 @@||blob.core.windows.net/bge/src/js/google-analytics.js$domain=secure2.bge.com
 @@||ukw.jp^*/?cbk=$script,domain=system5.jp
 @@||munchkin.marketo.net/munchkin.js$domain=telus.com
