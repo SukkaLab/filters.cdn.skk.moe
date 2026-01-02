@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Fri, 02 Jan 2026 10:14:08 GMT
+! Last modified: Fri, 02 Jan 2026 14:28:54 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,13 +8,13 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Thu, 01 Jan 2026 10:22:37 +0000
+!   - Last modified: Fri, 02 Jan 2026 08:34:42 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Tue, 30 Dec 2025 16:42:21 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Thu, 01 Jan 2026 05:33:05 +0000
+!   - Last modified: Fri, 02 Jan 2026 05:47:17 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
 !   - Last modified: Sun, 28 Dec 2025 06:11:52 +0000
@@ -9474,6 +9474,10 @@ poczta.o2.pl,poczta.wp.pl##.d_flex.flex-d_column.h_full.pos_relative
 @@||wspinanie.pl^$ghide
 wspinanie.pl##+js(nostif, getComputedStyle)
 wspinanie.pl##.global__advertisement
+@@*$css,other,domain=pilot.wp.pl
+*/adv/$image,domain=pilot.wp.pl,redirect=1x1.gif
+||static.criteo.net/js/$script,domain=pilot.wp.pl,redirect=noopjs
+@@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=pilot.wp.pl
 ||static-cloud.mediaset.net/misc/ad/adanalytics.js^$redirect=noopjs
 ||static-cloud.mediaset.net/misc/ad/adanalytics.js^$redirect=noopjs,domain=mediasetinfinity.es,important
 download.kingtecnologia.com##+js(nostif, await _0x)
@@ -27574,6 +27578,7 @@ vpnmentor.com##+js(cookie-remover, /_alooma/)
 ||babia.to/job.php^
 ||g.doubleclick.net/tag/js/gpt.js$script,redirect=googletagservices_gpt.js:5,domain=euronews.com,important
 ||onlyfans.com/api2/v2/users/clicks-stats^
+||onlyfans.com/api2/v2/users/profile/view^
 ||onlyfans.com/away^$urlskip=?url
 ||forecast.lemonde.fr/p/action/
 ||lemonde.fr/*?s=$xhr,method=post
@@ -27902,6 +27907,7 @@ roblox.com##+js(href-sanitizer, a[href^="https://cts.businesswire.com/ct/CT?"][h
 dailydot.com##+js(no-fetch-if, url:/undefined method:POST)
 ||spezialklinik-neukirchen.de/matomo/matomo.js$important
 ||nouvelobs.com/*?s=$ping
+||analytics-service.api.linkme.global^
 /edgemesh.*.js$script,domain=~edgemesh.com|~edgeno.de
 ||safelinkconverter.com^$script,3p
 /adsensebase.js$script
