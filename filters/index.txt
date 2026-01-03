@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Filters
-! Last modified: Sat, 03 Jan 2026 06:55:11 GMT
+! Last modified: Sat, 03 Jan 2026 06:58:03 GMT
 ! Expires: 1 hours
 ! Description: The filters from Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -473,6 +473,9 @@ justauth.cn##+js(set, window._AdBlockInit, true)
 ||3.gravatar.com/avatar/$all,uritransform=/3\.gravatar\.com/secure.gravatar.com/
 ||s.gravatar.com/avatar/$all,uritransform=/s\.gravatar\.com/secure.gravatar.com/
 ||www.gravatar.com/avatar/$all,uritransform=/www\.gravatar\.com/secure.gravatar.com/
+||fastly.jsdelivr.net/$all,uritransform=/fastly\.jsdelivr\.net/cdn\.jsdelivr\.net/
+||testingcf.jsdelivr.net/$all,uritransform=/testingcf\.jsdelivr\.net/cdn\.jsdelivr\.net/
+||gcore.jsdelivr.net/$all,uritransform=/gcore\.jsdelivr\.net/cdn\.jsdelivr\.net/
 ||app.moegirl.org.cn/insight-assets/images/20230413-moepad/800x300.png
 ||storage.moegirl.org.cn/console-plus/uploads/2024/02/01/a475bee2aa57da0e65f5341b78ccf551.png
 ||storage.moegirl.org.cn/console-plus/uploads/2024/01/16/b70a27db94200462fd06da4a5ab30b50.jpeg

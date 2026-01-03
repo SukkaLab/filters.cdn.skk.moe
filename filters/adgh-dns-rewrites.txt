@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka AdGuardHome Rewrites
-! Last modified: Sat, 03 Jan 2026 06:55:11 GMT
+! Last modified: Sat, 03 Jan 2026 06:58:03 GMT
 ! Expires: 1 hours
 ! Description: The filters from Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
