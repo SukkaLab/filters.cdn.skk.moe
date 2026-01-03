@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sat, 03 Jan 2026 18:26:25 GMT
+! Last modified: Sat, 03 Jan 2026 22:24:12 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sat, 03 Jan 2026 12:56:15 +0000
+!   - Last modified: Sat, 03 Jan 2026 20:24:10 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Tue, 30 Dec 2025 16:42:21 +0000
@@ -21586,6 +21586,7 @@ l2crypt.com##+js(noeval-if, ads)
 5masterzzz.site##body > div[style*="z-index:"]:not([id])
 1337x.fyi,1337x.pro##+js(trusted-rpnt, script, window.location.replace(urlRandom);, )
 brawlify.com##+js(rmnt, script, /adb/i)
+||brawlify.com/js/core.js^$script,1p
 abcnews.go.com##.navigation--has-subnav:style(top:0 !important)
 abcnews.go.com##.StickyAdWrapper
 bgsi.gg##+js(nostif, fired)
@@ -22337,6 +22338,7 @@ player4me.vip,seekplayer.vip##+js(nowoif)
 ||captown.capcom.com^$doc,replace=/data-game-play-need-ads-modal-value=true/data-game-play-need-ads-modal-value=false/
 captown.capcom.com##.game-main[data-game-play-need-ads-modal-value="true"]:remove-attr(data-game-play-need-ads-modal-value)
 thetemp.email##+js(no-fetch-if, adsbygoogle)
+hostserverz.com##+js(no-xhr-if, googlesyndication)
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
