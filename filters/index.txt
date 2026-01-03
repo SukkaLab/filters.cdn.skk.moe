@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Filters
-! Last modified: Tue, 30 Dec 2025 14:03:55 GMT
+! Last modified: Sat, 03 Jan 2026 06:55:11 GMT
 ! Expires: 1 hours
 ! Description: The filters from Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -163,7 +163,12 @@ http://*$app=tv.danmaku.bili
 iknowwhatyoudownload.com##[href="/en/peer"]
 stripe.com##+js(no-fetch-if, r.stripe.com/b method:POST)
 ||r.stripe.com/b^$redirect=noop.txt
+www.deepl.com###lmt_pro_ad_container
+www.deepl.com###dl_quotes_container
+||gtm.deepl.com/gtm.js$redirect=googletagmanager_gtm.js
+deepl.com##+js(trusted-prevent-fetch, s.deepl.com/web/statistics, '{ "code": 1 }')
 ||ip.sb$domain=alicesw.com
+||sponsorapp.io^$3p
 ||archive.org/includes/donate
 @@||perfops.io/500b-bench.jpg$domain=localhost|ip.skk.moe
 ||adfoc.us$csp=script-src 'none'
@@ -501,7 +506,6 @@ aa1xx.xyz##.happy-player-beside
 blog.sohu.com##.focus-pic
 sm.ms##.wwads_abp_open
 ||sm.ms/assets/js/wwads_blocked.js
-www.deepl.com###lmt_pro_ad_container
 ||csstools.chinaz.com/tools/images/*
 ping.chinaz.com##.ToolHead
 ping.chinaz.com##.clearfix.wrapper.Map-navbar
@@ -510,7 +514,6 @@ ping.chinaz.com##.backfix
 tool.chinaz.com##.Sponsor
 react.semantic-ui.com###docs-carbonads
 ||pastebin.com/themes/pastebin/img/no_war_ukraine.jpeg
-www.deepl.com###dl_quotes_container
 ip.sb##.wwads_abp
 ||www.ip138.com/mp/list/new/*$important
 date-fns.org##a[href*="https://cutt.ly"]
@@ -723,3 +726,5 @@ www.gl-inet.com##.fixed-video
 ||digvps.com/*/sponsors/$image
 nmac.to##.signoff
 ||media.printables.com/media/banner_images/$image
+www.news.com.au##.loader-overlay
+www.news.com.au##.LoaderBox
