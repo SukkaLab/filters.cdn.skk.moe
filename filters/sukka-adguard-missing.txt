@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sun, 04 Jan 2026 06:32:26 GMT
+! Last modified: Sun, 04 Jan 2026 10:13:09 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,19 +8,19 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sat, 03 Jan 2026 20:24:10 +0000
+!   - Last modified: Sun, 04 Jan 2026 05:31:02 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
-!   - Last modified: Tue, 30 Dec 2025 16:42:21 +0000
+!   - Last modified: Sun, 04 Jan 2026 05:45:46 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Sat, 03 Jan 2026 12:46:18 +0000
+!   - Last modified: Sun, 04 Jan 2026 05:03:57 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
 !   - Last modified: Sun, 28 Dec 2025 06:11:52 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Wed, 31 Dec 2025 10:28:58 +0000
+!   - Last modified: Sun, 04 Jan 2026 05:08:25 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
 !   - Last modified: Tue, 23 Dec 2025 15:03:38 +0000
@@ -9258,10 +9258,10 @@ playhydrax.com##+js(rpnt, script, (isNoAds), (true))
 ||usheebainaut.com^
 emturbovid.com###pop
 emturbovid.com,turbocloud.xyz,turbovid.xyz##.div_pop
-emturbovid.com,findjav.com,javggvideo.xyz,mmtv01.xyz,stbturbo.xyz,trailerhg.xyz,turboplayers.xyz,turbovidhls.com##+js(trusted-set, premium, "'1'")
-emturbovid.com,findjav.com,javggvideo.xyz,mmtv01.xyz,stbturbo.xyz,trailerhg.xyz,turboplayers.xyz,turbovidhls.com##+js(nowoif)
-emturbovid.com,findjav.com,javggvideo.xyz,mmtv01.xyz,stbturbo.xyz,trailerhg.xyz,turboplayers.xyz,turbovidhls.com##+js(nostif, window.open)
-emturbovid.com,findjav.com,javggvideo.xyz,mmtv01.xyz,stbturbo.xyz,trailerhg.xyz,turboplayers.xyz,turbovidhls.com##+js(trusted-rpnt, script, /openNewTab\(".*?"\)/g, null)
+emturbovid.com,findjav.com,javggvideo.xyz,mmtv01.xyz,stbturbo.xyz,trailerhg.xyz,turbocloud.xyz,turboplayers.xyz,turbovidhls.com##+js(trusted-set, premium, "'1'")
+emturbovid.com,findjav.com,javggvideo.xyz,mmtv01.xyz,stbturbo.xyz,trailerhg.xyz,turbocloud.xyz,turboplayers.xyz,turbovidhls.com##+js(nowoif)
+emturbovid.com,findjav.com,javggvideo.xyz,mmtv01.xyz,stbturbo.xyz,trailerhg.xyz,turbocloud.xyz,turboplayers.xyz,turbovidhls.com##+js(nostif, window.open)
+emturbovid.com,findjav.com,javggvideo.xyz,mmtv01.xyz,stbturbo.xyz,trailerhg.xyz,turbocloud.xyz,turboplayers.xyz,turbovidhls.com##+js(trusted-rpnt, script, /openNewTab\(".*?"\)/g, null)
 ||emturbovid.com^$replace=/openNewTab\(".*?"\)/null/g
 ||mmtv01.xyz^$replace=/openNewTab\(".*?"\)/null/g
 ||stbturbo.xyz^$replace=/openNewTab\(".*?"\)/null/g
@@ -26314,20 +26314,6 @@ weightlossdiet.top##+js(acs, open, executeCode)
 ||my-exodus.co.uk^$all
 ||ledgerr.us^$all
 ||suite.tem3.io^$all
-||roundyearfun.org^$all
-||roundyearfun.com^$all
-||twitter-circle.com^$all
-||funxgames.me^$all
-||infinitytweet.me^$all
-||infinitytweet.com^$all
-||infinityweet.me^$all
-||infinityweet.com^$all
-||kawaiilabs.org^$all
-||degenlabs.org^$all
-||anyplacehere.online^$all
-||infintytweet.me^$all
-||infintytweet.com^$all
-||anyplacehere.art^$all
 ||annonumapp.com^$all
 ||problems-center.com^$all
 ||smnewd.com^$all
@@ -26710,6 +26696,25 @@ sport.elwatannews.com##+js(aost, Array.prototype.indexOf, isWin)
 ||asliceza.org^$all
 ||lkiec.shop^$all
 ||designrigoroso.com^$all,reason=malicious
+||roundyearfun.org^$all
+||roundyearfun.com^$all
+||twitter-circle.com^$all
+||funxgames.me^$all
+||infinitytweet.me^$all
+||infinitytweet.com^$all
+||infinityweet.me^$all
+||infinityweet.com^$all
+||kawaiilabs.org^$all
+||degenlabs.org^$all
+||anyplacehere.online^$all
+||infintytweet.me^$all
+||infintytweet.com^$all
+||anyplacehere.art^$all
+||infinitetweet.me^$all
+||infinitetweet.com^$all
+||redirecttoplace.online^$all
+||crimsonmods.cc^$all
+||playtorrio.com^$all
 ! uBlock filters – Privacy https://ublockorigin.pages.dev/filters/privacy.min.txt
 ||google-analytics.com/analytics.js$script,redirect=google-analytics_analytics.js:5
 ||google-analytics.com/cx/api.js$script,redirect=google-analytics.com/cx/api.js:5
@@ -27116,7 +27121,8 @@ musescore.com##+js(set-local-storage-item, /^rt_/, $remove$)
 ||f.gdeslon.ru/cf/*^goto=http$doc,urlskip=?goto
 ||sourceforge.net/software/link?*__oadest=http$doc,urlskip=/__oadest=(http[^#&]+)/ -uricomponent
 ||5ch.net/jump/to?url=http$doc,urlskip=?url
-||jump5.ch/?$doc,urlskip=/\/\?(https?.+)/
+||jump5.ch/?http$doc,urlskip=/\/\?(https?.+)/
+||jump.5ch.net/?http$doc,urlskip=/\/\?(https?.+)/
 ||adj.st/*^url=http$doc,urlskip=?url
 ||lit.link/redirects/link-ad?redirectUrl=aHR0c$doc,urlskip=?redirectUrl -base64
 lit.link##+js(href-sanitizer, a[href^="/redirects/link-ad?redirectUrl=aHR0c"], ?redirectUrl -base64)
@@ -30660,7 +30666,7 @@ pvpoke-re.com##+js(ra, data-instype, ins.adsbygoogle:has(> div#aswift_0_host), s
 pvpoke-re.com##+js(trusted-set-attr, ins.adsbygoogle.nitro-side\,ins.adsbygoogle.nitro-banner, data-ad-status, filled)
 pvpoke-re.com##+js(no-fetch-if, url:https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-3497863494706299 method:HEAD mode:no-cors, , , throttle, 121)
 pvpoke-re.com##+js(trusted-replace-argument, String.prototype.indexOf, 0, json:"/", condition, /premium)
-pvpoke-re.com##+js(trusted-replace-node-text, script, var menuSlideProtection, /*start*/(()=>{const t=Promise.prototype.then;Promise.prototype.then=new Proxy(t\,{apply:(t\,e\,o)=>{const n=o[0];return"function"!=typeof n||(o[0]=new Proxy(n\,{apply:(t\,e\,o)=>{let n=o[0];if(n&&"object"==typeof n){const t=Object.keys(n);if(4===t.length&&"totalMessages"in n){const e=t.find((t=>"boolean"==typeof n[t]));e&&!1===n[e]&&(n[e]=!0)}}return Reflect.apply(t\,e\,o)}}))\,Reflect.apply(t\,e\,o)}});try{Promise.prototype.then.toString=()=>"function then() { [native code] }"}catch(t){}})();document.currentScript.textContent=document.currentScript.textContent.replace(/\/\*start\*\/(.*)\/\*end\*\//\,"");/*end*/var menuSlideProtection, sedCount, 1)
+pvpoke-re.com##+js(trusted-replace-node-text, script, var menuSlideProtection, /*start*/!function(){const e=window.addEventListener;window.addEventListener=function(i\,n\,t){return"message"===i&&"function"==typeof n&&n.toString().includes("googMsgType")&&setTimeout((()=>{try{const e=document.querySelector("iframe");n({data:JSON.stringify({msg_type:"resize-me"\,key_value:[{key:"r_nh"\,value:"0"}\,{key:"r_ifr"\,value:"true"}\,{key:"qid"\,value:"CKjPmM7ezpEDFbyJ6QUdM0o3rw"}]\,googMsgType:"sth"\,token:"AOrYGskPiXMUpj3CJQ8LsihEHwbNcui1URgWacoUghpsHfMEVL2nwMKey1eyEl6h8i29ah7WTlje42evSBak30X4pe673BR-KOZpAhiqCJO20pQ"})\,source:e?e.contentWindow:window\,origin:e?new URL(e.src).origin:window.origin})}catch(e){}})\,10)\,e.apply(this\,arguments)}}();document.currentScript.textContent=document.currentScript.textContent.replace(/\/\*start\*\/(.*)\/\*end\*\//\,"");/*end*/var menuSlideProtection, sedCount, 1)
 ||pvpoke-re.com/*.js?v=$replace=/try\{GameMaster/try{return;GameMaster/
 pvpoke-re.com##+js(trusted-override-element-method, HTMLIFrameElement.prototype.remove, iframe[src^="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-3497863494706299"])
 royalroad.com##.dKKumhSnWiFq75vPUVtmTanQ:has(a[href^="https://www.royalroad.com/a/r?campaign="]:not([href*="&url=https%3A%2F%2Fwww.royalroad.com"]))
