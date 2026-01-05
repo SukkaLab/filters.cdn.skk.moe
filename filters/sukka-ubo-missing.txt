@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Sun, 04 Jan 2026 22:25:10 GMT
+! Last modified: Mon, 05 Jan 2026 03:50:56 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.97.79
+!   - Version: 2.0.97.81
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -67501,6 +67501,7 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||cdn.tokyo-city.ru/js/metrica.js
 ||cfm.kt.com/js/GA/staticsLogcodeBuilder.js
 ||reebok.jp/resources/js/analysis/tracker.js
 ||app.blogvault.net/assets/affpix.js
@@ -77280,6 +77281,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||gripcorn.com^
 ||grocerycrew.com^
 ||grocerydog.com^
+||groovespacing.com^
 ||groovyornament.com^
 ||grouchybrothers.com^
 ||grouchypush.com^
@@ -77628,6 +77630,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||muddledmemory.com^
 ||mundanenail.com^
 ||mushywaste.com^
+||musicflashcard.com^
 ||muteknife.com^
 ||mutemailbox.com^
 ||mutualhappy.com^
@@ -77686,6 +77689,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||objectsnetwork.com^
 ||oblivionfleet.com^
 ||obscenesidewalk.com^
+||obsidiangems.com^
 ||octaneblood.com^
 ||offerniche.com^
 ||offgridcrops.com^

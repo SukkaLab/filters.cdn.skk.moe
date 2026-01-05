@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sun, 04 Jan 2026 22:25:10 GMT
+! Last modified: Mon, 05 Jan 2026 03:50:56 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -20,7 +20,7 @@
 !   - Last modified: Sun, 28 Dec 2025 06:11:52 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Sun, 04 Jan 2026 05:08:25 +0000
+!   - Last modified: Sun, 04 Jan 2026 17:54:58 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
 !   - Last modified: Tue, 23 Dec 2025 15:03:38 +0000
@@ -30558,10 +30558,11 @@ japscan.*##div[data-src]:remove()
 japscan.*##span ~ div[id]:not([class]):remove()
 japscan.*##+js(trusted-suppress-native-method, Document.prototype.querySelector, '"/^div\[/"')
 japscan.*##span ~ span[id][class]:remove()
-japscan.*###navHeader ~ [id][class]:not(#chapters, #reader):remove()
-japscan.*##.w-100 > [id][class]:not(#chapters, #reader):remove()
+japscan.*###navHeader ~ [id]:not(#chapters, #reader):remove()
+japscan.*##.w-100 > [id]:not(#chapters, #reader):remove()
 japscan.*##+js(set, aclib.runPop, 1)
 japscan.*##+js(trusted-suppress-native-method, Document.prototype.getElementsByTagName, '"i"')
+japscan.*##+js(rmnt, script, +aclib[)
 poophq.com,veev.to,doods.to##+js(nowoif)
 poophq.com,veev.to,doods.to##+js(no-xhr-if, /vast.php?)
 poophq.com,veev.to,doods.to##+js(no-xhr-if, /click\.com|preroll|native_render\.js|acscdn/, length:10001)
@@ -30668,7 +30669,7 @@ pvpoke-re.com##+js(ra, data-instype, ins.adsbygoogle:has(> div#aswift_0_host), s
 pvpoke-re.com##+js(trusted-set-attr, ins.adsbygoogle.nitro-side\,ins.adsbygoogle.nitro-banner, data-ad-status, filled)
 pvpoke-re.com##+js(no-fetch-if, url:https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-3497863494706299 method:HEAD mode:no-cors, , , throttle, 121)
 pvpoke-re.com##+js(trusted-replace-argument, String.prototype.indexOf, 0, json:"/", condition, /premium)
-pvpoke-re.com##+js(trusted-replace-node-text, script, var menuSlideProtection, /*start*/!function(){const e=window.addEventListener;window.addEventListener=function(i\,n\,t){return"message"===i&&"function"==typeof n&&n.toString().includes("googMsgType")&&setTimeout((()=>{try{const e=document.querySelector("iframe");n({data:JSON.stringify({msg_type:"resize-me"\,key_value:[{key:"r_nh"\,value:"0"}\,{key:"r_ifr"\,value:"true"}\,{key:"qid"\,value:"CKjPmM7ezpEDFbyJ6QUdM0o3rw"}]\,googMsgType:"sth"\,token:"AOrYGskPiXMUpj3CJQ8LsihEHwbNcui1URgWacoUghpsHfMEVL2nwMKey1eyEl6h8i29ah7WTlje42evSBak30X4pe673BR-KOZpAhiqCJO20pQ"})\,source:e?e.contentWindow:window\,origin:e?new URL(e.src).origin:window.origin})}catch(e){}})\,10)\,e.apply(this\,arguments)}}();document.currentScript.textContent=document.currentScript.textContent.replace(/\/\*start\*\/(.*)\/\*end\*\//\,"");/*end*/var menuSlideProtection, sedCount, 1)
+pvpoke-re.com##+js(trusted-replace-node-text, script, var menuSlideProtection, /*start*/!function(){const e=window.addEventListener;window.addEventListener=function(t\,n\,i){return"message"===t&&"function"==typeof n&&n.toString().includes("googMsgType")&&setTimeout((()=>{try{const e=document.getElementsByTagName("iframe");for(let t=0;t<e.length;t++){const i=e[t];if(!i.contentWindow)continue;let o;try{o=i.src?new URL(i.src).origin:"*"}catch(e){o="*"}const s={msg_type:"resize-me"\,key_value:[{key:"r_nh"\,value:"0"}\,{key:"r_ifr"\,value:"true"}\,{key:"qid"\,value:"CKjPmM7ezpEDFbyJ6QUdM0o3rw"}]\,googMsgType:"sth"\,token:"AOrYGskPiXMUpj3CJQ8LsihEHwbNcui1URgWacoUghpsHfMEVL2nwMKey1eyEl6h8i29ah7WTlje42evSBak30X4pe673BR-KOZpAhiqCJO20pQ"};n({data:JSON.stringify(s)\,source:i.contentWindow\,origin:o})}}catch(e){}})\,10)\,e.apply(this\,arguments)}}();document.currentScript.textContent=document.currentScript.textContent.replace(/\/\*start\*\/(.*)\/\*end\*\//\,"");/*end*/var menuSlideProtection, sedCount, 1)
 ||pvpoke-re.com/*.js?v=$replace=/try\{GameMaster/try{return;GameMaster/
 pvpoke-re.com##+js(trusted-override-element-method, HTMLIFrameElement.prototype.remove, iframe[src^="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-3497863494706299"])
 royalroad.com##.dKKumhSnWiFq75vPUVtmTanQ:has(a[href^="https://www.royalroad.com/a/r?campaign="]:not([href*="&url=https%3A%2F%2Fwww.royalroad.com"]))
