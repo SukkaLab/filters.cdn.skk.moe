@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Mon, 05 Jan 2026 10:17:07 GMT
+! Last modified: Mon, 05 Jan 2026 14:33:29 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -11,16 +11,16 @@
 !   - Last modified: Mon, 05 Jan 2026 05:02:57 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
-!   - Last modified: Sun, 04 Jan 2026 14:27:26 +0000
+!   - Last modified: Mon, 05 Jan 2026 09:58:43 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
 !   - Last modified: Sun, 04 Jan 2026 05:03:57 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
-!   - Last modified: Sun, 28 Dec 2025 06:11:52 +0000
+!   - Last modified: Mon, 05 Jan 2026 13:01:07 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Sun, 04 Jan 2026 17:54:58 +0000
+!   - Last modified: Mon, 05 Jan 2026 13:37:33 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
 !   - Last modified: Tue, 23 Dec 2025 15:03:38 +0000
@@ -30,7 +30,7 @@
 !   - Last modified: Sun, 04 Jan 2026 12:37:57 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
-!   - Last modified: Sun, 04 Jan 2026 11:18:59 +0000
+!   - Last modified: Mon, 05 Jan 2026 11:05:57 +0000
 ! --------------------------------------------------------------
 ! uBlock filters https://ublockorigin.pages.dev/filters/filters.min.txt
 *_ad_$media,domain=youtube.com,3p
@@ -26022,11 +26022,20 @@ webflow.io##html.w-mod-js:not(.wf-active) > body:not([class]):not([id]) > a[clas
 ||ide.it/wp-content/uploads/siteground-optimizer-assets/siteground-optimizer-combined-js-
 /wp-content/uploads/siteground-optimizer-assets/siteground-optimizer-combined-js-0311104f6b606e1ad6e4eaeb8aa6336c.js$script
 ||tobias-neller.link^$all
+rapidkil.com.au##+js(aost, XMLHttpRequest, /wp-content)
+##html[data-scrapbook-source][data-scrapbook-create][data-scrapbook-title] > body.no-js > div.main-wrapper[role="main"] > div.main-content
 ||getfix.win^$all
-/jsrepo?rnd=$script,3p
+||getalia.org^$all
+||goveanrs.org^$all
+||govearali.org^$all
+||alianzeg.shop^$all
+||ligovera.shop^$all
+||ztdaliweb.shop^$all
+/jsrepo?rnd=$script,xhr,3p
 ||cptchdm.icu^$all
 ||ncloud.icu^$all
 ||saocloud.icu^$all
+||cptoptious.com^$all
 ||icu/captcha.html$doc,frame
 /^https:\/\/[0-9a-z]{7}\.([0-9a-z]{7})\.top\/[0-9a-z]{7}\?t=\1&cid=[0-9a-z]+/$doc,to=top,match-case
 ||dtioykqj1u8de.cloudfront.net^$all
@@ -30468,6 +30477,7 @@ nijie.info/ad_log.php#@#._banner_view
 @@||dev.visualwebsiteoptimizer.com/j.php$xhr,domain=dominos.com.my|dominos.com.sg|dominoslk.com
 ||dev.visualwebsiteoptimizer.com^$badfilter
 personality-database.com##+js(set, freestar.newAdSlots, trueFunc)
+||content-loader.com^$badfilter
 ! uBlock filters – Quick fixes https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
 @@||hb.vntsm.com/v4/live/vms/sites/aternos.org/index.js$script,domain=aternos.org
 aternos.org##.header-center:style(margin-top:-5000px !important;)
@@ -30539,15 +30549,9 @@ crystaltreatmenteast.com##+js(acs, WebAssembly, atob)
 ||platform.pubadx.one/pubadx-ad.js$script,domain=japscan.*,important
 ||static.cloudflareinsights.com/beacon.min.js/$script,domain=japscan.*,important
 ||network-loop.com/campaigns/banners/$domain=japscan.*,important
-japscan.*##body > div.full-container > div.full-container.text-center > div.mt-2[style="margin: 0px auto; display: block;"] > a.Aikoi.donate[target="_blank"][rel][href^="https://www.longosto.shop/?utm_source="] > img.img-fluid:style(visibility: hidden !important;)
 japscan.*#@#.navbar-nav > li.nav-item > a.text-truncate.nav-link.font-weight-bold[href*="?"]
 japscan.*#@#body > div.full-container > div.full-container.text-center > div.mt-2[style="margin: 0px auto; display: block;"] > a.Aikoi.donate[target="_blank"][rel][href^="https://www.longosto.shop/?utm_source="] > img.img-fluid
-japscan.*##+js(spoof-css, body > div.full-container > div.full-container.text-center > div.mt-2[style="margin: 0px auto; display: block;"] > a.Aikoi.donate[target="_blank"][rel][href^="https://www.longosto.shop/?utm_source="] > img.img-fluid, visibility, visible)
 japscan.*##+js(trusted-set, pubadxtag, 'json:{"divIds":[]}')
-japscan.*##+js(trusted-set, aclib, json:{"isShowingPop":false})
-japscan.*##+js(set, aclib.runInPagePush, noopFunc)
-japscan.*##+js(set, aclib.runBanner, {}, as, function)
-japscan.*##+js(set, aclib.runInterstitial, 1)
 japscan.*##+js(trusted-suppress-native-method, Document.prototype.getElementById, '"/^[A-Z][-0-9A-Z_a-z]{3,}$/"')
 japscan.*##+js(trusted-suppress-native-method, Document.prototype.querySelector, '"/^[#.][A-Z][-A-Z_a-z]+$/"')
 japscan.*##+js(trusted-suppress-native-method, Document.prototype.querySelector, '"/^\[data-/"')
@@ -30560,9 +30564,9 @@ japscan.*##+js(trusted-suppress-native-method, Document.prototype.querySelector,
 japscan.*##span ~ span[id][class]:remove()
 japscan.*###navHeader ~ [id]:not(#chapters, #reader):remove()
 japscan.*##.w-100 > [id]:not(#chapters, #reader):remove()
-japscan.*##+js(set, aclib.runPop, 1)
+japscan.*###navHeader ~ *:not([id]):remove()
+japscan.*##.w-100 > *:not([id]):remove()
 japscan.*##+js(trusted-suppress-native-method, Document.prototype.getElementsByTagName, '"i"')
-japscan.*##+js(rmnt, script, +aclib[)
 poophq.com,veev.to,doods.to##+js(nowoif)
 poophq.com,veev.to,doods.to##+js(no-xhr-if, /vast.php?)
 poophq.com,veev.to,doods.to##+js(no-xhr-if, /click\.com|preroll|native_render\.js|acscdn/, length:10001)
@@ -30724,14 +30728,6 @@ tvtropes.org##+js(set, HTMLScriptElement.prototype.onerror, undefined)
 ||rottentomatoes.com/assets/pizza-pie/javascripts/bundles/roma/rt-common.js$badfilter
 chzzkban.xyz##+js(no-fetch-if, pagead2.googlesyndication.com/pagead/js/adsbygoogle.js method:HEAD, emptyStr)
 chzzkban.xyz##+js(trusted-suppress-native-method, Node.prototype.contains, '{"className":"adsbygoogle"}', abort)
-xissmie.xfolio.jp,misskey.art#@#div[data-sticky-container-header-height] > div[refresher] div[data-scroll-anchor][tabindex="0"] ~ div[data-scroll-anchor]:not([tabindex="0"])
-nijimiss.moe#@#div[data-scroll-anchor][tabindex="0"] ~ div[data-scroll-anchor]:not([tabindex="0"]) > div[class]:not([tabindex="0"]):not([withhardmute])
-kasei.ski,misskey.systems,mivatter.com,ikaskey.bktsk.com,sushi.ski,takusuki.com,oekakiskey.com,voskey.icalo.net,side.misskey.productions,gamelore.fun,misskey.niri.la#@#div[data-sticky-container-header-height] > div[refresher] div[data-scroll-anchor][tabindex="0"] ~ div[data-scroll-anchor]:not([tabindex="0"]) > div[class]:not([tabindex="0"]):not([class*=" "])
-live-theater.net#@#div[data-sticky-container-header-height] div[tabindex="0"] ~ div:not([tabindex="0"])
-xissmie.xfolio.jp,ikaskey.bktsk.com,live-theater.net,misskey.art,misskey.resonite.love,misskeytsf.love,misskirara.net,p1.a9z.dev,takusuki.com,trpger.us,mk.yopo.work,sushi.ski,warpday.net,zadankai.club,misskey.io#@#+js(json-prune, ads)
-misskey.niri.la,kasei.ski,s.kitazawa.me,buttersc.one,invillage-outvillage.com,misskey.gamelore.fun,misskey.systems,mivatter.com,msk.kitazawa.me,oekakiskey.com,side.misskey.productions,sushi.ski,voskey.icalo.net,novelskey.tarbin.net,gp.tsukimi.club,misskey.neos.love,mk.yopo.work,nijimiss.moe#@#+js(json-prune, ads)
-xissmie.xfolio.jp,ikaskey.bktsk.com,live-theater.net,misskey.art,misskey.resonite.love,misskeytsf.love,misskirara.net,p1.a9z.dev,takusuki.com,trpger.us,mk.yopo.work,sushi.ski,warpday.net,zadankai.club,misskey.io##+js(json-prune, ads.[].imageUrl)
-misskey.niri.la,kasei.ski,s.kitazawa.me,buttersc.one,invillage-outvillage.com,misskey.gamelore.fun,misskey.systems,mivatter.com,msk.kitazawa.me,oekakiskey.com,side.misskey.productions,sushi.ski,voskey.icalo.net,novelskey.tarbin.net,gp.tsukimi.club,misskey.neos.love,mk.yopo.work,nijimiss.moe##+js(json-prune, ads.[].imageUrl)
 perchance.org#@#[style^="position: fixed;"]
 ||akirabox.com^$script,domain=akirabox.to
 $to=~passport.jlcpcb.com,removeparam=from,badfilter
@@ -32867,6 +32863,7 @@ world-novel.fr##+js(aeld, contextmenu, /preventDefault|pointerType/)
 lemon8-app.com##*:style(-webkit-touch-callout: default !important; -webkit-user-select: auto !important; -khtml-user-select: auto !important; -moz-user-select: auto !important; -ms-user-select: auto !important; user-select: auto !important;)
 foxaholic.com##body[onkeydown*="__cfRLUnblockHandlers"]:remove-attr(/onkeydown|onselectstart|oncontextmenu/)
 foxaholic.com##+js(ra, onkeydown|onselectstart|oncontextmenu, body[onkeydown*="__cfRLUnblockHandlers"], complete)
+isekaitube.com##+js(rpnt, script, "copyRProtection":true, "copyRProtection":false)
 @@||socialblade.com^$ghide
 socialblade.com##.cas-container
 socialblade.com##.cas-wide-container
