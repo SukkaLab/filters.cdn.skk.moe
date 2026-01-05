@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Mon, 05 Jan 2026 18:30:07 GMT
+! Last modified: Mon, 05 Jan 2026 22:26:14 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.97.84
+!   - Version: 2.0.97.87
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -47746,6 +47746,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||tracing.yelp.com^
 ||conversions-config.reddit.com^
 ||dns-clientinfo.vtg.paramount.tech^
 ||use.hetzner.com^
@@ -73728,6 +73729,13 @@ dlsdk.appsflyer.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||mob2.welltastic-app.com^
+||amplitude.thepure.app^
+||amplilab.thepure.app^
+||logger.radiatetheworld.com^
+||client-events.gurushots.com^
+||stats-api.skylum.com^
+||aet.spotify.com^
 ||tc.weszxdrf.com^
 ||log.hotweathers.live^
 ||log.eufylife.com^
