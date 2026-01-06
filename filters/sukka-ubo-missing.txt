@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Tue, 06 Jan 2026 18:29:17 GMT
+! Last modified: Tue, 06 Jan 2026 22:26:48 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.97.96
+!   - Version: 2.0.97.98
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -47749,6 +47749,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||eventcom.api.np.km.playstation.net^
 ||pulsar.ebay.com^
 ||pixel-conversion.apps.seabroadnet.com^
 ||analytics.apps.seabroadnet.com^
@@ -72347,7 +72348,7 @@ msn.com##.tbla
 ||pcrl.co/js/jstracker.min.js
 ||emag.ru/counter/counter.php?url=
 ||rt.chip.de/collect
-||eventcom.api.np.km.playstation.net/event^
+||sbahn-publish.api.playstation.com/*/publish/gct_events^
 ||kocaeligazetesi.com.tr/stats/
 ||gazetevatan.com/d/generic-counter.asp^
 ||gazetevatan.com/d/j/analytics.min.js
@@ -78261,6 +78262,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||oldfashionedoffer.com^
 ||oldportcoffee.com^
 ||omgthink.com^
+||onecrow.net^
 ||onedropocean.com^
 ||onlinestarten.net^
 ||onlywoofs.com^
@@ -78285,6 +78287,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||owlreporter.com^
 ||owlsr.us^
 ||owlstwo.com^
+||owltin.com^
 ||oxygenfuse.com^
 ||pailcrime.com^
 ||pailpatch.com^
