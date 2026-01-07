@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Wed, 07 Jan 2026 18:29:55 GMT
+! Last modified: Wed, 07 Jan 2026 22:26:39 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -20,7 +20,7 @@
 !   - Last modified: Mon, 05 Jan 2026 13:01:07 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Wed, 07 Jan 2026 03:13:19 +0000
+!   - Last modified: Wed, 07 Jan 2026 17:43:10 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
 !   - Last modified: Tue, 23 Dec 2025 15:03:38 +0000
@@ -30518,6 +30518,8 @@ japscan.*##+js(trusted-suppress-native-method, Document.prototype.querySelectorA
 japscan.*##+js(trusted-suppress-native-method, Array.from, '"/NodeList/"', prevent, inlineScript)
 japscan.*##[id^="nav"] ~ div[id]:not(.tab-content):remove()
 japscan.*##[style="width:100%;"] > span[id]:remove()
+japscan.*##[id^="nav"] ~ span[id]:remove()
+japscan.*##[style="width:99%;"] > span[id]:remove()
 poophq.com,veev.to,doods.to##+js(nowoif)
 poophq.com,veev.to,doods.to##+js(no-xhr-if, /vast.php?)
 poophq.com,veev.to,doods.to##+js(no-xhr-if, /click\.com|preroll|native_render\.js|acscdn/, length:10001)
