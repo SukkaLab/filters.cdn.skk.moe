@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Wed, 07 Jan 2026 03:25:18 GMT
+! Last modified: Wed, 07 Jan 2026 06:34:40 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.97.98
+!   - Version: 2.0.98.1
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -47749,6 +47749,8 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||t.hentaivox.com^
+||tk.jtbc.co.kr^
 ||eventcom.api.np.km.playstation.net^
 ||pulsar.ebay.com^
 ||pixel-conversion.apps.seabroadnet.com^
@@ -68045,6 +68047,10 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||cast-imp.jtbc.co.kr/trac?event=
+||bsp-proxy.wetransfer.net/pico/v*/web-events
+||wetransfer.com/api/web-metrics
+||tokbox.com/prod/logging/
 ||telemetry-web.api.playstation.com^$redirect=noop.txt,image,media,subdocument,stylesheet,script,xhr,other
 ||smetrics.aem.playstation.com^$redirect=noop.txt,image,media,subdocument,stylesheet,script,xhr,other
 ||ir.ebaystatic.com/cr/ebay-rum/
@@ -74793,6 +74799,8 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=saturn.de
 @@||metrics.us.playstation.com/b/ss/
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
+@@||a.klaviyo.com/client/subscriptions/$xhr,domain=ahead-nutrition.com
+@@||googletagmanager.com/gtm.js$domain=agrieuro.com
 @@||e.cquotient.com/recs/blqj-smart/$domain=store.smart.com.ph
 @@||cdn.cquotient.com/js/*/gretel.min.js$domain=store.smart.com.ph
 @@||st-marks-yoga.recess.tv/_app/immutable/chunks/pixelTracker
