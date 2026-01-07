@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Wed, 07 Jan 2026 14:32:52 GMT
+! Last modified: Wed, 07 Jan 2026 18:29:55 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,10 +8,10 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Wed, 07 Jan 2026 09:22:50 +0000
+!   - Last modified: Wed, 07 Jan 2026 15:29:38 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
-!   - Last modified: Tue, 06 Jan 2026 13:09:06 +0000
+!   - Last modified: Wed, 07 Jan 2026 14:19:01 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
 !   - Last modified: Tue, 06 Jan 2026 05:19:02 +0000
@@ -30,7 +30,7 @@
 !   - Last modified: Mon, 05 Jan 2026 19:12:15 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
-!   - Last modified: Mon, 05 Jan 2026 19:21:11 +0000
+!   - Last modified: Wed, 07 Jan 2026 10:59:13 +0000
 ! --------------------------------------------------------------
 ! uBlock filters https://ublockorigin.pages.dev/filters/filters.min.txt
 *_ad_$media,domain=youtube.com,3p
@@ -13922,7 +13922,6 @@ javfindx.com###previewBox
 masterduelmeta.com##:xpath('//*[contains(text(),"allow ads")]'):upward(3)
 masterduelmeta.com##html,body:style(overflow: auto !important;)
 *$xhr,redirect-rule=nooptext,domain=masterduelmeta.com
-@@||delfi.lv^$ghide
 gcertificationcourse.com##+js(acs, eval, replace)
 gcertificationcourse.com##[id*="PAds_"]
 gcertificationcourse.com##[id*="PAds-"]
@@ -13930,7 +13929,6 @@ gcertificationcourse.com##+js(no-xhr-if, adsbygoogle)
 @@||getfree.co.in^$script,1p
 *$script,3p,redirect=noop.js,domain=shorttrick.in
 shorttrick.in###wpsafe-generate, #wpsafe-link:style(display: block !important;)
-@@||shorttrick.in^$ghide
 shorttrick.in##+js(aost, fetch, https)
 shorttrick.in##+js(aopr, checkAdsStatus)
 shorttrick.in##+js(rmnt, script, /mdp|adb/i)
@@ -13940,9 +13938,6 @@ gamingvital.com###tdi_132
 pornoborshch.com##+js(ra, onclick)
 pornoborshch.com##.on-player-wrap3
 btcadspace.com##+js(acs, document.getElementById, AdBlock)
-@@||seopolarity.com^$ghide
-seopolarity.com##ins.adsbygoogle
-seopolarity.com##.sidebar_adds
 mmorpg.org.pl##+js(no-fetch-if, wtg-ads)
 mmorpg.org.pl##div.bABcMb.sc-5odcub-0
 hostmath.com##+js(set, canRunAds, true)
@@ -14008,13 +14003,8 @@ multiclaim.net###wcfloatDiv4
 multiclaim.net##.home_banner
 ||raw.githubusercontent.com/expertad^$3p
 ||firebasestorage.googleapis.com/v0/b/gosyndication.appspot.com^
-bestpornflix.com,4porn4.com##.table
-4porn4.com##+js(rmnt, script, localStorage)
+bestpornflix.com##.table
 bestpornflix.com##+js(rmnt, script, popunder)
-beastx.top###theotherads
-beastx.top##+js(nowoif, !/d/)
-supersextube.pro##+js(nowoif)
-supersextube.pro##.ad
 h-flash.com##+js(nowoif)
 @@||h-flash.com^$ghide
 h-flash.com##[href^="https://chaturbate.com/in/"]
@@ -14141,15 +14131,9 @@ indianporn365.net##+js(acs, document.createElement, 'script')
 ||pakistaniporn2.com/js/friends.minz.js
 amateur-couples.com##+js(aopr, exoNoExternalUI38djdkjDDJsio96)
 amateur-couples.com,slutdump.com##+js(set, dclm_ajax_var.disclaimer_redirect_url, '')
-learnmania.org##+js(acs, $, RegExp)
-@@||learnmania.org^$ghide
-@@||learnmania.org/js/*.js?_v=$script,1p
 boombj.com##+js(aost, Math, _0x)
 ||easyads29.*^
 xxxextreme.org##+js(aeld, getexoloader)
-@@||uploadmx.com^$ghide
-uploadmx.com##ins.adsbygoogle
-download3s.net##+js(set, blurred, false)
 desitelugusex.com##+js(set, D4zz, noopFunc)
 aresmanga.com##+js(acs, eval, replace)
 mobilanyheter.net##+js(nostif, ai_)
@@ -14172,17 +14156,6 @@ mavavid.com##+js(aopr, __Y)
 *$script,3p,domain=dvdplay.*
 dvdplay.*##+js(set, D4zz, noopFunc)
 dvdplay.*##^script[data-cfasync]:has-text(decodeURIComponent)
-qqxnxx.com,xnxx-downloader.net##+js(aopr, decodeURI)
-@@||dubznetwork.com^$ghide
-dubznetwork.com##+js(acs, $, adb-btn)
-dubznetwork.com##+js(nostif, , 1000)
-dubznetwork.com##+js(acs, eval, replace)
-dubznetwork.com##.aoa_overlay:style(height: 0px !important)
-dubznetwork.com##[class^="clpr-emre"]
-dubznetwork.com###id-custom_banner
-@@||dubznetwork.com^$css,1p
-@@||tapisa.online^$ghide
-tapisa.online##.aoa_overlay
 acervodaputaria.com.br##+js(acs, decodeURI, decodeURIComponent)
 comicspornow.com##+js(aopr, decodeURI)
 ||comicspornow.com/*.php$script,1p
@@ -14370,7 +14343,6 @@ tiki.vn##div[class^="SearchAutocomplete"] > div[class^="style__StyledSuggestion"
 111.90.150.10##+js(acs, $, noConflict)
 111.90.150.10##+js(aopr, preroll_helper.advs)
 111.90.150.10###secondary > .widget_custom_html
-@@||pikafile.com^$ghide
 repelishd.*##+js(nowoif)
 hdhub4u.*,hblinks.pro##+js(aopr, mm)
 hdhub4u.*##+js(nowoif)
@@ -14432,7 +14404,6 @@ edufileshare.com##+js(nano-sib, display)
 xhomealone.com##+js(set, flashvars.popunder_url, '')
 watchasians.cc##+js(aeld, click, popunder)
 watchasians.cc##+js(set, console.clear, noopFunc)
-@@||3dpchip.com^$ghide
 afdah2.com##+js(aopr, mm)
 @@||thinktibits.blogspot.com^$ghide
 androidapks.biz,androidsite.net,animesite.net,computercrack.com,crackedsoftware.biz,crackfree.org,downloadgames.info,downloadsite.org,ebooksite.org,emulatorsite.com,freeflix.info,freemoviesu4.com,freesoccer.net,fseries.org,gamefast.org,gamesite.info,gostreamon.net,hindisite.net,isosite.org,macsite.info,mangasite.org,megamovies.org,moviefree2.com,moviesite.app,moviesx.org,musicsite.biz,patchsite.net,pdfsite.net,play1002.com,productkeysite.com,romsite.org,seriesite.net,siteapk.net,siteflix.org,sitegames.net,sitekeys.net,sitepdf.com,sitesunblocked.*,sitetorrent.com,softwaresite.net,superapk.org,tvonlinesports.com,warezsite.net,watchmovies2.com,watchsite.net,youapk.net##+js(aopr, open)
@@ -15244,7 +15215,8 @@ upiapi.in##+js(set, detectAdBlock, noopFunc)
 play.hbomax.com,play.max.com##+js(json-prune, ssaiInfo fallback.ssaiInfo)
 play.hbomax.com,play.max.com##+js(json-prune, adtech-brightline adtech-google-pal adtech-iab-om)
 play.hbomax.com,play.max.com##+js(json-prune-fetch-response, ssaiInfo fallback.ssaiInfo, , propsToMatch, /playbackInfo)
-peacocktv.com,play.hbomax.com,play.max.com##+js(xml-prune, xpath(//*[name()="MPD"]/@mediaPresentationDuration | //*[name()="Period"]/@start | //*[name()="Period"][not(.//*[name()="SegmentTimeline"])][not(.//*[name()="ContentProtection"])] | //*[name()="Period"][./*[name()="BaseURL"]][not(.//*[name()="ContentProtection"])]), , .mpd)
+play.hbomax.com,play.max.com##+js(xml-prune, xpath(//*[name()="MPD"]/@mediaPresentationDuration | //*[name()="Period"]/@start | //*[name()="Period"][not(.//*[name()="SegmentTimeline"])][not(.//*[name()="ContentProtection"])] | //*[name()="Period"][./*[name()="BaseURL"]][not(.//*[name()="ContentProtection"])]), , .mpd)
+peacocktv.com##+js(xml-prune, xpath(//*[name()="MPD"]/@mediaPresentationDuration | //*[name()="Period"]/@start | //*[name()="Period"][not(.//*[name()="SegmentTimeline"])][not(.//*[name()="ContentProtection"])] | //*[name()="Period"][./*[name()="BaseURL"]][not(.//*[name()="ContentProtection"])]), , /-vod-.+\.mpd/)
 forexfactory.com##.adbit
 .popup_im.
 /vhdpoppingmodels/*$script
@@ -16584,10 +16556,10 @@ claimlite.club##+js(noeval-if, blocker)
 gadgets.es##+js(set, DHAntiAdBlocker, true)
 gadgets.es##+js(set, isAdBlockActive, false)
 rackusreads.com##+js(set, DHAntiAdBlocker, true)
-elamigos-games.com,elamigos-games.net,elamigosgames.org##+js(nostif, checkAdblockUser)
-elamigos-games.com,elamigos-games.net,elamigosgames.org##.content_store
-elamigos-games.com,elamigos-games.net,elamigosgames.org##h3.my-4:has-text(/^Advertising/)
-elamigos-games.com,elamigos-games.net,elamigosgames.org##.iframeDiv
+elamigos-games.com,elamigos-games.net,elamigosgames.org,elamigosgamez.net##+js(nostif, checkAdblockUser)
+elamigos-games.com,elamigos-games.net,elamigosgames.org,elamigosgamez.net##.content_store
+elamigos-games.com,elamigos-games.net,elamigosgames.org,elamigosgamez.net##h3.my-4:has-text(/^Advertising/)
+elamigos-games.com,elamigos-games.net,elamigosgames.org,elamigosgamez.net##.iframeDiv
 elamigosgames.org##.store_fondo
 elamigosgames.org##.store_text
 *$script,domain=wp.pl|money.pl|o2.pl|parenting.pl|pudelek.pl|autokult.pl|gadzetomania.pl|fotoblogia.pl|komorkomania.pl|polygamia.pl|abczdrowie.pl|benchmark.pl|kafeteria.pl|pysznosci.pl|dobreprogramy.pl|genialne.pl|autocentrum.pl|jastrzabpost.pl|deliciousmagazine.pl,redirect-rule=noopjs
@@ -22314,6 +22286,7 @@ tik-tok.porn##.temporary-real-extra-block
 justwatch.com##.offers-list.buybox-selector:has-text(PROMOTED)
 justwatch.com##.offer-container:has-text(PROMOTED)
 justwatch.com##.vpn-link
+pornincest.net##+js(rmnt, script, /overlay/i)
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -26702,6 +26675,7 @@ sport.elwatannews.com##+js(aost, Array.prototype.indexOf, isWin)
 ||playtorrio.com^$all
 ||qishuimusic-app.com.cn^$all
 ||low-house.com^$all
+||sites.google.com/view/newext$doc
 ! uBlock filters – Privacy https://ublockorigin.pages.dev/filters/privacy.min.txt
 ||google-analytics.com/analytics.js$script,redirect=google-analytics_analytics.js:5
 ||google-analytics.com/cx/api.js$script,redirect=google-analytics.com/cx/api.js:5
@@ -36208,3 +36182,4 @@ theintercept.com##.inline-wall
 theintercept.com##.ft-ab-test-case
 teamblind.com##+js(trusted-set-local-storage-item, mobile-app-recommend, '{"dismissed":true,"day":30}')
 spares2repair.co.uk##body:style(-webkit-user-select:text !important; -moz-user-select:text !important; user-select:text !important)
+||cdn.carbonads.com^$script,domain=teknixstuff.com,redirect=noopjs

@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Wed, 07 Jan 2026 14:32:52 GMT
+! Last modified: Wed, 07 Jan 2026 18:29:55 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.98.2
+!   - Version: 2.0.98.5
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -217,6 +217,8 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||api.eventbus.me^
+||rumt-sg.com^
 ||gm.mmstat.com^
 ||yazio-analytics.com^
 ||hightouch-events.com^
@@ -47749,6 +47751,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||prd-collect-llm.xverse.cn^
 ||securemetrics.apple.com^
 ||graffiti-tags.apple.com^
 ||fem.gprod.postmedia.digital^
@@ -68328,7 +68331,6 @@ coloradoan.com##+js(set-local-storage-item, user_insights, $remove$)
 ||drive2.ru/_api/special/*/view|
 ||teknolojituru.com/api/tracking
 ||cloudfront.net/ecmtr-*.js
-||lib.onet.pl/static/pixel/*.js$script,redirect=noop.js
 ||interest.co.nz/core/modules/statistics/statistics.php
 ||media.flaticon.com/dist/js/ads.*.js
 ||kio.ac/analytics/
@@ -71450,7 +71452,6 @@ techmaniachd.pl###sidebar-right-1 > #HTML6
 ||k-crm.jp/web.tracking.js
 ||smg.com/Etrack/
 ||cdn.gamedock.io/gamedock-web-tracker/
-||walmart.com/px/
 ||cyberpedia.su/count.php
 ||msgsndr.com/funnel/event
 ||con.arbeitsagentur.de/prod/matomo/
@@ -73754,6 +73755,12 @@ dlsdk.appsflyer.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||sensorsdata-datasink.stardust-tv.com^
+||event-api-cs.stardust-tv.com^
+||logreport-global-dual.cool*cloud.com^
+||wslog-global-dual.cool*cloud.com^
+||weblogger-wss.cool*cloud.com^
+||mebed.dm-event.net^
 ||bstream.kzhi.tech^
 ||lklfwu-inapps.appsflyersdk.com^
 ||mob2.welltastic-app.com^
@@ -75013,7 +75020,6 @@ larocheposay.co.kr##+js(set-constant, wptg_tagscript.exec, noopFunc)
 @@||googletagmanager.com/gtm.js$domain=online.ysroad.co.jp
 @@||karte.io^$domain=online.ysroad.co.jp
 @@||cdn.kaizenplatform.net^$script,domain=navi.onamae.com
-@@||walmart.com/px/*/captcha
 @@||biv.gazeta.pl/resources/emailLoginPage__front/$domain=oauth.gazeta.pl
 ||sgtm.ipekyol.com.tr/gtm.js$script,redirect=google-analytics_analytics.js
 @@||segmentify.com^$script,stylesheet,xhr,domain=puma.com
