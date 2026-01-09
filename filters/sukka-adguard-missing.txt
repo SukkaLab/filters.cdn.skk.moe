@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Fri, 09 Jan 2026 06:34:49 GMT
+! Last modified: Fri, 09 Jan 2026 10:15:18 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -27,10 +27,10 @@
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Thu, 08 Jan 2026 05:58:04 +0000
+!   - Last modified: Fri, 09 Jan 2026 06:21:31 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
-!   - Last modified: Thu, 08 Jan 2026 14:45:26 +0000
+!   - Last modified: Fri, 09 Jan 2026 05:59:07 +0000
 ! --------------------------------------------------------------
 ! uBlock filters https://ublockorigin.pages.dev/filters/filters.min.txt
 *_ad_$media,domain=youtube.com,3p
@@ -31425,6 +31425,8 @@ dailystar.co.uk,mirror.co.uk##+js(trusted-click-element, button[class*="cipa-acc
 @@||cmp.inmobi.com/GVL-$xhr,domain=dailystar.co.uk
 redbull.com##+js(trusted-set-cookie, OptanonConsent, groups=C0001%3A1%2CC0002%3A0%2CC0003%3A1, , , domain, www.redbull.com)
 redbull.com##+js(trusted-set-cookie, OptanonAlertBoxClosed, $currentDate$, , , domain, www.redbull.com)
+redbullracing.com##+js(trusted-set-cookie, OptanonConsent, groups=C0001%3A1%2CC0002%3A0%2CC0003%3A1, , , domain, www.redbullracing.com)
+redbullracing.com##+js(trusted-set-cookie, OptanonAlertBoxClosed, $currentDate$, , , domain, www.redbullracing.com)
 idnes.cz##+js(trusted-click-element, a[href="javascript:Didomi.setUserAgreeToAll();"], , 1000)
 20minutes.fr,20minutos.es,24sata.hr,abc.es,actu.fr,antena3.com,antena3internacional.com,atresmedia.com,atresmediapublicidad.com,atresmediastudios.com,atresplayer.com,autopista.es,belfasttelegraph.co.uk,bemad.es,bonduelle.it,bonniernews.se,bt.se,cadenadial.com,caracol.com.co,cas.sk,challenges.fr,charentelibre.fr,ciclismoafondo.es,cnews.fr,cope.es,correryfitness.com,courrier-picard.fr,cuatro.com,decathlon.nl,decathlon.pl,di.se,diariocordoba.com,diariodenavarra.es,diariosur.es,diariovasco.com,diepresse.com,divinity.es,dn.se,dnevnik.hr,dumpert.nl,ebuyclub.com,edreams.de,edreams.net,elcomercio.es,elconfidencial.com,elcorreo.com,eldesmarque.com,eldiario.es,eldiariomontanes.es,elespanol.com,elle.fr,elpais.com,elperiodico.com,elperiodico.com,elperiodicodearagon.com,elplural.com,energytv.es,engadget.com,es.ara.cat,euronews.com,europafm.com,expressen.se,factoriadeficcion.com,filmstarts.de,flooxernow.com,folkbladet.nu,footmercato.net,france.tv,france24.com,fussballtransfers.com,ghacks.net,gva.be,hbvl.be,heraldo.es,hoy.es,ideal.es,idealista.pt,krone.at,kurier.at,lacoste.com,ladepeche.fr,lalibre.be,lanouvellerepublique.fr,larazon.es,lasexta.com,lasprovincias.es,latribune.fr,lavanguardia.com,laverdad.es,lavozdegalicia.es,leboncoin.fr,lecturas.com,ledauphine.com,lejdd.fr,lejsl.com,leparisien.fr,lesoir.be,letelegramme.fr,libremercado.com,localeyes.dk,los40.com,lotoquebec.com,lunion.fr,m6.fr,marianne.cz,marmiton.org,mediaset.es,melodia-fm.com,metronieuws.nl,moviepilot.de,mtmad.es,multilife.com.pl,mundodeportivo.com,naszemiasto.pl,nationalgeographic.com.es,nicematin.com,nieuwsblad.be,notretemps.com,numerama.com,okdiario.com,ondacero.es,podiumpodcast.com,portail.lotoquebec.com,profil.at,public.fr,publico.es,radiofrance.fr,rankia.com,rfi.fr,rossmann.pl,rtbf.be,rtl.lu,science-et-vie.com,sensacine.com,sfgame.net,shure.com,silicon.es,sncf-connect.com,sport.es,sydsvenskan.se,techcrunch.com,telegraaf.nl,telequebec.tv,tf1.fr,tradingsat.com,trailrun.es,video-streaming.orange.fr,xpress.fr##+js(trusted-click-element, #didomi-notice-agree-button, , 1000)
 20minutes.fr,20minutos.es,24sata.hr,abc.es,actu.fr,antena3.com,antena3internacional.com,atresmedia.com,atresmediapublicidad.com,atresmediastudios.com,atresplayer.com,autopista.es,belfasttelegraph.co.uk,bemad.es,bonduelle.it,bonniernews.se,bt.se,cadenadial.com,caracol.com.co,cas.sk,charentelibre.fr,ciclismoafondo.es,cnews.fr,cope.es,correryfitness.com,courrier-picard.fr,cuatro.com,decathlon.nl,decathlon.pl,diariocordoba.com,diariodenavarra.es,diariovasco.com,diepresse.com,divinity.es,dnevnik.hr,dumpert.nl,ebuyclub.com,edreams.de,edreams.net,elcomercio.es,elconfidencial.com,elcorreo.com,eldesmarque.com,eldiario.es,eldiariomontanes.es,elespanol.com,elle.fr,elperiodico.com,elpais.com,elperiodico.com,elperiodicodearagon.com,elplural.com,energytv.es,engadget.com,es.ara.cat,euronews.com,europafm.com,expressen.se,factoriadeficcion.com,filmstarts.de,flooxernow.com,folkbladet.nu,footmercato.net,france24.com,francetvinfo.fr,ghacks.net,gva.be,hbvl.be,heraldo.es,hoy.es,ideal.es,idealista.pt,krone.at,kurier.at,lacoste.com,ladepeche.fr,lalibre.be,lanouvellerepublique.fr,larazon.es,lasexta.com,lasprovincias.es,latribune.fr,lavanguardia.com,laverdad.es,lavoixdunord.fr,lavozdegalicia.es,leboncoin.fr,lecturas.com,ledauphine.com,lejdd.fr,lejsl.com,leparisien.fr,lesoir.be,letelegramme.fr,lexpress.fr,libremercado.com,localeyes.dk,los40.com,lotoquebec.com,lunion.fr,marianne.cz,marmiton.org,mediaset.es,melodia-fm.com,metronieuws.nl,moviepilot.de,mtmad.es,multilife.com.pl,mundodeportivo.com,nationalgeographic.com.es,nicematin.com,nieuwsblad.be,notretemps.com,numerama.com,ondacero.es,podiumpodcast.com,portail.lotoquebec.com,profil.at,public.fr,publico.es,radiofrance.fr,rankia.com,rfi.fr,rossmann.pl,rtbf.be,rtl.lu,science-et-vie.com,sensacine.com,sfgame.net,shure.com,silicon.es,sncf-connect.com,sport.es,techcrunch.com,telegraaf.nl,telequebec.tv,tradingsat.com,trailrun.es,video-streaming.orange.fr###didomi-host:style(visibility: hidden !important;)
@@ -31814,6 +31816,14 @@ ing.pl##+js(set-cookie, cookiePolicyGDPR, 1)
 ing.pl##+js(set-cookie, cookiePolicyINCPS, 1)
 malighting.com,lightpower.de##+js(trusted-set-cookie, cs-cookie-banner, |essential|)
 abp.nl##+js(trusted-click-element, button[data-analytics-cms-event-name="cookies.button.alleen-noodzakelijk"], , 2600)
+resy.com##+js(trusted-click-element, button[data-testid="granular-banner-button-decline-all"], , 1500)
+viagogo.com##+js(trusted-click-element, button[data-testid="cookie-compliance-allow-all-button"], , 1500)
+bw-bank.de##+js(trusted-click-element, a[data-form=".eprivacy_optin_decline"], , 1000)
+ulm.de##+js(trusted-set-cookie, consent, '{"consentId":"1","categories":{"TechnicalRequired":true,"AnalyticsAndPerformance":false,"Marketing":false}}')
+netze-bw.de##+js(trusted-set-cookie, ndConsentedCookies, '[%22Functional%22]')
+bricklink.com##+js(trusted-click-element, button.blp-cookie-notice__btn--reject, , 1000)
+midasbuy.com##+js(trusted-click-element, div[data-id="refuse"], , 1000)
+consent.nsd.se##+js(trusted-click-element, button[title="Jag godkänner"], , 1000)
 simplea.sk##+js(trusted-click-element, button[aria-label="Vypnúť personalizáciu"], , 1000)
 flip.bg##+js(trusted-click-element, .cookie-text > .large-btn, , 1000)
 kiertokanki.com##+js(trusted-click-element, button#zenEPrivacy_acceptAllBtn, , 1000)
@@ -36091,7 +36101,7 @@ astoryofmasasstruggles.com##style:has-text(@media print):remove()
 lemon8-app.com##+js(trusted-click-element, .seo-landing-modal-cancel-btn .design-system-button-container, , 500)
 lemon8-app.com##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important; -webkit-tap-highlight-color: revert !important; cursor: revert !important;)
 anikai.to,animekai.*,anigo.to,sflix.fi,yflix.to##+js(aeld, keydown, /^function\(.*\|\|.*}$/)
-anikai.to>>,animekai.*>>,anigo.to>>,sflix.fi>>,yflix.to>>##+js(set, console.clear, throwFunc)
+4spromax.site,anikai.to,animekai.*,anigo.to,megaup.cc,megaup.live,megaup.site,megaup22.online,rapidshare.cc,sflix.fi,yflix.to##+js(set, console.clear, throwFunc)
 loverslab.com##+js(nano-sib)
 /akam/13/*$script,xhr,1p,domain=easyjet.com|ing.nl,important
 easyjet.com,ing.nl##+js(cookie-remover, ak_bmsc, when, scroll keydown)
