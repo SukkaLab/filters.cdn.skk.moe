@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Fri, 09 Jan 2026 18:29:33 GMT
+! Last modified: Fri, 09 Jan 2026 22:26:27 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.98.17
+!   - Version: 2.0.98.18
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -77309,6 +77309,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||brownboxgroup.com^
 ||bruisebaseball.com^
 ||bubblyaction.com^
+||buddycanvas.com^
 ||bugpizza.com^
 ||buildingknife.com^
 ||bulbbait.com^
@@ -78501,6 +78502,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||reconditeprison.com^
 ||reconditerake.com^
 ||reconditerespect.com^
+||recyclehits.com^
 ||redbasketball.com^
 ||redbricksoap.com^
 ||reduceplan.com^
@@ -78546,6 +78548,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||ritzyveil.com^
 ||roaddynamics.com^
 ||roadwalks.com^
+||roamhousing.com^
 ||robotgarages.com^
 ||rockagainst.com^
 ||rockstarwriter.com^
