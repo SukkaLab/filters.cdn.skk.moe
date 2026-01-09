@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Filters
-! Last modified: Sat, 03 Jan 2026 06:58:03 GMT
+! Last modified: Fri, 09 Jan 2026 09:54:08 GMT
 ! Expires: 1 hours
 ! Description: The filters from Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -169,6 +169,7 @@ www.deepl.com###dl_quotes_container
 deepl.com##+js(trusted-prevent-fetch, s.deepl.com/web/statistics, '{ "code": 1 }')
 ||ip.sb$domain=alicesw.com
 ||sponsorapp.io^$3p
+||mosaic.unite.com/js/widget.js$3p
 ||archive.org/includes/donate
 @@||perfops.io/500b-bench.jpg$domain=localhost|ip.skk.moe
 ||adfoc.us$csp=script-src 'none'
@@ -465,6 +466,7 @@ justauth.cn##+js(set, window._AdBlockInit, true)
 ||acquia.com/ct
 ||v.bytes.media/vs.js$redirect=noop.js
 /ad-shield*$3p
+||ad*.on.cc^$important
 ||necolas.github.io/normalize.css/*/normalize.css$uritransform=/necolas\.github\.io\/normalize\.css\/([^\/]+)\/normalize\.css/cdn.jsdelivr.net\/npm\/normalize.css@$1\/normalize.css/
 ://gravatar.com/avatar/$all,uritransform=/gravatar\.com/secure.gravatar.com/
 ||0.gravatar.com/avatar/$all,uritransform=/0\.gravatar\.com/secure.gravatar.com/
@@ -473,9 +475,7 @@ justauth.cn##+js(set, window._AdBlockInit, true)
 ||3.gravatar.com/avatar/$all,uritransform=/3\.gravatar\.com/secure.gravatar.com/
 ||s.gravatar.com/avatar/$all,uritransform=/s\.gravatar\.com/secure.gravatar.com/
 ||www.gravatar.com/avatar/$all,uritransform=/www\.gravatar\.com/secure.gravatar.com/
-||fastly.jsdelivr.net/$all,uritransform=/fastly\.jsdelivr\.net/cdn\.jsdelivr\.net/
-||testingcf.jsdelivr.net/$all,uritransform=/testingcf\.jsdelivr\.net/cdn\.jsdelivr\.net/
-||gcore.jsdelivr.net/$all,uritransform=/gcore\.jsdelivr\.net/cdn\.jsdelivr\.net/
+||esm.sh$all,uritransform=/esm\.sh/esm.run/
 ||app.moegirl.org.cn/insight-assets/images/20230413-moepad/800x300.png
 ||storage.moegirl.org.cn/console-plus/uploads/2024/02/01/a475bee2aa57da0e65f5341b78ccf551.png
 ||storage.moegirl.org.cn/console-plus/uploads/2024/01/16/b70a27db94200462fd06da4a5ab30b50.jpeg
@@ -731,3 +731,6 @@ nmac.to##.signoff
 ||media.printables.com/media/banner_images/$image
 www.news.com.au##.loader-overlay
 www.news.com.au##.LoaderBox
+||static.freedownloadmanager.org/icon_mac/
+||static.freedownloadmanager.org/img_howto/
+||static.freedownloadmanager.org/icon/
