@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Sat, 10 Jan 2026 03:20:13 GMT
+! Last modified: Sat, 10 Jan 2026 06:31:17 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202601100311
+!   - Version: 202601100621
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 10 Jan 2026 03:11 UTC
+!   - Last modified: 10 Jan 2026 06:21 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
@@ -110,7 +110,7 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * ↖ Anti-'Custom cursors' List
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/Anti-'Custom%20cursors'%20List.txt
-!   - Version: 30October2025v1-Beta
+!   - Version: 09January2026v1-Beta
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 💬 Twitch: Pure Viewing Experience
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/TwitchPureViewingExperience.txt
@@ -24283,20 +24283,18 @@ tumblr.com##.custom-cursor:style(cursor: unset !important)
 tumblr.com##.custom-cursor a:style(cursor: pointer !important)
 tumblr.com,strategix.dk##body:style(cursor: unset !important)
 ||cursors-4u.net^$third-party
-/new_cursor.$image
 /images/pointer.
 /svg/arrow-home
 ###cursor
 /images/Cursor.
 /images/Cursor-
 /Assets/*/cursor.png|
-/Assets/*/cursor_hd.png|
 .cur|$image,domain=~pixiv.net|~deviantart.com
 @@://maps.gstatic.com/*.cur|$image
 ##.circle-cursor:not(html, body)
 /hello-elementor-child/pointer.$script,stylesheet
 /static/cursor.png|
-/puntatore_$image
+||altervista.*/puntatore_$image
 apis-sklep.pl##.cursor
 ##div[class^=styles__CursorWrapper-]
 /assets/js/Cursor_1__1.min.js
@@ -24305,10 +24303,8 @@ ourcodeworld.com##.mouse-cursor
 /wp-content/uploads/*/cursor.png|
 nerdelandslaget.no##html:style(cursor: auto !important)
 ||uniqueseo.pl/wp-content/uploads/20*/agencja-seo-sem-google-ads-reklama-facebook.png$image
-strategix.dk##.cursor
 /Cursor_Icon.png|
 /Indicator_Arrow_Icon.png|
-||files.cargocollective.com/*_Plan-de-travail-$image,3p
 ##.n-cursor:not(html,body)
 .ani|$domain=~pixiv.net|~deviantart.com
 .cursor|$domain=~pixiv.net|~deviantart.com
