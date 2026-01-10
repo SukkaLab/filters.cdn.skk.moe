@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sat, 10 Jan 2026 06:31:17 GMT
+! Last modified: Sat, 10 Jan 2026 10:13:15 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,13 +8,13 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Fri, 09 Jan 2026 17:04:08 +0000
+!   - Last modified: Sat, 10 Jan 2026 07:41:01 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Thu, 08 Jan 2026 07:39:48 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Fri, 09 Jan 2026 17:18:35 +0000
+!   - Last modified: Sat, 10 Jan 2026 05:53:23 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
 !   - Last modified: Thu, 08 Jan 2026 08:06:55 +0000
@@ -19803,6 +19803,7 @@ wuxia.click###chapterText + div.mantine-Container-root
 wuxia.click##.mantine-Container-root + .mantine-Container-root + br + br + div[class^="mantine-"]:last-of-type:has([alt~="Ad"])
 moneycontrol.com##+js(rmnt, script, initializeInterstitial)
 moneycontrol.com##+js(set-session-storage-item, adViewed, true)
+moneycontrol.com##.sponsor_ad_bg_slider
 @@||filespace.com^$ghide
 avxhm.se##[data-localize]:has(a[href^="https://icerbox.com/"])
 avxhm.se##center:has(a[href^="https://canv.ai/"])
@@ -27709,6 +27710,7 @@ newsletter.adnz.co%2F$image
 ||razorpay.com/v1/track
 ||bitchute.com/data/1
 ||api.flipkart.com/4/data/collector/business
+||flipkart.net/mapi/v1/tracker/eventBatch
 ||internal-api.prolific.com/api/v1/statistics/
 ||apmplus.volces.com/monitor_web/collect$xhr,method=post
 ||gator.volces.com/list$xhr,method=post
