@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Sun, 11 Jan 2026 18:26:41 GMT
+! Last modified: Sun, 11 Jan 2026 22:24:46 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.98.20
+!   - Version: 2.0.98.22
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -217,6 +217,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||powa-ingest-prod-*.video-player.arcpublishing.com^
 ||cpu-api.infor.pl^
 ||cse.rakanto.com^
 ||repo.rakanto.com^
@@ -78581,6 +78582,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||samuraibots.com^
 ||sandboxbid.com^
 ||sandstrophies.com^
+||sapnest.com^
 ||satisfycork.com^
 ||savoryink.com^
 ||savoryorange.com^
@@ -78604,6 +78606,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||scenicapparel.com^
 ||scenicchicago.com^
 ||scenicdrops.com^
+||scentedkindly.com^
 ||sciencedart.com^
 ||scientificshirt.com^
 ||scintillatingscissors.com^
