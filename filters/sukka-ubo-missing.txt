@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Mon, 12 Jan 2026 14:34:21 GMT
+! Last modified: Mon, 12 Jan 2026 18:30:42 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.98.26
+!   - Version: 2.0.98.29
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -48405,7 +48405,7 @@ prd.api.bleacherreport.com^
 ||stats.bunkr.ru^
 ||logs.netflix.com^
 ||mst.rnd.de^
-||cza.crazygames.com^
+||cza*.crazygames.com^
 ||event-dot-procolor-backend.appspot.com^
 ||prod.event.mwm-asset-manager.mwmwebapis.com^
 ||api.amplitudeexperiment.com^
@@ -48655,7 +48655,6 @@ prd.api.bleacherreport.com^
 ||zion-telemetry-nonprod.api.cnn.io^
 ||realtimeanalytics.yext.com^
 ||stats.indianpornempire.com^
-||lp.spac.me^
 ||analytics.verfacto.com^
 ||flask.us.nextdoor.com^
 ||newsstat.dallasnews.com^
@@ -69689,7 +69688,6 @@ pcmag.com##img[src^="https://t.myvisualiq.net/"]
 ||dataplane.rum.*.amazonaws.com/appmonitors
 ||suumo.jp/jj/jjcommon/sc/s_code.js
 ||bablic.com/api/engine/pling
-||spcs.*/api/common/beacon/
 ||unification.useinsider.com/api/event/
 ||rou.video/js/yd.js
 ||elle.com.hk/assets/js/ur.js
@@ -73769,6 +73767,8 @@ dlsdk.appsflyer.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||track.applicaster.com^
+||hb-mob2.optiword.com^
 ||tracking.geo.*.amazonaws.com^
 ||telemetry.doxo.com^
 ||sensorsdata-datasink.stardust-tv.com^
@@ -74825,6 +74825,7 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=saturn.de
 @@||metrics.us.playstation.com/b/ss/
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
+investor-web.hdfcfund.com##+js(set-constant, smartech, noopFunc)
 @@||a.klaviyo.com/client/subscriptions/
 @@||st.dynamicyield.com/st?$domain=noelleeming.co.nz
 @@||cdn.optimizely.com/datafiles/*.json$domain=wingstop.com
