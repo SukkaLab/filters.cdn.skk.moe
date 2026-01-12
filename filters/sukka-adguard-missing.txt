@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Mon, 12 Jan 2026 18:30:42 GMT
+! Last modified: Mon, 12 Jan 2026 22:23:49 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Mon, 12 Jan 2026 14:47:29 +0000
+!   - Last modified: Mon, 12 Jan 2026 19:18:53 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Mon, 12 Jan 2026 09:22:53 +0000
@@ -17,10 +17,10 @@
 !   - Last modified: Mon, 12 Jan 2026 12:06:54 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
-!   - Last modified: Sun, 11 Jan 2026 01:54:26 +0000
+!   - Last modified: Mon, 12 Jan 2026 16:59:29 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Mon, 12 Jan 2026 10:23:39 +0000
+!   - Last modified: Mon, 12 Jan 2026 16:06:11 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
 !   - Last modified: Tue, 23 Dec 2025 15:03:38 +0000
@@ -30,7 +30,7 @@
 !   - Last modified: Sun, 11 Jan 2026 11:58:22 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
-!   - Last modified: Fri, 09 Jan 2026 16:39:20 +0000
+!   - Last modified: Mon, 12 Jan 2026 16:55:44 +0000
 ! --------------------------------------------------------------
 ! uBlock filters https://ublockorigin.pages.dev/filters/filters.min.txt
 *_ad_$media,domain=youtube.com,3p
@@ -22319,6 +22319,7 @@ vertigis.com##+js(rmnt, script, /aoAdBlockDetected/i)
 canal1.com.co##.sticky.top-14:style(position: relative !important; top: 0rem !important)
 ||alwingulla.com^$script,redirect=noopjs,domain=filmex.to
 *$script,3p,redirect-rule=noopjs,domain=filmex.to
+||paketda.de/detect-ab.js
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -30310,7 +30311,6 @@ outletarredamento.it#@#.ad-link:not(.adsbox)
 ||neo.btrl.ro/Scripts/services/fingerprint2.min.js^$script,redirect=fingerprint2.js,important
 ||seguridad.compensar.com/lib/js/fingerprint2.js$script,1p,redirect=fingerprint2.js,important
 @@||dlswbr.baidu.com/heicha/mw/abclite-$script,domain=map.baidu.com
-||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=legaseriea.it,important
 ||the-independent.com/js/third-party/aps.js^$script,1p,redirect=amazon_apstag.js
 the-independent.com##+js(no-fetch-if, npttech.com/advertising.js)
 ||npttech.com/advertising.js$xhr,domain=the-independent.com,redirect=noop.js,important
@@ -30559,7 +30559,8 @@ japscan.*##[style^="width:9"] > span:remove()
 japscan.*##[id^="nav"] ~ div:not([id]):remove()
 japscan.*##[class^="fullW"] > span:remove()
 japscan.*##[class^="Wfull"] > span:remove()
-japscan.*##+js(trusted-suppress-native-method, Document.prototype.querySelectorAll, '"/^\[dat[a-z]?-[a-z]{3}\]$/"')
+japscan.*##[class^="WidthF"] > span:remove()
+japscan.*##+js(trusted-suppress-native-method, Document.prototype.querySelectorAll, '"/^\[d[a-z]t[a-z]?-[a-z]{3}\]$/"')
 japscan.*##.YouGot + span:remove()
 poophq.com,veev.to,doods.to##+js(nowoif)
 poophq.com,veev.to,doods.to##+js(no-xhr-if, /vast.php?)
@@ -30672,7 +30673,7 @@ pvpoke-re.com##+js(ra, data-instype, ins.adsbygoogle:has(> div#aswift_0_host), s
 pvpoke-re.com##+js(trusted-set-attr, ins.adsbygoogle.nitro-side\,ins.adsbygoogle.nitro-banner, data-ad-status, filled)
 pvpoke-re.com##+js(no-fetch-if, url:https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-3497863494706299 method:HEAD mode:no-cors, , , throttle, 121)
 pvpoke-re.com##+js(trusted-replace-argument, String.prototype.indexOf, 0, json:"/", condition, /premium)
-pvpoke-re.com##+js(trusted-rpnt, script, var menuSlideProtection, /*start*/!function(){const e=window.addEventListener;window.addEventListener=function(t\,n\,i){return"message"===t&&"function"==typeof n&&n.toString().includes("googMsgType")&&setTimeout((()=>{try{const e=document.getElementsByTagName("iframe");for(let t=0;t<e.length;t++){const i=e[t];if(!i.contentWindow)continue;let o;try{o=i.src?new URL(i.src).origin:"*"}catch(e){o="*"}const s={msg_type:"resize-me"\,key_value:[{key:"r_nh"\,value:"0"}\,{key:"r_ifr"\,value:"true"}\,{key:"qid"\,value:"CKjPmM7ezpEDFbyJ6QUdM0o3rw"}]\,googMsgType:"pvt"\,token:"AOrYGskPiXMUpj3CJQ8LsihEHwbNcui1URgWacoUghpsHfMEVL2nwMKey1eyEl6h8i29ah7WTlje42evSBak30X4pe673BR-KOZpAhiqCJO20pQ"};n({data:JSON.stringify(s)\,source:i.contentWindow\,origin:o})}}catch(e){}})\,10)\,e.apply(this\,arguments)}}();!function(){const e=document.querySelectorAll;let t=0;document.querySelectorAll=function(n){const l=(new Error).stack;if("iframe"===n&&l&&l.includes("_executeCallback")){const n=e.apply(this\,arguments)\,l=n.length;let r=l;return 0===t&&l>7?r=4:1===t&&l>9&&(r=8)\,t++\,new Proxy(n\,{get:function(e\,t){return"length"===t?r:e[t]}})}return e.apply(this\,arguments)}}();document.currentScript.textContent=document.currentScript.textContent.replace(/\/\*start\*\/(.*)\/\*end\*\//\,"");/*end*/var menuSlideProtection, sedCount, 1)
+pvpoke-re.com##+js(trusted-rpnt, script, var menuSlideProtection, /*start*/!function(){const t=Function.prototype.toString\,e=new WeakMap;function n(t\,n){return e.set(t\,`function ${n}() { [native code] }`)\,t}Function.prototype.toString=function(){return e.has(this)?e.get(this):t.apply(this\,arguments)}\,n(Function.prototype.toString\,"toString");const o=Array.prototype.push;Array.prototype.push=n((function(...t){try{const e=(new Error).stack;if(e&&e.includes("_executeCallback")){const e=["fetch"\,"XMLHttpRequest"]\,n=t.filter((t=>!e.includes(t)));return 0===n.length&&t.length>0?this.length:o.apply(this\,n)}}catch(t){}return o.apply(this\,arguments)})\,"push");const r=window.addEventListener;window.addEventListener=n((function(t\,e\,n){return"message"===t&&"function"==typeof e&&e.toString().includes("googMsgType")&&setTimeout((()=>{try{const t=document.getElementsByTagName("iframe");for(let n=0;n<t.length;n++){const o=t[n];if(!o.contentWindow)continue;let r;try{r=o.src?new URL(o.src).origin:"*"}catch(t){r="*"}const i={msg_type:"resize-me"\,key_value:[{key:"r_nh"\,value:"0"}\,{key:"r_ifr"\,value:"true"}\,{key:"qid"\,value:"CKjPmM7ezpEDFbyJ6QUdM0o3rw"}]\,googMsgType:"pvt"\,token:"AOrYGskPiXMUpj3CJQ8LsihEHwbNcui1URgWacoUghpsHfMEVL2nwMKey1eyEl6h8i29ah7WTlje42evSBak30X4pe673BR-KOZpAhiqCJO20pQ"};e({data:JSON.stringify(i)\,source:o.contentWindow\,origin:r})}}catch(t){}})\,10)\,r.apply(this\,arguments)})\,"addEventListener");const i=document.querySelectorAll;let c=0;document.querySelectorAll=n((function(t){const e=(new Error).stack;if("iframe"===t&&e&&e.includes("_executeCallback")){const t=i.apply(this\,arguments)\,e=t.length;let n=e;return 0===c&&e>7?n=4:1===c&&e>9&&(n=8)\,c++\,new Proxy(t\,{get:function(t\,e){return"length"===e?n:t[e]}})}return i.apply(this\,arguments)})\,"querySelectorAll")}();document.currentScript.textContent=document.currentScript.textContent.replace(/\/\*start\*\/(.*)\/\*end\*\//\,"");/*end*/var menuSlideProtection, sedCount, 1)
 ||pvpoke-re.com/*.js?v=$replace=/try\{GameMaster/try{return;GameMaster/
 pvpoke-re.com##+js(trusted-override-element-method, HTMLIFrameElement.prototype.remove, iframe[src^="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-3497863494706299"])
 royalroad.com##.dKKumhSnWiFq75vPUVtmTanQ:has(a[href^="https://www.royalroad.com/a/r?campaign="]:not([href*="&url=https%3A%2F%2Fwww.royalroad.com"]))
@@ -36229,3 +36230,4 @@ theintercept.com##.ft-ab-test-case
 teamblind.com##+js(trusted-set-local-storage-item, mobile-app-recommend, '{"dismissed":true,"day":30}')
 spares2repair.co.uk##body:style(-webkit-user-select:text !important; -moz-user-select:text !important; user-select:text !important)
 ||cdn.carbonads.com^$script,domain=teknixstuff.com,redirect=noopjs
+foodnavigator.com##+js(rpnt, script, CopyrightLayer, abc)
