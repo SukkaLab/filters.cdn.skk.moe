@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Mon, 12 Jan 2026 10:17:52 GMT
+! Last modified: Mon, 12 Jan 2026 14:34:21 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,10 +8,10 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Mon, 12 Jan 2026 04:51:27 +0000
+!   - Last modified: Mon, 12 Jan 2026 09:45:30 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
-!   - Last modified: Sun, 11 Jan 2026 04:24:34 +0000
+!   - Last modified: Mon, 12 Jan 2026 09:22:53 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
 !   - Last modified: Mon, 12 Jan 2026 01:57:45 +0000
@@ -20,7 +20,7 @@
 !   - Last modified: Sun, 11 Jan 2026 01:54:26 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Sun, 11 Jan 2026 23:06:40 +0000
+!   - Last modified: Mon, 12 Jan 2026 10:23:39 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
 !   - Last modified: Tue, 23 Dec 2025 15:03:38 +0000
@@ -3680,12 +3680,6 @@ webtvhd.com##ins.adsbygoogle
 webserver.one##ins.adsbygoogle
 webserver.one##div[id^="imCell_"][class=""]:has-text(/Advertisement/i)
 webserver.one##[id*="ScriptRoot"]
-coolmathgames.com##+js(nano-sib)
-coolmathgames.com##+js(set, cmgpbjs, false)
-coolmathgames.com##+js(set, displayAdblockOverlay, false)
-coolmathgames.com##+js(set, google, false)
-coolmathgames.com###block-adstop-otherpage-728x90
-coolmathgames.com##[class*="-ads"]
 ||poweredbyliquidfire.mobi^
 news-und-nachrichten.de##+js(set, adblock, false)
 news-und-nachrichten.de##.adverts_billboard
@@ -22299,6 +22293,14 @@ player4me.vip,seekplayer.vip##+js(nowoif)
 ||captown.capcom.com^$doc,replace=/data-game-play-need-ads-modal-value=true/data-game-play-need-ads-modal-value=false/
 captown.capcom.com##.game-main[data-game-play-need-ads-modal-value="true"]:remove-attr(data-game-play-need-ads-modal-value)
 thetemp.email##+js(no-fetch-if, adsbygoogle)
+coolmathgames.com##+js(nano-sib)
+coolmathgames.com##+js(set, cmgpbjs, false)
+coolmathgames.com##+js(set, displayAdblockOverlay, false)
+coolmathgames.com##+js(set, google, false)
+coolmathgames.com###block-adstop-otherpage-728x90
+coolmathgames.com##[class*="-ads"]
+coolmathgames.com##+js(set, start_full_screen_without_ad, false)
+coolmathgames.com##+js(set, drupalSettings.coolmath.hide_preroll_ads, true)
 hostserverz.com##+js(no-xhr-if, googlesyndication)
 youboxtv.com##+js(rmnt, script, '"hidden"')
 rootz.so##+js(nowoif, _blank)
@@ -22315,6 +22317,8 @@ justwatch.com##.vpn-link
 pornincest.net##+js(rmnt, script, /overlay/i)
 vertigis.com##+js(rmnt, script, /aoAdBlockDetected/i)
 canal1.com.co##.sticky.top-14:style(position: relative !important; top: 0rem !important)
+||alwingulla.com^$script,redirect=noopjs,domain=filmex.to
+*$script,3p,redirect-rule=noopjs,domain=filmex.to
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -26369,18 +26373,11 @@ pages.dev##html[lang="ja"] > body > .main-container > #landing.auth-container
 pages.dev##html[lang="ja"] > body.flex.items-center.min-h-screen > div.w-full.max-w-md.mx-auto > form#login-form
 pages.dev##html:not([class]) > body.gradient-bg.min-h-screen.flex.items-center.justify-center > div.glass-card.max-w-md.w-full.text-center > form#loginForm.flex.flex-col
 /^https:\/\/blockchecker[0-9]\.pages\.dev\//$doc,to=pages.dev
-||blockcheck.pages.dev^$all
-||checkx.pages.dev^$all
 ||xcheckx.pages.dev^$all
-||blockchecker-8ka.pages.dev^$all
-||blck.pages.dev^$all
-||blockchecker5.pages.dev^$all
-||blockchecker6.pages.dev^$all
 ||gocheck.pages.dev^$all
 ||blocchecker*.pages.dev^$all
 ||lookblock.pages.dev^$all
 ||xblocklist*.pages.dev^$all
-||xchekersite.pages.dev^$all
 ||xsuki*.pages.dev^$all
 ||bxchx.pages.dev^$all
 ||xre10.pages.dev^$all
@@ -30506,6 +30503,7 @@ www.youtube.com##+js(trusted-replace-fetch-response, '"adSlots"', '"no_ads"', /g
 web.facebook.com,www.facebook.com##+js(json-prune, require.0.3.0.__bbox.require.[].3.1.__bbox.result.data.viewer.sideFeedUnit.nodes.[].new_adverts.nodes.[-].sponsored_data)
 web.facebook.com,www.facebook.com##+js(json-prune-xhr-response, data.viewer.sideFeedUnit.nodes.[].new_adverts.nodes.[-].sponsored_data, , propsToMatch, /graphql)
 web.facebook.com,www.facebook.com##+js(json-edit, ..sideFeed.nodes.*[?.__typename=="AdsSideFeedUnit"])
+web.facebook.com,www.facebook.com##+js(set, Env.ghljssj, false)
 web.facebook.com,www.facebook.com##div[role="complementary"] a[aria-labelledby][attributionsrc^="/privacy_sandbox/comet/register/source/?eid="][href^="http"][target="_blank"]
 web.facebook.com,www.facebook.com##div[role="complementary"] div[data-visualcompletion="ignore-dynamic"] a[aria-label][attributionsrc="_blank"][href*="utm_medium"][href*="utm_source"][href*="utm_id"][href*="utm_content"][href*="utm_term"][href*="utm_campaign"]
 web.facebook.com,www.facebook.com##div[role="complementary"] a[aria-labelledby][attributionsrc][href^="http"][target="_blank"][role="link"][rel="nofollow noreferrer"]:has(img[src])
