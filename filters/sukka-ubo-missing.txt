@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Tue, 13 Jan 2026 14:33:57 GMT
+! Last modified: Tue, 13 Jan 2026 18:29:00 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.98.36
+!   - Version: 2.0.98.40
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -218,6 +218,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||telemetry.tataritv.com^
 ||powa-ingest-prod-*.video-player.arcpublishing.com^
 ||cpu-api.infor.pl^
 ||cse.rakanto.com^
@@ -47758,6 +47759,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||logs.collector.*.cloud.solarwinds.com^
 ||doppler.hulu.com^
 ||events.insiad.com^
 ||agatha-log-service-*.a.run.app^
@@ -49941,7 +49943,6 @@ prd.api.bleacherreport.com^
 ||log.ecgh.dk^
 ||log.enuri.com^
 ||log.g-enews.com^
-||log.go.com^
 ||log.iyunmai.com^
 ||log.krs-ix.ru^
 ||log.mappy.net^
@@ -73710,6 +73711,7 @@ twitter.com%2Fscribe%2Fibis%3Ft%3D$image
 ||analytics-sprint.qoqa.com^
 ||analytics.qoqa.ch^
 ||analytics.qoqa.com^
+||skadsdk.appsflyersdk.com^
 ||attr.appsflyersdk.com^
 dynamic-report-api.appsflyersdk.com^
 ||privacy-sandbox.appsflyersdk.com^
@@ -73772,6 +73774,10 @@ dlsdk.appsflyer.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||mab-mob2.websearchapp.com^
+||news-events.apple.com^
+||news-app-events.apple.com^
+||news-sports-events.apple.com^
 ||track.applicaster.com^
 ||hb-mob2.optiword.com^
 ||tracking.geo.*.amazonaws.com^
@@ -74836,7 +74842,6 @@ investor-web.hdfcfund.com##+js(set-constant, smartech, noopFunc)
 @@||st.dynamicyield.com/st?$domain=noelleeming.co.nz
 @@||cdn.optimizely.com/datafiles/*.json$domain=wingstop.com
 @@||pi.ai/ingest/$domain=pi.ai
-@@||log.go.com/log$xhr,domain=disneyvacationclub.disney.go.com
 @@||a.klaviyo.com/client/subscriptions/$xhr,domain=ahead-nutrition.com
 @@||googletagmanager.com/gtm.js$domain=agrieuro.com
 @@||e.cquotient.com/recs/blqj-smart/$domain=store.smart.com.ph
