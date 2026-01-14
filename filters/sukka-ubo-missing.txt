@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Wed, 14 Jan 2026 03:43:03 GMT
+! Last modified: Wed, 14 Jan 2026 06:35:08 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.98.42
+!   - Version: 2.0.98.44
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -47759,6 +47759,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||trafficmanager.anyclip.com^
 ||r.anime-go.cc^
 ||logs.collector.*.cloud.solarwinds.com^
 ||doppler.hulu.com^
@@ -68066,6 +68067,9 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||marketplace.anyclip.com/v*/lre-events
+/log/client/messages$domain=momondo.com|kayak.com
+/s/vestigo/measure$domain=momondo.com|kayak.com
 ||ir.ebaystatic.com/*/s_1x2.gif
 gamespot.com##+js(set-local-storage-item, ppid, $remove$)
 ||openway.deepseeksvc.com/v*/write/rum
