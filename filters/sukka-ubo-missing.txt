@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Wed, 14 Jan 2026 10:16:46 GMT
+! Last modified: Wed, 14 Jan 2026 14:33:48 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.98.45
+!   - Version: 2.0.98.47
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -47759,6 +47759,8 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||st.freedom24.com^
+||rum.api.intuit.com^
 ||trafficmanager.anyclip.com^
 ||r.anime-go.cc^
 ||logs.collector.*.cloud.solarwinds.com^
@@ -49945,6 +49947,7 @@ prd.api.bleacherreport.com^
 ||log.ecgh.dk^
 ||log.enuri.com^
 ||log.g-enews.com^
+||log.go.com^
 ||log.iyunmai.com^
 ||log.krs-ix.ru^
 ||log.mappy.net^
@@ -73780,6 +73783,8 @@ dlsdk.appsflyer.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||report.*.gbqofs.io^
+||gbxreport-*.wf.com^
 ||mab-mob2.websearchapp.com^
 ||news-events.apple.com^
 ||news-app-events.apple.com^
@@ -74255,7 +74260,6 @@ d4?appid*type*
 ||cws-hulu.conviva.com^
 ||vik-analytics.moonactive.net^
 ||report.apkpure.net^
-||report.*.gbqofs.io^
 ||grs.hicloud.com^
 ||logbak.hicloud.com^
 ||iot-eu-logser.realme.com^
@@ -74848,6 +74852,7 @@ investor-web.hdfcfund.com##+js(set-constant, smartech, noopFunc)
 @@||st.dynamicyield.com/st?$domain=noelleeming.co.nz
 @@||cdn.optimizely.com/datafiles/*.json$domain=wingstop.com
 @@||pi.ai/ingest/$domain=pi.ai
+@@||log.go.com/log$xhr,domain=disneyvacationclub.disney.go.com
 @@||a.klaviyo.com/client/subscriptions/$xhr,domain=ahead-nutrition.com
 @@||googletagmanager.com/gtm.js$domain=agrieuro.com
 @@||e.cquotient.com/recs/blqj-smart/$domain=store.smart.com.ph
