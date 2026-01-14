@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Tue, 13 Jan 2026 22:27:46 GMT
+! Last modified: Wed, 14 Jan 2026 03:43:03 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Tue, 13 Jan 2026 17:00:30 +0000
+!   - Last modified: Wed, 14 Jan 2026 02:12:46 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Tue, 13 Jan 2026 13:01:22 +0000
@@ -21322,7 +21322,7 @@ bigconv.com##+js(nowoif)
 1001tracklists.com##+js(spoof-css, div[class="nav tabTop"] + div > div:first-child > div:first-child > a:has(> img[src*="/"][src*="_"][alt])\, #head + div[id] > div:last-child > div > a:has(> img[src*="/"][src*="_"][alt]), display, block)
 breznikar.com##+js(nostif, modal)
 sport.es##+js(no-fetch-if, mode:no-cors)
-||imasdk.googleapis.com/js/sdkloader/ima3.js$redirect=google-ima.js,domain=isekaitube.cfd
+||imasdk.googleapis.com/js/sdkloader/ima3.js$redirect=google-ima.js,domain=isekaitube.cfd|isekaitube.com
 zilla-xr.xyz##+js(nowoif)
 vidfast.pro##+js(aost, document.createElement, onload)
 vidfast.pro##+js(aost, XMLHttpRequest,  /(?=^(?!.*(_next)))/)
