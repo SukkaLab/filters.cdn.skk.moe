@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Thu, 15 Jan 2026 06:34:56 GMT
+! Last modified: Thu, 15 Jan 2026 10:15:46 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202601150621
+!   - Version: 202601151002
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 15 Jan 2026 06:21 UTC
+!   - Last modified: 15 Jan 2026 10:02 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
@@ -124,7 +124,7 @@
 ! * uBlock filters – Mobile
 !   - URL: https://ublockorigin.github.io/uAssets/filters/filters-mobile.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Wed, 31 Dec 2025 05:34:20 +0000
+!   - Last modified: Thu, 15 Jan 2026 09:34:05 +0000
 ! * CJX's uBlock list
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-ublock.txt
 !   - Homepage: https://github.com/cjx82630/cjxlist
@@ -24759,6 +24759,7 @@ dailymotion.com##+js(json-prune-fetch-response, advertising, , propsToMatch, /pl
 dailymotion.com##+js(json-prune-xhr-response, advertising, , propsToMatch, .json)
 geo.dailymotion.com##+js(xml-prune, [breakId], , _VMAP_)
 geo.dailymotion.com##+js(set, DMP_ENABLE_ADS, false)
+www.dailymotion.com>>,~google.com##+js(xml-prune, [breakId], , _VMAP_)
 hurriyet.com.tr##.mobileMasthead
 yts.mx##.home-content > div[class]:not([id]):has(> div > a[rel="noindex, nofollow"])
 superporn.com##.intensive-add
