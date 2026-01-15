@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Thu, 15 Jan 2026 18:34:18 GMT
+! Last modified: Thu, 15 Jan 2026 22:27:28 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,10 +8,10 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Thu, 15 Jan 2026 13:27:50 +0000
+!   - Last modified: Thu, 15 Jan 2026 14:22:07 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
-!   - Last modified: Tue, 13 Jan 2026 13:01:22 +0000
+!   - Last modified: Thu, 15 Jan 2026 14:25:50 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
 !   - Last modified: Mon, 12 Jan 2026 12:06:54 +0000
@@ -15173,9 +15173,9 @@ deutschekanale.com##+js(no-fetch-if, imasdk)
 deutschekanale.com##.banner
 @@||thenetnaija.net^$ghide
 @@||sabishare.com^$ghide
-divxfilmeonline.net>>,divxfilmeonline.tv>>,f16px.com##+js(nowoif)
+divxfilmeonline.tv>>,f16px.com##+js(nowoif)
+divxfilmeonline.tv>>,f16px.com##+js(trusted-replace-argument, TextEncoder.prototype.encode, 0, noopFunc, condition, pop)
 f16px.com##+js(acs, EventTarget.prototype.addEventListener, delete window)
-||f16px.com^$csp=script-src 'unsafe-inline' *
 ||googlesyndication.com/favicon.ico$image,redirect-rule=1x1.gif
 iptvapps.net##+js(nostif, show)
 iptvapps.net##[id*=id]:has([src*="/ads/"])
@@ -26709,6 +26709,7 @@ sport.elwatannews.com##+js(aost, Array.prototype.indexOf, isWin)
 ||sites.google.com/view/newext$doc
 ||cloudfenceai.com^$all
 ||iploits.com^$all
+||artstation.paid-receipt.com^$all
 ! uBlock filters – Privacy https://ublockorigin.pages.dev/filters/privacy.min.txt
 ||google-analytics.com/analytics.js$script,xhr,redirect=google-analytics_analytics.js:5
 ||google-analytics.com/cx/api.js$script,redirect=google-analytics.com/cx/api.js:5
