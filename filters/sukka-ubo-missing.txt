@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Thu, 15 Jan 2026 14:33:31 GMT
+! Last modified: Thu, 15 Jan 2026 18:34:18 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.98.55
+!   - Version: 2.0.98.58
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -47765,6 +47765,8 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||analytics.launcherleaks.net^
+||ingest.webcol.sdp.peacocktv.com^
 ||t.collectiveaudience.co^
 ||st.freedom24.com^
 ||rum.api.intuit.com^
@@ -67398,6 +67400,7 @@ zjjz6lpv44aguszo.cloud.s11.sfmc-osl.com$image
 /^https?:\/\/(?!assets|script|static)(?:[0-9a-z]{10,13}|[0-9a-z]{6})\.[0-9A-Za-z.\-_]+\/(?=[0-9a-z+\/\-]*[A-Z])[0-9A-Za-z+\/\-]{80,106}$/$match-case,script,~3p
 /^https:\/\/cs\d{3}\.\w+\.com\/cscript\/\d{3}\/[\w\d]+\.js$/$script,3p,match-case
 /.well-known/private-click-measurement
+/js/exponea.min.js
 /js/pixel.js|
 /apps/ssw/events-collector-lambda/events/*
 /sfp/universal_analytics.min.
@@ -69144,7 +69147,6 @@ hindustantimes.com##+js(set-local-storage-item, ht_cdp, $remove$)
 ||asadcdn.com/flairfire/
 wowhead.com##+js(set-local-storage-item, zafusr, $remove$)
 wowhead.com##+js(set-session-storage-item, zafusr, $remove$)
-||api.*.exponea.com^$domain=bogsfootwear.com|urbanstems.com
 ||slack.com/clog/track/
 ||vault.gostatera.com/collect/rap
 ||sooplive.co.kr/js/google.analytics.js
@@ -69312,7 +69314,6 @@ themirror.com##reach-topbox
 ||apm.infoldgames.com/v1/log/sendtlog
 ||payments.google.com/gp/w/*/PaymentsPortals/web-reports?
 ||payments.google.com/payments/jslogs?
-||api-bloomreach.comfy.ua/js/exponea.min.js
 ||titanprod.narvar.com/*/track|
 ||adultswim-vodlive.cdn.turner.com/csm/analytics
 ||homemate.co.jp/common/js/beacon/real_estate_detail.js
@@ -73290,6 +73291,10 @@ mail.ferret-one.com%2Fbeacon$image
 %2FCI0%2F0$image
 /ss/o/*/ho.gif$image
 %2Fss%2Fo%2F*%2Fho.gif$image
+healio.com/medialibrary/pixel.png?tp=
+healio.com%2Fmedialibrary%2Fpixel.png%3Ftp%3D
+e.healio.com/*.php?ID=$image
+e.healio.com%2F*.php%3FID%3D$image
 it-recht-kanzlei.de/logo/Copyright-Logo.png?i=
 it-recht-kanzlei.de%2Flogo%2FCopyright-Logo.png%3Fi%3D
 mail01.monex.co.jp/bin/checker?$image
@@ -73791,6 +73796,7 @@ dlsdk.appsflyer.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||app.siteperformancetest.net^
 ||events-stream-svc.cordial.io^
 ||events.gonative.io^
 ||matomo.podslink.net^
