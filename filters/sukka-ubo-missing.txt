@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Fri, 16 Jan 2026 03:26:03 GMT
+! Last modified: Fri, 16 Jan 2026 06:35:08 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.98.59
+!   - Version: 2.0.98.62
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -47765,6 +47765,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||mixpanel.tigocloud.net^
 ||analytics.launcherleaks.net^
 ||ingest.webcol.sdp.peacocktv.com^
 ||t.collectiveaudience.co^
@@ -73796,6 +73797,9 @@ dlsdk.appsflyer.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||clarity.ms^|
+||engagelab.cc^
+||global-sis.engagelab.com^
 ||app.siteperformancetest.net^
 ||events-stream-svc.cordial.io^
 ||events.gonative.io^
@@ -74863,6 +74867,9 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=saturn.de
 @@||metrics.us.playstation.com/b/ss/
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
+@@||cdn.cxense.com/cx.cce.js$domain=elle.com
+@@||cdn.cxense.com/cx.js$domain=elle.com
+@@||api.cxense.com/public/widget/data?json=$domain=elle.com
 @@||live.mrf.io/statics/marfeel/gardac-sync.js$domain=muylinux.com
 investor-web.hdfcfund.com##+js(set-constant, smartech, noopFunc)
 @@||a.klaviyo.com/client/subscriptions/
