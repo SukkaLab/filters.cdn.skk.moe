@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sat, 17 Jan 2026 10:14:03 GMT
+! Last modified: Sat, 17 Jan 2026 14:26:55 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,16 +8,16 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sat, 17 Jan 2026 05:09:49 +0000
+!   - Last modified: Sat, 17 Jan 2026 06:27:33 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Fri, 16 Jan 2026 04:39:27 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Fri, 16 Jan 2026 04:08:54 +0000
+!   - Last modified: Sat, 17 Jan 2026 06:19:20 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
-!   - Last modified: Fri, 16 Jan 2026 02:04:29 +0000
+!   - Last modified: Sat, 17 Jan 2026 06:13:41 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
 !   - Last modified: Fri, 16 Jan 2026 15:00:02 +0000
@@ -27,7 +27,7 @@
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Thu, 15 Jan 2026 09:32:20 +0000
+!   - Last modified: Sat, 17 Jan 2026 07:50:24 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
 !   - Last modified: Wed, 14 Jan 2026 06:23:15 +0000
@@ -22234,6 +22234,7 @@ canal1.com.co##.sticky.top-14:style(position: relative !important; top: 0rem !im
 filmex.to##+js(no-fetch-if, method:HEAD)
 ||paketda.de/detect-ab.js
 mmsbee47.com##+js(rmnt, script, dismissAdBlock)
+justembeds.xyz##+js(nowoif)
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -27826,6 +27827,9 @@ dailydot.com##+js(no-fetch-if, url:/undefined method:POST)
 ||spezialklinik-neukirchen.de/matomo/matomo.js$important
 ||nouvelobs.com/*?s=$ping
 ||analytics-service.api.linkme.global^
+itmedia.co.jp##+js(remove-cookie, /cX_P|_pc/)
+itmedia.co.jp##+js(set-local-storage-item, /^_cX_/, $remove$)
+||analytics.fmovies4u.com^
 /edgemesh.*.js$script,domain=~edgemesh.com|~edgeno.de
 ||safelinkconverter.com^$script,3p
 /adsensebase.js$script
@@ -29074,7 +29078,7 @@ pewresearch.org##+js(set, ga, noopFunc)
 @@||googletagmanager.com/gtm.js$script,domain=shockwave.com
 ||videoplayerhub.com^$script,domain=shockwave.com,redirect-rule=noopjs
 ||natureetdecouvertes.com^$1p,image,redirect-rule=2x2.png
-||cxense.com/cx.js$script,redirect=noop.js,domain=itmedia.co.jp
+@@||cdn.cxense.com/cx.js$domain=itmedia.co.jp
 ilbianconero.com##.no-scroll:style(overflow:auto!important)
 @@||googletagmanager.com/gtm.js$script,domain=insideevs.com
 @@||googletagmanager.com/gtm.js$script,domain=suspilne.media
@@ -30379,6 +30383,7 @@ nijie.info/ad_log.php#@#._banner_view
 personality-database.com##+js(set, freestar.newAdSlots, trueFunc)
 ||content-loader.com^$badfilter
 ||cloudbuild.splashtop.com^$all,badfilter
+||dynatrace.com^$script,redirect=noopjs,domain=statefarm.com
 ! uBlock filters – Quick fixes https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
 @@||hb.vntsm.com/v4/live/vms/sites/aternos.org/index.js$script,domain=aternos.org
 aternos.org##.header-center:style(margin-top:-5000px !important;)
@@ -32759,6 +32764,11 @@ cdn.privacy-mgmt.com##+js(trusted-click-element, button[title="REJECT ALL"], , 1
 @@||consent.cookiebot.com/uc.js$script,domain=vcg.de
 @@||consent.cookiebot.com/*/cc.js
 vcg.de##+js(trusted-click-element, '#CybotCookiebotDialog input#CybotCookiebotDialogBodyLevelButtonPreferences, #CybotCookiebotDialog input#CybotCookiebotDialogBodyLevelButtonStatistics, #CybotCookiebotDialog input#CybotCookiebotDialogBodyLevelButtonMarketing, #CybotCookiebotDialog button#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection')
+huk24.de##+js(trusted-click-element, [style] > [style] > s-button[data-testid="button--einstellungen-speichern"] > button.s-button__button)
+huk24.de##+js(set-cookie, consent_technical, ALLOW)
+huk24.de##+js(set-cookie, consent_marketing, DENY)
+huk24.de##+js(set-cookie, consent_functional, DENY)
+huk24.de##+js(trusted-set-cookie, consent_version, 2.8)
 ! uBlock filters – Annoyances https://ublockorigin.pages.dev/filters/annoyances.min.txt
 mimaletadepeliculas.blogspot.com##+js(aopr, document.oncontextmenu)
 mimaletadepeliculas.blogspot.com##+js(acs, document.onselectstart)
