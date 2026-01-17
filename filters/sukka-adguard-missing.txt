@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sat, 17 Jan 2026 14:26:55 GMT
+! Last modified: Sat, 17 Jan 2026 18:26:51 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -20,7 +20,7 @@
 !   - Last modified: Sat, 17 Jan 2026 06:13:41 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Fri, 16 Jan 2026 15:00:02 +0000
+!   - Last modified: Sat, 17 Jan 2026 15:16:48 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
 !   - Last modified: Tue, 23 Dec 2025 15:03:38 +0000
@@ -30488,7 +30488,8 @@ japscan.*##+js(trusted-suppress-native-method, Document.prototype.querySelectorA
 japscan.*##.YouGot + span:remove()
 japscan.*##+js(trusted-suppress-native-method, Document.prototype.querySelectorAll, '"/^\[[a-z]{5}-/"')
 japscan.*##[class^="Kiss" i] > span:remove()
-japscan.*##+js(trusted-suppress-native-method, Document.prototype.querySelectorAll, '"/^\[[a-ce-z][a-z]{3}-/"')
+japscan.*##.LoveYou > span:remove()
+japscan.*##+js(trusted-suppress-native-method, Document.prototype.querySelectorAll, '"/^\[[a-ce-z][b-z][a-z]{2}-/"')
 poophq.com,veev.to,doods.to##+js(nowoif)
 poophq.com,veev.to,doods.to##+js(no-xhr-if, /vast.php?)
 poophq.com,veev.to,doods.to##+js(no-xhr-if, /click\.com|preroll|native_render\.js|acscdn/, length:10001)
