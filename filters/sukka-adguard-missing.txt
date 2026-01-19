@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Mon, 19 Jan 2026 06:39:28 GMT
+! Last modified: Mon, 19 Jan 2026 10:20:31 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,19 +8,19 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Mon, 19 Jan 2026 01:58:43 +0000
+!   - Last modified: Mon, 19 Jan 2026 04:42:45 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Fri, 16 Jan 2026 04:39:27 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Mon, 19 Jan 2026 01:37:02 +0000
+!   - Last modified: Mon, 19 Jan 2026 04:35:22 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
 !   - Last modified: Sat, 17 Jan 2026 06:13:41 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Sun, 18 Jan 2026 12:39:12 +0000
+!   - Last modified: Mon, 19 Jan 2026 05:33:28 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
 !   - Last modified: Tue, 23 Dec 2025 15:03:38 +0000
@@ -7726,6 +7726,7 @@ hdhub4u.fail,hubdrive.*,moviesubtitles.click,telegratuita.com##+js(aeld, DOMCont
 /player/jw8/vast.js?$domain=~autoembed.cc
 /banner.go?spaceid=
 ||ssl.p.jwpcdn.com/player/v/*/vast.js$script
+||ssl.p.jwpcdn.com/player/v/*/freewheel.js$script
 /^https?:\/\/a\.[-0-9a-z]{4,21}\.[a-z]{2,5}\/(?=[a-z]*[0-9A-Z])[0-9a-zA-Z]{5,8}\.js$/$script,match-case
 /^https?:\/\/ar\.[-0-9a-z]{4,21}\.[a-z]{2,5}\/(?=[a-z]*[0-9A-Z])[0-9a-zA-Z]{5,8}\.js$/$script,match-case
 /^https?:\/\/asg\.[-0-9a-z]{4,21}\.[a-z]{2,5}\/(?=[a-z]*[0-9A-Z])[0-9a-zA-Z]{5,8}\.js$/$script,match-case
@@ -20687,7 +20688,7 @@ read.amazon.*##+js(trusted-click-element, .kw-ads-pagination-button:first-child\
 9gag.com##.billboard-top-wrapper
 9gag.com###top-navb:style(top: 0 !important;)
 nfl.com##[class$="adblock"]
-baltimoreravens.com,nfl.com,seahawks.com##+js(trusted-prevent-fetch, imasdk, ad.doubleclick.net bid.g.doubleclick.net ggpht.com google.co.uk google.com googleads.g.doubleclick.net googleads4.g.doubleclick.net googleadservices.com googlesyndication.com googleusercontent.com gstatic.com gvt1.com prod.google.com pubads.g.doubleclick.net s0.2mdn.net static.doubleclick.net surveys.g.doubleclick.net youtube.com ytimg.com)
+baltimoreravens.com,chicagobears.com,nfl.com,seahawks.com##+js(trusted-prevent-fetch, imasdk, ad.doubleclick.net bid.g.doubleclick.net ggpht.com google.co.uk google.com googleads.g.doubleclick.net googleads4.g.doubleclick.net googleadservices.com googlesyndication.com googleusercontent.com gstatic.com gvt1.com prod.google.com pubads.g.doubleclick.net s0.2mdn.net static.doubleclick.net surveys.g.doubleclick.net youtube.com ytimg.com)
 @@||savelinks.*^$ghide
 savelinks.*##+js(aopr, LieDetector)
 savelinks.*##+js(nowoif)
@@ -27826,7 +27827,7 @@ jxoplay.xyz,zorroplay.xyz##+js(rmnt, script, sendFakeRequest)
 dlhd.*>>,~chatango.com##+js(rmnt, script, sendFakeRequest)
 ||bg-gledai.video/wp-content/plugins/crypto-converter-widget/$script,1p
 ||cdn.jsdelivr.net/gh/dejurin/crypto-converter-widget$script,domain=bg-gledai.video
-archive.fo,archive.is,archive.li,archive.ph,archive.today,archive.vn##+js(nosiif, fetch)
+archive.fo,archive.is,archive.li,archive.md,archive.ph,archive.today,archive.vn##+js(nosiif, fetch)
 ! uBlock filters – Unbreak https://ublockorigin.pages.dev/filters/unbreak.min.txt
 @@||awstrack.me/*auth.coindesk.com$doc,popup
 @@||awstrack.me/*cmd=ac-inactive-restore$doc,popup
@@ -30411,14 +30412,13 @@ japscan.*##[class*="W"][class*="ll"] > span:remove()
 japscan.*##[class^="WidthF"] > span:remove()
 japscan.*##[class^="FuWidth"] > span:remove()
 japscan.*##[class^="Fllid"] > span:remove()
-japscan.*##+js(trusted-suppress-native-method, Document.prototype.querySelectorAll, '"/^\[d[a-z]t[a-z]?-[a-z]{3}\]$/"')
+japscan.*##+js(trusted-suppress-native-method, Document.prototype.querySelectorAll, '"/^\[d[a-z]t[a-z]?-[a-z]{2,3}\]$/"')
 japscan.*##+js(trusted-suppress-native-method, Document.prototype.querySelectorAll, '"/^\[[a-z]{2,3}-/"')
 japscan.*##+js(trusted-suppress-native-method, Document.prototype.querySelectorAll, '"/^\[data-[a-z]+src\]$/"')
 japscan.*##.YouGot + span:remove()
 japscan.*##+js(trusted-suppress-native-method, Document.prototype.querySelectorAll, '"/^\[[a-z]{5}-/"')
 japscan.*##[class^="Kiss" i] > span:remove()
-japscan.*##.LoveYou > span:remove()
-japscan.*##.YouLove > span:remove()
+japscan.*##[class*="Love" i] > span:remove()
 japscan.*##+js(trusted-suppress-native-method, Document.prototype.querySelectorAll, '"/^\[[a-ce-z][a-z]+-/"')
 japscan.*##+js(trusted-suppress-native-method, Document.prototype.querySelectorAll, '"/^\[d[b-z][a-z]*-/"')
 poophq.com,veev.to,doods.to##+js(nowoif)
