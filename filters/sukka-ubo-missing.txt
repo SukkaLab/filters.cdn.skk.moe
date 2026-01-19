@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Mon, 19 Jan 2026 03:45:45 GMT
+! Last modified: Mon, 19 Jan 2026 06:39:28 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.98.73
+!   - Version: 2.0.98.75
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -47766,6 +47766,11 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||event-storage.netmonet.co^
+||neviju.netmonet.co^
+||jaeger.netmonet.co^
+||wap.wovn.io^
+||falcon.useinsider.com^
 ||sp.pluto.tv^
 ||service-ad-image-ga-weighted.prd.pluto.tv^
 ||tracking.carfax.com^
@@ -68087,6 +68092,9 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||ff.netmonet.co/api/frontend/client/metrics
+||ee.wovn.io/report_values/
+||datacore-write.securitytrfx.com/blob/em_cmp_lib_tracking/
 ||cdn1.adoberesources.net/alloy/$domain=pluto.tv
 ||autotrader.com/pixall/
 ||partner.awscconsumerinfo.autotrader.com/*/beacon/
@@ -73560,7 +73568,8 @@ clicks.mlsend2.com$image
 email.send.aliyana.in$image
 links.kahoot.com$image
 track.team.kahoot.com$image
-signup.com$image
+signup.com/imp?$image
+signup.com%2Fimp%3F$image
 email.cloud2.secureclick.net$image
 nyb.soundestlink.com*track$image
 ad.doubleclick.net*trackimp$image
@@ -73694,6 +73703,10 @@ nethunt.com/api/v1/track/email/$image
 twitter.com/scribe/ibis?t=$image
 twitter.com%2Fscribe%2Fibis%3Ft%3D$image
 @@||googletagmanager.com/gtm.js$domain=oto.net
+||netmonet.co^$removeparam=id
+||netmonet.co^$removeparam=wpid
+||netmonet.co^$removeparam=visitId
+||netmonet.co^$removeparam=operation
 ||adeventtracker.spotify.com^
 ||do-not-tracker.org^
 ||eviltracker.net^
