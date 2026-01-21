@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Wed, 21 Jan 2026 18:39:38 GMT
+! Last modified: Wed, 21 Jan 2026 22:30:26 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.98.96
+!   - Version: 2.0.98.98
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -96666,6 +96666,7 @@ zjjz6lpv44aguszo.cloud.s11.sfmc-osl.com$image
 /^https?:\/\/(?!assets|script|static)(?:[0-9a-z]{10,13}|[0-9a-z]{6})\.[0-9A-Za-z.\-_]+\/(?=[0-9a-z+\/\-]*[A-Z])[0-9A-Za-z+\/\-]{80,106}$/$match-case,script,~3p
 /^https:\/\/cs\d{3}\.\w+\.com\/cscript\/\d{3}\/[\w\d]+\.js$/$script,3p,match-case
 /.well-known/private-click-measurement
+/statistics/md.gif?
 /sp-2.0.0-dm-0.1.min.js
 /i?e=pv&page=
 /js/exponea.min.js
@@ -108130,6 +108131,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||sortstructure.com^
 ||soulclicking.com^
 ||soundstocking.com^
+||sourcecodeinfo.com^
 ||sourceoak.com^
 ||sowlettuce.com^
 ||spaceaffinity.com^
@@ -108378,6 +108380,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||tritebadge.com^
 ||tritethunder.com^
 ||tritetongue.com^
+||triumphbull.com^
 ||tropicalpal.com^
 ||troubleshade.com^
 ||truckstomatoes.com^
