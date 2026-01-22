@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Thu, 22 Jan 2026 18:29:58 GMT
+! Last modified: Thu, 22 Jan 2026 22:28:44 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Thu, 22 Jan 2026 08:33:46 +0000
+!   - Last modified: Thu, 22 Jan 2026 20:29:48 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Tue, 20 Jan 2026 05:20:26 +0000
@@ -14989,9 +14989,10 @@ livetvon.*##+js(aopw, u_cfg)
 *$script,3p,denyallow=chatango.com,domain=livetvon.*
 cricfree.*##+js(aopr, afScript)
 ###micast_ads
-dropmms.com##+js(aeld, load, undefined)
-dropmms.com##+js(acs, document.onkeydown)
+dropmms.*##+js(aeld, load, undefined)
+dropmms.*##+js(acs, document.onkeydown)
 *$frame,script,3p,domain=dropmms.*
+@@||challenges.cloudflare.com/cdn-cgi/$subdocument,domain=dropmms.*
 ||dropmms.*/adprovider.js^
 ||spiddefrexpron.com^
 bloground.ro##+js(nostif, show)
@@ -21638,7 +21639,7 @@ pstream.*##.bg-buttons-purple:has(> button[aria-label="Dismiss ad"])
 policesecurity.com##+js(nosiif, EFFECTIVE_APPS_GCB_BLOCKED_MESSAGE)
 ||tv.onefootball.com/assets/videojs-contrib-ads$script,redirect=noopjs
 tv.onefootball.com##+js(rpnt, script, 'function OptanonWrapper() {}', '/*start*/(()=>{const o={apply:(o,t,e)=>("ads"===e[0]&&"object"==typeof t&&null!==t&&(t.ads=()=>{}),Reflect.apply(o,t,e))};window.Object.prototype.hasOwnProperty=new Proxy(window.Object.prototype.hasOwnProperty,o)})();document.currentScript.textContent=document.currentScript.textContent.replace(/\/\*start\*\/(.*)\/\*end\*\//g,"");/*end*/function OptanonWrapper() {}')
-indexsubtitle.cc##+js(nostif, _0x)
+indexsubtitle.cc##+js(nostif, 0x)
 windroid777.com##+js(rmnt, script, detectAdBlock)
 mediamarkt.be##+js(no-fetch-if, method:HEAD)
 lightningmaps.org###wb_right:has(.adsbygoogle):style(right: 0 !important)
@@ -22139,6 +22140,7 @@ movix.blog##+js(trusted-click-element, button[aria-label^="Voir une"])
 movix.blog##+js(trusted-click-element, button[aria-label="Lancer la lecture"])
 pasteflash.sx##+js(nosiif, blocked)
 mmsmasala27.com,mmsbee27.com##+js(rmnt, script, function(error))
+modocine.com##+js(rmnt, script, offsetHeight)
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
