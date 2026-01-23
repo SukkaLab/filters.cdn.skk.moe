@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Fri, 23 Jan 2026 14:33:58 GMT
+! Last modified: Fri, 23 Jan 2026 18:30:36 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,10 +8,10 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Fri, 23 Jan 2026 10:23:25 +0000
+!   - Last modified: Fri, 23 Jan 2026 15:39:12 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
-!   - Last modified: Fri, 23 Jan 2026 04:27:54 +0000
+!   - Last modified: Fri, 23 Jan 2026 13:24:35 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
 !   - Last modified: Tue, 20 Jan 2026 05:33:00 +0000
@@ -20,17 +20,17 @@
 !   - Last modified: Fri, 23 Jan 2026 10:53:23 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Fri, 23 Jan 2026 04:35:01 +0000
+!   - Last modified: Fri, 23 Jan 2026 14:27:15 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
 !   - Last modified: Tue, 23 Dec 2025 15:03:38 +0000
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Fri, 23 Jan 2026 08:43:46 +0000
+!   - Last modified: Fri, 23 Jan 2026 12:28:35 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
-!   - Last modified: Fri, 23 Jan 2026 08:46:14 +0000
+!   - Last modified: Fri, 23 Jan 2026 13:03:53 +0000
 ! --------------------------------------------------------------
 ! uBlock filters https://ublockorigin.pages.dev/filters/filters.min.txt
 *_ad_$media,domain=youtube.com,3p
@@ -3993,8 +3993,7 @@ fuqer.com##.right > .text
 fuqer.com#@#.spot-thumbs > .right
 @@||villatalk.com^$ghide
 lurdchinexgist.blogspot.com##+js(aeld, load, 2000)
-sharemods.com##+js(nowebrtc)
-sharemods.com##iframe[data-id$="_DFP"]
+sharemods.com##+js(nano-stb, tick, 1000, 0.001)
 *$script,3p,denyallow=bootstrapcdn.com|cloudflare.com|cloudflare.net|cookieinfoscript.com|fastly.net|fastlylb.net|google.com|googleapis.com|gstatic.com|hcaptcha.com|hwcdn.net|jquery.com|recaptcha.net|setupcmp.com|sharethis.com,domain=sharemods.com
 modsbase.com##+js(nowebrtc)
 @@||65creedmoor.com^$ghide
@@ -9697,6 +9696,7 @@ pornone.com##+js(acs, $, adblock)
 pornone.com##.vjs-paused > .warp
 pornone.com##a[href*="//prtord.com/"]
 pornone.com##.vjs-info-top
+||pornone.com/js/combined.js
 sythe.org##+js(acs, $, adblocker)
 sythe.org##+js(acs, document.getElementsByTagName, adblocker)
 /?referral=sythe$all
@@ -15097,7 +15097,6 @@ udvl.com##+js(rmnt, script, serve)
 udvl.com###adv4-wrap
 udvl.com##+js(aeld, DOMContentLoaded, popupurls)
 laptechinfo.com##+js(nostif, show)
-imageupscaler.com##+js(aost, document.querySelectorAll, /(?=^(?!.*(https|Parse|Image)))/)
 *$script,domain=faucetcrypto.net,redirect-rule=noopjs
 faucetcrypto.net##+js(set, blurred, false)
 /display/items.php?$script,3p
@@ -22138,6 +22137,8 @@ mmsmasala27.com,mmsbee27.com##+js(rmnt, script, function(error))
 modocine.com##+js(rmnt, script, offsetHeight)
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=noopjs,domain=numuki.com
 numuki.com##.center.wlimit.mb10.bg-white.rounded.mid-section:has(.advHeader)
+magma.com##+js(trusted-json-edit-fetch-response, ..data.expectingAds=false, propsToMatch, /profile)
+magma.com##+js(rpnt, script, \,"ads")
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -26403,6 +26404,7 @@ sport.elwatannews.com##+js(aost, Array.prototype.indexOf, isWin)
 ||iploits.com^$all
 ||7zip.com^$all
 ||7zip.cloud^$all
+||wploits.com^$all
 ! uBlock filters – Privacy https://ublockorigin.pages.dev/filters/privacy.min.txt
 ||google-analytics.com/analytics.js$script,xhr,redirect=google-analytics_analytics.js:5
 ||google-analytics.com/cx/api.js$script,redirect=google-analytics.com/cx/api.js:5
@@ -30382,7 +30384,7 @@ pvpoke-re.com##+js(ra, data-instype, ins.adsbygoogle:has(> div#aswift_0_host), s
 pvpoke-re.com##+js(trusted-set-attr, ins.adsbygoogle.nitro-side\,ins.adsbygoogle.nitro-banner, data-ad-status, filled)
 pvpoke-re.com##+js(no-fetch-if, url:https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-3497863494706299 method:HEAD mode:no-cors, , , throttle, 121)
 pvpoke-re.com##+js(trusted-replace-argument, String.prototype.indexOf, 0, json:"/", condition, /premium)
-pvpoke-re.com##+js(trusted-rpnt, script, var menuSlideProtection, /*start*/!function(){const t=Function.prototype.toString\,e=new WeakMap;function n(t\,n){return e.set(t\,`function ${n}() { [native code] }`)\,t}Function.prototype.toString=function(){return e.has(this)?e.get(this):t.apply(this\,arguments)}\,n(Function.prototype.toString\,"toString");const o=Function.prototype.bind;Function.prototype.bind=n((function(t\,...e){return o.apply(this\,arguments)})\,"bind");const r=t=>{try{Object.defineProperties(t\,{contentWindow:{get:()=>window\,configurable:!0}\,contentDocument:{get:()=>document\,configurable:!0}})}catch(t){}}\,i=document.createElement;document.createElement=n((function(t){const e=i.apply(this\,arguments);return t&&"iframe"===t.toLowerCase()&&r(e)\,e})\,"createElement");const c=Element.prototype.appendChild;Element.prototype.appendChild=n((function(t){return t&&"IFRAME"===t.tagName&&r(t)\,c.apply(this\,arguments)})\,"appendChild");let p=0\,s=Date.now()\,a=!1;const u=t=>{if(!t)return!1;const e=t.split("\n").length-1\,n=t.includes("_executeCallback")\,o=/at\s+([0-9A-Z_a-z]{1\,3}|<anonymous>)\s+\(/.test(t);return e>=4&&e<=6&&(n||o)}\,l=(t\,e)=>{const o=t[e];t[e]=n((function(t){if(0===arguments.length||void 0===t)return o.apply(this\,arguments);if(("iframe"===t||"IFRAME"===t)&&u((new Error).stack)){const t=o.apply(this\,arguments)\,e=(t=>{const e=Date.now()\,n=e-s;s=e\,p>=3&&n>2e3&&(a=!0);let o=t;return a?o=p%2==0?12:11:0===p?t>7&&(o=4):t>9&&(o=8)\,o})(t.length);return p++\,new Proxy(t\,{get:(t\,n)=>"length"===n?e:t[n]})}return o.apply(this\,arguments)})\,e)};l(document\,"querySelectorAll")\,l(document\,"getElementsByTagName")\,l(Element.prototype\,"querySelectorAll")\,l(Element.prototype\,"getElementsByTagName");const y=Array.prototype.push;Array.prototype.push=n((function(...t){try{if(u((new Error).stack)){const e=["fetch"\,"XMLHttpRequest"]\,n=t.filter((t=>!e.includes(t)));return 0===n.length&&t.length>0?this.length:y.apply(this\,n)}}catch(t){}return y.apply(this\,t)})\,"push");const g=window.addEventListener;window.addEventListener=n((function(t\,e\,n){return"message"===t&&"function"==typeof e&&e.toString().includes("googMsgType")&&setTimeout((()=>{try{const t=document.getElementsByTagName("iframe");for(let n=0;n<t.length;n++){const o=t[n].contentWindow;if(!o)continue;const r=JSON.stringify({msg_type:"resize-me"\,key_value:[{key:"r_nh"\,value:"0"}\,{key:"r_ifr"\,value:"true"}\,{key:"qid"\,value:"CKjPmM7ezpEDFbyJ6QUdM0o3rw"}]\,googMsgType:"pvt"\,token:"AOrYGskPiXMUpj3CJQ8LsihEHwbNcui1URgWacoUghpsHfMEVL2nwMKey1eyEl6h8i29ah7WTlje42evSBak30X4pe673BR-KOZpAhiqCJO20pQ"});e({data:r\,source:o\,origin:"*"})}}catch(t){}})\,10)\,g.apply(this\,arguments)})\,"addEventListener")}();document.currentScript.textContent=document.currentScript.textContent.replace(/\/\*start\*\/(.*)\/\*end\*\//\,"");/*end*/var menuSlideProtection, sedCount, 1)
+pvpoke-re.com##+js(trusted-rpnt, script, var menuSlideProtection, /*start*/!function(){const t=Function.prototype.toString\,e=new WeakMap;function n(t\,n){return"function"==typeof t&&e.set(t\,`function ${n}() { [native code] }`)\,t}Function.prototype.toString=n((function(){if(e.has(this))return e.get(this);return["XMLHttpRequest"\,"fetch"\,"querySelectorAll"\,"bind"\,"push"\,"toString"].includes(this.name)?`function ${this.name}() { [native code] }`:t.apply(this\,arguments)})\,"toString");const o=Function.prototype.bind;Function.prototype.bind=n((function(t\,...e){return o.apply(this\,arguments)})\,"bind");const r=t=>{try{const e=Object.getOwnPropertyDescriptor(HTMLIFrameElement.prototype\,"contentWindow").get;Object.defineProperty(t\,"contentWindow"\,{get:function(){const t=e.apply(this);return t&&t.Function&&t.Function.prototype.toString!==window.Function.prototype.toString&&(t.Function.prototype.toString=window.Function.prototype.toString)\,t}\,configurable:!0})}catch(t){}}\,i=document.createElement;document.createElement=n((function(t){const e=i.apply(this\,arguments);return t&&"iframe"===t.toLowerCase()&&r(e)\,e})\,"createElement");const c=Element.prototype.appendChild;Element.prototype.appendChild=n((function(t){return t&&"IFRAME"===t.tagName&&r(t)\,c.apply(this\,arguments)})\,"appendChild");let p=0\,s=Date.now()\,u=!1;const a=t=>{if(!t)return!1;const e=t.split("\n").length-1\,n=t.includes("_executeCallback")\,o=/at\s+([0-9A-Z_a-z]{1\,3}|<anonymous>)\s+\(/.test(t);return e>=4&&e<=6&&(n||o)}\,l=(t\,e)=>{const o=t[e];o&&(t[e]=n((function(t){if(0===arguments.length||void 0===t)return o.apply(this\,arguments);if(("iframe"===t||"IFRAME"===t)&&a((new Error).stack)){const t=o.apply(this\,arguments)\,e=(t=>{const e=Date.now()\,n=e-s;s=e\,p>=3&&n>2e3&&(u=!0);let o=t;return u?o=p%2==0?12:11:0===p?t>7&&(o=4):t>9&&(o=8)\,o})(t.length);return p++\,new Proxy(t\,{get:(t\,n)=>"length"===n?e:t[n]})}return o.apply(this\,arguments)})\,e))};l(document\,"querySelectorAll")\,l(Element.prototype\,"querySelectorAll")\,n(window.XMLHttpRequest\,"XMLHttpRequest")\,window.fetch&&n(window.fetch\,"fetch");const y=Array.prototype.push;Array.prototype.push=n((function(...t){try{if(a((new Error).stack)){const e=["fetch"\,"XMLHttpRequest"]\,n=t.filter((t=>!e.includes(t)));return 0===n.length&&t.length>0?this.length:y.apply(this\,n)}}catch(t){}return y.apply(this\,t)})\,"push");const h=window.addEventListener;window.addEventListener=n((function(t\,e\,n){return"message"===t&&"function"==typeof e&&e.toString().includes("googMsgType")&&setTimeout((()=>{try{const t=document.getElementsByTagName("iframe");for(let n=0;n<t.length;n++){const o=t[n].contentWindow;if(!o)continue;const r=JSON.stringify({msg_type:"resize-me"\,key_value:[{key:"r_nh"\,value:"0"}\,{key:"r_ifr"\,value:"true"}\,{key:"qid"\,value:"CKjPmM7ezpEDFbyJ6QUdM0o3rw"}]\,googMsgType:"pvt"\,token:"AOrYGskPiXMUpj3CJQ8LsihEHwbNcui1URgWacoUghpsHfMEVL2nwMKey1eyEl6h8i29ah7WTlje42evSBak30X4pe673BR-KOZpAhiqCJO20pQ"});e({data:r\,source:o\,origin:"*"})}}catch(t){}})\,10)\,h.apply(this\,arguments)})\,"addEventListener")}();document.currentScript.textContent=document.currentScript.textContent.replace(/\/\*start\*\/(.*)\/\*end\*\//\,"");/*end*/var menuSlideProtection, sedCount, 1)
 ||pvpoke-re.com/*.js?v=$replace=/try\{GameMaster/try{return;GameMaster/
 pvpoke-re.com##+js(trusted-override-element-method, HTMLIFrameElement.prototype.remove, iframe[src^="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-3497863494706299"])
 royalroad.com##.dKKumhSnWiFq75vPUVtmTanQ:has(a[href^="https://www.royalroad.com/a/r?campaign="]:not([href*="&url=https%3A%2F%2Fwww.royalroad.com"]))
@@ -30436,7 +30438,6 @@ tvtropes.org##+js(set, HTMLScriptElement.prototype.onerror, undefined)
 chzzkban.xyz##+js(no-fetch-if, pagead2.googlesyndication.com/pagead/js/adsbygoogle.js method:HEAD, emptyStr)
 chzzkban.xyz##+js(trusted-suppress-native-method, Node.prototype.contains, '{"className":"adsbygoogle"}', abort)
 ||akirabox.com^$script,domain=akirabox.to
-||mmcdn.com^$badfilter
 gsmarena.com#@#[id][style="display: block;"]
 historicaerials.com##+js(aeld, load, showFallbackModal)
 historicaerials.com##+js(rpnt, script, window.scriptExecuted = false;, '(()=>{const n={getSlotElementId:function(){return"historicaerials_728x90_ATF"},getResponseInformation:function(){return!0}},t={getSlots:function(){return[n]},addEventListener:function(){return this}};window.googletag=window.googletag||{pubads:function(){return t},apiReady:!0}})();window.scriptExecuted = false;')
@@ -32562,6 +32563,7 @@ huk24.de##+js(set-cookie, consent_technical, ALLOW)
 huk24.de##+js(set-cookie, consent_marketing, DENY)
 huk24.de##+js(set-cookie, consent_functional, DENY)
 huk24.de##+js(trusted-set-cookie, consent_version, 2.8)
+xnxx.com##+js(trusted-click-element, button#disclaimer-reject_cookies-btn)
 ! uBlock filters – Annoyances https://ublockorigin.pages.dev/filters/annoyances.min.txt
 mimaletadepeliculas.blogspot.com##+js(aopr, document.oncontextmenu)
 mimaletadepeliculas.blogspot.com##+js(acs, document.onselectstart)
@@ -32605,10 +32607,22 @@ world-novel.fr##+js(aeld, contextmenu, /preventDefault|pointerType/)
 foxaholic.com##body[onkeydown*="__cfRLUnblockHandlers"]:remove-attr(/onkeydown|onselectstart|oncontextmenu/)
 foxaholic.com##+js(ra, onkeydown|onselectstart|oncontextmenu, body[onkeydown*="__cfRLUnblockHandlers"], complete)
 isekaitube.com##+js(rpnt, script, "copyRProtection":true, "copyRProtection":false)
+utaten.com##.lyricBody[oncontextmenu]:remove-attr(/oncontextmenu|onselectstart/)
 oricon.co.jp##div.all-lyrics:remove-attr(/oncontextmenu|onselectstart|onmousedown/)
+j-lyric.net##body[oncontextmenu]:remove-attr(/oncontextmenu|onselectstart/)
+utaten.com##+js(ra, oncontextmenu|onselectstart, .lyricBody[oncontextmenu], complete)
 oricon.co.jp##+js(ra, oncontextmenu|onselectstart|onmousedown, .all-lyrics[oncontextmenu], complete)
+j-lyric.net##+js(ra, oncontextmenu|onselectstart, body[oncontextmenu], complete)
+||utaten.com/css/print.css
+utaten.com##.lyricBody:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important; -webkit-tap-highlight-color: revert !important; cursor: revert !important;)
 oricon.co.jp##+js(aeld, dragstart, , elements, .all-lyrics)
 oricon.co.jp##.all-lyrics:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important; -webkit-tap-highlight-color: revert !important; cursor: revert !important;)
+j-lyric.net##+js(rpnt, style, @media print {body { display: none !important; }})
+lyrical-nonsense.com##+js(rmnt, script, contextmenu)
+lyrical-nonsense.com##.olyrictext, .olyrictext-tv, .sbs-row:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important; -webkit-tap-highlight-color: revert !important; cursor: revert !important;)
+togetogebox.org##+js(rmnt, style, -ms-user-select: none)
+s.awa.fm##+js(aeld, contextmenu, [native code], elements, #__next)
+s.awa.fm##div[unselectable="on"] p[class]:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important; -webkit-tap-highlight-color: revert !important; cursor: revert !important;)
 kashinavi.com##body,div[oncopy],div.noprint:remove-attr(/oncontextmenu|onselectstart|style|oncopy|unselectable/)
 kashinavi.com##+js(ra, oncopy|onSelectStart|oncontextmenu|style, '[oncopy],[oncontextmenu]')
 @@||socialblade.com^$ghide
@@ -32943,7 +32957,6 @@ palemoon.org##+js(set, abd, false)
 portableapps.com##+js(nostif, innerHTML)
 animeunity.it##+js(ra, oncontextmenu)
 theartofnakedwoman.*##+js(aopw, intializemarquee)
-j-lyric.net##+js(ra, oncontextmenu|onselectstart)
 cagesideseats.com##+js(nostif, (), 1500)
 /wp-content/plugins/christmasify/*
 space-engineers.de##+js(acs, document.getElementById, undefined)
@@ -33492,8 +33505,6 @@ suedkurier.de##+js(ra, oncontextmenu)
 suedkurier.de##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
 utamap.com##+js(ra, oncontextmenu)
 utamap.com##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
-utaten.com##+js(ra, oncontextmenu|onselectstart, , stay)
-utaten.com##.lyricBody:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
 @@||mp3fy.com^$ghide
 verdadeiroolhar.pt##+js(acs, document.onselectstart)
 radarbox.com##+js(set, ads_enabled, true)
@@ -33928,7 +33939,6 @@ segnidalcielo.it##+js(nostif, google_jobrunner)
 fosspost.org##+js(nostif, an_message, 500)
 igniel.com##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
 hentaialtadefinizione.it##+js(aopw, onload)
-lyrical-nonsense.com##+js(aeld, copy)
 alltechnerd.com##+js(aopw, document.oncontextmenu)
 moneyguru.co##+js(acs, $, .height)
 ||rogersmedia.com/utilityx.js^$script,3p
@@ -35976,13 +35986,6 @@ spares2repair.co.uk##body:style(-webkit-user-select:text !important; -moz-user-s
 foodnavigator.com##+js(rpnt, script, CopyrightLayer, abc)
 liddread.com##+js(rmnt, script, /wpcp|contextmenu|unselectable/)
 liddread.com##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important; -webkit-tap-highlight-color: revert !important; cursor: revert !important;)
-togetogebox.org##+js(rmnt, style, -ms-user-select: none)
-lyrical-nonsense.com##+js(rmnt, style, moz-user-select:none)
-lyrical-nonsense.com##+js(rmnt, script, contextmenu)
-j-lyric.net##+js(set, document.body.oncontextmenu, null)
-j-lyric.net##+js(set, document.body.onselectstart, null)
-awa.fm##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
-awa.fm##+js(aeld, contextmenu, [native code])
 canuckaudiomart.com##+js(rmnt, script, as_init)
 kashiland.jp##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
 kashiland.jp##+js(rmnt, script, onselectstart)
