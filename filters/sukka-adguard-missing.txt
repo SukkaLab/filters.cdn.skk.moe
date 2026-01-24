@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sat, 24 Jan 2026 14:27:30 GMT
+! Last modified: Sat, 24 Jan 2026 18:27:42 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sat, 24 Jan 2026 12:26:47 +0000
+!   - Last modified: Sat, 24 Jan 2026 13:35:01 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Fri, 23 Jan 2026 13:24:35 +0000
@@ -20,10 +20,10 @@
 !   - Last modified: Fri, 23 Jan 2026 10:53:23 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Fri, 23 Jan 2026 14:27:15 +0000
+!   - Last modified: Sat, 24 Jan 2026 14:03:35 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
-!   - Last modified: Tue, 23 Dec 2025 15:03:38 +0000
+!   - Last modified: Sat, 24 Jan 2026 16:41:17 +0000
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
@@ -9462,6 +9462,8 @@ hentaila.tv##+js(json-prune, vast popup adblock)
 diaridetarragona.com##.c-add
 steamverde.net##+js(acs, addEventListener, bait)
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$redirect=noopjs,domain=envivo.tvazteca.com
+novelaplay.com##+js(aeld, DOMContentLoaded, bait)
+novelaplay.com##+js(nowoif)
 steamseries88.com##+js(rpnt, script, let playerType, 'window.addEventListener("load",()=>{if(typeof playMovie==="function"){playMovie()}});let playerType')
 isgfrm.com##+js(acs, document.createElement, .offsetHeight)
 isgfrm.com##+js(rmnt, script, /adbl|RegExp/i)
@@ -30311,7 +30313,7 @@ japscan.*##[class*="W"][class*="ll"] > span:remove()
 japscan.*##[class^="WidthF"] > span:remove()
 japscan.*##[class^="FuWidth"] > span:remove()
 japscan.*##[class^="Fllid"] > span:remove()
-japscan.*##+js(trusted-suppress-native-method, Document.prototype.querySelectorAll, '"/^\[d[a-z]t[a-z]?-[a-z]{2,4}\]$/"')
+japscan.*##+js(trusted-suppress-native-method, Document.prototype.querySelectorAll, '"/^\[d[a-z]t[a-z]?-[0-9a-z]{2,4}\]$/"')
 japscan.*##+js(trusted-suppress-native-method, Document.prototype.querySelectorAll, '"/^\[[a-z]{2,3}-/"')
 japscan.*##+js(trusted-suppress-native-method, Document.prototype.querySelectorAll, '"/^\[data-[a-z]+src\]$/"')
 japscan.*##.YouGot + span:remove()
@@ -30322,6 +30324,8 @@ japscan.*##+js(trusted-suppress-native-method, Document.prototype.querySelectorA
 japscan.*##+js(trusted-suppress-native-method, Document.prototype.querySelectorAll, '"/^\[d[b-z][a-z]*-/"')
 japscan.*##[class*="Wo"] > span:remove()
 japscan.*##[id^="note"] > span:remove()
+japscan.*##.KolMe > span:remove()
+japscan.*##span#chapters:remove()
 poophq.com,veev.to,doods.to##+js(nowoif)
 poophq.com,veev.to,doods.to##+js(no-xhr-if, /vast.php?)
 poophq.com,veev.to,doods.to##+js(no-xhr-if, /click\.com|preroll|native_render\.js|acscdn/, length:10001)
@@ -30495,6 +30499,7 @@ www.youtube.com#@#+js(trusted-rpnt, script, (function serverContract(), (()=>{if
 www.youtube.com##+js(trusted-rpnt, script, (function serverContract(), '(()=>{if("YOUTUBE_PREMIUM_LOGO"===ytInitialData?.topbar?.desktopTopbarRenderer?.logo?.topbarLogoRenderer?.iconImage?.iconType||location.href.startsWith("https://www.youtube.com/tv#/")||location.href.startsWith("https://www.youtube.com/embed/"))return;window.ytInitialPlayerResponse=window.ytInitialPlayerResponse||{},document.addEventListener("DOMContentLoaded",(function(){const e=()=>{const e=document.getElementById("movie_player");if(!e)return;const t=e.getProgressState?.();if(t&&t.duration>0&&(t.loaded<t.duration||t.duration-t.current>1)){if(!e.getStatsForNerds?.()?.debug_info?.startsWith?.("SSAP, AD")){const t=e.getPlayerResponse?.();if("no_ads"in t||"adPlacements"in t||"adSlots"in t||"playerAds"in t){const o=t.videoDetails?.videoId;window.ytInitialPlayerResponse?.videoDetails?.videoId!==o&&(window.ytInitialPlayerResponse.storyboards=t.storyboards,e.loadVideoById(o,t.playerConfig?.playbackStartConfig?.startSeconds??0))}return}e.seekTo?.(t.duration)}};e(),new MutationObserver((()=>{e()})).observe(document,{childList:!0,subtree:!0})}));const e={apply:(e,t,o)=>{const n=o[0];return"function"==typeof n&&n.toString().includes("onAbnormalityDetected")&&(o[0]=function(){}),Reflect.apply(e,t,o)}};window.Promise.prototype.then=new Proxy(window.Promise.prototype.then,e);const t={apply:(e,t,o)=>{let n=Reflect.apply(e,t,o);const a=n?.videoDetails?.videoId;return a&&location.search.includes(a)&&window.ytInitialPlayerResponse?.storyboards?.playerStoryboardSpecRenderer&&(n.storyboards=window.ytInitialPlayerResponse.storyboards,window.ytInitialPlayerResponse.storyboards={}),n}};window.JSON.parse=new Proxy(window.JSON.parse,t),window.location.href.includes("/watch?")&&"BADGE_STYLE_TYPE_MEMBERS_ONLY"!==ytInitialData?.contents?.twoColumnWatchNextResults?.results?.results?.contents?.[0]?.videoPrimaryInfoRenderer?.badges?.[0]?.metadataBadgeRenderer?.style&&"CONTENT_CHECK_REQUIRED"!==window.ytInitialPlayerResponse?.playabilityStatus?.status&&window.addEventListener("load",(()=>{const e=async function(e){let t=document.getElementById(e);for(;!t;)t=await new Promise((t=>setTimeout((()=>t(document.getElementById(e))),500)));return t}("movie_player"),t=window.location.search,o=new URLSearchParams(t).get("v"),n=new URLSearchParams(t).get("t")??0;if(!e||!o)return;const a=parseInt(n,10);e.then((function(e){e.loadVideoById(o,a)}))}))})();(function serverContract()', sedCount, 1)
 www.youtube.com##+js(trusted-json-edit-xhr-request, [?..context.client.mainAppWebInfo.graftUrl^="https://www.youtube.com/watch"]..playbackContext[?.contentPlaybackContext]+={"adPlaybackContext":{"adType":"AD_TYPE_INSTREAM"}}, propsToMatch, /\/(player|get_watch)/)
 www.youtube.com##+js(trusted-json-edit-xhr-response, '..playerConfig.granularVariableSpeedConfig+={"minimumPlaybackRate":25,"maximumPlaybackRate":200}', propsToMatch, /\/(player|get_watch)/)
+www.youtube.com##+js(trusted-prune-inbound-object, JSON.stringify, 1, context.client.configInfo.appInstallData)
 ||ttvnw.net/v1/playlist$xhr,3p,replace=/#EXT-X-DATERANGE:ID="(stitched-ad|maf-ad|source|trigger)"\S+\n|#EXT-X-DATERANGE:ID=\S+?CLASS="twitch-(?:stream-source|trigger|maf-ad)"\S+\n|#EXT-X-DATERANGE:\S+?CLASS="twitch-ad-quartile".+?(?=(#EXT-X-DATERANGE|$))|(\n#EXT-X-DISCONTINUITY\s|#EXT-X-TWITCH-PREFETCH\S+)//gs
 www.twitch.tv##[data-a-target="video-ad-label"]
 www.twitch.tv##[data-a-target="video-ad-countdown"]
