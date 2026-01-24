@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sat, 24 Jan 2026 06:32:35 GMT
+! Last modified: Sat, 24 Jan 2026 10:13:51 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Fri, 23 Jan 2026 20:04:41 +0000
+!   - Last modified: Sat, 24 Jan 2026 05:33:18 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Fri, 23 Jan 2026 13:24:35 +0000
@@ -30,7 +30,7 @@
 !   - Last modified: Fri, 23 Jan 2026 12:28:35 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
-!   - Last modified: Fri, 23 Jan 2026 13:03:53 +0000
+!   - Last modified: Sat, 24 Jan 2026 04:38:34 +0000
 ! --------------------------------------------------------------
 ! uBlock filters https://ublockorigin.pages.dev/filters/filters.min.txt
 *_ad_$media,domain=youtube.com,3p
@@ -9424,6 +9424,7 @@ hentaila.tv##+js(json-prune, vast popup adblock)
 ||static.diaridetarragona.com/dab/detector.js
 diaridetarragona.com##.c-add
 steamverde.net##+js(acs, addEventListener, bait)
+||imasdk.googleapis.com/js/sdkloader/ima3.js$redirect=noopjs,domain=envivo.tvazteca.com
 steamseries88.com##+js(rpnt, script, let playerType, 'window.addEventListener("load",()=>{if(typeof playMovie==="function"){playMovie()}});let playerType')
 isgfrm.com##+js(acs, document.createElement, .offsetHeight)
 isgfrm.com##+js(rmnt, script, /adbl|RegExp/i)
@@ -19890,7 +19891,8 @@ ddwloclawek.pl,ki24.info##+js(aeld, load, adb)
 animedb.in##+js(nosiif, ads)
 sdna.gr###disqus_thread:style(display: block !important;)
 ||orangeclickmedia.com/api/adserver/
-tempmail.ninja##+js(rpnt, script, const ad_slot_, '(()=>{window.addEventListener("load",(()=>{document.querySelectorAll("ins.adsbygoogle").forEach((element=>element.dataset.adsbygoogleStatus="done"))}))})();const ad_slot_', sedCount, 1)
+tempmail.ninja##aside[class] > div.mx-auto:has(> ins.adsbygoogle)
+tempmail.ninja##+js(trusted-set-attr, ins.adsbygoogle, data-ad-status, filled)
 pricearchive.org##+js(set-cookie, aalset, 1)
 allosurf.net##+js(nostif, detectAdblock)
 gobankingrates.com##+js(aeld, DOMContentLoaded, blockAdBlock)
@@ -20110,6 +20112,7 @@ nanoreview.net###gtfloats-sb-right
 nanoreview.net##.wisinad_only_desktop
 weatherzone.com.au##.bswIsy
 weatherzone.com.au##section[class^="sc-"]:has(> .publift-ad-wrapper)
+weatherzone.com.au##div[height="270px"]:has(> .publift-ad-wrapper)
 voz.vn##.p-pageWrapper:style(margin-bottom: 0px !important;)
 ||cdn.atf-tagmanager.de/config/$script,domain=yacht.de,redirect=noopjs
 playeriframe.lol>>,0ochi8hp.com##+js(nowoif)
@@ -22141,6 +22144,10 @@ magma.com##+js(trusted-json-edit-fetch-response, ..data.expectingAds=false, prop
 magma.com##+js(rpnt, script, \,"ads")
 pdfdrive.to##+js(trusted-set-local-storage-item, pdadsLastClosed, $now$)
 pdfdrive.to##+js(trusted-override-element-method, HTMLElement.prototype.click, [href^="https://whulsaux.com"])
+globetv.app##+js(nano-stb, adRendered, *, 0.001)
+globetv.app###preroll-overlay
+storiesig.info##+js(set, Object.prototype.clickAds.emit, noopFunc)
+storiesig.info##+js(nowoif, !storiesig)
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -32611,10 +32618,14 @@ foxaholic.com##+js(ra, onkeydown|onselectstart|oncontextmenu, body[onkeydown*="_
 isekaitube.com##+js(rpnt, script, "copyRProtection":true, "copyRProtection":false)
 utaten.com##.lyricBody[oncontextmenu]:remove-attr(/oncontextmenu|onselectstart/)
 oricon.co.jp##div.all-lyrics:remove-attr(/oncontextmenu|onselectstart|onmousedown/)
-j-lyric.net##body[oncontextmenu]:remove-attr(/oncontextmenu|onselectstart/)
+rocklyric.jp###lyric_area[oncopy]:remove-attr(/oncopy|oncut|onmousemove|onmousedown|style/)
+rocklyric.jp###lyric_area > p[oncontextmenu]:remove-attr(oncontextmenu)
+j-lyric.net,okuhanako.net##body[oncontextmenu]:remove-attr(/oncontextmenu|onselectstart/)
 utaten.com##+js(ra, oncontextmenu|onselectstart, .lyricBody[oncontextmenu], complete)
 oricon.co.jp##+js(ra, oncontextmenu|onselectstart|onmousedown, .all-lyrics[oncontextmenu], complete)
-j-lyric.net##+js(ra, oncontextmenu|onselectstart, body[oncontextmenu], complete)
+rocklyric.jp##+js(ra, oncopy|oncut|onmousemove|onmousedown|style, #lyric_area[oncopy], complete)
+rocklyric.jp##+js(ra, oncontextmenu, #lyric_area > p[oncontextmenu], complete)
+j-lyric.net,okuhanako.net##+js(ra, oncontextmenu|onselectstart, body[oncontextmenu], complete)
 ||utaten.com/css/print.css
 utaten.com##.lyricBody:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important; -webkit-tap-highlight-color: revert !important; cursor: revert !important;)
 oricon.co.jp##+js(aeld, dragstart, , elements, .all-lyrics)
@@ -32625,6 +32636,9 @@ lyrical-nonsense.com##.olyrictext, .olyrictext-tv, .sbs-row:style(-webkit-touch-
 togetogebox.org##+js(rmnt, style, -ms-user-select: none)
 s.awa.fm##+js(aeld, contextmenu, [native code], elements, #__next)
 s.awa.fm##div[unselectable="on"] p[class]:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important; -webkit-tap-highlight-color: revert !important; cursor: revert !important;)
+kashiland.jp###lyric:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important; -webkit-tap-highlight-color: revert !important; cursor: revert !important;)
+kashiland.jp##+js(rmnt, script, onselectstart)
+music.j-total.net##.main > p:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important; -webkit-tap-highlight-color: revert !important; cursor: revert !important;)
 kashinavi.com##body,div[oncopy],div.noprint:remove-attr(/oncontextmenu|onselectstart|style|oncopy|unselectable/)
 kashinavi.com##+js(ra, oncopy|onSelectStart|oncontextmenu|style, '[oncopy],[oncontextmenu]')
 @@||socialblade.com^$ghide
@@ -35989,9 +36003,3 @@ foodnavigator.com##+js(rpnt, script, CopyrightLayer, abc)
 liddread.com##+js(rmnt, script, /wpcp|contextmenu|unselectable/)
 liddread.com##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important; -webkit-tap-highlight-color: revert !important; cursor: revert !important;)
 canuckaudiomart.com##+js(rmnt, script, as_init)
-kashiland.jp##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
-kashiland.jp##+js(rmnt, script, onselectstart)
-music.j-total.net##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
-rocklyric.jp##+js(ra, oncontextmenu|onCopy|onCut|onMouseDown|onMouseMove, , stay)
-rocklyric.jp##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
-okuhanako.net##+js(ra, oncontextmenu|onSelectStart, , stay)
