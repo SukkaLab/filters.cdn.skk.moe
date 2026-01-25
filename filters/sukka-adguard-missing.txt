@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sun, 25 Jan 2026 18:27:46 GMT
+! Last modified: Sun, 25 Jan 2026 22:25:58 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sun, 25 Jan 2026 11:25:23 +0000
+!   - Last modified: Sun, 25 Jan 2026 16:52:17 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Sun, 25 Jan 2026 11:05:26 +0000
@@ -8727,7 +8727,7 @@ bedavahesap.org##+js(no-xhr-if, adsbygoogle)
 fastcars1.com##center
 ||theadsparks.com^
 1movierulzhd.wiki,ralli.ee,stbemuiptv.com,tvappapk.com,vipotv.com,whentostream.com##+js(noeval-if, js_func_decode_base_64)
-123multihub.*##+js(noeval-if, adsbygoogle)
+123multihub.*,3xyaoi.com##+js(noeval-if, adsbygoogle)
 arcadepunks.com##+js(aeld, load, innerHTML)
 ballexclusives.com##body > h4[class="adblock_title"]
 ballexclusives.com##body > div.adblock_subtitle
