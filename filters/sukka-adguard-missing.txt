@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Mon, 26 Jan 2026 18:33:09 GMT
+! Last modified: Mon, 26 Jan 2026 22:27:57 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Mon, 26 Jan 2026 12:25:35 +0000
+!   - Last modified: Mon, 26 Jan 2026 17:52:49 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Sun, 25 Jan 2026 11:05:26 +0000
@@ -16359,7 +16359,7 @@ shineads.*##[href="https://app.toolsmeen.com/signup/semrush"]
 globlenews.in##+js(no-fetch-if, googlesyndication)
 #@#.ad-zone
 #@#.ad-space
-##.ad-zone:not(.adsbox, .textads)
+##.ad-zone:not(.adsbox, .textads, .adsbygoogle)
 ~instapundit.com,~nieru.net##.ad-space:not(.adbox, .adsbox, .textads)
 luciferdonghua.in###overplay
 @@||assettoworld.com^$script,1p
@@ -22192,6 +22192,7 @@ storiesig.info##+js(set, Object.prototype.clickAds.emit, noopFunc)
 storiesig.info##+js(nowoif, !storiesig)
 myvidplay.com##+js(nowoif)
 ||jsfilecdn.com^
+wikwiki.cv##+js(nowoif)
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
