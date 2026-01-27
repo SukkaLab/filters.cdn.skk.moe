@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Tue, 27 Jan 2026 10:19:16 GMT
+! Last modified: Tue, 27 Jan 2026 14:38:39 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Mon, 26 Jan 2026 17:52:49 +0000
+!   - Last modified: Tue, 27 Jan 2026 09:14:56 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Sun, 25 Jan 2026 11:05:26 +0000
@@ -30,7 +30,7 @@
 !   - Last modified: Mon, 26 Jan 2026 21:49:43 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
-!   - Last modified: Sat, 24 Jan 2026 04:38:34 +0000
+!   - Last modified: Tue, 27 Jan 2026 09:14:56 +0000
 ! --------------------------------------------------------------
 ! uBlock filters https://ublockorigin.pages.dev/filters/filters.min.txt
 *_ad_$media,domain=youtube.com,3p
@@ -6990,6 +6990,7 @@ tpi.li,oii.la##+js(acs, EventTarget.prototype.addEventListener, delete window)
 tpi.li,oii.la##+js(aeld, DOMContentLoaded, checkAdblockUser)
 tpi.li,oii.la##+js(nostif, checkAdblock)
 tpi.li,oii.la##+js(set, blurred, false)
+tpi.li,oii.la##+js(rpnt, script, offsetHeight, offsetHeight+100)
 tpi.li,oii.la##a[href][target="_blank"]
 tpi.li,oii.la##.td-post-template-default.td-container, .banner-inner
 comparepolicyy.com,healthylifez.com,hosttbuzz.com,policiesreview.com,vpshostplans.com##+js(nowoif)
@@ -7590,6 +7591,7 @@ yts.mx##.home-content > div[class]:not([id]):has(> div > a[rel="noindex, nofollo
 superporn.com##.intensive-add
 @@||grab.onelink.me/*^af_dp=grab%3A%2F%2Fopen%3F$doc,urlskip
 @@||grab.onelink.me/*^af_dp=grab%3A%2F%2Fopen%3F$doc
+tureng.com##.termresults-ad-tr
 *$script,xhr,3p,denyallow=ahcdn.com|ampproject.org|arc.io|b-cdn.net|blogger.com|bootstrapcdn.com|bunnycdn.ru|bytecdntp.com|cackle.me|chatango.com|cloudflare.com|cloudflare.net|cloudflarestorage.com|consentframework.com|disqus.com|disquscdn.com|dmca.com|doodcdn.io|ebacdn.com|embedstreams.top|facebook.com|facebook.net|fastcomments.com|fastly.net|fastlylb.net|fbcdn.net|fluidplayer.com|fontawesome.com|github.io|google.com|googleapis.com|graphcomment.com|gstatic.com|h-cdn.com|hcaptcha.com|hwcdn.net|ilfcdn.li|instagram.com|intensedebate.com|jquery.com|jsdelivr.net|jwpcdn.com|jwplatform.com|jwpsrv.com|linkvertise.com|media-amazon.com|media-imdb.com|pinterest.com|plyr.io|rabbitstream.net|recaptcha.net|rsc.cdn77.org|sharecast.ws|sharethis.com|shrink.pe|statically.io|staticfile.org|tawk.to|twimg.com|twitter.com|ulogin.ru|unpkg.com|userapi.com|vidazoo.com|vidembed.re|vixcloud.co|vk.com|vuukle.com|wp.com|x.com|yastatic.net|youaresoselfish.online|youtube.com|ytimg.com|zdassets.com|zencdn.net,domain=everia.club|files.im|filmpornofrancais.fr|gamesmountain.com|mangaplus.shueisha.tv|moredesi.com|nkiri.com|onlyfullporn.video|shueisharaw.tv|vjav.*
 *$script,xhr,3p,denyallow=ahcdn.com|ampproject.org|arc.io|b-cdn.net|blogger.com|bootstrapcdn.com|bunnycdn.ru|bytecdntp.com|cackle.me|chatango.com|cloudflare.com|cloudflare.net|cloudflarestorage.com|consentframework.com|disqus.com|disquscdn.com|dmca.com|doodcdn.io|ebacdn.com|embedstreams.top|facebook.com|facebook.net|fastcomments.com|fastly.net|fastlylb.net|fbcdn.net|fluidplayer.com|fontawesome.com|github.io|google.com|googleapis.com|graphcomment.com|gstatic.com|h-cdn.com|hcaptcha.com|hwcdn.net|ilfcdn.li|instagram.com|intensedebate.com|jquery.com|jsdelivr.net|jwpcdn.com|jwplatform.com|jwpsrv.com|linkvertise.com|media-amazon.com|media-imdb.com|pinterest.com|plyr.io|rabbitstream.net|recaptcha.net|rsc.cdn77.org|sharecast.ws|sharethis.com|shrink.pe|statically.io|staticfile.org|tawk.to|twimg.com|twitter.com|ulogin.ru|unpkg.com|userapi.com|vidazoo.com|vidembed.re|vixcloud.co|vk.com|vuukle.com|wp.com|x.com|yastatic.net|youaresoselfish.online|youtube.com|ytimg.com|zdassets.com|zencdn.net,domain=everia.club|files.im|filmpornofrancais.fr|gamesmountain.com|mangaplus.shueisha.tv|moredesi.com|nkiri.com|onlyfullporn.video|shueisharaw.tv|vjav.com|vjav.tube
 /^https?:\/\/(?:www\.|[0-9a-z]{7,10}\.)?[-0-9a-z]{5,}\.com\/\/?(?:[0-9a-z]{2}\/){2,3}[0-9a-f]{32}\.js/$script,xhr,3p,redirect=noop.js,to=com
@@ -8547,7 +8549,7 @@ kaa.to##^script:has-text('"adserverDomain"')
 kaa.to##+js(rmnt, script, '"adserverDomain"')
 pawastreams.pro##+js(acs, globalThis, adserverDomain, /^data:/)
 embedstreams.top,gogoanime.co.in,icelz.to,streamtp1.com##+js(aopw, Adcash)
-hyhd.org,watchfootballhighlights.com##+js(aopr, aclib)
+hyhd.org,streamingnow.mov,watchfootballhighlights.com##+js(aopr, aclib)
 asiaflix.in###af-dl-1
 buffsports.*##.h-100.position-absolute.w-100
 buffsports.*##.btn-danger.btn
@@ -8610,8 +8612,8 @@ glodls.to,playfa.com##+js(acs, fetch, break;case)
 /^https:\/\/[a-z]{3,5}\.[a-z]{10,14}\.top\/[a-z]{10,16}\/[a-z]{5,6}(?:\?d=\d)?$/$script,xhr,3p,match-case,to=top
 /^https:\/\/[a-z]{3,5}\.[a-z]{10,14}\.top\/[A-Za-z]{10,16}\/[A-Za-z]{5,6}$/$popup,3p,to=top
 /^https:\/\/[a-z][a-z][a-z][a-z]?[a-z]?\.[a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z]?[a-z]?[a-z]?[a-z]?\.top\/[a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z]?[a-z]?[a-z]?[a-z]?[a-z]?[a-z]?\/[a-z][a-z][a-z][a-z][a-z][a-z]?\?d=[0-9]$/$script,xhr,3p,match-case
-123animehub.cc,123animes.ru,actvid.*,boosterx.stream,cataz.to,cineb.rs,cineb.gg,demonicscans.org,dopebox.to,fbsquadx.com,flixhq.to,gomovies.*,gomoviestv.to,hdtoday.cc,hentai2read.com,himovies.sx,hurawatch.cc,hurawatchz.to,jkanime.net,lectormangaa.com,limetorrents.lol,lulustream.com,luluvdoo.com,luluvid.com,mangagun.net,mexa.sh,mgeko.cc,mkvcinemas.*,moflix-stream.fans,motchill29.com,mov18plus.cloud,movies4us.co,moviesapi.to,movies2watch.tv,musichq.cc,netmovies.to,nicomanga.com,phimlongtieng.net,rawinu.com,rawkuma.net,readcomiconline.*,seriesonline.sx,stream18.net,theflixertv.to,torrentdownload.*,toonily.com,torrentdownloads.*,tukipasti.com,updown.icu,vidora.stream,vidsrc.cc,watchasians.cc,watch-movies.com.pk,watchseries.*,weloma.art,welovemanga.one,zoechip.com,zoechip.gg##^script:has-text(HTMLAllCollection)
-123animehub.cc,123animes.ru,actvid.*,boosterx.stream,cataz.to,cineb.rs,cineb.gg,demonicscans.org,dopebox.to,fbsquadx.com,flixhq.to,gomovies.*,gomoviestv.to,hdtoday.cc,hentai2read.com,himovies.sx,hurawatch.cc,hurawatchz.to,jkanime.net,lectormangaa.com,limetorrents.lol,lulustream.com,luluvdoo.com,luluvid.com,mangagun.net,mexa.sh,mgeko.cc,mkvcinemas.*,moflix-stream.fans,motchill29.com,mov18plus.cloud,moviesapi.to,movies2watch.tv,movies4us.co,musichq.cc,netmovies.to,nicomanga.com,phimlongtieng.net,rawinu.com,rawkuma.net,readcomiconline.*,seriesonline.sx,stream18.net,theflixertv.to,torrentdownload.*,toonily.com,torrentdownloads.*,tukipasti.com,updown.icu,vidora.stream,vidsrc.cc,watchasians.cc,watch-movies.com.pk,watchseries.*,weloma.art,welovemanga.one,zoechip.com,zoechip.gg##+js(acs, addEventListener, HTMLAllCollection)
+123animehub.cc,123animes.ru,actvid.*,boosterx.stream,cataz.to,cineb.rs,cineb.gg,demonicscans.org,dopebox.to,embed.nextgencloudtools.com,fbsquadx.com,flixhq.to,gomovies.*,gomoviestv.to,hdtoday.cc,hentai2read.com,himovies.sx,hurawatch.cc,hurawatchz.to,jkanime.net,lectormangaa.com,limetorrents.lol,lulustream.com,luluvdoo.com,luluvid.com,mangagun.net,mexa.sh,mgeko.cc,mkvcinemas.*,moflix-stream.fans,motchill29.com,mov18plus.cloud,movies4us.co,moviesapi.to,movies2watch.tv,musichq.cc,netmovies.to,nicomanga.com,phimlongtieng.net,rawinu.com,rawkuma.net,readcomiconline.*,seriesonline.sx,stream18.net,theflixertv.to,torrentdownload.*,toonily.com,torrentdownloads.*,tukipasti.com,updown.icu,vidora.stream,vidsrc.cc,watchasians.cc,watch-movies.com.pk,watchseries.*,weloma.art,welovemanga.one,zoechip.com,zoechip.gg##^script:has-text(HTMLAllCollection)
+123animehub.cc,123animes.ru,actvid.*,boosterx.stream,cataz.to,cineb.rs,cineb.gg,demonicscans.org,dopebox.to,embed.nextgencloudtools.com,fbsquadx.com,flixhq.to,gomovies.*,gomoviestv.to,hdtoday.cc,hentai2read.com,himovies.sx,hurawatch.cc,hurawatchz.to,jkanime.net,lectormangaa.com,limetorrents.lol,lulustream.com,luluvdoo.com,luluvid.com,mangagun.net,mexa.sh,mgeko.cc,mkvcinemas.*,moflix-stream.fans,motchill29.com,mov18plus.cloud,moviesapi.to,movies2watch.tv,movies4us.co,musichq.cc,netmovies.to,nicomanga.com,phimlongtieng.net,rawinu.com,rawkuma.net,readcomiconline.*,seriesonline.sx,stream18.net,theflixertv.to,torrentdownload.*,toonily.com,torrentdownloads.*,tukipasti.com,updown.icu,vidora.stream,vidsrc.cc,watchasians.cc,watch-movies.com.pk,watchseries.*,weloma.art,welovemanga.one,zoechip.com,zoechip.gg##+js(acs, addEventListener, HTMLAllCollection)
 cataz.to##+js(nowoif)
 vidfast.*##+js(acs, addEventListener, HTMLAllCollection)
 cineb.rs,moviesjoyhd.to,rawkuma.com##+js(aeld, mousedown, shown_at)
@@ -14834,7 +14836,7 @@ lib.hatenablog.com##+js(acs, document.addEventListener, google_ad_client)
 komputerswiat.pl##+js(acs, $onet, adblock)
 vebo1.com##+js(aopr, adsRedirectPopups)
 ewrc-results.com##+js(set, canGetAds, true)
-ewrc-results.com##+js(no-xhr-if, googlesyndication)
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,xhr,domain=ewrc-results.com
 @@||yt2save.com^$ghide
 theappstore.org##+js(no-fetch-if, adsbygoogle, length:11000)
 imhentai.xxx###slider
@@ -20779,6 +20781,7 @@ ytapi.cc##+js(no-fetch-if, googlesyndication)
 ytapi.cc##+js(nostif, location.href)
 streamingnow.mov##^script:has-text(/popundersPerIP|adserverDomain|wpadmngr/)
 streamingnow.mov##+js(rmnt, script, /popundersPerIP|adserverDomain|wpadmngr/)
+streamingnow.mov##+js(nowoif)
 thesciencetoday.com##+js(rmnt, script, =="])
 sportnews.to##+js(rmnt, script, =="])
 evaki.fun,sportshub.to,sportnews.to##+js(trusted-suppress-native-method, DOMTokenList.prototype.add, '"-"')
@@ -32879,7 +32882,6 @@ tinyppt.com##*:style(-webkit-touch-callout: default !important; -webkit-user-sel
 wotlabs.net##:xpath('//*[contains(text(),"AdB")]')
 kollyinsider.com##+js(aopw, adMessage)
 winaero.com##+js(acs, jQuery, tweaker)
-ewrc-results.com##+js(aopw, adBlockEnabled)
 @@||schnauzer-forum.co.uk^$ghide
 raven-mythic.com##+js(aopw, $adframe)
 investmentnews.com###blocker
