@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Tue, 27 Jan 2026 18:36:09 GMT
+! Last modified: Tue, 27 Jan 2026 22:27:26 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,13 +8,13 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Tue, 27 Jan 2026 14:44:38 +0000
+!   - Last modified: Tue, 27 Jan 2026 17:13:57 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Tue, 27 Jan 2026 11:33:15 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Tue, 27 Jan 2026 15:03:26 +0000
+!   - Last modified: Tue, 27 Jan 2026 18:19:45 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
 !   - Last modified: Fri, 23 Jan 2026 10:53:23 +0000
@@ -1116,6 +1116,7 @@ area51.porn##.under-video-banner
 hentaipulse.com##+js(acs, ExoLoader)
 1fichier.com##+js(nowebrtc)
 1fichier.com##+js(nano-stb, dlw, 40000)
+1fichier.com##+js(nano-stb, ctt(), 1000, 0.001)
 ||googlesyndication.com^$script,important,domain=incredibox.com
 @@||incredibox.com/ad/*$xhr,1p
 webcheats.com.br##+js(set, can_run_ads, true)
@@ -26539,6 +26540,7 @@ frogogo.ru##+js(aopw, ADMITAD)
 @@||googletagmanager.com/gtm.js$script,redirect-rule,domain=rocketnews24.com
 /stats.php?*event=$image
 /check.php?t=*&rand=$image,1p
+||recommend.9gag.com/interact/event/?ip
 /jquery.js?*&rx=*&foxtail=$image,1p
 ||jsdelivr.net/npm/skx@*/optical.js
 /counter/?domain=$image,1p
