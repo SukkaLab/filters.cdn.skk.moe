@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Filters
-! Last modified: Sun, 25 Jan 2026 15:15:00 GMT
+! Last modified: Tue, 27 Jan 2026 16:08:46 GMT
 ! Expires: 1 hours
 ! Description: The filters from Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -160,6 +160,8 @@ http://*$app=tv.danmaku.bili
 *:3478$app=tv.danmaku.bili
 /igd.xml$important
 ||biligame.com
+||cdn.super.com/remote-event-registry.json$xhr
+super.com##+js(prevent-xhr, cdn.super.com/remote-event-registry.json, emptyArr)
 iknowwhatyoudownload.com##[href="/en/peer"]
 stripe.com##+js(no-fetch-if, r.stripe.com/b method:POST)
 ||r.stripe.com/b^$redirect=noop.txt
@@ -229,7 +231,9 @@ blog.csdn.net###recommend-right
 blog.gitcode.com##.blog-content-detail-mask
 blog.gitcode.com##.blog-content-detail:style(max-height: unset !important)
 hanime1.me##+js(rpnt, script, location.href = , window.redirect_prevented =)
+hanime1.com##+js(rpnt, script, location.href = , window.redirect_prevented =)
 hanimeone.me##+js(rpnt, script, location.href = , window.redirect_prevented =)
+javchu.com##+js(rpnt, script, location.href = , window.redirect_prevented =)
 av.tube4us.top##a[href*="youtube.com/watch"]
 av4.homes##a[href*="youtube.com/watch"]
 shirouto4.top##a[href*="youtube.com/watch"]
@@ -749,3 +753,5 @@ www.news.com.au##.LoaderBox
 ||static.freedownloadmanager.org/icon/
 ||gomami.io/assets/ad/$all
 ||awsstatic.com/onedam/marketing-channels/$image
+lowendaff.com###sticky_ads_wrapper
+||tsx.is/logos/sevalla-full.svg$image
