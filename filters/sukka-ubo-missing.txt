@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Wed, 28 Jan 2026 10:20:16 GMT
+! Last modified: Wed, 28 Jan 2026 14:39:10 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.99.26
+!   - Version: 2.0.99.28
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -62078,6 +62078,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||cs.avito.ru^
 ||logsk.glomancloud.gr^
 ||insights-tag.convertkit.com^
 ||b.trueanthem.com^
@@ -115304,6 +115305,10 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||avito.st/s/pixel/script.js
+||avito.st/mstatic/build/legacy/*/fingerprint.*.js
+||adsimg.vevorstatic.com/upload/vevor/custom/vcr/*/vcr.js
+||adsimg.vevor.com/upload/ga/*.js
 octobrowser.net##+js(set-local-storage-item, oc_uuid, $remove$)
 ||octobrowser.net/hs/scriptloader/
 ||js.zol.com.cn/pvn/z.pv
@@ -121043,6 +121048,7 @@ dlsdk.appsflyer.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||track.onef.pro^
 ||log.weathertrip.net^
 ||log.clearcleanerpro.live^
 ||client-telemetry-preauth.hingeprod.net^
