@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Wed, 28 Jan 2026 03:41:06 GMT
+! Last modified: Wed, 28 Jan 2026 06:37:01 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.99.22
+!   - Version: 2.0.99.25
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -218,6 +218,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||hsadspixel.net^
 ||log.grm.gsretail.com^
 ||trackhorizon.nnmtools.com^
 ||d1dxoqu0t5mb7j.cloudfront.net^
@@ -115304,6 +115305,9 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+octobrowser.net##+js(set-local-storage-item, oc_uuid, $remove$)
+||octobrowser.net/hs/scriptloader/
+||js.zol.com.cn/pvn/z.pv
 ||img.eduwill.net/resources/tracking/live/globalMainTracking.js
 ||img.eduwill.net/eduwill/live/js/common/forMatomo.js
 ||app.s.id/api/sda/tr
@@ -125048,6 +125052,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||fewkittens.com^
 ||fieldconfig.com^
 ||figsprotein.com^
+||figurehunter.net^
 ||fillthemap.com^
 ||filtercutter.com^
 ||finalizeforce.com^
