@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Wed, 28 Jan 2026 22:32:40 GMT
+! Last modified: Thu, 29 Jan 2026 04:03:33 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.99.29
+!   - Version: 2.0.99.30
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -120540,6 +120540,7 @@ link.gmapp*.net$image
 %2FCI0%2F0$image
 /ss/o/*/ho.gif$image
 %2Fss%2Fo%2F*%2Fho.gif$image
+.awstrack.me$image
 mail.ferret-one.com/beacon$image
 mail.ferret-one.com%2Fbeacon$image
 healio.com/medialibrary/pixel.png?tp=
@@ -120813,7 +120814,6 @@ link.posteml.com$image
 click.redditmail.com$image
 news.samsung.com/us/?noti=$image
 news.samsung.com%2Fus%2F%3Fnoti%3D$image
-.awstrack.me$image
 esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 esputnik.com/repository/applications/commons/hidden.png
 email.*.com/o/$image
@@ -123422,7 +123422,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 @@||google-analytics.com/gtm/js?id=$domain=joblo.com
 @@||google-analytics.com/analytics.js$domain=joblo.com
 @@||query1.petametrics.com/*&sdk=bc-jsonp$domain=lanacion.com.ar
-@@||googletagservices.com/tag/js/gpt.js$domain=gentside.com|gentside.de|gentside.co.uk|gentside.com.br|maxisciences.com|ohmymag.com|ohmymag.de|ohmirevista.com
+@@||googletagservices.com/tag/js/gpt.js$domain=gentside.com|gentside.de|gentside.co.uk|gentside.com.br|maxisciences.com|ohmymag.com|ohmymag.de
 @@||googletagmanager.com/gtm.js$domain=easycredit.de
 @@||google-analytics.com/analytics.js$domain=easycredit.de
 @@||google-analytics.com/gtm/js?id=$domain=easycredit.de
