@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Fri, 30 Jan 2026 14:42:03 GMT
+! Last modified: Fri, 30 Jan 2026 18:39:01 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202601301431
+!   - Version: 202601301831
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 30 Jan 2026 14:31 UTC
+!   - Last modified: 30 Jan 2026 18:31 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
@@ -35,7 +35,7 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 💊 Dandelion Sprout's Anti-Malware List
 !   - URL: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout's%20Anti-Malware%20List.txt
-!   - Version: 24January2026v1
+!   - Version: 30January2026v1
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 🛃 Anti-'Adoptables and Artsite NFTs' List
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/AntiAdoptablesList.txt
@@ -15236,6 +15236,32 @@ http://secured21.*.com/|$all
 ||zensa.site^$all
 ||23.22.126.183^$all
 23.22.126.183$all,ipaddress
+||adbuho.shop^$all
+||againstmor.store^$all
+||blizzboygames.net^$all
+||cherriescoil.xyz^$all
+||cumguns.online^$all
+||downladshar.com^$all
+||filsw.space^$all
+||floridistor.icu^$all
+||freeflix.click^$all
+||gadhortly.store^$all
+||host17x.cfd^$all
+||host63x.cfd^$all
+||jotiretorns.space^$all
+||knmvurjc.cfd^$all
+||ksdvcmer.pro^$all
+||novatalent.agency^$all
+||purposeuncle.xyz^$all
+||scnrkor.pro^$all
+||sharedmega.com^$all
+||spacefls.com^$all
+||srvdowns.com^$all
+||terisoshar.space^$all
+||tjrksciow.pro^$all
+||trackmedia.site^$all
+||trkepcs.com^$all
+||xcvnerui.pro^$all
 ||downloadprovider.me^$all,~inline-font
 ##a[href*=".downloadprovider.me/"]
 toorgle.net##.join
