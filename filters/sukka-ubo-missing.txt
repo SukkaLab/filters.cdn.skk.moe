@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Fri, 30 Jan 2026 10:24:40 GMT
+! Last modified: Fri, 30 Jan 2026 14:42:03 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.99.38
+!   - Version: 2.0.99.39
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -114625,6 +114625,7 @@ zjjz6lpv44aguszo.cloud.s11.sfmc-osl.com$image
 /^https?:\/\/(?!assets|script|static)(?:[0-9a-z]{10,13}|[0-9a-z]{6})\.[0-9A-Za-z.\-_]+\/(?=[0-9a-z+\/\-]*[A-Z])[0-9A-Za-z+\/\-]{80,106}$/$match-case,script,~3p
 /^https:\/\/cs\d{3}\.\w+\.com\/cscript\/\d{3}\/[\w\d]+\.js$/$script,3p,match-case
 /.well-known/private-click-measurement
+/crm/tag/call.tracker.js
 /statistics/md.gif?
 /sp-2.0.0-dm-0.1.min.js
 /i?e=pv&page=
@@ -118391,7 +118392,6 @@ today.ua##.li-bi-container
 ||baqend.com/v1/rum/$3p
 ||fns.modanisa.com/*/analytics.js
 ||crm.a1.by/bitrix/js/crm/tracking/
-||crm.a1.by/upload/crm/tag/call.tracker.js
 ||d3fdp2ho8z9fyl.cloudfront.net/tracker.min.js
 culture.ru###page-error-modal
 ||primer.typekit.net^$xhr

@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Fri, 30 Jan 2026 10:24:40 GMT
+! Last modified: Fri, 30 Jan 2026 14:42:03 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,16 +18,16 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202601301012
+!   - Version: 202601301431
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 30 Jan 2026 10:12 UTC
+!   - Last modified: 30 Jan 2026 14:31 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
 ! * ⚙️ Dandelion Sprout's Annoyances List
 !   - URL: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AnnoyancesList
-!   - Version: 09January2026v2-Compilation
+!   - Version: 30January2026v1-Compilation
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 🎯 DailyMotion Simplicity
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/DailyMotionSimplicity.txt
@@ -78,7 +78,7 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * ➗ Actually Legitimate URL Shortener Tool
 !   - URL: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt
-!   - Version: 25January2026v1
+!   - Version: 30January2026v1
 !   - Homepage: https://github.com/DandelionSprout/adfilt/discussions/163
 ! * 🐊 Imgur: Pure Imagery Experience
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/ImgurPureImageryExperience.txt
@@ -2771,6 +2771,7 @@ duckduckgo.com,duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion##b
 ||diskpart.com/*?source=auto-popup^$popup
 www.qwant.com###root:has(a[href*=goo]) section div[class]:not([data-testid],[style],[class*=" "],[class*=_]):has([id^=Piwik_])
 adressa.no##.strom .overlay:style(background:none!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important)
+://www.bing.com/?shorturl=$doc
 ! 🎯 DailyMotion Simplicity https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/DailyMotionSimplicity.txt
 dailymotion.com##div[class^=DiscoveryQueueDisplay__sectionContainer]:has(a[class*=channelCard])
 dailymotion.com#?#div[class^=DiscoveryQueueDisplay__sectionContainer]:has(span:has-text(Trend))
@@ -22781,6 +22782,11 @@ ref=the-browser$doc,removeparam=ref
 ||game.info.intel.com^$doc,removeparam=_plt
 ||game.info.intel.com^$doc,removeparam=_scr
 ||dell.com^$removeparam=lwp
+||microsoft.com^$removeparam=srcref
+||microsoft^$removeparam=fromcode
+||microsoft^$removeparam=refOrigin
+||microsoft.com^$removeparam=refSource
+||microsoft.com^$removeparam=refPage
 $removeparam=w,domain=files.wordpress.com|store.playstation.com|s-microsoft.com|store-images.microsoft.com|dr.dk|if.com.au
 $removeparam=h,domain=files.wordpress.com|store.playstation.com|s-microsoft.com|store-images.microsoft.com|dr.dk
 $removeparam=width,domain=i-viaplay.com.akamaized.net|media.discordapp.net|tvno.nu
