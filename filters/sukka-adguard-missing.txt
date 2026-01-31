@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sat, 31 Jan 2026 18:29:01 GMT
+! Last modified: Sat, 31 Jan 2026 22:28:39 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,10 +8,10 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sat, 31 Jan 2026 13:51:36 +0000
+!   - Last modified: Sat, 31 Jan 2026 15:20:11 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
-!   - Last modified: Sat, 31 Jan 2026 09:47:49 +0000
+!   - Last modified: Sat, 31 Jan 2026 16:44:25 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
 !   - Last modified: Sat, 31 Jan 2026 13:07:39 +0000
@@ -20,7 +20,7 @@
 !   - Last modified: Sat, 31 Jan 2026 12:45:51 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Sat, 31 Jan 2026 14:01:58 +0000
+!   - Last modified: Sat, 31 Jan 2026 16:34:07 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
 !   - Last modified: Sun, 25 Jan 2026 05:01:25 +0000
@@ -21984,9 +21984,8 @@ myhentaigallery.com##ul.comics-grid > li.item.image-block
 myhentaigallery.com##li.image-block.item:has-text(Ad)
 ##.header-container a[href^="https://candyai.gg/"]
 ||fuseplatform.net^$script,redirect=noopjs,3p,domain=zkillboard.com
-zkillboard.com##+js(set, fusetag, {})
-zkillboard.com##+js(set, fusetag.loadSlots, noopFunc)
 zkillboard.com##.pbcen,#adsensebottom:style(position:absolute !important;left:-3000px !important;visibility:visible !important)
+@@||cdn.fuseplatform.net^$script,domain=zkillboard.com
 thessdreview.com##.e3lan
 thessdreview.com##body:style(background-image: none !important)
 @@||manhuarmmtl.com^$ghide
@@ -24345,6 +24344,7 @@ cracksmid.com##div[style=""] > center > center
 ||grootcam.shop^$all
 ||z13.web.core.windows.net/*/?clickid=$doc
 ||viruswarning*.web.core.windows.net^$all
+://message1*.z13.web.core.windows.net^$doc
 ^Anph=(0101)-$doc
 ||pages.dev/*/Fm7-alert.wav
 ||pages.dev/*/ai2.mp3
@@ -30390,10 +30390,12 @@ japscan.*##+js(trusted-suppress-native-method, HTMLElement.prototype.querySelect
 japscan.*##+js(trusted-suppress-native-method, Element.prototype.hasAttribute, '"/[\S\s]+/"', prevent, inlineScript)
 japscan.*###chapters:not(div,select):remove()
 japscan.*##+js(trusted-suppress-native-method, Document.prototype.getElementsByTagName, '"*"', prevent, inlineScript)
-japscan.*##body *:not(a,br,button,canvas,cn-vvv,div,footer,form,h1,h2,h3,h4,h5,h6,hr,i,iframe,img,input,label,li,meta,nav,ol,option,p,script,select,small,span,strong,style,ul):remove()
+japscan.*##body *:not(a,br,button,canvas,cn-vvv,code,div,footer,form,h1,h2,h3,h4,h5,h6,hr,i,iframe,img,input,label,li,meta,nav,noscript,ol,option,p,script,select,small,span,strong,style,ul):remove()
 japscan.*##+js(trusted-suppress-native-method, Document.prototype.evaluate, '"/.*/"', prevent, inlineScript)
 japscan.*##+js(trusted-suppress-native-method, Document.prototype.createTreeWalker, '"/.*/"', prevent, inlineScript)
-japscan.*##div[id]:not(#TogglerNav,#bds,#best-value,#blare-inter,#blir-nter,#block-left,#block-right,#bookmarks,#chapters,#full-reader,#gnt_xmst,#https\:\/\/www\.japscan\.vip,#list_chapters,#main,#mangas,#minimize,#move,#nav_Header,#notice-message,#quit,#reader,#report-modal,#report-success,#results,#searchForm,#sidebar,#tns-inner,#toolbar,#windowbar,[id^="collapse-"],[id^="tab"],[id^="tns1"],[id^="top"],[id^="single-reader"]):remove()
+japscan.*##div[id]:not(#TogglerNav,#bds,#best-value,#blare-inter,#blir-nter,#block-left,#block-right,#bookmarks,#chapters,#challenge-success-text,#content,#footer-text,#full-reader,#gnt_xmst,#https\:\/\/www\.japscan\.vip,#list_chapters,#main,#mangas,#minimize,#move,#nav_Header,#notice-message,#quit,#reader,#report-modal,#report-success,#results,#searchForm,#sidebar,#tns-inner,#toolbar,#verifying-msg,#windowbar,.cb-container,.loading-verifying,.main-content > div,[id^="collapse-"],[id^="tab"],[id^="tns1"],[id^="top"],[id^="single-reader"]):remove()
+japscan.vip##.MohLop > div[id]:remove()
+japscan.*##+js(aost, document.createElement, /stackDepth:3\s+HTMLDocument\.get injectedScript.+inlineScript/)
 poophq.com,veev.to,doods.to##+js(nowoif)
 poophq.com,veev.to,doods.to##+js(no-xhr-if, /vast.php?)
 poophq.com,veev.to,doods.to##+js(no-xhr-if, /click\.com|preroll|native_render\.js|acscdn/, length:10001)
