@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sat, 31 Jan 2026 06:39:48 GMT
+! Last modified: Sat, 31 Jan 2026 10:16:05 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,10 +8,10 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Fri, 30 Jan 2026 12:48:13 +0000
+!   - Last modified: Sat, 31 Jan 2026 04:52:08 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
-!   - Last modified: Fri, 30 Jan 2026 11:44:55 +0000
+!   - Last modified: Sat, 31 Jan 2026 07:58:07 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
 !   - Last modified: Thu, 29 Jan 2026 11:04:15 +0000
@@ -27,7 +27,7 @@
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Fri, 30 Jan 2026 15:32:09 +0000
+!   - Last modified: Sat, 31 Jan 2026 08:22:45 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
 !   - Last modified: Fri, 30 Jan 2026 12:20:21 +0000
@@ -22215,6 +22215,7 @@ c.newsnow.co.uk,c.newsnow.com##+js(rpnt, script, /$/gms, (()=>{const url=__INITI
 newsnow.co.uk,newsnow.com##.hero-wrapper
 newsnow.co.uk,newsnow.com##.page-grid__skyscraper
 play.doramasplus.net##+js(set, openUp, noopFunc)
+origami.me##+js(no-xhr-if, adsbygoogle)
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -25810,6 +25811,7 @@ webflow.io##html.w-mod-js:not(.wf-active) > body:not([class]):not([id]) > a[clas
 ||orcaslicerr.$doc
 ||orcaslicers.$doc
 ||theorcaslicer.$doc
+||orcasslicer.$doc
 ||nvcleanstall.$doc
 ||nvcleanstal.$doc
 /^https:\/\/www\.air-?up-?[a-z]{2,}\.com\//$doc,to=com|~air-up.com
@@ -31009,8 +31011,8 @@ mundodeportivo.com##.ev-modals div[class*="ev-open-modal-notifier"], .ev-modals-
 nordax.com##+js(trusted-set-cookie, cookie_consent, %7B%22allowEssentials%22%3Atrue%2C%22allowFunctional%22%3Atrue%2C%22allowAnalytics%22%3Afalse%2C%22allowMarketing%22%3Afalse%7D)
 www.youtube.com##+js(trusted-click-element, ytd-button-renderer.ytd-consent-bump-v2-lightbox + ytd-button-renderer.ytd-consent-bump-v2-lightbox button[aria-label], , 1000)
 m.youtube.com##+js(trusted-click-element, ytm-button-renderer.eom-accept button, , 2000)
-consent.youtube.com##+js(trusted-click-element, form[action] button[jsname="tWT92d"])
-consent.youtube.com##[data-p*="/consent.youtube.com"]:has(button[jsname="tWT92d"])
+consent.youtube.com##+js(trusted-click-element, form[action] button[jsname="b3VHJd"])
+consent.youtube.com##[data-p*="/consent.youtube.com"]:has(button[jsname="b3VHJd"])
 empik.com##+js(trusted-set-cookie, cad, $now$)
 empik.com##+js(trusted-set-cookie, cc, 2.4)
 empik.com##+js(trusted-set-cookie, cp, .16.21.)
