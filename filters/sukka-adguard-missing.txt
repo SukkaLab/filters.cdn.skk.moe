@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sun, 01 Feb 2026 10:17:08 GMT
+! Last modified: Sun, 01 Feb 2026 14:34:33 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sun, 01 Feb 2026 04:23:59 +0000
+!   - Last modified: Sun, 01 Feb 2026 10:22:46 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Sun, 01 Feb 2026 03:57:22 +0000
@@ -27,7 +27,7 @@
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Sat, 31 Jan 2026 13:58:45 +0000
+!   - Last modified: Sun, 01 Feb 2026 08:50:15 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
 !   - Last modified: Fri, 30 Jan 2026 12:20:21 +0000
@@ -4581,13 +4581,10 @@ shrink.*##center
 shrink.*##.banner
 @@||shrink.*^$ghide
 bigbtc.win##div[style^="width:300px;height:250px"]
-@@||onceagain.mooo.com/prebid.js$script,domain=bigbtc.win
-@@||dlvi.my/prebid.js$script,domain=bigbtc.win
-@@||bigbtc.win^$ghide
 bigbtc.win,cryptofun.space###block-adb-enabled, #block-add-enabled
 bigbtc.win,cryptofun.space###main, #ielement:style(display: block !important;)
 bigbtc.win##div:has(> div[style] > div[id] > script[src^="//ads.themoneytizer.com"])
-@@||dlvid.*/prebid.js$domain=bigbtc.win|shrink.icu
+bigbtc.win,cryptofun.space,shrink.icu##+js(rpnt, script, /if((.*))/, if(1==1))
 ||watson.de/js/tisoomi.js$script,1p
 watson.de##[data-ad]
 activistpost.com##+js(aopr, XMLHttpRequest)
@@ -22170,6 +22167,7 @@ newsnow.co.uk,newsnow.com##.page-grid__skyscraper
 play.doramasplus.net##+js(set, openUp, noopFunc)
 origami.me##+js(no-xhr-if, adsbygoogle)
 cima4u.forum##+js(rmnt, script, popup)
+carensureplan.com##+js(rmnt, script, offsetHeight)
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -32711,6 +32709,7 @@ huk24.de##+js(trusted-set-cookie, consent_version, 2.8)
 xnxx.com##+js(trusted-click-element, button#disclaimer-reject_cookies-btn)
 aetv.com##+js(trusted-click-element, button[data-testid="tou-agree-btn"], , 2000)
 kuntarekry.fi##+js(trusted-set-cookie, consent, '{"necessary":true,"preferences":true,"analytics":false,"marketing":false,"uncategorized":false}', 1year)
+1001renkaat.com,anvelopelider.ro,bandenleader.be,bandenleader.nl,centralepneus.be,centralepneus.ch,centralepneus.fr,centralepneus.lu,dackleader.se,daekleader.dk,elastikaleader.gr,gumelider.com.hr,liderpnevmatik.si,maxigumi.hu,neumaticoslider.es,oponylider.pl,padangulyderis.lt,pneuleader.cz,pneuleader.sk,pneumaticileader.it,pneuslider.pt,rehviliider.ee,reifenleader.at,reifenleader.ch,reifenleader.de,riepulideris.lv,tyreleader.co.uk,tyreleader.ie##+js(trusted-set-cookie, ac, '{"version":"1","functional_storage":"granted","analytics_storage":"denied","ad_storage":"denied"}', 1year, , reload, 1)
 ! uBlock filters – Annoyances https://ublockorigin.pages.dev/filters/annoyances.min.txt
 mimaletadepeliculas.blogspot.com##+js(aopr, document.oncontextmenu)
 mimaletadepeliculas.blogspot.com##+js(acs, document.onselectstart)
