@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Sun, 01 Feb 2026 22:30:41 GMT
+! Last modified: Mon, 02 Feb 2026 04:19:44 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202602012222
+!   - Version: 202602020411
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 01 Feb 2026 22:22 UTC
+!   - Last modified: 02 Feb 2026 04:11 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
@@ -35,7 +35,7 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 💊 Dandelion Sprout's Anti-Malware List
 !   - URL: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout's%20Anti-Malware%20List.txt
-!   - Version: 30January2026v3
+!   - Version: 01February2026v1
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 🛃 Anti-'Adoptables and Artsite NFTs' List
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/AntiAdoptablesList.txt
@@ -18069,6 +18069,71 @@ drvhub.net##.driver-item__install
 ||deathprediction.ai^$doc
 ||life2veccalculatoronline.github.io^$doc
 ||deathcalculator.net^$doc
+||aenhance.link^$all
+||besttdate4you.com^$all
+||betr-for-tod.com^$all
+||candydatee.com^$all
+||candydatte.com^$all
+||candygiirl.com^$all
+||catchyourlovee.com^$all
+||cozydatte.com^$all
+||darliingdating.com^$all
+||darlingdatiing.com^$all
+||date4llove.com^$all
+||dateffusion.com^$all
+||datewiithme.net^$all
+||datewiithmee.com^$all
+||datewiithshe.com^$all
+||datewiithyou.com^$all
+||datewiithyou.net^$all
+||datewithu.com^$all
+||datinggwiithme.com^$all
+||datingwiithme.net^$all
+||datingwiithmee.net^$all
+||datingwiithyou.com^$all
+||datingwithmee.net^$all
+||datingwithmie.com^$all
+||dattewiithyou.com^$all
+||dattingspace.com^$all
+||dattingwithyou.com^$all
+||dolcedatiing.com^$all
+||dollcedating.com^$all
+||fiindmatez.com^$all
+||findmattez.com^$all
+||heavengirlls.com^$all
+||hereisyourgirl.com^$all
+||hotdesiire.com^$all
+||hotllove.net^$all
+||hotpllace.com^$all
+||hotspacce.com^$all
+||hottdesire.net^$all
+||hottspace.com^$all
+||hottview.net^$all
+||hotwwomen.com^$all
+||lipsdating.com^$all
+||lloveconection.com^$all
+||lovecconection.com^$all
+||loveconectiion.com^$all
+||loveday4you.com^$all
+||loveintension.com^$all
+||loventtra.com^$all
+||mbsrv2.com^$all
+||mylovvedatte.com^$all
+||nakeddesiire.com^$all
+||prodproof.com^$all
+||sloffer1.com^$all
+||spaceoflovee.com^$all
+||talk2llove.com^$all
+||vfgth.com^$all
+||yourgiirllshere.com^$all
+||yourgiirlshere.com^$all
+||yourgirlhere.com^$all
+||yourgirllshere.com^$all
+||zubrixo.com^$all
+||super-tester.de^$all
+||flirtenhier.com^$all
+||185.7.99.190^$all
+185.7.99.190$all,ipaddress
 ||0network.com^$all
 ||100conversions.com^$all
 ||1tag.ai^$all
