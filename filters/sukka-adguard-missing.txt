@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Mon, 02 Feb 2026 07:02:54 GMT
+! Last modified: Mon, 02 Feb 2026 10:36:13 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -11,10 +11,10 @@
 !   - Last modified: Sun, 01 Feb 2026 17:57:03 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
-!   - Last modified: Sun, 01 Feb 2026 03:57:22 +0000
+!   - Last modified: Mon, 02 Feb 2026 00:24:48 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Sun, 01 Feb 2026 04:23:59 +0000
+!   - Last modified: Mon, 02 Feb 2026 03:10:31 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
 !   - Last modified: Sat, 31 Jan 2026 12:45:51 +0000
@@ -26495,7 +26495,7 @@ sport.elwatannews.com##+js(aost, Array.prototype.indexOf, isWin)
 ||7zip.cloud^$all
 ||wploits.com^$all
 comix.to##+js(json-edit-fetch-response, .result.items.*[?.content*="'+'"], propsToMatch, /comments)
-||fantia.paid-task.com^$all
+||paid-task.com^$all
 ||mpchc.net^$all
 ! uBlock filters – Privacy https://ublockorigin.pages.dev/filters/privacy.min.txt
 ||google-analytics.com/analytics.js$script,xhr,redirect=google-analytics_analytics.js:5
@@ -27789,7 +27789,7 @@ jxoplay.xyz,zorroplay.xyz##+js(rmnt, script, sendFakeRequest)
 dlhd.*>>,~chatango.com##+js(rmnt, script, sendFakeRequest)
 ||bg-gledai.video/wp-content/plugins/crypto-converter-widget/$script,1p
 ||cdn.jsdelivr.net/gh/dejurin/crypto-converter-widget$script,domain=bg-gledai.video
-archive.fo,archive.is,archive.li,archive.md,archive.ph,archive.today,archive.vn##+js(nosiif, fetch)
+archive.fo,archive.is,archive.li,archive.md,archive.ph,archive.today,archive.vn,btdig.com##+js(nosiif, fetch)
 ! uBlock filters – Unbreak https://ublockorigin.pages.dev/filters/unbreak.min.txt
 @@||awstrack.me/*auth.coindesk.com$doc,popup
 @@||awstrack.me/*cmd=ac-inactive-restore$doc,popup
