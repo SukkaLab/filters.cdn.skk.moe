@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Mon, 02 Feb 2026 18:40:10 GMT
+! Last modified: Tue, 03 Feb 2026 04:10:24 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.99.47
+!   - Version: 2.0.99.48
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -218,6 +218,9 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||get.civicscience.com^
+||perfalytics.com^
+||analytics.liine.com^
 ||netcoresmartech.com^
 ||verint-cdn.com^
 ||1mythtracker.xyz^
@@ -122689,6 +122692,7 @@ zmail.mtrl.me$image
 /detroitchicago/reno.js
 /detroitchicago/overlandpark.js
 /script.tagged-events.js
+/_vercel/insights/script.js
 /_vercel/speed-insights/script.js
 /p/tm.js?
 ://analytics.*/hardal
@@ -123344,6 +123348,9 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||factually.co/api/track-pageview
+factually.co##+js(set-local-storage-item, userBrowserId, $remove$)
+||api.gamsgo2.com/data_explorer/metric
 ||visahq.com/scripts/tracking_script/
 ||ddwl4m2hdecbv.cloudfront.net/b/*.js.gz
 ||att.com/msapi/chatlogicprocessor/v*/user/events
@@ -124723,7 +124730,6 @@ geinoukame.com##.ninja-recommend-block + hr
 ||radar.cloudflare.com/api/analytics
 ||assets.bwbx.io/s3/foundation/event-recorder-client/1.0/event-recorder-client.min.js
 ||api.weglot.com/pageviews?api_key
-||makeship.com/_vercel/insights/script.js
 ||makeship.com/ingest/static/recorder-v2.js
 ||makeship.com/ingest/*?compression=
 ||hellomagazine.com/_vercel/*insights/*.js

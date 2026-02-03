@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Mon, 02 Feb 2026 18:40:10 GMT
+! Last modified: Tue, 03 Feb 2026 04:10:24 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202602021831
+!   - Version: 202602030401
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 02 Feb 2026 18:31 UTC
+!   - Last modified: 03 Feb 2026 04:01 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
@@ -78,7 +78,7 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * ➗ Actually Legitimate URL Shortener Tool
 !   - URL: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt
-!   - Version: 30January2026v1
+!   - Version: 02February2026v1
 !   - Homepage: https://github.com/DandelionSprout/adfilt/discussions/163
 ! * 🐊 Imgur: Pure Imagery Experience
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/ImgurPureImageryExperience.txt
@@ -21110,8 +21110,8 @@ $removeparam=referral,domain=tv2.no|spotify.com|yubo.live
 ||aliexpress.$removeparam=_t
 ||aliexpress.$removeparam=gps-id
 $removeparam=scm_id
-$removeparam=scm
 $removeparam=scm-url
+$removeparam=scm,domain=~v.youku.com
 ||aliexpress.$removeparam=initiative_id
 ||aliexpress.$removeparam=tt
 ||aliexpress.$removeparam=terminal_id
@@ -21133,7 +21133,7 @@ $removeparam=aff_platform
 $removeparam=aff_trace_key
 ||aliexpress.$removeparam=dp
 ||aliexpress.$removeparam=cv
-$removeparam=spm,domain=~twitcasting.tv
+$removeparam=spm,domain=~twitcasting.tv|~v.youku.com
 $removeparam=tracelog
 $removeparam=cardId,doc,domain=alibaba.com
 $removeparam=aff_click_id
