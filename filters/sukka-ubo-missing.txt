@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Tue, 03 Feb 2026 14:54:09 GMT
+! Last modified: Tue, 03 Feb 2026 18:54:06 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.99.50
+!   - Version: 2.0.99.52
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -65465,6 +65465,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||cdn-px-v1.metrix.az^
 ||event-tracker.inditex.com^
 ||t.y8.com^
 ||cs.avito.ru^
@@ -123349,6 +123350,7 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||s-nsk.ppstatic.pl/lib/ppa/v*/js/main.hb.js
 ||factually.co/api/track-pageview
 factually.co##+js(set-local-storage-item, userBrowserId, $remove$)
 ||api.gamsgo2.com/data_explorer/metric
