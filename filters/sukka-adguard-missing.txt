@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Tue, 03 Feb 2026 10:31:17 GMT
+! Last modified: Tue, 03 Feb 2026 14:54:09 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Tue, 03 Feb 2026 06:02:38 +0000
+!   - Last modified: Tue, 03 Feb 2026 08:43:23 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Mon, 02 Feb 2026 00:24:48 +0000
@@ -20,7 +20,7 @@
 !   - Last modified: Mon, 02 Feb 2026 13:25:46 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Mon, 02 Feb 2026 14:39:59 +0000
+!   - Last modified: Tue, 03 Feb 2026 08:43:23 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
 !   - Last modified: Sun, 25 Jan 2026 05:01:25 +0000
@@ -8870,7 +8870,7 @@ manhwass.com##+js(trusted-suppress-native-method, Document.prototype.querySelect
 shemaleraw.com,thecustomrom.com,wemove-charity.org##^script:has-text(deblocker)
 shemaleraw.com,thecustomrom.com,wemove-charity.org##+js(rmnt, script, deblocker)
 jnews5.com,kayoanime.com##+js(set, tie.ad_blocker_detector, false)
-alternet.org,androidcure.com,arobasenet.com,attackofthefanboy.com,bodytr.com,clutchpoints.com,cultofmac.com,currentaffairs.gktoday.in,dailycaller.com,digitalmusicnews.com,dogtime.com,dotesports.com,epicstream.com,fallbrook247.com,feral-heart.com,gamesgames.com,gamerevolution.com,gazettenet.com,girlsgogames.co.uk,insidenova.com,jetztspielen.de,kasvekuvvet.net,leitesculinaria.com,nbcnews.com,notevibes.com,practicalpainmanagement.com,prad.de,progameguides.com,ranker.com,realityblurb.com,ruinmyweek.com,sanangelolive.com,sanfoundry.com,selfhacked.com,siliconera.com,son.co.za,sporcle.com,stealthoptional.com,thesportster.com,upi.com,visualcapitalist.com,wegotthiscovered.com,primagames.com##+js(aopr, googletag)
+androidcure.com,arobasenet.com,attackofthefanboy.com,bodytr.com,clutchpoints.com,cultofmac.com,currentaffairs.gktoday.in,dailycaller.com,digitalmusicnews.com,dogtime.com,dotesports.com,epicstream.com,fallbrook247.com,feral-heart.com,gamesgames.com,gamerevolution.com,gazettenet.com,girlsgogames.co.uk,insidenova.com,jetztspielen.de,kasvekuvvet.net,leitesculinaria.com,nbcnews.com,notevibes.com,practicalpainmanagement.com,prad.de,progameguides.com,ranker.com,realityblurb.com,ruinmyweek.com,sanangelolive.com,sanfoundry.com,selfhacked.com,siliconera.com,son.co.za,sporcle.com,stealthoptional.com,thesportster.com,upi.com,visualcapitalist.com,wegotthiscovered.com,primagames.com##+js(aopr, googletag)
 onmsft.com##+js(acs, document.createElement, googletag)
 audiotools.pro,audizine.com,blackenterprise.com,cwtv.com,magesy.*,pastes.io##+js(acs, document.createElement, admiral)
 familyminded.com,foxvalleyfoodie.com,merriam-webster.com,news.com.au,playstationlifestyle.net,sportsnaut.com,tempumail.com,toledoblade.com##+js(aopr, __cmpGdprAppliesGlobally)
@@ -30575,8 +30575,7 @@ chzzkban.xyz##+js(no-fetch-if, pagead2.googlesyndication.com/pagead/js/adsbygoog
 chzzkban.xyz##+js(trusted-suppress-native-method, Node.prototype.contains, '{"className":"adsbygoogle"}', abort)
 ||akirabox.com^$script,domain=akirabox.to
 historicaerials.com##+js(aeld, load, showFallbackModal)
-historicaerials.com##+js(trusted-set-attr, #historicaerials_728x90_ATF, data-google-query-id, CJeD5_n3tZIDFeL1PAIdfZYjwQ)
-historicaerials.com##+js(rpnt, script, window.scriptExecuted = false;, '(()=>{const n={getSlotElementId:function(){return"historicaerials_728x90_ATF"},getResponseInformation:function(){return!0}},t={getSlots:function(){return[n]},addEventListener:function(){return this}};window.googletag=window.googletag||{pubads:function(){return t},apiReady:!0}})();window.scriptExecuted = false;')
+historicaerials.com##+js(trusted-set-attr, '#historicaerials_728x90_ATF, #historicaerials_160x600_Right, #historicaerials_160x600_Left', data-google-query-id, CJeD5_n3tZIDFfL1PAIdfZYjwQ)
 pasteflash.sx##+js(norafif, blocked)
 /common_ad.js$script,badfilter
 ! uBlock filters – Experimental https://ublockorigin.pages.dev/filters/experimental.min.txt
