@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Wed, 04 Feb 2026 10:30:57 GMT
+! Last modified: Wed, 04 Feb 2026 14:50:27 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.99.56
+!   - Version: 2.0.99.58
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -123353,6 +123353,7 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+turkifsalar7.space##+js(remove-node-text, script, MonsterInsightsDualTracker)
 ||amazonaws.com/beacon.*/beacon/before-login.gif?
 kupibilet.ru##+js(set-local-storage-item, optimizely-vuid, $remove$)
 ||s-nsk.ppstatic.pl/lib/ppa/v*/js/main.hb.js
@@ -129107,6 +129108,8 @@ dlsdk.appsflyer.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||log1.cmpassport.com^
+||bi-report.maxnapps.com^
 ||events.production.us1.pgw-pci.klarna.net^
 ||event-gateway.data.karrotmarket.com^
 ||h-adashx4id.ut.taobao.com^
