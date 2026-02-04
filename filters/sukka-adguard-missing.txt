@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Wed, 04 Feb 2026 04:07:13 GMT
+! Last modified: Wed, 04 Feb 2026 06:53:10 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -11,7 +11,7 @@
 !   - Last modified: Tue, 03 Feb 2026 21:26:22 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
-!   - Last modified: Tue, 03 Feb 2026 14:41:18 +0000
+!   - Last modified: Wed, 04 Feb 2026 03:47:59 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
 !   - Last modified: Tue, 03 Feb 2026 17:02:54 +0000
@@ -30,7 +30,7 @@
 !   - Last modified: Mon, 02 Feb 2026 15:55:28 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
-!   - Last modified: Tue, 03 Feb 2026 17:47:48 +0000
+!   - Last modified: Wed, 04 Feb 2026 04:37:22 +0000
 ! --------------------------------------------------------------
 ! uBlock filters https://ublockorigin.pages.dev/filters/filters.min.txt
 *_ad_$media,domain=youtube.com,3p
@@ -26502,6 +26502,7 @@ sport.elwatannews.com##+js(aost, Array.prototype.indexOf, isWin)
 comix.to##+js(json-edit-fetch-response, .result.items.*[?.content*="'+'"], propsToMatch, /comments)
 ||paid-task.com^$all
 ||mpchc.net^$all
+||subscriptionprocess.im^$all
 ! uBlock filters – Privacy https://ublockorigin.pages.dev/filters/privacy.min.txt
 ||google-analytics.com/analytics.js$script,xhr,redirect=google-analytics_analytics.js:5
 ||google-analytics.com/cx/api.js$script,redirect=google-analytics.com/cx/api.js:5
