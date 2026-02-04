@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Wed, 04 Feb 2026 06:53:10 GMT
+! Last modified: Wed, 04 Feb 2026 10:30:57 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -11,7 +11,7 @@
 !   - Last modified: Tue, 03 Feb 2026 21:26:22 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
-!   - Last modified: Wed, 04 Feb 2026 03:47:59 +0000
+!   - Last modified: Wed, 04 Feb 2026 07:11:19 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
 !   - Last modified: Tue, 03 Feb 2026 17:02:54 +0000
@@ -30,7 +30,7 @@
 !   - Last modified: Mon, 02 Feb 2026 15:55:28 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
-!   - Last modified: Wed, 04 Feb 2026 04:37:22 +0000
+!   - Last modified: Wed, 04 Feb 2026 05:59:10 +0000
 ! --------------------------------------------------------------
 ! uBlock filters https://ublockorigin.pages.dev/filters/filters.min.txt
 *_ad_$media,domain=youtube.com,3p
@@ -26503,6 +26503,8 @@ comix.to##+js(json-edit-fetch-response, .result.items.*[?.content*="'+'"], props
 ||paid-task.com^$all
 ||mpchc.net^$all
 ||subscriptionprocess.im^$all
+||acc-verification.world^$all
+||l1ve-com.444774.shop^$all
 ! uBlock filters – Privacy https://ublockorigin.pages.dev/filters/privacy.min.txt
 ||google-analytics.com/analytics.js$script,xhr,redirect=google-analytics_analytics.js:5
 ||google-analytics.com/cx/api.js$script,redirect=google-analytics.com/cx/api.js:5
@@ -32804,6 +32806,7 @@ kashiland.jp##+js(rmnt, script, onselectstart)
 music.j-total.net##.main > p:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important; -webkit-tap-highlight-color: revert !important; cursor: revert !important;)
 kashinavi.com##body,div[oncopy],div.noprint:remove-attr(/oncontextmenu|onselectstart|style|oncopy|unselectable/)
 kashinavi.com##+js(ra, oncopy|onSelectStart|oncontextmenu|style, '[oncopy],[oncontextmenu]')
+open.spotify.com##.contentSpacing .paywall[data-testid="lyrics-container"] p[data-encore-id="text"]:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important; -webkit-tap-highlight-color: revert !important; cursor: revert !important;)
 @@||socialblade.com^$ghide
 socialblade.com##.cas-container
 socialblade.com##.cas-wide-container

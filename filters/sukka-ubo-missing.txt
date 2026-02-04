@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Wed, 04 Feb 2026 06:53:10 GMT
+! Last modified: Wed, 04 Feb 2026 10:30:57 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.99.55
+!   - Version: 2.0.99.56
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -132994,6 +132994,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||doggieshome.com^
 ||dollardelta.com^
 ||dollarthrill.com^
+||domaincolumn.com^
 ||doomhedge.com^
 ||doubledefend.com^
 ||doubtdrawer.com^
@@ -133629,6 +133630,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||motionlessbelief.com^
 ||motionlessmeeting.com^
 ||mountedbattery.com^
+||movableobject.com^
 ||movemeal.com^
 ||mowgoats.com^
 ||muddledaftermath.com^
@@ -133729,6 +133731,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||overconfidentfood.com^
 ||overkick.com^
 ||overratedchalk.com^
+||owlbees.com^
 ||owlreporter.com^
 ||owlsr.us^
 ||owlstwo.com^
