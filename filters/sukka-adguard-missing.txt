@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Tue, 03 Feb 2026 22:35:09 GMT
+! Last modified: Wed, 04 Feb 2026 04:07:13 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Tue, 03 Feb 2026 14:07:26 +0000
+!   - Last modified: Tue, 03 Feb 2026 21:26:22 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Tue, 03 Feb 2026 14:41:18 +0000
@@ -30,7 +30,7 @@
 !   - Last modified: Mon, 02 Feb 2026 15:55:28 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
-!   - Last modified: Fri, 30 Jan 2026 12:20:21 +0000
+!   - Last modified: Tue, 03 Feb 2026 17:47:48 +0000
 ! --------------------------------------------------------------
 ! uBlock filters https://ublockorigin.pages.dev/filters/filters.min.txt
 *_ad_$media,domain=youtube.com,3p
@@ -9007,7 +9007,7 @@ neowin.net,newatlas.com,nextchessmove.com,razzball.com##^script:has-text(head.ap
 dnevnik.hr,neowin.net,newatlas.com,razzball.com##^script:has-text(/^\(async\(\)=>\{function.{1,200}\.head.{1,100}\.bind.{1,900}location\.href.{1,100}\}\)\(\);$/)
 divinedaolibrary.com,edinburghnews.scotsman.com,lejdd.fr,manchesterworld.uk,scribd.com,slideshare.net,songfacts.com,sussexexpress.co.uk,tips-and-tricks.co,yorkshirepost.co.uk##^script:has-text(/\(async\s*\(\)\s*=>\s*\{\s*try\s*\{\s*(const|var)/)
 si.com##^script:has-text('"https://html-load.com/loader.min.js"')
-akinator.com,astro-seek.com,autofrage.net,bab.la,babla.*,boardingarea.com,collinsdictionary.com,computerfrage.net,dictionnaire.lerobert.com,dictionary.cambridge.org,dnevnik.hr,egitim.net.tr,exceljet.net,finanzfrage.net,gesundheitsfrage.net,gezondnu.nl,gutefrage.net,happyinshape.com,infinityfree.com,liveandletsfly.com,motorradfrage.net,nationalpost.com,neoseeker.com,newatlas.com,oxfordlearnersdictionaries.com,pons.com,reisefrage.net,sinemalar.com,sportlerfrage.net,torontosun.com,toyokeizai.net,travelingformiles.com,usaudiomart.com,welt.de##^script:has-text(await eval)
+akinator.com,astro-seek.com,autofrage.net,bab.la,babla.*,boardingarea.com,collinsdictionary.com,computerfrage.net,dictionary.cambridge.org,dictionnaire.lerobert.com,dnevnik.hr,egitim.net.tr,exceljet.net,finanzfrage.net,freemcserver.net,gesundheitsfrage.net,gezondnu.nl,gutefrage.net,happyinshape.com,infinityfree.com,liveandletsfly.com,motorradfrage.net,nationalpost.com,neoseeker.com,newatlas.com,oxfordlearnersdictionaries.com,pons.com,reisefrage.net,sinemalar.com,sportlerfrage.net,torontosun.com,toyokeizai.net,travelingformiles.com,usaudiomart.com,welt.de##^script:has-text(await eval)
 9gag.com,canuckaudiomart.com,dict.cc,ukaudiomart.com,watchdocumentaries.com##^script:has-text(()=>eval)
 singjupost.com##^script:has-text(domain=?eventId=&error=)
 fossbytes.com,helpdeskgeek.com,kuruma-news.jp,perezhilton.com##^script:has-text(';confirm(')
@@ -9035,7 +9035,7 @@ neowin.net,newatlas.com,nextchessmove.com,razzball.com##+js(rmnt, script, head.a
 dnevnik.hr,neowin.net,newatlas.com,razzball.com##+js(rmnt, script, '/^\(async\(\)=>\{function.{1,200}head.{1,100}\.bind.{1,900}location\.href.{1,100}\}\)\(\);$/')
 deadline.com,divinedaolibrary.com,doviz.com,edinburghnews.scotsman.com,hollywoodlife.com,lejdd.fr,manchesterworld.uk,scribd.com,slideshare.net,songfacts.com,sussexexpress.co.uk,thelayoff.com,tips-and-tricks.co,wwd.com,yorkshirepost.co.uk##+js(rmnt, script, /\(async\s*\(\)\s*=>\s*\{\s*try\s*\{\s*(const|var)/)
 si.com##+js(rmnt, script, '"https://html-load.com/loader.min.js"')
-akinator.com,astro-seek.com,autofrage.net,bab.la,babla.*,boardingarea.com,collinsdictionary.com,computerfrage.net,dictionnaire.lerobert.com,dictionary.cambridge.org,dnevnik.hr,egitim.net.tr,exceljet.net,finanzfrage.net,gesundheitsfrage.net,gezondnu.nl,gutefrage.net,happyinshape.com,infinityfree.com,liveandletsfly.com,motorradfrage.net,nationalpost.com,neoseeker.com,newatlas.com,oxfordlearnersdictionaries.com,pons.com,reisefrage.net,sinemalar.com,sportlerfrage.net,torontosun.com,toyokeizai.net,travelingformiles.com,usaudiomart.com,welt.de##+js(rmnt, script, await eval)
+akinator.com,astro-seek.com,autofrage.net,bab.la,babla.*,boardingarea.com,collinsdictionary.com,computerfrage.net,dictionary.cambridge.org,dictionnaire.lerobert.com,dnevnik.hr,egitim.net.tr,exceljet.net,finanzfrage.net,freemcserver.net,gesundheitsfrage.net,gezondnu.nl,gutefrage.net,happyinshape.com,infinityfree.com,liveandletsfly.com,motorradfrage.net,nationalpost.com,neoseeker.com,newatlas.com,oxfordlearnersdictionaries.com,pons.com,reisefrage.net,sinemalar.com,sportlerfrage.net,torontosun.com,toyokeizai.net,travelingformiles.com,usaudiomart.com,welt.de##+js(rmnt, script, await eval)
 9gag.com,canuckaudiomart.com,dict.cc,ukaudiomart.com,watchdocumentaries.com##+js(rmnt, script, ()=>eval)
 singjupost.com##+js(rmnt, script, domain=?eventId=&error=)
 helpdeskgeek.com##+js(rmnt, script, ;confirm()
@@ -36164,3 +36164,5 @@ foodnavigator.com##+js(rpnt, script, CopyrightLayer, abc)
 liddread.com##+js(rmnt, script, /wpcp|contextmenu|unselectable/)
 liddread.com##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important; -webkit-tap-highlight-color: revert !important; cursor: revert !important;)
 canuckaudiomart.com##+js(rmnt, script, as_init)
+||steamcommunity.com/linkfilter/?u=$urlskip=?u
+||steamcommunity.com/linkfilter/?url=$urlskip=?url
