@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Wed, 04 Feb 2026 14:50:27 GMT
+! Last modified: Wed, 04 Feb 2026 18:45:41 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202602041442
+!   - Version: 202602041822
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 04 Feb 2026 14:42 UTC
+!   - Last modified: 04 Feb 2026 18:22 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
@@ -78,7 +78,7 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * ➗ Actually Legitimate URL Shortener Tool
 !   - URL: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt
-!   - Version: 03February2026v2
+!   - Version: 04February2026v1
 !   - Homepage: https://github.com/DandelionSprout/adfilt/discussions/163
 ! * 🐊 Imgur: Pure Imagery Experience
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/ImgurPureImageryExperience.txt
@@ -21726,7 +21726,7 @@ $removeparam=referer,doc,domain=bodykind.com|clink2.com|dlink2.com|nitter.net
 ||target.com^$removeparam=lnm
 ||target.com^$removeparam=lnk
 $removeparam=marketing_id
-$removeparam=s,domain=greenhouse.io|mothership.sg|spreadprivacy.com|youku.com|nextdoor.com|qwant.com
+$removeparam=s,domain=greenhouse.io|mothership.sg|spreadprivacy.com|nextdoor.com|qwant.com
 $doc,removeparam=t,domain=rakuten.com|steamcdn-a.akamaihd.net|elprecio.es|adressa.no|tiktok.com|lookmovie211.xyz
 ||yandex.$removeparam=clid
 $removeparam=cpa-perf
