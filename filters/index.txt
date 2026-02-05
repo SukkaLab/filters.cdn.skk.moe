@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Filters
-! Last modified: Wed, 04 Feb 2026 16:02:04 GMT
+! Last modified: Thu, 05 Feb 2026 03:15:28 GMT
 ! Expires: 1 hours
 ! Description: The filters from Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -117,6 +117,7 @@ lingchenzi.com#@#.category-share
 spotify.com##button[title="Upgrade to Premium"]
 spotify.com##button[title="Effettua l'upgrade a Premium"]
 spotify.com##div[data-testid="test-ref-div"]
+*$removeparam=aff
 *$script,domain=csdn.net|sina.cn|finance.cnr.cn|guancha.cn|blog.gitcode.com
 *$frame,domain=csdn.net|sina.cn|finance.cnr.cn|guancha.cn|blog.gitcode.com
 .js$domain=csdn.net|sina.cn|finance.cnr.cn|guancha.cn|blog.gitcode.com
@@ -214,7 +215,7 @@ emailtick.com##+js(nano-sib, countdown)
 ||crdroid.net/*/adblock-checker$script
 crdroid.net###dl-links:style(display: block !important)
 crdroid.net###dl-ads
-||accounts.google.com/gsi/$frame,redirect=click2load.html
+||accounts.google.com/gsi/$frame,redirect=click2load.html,domain=~claude.ai
 ||accounts.google.com/gsi/$3p
 ||apis.google.com$3p,domain=udn.com
 yorg.io###adVideoBg
@@ -765,3 +766,6 @@ www.news.com.au##.LoaderBox
 ||awsstatic.com/onedam/marketing-channels/$image
 lowendaff.com###sticky_ads_wrapper
 ||tsx.is/logos/sevalla-full.svg$image
+||leafletjs.com/dialog/$subdocument
+leafletjs.com###dialog
+leafletjs.com##body:style(overflow: unset !important)
