@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Thu, 05 Feb 2026 22:34:06 GMT
+! Last modified: Fri, 06 Feb 2026 04:10:05 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Thu, 05 Feb 2026 14:26:01 +0000
+!   - Last modified: Fri, 06 Feb 2026 01:23:20 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Thu, 05 Feb 2026 12:44:58 +0000
@@ -14626,7 +14626,6 @@ nullpk.com##+js(nostif, showModal)
 reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion##.XPromoBlockingModal
 reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion##.m-blurred:style(filter: none !important;)
 reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion##xpromo-new-nsfw-blocking-modal
-reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion##[style^="filter:"]:style(filter: none !important;)
 @@*$ghide,domain=bishopsstortfordindependent.co.uk|cambridgeindependent.co.uk|dissexpress.co.uk|fenlandcitizen.co.uk|granthamjournal.co.uk|kentonline.co.uk|lynnnews.co.uk|newarkadvertiser.co.uk|rutland-times.co.uk|spaldingtoday.co.uk|stamfordmercury.co.uk|suffolknews.co.uk|velvetmag.co.uk
 bishopsstortfordindependent.co.uk,cambridgeindependent.co.uk,dissexpress.co.uk,fenlandcitizen.co.uk,granthamjournal.co.uk,lynnnews.co.uk,kentonline.co.uk,newarkadvertiser.co.uk,rutland-times.co.uk,spaldingtoday.co.uk,stamfordmercury.co.uk,suffolknews.co.uk,velvetmag.co.uk##[id*="mpu"]:style(height: 1px !important)
 bishopsstortfordindependent.co.uk,cambridgeindependent.co.uk,dissexpress.co.uk,fenlandcitizen.co.uk,granthamjournal.co.uk,lynnnews.co.uk,kentonline.co.uk,newarkadvertiser.co.uk,rutland-times.co.uk,spaldingtoday.co.uk,stamfordmercury.co.uk,suffolknews.co.uk,velvetmag.co.uk##[class*="MPU"]:style(height: 1px !important)
