@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Fri, 06 Feb 2026 04:10:05 GMT
+! Last modified: Fri, 06 Feb 2026 06:55:41 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.99.70
+!   - Version: 2.0.99.71
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -218,6 +218,9 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||iconmediapixel-ipv4.com^
+||iconmediapixel.com^
+||whale.camera^
 ||log.ablyft.com^
 ||participants.evolv.ai^
 ||media.evolv.ai^
@@ -122796,10 +122799,13 @@ zmail.mtrl.me$image
 /web-pixel-*/worker.modern.js
 /web-pixels@*/web-pixel-*/sandbox/modern/*
 /wpm@*/web-pixel-
+/shopifycloud/perf-kit/shopify-perf-kit-*.min.js
 /shopifycloud/media-analytics/v*/analytics.js
 /shopifycloud/shopify/assets/shop_events_listener-*.js
+/shopifycloud/storefront/assets/shop_events_listener-*.js
 /shopify_stats.js
 /cdn/shopifycloud/consent-tracking-api/*
+/cdn/s/trekkie.storefront.*.min.js
 /shopify-datalayer-minified.js
 /.well-known/shopify/monorail
 /prod/dfm/t8y9347t.min.js
@@ -123364,6 +123370,8 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||immowelt.de/serp-bff/analytics/
+||amazonaws.com/icontracker/
 ||bundles-stats.kachingappz.app/impressions
 ||bthaber.com/js/ads-tracker.js
 ||bthaber.com/js/news-tracker.js
@@ -124206,7 +124214,6 @@ aihumanizer.ai,humbot.ai##+js(set-local-storage-item, /__anon_id|browserId/, $re
 ||api.viqeo.tv/v1/data/track?npvid=
 sky.pro##+js(set-local-storage-item, /^(sales-ninja|snj)/, $remove$)
 ||store.vspo.jp/cdn/s/trekkie.
-||store.vspo.jp/cdn/shopifycloud/perf-kit/shopify-perf-kit-*.min.js
 wpde.com##div[class^="index-module_featuredVideosWhiteWrapper"]:has(> div[class^="index-module_videoContainer"] > #taboola-video-reel-new-homepage)
 wpde.com##div[id^="taboolaContainerWrapper"]
 ||resources.hltv.org/hltv-tracking.js
