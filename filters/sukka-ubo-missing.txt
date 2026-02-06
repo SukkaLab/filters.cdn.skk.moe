@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Fri, 06 Feb 2026 06:55:41 GMT
+! Last modified: Fri, 06 Feb 2026 10:31:19 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.99.71
+!   - Version: 2.0.99.74
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -65472,6 +65472,8 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||analytics.editorialedomani.it^
+||pixel.scoring.ru^
 ||minimetrika.xsolla.com^
 ||um.merinfo.se^
 ||ins.connatix.com^
@@ -123356,7 +123358,7 @@ _tracking.php?b=
 ||google-analytics.com/ga.js$script,redirect=google-analytics_ga.js,domain=~daj.jp
 ||googletagmanager.com/gtm.js$3p,script,redirect=google-analytics_analytics.js,domain=~corsair.com|~olx.*|~simon.com|~bethesda.net|~paddle.com|~linodellefateresort.com
 ||googletagservices.com/tag/js/gpt.js$xhr,script,redirect=googletagservices_gpt.js
-||securepubads.g.doubleclick.net/tag/js/gpt.js$script,redirect=googletagservices_gpt.js,domain=~golf.com|~today.line.me|~inmuebles24.com|~inside.com.tw|~investing.com|~olx.com.eg|~eksisozluk.com|~heycar.co.uk|~gizmodo.jp
+||securepubads.g.doubleclick.net/tag/js/gpt.js$script,redirect=googletagservices_gpt.js,domain=~golf.com|~today.line.me|~inmuebles24.com|~inside.com.tw|~investing.com|~olx.com.eg|~eksisozluk.com|~heycar.co.uk|~gizmodo.jp|~dexerto.com
 ||securepubads.g.doubleclick.net/tag/js/gpt.js$script,redirect=googletagservices_gpt.js,important,domain=turbo.pt
 .demdex.net/id^$redirect=noop.txt,important,image,media,subdocument,stylesheet,script,xhr,other
 ||omtrdc.net/id^$redirect=noop.txt,important,image,media,subdocument,stylesheet,script,xhr,other
@@ -123370,6 +123372,7 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||s3.amazonaws.com/icontracker/
 ||immowelt.de/serp-bff/analytics/
 ||amazonaws.com/icontracker/
 ||bundles-stats.kachingappz.app/impressions
