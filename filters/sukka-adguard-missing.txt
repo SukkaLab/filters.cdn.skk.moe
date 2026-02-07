@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sat, 07 Feb 2026 06:42:18 GMT
+! Last modified: Sat, 07 Feb 2026 10:17:08 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,13 +8,13 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Fri, 06 Feb 2026 16:39:14 +0000
+!   - Last modified: Sat, 07 Feb 2026 05:38:40 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Thu, 05 Feb 2026 12:44:58 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Fri, 06 Feb 2026 11:56:11 +0000
+!   - Last modified: Sat, 07 Feb 2026 06:15:44 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
 !   - Last modified: Mon, 02 Feb 2026 13:25:46 +0000
@@ -27,7 +27,7 @@
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Fri, 06 Feb 2026 19:20:47 +0000
+!   - Last modified: Sat, 07 Feb 2026 04:45:15 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
 !   - Last modified: Wed, 04 Feb 2026 13:37:14 +0000
@@ -8244,7 +8244,7 @@ simpcity.*##.node--link
 ||vast.pet^
 saint2.cr##^script:has-text(WebAssembly)
 saint2.cr##+js(acs, WebAssembly, Promise)
-10convert.com,2girls1cup.ca,7bit.link,animez.org,aninavi.blog,ansuko.net,apnablogs.in,areabokep.com,asiangaysex.net,asmroger.*,axomtube.in,banglachotigolpo.xyz,besthdgayporn.com,bigojav.com,bookfrom.net,chikianimation.org,ddd-smart.net,dojing.net,drivenime.com,dtupgames.blogspot.com,earnfromarticles.com,easyvidplayer.com,echiman.com,erokomiksi.com,favoyeurtube.net,fucksporn.com,fullxcinema1.com,gayfor.us,gayxx.net,gdrivelatinohd.net,gigmature.com,gomuraw.blog,gosexy.mobi,hachiraw.net,hanime1-me.top,hentaianimezone.com,hentaiasmr.moe,hentairead.io,homemoviestube.com,hornyfap.tv,huurshe.com,incgrepacks.com,isekaitube.com,japangaysex.com,javboys.*,javbraze.com,javdoe.sh,javhat.tv,javhd.*,javhdz.today,javseen.tv,javsubindo.com,javtiful.com,javup.org,jojolandsmanga.com,jpopsingles.eu,kahanighar.com,kaliscan.*,kfapfakes.com,kiradream.blog,kisscos.net,kisshentaiz.com,kmansin09.*,kuronavi.blog,leermanga.net,lustesthd.makeup,mangakoma01.*,mangamovil.net,mangaraw.*,mangaraw1001.cc,mangaraw18.net,mangarawad.fit,mangarawjp.me,manhuatop.org,manhwa68.com,manhwatop.com,mikohub.blog,milfnut.*,movibd.com,mmsbee47.com,mmsmasala27.com,naijauncut.com,nicomanga.com,nudeslegion.com,odiafresh.com,onlinework4all.com,otomi-games.com,pandamovies.org,pantieshub.net,pastelink.net,pinayflix.me,piratehaven.xyz,poapan.xyz,porn00.org,pornohubonline.com,pornxp.com,primewire.*,raw1001.net,raw18.*,rawinu.com,rawkuro.net,rebahin.pw,redretti.com,rentry.co,safefileku.com,sexdiaryz.*,sexpin.net,shemale6.com,shemaleup.net,sharinghubs.com,shinshi-manga.net,smarttrend.xyz,socigames.com,spotidownloader.com,streamup.ws,sweeteroticart.com,tabooporn.tv,tatli.biz,tesbox.my.id,thebarchive.com,theblank.net,transflix.net,turboimagehost.com,vintagepornfun.com,weloma.art,welovemanga.one,worthcrete.com,xhamster.fm,xmegadrive.com,yabaisub.cloud,yesjavplease.fun##+js(acs, document.createElement, l.parentNode.insertBefore(s)
+10convert.com,2girls1cup.ca,7bit.link,animez.org,aninavi.blog,ansuko.net,apnablogs.in,areabokep.com,asiangaysex.net,asmroger.*,axomtube.in,banglachotigolpo.xyz,besthdgayporn.com,bigojav.com,bookfrom.net,boysxclusive.com,chikianimation.org,ddd-smart.net,dojing.net,drivenime.com,dtupgames.blogspot.com,earnfromarticles.com,easyvidplayer.com,echiman.com,erokomiksi.com,favoyeurtube.net,fucksporn.com,fullxcinema1.com,gayfor.us,gayxx.net,gdrivelatinohd.net,gigmature.com,gomuraw.blog,gosexy.mobi,hachiraw.net,hanime1-me.top,hentaianimezone.com,hentaiasmr.moe,hentairead.io,homemoviestube.com,hornyfap.tv,huurshe.com,incgrepacks.com,isekaitube.com,japangaysex.com,javboys.*,javbraze.com,javdoe.sh,javhat.tv,javhd.*,javhdz.today,javseen.tv,javsubindo.com,javtiful.com,javup.org,jojolandsmanga.com,jpopsingles.eu,kahanighar.com,kaliscan.*,kfapfakes.com,kiradream.blog,kisscos.net,kisshentaiz.com,kmansin09.*,kuronavi.blog,leermanga.net,lustesthd.makeup,mangakoma01.*,mangamovil.net,mangaraw.*,mangaraw1001.cc,mangaraw18.net,mangarawad.fit,mangarawjp.me,manhuatop.org,manhwa68.com,manhwatop.com,mikohub.blog,milfnut.*,movibd.com,mmsbee47.com,mmsmasala27.com,naijauncut.com,nicomanga.com,nudeslegion.com,odiafresh.com,onlinework4all.com,otomi-games.com,pandamovies.org,pantieshub.net,pastelink.net,pinayflix.me,piratehaven.xyz,poapan.xyz,porn00.org,pornohubonline.com,pornxp.com,primewire.*,raw1001.net,raw18.*,rawinu.com,rawkuro.net,rebahin.pw,redretti.com,rentry.co,safefileku.com,sexdiaryz.*,sexpin.net,shemale6.com,shemaleup.net,sharinghubs.com,shinshi-manga.net,smarttrend.xyz,socigames.com,spotidownloader.com,streamup.ws,sweeteroticart.com,tabooporn.tv,tatli.biz,tesbox.my.id,thebarchive.com,theblank.net,transflix.net,turboimagehost.com,vintagepornfun.com,weloma.art,welovemanga.one,worthcrete.com,xhamster.fm,xmegadrive.com,yabaisub.cloud,yesjavplease.fun##+js(acs, document.createElement, l.parentNode.insertBefore(s)
 panuvideo.com##+js(acs, setTimeout, l.parentNode.insertBefore(s)
 mangaplus.shueisha.tv,shueisharaw.tv##+js(acs, matchMedia, l.parentNode.insertBefore(s)
 asiangay.tv,bootstrample.com,deephot.link,gayxx.net,hentairead.io,japangaysex.com,mangagun.net,nicomanga.com,nudeslegion.com,premiumporn.org,rawinu.com,watchsouthpark.tv,weloma.art,welovemanga.one,xpicu.store##+js(aopr, popns)
@@ -8581,7 +8581,7 @@ hyhd.org##+js(rmnt, script, sandbox)
 hyhd.org##+js(acs, document.write, .js?_=)
 ||vidsrc.*.js?_=17*$script
 /^https?:\/\/(?:\w+\.){1,2}[a-z]{2,}\/[a-f0-9]{32}\.js\?_=17\d{8}$/$script,1p,strict1p,match-case
-/\.[a-z]{2,}\/[a-f0-9]{32}\.js\?_=17\d+$/$script,1p,match-case,domain=xyz
+/\.[a-z]{2,}\/[a-f0-9]{32}\.js\?_=17\d+$/$script,1p,match-case,domain=xyz|cloudnestra.com
 /^https?:\/\/[-a-z0-9]+\.([-a-z0-9]+\.)?[a-z][a-z]+\/[a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9]\.js\?_=17[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]$/$script,1p,match-case
 arcjav.com,boxingstream.me,buffsports.io,buffstreams.*,embedsports.top,game3rb.com,glodls.to,igg-games.com,manhwalist.com,mc-hacks.net,miraculous.*,muchohentai.com,mycivillinks.com,nflstreams.me,s2dfree.to,soap2day.*,tennisstreams.*,tv247.us,vidsrc.*,vipboxtv.*,vipleague.*,woiden.com,wonderapk.com##+js(acs, navigator, FingerprintJS)
 manhwalist.com##+js(aost, btoa, /https|stackDepth:3/)
@@ -8618,8 +8618,8 @@ glodls.to,playfa.com##+js(acs, fetch, break;case)
 /^https:\/\/[a-z]{3,5}\.[a-z]{10,14}\.top\/[a-z]{10,16}\/[a-z]{5,6}(?:\?d=\d)?$/$script,xhr,3p,match-case,to=top
 /^https:\/\/[a-z]{3,5}\.[a-z]{10,14}\.top\/[A-Za-z]{10,16}\/[A-Za-z]{5,6}$/$popup,3p,to=top
 /^https:\/\/[a-z][a-z][a-z][a-z]?[a-z]?\.[a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z]?[a-z]?[a-z]?[a-z]?\.top\/[a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z]?[a-z]?[a-z]?[a-z]?[a-z]?[a-z]?\/[a-z][a-z][a-z][a-z][a-z][a-z]?\?d=[0-9]$/$script,xhr,3p,match-case
-123animehub.cc,123animes.ru,actvid.*,boosterx.stream,cataz.to,cineb.rs,cineb.gg,demonicscans.org,dopebox.to,embed.nextgencloudtools.com,fbsquadx.com,flixhq.to,gomovies.*,gomoviestv.to,hdtoday.cc,hentai2read.com,himovies.sx,hurawatch.cc,hurawatchz.to,jkanime.net,lectormangaa.com,limetorrents.lol,lulustream.com,luluvdoo.com,luluvid.com,mangagun.net,mexa.sh,mgeko.cc,mkvcinemas.*,moflix-stream.fans,motchill29.com,mov18plus.cloud,moviesapi.to,movies2watch.tv,movies4us.co,musichq.cc,netmovies.to,nicomanga.com,phimlongtieng.net,rawinu.com,rawkuma.net,readcomiconline.*,seriesonline.sx,stream18.net,theflixertv.to,torrentdownload.*,toonily.com,torrentdownloads.*,tukipasti.com,updown.icu,vidora.stream,vidsrc.cc,watchasians.cc,watch-movies.com.pk,watchseries.*,weloma.art,welovemanga.one,ythd.org,zoechip.com,zoechip.gg##^script:has-text(HTMLAllCollection)
-123animehub.cc,123animes.ru,actvid.*,boosterx.stream,cataz.to,cineb.rs,cineb.gg,demonicscans.org,dopebox.to,embed.nextgencloudtools.com,fbsquadx.com,flixhq.to,gomovies.*,gomoviestv.to,hdtoday.cc,hentai2read.com,himovies.sx,hurawatch.cc,hurawatchz.to,jkanime.net,lectormangaa.com,limetorrents.lol,lulustream.com,luluvdoo.com,luluvid.com,mangagun.net,mexa.sh,mgeko.cc,mkvcinemas.*,moflix-stream.fans,motchill29.com,mov18plus.cloud,moviesapi.to,movies2watch.tv,movies4us.co,musichq.cc,netmovies.to,nicomanga.com,phimlongtieng.net,rawinu.com,rawkuma.net,readcomiconline.*,seriesonline.sx,stream18.net,theflixertv.to,torrentdownload.*,toonily.com,torrentdownloads.*,tukipasti.com,updown.icu,vidora.stream,vidsrc.cc,watchasians.cc,watch-movies.com.pk,watchseries.*,weloma.art,welovemanga.one,ythd.org,zoechip.com,zoechip.gg##+js(acs, addEventListener, HTMLAllCollection)
+123animehub.cc,123animes.ru,actvid.*,boosterx.stream,cataz.to,cineb.rs,cineb.gg,demonicscans.org,dopebox.to,embed.nextgencloudtools.com,fbsquadx.com,flixhq.to,gomovies.*,gomoviestv.to,hdtoday.cc,hentai2read.com,himovies.sx,hurawatch.cc,hurawatchz.to,jkanime.net,lectormangaa.com,limetorrents.lol,lulustream.com,luluvdoo.com,luluvid.com,mangagun.net,mexa.sh,mgeko.cc,mkvcinemas.*,moflix-stream.fans,motchill29.com,mov18plus.cloud,moviesapi.to,movies2watch.tv,movies4us.co,musichq.cc,netmovies.to,nicomanga.com,phimlongtieng.net,rawinu.com,rawkuma.net,readcomiconline.*,seriesonline.sx,stream18.net,theflixertv.to,torrentdownload.*,toonily.com,torrentdownloads.*,tukipasti.com,updown.icu,vidora.stream,vidsrc.cc,vsrc.su,watchasians.cc,watch-movies.com.pk,watchseries.*,weloma.art,welovemanga.one,ythd.org,zoechip.com,zoechip.gg##^script:has-text(HTMLAllCollection)
+123animehub.cc,123animes.ru,actvid.*,boosterx.stream,cataz.to,cineb.rs,cineb.gg,demonicscans.org,dopebox.to,embed.nextgencloudtools.com,fbsquadx.com,flixhq.to,gomovies.*,gomoviestv.to,hdtoday.cc,hentai2read.com,himovies.sx,hurawatch.cc,hurawatchz.to,jkanime.net,lectormangaa.com,limetorrents.lol,lulustream.com,luluvdoo.com,luluvid.com,mangagun.net,mexa.sh,mgeko.cc,mkvcinemas.*,moflix-stream.fans,motchill29.com,mov18plus.cloud,moviesapi.to,movies2watch.tv,movies4us.co,musichq.cc,netmovies.to,nicomanga.com,phimlongtieng.net,rawinu.com,rawkuma.net,readcomiconline.*,seriesonline.sx,stream18.net,theflixertv.to,torrentdownload.*,toonily.com,torrentdownloads.*,tukipasti.com,updown.icu,vidora.stream,vidsrc.cc,vsrc.su,watchasians.cc,watch-movies.com.pk,watchseries.*,weloma.art,welovemanga.one,ythd.org,zoechip.com,zoechip.gg##+js(acs, addEventListener, HTMLAllCollection)
 cataz.to##+js(nowoif)
 vidfast.*##+js(acs, addEventListener, HTMLAllCollection)
 cineb.rs,moviesjoyhd.to,rawkuma.com##+js(aeld, mousedown, shown_at)
@@ -22181,6 +22181,10 @@ legendsofmodding.org##+js(rmnt, script, /offsetHeight|\.test/)
 ad4msan.com##+js(acs, document.addEventListener, adblock)
 mathplayground.com##+js(set, HTMLScriptElement.prototype.onerror, undefined)
 mathplayground.com##.bottom-leader
+boysxclusive.com##+js(set, flashvars.protect_block, '')
+boysxclusive.com##.asside-link
+boysxclusive.com##[href^="https://tsyndicate.com/"]
+||iporngay.com^
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -27445,8 +27449,6 @@ discord.com##+js(no-xhr-if, discord.com/api/v9/science)
 click.transactional.agoda.com$image
 .wattpad.com/et?$image
 .wattpad.com%2Fet%3F$image
-links1.pawns.app/q/$image
-links1.pawns.app%2Fq%2F$image
 email-analytics.meetup.com/$image
 email-analytics.meetup.com%2F$image
 myanimelist.net/pixel?$image
@@ -27536,6 +27538,10 @@ r.mail.wowvegas.com%2Ftr%2Fop%2F$image
 /github.com/notifications/beacon/*$image
 *%2Fgithub.com%2Fnotifications%2Fbeacon%2F$image
 *%2Flinks.mail.vistaprint.com%2Fs%2F$image
+/api.controld.com/pixel/*$image
+*%2Fapi.controld.com%2Fpixel%2F$image
+.ondemandmsg.sbs.com.au/r/$image
+.ondemandmsg.sbs.com.au%2Fr%2F$image
 static.adsugar.ch/img?ord=$image
 static.adsugar.ch%2Fimg%3Ford%3D$image
 ecmweb.com/images/shim.png$image
@@ -27552,6 +27558,10 @@ newsletter.adnz.co%2F$image
 *%2Fe3t%2FCto%2F$image
 /s/eo/*$image
 *%2Fs%2Feo%2F$image
+/links1.*/q/*$image
+*%2Flinks1*%2Fq%2F$image
+.sendpul.se:*/image/ui/$image
+.sendpul.se%3A*%2Fimage%2Fui%2F$image
 ||googleusercontent.com/*/wf/open?upn=$image
 .salesforce.com%2Fservlet%2Fservlet.ImageServer%3F$image
 ||beacons.ai/api/rtanalytics/
@@ -31083,7 +31093,7 @@ wetter.com##+js(trusted-click-element, .cmp-scroll-padding .cmp-info[style] #cmp
 wetter.com###cmp-style-reset
 wetter.com##body:style(overflow: auto !important; position: unset !important;)
 sj.se##+js(trusted-set-cookie, sj_consent_v1, '%7B%22consent%22%3A%7B%22PERSONALIZATION%22%3Afalse%2C%22MARKETING%22%3Afalse%7D%2C%22uuid%22%3A%22d599dc64-52b7-4dc7-bff3-1e18d5cebc1a%22%7D')
-youmath.it##+js(trusted-click-element, button#pt-accept-all)
+youmath.it,eunews.it##+js(trusted-click-element, button#pt-accept-all)
 omgevingsloketinzage.omgeving.vlaanderen.be##+js(trusted-set-cookie, vl-cookie-consent-cookie-consent-date, $now$)
 omgevingsloketinzage.omgeving.vlaanderen.be##+js(set-cookie, vl-cookie-consent-cookie-consent, true)
 omgevingsloketinzage.omgeving.vlaanderen.be##+js(set-cookie, vl-cookie-consent-functional, true)
@@ -31464,7 +31474,7 @@ pekro.cz##+js(trusted-set-cookie, ck, bbc3afa1f99650a097dc655e829ea82db262c98c%7
 @@||cdn-images.the-express.com/*/dist/gdpr-$script,1p
 dailypost.co.uk,the-express.com##+js(trusted-click-element, button[mode="primary"], , 1000)
 dailyrecord.co.uk##+js(trusted-click-element, #qc-cmp2-container button#accept-btn)
-bluray-disc.de,elio-systems.com,stagatha-fachklinik.de,tarife.mediamarkt.de,lz.de,gaggenau.com##+js(trusted-click-element, a.cmptxt_btn_no, , 1000)
+bluray-disc.de,elio-systems.com,stagatha-fachklinik.de,tarife.mediamarkt.de,lz.de,gaggenau.com,tickets.milanocortina2026.org##+js(trusted-click-element, a.cmptxt_btn_no, , 1000)
 saturn.de##+js(trusted-click-element, button[data-test="pwa-consent-layer-save-settings"], , 1000])
 rally-maps.com##+js(trusted-set-cookie, cc_cookie, '{"categories":["consent-log","cookie-consent","mapSettings"],"revision":0,"data":null,"consentTimestamp":"$currentISODate$","consentId":"ca1ba17b-868a-47b7-82e2-fd5499b57521","lastConsentTimestamp":"$currentISODate$"}', 1year)
 bestdrive.fi,bestdrive.no##+js(trusted-set-local-storage-item, acceptedCookies, '{"":false,"AMCV_###@AdobeOrg /":true,"AMCVS_###@AdobeOrg":true,"APISID, HSID, SAPISID, SID ja SSID cookies":true,"(auch GTM)":true,"NID cookie":true,"SIDCC cookie":true,"Youtube cookies":true,"mbox":true,"consent_adform":false,"consent_adobeanalytics":false,"consent_adobetarget":false,"consent_googleanalytics":false,"consent_googleads":false,"consent_facebook":false,"consent_giosg":false,"consent_nid":true}')
@@ -31526,7 +31536,7 @@ tk.de##+js(trusted-set-cookie, tkConsentSettingsSaved, v1)
 www.tk.de##+js(trusted-set-cookie, CONSENTMGR, c1:0%7Cc3:0%7Cc9:1%7Cts:$now$%7Cconsent:true, , , domain, www.tk.de)
 salzburg.info##+js(set-attr, img.js-lazy-img[src^="data:image/"], src, [data-src])
 verksamt.se##+js(trusted-click-element, [data-testid="consent-necessary"])
-unity.com,acmemarkets.com,amtrak.com,beko.com,bepanthen.com.au,berocca.com.au,booking.com,carrefour.fr,centrum.sk,claratyne.com.au,credit-suisse.com,ceskatelevize.cz,deporvillage.*,de.vanguard,dhl.de,digikey.*,drafthouse.com,dunelm.com,eurosport.fr,fello.se,fielmann.*,flashscore.fr,flightradar24.com,fnac.es,foodandwine.com,fourseasons.com,khanacademy.org,konami.com,jll.*,jobs.redbull.com,hellenicbank.com,intersport.*,gemini.pl,groceries.asda.com,lamborghini.com,menshealth.com,n26.com,nintendo.com,nokia.com,oneweb.net,omnipod.com,oralb.*,panasonic.com,parkside-diy.com,pluto.tv,popularmechanics.com,polskieradio.pl,pringles.com,questdiagnostics.com,radissonhotels.com,ricardo.ch,rockstargames.com,rte.ie,salesforce.com,samsonite.*,spiele.heise.de,spirit.com,stenaline.co.uk,swisscom.ch,swisspass.ch,technologyfromsage.com,telenet.be,tntsports.co.uk,theepochtimes.com,toujeo.com,uber-platz.de,vinted.com,wallapop.com,wickes.co.uk,workingtitlefilms.com,vattenfall.de,winparts.fr,yoigo.com,zoominfo.com##+js(trusted-click-element, button[id="onetrust-reject-all-handler"], , 1500)
+blog.geizhals.at,unity.com,acmemarkets.com,amtrak.com,beko.com,bepanthen.com.au,berocca.com.au,booking.com,carrefour.fr,centrum.sk,claratyne.com.au,credit-suisse.com,ceskatelevize.cz,deporvillage.*,de.vanguard,dhl.de,digikey.*,drafthouse.com,dunelm.com,eurosport.fr,fello.se,fielmann.*,flashscore.fr,flightradar24.com,fnac.es,foodandwine.com,fourseasons.com,khanacademy.org,konami.com,jll.*,jobs.redbull.com,hellenicbank.com,intersport.*,gemini.pl,groceries.asda.com,lamborghini.com,menshealth.com,n26.com,nintendo.com,nokia.com,oneweb.net,omnipod.com,oralb.*,panasonic.com,parkside-diy.com,pluto.tv,popularmechanics.com,polskieradio.pl,pringles.com,questdiagnostics.com,radissonhotels.com,ricardo.ch,rockstargames.com,rte.ie,salesforce.com,samsonite.*,spiele.heise.de,spirit.com,stenaline.co.uk,swisscom.ch,swisspass.ch,technologyfromsage.com,telenet.be,tntsports.co.uk,theepochtimes.com,toujeo.com,uber-platz.de,vinted.com,wallapop.com,wickes.co.uk,workingtitlefilms.com,vattenfall.de,winparts.fr,yoigo.com,zoominfo.com##+js(trusted-click-element, button[id="onetrust-reject-all-handler"], , 1500)
 allegiantair.com,hallmarkchannel.com,incorez.com,noovle.com,otter.ai,plarium.com,telsy.com,timenterprise.it,tim.it,tradersunion.com,fnac.*,yeti.com##+js(trusted-click-element, button.onetrust-close-btn-handler, , 1000)
 here.com,vodafone.com##+js(trusted-click-element, div[class="t_cm_ec_reject_button"], , 1000)
 kooora.com>>##+js(trusted-click-element, button[aria-label="نعم انا موافق"])
@@ -31993,6 +32003,12 @@ happysoaps.com##+js(set-cookie, consent-studio__consent-id, 1)
 spektrum.de##+js(trusted-click-element, button[aria-disabled="false"], , 1000)
 purequeen.pl##+js(trusted-click-element, button#c-s-bn, , 800)
 purequeen.pl##+js(trusted-click-element, button#s-sv-bn, , 1000)
+ananas.rs##+js(set-cookie, cookie_policy, true)
+ananas.rs##+js(trusted-set-cookie, cookie_policy_version, '1.2')
+ananas.rs##+js(trusted-set-cookie, enabled_policies, '["necessary","functional"]')
+herrvoneden.com##+js(trusted-click-element, input#accept_selected_cookies, , 1000)
+deribit.com##+js(trusted-set-local-storage-item, cookieConsent, '{"timestamp":$now$,"value":false}')
+deribit.com##+js(trusted-set-local-storage-item, cookieConsentScopes, '{"timestamp":$now$,"value":{"allowMarketing":false,"allowStatistics":false}}')
 markushaenni.com##+js(trusted-click-element, button.dp_accept, , 1000)
 mishcon.com##+js(trusted-set-cookie, CookieChoicesApr2021, '{"functionality":false,"anonymousMeasurement":false,"performance":false,"advertising":false}')
 refunder.*##+js(trusted-set-cookie, cookie_consent, '{"rejectAll":true}')
@@ -32723,7 +32739,7 @@ daad.de##+js(trusted-set-cookie, daad_cookie_consent, '{"availableCookies":["goo
 clave.gob.es##+js(trusted-click-element, button#button-3df9db503c, , 1000)
 wink.ai##+js(trusted-set-local-storage-item, winkCookieConsent, '{"accept":false,"rejectTime":1}')
 webull.com##+js(trusted-click-element, div.secondary, , 1000)
-whatsmyname.app##+js(trusted-set-cookie, GHCC, Required:1-Analytics:0-SocialMedia:0-Advertising:0)
+infisical.com,whatsmyname.app##+js(trusted-set-cookie, GHCC, Required:1-Analytics:0-SocialMedia:0-Advertising:0)
 accursia-capital.de##+js(trusted-click-element, button[data-hook="consent-banner-decline-all-button")
 joyn.de##+js(trusted-click-element, 'cmp-banner >>> cmp-dialog >>> cmp-button >>> .button.button--primary', , 1000)
 joyn.de##+js(rpnt, script, (self, (()=>{let t\,e=!1;const o=new MutationObserver(((e\,o)=>{const c=t?.querySelector('cmp-button[variant="primary"]');c&&(c.click()\,o.disconnect())}))\,c={apply:(c\,n\,a)=>{const r=Reflect.apply(c\,n\,a);return!e&&n.matches("cmp-dialog")&&(e=!0\,t=r)\,o.observe(r\,{subtree:!0\,childList:!0})\,r}};window.Element.prototype.attachShadow=new Proxy(window.Element.prototype.attachShadow\,c)})();(self, sedCount, 1)
