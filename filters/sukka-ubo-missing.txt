@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Mon, 09 Feb 2026 10:49:31 GMT
+! Last modified: Mon, 09 Feb 2026 15:01:10 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.99.81
+!   - Version: 2.0.99.83
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -65474,6 +65474,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||datadog-log.clovergames.io
 ||counter.powr.io^
 ||events1.avantisvideo.com^
 ||prebid.tapatalk.com^
@@ -123380,6 +123381,9 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||horoskopy.cz/*/impress?
+||horoskopy.cz/*?zoneId=
+||horoskopy.cz/*/hit|
 ||app.partnerboost.com/brand/track.*.min.js
 ||kicklogz.com/anl/mytag.js
 marketwatch.com##+js(set-local-storage-item, pvid, $remove$)
@@ -128849,7 +128853,7 @@ mjt.lu$image
 app.frontapp.com/api/1/noauth/companies/alternstiveto/seen/msg_$image
 app.frontapp.com%2Fapi%2F1%2Fnoauth%2Fcompanies%2Falternstiveto%2Fseen%2Fmsg_$image
 .exponea.com/*/open$image
-.exponea.com%2F%2A%2Fopen$image
+.exponea.com%2F*%2Fopen$image
 public-cis.exponea.com$image
 go.lanet.click$image
 33mail.com%2Fpage%2Fopened$image
