@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Mon, 09 Feb 2026 15:01:10 GMT
+! Last modified: Mon, 09 Feb 2026 22:42:08 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,16 +18,16 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202602091452
+!   - Version: 202602092231
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 09 Feb 2026 14:52 UTC
+!   - Last modified: 09 Feb 2026 22:31 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
 ! * ⚙️ Dandelion Sprout's Annoyances List
 !   - URL: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AnnoyancesList
-!   - Version: 30January2026v1-Compilation
+!   - Version: 09February2026v1-Compilation
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 🎯 DailyMotion Simplicity
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/DailyMotionSimplicity.txt
@@ -2686,8 +2686,6 @@ foodora.*##.user-wrapper + .order-components:style(top: 64px !important)
 ##.ad-native:not(html,body,:empty)
 #@#.ad-sense
 ##.ad-sense:not(html,body,:empty)
-#@#.ad-unit
-##.ad-unit:not(html,body,:empty)
 #@#.adBox
 ##.adBox:not(html,body,:empty)
 #@#.pub_300x250
