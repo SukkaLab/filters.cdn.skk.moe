@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Mon, 09 Feb 2026 22:42:08 GMT
+! Last modified: Tue, 10 Feb 2026 04:28:25 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.99.84
+!   - Version: 2.0.99.87
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -218,6 +218,8 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||lgrckt-in.com^
+||snssdk.gatedata.org^
 ||targetads.io^
 ||tp88trk.com^
 ||atomictrackercollector-i5adxi4wfq-uc.a.run.app^
@@ -65475,6 +65477,8 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||dwh-prod.moz.de^
+||affiliate.hrkgame.com^
 ||counter.reddigital.ru^
 ||pixel.udpauto.ru^
 ||tag.perx.ru^
@@ -123385,6 +123389,11 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+moz.de##+js(set-local-storage-item, AvoInstallationId, $remove$)
+moz.de##+js(set-local-storage-item, /^snowplow/, $remove$)
+||hrkgame.com/allstaticfiles/js/cookie.min.js
+||gate.com/api/web/v*/marketing-tools/growth-placement/record-view
+||apmplus.volces.com/monitor_web/
 ||horoskopy.cz/*/impress?
 ||horoskopy.cz/*?zoneId=
 ||horoskopy.cz/*/hit|
@@ -130251,6 +130260,7 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=saturn.de
 @@||metrics.us.playstation.com/b/ss/
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
+felixmobile.com.au###__next [style*="filter:blur"]:style(filter: none !important;)
 @@||optimizely.com^$image,domain=marinco.navico.com
 @@||adobedc.demdex.net^$xhr,domain=sc.com
 @@||src.litix.io/*/bitmovin-mux.js$domain=shoof.alkass.net
@@ -133991,6 +134001,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||rentpenny.com^
 ||repeatsweater.com^
 ||replaceroute.com^
+||rescueothers.com^
 ||rescuerhino.com^
 ||resonantbrush.com^
 ||resonantrock.com^
@@ -134538,6 +134549,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||valuebuttons.com^
 ||vanfireworks.com^
 ||vanishmemory.com^
+||vastmillions.com^
 ||velvetquasar.com^
 ||vengefulgrass.com^
 ||venomousvessel.com^
