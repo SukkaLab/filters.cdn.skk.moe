@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Wed, 11 Feb 2026 22:35:11 GMT
+! Last modified: Thu, 12 Feb 2026 04:20:53 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.0.99.97
+!   - Version: 2.1.0.0
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -65479,6 +65479,8 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||stats.jkdesa.com^
+-upaas.ucweb.com^
 ||totem.tvmaze.com^
 ||mt.9gag.com^
 ||dwh-prod.moz.de^
@@ -122704,6 +122706,7 @@ zmail.mtrl.me$image
 /^https?:\/\/(?!assets|script|static)(?:[0-9a-z]{10,13}|[0-9a-z]{6})\.[0-9A-Za-z.\-_]+\/(?=[0-9a-z+\/\-]*[A-Z])[0-9A-Za-z+\/\-]{80,106}$/$match-case,script,~3p
 /^https:\/\/cs\d{3}\.\w+\.com\/cscript\/\d{3}\/[\w\d]+\.js$/$script,3p,match-case
 /.well-known/private-click-measurement
+/wp-content/plugins/wp-analytify-pro/*
 /crm/tag/call.tracker.js
 /statistics/md.gif?
 /sp-2.0.0-dm-0.1.min.js
@@ -132617,6 +132620,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||aliasanvil.com^
 ||alikeaddition.com^
 ||aliveachiever.com^
+||allnewhost.com^
 ||alloutdubstep.com^
 ||allsunflowers.com^
 ||alltypo.com^
@@ -132811,6 +132815,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||callousbrake.com^
 ||calmcactus.com^
 ||calmstudent.com^
+||calvarycards.com^
 ||calypsocapsule.com^
 ||cannonchange.com^
 ||canvasandsocks.com^
