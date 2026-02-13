@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Fri, 13 Feb 2026 14:51:20 GMT
+! Last modified: Fri, 13 Feb 2026 18:44:06 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.0.10
+!   - Version: 2.1.0.12
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -218,6 +218,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||measureadv.com^
 ||at.artistchai.co.kr^
 ||data.artistchai.co.kr^
 ||lighthouselabs.eu^
@@ -65481,6 +65482,8 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||token.awswaf.com^
+||trace.shengshu-ai.com^
 ||player-analytics.mp.lura.live^
 ||dls-account.di.atlas.samsung.com^
 ||karrot-pixel.business.daangn.com^
@@ -123402,6 +123405,14 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||vidu.com/api/canary
+||awswaf.com/*/report|
+||filecrypt.cc/muh.php
+||filecrypt.cc/bla2.php
+||filecrypt.cc/surething.php
+||filecrypt.cc/api/site/tracking-config/
+||filecrypt.cc/api/track|
+||lenovo.com/portalpacks/web/js/AnalyticsServiceFactory*.js
 businessinsider.jp##div[class^="premiumRecommend_articles__"]
 ||s.turkiyegazetesi.com.tr/s/js/stats.js
 ||js.iplsc.com/inpl.log/
