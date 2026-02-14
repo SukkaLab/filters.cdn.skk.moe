@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sat, 14 Feb 2026 10:17:53 GMT
+! Last modified: Sat, 14 Feb 2026 14:35:07 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sat, 14 Feb 2026 05:32:01 +0000
+!   - Last modified: Sat, 14 Feb 2026 09:05:44 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Sat, 14 Feb 2026 08:11:23 +0000
@@ -6742,6 +6742,7 @@ reminimod.co,highkeyfinance.com,amanguides.com###wpsafe-link:others()
 blog.disheye.com###gourl:style(display: block !important;)
 blog.disheye.com###gourl:others()
 amanguides.com,highkeyfinance.com##+js(rmnt, script, deblocker)
+||vhit.io/scripts/vhit.js$script,domain=cety.app|cutlink.net|cutnet.net|cuttlinks.com|cutty.app|exe-links.com|exe-urls.com|exego.app|exnion.com|jixo.online
 cety.app,cutlink.net,cutnet.net,cuttlinks.com,cutty.app,exe-links.com,exe-urls.com,exego.app,exnion.com,jixo.online##.steps-to-earn, .flex.share-icons-container, .register-banner, fieldset, .partners-container, .actions, .earning-steps, article:has(p), footer, header
 cety.app,cutlink.net,cutnet.net,cuttlinks.com,cutty.app,exe-links.com,exe-urls.com,exego.app,exnion.com,jixo.online##+js(set, blurred, false)
 cety.app,cutlink.net,cutnet.net,cuttlinks.com,cutty.app,exe-links.com,exe-urls.com,exego.app,exnion.com,jixo.online##+js(aeld, DOMContentLoaded, history.go)
@@ -7501,6 +7502,7 @@ xtglinks.com##.animated.zoomIn.wow.text-center.py-5
 bgmiconfig.ink##.ad-zone
 stackmint.ink,bgmiconfig.ink,inkvoyage.xyz##+js(rpnt, script, /10;|6;/, 1;, condition, progress)
 messycloud.com##div.ad-zone
+rempo.xyz##+js(rpnt, script, isAndroid), false))
 xnxx.com,xvideos.com###ad-header-mobile
 jprime.jp##.ad-overlay
 apkdone.com##.adplaceholder-top
@@ -10028,7 +10030,12 @@ reamporn.com###bnclose
 xxxmax.net##^script:has-text('shift')
 xxxmax.net##^script:has-text(\'shift\')
 xxxmax.net##+js(acs, String.fromCharCode, 'shift')
-get.getpczone.com,rahim-soft.com,uploadrar.*###commonId > a[target="_blank"]
+uploadrar.*###commonId > a[target="_blank"]
+uploadrar.*##main > center > a.btn-primary
+uploadrar.*##.footer, span > .text-muted, .card, .m-2.submit-btn.btn-primary.btn
+uploadrar.*##.fs-5, p, ul, li, #how-to-open, .p-0.block, .download-controls, .ad-box + center
+uploadrar.*##+js(acs, document.documentElement, break;case $.)
+uploadrar.*##+js(nano-stb, /.?/, *)
 ||pixeltrey.com^
 rahim-soft.com##+js(nosiif, visibility, 1000)
 damndelicious.net,simplywhisked.com##+js(aopr, __eiPb)
@@ -21824,6 +21831,7 @@ dailymotion.com##+js(set, __NATIVEADS_CANARY__, true)
 dailymotion.com##.WatchingDiscovery__adSection___eLtfR
 ||dmxleo.dailymotion.com/*.m3u8?auth=
 ||dmxleo.dailymotion.com^
+||dmxleo.dailymotion.com/cdn/manifest/video/*?af=*monetization$xhr,1p
 www.parkers.co.uk##.async-hide:style(opacity: 1.0 !important)
 streamflash.sx##+js(trusted-rpnt, script, playerUnlocked = false, playerUnlocked = true)
 streamflash.sx###adOverlay
@@ -22216,6 +22224,11 @@ game-repack.site##+js(nowoif)
 filecrate.store##+js(aeld, click, !adShown)
 vidara.so,vidara.to##+js(nowoif)
 twitchnosub.com/static/js/runtime.mq.js
+cinefreak.*##+js(aeld, click, openPopunder)
+aznude.com##^meta[content*="magsrv.com"]
+aznude.com##+js(set, AdProvider, noopFunc)
+aznude.com##[class*="ad-container"]
+aznude.com##.single-video-ad
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
