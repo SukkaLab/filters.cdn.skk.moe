@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sun, 15 Feb 2026 06:52:42 GMT
+! Last modified: Sun, 15 Feb 2026 10:18:28 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sat, 14 Feb 2026 15:06:02 +0000
+!   - Last modified: Sun, 15 Feb 2026 07:26:41 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Sat, 14 Feb 2026 08:11:23 +0000
@@ -20,7 +20,7 @@
 !   - Last modified: Tue, 10 Feb 2026 08:23:37 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Sun, 15 Feb 2026 02:40:57 +0000
+!   - Last modified: Sun, 15 Feb 2026 05:49:47 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
 !   - Last modified: Sun, 15 Feb 2026 02:40:57 +0000
@@ -22229,6 +22229,7 @@ aznude.com##^meta[content*="magsrv.com"]
 aznude.com##+js(set, AdProvider, noopFunc)
 aznude.com##[class*="ad-container"]
 aznude.com##.single-video-ad
+xitongku.com##+js(trusted-set-session-storage-item, updateTime, $now$)
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -30372,13 +30373,13 @@ aternos.org##.sidebar:style(width: 1.745px !important; padding: 1px !important)
 aternos.org##.ad-dfp:style(min-height: 0.1485mm !important; height: 0.1485mm !important;)
 aternos.org###placement-takeover
 youtube.com##+js(json-prune, playerResponse.adPlacements playerResponse.playerAds playerResponse.adSlots adPlacements playerAds adSlots legacyImportant)
-www.youtube.com##+js(trusted-rpnt, script, (function serverContract(), (()=>{if("YOUTUBE_PREMIUM_LOGO"===ytInitialData?.topbar?.desktopTopbarRenderer?.logo?.topbarLogoRenderer?.iconImage?.iconType||location.href.startsWith("https://www.youtube.com/tv#/")||location.href.startsWith("https://www.youtube.com/embed/"))return;document.addEventListener("DOMContentLoaded"\,(function(){let t="";const e=()=>{const e=document.getElementById("movie_player");if(!e)return;const o=e.getProgressState?.();if(o&&o.duration>0&&(o.loaded<o.duration||o.duration-o.current>1)){if(!e.getStatsForNerds?.()?.debug_info?.startsWith?.("SSAP\, AD")){const o=e.getPlayerResponse?.()\,r=o.videoDetails?.videoId;return void("UNPLAYABLE"!==o?.playabilityStatus?.status||!o?.playabilityStatus?.errorScreen?.playerErrorMessageRenderer?.subreason||t&&t===r||(t=r\,e.loadVideoById(r\,o.playerConfig?.playbackStartConfig?.startSeconds??0)))}e.seekTo?.(o.duration)}};e()\,new MutationObserver((()=>{e()})).observe(document\,{childList:!0\,subtree:!0})}));const t={apply:(t\,e\,o)=>{const r=o[0];return"function"==typeof r&&r.toString().includes("onAbnormalityDetected")&&(o[0]=function(){})\,Reflect.apply(t\,e\,o)}};window.Promise.prototype.then=new Proxy(window.Promise.prototype.then\,t)})();(function serverContract(), sedCount, 1)
+www.youtube.com##+js(trusted-rpnt, script, (function serverContract(), (()=>{if("YOUTUBE_PREMIUM_LOGO"===ytInitialData?.topbar?.desktopTopbarRenderer?.logo?.topbarLogoRenderer?.iconImage?.iconType||location.href.startsWith("https://www.youtube.com/tv#/")||location.href.startsWith("https://www.youtube.com/embed/"))return;document.addEventListener("DOMContentLoaded"\,(function(){let e="";const t=()=>{const t=document.getElementById("movie_player");if(!t)return;const o=t.getProgressState?.();if(o&&o.duration>0&&(o.loaded<o.duration||o.duration-o.current>1)){if(!t.getStatsForNerds?.()?.debug_info?.startsWith?.("SSAP\, AD")){const o=t.getPlayerResponse?.()\,r=o.videoDetails?.videoId;return void("UNPLAYABLE"!==o?.playabilityStatus?.status||!o?.playabilityStatus?.errorScreen?.playerErrorMessageRenderer?.subreason||o?.playabilityStatus?.errorScreen?.playerErrorMessageRenderer?.playerCaptchaViewModel||e&&e===r||(e=r\,t.loadVideoById(r\,o.playerConfig?.playbackStartConfig?.startSeconds??0)))}t.seekTo?.(o.duration)}};t()\,new MutationObserver((()=>{t()})).observe(document\,{childList:!0\,subtree:!0})}));const e={apply:(e\,t\,o)=>{const r=o[0];return"function"==typeof r&&r.toString().includes("onAbnormalityDetected")&&(o[0]=function(){})\,Reflect.apply(e\,t\,o)}};window.Promise.prototype.then=new Proxy(window.Promise.prototype.then\,e)})();(function serverContract(), sedCount, 1)
 www.youtube.com##+js(trusted-edit-inbound-object, JSON.stringify, 0, [?..playbackContext.contentPlaybackContext][?!.attestationRequest][?!.captionsRequested][?!.settingItemIds][?!..mainAppWebInfo.graftUrl*="&list="][?!..mainAppWebInfo.graftUrl*="/shorts/"]..client[?.clientName=="WEB"]+={"clientScreen":"CHANNEL"})
 www.youtube.com##+js(set, ytcfg.data_.EXPERIMENT_FLAGS.web_streaming_watch, false)
-www.youtube.com##ytd-watch-flexy[player-unavailable]:remove-attr(player-unavailable)
-www.youtube.com##+js(ra, player-unavailable, ytd-watch-flexy[player-unavailable], asap stay)
-www.youtube.com##ytd-watch-flexy[player-unavailable] :is(#player-container-outer, #cinematics-container, #ytd-player > #container):style(visibility: visible !important;)
-www.youtube.com##yt-playability-error-supported-renderers#error-screen
+www.youtube.com###page-manager:has(#player-error-message-container) ytd-watch-flexy[player-unavailable]:remove-attr(player-unavailable)
+www.youtube.com##+js(ra, player-unavailable, #page-manager:has(#player-error-message-container) ytd-watch-flexy[player-unavailable], asap stay)
+www.youtube.com###page-manager:has(#player-error-message-container) ytd-watch-flexy[player-unavailable] :is(#player-container-outer, #cinematics-container, #ytd-player > #container):style(visibility: visible !important;)
+www.youtube.com###page-manager:has(#player-error-message-container) yt-playability-error-supported-renderers#error-screen
 www.youtube.com##+js(nostif, ()\,a\,b);, 5000)
 www.youtube.com##+js(nano-stb, [native code], 17000, 0.001)
 www.youtube.com##+js(json-prune-fetch-response, adPlacements adSlots playerResponse.adPlacements playerResponse.adSlots [].playerResponse.adPlacements [].playerResponse.adSlots, , propsToMatch, /player?)
