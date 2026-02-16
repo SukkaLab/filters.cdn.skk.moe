@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Mon, 16 Feb 2026 14:52:26 GMT
+! Last modified: Mon, 16 Feb 2026 18:39:48 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.0.22
+!   - Version: 2.1.0.24
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -64652,7 +64652,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
-||trace.shengshu-ai.com^
 ||player-analytics.mp.lura.live^
 ||dls-account.di.atlas.samsung.com^
 ||karrot-pixel.business.daangn.com^
@@ -127248,8 +127247,7 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
-||vidu.com/api/canary
-||awswaf.com/*/report|
+||api.epicgames.dev/telemetry/
 ||filecrypt.cc/muh.php
 ||filecrypt.cc/bla2.php
 ||filecrypt.cc/surething.php
@@ -128140,7 +128138,6 @@ sankei.com##div[id^="piano_special_Top_"]
 ||philo.com/evr/in/adImp?enc=
 makemytrip.com##+js(set-local-storage-item, marketingCloudVisitorID, $remove$)
 makemytrip.com##+js(set-local-storage-item, PERSONAL_FLIGHT_emperiaResponse, $remove$)
-||token.awswaf.com/*/report|
 ||vx.noz.de/api/*/conversion/logMicroConversion?
 ||ctrlitb.rightinthebox.com/ctr_tracking.php?
 ||allo.cdnlbox.club/stat
@@ -128635,7 +128632,6 @@ themirror.com##reach-topbox
 /api/v1/EndpointTracker$domain=live.com|office.com
 /apc/trans.gif?$domain=live.com|office.com
 ||flowgpt.com/*/track|
-||awswaf.com/*/telemetry|
 ||cdn-static.tiscali.cz/general/ga-events.js
 ||compare-static.climate-data.org/tag.js
 ||static.nrk.no/*/Serum.ExperimentTracking.js
