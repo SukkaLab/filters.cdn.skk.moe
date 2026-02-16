@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Mon, 16 Feb 2026 07:03:39 GMT
+! Last modified: Mon, 16 Feb 2026 10:40:31 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.0.18
+!   - Version: 2.1.0.20
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -123419,7 +123419,6 @@ businessinsider.jp##div[class^="premiumRecommend_articles__"]
 ||lge.co.kr/lg5-common/js/common/googleHeader.js
 ||tvmaze.com/stats/
 ||static.tvmaze.com/js/paq.js
-||adobe.com/marketingtech/
 ||cdn.sprig.com/shim.js
 ||proton.me/api/data/
 ||proton.me/api/feature/v2/frontend/client/metrics
@@ -130297,6 +130296,8 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=saturn.de
 @@||metrics.us.playstation.com/b/ss/
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
+@@||feliz-web.data.tm-awx.com/smile-web.min.js$domain=examinerlive.co.uk
+@@||feliz.data.tm-awx.com/smile-web-v2/rootEvent$domain=examinerlive.co.uk
 @@||martech.condenastdigital.com/lib/martech.js$domain=wired.com
 @@||mc.yandex.ru/metrika/tag.js$domain=apteka22.ru
 felixmobile.com.au###__next [style*="filter:blur"]:style(filter: none !important;)
