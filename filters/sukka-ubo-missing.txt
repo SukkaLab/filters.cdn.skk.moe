@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Tue, 17 Feb 2026 14:55:26 GMT
+! Last modified: Tue, 17 Feb 2026 18:55:28 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.0.28
+!   - Version: 2.1.0.30
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -64653,6 +64653,8 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||tg.minfin.com.ua^
+||static-mon.yandex.net^
 ||analytex-us.userpilot.io^
 ||player-analytics.mp.lura.live^
 ||dls-account.di.atlas.samsung.com^
@@ -127249,6 +127251,7 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||analytics.popupsmart.com/api/site/tracking-config
 ||static.danawa.com/globaljs/static/logger_Insight_WebAnalytics.js
 ||static.danawa.com/globaljs/static/logger_Insight_WebAnalytics_mobile.js
 ||api.epicgames.dev/telemetry/
