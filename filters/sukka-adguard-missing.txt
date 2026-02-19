@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Thu, 19 Feb 2026 18:48:12 GMT
+! Last modified: Thu, 19 Feb 2026 22:37:34 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,10 +8,10 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Thu, 19 Feb 2026 12:58:43 +0000
+!   - Last modified: Thu, 19 Feb 2026 15:35:22 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
-!   - Last modified: Mon, 16 Feb 2026 17:13:03 +0000
+!   - Last modified: Thu, 19 Feb 2026 16:17:46 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
 !   - Last modified: Thu, 19 Feb 2026 08:03:53 +0000
@@ -20,7 +20,7 @@
 !   - Last modified: Mon, 16 Feb 2026 06:05:27 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Tue, 17 Feb 2026 12:54:39 +0000
+!   - Last modified: Thu, 19 Feb 2026 15:38:37 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
 !   - Last modified: Tue, 17 Feb 2026 12:00:08 +0000
@@ -8674,7 +8674,7 @@ nekolink.site##+js(aost, document.getElementsByTagName, _createCatchAllDiv)
 nekolink.site##+js(aeld, /click|mouse/, [native code], elements, document)
 nekolink.site##+js(set, PlayerConfig.trusted, true)
 nekolink.site##+js(set, PlayerConfig.config.AffiliateAdViewLevel, 3)
-141jav.com,141tube.com,aagmaal.com,camcam.cc,evojav.pro,javneon.tv,javsaga.ninja,torrentkitty.one,webmaal.cfd##+js(set, univresalP, noopFunc)
+141jav.com,141tube.com,aagmaal.com,camcam.cc,evojav.pro,hentaianimezone.com,javneon.tv,javsaga.ninja,torrentkitty.one,webmaal.cfd##+js(set, univresalP, noopFunc)
 pahe.ink,pawastreams.pro,vikingf1le.us.to##+js(aeld, DOMContentLoaded, history.go)
 boobsrealm.com,dfilmizle.com##+js(aopr, initPu)
 asianpornjav.com##+js(set, puShown, true)
@@ -9168,11 +9168,11 @@ hianime.to##[href="https://1flix.to/"]
 /embed-1/e-1/banners|$xhr
 ||iili.io/JvfIu1a.gif$image
 ||doo.lat/public/overroll_gasparin.js
-||imasdk.googleapis.com/js/sdkloader/ima3.js$script,3p,redirect=google-ima.js,domain=adrianmissionminute.com|alejandrocenturyoil.com|alleneconomicmatter.com|bethshouldercan.com|brittneystandardwestern.com|brookethoughi.com|brucevotewithin.com|christopheruntilpoint.com|cindyeyefinal.com|diananatureforeign.com|donaldlineelse.com|edwardarriveoften.com|erikcoldperson.com|evelynthankregion.com|graceaddresscommunity.com|heatherdiscussionwhen.com|heatherwholeinvolve.com|housecardsummerbutton.com|jamessoundcost.com|jamiesamewalk.com|jasminetesttry.com|jasonresponsemeasure.com|jayservicestuff.com|jennifercertaindevelopment.com|jessicaglassauthor.com|jilliandescribecompany.com|johnalwayssame.com|johntryopen.com|jonathansociallike.com|josephseveralconcern.com|kathleenmemberhistory.com|kellywhatcould.com|kennethofficialitem.com|kristiesoundsimply.com|lauradaydo.com|lisatrialidea.com|lorimuchbenefit.com|loriwithinfamily.com|lukecomparetwo.com|lukesitturn.com|mariatheserepublican.com|markstyleall.com|maxfinishseveral.com|michaelapplysome.com|mikaylaarealike.com|morganoperationface.com|nathanfromsubject.com|nonesnanking.com|paulkitchendark.com|phenomenalityuniform.com|rebeccaneverbase.com|richardsignfish.com|roberteachfinal.com|robertordercharacter.com|robertplacespace.com|ryanagoinvolve.com|sandratableother.com|sandrataxeight.com|sethniceletter.com|shannonpersonalcost.com|susanhavekeep.com|toddpartneranimal.com|voe.sx|walterprettytheir.com,important
+||imasdk.googleapis.com/js/sdkloader/ima3.js$script,3p,redirect=google-ima.js,domain=adrianmissionminute.com|alejandrocenturyoil.com|alleneconomicmatter.com|bethshouldercan.com|brittneystandardwestern.com|brookethoughi.com|brucevotewithin.com|christopheruntilpoint.com|cindyeyefinal.com|diananatureforeign.com|donaldlineelse.com|edwardarriveoften.com|erikcoldperson.com|evelynthankregion.com|graceaddresscommunity.com|heatherdiscussionwhen.com|heatherwholeinvolve.com|housecardsummerbutton.com|jamessoundcost.com|jamiesamewalk.com|jasminetesttry.com|jasonresponsemeasure.com|jayservicestuff.com|jennifercertaindevelopment.com|jessicaglassauthor.com|jilliandescribecompany.com|johnalwayssame.com|johntryopen.com|jonathansociallike.com|josephseveralconcern.com|kathleenmemberhistory.com|kellywhatcould.com|kennethofficialitem.com|kristiesoundsimply.com|lancewhosedifficult.com|lauradaydo.com|lisatrialidea.com|lorimuchbenefit.com|loriwithinfamily.com|lukecomparetwo.com|lukesitturn.com|mariatheserepublican.com|markstyleall.com|maxfinishseveral.com|michaelapplysome.com|mikaylaarealike.com|morganoperationface.com|nathanfromsubject.com|nonesnanking.com|paulkitchendark.com|phenomenalityuniform.com|rebeccaneverbase.com|richardsignfish.com|roberteachfinal.com|robertordercharacter.com|robertplacespace.com|ryanagoinvolve.com|sandratableother.com|sandrataxeight.com|sethniceletter.com|shannonpersonalcost.com|susanhavekeep.com|toddpartneranimal.com|voe.sx|walterprettytheir.com,important
 adrianmissionminute.com,alejandrocenturyoil.com,alleneconomicmatter.com,bethshouldercan.com,brittneystandardwestern.com,brookethoughi.com,brucevotewithin.com,christopheruntilpoint.com,cindyeyefinal.com,diananatureforeign.com,donaldlineelse.com,edwardarriveoften.com,erikcoldperson.com,evelynthankregion.com,graceaddresscommunity.com,heatherdiscussionwhen.com,heatherwholeinvolve.com,housecardsummerbutton.com,jamessoundcost.com,jamiesamewalk.com,jasminetesttry.com,jasonresponsemeasure.com,jayservicestuff.com,jennifercertaindevelopment.com,jessicaglassauthor.com,jilliandescribecompany.com,johnalwayssame.com,johntryopen.com,jonathansociallike.com,josephseveralconcern.com,kathleenmemberhistory.com,kellywhatcould.com,kennethofficialitem.com,kristiesoundsimply.com,lancewhosedifficult.com,lauradaydo.com,lisatrialidea.com,lorimuchbenefit.com,loriwithinfamily.com,lukecomparetwo.com,lukesitturn.com,mariatheserepublican.com,markstyleall.com,maxfinishseveral.com,michaelapplysome.com,mikaylaarealike.com,morganoperationface.com,nathanfromsubject.com,nonesnanking.com,paulkitchendark.com,phenomenalityuniform.com,rebeccaneverbase.com,richardsignfish.com,roberteachfinal.com,robertordercharacter.com,robertplacespace.com,ryanagoinvolve.com,sandratableother.com,sandrataxeight.com,sethniceletter.com,shannonpersonalcost.com,susanhavekeep.com,toddpartneranimal.com,voe.sx,walterprettytheir.com##+js(nowoif)
-adrianmissionminute.com,alejandrocenturyoil.com,alleneconomicmatter.com,bethshouldercan.com,bigclatterhomesguideservice.com,brittneystandardwestern.com,brookethoughi.com,brucevotewithin.com,christopheruntilpoint.com,cindyeyefinal.com,denisegrowthwide.com,diananatureforeign.com,donaldlineelse.com,edwardarriveoften.com,erikcoldperson.com,evelynthankregion.com,graceaddresscommunity.com,heatherdiscussionwhen.com,heatherwholeinvolve.com,housecardsummerbutton.com,jamessoundcost.com,jamiesamewalk.com,jasminetesttry.com,jasonresponsemeasure.com,jayservicestuff.com,jennifercertaindevelopment.com,jessicaglassauthor.com,jilliandescribecompany.com,johnalwayssame.com,johntryopen.com,jonathansociallike.com,josephseveralconcern.com,kellywhatcould.com,kennethofficialitem.com,kristiesoundsimply.com,lauradaydo.com,lisatrialidea.com,lorimuchbenefit.com,loriwithinfamily.com,lukecomparetwo.com,lukesitturn.com,mariatheserepublican.com,markstyleall.com,maxfinishseveral.com,michaelapplysome.com,mikaylaarealike.com,morganoperationface.com,nathanfromsubject.com,paulkitchendark.com,paulkitchendark.com,rebeccaneverbase.com,richardsignfish.com,roberteachfinal.com,robertordercharacter.com,robertplacespace.com,ryanagoinvolve.com,sandratableother.com,sandrataxeight.com,sethniceletter.com,shannonpersonalcost.com,susanhavekeep.com,tinycat-voe-fashion.com,toddpartneranimal.com,troyyourlead.com,uptodatefinishconference.com,uptodatefinishconferenceroom.com,voe.sx,walterprettytheir.com##+js(set, console.clear, undefined)
-adrianmissionminute.com,alejandrocenturyoil.com,christopheruntilpoint.com,heatherwholeinvolve.com,jennifercertaindevelopment.com,jilliandescribecompany.com,johnalwayssame.com,kellywhatcould.com,kristiesoundsimply.com,lauradaydo.com,lukesitturn.com,mariatheserepublican.com,mikaylaarealike.com,nathanfromsubject.com,walterprettytheir.com,voe.sx##+js(acs, globalThis, break;case)
-alejandrocenturyoil.com,christopheruntilpoint.com,heatherwholeinvolve.com,jennifercertaindevelopment.com,jilliandescribecompany.com,johnalwayssame.com,jonathansociallike.com,kellywhatcould.com,kristiesoundsimply.com,lauradaydo.com,lukesitturn.com,mikaylaarealike.com,nathanfromsubject.com,walterprettytheir.com,voe.sx##+js(acs, WebAssembly, atob)
+adrianmissionminute.com,alejandrocenturyoil.com,alleneconomicmatter.com,bethshouldercan.com,bigclatterhomesguideservice.com,brittneystandardwestern.com,brookethoughi.com,brucevotewithin.com,christopheruntilpoint.com,cindyeyefinal.com,denisegrowthwide.com,diananatureforeign.com,donaldlineelse.com,edwardarriveoften.com,erikcoldperson.com,evelynthankregion.com,graceaddresscommunity.com,heatherdiscussionwhen.com,heatherwholeinvolve.com,housecardsummerbutton.com,jamessoundcost.com,jamiesamewalk.com,jasminetesttry.com,jasonresponsemeasure.com,jayservicestuff.com,jennifercertaindevelopment.com,jessicaglassauthor.com,jilliandescribecompany.com,johnalwayssame.com,johntryopen.com,jonathansociallike.com,josephseveralconcern.com,kellywhatcould.com,kennethofficialitem.com,kristiesoundsimply.com,lancewhosedifficult.com,lauradaydo.com,lisatrialidea.com,lorimuchbenefit.com,loriwithinfamily.com,lukecomparetwo.com,lukesitturn.com,mariatheserepublican.com,markstyleall.com,maxfinishseveral.com,michaelapplysome.com,mikaylaarealike.com,morganoperationface.com,nathanfromsubject.com,paulkitchendark.com,paulkitchendark.com,rebeccaneverbase.com,richardsignfish.com,roberteachfinal.com,robertordercharacter.com,robertplacespace.com,ryanagoinvolve.com,sandratableother.com,sandrataxeight.com,sethniceletter.com,shannonpersonalcost.com,susanhavekeep.com,tinycat-voe-fashion.com,toddpartneranimal.com,troyyourlead.com,uptodatefinishconference.com,uptodatefinishconferenceroom.com,voe.sx,walterprettytheir.com##+js(set, console.clear, undefined)
+adrianmissionminute.com,alejandrocenturyoil.com,christopheruntilpoint.com,heatherwholeinvolve.com,jennifercertaindevelopment.com,jilliandescribecompany.com,johnalwayssame.com,kellywhatcould.com,kristiesoundsimply.com,lancewhosedifficult.com,lauradaydo.com,lukesitturn.com,mariatheserepublican.com,mikaylaarealike.com,nathanfromsubject.com,walterprettytheir.com,voe.sx##+js(acs, globalThis, break;case)
+alejandrocenturyoil.com,christopheruntilpoint.com,heatherwholeinvolve.com,jennifercertaindevelopment.com,jilliandescribecompany.com,johnalwayssame.com,jonathansociallike.com,kellywhatcould.com,kristiesoundsimply.com,lancewhosedifficult.com,lauradaydo.com,lukesitturn.com,mikaylaarealike.com,nathanfromsubject.com,walterprettytheir.com,voe.sx##+js(acs, WebAssembly, atob)
 ||rochestertrend.com^$all
 ||facesnotebook.com^$all
 ||highrevenuecpm.com^$all
@@ -23061,6 +23061,7 @@ cracksmid.com##div[style=""] > center > center
 ||ublcz.cn^$all
 ||ads.twitter.center^$all
 ||divibase.xyz^$all
+||kensatsu.top^$all
 ||webuzz.me^$doc
 ||coup-ling.net^$all
 ||gokinjolove.jp^$all
@@ -24404,6 +24405,7 @@ cracksmid.com##div[style=""] > center > center
 ||viruswarning*.web.core.windows.net^$all
 ://message1*.z13.web.core.windows.net^$doc
 ^Anph=(0101)-$doc
+/^https:\/\/[a-z]{5,20}-[0-9a-z]{16}\.z03\.azurefd\.net\/[0-9A-Za-z]+0[0-9A-Za-z]+\/index\.html/$doc,match-case,domain=z03.azurefd.net
 ||pages.dev/*/Fm7-alert.wav
 ||pages.dev/*/ai2.mp3
 ||pages.dev/*_Fm7-alert.mp3
@@ -30450,10 +30452,11 @@ japscan.*##+js(norafif, Date)
 japscan.*##.HuKlQ > div > div:not(#reader):remove()
 japscan.*##+js(aost, MessageChannel, /stackDepth:2.+inlineScript/)
 japscan.*###noticeMessage[role] ~ div:not(#reader):remove()
-japscan.*##div[yaromo]:remove()
+japscan.*##div[yokaro]:remove()
 japscan.*##+js(norafif, requestAnimationFrame)
-japscan.*##+js(trusted-suppress-native-method, Document.prototype.createElement, '"span"', abort, Let)
-japscan.*##+js(trusted-suppress-native-method, Document.prototype.createElement, '"i"', abort, Let)
+japscan.*##+js(trusted-suppress-native-method, Document.prototype.createElement, '"span"', abort, /apply in.+_0x[0-9a-f]+ inlineScript/)
+japscan.*##+js(trusted-suppress-native-method, Document.prototype.createElement, '"i"', abort, /apply in.+_0x[0-9a-f]+ inlineScript/)
+japscan.*##+js(trusted-suppress-native-method, Document.prototype.createElement, '"p"', abort, /apply in.+_0x[0-9a-f]+ inlineScript/)
 poophq.com,veev.to,doods.to##+js(nowoif)
 poophq.com,veev.to,doods.to##+js(no-xhr-if, /vast.php?)
 poophq.com,veev.to,doods.to##+js(no-xhr-if, /click\.com|preroll|native_render\.js|acscdn/, length:10001)
