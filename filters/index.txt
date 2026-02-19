@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Filters
-! Last modified: Sat, 07 Feb 2026 09:28:02 GMT
+! Last modified: Thu, 19 Feb 2026 14:05:16 GMT
 ! Expires: 1 hours
 ! Description: The filters from Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -156,6 +156,9 @@ www.bilibili.com##.r-con
 /bili-user-fingerprint$script
 /track-collect.js
 &os=mcdn
+bilibili.com##.bili-video-card__no-interest
+search.bilibili.com##[href*="live."]
+search.bilibili.com##[href*="/cheese/"]
 http://*$app=com.bilibili.app.in
 *://*:80$app=com.bilibili.app.in
 *:3478$app=com.bilibili.app.in
@@ -769,3 +772,7 @@ lowendaff.com###sticky_ads_wrapper
 ||leafletjs.com/dialog/$subdocument
 leafletjs.com###dialog
 leafletjs.com##body:style(overflow: unset !important)
+lowendaff.com###dmit-ads
+9to5mac.com##[href*="/amzn.to/"]
+9to5mac.com##[href*="amazon.com"]
+www.tomshardware.com##.fancy-box
