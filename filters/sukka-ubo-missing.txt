@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Thu, 19 Feb 2026 14:56:36 GMT
+! Last modified: Thu, 19 Feb 2026 18:48:12 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.0.33
+!   - Version: 2.1.0.34
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -218,6 +218,8 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||sigmob.cn^
+||sdk.beizi.biz^
 ||cdnlibjs.com^$3p
 ||wtfismyip.com^$3p
 ||measureadv.com^
@@ -64652,6 +64654,8 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||d1udjti6mtxz9q.cloudfront.net^$3p
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
+||countly.
+||countly-
 |piwik.
 ||alloy-web.zvuk.com^
 ||tg.minfin.com.ua^
@@ -133639,7 +133643,6 @@ d4?appid*type*
 ||cloudconf.fengkongcloud.com^
 ||tracker.fengkongcloud.com^
 ||dm.pstatp.com^
-||countly.globaldelight.net^
 ||log.game.qcplay.com^
 ||report-stats.ad.jiguang.cn^
 ||config.jpush.cn^
