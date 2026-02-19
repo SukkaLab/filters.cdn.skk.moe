@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Thu, 19 Feb 2026 04:15:14 GMT
+! Last modified: Thu, 19 Feb 2026 07:00:49 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.0.32
+!   - Version: 2.1.0.33
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -64653,6 +64653,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||alloy-web.zvuk.com^
 ||tg.minfin.com.ua^
 ||static-mon.yandex.net^
 ||analytex-us.userpilot.io^
@@ -127251,6 +127252,9 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+-service.newsifier.nl/api/v2/resource/article/*/visit
+||music.apm-proxy.obs.mts.ru/eum/*/eum.min.js
+||zvuk.com/api/v*/clickstream-web
 ||wix.consentik.com/api/impression?
 ||analytics.popupsmart.com/api/site/tracking-config
 ||static.danawa.com/globaljs/static/logger_Insight_WebAnalytics.js
@@ -128019,7 +128023,7 @@ ppomppu.co.kr##+js(href-sanitizer, a[href^="https://s.ppomppu.co.kr?"][href*="&t
 berrykun.com##img[src*="a8.net/svt/"]
 ||xvp.imgix.net/assets/customer_tools/ip_checker-
 ||pub.pixels.ai/metrics-lib.js
-gq.com##+js(set-local-storage-item, /^avoinspector/, $remove$)
+pitchfork.com,gq.com##+js(set-local-storage-item, /^avoinspector/, $remove$)
 ||affirm.com/api/chrono/*/collect
 ||jobkorea.co.kr/Net/AdBannerApi/AdBannerLog
 ||check24.*/assets/funnel-tracking.min.js
