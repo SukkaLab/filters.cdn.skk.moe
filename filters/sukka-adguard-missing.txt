@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Thu, 19 Feb 2026 10:35:06 GMT
+! Last modified: Thu, 19 Feb 2026 14:56:36 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Thu, 19 Feb 2026 08:49:16 +0000
+!   - Last modified: Thu, 19 Feb 2026 12:58:43 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Mon, 16 Feb 2026 17:13:03 +0000
@@ -27,7 +27,7 @@
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Wed, 18 Feb 2026 15:27:10 +0000
+!   - Last modified: Thu, 19 Feb 2026 13:16:08 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
 !   - Last modified: Sat, 14 Feb 2026 08:07:15 +0000
@@ -9176,9 +9176,10 @@ alejandrocenturyoil.com,christopheruntilpoint.com,heatherwholeinvolve.com,jennif
 ||rochestertrend.com^$all
 ||facesnotebook.com^$all
 ||highrevenuecpm.com^$all
-voe.sx>>,javboys.tv>>,~cloudflare.com##+js(nowoif)
-voe.sx>>,javboys.tv>>,~cloudflare.com##+js(set, console.clear, undefined)
-voe.sx>>,javboys.tv>>,~cloudflare.com##+js(acs, globalThis, break;case)
+voe.sx>>,javboys.tv>>,s.to>>,~addtoany.com,~cloudflare.com##+js(nowoif)
+voe.sx>>,javboys.tv>>,s.to>>,~addtoany.com,~cloudflare.com##+js(set, console.clear, undefined)
+voe.sx>>,javboys.tv>>,s.to>>,~addtoany.com,~cloudflare.com##+js(acs, globalThis, break;case)
+voe.sx>>,javboys.tv>>,s.to>>,~addtoany.com,~cloudflare.com##+js(acs, WebAssembly, atob)
 ||iamcdn.net/players/player*.*mins.js$script,domain=freeplayervideo.com|nazarickol.com|player-cdn.com
 *$image,redirect-rule=32x32.png,domain=freeplayervideo.com|nazarickol.com|player-cdn.com
 freeplayervideo.com,nazarickol.com,player-cdn.com,playhydrax.com##+js(set, console.clear, undefined)
@@ -31790,6 +31791,10 @@ schweizerfleisch.ch##+js(set-cookie, cookie-agreed, 2)
 schweizerfleisch.ch##+js(trusted-set-cookie, cookie-agreed-version, 1.0.0)
 slightlytechnical.rs##+js(set-cookie, st_consent_v1, '{"necessary":true,"analytics":false,"ts":1,"gpc":true}')
 qr.finedinemenu.com##+js(trusted-set-cookie, fd_m_c_c_a_t, %22accept_only_necessary%22)
+vmock.com##+js(trusted-set-cookie, user_cookie_consent, '{"essential":true,"analytics":false,"social":false}')
+visitsingapore.com##+js(trusted-set-cookie, OptanonAlertBoxClosed, $currentDate$, 1year)
+visitsingapore.com##+js(trusted-set-cookie, OptanonConsent, groups=C0001%3A1%2CC0002%3A0%2CC0003%3A0%2CC0004%3A0, 1year)
+mainova.de##+js(trusted-set-cookie, CONSENTMGR, c1:1%7Cc2:0%7Cc3:0%7Cc4:0%7Cc5:0%7Cc6:0%7Cc7:0%7Cc8:0%7Cc9:0%7Cc10:0%7Cc11:0%7Cc12:0%7Cc13:0%7Cc14:0%7Cc15:0%7Cc16:0%7Cts:1771500110005%7Cconsent:true)
 consent.nsd.se##+js(trusted-click-element, button[title="Jag godkänner"], , 1000)
 simplea.sk##+js(trusted-click-element, button[aria-label="Vypnúť personalizáciu"], , 1000)
 flip.bg##+js(trusted-click-element, .cookie-text > .large-btn, , 1000)
