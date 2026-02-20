@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Fri, 20 Feb 2026 04:10:40 GMT
+! Last modified: Fri, 20 Feb 2026 06:57:24 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -14,10 +14,10 @@
 !   - Last modified: Thu, 19 Feb 2026 16:17:46 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Thu, 19 Feb 2026 08:03:53 +0000
+!   - Last modified: Thu, 19 Feb 2026 23:53:00 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
-!   - Last modified: Mon, 16 Feb 2026 06:05:27 +0000
+!   - Last modified: Thu, 19 Feb 2026 23:43:18 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
 !   - Last modified: Thu, 19 Feb 2026 15:38:37 +0000
@@ -26749,10 +26749,10 @@ androidauthority.com##+js(remove-cookie, _ALGOLIA, when, scroll keydown)
 mindbodygreen.com##+js(set-local-storage-item, segmentDeviceId, $remove$)
 ||geoip.cdn.arkadiumhosted.com^$domain=bestforpuzzles.com|charlotteobserver.com|dailygazette.com|independent.co.uk|miamiherald.com|standard.co.uk|word.tips
 *$ping,domain=webnovel.com
-*$xhr,3p,denyallow=github.com|stripe.com|fpjs.pro,domain=fingerprint.com|~dev.fingerprint.com
-||fingerprint.com^$strict3p,domain=fingerprint.com|~dev.fingerprint.com|~dashboard.fingerprint.com
+*$xhr,3p,denyallow=github.com|stripe.com|fpjs.pro,domain=fingerprint.com|~dev.fingerprint.com|~docs.fingerprint.com
+||fingerprint.com^$strict3p,domain=fingerprint.com|~dev.fingerprint.com|~docs.fingerprint.com|~dashboard.fingerprint.com
 ||dashboard.fingerprint.com^$strict3p,xhr,domain=dashboard.fingerprint.com
-fingerprint.com,~dev.fingerprint.com##+js(no-xhr-if, method:POST)
+fingerprint.com,~dev.fingerprint.com,~docs.fingerprint.com##+js(no-xhr-if, method:POST)
 ||lightboxcdn.com^$domain=androidauthority.com|variety.com
 ||lightboxcdn.com/*/digibox.gif?
 ||lightboxcdn.com/*/jsonp/z?
@@ -29812,8 +29812,10 @@ gry-online.pl##+js(set, jad, undefined)
 ozap.com##+js(rpnt, script, WB.defer, 'window.wbads={public:{getDailymotionAdsParamsForScript:function(a,b){b("")},setTargetingOnPosition:function(a,b){return}}};WB.defer', condition, wbads.public.setTargetingOnPosition)
 vidaextra.com##+js(set, hasAdblocker, true)
 vidaextra.com##.base-asset-video:remove-class(base-asset-video)
-www.reddit.com,new.reddit.com##.subredditvars-r-ublockorigin [role="dialog"]>div:style(width: auto !important)
 www.reddit.com,sh.reddit.com##community-highlight-card[subreddit-prefixed-name="r/uBlockOrigin"][src]:remove-attr(src)
+www.reddit.com,sh.reddit.com##in-feed-community-recommendations[subreddit-name="uBlockOrigin"]
+www.reddit.com,sh.reddit.com##shreddit-title[title$="r/uBlockOrigin"]~[id^="comment-tree-content-anchor-"]+div:has(>[id^="answers-suggested-queries"])
+www.reddit.com,sh.reddit.com###main-content:has(>shreddit-title[title$="r/uBlockOrigin"])+#right-sidebar-container [data-slug="pdp_right_rail_related"]
 lumens.com##+js(set, _satellite, {})
 lumens.com##+js(set, _satellite.track, noopFunc)
 ||analytics.skroutz.gr/analytics.min.js^$script,1p,redirect=noop.js

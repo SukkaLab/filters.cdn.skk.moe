@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Fri, 20 Feb 2026 04:10:40 GMT
+! Last modified: Fri, 20 Feb 2026 06:57:24 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.0.35
+!   - Version: 2.1.0.37
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -127256,6 +127256,13 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+kanaloco.jp##.tab_wrap:has(> #recomm_tab1)
+||tags.news.com.au/prod/
+||tags.newscgp.com/prod/ncg/
+||easeus.com/default/js/adsystem/
+||easeus.com/default/js/sensorsdata/
+||easeus.com/default/js/marketing.js
+||easeus.com/proxydirectory/*/pageInfo
 ||asset*.coupangcdn.com/customjs/coupang-web-log/*/web-log.umd.min.js$domain=login.coupang.com
 -service.newsifier.nl/api/v2/resource/article/*/visit
 ||music.apm-proxy.obs.mts.ru/eum/*/eum.min.js
@@ -134149,6 +134156,7 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=saturn.de
 @@||metrics.us.playstation.com/b/ss/
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
+@@||tags.news.com.au/prod/adblock/adblock.js
 @@||feliz-web.data.tm-awx.com/smile-web.min.js$domain=examinerlive.co.uk
 @@||feliz.data.tm-awx.com/smile-web-v2/rootEvent$domain=examinerlive.co.uk
 @@||martech.condenastdigital.com/lib/martech.js$domain=wired.com
