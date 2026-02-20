@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Fri, 20 Feb 2026 06:57:24 GMT
+! Last modified: Fri, 20 Feb 2026 10:29:18 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,13 +8,13 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Thu, 19 Feb 2026 15:35:22 +0000
+!   - Last modified: Fri, 20 Feb 2026 09:36:37 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Thu, 19 Feb 2026 16:17:46 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Thu, 19 Feb 2026 23:53:00 +0000
+!   - Last modified: Fri, 20 Feb 2026 05:49:04 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
 !   - Last modified: Thu, 19 Feb 2026 23:43:18 +0000
@@ -15814,6 +15814,7 @@ nekochan.jp###main > aside:has(> div.OUTBRAIN)
 tv2.no##.article-recommended
 @@||lecturel.com^$ghide
 lecturel.com##+js(aeld, load, nextFunction)
+@@||lecturel.com^$script,1p
 ||doubleclick.net/instream/ad_status.js^$script,xhr,redirect=doubleclick_instream_ad_status.js:5
 ||betzapdoson.com^$popup
 ||mrfoe.com^
@@ -15937,19 +15938,12 @@ oxy.*,~oxy.edu###izobrazhenie-1:style(padding-bottom: 0px !important;)
 wnynewsnow.com##.g
 eltiempo.es##.cls-publi-height-city
 eltiempo.es##body:style(overflow: auto !important;)
-esopress.com##+js(nostif, show)
-esopress.com##+js(aeld, , show)
-esopress.com##+js(no-fetch-if, googlesyndication)
-*$script,domain=esopress.com,redirect-rule=noopjs
-@@||cdn.jsdelivr.net/gh/*/detectIncognito$script,domain=esopress.com
-@@||esopress.com^$ghide
-esopress.com##.adsbyvli:style(height: 0px !important;)
 ##div[style^="position:fixed;inset:0px;z-index:2147483647;background:black;opacity:0.01"]
 ##div[style^="position: fixed; inset: 0px; z-index: 2147483647; background: black; opacity: 0.01"]
 /\/assets\/jquery\/jquery-\d\.\d\.(?:\d\.)?min\.js\?(?:v=2)?&?type=(?:adult|mainstream)$/$script,1p
 /asset/angular.min.js?t=$xhr,1p
 /asset/jquery/slim-3.2.min.js?*&t=$xhr,1p
-cloudrls.com,embedwish.com,fc2stream.tv,javhahaha.us,javlion.xyz,javibe.net,jvideo.xyz,kissmovies.net##+js(aopr, __Y)
+embedwish.com,fc2stream.tv,javhahaha.us,javlion.xyz##+js(aopr, __Y)
 heavyfetish.com##+js(set, flashvars.adv_pre_src, '')
 heavyfetish.com##.banner
 heavyfetish.com##.table
@@ -22265,6 +22259,9 @@ prime4you.de##+js(nostif, ad_blocker_detector)
 ||files.upscore.com/site_script/$script,redirect=noopjs,domain=bike-magazin.de|yacht.de
 ||a.bf-ad.net/adengine/$script,redirect=noopjs,domain=bike-magazin.de|yacht.de
 japannews.yomiuri.co.jp##+js(rmnt, script, piano)
+comix.to##+js(nowoif)
+||imacdn.com/apics/*.gif
+comix.to##[src*=".gif"]
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -26753,6 +26750,8 @@ mindbodygreen.com##+js(set-local-storage-item, segmentDeviceId, $remove$)
 ||fingerprint.com^$strict3p,domain=fingerprint.com|~dev.fingerprint.com|~docs.fingerprint.com|~dashboard.fingerprint.com
 ||dashboard.fingerprint.com^$strict3p,xhr,domain=dashboard.fingerprint.com
 fingerprint.com,~dev.fingerprint.com,~docs.fingerprint.com##+js(no-xhr-if, method:POST)
+||fingerprint.com/_mintlify/api/v1/e
+||fingerprint.com/Vtu1bhY5s/
 ||lightboxcdn.com^$domain=androidauthority.com|variety.com
 ||lightboxcdn.com/*/digibox.gif?
 ||lightboxcdn.com/*/jsonp/z?
