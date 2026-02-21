@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Fri, 20 Feb 2026 22:32:48 GMT
+! Last modified: Sat, 21 Feb 2026 04:02:15 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Fri, 20 Feb 2026 15:42:21 +0000
+!   - Last modified: Sat, 21 Feb 2026 00:01:55 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Fri, 20 Feb 2026 13:41:03 +0000
@@ -17,7 +17,7 @@
 !   - Last modified: Fri, 20 Feb 2026 05:49:04 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
-!   - Last modified: Thu, 19 Feb 2026 23:43:18 +0000
+!   - Last modified: Fri, 20 Feb 2026 22:50:18 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
 !   - Last modified: Fri, 20 Feb 2026 16:49:47 +0000
@@ -7537,7 +7537,7 @@ zdnet.com##.c-adDisplay_container
 zdnet.com##.c-adSkyBox
 nytimes.com###acm-wrapper
 ||nytimes.com/games-assets/v2/*.js$script,replace=/shouldRenderAd:\(\)=>d&&/shouldRenderAd:()=>false&&/,domain=www.nytimes.com
-www.nytimes.com##+js(trusted-replace-argument, String.prototype.includes, this, json:"subscribed", condition, /^anon$/)
+||nytimes.com/games-assets/v2/spelling-bee.*.js$script,domain=www.nytimes.com,replace=/\.includes\("cr"\)/.includes("")/
 www.nytimes.com##+js(trusted-replace-argument, matchMedia.call, 1, json:"none", condition, max-width)
 www.nytimes.com##+js(trusted-json-edit-fetch-response, ..show_ads=false, propsToMatch, /statsig/initialize?)
 www.nytimes.com##+js(set, Object.prototype.hasAd, false)
@@ -19642,7 +19642,7 @@ wvv-fmovies.com##.movie-detail-banner > div[style*="z-index"]
 playmod24.com##div[download-process-box]
 playmod24.com##a[download-button]:style(display: block !important;)
 euronews.com###o-site-hr__leaderboard-wallpaper.u-show-for-xlarge:remove()
-roblox.com##+js(json-prune, sorts.[-].recommendationList.[].contentMetadata.EncryptedAdTrackingData)
+roblox.com##+js(json-prune, sorts.[].recommendationList.[-].contentMetadata.EncryptedAdTrackingData)
 hartico.tv##+js(nostif, getComputedStyle, 250)
 modescanlator.net##+js(no-fetch-if, googlesyndication)
 ||infinity-api.gameskinny.com/campaign/$xhr,1p
@@ -29796,7 +29796,7 @@ ozap.com##+js(rpnt, script, WB.defer, 'window.wbads={public:{getDailymotionAdsPa
 vidaextra.com##+js(set, hasAdblocker, true)
 vidaextra.com##.base-asset-video:remove-class(base-asset-video)
 www.reddit.com,sh.reddit.com##community-highlight-card[subreddit-prefixed-name="r/uBlockOrigin"][src]:remove-attr(src)
-www.reddit.com,sh.reddit.com##in-feed-community-recommendations[subreddit-name="uBlockOrigin"]
+www.reddit.com,sh.reddit.com##in-feed-community-recommendations:is([subreddit-name="uBlockOrigin"],[subreddit-id="t5_37z6i"])
 www.reddit.com,sh.reddit.com##shreddit-title[title$="r/uBlockOrigin"]~[id^="comment-tree-content-anchor-"]+div:has(>[id^="answers-suggested-queries"])
 www.reddit.com,sh.reddit.com###main-content:has(>shreddit-title[title$="r/uBlockOrigin"])+#right-sidebar-container [data-slug="pdp_right_rail_related"]
 lumens.com##+js(set, _satellite, {})
