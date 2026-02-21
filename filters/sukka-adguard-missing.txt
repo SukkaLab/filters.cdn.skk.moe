@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sat, 21 Feb 2026 10:17:32 GMT
+! Last modified: Sat, 21 Feb 2026 14:34:33 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sat, 21 Feb 2026 05:06:42 +0000
+!   - Last modified: Sat, 21 Feb 2026 08:33:51 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Fri, 20 Feb 2026 13:41:03 +0000
@@ -10117,8 +10117,8 @@ savefrom.net##+js(trusted-set, clickAds.banner.urls, 'json:[{"url":{"limit":0,"u
 audiostereo.pl##div[style="margin-bottom: 10px;"] > a[href][target="_blank"], [href^="https://salony.nautilus.net.pl/"]
 freelistenonline.com##+js(set, fuckAdBlock._options.baitClass, null)
 fabioambrosi.it##+js(nostif, ad)
-*$script,3p,denyallow=4cdn.org|4chan.org|cloudflare.com|google.com|gstatic.com|hcaptcha.com|mathjax.org,domain=boards.4channel.org
-*$script,3p,denyallow=4cdn.org|4channel.org|cloudflare.com|google.com|gstatic.com|hcaptcha.com|mathjax.org,domain=4chan.org
+*$script,3p,denyallow=4cdn.org|4chan.org|cloudflare.com|google.com|gstatic.com|hcaptcha.com|mathjax.org|spur.us,domain=boards.4channel.org
+*$script,3p,denyallow=4cdn.org|4channel.org|cloudflare.com|google.com|gstatic.com|hcaptcha.com|mathjax.org|spur.us,domain=4chan.org
 artesacro.org##+js(acs, onload, adb)
 curto.win##+js(aopr, app_vars.force_disable_adblock)
 curto.win##+js(aeld, click, trigger)
