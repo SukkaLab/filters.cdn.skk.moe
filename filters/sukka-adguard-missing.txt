@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sat, 21 Feb 2026 22:30:22 GMT
+! Last modified: Sun, 22 Feb 2026 04:12:04 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sat, 21 Feb 2026 15:49:33 +0000
+!   - Last modified: Sun, 22 Feb 2026 02:41:44 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Fri, 20 Feb 2026 13:41:03 +0000
@@ -23,14 +23,14 @@
 !   - Last modified: Sat, 21 Feb 2026 15:38:11 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
-!   - Last modified: Tue, 17 Feb 2026 12:00:08 +0000
+!   - Last modified: Sun, 22 Feb 2026 01:19:11 +0000
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
 !   - Last modified: Thu, 19 Feb 2026 13:16:08 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
-!   - Last modified: Sat, 14 Feb 2026 08:07:15 +0000
+!   - Last modified: Sun, 22 Feb 2026 02:00:25 +0000
 ! --------------------------------------------------------------
 ! uBlock filters https://ublockorigin.pages.dev/filters/filters.min.txt
 *_ad_$media,domain=youtube.com,3p
@@ -10116,8 +10116,6 @@ savefrom.net##+js(trusted-set, clickAds.banner.urls, 'json:[{"url":{"limit":0,"u
 audiostereo.pl##div[style="margin-bottom: 10px;"] > a[href][target="_blank"], [href^="https://salony.nautilus.net.pl/"]
 freelistenonline.com##+js(set, fuckAdBlock._options.baitClass, null)
 fabioambrosi.it##+js(nostif, ad)
-*$script,3p,denyallow=4cdn.org|4chan.org|cloudflare.com|google.com|gstatic.com|hcaptcha.com|mathjax.org|spur.us,domain=boards.4channel.org
-*$script,3p,denyallow=4cdn.org|4channel.org|cloudflare.com|google.com|gstatic.com|hcaptcha.com|mathjax.org|spur.us,domain=4chan.org
 artesacro.org##+js(acs, onload, adb)
 curto.win##+js(aopr, app_vars.force_disable_adblock)
 curto.win##+js(aeld, click, trigger)
@@ -18357,6 +18355,9 @@ file-upload.net##+js(set, advertisement3, true)
 /werbebanner-$badfilter
 file-upload.*##+js(aopr, start)
 ||remaininghopefully.com^
+file-upload.org##+js(acs, JSON.parse, document.head.appendChild)
+||cfd/tags/*.js$script,3p
+||ping.fb-cdn.net^
 oploverz.*##+js(acs, $, popup)
 oploverz.*##+js(nostif, popup)
 oploverz.*###overplay
@@ -30601,18 +30602,22 @@ shueisha.co.jp#@#.list-basic-a:has(> li > div.c-ad)
 wpb.shueisha.co.jp##.list-basic-a__item:has(> div.c-ad)
 amazon.*#@#div[data-csa-c-type="widget"]:has([data-ad-feedback-label-id])
 ! uBlock filters – Experimental https://ublockorigin.pages.dev/filters/experimental.min.txt
-www.youtube.com#@#+js(trusted-edit-inbound-object, JSON.stringify, 0, ..client[?.clientName=="WEB"]+={"clientScreen":"CHANNEL"})
-www.youtube.com#@#+js(trusted-json-edit-fetch-request, ..client[?.clientName=="WEB"]+={"clientScreen":"CHANNEL"}, propsToMatch, /\/(player|get_watch)/)
-www.youtube.com#@#+js(trusted-edit-inbound-object, JSON.stringify, 0, [?!.videoId]..client[?.clientName=="WEB"]+={"clientScreen":"CHANNEL"})
-www.youtube.com#@#+js(trusted-edit-inbound-object, JSON.stringify, 0, [?!.videoId][?!..mainAppWebInfo.graftUrl*="&list="]..client[?.clientName=="WEB"]+={"clientScreen":"CHANNEL"})
-www.youtube.com#@#+js(trusted-edit-inbound-object, JSON.stringify, 0, [?!.videoId][?!.settingItemIds][?!..mainAppWebInfo.graftUrl*="&list="]..client[?.clientName=="WEB"]+={"clientScreen":"CHANNEL"})
-www.youtube.com#@#+js(trusted-edit-inbound-object, JSON.stringify, 0, [?!.attestationRequest][?!.captionsRequested][?!.settingItemIds][?!..mainAppWebInfo.graftUrl*="&list="]..client[?.clientName=="WEB"]+={"clientScreen":"CHANNEL"})
 www.youtube.com#@#+js(trusted-edit-inbound-object, JSON.stringify, 0, [?..playbackContext.contentPlaybackContext][?!.attestationRequest][?!.captionsRequested][?!.settingItemIds][?!..mainAppWebInfo.graftUrl*="&list="]..client[?.clientName=="WEB"]+={"clientScreen":"CHANNEL"})
 www.youtube.com#@#+js(trusted-edit-inbound-object, JSON.stringify, 0, [?..playbackContext.contentPlaybackContext][?!.attestationRequest][?!.captionsRequested][?!.settingItemIds][?!..mainAppWebInfo.graftUrl*="&list="][?!..mainAppWebInfo.graftUrl*="/shorts/"]..client[?.clientName=="WEB"]+={"clientScreen":"CHANNEL"})
 www.youtube.com#@#+js(trusted-edit-inbound-object, JSON.stringify, 0, [?..playbackContext.contentPlaybackContext][?!.attestationRequest][?!.captionsRequested][?!.settingItemIds][?!..mainAppWebInfo.graftUrl*="&list="][?!..mainAppWebInfo.graftUrl*="/shorts/"][?!..userAgent*="premium"]..client[?.clientName=="WEB"]+={"clientScreen":"CHANNEL"})
 www.youtube.com#@#+js(trusted-edit-inbound-object, JSON.stringify, 0, [?..playbackContext.contentPlaybackContext][?!.attestationRequest][?!.captionsRequested][?!.settingItemIds][?!.params^="YAHIAQ"][?!..mainAppWebInfo.graftUrl*="&list="][?!..mainAppWebInfo.graftUrl*="/shorts/"][?!..userAgent*="premium"]..client[?.clientName=="WEB"]+={"clientScreen":"CHANNEL"})
-www.youtube.com##+js(trusted-edit-inbound-object, JSON.stringify, 0, '[?..playbackContext.contentPlaybackContext][?!.attestationRequest][?!.captionsRequested][?!.settingItemIds][?!..mainAppWebInfo.graftUrl*="&list="][?!..mainAppWebInfo.graftUrl*="/shorts/"][?!..userAgent*="premium"][?.params][?!.params^="yAEB"][?!.params^="YAHIAQ"].params=repl({"regex":"^","replacement":"yAEB"})')
-www.youtube.com##+js(trusted-edit-inbound-object, JSON.stringify, 0, [?..playbackContext.contentPlaybackContext][?!.attestationRequest][?!.captionsRequested][?!.settingItemIds][?!..mainAppWebInfo.graftUrl*="&list="][?!..mainAppWebInfo.graftUrl*="/shorts/"][?!..userAgent*="premium"][?!.params]+={"params":"yAEB"})
+www.youtube.com#@#+js(trusted-rpnt, script, (function serverContract(), (()=>{if("YOUTUBE_PREMIUM_LOGO"===ytInitialData?.topbar?.desktopTopbarRenderer?.logo?.topbarLogoRenderer?.iconImage?.iconType)return void(ytcfg.data_.INNERTUBE_CONTEXT.client.userAgent=ytcfg.data_.INNERTUBE_CONTEXT.client.userAgent.replace?.(/(Mozilla\/5\.0 \([^)]+)/\,"$1; premium"));if(location.href.startsWith("https://www.youtube.com/tv#/")||location.href.startsWith("https://www.youtube.com/embed/"))return;document.addEventListener("DOMContentLoaded"\,(function(){const e=()=>{const e=document.getElementById("movie_player");if(!e)return;const t=e.getProgressState?.()\,o=e.getPlayerResponse?.();if(t&&t.duration>0&&(t.loaded<t.duration||t.duration-t.current>1)||o?.videoDetails?.isLive){if(!e.getStatsForNerds?.()?.debug_info?.startsWith?.("SSAP\, AD")){const t=o.videoDetails?.videoId;return void("UNPLAYABLE"!==o?.playabilityStatus?.status||o?.playabilityStatus?.errorScreen?.playerErrorMessageRenderer?.playerCaptchaViewModel||"WEB_PAGE_TYPE_UNKNOWN"!==o?.playabilityStatus?.errorScreen?.playerErrorMessageRenderer?.subreason?.runs?.[0]?.navigationEndpoint?.commandMetadata?.webCommandMetadata?.webPageType||"https://support.google.com/youtube/answer/3037019"!==o?.playabilityStatus?.errorScreen?.playerErrorMessageRenderer?.subreason?.runs?.[0]?.navigationEndpoint?.commandMetadata?.webCommandMetadata?.url||e.loadVideoById(t\,o.playerConfig?.playbackStartConfig?.startSeconds??0))}t.duration>0&&e.seekTo?.(t.duration)}};e()\,new MutationObserver((()=>{e()})).observe(document\,{childList:!0\,subtree:!0})}));const e={apply:(e\,t\,o)=>{const r=o[0];return"function"==typeof r&&r.toString().includes("onAbnormalityDetected")&&(o[0]=function(){})\,Reflect.apply(e\,t\,o)}};window.Promise.prototype.then=new Proxy(window.Promise.prototype.then\,e)})();(function serverContract(), sedCount, 1)
+www.youtube.com#@#+js(set, ytcfg.data_.EXPERIMENT_FLAGS.web_streaming_watch, false)
+www.youtube.com#@##page-manager:has(#player-error-message-container #subreason a.yt-simple-endpoint[href="https://support.google.com/youtube/answer/3037019"]) ytd-watch-flexy[player-unavailable]:remove-attr(player-unavailable)
+www.youtube.com#@#+js(ra, player-unavailable, #page-manager:has(#player-error-message-container #subreason a.yt-simple-endpoint[href="https://support.google.com/youtube/answer/3037019"]) ytd-watch-flexy[player-unavailable], asap stay)
+www.youtube.com#@##page-manager:has(#player-error-message-container #subreason a.yt-simple-endpoint[href="https://support.google.com/youtube/answer/3037019"]) ytd-watch-flexy[player-unavailable] :is(#player-container-outer, #cinematics-container, #ytd-player > #container):style(visibility: visible !important;)
+www.youtube.com#@##page-manager:has(#player-error-message-container #subreason a.yt-simple-endpoint[href="https://support.google.com/youtube/answer/3037019"]) yt-playability-error-supported-renderers#error-screen
+www.youtube.com#@#.ytdMiniplayerPlayerContainerHost .ytdMiniplayerPlayerContainerPlayabilityError
+www.youtube.com#@#+js(nostif, ()\,a\,b);, 5000)
+www.youtube.com##+js(trusted-rpnt, script, (function serverContract(), '(()=>{if("YOUTUBE_PREMIUM_LOGO"===ytInitialData?.topbar?.desktopTopbarRenderer?.logo?.topbarLogoRenderer?.iconImage?.iconType||location.href.startsWith("https://www.youtube.com/tv#/")||location.href.startsWith("https://www.youtube.com/embed/"))return;const e=ytcfg.data_.INNERTUBE_CONTEXT.client.userAgent,t=t=>{ytcfg.data_.INNERTUBE_CONTEXT.client.userAgent=t?e.replace?.(/(Mozilla\/5\.0 \([^)]+)/,"$1; "+t):e};let o=!1,a=["adunit","channel"];document.addEventListener("DOMContentLoaded",(function(){const e=()=>{const e=document.getElementById("movie_player");if(!e)return;const r=e.getProgressState?.(),n=e.getPlayerResponse?.(),s=e.getStatsForNerds?.();if(r&&r.duration>0&&(r.loaded<r.duration||r.duration-r.current>1)||n?.videoDetails?.isLive){if(!s?.debug_info?.startsWith?.("SSAP, AD")){const r=e.getPlayerStateObject?.(),i=n.videoDetails?.videoId,d=n.playerConfig?.playbackStartConfig?.startSeconds??0;return void("UNPLAYABLE"!==n?.playabilityStatus?.status||n?.playabilityStatus?.errorScreen?.playerErrorMessageRenderer?.playerCaptchaViewModel||"WEB_PAGE_TYPE_UNKNOWN"!==n?.playabilityStatus?.errorScreen?.playerErrorMessageRenderer?.subreason?.runs?.[0]?.navigationEndpoint?.commandMetadata?.webCommandMetadata?.webPageType||"https://support.google.com/youtube/answer/3037019"!==n?.playabilityStatus?.errorScreen?.playerErrorMessageRenderer?.subreason?.runs?.[0]?.navigationEndpoint?.commandMetadata?.webCommandMetadata?.url?r?.isBuffering&&"0 Kbps"===s?.bandwidth_kbps&&"0.00 s"===s?.buffer_health_seconds&&"0x0"===s?.resolution&&o&&a.length>0&&(t(a[0]),o=!1,e.loadVideoById(i,d)):(a=a.slice(1),a.length>0?t(a[0]):t(""),o=!1,e.loadVideoById(i,d)))}r.duration>0&&e.seekTo?.(r.duration)}};e(),new MutationObserver((()=>{e()})).observe(document,{childList:!0,subtree:!0})})),window.Map.prototype.has=new Proxy(window.Map.prototype.has,{apply:(e,t,r)=>{if("onSnackbarMessage"===r?.[0]&&!o){const e=document.getElementById("movie_player");if(!e)return;const t=e.getStatsForNerds?.(),r=e.getPlayerStateObject?.();r?.isBuffering&&"0 Kbps"===t?.bandwidth_kbps&&"0.00 s"===t?.buffer_health_seconds&&"0x0"===t?.resolution&&a.length>0&&(o=!0)}return Reflect.apply(e,t,r)}});const r={apply:(e,t,o)=>{const a=o[0];return"function"==typeof a&&a.toString().includes("onAbnormalityDetected")&&(o[0]=function(){}),Reflect.apply(e,t,o)}};window.Promise.prototype.then=new Proxy(window.Promise.prototype.then,r)})();(function serverContract()', sedCount, 1)
+www.youtube.com##+js(trusted-json-edit-xhr-request, [?..userAgent*="channel"]..client[?.clientName=="WEB"]+={"clientScreen":"CHANNEL"}, propsToMatch, /player?)
+www.youtube.com##+js(trusted-json-edit-xhr-request, [?..userAgent*="adunit"]..client[?.clientName=="WEB"]+={"clientScreen":"ADUNIT"}, propsToMatch, /player?)
+www.youtube.com###toast:has(> #action-button a.yt-spec-button-shape-next[href^="https://support.google.com/youtube/answer/3037019"])
 ||ttvnw.net/v1/playlist$xhr,3p,replace=/#EXT-X-DATERANGE:ID="(stitched-ad|maf-ad|source|trigger)"\S+\n|#EXT-X-DATERANGE:ID=\S+?CLASS="twitch-(?:stream-source|trigger|maf-ad)"\S+\n|#EXT-X-DATERANGE:\S+?CLASS="twitch-ad-quartile".+?(?=(#EXT-X-DATERANGE|$))|(\n#EXT-X-DISCONTINUITY\s|#EXT-X-TWITCH-PREFETCH\S+)//gs
 www.twitch.tv##[data-a-target="video-ad-label"]
 www.twitch.tv##[data-a-target="video-ad-countdown"]
@@ -32865,6 +32870,7 @@ kanogoma.com##.lyrics-section .user-select-none:style(-webkit-touch-callout: def
 kashinavi.com##body,div[oncopy],div.noprint:remove-attr(/oncontextmenu|onselectstart|style|oncopy|unselectable/)
 kashinavi.com##+js(ra, oncopy|onSelectStart|oncontextmenu|style, '[oncopy],[oncontextmenu]')
 open.spotify.com##.contentSpacing .paywall[data-testid="lyrics-container"] p[data-encore-id="text"]:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important; -webkit-tap-highlight-color: revert !important; cursor: revert !important;)
+police.gov.sg##.slick-slider:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important; -webkit-tap-highlight-color: revert !important; cursor: revert !important;)
 @@||socialblade.com^$ghide
 socialblade.com##.cas-container
 socialblade.com##.cas-wide-container

@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Sat, 21 Feb 2026 22:30:22 GMT
+! Last modified: Sun, 22 Feb 2026 04:12:04 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202602212221
+!   - Version: 202602220401
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 21 Feb 2026 22:21 UTC
+!   - Last modified: 22 Feb 2026 04:01 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
@@ -35,7 +35,7 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 💊 Dandelion Sprout's Anti-Malware List
 !   - URL: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout's%20Anti-Malware%20List.txt
-!   - Version: 15February2026v1
+!   - Version: 21February2026v1
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 🛃 Anti-'Adoptables and Artsite NFTs' List
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/AntiAdoptablesList.txt
@@ -78,7 +78,7 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * ➗ Actually Legitimate URL Shortener Tool
 !   - URL: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt
-!   - Version: 21February2026v1
+!   - Version: 21February2026v2
 !   - Homepage: https://github.com/DandelionSprout/adfilt/discussions/163
 ! * 🐊 Imgur: Pure Imagery Experience
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/ImgurPureImageryExperience.txt
@@ -98,7 +98,7 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#english
 ! * 🎫 Ad Removal List for Unusual Ads
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/AdRemovalListForUnusualAds.txt
-!   - Version: 25June2025v1-Beta
+!   - Version: 21February2026v2-Beta
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * ☣️ Anti-Elsagate List
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/Anti-Elsagate%20List.txt
@@ -6017,7 +6017,7 @@ zombooru.com##a[href$="ttp://www.hard55.com"]
 ||salomonusa*$all,~inline-font
 ||sauconyoutlet*$all,~inline-font
 ||botashunter*$all,~inline-font
-||hokaoneone*$all,~inline-font
+||hokaoneone*$all,~inline-font,domain=~emailpowerreviews.com
 ||hokaoutlet*$all,~inline-font
 *-factoryoutlet.$all,~inline-font
 *-outletfactory.$all,~inline-font
@@ -20822,7 +20822,7 @@ $doc,removeparam=source,denyallow=googlevideo.com,domain=1sol.io|about.gitlab.co
 $removeparam=mod,domain=barrons.com|dowjones.com|fnlondon.com|mansionglobal.com|marketwatch.com|penews.com
 @@^mod=djemalertNEWS^$removeparam=mod
 $removeparam=sid,domain=anrdoezrs.net|dpbolvw.net|gopjn.com|jdoqocy.com|kqzyfj.com|pepperjamnetwork.com|tkqlhce.com|gamereactor.*
-$removeparam=from,doc,domain=apkpure.com|bandcamp.com|browserling.com|cancam.jp|duckduckgo.com|duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion|feeder.co|ettoday.net|landevei.no|luisaviaroma.com|sogou.com|store.hbr.org|app.snyk.io|onlinepngtools.com|indiatimes.com|jetbrains.com|tvtropes.org|yandex.com
+$removeparam=from,doc,domain=apkpure.com|bandcamp.com|browserling.com|cancam.jp|duckduckgo.com|duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion|feeder.co|ettoday.net|landevei.no|luisaviaroma.com|sogou.com|store.hbr.org|app.snyk.io|onlinepngtools.com|indiatimes.com|jetbrains.com|tvtropes.org|mideacomfort.us|yandex.com
 $removeparam=keyword,domain=bindright.com|lendgo.com|reddit.app.link
 $removeparam=id,domain=go.redirectingat.com|go.skimlinks.com|go.skimresources.com|karkkainen.com
 $removeparam=offer_id,domain=catch.com.au|surfshark.com
@@ -23670,6 +23670,10 @@ news.sohu.com##.area.footer
 ||google-analytics.com/collect^$app=MyTuner.Windows.exe
 ||api.mytuner.mobi^$csp=upgrade-insecure-requests
 $csp=upgrade-insecure-requests,app=MyTuner.Windows.exe
+||offers-api.now.gg^
+||bluestacks.com/app_player_*/get_exit_popup_mobile_apps^
+||bluestacks.com/app_player_*/get_b2b_apps^
+||cloud.bluestacks.com/bs*/promotions^
 ! ☣️ Anti-Elsagate List https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/Anti-Elsagate%20List.txt
 www.youtube.com,35.190.94.206,206.94.190.35.bc.googleusercontent.com#?##dismissable,[lockup],ytd-metadata-row-renderer,.watchable-tile:has-text(Nursery)
 www.youtube.com,35.190.94.206,206.94.190.35.bc.googleusercontent.com#?##dismissable,[lockup],ytd-metadata-row-renderer,.watchable-tile:has-text(/Finger\sFamily/i)
