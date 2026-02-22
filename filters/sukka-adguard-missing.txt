@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sun, 22 Feb 2026 10:17:03 GMT
+! Last modified: Sun, 22 Feb 2026 14:34:58 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -17,7 +17,7 @@
 !   - Last modified: Fri, 20 Feb 2026 05:49:04 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
-!   - Last modified: Sat, 21 Feb 2026 14:10:15 +0000
+!   - Last modified: Sun, 22 Feb 2026 09:36:40 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
 !   - Last modified: Sat, 21 Feb 2026 15:38:11 +0000
@@ -27,7 +27,7 @@
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Thu, 19 Feb 2026 13:16:08 +0000
+!   - Last modified: Sun, 22 Feb 2026 11:08:11 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
 !   - Last modified: Sun, 22 Feb 2026 03:33:23 +0000
@@ -30299,7 +30299,7 @@ mdjonline.com###article-body > .subscriber-only:style(display: block !important;
 ||googletagmanager.com/gtm.js$script,domain=oxylabs.io,important
 daily.co.jp##+js(trusted-rpnt, script, /(window\.AdObserverManager\.register\('ds[ps][cp]-bottomRecommend'\);)/, (()=>{window.addEventListener("load"\,(()=>{const t=document.querySelector("#openwebSection")\,e=document.querySelector("div[data-spot-id]");if(!e||!t)return;const d=e.getAttribute("data-spot-id");if(!d)return;var o;((t\,e\,d)=>{const o=document.createElement("div");o.setAttribute("data-spotim-module"\,"conversation")\,o.setAttribute("data-spot-id"\,t)\,o.setAttribute("data-post-id"\,e)\,d.appendChild(o)})(d\,Math.abs((o=document.title\,[...o].reduce(((t\,e)=>Math.imul(31\,t)+e.charCodeAt(0)|0)\,0)))\,t);const a=document.createElement("script");a.setAttribute("src"\,`https://launcher.spot.im/spot/${d}`)\,a.setAttribute("async"\,"")\,document.head.appendChild(a)}));})();$1, sedCount, 1)
 @@||trafico.prensaiberica.es/adm/min/pb_wrapper/pbwrapper.js$script,domain=elperiodicodearagon.com
-@@||mybbc-analytics.files.bbci.co.uk^$script,domain=bbc.com
+@@||mybbc-analytics.files.bbci.co.uk^$domain=bbc.com
 ! uBlock filters – Quick fixes https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
 @@||hb.vntsm.com/v4/live/vms/sites/aternos.org/index.js$script,domain=aternos.org
 aternos.org##.header-center:style(margin-top:-5000px !important;)
@@ -30733,7 +30733,7 @@ archive.nytimes.com##body > div[style*="z-index: 2147483647"]:has(a[href="https:
 schauspiel.koeln##+js(trusted-set-cookie, SK.Website.ConsentManager, W1siYmFzZSIsdHJ1ZV0sWyJnb29nbGVhbmFseXRpY3MiLGZhbHNlXSxbIm1ldGFwaXhlbCIsZmFsc2VdXQ==)
 onlinestempel.ch##+js(trusted-set-cookie, consent, %7B%22level%22%3A%5B%22necessary%22%5D%2C%22revision%22%3A0%2C%22data%22%3A%7B%22id%22%3A%22DarYF7gx7v%22%7D%2C%22rfc_cookie%22%3Atrue%7D)
 chase.co.uk##+js(trusted-set-cookie, CookieConsents, '{"StrictlyNecessary":true,"Analytical":false,"Performance":false,"AdvertisingAndTargeting":false,"timestamp":""}')
-svt.se##+js(trusted-set-cookie, cookie-consent-news-3, '{"optedIn":true,"statistics":false,"functionality":false}')
+svt.se##+js(trusted-set-cookie, cookie-consent-news-4, '{"categories":{"required":true,"improved_experience":false,"partners":false},"version":4}')
 komoot.com##+js(trusted-set-local-storage-item, komoot_gdpr_data, '{"requestDone":true,"technicalAcceptedTrackers":[],"analyticsAcceptedTrackers":[],"profilingAcceptedTrackers":[],"lastAcceptedVersion":1}')
 chatreplay.stream##+js(trusted-set-cookie, cr_consent, '2|tracking=false+analytics=false+marketing=false', , , reload, 1)
 screen.studio##+js(trusted-set-local-storage-item, cookies_settings, '{"json":{"state":"only-essential"}}')
