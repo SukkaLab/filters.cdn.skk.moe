@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Mon, 23 Feb 2026 14:56:53 GMT
+! Last modified: Mon, 23 Feb 2026 18:59:58 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202602231451
+!   - Version: 202602231851
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 23 Feb 2026 14:51 UTC
+!   - Last modified: 23 Feb 2026 18:51 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
@@ -18978,16 +18978,16 @@ artstation.com#?#.gallery-grid-item,.project:has-text(Manolov)
 artstation.com#?#.gallery-grid-item,.project:has-text(/^.*Noah\'s\sArk.*$/)
 artstation.com#?#.gallery-grid-item,.project:has-text(/^.*Cr\ypto(\s|c)/)
 artstation.com#?#.gallery-grid-item,.project:has-text(Ξ)
-pixiv.net##li[class*=" "]:has(a[href*="/artworks/"] img[alt*=adoptable i])
-pixiv.net##li[class*=" "]:has(a[href*="/artworks/"] img[alt*="[Open]" i])
-pixiv.net##li[class*=" "]:has(a[href*="/artworks/"] img[alt*="[Closed]" i])
-pixiv.net##li[class*=" "]:has(a[href*="/artworks/"] img[alt*="[adopt]" i])
-pixiv.net##li[class*=" "]:has(a[href*="/artworks/"] img[alt*=" adopts!" i])
-pixiv.net##li[class*=" "]:has(a[href*="/artworks/"] img[alt*=closedspecies i])
-pixiv.net##li[class*=" "]:has(a[href*="/artworks/"] img[alt*=closed_species i])
-pixiv.net##li[class*=" "]:has(a[href*="/artworks/"] img[alt*=Dopts])
-pixiv.net##li[class*=" "]:has(a[href*="/artworks/"] img[alt*=Dopties])
-pixiv.net##li[class*=" "]:has(a[href*="/artworks/"] img[alt*=ADOPTED])
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"] img[alt*=adoptable i])
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"] img[alt*="[Open]" i])
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"] img[alt*="[Closed]" i])
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"] img[alt*="[adopt]" i])
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"] img[alt*=" adopts!" i])
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"] img[alt*=closedspecies i])
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"] img[alt*=closed_species i])
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"] img[alt*=Dopts])
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"] img[alt*=Dopties])
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"] img[alt*=ADOPTED])
 pixiv.net#?#li[class*=" "]:has(a[href*="/artworks/"]:not([data-gtm-recommend-zone=discovery])):has(a[href$="users/37189328"])
 pixiv.net#?#li[class*=" "]:has(a[href*="/artworks/"]:not([data-gtm-recommend-zone=discovery])):has(a[href$="users/7857912"])
 pixiv.net#?#ul > li > div:last-of-type:nth-of-type(2):has-text(/adoptable/i)
