@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Mon, 23 Feb 2026 18:59:58 GMT
+! Last modified: Mon, 23 Feb 2026 22:48:43 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.0.44
+!   - Version: 2.1.0.45
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -140009,7 +140009,6 @@ dlsdk.appsflyer.com^
 ||events.production.us1.pgw-pci.klarna.net^
 ||event-gateway.data.karrotmarket.com^
 ||h-adashx4id.ut.taobao.com^
-||gjtrack.ucweb.com^
 ||ip.xindong.com^
 ||openlog.tapapis.com^
 ||logc-sg.tsd.xindong.com^
@@ -140259,11 +140258,8 @@ dlsdk.appsflyer.com^
 ||tnc16-*.hypic.com^
 ||app-tracking.hlogo.de^
 ||px.wpk.quark.cn^
-||uc9.ucweb.com^
-||ucus.ucweb.com^
 ||applog.lc.quark.cn^
 ||log.m.sm.cn^
-||track.uc.cn^
 ||track.adflow-prod.minionplatform.com^
 ||t-odx.op-mobile.opera.com^
 ||stat-analytics.mediavitrina.ru^
@@ -140544,7 +140540,6 @@ d4?appid*type*
 ||logger.growstarry.com^
 ||beacon-api.aliyuncs.com^
 ||adash.man.aliyuncs.com^
-||woodpecker.uc.cn^
 ||adashx4ae.ut.taobao.com^
 ||h-adashx4ae.ut.taobao.com^
 ||audid-api.taobao.com^
@@ -140798,7 +140793,6 @@ d4?appid*type*
 ||sdk-log-inter.youdao.com^
 ||sensors.snappea.com^
 ||analytics.snaptube.app^
-||px.ucweb.com^
 ||adtima-static.zadn.vn^
 ||ztevents.zaloapp.com^
 ||log.adtimaserver.vn^
@@ -140814,8 +140808,6 @@ d4?appid*type*
 ||bi.manhuaren.com^
 ||analytics.datasavannah.com^
 ||sq.requestads.com^
-||insight.ucweb.com^
-||gjapplog.ucweb.com^
 ||stat.meitudata.com^
 ||collect.media.jio.com^
 ||log.apk.v-mate.mobi^
@@ -140902,8 +140894,6 @@ d4?appid*type*
 ||api*.moengage.com^
 ||sdk-*.moengage.com^
 ||rt.applovin.com^
-||uc.ucweb.com^
-||puds.ucweb.com^
 ||patriot.cs.pp.cn^
 ||sdk-orion.appboy.com^
 ||api.elysium.opera.com/api/elysium/log_session_events
@@ -140912,9 +140902,6 @@ d4?appid*type*
 ||api.mixpanel.com^
 ||decide.mixpanel.com^
 ||api.segment.io^
-||applog.uc.cn^
-||dispatcher.upmc.uc.cn^
-||gjapplog.uc.cn^
 ||bitmango.com/log
 ||tracking.directservices.it^
 ||flurry.agentportal-*.yahoodns.net^
@@ -141066,6 +141053,20 @@ d4?appid*type*
 ||mcs-va.tiktokv.com^
 ||mcs-va-*.tiktokv.com^
 ||analytics.tiktok.com^
+||woodpecker.uc.cn^
+||track.uc.cn^
+||applog.uc.cn^
+||dispatcher.upmc.uc.cn^
+||gjapplog.uc.cn^
+||uc9.ucweb.com^
+||ucus.ucweb.com^
+||logssug.ucweb.com^
+||gjtrack.ucweb.com^
+||px.ucweb.com^
+||insight.ucweb.com^
+||gjapplog.ucweb.com^
+||uc.ucweb.com^
+||puds.ucweb.com^
 ||bts-la.ucweb.com^
 ||intlsucus.ucweb.com^
 ||adtrack-intl.ucweb.com^
