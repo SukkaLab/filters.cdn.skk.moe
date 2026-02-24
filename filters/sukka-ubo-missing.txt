@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Tue, 24 Feb 2026 04:14:07 GMT
+! Last modified: Tue, 24 Feb 2026 07:01:00 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.0.46
+!   - Version: 2.1.0.48
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -218,6 +218,8 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||bidr.io^
+||s.opensend.com^
 ||diginetica.net^
 ||cdn-*.gravityfield.ai^
 ||location.dynabic.com^$3p
@@ -70003,6 +70005,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||countly.
 ||countly-
 |piwik.
+||aplus.gmarket.co.kr^
 ||animo.sto.wiki^
 ||alloy-web.zvuk.com^
 ||tg.minfin.com.ua^
@@ -134194,6 +134197,14 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||investinglive.com/api/set-device-id
+usmagazine.com##+js(set-local-storage-item, rl_anonymous_id, $remove$)
+cnbctv18.com###postDetail > div[style][class^="jsx-"]:has(> .taboola_section)
+||alicdn.com/alilog/mlog/
+myhixel.com##+js(set-local-storage-item, ANONYMOUS_CUSTOMER_ID, $remove$)
+myhixel.com##+js(set-local-storage-item, user_id, $remove$)
+||app-api.vidjet.io/track-event
+||myhixel.com/apps/awin/
 ||webmd.com/static/v/c?
 ||img.lb.wbmdstatic.com/webmd_static_vue/file-explorer/webmd/js/mmtrack.js
 ||img.lb.wbmdstatic.com/webmd_static_vue/file-explorer/webmd/global-metrics/
@@ -134773,7 +134784,7 @@ ici.radio-canada.ca##+js(set-local-storage-item, RC_PLAYER_USER_ID, $remove$)
 ||udc.yahoo.com/v*/public/*&yhlClient=rapid*&yhlClientVer=$domain=yahoo.com
 ||goodcar.com/js/parts/fp.js
 2ndswing.com,goodcar.com##+js(set-local-storage-item, uw-uid, $remove$)
-||11st.co.kr/js/rake/RakeData.js
+||11st.co.kr/js/*/RakeData.js
 epicurious.com##+js(set-cookie, FP_visitorID, 1, /, epicurious.com)
 ||teraboxcdn.com/general-conf/fk/dfxaf3-*.js
 ||s-cdn.sportbox.ru/sites/all/libraries/design/*/js/user-tracking.global.js
@@ -134982,7 +134993,7 @@ ppomppu.co.kr##+js(href-sanitizer, a[href^="https://s.ppomppu.co.kr?"][href*="&t
 berrykun.com##img[src*="a8.net/svt/"]
 ||xvp.imgix.net/assets/customer_tools/ip_checker-
 ||pub.pixels.ai/metrics-lib.js
-pitchfork.com,gq.com##+js(set-local-storage-item, /^avoinspector/, $remove$)
+self.com,allure.com,pitchfork.com,gq.com##+js(set-local-storage-item, /^avoinspector/, $remove$)
 ||affirm.com/api/chrono/*/collect
 ||jobkorea.co.kr/Net/AdBannerApi/AdBannerLog
 ||check24.*/assets/funnel-tracking.min.js
