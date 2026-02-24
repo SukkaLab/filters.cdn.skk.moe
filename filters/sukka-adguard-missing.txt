@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Tue, 24 Feb 2026 18:59:10 GMT
+! Last modified: Tue, 24 Feb 2026 22:38:44 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Tue, 24 Feb 2026 12:28:16 +0000
+!   - Last modified: Tue, 24 Feb 2026 16:52:39 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Tue, 24 Feb 2026 13:08:13 +0000
@@ -17,7 +17,7 @@
 !   - Last modified: Tue, 24 Feb 2026 11:24:11 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
-!   - Last modified: Sun, 22 Feb 2026 16:13:14 +0000
+!   - Last modified: Tue, 24 Feb 2026 15:32:02 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
 !   - Last modified: Tue, 24 Feb 2026 12:41:33 +0000
@@ -7295,15 +7295,13 @@ driveup.space##center > iframe[id="adapred"]
 ||ppcnqq.com^
 ||snhjsbs.shop^
 ||w0of-woof.com^
-@@||com/js/*.js|$script,1p,domain=upfilesgo.com|upfion.com|upfiles.app|upfiles-urls.com
 upfilesgo.com,upfion.com,upfiles.app,upfiles-urls.com##fieldset, .faqs, footer
 upfilesgo.com,upfion.com,upfiles.app,upfiles-urls.com##+js(aeld, DOMContentLoaded, history.go)
 upfilesgo.com,upfion.com,upfiles.app,upfiles-urls.com##+js(aeld, click, shouldOpenPopUp)
-upfilesgo.com,upfion.com,upfiles.app,upfiles-urls.com##+js(no-fetch-if, googlesyndication)
-upfilesgo.com,upfion.com,upfiles.app,upfiles-urls.com##+js(set, vhit, {})
-upfilesgo.com,upfion.com,upfiles.app,upfiles-urls.com##+js(set, vhit.detectAdblock, falseFunc)
-upfilesgo.com,upfion.com,upfiles.app,upfiles-urls.com##+js(aopr, app_vars.force_disable_adblock)
 upfilesgo.com,upfion.com,upfiles.app,upfiles-urls.com##+js(set, blurred, false)
+upfilesgo.com,upfion.com,upfiles.app,upfiles-urls.com##+js(nosiif, _0x, 100)
+upfilesgo.com,upfion.com,upfiles.app,upfiles-urls.com##+js(ra, disabled, #link-button-free, complete)
+upfilesgo.com,upfion.com,upfiles.app,upfiles-urls.com###link-button-free > .spinner-border
 rentry.co##article:has(#download-your-archive-file)
 ||sharecube.pro^$all
 ||flyshare.cfd^$all
@@ -9481,6 +9479,8 @@ wspinanie.pl##.global__advertisement
 ||static.criteo.net/js/$script,domain=pilot.wp.pl,redirect=noopjs
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=pilot.wp.pl
 polskawliczbach.pl##+js(nostif, offsetHeight)
+@@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=wiadomosci.wp.pl
+wiadomosci.wp.pl##+js(nostif, , 100)
 ||static-cloud.mediaset.net/misc/ad/adanalytics.js^$redirect=noopjs
 ||static-cloud.mediaset.net/misc/ad/adanalytics.js^$redirect=noopjs,domain=mediasetinfinity.es,important
 download.kingtecnologia.com##+js(nostif, await _0x)
@@ -21276,6 +21276,7 @@ manhuaga.com##+js(noeval-if, adsbygoogle)
 goflix.sbs##+js(trusted-set-cookie, welcome_message_1, true, , ,reload, 1)
 goflix.sbs##+js(nowoif, _blank)
 uindex.org##+js(acs, setTimeout, window.open)
+uindex.org##[style*="650"]
 streamup.ws##+js(set, detectSandbox, noopFunc)
 streamup.ws##+js(aeld, DOMContentLoaded, Promise)
 streamup.ws##+js(nostif, push)
@@ -29797,7 +29798,7 @@ neurotray.com##+js(nano-stb, /EzoIvent|TDELAY/, 5000)
 ||sf.ezoiccdn.com/ezossp/https/neurotray.com/?local_ga_js=$script,3p,domain=neurotray.com,important
 @@||go.ezodn.com^$css,image,3p,domain=neurotray.com
 @@||go.ezodn.com/tardisrocinante/$script,3p,domain=neurotray.com
-||imasdk.googleapis.com/js/sdkloader/ima3.js$script,important,redirect=google-ima.js:5,domain=abczdrowie.pl|animezone.pl|chillizet.pl|claudia.pl|echirurgia.pl|elevensports.pl|elle.pl|elleman.pl|fm.tuba.pl|focusnauka.pl|games.cdn.famobi.com|glamour.pl|grydladzieci.pl|ipla.tv|ipla.tv|kobieta.pl|meloradio.pl|mojegotowanie.pl|mojpieknyogrod.pl|money.pl|national-geographic.pl|parenting.pl|partner.redefine.pl|playpuls.pl|pluscdn.pl|polsatgo.pl|polsatnews.pl|polsatsport.pl|przyslijprzepis.pl|radioplus.pl|sadeczanin.info|tvokazje.pl|tvp.pl|twojapogoda.pl|video.onnetwork.tv|videotarget.pl|wp.pl|wtk.pl|interia.pl|www.polsatnews.pl|autocentrum.pl
+||imasdk.googleapis.com/js/sdkloader/ima3.js$script,important,redirect=google-ima.js:5,domain=abczdrowie.pl|animezone.pl|chillizet.pl|claudia.pl|echirurgia.pl|elevensports.pl|elle.pl|elleman.pl|fm.tuba.pl|focusnauka.pl|games.cdn.famobi.com|glamour.pl|grydladzieci.pl|ipla.tv|ipla.tv|kobieta.pl|meloradio.pl|mojegotowanie.pl|mojpieknyogrod.pl|money.pl|national-geographic.pl|parenting.pl|partner.redefine.pl|playpuls.pl|pluscdn.pl|polsatgo.pl|polsatnews.pl|polsatsport.pl|przyslijprzepis.pl|radioplus.pl|sadeczanin.info|tvokazje.pl|tvp.pl|twojapogoda.pl|video.onnetwork.tv|videotarget.pl|wp.pl|wtk.pl|interia.pl|www.polsatnews.pl|autocentrum.pl|~wiadomosci.wp.pl
 virginmediatelevision.ie##+js(set, google.ima.dai, {})
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=virginmediatelevision.ie
 @@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$script,domain=virginmediatelevision.ie
