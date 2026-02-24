@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Tue, 24 Feb 2026 10:39:26 GMT
+! Last modified: Tue, 24 Feb 2026 14:59:16 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,19 +8,19 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Tue, 24 Feb 2026 06:01:49 +0000
+!   - Last modified: Tue, 24 Feb 2026 12:28:16 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
-!   - Last modified: Sun, 22 Feb 2026 03:43:52 +0000
+!   - Last modified: Tue, 24 Feb 2026 13:08:13 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Mon, 23 Feb 2026 13:39:13 +0000
+!   - Last modified: Tue, 24 Feb 2026 11:24:11 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
 !   - Last modified: Sun, 22 Feb 2026 16:13:14 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Tue, 24 Feb 2026 05:11:26 +0000
+!   - Last modified: Tue, 24 Feb 2026 12:41:33 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
 !   - Last modified: Tue, 24 Feb 2026 05:13:24 +0000
@@ -30,7 +30,7 @@
 !   - Last modified: Tue, 24 Feb 2026 04:20:41 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
-!   - Last modified: Tue, 24 Feb 2026 06:16:40 +0000
+!   - Last modified: Tue, 24 Feb 2026 10:53:26 +0000
 ! --------------------------------------------------------------
 ! uBlock filters https://ublockorigin.pages.dev/filters/filters.min.txt
 *_ad_$media,domain=youtube.com,3p
@@ -8266,7 +8266,7 @@ saint2.cr##+js(acs, WebAssembly, Promise)
 10convert.com,2girls1cup.ca,7bit.link,animez.org,aninavi.blog,ansuko.net,apnablogs.in,areabokep.com,asiangaysex.net,asmroger.*,axomtube.in,banglachotigolpo.xyz,bellezashot.com,besthdgayporn.com,bigojav.com,bookfrom.net,boysxclusive.com,chikianimation.org,ddd-smart.net,dojing.net,drivenime.com,dtupgames.blogspot.com,earnfromarticles.com,easyvidplayer.com,echiman.com,erokomiksi.com,favoyeurtube.net,fucksporn.com,fullxcinema1.com,gayfor.us,gayxx.net,gdrivelatinohd.net,gigmature.com,gomuraw.blog,gosexy.mobi,hachiraw.net,hanime1-me.top,hentaianimezone.com,hentaiasmr.moe,hentairead.io,homemoviestube.com,hornyfap.tv,huurshe.com,incgrepacks.com,isekaitube.com,japangaysex.com,javboys.*,javbraze.com,javdoe.sh,javhat.tv,javhd.*,javhdz.today,javseen.tv,javsubindo.com,javtiful.com,javup.org,jojolandsmanga.com,jpopsingles.eu,kahanighar.com,kaliscan.*,kfapfakes.com,kiradream.blog,kisscos.net,kisshentaiz.com,kmansin09.*,kuronavi.blog,leermanga.net,lustesthd.makeup,mangakoma01.*,mangamovil.net,mangaraw.*,mangaraw1001.cc,mangaraw18.net,mangarawad.fit,mangarawjp.me,manhuatop.org,manhwa68.com,manhwatop.com,mikohub.blog,milfnut.*,movibd.com,mmsbee47.com,mmsmasala27.com,naijauncut.com,nicomanga.com,nudeslegion.com,odiafresh.com,onlinework4all.com,otomi-games.com,paipancon.com,pandamovies.org,pantieshub.net,pastelink.net,pinayflix.me,piratehaven.xyz,poapan.xyz,porn00.org,pornohubonline.com,pornxp.com,primewire.*,raw1001.net,raw18.*,rawinu.com,rawkuro.net,rebahin.pw,redretti.com,rentry.co,safefileku.com,sexdiaryz.*,sexpin.net,shemale6.com,shemaleup.net,sharinghubs.com,shinshi-manga.net,smarttrend.xyz,socigames.com,spotidownloader.com,streamup.ws,sweeteroticart.com,tabooporn.tv,taboodude.com,tatli.biz,tesbox.my.id,thebarchive.com,theblank.net,transflix.net,turboimagehost.com,vintagepornfun.com,weloma.art,welovemanga.one,worthcrete.com,xhamster.fm,xmegadrive.com,yabaisub.cloud,yesjavplease.fun##+js(acs, document.createElement, l.parentNode.insertBefore(s)
 panuvideo.com##+js(acs, setTimeout, l.parentNode.insertBefore(s)
 mangaplus.shueisha.tv,shueisharaw.tv##+js(acs, matchMedia, l.parentNode.insertBefore(s)
-asiangay.tv,bootstrample.com,deephot.link,gayxx.net,hentairead.io,japangaysex.com,mangagun.net,nicomanga.com,nudeslegion.com,paipancon.com,premiumporn.org,rawinu.com,watchsouthpark.tv,weloma.art,welovemanga.one,xpicu.store##+js(aopr, popns)
+asiangay.tv,bootstrample.com,deephot.link,gayxx.net,hentairead.io,japangaysex.com,justthegays.tv,mangagun.net,nicomanga.com,nudeslegion.com,paipancon.com,premiumporn.org,rawinu.com,watchsouthpark.tv,weloma.art,welovemanga.one,xpicu.store##+js(aopr, popns)
 tunemovie.fun##+js(acs, document.createElement, target.appendChild(s)
 brocoflix.com,brocoflix.xyz##+js(acs, document.createElement, l.appendChild(s))
 coinsbomb.com,daemon-hentai.com,daemonanime.net,everia.club,kurakura21.com##+js(acs, document.createElement, l.parentNode.insertBefore(s, /^data:/)
@@ -22282,7 +22282,8 @@ loverugbyleague.com,planetrugby.com##article.lg\:my-0.w-full.h-auto.my-5.mx-auto
 streamix.so##+js(nowoif)
 musiclutter.xyz##+js(rmnt, script, /adbl/i)
 eee1.lat,netcinebs.lat##+js(set, HTMLImageElement.prototype.onerror, undefined)
-meuplayeronlinehd.com##+js(rmnt, script, /adbl/i)
+@@||meuplayeronlinehd.com^$ghide
+meuplayeronlinehd.com##+js(nowoif)
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -24496,6 +24497,7 @@ cracksmid.com##div[style=""] > center > center
 ||core.windows.net/js/script7.js
 ||core.windows.net/*/js/js5.js
 ||core.windows.net/*/js/js6.js
+||core.windows.net/crypto-js.min.js
 ||ipwho.is^$xhr,domain=web.core.windows.net
 ||web.core.windows.net/beep.mp3
 ||web.core.windows.net/eng.mp3
@@ -25891,6 +25893,7 @@ rapidkil.com.au##+js(aost, XMLHttpRequest, /wp-content)
 ||fiheos.co.in^$all
 ||glousism.co.in^$all
 ||tryrichleads.top^$all
+||sentinelbotcore.co.in^$all
 ||maxsecurityultimate.com^$all
 ||hotdebrid.com^$doc
 ||maxdebrid.com^$doc
@@ -27541,14 +27544,10 @@ r.mail.wowvegas.com%2Ftr%2Fop%2F*$image
 .cineplex.de%2Fq%2F*$image
 /elink.membership.cgv.vn/vtrack$image
 *%2Felink.membership.cgv.vn%2Fvtrack*$image
-/link.koyeb.com/e/*$image
-*%2Flink.koyeb.com%2Fe%2F*$image
 .cloudns.net/tr.php$image
 .cloudns.net%2Ftr.php$image
 /elink.thedailybeast.com/*$image
 *%2Felink.thedailybeast.com%2F*$image
-/c.easyfundraising.org.uk/*$image
-*%2Fc.easyfundraising.org.uk%2F*$image
 /campaigns.blip.net/t/*$image
 *%2Fcampaigns.blip.net%2Ft%2F*$image
 /delivery.hideout.tv/*$image
@@ -27576,6 +27575,8 @@ r.mail.wowvegas.com%2Ftr%2Fop%2F*$image
 *%2Fdelivery.lootup.me%2F*%3Fid%3D*$image
 /t.ac.pandora.com/*$image
 *%2Ft.ac.pandora.com%2F*$image
+/netmail01gm.gmarket.co.kr/*$image
+*%2Fnetmail01gm.gmarket.co.kr%2F*$image
 static.adsugar.ch/img?ord=$image
 static.adsugar.ch%2Fimg%3Ford%3D*$image
 ecmweb.com/images/shim.png$image
@@ -27610,6 +27611,10 @@ newsletter.adnz.co%2F*$image
 *%2Ftrack%2Fopen.php%3F*$image
 ?eID=pixel&$image
 *%3FeID%3Dpixel%26*$image
+/track/opens/*$image
+*%2Ftrack%2Fopens%2F*$image
+.hubspotlinksstarter.com/Cto/$image
+.hubspotlinksstarter.com%2FCto%2F*$image
 ||googleusercontent.com/*/wf/open?upn=$image
 .salesforce.com%2Fservlet%2Fservlet.ImageServer%3F$image
 ||beacons.ai/api/rtanalytics/
@@ -30677,9 +30682,6 @@ historicaerials.com##+js(trusted-create-html, #historicaerials_g_728x90_ATF, <di
 historicaerials.com##+js(trusted-create-html, #historicaerials_g_160x600_Left, <div id="google_ads_iframe_/22597447651/historicaerials_g_160x600_Left_0__container__"><iframe id="google_ads_iframe_/22597447651/historicaerials_g_160x600_Left_0" width="1" height="1" data-load-complete="true"></iframe></div>)
 historicaerials.com##+js(trusted-create-html, #historicaerials_g_160x600_Right, <div id="google_ads_iframe_/22597447651/historicaerials_g_160x600_Right_0__container__"><iframe id="google_ads_iframe_/22597447651/historicaerials_g_160x600_Right_0" width="1" height="1" data-load-complete="true"></iframe></div>)
 @@||historicaerials.com^$ghide
-shueisha.co.jp#@#.list-basic-a:has(> li > div.c-ad)
-wpb.shueisha.co.jp##.list-basic-a__item:has(> div.c-ad)
-amazon.*#@#div[data-csa-c-type="widget"]:has([data-ad-feedback-label-id])
 ! uBlock filters – Experimental https://ublockorigin.pages.dev/filters/experimental.min.txt
 www.youtube.com#@#+js(trusted-rpnt, script, (function serverContract(), (()=>{if("YOUTUBE_PREMIUM_LOGO"===ytInitialData?.topbar?.desktopTopbarRenderer?.logo?.topbarLogoRenderer?.iconImage?.iconType)return void(ytcfg.data_.INNERTUBE_CONTEXT.client.userAgent=ytcfg.data_.INNERTUBE_CONTEXT.client.userAgent.replace?.(/(Mozilla\/5\.0 \([^)]+)/\,"$1; premium"));if(location.href.startsWith("https://www.youtube.com/tv#/")||location.href.startsWith("https://www.youtube.com/embed/"))return;document.addEventListener("DOMContentLoaded"\,(function(){const e=()=>{const e=document.getElementById("movie_player");if(!e)return;const t=e.getProgressState?.()\,o=e.getPlayerResponse?.();if(t&&t.duration>0&&(t.loaded<t.duration||t.duration-t.current>1)||o?.videoDetails?.isLive){if(!e.getStatsForNerds?.()?.debug_info?.startsWith?.("SSAP\, AD")){const t=o.videoDetails?.videoId;return void("UNPLAYABLE"!==o?.playabilityStatus?.status||o?.playabilityStatus?.errorScreen?.playerErrorMessageRenderer?.playerCaptchaViewModel||"WEB_PAGE_TYPE_UNKNOWN"!==o?.playabilityStatus?.errorScreen?.playerErrorMessageRenderer?.subreason?.runs?.[0]?.navigationEndpoint?.commandMetadata?.webCommandMetadata?.webPageType||"https://support.google.com/youtube/answer/3037019"!==o?.playabilityStatus?.errorScreen?.playerErrorMessageRenderer?.subreason?.runs?.[0]?.navigationEndpoint?.commandMetadata?.webCommandMetadata?.url||e.loadVideoById(t\,o.playerConfig?.playbackStartConfig?.startSeconds??0))}t.duration>0&&e.seekTo?.(t.duration)}};e()\,new MutationObserver((()=>{e()})).observe(document\,{childList:!0\,subtree:!0})}));const e={apply:(e\,t\,o)=>{const r=o[0];return"function"==typeof r&&r.toString().includes("onAbnormalityDetected")&&(o[0]=function(){})\,Reflect.apply(e\,t\,o)}};window.Promise.prototype.then=new Proxy(window.Promise.prototype.then\,e)})();(function serverContract(), sedCount, 1)
 www.youtube.com#@#+js(trusted-edit-inbound-object, JSON.stringify, 0, [?..playbackContext.contentPlaybackContext][?!.attestationRequest][?!.captionsRequested][?!.settingItemIds][?!.params^="YAHIAQ"][?!..mainAppWebInfo.graftUrl*="&list="][?!..mainAppWebInfo.graftUrl*="/shorts/"][?!..userAgent*="premium"]..client[?.clientName=="WEB"]+={"clientScreen":"CHANNEL"})
@@ -32951,6 +32953,8 @@ kashinavi.com##body,div[oncopy],div.noprint:remove-attr(/oncontextmenu|onselects
 kashinavi.com##+js(ra, oncopy|onSelectStart|oncontextmenu|style, '[oncopy],[oncontextmenu]')
 open.spotify.com##.contentSpacing .paywall[data-testid="lyrics-container"] p[data-encore-id="text"]:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important; -webkit-tap-highlight-color: revert !important; cursor: revert !important;)
 police.gov.sg##.slick-slider:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important; -webkit-tap-highlight-color: revert !important; cursor: revert !important;)
+nny360.com##+js(aeld, contextmenu, preventDefault)
+nny360.com##+js(rpnt, script, rcoverride < 1, false)
 @@||socialblade.com^$ghide
 socialblade.com##.cas-container
 socialblade.com##.cas-wide-container
@@ -36350,8 +36354,6 @@ music.youtube.com##ytmusic-description-shelf-renderer[is-track-lyrics-page]:styl
 mail.yahoo.com##+js(trusted-replace-argument, navigator.registerProtocolHandler, 0, noopFunc, condition, mailto)
 thestudentroom.co.uk##+js(set-cookie, _tsr_pc, 0)
 ft.com##+js(aeld, copy, clipboardData)
-nny360.com##+js(rpnt, script, contextmenu, xxx)
-nny360.com##+js(rpnt, script, ondragstart, yyy)
 bintv.fun,bintvs.fun##+js(rpnt, script, keydown, ooo)
 bintv.fun,bintvs.fun##+js(rpnt, script, onkeydown, ooo)
 bintv.fun,bintvs.fun##+js(rpnt, script, contextmenu, ccc)

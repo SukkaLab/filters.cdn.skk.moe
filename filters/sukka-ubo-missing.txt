@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Tue, 24 Feb 2026 10:39:26 GMT
+! Last modified: Tue, 24 Feb 2026 14:59:16 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.0.48
+!   - Version: 2.1.0.49
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -141116,10 +141116,12 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=saturn.de
 @@||metrics.us.playstation.com/b/ss/
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
+@@||scdn.cxense.com/cx.js$domain=cdn.cxpublic.com
 @@||tags.news.com.au/prod/adblock/adblock.js
 @@||feliz-web.data.tm-awx.com/smile-web.min.js$domain=examinerlive.co.uk
 @@||feliz.data.tm-awx.com/smile-web-v2/rootEvent$domain=examinerlive.co.uk
 @@||martech.condenastdigital.com/lib/martech.js$domain=wired.com
+apteka22.ru##+js(set-constant, Ya, {})
 @@||mc.yandex.ru/metrika/tag.js$domain=apteka22.ru
 felixmobile.com.au###__next [style*="filter:blur"]:style(filter: none !important;)
 @@||optimizely.com^$image,domain=marinco.navico.com
