@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Tue, 24 Feb 2026 07:01:00 GMT
+! Last modified: Tue, 24 Feb 2026 10:39:26 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202602240651
+!   - Version: 202602241031
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 24 Feb 2026 06:51 UTC
+!   - Last modified: 24 Feb 2026 10:31 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
