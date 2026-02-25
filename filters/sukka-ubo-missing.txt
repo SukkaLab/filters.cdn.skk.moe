@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Tue, 24 Feb 2026 22:38:44 GMT
+! Last modified: Wed, 25 Feb 2026 04:15:29 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.0.51
+!   - Version: 2.1.0.52
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -70005,6 +70005,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||countly.
 ||countly-
 |piwik.
+||wa.scribd.com^
 ||aplus.gmarket.co.kr^
 ||animo.sto.wiki^
 ||alloy-web.zvuk.com^
@@ -134197,6 +134198,8 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||tiktok.com/tiktok/popup/dispatch/
+||tiktok.com/api/ad/tiktok_web/banner/
 ||liberal.gr/modules/custom/liberal_advertising_tools/
 ||investinglive.com/api/set-device-id
 usmagazine.com##+js(set-local-storage-item, rl_anonymous_id, $remove$)
