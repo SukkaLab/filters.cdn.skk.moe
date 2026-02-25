@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Wed, 25 Feb 2026 04:15:29 GMT
+! Last modified: Wed, 25 Feb 2026 07:02:28 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,13 +8,13 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Tue, 24 Feb 2026 16:52:39 +0000
+!   - Last modified: Wed, 25 Feb 2026 05:03:00 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Tue, 24 Feb 2026 13:08:13 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Tue, 24 Feb 2026 11:24:11 +0000
+!   - Last modified: Wed, 25 Feb 2026 05:20:32 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
 !   - Last modified: Tue, 24 Feb 2026 15:32:02 +0000
@@ -16599,6 +16599,8 @@ digitask.ru##+js(nostif, offsetHeight, 200)
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=railstream.net,redirect=google-ima.js
 momondo.*##div[data-resultid$="-sponsored"]
 @@*$ghide,domain=now.gg|now.us
+now.gg,now.us###div-ad-app-page-leaderboard-container
+now.gg,now.us##.jUWcJN.sc-978a7a9c-0:has(#div-ad-square-midroll-video-container)
 @@||dn0qt3r0xannq.cloudfront.net/nowgg-$script
 doctoraux.com,educationbluesky.com,hotkitchenbag.com,maths.media,maths.news,mathsspot.com,mathsstudio.com,mathstutor.life,now.gg,now.us,nowgg.lol,selfstudybrain.com,skibiditoilet.yourmom.eu.org,thewebsitesbridge.com,universityequality.com,virtualstudybrain.com,websitesball.com,websitesbridge.com,xn--31byd1i.net##+js(no-fetch-if, googlesyndication)
 ||fundingchoicesmessages.google.com/i/pub$script,redirect=noopjs,domain=doctoraux.com|educationbluesky.com|hotkitchenbag.com|maths.media|maths.news|mathsspot.com|mathsstudio.com|mathstutor.life|now.gg|now.us|nowgg.lol|selfstudybrain.com|skibiditoilet.yourmom.eu.org|thewebsitesbridge.com|universityequality.com|virtualstudybrain.com|websitesball.com|websitesbridge.com|xn--31byd1i.net
@@ -26751,6 +26753,8 @@ zhihu.com##+js(no-xhr-if, log-sdk.ksapisrv.com/rest/wd/common/log/collect method
 -telemetry.officeapps.live$ping,xhr
 ||flow.microsoft.com/providers/Internal.Telemetry
 ||client-telemetry.roblox.com^
+||now.gg/oapi/6/play/v1/reportEvent
+||now.us/oapi/6/play/v1/reportEvent
 ||kemono.party/js/script.js
 /api/click/*?c=$image
 ||cj.dotomi.com^
@@ -27820,6 +27824,9 @@ itmedia.co.jp##+js(set-local-storage-item, /^_cX_/, $remove$)
 ||secure.planetrugby.com/edge/v2/e
 ||secure.planetrugby.com/engine/v1/e
 ||secure.planetrugby.com/cms/v1/api/*/events
+||tracking.agoda.com/click?redirectUrl=$doc,urlskip=?redirectUrl
+||deeplink.trip.com/forward/middlepages/?targetUrl=$doc,urlskip=?targetUrl
+||triplink.trip.com/forward/middlepages/channel/edm?targetUrl=$doc,urlskip=?targetUrl
 /edgemesh.*.js$script,domain=~edgemesh.com|~edgeno.de
 ||safelinkconverter.com^$script,3p
 /adsensebase.js$script
