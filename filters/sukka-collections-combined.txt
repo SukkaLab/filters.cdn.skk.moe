@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Wed, 25 Feb 2026 07:02:28 GMT
+! Last modified: Wed, 25 Feb 2026 10:41:48 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202602250651
+!   - Version: 202602251031
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 25 Feb 2026 06:51 UTC
+!   - Last modified: 25 Feb 2026 10:31 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
@@ -35,7 +35,7 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 💊 Dandelion Sprout's Anti-Malware List
 !   - URL: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout's%20Anti-Malware%20List.txt
-!   - Version: 24February2026v2
+!   - Version: 25February2026v1
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 🛃 Anti-'Adoptables and Artsite NFTs' List
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/AntiAdoptablesList.txt
@@ -7096,7 +7096,6 @@ zombooru.com##a[href$="ttp://www.hard55.com"]
 ||vuegebjexe.click^$all,~inline-font
 ||707.su^$all,~inline-font
 ||aahdxn.com^$all,~inline-font
-||achyxa.com^$all,~inline-font
 ||amqtmp.com^$all,~inline-font
 ||aodzbx.com^$all,~inline-font
 ||asdmcm.com^$all,~inline-font
@@ -8109,7 +8108,6 @@ zombooru.com##a[href$="ttp://www.hard55.com"]
 ||vablecable.click^$all,~inline-font
 ||huqiinxy.click^$all,~inline-font
 ||freeinstallcpc.xyz^$all,~inline-font
-||a18n5nh14xos.click^$all,~inline-font
 ||gotechfiles.xyz^$all,~inline-font
 ||getintopcc.pro^$all,~inline-font
 ||azxdr4erf.xyz^$all,~inline-font
@@ -8166,7 +8164,6 @@ zombooru.com##a[href$="ttp://www.hard55.com"]
 ||yttersiden.no^$doc
 ||monetrizer*.$all
 ||38.180.96.244^$all
-||acareewityjh.com^$all
 ||accedenonre.xyz^$all
 ||adeditiontowritingef.net^$all
 ||alsoextraorduki.info^$all
@@ -8406,7 +8403,6 @@ zombooru.com##a[href$="ttp://www.hard55.com"]
 ||192.243.59.20^$all,~inline-font
 ||192.243.61.225^$all,~inline-font
 ||192.243.61.227^$all,~inline-font
-||abdicatehorrified.com^$all,~inline-font
 ||abjectpreludeparity.com^$all,~inline-font
 ||ablecheap.com^$all,~inline-font
 ||abroadwas.com^$all,~inline-font
@@ -8415,7 +8411,6 @@ zombooru.com##a[href$="ttp://www.hard55.com"]
 ||abundantminussteal.com^$all,~inline-font
 ||accessorygraph.com^$all,~inline-font
 ||accidentallycopiespatted.com^$all,~inline-font
-||accusedmilkdemanded.com^$all,~inline-font
 ||acquitfamouscavity.com^$all,~inline-font
 ||adeptoksuspicion.com^$all,~inline-font
 ||adoptcraneinexhaustible.com^$all,~inline-font
@@ -9332,12 +9327,10 @@ zombooru.com##a[href$="ttp://www.hard55.com"]
 ||208.91.189.203^$all
 ://193.143.1.*$doc
 /?nw=1&tb=false&cw=$doc
-||ablyglossmartyr.com^$all
 ||aboveaveragefinallycast.com^$all
 ||acceleratehallucinate.com^$all
 ||accommodationsubsided.com^$all
 ||accompanimentrealistic.com^$all
-||aceabnegate.com^$all
 ||acornfarmerconnate.com^$all
 ||acquiretank.com^$all
 ||adopockets.com^$all
@@ -10323,8 +10316,6 @@ zombooru.com##a[href$="ttp://www.hard55.com"]
 ||accordancecaskmilk.com^$all
 ||acknowledgedversionbosom.com^$all
 ||acthist.com^$all
-||actknuckleruinous.com^$all
-||actuallysicknessactually.com^$all
 ||addresseerosebud.com^$all
 ||adjustlinklifting.com^$all
 ||adroitdeceitcongestion.com^$all
@@ -11019,7 +11010,6 @@ zombooru.com##a[href$="ttp://www.hard55.com"]
 ||ponderousoverseaspoignant.com^$all
 ||absentagendawrecking.com^$all
 ||academicencircle.com^$all
-||acceptanceathwartwant.com^$all
 ||actingwoodland.com^$all
 ||admiralbusinesswilliam.com^$all
 ||admonishtopmostacid.com^$all
@@ -15097,8 +15087,6 @@ toorgle.net##.join
 ||9purdfe9xg.com^$all,~inline-font
 ||9utwbj08.top^$all,~inline-font
 ||aaucwbe.com^$all,~inline-font
-||abhorboring.com^$all,~inline-font
-||abideruledestiny.com^$all,~inline-font
 ||abridgeoverwhelmfireball.com^$all,~inline-font
 ||absorbedexistence.com^$all,~inline-font
 ||acceleratesign.com^$all,~inline-font

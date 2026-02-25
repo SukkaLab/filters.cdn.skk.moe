@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Wed, 25 Feb 2026 07:02:28 GMT
+! Last modified: Wed, 25 Feb 2026 10:41:48 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Wed, 25 Feb 2026 05:03:00 +0000
+!   - Last modified: Wed, 25 Feb 2026 06:36:09 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Tue, 24 Feb 2026 13:08:13 +0000
@@ -20,7 +20,7 @@
 !   - Last modified: Tue, 24 Feb 2026 15:32:02 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Tue, 24 Feb 2026 12:41:33 +0000
+!   - Last modified: Wed, 25 Feb 2026 07:52:43 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
 !   - Last modified: Tue, 24 Feb 2026 05:13:24 +0000
@@ -490,6 +490,7 @@ torlock2.*##:xpath(//strong[contains(text(),"VPN")]/../../..)
 torlock.*,torlock2.*##.extneed
 /script/bootstrap.js$script,3p,domain=torlock.*|torlock2.*
 bordertelegraph.com,bournemouthecho.co.uk,dailyecho.co.uk,dorsetecho.co.uk,eveningtimes.co.uk,guardian-series.co.uk,heraldscotland.com,iwcp.co.uk,lancashiretelegraph.co.uk,oxfordmail.co.uk,salisburyjournal.co.uk,theargus.co.uk,thetelegraphandargus.co.uk,yorkpress.co.uk##+js(aopw, _sp_)
+9to5google.com,9to5mac.com,9to5toys.com,dronedj.com,electrek.co##+js(rmnt, script, fundingChoicesCalled)
 9to5google.com,9to5mac.com,9to5toys.com,dronedj.com,electrek.co,marketrealist.com##.ad-disclaimer-container, .inlinead, .ad-container
 ||googlesyndication.com^$xhr,redirect=noopjs,domain=9to5google.com|9to5mac.com|9to5toys.com|dronedj.com|electrek.co|marketrealist.com
 *$script,redirect-rule=noopjs,domain=9to5google.com|9to5mac.com|9to5toys.com|dronedj.com|electrek.co|marketrealist.com
@@ -30636,8 +30637,8 @@ pvpoke-re.com##+js(trusted-rpnt, script, var menuSlideProtection, /*start*/!func
 pvpoke-re.com##+js(trusted-override-element-method, HTMLIFrameElement.prototype.remove, iframe[src^="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-3497863494706299"])
 royalroad.com##.dKKumhSnWiFq75vPUVtmTanQ:has(a[href^="https://www.royalroad.com/a/r?campaign="]:not([href*="&url=https%3A%2F%2Fwww.royalroad.com"]))
 mail.yahoo.com##+js(nostif, adblock)
-gecmisi.com.tr##+js(trusted-replace-argument, String.prototype.includes, 0, json:"gecmisi", condition, googleads)
-gecmisi.com.tr##+js(trusted-replace-argument, String.prototype.includes, 0, json:"googleads", condition, gecmisi)
+gecmisi.com.tr##+js(nostif, , 4000-)
+gecmisi.com.tr##.ad-container
 vook.vc#@#[class*="-spnsr"]
 vook.vc##.note-main-spnsr a:not([href*="vook.vc"])
 vook.vc##.note-right-spnsr
