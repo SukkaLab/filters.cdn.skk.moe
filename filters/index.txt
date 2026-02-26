@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Filters
-! Last modified: Thu, 26 Feb 2026 07:53:12 GMT
+! Last modified: Thu, 26 Feb 2026 08:59:52 GMT
 ! Expires: 1 hours
 ! Description: The filters from Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -316,7 +316,6 @@ hanime1.me##a[href*="//l.labsda.com"]
 ##[src*="trialhd.com"]
 #@#.footer-cta
 ||reddit.com$uritransform=/tl=.*//
-abema.tv##+js(trusted-prevent-xhr, ds-linear-abematv.akamaized.net/region, '')
 javbus.com##+js(trusted-set-cookie, dv, 1, 31536000)
 t66y.com##+js(trusted-set, spJson, { "value": "[]" })
 netflav.com##+js(trusted-click-element, div.ads_video_close_button, , 500)
@@ -330,6 +329,7 @@ dfzy.xyz##+js(trusted-set, window.navigator.userAgent, json:"Mozilla/5.0 quark/1
 ||nocookie.net/*/Sponsored$important
 ||nocookie.net/silversurfer$important
 ||api.abema.io/v*/ip/check
+abema.tv##+js(trusted-prevent-xhr, ds-linear-abematv.akamaized.net/region, '')
 ||hanime.tv/country_code$redirect=noop.txt
 ||store.ui.com/api/geo-ip$domain=ui.com
 ||googlevideo.com/initplayback*&oad
