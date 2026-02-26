@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Filters
-! Last modified: Mon, 23 Feb 2026 08:21:16 GMT
+! Last modified: Thu, 26 Feb 2026 07:53:12 GMT
 ! Expires: 1 hours
 ! Description: The filters from Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -34,10 +34,20 @@ boomio.com##+js(sukka-defuse-devtools-detector)
 ||tags.news.com.au/prod/adblock/adblock.js
 ###adb-mask
 ||crackle.com/vendor/adex.js
+||narkive.com/s/ad-blocker.js
 ||everymac.com/javascripts/an.js
 ||everyi.com/javascripts/an.js
 ||everymac.com/templates/prompt.html
 ||everyi.com/templates/prompt.html
+*##+js(sukka-defuse-service-worker)
+ui.com#@#+js(sukka-defuse-service-worker)
+skk.moe#@#+js(sukka-defuse-service-worker)
+v0.dev#@#+js(sukka-defuse-service-worker)
+v0.app#@#+js(sukka-defuse-service-worker)
+vusercontent.net#@#+js(sukka-defuse-service-worker)
+pluto.tv#@#+js(sukka-defuse-service-worker)
+pairdrop.net#@#+js(sukka-defuse-service-worker)
+bolt.new#@#+js(sukka-defuse-service-worker)
 stackblitz.com#@#+js(sukka-defuse-service-worker)
 webcontainer.io#@#+js(sukka-defuse-service-worker)
 ||youtube.com/embed/$3p,frame,redirect=click2load.html
@@ -51,6 +61,7 @@ webcontainer.io#@#+js(sukka-defuse-service-worker)
 @@||instagram.com/p/$frame,3p,badfilter
 @@||instagram.com^$generichide,badfilter
 ||statuspage.io/embed/frame$redirect=click2load.html
+||platform.twitter.com$3p,domain=~theverge.com
 ||scribd.com/embeds/$3p,frame,redirect=click2load.html
 ||player.vimeo.com/video/$3p,frame,redirect=click2load.html
 ||player.twitch.tv$redirect=click2load.html
@@ -59,7 +70,6 @@ webcontainer.io#@#+js(sukka-defuse-service-worker)
 ||player.bilibili.com/player.html$frame,redirect=click2load.html
 ||embed.reddit.com$frame,redirect=click2load.html
 ||tiktok.com/embed/$frame,redirect=click2load.html
-||platform.twitter.com$3p,domain=~theverge.com
 ||client.crisp.chat^$3p
 ||crisp.chat$domain=dlercloud.com|phare.io
 @@||transcend-cdn.com$domain=1password.com
@@ -117,6 +127,48 @@ lingchenzi.com#@#.category-share
 spotify.com##button[title="Upgrade to Premium"]
 spotify.com##button[title="Effettua l'upgrade a Premium"]
 spotify.com##div[data-testid="test-ref-div"]
+||sponsorapp.io^$3p
+||mosaic.unite.com/js/widget.js$3p
+||polls.services.disqus.com^$subdocument
+||support.nodeget.com^$3p
+gettr.com##esr-signup
+||goaffpro.app$3p
+||static.klaviyo.com$3p
+||accounts.google.com/gsi/$frame,redirect=click2load.html,domain=~claude.ai
+||accounts.google.com/gsi/$3p
+||apis.google.com$3p,domain=udn.com
+##.jetpack-subscribe-modal__modal-content
+##.jetpack-subscribe-modal
+||kwizly.com/embed$3p
+||archive.org/includes/donate
+www.speedtest.net##+js(set, dataLayer, [])
+||bitmovin.com/analytics
+||umami.*/*.js
+||plausible.*/*.js
+/litlyx.js
+||api.ccsccorp.com/api/dlog/
+||vercel.com/_stream/external/
+||app.planhat.com/analytics/
+assets.alicdn.com/g/alilog*$redirect=noop.js
+g.alicdn.com/alilog/$script,redirect=noop.js
+g.alicdn.com/axdata/yunlog*$redirect=noop.js
+g.alicdn.com/dawn/user-tracker*$redirect=noop.js
+g.alicdn.com/sj/securesdk$redirect=noop.js
+||render.com/pan/api/event
+www.dnsfilter.com##+js(aopw, window.analytics)
+||sealos.run/js
+||console.cast.ai/analytics
+||api.vector.co/pixel
+||useitem.io/tracking.js
+||www.googletagmanager.com$frame,redirect=noop.html
+||urlstats.com/counter
+||visitor.leadsourcing.co$3p
+||cnzz.com/z_stat.php$redirect=noop.js
+||cnzz.com^$redirect=noop.txt
+||static.doubleclick.net/instream/ad_status.js$redirect=noop.js
+/ping.gif$redirect=1x1.gif
+/counters.gif$redirect=1x1.gif
+||pixel.wp.com/g.gif$redirect=1x1.gif
 *$removeparam=aff
 *$script,domain=csdn.net|sina.cn|finance.cnr.cn|guancha.cn|blog.gitcode.com
 *$frame,domain=csdn.net|sina.cn|finance.cnr.cn|guancha.cn|blog.gitcode.com
@@ -181,19 +233,12 @@ www.deepl.com###dl_quotes_container
 ||gtm.deepl.com/gtm.js$redirect=googletagmanager_gtm.js
 deepl.com##+js(trusted-prevent-fetch, s.deepl.com/web/statistics, '{ "code": 1 }')
 ||ip.sb$domain=alicesw.com
-||sponsorapp.io^$3p
-||mosaic.unite.com/js/widget.js$3p
-||polls.services.disqus.com^$subdocument
-||support.nodeget.com^$3p
-gettr.com##esr-signup
-##.jetpack-subscribe-modal__modal-content
-##.jetpack-subscribe-modal
-||kwizly.com/embed$3p
-||archive.org/includes/donate
 @@||perfops.io/500b-bench.jpg$domain=localhost|ip.skk.moe
 ||adfoc.us$csp=script-src 'none'
 adfoc.us###showSkip:style(display: block!important)
 adfoc.us##+js(trusted-click-element, #showSkip > a.skip)
+5w.fit##+js(nostif,redirect)
+5w.fit##+js(nosiif,redirect)
 imgur.com##.PostOptions-section.PostSubmit
 taobao.com##+js(set, aplus, {})
 taobao.com##+js(set, aplus.getPageSPM, noopFunc)
@@ -207,8 +252,6 @@ aliyun.com##+js(set, aplus.getElementSPM, noopFunc)
 aliyun.com##+js(set, g_SPM, {})
 aliyun.com##+js(set, g_SPM.getParam, falseFunc)
 ||item.taobao.com^$app=com.taobao.idlefish
-5w.fit##+js(nostif,redirect)
-5w.fit##+js(nosiif,redirect)
 reddit.com##shreddit-comment-tree:style(visibility: visible!important)
 reddit.com##shreddit-comment:style(visibility: visible!important)
 reddit.com##[post-type="crosspost"]
@@ -218,9 +261,6 @@ emailtick.com##+js(nano-sib, countdown)
 ||crdroid.net/*/adblock-checker$script
 crdroid.net###dl-links:style(display: block !important)
 crdroid.net###dl-ads
-||accounts.google.com/gsi/$frame,redirect=click2load.html,domain=~claude.ai
-||accounts.google.com/gsi/$3p
-||apis.google.com$3p,domain=udn.com
 yorg.io###adVideoBg
 yorg.io###adblockHint
 yorg.io###ingame_chat
@@ -289,9 +329,6 @@ dfzy.xyz##+js(trusted-set, window.navigator.userAgent, json:"Mozilla/5.0 quark/1
 ||nocookie.net/fandom-ae-assets/*/ucp-no-ads/$important
 ||nocookie.net/*/Sponsored$important
 ||nocookie.net/silversurfer$important
-/ping.gif$redirect=1x1.gif
-/counters.gif$redirect=1x1.gif
-||pixel.wp.com/g.gif$redirect=1x1.gif
 ||api.abema.io/v*/ip/check
 ||hanime.tv/country_code$redirect=noop.txt
 ||store.ui.com/api/geo-ip$domain=ui.com
@@ -306,13 +343,9 @@ www.youtube.com##.ytd-rich-item-renderer:has-text(Members only)
 ||cdn.virtuoussoftware.com/virtuous.embed.min.js$3p
 ||hostedseal.trustarc.com/privacy-seal/seal$3p
 ||cdn.lgrckt-in.com/logger
-||visitor.leadsourcing.co$3p
 ||mymediaing.my/sdk$3p
 ||endorsely.com$3p
 ||static.newsbreak.com/business/tracking/
-||render.com/pan/api/event
-||static.doubleclick.net/instream/ad_status.js$redirect=noop.js
-www.speedtest.net##+js(set, dataLayer, [])
 ||adtech.redventures.io^$important
 ||coinbase.com/sw.js
 ||yorgio-chat-backend-v2.herokuapp.com$subdocument
@@ -345,12 +378,6 @@ reimu.net##pre:style(display: block !important;)
 @@||assets.mailerlite.com$domain=notionway.com
 t66y.com##+js(nostif, /tpcHt0ml/)
 t66y.com##+js(nostif)
-||umami.*/*.js
-||plausible.*/*.js
-/litlyx.js
-||api.ccsccorp.com/api/dlog/
-||vercel.com/_stream/external/
-||app.planhat.com/analytics/
 ||learn.microsoft.com/static/third-party/adobe-target/at-js/*/at.js
 @@||captcha.qq.com^
 ||huatuo.qq.com^
@@ -365,13 +392,6 @@ tajs.qq.com$redirect=noop.js
 wspeed.qq.com$redirect=noop.js
 ||nga.178.com/common_res/js_box.js
 ||h.lghln1.cn/js/niu/zhong-inc.js
-assets.alicdn.com/g/alilog*$redirect=noop.js
-g.alicdn.com/alilog/$script,redirect=noop.js
-g.alicdn.com/axdata/yunlog*$redirect=noop.js
-g.alicdn.com/dawn/user-tracker*$redirect=noop.js
-g.alicdn.com/sj/securesdk$redirect=noop.js
-||cnzz.com/z_stat.php$redirect=noop.js
-||cnzz.com^$redirect=noop.txt
 ||mail-us.kurzgesagt.org/*/ga.js
 ||js-agent.newrelic.com$script,domain=stackblitz.com
 fontshub.pro##+js(nostif, /^/)
@@ -381,18 +401,11 @@ fontshub.pro##+js(nosiif, /^/)
 ||vueschool.io/images/banners/*$image
 /goofy/ttzz/push.js$redirect=noop.js
 whoer.net##+js(nowebrtc)
-www.dnsfilter.com##+js(aopw, window.analytics)
 ||creatives-1301677708.file.myqcloud.com/images/placeholder/wwads-friendly-ads.png
 aws.amazon.com##+js(set, disablePanorama, 1)
 netflav.com/static/js/gtag.js$redirect=noop.js
-||sealos.run/js
 ||itdog.cn/upload/images/*.gif
-||console.cast.ai/analytics
-||api.vector.co/pixel
-||useitem.io/tracking.js
 ||www.google.com/adsense/domains/caf.js*$redirect=noop.js
-||www.googletagmanager.com$frame,redirect=noop.html
-||urlstats.com/counter
 @@||humix.com/video.js$domain=humix.com
 ||18comic.vip/static/resources/*.gif
 18comic.vip##+js(aopr, ads)
@@ -484,7 +497,7 @@ justauth.cn##+js(set, window._AdBlockInit, true)
 ||uhn.cx/api/v1/log
 /visittrack.js
 /prebid_$script
-||lf3-data.volccdn.com$redirect=noop.js
+||lf3-data.volccdn.com^$script,redirect=noop.js
 /log-sdk/
 ||res.wx.qq.com^$3p,domain=~ip.skk.moe|~localhost
 ||download.cnet.com/web-stats/
@@ -778,3 +791,6 @@ lowendaff.com###dmit-ads
 9to5mac.com##[href*="/amzn.to/"]
 9to5mac.com##[href*="amazon.com"]
 www.tomshardware.com##.fancy-box
+||maclookup.app/img/an/nordv/$image
+maclookup.app##.floating-b
+www.justaftermidnight247.com##.blog-newsletter
