@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Wed, 25 Feb 2026 22:39:00 GMT
+! Last modified: Thu, 26 Feb 2026 04:11:59 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Wed, 25 Feb 2026 12:09:10 +0000
+!   - Last modified: Wed, 25 Feb 2026 20:09:44 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Wed, 25 Feb 2026 17:03:36 +0000
@@ -8850,9 +8850,9 @@ adrianoluis.net,animecast.net,armyranger.com,articletz.com,bibliopanda.com,boxyl
 thecakeboutiquect.com##+js(acs, b2a, ai_adb)
 daemon-hentai.com,pawastreams.pro##+js(acs, b2a, ai_adb, /^data:/)
 ||windorange.info^
-bibliopanda.visblog.online,hallofseries.com,jrants.com,luciferdonghua.in,toursetlist.com##^script:has-text(ai_adb)
-bibliopanda.visblog.online,hallofseries.com,jrants.com,luciferdonghua.in,toursetlist.com##+js(rmnt, script, ai_adb)
-@@/wp-content/plugins/ad-inserter/js/*.js?ver=$script,xhr,1p
+bibliopanda.visblog.online,hallofseries.com,jrants.com,luciferdonghua.in,toursetlist.com,volksliederarchiv.de##^script:has-text(ai_adb)
+bibliopanda.visblog.online,hallofseries.com,jrants.com,luciferdonghua.in,toursetlist.com,volksliederarchiv.de##+js(rmnt, script, ai_adb)
+volksliederarchiv.de##.ai-track
 toursetlist.com##.widget_custom_html
 ||media.net^$object,redirect=noopjs
 ||google-analytics.com^$object,redirect=noopjs
