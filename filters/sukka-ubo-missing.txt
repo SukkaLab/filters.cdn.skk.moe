@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Thu, 26 Feb 2026 10:37:10 GMT
+! Last modified: Thu, 26 Feb 2026 14:55:08 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.0.61
+!   - Version: 2.1.0.63
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202511031606
@@ -218,6 +218,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||signalszone.com^
 ||bidr.io^
 ||s.opensend.com^
 ||diginetica.net^
@@ -141140,6 +141141,7 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=saturn.de
 @@||metrics.us.playstation.com/b/ss/
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
+@@||cdn.optimizely.com/datafiles/*.json$domain=feverup.com
 @@||scdn.cxense.com/cx.js$domain=cdn.cxpublic.com
 @@||tags.news.com.au/prod/adblock/adblock.js
 @@||feliz-web.data.tm-awx.com/smile-web.min.js$domain=examinerlive.co.uk
