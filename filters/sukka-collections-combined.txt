@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Fri, 27 Feb 2026 10:29:04 GMT
+! Last modified: Fri, 27 Feb 2026 14:49:19 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202602271021
+!   - Version: 202602271441
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 27 Feb 2026 10:21 UTC
+!   - Last modified: 27 Feb 2026 14:41 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
@@ -78,7 +78,7 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * ➗ Actually Legitimate URL Shortener Tool
 !   - URL: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt
-!   - Version: 26February2026v2
+!   - Version: 27February2026v2
 !   - Homepage: https://github.com/DandelionSprout/adfilt/discussions/163
 ! * 🐊 Imgur: Pure Imagery Experience
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/ImgurPureImageryExperience.txt
@@ -17819,7 +17819,7 @@ $removeparam=dchild
 $removeparam=creativeASIN
 ||amazon.$removeparam=/^sc_i.*$/
 $removeparam=trkCampaign
-$removeparam=trk,domain=splashthat.com|aws.amazon.com|aws|xkcd.com|linkedin.com|lnkd.in
+$removeparam=trk,domain=splashthat.com|aws.amazon.com|aws|aws.com|awscloud.com|awsevents.com|xkcd.com|linkedin.com|lnkd.in
 ||amazon.$removeparam=/^__mk_*_.*$/
 ||amazon.$removeparam=ascsubtag
 ||amazon.$removeparam=crid
@@ -18706,7 +18706,7 @@ $removeparam=share_time,domain=etsy.com
 ||bleepingcomputer.com^$removeparam=cx
 $removeparam=collection,domain=everlane.com
 ||bp.blogspot.com^$removeparam=time
-$removeparam=iid,domain=cnn.com
+$doc,removeparam=iid,domain=cnn.com|time.com
 ||weibo.com/ajax/log$removeparam=uicode
 ||weibo.com/ajax/log$removeparam=act_code
 ||weibo.com/ajax/log$removeparam=fid
