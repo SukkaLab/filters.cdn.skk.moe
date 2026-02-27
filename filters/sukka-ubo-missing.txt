@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Thu, 26 Feb 2026 22:38:51 GMT
+! Last modified: Fri, 27 Feb 2026 04:08:35 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,12 +8,12 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.0.64
+!   - Version: 2.1.0.66
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
-!   - Version: 202511031606
+!   - Version: 202602270839
 !   - Homepage: https://github.com/cjx82630/cjxlist
-!   - Last modified: 2025/11/03 16:06 +0800
+!   - Last modified: 2026/02/27 08:39 +0800
 ! --------------------------------------------------------------
 ! AdGuard Tracking Protection filter (Optimized) https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
 www.youtube.com##+js(no-xhr-if, /\/api\/stats\/atr\?.+?&rt=\d+\.\d+.+?&volume=\d+&cbr=.+?&fexp=v1%[-%0-9C]{300\,}&.+?&muted=\d(&vis=3)?&docid=/ method:POST)
@@ -1986,7 +1986,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||pxf.io^$image,script,3p
 ||analytics.webads.eu^
 ||erandex.com^$3p
-||direct-events-collector.spot.im^$3p
 ||metrics-logger.spot.im^$3p
 ||adwstats.com^
 ||omappapi.com^$3p
@@ -70006,6 +70005,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||countly.
 ||countly-
 |piwik.
+-events-collector.spot.im^
 ||dap.worldota.net^
 ||dap.livemint.com^
 ||smetrics.edb.gov.sg^
@@ -134205,6 +134205,8 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||bbstatic.pcmag.com/js/z0WVjCBSEeGLoxIxOQVEwQ.min.js
+||ferienwohnungen.de/api/pxl
 ||ostrovok.ru/hotel/api/report-web-vitals/
 ||ostrovok.ru/hc/static/master/funnel-loader.js
 ||ostrovok.ru/hc/static/master/funnel.js
@@ -147007,6 +147009,8 @@ ifanr.com##.popup-app-download
 uisdc.com##.post-pm-content
 zhiyoo.com##.prompt
 qq.com##.public-banner
+csdn.net##.sidecolumn-vip
+csdn.net##.swiper-slide-box-remuneration
 csdn.net##.pulllog-box
 qq.com##.qGirl-wrap
 qdmm.com,qidian.com##.qdRead_client
