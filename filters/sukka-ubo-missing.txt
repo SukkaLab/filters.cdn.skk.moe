@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Fri, 27 Feb 2026 16:37:43 GMT
+! Last modified: Fri, 27 Feb 2026 18:39:39 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.0.71
+!   - Version: 2.1.0.73
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202602270839
@@ -1142,7 +1142,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||px*.mediahills.ru^
 ||sdk.conscent.in^$3p
 ||tpstelemetry.tencent.com^
-||app.posthog.com^$3p
 ||crossees.com^
 ||humanz.com^$3p
 ||gateway.foresee.com^
@@ -134210,6 +134209,7 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||app.posthog.com/static/array.js$3p
 ||burst-statistics.com/wp-content/uploads/burst/js/burst.min.js
 ||matterport.com/nextjs-assets/scripts/aapl-campaign-tracking.js
 ||matterport.com/nextjs-assets/scripts/migrate-utm.js
@@ -141154,6 +141154,7 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=saturn.de
 @@||metrics.us.playstation.com/b/ss/
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
+@@||googletagmanager.com/gtm.js$script,domain=streetstyle24.pl
 @@||googletagmanager.com/gtm.js$domain=puccini.pl
 @@||vansprint.de/theme/*/js/storefront/google-analytics.plugin.$domain=vansprint.de
 @@||cdn.optimizely.com/datafiles/*.json$domain=feverup.com
@@ -144485,6 +144486,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||loadsurprise.com^
 ||locateskill.com^
 ||lockuplookup.com^
+||locolava.com^
 ||logicalminds.net^
 ||logoshutter.com^
 ||lonelyflavor.com^
