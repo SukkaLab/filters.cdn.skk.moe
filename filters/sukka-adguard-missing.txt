@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sat, 28 Feb 2026 10:14:47 GMT
+! Last modified: Sat, 28 Feb 2026 14:30:38 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sat, 28 Feb 2026 04:19:21 +0000
+!   - Last modified: Sat, 28 Feb 2026 12:10:01 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Sat, 28 Feb 2026 04:06:26 +0000
@@ -27,10 +27,10 @@
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Fri, 27 Feb 2026 16:11:46 +0000
+!   - Last modified: Sat, 28 Feb 2026 08:20:13 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
-!   - Last modified: Sat, 28 Feb 2026 01:25:44 +0000
+!   - Last modified: Sat, 28 Feb 2026 08:39:04 +0000
 ! --------------------------------------------------------------
 ! uBlock filters https://ublockorigin.pages.dev/filters/filters.min.txt
 *_ad_$media,domain=youtube.com,3p
@@ -6736,6 +6736,7 @@ exeygo.com,cety.app,cutlink.net,cutnet.net,cuttlinks.com,cutty.app,exe-links.com
 exeygo.com,cety.app,cutlink.net,cutnet.net,cuttlinks.com,cutty.app,exe-links.com,exe-urls.com,exego.app,exnion.com,jixo.online##+js(aeld, DOMContentLoaded, history.go)
 exeygo.com,cety.app,cutlink.net,cutnet.net,cuttlinks.com,cutty.app,exe-links.com,exe-urls.com,exego.app,exnion.com,jixo.online##+js(nostif, offsetHeight)
 exeygo.com,cety.app,cutlink.net,cutnet.net,cuttlinks.com,cutty.app,exe-links.com,exe-urls.com,exego.app,exnion.com,jixo.online##+js(aopr, app_vars.please_disable_adblock)
+exeygo.com,exe-links.com,exe-urls.com,exego.app,exnion.com,jixo.online##+js(trusted-create-html, head, <img src='/n5dev.png' onerror='if (typeof window !== "undefined") { window.vhit = { detectAdblock: () => false }; }'>)
 ||datadropspot.pro^$all
 adcrypto.net,admediaflex.com,aduzz.com,bitcrypto.info,cdrab.com,datacheap.io,hbz.us,savego.org,owsafe.com,sportweb.info###wpsafe-link:style(display: block !important;)
 adcrypto.net,admediaflex.com,aduzz.com,bitcrypto.info,cdrab.com,datacheap.io,hbz.us,savego.org,owsafe.com,sportweb.info##+js(no-fetch-if, ads)
@@ -7299,7 +7300,8 @@ upfilesgo.com,upfion.com,upfiles.app,upfiles-urls.com##fieldset, .faqs, footer
 upfilesgo.com,upfion.com,upfiles.app,upfiles-urls.com##+js(aeld, DOMContentLoaded, history.go)
 upfilesgo.com,upfion.com,upfiles.app,upfiles-urls.com##+js(aeld, click, shouldOpenPopUp)
 upfilesgo.com,upfion.com,upfiles.app,upfiles-urls.com##+js(set, blurred, false)
-upfilesgo.com,upfion.com,upfiles.app,upfiles-urls.com##+js(trusted-create-html, head, <img src='/n5dev.png' onerror='if (typeof window !== "undefined") { window.vhit = { detectAdblock: () => false }; }'>)
+@@||vhit.io/scripts/vhit.js$script,domain=upfilesgo.com|upfion.com|upfiles.app|upfiles-urls.com
+@@*$ghide,domain=upfilesgo.com|upfion.com|upfiles.app|upfiles-urls.com
 rentry.co##article:has(#download-your-archive-file)
 ||sharecube.pro^$all
 ||flyshare.cfd^$all
@@ -11672,6 +11674,7 @@ healthelia.com##+js(nostif, google_jobrunner)
 happypenguin.altervista.org##+js(nostif, adb)
 elektrikmen.com##+js(aopr, b2a)
 ||wheelwheel.space^$3p
+love4porn.com##+js(rpnt, script, document.head.appendChild, xxx)
 love4porn.com##+js(set, flashvars.popunder_url, '')
 love4porn.com##div[style="position: absolute; inset: 0px; overflow: hidden; z-index: 160; background: transparent none repeat scroll 0% 0%; display: block;"]
 love4porn.com##.sponsor
@@ -11681,14 +11684,8 @@ crazyporn.xxx##.table
 crazyporn.xxx##.sponsor
 crazyporn.xxx##.item:has(> script[src^="/ai/"])
 freehardcore.com##+js(aopr, decodeURI)
-suicidepics.com##+js(nostif, css_class.show)
-*$script,3p,domain=suicidepics.com
-||adshort.tech^$3p
 @@||down.fast-down.com^$ghide
 down.fast-down.com##div[style="width:336px; height:280px; background-color:#ffffff; text-align:center"]
-jav720.net##.float-ck
-jav720.net##.video-player-area > center
-||i.pinimg.com/564x/$domain=jav720.net
 usagoals.*##+js(nowoif)
 @@||foxgreat.com^$ghide
 haoweichi.com##+js(aopr, onload)
@@ -12290,12 +12287,8 @@ getpaste.link##+js(set, isAdBlockActive, false)
 kitabmarkaz.xyz##+js(aopr, __Y)
 @@||flipboard.com/webu/*-contrib-ads*.bundle.js$script,1p
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=flipboard.com
-short-zero.com##+js(nosiif, visibility, 1000)
-@@/viewad.$css,script,domain=adz7short.space|short.croclix.me
-adz7short.space##+js(ra, href, #continue)
-@@||adz7short.space^$ghide
-adz7short.space###banner_slider_right
-adz7short.space,short.croclix.me##.leaderboard
+@@/viewad.$css,script,domain=short.croclix.me
+short.croclix.me##.leaderboard
 short.croclix.me##.banner-container
 ||offers4all.net^$frame,3p
 gay4porn.com##+js(set, flashvars.adv_start_html, '')
@@ -12308,13 +12301,6 @@ charbelnemnom.com##+js(nostif, ai)
 charbelnemnom.com##ins.adsbygoogle
 charbelnemnom.com##.ezoic-ad
 charbelnemnom.com###custom_html-16
-thotvids.com##+js(acs, onload)
-thotvids.com##+js(set, flashvars.popunder_url, '')
-thotvids.com##.fade.top.text.fp-logo
-thotvids.com##.fp-brand
-thotvids.com##[href^="https://go.mshago.com"]
-thotvids.com##+js(aeld, click, overlay)
-||thotvids.com/player/html.php$frame
 mizugigurabia.com##+js(acs, document.addEventListener, google_ad_client)
 ||joinads.me^$3p
 ||affilixxl.de^$3p
@@ -12372,9 +12358,6 @@ netpornix.*###videoadsid
 netpornix.*##[href^="https://bit.ly/"]
 netpornix.*##.videoads
 netxwatch.*##+js(aopr, __Y)
-dz-linkk.com##+js(aopr, app_vars.force_disable_adblock)
-dz-linkk.com##+js(set, blurred, false)
-dz-linkk.com##.banner
 iqiyi.com##+js(set, Object.prototype.parseXML, noopFunc)
 iqiyi.com##+js(set, Object.prototype.blackscreenDuration, 1)
 iqiyi.com##.black-screen[data-cupid="adblock-blackscreen"]
@@ -12403,17 +12386,7 @@ simplebits.io##+js(nostif, , 3000)
 hayamimi-gunpla.com##+js(acs, document.addEventListener, google_ad_client)
 ||prairiemountainmedia.com^$3p
 ||dailycamera.com^$3p
-watchmdh.to##+js(set, flashvars.popunder_url, '')
-watchmdh.to##+js(nostif, innerText, 2000)
-watchmdh.to##+js(acs, addEventListener, -0x)
-watchmdh.to##+js(aopr, decodeURI)
-watchmdh.to##a[style^="position: absolute; inset: 0px;"][target="_blank"]
-watchmdh.to##.sponsor
-watchmdh.to##.block-video > .table
-watchmdh.to##.top
 neos-easygames.com,synk-casualgames.com#@##ad_block
-@@||animedevil.com^$ghide
-||tny.so^$3p
 hitproversion.com##.onp-sl-content:style(display:block !important)
 hitproversion.com##.onp-sl-social-locker
 @@||allsmo.com^$ghide
@@ -12431,8 +12404,6 @@ hxfile.co##+js(nowoif)
 hxfile.co##a.btn-block
 ||storage.de.cloud.ovh.net^*/sarsor/avikingdynamic.js$script,3p
 go4kora.com###id-custom_banner
-povaddict.com##.adv-square
-/\.com\/[a-zA-Z]{10}\.js$/$script,1p,domain=povaddict.com
 blog.40ch.net##+js(acs, document.addEventListener, nextFunction)
 pornissimo.org##+js(set, flashvars.protect_block, '')
 pornissimo.org##.table
@@ -18476,6 +18447,8 @@ www.yahoo.com##.sticky[class*="top-"]:has(style)
 www.yahoo.com##div[id]:has(> div[id^="top_center-frontpage_"])
 sports.yahoo.com###defaultLDRB-sizer
 mail.yahoo.com##+js(nostif, ADB)
+adslink.pw,jpopsingles.eu##+js(rmnt, script, /detectedAdblock|DevTools/)
+||files-cdn.jpopsingles.eu/devtools-detect.js$script
 jpopsingles.eu##+js(nano-sib, downloadTimer)
 jpopsingles.eu##+js(noeval-if, adsBlocked)
 @@||jpopsingles.eu^$ghide
@@ -22309,6 +22282,7 @@ musiclutter.xyz##+js(rmnt, script, /adbl/i)
 eee1.lat,netcinebs.lat##+js(set, HTMLImageElement.prototype.onerror, undefined)
 @@||meuplayeronlinehd.com^$ghide
 meuplayeronlinehd.com##+js(nowoif)
+meuplayeronlinehd.com###adblock-overlay
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -31510,6 +31484,9 @@ sportiva.shueisha.co.jp,wpb.shueisha.co.jp##+js(trusted-set-cookie, OptanonAlert
 tvn24.pl##+js(set, __tcfapi_user_acctepted, true)
 tvn24.pl###onetrust-consent-sdk
 americanexpress.com##+js(trusted-click-element, button[data-testid="granular-banner-button-decline-all"], , 1000)
+morowo.com.pl##+js(trusted-set-local-storage-item, df-cookies-allowed, '{"functional":true,"analytical":true}')
+morowo.com.pl##+js(set-local-storage-item, show_consent_modal, 1)
+badgeland.dk##+js(trusted-set-cookie, pr-cookie-consent, [])
 bergans.com##+js(trusted-set-cookie, cc, 2:f, , , reload, 1)
 utwente.nl##+js(trusted-set-cookie, utwente__avgconsent, '{"a":false,"c":true,"v":"1","lc":"$currentDate$","isset":true}', , , domain, utwente.nl)
 speedtest.vodafone.de##+js(trusted-set-local-storage-item, speedtestUI.Consent, '{"analytics":false,"bugReports":false,"timestamp":"$currentISODate$"}')
@@ -31604,7 +31581,7 @@ pekro.cz##+js(trusted-set-cookie, ck, bbc3afa1f99650a097dc655e829ea82db262c98c%7
 @@||cdn-images.the-express.com/*/dist/gdpr-$script,1p
 dailypost.co.uk,the-express.com##+js(trusted-click-element, button[mode="primary"], , 1000)
 dailyrecord.co.uk##+js(trusted-click-element, #qc-cmp2-container button#accept-btn)
-bluray-disc.de,elio-systems.com,stagatha-fachklinik.de,tarife.mediamarkt.de,lz.de,gaggenau.com,tickets.milanocortina2026.org##+js(trusted-click-element, a.cmptxt_btn_no, , 1000)
+uefa.com,bluray-disc.de,elio-systems.com,stagatha-fachklinik.de,tarife.mediamarkt.de,lz.de,gaggenau.com,tickets.milanocortina2026.org##+js(trusted-click-element, a.cmptxt_btn_no, , 1000)
 saturn.de##+js(trusted-click-element, button[data-test="pwa-consent-layer-save-settings"], , 1000])
 rally-maps.com##+js(trusted-set-cookie, cc_cookie, '{"categories":["consent-log","cookie-consent","mapSettings"],"revision":0,"data":null,"consentTimestamp":"$currentISODate$","consentId":"ca1ba17b-868a-47b7-82e2-fd5499b57521","lastConsentTimestamp":"$currentISODate$"}', 1year)
 bestdrive.fi,bestdrive.no##+js(trusted-set-local-storage-item, acceptedCookies, '{"":false,"AMCV_###@AdobeOrg /":true,"AMCVS_###@AdobeOrg":true,"APISID, HSID, SAPISID, SID ja SSID cookies":true,"(auch GTM)":true,"NID cookie":true,"SIDCC cookie":true,"Youtube cookies":true,"mbox":true,"consent_adform":false,"consent_adobeanalytics":false,"consent_adobetarget":false,"consent_googleanalytics":false,"consent_googleads":false,"consent_facebook":false,"consent_giosg":false,"consent_nid":true}')
@@ -36428,3 +36405,4 @@ bintv.fun,bintvs.fun##+js(rpnt, script, onkeydown, ooo)
 bintv.fun,bintvs.fun##+js(rpnt, script, contextmenu, ccc)
 ||cdn.jsdelivr.net/npm/disable-devtool@latest$script,domain=bintvs.fun
 financialpost.com,nationalpost.com##.visually-hidden
+advnture.com,androidcentral.com,avnetwork.com,cinemablend.com,countrylife.co.uk,creativebloq.com,cyclingweekly.com,cyclingnews.com,digitalcameraworld.com,fitandwell.com,fourfourtwo.com,gamesradar.com,gardeningknowhow.com,golfmonthly.com,guitarplayer.com,guitarworld.com,homebuilding.co.uk,homesandgardens.com,idealhome.co.uk,itpro.com,kiplinger.com,livescience.com,livingetc.com,loudersound.com,marieclaire.co.uk,marieclaire.com,moneyweek.com,musicradar.com,myvouchercodes.co.uk,pcgamer.com,petsradar.com,shortlist.com,space.com,t3.com,techlearning.com,techradar.com,theweek.com,tomsguide.com,tomshardware.com,tvtechnology.com,wallpaper.com,whathifi.com,whattowatch.com,whatculture.com,whowhatwear.com,windowscentral.com,womanandhome.com##+js(set-cookie, FTR_Article_PageView, 2)
