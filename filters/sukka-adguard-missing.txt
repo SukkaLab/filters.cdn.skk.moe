@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sun, 01 Mar 2026 18:30:22 GMT
+! Last modified: Sun, 01 Mar 2026 22:29:51 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sun, 01 Mar 2026 12:36:54 +0000
+!   - Last modified: Sun, 01 Mar 2026 16:40:04 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Sat, 28 Feb 2026 04:06:26 +0000
@@ -20,7 +20,7 @@
 !   - Last modified: Sat, 28 Feb 2026 17:20:27 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Sun, 01 Mar 2026 06:15:18 +0000
+!   - Last modified: Sun, 01 Mar 2026 15:32:09 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
 !   - Last modified: Sun, 01 Mar 2026 06:15:18 +0000
@@ -8105,7 +8105,7 @@ bajarjuegospcgratis.com,balkanteka.net,beastvid.tv,beinmatch.*,bellezashot.com,b
 caitlin.top,camchickscaps.com,camgirls.casa,canalesportivo.*,cashurl.in,ccurl.net,cdn1.site,charexempire.com,cizgivedizi.com,clickndownload.*,clicknupload.*,clik.pw,coin-free.com,coins100s.fun,comohoy.com,coolcast2.com,cordneutral.net,countylocalnews.com,cpmlink.net,crackstreamshd.click,crespomods.com,crisanimex.com,crunchyscan.fr,cuevana3.fan,cuevana3hd.com,cumception.com,cutpaid.com##^script[data-cfasync]:has-text(/h=decodeURIComponent|popundersPerIP/)
 daddylive.*,daddylivehd.*,daddylivestream.com,dailyuploads.net,darkmahou.org,datawav.club,daughtertraining.com,ddrmovies.*,deepgoretube.site,deltabit.co,depvailon.com,desiremovies.*,desivdo.com,desixx.net,detikkebumen.com,deutschepornos.me,devlib.*,diasoft.xyz,dipelis.junctionjive.co.uk,directupload.net,divxtotal.*,divxtotal1.*,dixva.com,djmaza.my,dlhd.*,doctormalay.com,dofusports.xyz,doods.cam,doodskin.lat,downloadrips.com,downvod.com,dphunters.mom,dragontranslation.com,dsvplay.com,dvdfullestrenos.com,dvdplay.*,dx-tv.com##^script[data-cfasync]:has-text(/h=decodeURIComponent|popundersPerIP/)
 ebookbb.com,ebookhunter.net,egyanime.com,egygost.com,electro-torrent.pl,elixx.*,elrefugiodelpirata.com,embedstream.me,enjoy4k.*,eplayer.click,erovoice.us,eroxxx.us,estrenosdoramas.net,estrenosflix.*,estrenosflux.*,estrenosgo.*,everia.club,everythinginherenet.blogspot.com,extratorrent.st,extremotvplay.com##^script[data-cfasync]:has-text(/h=decodeURIComponent|popundersPerIP/)
-f1stream.*,fapptime.com,faucethero.com,favoyeurtube.net,fbstream.*,fc2db.com,femdom-joi.com,fenixsite.net,file4go.*,fileone.tv,film1k.com,filmesonlinex.org,filmesonlinexhd.biz,filmisub.cc,filmnudes.com,filmovitica.com,filmymaza.blogspot.com,filmyzilla.*,filthy.family,findav.*,findporn.*,flickzap.com,flixmaza.*,flizmovies.*,flostreams.xyz,flyfaucet.com,footyhunter.lol,forex-trnd.com,forumchat.club,forumlovers.club,freeomovie.co.in,freeomovie.to,freeporncomic.net,freepornhdonlinegay.com,freeproxy.io,freeshot.live,freetvsports.*,freeuse.me,freeusexporn.com,fsharetv.cc,fsicomics.com,fullboys.com,fullymaza.*##^script[data-cfasync]:has-text(/h=decodeURIComponent|popundersPerIP/)
+f1stream.*,fapptime.com,favoyeurtube.net,fbstream.*,fc2db.com,femdom-joi.com,fenixsite.net,file4go.*,fileone.tv,film1k.com,filmesonlinex.org,filmisub.cc,filmnudes.com,filmovitica.com,filmymaza.blogspot.com,filmyzilla.*,filthy.family,findav.*,findporn.*,flickzap.com,flixmaza.*,flizmovies.*,flostreams.xyz,flyfaucet.com,footyhunter.lol,forex-trnd.com,forumchat.club,forumlovers.club,freedownload.flash-files.com,freeomovie.co.in,freeomovie.to,freeporncomic.net,freepornhdonlinegay.com,freeproxy.io,freeshot.live,freetvsports.*,freeuse.me,freeusexporn.com,fsharetv.cc,fsicomics.com,fullboys.com,fullymaza.*##^script[data-cfasync]:has-text(/h=decodeURIComponent|popundersPerIP/)
 g-porno.com,g3g.*,galinhasamurai.com,gamepcfull.com,gamesmountain.com,gamesrepacks.com,gamingguru.fr,gamovideo.com,garota.cf,gaydelicious.com,gayfor.us,gaypornhdfree.com,gaypornhot.com,gaypornmasters.com,gaysex69.net,gemstreams.com,get-to.link,girlscanner.org,giurgiuveanul.ro,gledajcrtace.xyz,gocast2.com,gomo.to,gostosa.cf,gotxx.*,grantorrent.*,gratispaste.com,gravureblog.tv,gupload.xyz##^script[data-cfasync]:has-text(/h=decodeURIComponent|popundersPerIP/)
 haho.moe,hayhd.net,hdmoviesfair.*,hdmoviesflix.*,hdpornflix.com,hdsaprevodom.com,hdstreamss.club,hentaiporno.xxx,hentais.tube,hentaistream.co,hentaitk.net,hentaitube.online,hentaiworld.tv,hesgoal.tv,hexupload.net,hhkungfu.tv,highlanderhelp.com,hiidudemoviez.*,hindimovies.to,hindimoviestv.com,hiperdex.com,hiphopa.net,hispasexy.org,hitomi.la,hitprn.com,hivflix.*,hoca4u.com,hollymoviehd.cc,hoodsite.com,hopepaste.download,hornylips.com,hotgranny.live,hotmama.live,hqcelebcorner.net,huren.best,hwnaturkya.com,hxfile.co##^script[data-cfasync]:has-text(/h=decodeURIComponent|popundersPerIP/)
 igfap.com,iklandb.com,illink.net,imgsen.*,imgsex.xyz,imgsto.*,imgtraffic.com,imx.to,incest.*,incestflix.*,influencersgonewild.org,infosgj.free.fr,investnewsbrazil.com,itdmusics.com,itopmusic.*,itsuseful.site,itunesfre.com,iwatchfriendsonline.net##^script[data-cfasync]:has-text(/h=decodeURIComponent|popundersPerIP/)
@@ -8133,7 +8133,7 @@ bajarjuegospcgratis.com,balkanteka.net,beastvid.tv,beinmatch.*,bellezashot.com,b
 caitlin.top,camchickscaps.com,camgirls.casa,canalesportivo.*,cashurl.in,ccurl.net,cdn1.site,charexempire.com,cizgivedizi.com,clickndownload.*,clicknupload.*,clik.pw,coin-free.com,coins100s.fun,comohoy.com,coolcast2.com,cordneutral.net,countylocalnews.com,cpmlink.net,crackstreamshd.click,crespomods.com,crisanimex.com,crunchyscan.fr,cuevana3.fan,cuevana3hd.com,cumception.com,cutpaid.com##+js(rmnt, script, /h=decodeURIComponent|popundersPerIP/)
 daddylive.*,daddylivehd.*,daddylivestream.com,dailyuploads.net,darkmahou.org,datawav.club,daughtertraining.com,ddrmovies.*,deepgoretube.site,deltabit.co,depvailon.com,desiremovies.*,desivdo.com,desixx.net,detikkebumen.com,deutschepornos.me,devlib.*,diasoft.xyz,dipelis.junctionjive.co.uk,directupload.net,divxtotal.*,divxtotal1.*,dixva.com,djmaza.my,dlhd.*,doctormalay.com,dofusports.xyz,doods.cam,doodskin.lat,downloadrips.com,downvod.com,dphunters.mom,dragontranslation.com,dsvplay.com,dvdfullestrenos.com,dvdplay.*,dx-tv.com##+js(rmnt, script, /h=decodeURIComponent|popundersPerIP/)
 ebookbb.com,ebookhunter.net,egyanime.com,egygost.com,electro-torrent.pl,elixx.*,elrefugiodelpirata.com,embedstream.me,enjoy4k.*,eplayer.click,erovoice.us,eroxxx.us,estrenosdoramas.net,estrenosflix.*,estrenosflux.*,estrenosgo.*,everia.club,everythinginherenet.blogspot.com,extratorrent.st,extremotvplay.com##+js(rmnt, script, /h=decodeURIComponent|popundersPerIP/)
-f1stream.*,fapptime.com,faucethero.com,favoyeurtube.net,fbstream.*,fc2db.com,femdom-joi.com,fenixsite.net,file4go.*,fileone.tv,film1k.com,filmesonlinex.org,filmesonlinexhd.biz,filmisub.cc,filmnudes.com,filmovitica.com,filmymaza.blogspot.com,filmyzilla.*,filthy.family,findav.*,findporn.*,flickzap.com,flixmaza.*,flizmovies.*,flostreams.xyz,flyfaucet.com,footyhunter.lol,forex-trnd.com,forumchat.club,forumlovers.club,freeomovie.co.in,freeomovie.to,freeporncomic.net,freepornhdonlinegay.com,freeproxy.io,freeshot.live,freetvsports.*,freeuse.me,freeusexporn.com,fsharetv.cc,fsicomics.com,fullboys.com,fullymaza.*##+js(rmnt, script, /h=decodeURIComponent|popundersPerIP/)
+f1stream.*,fapptime.com,favoyeurtube.net,fbstream.*,fc2db.com,femdom-joi.com,fenixsite.net,file4go.*,fileone.tv,film1k.com,filmesonlinex.org,filmisub.cc,filmnudes.com,filmovitica.com,filmymaza.blogspot.com,filmyzilla.*,filthy.family,findav.*,findporn.*,flickzap.com,flixmaza.*,flizmovies.*,flostreams.xyz,flyfaucet.com,footyhunter.lol,forex-trnd.com,forumchat.club,forumlovers.club,freedownload.flash-files.com,freeomovie.co.in,freeomovie.to,freeporncomic.net,freepornhdonlinegay.com,freeproxy.io,freeshot.live,freetvsports.*,freeuse.me,freeusexporn.com,fsharetv.cc,fsicomics.com,fullboys.com,fullymaza.*##+js(rmnt, script, /h=decodeURIComponent|popundersPerIP/)
 g-porno.com,g3g.*,galinhasamurai.com,gamepcfull.com,gamesmountain.com,gamesrepacks.com,gamingguru.fr,gamovideo.com,garota.cf,gaydelicious.com,gayfor.us,gaypornhdfree.com,gaypornhot.com,gaypornmasters.com,gaysex69.net,gemstreams.com,get-to.link,girlscanner.org,giurgiuveanul.ro,gledajcrtace.xyz,gocast2.com,gomo.to,gostosa.cf,gotxx.*,grantorrent.*,gratispaste.com,gravureblog.tv,gupload.xyz##+js(rmnt, script, /h=decodeURIComponent|popundersPerIP/)
 haho.moe,hayhd.net,hdmoviesfair.*,hdmoviesflix.*,hdpornflix.com,hdsaprevodom.com,hdstreamss.club,hentaiporno.xxx,hentais.tube,hentaistream.co,hentaitk.net,hentaitube.online,hentaiworld.tv,hesgoal.tv,hexupload.net,hhkungfu.tv,highlanderhelp.com,hiidudemoviez.*,hindimovies.to,hindimoviestv.com,hiperdex.com,hiphopa.net,hispasexy.org,hitomi.la,hitprn.com,hivflix.*,hoca4u.com,hollymoviehd.cc,hoodsite.com,hopepaste.download,hornylips.com,hotgranny.live,hotmama.live,hqcelebcorner.net,huren.best,hwnaturkya.com,hxfile.co##+js(rmnt, script, /h=decodeURIComponent|popundersPerIP/)
 igfap.com,iklandb.com,illink.net,imgsen.*,imgsex.xyz,imgsto.*,imgtraffic.com,imx.to,incest.*,incestflix.*,influencersgonewild.org,infosgj.free.fr,investnewsbrazil.com,itdmusics.com,itopmusic.*,itsuseful.site,itunesfre.com,iwatchfriendsonline.net##+js(rmnt, script, /h=decodeURIComponent|popundersPerIP/)
@@ -21939,7 +21939,9 @@ tsz.com.np##+js(nostif, googlesyndication)
 perverzija.com##+js(aeld, message, _0x)
 dameungrrr.videoid.baby##+js(aeld, popstate, window.location.href)
 viralpedia.pro##+js(nowoif)
-@@||a.asd.$generichide
+asd.pics##+js(nowoif, _blank)
+asd.pics###downloadButton
+@@||asd.$generichide,to=asd.homes|asd.pics
 cmsdetect.com##+js(nowoif, _blank)
 cmsdetect.com##.results-bottom-banner
 ||fiverr.com/gig_widgets?$3p
@@ -22231,9 +22233,6 @@ mamamia.com.au##.header-main-container:style(top: 0 !important;)
 ||tv247us.vip/lib.js
 ||tv247us.vip^$csp=sandbox allow-forms allow-same-origin allow-scripts allow-modals allow-orientation-lock allow-pointer-lock allow-presentation allow-top-navigation
 ||player.*.sbs/adsconfig.json
-asd.pics##+js(rmnt, script, anti-adblock-message)
-asd.pics##+js(nowoif, _blank)
-asd.pics###downloadButton
 pasteflash.sx##+js(norafif, blocked)
 game-repack.site##+js(nowoif)
 filecrate.store##+js(aeld, click, !adShown)
@@ -22288,6 +22287,7 @@ eee1.lat,netcinebs.lat##+js(set, HTMLImageElement.prototype.onerror, undefined)
 @@||meuplayeronlinehd.com^$ghide
 meuplayeronlinehd.com##+js(nowoif)
 meuplayeronlinehd.com###adblock-overlay
+freedownload.flash-files.com##+js(rmnt, script, location)
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -30486,7 +30486,6 @@ lauradaydo.com##+js(acs, WebAssembly, atob)
 japscan.*#@#.navbar-nav > li.nav-item > a.text-truncate.nav-link.font-weight-bold[href*="?"]
 japscan.*#@#body > div.full-container > div.full-container.text-center > div.mt-2[style="margin: 0px auto; display: block;"] > a.Aikoi.donate[target="_blank"][rel][href^="https://www.longosto.shop/?utm_source="] > img.img-fluid
 japscan.*##+js(trusted-set, pubadxtag, 'json:{"divIds":[]}')
-japscan.*##+js(trusted-suppress-native-method, Document.prototype.getElementById, '"/^d-img-zone-\d$/"', prevent, /\.onload inlineScript/)
 japscan.*##+js(trusted-suppress-native-method, Document.prototype.querySelector, '"/^[#.][A-Z][-A-Z_a-z]+$/"')
 japscan.*##+js(trusted-suppress-native-method, Document.prototype.querySelector, '"/^\[data-l/"')
 japscan.*##+js(trusted-suppress-native-method, Document.prototype.querySelectorAll, '"/^[#.][A-Z][-A-Z_a-z]+$/"')
@@ -30534,7 +30533,8 @@ japscan.*##+js(norafif, Date)
 japscan.*##.HuKlQ > div > div:not(#reader):remove()
 japscan.*##+js(aost, MessageChannel, /stackDepth:2.+inlineScript/)
 japscan.*###noticeMessage[role] ~ div:not(#reader):remove()
-japscan.*##div[yarolo]:remove()
+japscan.*###d-img-z2:remove()
+japscan.*##div[yiraho]:remove()
 japscan.*##+js(norafif, requestAnimationFrame)
 japscan.*##+js(trusted-suppress-native-method, Document.prototype.createElement, '"span"', abort, /apply in.+[0-9A-Za-z]{8\,10} inlineScript/)
 japscan.*##+js(trusted-suppress-native-method, Document.prototype.createElement, '"i"', abort, /apply in.+[0-9A-Za-z]{8\,10} inlineScript/)
