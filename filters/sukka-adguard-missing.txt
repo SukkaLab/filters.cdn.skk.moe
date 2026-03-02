@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Mon, 02 Mar 2026 14:52:04 GMT
+! Last modified: Mon, 02 Mar 2026 18:43:22 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Mon, 02 Mar 2026 04:54:56 +0000
+!   - Last modified: Mon, 02 Mar 2026 10:37:11 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Sat, 28 Feb 2026 04:06:26 +0000
@@ -17,7 +17,7 @@
 !   - Last modified: Mon, 02 Mar 2026 03:33:57 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
-!   - Last modified: Mon, 02 Mar 2026 07:38:49 +0000
+!   - Last modified: Mon, 02 Mar 2026 11:37:43 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
 !   - Last modified: Sun, 01 Mar 2026 15:32:09 +0000
@@ -22289,6 +22289,7 @@ eee1.lat,netcinebs.lat##+js(set, HTMLImageElement.prototype.onerror, undefined)
 meuplayeronlinehd.com##+js(nowoif)
 meuplayeronlinehd.com###adblock-overlay
 freedownload.flash-files.com##+js(rmnt, script, location)
+fitnesstipz.com##+js(noeval-if, ads)
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -30417,6 +30418,8 @@ daily.co.jp##+js(trusted-rpnt, script, /(window\.AdObserverManager\.register\('d
 missav78.top##img[onerror="this.src='/sample/placeholder.jpg'"]:remove-attr(onerror)
 ||missav78.top/sample/placeholder.jpg$image,redirect=1x1.gif
 temperatur.nu#@#.holidAds:upward(1)
+@@||target-video.com$script,xhr,domain=n1info.rs
+||target-video.com^$3p,badfilter
 ! uBlock filters – Quick fixes https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
 @@||hb.vntsm.com/v4/live/vms/sites/aternos.org/index.js$script,domain=aternos.org
 aternos.org##.header-center:style(margin-top:-5000px !important;)
