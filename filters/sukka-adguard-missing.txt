@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Mon, 02 Mar 2026 06:58:45 GMT
+! Last modified: Mon, 02 Mar 2026 10:36:06 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -17,7 +17,7 @@
 !   - Last modified: Mon, 02 Mar 2026 03:33:57 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
-!   - Last modified: Sat, 28 Feb 2026 17:20:27 +0000
+!   - Last modified: Mon, 02 Mar 2026 07:38:49 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
 !   - Last modified: Sun, 01 Mar 2026 15:32:09 +0000
@@ -30,7 +30,7 @@
 !   - Last modified: Sat, 28 Feb 2026 08:20:13 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
-!   - Last modified: Sun, 01 Mar 2026 04:37:03 +0000
+!   - Last modified: Mon, 02 Mar 2026 09:45:28 +0000
 ! --------------------------------------------------------------
 ! uBlock filters https://ublockorigin.pages.dev/filters/filters.min.txt
 *_ad_$media,domain=youtube.com,3p
@@ -29567,6 +29567,7 @@ bellinghamherald.com,bnd.com,bradenton.com,centredaily.com,charlotteobserver.com
 loot.tv##^html:not(:has(#connatixPlayerID)) > head > script[src*="connatix"]
 thestate.com##^html > head > script:has-text(connatix.id):upward(1) > script:has-text(window.cnx)
 variety.com##^html > head > link[rel="canonical"]:not([href*="/video/"]):upward(1) > script[src*="connatix"]
+@@||connatix.com^$script,xhr,domain=app.kultivi.com
 @@||cd.connatix.com/connatix.playspace.js^$script,3p,domain=adweek.com
 @@||cds.connatix.com/p/*/connatix.playspace.dc.js^$script,3p,domain=adweek.com
 @@||connatix.com/core/story^$xhr,method=post,3p,domain=adweek.com
@@ -36419,3 +36420,4 @@ bintv.fun,bintvs.fun##+js(rpnt, script, contextmenu, ccc)
 financialpost.com,nationalpost.com##.visually-hidden
 advnture.com,androidcentral.com,avnetwork.com,cinemablend.com,countrylife.co.uk,creativebloq.com,cyclingweekly.com,cyclingnews.com,digitalcameraworld.com,fitandwell.com,fourfourtwo.com,gamesradar.com,gardeningknowhow.com,golfmonthly.com,guitarplayer.com,guitarworld.com,homebuilding.co.uk,homesandgardens.com,idealhome.co.uk,itpro.com,kiplinger.com,livescience.com,livingetc.com,loudersound.com,marieclaire.co.uk,marieclaire.com,moneyweek.com,musicradar.com,myvouchercodes.co.uk,pcgamer.com,petsradar.com,shortlist.com,space.com,t3.com,techlearning.com,techradar.com,theweek.com,tomsguide.com,tomshardware.com,tvtechnology.com,wallpaper.com,whathifi.com,whattowatch.com,whatculture.com,whowhatwear.com,windowscentral.com,womanandhome.com##+js(set-cookie, FTR_Article_PageView, 2)
 ||urldefense.com/v*/__http$doc,urlskip=/__(.*)__;!!/
+padlet.com##*:style(user-select: text !important;)
