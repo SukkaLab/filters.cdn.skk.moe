@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Tue, 03 Mar 2026 14:53:56 GMT
+! Last modified: Tue, 03 Mar 2026 18:22:59 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202603031441
+!   - Version: 202603031811
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 03 Mar 2026 14:41 UTC
+!   - Last modified: 03 Mar 2026 18:11 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
@@ -16706,7 +16706,6 @@ microsoft.com,windows.com##banner-above-uhf
 msn.com###irisbannerph
 msn.com##.articlebody > div[style="width:100%;border:1px solid #CCC;padding:10px;"]
 outlook.live.com##div[class*=" body-"] > div[class] > div[class]:not([role]) > div:first-of-type:not([class])
-addons.opera.com###overlay
 ||opera.com/*/downloadassets/sticky-bar-auto|$subdocument
 addons.mozilla.org##.DownloadFirefoxButton
 send.firefox.com##send-promo
@@ -18414,8 +18413,6 @@ $removeparam=ab_channel,domain=youtube.com|35.190.94.206|206.94.190.35.bc.google
 ||ekstrabladet.dk^$removeparam=account
 ||tradera.com^$removeparam=transactionalEmail
 $~xmlhttprequest,removeparam=r,domain=tv2.no|linode.com|ledger.*|mrgay.com|odysee.com
-||pinterest.*mt=signup$removeparam=d
-||pinterest.*mt=signup$removeparam=mt
 ||pinterest.*/?mt=login^$removeparam=mt
 ||tcgplayer.com^$removeparam=productLineName
 ||tcgplayer.com^$removeparam=setName
@@ -19904,7 +19901,6 @@ fandom.com##.reviews
 fandom.com##.recirculation-prefooter__recommendations
 fandom.com##.global-navigation__fanhub-wrapper
 fandom.com##.global-footer a[href*=futhead]
-fandom.com##.notifications-box
 fandom.com##.render-wiki-recommendations
 fandom.com##div[class^=page-footer__]
 fandom.com##.open-web-wrapper
@@ -21291,7 +21287,6 @@ knowyourmeme.com##div.combo-wrapper
 knowyourmeme.com###leaderboard
 knowyourmeme.com###top-entries-sidebar
 knowyourmeme.com###spp-gallery
-facebook.com#?#div[class*=ImageBlockContent] .clearfix:has-text(↓↓↓↓COPY)
 facebook.com#?#div[class*=ImageBlockContent] .clearfix:has-text(/^.*job online from home.*$/i)
 facebook.com#?#div[class*=ImageBlockContent] .clearfix:has-text(/^.*online work from home.*$/i)
 knowyourmeme.com###trending_photos
@@ -21303,7 +21298,6 @@ knowyourmeme.com##.cbox-smedia
 ! ↖ Anti-'Custom cursors' List https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/Anti-'Custom%20cursors'%20List.txt
 /images/*/Cursor
 ||images.wikia.nocookie.net/*/Cursor
-@@||wikia.nocookie.net^*/images/$image,badfilter
 ||wikia.nocookie.net/*/Mouse.png|
 /Mousehover.$image
 fandom.com,wikia.org#?#a:link:style(cursor: pointer !important)
