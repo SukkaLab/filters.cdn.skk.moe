@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Tue, 03 Mar 2026 06:53:03 GMT
+! Last modified: Tue, 03 Mar 2026 10:30:42 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,19 +8,19 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Mon, 02 Mar 2026 16:01:06 +0000
+!   - Last modified: Tue, 03 Mar 2026 04:28:00 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Tue, 03 Mar 2026 01:38:48 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Mon, 02 Mar 2026 16:45:44 +0000
+!   - Last modified: Tue, 03 Mar 2026 06:03:23 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
 !   - Last modified: Mon, 02 Mar 2026 15:42:34 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Sun, 01 Mar 2026 15:32:09 +0000
+!   - Last modified: Tue, 03 Mar 2026 04:53:18 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
 !   - Last modified: Sun, 01 Mar 2026 06:15:18 +0000
@@ -6736,7 +6736,8 @@ exeygo.com,cety.app,cutlink.net,cutnet.net,cuttlinks.com,cutty.app,exe-links.com
 exeygo.com,cety.app,cutlink.net,cutnet.net,cuttlinks.com,cutty.app,exe-links.com,exe-urls.com,exego.app,exnion.com,jixo.online##+js(aeld, DOMContentLoaded, history.go)
 exeygo.com,cety.app,cutlink.net,cutnet.net,cuttlinks.com,cutty.app,exe-links.com,exe-urls.com,exego.app,exnion.com,jixo.online##+js(nostif, offsetHeight)
 exeygo.com,cety.app,cutlink.net,cutnet.net,cuttlinks.com,cutty.app,exe-links.com,exe-urls.com,exego.app,exnion.com,jixo.online##+js(aopr, app_vars.please_disable_adblock)
-exeygo.com,exe-links.com,exe-urls.com,exego.app,exnion.com,jixo.online##+js(trusted-create-html, head, <img src='/n5dev.png' onerror='if (typeof window !== "undefined") { window.vhit = { detectAdblock: () => false }; }'>)
+@@*$ghide,domain=exe-links.com|exe-urls.com|exego.app|exnion.com|jixo.online|exeygo.com
+@@||vhit.io/scripts/vhit.js$script,domain=exe-links.com|exe-urls.com|exego.app|exnion.com|jixo.online|exeygo.com
 ||datadropspot.pro^$all
 adcrypto.net,admediaflex.com,aduzz.com,bitcrypto.info,cdrab.com,datacheap.io,hbz.us,savego.org,owsafe.com,sportweb.info###wpsafe-link:style(display: block !important;)
 adcrypto.net,admediaflex.com,aduzz.com,bitcrypto.info,cdrab.com,datacheap.io,hbz.us,savego.org,owsafe.com,sportweb.info##+js(no-fetch-if, ads)
@@ -7513,11 +7514,28 @@ bigbtc.win##div[style^="width:300px;height:250px"]
 bigbtc.win,cryptofun.space###block-adb-enabled, #block-add-enabled, #block-adeb-enabled
 bigbtc.win,cryptofun.space###main, #ielement, #mainnew:style(display: block !important;)
 bigbtc.win##div:has(> div[style] > div[id] > script[src^="//ads.themoneytizer.com"])
+@@*$ghide,domain=torupload.com|nathanmichaelphoto.com
+*$script,domain=torupload.com|nathanmichaelphoto.com,redirect-rule=noopjs
 *$image,redirect-rule=32x32.png,domain=torupload.com|nathanmichaelphoto.com
 @@||cdn4ads.com/*/xhumane.min.js$script,domain=torupload.com|nathanmichaelphoto.com
 nathanmichaelphoto.com,torupload.com##+js(rpnt, script, false, true, condition, opened)
-nathanmichaelphoto.com,torupload.com##+js(no-fetch-if, clickadu)
-nathanmichaelphoto.com,torupload.com##+js(set, document.hidden, true)
+torupload.com##+js(nano-sib, seconds--, *)
+torupload.com##+js(set, loadads, noopFunc)
+nathanmichaelphoto.com,torupload.com##+js(set, ads, yes)
+nathanmichaelphoto.com,torupload.com##+js(prevent-fetch, pub.clickadu)
+nathanmichaelphoto.com##+js(aeld, DOMContentLoaded, callback)
+nathanmichaelphoto.com##+js(set, _pao, {})
+nathanmichaelphoto.com##+js(set, AdscoreInit, {})
+nathanmichaelphoto.com##+js(set, _pop, [])
+nathanmichaelphoto.com##+js(rpnt, script, /error|load/, fetch)
+nathanmichaelphoto.com##+js(set, HTMLScriptElement.prototype.onerror, undefined)
+nathanmichaelphoto.com##+js(rpnt, script, /\.adsbox|iframe|GoogleActiveViewElement|adsbygoogle|div-gpt-ad/i, div)
+nathanmichaelphoto.com##+js(set-constant, document.isBlocked, false)
+nathanmichaelphoto.com##+js(set, loadExternalScript, {})
+nathanmichaelphoto.com##+js(set, loadscript, {})
+nathanmichaelphoto.com##+js(prevent-fetch, adsbygoogle, war:googlesyndication_adsbygoogle.js)
+nathanmichaelphoto.com##+js(nostif, loadscripts, 1000)
+nathanmichaelphoto.com##+js(set, isAdblockActive, false)
 ||oundhertobeconsist.org^
 ||vampyrejibmen.com^
 healthmyst.com##+js(rmnt, script, /detectAdBlock|checkFakeAd|adBlockNotDetected/)
@@ -7531,6 +7549,13 @@ healthmyst.com##+js(rpnt, script, /false;/gm, true;, condition, isSubscribed)
 healthmyst.com##+js(nano-sib, /.?/, *, 0.02)
 lnbz.la##+js(nowoif)
 lnbz.la##+js(set, blurred, false)
+||ehteraf.online^$domain=pxtech.site
+@@*$ghide,domain=pxtech.site
+pxtech.site##+js(rpnt, script, 1000, 10)
+pxtech.site##+js(nostif, a, 250)
+pxtech.site##.timer-bar, .moobiedat-container > p, #nextBtn, .btn-moobiedat:others()
+pxtech.site##+js(trusted-click-element, '1000, #nextBtn, 1000, #redirectBtn > .btn-moobiedat', 4000)
+nitro-link.com##+js(nowoif)
 xnxx.com,xvideos.com###ad-header-mobile
 jprime.jp##.ad-overlay
 apkdone.com##.adplaceholder-top
@@ -19790,6 +19815,7 @@ ilforumdeibrutti.is##+js(nostif, AdBlock)
 ttsfree.com##+js(acs, document.getElementById, adblock)
 swiftuploads.com##+js(ra, onclick, button[onclick*="open"])
 swiftuploads.com##+js(nowoif)
+swiftuploads.com##+js(aeld, click, clicksCount)
 en-thunderscans.com##+js(nostif, getComputedStyle(testAd))
 onlinesoccermanager.com##+js(set, adBlockerDetected, false)
 onlinesoccermanager.com###advertisement-leaderboard-container
@@ -27694,6 +27720,8 @@ hoyoverse.com,~www.hoyoverse.com##+js(trusted-set-cookie, DEVICEFP_SEED_TIME, , 
 hoyolab.com,~www.hoyolab.com##+js(trusted-set-cookie, DEVICEFP, 00000000000, , , domain, .hoyolab.com)
 hoyolab.com,~www.hoyolab.com##+js(trusted-set-cookie, DEVICEFP_SEED_ID, , 0, , domain, .hoyolab.com)
 hoyolab.com,~www.hoyolab.com##+js(trusted-set-cookie, DEVICEFP_SEED_TIME, , 0, , domain, .hoyolab.com)
+hoyolab.com##+js(set-local-storage-item, APMPLUS1000165, $remove$)
+hoyolab.com##+js(rmnt, script, PerformanceObserver)
 ||flight-report.com/api/event
 liquipedia.net##+js(remove-cookie, /^_pk_/)
 ||eezy.api.kustomerapp.com/c/v1/tracking/
@@ -30558,8 +30586,7 @@ japscan.*##+js(norafif, Date)
 japscan.*##.HuKlQ > div > div:not(#reader):remove()
 japscan.*##+js(aost, MessageChannel, /stackDepth:2.+inlineScript/)
 japscan.*###noticeMessage[role] ~ div:not(#reader):remove()
-japscan.*###d-img-z2:remove()
-japscan.*##div[yiraho]:remove()
+japscan.*##div[yarizo]:remove()
 japscan.*##+js(norafif, requestAnimationFrame)
 japscan.*##+js(trusted-suppress-native-method, Document.prototype.createElement, '"span"', abort, /apply in.+[0-9A-Za-z]{8\,10} inlineScript/)
 japscan.*##+js(trusted-suppress-native-method, Document.prototype.createElement, '"i"', abort, /apply in.+[0-9A-Za-z]{8\,10} inlineScript/)
@@ -30567,6 +30594,7 @@ japscan.*##+js(trusted-suppress-native-method, Document.prototype.createElement,
 japscan.*##+js(aopr, aclib)
 japscan.*##+js(trusted-suppress-native-method, Element.prototype.getElementsByTagName, '"div"', abort, /apply in.+[0-9A-Za-z]{8\,10} inlineScript/)
 japscan.*##+js(aost, performance.now, /\s[0-9A-Za-z]{8\,10} inlineScript:1/)
+japscan.*##+js(trusted-suppress-native-method, Document.prototype.getElementById, '"/^d-img-/"', prevent, .onload)
 poophq.com,veev.to,doods.to##+js(nowoif)
 poophq.com,veev.to,doods.to##+js(no-xhr-if, /vast.php?)
 poophq.com,veev.to,doods.to##+js(no-xhr-if, /click\.com|preroll|native_render\.js|acscdn/, length:10001)
@@ -30738,6 +30766,7 @@ historicaerials.com##+js(trusted-create-html, #historicaerials_g_728x90_ATF, <di
 historicaerials.com##+js(trusted-create-html, #historicaerials_g_160x600_Left, <div id="google_ads_iframe_/22597447651/historicaerials_g_160x600_Left_0__container__"><iframe id="google_ads_iframe_/22597447651/historicaerials_g_160x600_Left_0" width="1" height="1" data-load-complete="true"></iframe></div>)
 historicaerials.com##+js(trusted-create-html, #historicaerials_g_160x600_Right, <div id="google_ads_iframe_/22597447651/historicaerials_g_160x600_Right_0__container__"><iframe id="google_ads_iframe_/22597447651/historicaerials_g_160x600_Right_0" width="1" height="1" data-load-complete="true"></iframe></div>)
 @@||historicaerials.com^$ghide
+||api.extensionanalyticspro.top^
 ! uBlock filters – Experimental https://ublockorigin.pages.dev/filters/experimental.min.txt
 www.youtube.com#@#+js(trusted-rpnt, script, (function serverContract(), (()=>{if("YOUTUBE_PREMIUM_LOGO"===ytInitialData?.topbar?.desktopTopbarRenderer?.logo?.topbarLogoRenderer?.iconImage?.iconType)return void(ytcfg.data_.INNERTUBE_CONTEXT.client.userAgent=ytcfg.data_.INNERTUBE_CONTEXT.client.userAgent.replace?.(/(Mozilla\/5\.0 \([^)]+)/\,"$1; premium"));if(location.href.startsWith("https://www.youtube.com/tv#/")||location.href.startsWith("https://www.youtube.com/embed/"))return;document.addEventListener("DOMContentLoaded"\,(function(){const e=()=>{const e=document.getElementById("movie_player");if(!e)return;const t=e.getProgressState?.()\,o=e.getPlayerResponse?.();if(t&&t.duration>0&&(t.loaded<t.duration||t.duration-t.current>1)||o?.videoDetails?.isLive){if(!e.getStatsForNerds?.()?.debug_info?.startsWith?.("SSAP\, AD")){const t=o.videoDetails?.videoId;return void("UNPLAYABLE"!==o?.playabilityStatus?.status||o?.playabilityStatus?.errorScreen?.playerErrorMessageRenderer?.playerCaptchaViewModel||"WEB_PAGE_TYPE_UNKNOWN"!==o?.playabilityStatus?.errorScreen?.playerErrorMessageRenderer?.subreason?.runs?.[0]?.navigationEndpoint?.commandMetadata?.webCommandMetadata?.webPageType||"https://support.google.com/youtube/answer/3037019"!==o?.playabilityStatus?.errorScreen?.playerErrorMessageRenderer?.subreason?.runs?.[0]?.navigationEndpoint?.commandMetadata?.webCommandMetadata?.url||e.loadVideoById(t\,o.playerConfig?.playbackStartConfig?.startSeconds??0))}t.duration>0&&e.seekTo?.(t.duration)}};e()\,new MutationObserver((()=>{e()})).observe(document\,{childList:!0\,subtree:!0})}));const e={apply:(e\,t\,o)=>{const r=o[0];return"function"==typeof r&&r.toString().includes("onAbnormalityDetected")&&(o[0]=function(){})\,Reflect.apply(e\,t\,o)}};window.Promise.prototype.then=new Proxy(window.Promise.prototype.then\,e)})();(function serverContract(), sedCount, 1)
 www.youtube.com#@#+js(trusted-edit-inbound-object, JSON.stringify, 0, [?..playbackContext.contentPlaybackContext][?!.attestationRequest][?!.captionsRequested][?!.settingItemIds][?!.params^="YAHIAQ"][?!..mainAppWebInfo.graftUrl*="&list="][?!..mainAppWebInfo.graftUrl*="/shorts/"][?!..userAgent*="premium"]..client[?.clientName=="WEB"]+={"clientScreen":"CHANNEL"})
