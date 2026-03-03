@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Tue, 03 Mar 2026 10:30:42 GMT
+! Last modified: Tue, 03 Mar 2026 14:53:56 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.0.86
+!   - Version: 2.1.0.90
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202602270839
@@ -218,15 +218,14 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||api.datahub-srgssr.ch^
 ||statisticslinks.com^
 ||metricslinks.com^
 ||gjirafa.net^$3p
 ||siteperformancetest.net^
 ||convertiser.com^
-||signalszone.com^
 ||bidr.io^
 ||s.opensend.com^
-||diginetica.net^
 ||cdn-*.gravityfield.ai^
 ||location.dynabic.com^$3p
 ||byoviral.com^$3p
@@ -2267,6 +2266,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||selfcampaign.com^$3p
 ||upscore.com^$3p
 ||iocnt.net^$3p
+||tracking.diginetica.net^
 ||mytopf.com^$3p
 ||dircont3.com^$3p
 ||edrone.me^$3p
@@ -72974,6 +72974,8 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||countly.
 ||countly-
 |piwik.
+||goto.suno.com^
+||m-stratovibe.prod.suno.com^
 ||fel-api.prod.browse.bestbuy.com^
 ||acollector.wb.ru^
 ||journal-bt.wildberries.ru^
@@ -72981,8 +72983,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||dap.worldota.net^
 ||dap.livemint.com^
 ||smetrics.edb.gov.sg^
-||p19-ad-site-sign-sg.tiktokcdn.com^
-||p16-ad-site-sign-sg.tiktokcdn.com^
 ||wa.scribd.com^
 ||aplus.gmarket.co.kr^
 ||animo.sto.wiki^
@@ -140938,7 +140938,6 @@ zmail.mtrl.me$image
 /^https:\/\/cs\d{3}\.\w+\.com\/cscript\/\d{3}\/[\w\d]+\.js$/$script,3p,match-case
 /.well-known/private-click-measurement
 /wp-content/plugins/burst-statistics/*
-/ad-site-i18n-sg/*$xhr
 /wp-content/plugins/wp-analytify-pro/*
 /crm/tag/call.tracker.js
 /statistics/md.gif?
@@ -141629,6 +141628,9 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||suno.com/9i3s/
+||studio-api.prod.suno.com/api/statsig/
+||rts.ch/boreas/collect
 ||streams.bestbuy.com/customer/web-streams/v*/events/digital-experience-event
 ||bestbuy.com/bf?$ping
 ||ddiamond.com.tr/tom8/
@@ -150945,6 +150947,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||allnewhost.com^
 ||alloutdubstep.com^
 ||allsunflowers.com^
+||allthelogs.com^
 ||alltypo.com^
 ||alluringbucket.com^
 ||almondbuns.com^
@@ -152536,6 +152539,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 ||sicksmash.com^
 ||siderain.com^
 ||sierrakermit.com^
+||signalszone.com^
 ||signaturepod.com^
 ||silentcredit.com^
 ||silentjackal.com^
