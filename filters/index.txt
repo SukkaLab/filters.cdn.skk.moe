@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Filters
-! Last modified: Tue, 03 Mar 2026 18:22:56 GMT
+! Last modified: Tue, 03 Mar 2026 18:34:42 GMT
 ! Expires: 1 hours
 ! Description: The filters from Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -31,6 +31,7 @@ uouin.com##+js(sukka-defuse-devtools-detector)
 ggfw.hrss.gd.gov.cn##+js(sukka-defuse-devtools-detector)
 iplark.com##+js(sukka-defuse-devtools-detector)
 boomio.com##+js(sukka-defuse-devtools-detector)
+djxmaza.in##+js(sukka-defuse-devtools-detector)
 ||tags.news.com.au/prod/adblock/adblock.js
 ###adb-mask
 ||crackle.com/vendor/adex.js
@@ -232,6 +233,16 @@ www.deepl.com###lmt_pro_ad_container
 www.deepl.com###dl_quotes_container
 ||gtm.deepl.com/gtm.js$redirect=googletagmanager_gtm.js
 deepl.com##+js(trusted-prevent-fetch, s.deepl.com/web/statistics, '{ "code": 1 }')
+||community.fandom.com
+||nocookie.net/fandom-ae-assets/tracking-opt-in/$important
+||nocookie.net/fandom-ae-assets/prebid*$important
+||nocookie.net/fandom-ae-assets/identity-service/*/static-consents$important
+||nocookie.net/fandom-ae-assets/*/ucp-no-ads/$important
+||nocookie.net/*/Sponsored$important
+||nocookie.net/silversurfer$important
+||change.org/api-proxy/graphql?op=SuggestedPetitionsFromPetitionSunrise
+||change.org/api-proxy/graphql?op=SunriseVictoriousPetitionsFromPetition
+||change.org/api-proxy/graphql?op=PetitionQRCodeData
 ||ip.sb$domain=alicesw.com
 @@||perfops.io/500b-bench.jpg$domain=localhost|ip.skk.moe
 ||adfoc.us$csp=script-src 'none'
@@ -321,13 +332,6 @@ t66y.com##+js(trusted-set, spJson, { "value": "[]" })
 netflav.com##+js(trusted-click-element, div.ads_video_close_button, , 500)
 zhihu.com##+js(trusted-click-element, '.Modal.signFlowModal button.Button.Modal-closeButton')
 dfzy.xyz##+js(trusted-set, window.navigator.userAgent, json:"Mozilla/5.0 quark/114514", runAt, 1)
-||community.fandom.com
-||nocookie.net/fandom-ae-assets/tracking-opt-in/$important
-||nocookie.net/fandom-ae-assets/prebid*$important
-||nocookie.net/fandom-ae-assets/identity-service/*/static-consents$important
-||nocookie.net/fandom-ae-assets/*/ucp-no-ads/$important
-||nocookie.net/*/Sponsored$important
-||nocookie.net/silversurfer$important
 ||api.abema.io/v*/ip/check
 abema.tv##+js(trusted-prevent-xhr, ds-linear-abematv.akamaized.net/region, '')
 ||hanime.tv/country_code$redirect=noop.txt
