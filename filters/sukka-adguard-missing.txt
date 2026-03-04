@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Wed, 04 Mar 2026 19:08:46 GMT
+! Last modified: Wed, 04 Mar 2026 22:51:24 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Wed, 04 Mar 2026 16:05:41 +0000
+!   - Last modified: Wed, 04 Mar 2026 19:23:07 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Wed, 04 Mar 2026 00:14:55 +0000
@@ -22343,12 +22343,15 @@ meuplayeronlinehd.com##+js(nowoif)
 meuplayeronlinehd.com###adblock-overlay
 freedownload.flash-files.com##+js(rmnt, script, location)
 fitnesstipz.com##+js(noeval-if, ads)
+fitnesstipz.com##.adblock_title
+fitnesstipz.com##body > .adblock_subtitle > p
 ||cdn.ziffstatic.com/pg/$script,domain=maxroll.gg,redirect=noopjs
 ||cfd/rfdtagarg/*.js
 ||purge.fb-cdn.net^
 /^https:\/\/\d+\.cfd\/[a-z]{3}tag[a-z]{3}\/v\d\/[a-zA-Z0-9]+:C\d\.js\b/$script,3p,match-case,to=cfd
 /^https:\/\/[0-9]+\.cfd\/[a-z][a-z][a-z]tag[a-z][a-z][a-z]\/v[0-9]\/[a-zA-Z0-9]+:C[0-9]\.js\b/$script,3p,match-case,to=cfd
 /^https:\/\/get[0-9]+\.host[0-9]+k\.cfd\/\?tag=/$all,match-case,to=cfd
+||romhandbook.com/assets/lib/adblock-
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
