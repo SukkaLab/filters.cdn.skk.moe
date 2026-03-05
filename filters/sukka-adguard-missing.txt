@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Thu, 05 Mar 2026 04:21:02 GMT
+! Last modified: Thu, 05 Mar 2026 07:11:39 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Wed, 04 Mar 2026 19:23:07 +0000
+!   - Last modified: Thu, 05 Mar 2026 05:15:36 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Wed, 04 Mar 2026 00:14:55 +0000
@@ -17,10 +17,10 @@
 !   - Last modified: Wed, 04 Mar 2026 11:34:45 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
-!   - Last modified: Mon, 02 Mar 2026 15:42:34 +0000
+!   - Last modified: Thu, 05 Mar 2026 03:37:34 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Tue, 03 Mar 2026 17:01:30 +0000
+!   - Last modified: Thu, 05 Mar 2026 05:15:36 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
 !   - Last modified: Sun, 01 Mar 2026 06:15:18 +0000
@@ -22233,7 +22233,6 @@ modocine.com##+js(rmnt, script, offsetHeight)
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=noopjs,domain=numuki.com
 numuki.com##.center.wlimit.mb10.bg-white.rounded.mid-section:has(.advHeader)
 magma.com##+js(trusted-json-edit-fetch-response, ..data.expectingAds=false, propsToMatch, /profile)
-magma.com##+js(rpnt, script, \,"ads")
 hifinews.com,soundandvision.com,stereophile.com,homecinemachoice.com,analogplanet.com,hifichoice.com,shutterbug.com#@##topbannerad:not(:empty)
 pdfdrive.to##+js(trusted-set-local-storage-item, pdadsLastClosed, $now$)
 pdfdrive.to##+js(trusted-override-element-method, HTMLElement.prototype.click, [href^="https://whulsaux.com"])
@@ -30518,6 +30517,7 @@ missav78.top##img[onerror="this.src='/sample/placeholder.jpg'"]:remove-attr(oner
 ||missav78.top/sample/placeholder.jpg$image,redirect=1x1.gif
 temperatur.nu#@#.holidAds:upward(1)
 ||target-video.com^$3p,badfilter
+@@||securepubads.g.doubleclick.net/tag/js/gpt.js$script,3p,redirect-rule,from=webmd.com
 ! uBlock filters – Quick fixes https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
 @@||hb.vntsm.com/v4/live/vms/sites/aternos.org/index.js$script,domain=aternos.org
 aternos.org##.header-center:style(margin-top:-5000px !important;)
@@ -30808,6 +30808,7 @@ historicaerials.com##+js(trusted-create-html, #historicaerials_g_160x600_Left, <
 historicaerials.com##+js(trusted-create-html, #historicaerials_g_160x600_Right, <div id="google_ads_iframe_/22597447651/historicaerials_g_160x600_Right_0__container__"><iframe id="google_ads_iframe_/22597447651/historicaerials_g_160x600_Right_0" width="1" height="1" data-load-complete="true"></iframe></div>)
 @@||historicaerials.com^$ghide
 hoyolab.com#@#+js(rmnt, script, PerformanceObserver)
+magma.com##+js(trusted-set, Object.prototype.adsStrategy, 'json:{"tag":"","phase":0,"permaProvider":0,"tempoProvider":0,"buckets":[],"comment":"no-user","rotationPaused":true}', as, function)
 ! uBlock filters – Experimental https://ublockorigin.pages.dev/filters/experimental.min.txt
 www.youtube.com#@#+js(trusted-rpnt, script, (function serverContract(), (()=>{if("YOUTUBE_PREMIUM_LOGO"===ytInitialData?.topbar?.desktopTopbarRenderer?.logo?.topbarLogoRenderer?.iconImage?.iconType)return void(ytcfg.data_.INNERTUBE_CONTEXT.client.userAgent=ytcfg.data_.INNERTUBE_CONTEXT.client.userAgent.replace?.(/(Mozilla\/5\.0 \([^)]+)/\,"$1; premium"));if(location.href.startsWith("https://www.youtube.com/tv#/")||location.href.startsWith("https://www.youtube.com/embed/"))return;document.addEventListener("DOMContentLoaded"\,(function(){const e=()=>{const e=document.getElementById("movie_player");if(!e)return;const t=e.getProgressState?.()\,o=e.getPlayerResponse?.();if(t&&t.duration>0&&(t.loaded<t.duration||t.duration-t.current>1)||o?.videoDetails?.isLive){if(!e.getStatsForNerds?.()?.debug_info?.startsWith?.("SSAP\, AD")){const t=o.videoDetails?.videoId;return void("UNPLAYABLE"!==o?.playabilityStatus?.status||o?.playabilityStatus?.errorScreen?.playerErrorMessageRenderer?.playerCaptchaViewModel||"WEB_PAGE_TYPE_UNKNOWN"!==o?.playabilityStatus?.errorScreen?.playerErrorMessageRenderer?.subreason?.runs?.[0]?.navigationEndpoint?.commandMetadata?.webCommandMetadata?.webPageType||"https://support.google.com/youtube/answer/3037019"!==o?.playabilityStatus?.errorScreen?.playerErrorMessageRenderer?.subreason?.runs?.[0]?.navigationEndpoint?.commandMetadata?.webCommandMetadata?.url||e.loadVideoById(t\,o.playerConfig?.playbackStartConfig?.startSeconds??0))}t.duration>0&&e.seekTo?.(t.duration)}};e()\,new MutationObserver((()=>{e()})).observe(document\,{childList:!0\,subtree:!0})}));const e={apply:(e\,t\,o)=>{const r=o[0];return"function"==typeof r&&r.toString().includes("onAbnormalityDetected")&&(o[0]=function(){})\,Reflect.apply(e\,t\,o)}};window.Promise.prototype.then=new Proxy(window.Promise.prototype.then\,e)})();(function serverContract(), sedCount, 1)
 www.youtube.com#@#+js(trusted-edit-inbound-object, JSON.stringify, 0, [?..playbackContext.contentPlaybackContext][?!.attestationRequest][?!.captionsRequested][?!.settingItemIds][?!.params^="YAHIAQ"][?!..mainAppWebInfo.graftUrl*="&list="][?!..mainAppWebInfo.graftUrl*="/shorts/"][?!..userAgent*="premium"]..client[?.clientName=="WEB"]+={"clientScreen":"CHANNEL"})
