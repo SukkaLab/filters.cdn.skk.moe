@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Thu, 05 Mar 2026 11:01:47 GMT
+! Last modified: Thu, 05 Mar 2026 15:05:44 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.1.3
+!   - Version: 2.1.1.6
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202602270839
@@ -336,7 +336,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||tracking-api.g2.com^
 ||litix.io^
 ||audiencelab.io^$3p
-||openpanel.dev^
 ||alphaupsell.s3.ap-northeast-2.amazonaws.com^
 ||trackingmyadsas.com^
 ||sa.openmedia.co^
@@ -49931,6 +49930,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||countly.
 ||countly-
 |piwik.
+||api.openpanel.dev^
 ||lytics.fileditch.com^
 ||goto.suno.com^
 ||m-stratovibe.prod.suno.com^
@@ -117564,6 +117564,7 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+tv-tokyo.co.jp##.tbcms_plus-pickup
 ||tongji.90dao.com^$ping
 ||cdn1.irontive.com/apps/ironpixel.js
 ||championat.com/api/unity-id/*/init
@@ -118623,7 +118624,7 @@ addons.mozilla.org##+js(href-sanitizer, a[href^="https://prod.outgoing.prod.webs
 ||myglo.com.ua/cdn/*/assets/adobe_tracking.js
 ||webapi-cloud.bluestacks.com/api/*/report-page-view
 ||progameguides.com/*/openweb-tracking.js
-||ticketmaster.com/*/log
+||ticketmaster.com/*/log^
 ||ticketmaster.com/logger/
 yakutia.info##.popular:has(> .js-relap-anchor)
 ||hh.ru/shards/stat
@@ -123877,6 +123878,9 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=saturn.de
 @@||metrics.us.playstation.com/b/ss/
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
+@@||cdn.cxense.com/cx.cce.js$domain=df.cl
+@@||cdn.cxense.com/cx.js$domain=df.cl
+@@||api.cxense.com/public/widget/data?json=$domain=df.cl
 @@||srvr.dmvs-apac.com/dm-story/*.js$domain=eldeber.com.bo|reduno.com.bo
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=gallito.com.uy
 @@||googletagservices.com/tag/js/gpt.js$domain=gallito.com.uy
