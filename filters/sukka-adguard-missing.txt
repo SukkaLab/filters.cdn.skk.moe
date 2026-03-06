@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Thu, 05 Mar 2026 23:29:30 GMT
+! Last modified: Fri, 06 Mar 2026 04:17:46 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Thu, 05 Mar 2026 17:49:30 +0000
+!   - Last modified: Fri, 06 Mar 2026 00:48:29 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Thu, 05 Mar 2026 17:31:11 +0000
@@ -20623,10 +20623,10 @@ daddylive.*###html1
 daddylive.*##div > a.btn-outline-primary.btn
 daddylive.link#@#+js(aopr, require)
 ||dlstreams.top/*-adbanner.html
-adffdafdsafds.sbs,dlstreams.top##+js(rmnt, script, /delete window|popundersPerIP|var FingerprintJS|adserverDomain|globalThis;break;case|ai_adb|adContainer/)
+adffdafdsafds.sbs,dlstreams.top##+js(rmnt, script, /key in document|popundersPerIP|var FingerprintJS|adserverDomain|globalThis;break;case|ai_adb|adContainer/)
 adffdafdsafds.sbs,dlstreams.top##+js(aopr, aclib)
-dlstreams.top>>,~chatango.com##+js(rmnt, script, /delete window|popundersPerIP|var FingerprintJS|adserverDomain|globalThis;break;case|ai_adb|adContainer/)
-dlstreams.top>>,~chatango.com##+js(aopr, aclib)
+dlstreams.top>>,~chatango.com,~google.com##+js(rmnt, script, /key in document|popundersPerIP|var FingerprintJS|adserverDomain|globalThis;break;case|ai_adb|adContainer/)
+dlstreams.top>>,~chatango.com,~google.com##+js(aopr, aclib)
 nudogram.com##.sponsor
 nudogram.com##.super_button
 nudogram.com##.wp_xsize_class
