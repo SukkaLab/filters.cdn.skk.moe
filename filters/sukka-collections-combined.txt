@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Fri, 06 Mar 2026 07:08:59 GMT
+! Last modified: Fri, 06 Mar 2026 10:57:05 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202603060701
+!   - Version: 202603061051
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 06 Mar 2026 07:01 UTC
+!   - Last modified: 06 Mar 2026 10:51 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
@@ -94,7 +94,7 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 📱 Staying On The Phone Browser
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/stayingonbrowser/Staying%20On%20The%20Phone%20Browser
-!   - Version: 04November2025v1
+!   - Version: 06March2026v1
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#english
 ! * 🎫 Ad Removal List for Unusual Ads
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/AdRemovalListForUnusualAds.txt
@@ -20411,6 +20411,8 @@ instagram.com##div[class]:first-of-type:not(.html-div) + div.html-div:has(+ div:
 ###android-app-prompt
 ##.footer-app-icons:not(html,body,:empty)
 ##a.both-badges.ai-app-badge
+##div[class*=inlineAppUpsell-]
+##.app-branding-card:not(html,body,:empty)
 ##a[href*=".app.link/"]
 imgur.com##.AppBanner-text
 imgur.com##.PopOverBannerSmall

@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Fri, 06 Mar 2026 07:08:59 GMT
+! Last modified: Fri, 06 Mar 2026 10:57:05 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Fri, 06 Mar 2026 00:48:29 +0000
+!   - Last modified: Fri, 06 Mar 2026 05:46:35 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Thu, 05 Mar 2026 17:31:11 +0000
@@ -30,7 +30,7 @@
 !   - Last modified: Thu, 05 Mar 2026 17:31:11 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
-!   - Last modified: Tue, 03 Mar 2026 09:52:06 +0000
+!   - Last modified: Fri, 06 Mar 2026 03:44:30 +0000
 ! --------------------------------------------------------------
 ! uBlock filters https://ublockorigin.pages.dev/filters/filters.min.txt
 *_ad_$media,domain=youtube.com,3p
@@ -21349,6 +21349,7 @@ streamup.ws##+js(set, detectSandbox, noopFunc)
 streamup.ws##+js(aeld, DOMContentLoaded, Promise)
 streamup.ws##+js(nostif, push)
 s1p1cd.com,strmup.to,strmup.cc,strmup.ws,vidnest.io,vidnest.live##+js(nowoif)
+vidnest.io,vidnest.live##+js(nostif, location.replace, 100)
 vidnest.io,vidnest.live##+js(acs, EventTarget.prototype.addEventListener, open)
 vidnest.io,vidnest.live##+js(nostif, bait.remove)
 vidnest.live##a[href^="https://candai.online/"]
@@ -21357,6 +21358,7 @@ strmup.to,strmup.ws##+js(rmnt, script, popundersPerIP)
 strmup.to##+js(acs, document.createElement, "'script'")
 *$script,3p,denyallow=cloudflare.com|cloudflare.net|fastly.net|gstatic.com|jsdelivr.net|jwpcdn.com,domain=s1p1cd.com|streamup.ws|strmup.to
 ||streamup.ws/assets/js/adblock.js$script,1p
+||katfile.online^$image,domain=vidnest.live
 animenexus.in##+js(nowoif, _blank)
 html5.gamedistribution.com###gd__adblocker__overlay
 letemsvetemapplem.eu##^script:has-text(videoList)
@@ -34628,7 +34630,7 @@ magelang1337.com##*:style(-webkit-touch-callout: default !important; -webkit-use
 sbbrisk.com,sbface.com,streamsb.net##^script:has-text(debugger)
 sbbrisk.com,sbface.com,streamsb.net##+js(acs, check, debugger)
 sbbrisk.com,sbface.com,streamsb.net##+js(nosiif, _0x)
-2hbn.com,farklifarkli.com##.adace-popup
+2hbn.com##.adace-popup
 *$script,redirect-rule=noopjs,domain=mail.inbox.lv
 naijagists.com##+js(aopr, disableSelection)
 nandedbazaar.com##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
