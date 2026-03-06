@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Fri, 06 Mar 2026 10:57:05 GMT
+! Last modified: Fri, 06 Mar 2026 14:57:15 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202603061051
+!   - Version: 202603061451
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 06 Mar 2026 10:51 UTC
+!   - Last modified: 06 Mar 2026 14:51 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
@@ -124,7 +124,7 @@
 ! * uBlock filters – Mobile
 !   - URL: https://ublockorigin.github.io/uAssets/filters/filters-mobile.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Thu, 26 Feb 2026 12:58:12 +0000
+!   - Last modified: Fri, 06 Mar 2026 12:02:59 +0000
 ! * CJX's uBlock list
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-ublock.txt
 !   - Homepage: https://github.com/cjx82630/cjxlist
@@ -21723,7 +21723,7 @@ investing.com##[class^="ad_ad-sticky_"]
 zdnet.com##.c-adDisplay_container
 zdnet.com##.c-adSkyBox
 nytimes.com###acm-wrapper
-||nytimes.com/games-assets/v2/*.js$script,replace=/shouldRenderAd:\(\)=>d&&/shouldRenderAd:()=>false&&/,domain=www.nytimes.com
+||nytimes.com/games-assets/v2/*.js$script,replace=/shouldRenderAd:\(\)=>[a-z]&&/shouldRenderAd:()=>false&&/,domain=www.nytimes.com
 ||nytimes.com/games-assets/v2/spelling-bee.*.js$script,domain=www.nytimes.com,replace=/\.includes\("cr"\)/.includes("")/
 www.nytimes.com##+js(trusted-replace-argument, matchMedia.call, 1, json:"none", condition, max-width)
 www.nytimes.com##+js(trusted-json-edit-fetch-response, ..show_ads=false, propsToMatch, /statsig/initialize?)
