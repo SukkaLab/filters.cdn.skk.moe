@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Fri, 06 Mar 2026 04:17:46 GMT
+! Last modified: Fri, 06 Mar 2026 07:08:59 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.1.9
+!   - Version: 2.1.1.10
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202602270839
@@ -49930,6 +49930,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||countly.
 ||countly-
 |piwik.
+||analytics-api.penpencil.co^
 ||health.flowplayer.com^
 ||api.openpanel.dev^
 ||lytics.fileditch.com^
@@ -117565,6 +117566,7 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||unleash-edge-prod.penpencil.co/api/frontend/client/metrics
 ||videotools.ocdn.eu/plugins/fp/
 ||analytics-fe.digital-cloud-west.medallia.com^
 tv-tokyo.co.jp##.tbcms_plus-pickup
