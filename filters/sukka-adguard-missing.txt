@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sat, 07 Mar 2026 04:08:49 GMT
+! Last modified: Sat, 07 Mar 2026 06:59:35 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Fri, 06 Mar 2026 12:35:12 +0000
+!   - Last modified: Sat, 07 Mar 2026 00:07:59 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Fri, 06 Mar 2026 13:20:23 +0000
@@ -30,7 +30,7 @@
 !   - Last modified: Thu, 05 Mar 2026 17:31:11 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
-!   - Last modified: Fri, 06 Mar 2026 03:44:30 +0000
+!   - Last modified: Sat, 07 Mar 2026 00:59:14 +0000
 ! --------------------------------------------------------------
 ! uBlock filters https://ublockorigin.pages.dev/filters/filters.min.txt
 *_ad_$media,domain=youtube.com,3p
@@ -14591,6 +14591,7 @@ missav.*,missav123.com,missav888.com##div[x-show="showBanner"]
 missav.*,missav123.com,missav888.com##+js(acs, document.createElement, htmlAds)
 missav.*,missav123.com,missav888.com##+js(nowoif)
 missav.*,missav123.com,missav888.com##^script:has-text(htmlAds)
+||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=1player.store
 wowroms.com##+js(nano-sib, second)
 wowroms.com##.ulromlist > .element:has(> ul > li > .adsbygoogle)
 angelfire.com##+js(acs, document.write, lycos_ad)
@@ -33150,17 +33151,20 @@ utaten.com##.lyricBody[oncontextmenu]:remove-attr(/oncontextmenu|onselectstart/)
 oricon.co.jp##div.all-lyrics:remove-attr(/oncontextmenu|onselectstart|onmousedown/)
 rocklyric.jp###lyric_area[oncopy]:remove-attr(/oncopy|oncut|onmousemove|onmousedown|style/)
 rocklyric.jp###lyric_area > p[oncontextmenu]:remove-attr(oncontextmenu)
+keytube.net###lyrics[oncontextmenu]:remove-attr(oncontextmenu)
 j-lyric.net,okuhanako.net##body[oncontextmenu]:remove-attr(/oncontextmenu|onselectstart/)
 utaten.com##+js(ra, oncontextmenu|onselectstart, .lyricBody[oncontextmenu], complete)
 oricon.co.jp##+js(ra, oncontextmenu|onselectstart|onmousedown, .all-lyrics[oncontextmenu], complete)
 rocklyric.jp##+js(ra, oncopy|oncut|onmousemove|onmousedown|style, #lyric_area[oncopy], complete)
 rocklyric.jp##+js(ra, oncontextmenu, #lyric_area > p[oncontextmenu], complete)
+keytube.net##+js(ra, oncontextmenu, #lyrics[oncontextmenu], complete)
 j-lyric.net,okuhanako.net##+js(ra, oncontextmenu|onselectstart, body[oncontextmenu], complete)
 ||utaten.com/css/print.css
 utaten.com##.lyricBody:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important; -webkit-tap-highlight-color: revert !important; cursor: revert !important;)
 oricon.co.jp##+js(aeld, dragstart, , elements, .all-lyrics)
 oricon.co.jp##.all-lyrics:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important; -webkit-tap-highlight-color: revert !important; cursor: revert !important;)
 j-lyric.net##+js(rpnt, style, @media print {body { display: none !important; }})
+keytube.net###lyrics:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important; -webkit-tap-highlight-color: revert !important; cursor: revert !important;)
 lyrical-nonsense.com##+js(rmnt, script, contextmenu)
 lyrical-nonsense.com##.olyrictext, .olyrictext-tv, .sbs-row:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important; -webkit-tap-highlight-color: revert !important; cursor: revert !important;)
 togetogebox.org##+js(rmnt, style, -ms-user-select: none)
