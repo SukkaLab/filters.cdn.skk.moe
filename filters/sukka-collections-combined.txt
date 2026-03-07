@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Sat, 07 Mar 2026 14:42:04 GMT
+! Last modified: Sat, 07 Mar 2026 18:52:09 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202603071431
+!   - Version: 202603071841
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 07 Mar 2026 14:31 UTC
+!   - Last modified: 07 Mar 2026 18:41 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
@@ -43,7 +43,7 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 😌 Anti-'Newsstories about celebs giving birth' List
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/AntiCelebBirthList.txt
-!   - Version: 01October2025v1-Beta
+!   - Version: 07March2026v1-Beta
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 🤾🏼‍♂️ Anti-'Corrupt sports' List
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/AntiCorruptSportsList.txt
@@ -94,7 +94,7 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 📱 Staying On The Phone Browser
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/stayingonbrowser/Staying%20On%20The%20Phone%20Browser
-!   - Version: 06March2026v1
+!   - Version: 07March2026v1
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#english
 ! * 🎫 Ad Removal List for Unusual Ads
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/AdRemovalListForUnusualAds.txt
@@ -16246,6 +16246,7 @@ cnn.com##a[href*=-baby-]:not([href*=mortality])
 nettavisen.no#?#.story:has-text(/ble far([  ]|$)/)
 dr.dk##a[href$=-far]
 nrk.no#?#.kur-newsfeed__message:has-text(/venter\sbarn/i)
+nrk.no##.kur-room:has-text(/babynyhet/i)
 aftonbladet.se##a[href*=fatt-en-dotter]
 theguardian.com##ul[data-component*=carousel] li:has(a[href*=pregnan])
 ! 🤾🏼‍♂️ Anti-'Corrupt sports' List https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/AntiCorruptSportsList.txt
@@ -20376,6 +20377,7 @@ coinlive.com##.ant-tooltip
 coinlive.com##.ant-tooltip-open
 panewslab.com##button[data-grace-area-trigger]
 panewslab.com##div.leading-none ~ div:not([class]):last-of-type
+foodora.*##.bds-c-sticky-banner
 @@/jquery.smartbanner.js^
 .smartbanner.js$domain=~mcpedl.com
 ##div[data-test-id$=InterstitialUpsell]
