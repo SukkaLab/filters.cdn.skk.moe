@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sun, 08 Mar 2026 18:53:52 GMT
+! Last modified: Sun, 08 Mar 2026 22:43:49 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sun, 08 Mar 2026 12:19:00 +0000
+!   - Last modified: Sun, 08 Mar 2026 19:37:26 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Sat, 07 Mar 2026 15:07:37 +0000
@@ -20,7 +20,7 @@
 !   - Last modified: Thu, 05 Mar 2026 03:37:34 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Sat, 07 Mar 2026 11:02:18 +0000
+!   - Last modified: Sun, 08 Mar 2026 16:19:02 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
 !   - Last modified: Sun, 01 Mar 2026 06:15:18 +0000
@@ -22046,7 +22046,7 @@ sizecharts.net##+js(rmnt, #text, adinserter)
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$redirect=google-ima.js,domain=ted.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$domain=ted.com
 talksport.com##+js(rmnt, script, AD_URL)
-pcoptimizedsettings.com##+js(rmnt, script, .onerror)
+pcoptimizedsettings.com##+js(rmnt, script, return'\\w+')
 pcoptimizedsettings.com###tie-wrapper > div[style="margin: 15px auto; text-align: center; display: block; clear: both; height: 250px;"]
 ||iptvsat-forum.com/banners/$image
 cardshare.biz##+js(acs, $, btoa)
@@ -22317,12 +22317,12 @@ animixstream.com,pro.iqsmartgames.com##+js(nowoif)
 toonstream.*##.fake-player-overlay
 mamamia.com.au##.top-leaderboard-ad-container
 mamamia.com.au##.header-main-container:style(top: 0 !important;)
+/api/popads-code
 ||tv247us.vip/nordvpn.mp4$media,domain=player.234us.sbs,redirect=noopmp3-0.1s
 ||tv247us.vip/nordvpn.png
-||tv247us.vip/api/popads-code
 ||tv247us.vip/lib.js
 ||tv247us.vip^$csp=sandbox allow-forms allow-same-origin allow-scripts allow-modals allow-orientation-lock allow-pointer-lock allow-presentation allow-top-navigation
-||player.*.sbs/adsconfig.json
+||player.*/adsconfig.json
 pasteflash.sx##+js(norafif, blocked)
 game-repack.site##+js(nowoif)
 filecrate.store##+js(aeld, click, !adShown)
@@ -22413,6 +22413,8 @@ manhuarmtl.com##.da-container-wrapper
 ||cafflekiloton.com^
 ||cylindrical-suggestion.com^
 ||zealousimage.com^
+y8.com###request-play-game-ad:remove()
+hardwaretimes.com##+js(rmnt, script, return'%')
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -30709,7 +30711,6 @@ lauradaydo.com##+js(acs, WebAssembly, atob)
 japscan.*#@#.navbar-nav > li.nav-item > a.text-truncate.nav-link.font-weight-bold[href*="?"]
 japscan.*#@#body > div.full-container > div.full-container.text-center > div.mt-2[style="margin: 0px auto; display: block;"] > a.Aikoi.donate[target="_blank"][rel][href^="https://www.longosto.shop/?utm_source="] > img.img-fluid
 japscan.*##+js(trusted-set, pubadxtag, 'json:{"divIds":[]}')
-japscan.*##+js(trusted-suppress-native-method, Document.prototype.querySelector, '"/^[#.][A-Z][-A-Z_a-z]+$/"')
 japscan.*##+js(trusted-suppress-native-method, Document.prototype.querySelector, '"/^\[data-l/"')
 japscan.*##+js(trusted-suppress-native-method, Document.prototype.querySelectorAll, '"/^[#.][A-Z][-A-Z_a-z]+$/"')
 japscan.*##span ~ div[class][id]:not(#chapters, #reader):remove()
@@ -30756,7 +30757,7 @@ japscan.*##+js(norafif, Date)
 japscan.*##.HuKlQ > div > div:not(#reader):remove()
 japscan.*##+js(aost, MessageChannel, /stackDepth:2.+inlineScript/)
 japscan.*###noticeMessage[role] ~ div:not(#reader):remove()
-japscan.*##div[yazow]:remove()
+japscan.*##div[yazop]:remove()
 japscan.*##html > div[style="position: fixed; inset: 0px; z-index: 2147483647; pointer-events: auto;"]
 japscan.*##+js(norafif, requestAnimationFrame)
 japscan.*##+js(trusted-suppress-native-method, Document.prototype.createElement, '"span"', abort, /apply in.+[0-9A-Za-z]{8\,10} inlineScript/)
@@ -30765,7 +30766,7 @@ japscan.*##+js(trusted-suppress-native-method, Document.prototype.createElement,
 japscan.*##+js(aopr, aclib)
 japscan.*##+js(trusted-suppress-native-method, Element.prototype.getElementsByTagName, '"div"', abort, /apply in.+[0-9A-Za-z]{8\,10} inlineScript/)
 japscan.*##+js(aost, performance.now, /\s[0-9A-Za-z]{8\,10} inlineScript:1/)
-japscan.*##+js(trusted-suppress-native-method, Document.prototype.getElementById, '"/^single-reader-z2$/"', prevent, /Image\.<|([0-9A-Za-z]{8\,10}\/){2}</)
+japscan.*##+js(trusted-suppress-native-method, Document.prototype.getElementById, '"/^single-reader-/"', prevent, /Image(Element)?\.<|([0-9A-Za-z]{8\,10}\/){2}</)
 poophq.com,veev.to,doods.to##+js(nowoif)
 poophq.com,veev.to,doods.to##+js(no-xhr-if, /vast.php?)
 poophq.com,veev.to,doods.to##+js(no-xhr-if, /click\.com|preroll|native_render\.js|acscdn/, length:10001)
