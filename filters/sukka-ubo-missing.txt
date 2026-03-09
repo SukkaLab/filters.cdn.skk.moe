@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Mon, 09 Mar 2026 07:18:44 GMT
+! Last modified: Mon, 09 Mar 2026 11:04:59 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.1.20
+!   - Version: 2.1.1.21
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202602270839
@@ -49930,6 +49930,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||countly.
 ||countly-
 |piwik.
+||ingest-api.evoto.ai^
 ||api.jformatter.com^
 ||analytics-api.penpencil.co^
 ||health.flowplayer.com^
@@ -117568,6 +117569,7 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||tiles.wo-cloud.com/analytics
 cleverfit.fitness-konzepte.de##+js(set-local-storage-item, one_stats_metadata, $remove$)
 ||cleverfit.fitness-konzepte.de/_api/stats-service
 ||privacyguides.org/public/ghost-stats.min.js
