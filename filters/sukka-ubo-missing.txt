@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Tue, 10 Mar 2026 15:09:53 GMT
+! Last modified: Tue, 10 Mar 2026 19:10:34 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.1.30
+!   - Version: 2.1.1.32
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202602270839
@@ -126506,6 +126506,7 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||infpol.ru/statistics.js
 ||api-gateway-global.viu.com/api/audienceTargeting/
 ||careers.lilly.com/*/phenomtrack.min.js
 ||tiles.wo-cloud.com/analytics
@@ -131777,11 +131778,13 @@ dlsdk.appsflyer.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||bdtelemetry.amazon^
+||rum.us-east-1.amazonaws.com^
 ||log.sweepycleanplus.com^
 ||log.photorecoverypicturerecovery.com^
 ||log.scanqrcodedesign.live^
 ||log.cleanerwish.live^
-||trace-v1.free-reels.com^
+||trace-*.free-reels.com^
 ||tracking.twelveapp.sh^
 ||trkcliq.com^
 ||stats.norton.com^
