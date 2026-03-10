@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Tue, 10 Mar 2026 07:20:46 GMT
+! Last modified: Tue, 10 Mar 2026 11:02:18 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Tue, 10 Mar 2026 05:56:15 +0000
+!   - Last modified: Tue, 10 Mar 2026 07:46:27 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Mon, 09 Mar 2026 17:50:43 +0000
@@ -9553,6 +9553,7 @@ playeriframe.sbs##body > a[href][target="_blank"][rel*="noopener"]
 cloud.hownetwork.xyz###overlay
 bus-location.1507t.xyz##+js(nostif, ()=>, 3000)
 map.naver.com##+js(json-edit-xhr-response, .layers.*[?.metadata.name=="POI_Ads"], propsToMatch, /PCWeb_Real.json)
+aagag.com##+js(no-xhr-if, googlesyndication)
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=player.pl
 player.pl##+js(no-fetch-if, /gaid=, war:noop-vast2.xml)
 jelonka.com##+js(rmnt, script, div.offsetHeight)
@@ -22423,6 +22424,7 @@ manhuarmtl.com##.da-container-wrapper
 ||zealousimage.com^
 y8.com###request-play-game-ad:remove()
 simpmusic.org##+js(no-xhr-if, googlesyndication)
+myaew.com##+js(no-fetch-if, imasdk)
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
