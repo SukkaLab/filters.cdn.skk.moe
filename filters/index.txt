@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Filters
-! Last modified: Sat, 07 Mar 2026 09:54:01 GMT
+! Last modified: Tue, 10 Mar 2026 07:20:47 GMT
 ! Expires: 1 hours
 ! Description: The filters from Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -232,6 +232,7 @@ stripe.com##+js(no-fetch-if, r.stripe.com/b method:POST)
 ||xmcdn.com$important,app=com.xiaomi.mico
 ||gitv.tv$important,app=com.xiaomi.mico
 ||qq.com$important,app=com.xiaomi.mico
+||www.bing.com/?shorturl=$doc
 www.deepl.com###lmt_pro_ad_container
 www.deepl.com###dl_quotes_container
 ||gtm.deepl.com/gtm.js$redirect=googletagmanager_gtm.js
