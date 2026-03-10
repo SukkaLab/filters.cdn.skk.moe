@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Tue, 10 Mar 2026 07:09:47 GMT
+! Last modified: Tue, 10 Mar 2026 07:20:46 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,17 +18,13 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202603100702
+!   - Version: 202603100711
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 10 Mar 2026 07:02 UTC
+!   - Last modified: 10 Mar 2026 07:11 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
-! * ⚙️ Dandelion Sprout's Annoyances List
-!   - URL: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AnnoyancesList
-!   - Version: 03March2026v1-Compilation
-!   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 🎯 DailyMotion Simplicity
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/DailyMotionSimplicity.txt
 !   - Version: 16November2020v2-Beta
@@ -2629,150 +2625,6 @@ bigpuzzle.ru##td[valign="top"][width="240px"][height="600"]
 ||whisperingcrib.com^
 ||womanear.com^
 ||wryfinger.com^
-! ⚙️ Dandelion Sprout's Annoyances List https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AnnoyancesList
-github.com##html:has(meta[content$="/DandelionSprout/adfilt/discussions/163"]) .js-timeline-item > .TimelineItem > div[id^=discussioncomment-]:has-text(/^.*(I have fixed it in |This has been fixed in|It has now been fixed in ).*$/i) .timeline-comment:style(background-color: #cee4c5 !important)
-github.com##html:has(meta[content$="/DandelionSprout/adfilt/discussions/163"]) .js-timeline-item > .TimelineItem > div[id^=discussioncomment-]:has-text(/^.*(I have fixed it in |This has been fixed in|It has now been fixed in ).*$/i) .timeline-comment > div:style(background-color: #cee4c5 !important)
-github.com##html:has(meta[content$="/DandelionSprout/adfilt/discussions/163"]) .js-timeline-item > .TimelineItem > div[id^=discussioncomment-]:has-text(/^.*(I have fixed it in |This has been fixed in|It has now been fixed in ).*$/i) .timeline-comment > div > div:style(background-color: #cee4c5 !important)
-freelancer.com##.PageProjectViewLogout-freelancerInfo:has(.small-flag.bangladesh)
-whynohttps.com##tbody > tr:has([src="/flags/4x3/cn.svg"])
-2fa.directory##.table-danger
-manage.ntppool.org#?#span[id^=server_]:has(.deletion):has-text(/^.*(-[3-9]\d|-100).*$/)
-quora.com###mainContent > div > .q-box:has(.q-inline.qu-mr--small)
-quora.com###mainContent > div > .qu-borderRadius--small:has(> [class=q-box])
-docs.google.com###docs-presence
-forums.lanik.us##div.bug
-||freshports.org/images/notbug.gif^
-://go.microsoft.com/fwlink/?LinkID=219472^$all
-foodora.*##.top-banner-container
-foodora.*##.page-wrapper.order-component:style(margin-top: 128px !important)
-foodora.*##.user-wrapper + .order-components:style(top: 64px !important)
-||dinreisevaksine.no/wp-content/themes/dbh/assets/images/background.jpg^
-/^https://[a-z]{8,25}\.com/v2[a-zA-Z0-9_-]{70,}$/$xmlhttprequest,ping,third-party,important
-34.110.179.148$network
-35.244.133.240$network
-[2600:1901:0:7ec2::1]$network
-[2600:1901:0:809c::1]$network
-@@/favicon.ico|
-@@/favicon1.ico|
-@@/doubleclick.ico|
-@@/adsanity-adblock-detection^$domain=~github.com|~gitlab.*
-@@://adserver.adtech.advertising.
-@@://adserver.advertising.adtech.$third-party
-@@://adtech.adserver.advertising.$third-party
-@@://adtech.advertising.adserver.$third-party
-@@://advertising.adtech.adserver.$third-party
-@@://advertising.adserver.adtech.$third-party
-#@#.adSense
-##.adSense:not(html,body,:empty)
-#@#.adContent
-##.adContent:not(html,body,:empty)
-#@#.ad-text
-##.ad-text:not(html,body,:empty)
-#@#.adBlock
-##.adBlock:not(html,body,:empty)
-#@#.ad-banners
-##.ad-banners:not(html,body,:empty)
-#@#.ad-below
-##.ad-below:not(html,body,:empty)
-#@#.ad-display
-##.ad-display:not(html,body,:empty)
-#@#.ad-displayed
-##.ad-displayed:not(html,body,:empty)
-#@#.ad-item
-##.ad-item:not(html,body,:empty)
-#@#.ad-leaderboard
-##.ad-leaderboard:not(html,body,:empty)
-#@#.ad-native
-##.ad-native:not(html,body,:empty)
-#@#.ad-sense
-##.ad-sense:not(html,body,:empty)
-#@#.adBox
-##.adBox:not(html,body,:empty)
-#@#.pub_300x250
-##.pub_300x250:not(html,body,:empty)
-#@#.pub_300x250m
-##.pub_300x250m:not(html,body,:empty)
-#@#.pub_728x90
-##.pub_728x90:not(html,body,:empty)
-#@#.text-ad
-##.text-ad:not(html,body,:empty)
-#@#.text-ad-links
-##.text-ad-links:not(html,body,:empty)
-#@#.text-ads
-##.text-ads:not(html,body,:empty)
-#@#.text_ad
-##.text_ad:not(html,body,:empty)
-#@#.text_ads
-##.text_ads:not(html,body,:empty)
-#@#.textad
-##.textad:not(html,body,:empty)
-#@#.textAd
-##.textAd:not(html,body,:empty)
-@@/adblock-detection/prebid.js|
-www.youtube.com##.ytd-watch-flexy #dismissible:has(.badge-style-type-simple)
-www.youtube.com##ytd-video-renderer ~ ytd-shelf-renderer[thumbnail-style]
-tv2.no##.banner
-www.finn.no##+js(rc, ads__unit--premium, .ads__unit, stay)
-positivr.fr##.viously-sticked
-positivr.fr##.viously-sticked:style(position: absolute !important; top: 0 !important; left: 0 !important; bottom: 0 !important; right: 0 !important; width: 100% !important;  height: 100% !important; z-index: 1 !important; display: block !important)
-positivr.fr##.viously-sticked #unstick-button
-youtube.com,~m.youtube.com##:not(:matches-path(/watch)):not(:matches-path(/embed)) #movie_player video:remove()
-youtube.com,~m.youtube.com##:not(:matches-path(/watch)):not(:matches-path(/embed)) ytd-miniplayer:remove()
-youtube.com,~m.youtube.com##.ytp-miniplayer-button
-@@://googleadservices.com^|$badfilter
-$third-party,denyallow=microsoft.com,domain=store.rg-adguard.net
-||h5data.talkingdata.net^$3p
-fandom.com##.notifications-box
-flipkart.com##div[style^=flex-grow] div:first-of-type + div.col
-flipkart.com##footer section + div:last-of-type
-###custom-css .vjs-loading-spinner
-valdemarsro.dk###after-recipe .content
-valdemarsro.dk##a[href$="ttps://www.valdemarsro.dk/valdemarsro-premium/"]
-valdemarsro.dk##.banner-horizontal-1
-valdemarsro.dk##.banner-vertical-1
-valdemarsro.dk##.kogebog-side
-valdemarsro.dk###recipe-intro p:last-of-type
-en.wikipedia.org,www.wikipedia.org#?#:is(p,a):has-text(/[ꯀ-꯹ꫠ-꫶]/):style(font-family:sans-serif,"Noto Sans Meetei Mayek","Eeyek","Eeyek Unicode","Nirmala UI")
-||www.facebook.com/2008/$csp=upgrade-insecure-requests
-.bcbits.com/img/heartbreak.png^
-@@||gstatic.com/uservoice/surveys/resources/prod/js/survey/survey_binary$script,domain~=support.google.com
-google.*#@##google-hats-survey
-||appboycdn.com^$third-party
-independent.co.uk,indy100.com##.notification-prompt
-qwant.com##main > div:last-of-type:has(>div>a:is([href*="://chromewebstore."],[href*="://addons.mozilla."]):not([data-testid]))
-/fakepage.html|$important
-/ads.js^$domain=tracksong.github.io|adblock.turtleneck.com,important
-/pagead.js^$domain=adblock.turtleneck.com,important
-@@$xhr,3p,redirect-rule=nooptext:-1,method=head,domain=superadblocktest.com
-@@||doubleclick.net^$xhr,redirect-rule=noop.txt,domain=superadblocktest.com
-@@||pagead2.googlesyndication.com^$xhr,redirect-rule=noop.js,domain=superadblocktest.com
-|https://adblock.*/js/widget/ads.js|$1p
-|https://adblock.*/js/pagead.js|$1p
-corsproxy.io##canvas
-##[id$=-exit-modal-bg]
-://discord.com/api/v*/bogo-promotions^
-://discord.com/api/v*/premium-marketing^
-discord.com##div[data-list-item-id*=skill-trees] + div[class*=" unreadImportant"]
-discord.com##div[data-list-item-id*=skill-trees] ~ div path[d^="M12 23a11 11 0 "]
-www.deviantart.com##.surface-primary[class^=theme-] > div[class^=_][class*=" _"]:last-of-type
-www.deviantart.com##div[role=complementary] > div:not([class*=_]):has(a[href*="/subscriptions?tier="])
-teknikproffset.*##.seg-promotion-wrapper
-||proshop.*/Images/Proshop-GIF-.gif^
-github.com##.clearfix:has(h1:has-text(/^Uploading files .* versions Anti-Malware List$/)):has(div.js-filename:has-text(/^NordicFilters.*$/)):style(background-color:red!important)
-github.com##.clearfix:has(h1:has-text(/^Uploading files .*NorwegianExperimentalList .*$/)):has(div.js-filename:has-text(/^AntiMalware.*$/)):style(background-color:red!important)
-&client_ad_session_id=
-||anyclip.com^$app=TETR.IO.exe
-duckduckgo.com,duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion##button:first-of-type + div:last-of-type[class*=" "]:has(button)
-||binarymark.com/products/*/thank-you-for-using^$popup
-||binarymark.com/products/*/uninstalled^$popup
-||diskpart.com/*?source=auto-popup^$popup
-www.qwant.com###root:has(a[href*=goo]) section div[class]:not([data-testid],[style],[class*=" "],[class*=_]):has([id^=Piwik_])
-adressa.no##.strom .overlay:style(background:none!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important)
-://www.bing.com/?shorturl=$doc
-youtube.com##+js(json-edit, ..adaptiveFormats.*[?.audioTrack.isAutoDubbed])
-youtube.com##+js(json-edit-xhr-response, ..adaptiveFormats.*[?.audioTrack.isAutoDubbed], propsToMatch, /youtubei)
-youtube.com##+js(json-edit-fetch-response, ..adaptiveFormats.*[?.audioTrack.isAutoDubbed], propsToMatch, /youtubei)
-youtube.com##+js(rpnt, script, (function serverContract(), window.ytInitialPlayerResponse=JSON.parse(JSON.stringify(window.ytInitialPlayerResponse));(function serverContract(), sedCount, 1)
 ! 🎯 DailyMotion Simplicity https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/DailyMotionSimplicity.txt
 dailymotion.com##div[class^=DiscoveryQueueDisplay__sectionContainer]:has(a[class*=channelCard])
 dailymotion.com#?#div[class^=DiscoveryQueueDisplay__sectionContainer]:has(span:has-text(Trend))
@@ -19903,6 +19755,7 @@ fandom.com##.reviews
 fandom.com##.recirculation-prefooter__recommendations
 fandom.com##.global-navigation__fanhub-wrapper
 fandom.com##.global-footer a[href*=futhead]
+fandom.com##.notifications-box
 fandom.com##.render-wiki-recommendations
 fandom.com##div[class^=page-footer__]
 fandom.com##.open-web-wrapper
