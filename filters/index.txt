@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Filters
-! Last modified: Tue, 10 Mar 2026 07:20:47 GMT
+! Last modified: Wed, 11 Mar 2026 11:17:00 GMT
 ! Expires: 1 hours
 ! Description: The filters from Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -107,6 +107,8 @@ google.*#@#div[data-q][data-al]
 lingchenzi.com#@#.category-share
 @@||sentry.io^$domain=ui.com
 *$script,from=thepiratebay.org,badfilter
+.com/bn.js$3p,badfilter
+.com/bn.js$3p,domain=~nr.staticblitz.com
 ||bad.third-party.site
 ||playground.oxc.rs$important
 ||amap.com$3p,domain=~www.amap.com|~amap.com|~gaode.com|~bigdata.speedtest.cn|~cjia.com|~giant.com.cn
@@ -167,9 +169,14 @@ www.dnsfilter.com##+js(aopw, window.analytics)
 ||npmx.dev/_v/script.js
 ||vemetric.com$3p
 ||affonso.io$3p
+||himetrica.com/api$3p
 ||cnzz.com/z_stat.php$redirect=noop.js
 ||cnzz.com^$redirect=noop.txt
 ||static.doubleclick.net/instream/ad_status.js$redirect=noop.js
+||cdn.virtuoussoftware.com/virtuous.embed.min.js$3p
+||hostedseal.trustarc.com/privacy-seal/seal$3p
+||cdn.lgrckt-in.com/logger
+||static.newsbreak.com/business/tracking/
 /ping.gif$redirect=1x1.gif
 /counters.gif$redirect=1x1.gif
 ||pixel.wp.com/g.gif$redirect=1x1.gif
@@ -349,12 +356,9 @@ youtube.com##ytd-item-section-renderer:has-text(Members only)
 ||126.com$domain=maplesugar.top
 ||blog.maplesugar.top/usr/uploads/2024/09/725322379.jpg
 ||tinypass.com
-||cdn.virtuoussoftware.com/virtuous.embed.min.js$3p
-||hostedseal.trustarc.com/privacy-seal/seal$3p
-||cdn.lgrckt-in.com/logger
 ||mymediaing.my/sdk$3p
 ||endorsely.com$3p
-||static.newsbreak.com/business/tracking/
+||zkcdn.net/Advertisers
 ||adtech.redventures.io^$important
 ||coinbase.com/sw.js
 ||yorgio-chat-backend-v2.herokuapp.com$subdocument
