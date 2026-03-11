@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Tue, 10 Mar 2026 22:48:10 GMT
+! Last modified: Wed, 11 Mar 2026 04:18:58 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,12 +8,12 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.1.34
+!   - Version: 2.1.1.35
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
-!   - Version: 202602270839
+!   - Version: 202603110915
 !   - Homepage: https://github.com/cjx82630/cjxlist
-!   - Last modified: 2026/02/27 08:39 +0800
+!   - Last modified: 2026/03/11 09:15 +0800
 ! --------------------------------------------------------------
 ! AdGuard Tracking Protection filter (Optimized) https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
 www.youtube.com##+js(no-xhr-if, /\/api\/stats\/atr\?.+?&rt=\d+\.\d+.+?&volume=\d+&cbr=.+?&fexp=v1%[-%0-9C]{300\,}&.+?&muted=\d(&vis=3)?&docid=/ method:POST)
@@ -127985,6 +127985,7 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||cad.de/images/1pixel.gif
 ||infpol.ru/statistics.js
 ||api-gateway-global.viu.com/api/audienceTargeting/
 ||careers.lilly.com/*/phenomtrack.min.js
@@ -136590,6 +136591,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 @@||reseguiden.se^*.siteCatalyst.js
 ! CJX's Annoyance List https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 /wiseatom/banner/pack_
+/npm/disable-devtool
 /bbs/include/javascript/adblock.
 /template/bingfeng/statics/js/pingbi.js
 -bobo_recommend_
