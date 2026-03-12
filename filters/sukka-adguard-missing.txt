@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Thu, 12 Mar 2026 07:13:56 GMT
+! Last modified: Thu, 12 Mar 2026 11:01:02 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -11,7 +11,7 @@
 !   - Last modified: Thu, 12 Mar 2026 02:44:26 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
-!   - Last modified: Wed, 11 Mar 2026 18:16:50 +0000
+!   - Last modified: Thu, 12 Mar 2026 08:29:56 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
 !   - Last modified: Wed, 11 Mar 2026 11:24:33 +0000
@@ -27,7 +27,7 @@
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Wed, 11 Mar 2026 16:21:23 +0000
+!   - Last modified: Thu, 12 Mar 2026 08:09:12 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
 !   - Last modified: Wed, 11 Mar 2026 17:27:31 +0000
@@ -26713,6 +26713,7 @@ ublockdns.com##main>section>div:first-child::before:style(content: 'Not related 
 ||cdn-server.beer/api/css.js
 ||claude-code-$doc,to=edgeone.app|pages.dev|squarespace.com
 ||remover-bg.com^$all
+||romsns.com^$all
 ! uBlock filters – Privacy https://ublockorigin.pages.dev/filters/privacy.min.txt
 ||google-analytics.com/analytics.js$script,xhr,redirect=google-analytics_analytics.js:5
 ||google-analytics.com/cx/api.js$script,redirect=google-analytics.com/cx/api.js:5
@@ -33231,6 +33232,7 @@ wistia.com##+js(trusted-set-local-storage-item, wistia_cookie_consent, '{"ad_sto
 frandroid.com##+js(trusted-click-element, button[id="didomi-notice-agree-button"])
 poki.com##+js(trusted-set-local-storage-item, state/privacy/familyModeCookieConsentShown, '{"time":$now$,"value":"true"}')
 poki.com##+js(trusted-set-local-storage-item, state/privacy/pokiAnalytics, '{"time":$now$,"value":"false"}')
+politiken.dk##+js(trusted-click-element, button#CybotCookiebotDialogBodyButtonDecline)
 ! uBlock filters – Annoyances https://ublockorigin.pages.dev/filters/annoyances.min.txt
 mimaletadepeliculas.blogspot.com##+js(aopr, document.oncontextmenu)
 mimaletadepeliculas.blogspot.com##+js(acs, document.onselectstart)
