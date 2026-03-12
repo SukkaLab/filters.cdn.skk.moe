@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Thu, 12 Mar 2026 15:09:14 GMT
+! Last modified: Thu, 12 Mar 2026 19:13:31 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.1.44
+!   - Version: 2.1.1.45
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -134327,6 +134327,7 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=saturn.de
 @@||metrics.us.playstation.com/b/ss/
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
+||jsdelivr.net/npm/@fingerprintjs/fingerprintjs@3/dist/fp.min.js$script,redirect=fingerprint3.js,domain=suki-kira.com
 @@||googletagmanager.com/gtm.js$domain=vidaxl.se
 @@||cdn.perfops.net/rom3/rom3.min.js$domain=catbox.moe
 @@||cdn.cxense.com/cx.cce.js$domain=diamond.jp
@@ -135160,7 +135161,6 @@ extrahop.com##+js(no-setTimeout-if, ad blocker)
 @@||googletagmanager.com/gtm.js$domain=sanwacompany.co.jp
 @@||rtoaster.jp/Rtoaster.js$domain=satofull.jp
 @@||pv.sohu.com/cityjson$domain=bulletin.cebpubservice.com
-suki-kira.com##+js(remove-attr, disabled, button.vote-submit)
 @@||mpsnare.iesnare.com/snare.js$domain=rossmann.de
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=freundin.de
 @@||googletagmanager.com/gtag/js$script,domain=www3.nissan.co.jp
