@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Fri, 13 Mar 2026 04:21:34 GMT
+! Last modified: Fri, 13 Mar 2026 07:13:44 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,10 +8,10 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Fri, 13 Mar 2026 01:48:43 +0000
+!   - Last modified: Fri, 13 Mar 2026 05:51:01 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
-!   - Last modified: Thu, 12 Mar 2026 08:29:56 +0000
+!   - Last modified: Fri, 13 Mar 2026 05:35:59 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
 !   - Last modified: Fri, 13 Mar 2026 01:05:35 +0000
@@ -7362,6 +7362,7 @@ krakenfiles.com##+js(set, HTMLScriptElement.prototype.onerror, undefined)
 @@*$ghide,domain=krakenfiles.com
 krakenfiles.com##.native-banner
 krakenfiles.com##.myad-box
+krakenfiles.com##a[href][target="_blank"]
 ||palpatecricketmajesty.com^
 ||wounofoarausooy.net^$popup
 aman-dn.blogspot.com#@#.ads-ad
@@ -26714,6 +26715,7 @@ ublockdns.com##main>section>div:first-child::before:style(content: 'Not related 
 ||claude-code-$doc,to=edgeone.app|pages.dev|squarespace.com
 ||remover-bg.com^$all
 ||romsns.com^$all
+||aiclaude.jp^$all
 ! uBlock filters – Privacy https://ublockorigin.pages.dev/filters/privacy.min.txt
 ||google-analytics.com/analytics.js$script,xhr,redirect=google-analytics_analytics.js:5
 ||google-analytics.com/cx/api.js$script,redirect=google-analytics.com/cx/api.js:5
