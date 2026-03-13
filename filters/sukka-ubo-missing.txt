@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Fri, 13 Mar 2026 15:02:02 GMT
+! Last modified: Fri, 13 Mar 2026 19:03:29 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.1.50
+!   - Version: 2.1.1.52
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -52530,6 +52530,8 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||countly.
 ||countly-
 |piwik.
+||pulse.perfmetrics.netflix.com^
+||eu-south-2.alb.pulse.perfmetrics.netflix.com^
 ||stats.gastronom.ru^
 ||audience-pccw.viu.com^
 ||ingest-api.evoto.ai^
@@ -54027,7 +54029,6 @@ prd.api.bleacherreport.com^
 ||d1cdnlzf6usiff.cloudfront.net^
 ||d1fc8wv8zag5ca.cloudfront.net^
 ||d1gwclp1pmzk26.cloudfront.net^
-||d1l6p2sc9645hc.cloudfront.net^
 ||d1miwkthq39xj8.cloudfront.net^
 ||d1qpxk1wfeh8v1.cloudfront.net^
 ||d1snv67wdds0p2.cloudfront.net^
@@ -127988,6 +127989,7 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||api.k2s.cc/v1/analytics/
 ||jm-madeira.pt/html/js/iter-libraries/iter-statistics.js
 ||cdn.iterwebcms.com/*/mas-tracker-min.js
 ||api.blux.ai/prod/*/applications/*/blux-users/*/collect-events
