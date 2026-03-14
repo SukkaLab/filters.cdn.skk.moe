@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sat, 14 Mar 2026 07:07:34 GMT
+! Last modified: Sat, 14 Mar 2026 10:47:50 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Fri, 13 Mar 2026 17:51:59 +0000
+!   - Last modified: Sat, 14 Mar 2026 08:14:31 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Fri, 13 Mar 2026 09:13:47 +0000
@@ -20,7 +20,7 @@
 !   - Last modified: Sat, 14 Mar 2026 01:59:51 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Thu, 12 Mar 2026 11:22:06 +0000
+!   - Last modified: Sat, 14 Mar 2026 05:08:19 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
 !   - Last modified: Sun, 01 Mar 2026 06:15:18 +0000
@@ -19814,7 +19814,7 @@ btv.bg,btvsport.bg,btvnovinite.bg,svetatnazdraveto.bg##+js(no-xhr-if, googlesynd
 btv.bg,btvsport.bg,btvnovinite.bg,svetatnazdraveto.bg##+js(no-fetch-if, googlesyndication)
 @@*$ghide,domain=btv.bg|btvsport.bg|btvnovinite.bg|svetatnazdraveto.bg
 @@*$script,1p,domain=btv.bg|btvsport.bg|btvnovinite.bg|svetatnazdraveto.bg
-btvnovinite.bg,svetatnazdraveto.bg##+js(no-fetch-if, imasdk)
+btvnovinite.bg,btvsport.bg,svetatnazdraveto.bg##+js(no-fetch-if, imasdk)
 javsek.net##+js(nosiif, pop)
 $script,3p,denyallow=facebook.net|fbcdn.net,domain=javsek.net
 1jour1film.*##a[href]#clickfakeplayer:remove-attr(href)
@@ -31029,6 +31029,7 @@ magma.com##+js(trusted-set, Object.prototype.adsStrategy, 'json:{"tag":"","phase
 /o/p/*$image,badfilter
 /_astro/useprotontelemetry.$script,badfilter
 /v1/rgstr^$badfilter
+www.google.*#@#div[data-async-context] [style]:has(a[href^="/aclk?sa="])
 ! uBlock filters – Experimental https://ublockorigin.pages.dev/filters/experimental.min.txt
 www.youtube.com#@#+js(trusted-rpnt, script, (function serverContract(), (()=>{if("YOUTUBE_PREMIUM_LOGO"===ytInitialData?.topbar?.desktopTopbarRenderer?.logo?.topbarLogoRenderer?.iconImage?.iconType)return void(ytcfg.data_.INNERTUBE_CONTEXT.client.userAgent=ytcfg.data_.INNERTUBE_CONTEXT.client.userAgent.replace?.(/(Mozilla\/5\.0 \([^)]+)/\,"$1; premium"));if(location.href.startsWith("https://www.youtube.com/tv#/")||location.href.startsWith("https://www.youtube.com/embed/"))return;document.addEventListener("DOMContentLoaded"\,(function(){const e=()=>{const e=document.getElementById("movie_player");if(!e)return;const t=e.getProgressState?.()\,o=e.getPlayerResponse?.();if(t&&t.duration>0&&(t.loaded<t.duration||t.duration-t.current>1)||o?.videoDetails?.isLive){if(!e.getStatsForNerds?.()?.debug_info?.startsWith?.("SSAP\, AD")){const t=o.videoDetails?.videoId;return void("UNPLAYABLE"!==o?.playabilityStatus?.status||o?.playabilityStatus?.errorScreen?.playerErrorMessageRenderer?.playerCaptchaViewModel||"WEB_PAGE_TYPE_UNKNOWN"!==o?.playabilityStatus?.errorScreen?.playerErrorMessageRenderer?.subreason?.runs?.[0]?.navigationEndpoint?.commandMetadata?.webCommandMetadata?.webPageType||"https://support.google.com/youtube/answer/3037019"!==o?.playabilityStatus?.errorScreen?.playerErrorMessageRenderer?.subreason?.runs?.[0]?.navigationEndpoint?.commandMetadata?.webCommandMetadata?.url||e.loadVideoById(t\,o.playerConfig?.playbackStartConfig?.startSeconds??0))}t.duration>0&&e.seekTo?.(t.duration)}};e()\,new MutationObserver((()=>{e()})).observe(document\,{childList:!0\,subtree:!0})}));const e={apply:(e\,t\,o)=>{const r=o[0];return"function"==typeof r&&r.toString().includes("onAbnormalityDetected")&&(o[0]=function(){})\,Reflect.apply(e\,t\,o)}};window.Promise.prototype.then=new Proxy(window.Promise.prototype.then\,e)})();(function serverContract(), sedCount, 1)
 www.youtube.com#@#+js(trusted-edit-inbound-object, JSON.stringify, 0, [?..playbackContext.contentPlaybackContext][?!.attestationRequest][?!.captionsRequested][?!.settingItemIds][?!.params^="YAHIAQ"][?!..mainAppWebInfo.graftUrl*="&list="][?!..mainAppWebInfo.graftUrl*="/shorts/"][?!..userAgent*="premium"]..client[?.clientName=="WEB"]+={"clientScreen":"CHANNEL"})
