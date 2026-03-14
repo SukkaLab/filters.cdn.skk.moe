@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Fri, 13 Mar 2026 22:46:11 GMT
+! Last modified: Sat, 14 Mar 2026 04:19:46 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -17,7 +17,7 @@
 !   - Last modified: Fri, 13 Mar 2026 15:37:38 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
-!   - Last modified: Thu, 05 Mar 2026 03:37:34 +0000
+!   - Last modified: Sat, 14 Mar 2026 01:59:51 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
 !   - Last modified: Thu, 12 Mar 2026 11:22:06 +0000
@@ -30731,6 +30731,8 @@ missav78.top##img[onerror="this.src='/sample/placeholder.jpg'"]:remove-attr(oner
 temperatur.nu#@#.holidAds:upward(1)
 ||target-video.com^$3p,badfilter
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$script,3p,redirect-rule,from=webmd.com
+||ruamupr.com^$script,redirect=noopjs,domain=thegatewaypundit.com
+thegatewaypundit.com##+js(rmnt, script, Object.getOwnPropertyDescriptor(Document.prototype)
 ! uBlock filters – Quick fixes https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
 @@||hb.vntsm.com/v4/live/vms/sites/aternos.org/index.js$script,domain=aternos.org
 aternos.org##.header-center:style(margin-top:-5000px !important;)
