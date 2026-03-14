@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sat, 14 Mar 2026 14:47:09 GMT
+! Last modified: Sat, 14 Mar 2026 18:59:01 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,13 +8,13 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sat, 14 Mar 2026 08:14:31 +0000
+!   - Last modified: Sat, 14 Mar 2026 13:44:35 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Sat, 14 Mar 2026 11:06:07 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Fri, 13 Mar 2026 15:37:38 +0000
+!   - Last modified: Sat, 14 Mar 2026 12:18:07 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
 !   - Last modified: Sat, 14 Mar 2026 01:59:51 +0000
@@ -4886,17 +4886,6 @@ gulf-up.com##ins.adsbygoogle
 keysbrasil.blogspot.com##+js(nostif, nextFunction, 2000)
 @@||fiatclub.eu^$ghide
 @@||liveadexchanger.com/a/display.php$script,domain=prem.link
-multiup.io,multiup.org,multiup.eu##+js(acs, decodeURI, decodeURIComponent)
-multiup.io,multiup.org,multiup.eu##+js(nosiif, .submit)
-multiup.io##+js(nowoif, _blank)
-multiup.io##+js(rpnt, script, setInterval)
-multiup.io,multiup.org,multiup.eu##.text-center.bg-info
-multiup.io,multiup.org,multiup.eu##div.col-md-4:has(> .panel > .panel-footer > a[href^="/download-fast/"])
-multiup.io,multiup.org,multiup.eu##a[href^="/download-fast/"]
-multiup.io,multiup.org,multiup.eu##.mfp-ready
-multiup.io,multiup.org,multiup.eu##div.text-center:has(a[class="btn btn-success"][href^="abp:subscribe"])
-*$popunder,3p,domain=multiup.io|multiup.org|multiup.eu
-||multinews.me^$3p
 tmearn.*##+js(aopr, app_vars.force_disable_adblock)
 tmearn.*##+js(nowoif)
 tmearn.*##+js(set, blurred, false)
@@ -22268,6 +22257,18 @@ coolmathgames.com###block-adstop-otherpage-728x90
 coolmathgames.com##[class*="-ads"]
 coolmathgames.com##+js(set, start_full_screen_without_ad, false)
 coolmathgames.com##+js(set, drupalSettings.coolmath.hide_preroll_ads, true)
+multiup.io,multiup.org,multiup.eu##+js(acs, decodeURI, decodeURIComponent)
+multiup.io,multiup.org,multiup.eu##+js(nosiif, .submit)
+multiup.io,multiup.org,multiup.eu##+js(acs, document.addEventListener, window.open)
+multiup.io##+js(nowoif, _blank)
+multiup.io##+js(rpnt, script, setInterval)
+multiup.io,multiup.org,multiup.eu##.text-center.bg-info
+multiup.io,multiup.org,multiup.eu##div.col-md-4:has(> .panel > .panel-footer > a[href^="/download-fast/"])
+multiup.io,multiup.org,multiup.eu##a[href^="/download-fast/"]
+multiup.io,multiup.org,multiup.eu##.mfp-ready
+multiup.io,multiup.org,multiup.eu##div.text-center:has(a[class="btn btn-success"][href^="abp:subscribe"])
+*$popunder,3p,domain=multiup.io|multiup.org|multiup.eu
+||multinews.me^$3p
 hostserverz.com##+js(no-xhr-if, googlesyndication)
 youboxtv.com##+js(rmnt, script, '"hidden"')
 rootz.so##+js(nowoif, _blank)
@@ -22451,6 +22452,12 @@ microsip.org##+js(rmnt, script, /google_esf|ins\.adsbygoogle/)
 manganato.gg##+js(nowoif)
 streamdesi.com##+js(nowoif, _blank)
 ||overplantovervaluetwine.com^
+magesy.blog##+js(nostif, /adbl/i)
+||chessgames.com/opt.js
+||kpopsingers.com/*.php?t=
+||increaserev4.static-cloudflare.workers.dev^
+||static-cloudflare.workers.dev/?target=aHR0c*$script,3p
+||minutemedia-prebid.com^
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -26779,7 +26786,7 @@ www.google.*##+js(set, rwt, noopFunc)
 www.google.*###main a[href][data-sb^="/url?"]:remove-attr(data-sb)
 www.google.*##+js(href-sanitizer, #main a[href^="/url?q=http"], ?q)
 www.google.*###main a[href][ping^="/url?"]:remove-attr(ping)
-||www.google.*/url?sa=t&rct=j&source=webhp&url=$urlskip=?url
+||www.google.*/url?*&url=$doc,urlskip=?url
 www.google.*##+js(set-attr, c-wiz[data-p] [data-query] a[target="_blank"][role="link"], rlhc, 1)
 liberation.fr,officedepot.fr,oui.sncf##+js(acs, document.createElement, '.js')
 sfr.fr##+js(aopr, _oEa)
