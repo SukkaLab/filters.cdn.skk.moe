@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sat, 14 Mar 2026 22:47:26 GMT
+! Last modified: Sun, 15 Mar 2026 04:41:44 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,13 +8,13 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sat, 14 Mar 2026 13:44:35 +0000
+!   - Last modified: Sun, 15 Mar 2026 02:15:12 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Sat, 14 Mar 2026 11:06:07 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Sat, 14 Mar 2026 12:18:07 +0000
+!   - Last modified: Sat, 14 Mar 2026 23:02:16 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
 !   - Last modified: Sat, 14 Mar 2026 01:59:51 +0000
@@ -8229,6 +8229,7 @@ fsicomics.com,fsileaks.com##+js(aeld, click, popMagic)
 /^https:\/\/www\.[a-z]{8,14}\.com\/[a-z]{1,4}\.js$/$script,3p,match-case,header=x-powered-by:Express,from=~edu|~gov,to=com|~exploretock.com|~photopea.com
 /^https:\/\/www\.[a-z]{8,16}\.com\/(?:[A-Za-z]+\/)*(?:[_0-9A-Za-z]{1,20}[-.])*[_0-9A-Za-z]{1,20}\.js$/$script,xhr,3p,match-case,to=com,header=popads-node
 /^https:\/\/www\.[a-z]{8,16}\.com\/(?:[A-Za-z]+\/)*(?:[_0-9A-Za-z]{1,20}[-.])*[_0-9A-Za-z]{1,20}\.js$/$script,xhr,3p,match-case,to=com,header=link:/adsco\.re\/>;rel=preconnect/
+/^https:\/\/www\.[a-z]{8,16}\.com\/(?:[A-Za-z]+\/)*(?:[_0-9A-Za-z]{1,20}[-.])*[_0-9A-Za-z]{1,20}\.js$/$script,xhr,3p,match-case,to=com,header=x-77-pop
 ://www.*.css|$script,xhr,3p,to=com,header=link:/\/>;rel=preconnect/
 ://www.*.css|$script,xhr,3p,to=com,header=popads-node
 ://www.*/images/*.min.js|$script,xhr,3p,to=com
@@ -27163,7 +27164,6 @@ lit.link##+js(href-sanitizer, a[href^="/redirects/link-ad?redirectUrl=aHR0c"], ?
 ||c.vialoops.com/CL0/http$doc,urlskip=/\/CL0\/(http[^\/?#]+)/ -uricomponent
 ||page.link/?link=http$doc,urlskip=?link
 ||www.amazon.*/gp/r.html?*&U=http$doc,urlskip=?U
-||fark.com/goto/$doc,urlskip=/\/goto\/[0-9]+\/([^?#]+)/ +https -uricomponent
 html.duckduckgo.com,lite.duckduckgo.com##+js(href-sanitizer, a[href^="//duckduckgo.com/l/?uddg="], ?uddg)
 starstyle.com##+js(href-sanitizer, a[href^="https://go.skimresources.com/"][href*="&url=http"], ?url)
 insidehook.com,nbcnews.com,pcpartpicker.com,space.com,tomshardware.com##+js(href-sanitizer, a[href^="https://click.linksynergy.com/"][href*="link?id="][href*="&murl=http"], ?murl)
