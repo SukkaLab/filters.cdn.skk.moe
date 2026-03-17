@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Tue, 17 Mar 2026 04:26:54 GMT
+! Last modified: Tue, 17 Mar 2026 07:20:48 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Mon, 16 Mar 2026 15:46:01 +0000
+!   - Last modified: Mon, 16 Mar 2026 23:58:33 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Mon, 16 Mar 2026 15:39:27 +0000
@@ -27,7 +27,7 @@
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Thu, 12 Mar 2026 08:09:12 +0000
+!   - Last modified: Tue, 17 Mar 2026 01:05:11 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
 !   - Last modified: Wed, 11 Mar 2026 17:27:31 +0000
@@ -21505,11 +21505,11 @@ freestreams-live.*>>,~chatango.com,~twitter.com,~youtube.com##+js(nowoif)
 freestreams-live.*>>,~chatango.com,~twitter.com,~youtube.com##+js(acs, EventTarget.prototype.addEventListener, delete window)
 freestreams-live.*>>,~chatango.com,~twitter.com,~youtube.com##+js(rmnt, script, adserverDomain)
 natomanga.com##.ads-contain
-||natomanga.com/js/ads/
 ||natomanga.com/js/cat_
 ||natomanga.com/js/pu_
 /\/js\/(?:[a-z]+\/)?[a-z]+_[a-f0-9]{32}\.js\b/$script,1p,match-case,domain=mangakakalot.gg|natomanga.com|nelomanga.net
-||nelomanga.net/js/ads/main-popunder.js$script
+/js/ads/main-popunder.js$script,domain=mangakakalot.gg|manganato.gg|natomanga.com|nelomanga.net
+manganato.gg##+js(nowoif)
 cryptofaucet.club###claimform:style(display:block !important)
 cryptofaucet.club##.op2
 cryptofaucet.club###lgl
@@ -22460,8 +22460,6 @@ y8.com###request-play-game-ad:remove()
 simpmusic.org##+js(no-xhr-if, googlesyndication)
 myaew.com##+js(no-fetch-if, imasdk)
 microsip.org##+js(rmnt, script, /google_esf|ins\.adsbygoogle/)
-||manganato.gg/js/ads/main-popunder.js
-manganato.gg##+js(nowoif)
 streamdesi.com##+js(nowoif, _blank)
 ||overplantovervaluetwine.com^
 magesy.blog##+js(nostif, /adbl/i)
@@ -31437,6 +31435,7 @@ antallaktikaonline.gr,auto-onderdelen24.nl,autoalkatreszonline24.hu,autodeler.co
 antallaktikaonline.gr,auto-onderdelen24.nl,autoalkatreszonline24.hu,autodeler.co.no,automobilovedily24.cz,autonvaraosat24.fi,autoparti.it,autopecasonline24.pt,autopieseonline24.ro,avtochastionline24.bg,bildelaronline24.se,bildeleshop.dk,buycarparts.co.uk,czesciauto24.pl,onderdelen24.be,pieces24.be,piecesauto24.com,pkwteile.at,pkwteile.ch,pkwteile.de,recambioscoches.es##+js(trusted-click-element, button[data-cookies="disallow_all_cookies"])
 lenovo.com##+js(trusted-set-cookie, _evidon_suppress_notification_cookie, '{"date":"$currentISODate$","suppressed":true}', , , domain, .lenovo.com)
 fes.de##+js(trusted-set-cookie, cookie_consent, '%7B%22consent%22:true,%22options%22:%5B%5D%7D')
+gx.me##+js(trusted-set-cookie, cookie-consent, '{"marketing":false,"necessary":true,"version":2}', , , domain, .gx.me)
 dailymail.co.uk##+js(trusted-click-element, div[data-project="mol-fe-cmp"] button[class*="consent"]:not([class*="reject"]))
 1001games.com,1001hry.cz,1001jeux.fr,1001jocuri.ro,1001jogos.com.br,1001jogos.pt,1001pelit.com,1001spiele.de,auth.hbomax.com,elkspel.nl,gamespot.com,giochixl.it,glamour.com,grajteraz.pl,isladejuegos.com,jatekokxl.hu,mtvuutiset.fi,paixnidiaxl.gr,pushsquare.com,spelo.se,spillespill.no,spilxl.dk,thejournal.ie,thetrainline.com,vkmag.com,zdnet.com##+js(trusted-set-cookie, OptanonAlertBoxClosed, $currentDate$, 1year)
 evaair.com##+js(trusted-set-cookie, _EVAcookieaccept, Y, 1year)
