@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Tue, 17 Mar 2026 22:54:06 GMT
+! Last modified: Wed, 18 Mar 2026 04:32:52 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -27,7 +27,7 @@
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Tue, 17 Mar 2026 11:36:13 +0000
+!   - Last modified: Wed, 18 Mar 2026 02:18:00 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
 !   - Last modified: Tue, 17 Mar 2026 16:14:17 +0000
@@ -31447,6 +31447,8 @@ antallaktikaonline.gr,auto-onderdelen24.nl,autoalkatreszonline24.hu,autodeler.co
 lenovo.com##+js(trusted-set-cookie, _evidon_suppress_notification_cookie, '{"date":"$currentISODate$","suppressed":true}', , , domain, .lenovo.com)
 fes.de##+js(trusted-set-cookie, cookie_consent, '%7B%22consent%22:true,%22options%22:%5B%5D%7D')
 gx.me##+js(trusted-set-cookie, cookie-consent, '{"marketing":false,"necessary":true,"version":2}', , , domain, .gx.me)
+opensea.io##+js(trusted-click-element, button[data-role="necessary"])
+iteraplay.com##+js(trusted-set-local-storage-item, itera_cookie_consent, '{"strictlyNecessary":true,"analytics":false,"marketing":false,"functional":false}')
 dailymail.co.uk##+js(trusted-click-element, div[data-project="mol-fe-cmp"] button[class*="consent"]:not([class*="reject"]))
 1001games.com,1001hry.cz,1001jeux.fr,1001jocuri.ro,1001jogos.com.br,1001jogos.pt,1001pelit.com,1001spiele.de,auth.hbomax.com,elkspel.nl,gamespot.com,giochixl.it,glamour.com,grajteraz.pl,isladejuegos.com,jatekokxl.hu,mtvuutiset.fi,paixnidiaxl.gr,pushsquare.com,spelo.se,spillespill.no,spilxl.dk,thejournal.ie,thetrainline.com,vkmag.com,zdnet.com##+js(trusted-set-cookie, OptanonAlertBoxClosed, $currentDate$, 1year)
 evaair.com##+js(trusted-set-cookie, _EVAcookieaccept, Y, 1year)
