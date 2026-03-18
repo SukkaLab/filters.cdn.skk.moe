@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Wed, 18 Mar 2026 19:26:28 GMT
+! Last modified: Wed, 18 Mar 2026 22:49:44 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,13 +8,13 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Wed, 18 Mar 2026 09:53:07 +0000
+!   - Last modified: Wed, 18 Mar 2026 16:23:51 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Wed, 18 Mar 2026 08:22:25 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Tue, 17 Mar 2026 11:56:46 +0000
+!   - Last modified: Wed, 18 Mar 2026 15:52:48 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
 !   - Last modified: Sat, 14 Mar 2026 01:59:51 +0000
@@ -6990,12 +6990,21 @@ trickms.com##+js(set, count, 0)
 trickms.com###tp98[disabled]:remove-attr(disabled)
 trickms.com###tp-snp2:style(display: block !important;)
 trickms.com###tp98, #btn6, #tp-snp2:others()
-travel.vebma.com,cloud.majalahhewan.com,crm.cekresi.me,ai.tempatwisata.pro##+js(no-fetch-if, ads)
-travel.vebma.com##.text-primary.inline-block, button.text-primary:others()
-travel.vebma.com,cloud.majalahhewan.com,crm.cekresi.me,ai.tempatwisata.pro##+js(aeld, blur, counter)
-travel.vebma.com,cloud.majalahhewan.com,crm.cekresi.me,ai.tempatwisata.pro##+js(nano-sib, /counter|wait/, *, 0.001)
-crm.cekresi.me,ai.tempatwisata.pro##+js(nowoif, tempat.org)
-adtival.network##div.box:has(.purple)
+||beixisys.com^$script,domain=tempatwisata.pro|datapendidikan.com
+||rc.patagonenki.shop^$domain=tempatwisata.pro|datapendidikan.com
+datapendidikan.com,app.cekresi.me,tempatwisata.pro##+js(no-fetch-if, /outbrain\.com|adligature\.com|quantserve\.com|srvtrck\.com|googlesyndication/, {"type": "cors"})
+datapendidikan.com,app.cekresi.me,tempatwisata.pro##+js(nowoif, _blank)
+datapendidikan.com,app.cekresi.me,tempatwisata.pro##button[type="button"], #continue, .separator > div > div > h3, .font-semibold.text-white.bg-primary.inline-block.mx-auto, [src*="captcha"]:others()
+datapendidikan.com,app.cekresi.me,tempatwisata.pro##+js(nano-sib, /.?/, *)
+datapendidikan.com,app.cekresi.me,tempatwisata.pro##+js(nano-stb, /.?/, *)
+datapendidikan.com,app.cekresi.me,tempatwisata.pro##+js(rpnt, script, /\d{4}/gms, 10, condition, /count/i)
+datapendidikan.com,app.cekresi.me,tempatwisata.pro##+js(rpnt, script, /this\.endAt = Date\.now\(\) \+ \(this\.cd \* 1000\)/gm, this.endAt = Date.now())
+datapendidikan.com,app.cekresi.me,tempatwisata.pro##+js(rpnt, script, /this\.cd = remaining > 0 \? remaining : 0/gm, this.cd = 0)
+datapendidikan.com,app.cekresi.me,tempatwisata.pro##+js(rpnt, script, /this\.ab = true/gm, this.ab = false)
+adtival.network##.z-0.overflow-hidden.relative.w-full.rounded-lg.to-primary-800.from-primary-500.bg-gradient-to-r.p-8.min-h-\[189px\]
+adtival.network##button.py-2.px-6.text-primary-600.rounded-lg.border-primary-600.border-2.bg-white.items-center.flex
+adtival.network##.max-w-screen-lg:style(max-width: initial! Important;)
+adtival.network##.min-h-screen:style(min-height: initial! Important;)
 rsrlink.in###wpsafe-link:style(display: block !important;)
 rsrlink.in###wpsafe-link:others()
 go.pointlinks.in###footer
@@ -9783,6 +9792,7 @@ animevietsub.*##.Ads
 animevietsub.*##.Adv
 /player/jwplayer-*/vast.js$script
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$redirect=noopjs,domain=vtvgo.vn,important
+cap3.pro##+js(trusted-replace-argument, String.prototype.includes, this, 'json:"mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/145.0.0.0 safari/537.36"', condition, mozilla/5.0)
 /^https:\/\/[a-z0-9]{6,10}\.[a-z]{2,3}\/js\d?\/noadblocker\.js(?:\?v=\d)?$/$script,1p,match-case
 /^https:\/\/[a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9]?[a-z0-9]?[a-z0-9]?[a-z0-9]?\.[a-z][a-z][a-z]?\/js[0-9]?\/noadblocker\.js(\?v=[0-9])?$/$script,1p,match-case
 *$script,redirect-rule=noopjs,domain=arcai.com
@@ -27890,6 +27900,12 @@ r.mail.wowvegas.com%2Ftr%2Fop%2F*$image
 *%2Ft.e.nine.com.au%2Fr%2F$image
 /preferences.blackbull.com/r/*/open/*$image
 *%2Fpreferences.blackbull.com%2Fr%2F*%2Fopen%2F$image
+.mail.odysee.com/o/$image
+.mail.odysee.com%2Fo%2F$image
+/email.marketing.go-jek.com/o/*$image
+/wl.spotify.com/ss/o/*.gif$image
+*%2Fwl.spotify.com%2Fss%2Fo%2F*.gif$image
+/spade.twitch.tv/track?data=$image
 static.adsugar.ch/img?ord=$image
 static.adsugar.ch%2Fimg%3Ford%3D*$image
 ecmweb.com/images/shim.png$image
@@ -28014,6 +28030,11 @@ newsletter.adnz.co%2F*$image
 /clickemail/*$image
 *%2Fclickemail%2F$image
 *%2Ftrk%3Ft%3D$image
+.mail.*/o/$image
+/email.marketing.*/o/*$image
+*%2Femail.marketing.*%2Fo%2F$image
+/track?data=$image
+*%2Ftrack%3Fdata%3D$image
 ||googleusercontent.com/*/wf/open?upn=$image
 .salesforce.com%2Fservlet%2Fservlet.ImageServer%3F$image
 ||beacons.ai/api/rtanalytics/
