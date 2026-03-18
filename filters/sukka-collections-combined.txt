@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Wed, 18 Mar 2026 04:32:52 GMT
+! Last modified: Wed, 18 Mar 2026 07:19:06 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202603180421
+!   - Version: 202603180711
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 18 Mar 2026 04:21 UTC
+!   - Last modified: 18 Mar 2026 07:11 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
@@ -156,11 +156,11 @@ youtube.com##ytd-reel-shelf-renderer:has(a[href^="/shorts/"])
 youtube.com##.media-item-thumbnail-container[aria-hidden][href^="/shorts/"]
 youtube.com##ytm-media-item:has(a[href^="/shorts/"])
 youtube.com##ytm-reel-shelf-renderer
-www.youtube.com#?#.style-scope.ytd-rich-shelf-renderer:-abp-contains(YouTube Playables)
+www.youtube.com#?#.style-scope.ytd-rich-shelf-renderer:has-text(YouTube Playables)
 ! Youtube What do you like do for fun https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
-www.youtube.com#?#.YtdTalkToRecsFlowRendererHost:-abp-contains(Ask for videos)
-www.youtube.com#?#.YtdTalkToRecsFlowRendererHost:-abp-contains(What do you like)
-www.youtube.com#?#.ytdTalkToRecsFlowRendererHost:-abp-contains(Help us improve)
+www.youtube.com#?#.YtdTalkToRecsFlowRendererHost:has-text(Ask for videos)
+www.youtube.com#?#.YtdTalkToRecsFlowRendererHost:has-text(What do you like)
+www.youtube.com#?#.ytdTalkToRecsFlowRendererHost:has-text(Help us improve)
 ! Adblock Warning Removal List https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
 /adb-watch.
 /adb_script/*
