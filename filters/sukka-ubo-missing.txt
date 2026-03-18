@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Wed, 18 Mar 2026 11:10:47 GMT
+! Last modified: Wed, 18 Mar 2026 15:38:22 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.1.60
+!   - Version: 2.1.1.61
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -128015,7 +128015,6 @@ cleverfit.fitness-konzepte.de##+js(set-local-storage-item, one_stats_metadata, $
 ||unleash-edge-prod.penpencil.co/api/frontend/client/metrics
 ||videotools.ocdn.eu/plugins/fp/
 ||analytics-fe.digital-cloud-west.medallia.com^
-tv-tokyo.co.jp##.tbcms_plus-pickup
 ||tongji.90dao.com^$ping
 ||cdn1.irontive.com/apps/ironpixel.js
 ||championat.com/api/unity-id/*/init
@@ -133275,6 +133274,8 @@ dlsdk.appsflyer.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||sensor.photogrid.app^
+||sensor.aqhg.online^
 ||log-nontt.bytegsdk.com^
 ||gpm-mon-va.bytegsdk.com^
 ||gplog-sg.byteoversea.com^
@@ -134338,6 +134339,7 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=saturn.de
 @@||metrics.us.playstation.com/b/ss/
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
+@@||api.cxense.com/public/widget/$domain=tv-tokyo.co.jp
 n11.com##+js(addEventListener-defuser, click, ownerDocument, elements, a.product-card[href])
 ||jsdelivr.net/npm/@fingerprintjs/fingerprintjs@3/dist/fp.min.js$script,redirect=fingerprint3.js,domain=suki-kira.com
 @@||googletagmanager.com/gtm.js$domain=vidaxl.se
