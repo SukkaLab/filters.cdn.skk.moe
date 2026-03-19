@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Thu, 19 Mar 2026 19:16:37 GMT
+! Last modified: Thu, 19 Mar 2026 22:50:00 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,13 +8,13 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Thu, 19 Mar 2026 15:39:39 +0000
+!   - Last modified: Thu, 19 Mar 2026 20:10:03 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
-!   - Last modified: Thu, 19 Mar 2026 15:50:25 +0000
+!   - Last modified: Thu, 19 Mar 2026 19:11:21 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Wed, 18 Mar 2026 15:52:48 +0000
+!   - Last modified: Thu, 19 Mar 2026 16:11:42 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
 !   - Last modified: Sat, 14 Mar 2026 01:59:51 +0000
@@ -27,7 +27,7 @@
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Thu, 19 Mar 2026 05:30:49 +0000
+!   - Last modified: Thu, 19 Mar 2026 16:16:20 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
 !   - Last modified: Wed, 18 Mar 2026 13:43:26 +0000
@@ -7370,7 +7370,7 @@ krakenfiles.com##+js(rpnt, script, state.shown >= redirectUrls.length, true)
 krakenfiles.com##+js(prevent-fetch, pagead2.googlesyndication.com/pagead/js/adsbygoogle.js)
 krakenfiles.com##+js(prevent-fetch, googletagservices)
 krakenfiles.com##+js(set, HTMLScriptElement.prototype.onerror, undefined)
-krakenfiles.com##+js(trusted-replace-argument, document.getElementById, 0, json:"div", condition, myadbox)
+krakenfiles.com##+js(spoof-css, #myadbox, display, block, visibility, visible)
 krakenfiles.com##.native-banner
 krakenfiles.com##.myad-box
 krakenfiles.com##a[href][target="_blank"]:upward(div)
@@ -26776,6 +26776,7 @@ comix.to##+js(json-edit-fetch-response, .result.items.*[?.content*="'+'"], props
 ||api.extensionanalyticspro.top^
 ublockorigin.com##.title::before:style(content: 'This is not the official uBlock Origin site.' !important; font-size: 32px !important; color: red !important; font-weight: bold !important;)
 ublockdns.com##main>section>div:first-child::before:style(content: 'Not related to uBlock Origin.' !important; font-size: 32px !important; color: red !important; font-weight: bold !important;)
+ublockorigin.app###main::before:style(content: 'This is not the official uBlock Origin site.' !important; font-size: 32px !important; color: red !important; font-weight: bold !important;)
 ||ryosweb.com^$all
 ||cleanmymacos.org^$all
 ||cdn-server.beer/api/css.js
@@ -27918,6 +27919,8 @@ r.mail.wowvegas.com%2Ftr%2Fop%2F*$image
 /wl.spotify.com/ss/o/*.gif$image
 *%2Fwl.spotify.com%2Fss%2Fo%2F*.gif$image
 /spade.twitch.tv/track?data=$image
+.digital-eliteboard.com/b/image.gif?$image
+.digital-eliteboard.com%2Fb%2Fimage.gif%3F*$image
 static.adsugar.ch/img?ord=$image
 static.adsugar.ch%2Fimg%3Ford%3D*$image
 ecmweb.com/images/shim.png$image
@@ -28047,6 +28050,15 @@ newsletter.adnz.co%2F*$image
 *%2Femail.marketing.*%2Fo%2F$image
 /track?data=$image
 *%2Ftrack%3Fdata%3D$image
+/c2.knock.app/t/*$image
+*%2Fc2.knock.app%2Ft%2F$image
+/d.gpmdata.ru/*$image
+*%2Fd.gpmdata.ru%2F*$image
+.awstrack.me%2F*$image
+/email-*/open?$image
+*%2Femail-*%2Fopen%3F$image
+/fapp1.williamoneilindia.com/*$image
+*%2Ffapp1.williamoneilindia.com%2F*$image
 ||googleusercontent.com/*/wf/open?upn=$image
 .salesforce.com%2Fservlet%2Fservlet.ImageServer%3F$image
 ||beacons.ai/api/rtanalytics/
@@ -33372,6 +33384,8 @@ poki.com##+js(trusted-set-local-storage-item, state/privacy/pokiAnalytics, '{"ti
 politiken.dk##+js(trusted-click-element, button#CybotCookiebotDialogBodyButtonDecline)
 dilosi.services.gov.gr##+js(trusted-set-cookie, dilosi_cookie, Accept_cookies)
 bt.dk##+js(trusted-click-element, #CybotCookiebotDialogBodyButtonDecline)
+frenchbee.com##+js(trusted-click-element, #onetrust-reject-all-handler, , 1000)
+hbomax.com##+js(trusted-click-element, button.btn.btn--privacy-primary, , 1000)
 spmaiscultura.prefeitura.sp.gov.br##+js(trusted-set-cookie, spmaiscultura-prefs, %7B%22functional%22%3Atrue%2C%22analytics%22%3Afalse%7D)
 ! uBlock filters – Annoyances https://ublockorigin.pages.dev/filters/annoyances.min.txt
 mimaletadepeliculas.blogspot.com##+js(aopr, document.oncontextmenu)
