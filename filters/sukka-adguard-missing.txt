@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Wed, 18 Mar 2026 22:49:44 GMT
+! Last modified: Thu, 19 Mar 2026 04:31:52 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -27,7 +27,7 @@
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Wed, 18 Mar 2026 09:16:39 +0000
+!   - Last modified: Thu, 19 Mar 2026 02:15:15 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
 !   - Last modified: Wed, 18 Mar 2026 13:43:26 +0000
@@ -31476,6 +31476,7 @@ fes.de##+js(trusted-set-cookie, cookie_consent, '%7B%22consent%22:true,%22option
 gx.me##+js(trusted-set-cookie, cookie-consent, '{"marketing":false,"necessary":true,"version":2}', , , domain, .gx.me)
 opensea.io##+js(trusted-click-element, button[data-role="necessary"])
 iteraplay.com##+js(trusted-set-local-storage-item, itera_cookie_consent, '{"strictlyNecessary":true,"analytics":false,"marketing":false,"functional":false}')
+cinemark.com.br##+js(set-cookie, cookies_config, deny)
 dailymail.co.uk##+js(trusted-click-element, div[data-project="mol-fe-cmp"] button[class*="consent"]:not([class*="reject"]))
 1001games.com,1001hry.cz,1001jeux.fr,1001jocuri.ro,1001jogos.com.br,1001jogos.pt,1001pelit.com,1001spiele.de,auth.hbomax.com,elkspel.nl,gamespot.com,giochixl.it,glamour.com,grajteraz.pl,isladejuegos.com,jatekokxl.hu,mtvuutiset.fi,paixnidiaxl.gr,pushsquare.com,spelo.se,spillespill.no,spilxl.dk,thejournal.ie,thetrainline.com,vkmag.com,zdnet.com##+js(trusted-set-cookie, OptanonAlertBoxClosed, $currentDate$, 1year)
 evaair.com##+js(trusted-set-cookie, _EVAcookieaccept, Y, 1year)
@@ -33357,6 +33358,7 @@ poki.com##+js(trusted-set-local-storage-item, state/privacy/pokiAnalytics, '{"ti
 politiken.dk##+js(trusted-click-element, button#CybotCookiebotDialogBodyButtonDecline)
 dilosi.services.gov.gr##+js(trusted-set-cookie, dilosi_cookie, Accept_cookies)
 bt.dk##+js(trusted-click-element, #CybotCookiebotDialogBodyButtonDecline)
+spmaiscultura.prefeitura.sp.gov.br##+js(trusted-set-cookie, spmaiscultura-prefs, %7B%22functional%22%3Atrue%2C%22analytics%22%3Afalse%7D)
 ! uBlock filters – Annoyances https://ublockorigin.pages.dev/filters/annoyances.min.txt
 mimaletadepeliculas.blogspot.com##+js(aopr, document.oncontextmenu)
 mimaletadepeliculas.blogspot.com##+js(acs, document.onselectstart)

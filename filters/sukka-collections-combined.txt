@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Wed, 18 Mar 2026 22:49:44 GMT
+! Last modified: Thu, 19 Mar 2026 04:31:52 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202603182241
+!   - Version: 202603190421
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 18 Mar 2026 22:41 UTC
+!   - Last modified: 19 Mar 2026 04:21 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
@@ -74,7 +74,7 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * ➗ Actually Legitimate URL Shortener Tool
 !   - URL: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt
-!   - Version: 16March2026v3
+!   - Version: 18March2026v3
 !   - Homepage: https://github.com/DandelionSprout/adfilt/discussions/163
 ! * 🐊 Imgur: Pure Imagery Experience
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/ImgurPureImageryExperience.txt
@@ -19506,6 +19506,11 @@ ref=thestack.technology$doc,removeparam=ref
 ||deezer.$removeparam=/^utm_.*$/
 ref=blog.livekit.io$doc,removeparam=ref
 ||t.edm.bell.ca^$doc,removeparam=ext
+||duckduckgo.com/extension-success$doc,removeparam=atb
+||duckduckgo.com/atb.js$doc,removeparam=set_atb
+||duckduckgo.com/atb.js$doc,removeparam=v
+||duckduckgo.com/atb.js$doc,removeparam=bv
+||duckduckgo.com/atb.js$doc,removeparam=browser
 $removeparam=w,domain=files.wordpress.com|store.playstation.com|s-microsoft.com|store-images.microsoft.com|dr.dk|if.com.au
 $removeparam=h,domain=files.wordpress.com|store.playstation.com|s-microsoft.com|store-images.microsoft.com|dr.dk
 $removeparam=width,domain=i-viaplay.com.akamaized.net|media.discordapp.net|tvno.nu
