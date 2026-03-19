@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Thu, 19 Mar 2026 07:16:26 GMT
+! Last modified: Thu, 19 Mar 2026 11:02:37 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Wed, 18 Mar 2026 16:23:51 +0000
+!   - Last modified: Thu, 19 Mar 2026 08:48:31 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Wed, 18 Mar 2026 08:22:25 +0000
@@ -20,14 +20,14 @@
 !   - Last modified: Sat, 14 Mar 2026 01:59:51 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Tue, 17 Mar 2026 13:53:30 +0000
+!   - Last modified: Thu, 19 Mar 2026 04:35:45 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
 !   - Last modified: Sun, 01 Mar 2026 06:15:18 +0000
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Thu, 19 Mar 2026 02:15:15 +0000
+!   - Last modified: Thu, 19 Mar 2026 05:30:49 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
 !   - Last modified: Wed, 18 Mar 2026 13:43:26 +0000
@@ -1962,6 +1962,10 @@ ashemaletube.com##.header-ads-wrapper
 ashemaletube.*##.js-toggle-content-wrapper a[href^="/link/out/"]:upward(.js-toggle-content-wrapper)
 ashemaletube.com##.ads-wrapper
 ashemaletube.*##.ad-wrap
+||ashemaletube.*/ads/$xhr
+||ashemaletube.*/ast/b/$frame
+ashemaletube.*##.fh-line
+ashemaletube.*##iframe[src*="/link/out/b/"]
 hotscope.tv##+js(nowoif)
 hotscope.tv##[style^="transform"]:has(#videoHolder)
 hotscope.tv##ul[style^="padding-top:"]
@@ -7238,11 +7242,12 @@ universitiesonline.xyz##+js(no-fetch-if, googlesyndication)
 universitiesonline.xyz##.popup
 universitiesonline.xyz##.overlay
 universitiesonline.xyz###tp-generate, #tp-snp2:style(display: block !important;)
-mahitimanch.in,5ghindi.in##+js(rpnt, script, /\d{4}/gm, 10, condition, count)
-mahitimanch.in,5ghindi.in##form button[id]:style(display: block !important; margin-top: 380px !important; margin-left: 10px !important; height: 70px !important; width: 260px !important; background: linear-gradient(to right,#eb3349 40%,#f45c43) ! important;)
-mahitimanch.in,5ghindi.in##form button[id], .box-main, .captcha-check:others()
-mahitimanch.in,5ghindi.in##+js(rpnt, script, /getElementById\('.*'\).*'block';/gm, getElementById('btn6').style.display = 'block';, condition, count)
-inshorturl.com##+js(rpnt, script, 3000), 10))
+||isproxy.eu^$script,domain=indiamaja.com|techautomobile.in|tech4auto.in|mahitimanch.in|jnvharidwar.org
+@@*$ghide,domain=indiamaja.com|techautomobile.in|tech4auto.in|mahitimanch.in|jnvharidwar.org
+indiamaja.com,techautomobile.in,tech4auto.in,mahitimanch.in,jnvharidwar.org##+js(noeval-if, /chp_?ad/)
+indiamaja.com,techautomobile.in,tech4auto.in,mahitimanch.in,jnvharidwar.org###link, #tp-timex-btn, #tp-text, #tp98:style(margin-top: 150px !important;)
+indiamaja.com,techautomobile.in,tech4auto.in,mahitimanch.in,jnvharidwar.org###link, #linkx, #btn6, #tp-timex-btn, #cf-widget, .Tag, #tp-text, #tp98, #plx, .box-main:others()
+indiamaja.com,techautomobile.in,tech4auto.in,mahitimanch.in,jnvharidwar.org##+js(rpnt, script, /\d{4}\);/gm, 800);, condition, count)
 filesupload.in##+js(no-fetch-if, adsbygoogle.js)
 filesupload.in###wpsafe-link:style(display: block !important;)
 /devfiles.pages.dev\/img\/[a-zA-Z0-9]{8,}.jpeg/$image
@@ -10239,6 +10244,7 @@ uploadrar.*##main > center > a.btn-primary
 uploadrar.*##form > center:has(.btn):has([href])
 uploadrar.*##.footer, span > .text-muted, .card, .m-2.submit-btn.btn-primary.btn
 uploadrar.*##.fs-5, p, ul, li, #how-to-open, .p-0.block, .download-controls, .ad-box + center
+uploadrar.*##.ad-label, .adsbygoogle
 uploadrar.*##+js(acs, document.documentElement, break;case $.)
 uploadrar.*##+js(nano-stb, /.?/, *)
 ||pixeltrey.com^
@@ -22494,6 +22500,7 @@ borntobefuck.com##.ads-overlay
 borntobefuck.com##.vast-container
 chatgpt.com##+js(trusted-json-edit, [?.type=="ads"].visibility.status="hidden")
 ourcoincash.xyz,softdevelopp.com##+js(noeval-if, Adblock)
+radio.net##+js(trusted-replace-argument, Array.prototype.includes, 0, json:"none", condition, /^755$/)
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -30920,8 +30927,8 @@ japscan.*##+js(norafif, Date)
 japscan.*##.HuKlQ > div > div:not(#reader):remove()
 japscan.*##+js(aost, MessageChannel, /stackDepth:2.+inlineScript/)
 japscan.*###noticeMessage[role] ~ div:not(#reader):remove()
-japscan.*##div[yoriwo]:remove()
-japscan.*##+js(prevent-innerHTML, , 110)
+japscan.*##div[yoripo]:remove()
+japscan.*##+js(prevent-innerHTML, , /\/\d{3}\.png/)
 japscan.*##html > div[style="position: fixed; inset: 0px; z-index: 2147483647; pointer-events: auto;"]
 japscan.*##+js(norafif, requestAnimationFrame)
 japscan.*##+js(trusted-suppress-native-method, Document.prototype.createElement, '"span"', abort, /apply in.+[0-9A-Za-z]{8\,10} inlineScript/)
@@ -30930,7 +30937,7 @@ japscan.*##+js(trusted-suppress-native-method, Document.prototype.createElement,
 japscan.*##+js(aopr, aclib)
 japscan.*##+js(trusted-suppress-native-method, Element.prototype.getElementsByTagName, '"div"', abort, /apply in.+[0-9A-Za-z]{8\,10} inlineScript/)
 japscan.*##+js(aost, performance.now, /\s[0-9A-Za-z]{8\,10} inlineScript:1/)
-japscan.*##+js(acs, Date.now, /^[\S\s]{20000\,40000}$/)
+japscan.*##+js(acs, Array.prototype.push, /^[\S\s]{2000\,3000}$/)
 poophq.com,veev.to,doods.to##+js(nowoif)
 poophq.com,veev.to,doods.to##+js(no-xhr-if, /vast.php?)
 poophq.com,veev.to,doods.to##+js(no-xhr-if, /click\.com|preroll|native_render\.js|acscdn/, length:10001)
@@ -31172,6 +31179,8 @@ partner.co.il##.cookie-message
 musee-moyenage.fr##body.tac-modal-open:style(overflow: auto !important;)
 @@||usercentrics.eu^$script,xhr,domain=zalando.be|zalando.com|zalando.es|zalando.fr|zalando.it|zalando.nl|zalando.pl|zalando.se
 groupeapocom.com###website_cookies_bar
+||la7.it/la7_iabtcf2/cmp.js
+||privacymanager.io^$domain=la7.it
 www.google.*##+js(trusted-click-element, button#W0wltc, , 500)
 consent.google.*##+js(trusted-click-element, form[action] button[jsname="tWT92d"])
 consent.google.*##[data-p*="/consent.google."]:has(button[jsname="tWT92d"])
