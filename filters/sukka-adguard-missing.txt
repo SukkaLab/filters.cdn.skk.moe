@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Fri, 20 Mar 2026 19:08:09 GMT
+! Last modified: Fri, 20 Mar 2026 22:49:31 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Fri, 20 Mar 2026 17:06:52 +0000
+!   - Last modified: Fri, 20 Mar 2026 20:27:58 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Fri, 20 Mar 2026 16:47:19 +0000
@@ -7551,10 +7551,9 @@ bigbtc.win,cryptofun.space###block-adb-enabled, #block-add-enabled, #block-adeb-
 bigbtc.win,cryptofun.space###main, #ielement, #mainnew:style(display: block !important;)
 bigbtc.win##div:has(> div[style] > div[id] > script[src^="//ads.themoneytizer.com"])
 @@*$ghide,domain=torupload.com|nathanmichaelphoto.com
+@@||cdn4ads.com/T/myaUVE/xhumane.min.js$script,domain=torupload.com|nathanmichaelphoto.com
 *$script,domain=torupload.com|nathanmichaelphoto.com,redirect-rule=noopjs
 *$image,redirect-rule=32x32.png,domain=torupload.com|nathanmichaelphoto.com
-@@||cdn4ads.com^$script,domain=nathanmichaelphoto.com|torupload.com
-@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,domain=nathanmichaelphoto.com|torupload.com
 torupload.com##+js(nano-sib, seconds--, *)
 nathanmichaelphoto.com,torupload.com##+js(rpnt, script, false, true, condition, opened)
 nathanmichaelphoto.com,torupload.com##+js(set, ads, yes)
@@ -7563,7 +7562,7 @@ nathanmichaelphoto.com,torupload.com##+js(set, HTMLScriptElement.prototype.onerr
 nathanmichaelphoto.com,torupload.com##+js(set, isAdblockActive, false)
 nathanmichaelphoto.com,torupload.com##+js(prevent-fetch, pub.clickadu)
 nathanmichaelphoto.com,torupload.com##+js(prevent-fetch, bing.com)
-nathanmichaelphoto.com,torupload.com##+js(rpnt, script, /\.adsbox|iframe|GoogleActiveViewElement|adsbygoogle|div-gpt-ad/i, div)
+torupload.com,nathanmichaelphoto.com##+js(no-fetch-if, adsbygoogle, war:googlesyndication_adsbygoogle.js)
 nathanmichaelphoto.com,torupload.com##+js(trusted-replace-argument, window.getComputedStyle, 0, json:{"BODY"}, condition, /div-gpt-ad|GoogleActi/)
 nathanmichaelphoto.com,torupload.com##.ad-container
 |oundhertobeconsist.org^
