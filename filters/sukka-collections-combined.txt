@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Fri, 20 Mar 2026 15:02:38 GMT
+! Last modified: Fri, 20 Mar 2026 19:08:09 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202603201452
+!   - Version: 202603201902
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 20 Mar 2026 14:52 UTC
+!   - Last modified: 20 Mar 2026 19:02 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
@@ -98,7 +98,7 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * ☣️ Anti-Elsagate List
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/Anti-Elsagate%20List.txt
-!   - Version: 13January2026v1
+!   - Version: 20March2026v1
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 🍿 Know Your Meme: Pure Browsing Experience
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/KnowYourMemePureBrowsingExperience.txt
@@ -21110,6 +21110,7 @@ invidious.snopyta.org,yewtu.be,invidious.tube,invidious.kavin.rocks,tube.connect
 ||desura.com^$document,domain=~contains-extremely-violent-html5-doctor-or-surgery-games.*
 ||friv5online.com^$document,domain=~contains-extremely-violent-html5-doctor-or-surgery-games.*
 ||spillespill.no^$document,domain=~contains-extremely-violent-html5-doctor-or-surgery-games.*
+||gamereo.com^$document,domain=~contains-extremely-violent-html5-doctor-or-surgery-games.*
 ||mygames4girls.com^
 ||dressupwho.com^
 ||crazygames.no^
@@ -21120,6 +21121,7 @@ invidious.snopyta.org,yewtu.be,invidious.tube,invidious.kavin.rocks,tube.connect
 ||desura.com^
 ||friv5online.com^
 ||spillespill.no^
+||gamereo.com^
 gamepix.com##a[href*=doctor]
 ||gamepix.com/*doctor$document,domain=~contains-extremely-violent-html5-doctor-or-surgery-games.*
 ||gamepix.com/*doctor
