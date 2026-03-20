@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Fri, 20 Mar 2026 07:15:02 GMT
+! Last modified: Fri, 20 Mar 2026 10:58:18 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Fri, 20 Mar 2026 06:22:13 +0000
+!   - Last modified: Fri, 20 Mar 2026 07:28:45 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Thu, 19 Mar 2026 19:11:21 +0000
@@ -30,7 +30,7 @@
 !   - Last modified: Fri, 20 Mar 2026 05:00:32 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
-!   - Last modified: Wed, 18 Mar 2026 13:43:26 +0000
+!   - Last modified: Fri, 20 Mar 2026 07:48:23 +0000
 ! --------------------------------------------------------------
 ! uBlock filters https://ublockorigin.pages.dev/filters/filters.min.txt
 *_ad_$media,domain=youtube.com,3p
@@ -19743,8 +19743,7 @@ taste.com.au##.main-header:style(top: 0 !important)
 @@/prebid/*$script,domain=decompiler.com
 @@/javascripts/*prebid-ads/ads-prebid*.js^$script,domain=decompiler.com
 decompiler.com##+js(acs, document.getElementById, /adblock/i)
-decompiler.com##+js(set, malisx, true)
-decompiler.com##+js(set, alim, true)
+decompiler.com##+js(rpnt, script, /window\.\w+\s*===\s*undefined/, false)
 @@||ytlarge.com^$ghide
 @@||googlesyndication.com^$script,xhr,domain=ytlarge.com
 @@||fundingchoicesmessages.google.com^$script,xhr,domain=ytlarge.com
@@ -36877,3 +36876,4 @@ advnture.com,androidcentral.com,avnetwork.com,cinemablend.com,countrylife.co.uk,
 ||urldefense.com/v*/__http$doc,urlskip=/__(.*)__;!!/
 open.spotify.com##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important; -webkit-tap-highlight-color: revert !important;)
 aeropress.com##+js(trusted-click-element, div[id^="alia-popup-root-alia-"] div[aria-label="Close popup"])
+duolingo.com##[data-test*="challenge"]:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important; -webkit-tap-highlight-color: revert !important; cursor: revert !important;)
