@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Fri, 20 Mar 2026 10:58:18 GMT
+! Last modified: Fri, 20 Mar 2026 15:02:38 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Fri, 20 Mar 2026 07:28:45 +0000
+!   - Last modified: Fri, 20 Mar 2026 11:20:40 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Thu, 19 Mar 2026 19:11:21 +0000
@@ -30,7 +30,7 @@
 !   - Last modified: Fri, 20 Mar 2026 05:00:32 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
-!   - Last modified: Fri, 20 Mar 2026 07:48:23 +0000
+!   - Last modified: Fri, 20 Mar 2026 11:21:32 +0000
 ! --------------------------------------------------------------
 ! uBlock filters https://ublockorigin.pages.dev/filters/filters.min.txt
 *_ad_$media,domain=youtube.com,3p
@@ -19470,6 +19470,7 @@ filmi7.net##[href="https://vin-checker.com"]
 18xxx.xyz##+js(nostif, .clientHeight)
 asia.5ivttv.vip##+js(acs, document.readyState, mdpDeblocker)
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=sbt.com.br
+@@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$script,domain=sbt.com.br
 ||khantv.live/ad2.php^
 mp3y.info##+js(nowoif)
 ||mp3y.info/*.php^$frame
@@ -22505,6 +22506,8 @@ borntobefuck.com##.vast-container
 chatgpt.com##+js(trusted-json-edit, [?.type=="ads"].visibility.status="hidden")
 ourcoincash.xyz,softdevelopp.com##+js(noeval-if, Adblock)
 radio.net##+js(trusted-replace-argument, Array.prototype.includes, 0, json:"none", condition, /^755$/)
+||umamianal.vercel.app^$domain=willow.arlen.icu
+willow.arlen.icu##+js(nowoif)
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -36877,3 +36880,5 @@ advnture.com,androidcentral.com,avnetwork.com,cinemablend.com,countrylife.co.uk,
 open.spotify.com##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important; -webkit-tap-highlight-color: revert !important;)
 aeropress.com##+js(trusted-click-element, div[id^="alia-popup-root-alia-"] div[aria-label="Close popup"])
 duolingo.com##[data-test*="challenge"]:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important; -webkit-tap-highlight-color: revert !important; cursor: revert !important;)
+willow.arlen.icu##+js(nosiif, e, 1000)
+willow.arlen.icu##+js(aopr, document.onkeydown)
