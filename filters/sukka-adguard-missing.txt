@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sat, 21 Mar 2026 07:04:18 GMT
+! Last modified: Sat, 21 Mar 2026 10:46:51 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sat, 21 Mar 2026 04:13:33 +0000
+!   - Last modified: Sat, 21 Mar 2026 07:57:49 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Fri, 20 Mar 2026 16:47:19 +0000
@@ -30,7 +30,7 @@
 !   - Last modified: Fri, 20 Mar 2026 05:00:32 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
-!   - Last modified: Fri, 20 Mar 2026 11:21:32 +0000
+!   - Last modified: Sat, 21 Mar 2026 05:58:18 +0000
 ! --------------------------------------------------------------
 ! uBlock filters https://ublockorigin.pages.dev/filters/filters.min.txt
 *_ad_$media,domain=youtube.com,3p
@@ -9810,6 +9810,7 @@ cap3.*##+js(nowoif, popup=)
 cap3.*##+js(aeld, click, setTimeout)
 cap3.*##+js(aeld, click, ()}, elements, .art-control-fullscreen)
 ||cap3.*/api/ads
+vip.stream101.space##+js(nowoif)
 /^https:\/\/[a-z0-9]{6,10}\.[a-z]{2,3}\/js\d?\/noadblocker\.js(?:\?v=\d)?$/$script,1p,match-case
 /^https:\/\/[a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9]?[a-z0-9]?[a-z0-9]?[a-z0-9]?\.[a-z][a-z][a-z]?\/js[0-9]?\/noadblocker\.js(\?v=[0-9])?$/$script,1p,match-case
 *$script,redirect-rule=noopjs,domain=arcai.com
@@ -19937,6 +19938,7 @@ ttsfree.com##+js(acs, document.getElementById, adblock)
 swiftuploads.com##+js(ra, onclick, button[onclick*="open"])
 swiftuploads.com##+js(nowoif)
 swiftuploads.com##+js(aeld, click, clicksCount)
+swiftuploads.com##+js(acs, String.fromCharCode, fetch)
 en-thunderscans.com##+js(nostif, getComputedStyle(testAd))
 onlinesoccermanager.com##+js(set, adBlockerDetected, false)
 onlinesoccermanager.com###advertisement-leaderboard-container
@@ -33371,13 +33373,14 @@ abstream.to##+js(acs, document.onkeydown)
 ||onepiecepower.com/spoiler.js
 e-panigiria.gr##+js(rmnt, script, oncontextmenu)
 e-panigiria.gr###body *:not(input):not(textarea):style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
-anikai.to,animekai.*,anigo.to,sflix.fi,yflix.to##+js(nostif, ||!!)
+anikai.to,animekai.*,anigo.to,hianime.ws,moontv.to,sflix.fi,yflix.to##+js(nostif, ||!!)
+moontv.to##+js(nowoif)
 webnoveltranslations.com##+js(aeld, /contextmenu|copy|cut|key/, , elements, document)
 bitcine.app##+js(aeld, keydown, 123)
 bflix.*##+js(aeld, keydown, [arguments];)
-bflix.*,bitcine.app,moontv.to,rapidairmax.site,world-novel.fr##+js(set, console.clear, trueFunc)
-bflix.*,bitcine.app,moontv.to,rapidairmax.site,world-novel.fr##+js(set, console.table, trueFunc)
-bflix.*,bitcine.app,moontv.to,rapidairmax.site,world-novel.fr##+js(set, console.log, trueFunc)
+bflix.*,bitcine.app,rapidairmax.site,world-novel.fr##+js(set, console.clear, trueFunc)
+bflix.*,bitcine.app,rapidairmax.site,world-novel.fr##+js(set, console.table, trueFunc)
+bflix.*,bitcine.app,rapidairmax.site,world-novel.fr##+js(set, console.log, trueFunc)
 world-novel.fr##+js(aeld, keydown, key)
 world-novel.fr##+js(aeld, /copy|selectstart/, return)
 world-novel.fr##+js(aeld, contextmenu, /preventDefault|pointerType/)
@@ -36683,8 +36686,10 @@ astoryofmasasstruggles.com##style:has-text(@media print):remove()
 ||pokeos.com/pokeos-uploads/ads/adblock/$image
 lemon8-app.com##+js(trusted-click-element, .seo-landing-modal-cancel-btn .design-system-button-container, , 500)
 lemon8-app.com##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important; -webkit-tap-highlight-color: revert !important; cursor: revert !important;)
-anikai.to,animekai.*,anigo.to,sflix.fi,yflix.to,anikai.to>>,animekai.*>>,anigo.to>>,sflix.fi>>,yflix.to>>##+js(aeld, keydown, /^function\(.*\|\|.*}$/)
-anikai.to,animekai.*,anigo.to,sflix.fi,yflix.to,anikai.to>>,animekai.*>>,anigo.to>>,sflix.fi>>,yflix.to>>##+js(set, console.clear, throwFunc)
+anikai.to,animekai.*,anigo.to,hianime.ws,moontv.to,sflix.fi,yflix.to,anikai.to>>,animekai.*>>,anigo.to>>,hianime.ws>>,moontv.to>>,sflix.fi>>,yflix.to>>##+js(aeld, keydown, /^function\(.*\|\|.*}$/)
+anikai.to,animekai.*,anigo.to,hianime.ws,moontv.to,sflix.fi,yflix.to,anikai.to>>,animekai.*>>,anigo.to>>,hianime.ws>>,moontv.to>>,sflix.fi>>,yflix.to>>##+js(set, console.clear, trueFunc)
+anikai.to,animekai.*,anigo.to,hianime.ws,moontv.to,sflix.fi,yflix.to,anikai.to>>,animekai.*>>,anigo.to>>,hianime.ws>>,moontv.to>>,sflix.fi>>,yflix.to>>##+js(set, console.table, trueFunc)
+anikai.to,animekai.*,anigo.to,hianime.ws,moontv.to,sflix.fi,yflix.to,anikai.to>>,animekai.*>>,anigo.to>>,hianime.ws>>,moontv.to>>,sflix.fi>>,yflix.to>>##+js(set, console.log, trueFunc)
 loverslab.com##+js(nano-sib)
 /akam/13/*$script,xhr,1p,domain=easyjet.com|ing.nl,important
 easyjet.com,ing.nl##+js(cookie-remover, ak_bmsc, when, scroll keydown)
