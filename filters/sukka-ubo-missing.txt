@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Sun, 22 Mar 2026 18:57:37 GMT
+! Last modified: Sun, 22 Mar 2026 22:46:21 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -128351,7 +128351,6 @@ food4less.com##+js(set-local-storage-item, analytics-device, $remove$)
 ||neuron.cbssports.cloud/client.js?platform=tracking-manager
 ||famil.ru/bitrix/templates/aspro_max/js/yandex_metrika_
 ||search-api.fie.futurecdn.net/js/*/master-*/analytics-library-entry-getCustomTrackingId.js
-||grok.com/_data/v1/events
 ||frysfood.com/assets/*/collect?
 ||fredmeyer.com/static/*/collect?
 ||ralphs.com/resources/*/collect?
@@ -128961,7 +128960,6 @@ raycast.com##+js(set-session-storage-item, /ph_phc_/, $remove$)
 telegraph.co.uk##.more-stories
 ||cdn.branch.io^$script
 ||grok.com/api/statsig/
-||grok.com/api/log_metric
 ||vistanet.it/*/wp-content/plugins/vistanet-plugins/js/category_event.js
 ||wherewindsmeetgame.com/*/api/upload/log
 ||js.dhresource.com/buyer/common/track/trackwebsdk.js
