@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Mon, 23 Mar 2026 19:16:15 GMT
+! Last modified: Mon, 23 Mar 2026 22:53:40 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.1.78
+!   - Version: 2.1.1.79
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -132787,6 +132787,8 @@ link.gmapp*.net$image
 %2FCI0%2F0$image
 /ss/o/*/ho.gif$image
 %2Fss%2Fo%2F*%2Fho.gif$image
+newegg.com/mr/*.gif?r=
+newegg.com%2Fmr%2F*.gif%3Fr%3D
 digital-eliteboard.com/b/image.gif?p=
 digital-eliteboard.com%2Fb%2Fimage.gif%3Fp%3D
 track-mmp.navercorp.com/received/*.gif$image
