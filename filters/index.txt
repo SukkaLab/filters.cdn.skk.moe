@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Filters
-! Last modified: Sun, 15 Mar 2026 11:59:45 GMT
+! Last modified: Tue, 24 Mar 2026 13:10:20 GMT
 ! Expires: 1 hours
 ! Description: The filters from Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -158,6 +158,7 @@ g.alicdn.com/axdata/yunlog*$redirect=noop.js
 g.alicdn.com/dawn/user-tracker*$redirect=noop.js
 g.alicdn.com/sj/securesdk$redirect=noop.js
 ||render.com/pan/api/event
+||r2cdn.perplexity.ai/js/count/
 www.dnsfilter.com##+js(aopw, window.analytics)
 ||sealos.run/js
 ||console.cast.ai/analytics
@@ -537,6 +538,8 @@ justauth.cn##+js(set, window._AdBlockInit, true)
 ||code.jquery.com/jquery-*.min.js$all,domain=~ui.com,uritransform=/code.jquery.com\/jquery-([^\/]+)\.min\.js/cdn.jsdelivr.net\/npm\/jquery@$1\/dist\/jquery.min.js/
 ||code.jquery.com/jquery-*.slim.min.js$all,domain=~ui.com,uritransform=/code.jquery.com\/jquery-([^\/]+)\.slim\.min\.js/cdn.jsdelivr.net\/npm\/jquery@$1\/dist\/jquery.slim.min.js/
 ||code.jquery.com/ui/*/jquery-ui.min.js$all,domain=~ui.com,uritransform=/code.jquery.com\/ui\/([^\/]+)\/jquery-ui\.min\.js/cdn.jsdelivr.net\/npm\/jquery-ui@$1\/dist\/jquery-ui.min.js/
+||bootstrapcdn.com/bootstrap/$all,uritransform=/[^\/]+\.bootstrapcdn\.com\/bootstrap\/([^\/]+)\//cdn.jsdelivr.net\/npm\/bootstrap@$1\/dist\//
+||bootstrapcdn.com/font-awesome/$all,uritransform=/[^\/]+\.bootstrapcdn\.com\/font-awesome\/([^\/]+)\/(.*)/cdn.jsdelivr.net\/npm\/font-awesome@$1\/$2/
 ||app.moegirl.org.cn/insight-assets/images/20230413-moepad/800x300.png
 ||storage.moegirl.org.cn/console-plus/uploads/2024/02/01/a475bee2aa57da0e65f5341b78ccf551.png
 ||storage.moegirl.org.cn/console-plus/uploads/2024/01/16/b70a27db94200462fd06da4a5ab30b50.jpeg
