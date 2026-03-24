@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Tue, 24 Mar 2026 11:10:39 GMT
+! Last modified: Tue, 24 Mar 2026 15:19:52 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202603241102
+!   - Version: 202603241511
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 24 Mar 2026 11:02 UTC
+!   - Last modified: 24 Mar 2026 15:11 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
@@ -31,7 +31,7 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 💊 Dandelion Sprout's Anti-Malware List
 !   - URL: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout's%20Anti-Malware%20List.txt
-!   - Version: 11March2026v1
+!   - Version: 24March2026v1
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 🛃 Anti-'Adoptables and Artsite NFTs' List
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/AntiAdoptablesList.txt
@@ -15731,6 +15731,25 @@ www.google.*,ipv6.google.com##div[data-attrid^="images "]:has(a[href*=".aspx?cna
 ||185.53.178.54^$all
 .to/popconsole.php|
 google.*###rso > div[class]:has(h3:has-text(/^.*(H\ow\st\o|fre{2})\s(\instal{2}|d\ownl\oad).*$/i):has-text(/^.*(ph\ot\osh\op|dav\inc\i|\il{2}ustrat\or).*$/i):has-text(/^.*(fre{2}|(cr|h)ack).*$/i))
+||statautos.com^$all
+/noo/taxx/*$doc
+||solitanh.site^$doc
+||floraltepi.site^$doc
+||arlonb.my^$doc
+||astonishedsound.com^$doc
+||avibary.com^$doc
+||buysalesclub.com^$doc
+||corlmedi.com^$doc
+||csstudyhub.com^$doc
+||hxzf4er.com^$doc
+||k2krl7zj.com^$doc
+||mcafee.sjv.io^$doc
+||ojrq.net^$doc
+||oninebest.com^$doc
+||ormediao.com^$doc
+||paramatise.com^$doc
+||watchterm.com^$doc
+||185.176.220.31^$doc
 ||kuaizip.com^$all
 ||geekotg.com^$all
 ||xiaobaixitong.com^$all
