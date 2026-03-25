@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Wed, 25 Mar 2026 07:19:07 GMT
+! Last modified: Wed, 25 Mar 2026 11:08:50 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -129023,7 +129023,6 @@ businessinsider.jp##div[class^="displayhandler"]:has(> div[class^="premiumRecomm
 ||api-register.ujoygames.com/logs/
 ||passportnews.co.il/tag_manager.js
 ||passportnews.co.il/system/js/analytics.js
-||compare-static.flightconnections.com/tag.js
 ||ghostery.com/telemetry?
 colliers.com##+js(set-local-storage-item, visitorId, $remove$)
 ||colliers.com/Coveo/Hive/js/CoveoForSitecoreAnalytics.js
