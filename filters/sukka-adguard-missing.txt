@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Thu, 26 Mar 2026 15:41:02 GMT
+! Last modified: Thu, 26 Mar 2026 19:34:14 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Thu, 26 Mar 2026 13:14:39 +0000
+!   - Last modified: Thu, 26 Mar 2026 16:50:53 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Thu, 26 Mar 2026 13:33:10 +0000
@@ -30,7 +30,7 @@
 !   - Last modified: Tue, 24 Mar 2026 16:09:43 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
-!   - Last modified: Thu, 26 Mar 2026 13:30:44 +0000
+!   - Last modified: Thu, 26 Mar 2026 15:48:23 +0000
 ! --------------------------------------------------------------
 ! uBlock filters https://ublockorigin.pages.dev/filters/filters.min.txt
 *_ad_$media,domain=youtube.com,3p
@@ -8618,9 +8618,7 @@ nekopoicare.*>>##+js(acs, EventTarget.prototype.addEventListener, delete window)
 ||mapple.uk/bundle-prod.js$script
 ||r2.dev^$script,domain=summerhikarudied.com
 embedtv.best##+js(rmnt, script, delete window)
-embedtv.best##+js(rpnt, script, /\$.*\_blank.*\)/)
-embedtv.best##+js(rpnt, script, (detectSandbox()), (1==2))
-||embedtv.best^$csp=sandbox allow-forms allow-same-origin allow-scripts allow-modals allow-orientation-lock allow-pointer-lock allow-presentation allow-top-navigation
+embedtv.best##+js(rpnt, script, /\$.*append.*\_blank.*\)/)
 ||filmovi.ws^$csp=script-src * 'unsafe-inline'
 /^https?:\/\/[a-z]{8,15}\.com\/$/$xhr,3p,to=com,method=head,header=access-control-expose-headers:/X-DirectionPartner-Id/
 /^https?:\/\/[a-z]{8,15}\.net\/$/$xhr,3p,to=net,method=head,header=access-control-expose-headers:/X-DirectionPartner-Id/
@@ -36931,3 +36929,5 @@ aeropress.com##+js(trusted-click-element, div[id^="alia-popup-root-alia-"] div[a
 duolingo.com##[data-test*="challenge"]:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important; -webkit-tap-highlight-color: revert !important; cursor: revert !important;)
 willow.arlen.icu##+js(nosiif, e, 1000)
 willow.arlen.icu##+js(aopr, document.onkeydown)
+googleapis.com.de##+js(aeld, /contextmenu|keydown/)
+googleapis.com.de##+js(rmnt, script, /oncontextmenu|onselectstart/)
