@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Sun, 29 Mar 2026 10:54:07 GMT
+! Last modified: Sun, 29 Mar 2026 14:52:47 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.2.2
+!   - Version: 2.1.2.3
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -543,7 +543,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||mobuppsweb.online^
 ||extreme-ip-lookup.com^$3p
 ||easywebsiteanalytics.com^$3p
-||onelinksmartscript.appsflyer.com^
 ||pixel.wetracked.io^$3p
 ||api-pixels.easyadsapp.com^
 ||sayac.net.tr^$3p
@@ -128003,6 +128002,7 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||scheels.com/metrics/
 ||us-central1-terrific-live.cloudfunctions.net/userEvents|
 ||openpanel.velarium.cc/api/track|
 ||mk-log.makeshop.co.kr/static/js/analytics.min.js
@@ -133277,13 +133277,11 @@ dlsdk.appsflyer.com^
 ||gcd-s2s.appsflyer.com^
 ||gcdsdk.appsflyer.com^
 ||hq1.appsflyer.com^
-||impression.appsflyer.com^
 ||inapps.appsflyer.com^
 ||launches.appsflyer.com^
 ||onelink.appsflyer.com^
 ||register.appsflyer.com^
 ||sdk-services.appsflyer.com^
-||sdk.appsflyer.com^
 ||stats.appsflyer.com^
 ||track.appsflyer.com^
 ||validate.appsflyer.com^
@@ -134371,6 +134369,7 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=saturn.de
 @@||metrics.us.playstation.com/b/ss/
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
+@@||cdn.optimizely.com/datafiles/*.json$domain=scheels.com
 @@||cdn.tagcommander.com^$domain=monespaceemprunteur.cnp.fr
 @@||api.cxense.com/public/widget/$domain=tv-tokyo.co.jp
 n11.com##+js(addEventListener-defuser, click, ownerDocument, elements, a.product-card[href])
