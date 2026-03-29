@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sun, 29 Mar 2026 14:52:47 GMT
+! Last modified: Sun, 29 Mar 2026 19:04:17 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sun, 29 Mar 2026 02:01:03 +0000
+!   - Last modified: Sun, 29 Mar 2026 16:03:15 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Sat, 28 Mar 2026 09:21:54 +0000
@@ -17,10 +17,10 @@
 !   - Last modified: Sun, 29 Mar 2026 01:56:42 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
-!   - Last modified: Sun, 29 Mar 2026 00:27:06 +0000
+!   - Last modified: Sun, 29 Mar 2026 13:22:57 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Sat, 28 Mar 2026 13:02:04 +0000
+!   - Last modified: Sun, 29 Mar 2026 15:44:26 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
 !   - Last modified: Sat, 21 Mar 2026 02:04:14 +0000
@@ -30,7 +30,7 @@
 !   - Last modified: Fri, 27 Mar 2026 03:50:25 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
-!   - Last modified: Sun, 29 Mar 2026 10:11:23 +0000
+!   - Last modified: Sun, 29 Mar 2026 13:05:04 +0000
 ! --------------------------------------------------------------
 ! uBlock filters https://ublockorigin.pages.dev/filters/filters.min.txt
 *_ad_$media,domain=youtube.com,3p
@@ -8581,6 +8581,7 @@ songspk.*##+js(aost, Object, /(?=^(?!.*(https)))/)
 0vg9r.com,10hitmovies.com,11xmovies.*,1flix.to,1mov.lol,26efp.com,2tamilprint.pro,2024tv.ru,720pflix.*,7hitmovies.*,7starhd.*,9animetv.to,9xmoovies.com,3xyaoi.com,9n8o.com,advertape.net,advertisertape.com,afilmywapi.biz,all3do.com,alldownplay.xyz,alphatron.tv,andyday.*,anime3rb.com,animeflv.*,animenexus.in,animeunity.*,animeyabu.org,animez.org,anisaga.org,anitube.*,aniwatchtv.to,anroll.net,aparttent.com,apkship.shop,arc018.to,asd.*,ask4movie.*,ate60vs7zcjhsjo5qgv8.com,avjosa.com,bigwarp.*,bollydrive.*,boxingstream.me,braflix.tube,capo4play.com,caq21harderv991gpluralplay.xyz,cardboardtranslation.com,cinedokan.top,clickndownload.*,cloudnestra.com,cloudy.pk,cookiewebplay.xyz,crackstreamsfree.com,cuevana.pro,curiosidadtop.com,daddylivestream.com,databasegdriveplayer.*,demonicscans.org,desicinema.org,desicinemas.pk,dlolcast.pro,do7go.com,dooodster.com,doods.to,doply.net,dorawatch.net,dotflix.*,drakorkita73.kita.rest,dramanice.video,driveup.space,drop.download,dudefilms.*,ebook-hunter.org,edgedeliverynetwork.com,embasic.pro,embedcanais.com,embedtv.net,embdproxy.xyz,engstreams.shop,enorme.tv,eternalmangas.org,f75s.com,fastdokan.*,fastdownload.top,file4go.*,filmyworlds.*,filmyzilla5.com,flixhd.cc,flostreams.xyz,fmoviesto.*,fifojik.*,footballstreams.lol,footybite.*,foreverquote.xyz,frembed.*,french-stream.*,freshwaterdell.com,fsportshd.net,futemais.net,fztvseries.ng,gdflix.*,gdriveplayer.*,gdrivelatinohd.net,gdtot.*,gidplayer.online,giize.com,goku.sx,gomovies.pk,hdfilme.*,hdhub4u.*,hakunamatata5.org,hdtodayz.to,hexload.com,hianime.*,hoca2.com,hoca6.com,hoca4u.xyz,hollymoviehd.cc,hunterscomics.com,ico3c.com,jojolandsmanga.com,joyousplay.xyz,jpopsingles.eu,jxoplay.xyz,kaa.mx,kingstreamz.site,lato.sx,likemanga.ink,linkmake.in,linksheild.site,lotusgamehd.xyz,lrepacks.net,luckypatchers.com,lulu.st,lulustream.*,luluvdo.com,luluvdoo.com,luluvid.com,m1xdrop.com,m1xdrop.net,mapple.tv,maxstream.*,mcloud.guru,medeberiya.site,mega4upload.net,messitv.org,mh.baxoi.buzz,m1xdrop.bz,mlbb.space,mlfbd.*,movieku.ink,movielair.cc,movielinkbdofficial.com,movies123.pk,movies4u.*,moviesapi.to,movieshdwatch.to,movieshubweb.com,moviesjoy.*,moviesnation.*,movies2watch.*,moviezwap.*,myflixerz.to,myvidplay.com,mywatchseries.*,nbabite.to,nexdrive.*,neymartv.net,nflbite.to,nmac.to,ogoplayer.xyz,olympustaff.com,omuzaani.me,onlinekosh.com,pahe.*,pelisflix2.*,pkembed.*,player.smashy.stream,playerflixapi.com,pondit.xyz,poophq.com,popcornmovies.org,poscitechs.lol,pressplay.cam,pressplay.top,putlocker.*,reddit-streams.online,reliabletv.me,reviewrate.net,riedberg.tv,ripplestream4u.*,rojadirectaenhd.net,rubyvid.com,s2watch.link,safefileku.com,savefiles.com,seeflix.to,sflix.*,shazysport.pro,shopr.tv,showflix.*,skysetx.*,snowmtl.ru,soap2day.*,souq-design.com,spcdn.xyz,sportingsurge.com,sportsgames.today,sportshub.stream,sportsloverz.xyz,spotifylists.com,storynavigation.com,strcloud.in,streamblasters.*,streambtw.com,streameast.*,streamed.su,streamfree.to,streaming-community.*,streamingcommunityz.*,streamingunity.to,streamlivetv.site,streamlord.com,streamruby.com,streamta.site,streamtape.*,streamup.ws,strmup.to,strmup.ws,subtitlecat.com,swfr.tv,swiftload.io,tamilprint29.*,tamilprint30.*,tamilprint31.*,tapepops.com,telepisodes.org,tfp.is,thedaddy.*,theflixertv.to,thehesgoal.com,tinyzonetv.cc,topembed.pw,totalsportek.*,tous-sports.ru,tutvlive.ru,tvableon.me,tvsportslive.fr,up-4ever.net,updown.cam,ups2up.fun,uptomega.net,usgate.xyz,ustream.to,uqload.*,vcloud.lol,vecloud.eu,veev.to,vegamovies4u.*,veplay.top,vidara.so,vidara.to,vide0.net,video-seed.xyz,vidora.stream,vidply.com,vidsrc.*,vidtube.one,vidzy.org,vinovo.to,vipleague.*,viprow.*,vixcloud.co,vodkapr3mium.com,volokit2.com,vvide0.com,watch.ug,watch32.sx,watchadsontape.com,watchf1full.com,watchonlinemovie.pk,watchonlinemovies.vercel.app,watchseries.*,watchseries8.to,watchug.to,way2movies.*,wdpglobal.com,weakstreams.online,wearehunger.site,wmovies.xyz,y2mate.*,yomovies.*,yoxplay.xyz,ythd.org,yuppow.com,zjet7.com,zorroplay.xyz##+js(acs, EventTarget.prototype.addEventListener, delete window)
 11xmovies.*,1tamilprint.art,2024tv.ru,2tamilprint.pro,9xmoovies.com,apkship.shop,ask4movie.*,avjosa.com,beinmatch.fit,beinmatch1.live,bigwarp.cc,bigwarp.io,capo4play.com,checklinks.online,cinego.tv,clickndownload.*,clicknupload.*,cookiewebplay.xyz,crackstreamsfree.com,cricstream.me,dlolcast.pro,dokoembed.pw,dooodster.com,embasic.pro,engstreams.shop,ev01.to,fojik.*,footballstreams.lol,footybite.to,foreverquote.xyz,fstream365.com,futemais.net,fzmovies.*,gdtot.*,gostream.to,hdstream.one,hoca2.com,hoca4u.xyz,kingstreamz.site,linksheild.site,linkz.*,lulustream.com,luluvdo.com,messitv.org,mostream.us,moviedokan.*,movies4u.*,myflixer.*,nbabite.to,nexdrive.*,neymartv.net,nflbite.to,oii.la,pahe.*,pkembed.*,poscitechs.lol,prmovies.*,readcomiconline.li,reddit-streams.online,ripplestream4u.*,rojadirectaenhd.net,rubyvid.com,s2watch.link,s3embtaku.pro,sflix.to,sflix2.to,shazysport.pro,showflix.*,sportshub.stream,sportsloverz.xyz,streamblasters.*,streameast.*,streamed.su,streamingcommunity.*,streamlivetv.site,streamta.site,streamtpmedia.com,strikeout.*,thehesgoal.com,topcinema.cam,topembed.pw,totalsportek.*,uqload.*,usgate.xyz,vidnest.io,vidnest.live,vixcloud.co,weakstreams.online,zonatmo.com##^script:has-text('{delete window[')
 11xmovies.*,beinmatch.fit,beinmatch1.live,cinego.tv,clicknupload.*,dokoembed.pw,ev01.to,fojik.*,fstream365.com,fzmovies.*,linkz.*,lulustream.com,minoplres.xyz,mostream.us,moviedokan.*,myflixer.*,oii.la,pahe.*,prmovies.*,readcomiconline.li,s3embtaku.pro,sflix2.to,sportshub.stream,streamblasters.*,streamingcommunity.*,streamtpmedia.com,strikeout.*,topcinema.cam,topembed.pw,vidnest.io,vidnest.live,webxzplay.cfd,zonatmo.com##+js(rmnt, script, '{delete window[')
+twstalker.com##+js(acs, Array.prototype.reduce, delete window[)
 filecrypt.*,mediacast.click,playcast.click##+js(acs, EventTarget.prototype.addEventListener, key in document)
 pahe.*##html > iframe[style^="display:"]:not([src]):remove()
 atlaq.com,bolly4umovies.*,douploads.net,moalm-qudwa.blogspot.com##+js(aopr, zfgformats)
@@ -21840,7 +21841,7 @@ tube.shegods.com##+js(nowoif)
 tube.shegods.com##.main-gal > .right-gallery
 fileq.games##+js(nowoif, _blank)
 animekai.*##+js(nowoif, _blank)
-moontv.to,sflix.fi##+js(nowoif)
+flixzone.co,moontv.to,sflix.fi##+js(nowoif)
 ||animekai.*/sw.js^
 velo.outsideonline.com##main:style(margin-top: 10px !important)
 gulfnews.com##.page-wrapper > #nav-bar > div[class]:has(> div[class] > div[id*="top-filler-ad"])
@@ -30911,6 +30912,8 @@ thegatewaypundit.com##+js(rmnt, script, Object.getOwnPropertyDescriptor(Document
 thegatewaypundit.com##+js(set, String.prototype.allReplace, 1)
 thegatewaypundit.com##^script[onload][onerror]
 ebc.com.br##+js(set, executaGoogleAnalytics3, noopFunc)
+@@||api.adinplay.com/libs/aiptag/pub/YRG/yorg3.io/tag.min.js$script,domain=yorg3.io
+@@||api.adinplay.com/v*/live/aip/ad-manager.js$script,domain=yorg3.io
 ! uBlock filters – Quick fixes https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
 @@||hb.vntsm.com/v4/live/vms/sites/aternos.org/index.js$script,domain=aternos.org
 aternos.org##.header-center:style(margin-top:-5000px !important;)
@@ -30972,57 +30975,21 @@ dianaavoidthey.com##+js(acs, WebAssembly, atob)
 ||network-loop.com/campaigns/banners/$domain=japscan.*,important
 japscan.*#@#.navbar-nav > li.nav-item > a.text-truncate.nav-link.font-weight-bold[href*="?"]
 japscan.*#@#body > div.full-container > div.full-container.text-center > div.mt-2[style="margin: 0px auto; display: block;"] > a.Aikoi.donate[target="_blank"][rel][href^="https://www.longosto.shop/?utm_source="] > img.img-fluid
-japscan.*##+js(trusted-set, pubadxtag, 'json:{"divIds":[]}')
-japscan.*##+js(trusted-suppress-native-method, Document.prototype.querySelector, '"/^\[data-l/"')
-japscan.*##+js(trusted-suppress-native-method, Document.prototype.querySelectorAll, '"/^[#.][A-Z][-A-Z_a-z]+$/"')
-japscan.*##span ~ div[class][id]:not(#chapters, #reader):remove()
-japscan.*##span ~ div[class]:not([id]):remove()
-japscan.*##div[data-src]:remove()
-japscan.*##+js(trusted-suppress-native-method, Document.prototype.querySelector, '"/^div\[/"')
-japscan.*##span ~ span[id][class]:remove()
-japscan.*##+js(trusted-suppress-native-method, Document.prototype.getElementsByTagName, '"i"')
-japscan.*##+js(trusted-suppress-native-method, Document.prototype.querySelectorAll, '"/^\[data-[_a-z]{5,7}\]$/"')
 japscan.*##+js(trusted-suppress-native-method, Array.from, '"/NodeList/"', prevent, inlineScript)
-japscan.*##[id^="nav"] ~ div[id]:not(.tab-content):remove()
-japscan.*##[id^="nav"] ~ span:remove()
-japscan.*##[style^="width:9"] > span:remove()
-japscan.*##[id^="nav"] ~ div:not([id]):remove()
-japscan.*##[class*="W"][class*="ll"] > span:remove()
-japscan.*##[class^="WidthF"] > span:remove()
-japscan.*##[class^="FuWidth"] > span:remove()
-japscan.*##[class^="Fllid"] > span:remove()
 japscan.*##+js(trusted-suppress-native-method, Document.prototype.querySelectorAll, '"/^\[d[a-z]t[a-z]?-[0-9a-z]{2,4}\]$/"')
-japscan.*##+js(trusted-suppress-native-method, Document.prototype.querySelectorAll, '"/^\[[a-z]{2,3}-/"')
-japscan.*##+js(trusted-suppress-native-method, Document.prototype.querySelectorAll, '"/^\[data-[a-z]+src\]$/"')
-japscan.*##+js(trusted-suppress-native-method, Document.prototype.querySelectorAll, '"/^\[[a-z]{5}-/"')
-japscan.*##[class^="Kiss" i] > span:remove()
-japscan.*##[class*="Love" i] > span:remove()
-japscan.*##+js(trusted-suppress-native-method, Document.prototype.querySelectorAll, '"/^\[[a-ce-z][a-z]+-/"')
-japscan.*##+js(trusted-suppress-native-method, Document.prototype.querySelectorAll, '"/^\[d[b-z][a-z]*-/"')
-japscan.*##[class*="Wo"] > span:remove()
-japscan.*##[id^="note"] > span:remove()
-japscan.*##[class*="You"] > div:not(#reader):remove()
-japscan.*##+js(trusted-suppress-native-method, Document.prototype.querySelectorAll, '"/[\S\s]*\[[^d][\S\s]+\][\S\s]*/"')
-japscan.*##.text-center > div > * > div[id]:not(#reader):remove()
-japscan.*##.container > div > * > div[id]:not(#reader, #notice-message, .card):remove()
-japscan.*##section:remove()
 japscan.*##+js(trusted-suppress-native-method, HTMLElement.prototype.querySelectorAll, '"/.*\[[^imns].+\].*/"')
 japscan.*##+js(trusted-suppress-native-method, Element.prototype.hasAttribute, '"/[\S\s]+/"', prevent, inlineScript)
-japscan.*###chapters:not(div,select):remove()
-japscan.*,~japscan.vip##body *:not(a,br,button,canvas,canvas ~ *,cn-vvv,code,div,footer,form,h1,h2,h3,h4,h5,h6,hr,i,iframe,img,input,label,li,meta,nav,noscript,ol,option,p,script,select,small,span,strong,style,ul,[data-x],body > *):remove()
+japscan.*,~japscan.vip##body *:not(a,br,button,canvas,canvas ~ *,cn-vvv,code,div,footer,form,h1,h2,h3,h4,h5,h6,hr,i,iframe,img,input,label,li,meta,nav,noscript,ol,option,p,script,select,small,span,strong,style,ul,[data-x],body > *)
 japscan.*##+js(trusted-suppress-native-method, Document.prototype.evaluate, '"/.*/"', prevent, inlineScript)
 japscan.*##+js(trusted-suppress-native-method, Document.prototype.createTreeWalker, '"/.*/"', prevent, inlineScript)
-japscan.*##div[id]:not(#TogglerNav,#bds,#best-value,#blare-inter,#blir-nter,#block-left,#block-right,#bookmarks,#chapters,#challenge-success-text,#content,#footer-text,#full-reader,#gnt_xmst,#https\:\/\/www\.japscan\.foo,#list_chapters,#main,#mangas,#minimize,#move,#nav_Header,#notice-message,#noticeMessage,#quit,#reader,#report-modal,#report-success,#results,#searchForm,#sidebar,#tns-inner,#toolbar,#verifying-msg,#windowbar,.cb-container,.loading-verifying,.main-content > div, body > div,[id^="collapse-"],[id^="d-img"],[id^="jc-"],[id^="single-reader"],[id^="tab"],[id^="tns1"],[id^="top"]):remove()
+japscan.*##div[id]:not(#TogglerNav,#bds,#best-value,#blare-inter,#blir-nter,#block-left,#block-right,#bookmarks,#chapters,#challenge-success-text,#content,#footer-text,#full-reader,#gnt_xmst,#https\:\/\/www\.japscan\.foo,#list_chapters,#main,#mangas,#minimize,#move,#nav_Header,#notice-message,#noticeMessage,#quit,#reader,#report-modal,#report-success,#results,#searchForm,#sidebar,#tns-inner,#toolbar,#verifying-msg,#windowbar,.cb-container,.loading-verifying,.main-content > div, body > div,[id^="collapse-"],[id^="d-img"],[id^="jc-"],[id^="single-reader"],[id^="tab"],[id^="tns1"],[id^="top"])
 japscan.*##+js(aost, aclib, /stackDepth:3\s+get injectedScript.+inlineScript/)
 japscan.*##+js(aost, setTimeout, /stackDepth:3.+inlineScript:\d{4}:1/)
 japscan.*##+js(norafif, Date)
-japscan.*##.HuKlQ > div > div:not(#reader):remove()
 japscan.*##+js(aost, MessageChannel, /stackDepth:2.+inlineScript/)
-japscan.*###noticeMessage[role] ~ div:not(#reader):remove()
-japscan.*##div[oeipqaa]:remove()
 japscan.*##+js(prevent-innerHTML, , /\.(gif|jpe?g|png|webp)/)
 japscan.*##+js(set, Element.prototype.textContent, undefined)
-japscan.*##:matches-path(/^\/man(g|h.)a/) div div[id]:matches-attr("/[0-9A-Za-z]{5,}/"="/.{3,}/"):matches-css(position:fixed)
+japscan.*##:matches-path(/^\/man(g|h.)a/) div div:matches-attr("/[-0-9A-Za-z]{6,}/"="/.+/"):matches-css(position:fixed)
 japscan.*##html > div[style="position: fixed; inset: 0px; z-index: 2147483647; pointer-events: auto;"]
 japscan.*##+js(norafif, requestAnimationFrame)
 japscan.*##+js(trusted-suppress-native-method, Document.prototype.createElement, '"span"', abort, /apply in.+[0-9A-Za-z]{8\,10} inlineScript/)
@@ -31031,9 +30998,10 @@ japscan.*##+js(trusted-suppress-native-method, Document.prototype.createElement,
 japscan.*##+js(aopr, aclib)
 japscan.*##+js(trusted-suppress-native-method, Element.prototype.getElementsByTagName, '"div"', abort, /apply in.+[0-9A-Za-z]{8\,10} inlineScript/)
 japscan.*##+js(aost, performance.now, /\s[0-9A-Za-z]{8\,10} inlineScript:1/)
-japscan.*##+js(acs, Array.prototype.push, /^\s*\(\s*function\s*\(\s*[-$0-9A-Z_a-z]+[\S\s]{2000\,6000}$/)
+japscan.*##+js(acs, Array.prototype.push, /^\s*\(\s*function\s*\(\s*[-$0-9A-Z_a-z]+[\S\s]{2000\,}$/)
 japscan.*##+js(acs, Array.prototype.join, /^[\S\s]{2000\,6000}$/)
 japscan.*##+js(acs, DOMTokenList.prototype.remove, /^[\S\s]{3000\,4000}$/)
+japscan.*##+js(acs, Node.prototype.appendChild, /cssText'|:'style'/)
 poophq.com,veev.to,doods.to##+js(nowoif)
 poophq.com,veev.to,doods.to##+js(no-xhr-if, /vast.php?)
 poophq.com,veev.to,doods.to##+js(no-xhr-if, /click\.com|preroll|native_render\.js|acscdn/, length:10001)
@@ -31149,6 +31117,7 @@ pvpoke-re.com##+js(trusted-set-attr, ins.adsbygoogle.nitro-side\,ins.adsbygoogle
 pvpoke-re.com##+js(no-fetch-if, url:https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-3497863494706299 method:HEAD mode:no-cors, , , throttle, 121)
 pvpoke-re.com##+js(trusted-replace-argument, String.prototype.indexOf, 0, json:"/", condition, /premium)
 pvpoke-re.com##+js(trusted-rpnt, script, var menuSlideProtection, /*start*/!function(){"use strict";const e=Function.prototype.toString\,t=new WeakMap;let n=0;const o=(e\,n)=>{if("function"==typeof e&&(t.set(e\,`function ${n}() { [native code] }`)\,n))try{Object.defineProperty(e\,"name"\,{value:n\,configurable:!0})}catch(e){}return e}\,r=()=>{const e=(new Error).stack;return e&&/[A-Za-z]{3}\d[0-9A-Za-z]{4\,}\.js\?v=/.test(e)?e:null}\,i=1770030787823;let a=0;const c=window.Date\,s=c.now\,p=window.performance.now.bind(window.performance);window.Date=o(class extends c{constructor(...e){const t=r();return 0===e.length&&t?(n++\,1===n?new c(i+a):new c):super(...e)}static now(){return r()?i+a:s()}}\,"Date")\,window.performance.now=o((()=>p()+a)\,"now");const u=e=>{try{const t=Object.getOwnPropertyDescriptor(HTMLIFrameElement.prototype\,"contentWindow").get;Object.defineProperty(e\,"contentWindow"\,{get:function(){const e=t.apply(this);return e&&e.Function&&e.Function.prototype.toString!==window.Function.prototype.toString&&(e.Function.prototype.toString=window.Function.prototype.toString)\,e}\,configurable:!0})}catch(e){}}\,l=document.createElement;document.createElement=o((function(e){const t=l.apply(this\,arguments);return e&&"iframe"===e.toLowerCase()&&u(t)\,t})\,"createElement");const d=Element.prototype.appendChild;Element.prototype.appendChild=o((function(e){return e&&"IFRAME"===e.tagName&&u(e)\,d.apply(this\,arguments)})\,"appendChild");const y=window.performance\,g=y.getEntriesByType\,f=(e\,t)=>{const n=Object.create(PerformanceResourceTiming.prototype)\,o={name:{value:e\,enumerable:!0}\,entryType:{value:"resource"\,enumerable:!0}\,initiatorType:{value:t\,enumerable:!0}\,duration:{value:15\,enumerable:!0}\,startTime:{value:100\,enumerable:!0}\,responseEnd:{value:115\,enumerable:!0}\,transferSize:{value:0\,enumerable:!0}\,encodedBodySize:{value:0\,enumerable:!0}\,decodedBodySize:{value:0\,enumerable:!0}};return Object.defineProperties(n\,o)\,n}\,m=o((function(e){let t=[];try{t=g.call(y\,e)}catch(e){t=[]}if("resource"===e){if(r())return[...t\,f("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3497863494706299"\,"script")\,f("https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202602170101/show_ads_impl_fy2021.js"\,"script")\,f("https://googleads.g.doubleclick.net/pagead/html/r20260218/r20190131/zrt_lookup_fy2021.html"\,"iframe")\,f("https://pagead2.googlesyndication.com/pagead/gen_204"\,"img")\,f("https://pagead2.googlesyndication.com/pagead/ping?e=1"\,"fetch")]}return t})\,"getEntriesByType");try{Object.defineProperty(y\,"getEntriesByType"\,{value:m\,writable:!1\,configurable:!0})}catch(e){y.getEntriesByType=m}const h=Array.prototype.push;Array.prototype.push=o((function(...e){if((e=>{if(!e)return!1;const t=e.split("\n").length-1\,n=e.includes("_executeCallback")\,o=/at\s+([0-9A-Z_a-z]{1\,3}|<anonymous>)\s+\(/.test(e);return t>=4&&t<=6&&(n||o)})((new Error).stack)){const t=["fetch"\,"XMLHttpRequest"]\,n=e.filter((e=>!t.includes(e)));return 0===n.length&&e.length>0?this.length:h.apply(this\,n)}return h.apply(this\,e)})\,"push");const w=window.XMLHttpRequest\,b=o((function(){return new w(...arguments)})\,"XMLHttpRequest");b.prototype=w.prototype\,Object.setPrototypeOf(b\,w)\,window.XMLHttpRequest=b\,Function.prototype.toString=o((function(){if(t.has(this))return t.get(this);return["XMLHttpRequest"\,"fetch"\,"querySelectorAll"\,"bind"\,"push"\,"toString"\,"addEventListener"\,"now"\,"Date"\,"match"\,"createElement"\,"getEntriesByType"\,"setTimeout"].includes(this.name)?`function ${this.name}() { [native code] }`:e.apply(this\,arguments)})\,"toString");const E=window.fetch;window.fetch=o((function(e){return"string"==typeof e&&e.includes("googleads")?E.apply(this\,arguments).then((e=>(a+=40\,e))):E.apply(this\,arguments)})\,"fetch");const v=window.setTimeout;window.setTimeout=o((function(e\,t){if("function"==typeof e){const t=e.toString().replace(/\s+/g\,"");if(t.length<50&&/[$0-9A-Z_a-z]+&&[$0-9A-Z_a-z]+\(\)/i.test(t))return}return v.apply(this\,arguments)})\,"setTimeout")}();document.currentScript.textContent=document.currentScript.textContent.replace(/\/\*start\*\/(.*)\/\*end\*\//\,"");/*end*/var menuSlideProtection, sedCount, 1)
+pvpoke-re.com##+js(trusted-set-attr, ins.adsbygoogle, data-adsbygoogle-status, done)
 ||pvpoke-re.com/*.js?v=$replace=/try\{GameMaster/try{return;GameMaster/
 pvpoke-re.com##+js(trusted-override-element-method, HTMLIFrameElement.prototype.remove, iframe[src^="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-3497863494706299"])
 royalroad.com##.dKKumhSnWiFq75vPUVtmTanQ:has(a[href^="https://www.royalroad.com/a/r?campaign="]:not([href*="&url=https%3A%2F%2Fwww.royalroad.com"]))
@@ -33493,7 +33462,7 @@ abstream.to##+js(acs, document.onkeydown)
 ||onepiecepower.com/spoiler.js
 e-panigiria.gr##+js(rmnt, script, oncontextmenu)
 e-panigiria.gr###body *:not(input):not(textarea):style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
-anikai.to,animekai.*,anigo.to,hianime.ws,moontv.to,yflix.to##+js(nostif, ||!!)
+anikai.to,animekai.*,anigo.to,flixzone.co,hianime.ws,moontv.to,yflix.to##+js(nostif, ||!!)
 sflix.fi##+js(nostif, || !!_)
 webnoveltranslations.com##+js(aeld, /contextmenu|copy|cut|key/, , elements, document)
 bitcine.app##+js(aeld, keydown, 123)
@@ -36810,10 +36779,10 @@ astoryofmasasstruggles.com##style:has-text(@media print):remove()
 ||pokeos.com/pokeos-uploads/ads/adblock/$image
 lemon8-app.com##+js(trusted-click-element, .seo-landing-modal-cancel-btn .design-system-button-container, , 500)
 lemon8-app.com##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important; -webkit-tap-highlight-color: revert !important; cursor: revert !important;)
-~challenges.cloudflare.com,anikai.to,animekai.*,anigo.to,hianime.ws,moontv.to,sflix.fi,yflix.to,anikai.to>>,animekai.*>>,anigo.to>>,hianime.ws>>,moontv.to>>,sflix.fi>>,yflix.to>>##+js(aeld, keydown, /^function\(.*\|\|.*}$/)
-~challenges.cloudflare.com,anikai.to,animekai.*,anigo.to,hianime.ws,moontv.to,sflix.fi,yflix.to,anikai.to>>,animekai.*>>,anigo.to>>,hianime.ws>>,moontv.to>>,sflix.fi>>,yflix.to>>##+js(set, console.clear, trueFunc)
-~challenges.cloudflare.com,anikai.to,animekai.*,anigo.to,hianime.ws,moontv.to,sflix.fi,yflix.to,anikai.to>>,animekai.*>>,anigo.to>>,hianime.ws>>,moontv.to>>,sflix.fi>>,yflix.to>>##+js(set, console.table, trueFunc)
-~challenges.cloudflare.com,anikai.to,animekai.*,anigo.to,hianime.ws,moontv.to,sflix.fi,yflix.to,anikai.to>>,animekai.*>>,anigo.to>>,hianime.ws>>,moontv.to>>,sflix.fi>>,yflix.to>>##+js(set, console.log, trueFunc)
+~challenges.cloudflare.com,anikai.to,animekai.*,anigo.to,flixzone.co,hianime.ws,moontv.to,sflix.fi,yflix.to,anikai.to>>,animekai.*>>,anigo.to>>,flixzone.co>>,hianime.ws>>,moontv.to>>,sflix.fi>>,yflix.to>>##+js(aeld, keydown, /^function\(.*\|\|.*}$/)
+~challenges.cloudflare.com,anikai.to,animekai.*,anigo.to,flixzone.co,hianime.ws,moontv.to,sflix.fi,yflix.to,anikai.to>>,animekai.*>>,anigo.to>>,flixzone.co>>,hianime.ws>>,moontv.to>>,sflix.fi>>,yflix.to>>##+js(set, console.clear, trueFunc)
+~challenges.cloudflare.com,anikai.to,animekai.*,anigo.to,flixzone.co,hianime.ws,moontv.to,sflix.fi,yflix.to,anikai.to>>,animekai.*>>,anigo.to>>,flixzone.co>>,hianime.ws>>,moontv.to>>,sflix.fi>>,yflix.to>>##+js(set, console.table, trueFunc)
+~challenges.cloudflare.com,anikai.to,animekai.*,anigo.to,flixzone.co,hianime.ws,moontv.to,sflix.fi,yflix.to,anikai.to>>,animekai.*>>,anigo.to>>,flixzone.co>>,hianime.ws>>,moontv.to>>,sflix.fi>>,yflix.to>>##+js(set, console.log, trueFunc)
 loverslab.com##+js(nano-sib)
 /akam/13/*$script,xhr,1p,domain=easyjet.com|ing.nl,important
 easyjet.com,ing.nl##+js(cookie-remover, ak_bmsc, when, scroll keydown)
