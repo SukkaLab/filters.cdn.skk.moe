@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Mon, 30 Mar 2026 19:31:01 GMT
+! Last modified: Mon, 30 Mar 2026 22:57:29 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Mon, 30 Mar 2026 14:28:09 +0000
+!   - Last modified: Mon, 30 Mar 2026 20:06:28 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Mon, 30 Mar 2026 12:50:19 +0000
@@ -19751,11 +19751,10 @@ pianetalecce.it##+js(acs, document.getElementById, ablk)
 hiraethtranslation.com##+js(rmnt, script, adsSrc)
 chasingthedonkey.com##+js(nowoif)
 taste.com.au##.main-header:style(top: 0 !important)
-@@/prebid/*$script,domain=decompiler.com
-@@/javascripts/*prebid-ads/ads-prebid*.js^$script,domain=decompiler.com
 @@||codicibancari.it/scripts/tracking/pixel/conversion/prebid_*.js$domain=decompiler.com
 decompiler.com##+js(acs, document.getElementById, /adblock/i)
 decompiler.com##+js(rpnt, script, /\b\w+\s*=\s*\w+\[['"`]\w+['"`]\]\s*;?\s*if\s*\(\s*\w+\s*===\s*undefined\s*\)/)
+decompiler.com##+js(rmnt, script, "'a','l','e','r','t'")
 @@||ytlarge.com^$ghide
 @@||googlesyndication.com^$script,xhr,domain=ytlarge.com
 @@||fundingchoicesmessages.google.com^$script,xhr,domain=ytlarge.com
@@ -22215,6 +22214,8 @@ v2movies.click,v2movies.me##+js(nowoif)
 ||serving.adserver.live^
 v2movies.click,v2movies.me##[href^="https://refpa58144.com/"]
 goplay.su##+js(nowoif)
+goplay.su##+js(json-prune, *, rot_url)
+goplay.su##+js(json-prune, *, pop_type)
 *$popup,3p,domain=goplay.su
 ||ssp.goplay.su^$xhr
 ||infolkwitness.shop^
