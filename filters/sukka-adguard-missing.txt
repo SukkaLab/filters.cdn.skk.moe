@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Mon, 30 Mar 2026 22:57:29 GMT
+! Last modified: Tue, 31 Mar 2026 04:44:35 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,10 +8,10 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Mon, 30 Mar 2026 20:06:28 +0000
+!   - Last modified: Tue, 31 Mar 2026 01:09:39 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
-!   - Last modified: Mon, 30 Mar 2026 12:50:19 +0000
+!   - Last modified: Tue, 31 Mar 2026 02:15:33 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
 !   - Last modified: Mon, 30 Mar 2026 14:42:40 +0000
@@ -22570,6 +22570,7 @@ xvideos-full.com##+js(nowoif)
 desifakes.com##+js(rmnt, script, navigator.userAgent)
 ||sibontwun.in^
 pitube.net##+js(rmnt, script, /request|_0x/)
+neoxsoftworks.eu##+js(set-session-storage-item, adblockDismissed, 1)
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -26834,6 +26835,17 @@ ublockorigin.app###main::before:style(content: 'This is not the official uBlock 
 ||keepass-xc.com^$all
 ##body > div.captcha-container > div.captcha-card
 ||canadamilksettlement.com^$all
+||bp-sogou.com.cn^$all
+||win-sogou.com^$all
+||x-sogou.com^$all
+||qishmusic.com.cn^$all
+||apps-sougoupinyin.com^$all
+||ai-sogou.com.cn^$all
+||soougou.com.cn^$all
+||pc-sogou.com.cn^$all
+||sogoushurf.com^$all
+-sogou.com.cn^$doc,to=com.cn
+-sogou.com^$doc,to=com
 ! uBlock filters – Privacy https://ublockorigin.pages.dev/filters/privacy.min.txt
 ||google-analytics.com/analytics.js$script,xhr,redirect=google-analytics_analytics.js:5
 ||google-analytics.com/cx/api.js$script,redirect=google-analytics.com/cx/api.js:5
