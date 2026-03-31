@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Tue, 31 Mar 2026 11:11:20 GMT
+! Last modified: Tue, 31 Mar 2026 15:36:22 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Tue, 31 Mar 2026 06:54:27 +0000
+!   - Last modified: Tue, 31 Mar 2026 11:17:53 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Tue, 31 Mar 2026 02:15:33 +0000
@@ -17,7 +17,7 @@
 !   - Last modified: Mon, 30 Mar 2026 14:42:40 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
-!   - Last modified: Sun, 29 Mar 2026 13:22:57 +0000
+!   - Last modified: Tue, 31 Mar 2026 09:38:39 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
 !   - Last modified: Sun, 29 Mar 2026 15:44:26 +0000
@@ -27,7 +27,7 @@
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Tue, 31 Mar 2026 03:49:44 +0000
+!   - Last modified: Tue, 31 Mar 2026 10:06:17 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
 !   - Last modified: Tue, 31 Mar 2026 07:02:45 +0000
@@ -7469,6 +7469,10 @@ zovo2.top##[href*="javascript:void"] > button
 zovo2.top##.text-left
 zovo2.top##+js(acs, JSON.parse, document.head.appendChild)
 zovo2.top##+js(rpnt, script, /\d{4}/gm, 10, condition, getElementById)
+zovo2.top##+js(aeld, click, open)
+file-me.top##+js(acs, JSON.parse, document.head.appendChild)
+file-me.top##+js(acs, String.fromCharCode, atob)
+file-me.top##+js(aeld, click, clicksCount)
 rslinks.net##+js(rpnt, script, /#Intent.*?end/)
 rslinks.net##+js(rpnt, script, intent, https)
 thegadgetking.in##+js(rpnt, script, 3000, 10, condition, getElementById)
@@ -7575,9 +7579,6 @@ pxtech.site##+js(nostif, a, 250)
 pxtech.site##.timer-bar, .moobiedat-container > p, #nextBtn, .btn-moobiedat:others()
 pxtech.site##+js(trusted-click-element, '1000, #nextBtn, 1000, #redirectBtn > .btn-moobiedat', 4000)
 nitro-link.com##+js(nowoif)
-file-me.top##+js(acs, JSON.parse, document.head.appendChild)
-file-me.top##+js(acs, String.fromCharCode, atob)
-file-me.top##+js(aeld, click, clicksCount)
 ||uiil.ink/js/profiton.js$script,1p
 uiil.ink##+js(aopr, app_vars.force_disable_adblock)
 uiil.ink##+js(rmnt, script, /delete win|shift'/)
@@ -8992,7 +8993,7 @@ onehack.us##+js(nostif, modal)
 ftuapps.dev##+js(nostif, ai_)
 ||adultconfessions.com/js/abdetectorpro.script.js
 /wp-content/plugins/ultimate-anti-adblock/*
-||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,xhr,redirect=googlesyndication_adsbygoogle.js:5,domain=~zipextractor.app
+||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,xhr,redirect=googlesyndication_adsbygoogle.js:5,domain=~zipextractor.app|~kio.ac
 ||pagead2.googlesyndication.com^$xhr,redirect=noop.js
 dcleakers.com,esgeeks.com,pugliain.net,uplod.net,worldfreeware.com##+js(nostif, mdp)
 *$script,redirect-rule=noopjs,domain=siamblockchain.com
@@ -15982,6 +15983,7 @@ nikkei.com###pianoRecommendBottom
 entapark.jp##div[id$="-pickup"][style^="height"]
 itmedia.co.jp##.is-recommend:empty
 itmedia.co.jp##.format--subheading:has(+ .is-recommend:empty)
+lifehacker.jp###mainContent > div[class^="articles_pArticles_Title_"]:has(+ div[class^="displayhandler_"] > div > div[id^="cxMore"])
 jin115.com,livedoor.biz#?#.plugin-memo:has(> div.side > script[src*="ziyu.net/"])
 okutta.net##.article__footer > div[style="height:500px; overflow-y:scroll;"]
 cartune.me##.contents-inner > div:has(> div#taboola-alternating-thumbnails-a)
@@ -19943,6 +19945,7 @@ swiftuploads.com##+js(ra, onclick, button[onclick*="open"])
 swiftuploads.com##+js(nowoif)
 swiftuploads.com##+js(aeld, click, clicksCount)
 swiftuploads.com##+js(acs, String.fromCharCode, fetch)
+swiftuploads.com##+js(aeld, DOMContentLoaded, length)
 en-thunderscans.com##+js(nostif, getComputedStyle(testAd))
 onlinesoccermanager.com##+js(set, adBlockerDetected, false)
 onlinesoccermanager.com###advertisement-leaderboard-container
@@ -30932,6 +30935,7 @@ missav78.top##img[onerror="this.src='/sample/placeholder.jpg'"]:remove-attr(oner
 ||missav78.top/sample/placeholder.jpg$image,redirect=1x1.gif
 temperatur.nu#@#.holidAds:upward(1)
 ||target-video.com^$3p,badfilter
+||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=fastcompany.com,redirect=google-ima.js,important
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$script,3p,redirect-rule,from=webmd.com
 ||ruamupr.com^$script,redirect=noopjs,domain=thegatewaypundit.com
 thegatewaypundit.com##+js(rmnt, script, Object.getOwnPropertyDescriptor(Document.prototype)
@@ -32232,6 +32236,8 @@ pronutrition.it##+js(trusted-set-cookie, iwbCP, '{"Fb":false,"In":false,"Ga":fal
 miljonlotteriet.se##+js(trusted-set-cookie, CookieConsent, '{"necessary":1,"statistics":0,"marketing":0}', , ,reload, 1)
 energie-aanbiedingen.com##+js(trusted-set-cookie, cookieconsent_status, accept_functional)
 angelner-dampfeisenbahn.de##+js(trusted-set-cookie, cookiemanager, '{"essential":1,"external":0,"statistic":0,"marketing":0}')
+escherinhetpaleis.nl##.inset-0.fixed:has-text(This website uses cookies)
+escherinhetpaleis.nl##+js(trusted-set-cookie, esch-cookie-consent, '{"necessary":true,"statistics":false,"marketing":false}', , reload, 1)
 e-pribory.cz##+js(trusted-set-cookie, cookiesRules, '{"analytics":false,"personalized":false,"ads":false}')
 elisa.ee##+js(trusted-click-element, cds-button[id="cookie-allow-necessary-et"], , 1000)
 baseendpoint.brigitte.de,baseendpoint.gala.de,baseendpoint.haeuser.de,baseendpoint.stern.de,baseendpoint.urbia.de,cmp.tag24.de,cmp-sp.handelsblatt.com,cmpv2.berliner-zeitung.de,golem.de,gamestar.de,rockhard.de>>,consent.t-online.de,cmp-sp.handelsblatt.com##+js(trusted-click-element, button[title*="Zustimmen" i], ,  1000)

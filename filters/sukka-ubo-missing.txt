@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Tue, 31 Mar 2026 11:11:20 GMT
+! Last modified: Tue, 31 Mar 2026 15:36:22 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.2.16
+!   - Version: 2.1.2.18
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -133893,6 +133893,7 @@ zonedirector.avadacom.com$image
 /ezais/analytics
 /detroitchicago/reno.js
 /detroitchicago/overlandpark.js
+/script.tagged-events.outbound-links.js
 ://rum.collector.*/beacon.gif
 /~partytown/proxytown
 /tag?name=PageView$xhr
@@ -134350,6 +134351,7 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+lifehacker.jp###mainContent > div[class^="articles_pArticles_Title_"]:has(+ div[class^="displayhandler_"] > div > div[id^="cxMore"])
 tourister.ru##+js(href-sanitizer, a[href*="/go?"], ?url)
 ||etsy.com/api/v*/ajax/public/recs-interactions
 ||livemint.com/lm-img/js/lm-inp-tracker.js
@@ -139657,6 +139659,9 @@ dlsdk.appsflyer.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||telemetry.split.io^
+||events.split.io^
+||prod-ue1-metrics.hingeprod.net^
 ||api.event.appstack.tech^
 ||detailroi.com^
 ||detaillog-global-dual.coolgcloud.com^
