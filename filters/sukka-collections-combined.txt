@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Tue, 31 Mar 2026 19:31:09 GMT
+! Last modified: Tue, 31 Mar 2026 22:53:51 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202603311921
+!   - Version: 202603312241
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 31 Mar 2026 19:21 UTC
+!   - Last modified: 31 Mar 2026 22:41 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
@@ -70,7 +70,7 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 🔮 I Don't Want to Download Your Browser
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/I%20Don't%20Want%20to%20Download%20Your%20Browser.txt
-!   - Version: 29November2024v1-Beta
+!   - Version: 31March2026v1-Beta
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * ➗ Actually Legitimate URL Shortener Tool
 !   - URL: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt
@@ -16740,6 +16740,7 @@ google.com##.gb_vd[aria-label*="Google Play"][aria-label*=Chrome]
 google.*##.gb_g.gb_ba:has(.gb_Ad)
 chrome.google.com##.Yb
 futureordering.com,bestill.egon.no###unsupported
+chromewebstore.google.com##div[aria-labelledby=promo-header]
 ##.chrome-footer:not(html, body)
 ##.chrome-banner:not(html, body)
 www.google.com##.chr-panel-switcher__card:first-of-type
