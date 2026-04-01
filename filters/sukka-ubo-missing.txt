@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Wed, 01 Apr 2026 15:41:45 GMT
+! Last modified: Wed, 01 Apr 2026 19:33:56 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.2.24
+!   - Version: 2.1.2.26
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -1916,7 +1916,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||adnz.co^$3p
 ||cloud.roistat.com^$3p
 ||nrich.ai^$3p
-||adoric.com^$3p
+||adoric.com^
 ||stack-sonar.com^$3p
 ||mindtake.com^$3p
 ||leadlab.click^$3p
@@ -54417,6 +54417,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||countly.
 ||countly-
 |piwik.
+||event.dxmdp.com^
 ||beacon.cdnpure.com^
 ||r.cdnpure.com^
 ||ja*.apppure.net^
@@ -136473,7 +136474,11 @@ brasil247.com###taboola-mid-article-leia-mais
 ||snapchat.com/web-analytics
 ||snapchat.com/report-metrics/
 ||web.snapchat.com/web-blizzard/web/send^
+||gcp.api.snapchat.com/web-blizzard/web/send^
 ||accounts.snapchat.com/accounts/static/scripts/pixel.js
+||accounts.snapchat.com/accounts/sso?client_id=snapchat-com-metrics
+||aws.api.snapchat.com/snapchat.cdp.cof.CircumstancesService/targetingQuery^
+||aws.api.snapchat.com/snapchat.ab.exposure_service.ExposureService/BatchUpdateAbExposure^
 ||snap-api.arkoselabs.com/metrics/
 ||zona.plus/ajax/visit-stats
 ||hotels.com/cl/*.gif?
@@ -139672,6 +139677,7 @@ dlsdk.appsflyer.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||mixpanel-proxy-ivbdkvonca-uc.a.run.app^
 ||tc.zxcvbnml.com^
 ||fpconfig.net^
 ||ingest.databuckets.com^

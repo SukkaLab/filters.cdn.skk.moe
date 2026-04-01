@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Wed, 01 Apr 2026 15:41:45 GMT
+! Last modified: Wed, 01 Apr 2026 19:33:56 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -14,7 +14,7 @@
 !   - Last modified: Tue, 31 Mar 2026 02:15:33 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Tue, 31 Mar 2026 15:10:38 +0000
+!   - Last modified: Wed, 01 Apr 2026 17:01:12 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
 !   - Last modified: Wed, 01 Apr 2026 13:32:04 +0000
@@ -28010,6 +28010,12 @@ r.mail.wowvegas.com%2Ftr%2Fop%2F*$image
 /sparkpost.wetransfer.com/q/*$image
 .youtube.com/attribution_link?$image
 .helpscout.net/notification/convo/read/$image
+/mail.rapidapi.com/e/o/*$image
+/sparkpost.*/q/*$image
+*%2Fsparkpost.*%2Fq%2F$image
+.sparkpostmail2.com/q/$image
+.sparkpostmail2.com%2Fq%2F$image
+/enjoy.eset.com/pub/as?$image
 static.adsugar.ch/img?ord=$image
 static.adsugar.ch%2Fimg%3Ford%3D*$image
 ecmweb.com/images/shim.png$image
@@ -28159,6 +28165,10 @@ newsletter.adnz.co%2F*$image
 *%2Fr.*%2Fmk%2Fop%2F$image
 .t.en25.com/e/$image
 .t.en25.com%2Fe%2F$image
+.email.*/ss/o/$image
+.email.*%2Fss%2Fo%2F$image
+.mail.*/ss/o/$image
+.mail.*%2Fss%2Fo%2F$image
 .mail.beehiiv.com/ss/o/$image
 /open.html?$image
 *%2Fopen.html%3F$image
@@ -28181,12 +28191,14 @@ newsletter.adnz.co%2F*$image
 *%2Femail_open_log_pic.php%3F*$image
 /hsctaimages.net/ctas/*/public/cs/il/?$image
 *%2Fhsctaimages.net%2Fctas%2F%2A%2Fpublic%2Fcs%2Fil%2F%3F$image
-/sparkpost.*/q/*$image
-*%2Fsparkpost.*%2Fq%2F$image
 /emailanalytics.$image
 *%2Femailanalytics.$image
 /notification/convo/read/*$image
 *%2Fnotification%2Fconvo%2Fread%2F$image
+/mail.*/e/o/*$image
+*%2Fmail.*%2Fe%2Fo%2F$image
+/pub/as?$image
+*%2Fpub%2Fas%3F$image
 ||googleusercontent.com/*/wf/open?upn=$image
 .salesforce.com%2Fservlet%2Fservlet.ImageServer%3F$image
 ||beacons.ai/api/rtanalytics/
@@ -28401,6 +28413,7 @@ itmedia.co.jp##+js(set-local-storage-item, /^_cX_/, $remove$)
 ||virustotal.com/gui/_log-error
 ||odkmedia.io/odx/api/v3/client-log/
 ||soundcore.com/metrics/$xhr,method=post
+||detect-ccd.creativecloud.adobe.com^
 /edgemesh.*.js$script,domain=~edgemesh.com|~edgeno.de
 ||safelinkconverter.com^$script,3p
 /adsensebase.js$script
