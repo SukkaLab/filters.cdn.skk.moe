@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Thu, 02 Apr 2026 11:10:40 GMT
+! Last modified: Thu, 02 Apr 2026 15:16:28 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.2.28
+!   - Version: 2.1.2.31
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -54418,6 +54418,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||countly.
 ||countly-
 |piwik.
+||umami.syg.ma^
 ||event.dxmdp.com^
 ||beacon.cdnpure.com^
 ||r.cdnpure.com^
@@ -134359,6 +134360,8 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||api.syg.ma/page_view
+||ruwiki.ru/api/ruwiki/rest/metrics/
 ||apkpure.com/static/script/device-*-min.js
 apkpure.com##+js(set-local-storage-item, __BEACON_deviceId, $remove$)
 apkpure.com##+js(remove-node-text, script, /deviceId|__apkpureFirstInteractionType|fingerprintjs|pvid/i)
@@ -139678,6 +139681,12 @@ dlsdk.appsflyer.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||log-*.isnssdk.com^
+||profiler-collector.dalyfeds.com^
+||reporttk.com^
+||track.hily.com^
+||ping*.bidease.com^
+||ntus.bidease.com^
 ||thinkingdata.cn^
 ||mixpanel-proxy-ivbdkvonca-uc.a.run.app^
 ||tc.zxcvbnml.com^
