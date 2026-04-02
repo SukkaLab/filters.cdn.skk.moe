@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Thu, 02 Apr 2026 07:42:19 GMT
+! Last modified: Thu, 02 Apr 2026 11:10:40 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,10 +8,10 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Thu, 02 Apr 2026 05:24:06 +0000
+!   - Last modified: Thu, 02 Apr 2026 06:20:06 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
-!   - Last modified: Thu, 02 Apr 2026 05:14:43 +0000
+!   - Last modified: Thu, 02 Apr 2026 10:26:18 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
 !   - Last modified: Wed, 01 Apr 2026 17:01:12 +0000
@@ -4000,6 +4000,8 @@ sendvid.com##[href*=".php"]
 sendvid.com###video-js-video > [href^="javascript:"]
 sendvid.com###vjs-logo-top-bar
 sendvid.com###ftr
+sendvid.com##a[href^="https://go.gsrv.dev/"]
+sendvid.com##a[href][target="_blank"][style^="display: block;position: fixed;"][style*="z-index:"]
 imgdawgknuttz.com##+js(aopw, atOptions)
 imgdawgknuttz.com##+js(acs, document.createElement, l.parentNode.insertBefore(s)
 imgdawgknuttz.com##+js(aost, atob, inlineScript)
@@ -26229,8 +26231,6 @@ rapidkil.com.au##+js(aost, XMLHttpRequest, /wp-content)
 ||deepseekapp.download^$all
 ||paytoll*.top/ezdrivema^$all
 ||hhcollect.co^$all
-||pay-hh.com^$all
-||harriscollect.net^$all
 -ez-pass.com^$doc
 ||thetollroads-$doc,to=top|xin|world
 /^https:\/\/help-\d{8}\.[a-z0-9]{6}-\d{2}\.click\//$doc,to=click|~facebook.com
@@ -26528,6 +26528,9 @@ sport.elwatannews.com##+js(aost, Array.prototype.indexOf, isWin)
 ||voting-express-tl.$doc
 ||sportifymore.ct.ws^$all
 ||voting-express-tl.ct.ws^$all
+||spotifyprimeszones-sl.ct.ws^$all
+||spotifyprimeszones-$doc
+||spotify*.ct.ws^$doc
 ||cs2beneluxtour.com^$all
 ||eplproseason25.com^$all
 ||eslpromasters.com^$all
