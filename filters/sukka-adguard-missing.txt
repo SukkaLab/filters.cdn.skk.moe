@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Fri, 03 Apr 2026 07:38:40 GMT
+! Last modified: Fri, 03 Apr 2026 11:04:26 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,10 +8,10 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Thu, 02 Apr 2026 15:57:05 +0000
+!   - Last modified: Fri, 03 Apr 2026 06:48:49 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
-!   - Last modified: Thu, 02 Apr 2026 14:12:21 +0000
+!   - Last modified: Fri, 03 Apr 2026 07:32:19 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
 !   - Last modified: Thu, 02 Apr 2026 15:57:05 +0000
@@ -19766,8 +19766,7 @@ chasingthedonkey.com##+js(nowoif)
 taste.com.au##.main-header:style(top: 0 !important)
 @@||codicibancari.it/scripts/tracking/pixel/conversion/prebid_*.js$domain=decompiler.com
 decompiler.com##+js(acs, document.getElementById, /adblock/i)
-decompiler.com##+js(rpnt, script, /\b\w+\s*=\s*\w+\[['"`]\w+['"`]\]\s*;?\s*if\s*\(\s*\w+\s*===\s*undefined\s*\)/)
-decompiler.com##+js(rmnt, script, "'a','l','e','r','t'")
+decompiler.com##+js(rpnt, script, /var\s+(\w+)\s?=\s?\w+\[['"]\w+['"]\];?/, var $1 = true;)
 @@||ytlarge.com^$ghide
 @@||googlesyndication.com^$script,xhr,domain=ytlarge.com
 @@||fundingchoicesmessages.google.com^$script,xhr,domain=ytlarge.com
@@ -26230,7 +26229,6 @@ rapidkil.com.au##+js(aost, XMLHttpRequest, /wp-content)
 ||deepseekapk.download^$all
 ||deepseekapp.download^$all
 ||paytoll*.top/ezdrivema^$all
-||hhcollect.co^$all
 -ez-pass.com^$doc
 ||thetollroads-$doc,to=top|xin|world
 /^https:\/\/help-\d{8}\.[a-z0-9]{6}-\d{2}\.click\//$doc,to=click|~facebook.com

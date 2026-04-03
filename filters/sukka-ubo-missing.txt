@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Fri, 03 Apr 2026 07:38:40 GMT
+! Last modified: Fri, 03 Apr 2026 11:04:26 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.2.33
+!   - Version: 2.1.2.35
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -134360,6 +134360,7 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||poocloud.in/api/event
 ||s.tgrthaber.com/s/js/stats.js
 ||mpsp.mp.br/combo/?$script
 ||api.syg.ma/page_view
@@ -139683,6 +139684,10 @@ dlsdk.appsflyer.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||detaillog-global-dual.coolccloud.com^
+||analytics.prod.tophat.withbuddies.com^
+||beacon.ztgame.com^
+||api-log-upload.wenext.technology^
 ||events-noneu.truecaller.com^
 ||log-*.isnssdk.com^
 ||profiler-collector.dalyfeds.com^
