@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Mon, 06 Apr 2026 15:06:26 GMT
+! Last modified: Mon, 06 Apr 2026 19:32:30 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.2.41
+!   - Version: 2.1.2.44
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -144199,6 +144199,7 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||stat.tildaapi.com/event/
 ||static.qiota.com/assets/getQiota.js
 ||poocloud.in/api/event
 ||s.tgrthaber.com/s/js/stats.js
@@ -149524,6 +149525,10 @@ dlsdk.appsflyer.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||apm-native.redbascket.com^
+||apm-fe.rnote.com^
+||lng.xiaohongshu.com^
+||t2.xiaohongshu.com^
 ||log.qrscanner.live^
 ||stats.sdk.banuba.net^
 ||report.duetapp.net^
@@ -150624,6 +150629,7 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=saturn.de
 @@||metrics.us.playstation.com/b/ss/
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
+@@||googletagmanager.com/gtm.js?id=GTM$script,domain=braun.de
 @@||alicdn.com/alilog/mlog/aplus_v2.js$domain=qianwen.com
 @@||edge.adobedc.net/ee/$xhr,domain=vivo.com.br
 @@||cdn.optimizely.com/datafiles/*.json$domain=scheels.com
