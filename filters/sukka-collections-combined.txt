@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Tue, 07 Apr 2026 11:14:44 GMT
+! Last modified: Tue, 07 Apr 2026 15:43:32 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202604071102
+!   - Version: 202604071531
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 07 Apr 2026 11:02 UTC
+!   - Last modified: 07 Apr 2026 15:31 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
@@ -120,7 +120,7 @@
 ! * uBlock filters – Mobile
 !   - URL: https://ublockorigin.github.io/uAssets/filters/filters-mobile.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Fri, 06 Mar 2026 12:02:59 +0000
+!   - Last modified: Tue, 07 Apr 2026 14:01:50 +0000
 ! * CJX's uBlock list
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-ublock.txt
 !   - Homepage: https://github.com/cjx82630/cjxlist
@@ -21860,6 +21860,7 @@ tureng.com##.termresults-ad-tr
 ##html[lang="tr"] > body.has-footer-ad.has-pageskin-desktop a.pageskin-mobile-wrapper
 daotekno.com##+js(nostif, bait)
 nlab.itmedia.co.jp##[id^="div-gpt-ad-nl_"][id$="_article_HeaderOverlay"] ~ header:matches-media((max-width: 767px)):style(margin-top: 0 !important;)
+britannica.com###game:style(height: 100% !important;)
 ! CJX's uBlock list https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-ublock.txt
 youminggu.com,yemancomic.com,zkk78.com,jinbaodm.com##+js(acis,document.write,location.href)
 youminggu.com,yemancomic.com,zkk78.com,jinbaodm.com##+js(nostif, location.href)
