@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Filters
-! Last modified: Tue, 07 Apr 2026 14:54:03 GMT
+! Last modified: Tue, 07 Apr 2026 14:58:28 GMT
 ! Expires: 1 hours
 ! Description: The filters from Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -32,6 +32,7 @@ ggfw.hrss.gd.gov.cn##+js(sukka-defuse-devtools-detector)
 iplark.com##+js(sukka-defuse-devtools-detector)
 boomio.com##+js(sukka-defuse-devtools-detector)
 djxmaza.in##+js(sukka-defuse-devtools-detector)
+post.smzdm.com##+js(sukka-defuse-devtools-detector)
 ||tags.news.com.au/prod/adblock/adblock.js
 ###adb-mask
 ||crackle.com/vendor/adex.js
@@ -218,6 +219,7 @@ www.bilibili.com##.video-page-game-card-small
 www.bilibili.com##.carousel-box
 www.bilibili.com##.r-con
 ||boss.hdslb.com
+||hdslb.com/bfs/live/$image
 /bili-user-fingerprint$script
 /track-collect.js
 &os=mcdn
@@ -253,6 +255,8 @@ deepl.com##+js(trusted-prevent-fetch, s.deepl.com/web/statistics, '{ "code": 1 }
 ||nocookie.net/fandom-ae-assets/*/ucp-no-ads/$important
 ||nocookie.net/*/Sponsored$important
 ||nocookie.net/silversurfer$important
+||fandom.com/*/AgeDeclaration/$image
+fandom.com###age-gate
 ||change.org/api-proxy/graphql?op=SuggestedPetitionsFromPetitionSunrise
 ||change.org/api-proxy/graphql?op=SunriseVictoriousPetitionsFromPetition
 ||change.org/api-proxy/graphql?op=PetitionQRCodeData
@@ -307,6 +311,9 @@ hanime1.me##+js(rpnt, script, location.href = , window.redirect_prevented =)
 hanime1.com##+js(rpnt, script, location.href = , window.redirect_prevented =)
 hanimeone.me##+js(rpnt, script, location.href = , window.redirect_prevented =)
 javchu.com##+js(rpnt, script, location.href = , window.redirect_prevented =)
+hanime1.me##div:has(> ins)
+post.smzdm.com##.m-contant > .aigc-lowcode-json
+post.smzdm.com##.m-contant::before:style(content: 'This is an LLM generated post thus blocked!' !important; font-size: 32px !important; color: red !important; font-weight: bold !important;)
 av.tube4us.top##a[href*="youtube.com/watch"]
 av4.homes##a[href*="youtube.com/watch"]
 shirouto4.top##a[href*="youtube.com/watch"]
@@ -520,6 +527,7 @@ justauth.cn##+js(set, window._AdBlockInit, true)
 ||sp.pluto.tv$redirect=noop.txt
 ||pluto.tv/v1/pixel$redirect=1x1.gif
 ||esm.sh/@solana/$domain=v2ex.com,redirect=noop.js
+||v2ex.co/pro/
 ||wwads.cn$script,redirect=noop.js
 ||acquia.com/ct
 ||v.bytes.media/vs.js$redirect=noop.js
@@ -626,7 +634,6 @@ www.sohu.com##.swiper
 www.xenonstack.com##.enterprise-popup-wrapper
 ##.carbonplaceholder
 divineengine.net##.sidebar-content > .widget_custom_html
-minecraft.fandom.com###age-gate
 affyun.com##[href="https://www.dmit.io/cart.php"]
 ||affyun.com/cloudflare-service/s.js
 appstorrent.ru##.ad
