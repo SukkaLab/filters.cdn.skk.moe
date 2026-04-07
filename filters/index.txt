@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Filters
-! Last modified: Tue, 24 Mar 2026 14:41:59 GMT
+! Last modified: Tue, 07 Apr 2026 14:54:03 GMT
 ! Expires: 1 hours
 ! Description: The filters from Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -138,7 +138,7 @@ gettr.com##esr-signup
 ||goaffpro.app$3p
 ||static.klaviyo.com$3p
 ||accounts.google.com/gsi/$frame,redirect=click2load.html,domain=~claude.ai
-||accounts.google.com/gsi/$3p
+||accounts.google.com/gsi/$3p,domain=~claude.ai
 ||apis.google.com$3p,domain=udn.com
 ##.jetpack-subscribe-modal__modal-content
 ##.jetpack-subscribe-modal
