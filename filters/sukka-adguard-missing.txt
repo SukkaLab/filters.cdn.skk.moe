@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Tue, 07 Apr 2026 04:43:02 GMT
+! Last modified: Tue, 07 Apr 2026 07:51:11 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Tue, 07 Apr 2026 00:30:35 +0000
+!   - Last modified: Tue, 07 Apr 2026 05:02:29 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Tue, 07 Apr 2026 02:57:14 +0000
@@ -6765,7 +6765,6 @@ bitzite.com##.modal-overlay
 bitzite.com##+js(aeld, DOMContentLoaded, location.href)
 bitzite.com##+js(acs, document.createElement, onerror)
 *$image,redirect-rule=1x1.gif,domain=bitzite.com
-bitzite.com#@#.banner-ad
 bitzite.com##+js(nostif, _0x, 500)
 bitzite.com##+js(aopw, onScriptError)
 bitzite.com##+js(aopr, localStorage)
