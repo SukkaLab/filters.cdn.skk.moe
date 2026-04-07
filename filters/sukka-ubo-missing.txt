@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Tue, 07 Apr 2026 15:43:32 GMT
+! Last modified: Tue, 07 Apr 2026 19:33:57 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.2.50
+!   - Version: 2.1.2.52
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -218,6 +218,8 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||jspcdn.cn^
+||log0-misc-hl.amemv.com^
 ||users.videasy.net/api/track
 ||eu-data.kameleoon.io^$3p
 ||velarium.cc^
@@ -144205,6 +144207,8 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||bysefujedu.com/fingerprint-sw.js
+||arbitrarydecisions.com/fingerprint-sw.js
 ||api.tezfiles.com/*/analytics/
 ||tezfiles.com/log|
 ||cdns.ozon.ru/v*/mc|
@@ -149540,6 +149544,7 @@ dlsdk.appsflyer.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||datasink.sensorsjourney.com^
 ||apm-native.redbascket.com^
 ||apm-fe.rnote.com^
 ||lng.xiaohongshu.com^
@@ -150852,6 +150857,7 @@ kb.arlo.com##+js(set-constant, _vwo_code.init, noopFunc)
 mail.yandex.*#@#+js(set-constant, navigator.getBattery, noopPromiseResolve)
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=sncf-connect.com
 @@||snowplow.swm.digital/com.snowplowanalytics.snowplow/$domain=7plus.com.au
+||teenager365.to/player/stats.php?event=$image,redirect=1x1.gif,domain=teenager365.to
 ||85po.com/player/stats.php?event=$image,redirect=1x1.gif,domain=85po.com|85po.net|85xo.com|85xo.com
 @@||feliz-web.data.tm-awx.com/smile-web.min.js$domain=liverpoolecho.co.uk|mirror.co.uk|birminghammail.co.uk|dailystar.co.uk|manchestereveningnews.co.uk
 @@||feliz.data.tm-awx.com/smile-web-v2/rootEvent$domain=liverpoolecho.co.uk|mirror.co.uk|birminghammail.co.uk|dailystar.co.uk|manchestereveningnews.co.uk
