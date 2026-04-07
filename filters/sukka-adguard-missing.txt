@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Mon, 06 Apr 2026 22:58:07 GMT
+! Last modified: Tue, 07 Apr 2026 04:43:02 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,10 +8,10 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Mon, 06 Apr 2026 14:25:44 +0000
+!   - Last modified: Tue, 07 Apr 2026 00:30:35 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
-!   - Last modified: Mon, 06 Apr 2026 03:37:31 +0000
+!   - Last modified: Tue, 07 Apr 2026 02:57:14 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
 !   - Last modified: Mon, 06 Apr 2026 15:09:33 +0000
@@ -22627,6 +22627,7 @@ dstat.space##+js(json-prune-fetch-response, *.*, , propsToMatch, /api/banners)
 dstat.space##+js(aeld, DOMContentLoaded, checkBanners)
 dstat.space##.p-4:has(> div[id^="banner-list-"])
 weebcentral.com##div[class][style]:has(> div.notranslate > iframe[sandbox*="allow-popups"])
+getthispdf.com##+js(nostif, /detect|bait/i)
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -26901,6 +26902,14 @@ ublockorigin.app###main::before:style(content: 'This is not the official uBlock 
 -sogou.com.cn^$doc,to=com.cn
 -sogou.com^$doc,to=com
 ||chrome-hl.hl.cn^$all
+||leigodnn.com^$all
+||leigod.net^$all
+||leigodco.com^$all
+||google-ch-chrome.com.cn^$all
+||of-tencent.com^$all
+||meeting-tencent.org^$all
+||zh-tenxun.com^$all
+||apps-tencent.com^$all
 ||qishuiie.com^$all
 ||qishuiit.com^$all
 ||qishui-yinle.hl.cn^$all
