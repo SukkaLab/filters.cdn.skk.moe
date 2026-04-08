@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Wed, 08 Apr 2026 15:43:37 GMT
+! Last modified: Wed, 08 Apr 2026 19:42:54 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,19 +8,19 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Wed, 08 Apr 2026 11:04:00 +0000
+!   - Last modified: Wed, 08 Apr 2026 16:44:36 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
-!   - Last modified: Wed, 08 Apr 2026 03:43:47 +0000
+!   - Last modified: Wed, 08 Apr 2026 12:07:17 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
 !   - Last modified: Mon, 06 Apr 2026 15:09:33 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
-!   - Last modified: Wed, 01 Apr 2026 13:32:04 +0000
+!   - Last modified: Wed, 08 Apr 2026 15:38:47 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Mon, 06 Apr 2026 12:49:52 +0000
+!   - Last modified: Wed, 08 Apr 2026 16:53:11 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
 !   - Last modified: Sat, 21 Mar 2026 02:04:14 +0000
@@ -7683,7 +7683,7 @@ tureng.com##.termresults-ad-tr
 daotekno.com##+js(nostif, bait)
 nlab.itmedia.co.jp##[id^="div-gpt-ad-nl_"][id$="_article_HeaderOverlay"] ~ header:matches-media((max-width: 767px)):style(margin-top: 0 !important;)
 britannica.com###game:style(height: 100% !important;)
-theverge.com##.duet--homepage--hero > [class] > [class]:has(.m-ad)
+theverge.com##.duet--homepage--hero > div[class] > div[class] > div[class]:has(> div[data-concert="medrec_frontpage_hero_mobile"])
 *$script,xhr,3p,denyallow=ahcdn.com|ampproject.org|arc.io|b-cdn.net|blogger.com|bootstrapcdn.com|bunnycdn.ru|bytecdntp.com|cackle.me|chatango.com|cloudflare.com|cloudflare.net|cloudflarestorage.com|consentframework.com|disqus.com|disquscdn.com|dmca.com|doodcdn.io|ebacdn.com|embedstreams.top|facebook.com|facebook.net|fastcomments.com|fastly.net|fastlylb.net|fbcdn.net|fluidplayer.com|fontawesome.com|github.io|google.com|googleapis.com|graphcomment.com|gstatic.com|h-cdn.com|hcaptcha.com|hwcdn.net|ilfcdn.li|instagram.com|intensedebate.com|jquery.com|jsdelivr.net|jwpcdn.com|jwplatform.com|jwpsrv.com|linkvertise.com|media-amazon.com|media-imdb.com|pinterest.com|plyr.io|rabbitstream.net|recaptcha.net|rsc.cdn77.org|sharecast.ws|sharethis.com|shrink.pe|statically.io|staticfile.org|tawk.to|twimg.com|twitter.com|ulogin.ru|unpkg.com|userapi.com|vidazoo.com|vidembed.re|vixcloud.co|vk.com|vuukle.com|wp.com|x.com|yastatic.net|youaresoselfish.online|youtube.com|ytimg.com|zdassets.com|zencdn.net,domain=everia.club|files.im|filmpornofrancais.fr|gamesmountain.com|mangaplus.shueisha.tv|moredesi.com|nkiri.com|onlyfullporn.video|shueisharaw.tv|vjav.*
 *$script,xhr,3p,denyallow=ahcdn.com|ampproject.org|arc.io|b-cdn.net|blogger.com|bootstrapcdn.com|bunnycdn.ru|bytecdntp.com|cackle.me|chatango.com|cloudflare.com|cloudflare.net|cloudflarestorage.com|consentframework.com|disqus.com|disquscdn.com|dmca.com|doodcdn.io|ebacdn.com|embedstreams.top|facebook.com|facebook.net|fastcomments.com|fastly.net|fastlylb.net|fbcdn.net|fluidplayer.com|fontawesome.com|github.io|google.com|googleapis.com|graphcomment.com|gstatic.com|h-cdn.com|hcaptcha.com|hwcdn.net|ilfcdn.li|instagram.com|intensedebate.com|jquery.com|jsdelivr.net|jwpcdn.com|jwplatform.com|jwpsrv.com|linkvertise.com|media-amazon.com|media-imdb.com|pinterest.com|plyr.io|rabbitstream.net|recaptcha.net|rsc.cdn77.org|sharecast.ws|sharethis.com|shrink.pe|statically.io|staticfile.org|tawk.to|twimg.com|twitter.com|ulogin.ru|unpkg.com|userapi.com|vidazoo.com|vidembed.re|vixcloud.co|vk.com|vuukle.com|wp.com|x.com|yastatic.net|youaresoselfish.online|youtube.com|ytimg.com|zdassets.com|zencdn.net,domain=everia.club|files.im|filmpornofrancais.fr|gamesmountain.com|mangaplus.shueisha.tv|moredesi.com|nkiri.com|onlyfullporn.video|shueisharaw.tv|vjav.com|vjav.tube
 /^https?:\/\/(?:www\.|[0-9a-z]{7,10}\.)?[-0-9a-z]{5,}\.com\/\/?(?:[0-9a-z]{2}\/){2,3}[0-9a-f]{32}\.js/$script,xhr,3p,redirect=noop.js,to=com
@@ -22240,6 +22240,9 @@ v2movies.click,v2movies.me##[href^="https://refpa58144.com/"]
 goplay.su##+js(nowoif, !addons.mozilla.org)
 goplay.ml,goplay.su##+js(json-prune, *, rot_url)
 goplay.ml,goplay.su##+js(json-prune, *, pop_type)
+goplay.su##+js(noeval-if, innerHTML)
+goplay.su##+js(remove-cookie, /abd/)
+goplay.su##+js(trusted-replace-argument, String.prototype.replace, 1, repl:/=true;/=false;/, condition, if)
 *$popup,3p,domain=goplay.su
 @@||addons.mozilla.org^$popup,domain=goplay.su
 ||ssp.goplay.su^$xhr
@@ -23168,9 +23171,7 @@ howtoremove.guide###gray_de
 ||projecthygieia.com^$all
 ||fusionhacks.cc^$doc
 ||mysoft.rest^$all
-||lunexmods.cc^$doc
-||lunexmods.io^$doc
-||soft-hub.site^$doc
+||iridia.me^$doc
 .systems/signup?ad_domain=$doc,popup
 ||atnpx.com^
 ||webpushcloud.top^
@@ -31138,6 +31139,8 @@ ebc.com.br##+js(set, executaGoogleAnalytics3, noopFunc)
 @@||api.adinplay.com/v*/live/aip/ad-manager.js$script,domain=yorg3.io
 winaero.com#@#.windia:not(.thank-you-adguard)
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,3p,redirect=google-ima.js,domain=infiny.live
+alltransistors.com#@##reklama
+alltransistors.com###reklama:style(display: block !important;)
 ! uBlock filters – Quick fixes https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
 @@||hb.vntsm.com/v4/live/vms/sites/aternos.org/index.js$script,domain=aternos.org
 aternos.org##.header-center:style(margin-top:-5000px !important;)
@@ -31165,7 +31168,7 @@ www.youtube.com##+js(trusted-replace-fetch-response, '"adSlots"', '"no_ads"', /g
 ||youtube.com/api/stats/atr?ns=*&ver=2&cmt=1.*&fs=0&*&euri&lact=$xhr,method=post,badfilter
 web.facebook.com,www.facebook.com##+js(json-prune, require.0.3.0.__bbox.require.[].3.1.__bbox.result.data.viewer.sideFeedUnit.nodes.[].new_adverts.nodes.[-].sponsored_data)
 web.facebook.com,www.facebook.com##+js(json-prune-xhr-response, data.viewer.sideFeedUnit.nodes.[].new_adverts.nodes.[-].sponsored_data, , propsToMatch, /graphql)
-web.facebook.com,www.facebook.com##+js(json-edit, ..sideFeed.nodes.*[?.__typename=="AdsSideFeedUnit"])
+web.facebook.com,www.facebook.com##+js(json-edit, ..sideFeedUnit.nodes.*[?.__typename=="AdsSideFeedUnit"])
 web.facebook.com,www.facebook.com##+js(set, Env.nxghljssj, false)
 web.facebook.com,www.facebook.com##div[role="complementary"] a[aria-labelledby][attributionsrc^="/privacy_sandbox/comet/register/source/?eid="][href^="http"][target="_blank"]
 web.facebook.com,www.facebook.com##div[role="complementary"] div[data-visualcompletion="ignore-dynamic"] a[aria-label][attributionsrc="_blank"][href*="utm_medium"][href*="utm_source"][href*="utm_id"][href*="utm_content"][href*="utm_term"][href*="utm_campaign"]
