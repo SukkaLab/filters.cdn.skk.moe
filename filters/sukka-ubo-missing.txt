@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Thu, 09 Apr 2026 15:58:07 GMT
+! Last modified: Thu, 09 Apr 2026 19:41:03 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.2.65
+!   - Version: 2.1.2.68
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -144211,6 +144211,7 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||goto.startracking.ru/api/v1/impression?aff_id=
 ||users.videasy.net/api/track
 ||rs.kuper.ru/v*/track
 ||rs.kuper.ru/v*/batch|
@@ -150885,8 +150886,6 @@ mail.yandex.*#@#+js(set-constant, navigator.getBattery, noopPromiseResolve)
 @@||api.cxense.com/public/widget/$domain=elcorreogallego.es
 @@||btt.community/assets/plugins/discourse-fingerprint-
 @@||js.monitor.azure.com/scripts/c/ms.jsll-3.min.js$domain=contentsafety.cognitive.azure.com
-elahmad.com##+js(prevent-fetch, pahtag.tech)
-elahmad.com##body > div[id^="ads"]
 @@||st-eu.dynamicyield.com/st$domain=amorelie.de
 campusfrance.org##+js(set-constant, pa, {})
 campusfrance.org##+js(set-constant, pa.sendEvent, noopFunc)
