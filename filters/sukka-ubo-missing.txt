@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Fri, 10 Apr 2026 08:01:56 GMT
+! Last modified: Fri, 10 Apr 2026 11:13:21 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.2.70
+!   - Version: 2.1.2.72
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -218,6 +218,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||lytics.fileditch.com^
 ||curalate.com^
 ||containers.dsp.solta.io^
 ||jspcdn.cn^
@@ -56121,7 +56122,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||analytics-api.penpencil.co^
 ||health.flowplayer.com^
 ||api.openpanel.dev^
-||lytics.fileditch.com^
 ||goto.suno.com^
 ||m-stratovibe.prod.suno.com^
 ||fel-api.prod.browse.bestbuy.com^
@@ -144216,6 +144216,7 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||docs.amd.com/internal/api/webapp/events
 ||d3b02estmut877.cloudfront.net/grumi-ip.js
 ||nuance.com/tagserver/logging/
 ||nuance.com/tagserver/incrementality/onEvent
