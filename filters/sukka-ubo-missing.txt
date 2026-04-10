@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Fri, 10 Apr 2026 05:09:11 GMT
+! Last modified: Fri, 10 Apr 2026 08:01:56 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.2.69
+!   - Version: 2.1.2.70
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -56082,6 +56082,10 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||countly.
 ||countly-
 |piwik.
+||okr.sbdv.ru^
+||api.eye.sbdv.ru^
+||clickbeat.sberdevices.ru^
+||metrics.prom.third-party-app.sberdevices.ru^
 ||stat.katitube.com^
 ||stat.aporntv.com^
 ||hentaitoon.tv/api/track
@@ -144212,6 +144216,11 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||d3b02estmut877.cloudfront.net/grumi-ip.js
+||nuance.com/tagserver/logging/
+||nuance.com/tagserver/incrementality/onEvent
+giga.chat##+js(set-local-storage-item, /DEVICE_ID/, $remove$)
+||common-api.rozetka.*/collect/
 ||goto.startracking.ru/api/v1/impression?aff_id=
 ||users.videasy.net/api/track
 ||rs.kuper.ru/v*/track
@@ -149562,6 +149571,7 @@ dlsdk.appsflyer.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||log.documentreaderapp.com^
 ||datasink.sensorsjourney.com^
 ||apm-native.redbascket.com^
 ||apm-fe.rnote.com^
