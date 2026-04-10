@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Thu, 09 Apr 2026 23:02:49 GMT
+! Last modified: Fri, 10 Apr 2026 05:09:11 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,10 +8,10 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Thu, 09 Apr 2026 19:07:13 +0000
+!   - Last modified: Fri, 10 Apr 2026 01:53:08 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
-!   - Last modified: Thu, 09 Apr 2026 06:47:05 +0000
+!   - Last modified: Fri, 10 Apr 2026 01:54:46 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
 !   - Last modified: Mon, 06 Apr 2026 15:09:33 +0000
@@ -18034,7 +18034,6 @@ twitter.com,x.com,~platform.twitter.com##+js(json-prune-xhr-response, data.threa
 twitter.com,x.com,~platform.twitter.com##+js(json-prune-xhr-response, data.user.result.timeline_v2.timeline.instructions.[].entries.[-].content.itemContent.promotedMetadata, , propsToMatch, url:/UserTweets)
 twitter.com,x.com,~platform.twitter.com##+js(json-prune-xhr-response, data.immersiveMedia.timeline.instructions.[].entries.[-].content.itemContent.promotedMetadata, , propsToMatch, url:/ImmersiveMedia)
 x.com##article[data-testid="tweet"] a[href^="https://linkneverdiel.com"]
-x.com##+js(nowoif, /\.php\b.*_blank/)
 jornadaperfecta.com##+js(rmnt, script, ad-block-activated)
 greentumble.com##.cp-module
 greentumble.com##html:style(overflow: auto !important)
@@ -21813,7 +21812,9 @@ infomatricula.pt##+js(nostif, offsetHeight)
 infomatricula.pt##.container:has(.adsbygoogle)
 ||fundingchoicesmessages.google.com/i/pub-$script,redirect=noopjs,domain=infomatricula.pt
 idlixku.com##+js(nostif, getComputedStyle)
-idlixku.com##+js(trusted-set, dtGonza.playeradstime, json:"0")
+@@||idlixku.com^$ghide
+idlixku.com##+js(trusted-json-edit-fetch-response, '.ads={"movie":false,"series":false,"episode":false,"comments":false,"preroll":false}', propsToMatch, /settings)
+||idlixku.com/*/ads/
 *.mp4$media,domain=jeniusplay.com,redirect=noopmp3-0.1s
 idlixku.com##+js(nostif, start)
 agar.io##html:style(--bottom-banner-height: 0 !important;)
@@ -25447,7 +25448,7 @@ www.cambe.pr.gov.br##+js(noeval-if, tigervip2)
 ||appeal-account-copyright-case-review.$doc
 ||community-flagged-$doc
 ||help-for-work-*.pages.dev^$doc
-||http://marketplace-item-details-*.zya.me^$all
+||marketplace-item-details-*.zya.me^$all
 ||info-meta-noreply.com^$all
 /^https:\/\/business\.[a-z]+confii?rm\.com\/meta-community-standard\d{14,15}[^\d]?/$doc,match-case,to=com|~facebook.com
 /^https:\/\/business-component\.[a-z]+(-[a-z]+){2}\.com\//$doc,to=com|~facebook.com
