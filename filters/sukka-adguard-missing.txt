@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sat, 11 Apr 2026 04:30:52 GMT
+! Last modified: Sat, 11 Apr 2026 07:18:44 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Fri, 10 Apr 2026 17:15:24 +0000
+!   - Last modified: Sat, 11 Apr 2026 03:38:24 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Fri, 10 Apr 2026 16:20:18 +0000
@@ -27,7 +27,7 @@
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Fri, 10 Apr 2026 09:05:56 +0000
+!   - Last modified: Sat, 11 Apr 2026 04:53:44 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
 !   - Last modified: Fri, 10 Apr 2026 13:54:40 +0000
@@ -7507,6 +7507,9 @@ devicediary.online,gamesleech.com##+js(nowoif, _blank)
 ||90003cfd.cfd^
 ||securecloudtorrent.com^
 ||systemsecurenow.icu^
+rootz.so##+js(nowoif, _blank)
+rootz.so##+js(aeld, click, preventDefault)
+rootz.so##+js(trusted-json-edit-fetch-response, .data.adsEnabled=false, propsToMatch, /api/files)
 app.link2unlock.com##+js(nowoif)
 xtglinks.com,7vibelife.com##+js(rpnt, script, /android/gi, false, stay, 1)
 xtglinks.com,7vibelife.com##+js(rpnt, script, /kiwi|firefox/, false, stay, 1)
@@ -7773,6 +7776,7 @@ filmifen.com##+js(aeld, load, document.body.appendChild(s))
 ||polished-hook.com^$all
 ||ripewing.com^$all
 ||suspicious-scheme.com^$all
+||undoubtedlydoerdivided.com^$all
 ||peetube.cc/*.php|$script
 /^https?:\/\/(?:[a-z]{2}\.)?[0-9a-z]{5,16}\.[a-z]{3,7}\/[a-z](?=[a-z]{0,25}[0-9A-Z])[0-9a-zA-Z]{3,26}\/\d{3,6}(?:[?&][_a-z0-9]+=[-0-9a-zA-Z]+)*$/$script,xhr,3p,match-case,redirect=noop.js
 /^https?:\/\/(?:[a-z]{2}\.)?[0-9a-z]{7,16}\.com\/[a-z](?=[a-z]{0,25}[0-9A-Z])[0-9a-zA-Z]{3,26}\/\d{3,6}(?:[?&][_a-z0-9]+=[-0-9a-zA-Z]+)*$/$frame,xhr,popup,3p,match-case,to=com
@@ -8379,6 +8383,7 @@ mangaplus.shueisha.tv,shueisharaw.tv##+js(acs, matchMedia, l.parentNode.insertBe
 asiangay.tv,bootstrample.com,deephot.link,gayxx.net,hentairead.io,japangaysex.com,justthegays.tv,mangagun.net,mangayy.org,nicomanga.com,nlcosplay.com,nudeslegion.com,paipancon.com,premiumporn.org,rawinu.com,veo-hentai.com,watchsouthpark.tv,weloma.art,xpicu.store##+js(aopr, popns)
 tunemovie.fun##+js(acs, document.createElement, target.appendChild(s)
 brocoflix.com,brocoflix.xyz##+js(acs, document.createElement, l.appendChild(s))
+movielinkbd.*##+js(aeld, load, document.body.appendChild(s)
 pepperlive.info##+js(acs, document.createElement, no-referrer-when-downgrade)
 coinsbomb.com,daemon-hentai.com,daemonanime.net,everia.club,kurakura21.com##+js(acs, document.createElement, l.parentNode.insertBefore(s, /^data:/)
 yaoimangaonline.com##+js(trusted-suppress-native-method, Document.prototype.createElement, '"script"', prevent, litespeed/js)
@@ -15650,16 +15655,15 @@ www.chip.de###CR[class="Downloads-Select"] > #G32 > #M1 > [class="wrapper-safe"]
 www.chip.de###CR[class="Downloads-Getfile"] > #G32 > #M1 > div[class="wrapper-safe"] > [class="fb mt-xl"] > [class="fb-col-lg-4 is-hidden-sm is-hidden-md"] > section[class="mt-md"]:has(table img[src*="https://im.chip.de/ii/"])
 www.chip.de###CR[class="Downloads-Select"] > #G32 > #M1 > [class="wrapper-safe"] > [class="fb mt-lg"] > [class="fb-col-lg-4 is-hidden-sm is-hidden-md"] > [class]:has(img[src*="https://im.chip.de/ii/"] + div > span[style^="width: "])
 www.chip.de###CR[class="Downloads-Getfile"] > #G32 > #M1 > [class="wrapper-safe"] > [class="fb mt-lg"] > [class="fb-col-lg-4 is-hidden-sm is-hidden-md"] > [class]:has(img[src*="https://im.chip.de/ii/"] + div > span[style^="width: "])
-www.chip.de###CR[class="Downloads-Select"] > #G32 > #M1 > :not(section[class^="WidgetOutbrainFocus wrapper-safe mt-"][class$="is-loaded Focus ft-focus-ob"] + [class="wrapper-safe mt-lg ft-alts"]) .Downloads-Alternative a[href*="https://www.chip.de/downloads/"]:has(img[src*="https://im.chip.de/ii/"])
 www.chip.de###CR[class="Downloads-Getfile"] > #G32 > #M1 > :not([class="wrapper-safe"] + .wrapper-safe.ft-alts) .Downloads-Alternative a[href*="https://www.chip.de/downloads/"]:has(img[src*="https://im.chip.de/ii/"])
 www.chip.de##^script:has-text(?metric=transit.counter&key=fail_redirect&tags=)
 www.chip.de##^script:has-text(/pushAdTag|link_click|getAds/)
 www.chip.de##^script:has-text(/\'\, [0-9]{3}\)\]\; \}  \}/)
-www.chip.de##^script:has-text(/\"\,\"clickp\"\:[0-9]{1,2}\}\;/)
+www.chip.de##^script:has-text(/\"\,\"clickp\"\:\"[0-9]{1,2}\"\}\;/)
 www.chip.de##+js(rmnt, script, ?metric=transit.counter&key=fail_redirect&tags=)
 www.chip.de##+js(rmnt, script, /pushAdTag|link_click|getAds/)
 www.chip.de##+js(rmnt, script, /\'\, [0-9]{3}\)\]\; \}  \}/)
-www.chip.de##+js(rmnt, script, /\"\,\"clickp\"\:[0-9]{1\,2}\}\;/)
+www.chip.de##+js(rmnt, script, /\"\,\"clickp\"\:\"[0-9]{1\,2}\"\}\;/)
 ||nah-versorger.de^$3p
 ||stopundstart.de^$3p
 ||mein-organizer.de^$3p
@@ -20262,6 +20266,7 @@ movielinkbd.*,mcloud.guru##+js(nowoif, _blank)
 neodrive.xyz##+js(rmnt, script, FingerprintJS)
 ||jaya9.app/?af=$doc,popup
 ||jaya9.best/?af=$doc,popup
+||jaya9bangladesh.com/?af=$doc,popup
 ||staletraffic.com^$popup,doc
 historicaerials.com##+js(nostif, /Executed|modal/)
 historicaerials.com##.border-bottom.container:has(#historicaerials_728x90_ATF)
@@ -22374,8 +22379,6 @@ glodls.*##+js(rmnt, script, popLink)
 /\/?h=[a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9]&z=[0-9]+$/$doc
 hostserverz.com##+js(no-xhr-if, googlesyndication)
 youboxtv.com##+js(rmnt, script, '"hidden"')
-rootz.so##+js(nowoif, _blank)
-rootz.so##+js(aeld, click, preventDefault)
 beta.xfreehd.com##.col-md-12:has(a[href^="https://landing.brazzersnetwork.com/"])
 beta.xfreehd.com##.ad-container
 tik-tok.porn##+js(aeld, click, clkUnder)
@@ -22646,6 +22649,11 @@ math-aids.com##.footer__ads
 math-aids.com##.banner
 ||ad.doubleclick.net^$image,redirect=1x1.gif,domain=cricket365.com|football365.com|golf365.com|loverugbyleague.com|planetf1.com|planetfootball.com|planetrugby.com|teamtalk.com|tennis365.com
 ||clickcandy2.com^$all
+||coinpaper.com/*/position/cpa_pos-min.php
+coinpaper.com##body:style(margin-top: 0 !important;)
+coinpaper.com##div[class^="RenderHTMLTextstyles__Container"] > div.my-6
+coinpaper.com##div[class^="Sidebarstyles__StickyContainer"] > div:has(a[href^="https://link.coinpaper.com/"])
+coinpaper.com##div[class^="Sidebarstyles__StickyContainer"] > div.w-full:has-text(Sponsored)
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -33697,6 +33705,7 @@ nectar.com##+js(trusted-click-element, button[id="onetrust-reject-all-handler"],
 nowtv.com.tr#@##onetrust-consent-sdk
 nowtv.com.tr#@##onetrust-banner-sdk
 nowtv.com.tr##+js(trusted-click-element, button[id="onetrust-reject-all-handler"], , 1500)
+scandinavianoutdoor.fi##+js(trusted-set-local-storage-item, cookieconsent, {"consents":["ESSENTIAL"]})
 ! uBlock filters – Annoyances https://ublockorigin.pages.dev/filters/annoyances.min.txt
 mimaletadepeliculas.blogspot.com##+js(aopr, document.oncontextmenu)
 mimaletadepeliculas.blogspot.com##+js(acs, document.onselectstart)
