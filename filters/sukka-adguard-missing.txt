@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sun, 12 Apr 2026 14:57:39 GMT
+! Last modified: Sun, 12 Apr 2026 19:10:33 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,10 +8,10 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sun, 12 Apr 2026 09:32:09 +0000
+!   - Last modified: Sun, 12 Apr 2026 13:45:42 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
-!   - Last modified: Sun, 12 Apr 2026 08:51:33 +0000
+!   - Last modified: Sun, 12 Apr 2026 10:58:39 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
 !   - Last modified: Sat, 11 Apr 2026 18:24:20 +0000
@@ -9616,6 +9616,7 @@ polskawliczbach.pl##+js(nostif, offsetHeight)
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=wiadomosci.wp.pl
 wiadomosci.wp.pl##+js(nostif, , 100)
 polsatsport.pl##+js(no-xhr-if, xml)
+fakt.pl##+js(nostif, offsetHeight)
 ||static-cloud.mediaset.net/misc/ad/adanalytics.js^$redirect=noopjs
 ||static-cloud.mediaset.net/misc/ad/adanalytics.js^$redirect=noopjs,domain=mediasetinfinity.es,important
 download.kingtecnologia.com##+js(nostif, await _0x)
@@ -23232,6 +23233,7 @@ cracksmid.com##div[style=""] > center > center
 %3C?php%20echo%20substr(md5(microtime()),0,rand(10,30));?%3E&$doc
 /?*&gkss=$doc,to=cfd|click|pro|world|xyz
 ^click_id=*&s1=$doc
+.com/casino?registration=1&cid=$doc
 ||cfd/file?ajk=$doc,popup
 ||cfd/mnllcontent-$popup
 ||theannoyingsite.com^$all
