@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sun, 12 Apr 2026 22:56:18 GMT
+! Last modified: Mon, 13 Apr 2026 05:24:46 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sun, 12 Apr 2026 13:45:42 +0000
+!   - Last modified: Mon, 13 Apr 2026 03:28:06 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Sun, 12 Apr 2026 10:58:39 +0000
@@ -27,7 +27,7 @@
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Sun, 12 Apr 2026 06:23:37 +0000
+!   - Last modified: Sun, 12 Apr 2026 23:19:45 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
 !   - Last modified: Fri, 10 Apr 2026 13:54:40 +0000
@@ -8960,6 +8960,7 @@ dailycaller.com##+js(set, dc.adfree, true)
 /admiral/script
 ||lib.twnmm.com/admiral-remote-config.json
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=givemesport.com,important
+@@||succeedscene.com^$script,badfilter
 superherohype.com##a.wp-block-button__link:is([href^="https://amzn.to/"], [href^="https://www.amazon.com/"])
 sanfoundry.com##.sf-desktop-ads
 ||qtoptens.com^$csp=worker-src 'none'
@@ -22531,6 +22532,8 @@ coinpaper.com##body:style(margin-top: 0 !important;)
 coinpaper.com##div[class^="RenderHTMLTextstyles__Container"] > div.my-6
 coinpaper.com##div[class^="Sidebarstyles__StickyContainer"] > div:has(a[href^="https://link.coinpaper.com/"])
 coinpaper.com##div[class^="Sidebarstyles__StickyContainer"] > div.w-full:has-text(Sponsored)
+||facilecompilare.it/noticia.php?token=aHR0c$doc,urlskip=?token -base64
+hdstreamverse.cloud##+js(rmnt, script, offsetHeight)
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -33594,6 +33597,7 @@ nowtv.com.tr#@##onetrust-consent-sdk
 nowtv.com.tr#@##onetrust-banner-sdk
 nowtv.com.tr##+js(trusted-click-element, button[id="onetrust-reject-all-handler"], , 1500)
 scandinavianoutdoor.fi##+js(trusted-set-local-storage-item, cookieconsent, {"consents":["ESSENTIAL"]})
+ixolabs.ai##+js(trusted-set-cookie, ixo_cookie_consent, '{"essential":true,"analytics":false,"functional":false}')
 ! uBlock filters – Annoyances https://ublockorigin.pages.dev/filters/annoyances.min.txt
 mimaletadepeliculas.blogspot.com##+js(aopr, document.oncontextmenu)
 mimaletadepeliculas.blogspot.com##+js(acs, document.onselectstart)
