@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Tue, 14 Apr 2026 11:20:10 GMT
+! Last modified: Tue, 14 Apr 2026 15:39:26 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.2.87
+!   - Version: 2.1.2.91
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -218,6 +218,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||clik.by^$3p
 ||metrix.luxnet.io^
 ||justtrack.io^
 ||analytics.authoritymedia.com^
@@ -55927,6 +55928,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||countly.
 ||countly-
 |piwik.
+||nid.the-sun.com^
 ||log.api-maps.yandex.
 ||okr.sbdv.ru^
 ||api.eye.sbdv.ru^
@@ -157445,7 +157447,7 @@ _social_tracking.js^
 _tracking.php?b=
 /aegis-sdk/*$script
 /tnc.js?h=
-||tags.tiqcdn.com/utag/*/prod/utag.js$domain=mcafee.com|help.dropbox.com|radissonhotels.com|post.ch|usnews.com|krymr.com|cnet.com|adidas.co.uk|adidas.nl|adidas.pl|lineadirecta.com|sibreal.org|modernatx.com|louisvuitton.com|simplybusiness.co.uk|uber.com|monroeandmain.com|totaljobs.com|mitsubishi-motors.co.jp|ubereats.com|grubhub.com|talksport.com|truecar.com|hulu.com|qvc.jp|brother-usa.com|mtvema.com|mtv.co.uk|mtv.de|mtv.it|thesun.co.uk|anantara.com|iflscience.com|calvinklein.ca|taylor.com|news.com.au|agoda.com|vodafone.com.tr|huawei.com
+||tags.tiqcdn.com/utag/*/prod/utag.js$domain=mcafee.com|help.dropbox.com|radissonhotels.com|post.ch|usnews.com|krymr.com|cnet.com|adidas.co.uk|adidas.nl|adidas.pl|lineadirecta.com|sibreal.org|modernatx.com|louisvuitton.com|simplybusiness.co.uk|uber.com|monroeandmain.com|totaljobs.com|mitsubishi-motors.co.jp|ubereats.com|grubhub.com|talksport.com|truecar.com|hulu.com|qvc.jp|brother-usa.com|mtvema.com|mtv.co.uk|mtv.de|mtv.it|thesun.co.uk|anantara.com|iflscience.com|calvinklein.ca|taylor.com|news.com.au|agoda.com|vodafone.com.tr|huawei.com|the-sun.com
 ||tags.tiqcdn.com/utag/*/utag.sync.js$domain=yousee.dk|sibreal.org|calvinklein.ca|hosteurope.de|news.com.au
 ||mc.yandex.ru/metrika/tag.js$script,redirect=metrika-yandex-tag,domain=~id.x5.ru|~aiondb.ru
 ||mc.yandex.ru/metrika/watch.js$script,redirect=metrika-yandex-watch
@@ -157467,6 +157469,12 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||s.yimg.com/eh/prebid-config/$domain=aol.com
+||pbd.yahoo.com/data/logs/benji
+||acapi.aol.com/v1/events
+||the-sun.com/assets/optimizely/
+||varta1.com.ua/api/ads-analytics
+||varta1.com.ua/api/analytics
 ||k2s.cc/log|
 ||directory.cookieyes.com/api/v*/ip
 ||api.redgifs.com/v*/metrics/
@@ -158118,7 +158126,7 @@ gala.com##+js(set-local-storage-item, _gal1, $remove$)
 ||luckyduckgames.com/global/index.php?controller=statistics
 ||static-cdn.arte.tv/static/analytics/
 ||event.arte.tv/api/server-side-tracking/
-nypost.com##+js(set-local-storage-item, ow/social-browser-storage, $remove$)
+the-sun.com,nypost.com##+js(set-local-storage-item, ow/social-browser-storage, $remove$)
 express.co.uk,iflscience.com,nypost.com##+js(set-local-storage-item, SPOTIM_DEVICE_UUID_V2, $remove$)
 ||marketplace.geniusplus.ai/*/lre-events?cid=*&wid=
 ||yqzhishen.me/Statistics/statistics.
@@ -163937,6 +163945,7 @@ d4?appid*type*
 @@||google-analytics.com/analytics.js$domain=saturn.de
 @@||googletagmanager.com/gtm.js$domain=saturn.de
 @@||metrics.us.playstation.com/b/ss/
+||inventorycache.com^$badfilter
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
 @@||googletagmanager.com/gtm.js$domain=creator.fronius.com
 @@||a.klaviyo.com/client/back-in-stock-subscriptions/?company_id=$xhr,domain=bodylab24.de
