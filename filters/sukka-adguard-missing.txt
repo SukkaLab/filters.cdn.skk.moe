@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Mon, 13 Apr 2026 23:04:46 GMT
+! Last modified: Tue, 14 Apr 2026 05:06:57 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,10 +8,10 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Mon, 13 Apr 2026 18:28:07 +0000
+!   - Last modified: Tue, 14 Apr 2026 03:13:27 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
-!   - Last modified: Mon, 13 Apr 2026 14:58:44 +0000
+!   - Last modified: Tue, 14 Apr 2026 02:06:58 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
 !   - Last modified: Sat, 11 Apr 2026 18:24:20 +0000
@@ -2674,7 +2674,6 @@ tubedupe.com##+js(aeld, , midRoll)
 veekyforums.com##+js(nowoif)
 @@||veekyforums.com/js/adcash.js$xhr,1p
 ||yespornclips.com/sw.js$script,1p
-@@||mlbstatic.com/mlb.com/video/*/advertise$xhr,domain=mlb.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=ipla.tv
 cutpaid.com##+js(aeld, , _blank)
 cutpaid.com##+js(aopr, app_vars.force_disable_adblock)
@@ -8946,9 +8945,10 @@ audizine.com,blackenterprise.com,cwtv.com,magesy.*,pastes.io##+js(acs, document.
 pc-builds.com,today.com,videogamer.com,wrestlinginc.com##+js(set, admiral, noopFunc)
 nationalpost.com,calgaryherald.com,calgarysun.com,driving.ca,edmontonjournal.com,edmontonsun.com,lfpress.com,montrealgazette.com,ottawacitizen.com,ottawasun.com,thegrowthop.com,theprovince.com,tj.news,torontosun.com,vancouversun.com,windsorstar.com,winnipegsun.com##+js(rmnt, script, window.admiral)
 pcbolsa.com##^script:has-text(/"v4ac1eiZr0"|""\)\.split\(","\)\[4\]|(\.localStorage\)|JSON\.parse\(\w)\.getItem\("|["']_aQS0\w+["']/)
-15min.lt,247sports.com,abc17news.com,addictinggames.com,agrodigital.com,al.com,aliontherunblog.com,allaboutthetea.com,allmovie.com,allmusic.com,allthingsthrifty.com,amessagewithabottle.com,arstechnica.com,artforum.com,artnews.com,audiomack.com,awkward.com,barcablaugranes.com,barnsleychronicle.com,bethcakes.com,betweenenglandandiowa.com,bgr.com,billboard.com,blazersedge.com,blogher.com,blu-ray.com,bluegraygal.com,boredpanda.com,briefeguru.de,brobible.com,cagesideseats.com,cbsnews.com,cbssports.com,celiacandthebeast.com,chaptercheats.com,cheatsheet.com,cleveland.com,clickondetroit.com,commercialcompetentedigitale.ro,cracked.com,crooksandliars.com,dailydot.com,dailykos.com,dailyvoice.com,danslescoulisses.com,databazeknih.cz,deadline.com,decider.com,didyouknowfacts.com,dogtime.com,dpreview.com,ebaumsworld.com,egoallstars.com,eldiariony.com,fark.com,femestella.com,flickr.com,fmradiofree.com,forums.hfboards.com,free-power-point-templates.com,freeconvert.com,frogsandsnailsandpuppydogtail.com,funtasticlife.com,fwmadebycarli.com,gamerevolution.com,golfdigest.com,grunge.com,gulflive.com,hollywoodreporter.com,homeglowdesign.com,honeygirlsworld.com,ibtimes.co.in,imgur.com,indiewire.com,intouchweekly.com,iphoneincanada.ca,jasminemaria.com,kens5.com,kion546.com,knowyourmeme.com,krem.com,last.fm,lehighvalleylive.com,lettyskitchen.com,lifeandstylemag.com,lifeinleggings.com,liveoutdoors.com,lizzieinlace.com,localnews8.com,lonestarlive.com,macwelt.de,macworld.com,madeeveryday.com,maidenhead-advertiser.co.uk,mandatory.com,mardomreport.net,masslive.com,melangery.com,miamiherald.com,mlive.com,mmamania.com,momtastic.com,mostlymorgan.com,motherwellmag.com,motor1.com,motorsport.com,musicfeeds.com.au,naszemiasto.pl,nationalpost.com,nationalreview.com,nbcsports.com,news.com.au,ninersnation.com,nj.com,nordot.app,nothingbutnewcastle.com,nsjonline.com,nypost.com,observer.com,ontvtonight.com,oregonlive.com,pagesix.com,patheos.com,pauladeen.com,pcbolsa.com,pennlive.com,pep.ph,phillyvoice.com,playstationlifestyle.net,puckermom.com,pwinsider.com,realitytea.com,reelmama.com,rlfans.com,robbreport.com,rollingstone.com,royalmailchat.co.uk,sandrarose.com,sbnation.com,sherdog.com,silive.com,sheknows.com,sidereel.com,smartworld.it,sneakernews.com,sourcingjournal.com,soldionline.it,sport-fm.gr,sportico.com,sportsgamblingpodcast.com,spotofteadesigns.com,ssnewstelegram.com,stacysrandomthoughts.com,stylecaster.com,superherohype.com,syracuse.com,tablelifeblog.com,tasteofhome.com,tastingtable.com,techcrunch.com,thecelticblog.com,thedailymeal.com,thegatewaypundit.com,theflowspace.com,themarysue.com,thenerdstash.com,thenerdyme.com,theprudentgarden.com,tiermaker.com,timesofisrael.com,tiscali.cz,tokfm.pl,torontosun.com,tvline.com,usmagazine.com,variety.com,wallup.net,wannacomewith.com,wcnc.com,weather.com,wimp.com,windsorexpress.co.uk,woojr.com,worldoftravelswithkids.com,worldstar.com,worldstarhiphop.com,worldsurfleague.com,wwd.com,wyborkierowcow.pl,wzzm13.com,yourcountdown.to##+js(rmnt, script, `/"v4ac1eiZr0"|""\)\.split\(","\)\[4\]|(\.localStorage\)|JSON\.parse\(\w)\.getItem\("|["']_aQS0\w+["']|decodeURI\(decodeURI\("|<a href="https:\/\/getad%|"cmp\.updated"/`)
-followfollow.com##+js(rmnt, script, .setTargeting, condition, .push(arguments), excludes, \,\")
-sporcle.com##+js(rmnt, script, .setTargeting, condition, .push(arguments), excludes, \,\")
+15min.lt,247sports.com,abc17news.com,addictinggames.com,agrodigital.com,al.com,aliontherunblog.com,allaboutthetea.com,allmovie.com,allmusic.com,allthingsthrifty.com,amessagewithabottle.com,arstechnica.com,audiomack.com,awkward.com,barcablaugranes.com,barnsleychronicle.com,bethcakes.com,betweenenglandandiowa.com,blazersedge.com,blogher.com,blu-ray.com,bluegraygal.com,boredpanda.com,briefeguru.de,brobible.com,cagesideseats.com,cbsnews.com,cbssports.com,celiacandthebeast.com,chaptercheats.com,cheatsheet.com,cleveland.com,clickondetroit.com,commercialcompetentedigitale.ro,cracked.com,crooksandliars.com,dailydot.com,dailykos.com,dailyvoice.com,danslescoulisses.com,databazeknih.cz,decider.com,didyouknowfacts.com,dogtime.com,dpreview.com,ebaumsworld.com,egoallstars.com,eldiariony.com,fark.com,femestella.com,flickr.com,fmradiofree.com,forums.hfboards.com,free-power-point-templates.com,freeconvert.com,frogsandsnailsandpuppydogtail.com,funtasticlife.com,fwmadebycarli.com,gamerevolution.com,golfdigest.com,grunge.com,gulflive.com,homeglowdesign.com,honeygirlsworld.com,ibtimes.co.in,imgur.com,intouchweekly.com,iphoneincanada.ca,jasminemaria.com,kens5.com,kion546.com,knowyourmeme.com,krem.com,last.fm,lehighvalleylive.com,lettyskitchen.com,lifeandstylemag.com,lifeinleggings.com,liveoutdoors.com,lizzieinlace.com,localnews8.com,lonestarlive.com,macwelt.de,macworld.com,madeeveryday.com,maidenhead-advertiser.co.uk,mandatory.com,mardomreport.net,masslive.com,melangery.com,miamiherald.com,mlive.com,mmamania.com,momtastic.com,mostlymorgan.com,motherwellmag.com,motor1.com,motorsport.com,musicfeeds.com.au,naszemiasto.pl,nationalpost.com,nationalreview.com,nbcsports.com,news.com.au,ninersnation.com,nj.com,nordot.app,nothingbutnewcastle.com,nsjonline.com,nypost.com,observer.com,ontvtonight.com,oregonlive.com,pagesix.com,patheos.com,pauladeen.com,pcbolsa.com,pennlive.com,pep.ph,phillyvoice.com,playstationlifestyle.net,puckermom.com,pwinsider.com,realitytea.com,reelmama.com,rlfans.com,royalmailchat.co.uk,sandrarose.com,sbnation.com,sherdog.com,silive.com,sheknows.com,sidereel.com,smartworld.it,sneakernews.com,soldionline.it,sport-fm.gr,sportsgamblingpodcast.com,spotofteadesigns.com,ssnewstelegram.com,stacysrandomthoughts.com,stylecaster.com,superherohype.com,syracuse.com,tablelifeblog.com,tasteofhome.com,tastingtable.com,techcrunch.com,thecelticblog.com,thedailymeal.com,thegatewaypundit.com,theflowspace.com,themarysue.com,thenerdstash.com,thenerdyme.com,theprudentgarden.com,tiermaker.com,timesofisrael.com,tiscali.cz,tokfm.pl,torontosun.com,usmagazine.com,wallup.net,wannacomewith.com,wcnc.com,weather.com,wimp.com,windsorexpress.co.uk,woojr.com,worldoftravelswithkids.com,worldstar.com,worldstarhiphop.com,worldsurfleague.com,wyborkierowcow.pl,wzzm13.com,yourcountdown.to##+js(rmnt, script, `/"v4ac1eiZr0"|""\)\.split\(","\)\[4\]|(\.localStorage\)|JSON\.parse\(\w)\.getItem\("|["']_aQS0\w+["']|decodeURI\(decodeURI\("|<a href="https:\/\/getad%|"cmp\.updated"/`)
+followfollow.com,sporcle.com##+js(rmnt, script, admiral, excludes, \,\")
+ampav.com,artforum.com,artnews.com,atxtv.co,bgr.com,billboard.com,deadline.com,dickclark.com,footwearnews.com,goldderby.com,hollywoodreporter.com,indiewire.com,la3c.com,lifeisbeautiful.com,luminatedata.com,robbreport.com,rollingstone.com,shemedia.com,sourcingjournal.com,sportico.com,spy.com,sxsw.com,tvline.com,variety.com,vibe.com,wwd.com##^script.pmc-admiral
+ampav.com,artforum.com,artnews.com,atxtv.co,bgr.com,billboard.com,deadline.com,dickclark.com,footwearnews.com,goldderby.com,hollywoodreporter.com,indiewire.com,la3c.com,lifeisbeautiful.com,luminatedata.com,robbreport.com,rollingstone.com,shemedia.com,sourcingjournal.com,sportico.com,spy.com,sxsw.com,tvline.com,variety.com,vibe.com,wwd.com##+js(rmnt, script, adblockerDisabled, excludes, \,\")
 dailydot.com##.article-ad__top:style(min-height:0px !important)
 deadline.com##.ad-label
 dexerto.com##+js(json-edit, ..admiralScriptCode)
@@ -22547,6 +22547,8 @@ embedplayer.xyz##meta[name^="ads-"]:remove()
 ||embedplayer.xyz/embed/guard.js$script,1p
 @@||worder.cat/exitsplash.php$script,1p
 worder.cat##.ads
+mlb.com##+js(json-prune-xhr-response, data.initPlaybackSession.adScenarios data.initPlaybackSession.adExperience.adExperienceTypes, , propsToMatch, /graphql)
+mlb.com##+js(trusted-json-edit-xhr-response, .data.initPlaybackSession.adExperience.adsEnabled=false, propsToMatch, /graphql)
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -26743,6 +26745,7 @@ ublockorigin.app###main::before:style(content: 'This is not the official uBlock 
 -sogou.cn^$doc,to=cn
 ||chrome-hl.hl.cn^$all
 ||a-todesk.com.cn^$all
+||todeskk.com^$all
 ||www-qishiu.com.cn^$all
 ||qishui-zn.hl.cn^$all
 ||pc-todesk.com.cn^$all
@@ -26788,6 +26791,7 @@ ublockorigin.app###main::before:style(content: 'This is not the official uBlock 
 ||apps-tencent.com^$all
 ||qishuiie.com^$all
 ||qishuiit.com^$all
+||qishui-yinle.hl.cn^$all
 ||ggooglle-chrrome.com.cn^$all
 ||cnzh-google-apps.hl.cn^$all
 ||google-zhcn-chrome.com.cn^$all
@@ -26799,6 +26803,8 @@ ublockorigin.app###main::before:style(content: 'This is not the official uBlock 
 ||youku.earth^$all
 ||youkuhonor.com^$all
 ||youku.tv^$all
+||www-office-wps.com.cn^$all
+||offiio-wps.com.cn^$all
 ||wps.ac.cn^$all
 ||cn-wps-zh.com.cn^$all
 ||tuba.toolg.cn^$all
@@ -26818,6 +26824,7 @@ ublockorigin.app###main::before:style(content: 'This is not the official uBlock 
 ||360edge.cn^$all
 ||app-google-zh.hl.cn^$all
 ||zhcn-googele.hl.cn^$all
+||qishuui.com.cn^$all
 ||ms.kuugo.cc^$all
 ||baiduwangpan.cc^$all
 ||chrome-gooogle-zh.hl.cn^$all
