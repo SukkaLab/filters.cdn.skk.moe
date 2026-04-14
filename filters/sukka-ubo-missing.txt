@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Tue, 14 Apr 2026 15:39:26 GMT
+! Last modified: Tue, 14 Apr 2026 19:44:19 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.2.91
+!   - Version: 2.1.2.93
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -157469,6 +157469,10 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||eporner.com/beacon.php
+||spankbang.com/api/ab-test/tracking
+||spankbang.com/static/dist/ab_test_click_tracker
+||assets.sb-cd.com/static/dist/ab_test_click_tracker*.js$domain=spankbang.com
 ||s.yimg.com/eh/prebid-config/$domain=aol.com
 ||pbd.yahoo.com/data/logs/benji
 ||acapi.aol.com/v1/events
@@ -162836,6 +162840,7 @@ dlsdk.appsflyer.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||tracker.a11.vega.aurion11.io^
 ||aptoide-rtb.aptoide.com^
 ||qbk1.com^
 ||log*.boomplaymusic.com^
