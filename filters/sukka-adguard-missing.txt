@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Tue, 14 Apr 2026 23:06:12 GMT
+! Last modified: Wed, 15 Apr 2026 05:07:51 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Tue, 14 Apr 2026 16:40:54 +0000
+!   - Last modified: Wed, 15 Apr 2026 01:43:07 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Tue, 14 Apr 2026 16:20:01 +0000
@@ -27,7 +27,7 @@
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Tue, 14 Apr 2026 07:36:20 +0000
+!   - Last modified: Wed, 15 Apr 2026 03:29:26 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
 !   - Last modified: Tue, 14 Apr 2026 15:01:27 +0000
@@ -8372,6 +8372,8 @@ classicpornbest.com##.h-bns-bl
 ||fastpic.org/view/*.html|$script,1p
 ||javtsunami.com/cool-shadow-$script
 ||malluporno.com/red-sea-
+||ac.rule34.xxx^
+||rule34.xxx/x/cookiefreead.js
 akaihentai.com##.exc
 asiansex.life###spot-holder
 comicxxx.eu###tracking-url
@@ -8954,6 +8956,7 @@ nationalpost.com,calgaryherald.com,calgarysun.com,driving.ca,edmontonjournal.com
 pcbolsa.com##^script:has-text(/"v4ac1eiZr0"|""\)\.split\(","\)\[4\]|(\.localStorage\)|JSON\.parse\(\w)\.getItem\("|["']_aQS0\w+["']/)
 15min.lt,247sports.com,abc17news.com,addictinggames.com,agrodigital.com,al.com,aliontherunblog.com,allaboutthetea.com,allmovie.com,allmusic.com,allthingsthrifty.com,amessagewithabottle.com,arstechnica.com,audiomack.com,awkward.com,barcablaugranes.com,barnsleychronicle.com,bethcakes.com,betweenenglandandiowa.com,blazersedge.com,blogher.com,blu-ray.com,bluegraygal.com,boredpanda.com,briefeguru.de,brobible.com,cagesideseats.com,cbsnews.com,cbssports.com,celiacandthebeast.com,chaptercheats.com,cheatsheet.com,cleveland.com,clickondetroit.com,commercialcompetentedigitale.ro,cracked.com,crooksandliars.com,dailydot.com,dailykos.com,dailyvoice.com,danslescoulisses.com,databazeknih.cz,decider.com,didyouknowfacts.com,dogtime.com,dpreview.com,ebaumsworld.com,egoallstars.com,eldiariony.com,fark.com,femestella.com,flickr.com,fmradiofree.com,forums.hfboards.com,free-power-point-templates.com,freeconvert.com,frogsandsnailsandpuppydogtail.com,funtasticlife.com,fwmadebycarli.com,gamerevolution.com,golfdigest.com,grunge.com,gulflive.com,homeglowdesign.com,honeygirlsworld.com,ibtimes.co.in,imgur.com,intouchweekly.com,iphoneincanada.ca,jasminemaria.com,kens5.com,kion546.com,knowyourmeme.com,krem.com,last.fm,lehighvalleylive.com,lettyskitchen.com,lifeandstylemag.com,lifeinleggings.com,liveoutdoors.com,lizzieinlace.com,localnews8.com,lonestarlive.com,macwelt.de,macworld.com,madeeveryday.com,maidenhead-advertiser.co.uk,mandatory.com,mardomreport.net,masslive.com,melangery.com,miamiherald.com,mlive.com,mmamania.com,momtastic.com,mostlymorgan.com,motherwellmag.com,motor1.com,motorsport.com,musicfeeds.com.au,naszemiasto.pl,nationalpost.com,nationalreview.com,nbcsports.com,news.com.au,ninersnation.com,nj.com,nordot.app,nothingbutnewcastle.com,nsjonline.com,nypost.com,observer.com,ontvtonight.com,oregonlive.com,pagesix.com,patheos.com,pauladeen.com,pcbolsa.com,pennlive.com,pep.ph,phillyvoice.com,playstationlifestyle.net,puckermom.com,pwinsider.com,realitytea.com,reelmama.com,rlfans.com,royalmailchat.co.uk,sandrarose.com,sbnation.com,sherdog.com,silive.com,sheknows.com,sidereel.com,smartworld.it,sneakernews.com,soldionline.it,sport-fm.gr,sportsgamblingpodcast.com,spotofteadesigns.com,ssnewstelegram.com,stacysrandomthoughts.com,stylecaster.com,superherohype.com,syracuse.com,tablelifeblog.com,tasteofhome.com,tastingtable.com,techcrunch.com,thecelticblog.com,thedailymeal.com,thegatewaypundit.com,theflowspace.com,themarysue.com,thenerdstash.com,thenerdyme.com,theprudentgarden.com,tiermaker.com,timesofisrael.com,tiscali.cz,tokfm.pl,torontosun.com,usmagazine.com,wallup.net,wannacomewith.com,wcnc.com,weather.com,wimp.com,windsorexpress.co.uk,woojr.com,worldoftravelswithkids.com,worldstar.com,worldstarhiphop.com,worldsurfleague.com,wyborkierowcow.pl,wzzm13.com,yourcountdown.to##+js(rmnt, script, `/"v4ac1eiZr0"|""\)\.split\(","\)\[4\]|(\.localStorage\)|JSON\.parse\(\w)\.getItem\("|["']_aQS0\w+["']|decodeURI\(decodeURI\("|<a href="https:\/\/getad%|"cmp\.updated"/`)
 followfollow.com,sporcle.com##+js(rmnt, script, admiral, excludes, \,\")
+iphoneincanada.ca##+js(rmnt, script, adblockerDisabled, excludes, \,\")
 ampav.com,artforum.com,artnews.com,atxtv.co,bgr.com,billboard.com,deadline.com,dickclark.com,footwearnews.com,goldderby.com,hollywoodreporter.com,indiewire.com,la3c.com,lifeisbeautiful.com,luminatedata.com,robbreport.com,rollingstone.com,shemedia.com,sourcingjournal.com,sportico.com,spy.com,sxsw.com,tvline.com,variety.com,vibe.com,wwd.com##^script.pmc-admiral
 ampav.com,artforum.com,artnews.com,atxtv.co,bgr.com,billboard.com,deadline.com,dickclark.com,footwearnews.com,goldderby.com,hollywoodreporter.com,indiewire.com,la3c.com,lifeisbeautiful.com,luminatedata.com,robbreport.com,rollingstone.com,shemedia.com,sourcingjournal.com,sportico.com,spy.com,sxsw.com,tvline.com,variety.com,vibe.com,wwd.com##+js(rmnt, script, adblockerDisabled, excludes, \,\")
 dailydot.com##.article-ad__top:style(min-height:0px !important)
@@ -22551,6 +22554,7 @@ worder.cat##+js(set, ab.dt, false)
 worder.cat##.ads
 mlb.com##+js(json-prune-xhr-response, data.initPlaybackSession.adScenarios data.initPlaybackSession.adExperience.adExperienceTypes, , propsToMatch, /graphql)
 mlb.com##+js(trusted-json-edit-xhr-response, .data.initPlaybackSession.adExperience.adsEnabled=false, propsToMatch, /graphql)
+newplayer.huaren.live##+js(rpnt, script, '"ads"', '"ads":{},"noads"')
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -31837,9 +31841,9 @@ mesta.net##+js(trusted-set-cookie, OptanonConsent, groups=C0001%3A1%2CC0005%3A1%
 mesta.net##+js(trusted-set-cookie, OptanonAlertBoxClosed, $currentDate$, 1year)
 mafu.de##+js(trusted-set-cookie, wmm-visitor_token, 4cb8860d-4194-4ab5-be04-10f9a26afaa8)
 paf.com##+js(trusted-set-cookie, cookieConsent, {%22essential%22:true%2C%22tracking%22:false%2C%22marketing%22:false})
-raymond-weil.com,auto.it,beauxarts.com,beinsports.com,bfmtv.com,boursobank.com,boursorama.com,boursier.com,brut.media,canalplus.com,decathlon.fr,diverto.tv,eden-park.com,foodvisor.io,franceinfo.fr,frandroid.com,jobijoba.*,hotelsbarriere.com,intersport.*,idealista.it,o2.fr,lejdd.fr,lechorepublicain.fr,la-croix.com,linfo.re,lamontagne.fr,laredoute.fr,largus.fr,leprogres.fr,lesnumeriques.com,libramemoria.com,lopinion.fr,marieclaire.fr,maville.com,michelin.*,midilibre.fr,meteofrance.com,mondialtissus.fr,orange.fr,orpi.com,oscaro.com,ouest-france.fr,parismatch.com,pagesjaunes.fr,programme-television.org,publicsenat.fr,rmcbfmplay.com,science-et-vie.com,seloger.com,societe.com,suzuki.fr,sudouest.fr,web-agri.fr###didomi-host
-mappy.com,raymond-weil.com,auto.it,beauxarts.com,beinsports.com,bfmtv.com,boursobank.com,boursorama.com,boursier.com,brut.media,canalplus.com,decathlon.fr,diverto.tv,eden-park.com,foodvisor.io,franceinfo.fr,jobijoba.*,hotelsbarriere.com,intersport.*,idealista.it,o2.fr,lejdd.fr,lechorepublicain.fr,la-croix.com,linfo.re,lamontagne.fr,laredoute.fr,largus.fr,leprogres.fr,lesnumeriques.com,libramemoria.com,lopinion.fr,marieclaire.fr,maville.com,michelin.*,midilibre.fr,meteofrance.com,mondialtissus.fr,orange.fr,orpi.com,oscaro.com,ouest-france.fr,parismatch.com,pagesjaunes.fr,programme-television.org,publicsenat.fr,rmcbfmplay.com,science-et-vie.com,seloger.com,societe.com,suzuki.fr,sudouest.fr,web-agri.fr##+js(trusted-click-element, .didomi-continue-without-agreeing, , 1000)
-raymond-weil.com,auto.it,beauxarts.com,beinsports.com,bfmtv.com,boursobank.com,boursorama.com,boursier.com,brut.media,canalplus.com,decathlon.fr,diverto.tv,eden-park.com,foodvisor.io,frandroid.com,jobijoba.*,hotelsbarriere.com,intersport.*,idealista.it,o2.fr,lejdd.fr,lechorepublicain.fr,la-croix.com,linfo.re,lamontagne.fr,laredoute.fr,largus.fr,leprogres.fr,lesnumeriques.com,libramemoria.com,lopinion.fr,marieclaire.fr,maville.com,michelin.*,midilibre.fr,meteofrance.com,mondialtissus.fr,orange.fr,orpi.com,oscaro.com,ouest-france.fr,parismatch.com,pagesjaunes.fr,programme-television.org,publicsenat.fr,rmcbfmplay.com,science-et-vie.com,seloger.com,societe.com,suzuki.fr,sudouest.fr,web-agri.fr##body.didomi-popup-open:style(overflow: auto !important;)
+euronews.com,raymond-weil.com,auto.it,beauxarts.com,beinsports.com,bfmtv.com,boursobank.com,boursorama.com,boursier.com,brut.media,canalplus.com,decathlon.fr,diverto.tv,eden-park.com,foodvisor.io,franceinfo.fr,frandroid.com,jobijoba.*,hotelsbarriere.com,intersport.*,idealista.it,o2.fr,lejdd.fr,lechorepublicain.fr,la-croix.com,linfo.re,lamontagne.fr,laredoute.fr,largus.fr,leprogres.fr,lesnumeriques.com,libramemoria.com,lopinion.fr,marieclaire.fr,maville.com,michelin.*,midilibre.fr,meteofrance.com,mondialtissus.fr,orange.fr,orpi.com,oscaro.com,ouest-france.fr,parismatch.com,pagesjaunes.fr,programme-television.org,publicsenat.fr,rmcbfmplay.com,science-et-vie.com,seloger.com,societe.com,suzuki.fr,sudouest.fr,web-agri.fr###didomi-host
+euronews.com,mappy.com,raymond-weil.com,auto.it,beauxarts.com,beinsports.com,bfmtv.com,boursobank.com,boursorama.com,boursier.com,brut.media,canalplus.com,decathlon.fr,diverto.tv,eden-park.com,foodvisor.io,franceinfo.fr,jobijoba.*,hotelsbarriere.com,intersport.*,idealista.it,o2.fr,lejdd.fr,lechorepublicain.fr,la-croix.com,linfo.re,lamontagne.fr,laredoute.fr,largus.fr,leprogres.fr,lesnumeriques.com,libramemoria.com,lopinion.fr,marieclaire.fr,maville.com,michelin.*,midilibre.fr,meteofrance.com,mondialtissus.fr,orange.fr,orpi.com,oscaro.com,ouest-france.fr,parismatch.com,pagesjaunes.fr,programme-television.org,publicsenat.fr,rmcbfmplay.com,science-et-vie.com,seloger.com,societe.com,suzuki.fr,sudouest.fr,web-agri.fr##+js(trusted-click-element, .didomi-continue-without-agreeing, , 1000)
+euronews.com,raymond-weil.com,auto.it,beauxarts.com,beinsports.com,bfmtv.com,boursobank.com,boursorama.com,boursier.com,brut.media,canalplus.com,decathlon.fr,diverto.tv,eden-park.com,foodvisor.io,frandroid.com,jobijoba.*,hotelsbarriere.com,intersport.*,idealista.it,o2.fr,lejdd.fr,lechorepublicain.fr,la-croix.com,linfo.re,lamontagne.fr,laredoute.fr,largus.fr,leprogres.fr,lesnumeriques.com,libramemoria.com,lopinion.fr,marieclaire.fr,maville.com,michelin.*,midilibre.fr,meteofrance.com,mondialtissus.fr,orange.fr,orpi.com,oscaro.com,ouest-france.fr,parismatch.com,pagesjaunes.fr,programme-television.org,publicsenat.fr,rmcbfmplay.com,science-et-vie.com,seloger.com,societe.com,suzuki.fr,sudouest.fr,web-agri.fr##body.didomi-popup-open:style(overflow: auto !important;)
 flip.gr##+js(trusted-set-cookie, consts, '{%22ad_storage%22:%22denied%22%2C%22analytics_storage%22:%22denied%22%2C%22functionality_storage%22:%22granted%22}')
 andersiahotel.pl##+js(trusted-set-cookie, _CookiesPolicyAccepted, [%22necessary%22])
 nutri-plus.de##.acris-cookie-consent
@@ -32391,6 +32395,9 @@ vivenu-tickets-usa.sailgp.com##+js(trusted-set-local-storage-item, cookies-conse
 wells.pt##+js(trusted-click-element, button.CybotCookiebotDialogBodyButton, , 1000)
 dskdirect.bg##+js(trusted-click-element, a#CybotCookiebotDialogBodyButtonAcceptAll, , 1000)
 cmpv2.dba.dk##+js(trusted-click-element, button[title="Kun nødvendige"], , 2500)
+portal.newdaycards.com##+js(trusted-set-cookie, cookieConsents, '{"analytics":false,"marketing":false,"userPreferences":false}')
+app.trakt.tv##+js(trusted-click-element, button[aria-label="Accept functional cookies only"], , 1000)
+dropreference.com##+js(trusted-set-cookie, DR-cookie-consent, '{"necessary":true,"analytics":false,"marketing":false}')
 spcmp.crosswordsolver.com,gbnews.com>>##+js(trusted-click-element, button[title="Accept"], , 1000)
 cdn.privacy-mgmt.com##+js(trusted-click-element, button[title="Accept"], , 1000)
 hfm.com##+js(trusted-set-cookie, orejime, '{"functional":true,"analytical":false,"marketing":false,"targeting":false,"analytical_and_marketing_and_targeting":false}')
@@ -33480,7 +33487,6 @@ cbsnews.com##+js(trusted-click-element, #ketch-banner-buttons-container-compact 
 southpark.*,southparkstudios.*#@##onetrust-consent-sdk
 southparkstudios.com##+js(trusted-click-element, button[id="ketch-banner-button-secondary"], , 1000)
 southparkstudios.nu##+js(trusted-set-cookie, _swb, ce58de8a-3d03-4cf7-a8ac-cc8f5573e48f, 1year)
-app.trakt.tv##+js(trusted-click-element, button[aria-label="Accept functional cookies only"], , 1000)
 sport-kessler.com##+js(trusted-set-cookie, cst_consent_aspects, 'Vimeo,Youtube,GoogleMaps')
 sport-kessler.com##+js(trusted-set-cookie, cst_consent_version, c7aa0590f5ea2eeb3474ac21e9bc9e3f71cc3d51, , , reload, 1)
 infshop.fi##+js(trusted-click-element, .prelim-manage-cookies-button.btn-default)
