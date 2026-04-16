@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Thu, 16 Apr 2026 08:04:23 GMT
+! Last modified: Thu, 16 Apr 2026 09:51:13 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202604160751
+!   - Version: 202604160941
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 16 Apr 2026 07:51 UTC
+!   - Last modified: 16 Apr 2026 09:41 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
@@ -31,7 +31,7 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 💊 Dandelion Sprout's Anti-Malware List
 !   - URL: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout's%20Anti-Malware%20List.txt
-!   - Version: 09April2026v1
+!   - Version: 16April2026v1
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 🛃 Anti-'Adoptables and Artsite NFTs' List
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/AntiAdoptablesList.txt
@@ -6762,7 +6762,7 @@ zombooru.com##a[href$="ttp://www.hard55.com"]
 ||ptwmbed.com^$all
 ||93.93.51.223^$all
 ||livejasmin.com/*&origin=$doc
-/^(.*//|.*\.)?github\.[a-z]{2,20}(/.*)?$/$document,match-case,~third-party,domain=github.*|~com|~org|~net|~co|~blog|~community|~host|~io|~microsoft|~office|~uk|~us|~xn--fiqs8s|~dev|~archive.*
+/^((https?|tcp|udp|i?quic|s?ftp)://|.*\.)?github\.([b-z][a-z]{1,19}|a[a-mo-z][a-z]{0,18})(/.*)?$/$document,match-case,~third-party,domain=github.*|~com|~org|~net|~co|~blog|~community|~host|~io|~microsoft|~office|~uk|~us|~xn--fiqs8s|~dev|~archive.*
 ||github.sale^$all
 ||apple-walletsuspension.$all
 ||box-token.com^$all

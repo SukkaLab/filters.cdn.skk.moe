@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Thu, 16 Apr 2026 08:04:23 GMT
+! Last modified: Thu, 16 Apr 2026 09:51:13 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -166249,6 +166249,7 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 @@||blocket.se^*/xtcore.js
 @@||reseguiden.se^*.siteCatalyst.js
 ||acustomizedgift.com^$~xhr
+||kindhush.com^
 ! CJX's Annoyance List https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 /wiseatom/banner/pack_
 /npm/disable-devtool
