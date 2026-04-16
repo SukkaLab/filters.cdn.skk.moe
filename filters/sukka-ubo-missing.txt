@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Thu, 16 Apr 2026 05:13:07 GMT
+! Last modified: Thu, 16 Apr 2026 08:04:23 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.2.97
+!   - Version: 2.1.2.99
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -157471,6 +157471,7 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+/rptracker.js$domain=rshb.ru
 burger-king.by##+js(set-local-storage-item, mindboxDeviceUUID, $remove$)
 ||ubisoft.com/*/global/tracking/
 ||content.powerapps.com/resource/powerappsportal/dist/client-telemetry*.js$domain=sante.quebec
@@ -161044,6 +161045,7 @@ kanobu.ru##a[href^="https://www.liveinternet.ru/click"]
 viva.ua,beauty.ua##.footer-counters
 ctvnews.ca##img[alt="comscorebeacon"]
 ||s.aimg.sk/livemonitor/js/aztracker.js
+||vidazoo.com/aggregate
 ||asadcdn.com/bt^
 ||merkur.de/_cua.html
 ||cdn.cr.org/etc/designs/electronics/clientlibs/tracking.js
@@ -162877,7 +162879,7 @@ dlsdk.appsflyer.com^
 ||track.hily.com^
 ||ping*.bidease.com^
 ||ntus.bidease.com^
-||thinkingdata.cn^
+||global-receiver-ta.thinkingdata.cn^
 ||mixpanel-proxy-ivbdkvonca-uc.a.run.app^
 ||tc.zxcvbnml.com^
 ||fpconfig.net^
