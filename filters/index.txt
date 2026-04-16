@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Filters
-! Last modified: Sun, 12 Apr 2026 14:31:54 GMT
+! Last modified: Thu, 16 Apr 2026 09:50:59 GMT
 ! Expires: 1 hours
 ! Description: The filters from Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -262,6 +262,9 @@ fandom.com###age-gate
 ||change.org/api-proxy/graphql?op=SuggestedPetitionsFromPetitionSunrise
 ||change.org/api-proxy/graphql?op=SunriseVictoriousPetitionsFromPetition
 ||change.org/api-proxy/graphql?op=PetitionQRCodeData
+wikiwand.com##.ad-mid-section
+wikiwand.com##.ad-between-sections
+wikiwand.com##html:remove-attr(data-show-ads)
 ||ip.sb$domain=alicesw.com
 @@||perfops.io/500b-bench.jpg$domain=localhost|ip.skk.moe
 ||adfoc.us$csp=script-src 'none'
