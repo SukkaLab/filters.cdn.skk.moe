@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Filters
-! Last modified: Thu, 16 Apr 2026 09:50:59 GMT
+! Last modified: Thu, 16 Apr 2026 18:10:12 GMT
 ! Expires: 1 hours
 ! Description: The filters from Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -365,7 +365,7 @@ abema.tv##+js(trusted-prevent-xhr, ds-linear-abematv.akamaized.net/region, '')
 www.youtube.com##.ytd-rich-section-renderer
 youtube.com##.ytd-rich-item-renderer:has-text(Members only)
 youtube.com##yt-lockup-view-model:has-text(Members only)
-||app.link$third-party
+||app.link$3p
 ||maplesugar.top/sw.js
 ||126.com$domain=maplesugar.top
 ||blog.maplesugar.top/usr/uploads/2024/09/725322379.jpg
