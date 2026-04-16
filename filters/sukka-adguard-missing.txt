@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Thu, 16 Apr 2026 11:20:24 GMT
+! Last modified: Thu, 16 Apr 2026 15:54:59 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Thu, 16 Apr 2026 09:43:49 +0000
+!   - Last modified: Thu, 16 Apr 2026 12:31:59 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Tue, 14 Apr 2026 16:20:01 +0000
@@ -20,14 +20,14 @@
 !   - Last modified: Thu, 16 Apr 2026 07:55:34 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Wed, 15 Apr 2026 14:56:54 +0000
+!   - Last modified: Thu, 16 Apr 2026 12:16:09 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
 !   - Last modified: Sat, 21 Mar 2026 02:04:14 +0000
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Wed, 15 Apr 2026 14:40:41 +0000
+!   - Last modified: Thu, 16 Apr 2026 10:32:14 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
 !   - Last modified: Tue, 14 Apr 2026 15:01:27 +0000
@@ -4310,6 +4310,8 @@ pornhub.*###relatedVideosCenter > .wrapVideoBlock
 pornhub.*##+js(set, abp1, 1)
 ranker.com##+js(aopr, __eiPb)
 ranker.com##+js(nostif, /!/, 50)
+ranker.com##+js(set, Object.prototype.adBlockerPop, undefined)
+ranker.com##+js(set, admiral, undefined)
 @@||stltoday.com^$ghide
 stltoday.com##.dfp-ad
 stltoday.com##.tnt-ads-container
@@ -18904,10 +18906,11 @@ qwant.com##div[data-testid="pam.container"]:style(max-height: 1px !important; op
 @@||qwant.com^$ping,1p
 ||qwant.com/action/click_serp$ping,1p,important
 @@||spite.cz^$ghide
-civitai.com,civitai.green##+js(no-fetch-if, googlesyndication)
-civitai.com,civitai.green##div:is(.shadow, .flex.w-full.justify-center[style=""], .flex.flex-col.items-center.justify-center.gap-2[style^="min-height:"]):has(a[href="/pricing"] img[alt="Please support civitai and creators by disabling adblock"]):remove()
-civitai.com,civitai.green##div[id][class^="mantine-"].flex.relative.box-content:style(min-height: 0px !important; visibility: collapse !important; padding: 0px !important;)
+civitai.red,civitai.com,civitai.green##+js(no-fetch-if, googlesyndication)
+civitai.red,civitai.com,civitai.green##div:is(.shadow, .flex.w-full.justify-center[style=""], .flex.flex-col.items-center.justify-center.gap-2[style^="min-height:"]):has(a[href="/pricing"] img[alt="Please support civitai and creators by disabling adblock"]):remove()
+civitai.red,civitai.com,civitai.green##div[id][class^="mantine-"].flex.relative.box-content:style(min-height: 0px !important; visibility: collapse !important; padding: 0px !important;)
 ||ads.civitai.$script,1p,redirect=noopjs
+||advertising.civitai.com^$xhr
 puzzle-loop.com,puzzle-words.com,puzzle-chess.com,puzzle-thermometers.com,puzzle-norinori.com,puzzle-minesweeper.com,puzzle-slant.com,puzzle-lits.com,puzzle-galaxies.com,puzzle-tents.com,puzzle-battleships.com,puzzle-pipes.com,puzzle-hitori.com,puzzle-heyawake.com,puzzle-shingoki.com,puzzle-masyu.com,puzzle-stitches.com,puzzle-aquarium.com,puzzle-tapa.com,puzzle-star-battle.com,puzzle-kakurasu.com,puzzle-skyscrapers.com,puzzle-futoshiki.com,puzzle-shakashaka.com,puzzle-kakuro.com,puzzle-jigsaw-sudoku.com,puzzle-killer-sudoku.com,puzzle-binairo.com,puzzle-nonograms.com,puzzle-sudoku.com,puzzle-light-up.com,puzzle-bridges.com,puzzle-shikaku.com,puzzle-nurikabe.com,puzzle-dominosa.com,puzzle-yin-yang.com###MainContainer > [id^="bannerTopSpacer"]
 puzzle-loop.com,puzzle-words.com,puzzle-chess.com,puzzle-thermometers.com,puzzle-norinori.com,puzzle-minesweeper.com,puzzle-slant.com,puzzle-lits.com,puzzle-galaxies.com,puzzle-tents.com,puzzle-battleships.com,puzzle-pipes.com,puzzle-hitori.com,puzzle-heyawake.com,puzzle-shingoki.com,puzzle-masyu.com,puzzle-stitches.com,puzzle-aquarium.com,puzzle-tapa.com,puzzle-star-battle.com,puzzle-kakurasu.com,puzzle-skyscrapers.com,puzzle-futoshiki.com,puzzle-shakashaka.com,puzzle-kakuro.com,puzzle-jigsaw-sudoku.com,puzzle-killer-sudoku.com,puzzle-binairo.com,puzzle-nonograms.com,puzzle-sudoku.com,puzzle-light-up.com,puzzle-bridges.com,puzzle-shikaku.com,puzzle-nurikabe.com,puzzle-dominosa.com,puzzle-yin-yang.com###MainContainer + [id]:has(> #bannerSide)
 puzzle-loop.com,puzzle-words.com,puzzle-chess.com,puzzle-thermometers.com,puzzle-norinori.com,puzzle-minesweeper.com,puzzle-slant.com,puzzle-lits.com,puzzle-galaxies.com,puzzle-tents.com,puzzle-battleships.com,puzzle-pipes.com,puzzle-hitori.com,puzzle-heyawake.com,puzzle-shingoki.com,puzzle-masyu.com,puzzle-stitches.com,puzzle-aquarium.com,puzzle-tapa.com,puzzle-star-battle.com,puzzle-kakurasu.com,puzzle-skyscrapers.com,puzzle-futoshiki.com,puzzle-shakashaka.com,puzzle-kakuro.com,puzzle-jigsaw-sudoku.com,puzzle-killer-sudoku.com,puzzle-binairo.com,puzzle-nonograms.com,puzzle-sudoku.com,puzzle-light-up.com,puzzle-bridges.com,puzzle-shikaku.com,puzzle-nurikabe.com,puzzle-dominosa.com,puzzle-yin-yang.com###MainContainer > [id]:has(> [id^="btIn"] > #bannerTop)
@@ -22554,7 +22557,7 @@ embedplayer.xyz##+js(nowoif)
 embedplayer.xyz##meta[name^="ads-"]:remove()
 ||embedplayer.xyz/embed/guard.js$script,1p
 worder.cat##+js(set, ab.dt, false)
-@@||worder.cat/$script,1p
+worder.cat##+js(trusted-replace-argument, document.getElementById, 0, json:"header", condition, /[a-z][A-Z]/)
 worder.cat##.ads
 mlb.com##+js(json-prune-xhr-response, data.initPlaybackSession.adScenarios data.initPlaybackSession.adExperience.adExperienceTypes, , propsToMatch, /graphql)
 mlb.com##+js(trusted-json-edit-xhr-response, .data.initPlaybackSession.adExperience.adsEnabled=false, propsToMatch, /graphql)
@@ -31225,9 +31228,14 @@ bing.com##ol#b_results > li.b_algo:has(> .b_caption > p[ads])
 bing.com##ol#b_results > li:has(> :is(.b_tpcn, .b_title, h2) a[href^="https://www.bing.com/aclk?"])
 bing.com##ol#b_results > li.b_algo:has(.b_lineclamp3:matches-css-before(content:/^url\(\Sdata:image\/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD.AAAA/))
 @@*$image,xhr,domain=bg-gledai.*|gledaitv.*|bg-gledai.video|gledaitv.fan|gledaitv.live
-@@||gledaitv.$ghide
-@@||pagead2.googlesyndication.com^$script,domain=gledaitv.fan
+@@*$ghide,domain=bg-gledai.*|gledaitv.*|bg-gledai.video|gledaitv.fan|gledaitv.live
+@@||pagead2.googlesyndication.com^$script,domain=bg-gledai.*|gledaitv.*|bg-gledai.video|gledaitv.fan|gledaitv.live
 gledaitv.*###ad-overlay:remove()
+gledaitv.*##+js(trusted-replace-argument, document.getElementById, 0, json:"body", condition, ad-detection-bait)
+gledaitv.*##+js(trusted-replace-argument, document.querySelector, 0, json:"body", condition, -id-)
+gledaitv.*##+js(set, scriptBlocked, false)
+gledaitv.*##+js(set, blocked, false)
+gledaitv.*##+js(set, testUrls, [])
 @@||ads.*.js|$script,3p,domain=seirsanduk.*|seir-sanduk.com|seirsanduk.com|seirsanduk.net|seirsanduk.online
 @@||ads.*.js?$script,3p,domain=seirsanduk.*|seir-sanduk.com|seirsanduk.com|seirsanduk.net|seirsanduk.online
 @@||seir-sanduk.com^$script,1p
@@ -32041,7 +32049,7 @@ rtl.de##+js(trusted-set-cookie, consentUUID, c6ff7694-6696-4ff0-8b31-313cfe86787
 krzbb.de##+js(trusted-set-cookie, consentUUID, b35fa5cf-67b5-4b59-a089-5e34f820f649_34)
 n-tv.de##+js(trusted-set-cookie, consentUUID, a8dac56d-c5d7-4a8a-bab2-da9eb2f28d08_34_38)
 lbc.co.uk##+js(trusted-set-cookie, consentUUID, de4972d9-e581-40c3-921b-296d6456fad0_34)
-aftonbladet.se,omniekonomi.se,bt.no,vg.no##+js(trusted-set-cookie, consentUUID, 1_34_38)
+omniekonomi.se,bt.no,vg.no##+js(trusted-set-cookie, consentUUID, 1_34_38)
 consent.faz.net,derstandard.at,derstandard.de##+js(trusted-click-element, button[title="Einverstanden"], , 1000)
 ansa.it##+js(rpnt, script, $(function(), 'if (navigator.userAgent.includes("iPhone")){window.addEventListener("load",()=>{_iub.cs.acceptAll("bannerAcceptClicked");_iub.cs.ui.banner.removeBanner()});}$(function()', sedCount, 1)
 automoto.it,ansa.it,cdt.ch,delladio.it,huffingtonpost.it,internazionale.it,lastampa.it,macitynet.it,moto.it,movieplayer.it,multiplayer.it,repubblica.it,tomshw.it,skuola.net,spaziogames.it,today.it,tuttoandroid.net,tuttotech.net##+js(trusted-click-element, button.iubenda-cs-accept-btn, , 2000)
@@ -32104,7 +32112,7 @@ rtvc.es>>##+js(trusted-click-element, button[aria-label*="Aceptar"], , 1000)
 beteve.cat>>,whatcar.com>>##+js(trusted-click-element, button[title*="Accept"], , 1000)
 bloodyelbow.com>>,consent.radiotimes.com##+js(trusted-click-element, button[title*="AGREE"], , 1000)
 sp-consent.szbz.de##+js(trusted-click-element, button[title="Alles akzeptieren"], , 1000)
-cmp.omni.se,cmp.svd.se,cmp.aftonbladet.se,cmp.tv.nu##+js(trusted-click-element, button[title="Godkänn alla cookies"], , 1000)
+cmp.omni.se,cmp.svd.se,cmp.tv.nu##+js(trusted-click-element, button[title="Godkänn alla cookies"], , 1000)
 weltkunst.de>>##+js(trusted-click-element, button[title="ALLE AKZEPTIEREN"], , 1000)
 consent.economist.com,studentagency.cz##+js(trusted-click-element, button[title="Reject all"], , 1000)
 driving.co.uk>>,cmpv2.foundryco.com,cmpv2.infoworld.com,cmpv2.arnnet.com.au##+js(trusted-click-element, button[title="I Agree"], , 1000)
@@ -33591,6 +33599,7 @@ nowtv.com.tr#@##onetrust-banner-sdk
 nowtv.com.tr##+js(trusted-click-element, button[id="onetrust-reject-all-handler"], , 1500)
 scandinavianoutdoor.fi##+js(trusted-set-local-storage-item, cookieconsent, {"consents":["ESSENTIAL"]})
 ixolabs.ai##+js(trusted-set-cookie, ixo_cookie_consent, '{"essential":true,"analytics":false,"functional":false}')
+aftonbladet.se##+js(trusted-click-element, #notice button[title="Godkänn alla"])
 ! uBlock filters – Annoyances https://ublockorigin.pages.dev/filters/annoyances.min.txt
 mimaletadepeliculas.blogspot.com##+js(aopr, document.oncontextmenu)
 mimaletadepeliculas.blogspot.com##+js(acs, document.onselectstart)
