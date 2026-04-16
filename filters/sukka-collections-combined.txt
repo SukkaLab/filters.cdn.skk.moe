@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Thu, 16 Apr 2026 18:10:13 GMT
+! Last modified: Thu, 16 Apr 2026 18:15:31 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -169,6 +169,7 @@ www.youtube.com#?#.ytdTalkToRecsFlowRendererHost:has-text(Help us improve)
 /npsblocker/js/ads.
 @@/adsbygoogle.js$script,domain=arabiaweather.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=shahid.mbc.net
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=shed4u1.com|elktob.online
 @@||play.bokracdn.run/v2/adsjs/ads.js$script,~third-party
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=shahid.mbc.net
 ###adblock_screen
@@ -1572,6 +1573,7 @@ shadbase.com##img[alt="adblock"]
 @@||download.megaup.net/openads.js$script,~third-party
 @@||alwingulla.com/88/tag.min.js$domain=darkino.online
 @@||fundingchoicesmessages.google.com^$script,domain=hurriyet.com.tr|milliyet.com.tr
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=exe-urls.com|fileink.com|phoneky.com|rockmods.net
 @@||cheatography.com^$generichide
 @@||darkino.online^$generichide
 @@||docs.w3cub.com^$generichide
@@ -1665,6 +1667,7 @@ _adblock_killer.
 @@||manga-news.com/js/advert.js$script
 @@||nouvelle-fiat500.fr/ad-pub.js$script
 @@||numerama.com/ads.js
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=empire-anime.com|empire-streaming.app|empire-streamz.fr
 @@||pagerank.fr/js*/advert.js?$script
 @@||ams.cdn.arkadiumhosted.com/assets/arena-4/arena/heap/advertisements.js$script,domain=jeux.lemonde.fr
 @@||penducado.com/styles/ads.css
@@ -1673,6 +1676,7 @@ _adblock_killer.
 @@||pstream.net/js/prebid35.js$~third-party
 @@||ptitchef.com/js/ads.js
 @@||static.admysports.com/hb/site/als/hb_allosurf.js$domain=allosurf.net
+@@||static.adsafeprotected.com/favicon.ico$domain=tf1info.fr
 @@||static.koreus.com/js/advert.js
 @@||cdn4.tennistemple.com/js/advert.js|$script,~third-party
 @@||universfreebox.com/js/advertisement.js
@@ -2999,6 +3003,8 @@ download.cnet.com##.c-globalCard:has(a[href*="/AdsCleaner/"])
 ||94.130.185.237^$doc
 ||94.130.186.231^$doc
 ||collectfasttracks.com^$all,domain=~malware_redirection_trains.*
+||track.vcdc.com^$all,domain=~malware_redirection_trains.*
+||track.tkbo.com^$all,domain=~malware_redirection_trains.*
 ||track.traffic.club^$all,domain=~malware_redirection_trains.*
 ||lasvegas-vacations.net^$doc
 ||ndsplitter.com^$doc
@@ -16848,6 +16854,9 @@ $removeparam=vero_conv
 $removeparam=vero_id
 $removeparam=wickedid
 $doc,removeparam=/^\??utm_.*$/i,domain=~tradedoubler.com|~sendgb.com|~allegro.pl|~tix.axs.com|~transfernow.*|~carrefourpl.snrpage.com|~justdial.com|~pepper.pl|~gaugau.futabanet.jp|~uploadnow.io|~usprobioticguide.com|~canadacompanyregistry.com
+$doc,removeparam=/^itm_.*$/,domain=~redir.tradedoubler.com
+$doc,removeparam=/^stm_.*$/,domain=~redir.tradedoubler.com
+$doc,removeparam=/^mtm_.*$/,domain=~redir.tradedoubler.com
 $doc,removeparam=/^_utm_.*$/i
 $removeparam=logTag,doc
 $removeparam=gclsrc,doc
@@ -16956,6 +16965,7 @@ $removeparam=mc_cid
 $removeparam=mc_eid
 $doc,removeparam=/^intgrtn_.*$/
 $removeparam=afftag
+$doc,removeparam=/^affid=.*$/i,domain=~redir.tradedoubler.com|~affiliate.geekbuying.com
 $removeparam=referralCode
 $removeparam=LSNPUBID
 $removeparam=admitad_uid
@@ -18767,6 +18777,7 @@ $removeparam=eml,domain=endesa.com|scholastic.com
 ||entradas.com^$removeparam=referer_info
 $removeparam=referer,doc,domain=bodykind.com|clink2.com|dlink2.com|nitter.net
 ||officemonster.co.uk^$removeparam=/^fo_.*$/
+||analytics.bluekai.com^$removeparam=phint
 ||hao123.com^$removeparam=tn
 ||lazada.$removeparam=dsource
 ||lazada.$removeparam=laz_share_info
@@ -19057,6 +19068,7 @@ $removeparam=user_id,doc,domain=nytimes.com|nytimesn7cgmftshazwhfgzm37qxb44r64yt
 ^fs=e&s=cl$doc,removeparam=fs
 ^fs=e&s=cl$doc,removeparam=s
 $removeparam=x50878
+||redirect.appmetrica.yandex.com^$removeparam=c
 $removeparam=fromMostRead,domain=bloomberg.com
 $removeparam=source_widget_id,domain=tapahtumat.almatalent.fi|tapahtumat.ekarjala.fi|tapahtumat.ekonomit.fi|tapahtumat.eslu.fi|tapahtumat.hel.fi|tapahtumat.hyvinkaa.fi|tapahtumat.intoseinajoki.fi|tapahtumat.joensuu.fi|tapahtumat.kaleva.fi|tapahtumat.kannus.fi|tapahtumat.karjalainen.fi|tapahtumat.kauppakamari.fi|tapahtumat.kerava.fi|tapahtumat.kirkkonummi.fi|tapahtumat.kokkola.fi|tapahtumat.kuusamo.fi|tapahtumat.lappeenranta.fi|tapahtumat.lempaala.fi|tapahtumat.loviisa.fi|tapahtumat.masku.fi|tapahtumat.mikkeli.fi|tapahtumat.munoulu.fi|tapahtumat.osakeliitto.fi|tapahtumat.pori.fi|tapahtumat.raasepori.fi|tapahtumat.rantalakeus.fi|tapahtumat.ratsastus.fi|tapahtumat.rovaniemi.fi|tapahtumat.salo.fi|tapahtumat.sipoo.fi|tapahtumat.sley.fi|tapahtumat.studentum.fi|tapahtumat.tampereensuomalainenklubi.fi|tapahtumat.tuusula.fi|tapahtumat.vantaa.fi|tapahtumat.vihti.fi|tapahtumat.visitespoo.fi|tapahtumat.visitkotkahamina.fi|tapahtumat.visitlohja.fi|tapahtumat.visitsavonlinna.fi|tapahtumat.visitvantaa.fi|tapahtumienkeskipohjanmaa.fi
 $removeparam=referrer_id,domain=autoblog.com
@@ -19233,6 +19245,7 @@ $doc,removeparam=wp_source,domain=ac24.cz|ambcrypto.com|glispa.com|whitepages.co
 ||deepl.com/pro$removeparam=pdf
 ||kahoot.it^$removeparam=refer_method
 ||substack.com^$removeparam=sd,doc
+||open.substack.com^$removeparam=r,doc
 ||euromaidanpress.com^$removeparam=swcfpc,doc
 ||cnbc.com^$doc,removeparam=__source
 ||cnbc.com^$doc,removeparam=par
