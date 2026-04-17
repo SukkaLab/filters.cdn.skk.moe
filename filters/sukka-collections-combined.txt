@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Fri, 17 Apr 2026 08:05:08 GMT
+! Last modified: Fri, 17 Apr 2026 11:13:35 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202604170751
+!   - Version: 202604171102
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 17 Apr 2026 07:51 UTC
+!   - Last modified: 17 Apr 2026 11:02 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
@@ -82,7 +82,7 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 🎛 Reddit Trash Removal Service
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/RedditTrashRemovalService.txt
-!   - Version: 10November2025v1-Beta
+!   - Version: 17April2026v1-Beta
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 🎓 Wikia: Pure Browsing Experience
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/WikiaPureBrowsingExperience.txt
@@ -19867,9 +19867,6 @@ reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion##div[s
 reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion##div:not([class]) > div:only-of-type > div[class$=" "][data-redditstyle=false]
 reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion,~old.reddit.com##.right-sidebar:has(> pdp-right-rail)
 reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion,~old.reddit.com##article:has(> [author-id="t2_g2unu1x5s" i][permalink^="/r/oddlyspecific/" i])
-reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion##search-telemetry-tracker a:remove-attr(href)
-reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion##search-telemetry-tracker a:style(color:unset!important;border-bottom-style:unset!important;cursor:text!important)
-reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion##search-telemetry-tracker .align-middle:has(> svg)
 reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion##.Post:has(a[href="/user/GallowBoob"])
 reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion##.Post:has(a[href="/user/pepsi_next"])
 reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion##.Post:has(a[href="/user/TooShiftyForYou"])
