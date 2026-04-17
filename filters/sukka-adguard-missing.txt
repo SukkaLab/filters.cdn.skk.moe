@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Thu, 16 Apr 2026 23:04:39 GMT
+! Last modified: Fri, 17 Apr 2026 05:11:52 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Thu, 16 Apr 2026 17:08:17 +0000
+!   - Last modified: Fri, 17 Apr 2026 00:11:40 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Thu, 16 Apr 2026 15:06:16 +0000
@@ -27,7 +27,7 @@
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Thu, 16 Apr 2026 10:32:14 +0000
+!   - Last modified: Fri, 17 Apr 2026 02:44:32 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
 !   - Last modified: Tue, 14 Apr 2026 15:01:27 +0000
@@ -19666,7 +19666,6 @@ pianetalecce.it##+js(acs, document.getElementById, ablk)
 hiraethtranslation.com##+js(rmnt, script, adsSrc)
 chasingthedonkey.com##+js(nowoif)
 taste.com.au##.main-header:style(top: 0 !important)
-@@||codicibancari.it^$script,domain=decompiler.com
 @@/prebid.$script,from=decompiler.com
 decompiler.com##+js(trusted-replace-node-text, script, /if.*?\(.*?\)/, if(false), condition, /\.style\.pointerEvents|\.style\.opacity|\.setAttribute\('hr'|\.createElement\("button"\)|\.addEventListener\("click"|window\['al'\+'ert'\]|oldButton\['replaceWith'\]|' \+ '|replaceSubmit|replaceSubmitWithWarnButton|'pointerEvents'|disableLink/)
 decompiler.com##+js(acs, document.getElementById, /adblock/i)
@@ -20629,11 +20628,11 @@ daddylive.*###floatLayer1
 daddylive.*###html1
 daddylive.*##div > a.btn-outline-primary.btn
 daddylive.link#@#+js(aopr, require)
-||dlstreams.top/*-adbanner.html
-adffdafdsafds.sbs,dlstreams.top##+js(rmnt, script, /key in document|popundersPerIP|var FingerprintJS|adserverDomain|globalThis;break;case|ai_adb|adContainer/)
-adffdafdsafds.sbs,dlstreams.top##+js(aopr, aclib)
-dlstreams.top>>,~chatango.com,~google.com##+js(rmnt, script, /key in document|popundersPerIP|var FingerprintJS|adserverDomain|globalThis;break;case|ai_adb|adContainer/)
-dlstreams.top>>,~chatango.com,~google.com##+js(aopr, aclib)
+||dlstreams.*/*-adbanner.html
+adffdafdsafds.sbs,dlstreams.*##+js(rmnt, script, /key in document|popundersPerIP|var FingerprintJS|adserverDomain|globalThis;break;case|ai_adb|adContainer/)
+adffdafdsafds.sbs,dlstreams.*##+js(aopr, aclib)
+dlstreams.*>>,~chatango.com,~google.com##+js(rmnt, script, /key in document|popundersPerIP|var FingerprintJS|adserverDomain|globalThis;break;case|ai_adb|adContainer/)
+dlstreams.*>>,~chatango.com,~google.com##+js(aopr, aclib)
 nudogram.com##.sponsor
 nudogram.com##.super_button
 nudogram.com##.wp_xsize_class
@@ -31639,6 +31638,7 @@ cinemark.com.br##+js(set-cookie, cookies_config, deny)
 theweathernetwork.com##+js(trusted-click-element, #didomi-notice-disagree-button)
 craftelier.com##+js(trusted-set-cookie, pr-cookie-consent, [], , , domain, .craftelier.com)
 moleson.rentalp.com##+js(trusted-set-cookie, USE_COOKIE_CONSENT_STATE, '{"firstParty":true,"thirdParty":false,"necessary":true}')
+mediaguru.cz##+js(trusted-click-element, .b-cookie button[data-cookie-reject], , 500)
 dailymail.co.uk##+js(trusted-click-element, div[data-project="mol-fe-cmp"] button[class*="consent"]:not([class*="reject"]))
 1001games.com,1001hry.cz,1001jeux.fr,1001jocuri.ro,1001jogos.com.br,1001jogos.pt,1001pelit.com,1001spiele.de,auth.hbomax.com,elkspel.nl,gamespot.com,giochixl.it,glamour.com,grajteraz.pl,isladejuegos.com,jatekokxl.hu,mtvuutiset.fi,paixnidiaxl.gr,pushsquare.com,spelo.se,spillespill.no,spilxl.dk,thejournal.ie,thetrainline.com,vkmag.com,zdnet.com##+js(trusted-set-cookie, OptanonAlertBoxClosed, $currentDate$, 1year)
 evaair.com##+js(trusted-set-cookie, _EVAcookieaccept, Y, 1year)
