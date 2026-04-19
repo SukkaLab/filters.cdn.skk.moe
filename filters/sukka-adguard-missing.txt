@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sun, 19 Apr 2026 11:00:59 GMT
+! Last modified: Sun, 19 Apr 2026 14:58:13 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -14,7 +14,7 @@
 !   - Last modified: Thu, 16 Apr 2026 15:06:16 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Sun, 19 Apr 2026 06:28:21 +0000
+!   - Last modified: Sun, 19 Apr 2026 11:13:49 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
 !   - Last modified: Fri, 17 Apr 2026 09:06:06 +0000
@@ -30,7 +30,7 @@
 !   - Last modified: Sat, 18 Apr 2026 06:30:27 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
-!   - Last modified: Tue, 14 Apr 2026 15:01:27 +0000
+!   - Last modified: Sun, 19 Apr 2026 10:52:39 +0000
 ! --------------------------------------------------------------
 ! uBlock filters https://ublockorigin.pages.dev/filters/filters.min.txt
 *_ad_$media,domain=youtube.com,3p
@@ -28465,6 +28465,7 @@ lnk.to,smarturl.it##+js(set, linkfire.tracking, {})
 ||garryslist.org/device_fingerprints
 ||fileditchfiles.me/api/plausible
 ||pik.opendesktop.org/pik.js
+||timeanddate.*/scripts/logperf.php
 /edgemesh.*.js$script,domain=~edgemesh.com|~edgeno.de
 ||safelinkconverter.com^$script,3p
 /adsensebase.js$script
@@ -35596,8 +35597,6 @@ elahmad.com##+js(ra, oncontextmenu|ondragstart|onselectstart)
 elahmad.com##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
 adpres.ro##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
 adpres.ro##+js(aopw, stopPrntScr)
-@@||timeanddate.com^$ghide
-timeanddate.com###ad300
 racevpn.com##+js(aopw, document.onkeydown)
 messitv.net##.sharepost
 playpilot.com##.takeover.modals
@@ -36744,7 +36743,9 @@ noicetranslations.blogspot.com##+js(rmnt, script, disableselect)
 ||ren.tv/video/embed/*#autoplay=$subdocument,uritransform=/#autoplay=.*//
 bloomberglinea.com,bloomberglinea.com.br##+js(aeld, copy)
 ||jsdelivr.net/npm/ad-compass@latest/dist/ad-compass.umd.js
-timeanddate.com##+js(aeld, load, ad-wrap)
+@@||timeanddate.com^$ghide
+timeanddate.com###ad300
+timeanddate.com,timeanddate.de,timeanddate.no##+js(aeld, load, ad-wrap)
 wear.jp##+js(trusted-set-session-storage-item, status_of_app_redirect_half_modal_on_coordinate_list, {"displayed":true})
 xossipy.com##+js(ra, oncopy|oncut)
 xossipy.com##style:has-text(user-select):remove()
