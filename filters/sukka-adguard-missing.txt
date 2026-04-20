@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Mon, 20 Apr 2026 08:28:57 GMT
+! Last modified: Mon, 20 Apr 2026 11:42:24 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Mon, 20 Apr 2026 01:19:20 +0000
+!   - Last modified: Mon, 20 Apr 2026 06:31:36 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Sun, 19 Apr 2026 15:24:53 +0000
@@ -9832,6 +9832,8 @@ storage.googleapiscdn.com,stream.googleapiscdn.com##+js(rmnt, script, /bait/i)
 @@||googleapiscdn.com/player/*animevietsub.$ghide
 ||googleapiscdn.com/admin/api/ads/
 /static/jwplayer/vast.js
+motphimr.io##+js(aeld, click, document.createElement)
+motphimr.io##+js(trusted-set-session-storage-item, popup-ads-last-shown, $now$)
 /^https:\/\/[a-z0-9]{6,10}\.[a-z]{2,3}\/js\d?\/noadblocker\.js(?:\?v=\d)?$/$script,1p,match-case
 /^https:\/\/[a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9]?[a-z0-9]?[a-z0-9]?[a-z0-9]?\.[a-z][a-z][a-z]?\/js[0-9]?\/noadblocker\.js(\?v=[0-9])?$/$script,1p,match-case
 *$script,redirect-rule=noopjs,domain=arcai.com
@@ -21983,6 +21985,7 @@ app.simracing.gp##+js(nostif, .getComputedStyle)
 ||audiocircuit.dk/wp-content/plugins/awiftysw/
 blogspot.com,web.app##img[onclick="kemana()"]
 anikai.to##+js(nowoif, _blank)
+anikai.to##+js(nosiif, ;if(!()
 ||anikai.to/sw.js^
 filesq.net##+js(nowoif, _blank)
 filesq.net##._button-now
@@ -22596,6 +22599,15 @@ ottplay.com##.infinite-scroll-component > div[style^="min-height:"]:not([class])
 ottplay.com##.lazy-loaded
 ottplay.com##div[class^="MastHead_ad"]
 fileditchfiles.me##+js(rmnt, script, "'show'")
+ntv.cx##+js(set, initializePopupAd, noopFunc)
+ntv.cx##.watch-ad-banner
+livetv.moviebite.cc##+js(nostif, getComputedStyle)
+livetv.moviebite.cc##+js(nosiif, getComputedStyle)
+livetv.moviebite.cc##div[data-ad-container]
+livetv.moviebite.cc##div.w-full:has(> div[data-ad-container])
+guessthemovie.name##+js(no-fetch-if, method:/head/i)
+guessthemovie.name##.fallback-side-ad
+||guessthemovie.name/ads/
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
