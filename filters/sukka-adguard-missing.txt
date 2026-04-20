@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sun, 19 Apr 2026 22:57:14 GMT
+! Last modified: Mon, 20 Apr 2026 05:22:59 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sun, 19 Apr 2026 17:26:30 +0000
+!   - Last modified: Mon, 20 Apr 2026 01:19:20 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Sun, 19 Apr 2026 15:24:53 +0000
@@ -17,7 +17,7 @@
 !   - Last modified: Sun, 19 Apr 2026 11:13:49 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
-!   - Last modified: Fri, 17 Apr 2026 09:06:06 +0000
+!   - Last modified: Mon, 20 Apr 2026 03:44:38 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
 !   - Last modified: Sun, 19 Apr 2026 01:26:13 +0000
@@ -19396,7 +19396,7 @@ asia.5ivttv.vip##+js(acs, document.readyState, mdpDeblocker)
 @@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$script,domain=sbt.com.br
 ||dai.google.com/ssai/event/*/streams$xhr,domain=sbt.com.br
 ||pubads.g.doubleclick.net/ssai/event/*/streams$xhr,domain=sbtnews.sbt.com.br,important
-||dai.google.com/linear/pods/$xhr,from=sbt.com.br
+||dai.google.com/linear/pods/$xhr,from=sbtnews.sbt.com.br
 ||khantv.live/ad2.php^
 mp3y.info##+js(nowoif)
 ||mp3y.info/*.php^$frame
@@ -22552,7 +22552,7 @@ tophostdeal.com##+js(no-xhr-if, googlesyndication)
 /api/events$xhr,domain=miruro.*|miruro.to|miruro.bz|miruro.online|miruro.tv
 /promo/*$image,domain=miruro.*|miruro.to|miruro.bz|miruro.online|miruro.tv
 /api/monkey$ping,domain=miruro.*|miruro.to|miruro.bz|miruro.online|miruro.tv
-miruro.*,miruro.to,miruro.bz,miruro.online,miruro.tv##[href*="getdirectbonus.com"]
+miruro.*##[href*="getdirectbonus.com"]
 math-aids.com##+js(set, __revCatchInitialized, true)
 math-aids.com##+js(nostif, En(e-1))
 math-aids.com##.footer__ads
@@ -31168,7 +31168,6 @@ alltransistors.com###reklama:style(display: block !important;)
 conceptoweb-studio.com##+js(set, initJWPlayerMux, {})
 conceptoweb-studio.com##+js(set, initJWPlayerMux.utils, {})
 conceptoweb-studio.com##+js(set, initJWPlayerMux.utils.now, noopFunc)
-||www.yodobashi.com^$badfilter
 ||adman.gr^$media,domain=antenna.gr,redirect=noopmp3-0.1s
 ! uBlock filters – Quick fixes https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
 @@||hb.vntsm.com/v4/live/vms/sites/aternos.org/index.js$script,domain=aternos.org
