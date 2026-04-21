@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Tue, 21 Apr 2026 11:33:15 GMT
+! Last modified: Tue, 21 Apr 2026 15:42:21 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.3.24
+!   - Version: 2.1.3.26
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -55030,6 +55030,9 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||countly.
 ||countly-
 |piwik.
+||android-beacons.xumo.com^
+||roku-beacons.xumo.com^
+||samsung-beacons.xumo.com^
 ||stats.zincdrive.com^
 ||nid.the-sun.com^
 ||log.api-maps.yandex.
@@ -159280,6 +159283,8 @@ dlsdk.appsflyer.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||mobileconfig.sascdn.com^
+||cirrus-full-snapshots-track-csv-v1-0-na-prod.s3.amazonaws.com^
 ||analytics.pocketfm.com^
 ||otel-collector.reliability.smartnews.net^
 ||report-edge.rtesvc.com^
@@ -160304,6 +160309,7 @@ d4?appid*type*
 @@||google-analytics.com/analytics.js$domain=saturn.de
 @@||googletagmanager.com/gtm.js$domain=saturn.de
 @@||metrics.us.playstation.com/b/ss/
+||acustomizedgift.com^$~xhr,badfilter
 ||kindhush.com^$redirect=noop.json,xhr,badfilter
 ||kindhush.com^$~xhr,badfilter
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
