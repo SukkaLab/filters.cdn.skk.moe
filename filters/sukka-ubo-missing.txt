@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Tue, 21 Apr 2026 05:10:40 GMT
+! Last modified: Tue, 21 Apr 2026 08:09:37 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.3.21
+!   - Version: 2.1.3.23
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -153929,6 +153929,15 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||chatgpt.com/backend-api/beacons/
+||chatgpt.com/backend-api/sentinel/ping
+||lg-chatbot.com/chatbot/v*/api/client_logger
+||cv-library.co.uk/assets/js/ext/amplitude-
+||cv-library.co.uk/assets/js/ext/clickstream.
+||cv-library.co.uk/assets/js/experiments-amplitude-
+||cv-library.co.uk/assets/js/clickstream
+||gobankingrates.com/wp-content/themes/rockefeller-lite/assets/build/event-tracking.js
+||gobankingrates.com/et/
 ||dce-frontoffice.imggaming.com/api/v2/event/
 ||hls-beacons-us.xumo.com/hlsstream/v*/beacon?
 ||ducttapeai.com/api/tracking/event
@@ -162584,11 +162593,9 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 @@||blocket.se^*/xtcore.js
 @@||reseguiden.se^*.siteCatalyst.js
 ||acustomizedgift.com^$~xhr
+||inventorycache.com^$~xhr
 ||kindhush.com^$~xhr
 ||oceancloudhosts.com^$~xhr
-||acustomizedgift.com^$redirect=noop.json,xhr
-||kindhush.com^$redirect=noop.json,xhr
-||oceancloudhosts.com^$redirect=noop.json,xhr
 ! CJX's Annoyance List https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 /wiseatom/banner/pack_
 /npm/disable-devtool
