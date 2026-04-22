@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Tue, 21 Apr 2026 23:00:53 GMT
+! Last modified: Wed, 22 Apr 2026 05:08:44 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Tue, 21 Apr 2026 18:59:36 +0000
+!   - Last modified: Tue, 21 Apr 2026 19:44:13 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Sun, 19 Apr 2026 15:24:53 +0000
@@ -7568,6 +7568,10 @@ tfly.link##footer
 tfly.link##center > [href]
 vipshort.in##+js(rpnt, script, intentUrl;, fallbackUrl;)
 vipshort.in##+js(set, blurred, false)
+cloudfam.io##+js(nostif, /blocked|null|return/)
+cloudfam.io##+js(rmnt, script, prevent)
+cloudfam.io##+js(nano-sib, /.?/, *)
+cloudfam.io##+js(nano-stb, /.?/, *)
 xnxx.com,xvideos.com###ad-header-mobile
 jprime.jp##.ad-overlay
 apkdone.com##.adplaceholder-top
