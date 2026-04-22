@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Wed, 22 Apr 2026 05:08:44 GMT
+! Last modified: Wed, 22 Apr 2026 08:07:14 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.3.28
+!   - Version: 2.1.3.30
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -217,6 +217,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||globalsiteanalytics.com^
 ||content-settings.com^
 ||config-factory.com^
 ||aan8bq.ru^
@@ -55029,6 +55030,9 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||countly.
 ||countly-
 |piwik.
+||goto.simplywall.st^
+||swssp.simplywall.st^
+||swsdd.simplywall.st^
 ||android-beacons.xumo.com^
 ||roku-beacons.xumo.com^
 ||samsung-beacons.xumo.com^
@@ -153931,6 +153935,12 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||unicreditgroup.eu/content/dam/unicreditgroup-eu/common/analytics/
+||rudderstack.com/v1/track|
+||rudderstack.com/v1/identify|
+||rudderstack.com/v1/batch?writeKey=
+||simplywall.st/backend/flags/proxy/client/metrics
+||doofinder.com/api/v*/stats/
 ||chatgpt.com/backend-api/beacons/
 ||chatgpt.com/backend-api/sentinel/ping
 ||lg-chatbot.com/chatbot/v*/api/client_logger
@@ -153943,7 +153953,8 @@ _tracking.php?b=
 ||dce-frontoffice.imggaming.com/api/v2/event/
 ||hls-beacons-us.xumo.com/hlsstream/v*/beacon?
 ||ducttapeai.com/api/tracking/event
-||moneywise.com/scottie/api/cdp/v1/event|
+/scottie/api/cdp/v1/event|$domain=moneywise.com|money.ca
+/js/adobe-analytics.js$domain=moneywise.com|money.ca
 ||fileditchfiles.me/api/plausible
 /https:\/\/www\.fakt\.pl\/[a-zA-Z0-9_]{40,200}/$xhr,~3p,match-case,domain=fakt.pl
 play.xumo.com##+js(set-local-storage-item, com.kochava.tracker.EventQueue, $remove$)
