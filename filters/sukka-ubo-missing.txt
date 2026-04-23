@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Thu, 23 Apr 2026 16:07:51 GMT
+! Last modified: Thu, 23 Apr 2026 19:44:01 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.3.46
+!   - Version: 2.1.3.48
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -217,6 +217,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||fubuki-umami.space^
 ||t.journify.io^
 ||static.journify.io^
 ||umamix.fadunews.in^
@@ -153530,6 +153531,8 @@ zmail.mtrl.me$image
 /com.snowplowanalytics.$domain=~snowplowanalytics.com
 .com.br/tracking.set^|
 .com.br/cliente/trackRemote^|
+/api/site/tracking-config/*
+/api/track|$3p,xhr
 ||t.*/v1/lst/universal-script?ph=$script
 /analytics?ver=*&visitor_id=
 /_static/deliver.js?nonce=$script,~3p
@@ -160347,6 +160350,8 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=saturn.de
 @@||metrics.us.playstation.com/b/ss/
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
+@@||tag.aticdn.net/piano-analytics.js$domain=rte.ie
+@@||blob.core.windows.net/comed/src/js/google-analytics.js$domain=comed.com
 @@||trackdesk.com/sign-in$domain=dashboard.naughtyaffiliates.com
 @@||trackdesk.com/api/node/settings/$domain=dashboard.naughtyaffiliates.com
 @@||go.ezodn.com/ezvideo/$stylesheet,domain=open.video
