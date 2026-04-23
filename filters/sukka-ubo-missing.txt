@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Wed, 22 Apr 2026 19:42:18 GMT
+! Last modified: Thu, 23 Apr 2026 05:12:28 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.3.33
+!   - Version: 2.1.3.39
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -217,6 +217,9 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||t.journify.io^
+||static.journify.io^
+||umamix.fadunews.in^
 ||acustomizedgift.com^$script,redirect=noop.js
 ||globalsiteanalytics.com^
 ||content-settings.com^
@@ -55031,6 +55034,15 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||countly.
 ||countly-
 |piwik.
+||sas.a.int-nft.peacocktv.com^
+||sas.a.peacocktv.com^
+||sas.a.stable-int.peacocktv.com^
+||sas.f.int-nft.peacocktv.com^
+||sas.f.peacocktv.com^
+||sas.f.stable-int.peacocktv.com^
+||sas.int-nft.peacocktv.com^
+||sas.peacocktv.com^
+||sas.stable-int.peacocktv.com^
 ||goto.simplywall.st^
 ||swssp.simplywall.st^
 ||swsdd.simplywall.st^
@@ -153936,6 +153948,11 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||sitereport.netcraft.com/wbtx/
+||forbiddenbodyjewelry.com/wp-json/pys-*/event
+||viduro.top/api/heartbeat
+||fluxor-wrapper.api.emerios.com/api/v1/tracking/event/track
+||genmobile.com/api/log
 ||smart.link/imp/
 ||unicreditgroup.eu/content/dam/unicreditgroup-eu/common/analytics/
 ||rudderstack.com/v1/track|
@@ -156226,7 +156243,7 @@ jiji.com##.RecommendUnderlayer
 ||postbank.de/etc/*/clientlib-postbank-webtrekk
 ||eventiavversinews.it/wp-json/vinkmag/*/visitortrack/
 ||flipboard.com/api/v2/reporting/datadog
-||performance.radar.cloudflare.com/beacon.js
+||performance.radar.cloudflare.com/beacon.js$domain=~cloudflare.com
 /news-portlet/html/counter-portlet/*$domain=eluniversal.com.co|elcolombiano.com|vanguardia.com.mx
 /html/js/iter-libraries/iter-statistics.js*$domain=eluniversal.com.co|elcolombiano.com|vanguardia.com.mx
 ||wired.*/hotzones/src/pixelpropagate.js
@@ -160327,6 +160344,8 @@ d4?appid*type*
 ||kindhush.com^$redirect=noop.json,xhr,badfilter
 ||kindhush.com^$~xhr,badfilter
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
+@@||trackdesk.com/sign-in$domain=dashboard.naughtyaffiliates.com
+@@||trackdesk.com/api/node/settings/$domain=dashboard.naughtyaffiliates.com
 @@||go.ezodn.com/ezvideo/$stylesheet,domain=open.video
 @@||open.video/ezais/analytics$~3p
 @@||googletagmanager.com/gtm.js$domain=creator.fronius.com
