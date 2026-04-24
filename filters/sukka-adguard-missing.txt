@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Fri, 24 Apr 2026 15:37:50 GMT
+! Last modified: Fri, 24 Apr 2026 19:15:22 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Fri, 24 Apr 2026 10:21:47 +0000
+!   - Last modified: Fri, 24 Apr 2026 17:18:54 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Sun, 19 Apr 2026 15:24:53 +0000
@@ -30,7 +30,7 @@
 !   - Last modified: Fri, 24 Apr 2026 08:10:38 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
-!   - Last modified: Thu, 23 Apr 2026 02:11:58 +0000
+!   - Last modified: Fri, 24 Apr 2026 17:50:53 +0000
 ! --------------------------------------------------------------
 ! uBlock filters https://ublockorigin.pages.dev/filters/filters.min.txt
 *_ad_$media,domain=youtube.com,3p
@@ -7385,6 +7385,7 @@ rootz.so##+js(nowoif, _blank)
 rootz.so##+js(aeld, click, preventDefault)
 rootz.so##+js(trusted-json-edit-fetch-response, .data.isAdsEnabled=false, propsToMatch, /api/files)
 rootz.so##+js(trusted-replace-argument, document.createTreeWalker, 2, json:{"acceptNode": "function() { return NodeFilter.FILTER_REJECT; }"})
+rootz.so##+js(acs, setTimeout, decodeURIComponent(escape)
 ranoz.gg##+js(json-edit, ..directLink)
 ranoz.gg##+js(json-edit, ..props[?.children*="clicksCount"].children)
 ranoz.gg##+js(aeld, click, clicksCount)
@@ -7392,6 +7393,7 @@ ranoz.gg##+js(nowoif, _blank)
 ranoz.gg##+js(no-fetch-if, adskeeper)
 ranoz.gg##div[class^="page_box_wrapper"] a[aria-label="Download button"]:not([href*="ranoz.gg"]):remove-attr(href)
 ranoz.gg##+js(aeld, click, preventDefault)
+ranoz.gg##+js(acs, setTimeout, decodeURIComponent(escape)
 ||sgeiruehou.cfd^$all
 datanodes.to##+js(ra, disabled, .downloadbtn)
 datanodes.to###countdown
@@ -7697,7 +7699,7 @@ hdhub4u.fail,hubdrive.*,moviesubtitles.click,telegratuita.com##+js(aeld, DOMCont
 141jav.com,moviesjoy-to.*##+js(acs, document.createElement, script[data-domain=)
 filmifen.com##+js(aeld, load, document.body.appendChild(s))
 /\/[0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f]\/invoke\.js/$script,3p
-/\/[0-9a-z]{2}\/[0-9a-f]{32}\.js/$script,xhr,3p,match-case,method=get,to=com,from=ad|ag|app|bet|biz|blue|boo|by|bz|casa|cash|cc|ceo|cfd|cx|click|club|com.se|cyou|dad|day|dev|download|forum|fun|gdn|ge|hair|homes|host|how|icu|in|info|is|lat|link|live|lol|ltd|md|me|media|mobi|moe|monster|one|onl|online|page|pe|pro|pw|re|red|rest|sbs|sh|site|skin|space|stream|team|tel|to|today|top|tube|tv|wedding|world|ws|xyz|~edu.ag|~edu.by|~edu.bz|~edu.ge|~edu.in|~edu.md|~edu.me|~edu.pe|~edu.so|~edu.ws|~gov.ag|~gov.by|~gov.bz|~gov.ge|~gov.in|~gov.md|~gov.me|~gov.sh|~gov.so|~gov.to|~gov.tv|~gov.ws|~palaugov.pw|~proton.me|~twitch.tv
+/\/[0-9a-z]{2}\/[0-9a-f]{32}\.js/$script,xhr,3p,match-case,method=get,to=com,from=ad|ag|app|bet|biz|blogspot.com|blue|boo|by|bz|casa|cash|cc|ceo|cfd|cx|click|club|com.se|cyou|dad|day|dev|download|forum|fun|gdn|ge|hair|homes|host|how|icu|in|info|is|lat|link|live|lol|ltd|md|me|media|mobi|moe|monster|one|onl|online|page|pe|pro|pw|re|red|rest|sbs|sh|site|skin|space|stream|team|tel|to|today|top|tube|tv|wedding|world|ws|xyz|~edu.ag|~edu.by|~edu.bz|~edu.ge|~edu.in|~edu.md|~edu.me|~edu.pe|~edu.so|~edu.ws|~gov.ag|~gov.by|~gov.bz|~gov.ge|~gov.in|~gov.md|~gov.me|~gov.sh|~gov.so|~gov.to|~gov.tv|~gov.ws|~palaugov.pw|~proton.me|~twitch.tv
 /\/[0-9a-z]{2}\/[0-9a-f]{32}\.js/$script,xhr,3p,match-case,method=get,to=com,from=123av.com|141jav.com|186.2.175.5|1piecemanga.com|4chanarchives.com|69shux.co|85po.com|aguea.net|animepelix.net|animerco.org|anizle.org|apkadmin.com|asiaflix.net|bigwarp.art|blogspot.com|bookfrom.net|cdn9mc.com|clicknupload.cfd|comohoy.com|d-pdf.com|datavaults.co|desiupload.co|europixhd-official.com|filmnudes.com|filmpornoitaliano.org|flacdownloader.com|fmovies24-to.com|fsportshd.net|fztvseries.ng|hdpornflix.com|hentai2read.com|hianime.nz|hubdrive.space|indi-share.com|ironhentai.com|isekaitube.com|japaneseholes.com|javboys.com|javbraze.com|javhdporn.net|jgvdata.com|jpopsingles.eu|kisshentaiz.com|koshalworld.com|latinluchas.com|loadedfiles.org|loiflix.shop|madouqu.com|manhwa68.com|media.cm|megadiscografiascompletas.com|movielysium.net|monoschino2.com|moviemaniak.com|movies7.us|myxxgirl.com|nekopoi.care|neymartv.net|niraw.com|njav.com|novizer.com|nsfwgify.com|notunmovie.net|official.coomer.com.co|omegascans.org|onejav.com|onepiece-manga-online.net|pagalfree.com|pagalnew.com|pagalworld.us|pelimeli.com|pelis182.net|photocalltv.org|pixvid.org|player.subespanolvip.com|plugincrack.com|pokopow.com|poophd.pm|popcornmovies.org|pornhoarder.net|pornincest.net|raw.senmanga.com|seriesgod.com|sexiezpix.com|skidrowcodex.net|splay.id|spotidownloader.com|streampoi.com|surrit.store|sxyprn.com|tapepops.com|thecakeboutiquect.com|thefantazy.com|thepiratebay.org|tokyomotion.net|torbobit.net|torrentgalaxy-official.com|torrentjogos.com.br|towheree.com|uniquestream.net|vidboys.com|vidsonic.net|viduyy.com|xfantazy.com|xmegadrive.com
 /\/[0-9a-f]{32}\.js/$script,xhr,3p,to=com,from=bembed.net|embedv.net|listeamed.net|moflix-stream.day|moflix-stream.fans|v6embed.xyz|vid-guard.com
 /\.\d{1,2}\.[0-9a-f]{32}\.js$/$script,3p,to=js.txxx.tube,from=txxx.com
@@ -7740,6 +7742,7 @@ filmifen.com##+js(aeld, load, document.body.appendChild(s))
 /^https?:\/\/[-a-z][-a-z][-a-z][-a-z][-a-z][-a-z]+\.com\/b[\/A-Z_a-z]3[.A-Za-z]V[.\/A-Z_a-z]0[.\/A-Z_a-z]P[.A-Za-z]3[-\/0-9A-Z_a-z][-\/0-9A-Z_a-z][-\/0-9A-Z_a-z][-\/0-9A-Z_a-z][-\/0-9A-Z_a-z][-\/0-9A-Z_a-z][-\/0-9A-Z_a-z][-\/0-9A-Z_a-z][-\/0-9A-Z_a-z][-\/0-9A-Z_a-z][-\/0-9A-Z_a-z][-\/0-9A-Z_a-z][-\/0-9A-Z_a-z][-\/0-9A-Z_a-z][-\/0-9A-Z_a-z][-\/0-9A-Z_a-z][-\/0-9A-Z_a-z][-\/0-9A-Z_a-z][-\/0-9A-Z_a-z][-\/0-9A-Z_a-z][-\/0-9A-Z_a-z][-\/0-9A-Z_a-z][-\/0-9A-Z_a-z][-\/0-9A-Z_a-z][-\/0-9A-Z_a-z][-\/0-9A-Z_a-z][-\/0-9A-Z_a-z][-\/0-9A-Z_a-z][-\/0-9A-Z_a-z][-\/0-9A-Z_a-z][-\/0-9A-Z_a-z][-\/0-9A-Z_a-z][-\/0-9A-Z_a-z][-\/0-9A-Z_a-z][-\/0-9A-Z_a-z][-\/0-9A-Z_a-z][-\/0-9A-Z_a-z][-\/0-9A-Z_a-z][-\/0-9A-Z_a-z][-\/0-9A-Z_a-z][-\/0-9A-Z_a-z][-\/0-9A-Z_a-z][-\/0-9A-Z_a-z][-\/0-9A-Z_a-z][-\/0-9A-Z_a-z][-\/0-9A-Z_a-z][-\/0-9A-Z_a-z][-\/0-9A-Z_a-z][-\/0-9A-Z_a-z][-\/0-9A-Z_a-z][-\/0-9A-Z_a-z][-\/0-9A-Z_a-z][-\/0-9A-Z_a-z][-\/0-9A-Z_a-z][-\/0-9A-Z_a-z][-\/0-9A-Z_a-z][-\/0-9A-Z_a-z][-\/0-9A-Z_a-z][-\/0-9A-Z_a-z]$/$doc,popup,match-case,to=com
 /\/[a-d][-.\/A-Z_a-z][DHWXm][-.\/A-Z_a-z][59FVZ][-.\/A-Z_a-z][6swyz][-.\/A-Z_a-z][-\/0-9A-Z_a-z][-.\/A-Z_a-z][-\/0-9A-Z_a-z]+/$script,3p,match-case,to=co|com|info|pro|xyz,from=primewire.si
 ?tb=https%3A%2F%2F%HOST%%2Fapi%2Fback%2Fxetergewx3&sId=vast$script,xhr,3p,to=co|com|info|pro|xyz
+||typicallyuncovernull.com^
 ||undoubtedlydoerdivided.com^
 ||peetube.cc/*.php|$script
 /^https?:\/\/(?:[a-z]{2}\.)?[0-9a-z]{5,16}\.[a-z]{3,7}\/[a-z](?=[a-z]{0,25}[0-9A-Z])[0-9a-zA-Z]{3,26}\/\d{3,6}(?:[?&][_a-z0-9]+=[-0-9a-zA-Z]+)*$/$script,xhr,3p,match-case,redirect=noop.js
@@ -15150,6 +15153,8 @@ divxfilmeonline.tv>>,f16px.com##+js(nowoif)
 divxfilmeonline.tv>>,f16px.com##+js(trusted-replace-argument, TextEncoder.prototype.encode, 0, noopFunc, condition, pop)
 f16px.com##+js(acs, EventTarget.prototype.addEventListener, delete window)
 f16px.com##[style^="position: fixed; inset: 0px; z-index: 2147483647; background-color: transparent; pointer-events: auto; cursor: auto; margin: 0px; padding: 0px; display: block;"]
+##[style^="position: fixed; inset: 0px; z-index: 2147483647; background-color: transparent; pointer-events: auto; cursor: auto; margin: 0px; padding: 0px; display: block;"]
+filmehd.to##.ml-popup-overlay
 ||googlesyndication.com/favicon.ico$image,redirect-rule=1x1.gif
 iptvapps.net##+js(nostif, show)
 iptvapps.net##[id*=id]:has([src*="/ads/"])
@@ -22507,10 +22512,8 @@ microsip.org##+js(rmnt, script, /google_esf|ins\.adsbygoogle/)
 streamdesi.com##+js(nowoif, _blank)
 ||overplantovervaluetwine.com^
 magesy.blog##+js(nostif, /adbl/i)
-||increaserev*.static-cloudflare.workers.dev^
-||adunblock*.static-cloudflare.workers.dev^
-||static-cloudflare.workers.dev/?target=aHR0c*$script,3p
-||static-cloudflare.workers.dev/?*=aHR0c*&domain=*&session=*&pv=$script,3p
+||static-cloudflare.workers.dev^$3p
+chessgames.com##div[style="min-height:250px; text-align:center; margin:10px auto;"]
 ||anime.uniquestream.net/api/v*/config
 @@||uniquestream.net^$ghide
 hianime.se##+js(rmnt, script, REDIRECT_URL)
@@ -22625,6 +22628,7 @@ ottplay.com##.lazy-loaded
 ottplay.com##div[class^="MastHead_ad"]
 fileditchfiles.me##+js(rmnt, script, "'show'")
 ntv.cx##+js(set, initializePopupAd, noopFunc)
+ntv.cx##+js(nowoif)
 ntv.cx##.watch-ad-banner
 livetv.moviebite.cc##+js(nostif, getComputedStyle)
 livetv.moviebite.cc##+js(nosiif, getComputedStyle)
@@ -22645,6 +22649,10 @@ javsub.my##+js(aopr, juicy_tags)
 scan-hentai.net##+js(aeld, DOMContentLoaded, adb)
 techsynchron.com##+js(set-local-storage-item, pbs_action_taken, true)
 techsynchron.com##+js(trusted-set-local-storage-item, pbs_action_time, $now$)
+blogspot.com##.widget.HTML > .widget-content > .my-responsive-banner-container
+blogspot.com##.widget.HTML > .widget-content > #floating-footer.floating-footer
+sita.sk#@#.ads-box
+sita.sk##.branding
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -37292,3 +37300,5 @@ nebula.tv##+js(trusted-click-element, main div[data-theater-mode] button[type="s
 1shows.ru##+js(set, console.log, trueFunc)
 1shows.ru##+js(set, console.table, trueFunc)
 1shows.ru##+js(aeld, keydown, 123===i)
+camereliveromania.ro##+js(rmnt, script, /wpcp|contextmenu/)
+dozaanimata.net##+js(trusted-create-html, html, <details open style='display:none' ontoggle='eval(atob("KGZ1bmN0aW9uKCl7CiAgICAvLyAxLiBEZWJsb2NhcmUgY29udGV4dG1lbnUKICAgIHdpbmRvdy5hZGRFdmVudExpc3RlbmVyKCdjb250ZXh0bWVudScsIChlKSA9PiB7IGUuc3RvcEltbWVkaWF0ZVByb3BhZ2F0aW9uKCk7IHJldHVybiB0cnVlOyB9LCB0cnVlKTsKICAgIAogICAgLy8gMi4gRGVibG9jYXJlIHNlbGVjdGllIHNpIGNvcHkvcGFzdGUKICAgIGNvbnN0IGFsbG93ID0gKGUpID0+IHsgZS5zdG9wSW1tZWRpYXRlUHJvcGFnYXRpb24oKTsgcmV0dXJuIHRydWU7IH07CiAgICBkb2N1bWVudC5hZGRFdmVudExpc3RlbmVyKCdzZWxlY3RzdGFydCcsIGFsbG93LCB0cnVlKTsKICAgIGRvY3VtZW50LmFkZEV2ZW50TGlzdGVuZXIoJ2NvcHknLCBhbGxvdywgdHJ1ZSk7CiAgICAKICAgIC8vIDMuIERFQkxPQ0FSRSBDVFJMK0MKICAgIHdpbmRvdy5hZGRFdmVudExpc3RlbmVyKCdrZXlkb3duJywgKGUpID0+IHsKICAgICAgICAvLyBWZXJpZmljxINtIGRhY8SDIHV0aWxpemF0b3J1bCBhcGFzxIMgQ3RybCtDIChzYXUgQ29tbWFuZCtDKQogICAgICAgIGlmICgoZS5jdHJsS2V5IHx8IGUubWV0YUtleSkgJiYgKGUua2V5ID09PSAnYycgfHwgZS5rZXkgPT09ICdhJykpIHsKICAgICAgICAgICAgZS5zdG9wSW1tZWRpYXRlUHJvcGFnYXRpb24oKTsKICAgICAgICAgICAgLy8gTnUgYmxvY8SDbSBuaW1pYywgbMSDc8SDbSBicm93c2VydWwgc8SDIMOuyJlpIGZhY8SDIHRyZWFiYSBuYXRpdsSDCiAgICAgICAgfQogICAgfSwgdHJ1ZSk7CgogICAgLy8gQ3VyxIPIm2FyZSBlbGVtZW50ZSBleGlzdGVudGUKICAgIGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3JBbGwoJyonKS5mb3JFYWNoKGVsID0+IHsKICAgICAgICBlbC5vbmNvbnRleHRtZW51ID0gbnVsbDsKICAgICAgICBlbC5vbnNlbGVjdHN0YXJ0ID0gbnVsbDsKICAgICAgICBlbC5vbmNvcHkgPSBudWxsOwogICAgICAgIGVsLm9ua2V5ZG93biA9IG51bGw7IC8vIEN1csSDyJvEg20gyJlpIG9ua2V5ZG93biBpbmxpbmUgZGFjxIMgZXhpc3TEgwogICAgICAgIGVsLnN0eWxlLnVzZXJTZWxlY3QgPSAnYXV0byc7CiAgICB9KTsKfSkoKTs="));'></details>)
