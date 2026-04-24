@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Fri, 24 Apr 2026 11:35:12 GMT
+! Last modified: Fri, 24 Apr 2026 15:37:50 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202604241122
+!   - Version: 202604241521
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 24 Apr 2026 11:22 UTC
+!   - Last modified: 24 Apr 2026 15:21 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
@@ -120,7 +120,7 @@
 ! * uBlock filters – Mobile
 !   - URL: https://ublockorigin.github.io/uAssetsCDN/filters/filters-mobile.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Wed, 08 Apr 2026 16:44:36 +0000
+!   - Last modified: Fri, 24 Apr 2026 10:21:47 +0000
 ! * CJX's uBlock list
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-ublock.txt
 !   - Homepage: https://github.com/cjx82630/cjxlist
@@ -21857,6 +21857,7 @@ daotekno.com##+js(nostif, bait)
 nlab.itmedia.co.jp##[id^="div-gpt-ad-nl_"][id$="_article_HeaderOverlay"] ~ header:matches-media((max-width: 767px)):style(margin-top: 0 !important;)
 britannica.com###game:style(height: 100% !important;)
 theverge.com##.duet--homepage--hero > div[class] > div[class] > div[class]:has(> div[data-concert="medrec_frontpage_hero_mobile"])
+temp-mail.io##main.mb-general > div[style="width:100%;height:50px;"]
 ! CJX's uBlock list https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-ublock.txt
 youminggu.com,yemancomic.com,zkk78.com,jinbaodm.com##+js(acis,document.write,location.href)
 youminggu.com,yemancomic.com,zkk78.com,jinbaodm.com##+js(nostif, location.href)
