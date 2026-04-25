@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sat, 25 Apr 2026 15:00:35 GMT
+! Last modified: Sat, 25 Apr 2026 19:13:03 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sat, 25 Apr 2026 13:34:16 +0000
+!   - Last modified: Sat, 25 Apr 2026 16:05:39 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Sun, 19 Apr 2026 15:24:53 +0000
@@ -17,7 +17,7 @@
 !   - Last modified: Sat, 25 Apr 2026 05:16:34 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
-!   - Last modified: Mon, 20 Apr 2026 03:44:38 +0000
+!   - Last modified: Sat, 25 Apr 2026 15:12:19 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
 !   - Last modified: Sat, 25 Apr 2026 08:09:22 +0000
@@ -7442,7 +7442,7 @@ buzzheavier.com##+js(nowoif, !buzzheavier.com)
 buzzheavier.com##+js(aeld, click, removeChild)
 buzzheavier.com###unclear2
 buzzheavier.com##div.mx-auto.text-center > a[href][target="_blank"]
-buzzheavier.com##+js(acs, setTimeout, decodeURIComponent(escape)
+bzzhr.co,buzzheavier.com##+js(acs, setTimeout, decodeURIComponent(escape)
 akirabox.com,akirabox.to##[href*="nordvpn.net"]
 akirabox.com,akirabox.to##+js(aeld, DOMContentLoaded, open)
 akirabox.com,akirabox.to##+js(nowoif, _blank)
@@ -9472,7 +9472,7 @@ streamtape.*,watchadsontape.com##+js(aopr, Adcash)
 ||pndax.love^
 yabaisub.cloud###fakeplayer
 yabaisub.cloud##+js(trusted-click-element, #player-option-1, , 500)
-3minx.com,555fap.com,ai18.pics,anime-jav.com,blackwidof.org,,chinese-pics.com,cn-av.com,cnpics.org,cnxx.me,cosplay-xxx.com,cosplay18.pics,fc2ppv.stream,fikfok.net,gofile.download,hentai-sub.com,hentai4f.com,hentaicovid.com,hentaipig.com,hentaixnx.com,idol69.net,javball.com,javbee.*,javring.com,javsunday.com,javtele.net,kin8-av.com,kin8-jav.com,kr-av.com,ovabee.com,pig69.com,porn-pig.com,porn4f.org,sweetie-fox.com,xcamcovid.com,xxpics.org##+js(rmnt, script, /detectAdblock|WebAssembly|pop1stp|popMagic/i)
+3minx.com,555fap.com,ai18.pics,anime-jav.com,blackwidof.org,chinese-pics.com,cn-av.com,cnpics.org,cnxx.me,cosplay-xxx.com,cosplay18.pics,fc2ppv.stream,fikfok.net,gofile.download,hentai-sub.com,hentai4f.com,hentaicovid.com,hentaipig.com,hentaixnx.com,idol69.net,javball.com,javbee.*,javring.com,javsunday.com,javtele.net,kin8-av.com,kin8-jav.com,kr-av.com,ovabee.com,pig69.com,porn-pig.com,porn4f.org,sweetie-fox.com,xcamcovid.com,xxpics.org##+js(rmnt, script, /detectAdblock|WebAssembly|pop1stp|popMagic/i)
 bebasbokep.online,bellezashot.com,besthdgayporn.com,bighentai.org,bokepindo13.*,bokepindoh.*,brokensilenze.net,dimensionalseduction.com,drivenime.com,erothots1.com,familypornhd.com,hentaitv.fun,javbobo.com,javup.org,kaliscan.*,likemanga.ink,madouqu.com,pitube.net,premiumporn.org,savefiles.com,shemaleup.net,transflix.net,veo-hentai.com,worthcrete.com,x-x-x.video##^script:has-text(/popMagic|pop1stp/)
 bebasbokep.online,bellezashot.com,besthdgayporn.com,bighentai.org,bokepindo13.*,bokepindoh.*,brokensilenze.net,dimensionalseduction.com,drivenime.com,erothots1.com,familypornhd.com,hentaitv.fun,javbobo.com,javup.org,kaliscan.*,likemanga.ink,madouqu.com,pitube.net,premiumporn.org,savefiles.com,shemaleup.net,transflix.net,veo-hentai.com,worthcrete.com,x-x-x.video##+js(rmnt, script, /popMagic|pop1stp/)
 fucksporn.com###FloatingLayer
@@ -13454,6 +13454,9 @@ calculator-online.net##+js(set, load_ads, trueFunc)
 calculator-online.net##.sticky_ad
 calculator-online.net##.related_box:has(.adds):style(height: 1px !important;)
 onionplay.*###clickfkplayer[href]:remove-attr(href)
+onionplay.io###fakeplayer
+onionplay.io###dooplay_player_content .source-box:style(display: block !important;)
+onionplay.io##+js(set-attr, #dooplay_player_content .source-box iframe.metaframe[data-src]:not([src]), src, [data-src])
 iguarras.com,iputitas.net##+js(aopr, afScript)
 messitv.net##+js(aopw, atOptions)
 ||clk.asia/sw.js$script,1p
@@ -22677,6 +22680,9 @@ blogspot.com##.widget.HTML > .widget-content > .my-responsive-banner-container
 blogspot.com##.widget.HTML > .widget-content > #floating-footer.floating-footer
 sita.sk#@#.ads-box
 sita.sk##.branding
+moviebox.ph##+js(trusted-json-edit-fetch-response, .data.adPlans=[], propsToMatch, /ad/get-config?)
+netfilm.world###downloadBanner
+osint-info.netlify.app##+js(nostif, checkAdBlock)
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -30723,7 +30729,7 @@ vidaextra.com##+js(set, hasAdblocker, true)
 vidaextra.com##.base-asset-video:remove-class(base-asset-video)
 www.reddit.com,sh.reddit.com##community-highlight-card[subreddit-prefixed-name="r/uBlockOrigin"][src]:remove-attr(src)
 www.reddit.com,sh.reddit.com##in-feed-community-recommendations:is([subreddit-name="uBlockOrigin"],[subreddit-id="t5_37z6i"])
-www.reddit.com,sh.reddit.com##shreddit-title[title$="r/uBlockOrigin"]~[id^="comment-tree-content-anchor-"]~div:has(>[id^="answers-suggested-queries"])
+www.reddit.com,sh.reddit.com##shreddit-title[title$="r/uBlockOrigin"]~:is([id^="comment-tree-content-anchor-"],shreddit-comment-tree)~div:has(>[id^="answers-suggested-queries"])
 www.reddit.com,sh.reddit.com###main-content:has(>shreddit-title[title$="r/uBlockOrigin"])+#right-sidebar-container [data-slug="pdp_right_rail_related"]
 lumens.com##+js(set, _satellite, {})
 lumens.com##+js(set, _satellite.track, noopFunc)
