@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Fri, 24 Apr 2026 23:02:29 GMT
+! Last modified: Sat, 25 Apr 2026 04:45:37 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.3.56
+!   - Version: 2.1.3.57
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -301,7 +301,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||powa-ingest-prod-*.video-player.arcpublishing.com^
 ||cse.rakanto.com^
 ||repo.rakanto.com^
-||aim-tag.hcn.health^
 ||api.eventbus.me^
 ||gm.mmstat.com^
 ||yazio-analytics.com^
@@ -8174,7 +8173,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||smetrics.ie.edu^
 ||smetrics.imunologiabms.com.br^
 ||smetrics.indigenoushealthpathways.ca^
-||smetrics.inova.org^
 ||smetrics.inovachildrens.org^
 ||smetrics.inovaevents.org^
 ||smetrics.inovanewsroom.org^
@@ -9824,7 +9822,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||t.pressurewashersdirect.com^
 ||t.sumppumpsdirect.com^
 ||t.waterpumpsdirect.com^
-||tagdelivery.mayoclinic.org^
 ||tags.3m.co.cr^
 ||tags.3m.co.uk^
 ||tags.3m.com^
@@ -156579,7 +156576,6 @@ androplus.org##a[href^="https://px.a8.net/"]
 ||honcierge.jp/pv?
 ||statistics.aldi-international.com/consent/collect
 ||api.reverso.net/stats/
-||cdn.reverso.net/rumjs/
 ||cdn.reverso.net/ramjs/
 ||cc.loginfra.com/cc?a=$image
 ||cc.naver.com/cc$image,redirect=2x2.png
