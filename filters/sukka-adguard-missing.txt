@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sun, 26 Apr 2026 15:02:02 GMT
+! Last modified: Sun, 26 Apr 2026 19:15:10 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sun, 26 Apr 2026 14:54:48 +0000
+!   - Last modified: Sun, 26 Apr 2026 17:26:18 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Sun, 19 Apr 2026 15:24:53 +0000
@@ -30,7 +30,7 @@
 !   - Last modified: Sat, 25 Apr 2026 11:30:44 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
-!   - Last modified: Fri, 24 Apr 2026 17:50:53 +0000
+!   - Last modified: Sun, 26 Apr 2026 15:38:17 +0000
 ! --------------------------------------------------------------
 ! uBlock filters https://ublockorigin.pages.dev/filters/filters.min.txt
 *_ad_$media,domain=youtube.com,3p
@@ -9523,6 +9523,7 @@ filmizip.com##.video-inside-overlay
 ||filmifen.com/templates/filmi/js/adb.js
 filmifen.com##+js(aeld, DOMContentLoaded, adb)
 filmifen.com##+js(aeld, contextmenu)
+kinofen.cc###popup-wrapper
 @@||cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/js/adview_pic_cpc_cpm_cpa_guanggao_gg_guge__ads_300x250.js
 hk.yahoo.com###main-bottom:style(margin-top: 164px !important;)
 ofiii.com##+js(json-prune-fetch-response, prerolls midrolls postrolls comm_ad house_ad pause_ad block_ad end_ad exit_ad pin_ad content_pool vertical_ad elements, , propsToMatch, /detail)
@@ -33984,7 +33985,12 @@ videohelp.com###topmenu:has(> .contentlink[href="https://www.videohelp.com/donat
 /invoke.js^$script,3p,domain=asiaflix.net,redirect=noopjs
 lazyadmin.nl##+js(nostif, AdBlocker)
 iosgods.com###iGSupport
-mvlempyr.com##.ChapterContentWrapper > .ct-div-block:has(.report-ad)
+mvlempyr.*##.ChapterContentWrapper > .ct-div-block:has(.report-ad)
+mvlempyr.*##.notice-outer-wrapper:has([src*="a-ads.com"])
+mvlempyr.*##.ContentContainer > div > div:has(img[src*="ads-loading"])
+||pubfuture-ad.com^$script,redirect=noopjs,domain=mvlempyr.io|mvlempyr.com
+||pubfuture-ad.com^$xhr,redirect=nooptext,domain=mvlempyr.io|mvlempyr.com
+||ad.a-ads.com^$subdocument,redirect=noopframe,domain=mvlempyr.io|mvlempyr.com
 magesyrevolution.com##+js(aeld, load, adblock)
 pokeos.com##+js(nostif, pro-modal)
 pokeos.com##+js(no-fetch-if, doubleclick)
