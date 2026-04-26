@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sat, 25 Apr 2026 22:57:43 GMT
+! Last modified: Sun, 26 Apr 2026 05:21:39 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -20,7 +20,7 @@
 !   - Last modified: Sat, 25 Apr 2026 15:12:19 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Sat, 25 Apr 2026 08:09:22 +0000
+!   - Last modified: Sat, 25 Apr 2026 23:39:43 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
 !   - Last modified: Sat, 21 Mar 2026 02:04:14 +0000
@@ -31337,7 +31337,6 @@ japscan.*##+js(aost, setTimeout, /stackDepth:3.+inlineScript:\d{4}:1/)
 japscan.*##+js(norafif, Date)
 japscan.*##+js(aost, MessageChannel, /stackDepth:2.+inlineScript/)
 japscan.*##+js(prevent-innerHTML, , /\.(gif|jpe?g|png|webp)/)
-japscan.*##+js(set, Element.prototype.textContent, undefined)
 japscan.*##:matches-path(/^\/man(g|h.)a/) div div:matches-attr("/[-0-9A-Za-z]{6,}/"="/.+/"):matches-css(position:fixed)
 japscan.*##html > div[style="position: fixed; inset: 0px; z-index: 2147483647; pointer-events: auto;"]
 japscan.*##+js(norafif, requestAnimationFrame)
