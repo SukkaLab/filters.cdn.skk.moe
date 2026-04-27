@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sun, 26 Apr 2026 23:00:22 GMT
+! Last modified: Mon, 27 Apr 2026 05:34:19 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sun, 26 Apr 2026 19:34:13 +0000
+!   - Last modified: Mon, 27 Apr 2026 01:47:38 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Sun, 19 Apr 2026 15:24:53 +0000
@@ -27,7 +27,7 @@
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Sat, 25 Apr 2026 11:30:44 +0000
+!   - Last modified: Mon, 27 Apr 2026 03:23:47 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
 !   - Last modified: Sun, 26 Apr 2026 15:38:17 +0000
@@ -21838,10 +21838,6 @@ lightningmaps.org###Sidebar ~ #Content:has(.adsbygoogle):style(margin-right: 0 !
 tube.shegods.com##+js(nowoif)
 tube.shegods.com##.main-gal > .right-gallery
 fileq.games##+js(nowoif, _blank)
-animekai.*##+js(nowoif, _blank)
-animekai.*##+js(nosiif, =null)
-1moviesz.to,myflixer.bz,flixzone.co,moontv.to,sflix.fi##+js(nowoif)
-||animekai.*/sw.js^
 velo.outsideonline.com##main:style(margin-top: 10px !important)
 gulfnews.com##.page-wrapper > #nav-bar > div[class]:has(> div[class] > div[id*="top-filler-ad"])
 gulfnews.com##div[id*="-ad"]
@@ -22077,9 +22073,10 @@ imleagues.com##+js(nostif, .redirected)
 app.simracing.gp##+js(nostif, .getComputedStyle)
 ||audiocircuit.dk/wp-content/plugins/awiftysw/
 blogspot.com,web.app##img[onclick="kemana()"]
-anikai.to##+js(nowoif, _blank)
-anikai.to##+js(nosiif, ;if(!()
-||anikai.to/sw.js^
+animekai.*,anikai.to##+js(nowoif, _blank)
+animekai.*,anikai.to##+js(nosiif, ;if(!()
+/sw.js^$script,domain=animekai.to|anikai.to|animekai.*|anikai.*
+1moviesz.to,myflixer.bz,flixzone.co,moontv.to,sflix.fi##+js(nowoif)
 filesq.net##+js(nowoif, _blank)
 filesq.net##._button-now
 filesq.net##.download-button:style(display: block !important;)
@@ -22741,6 +22738,11 @@ damitv.live##+js(trusted-set-local-storage-item, _ad_last, $now$)
 ||9anime.vip/assets/js/jquery-*.min.js
 ||9anime.vip/js/dab.min.js
 ||9anime.vip/banner/
+arakpop.net##+js(acs, btoa, replace)
+arakpop.net,koreaboo.net##a[href*="?key="][onclick^="window.open"]
+||probationthimbledespite.com^$all
+||ratiogodlessirrigate.com^$all
+||windscompassdenial.com^$all
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -33875,6 +33877,7 @@ videohelper.com##+js(trusted-set-cookie, starter-cookie-data, hasAckowledged)
 silknet.com##+js(trusted-set-cookie, validCookies, general)
 gowinston.ai##+js(trusted-click-element, button.cky-btn-accept)
 online.globus.ru##+js(trusted-set-local-storage-item, notifications-ls, '{"state":{"isCookieNotified":true},"version":0}')
+cookie.bmgproductionmusic.com##+js(trusted-click-element, '.message-component button[aria-label="Reject"]')
 ! uBlock filters – Annoyances https://ublockorigin.pages.dev/filters/annoyances.min.txt
 mimaletadepeliculas.blogspot.com##+js(aopr, document.oncontextmenu)
 mimaletadepeliculas.blogspot.com##+js(acs, document.onselectstart)
