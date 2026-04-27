@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Mon, 27 Apr 2026 08:41:50 GMT
+! Last modified: Mon, 27 Apr 2026 12:00:08 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,10 +8,10 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Mon, 27 Apr 2026 01:47:38 +0000
+!   - Last modified: Mon, 27 Apr 2026 06:09:11 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
-!   - Last modified: Sun, 19 Apr 2026 15:24:53 +0000
+!   - Last modified: Mon, 27 Apr 2026 08:47:54 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
 !   - Last modified: Sat, 25 Apr 2026 05:16:34 +0000
@@ -22743,6 +22743,7 @@ arakpop.net,koreaboo.net##a[href*="?key="][onclick^="window.open"]
 ||probationthimbledespite.com^$all
 ||ratiogodlessirrigate.com^$all
 ||windscompassdenial.com^$all
+bgmiesports.in##+js(nostif, bait)
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -27124,7 +27125,6 @@ ublockorigin.app###main::before:style(content: 'This is not the official uBlock 
 ||prasquinor.jp^$all
 ||cleanguard.tech^$all
 ||studio-obs.net^$all
-||loseyourip.com^$all
 ! uBlock filters – Privacy https://ublockorigin.pages.dev/filters/privacy.min.txt
 ||google-analytics.com/analytics.js$script,xhr,redirect=google-analytics_analytics.js:5
 ||google-analytics.com/cx/api.js$script,redirect=google-analytics.com/cx/api.js:5
