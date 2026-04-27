@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Mon, 27 Apr 2026 05:34:19 GMT
+! Last modified: Mon, 27 Apr 2026 08:41:50 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.3.60
+!   - Version: 2.1.3.61
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -56883,7 +56883,6 @@ prd.api.bleacherreport.com^
 ||rrss.abc.es^
 ||rubicon.wellsfargo.com^
 ||s.frida.vse42.ru^
-||s.izrnvo.com^
 ||s.news.naver.com^
 ||s3.smartphonehoesjes.nl^
 ||sa.bbc.co.uk^
@@ -157212,7 +157211,6 @@ techmaniachd.pl###sidebar-right-1 > #HTML6
 ||inthenews.co.kr/weblog/gtracker.
 ||squarespace.com/universal/scripts-compressed/performance-$script,3p
 ||s3.ap-northeast-2.amazonaws.com/adpick.co.kr/apis/apTracker.v*.js
-||cdn.pmweb.com.br/df/tag.js
 ||smallpdf.com/build/track-js.js
 ||insider.com/chunks/scripts/datadog-
 ||webtoon.daum.net/common/click?
