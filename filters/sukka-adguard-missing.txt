@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Tue, 28 Apr 2026 19:58:42 GMT
+! Last modified: Tue, 28 Apr 2026 23:12:46 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Tue, 28 Apr 2026 13:42:22 +0000
+!   - Last modified: Tue, 28 Apr 2026 19:57:39 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Tue, 28 Apr 2026 15:32:29 +0000
@@ -22071,7 +22071,7 @@ app.simracing.gp##+js(nostif, .getComputedStyle)
 blogspot.com,web.app##img[onclick="kemana()"]
 animekai.*,anikai.to##+js(nowoif, _blank)
 animekai.*,anikai.to,myflixer.bz,sflix.fi,yflix.to##+js(nosiif, /;if\(!\(|=null/)
-​/sw.js^$script,domain=animekai.*|anikai.*|animekai.to|anikai.to|animekai.pw|animekai.fi|animekai.fo|animekai.gs|animekai.la
+/sw.js^$script,domain=animekai.*|anikai.*|animekai.to|anikai.to|animekai.pw|animekai.fi|animekai.fo|animekai.gs|animekai.la
 1moviesz.to,myflixer.bz,flixzone.co,moontv.to,sflix.fi##+js(nowoif)
 filesq.net##+js(nowoif, _blank)
 filesq.net##._button-now
