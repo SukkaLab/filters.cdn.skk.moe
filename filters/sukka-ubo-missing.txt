@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Mon, 27 Apr 2026 23:12:58 GMT
+! Last modified: Tue, 28 Apr 2026 05:42:02 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.3.67
+!   - Version: 2.1.3.69
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -153951,6 +153951,8 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||forums.hardwarezone.com.sg/js/hwz/hwz_permutive.js
+||forums.hardwarezone.com.sg/js/hwz/neuron.js
 ||roomie.tw/metrics
 ||safefileku.com/events.js
 ||safefileku.com/download/*/event|
@@ -154334,7 +154336,6 @@ businessinsider.com##+js(set-local-storage-item, universal_id, $remove$)
 ||chatgpt.com/ces/v1/p|$xhr,redirect=noop.json
 ||chatgpt.com/ces/statsc/$xhr,redirect=noop.json
 /v1/rgstr?k=client-$xhr,redirect=noop.json,domain=chatgpt.com
-||contents.kyobobook.co.kr/resources/lib/kbb-js/kbb.stats.js
 ||full-count.jp/ssc.min.js
 ||d.line-scdn.net/n/line_tag/$domain=full-count.jp
 /_api/tag-manager/api/*/tags/sites/*$xhr,domain=boraware.kr
