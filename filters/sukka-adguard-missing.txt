@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Wed, 29 Apr 2026 19:56:20 GMT
+! Last modified: Wed, 29 Apr 2026 23:12:35 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Wed, 29 Apr 2026 14:24:36 +0000
+!   - Last modified: Wed, 29 Apr 2026 17:57:50 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Wed, 29 Apr 2026 04:20:34 +0000
@@ -17576,7 +17576,7 @@ thestar.com##.loadingLI:upward(.tncms-block)
 thestar.com##.main-sidebar:has(> #sticky-side-secondary-spacer)
 thestar.com###site-navbar-container, #site-top-nav-container:style(padding-top: 10px !important;)
 dailymail.co.uk,~games.dailymail.co.uk##+js(aopr, Notification)
-dailymail.com,~games.dailymail.m##+js(aopr, Notification)
+dailymail.com,~games.dailymail.com##+js(aopr, Notification)
 @@||cmp.dmgmediaprivacy.co.uk^$script,domain=dailymail.co.uk|dailymail.com
 ||dailymail.*/static/mol-adverts/demo/
 dailymail.co.uk,dailymail.com##.pufftext > .sponsored:upward(3)
@@ -22758,7 +22758,7 @@ guessthe.game##+js(no-fetch-if, pub.network)
 animelok.xyz##+js(trusted-json-edit, .isAdFree=true)
 animelok.xyz##+js(nowoif)
 animelok.xyz##.block.cursor-pointer
-||abcya.com^$replace=/window\.setTimeout\(p\,5e3\)/window.setTimeout(p,0)/g
+abcya.com##+js(trusted-create-html, html, <details open style='display:none' ontoggle='eval(atob("KGZ1bmN0aW9uKCkgewogICAgY29uc3Qgb3JpZ2luYWxTZXRUaW1lb3V0ID0gd2luZG93LnNldFRpbWVvdXQ7CiAgICB3aW5kb3cuc2V0VGltZW91dCA9IGZ1bmN0aW9uKGNhbGxiYWNrLCBkZWxheSwgLi4uYXJncykgewogICAgICAgIGlmIChkZWxheSA9PT0gNTAwMCAmJiBjYWxsYmFjay50b1N0cmluZygpLmluY2x1ZGVzKCdwJykpIHsKICAgICAgICAgICAgcmV0dXJuIG9yaWdpbmFsU2V0VGltZW91dChjYWxsYmFjaywgMSwgLi4uYXJncyk7CiAgICAgICAgfQogICAgICAgIHJldHVybiBvcmlnaW5hbFNldFRpbWVvdXQoY2FsbGJhY2ssIGRlbGF5LCAuLi5hcmdzKTsKICAgIH07Cn0pKCk7Cg=="));'></details>)
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
