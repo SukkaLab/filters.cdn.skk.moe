@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Wed, 29 Apr 2026 08:34:56 GMT
+! Last modified: Wed, 29 Apr 2026 11:55:21 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202604290822
+!   - Version: 202604291141
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 29 Apr 2026 08:22 UTC
+!   - Last modified: 29 Apr 2026 11:41 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
@@ -106,7 +106,7 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * ↖ Anti-'Custom cursors' List
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/Anti-'Custom%20cursors'%20List.txt
-!   - Version: 06March2026v1-Beta
+!   - Version: 29April2026v1-Beta
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 💬 Twitch: Pure Viewing Experience
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/TwitchPureViewingExperience.txt
@@ -21622,7 +21622,7 @@ cursor_hover.$image
 yakusokunoneverland.fandom.com#?#*:style(cursor: unset !important)
 _Cursor1.png^
 ||nocookie.net/*/Cursor1.
-##.theme-custom-cursor:note(html,body)
+##.theme-custom-cursor:not(html,body)
 tumblr.com##.custom-cursor:style(cursor: unset !important)
 tumblr.com##.custom-cursor a:style(cursor: pointer !important)
 tumblr.com,strategix.dk##body:style(cursor: unset !important)
