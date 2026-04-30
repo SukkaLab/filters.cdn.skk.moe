@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Thu, 30 Apr 2026 08:36:29 GMT
+! Last modified: Thu, 30 Apr 2026 11:54:07 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Thu, 30 Apr 2026 00:53:35 +0000
+!   - Last modified: Thu, 30 Apr 2026 07:47:19 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Wed, 29 Apr 2026 04:20:34 +0000
@@ -27,10 +27,10 @@
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Wed, 29 Apr 2026 08:46:48 +0000
+!   - Last modified: Thu, 30 Apr 2026 07:49:36 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
-!   - Last modified: Wed, 29 Apr 2026 03:30:04 +0000
+!   - Last modified: Thu, 30 Apr 2026 04:52:40 +0000
 ! --------------------------------------------------------------
 ! uBlock filters https://ublockorigin.pages.dev/filters/filters.min.txt
 *_ad_$media,domain=youtube.com,3p
@@ -8781,11 +8781,12 @@ nekolink.site##+js(aost, document.getElementsByTagName, _createCatchAllDiv)
 nekolink.site##+js(aeld, /click|mouse/, [native code], elements, document)
 nekolink.site##+js(set, PlayerConfig.trusted, true)
 nekolink.site##+js(set, PlayerConfig.config.AffiliateAdViewLevel, 3)
-141jav.com,141tube.com,aagmaal.com,camcam.cc,evojav.pro,hentaianimezone.com,javneon.tv,javsaga.ninja,torrentkitty.one,webmaal.cfd##+js(set, univresalP, noopFunc)
+141jav.com,141tube.com,aagmaal.*,camcam.cc,evojav.pro,hentaianimezone.com,javneon.tv,javsaga.ninja,kaamuu.cfd,sohot.cyou,torrentkitty.one,webmaal.*##+js(set, univresalP, noopFunc)
 pahe.ink,pawastreams.pro,vikingf1le.us.to##+js(aeld, DOMContentLoaded, history.go)
 boobsrealm.com,dfilmizle.com##+js(aopr, initPu)
 asianpornjav.com##+js(set, puShown, true)
 book18.fans,hpjav.in,jav.direct,javfan.one,javmix.tv,nyahentai.*,openload.mov##+js(aeld, load, puTSstrpcht)
+aagmaal.com##+js(aeld, click, puTSstrpcht)
 pixsera.net##+js(nano-sib, timer)
 pixsera.net##+js(nowoif, !/prcf.fiyar|themes|pixsense|.jpg/)
 pixsera.net##+js(set, hold_click, false)
@@ -22761,6 +22762,10 @@ animelok.xyz##.block.cursor-pointer
 abcya.com##+js(nano-stb, resumeGame, 5000)
 vids.st##+js(rmnt, script, window.open)
 vids.st##+js(acs, document.createElement, pop_tag)
+onlyfans.to,upbolt.to##+js(rpnt, script, /.*/gms, window.__adbLevel = 0; window.__adbScore = 0;, condition, bait)
+onlyfans.to,upbolt.to##+js(rmnt, script, monetag)
+*$script,3p,domain=hydrahd.ru,denyallow=gstatic.com|cloudflare.com|googleapis.com
+*$script,3p,domain=airflix1.com
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -32073,6 +32078,7 @@ sandberg.world##+js(trusted-set-cookie, cookieconsent_dismissed, 1%7C%7C1%7C%7Cr
 tennisassa.fi##+js(trusted-click-element, 'label[class="input-choice__label"][for="CookiePurposes_1_"], label[class="input-choice__label"][for="CookiePurposes_2_"], button.js-save[type="submit"]')
 everyeye.it##+js(trusted-set-cookie, OptanonAlertBoxClosed, $currentDate$)
 everyeye.it##html > body:style(margin-top: 45px !important;)
+noctua.at##+js(trusted-set-local-storage-item, user_consent, '{"version":1,"consents":{"statistics":false,"videoIntegration":true}}')
 @@||cdn.cookielaw.org/scripttemplates/otSDKStub.js$script,domain=breitbart.com
 breitbart.com##+js(trusted-set-cookie, OptanonConsent, groups=C0003%3A1%2CC0002%3A1%2CC0001%3A1%2CC0005%3A1%2CC0004%3A1, 1year)
 saniweb.nl,bensanitair.nl##+js(trusted-set-cookie, cookiepreferences, necessary#true|marketing#false)
@@ -33904,6 +33910,7 @@ silknet.com##+js(trusted-set-cookie, validCookies, general)
 gowinston.ai##+js(trusted-click-element, button.cky-btn-accept)
 online.globus.ru##+js(trusted-set-local-storage-item, notifications-ls, '{"state":{"isCookieNotified":true},"version":0}')
 cookie.bmgproductionmusic.com##+js(trusted-click-element, '.message-component button[aria-label="Reject"]')
+abcya.com##+js(trusted-set-local-storage-item, abcya_cb_production, '{"value":"1","expiry":9999999999999}')
 ! uBlock filters – Annoyances https://ublockorigin.pages.dev/filters/annoyances.min.txt
 mimaletadepeliculas.blogspot.com##+js(aopr, document.oncontextmenu)
 mimaletadepeliculas.blogspot.com##+js(acs, document.onselectstart)
@@ -37425,5 +37432,5 @@ nebula.tv##+js(trusted-click-element, main div[data-theater-mode] button[type="s
 1shows.ru##+js(set, console.table, trueFunc)
 1shows.ru##+js(aeld, keydown, 123===i)
 camereliveromania.ro##+js(rmnt, script, /wpcp|contextmenu/)
-dozaanimata.net##+js(trusted-create-html, html, <details open style='display:none' ontoggle='eval(atob("KGZ1bmN0aW9uKCl7CiAgICAvLyAxLiBEZWJsb2NhcmUgY29udGV4dG1lbnUKICAgIHdpbmRvdy5hZGRFdmVudExpc3RlbmVyKCdjb250ZXh0bWVudScsIChlKSA9PiB7IGUuc3RvcEltbWVkaWF0ZVByb3BhZ2F0aW9uKCk7IHJldHVybiB0cnVlOyB9LCB0cnVlKTsKICAgIAogICAgLy8gMi4gRGVibG9jYXJlIHNlbGVjdGllIHNpIGNvcHkvcGFzdGUKICAgIGNvbnN0IGFsbG93ID0gKGUpID0+IHsgZS5zdG9wSW1tZWRpYXRlUHJvcGFnYXRpb24oKTsgcmV0dXJuIHRydWU7IH07CiAgICBkb2N1bWVudC5hZGRFdmVudExpc3RlbmVyKCdzZWxlY3RzdGFydCcsIGFsbG93LCB0cnVlKTsKICAgIGRvY3VtZW50LmFkZEV2ZW50TGlzdGVuZXIoJ2NvcHknLCBhbGxvdywgdHJ1ZSk7CiAgICAKICAgIC8vIDMuIERFQkxPQ0FSRSBDVFJMK0MKICAgIHdpbmRvdy5hZGRFdmVudExpc3RlbmVyKCdrZXlkb3duJywgKGUpID0+IHsKICAgICAgICAvLyBWZXJpZmljxINtIGRhY8SDIHV0aWxpemF0b3J1bCBhcGFzxIMgQ3RybCtDIChzYXUgQ29tbWFuZCtDKQogICAgICAgIGlmICgoZS5jdHJsS2V5IHx8IGUubWV0YUtleSkgJiYgKGUua2V5ID09PSAnYycgfHwgZS5rZXkgPT09ICdhJykpIHsKICAgICAgICAgICAgZS5zdG9wSW1tZWRpYXRlUHJvcGFnYXRpb24oKTsKICAgICAgICAgICAgLy8gTnUgYmxvY8SDbSBuaW1pYywgbMSDc8SDbSBicm93c2VydWwgc8SDIMOuyJlpIGZhY8SDIHRyZWFiYSBuYXRpdsSDCiAgICAgICAgfQogICAgfSwgdHJ1ZSk7CgogICAgLy8gQ3VyxIPIm2FyZSBlbGVtZW50ZSBleGlzdGVudGUKICAgIGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3JBbGwoJyonKS5mb3JFYWNoKGVsID0+IHsKICAgICAgICBlbC5vbmNvbnRleHRtZW51ID0gbnVsbDsKICAgICAgICBlbC5vbnNlbGVjdHN0YXJ0ID0gbnVsbDsKICAgICAgICBlbC5vbmNvcHkgPSBudWxsOwogICAgICAgIGVsLm9ua2V5ZG93biA9IG51bGw7IC8vIEN1csSDyJvEg20gyJlpIG9ua2V5ZG93biBpbmxpbmUgZGFjxIMgZXhpc3TEgwogICAgICAgIGVsLnN0eWxlLnVzZXJTZWxlY3QgPSAnYXV0byc7CiAgICB9KTsKfSkoKTs="));'></details>)
+dozaanimata.net##+js(trusted-create-html, html, <details open style='display:none' ontoggle='(function(){     window.addEventListener("contextmenu"\, (e) => { e.stopImmediatePropagation(); return true; }\, true);     const allow = (e) => { e.stopImmediatePropagation(); return true; };     document.addEventListener("selectstart"\, allow\, true);     document.addEventListener("copy"\, allow\, true);     window.addEventListener("keydown"\, (e) => {         if ((e.ctrlKey || e.metaKey) && (e.key === "c" || e.key === "a")) {             e.stopImmediatePropagation();         }     }\, true);     document.querySelectorAll("*").forEach(el => {         el.oncontextmenu = null;         el.onselectstart = null;         el.oncopy = null;         el.onkeydown = null;         el.style.userSelect = "auto";     }); })();'></details>)
 fontsquirrel.com###bottom_banner_ad_container
