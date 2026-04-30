@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Thu, 30 Apr 2026 05:41:45 GMT
+! Last modified: Thu, 30 Apr 2026 08:36:29 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.3.77
+!   - Version: 2.1.3.79
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -153952,6 +153952,9 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||pd5sngsre3.net/g/hn.js
+||m.media-amazon.com/images/I/*/BotCXMetricsCollectionJSAsset
+||media-amazon.com/images/*/metrics.jpg
 ||change.org/api-proxy/-/et?
 abc.net.au##+js(set-local-storage-item, snowplowOutQueue_Presentation Layer, $remove$)
 ||watch.hgtv.com/events/
@@ -162655,7 +162658,6 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 @@||reseguiden.se^*.siteCatalyst.js
 ||acustomizedgift.com^$~xhr
 ||inventorycache.com^$~xhr
-||kindhush.com^$~xhr
 ||oceancloudhosts.com^$~xhr
 ||d21y75miwcfqoq.cloudfront.net/436f3341$image,redirect=noop.txt
 247sports.com,cbsnews.com,cbssports.com,indiewire.com,masslive.com,nypost.com,pagesix.com,pennlive.com,syracuse.com##+js(rmnt, script, "data-adm-url")
@@ -162663,7 +162665,6 @@ abc17news.com,al.com,artforum.com,artnews.com,awkward.com,awkwardmom.com,bailiwi
 usatoday.com##+js(set, gnt.x.adm, )
 ||acustomizedgift.com^$redirect=noop.js,script
 ||inventorycache.com^$redirect=noop.js,script
-||kindhush.com^$redirect=noop.json,xhr
 ||oceancloudhosts.com^$redirect=noop.json,xhr
 ||ubiquitoussea.com^$redirect=noop.js,script
 ||googletagmanager.com/gtag/js$important,redirect=google-analytics_analytics.js,script,xhr,domain=redstoneonline.jp
