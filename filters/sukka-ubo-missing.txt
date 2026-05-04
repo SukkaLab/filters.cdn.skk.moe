@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Mon, 04 May 2026 12:06:07 GMT
+! Last modified: Mon, 04 May 2026 16:14:26 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.3.88
+!   - Version: 2.1.3.91
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -153935,6 +153935,8 @@ _tracking.php?b=
 ||tags.tiqcdn.com/utag/*/utag.sync.js$domain=yousee.dk|sibreal.org|calvinklein.ca|hosteurope.de|news.com.au
 ||mc.yandex.ru/metrika/tag.js$script,redirect=metrika-yandex-tag,domain=~id.x5.ru|~aiondb.ru
 ||mc.yandex.ru/metrika/watch.js$script,redirect=metrika-yandex-watch
+mexc.com,2gis.*,spletnik.ru##+js(set-local-storage-item, /^_ym/, $remove$)
+mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 ||google-analytics.com/analytics.js$script,redirect=google-analytics_analytics.js,domain=~olx.*|~banki.ru|~bigc.co.th|~sonos.com|~hepsiburada.com
 ||google-analytics.com/ga.js$script,redirect=google-analytics_ga.js,domain=~daj.jp
 ||googletagmanager.com/gtm.js$3p,script,redirect=google-analytics_analytics.js,domain=~corsair.com|~olx.*|~simon.com|~bethesda.net|~paddle.com|~linodellefateresort.com
@@ -153953,6 +153955,15 @@ _tracking.php?b=
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||static.mocortech.com/mx-fingerprintjs/
+||static.mocortech.com/mx-remote-packages/mxc-web-remote-script/lib/tag_ww.js
+||static.mocortech.com/mx-remote-packages/mxc-web-remote-script/lib/ytag.js
+||mexc.com/staticjs/tag.js
+mexc.com##+js(set-local-storage-item, mexc_local_fingerprint_visitorId, $remove$)
+mexc.com##+js(set-local-storage-item, mexc_local_fingerprint, $remove$)
+mexc.com##+js(set-local-storage-item, mexc_local_fingerprint_sys_info, $remove$)
+mexc.com##+js(set-local-storage-item, mexc_fingerprint_all_config_init_time, $remove$)
+mexc.com##+js(set-local-storage-item, __watchman_anonymous_id$$_, $remove$)
 ||static.fd.nl/assets/fdmg-tag-manager/
 ||pd5sngsre3.net/g/hn.js
 ||m.media-amazon.com/images/I/*/BotCXMetricsCollectionJSAsset
@@ -155498,7 +155509,6 @@ arstechnica.com###story-recommendations
 ||ipokabu.net/js/analytics.js
 ||ieq-systems.de/includes/piwikQ.js
 ||player.ivideosmart.com/ivsplayer/*/moat-tracker.js
-2gis.*##+js(set-local-storage-item, /_ym/, $remove$)
 ||tags.stepstone.com/utag/*/prod/utag.js
 ||static.posta.com.tr/scripts/tracking/dailymotion-event.min.js
 ||afkgaming.com/scooby/api/v1/log/event|
@@ -157790,8 +157800,8 @@ abp?type=js&session$domain=prosieben.de|sat1.de|kabeleins.de|sixx.de|prosiebenma
 ||scripts.hepsiburada.net/assets/analytics/analytics.*.js
 ||airbnb.*/tracking/
 ||googleadservices.com/pagead/conversion_async.js
-||analytics.twitter.com/i/adsct?
-||t.co/i/adsct?
+||analytics.twitter.com/*/adsct?
+||t.co/*/adsct?
 ||linkedin.com/*/rum-track?
 ||media.licdn.com/cdo/rum/id?
 ||sendsay.ru/js/target/tracking.js
@@ -159336,6 +159346,7 @@ dlsdk.appsflyer.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||cxlog.shinhansec.com^
 ||sensors.dito.ph^
 ||mon11-misc-lq.fqnovel.com^
 ||tnc3-alisc1.bytedance.com^
@@ -162668,6 +162679,7 @@ abc17news.com,al.com,artforum.com,artnews.com,awkward.com,awkwardmom.com,bailiwi
 usatoday.com##+js(set, gnt.x.adm, )
 ||acustomizedgift.com^$redirect=noop.js,script
 ||inventorycache.com^$redirect=noop.js,script
+||kindhush.com^$redirect=noop.js,script
 ||oceancloudhosts.com^$redirect=noop.json,xhr
 ||ubiquitoussea.com^$redirect=noop.js,script
 ||googletagmanager.com/gtag/js$important,redirect=google-analytics_analytics.js,script,xhr,domain=redstoneonline.jp
