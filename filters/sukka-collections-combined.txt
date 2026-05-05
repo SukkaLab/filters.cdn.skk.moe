@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Tue, 05 May 2026 16:05:34 GMT
+! Last modified: Tue, 05 May 2026 19:54:09 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202605051552
+!   - Version: 202605051941
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 05 May 2026 15:52 UTC
+!   - Last modified: 05 May 2026 19:41 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
@@ -70,7 +70,7 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 🔮 I Don't Want to Download Your Browser
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/I%20Don't%20Want%20to%20Download%20Your%20Browser.txt
-!   - Version: 31March2026v1-Beta
+!   - Version: 05May2026v1-Beta
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * ➗ Actually Legitimate URL Shortener Tool
 !   - URL: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt
@@ -16994,12 +16994,13 @@ bing.com#?##b_pole:has-text(Microsoft Edge)
 bing.com##.bnp_btc
 bing.com##.bnp_fly_hp
 bing.com##[data-flyout=anaheim]
-microsoft.com,windows.com###epb
-microsoft.com,windows.com##bannerAboveUHF
-microsoft.com,windows.com##banner-above-uhf
+microsoft.com###epb
+microsoft.com##bannerAboveUHF
+microsoft.com##banner-above-uhf
 msn.com###irisbannerph
 msn.com##.articlebody > div[style="width:100%;border:1px solid #CCC;padding:10px;"]
 outlook.live.com##div[class*=" body-"] > div[class] > div[class]:not([role]) > div:first-of-type:not([class])
+microsoft.com##uhf-promo-banner
 ||opera.com/*/downloadassets/sticky-bar-auto|$subdocument
 addons.mozilla.org##.DownloadFirefoxButton
 send.firefox.com##send-promo
@@ -17023,7 +17024,6 @@ gigabyte.com#?#div.target-container.desc:has-text(PDF files with Acrobat )
 supermicro.com##.boxHome.textA:has([href*="products/acrobat/"])
 @@||supermicro.com$elemhide,badfilter
 signform.no#?##signformheader + div > p:has-text(Adobe Reader)
-cia.gov,ciadotgov4sjwlzihbbgxnqg3xiyrg7so2r2o3lt5wz5ypk4sxyjstad.onion#?#.info-panel:has-text(Adobe® Reader®)
 /images/acrobat.gif|
 deezer.com##.page-alerts:has(a[href$="/download"])
 fileinfo.com##.fv
