@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Filters
-! Last modified: Sun, 03 May 2026 13:52:26 GMT
+! Last modified: Wed, 06 May 2026 06:29:55 GMT
 ! Expires: 1 hours
 ! Description: The filters from Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
