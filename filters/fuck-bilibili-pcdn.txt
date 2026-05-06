@@ -1,10 +1,10 @@
 ! Title: [sukka] Sukka Experimental Bilibili PCDN Defuser
-! Last modified: Wed, 06 May 2026 06:35:18 GMT
+! Last modified: Wed, 06 May 2026 06:40:22 GMT
 ! Expires: 1 hours
 ! Description: The filters from Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
 ! Homepage: https://github.com/SukkaW/Filters
 ! unknown filter
 ||mcdn.bilivideo.cn:*/v*/resource/$urltransform=/(.+)/https:\/\/proxy-tf-all-ws.bilivideo.com/?url=$1/
-||bilivideo.cn/upgcxcode/*os=mcdn*$urltransform=/https?:\/\/(.+)\/upgcxcode\/(.+)/https:\/\/upos-sz-mirrorali.bilivideo.com\/upgcxcode\/$2/
+||mcdn.bilivideo.cn:*/upgcxcode/*os=mcdn*$urltransform=/https?:\/\/(.+)\/upgcxcode\/(.+)/https:\/\/upos-sz-mirrorali.bilivideo.com\/upgcxcode\/$2/
 ||szbdyd.com^$urltransform=/https?:\/\/(.+)\/upgcxcode\/(.+)/https:\/\/upos-sz-mirrorali.bilivideo.com\/upgcxcode\/$2/
