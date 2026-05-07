@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Thu, 07 May 2026 12:10:31 GMT
+! Last modified: Thu, 07 May 2026 16:18:57 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.4.12
+!   - Version: 2.1.4.13
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -215,6 +215,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||mod.leftnewsex.com^
 ||magtorr.com^
 ||eventtrace.ru^
 ||kujsc5.ru^
@@ -6007,6 +6008,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||a.mizkan.co.jp^
 ||ac-ebis.usen-ssi.jp^
 ||ad.hoikushibank.com^
+||ad.kddi-fs.com^
 ||ad.omotenashi.work^
 ||ade.hirose-fx.jp^
 ||adebi.hataractive.jp^
@@ -158867,7 +158869,6 @@ link.gmapp*.net$image
 .io%2Fe%2Fo%2F$image
 .net/e/o/$image
 .net%2Fe%2Fo%2F$image
-/CI0/0$image
 %2FCI0%2F0$image
 /ss/o/*/ho.gif$image
 %2Fss%2Fo%2F*%2Fho.gif$image
@@ -158901,6 +158902,7 @@ deepl.qualtrics.com%2Fsubscription%2Fwatermark.gif%3F
 onelink.soundcloud.com/v1/emailopen$image
 onelink.soundcloud.com%2Fv1%2Femailopen$image
 %3A%2F%2Fline.karte.io%2FCI0%2F$image
+://line.karte.io/CI0/$image
 ://t.paypal.com/ts?v=$image
 %3A%2F%2Ft.paypal.com%2Fts%3Fv%3D$image
 emailtracking.cashstar.com$image

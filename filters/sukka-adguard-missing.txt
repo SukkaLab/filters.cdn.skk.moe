@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Thu, 07 May 2026 12:10:31 GMT
+! Last modified: Thu, 07 May 2026 16:18:57 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Thu, 07 May 2026 09:01:55 +0000
+!   - Last modified: Thu, 07 May 2026 12:23:35 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Thu, 07 May 2026 07:58:42 +0000
@@ -19817,6 +19817,7 @@ taste.com.au##.main-header:style(top: 0 !important)
 @@/prebid*$script,from=decompiler.com
 @@/dmcads*$script,from=decompiler.com
 @@/adsscript*$script,domain=decompiler.com
+@@||topcountry.eu^$script,domain=decompiler.com
 @@||topsong.eu^$script,domain=decompiler.com
 @@||topsongs.eu^$script,domain=decompiler.com
 @@||codicibancari.it^$script,domain=decompiler.com
