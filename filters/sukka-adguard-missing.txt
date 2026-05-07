@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Thu, 07 May 2026 19:56:49 GMT
+! Last modified: Thu, 07 May 2026 23:12:48 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Thu, 07 May 2026 12:23:35 +0000
+!   - Last modified: Thu, 07 May 2026 16:19:46 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Thu, 07 May 2026 07:58:42 +0000
@@ -17,7 +17,7 @@
 !   - Last modified: Wed, 06 May 2026 04:47:26 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
-!   - Last modified: Mon, 27 Apr 2026 13:23:19 +0000
+!   - Last modified: Thu, 07 May 2026 17:45:30 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
 !   - Last modified: Thu, 07 May 2026 06:31:24 +0000
@@ -27,7 +27,7 @@
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Tue, 05 May 2026 13:50:46 +0000
+!   - Last modified: Thu, 07 May 2026 18:34:44 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
 !   - Last modified: Thu, 07 May 2026 09:08:38 +0000
@@ -9736,7 +9736,7 @@ kuyhaa.me##+js(acs, document.addEventListener, window.open)
 ||meong.club/go/?aHR0c*$doc,urlskip=/\/go\/\?(aHR0c.+)/ -base64
 ||kuyhaa.me/pmbut.js
 ||kuyhaa.me/*.php
-bus-location.1507t.xyz##+js(nostif, ()=>, 2900-3100)
+bus-location.1507t.xyz##+js(nostif, ()=>{, 2501-)
 map.naver.com##+js(json-edit-xhr-response, .layers.*[?.metadata.name=="POI_Ads"], propsToMatch, /PCWeb_Real.json)
 aagag.com##+js(no-xhr-if, googlesyndication)
 shahied4u.me##+js(rmnt, script, /googlesyndication|adblock|keydown|popundersPerIP/i)
@@ -19244,6 +19244,7 @@ filmcdn.top,sex-empire.org##+js(nowoif)
 poki.com##div[class]:has(> div > div[style*="height"][style*="width"][style$="px; overflow: hidden;"] > [id*="_gp_"])
 tmailor.com##.email-open-read.email-open:style(display:flex !important)
 tmailor.com##.email-adblck-outline:remove()
+tmailor.com##+js(set, tmDetectAdBlocker, falseFunc)
 bgmateriali.com##+js(nostif, adbl)
 ncaa.com##+js(no-fetch-if, googlesyndication)
 olx.in###main_content div[class]:has(> .baxter-style-dfp-default-default)
@@ -22849,7 +22850,7 @@ vids.st##+js(rmnt, script, window.open)
 vids.st##+js(acs, document.createElement, pop_tag)
 onlyfans.to,upbolt.to##+js(rpnt, script, /.*/gms, window.__adbLevel = 0; window.__adbScore = 0;, condition, bait)
 onlyfans.to,upbolt.to##+js(rmnt, script, monetag)
-*$script,3p,domain=hydrahd.ru,denyallow=gstatic.com|cloudflare.com|googleapis.com
+*$script,3p,domain=hydrahd.ru,denyallow=gstatic.com|cloudflare.com|fastly.net|googleapis.com|jsdelivr.net
 *$script,3p,domain=airflix1.com
 vipleague.ws>>##+js(rpnt, script, brave, xxxxx)
 urbandictionary.com###ud-root > div[class]:has(div[class*="leaderboard"])
@@ -31466,11 +31467,6 @@ slack.com##+js(aeld, click, window.gtag, elements, button#submit_btn)
 @@||googletagmanager.com/gtag/js$script,domain=slack.com
 prod.hydra.sophos.com##+js(set, Sentry, {})
 prod.hydra.sophos.com##+js(set, Sentry.addBreadcrumb, noopFunc)
-||camel3.live/lib/sensorsdata.full.min.js$redirect=noopjs,important
-camel3.live##+js(set, sensorsDataAnalytic201505, {})
-camel3.live##+js(set, sensorsDataAnalytic201505.init, noopFunc)
-camel3.live##+js(set, sensorsDataAnalytic201505.track, noopFunc)
-camel3.live##+js(set, sensorsDataAnalytic201505.register, noopFunc)
 ||live-media-aka.warnermediacdn.com^$badfilter
 @@||live-media-aka.warnermediacdn.com^$xhr,domain=adultswim.com
 @@||target.microsoft.com^$xhr,1p
@@ -31516,6 +31512,9 @@ conceptoweb-studio.com##+js(set, initJWPlayerMux.utils.now, noopFunc)
 ||adman.gr^$media,domain=antenna.gr,redirect=noopmp3-0.1s
 amboss.com##+js(set, ambossAnalytics, {})
 amboss.com##+js(set, ambossAnalytics.getUserAttribution, noopFunc)
+||camel*/lib/sensorsdata.full.min.js$redirect=sensors-analytics.js
+||camel*/lib/exposure.min.js$redirect=noopjs
+@@||omtrdc.net^$3p,xhr,from=vivo.com.br
 ! uBlock filters – Quick fixes https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
 @@||hb.vntsm.com/v4/live/vms/sites/aternos.org/index.js$script,domain=aternos.org
 aternos.org##.header-center:style(margin-top:-5000px !important;)
@@ -32157,6 +32156,7 @@ theweathernetwork.com##+js(trusted-click-element, #didomi-notice-disagree-button
 craftelier.com##+js(trusted-set-cookie, pr-cookie-consent, [], , , domain, .craftelier.com)
 moleson.rentalp.com##+js(trusted-set-cookie, USE_COOKIE_CONSENT_STATE, '{"firstParty":true,"thirdParty":false,"necessary":true}')
 mediaguru.cz##+js(trusted-click-element, .b-cookie button[data-cookie-reject], , 500)
+tietokonekauppa.fi##+js(trusted-set-cookie, cookieConsent, {"consentAnalytics":"denied"\,"consentAds":"denied"}, 1year)
 dailymail.co.uk,dailymail.com##+js(trusted-click-element, div[data-project="mol-fe-cmp"] button[class*="consent"]:not([class*="reject"]))
 1001games.com,1001hry.cz,1001jeux.fr,1001jocuri.ro,1001jogos.com.br,1001jogos.pt,1001pelit.com,1001spiele.de,auth.hbomax.com,elkspel.nl,gamespot.com,giochixl.it,glamour.com,grajteraz.pl,isladejuegos.com,jatekokxl.hu,mtvuutiset.fi,paixnidiaxl.gr,pushsquare.com,spelo.se,spillespill.no,spilxl.dk,thejournal.ie,thetrainline.com,vkmag.com,zdnet.com##+js(trusted-set-cookie, OptanonAlertBoxClosed, $currentDate$, 1year)
 evaair.com##+js(trusted-set-cookie, _EVAcookieaccept, Y, 1year)
