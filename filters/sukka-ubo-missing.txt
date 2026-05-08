@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Thu, 07 May 2026 23:12:48 GMT
+! Last modified: Fri, 08 May 2026 05:12:41 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.4.13
+!   - Version: 2.1.4.15
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -153961,6 +153961,7 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||autoguide.com/api/posts/*/impressions
 ||global.one.yomiuri.co.jp/ssc-ym-client.v*.js
 ||247wallst.com/b66d/|$script
 ||247wallst.com/wp-content/plugins/fwp-247-analytics-old/js/dist/fwp-analytics-main.js
@@ -155848,7 +155849,6 @@ thehindu.com###sectiondivicymi
 ||uha-mikakuto.co.jp/parts/analytics.js
 ||static.lefigaro.fr/figanalytics/
 ||community.theta360.guide/assets/google-universal-analytics-v4
-||www-direct.upgradedhome.com/eventStream
 ||fap.bar/a.js
 -config.sensic.net/3pc.html
 -config.sensic.net/s2s-web.js
@@ -156010,8 +156010,7 @@ lto.de##img[src^="https://ssl-wolterskluwer.met.vgwort.de/"]
 ||worldhistory.org/analytics/pageview.js
 ||g.newtimes.com/pd.js
 ||newtimes.com/analytics?
-||www-direct.motorcycle.com/eventStream
-||www-direct.autoguide.com/eventStream
+/eventStream|$domain=autoguide.com|motorcycle.com|upgradedhome.com
 ||hub.fromdoppler.com/public/dhtrack.js
 ||kick.com/*&loaderVersion=
 ||connatix.com/scripts/hotjar.js
