@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sat, 09 May 2026 08:12:17 GMT
+! Last modified: Sat, 09 May 2026 11:11:42 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sat, 09 May 2026 01:36:43 +0000
+!   - Last modified: Sat, 09 May 2026 08:48:26 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Fri, 08 May 2026 13:55:25 +0000
@@ -17,7 +17,7 @@
 !   - Last modified: Wed, 06 May 2026 04:47:26 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
-!   - Last modified: Fri, 08 May 2026 18:55:28 +0000
+!   - Last modified: Sat, 09 May 2026 08:24:49 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
 !   - Last modified: Sat, 09 May 2026 01:00:11 +0000
@@ -9184,7 +9184,7 @@ oricon.co.jp##+js(rmnt, script, /\(async\(\)=>\{try\{(const|var)/)
 chloeting.com##+js(prevent-innerHTML, script, html-load.com)
 calculatorsoup.com##+js(trusted-replace-argument, HTMLScriptElement.prototype.setAttribute, 0, repl:/"$//)
 9gag.com,adrenaline.com.br,and-more.co,astro-seek.com,autofrage.net,bab.la,babla.*,base64decode.org,boardingarea.com,buchstaben.com,businessua.com,calculatorsoup.com,canuckaudiomart.com,chloeting.com,collinsdictionary.com,computerfrage.net,consejosytrucos.co,conselhosetruques.com,consiglietrucchi.com,crosswordsolver.com,dict.cc,dictionary.cambridge.org,dictionnaire.lerobert.com,dnevnik.hr,doviz.com,edinburghnews.scotsman.com,egitim.net.tr,egolf.jp,elnacional.cat,euronews.com,exceljet.net,finanzfrage.net,fizzlefacts.com,fizzlefakten.de,fossbytes.com,gerbeaud.com,gesundheitsfrage.net,gezondnu.nl,girlschannel.net,gutefrage.net,happyinshape.com,hechosfizzle.com,helpdeskgeek.com,hollywoodlife.com,houseandgarden.co,infinityfree.com,inverse.com,itavisen.no,km77.com,kreuzwortraetsel.de,kuruma-news.jp,ldoceonline.com,leckerschmecker.me,lejdd.fr,lettersolver.com,liveandletsfly.com,livescience.com,lootlemon.com,magmix.jp,mamastar.jp,manchesterworld.uk,merinfo.se,moin.de,motorradfrage.net,motscroises.fr,mrexcel.com,nemzetisport.hu,neoseeker.com,netflixlife.com,newatlas.com,nextchessmove.com,nouvelobs.com,oeffnungszeitenbuch.de,omnicalculator.com,oraridiapertura24.it,oricon.co.jp,otonanswer.jp,oxfordlearnersdictionaries.com,pcgamer.com,perezhilton.com,picrew.me,pinterpoin.com,play.gamezop.com,pons.com,popdaily.com.tw,poradyiwskazowki.pl,reisefrage.net,rotowire.com,scribd.com,singjupost.com,slideshare.net,songfacts.com,sourceforge.net,sportlerfrage.net,sussexexpress.co.uk,the-crossword-solver.com,thefirearmblog.com,thelayoff.com,thetruthaboutcars.com,thingiverse.com,timeful.app,tippsundtricks.co,tips-and-tricks.co,tipsandtricksarab.com,tipsandtricksjapan.com,tipsandtrickskorea.com,torontosun.com,toyokeizai.net,trafficnews.jp,travelingformiles.com,trucs-et-astuces.co,tvtv.ca,tvtv.us,ukaudiomart.com,upgradedhome.com,urbandictionary.com,urldecoder.org,usaudiomart.com,vague.style,watchdocumentaries.com,weatherzone.com.au,welt.de,willyweather.*,winfuture.de,winteriscoming.net,word-grabber.com,wordshake.com,woxikon.de,yorkshirepost.co.uk##+js(trusted-replace-argument, HTMLScriptElement.prototype.setAttribute, 1, , condition, '/error-report|new Promise|;await new|:\[?window|&&window,|void 0\]|location\.href|void 0\|\|window/')
-euronews.com##+js(ra, onerror, script[id][onerror], asap stay)
+euronews.com,welt.de##+js(ra, onerror, script[id][onerror], asap stay)
 akinator.com##+js(trusted-replace-argument, HTMLScriptElement.prototype.setAttribute, 1, `json:"setTimeout((()=>{if(!location.pathname.startsWith('/game'))return;const t=document.getElementById('question-label');t&&(window.animation=lottie.loadAnimation({container:t,renderer:'svg',loop:!0,autoplay:!1,path:'/assets/animationsLottielab/gameDots.json'}))}),1e3);"`, condition, '/error-report|new Promise|;await new|:\[?window|&&window,|void 0\]|location\.href|void 0\|\|window/')
 akinator.com##+js(set, __cfRLUnblockHandlers, true)
 huffpost.com##+js(set, disableAdShield, true)
@@ -18578,8 +18578,8 @@ linkneverdie.net##body:style(overflow: auto !important;)
 linkneverdie.net#@#+js(nostif, t)
 @@||quantumdex.io^$script,domain=linkneverdie.net
 porntrex.com###index-link
-*$script,3p,denyallow=blazingcdn.net|cdntrex.com|fastly.net|google.com|googleapis.com|gstatic.com|h-cdn.com|stackpathcdn.com,domain=porntrex.com
-porntrex.com##+js(acs, readCookieDelit)
+*$script,3p,denyallow=b-cdn.net|blazingcdn.net|cdntrex.com|fastly.net|google.com|googleapis.com|gstatic.com|h-cdn.com|stackpathcdn.com,domain=porntrex.com
+porntrex.com##+js(rpnt, script, this.config.pop.enabled, false, sedCount, 10)
 porntrex.com##+js(disable-newtab-links)
 ||porndoe.com/movie/preroll/*$media,redirect=noopmp4-1s,domain=porntrex.com
 ||porndoe.com/sitePreRoll/
@@ -20606,6 +20606,7 @@ msn.com##msft-article-card:not(.contentCard)
 www.msn.com##+js(json-prune-fetch-response, configs.*.properties.componentConfigs.slideshowConfigs.*.interstitialNativeAds, , propsToMatch, url:/config)
 www.msn.com##+js(json-prune-fetch-response, *, list.[].link.kicker, propsToMatch, /content/v1/cms/api/amp/Document)
 msn.com##.vd-ad
+msn.com##.gem-display-ad
 www.msn.com##+js(json-prune-fetch-response, properties.tiles.[-].isAd, , propsToMatch, /mestripewc/default/config)
 camhub.world##+js(nostif, visibility, 2000)
 ||camhub.world/player/player_ads.html$frame,1p,redirect=noopframe
@@ -31532,6 +31533,7 @@ amboss.com##+js(set, ambossAnalytics.getUserAttribution, noopFunc)
 @@||omtrdc.net^$3p,xhr,from=vivo.com.br
 @@||albuquerque.newzware.com/newzlib/js/common/fingerprint2.min.js$script,3p,domain=abqjournal.com
 @@||cdn.sophi.io^$3p,script,from=abqjournal.com
+||imasdk.googleapis.com/js/sdkloader/ima3.js$redirect=google-ima.js,domain=mnetplus.world
 ! uBlock filters – Quick fixes https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
 @@||hb.vntsm.com/v4/live/vms/sites/aternos.org/index.js$script,domain=aternos.org
 aternos.org##.header-center:style(margin-top:-5000px !important;)
