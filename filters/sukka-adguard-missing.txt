@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sat, 09 May 2026 19:36:20 GMT
+! Last modified: Sat, 09 May 2026 23:07:37 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sat, 09 May 2026 16:28:41 +0000
+!   - Last modified: Sat, 09 May 2026 17:08:08 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Fri, 08 May 2026 13:55:25 +0000
@@ -18181,7 +18181,6 @@ satdl.com##+js(set, xtime, 0)
 easybib.com##+js(trusted-click-element, button[data-test="watch-ad-button"])
 easybib.com##+js(nano-sib)
 realmadryt.pl##+js(no-fetch-if, method:GET)
-realmadryt.pl##+js(aeld, , adb)
 fast-dl.*,filmydown.*##+js(nowoif)
 ||toptdspup.com^
 ||toptdspup.com^$popup
