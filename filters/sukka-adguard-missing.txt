@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sun, 10 May 2026 19:35:52 GMT
+! Last modified: Sun, 10 May 2026 23:10:48 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sun, 10 May 2026 12:42:01 +0000
+!   - Last modified: Sun, 10 May 2026 19:01:22 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Fri, 08 May 2026 13:55:25 +0000
@@ -21170,7 +21170,7 @@ whoisnovel.com##+js(acs, document.readyState, adsBlocked)
 whoisnovel.com##[data-placement-id^="revbid-"]
 rebajagratis.com,tv.latinlucha.es##^script:has-text(/adsBlocked|"popundersPerIP"/)
 rebajagratis.com,tv.latinlucha.es##+js(rmnt, script, /adsBlocked|"popundersPerIP"/)
-||imasdk.googleapis.com/js/sdkloader/ima3.js$redirect=noopjs,domain=anichin.rpmvid.com|disneycdn.net|rpmhub.site|rpmplay.me|rpmplay.xyz|rpmstream.live|rpmvip.com
+||imasdk.googleapis.com/js/sdkloader/ima3.js$redirect=noopjs,domain=anichin.rpmvid.com|disneycdn.net|rpmhub.site|rpmlive.online|rpmplay.me|rpmplay.xyz|rpmstream.live|rpmvip.com|vidplayer.live
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$redirect=noopjs,domain=strp2p.com,important
 rpmplay.xyz##+js(aopr, open)
 ||boaststockingsaucer.com^
@@ -22896,6 +22896,7 @@ stereogum.com##+js(trusted-json-edit, .props.pageProps.globalData.publisherFeatu
 hyperosthemes.org##+js(no-fetch-if, adsbygoogle)
 scloud.ws##a[class*="download"]
 purediablo.com##+js(set, nitroAds.abp, true)
+@@||cinewatch.top^$ghide
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
