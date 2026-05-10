@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sat, 09 May 2026 23:07:37 GMT
+! Last modified: Sun, 10 May 2026 05:46:22 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sat, 09 May 2026 17:08:08 +0000
+!   - Last modified: Sun, 10 May 2026 02:53:21 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Fri, 08 May 2026 13:55:25 +0000
@@ -9073,6 +9073,8 @@ usatoday.com##body > div.gnt_n_w_w:style(margin-bottom: 0 !important;)
 kinobox.cz##+js(prevent-innerHTML, script, .cmd.unshift)
 ranker.com##+js(aeld, /admiral/)
 ranker.com##+js(set, runtimeConfig.AM_PATH, undefined)
+lostcoastoutpost.com##+js(aost, decodeURI, CACHE)
+lostcoastoutpost.com##+js(rmnt, script, /\.cmd\.unshift|adblockerDisabled/, excludes, \,\")
 komonews.com,wpgh53.com##+js(json-edit, ..props[?.id=="admiral-initializer"].children)
 athlonsports.com,autoblog.com,bikemag.com,dengarden.com,mensfitness.com,mensjournal.com,parade.com,paradehomeandgarden.com,paradepets.com,pethelpful.com,powder.com,shophq.com,surfer.com,thespun.com,thestreet.com,travelhost.com##+js(json-edit, ..props.children.*[?.key=="admiral-script"])
 athlonsports.com,autoblog.com,bikemag.com,dengarden.com,mensfitness.com,mensjournal.com,parade.com,paradehomeandgarden.com,paradepets.com,pethelpful.com,powder.com,shophq.com,surfer.com,thespun.com,thestreet.com,travelhost.com##+js(trusted-json-edit, ..props.config.ad.enabled=false)
@@ -9810,6 +9812,8 @@ daemon-hentai.com##+js(nostif, openPopunder)
 daemon-hentai.com##+js(aeld, load, .getComputedStyle)
 daemonanime.net##+js(aeld, , STORAGE2)
 daemonanime.net##+js(aeld, DOMContentLoaded, app_advert)
+||google-analytics.com^$3p,image,redirect=1x1.gif,from=daemon-hentai.com
+daemon-hentai.com##+js(rmnt, script, adblock)
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$redirect=google-ima.js,domain=cooperativa.cl
 lared.cl##+js(no-fetch-if, doubleclick)
 lared.cl##+js(set, googletag._loaded_, true)
@@ -22892,7 +22896,6 @@ stereogum.com##+js(trusted-json-edit, .props.pageProps.globalData.publisherFeatu
 @@||stereogum.com^$ghide
 hyperosthemes.org##+js(no-fetch-if, adsbygoogle)
 scloud.ws##a[class*="download"]
-||google-analytics.com^$3p,image,redirect=1x1.gif,from=daemon-hentai.com
 bzzhr.to##+js(set, AdLink, '')
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
