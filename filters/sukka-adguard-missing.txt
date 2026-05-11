@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Mon, 11 May 2026 10:00:14 GMT
+! Last modified: Mon, 11 May 2026 12:50:09 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,10 +8,10 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Mon, 11 May 2026 04:09:33 +0000
+!   - Last modified: Mon, 11 May 2026 08:14:04 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
-!   - Last modified: Mon, 11 May 2026 01:52:38 +0000
+!   - Last modified: Mon, 11 May 2026 04:55:32 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
 !   - Last modified: Wed, 06 May 2026 04:47:26 +0000
@@ -30,7 +30,7 @@
 !   - Last modified: Thu, 07 May 2026 18:34:44 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
-!   - Last modified: Thu, 07 May 2026 09:08:38 +0000
+!   - Last modified: Mon, 11 May 2026 06:44:28 +0000
 ! --------------------------------------------------------------
 ! uBlock filters https://ublockorigin.pages.dev/filters/filters.min.txt
 *_ad_$media,domain=youtube.com,3p
@@ -9619,6 +9619,7 @@ news.now.com##+js(set, NMAFMediaPlayerController.vastManager.vastShown, true)
 shipin188.com##+js(rmnt, script, _cpv)
 ofiii.com##+js(json-prune-fetch-response, prerolls midrolls postrolls comm_ad house_ad pause_ad block_ad end_ad exit_ad pin_ad content_pool vertical_ad elements, , propsToMatch, api/v1/detail)
 @@||mnya.tw^$generichide
+mnya.tw##.adsbygoogle
 @@||titulky.com^$script,1p
 titulky.com#@#+js(set-constant, xmxalr, '')
 kiaclub.cz##+js(nostif, getComputedStyle)
@@ -15492,6 +15493,8 @@ manofadan.com,cempakajaya.com##+js(aeld, load, htmls)
 *$xhr,redirect-rule=nooptext,domain=cempakajaya.com
 karanpc.com##+js(rmnt, script, deblocker)
 karanpc.com##+js(aost, document.getElementsByTagName, adsBlocked)
+karanpc.com##span.wp-txt-ref:has-text(Direct)
+karanpc.com##.entry-content div[onclick][data-matrix]
 @@||adshnk.com^$ghide
 @@||fundingchoicesmessages.google.com/i/pub-$script,domain=adshnk.com
 @@||fundingchoicesmessages.google.com/f/$script,domain=adshnk.com
@@ -22896,9 +22899,11 @@ stereogum.com##+js(trusted-json-edit, .props.pageProps.globalData.publisherFeatu
 stereogum.com##+js(trusted-json-edit, .props.pageProps.globalData.publisherFeatureFlags.enableHardAdBlockDetection=false)
 @@||stereogum.com^$ghide
 hyperosthemes.org##+js(no-fetch-if, adsbygoogle)
-scloud.ws##a[class*="download"]
+scloud.ws##article > div[class][style^="text-align:"] > a[href]:not([href*="/"])
 purediablo.com##+js(set, nitroAds.abp, true)
 @@||cinewatch.top^$ghide
+nakastream.tv##+js(trusted-json-edit-fetch-response, .adsEnabled=false, propsToMatch, /access)
+nakastream.tv##+js(json-prune-fetch-response, adsterraSmartLink adsterraSmartLink2, , propsToMatch, /access)
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -27170,24 +27175,18 @@ ublockorigin.app###main::before:style(content: 'This is not the official uBlock 
 ||keepass-xc.com^$all
 ##body > div.captcha-container > div.captcha-card
 ||canadamilksettlement.com^$all
-||bp-sogou.com.cn^$all
-||win-sogou.com^$all
-||x-sogou.com^$all
-||qishmusic.com.cn^$all
-||apps-sougoupinyin.com^$all
-||ai-sogou.com.cn^$all
-||sogoushurf.com^$all
 -sogou.com.cn^$doc,to=com.cn
 -sogou.com^$doc,to=com
+||qishmusic.com.cn^$all
+||apps-sougoupinyin.com^$all
+||sogoushurf.com^$all
 -todesk.com.cn^$doc,to=com.cn
 -wegame.com^$doc,to=com
 -sogou.cn^$doc,to=cn
 ||chrome-hl.hl.cn^$all
-||a-todesk.com.cn^$all
 ||todeskk.com^$all
 ||www-qishiu.com.cn^$all
 ||qishui-zn.hl.cn^$all
-||pc-todesk.com.cn^$all
 ||go-todesk.hl.cn^$all
 ||todesk-zh.cn^$all
 ||todesk-zh.hl.cn^$all
@@ -27196,26 +27195,12 @@ ublockorigin.app###main::before:style(content: 'This is not the official uBlock 
 ||bandizip.pro^$all
 ||bandisoft.org^$all
 ||qishuide.com.cn^$all
-||ww-sogou.cn^$all
-||dl-sogou.com^$all
 ||shurufa-sogou.org.cn^$all
-||tech-sogou.com^$all
 ||sogou2.com.cn^$all
-||f-sogou.com.cn^$all
-||q-sogou.com.cn^$all
-||sogou-sogou.cn^$all
 ||sougoupy.com.cn^$all
 ||qeeyou.cn^$all
 ||googgle-chrrome.hl.cn^$all
 ||app-wg.com^$all
-||team-wegame.com^$all
-||hub-wegame.com^$all
-||wegameesport.com^$all
-||app-wegame.com^$all
-||official-wegame.com^$all
-||go-wegame.com^$all
-||home-wegame.com^$all
-||top-wegame.com^$all
 ||www-cn-google.org.cn^$all
 ||bangyoul.cn^$all
 ||laiwujiaoyu.com^$all
@@ -27242,8 +27227,6 @@ ublockorigin.app###main::before:style(content: 'This is not the official uBlock 
 ||youku.earth^$all
 ||youkuhonor.com^$all
 ||youku.tv^$all
-||www-office-wps.com.cn^$all
-||offiio-wps.com.cn^$all
 ||wps.ac.cn^$all
 ||cn-wps-zh.com.cn^$all
 ||tuba.toolg.cn^$all
@@ -27255,7 +27238,6 @@ ublockorigin.app###main::before:style(content: 'This is not the official uBlock 
 ||as-i4.com.cn^$all
 ||office-wps-hl.hl.cn^$all
 ||todeskappa.com.cn^$all
-||apd-todesk.com.cn^$all
 ||360cncn.com^$all
 ||qishui.team^$all
 ||wps-cnzh.com^$all
@@ -27269,53 +27251,55 @@ ublockorigin.app###main::before:style(content: 'This is not the official uBlock 
 ||chrome-gooogle-zh.hl.cn^$all
 ||apps-google-hl.hl.cn^$all
 ||google-chrrome-zh.hl.cn^$all
--todesk.com.cn^$doc
 -wps.com.cn^$doc
 -youdao.com.cn^$doc
 -dingding.com.cn^$doc
+-chrome-chrome.com.cn^$doc
 ||chrome-chrome-$doc
-||zhcn-chrome-chrome.com.cn^$all
-||chrome-chrome-cn.hl.cn^$all
-||chrome-chrome-zh.hl.cn^$all
 ||zh-todesk-cn.hl.cn^$all
-||de-todesk.com.cn^$all
-||kb-wps.com.cn^$all
 ||todesk-web.hl.cn^$all
 ||sougoucom.cn^$all
 ||lineapps.com.cn^$all
-||web-todesk.com.cn^$all
 ||qh-qishuiyinyue.hl.cn^$all
 ||yu-qishui.com.cn^$all
 ||lline.com.cn^$all
-||ks-wps.com.cn^$all
 ||line-go.hl.cn^$all
 ||line163.com^$all
-||store-sogou.com^$all
 ||huoronggw.org.cn^$all
 ||firefox-zh.com.cn^$all
 ||huoronggk.com^$all
-||wk-wps.com.cn^$all
-||hj-wps.com.cn^$all
-||hq-wps.com.cn^$all
 ||qishuiq.com.cn^$all
 ||google-google-chrome-google-com.hl.cn^$all
 ||yd-fanyi.hl.cn^$all
-||aaa-youdao.com.cn^$all
-||hv-youdao.com.cn^$all
-||fanxa-youdao.com.cn^$all
-||go-youdao.com.cn^$all
 ||mac-youdao.com^$all
-||m-todesk.com.cn^$all
-||w-todesk.com.cn^$all
-||n-todesk.com.cn^$all
 ||mu-qishuimusic.com.cn^$all
 ||cn-qishui-music-zh.hl.cn^$all
-||app-dingding.com.cn^$all
-||po-todesk.com.cn^$all
-||w-dingding.com.cn^$all
 ||youdaoi.com^$all
-||ee-web-youdao.com.cn^$all
-||translate-youdao.com.cn^$all
+-qishui.com.cn^$doc
+||qishui-*.com.cn^$doc
+||aisiapp.com.cn^$all
+||sogou-ai.com.cn^$all
+||qishuiyinyue-music.hl.cn^$all
+||ww-qishui.com.cn^$all
+||yinyue-qishui.hl.cn^$all
+||dy-qishuimusic.hl.cn^$all
+||e-sanpei.com^$all
+||sowgou.com.cn^$all
+||qishui-eom.com.cn^$all
+||qishui.bj.cn^$all
+||ch-qishui-music.com.cn^$all
+||aisi-zhi.com.cn^$all
+||qishuiyy.com.cn^$all
+||qishuimusic-cn.hl.cn^$all
+||ql-qishui.com.cn^$all
+||qishui-gf.com.cn^$all
+||huoronggh.com^$all
+||pccare-360.cn^$all
+||apps-wps-offce.com.cn^$all
+||wpp-wps.cn^$all
+||gf-qishuiapp.com.cn^$all
+||music-qishuiyinle.hl.cn^$all
+||sh-qishuimusic.com.cn^$all
 ||testio.ecartdev.com^
 ||applot-jp.com^$all
 ||orcanmedikal.com.tr^$doc
@@ -27338,6 +27322,11 @@ ublockorigin.app###main::before:style(content: 'This is not the official uBlock 
 ||goldbergcoins.com^$all
 ||erahitopupikloss.com^$all
 ||asionamedrafter.com^$all
+top##body > center + .A + .post
+||labor-day-*.top^$doc
+||16gift.com^$all
+||top/single.php|$script,1p
+||599cdn.com/Philippines/ph*.jpg$image,domain=top
 ! uBlock filters – Privacy https://ublockorigin.pages.dev/filters/privacy.min.txt
 ||google-analytics.com/analytics.js$script,xhr,redirect=google-analytics_analytics.js:5
 ||google-analytics.com/cx/api.js$script,redirect=google-analytics.com/cx/api.js:5
@@ -37637,3 +37626,4 @@ camereliveromania.ro##+js(rmnt, script, /wpcp|contextmenu/)
 dozaanimata.net##+js(trusted-create-html, html, <details open style='display:none' ontoggle='(function(){     window.addEventListener("contextmenu"\, (e) => { e.stopImmediatePropagation(); return true; }\, true);     const allow = (e) => { e.stopImmediatePropagation(); return true; };     document.addEventListener("selectstart"\, allow\, true);     document.addEventListener("copy"\, allow\, true);     window.addEventListener("keydown"\, (e) => {         if ((e.ctrlKey || e.metaKey) && (e.key === "c" || e.key === "a")) {             e.stopImmediatePropagation();         }     }\, true);     document.querySelectorAll("*").forEach(el => {         el.oncontextmenu = null;         el.onselectstart = null;         el.oncopy = null;         el.onkeydown = null;         el.style.userSelect = "auto";     }); })();'></details>)
 fontsquirrel.com###bottom_banner_ad_container
 paloaltonetworks.com##+js(nostif, /adbl/i)
+megaplay.buzz##+js(set, devtoolsDetector.launch, noopFunc)
