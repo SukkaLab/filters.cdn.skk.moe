@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Filters
-! Last modified: Tue, 12 May 2026 17:17:07 GMT
+! Last modified: Tue, 12 May 2026 17:18:29 GMT
 ! Expires: 1 hours
 ! Description: The filters from Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -236,7 +236,7 @@ http://*$app=tv.danmaku.bili
 /igd.xml$important
 ||biligame.com
 strava.com###map-canvas:style(position: sticky !important; top: 0; z-index: 1000)
-strava.com###chart-container:style(top: 350px!important; position: sticky !important)
+strava.com###chart-container.pinnable:style(position: fixed !important;)
 ||cdn.super.com/remote-event-registry.json$xhr
 super.com##+js(prevent-xhr, cdn.super.com/remote-event-registry.json, emptyArr)
 iknowwhatyoudownload.com##[href="/en/peer"]
