@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Wed, 13 May 2026 16:32:45 GMT
+! Last modified: Wed, 13 May 2026 20:12:44 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.4.35
+!   - Version: 2.1.4.36
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -215,6 +215,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||dn666andut2j1.cloudfront.net^
 ||mod.leftnewsex.com^
 ||magtorr.com^
 ||eventtrace.ru^
@@ -2527,7 +2528,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||flcounter.com^$3p
 ||t.flix360.com^
 ||flixsyndication.net^$3p
-||fluctuo.com^$3p
 ||fluencymedia.com^$3p
 ||fluidsurveys.com^$3p
 ||flurry.com^$3p
@@ -153967,6 +153967,7 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||shop-apotheke.com/te/
 ||slate.com/analytics?
 ||thebell.io/o4e1/
 ||boyner.com.tr/1eus/
@@ -160408,6 +160409,8 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=saturn.de
 @@||metrics.us.playstation.com/b/ss/
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
+@@||cdn.cquotient.com/js/*/gretel.min.js$domain=jp.drmartens.com
+@@||e.cquotient.com/recs/blgg-DoctorMartens/$domain=jp.drmartens.com
 @@||faq-widget.nakanohito.jp/faqwidget.js$domain=keio-passport.co.jp
 @@||support-beacon.nakanohito.jp/widget/faqview$domain=keio-passport.co.jp
 @@||cdn.cxense.com/cx.cce.js$domain=hochi.news
