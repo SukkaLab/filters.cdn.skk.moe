@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Tue, 12 May 2026 09:12:54 GMT
+! Last modified: Wed, 13 May 2026 13:22:50 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.4.24
+!   - Version: 2.1.4.34
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -83,12 +83,18 @@ muratorplus.pl##+js(set-constant, GemiusPlayer.prototype.newProgram, noopFunc)
 muratorplus.pl##+js(set-constant, GemiusPlayer.prototype.programEvent, noopFunc)
 muratorplus.pl##+js(set-constant, GemiusPlayer.prototype.setVideoObject, noopFunc)
 jrhokkaido.co.jp##+js(addEventListener-defuser, DOMContentLoaded, pt_enable)
-cib.com.cn,pconline.pcvideo.com.cn##+js(set-constant, sensorsDataAnalytic201505, {})
-cib.com.cn,pconline.pcvideo.com.cn##+js(set-constant, sensorsDataAnalytic201505.use, noopFunc)
-cib.com.cn,pconline.pcvideo.com.cn##+js(set-constant, sensorsDataAnalytic201505.init, noopFunc)
-cib.com.cn,pconline.pcvideo.com.cn##+js(set-constant, sensorsDataAnalytic201505.track, noopFunc)
-cib.com.cn,pconline.pcvideo.com.cn##+js(set-constant, sensorsDataAnalytic201505.quick, noopFunc)
-cib.com.cn,pconline.pcvideo.com.cn##+js(set-constant, sensorsDataAnalytic201505.registerPage, noopFunc)
+fenbi.com,cib.com.cn,pconline.pcvideo.com.cn##+js(set-constant, sensorsDataAnalytic201505, {})
+fenbi.com,cib.com.cn,pconline.pcvideo.com.cn##+js(set-constant, sensorsDataAnalytic201505.use, noopFunc)
+fenbi.com,cib.com.cn,pconline.pcvideo.com.cn##+js(set-constant, sensorsDataAnalytic201505.init, noopFunc)
+fenbi.com,cib.com.cn,pconline.pcvideo.com.cn##+js(set-constant, sensorsDataAnalytic201505.track, noopFunc)
+fenbi.com,cib.com.cn,pconline.pcvideo.com.cn##+js(set-constant, sensorsDataAnalytic201505.quick, noopFunc)
+fenbi.com,cib.com.cn,pconline.pcvideo.com.cn##+js(set-constant, sensorsDataAnalytic201505.registerPage, noopFunc)
+xingyue.geely.com,tineco.com,galaxy.geely.com,guancha.cn##+js(set-constant, sensors, {})
+xingyue.geely.com,tineco.com,galaxy.geely.com,guancha.cn##+js(set-constant, sensors.init, noopFunc)
+xingyue.geely.com,tineco.com,galaxy.geely.com,guancha.cn##+js(set-constant, sensors.track, noopFunc)
+xingyue.geely.com,tineco.com,galaxy.geely.com,guancha.cn##+js(set-constant, sensors.quick, noopFunc)
+xingyue.geely.com,tineco.com,galaxy.geely.com,guancha.cn##+js(set-constant, sensors.login, noopFunc)
+xingyue.geely.com,tineco.com,galaxy.geely.com,guancha.cn##+js(set-constant, sensors.registerPage, noopFunc)
 biologianet.com##+js(set-constant, UOLPD, {})
 biologianet.com##+js(set-constant, UOLPD.dataLayer, {})
 biologianet.com##+js(set-constant, __configuredDFPTags, {})
@@ -127,12 +133,6 @@ member.neofinancial.com##+js(set-constant, __fpjs_p_l_b, {})
 member.neofinancial.com##+js(set-constant, __fpjs_p_l_b.load, noopFunc)
 itsu.com##+js(set-constant, AtreemoTrackingLbr, noopFunc)
 pracuj.pl##+js(set-cookie-reload, gptrackCookie, 1)
-xingyue.geely.com,tineco.com,galaxy.geely.com,guancha.cn##+js(set-constant, sensors, {})
-xingyue.geely.com,tineco.com,galaxy.geely.com,guancha.cn##+js(set-constant, sensors.init, noopFunc)
-xingyue.geely.com,tineco.com,galaxy.geely.com,guancha.cn##+js(set-constant, sensors.track, noopFunc)
-xingyue.geely.com,tineco.com,galaxy.geely.com,guancha.cn##+js(set-constant, sensors.quick, noopFunc)
-xingyue.geely.com,tineco.com,galaxy.geely.com,guancha.cn##+js(set-constant, sensors.login, noopFunc)
-xingyue.geely.com,tineco.com,galaxy.geely.com,guancha.cn##+js(set-constant, sensors.registerPage, noopFunc)
 embed.rtl.hu##+js(set-constant, gemiusStream, {})
 embed.rtl.hu##+js(set-constant, gemiusStream.event, noopFunc)
 reuters.com##+js(set-local-storage-item, ajs_anonymous_id, null)
@@ -55035,6 +55035,11 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||countly.
 ||countly-
 |piwik.
+||marketing.trvl.yandex.net^
+||t.stereogum.com^
+||data-api.fenbi.com^
+||mpecom-analyticevents-prod.boyner.com.tr^
+||dlso-ap96.macgamingdb.app^
 ||fm-analytics.cloudbees.io^
 ||mlm-tracking.meinestadt.de^
 ||stats.temptcdn.com^
@@ -153962,9 +153967,13 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||slate.com/analytics?
+||thebell.io/o4e1/
+||boyner.com.tr/1eus/
+||test-api.ajansspor.xyz/analytics/
 ||glassesusa.com/scripts/|
 ||glassesusa.com/bff/dynamicYield/pageview
-||sfchronicle.com/api/client-logs
+/api/client-logs$domain=theridgefieldpress.com|thetelegraph.com|beaumontenterprise.com|bigrapidsnews.com|chron.com|ctinsider.com|ctpost.com|darientimes.com|seattlepi.com|expressnews.com|fuelfix.com|greenwichtime.com|houstonchronicle.com|lakecountystar.com|lmtonline.com|manisteenews.com|michigansthumb.com|middletownpress.com|milfordmirror.com|mrt.com|myjournalcourier.com|myplainview.com|mysanantonio.com|ncadvertiser.com|newstimes.com|nhregister.com|ourmidland.com|recordpatriot.com|registercitizen.com|seattlepi.com|sfchronicle.com|sfgate.com|sheltonherald.com|smallbusiness.chron.com|stamfordadvocate.com|theheraldreview.com|thehour.com|theintelligencer.com|timesunion.com|trumbulltimes.com|weekand.com|wiltonbulletin.com|work.chron.com|yourconroenews.com
 ||movavi.com/proxysss/index.php
 ||caido.io/stats/
 ||bubilet.com.tr/metrics/
@@ -157053,7 +157062,6 @@ tourister.ru##.nt-foot-item[style="overflow:hidden;"]
 ||trk.mail.ru^$image,ping
 ||push.m.youku.com/collect-api/
 ||cast.imp.joins.com/persona.js
-||imptrack.intoday.in/impression_tracker.php
 ||tosshub.com/sites/common/resources/trackdata/min/itgdtrack*.js
 ||api2.bybit.com/v2/public/metrics
 ||api.*.com/p/report?$domain=bybit.com
@@ -160400,6 +160408,11 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=saturn.de
 @@||metrics.us.playstation.com/b/ss/
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
+@@||faq-widget.nakanohito.jp/faqwidget.js$domain=keio-passport.co.jp
+@@||support-beacon.nakanohito.jp/widget/faqview$domain=keio-passport.co.jp
+@@||cdn.cxense.com/cx.cce.js$domain=hochi.news
+@@||cdn.cxense.com/cx.js$domain=hochi.news
+@@||api.cxense.com/public/widget/data?json=$domain=hochi.news
 @@||dd.subito.it.first-party-js.datadome.co^$script,xhr,domain=areariservata.subito.it
 @@||g.alicdn.com/alilog/mlog/aplus_o.js$domain=v.youku.com
 @@||log.mmstat.com/eg.js$domain=v.youku.com
@@ -161904,7 +161917,6 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 @@||scdn.cxense.com/cx.js$domain=wsj.com
 @@||rscdn.cxense.com/cx-test.js$domain=wsj.com
 @@||comcastresidentialservices.tt.omtrdc.net/m2/comcastresidentialservices^$domain=xfinity.com
-@@||googletagmanager.com/gtm.js^$domain=boyner.com.tr
 @@||sb.scorecardresearch.com/beacon.js$domain=motorcyclenews.com
 @@||googletagmanager.com/gtm.js^$domain=benscrub.com
 @@||sb.scorecardresearch.com/beacon.js$domain=discovery.com
