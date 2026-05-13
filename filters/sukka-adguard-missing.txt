@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Wed, 13 May 2026 13:22:50 GMT
+! Last modified: Wed, 13 May 2026 16:32:45 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Wed, 13 May 2026 09:54:00 +0000
+!   - Last modified: Wed, 13 May 2026 12:50:42 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Wed, 13 May 2026 04:54:01 +0000
@@ -7542,7 +7542,7 @@ torupload.com,nathanmichaelphoto.com##+js(nowoif, , 10, obj)
 @@||googlesyndication.com^$subdocument,domain=nathanmichaelphoto.com
 @@||dash.ezmob.com/ss/js/ads.js$script,domain=nathanmichaelphoto.com
 @@*$script,xhr,from=nathanmichaelphoto.com,to=cdn4ads.com|doubleclick.net|cloudfront.net|googlesyndication.com|adtrafficquality.google|adsco.re
-nathanmichaelphoto.com##+js(rpnt, script, /\(\);$/m, `();(function(){'use strict';const _e=[{url:"https://s0-greate.net/p/2507871",type:"script",d:1058},{url:"https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516",type:"script",d:36},{url:"https://cdn.jsdelivr.net/npm/disable-devtool",type:"script",d:47}];const generateEntry=(item)=>({name:item.url,initiatorType:item.type,duration:item.d,startTime:Math.random()*100,entryType:"resource",nextHopProtocol:"h2",renderBlockingStatus:"non-blocking",workerStart:0,redirectStart:0,redirectEnd:0,fetchStart:10,domainLookupStart:10,domainLookupEnd:12,connectStart:12,connectEnd:15,secureConnectionStart:13,requestStart:16,responseStart:20,responseEnd:item.d+20,transferSize:Math.floor(Math.random()*5000)+1000,encodedBodySize:1000,decodedBodySize:3000,serverTiming:[]});const _p=Performance.prototype;const _getEntries=_p.getEntries;const _getEntriesByType=_p.getEntriesByType;const _getEntriesByName=_p.getEntriesByName;_p.getEntries=function(){const original=_getEntries.apply(this,arguments);const fakes=_e.map(generateEntry);return[...original,...fakes];};_p.getEntriesByType=function(type){if(type==='resource'){const original=_getEntriesByType.apply(this,arguments);const fakes=_e.map(generateEntry);return[...original,...fakes];}return _getEntriesByType.apply(this,arguments);};_p.getEntriesByName=function(name){const item=_e.find(x=>x.url===name);if(item)return[generateEntry(item)];return _getEntriesByName.apply(this,arguments);};})();`, sedCount, 1)
+nathanmichaelphoto.com##+js(rpnt, script, /\(\);$/m, `();(function(){'use strict';const _e=[{url:"https://s0-greate.net/p/2507871",type:"script",d:1058},{url:"https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516",type:"script",d:36},{url:"https://cdn.jsdelivr.net/npm/disable-devtool",type:"script",d:47},{url:"https://oundhertobeconsist.org/",type:"other",d:47}];const generateEntry=(item)=>({name:item.url,initiatorType:item.type,duration:item.d,startTime:Math.random()*100,entryType:"resource",nextHopProtocol:"h2",renderBlockingStatus:"non-blocking",workerStart:0,redirectStart:0,redirectEnd:0,fetchStart:10,domainLookupStart:10,domainLookupEnd:12,connectStart:12,connectEnd:15,secureConnectionStart:13,requestStart:16,responseStart:20,responseEnd:item.d+20,transferSize:Math.floor(Math.random()*5000)+1000,encodedBodySize:1000,decodedBodySize:3000,serverTiming:[]});const _p=Performance.prototype;const _getEntries=_p.getEntries;const _getEntriesByType=_p.getEntriesByType;const _getEntriesByName=_p.getEntriesByName;_p.getEntries=function(){const original=_getEntries.apply(this,arguments);const fakes=_e.map(generateEntry);return[...original,...fakes];};_p.getEntriesByType=function(type){if(type==='resource'){const original=_getEntriesByType.apply(this,arguments);const fakes=_e.map(generateEntry);return[...original,...fakes];}return _getEntriesByType.apply(this,arguments);};_p.getEntriesByName=function(name){const item=_e.find(x=>x.url===name);if(item)return[generateEntry(item)];return _getEntriesByName.apply(this,arguments);};})();`, sedCount, 1)
 nathanmichaelphoto.com#@##gdpr-cookie-notice
 torupload.com##+js(nano-sib, /seconds--|timeLeft--/, *)
 torupload.com##+js(trusted-replace-argument, document.addEventListener, 0, json:"click", condition, visibilitychange)
@@ -9572,8 +9572,8 @@ advertisertape.com,tapeadsenjoyer.com,tapeadvertisement.com,tapeantiads.com,tape
 *$popup,3p,from=tapepops.com,badfilter
 streamtape.*,watchadsontape.com##+js(aopr, Adcash)
 ||pndax.love^
-yabaisub.cloud###fakeplayer
-yabaisub.cloud##+js(trusted-click-element, #player-option-1, , 500)
+hdmozi.hu,yabaisub.cloud###fakeplayer
+hdmozi.hu,yabaisub.cloud##+js(trusted-click-element, #player-option-1, , 500)
 favoyeurtube.net>>,primewire.*>>,tokuzilla.net>>,tokuzl.net>>,tukoz.com>>,~cloudflare.com##+js(json-prune, ads playerAds)
 embedseek.xyz,nuovo.vidplayer.live,p2pplay.pro,primevid.click,streamcasthub.store##+js(json-prune, ads playerAds)
 3minx.com,555fap.com,ai18.pics,anime-jav.com,blackwidof.org,chinese-pics.com,cn-av.com,cnpics.org,cnxx.me,cosplay-xxx.com,cosplay18.pics,fc2ppv.stream,fikfok.net,gofile.download,hentai-sub.com,hentai4f.com,hentaicovid.com,hentaipig.com,hentaixnx.com,idol69.net,javball.com,javbee.*,javring.com,javsunday.com,javtele.net,kin8-av.com,kin8-jav.com,kr-av.com,ovabee.com,pig69.com,porn-pig.com,porn4f.org,sweetie-fox.com,xcamcovid.com,xxpics.org##+js(rmnt, script, /detectAdblock|WebAssembly|pop1stp|popMagic/i)
