@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Thu, 14 May 2026 16:21:57 GMT
+! Last modified: Thu, 14 May 2026 20:05:00 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,13 +8,13 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Thu, 14 May 2026 11:45:08 +0000
+!   - Last modified: Thu, 14 May 2026 14:11:34 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Thu, 14 May 2026 03:46:36 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Tue, 12 May 2026 16:31:36 +0000
+!   - Last modified: Thu, 14 May 2026 14:11:34 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
 !   - Last modified: Sat, 09 May 2026 08:24:49 +0000
@@ -11030,8 +11030,7 @@ megadede.*##.les-title:has-text(HD)
 megadede.*##[href="#tab-ad"]
 movidy.*##+js(nowoif)
 thepoorcoder.com##+js(aopr, adblockDetector)
-globo.com,latimes.com##+js(nostif, f.parentNode.removeChild(f), 100)
-globo.com##+js(trusted-set-cookie, _ga, GA1.1.000000000.1900000000, , , domain, globo.com)
+latimes.com##+js(nostif, f.parentNode.removeChild(f), 100)
 *$script,3p,denyallow=fastly.net|fastlylb.net|jquery.com|hwcdn.net|hcaptcha.com|recaptcha.net|cloudflare.com|cloudflare.net|google.com|googleapis.com|gstatic.com,domain=13x4.com
 camsclips.*##+js(nostif, innerText, 2000)
 camsclips.*##.place
@@ -22924,6 +22923,7 @@ purediablo.com##+js(set, nitroAds.abp, true)
 nakastream.tv##+js(trusted-json-edit-fetch-response, .adsEnabled=false, propsToMatch, /access)
 nakastream.tv##+js(json-prune-fetch-response, adsterraSmartLink adsterraSmartLink2, , propsToMatch, /access)
 ||ay.live/st/*^url=http$doc,urlskip=?url
+anihq.org>>##+js(nowoif)
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -28275,8 +28275,6 @@ forum.blu-ray.com##+js(ra, onclick|oncontextmenu|onmouseover, a[href][onclick*="
 ||gog.com/productcard/users/activity/log
 ||onual.com/*^link_t=$doc,uritransform=/#[^\/?]+//
 onual.com##+js(href-sanitizer, a.btn[href^="https://zxro.com/u/?url=http"], ?url)
-globo.com##+js(trusted-set, libAnalytics, json: {"status":{"dataAvailable":false}\,"data":{}})
-globo.com##+js(set, libAnalytics.data.get, noopFunc)
 ||videovak.com/log/
 dailystar.co.uk,mirror.co.uk##+js(no-xhr-if, cmp.inmobi.com/geoip)
 mirror.co.uk##+js(trusted-set-cookie, _sharedid, , 0, , domain, .mirror.co.uk)
