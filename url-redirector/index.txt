@@ -1,5 +1,5 @@
 ! Title: [sukka] URL Redirector
-! Last modified: Thu, 14 May 2026 15:24:38 GMT
+! Last modified: Thu, 14 May 2026 15:37:24 GMT
 ! Description: uBlock Origin / AdGuard uritransform rules
 ! Homepage: https://github.com/SukkaW/Filters
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,7 +18,7 @@
 ||en.gravatar.com/avatar/$all,uritransform=/en\.gravatar\.com/secure.gravatar.com/
 ||ajax.googleapis.com/ajax/libs/jquery$all,uritransform=/ajax\.googleapis\.com\/ajax\/libs\/jquery\/(\d+)(?:\.\d+)+\//cdn.jsdelivr.net\/npm\/jquery@$1\/dist\//
 ||ajax.googleapis.com/ajax/libs/bootstrap$all,uritransform=/ajax\.googleapis\.com\/ajax\/libs\/bootstrap\/(\d+)(?:\.\d+)+\//cdn.jsdelivr.net\/npm\/bootstrap@$1\/dist\//
-||bootstrapcdn.com/bootstrap/$all,uritransform=/([^\/]+)\.bootstrapcdn\.com\/bootstrap\/(\d+)(?:\.\d+)+\//cdn.jsdelivr.net\/npm\/bootstrap@$2\/dist\//
+||bootstrapcdn.com/bootstrap/$all,uritransform=/([^\/]+)\.bootstrapcdn\.com\/bootstrap\/((?:\d+\.)+\d)\//cdn.jsdelivr.net\/npm\/bootstrap@$2\/dist\//
 ||bootstrapcdn.com/font-awesome/$all,uritransform=/([^\/]+)\.bootstrapcdn\.com\/font-awesome\/(\d+)(?:\.\d+)+\//cdn.jsdelivr.net\/npm\/font-awesome@$2\//
 ||use.fontawesome.com/releases/v5$all,uritransform=/use\.fontawesome\.com\/releases\/v((?:\d+\.)+\d)\//cdn.jsdelivr.net\/npm\/@fortawesome\/fontawesome-free@$1\//
 ||use.fontawesome.com/releases/v6$all,uritransform=/use\.fontawesome\.com\/releases\/v((?:\d+\.)+\d)\//cdn.jsdelivr.net\/npm\/@fortawesome\/fontawesome-free@$1\//
@@ -45,7 +45,7 @@
 ||en.gravatar.com/avatar/$all,urltransform=/en\.gravatar\.com/secure.gravatar.com/
 ||ajax.googleapis.com/ajax/libs/jquery$all,urltransform=/ajax\.googleapis\.com\/ajax\/libs\/jquery\/(\d+)(?:\.\d+)+\//cdn.jsdelivr.net\/npm\/jquery@$1\/dist\//
 ||ajax.googleapis.com/ajax/libs/bootstrap$all,urltransform=/ajax\.googleapis\.com\/ajax\/libs\/bootstrap\/(\d+)(?:\.\d+)+\//cdn.jsdelivr.net\/npm\/bootstrap@$1\/dist\//
-||bootstrapcdn.com/bootstrap/$all,urltransform=/([^\/]+)\.bootstrapcdn\.com\/bootstrap\/(\d+)(?:\.\d+)+\//cdn.jsdelivr.net\/npm\/bootstrap@$2\/dist\//
+||bootstrapcdn.com/bootstrap/$all,urltransform=/([^\/]+)\.bootstrapcdn\.com\/bootstrap\/((?:\d+\.)+\d)\//cdn.jsdelivr.net\/npm\/bootstrap@$2\/dist\//
 ||bootstrapcdn.com/font-awesome/$all,urltransform=/([^\/]+)\.bootstrapcdn\.com\/font-awesome\/(\d+)(?:\.\d+)+\//cdn.jsdelivr.net\/npm\/font-awesome@$2\//
 ||use.fontawesome.com/releases/v5$all,urltransform=/use\.fontawesome\.com\/releases\/v((?:\d+\.)+\d)\//cdn.jsdelivr.net\/npm\/@fortawesome\/fontawesome-free@$1\//
 ||use.fontawesome.com/releases/v6$all,urltransform=/use\.fontawesome\.com\/releases\/v((?:\d+\.)+\d)\//cdn.jsdelivr.net\/npm\/@fortawesome\/fontawesome-free@$1\//
