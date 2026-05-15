@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Fri, 15 May 2026 09:24:48 GMT
+! Last modified: Fri, 15 May 2026 12:12:41 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.4.44
+!   - Version: 2.1.4.46
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -215,6 +215,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||ezoicanalytics.com^
 ||dn666andut2j1.cloudfront.net^
 ||mod.leftnewsex.com^
 ||magtorr.com^
@@ -159970,6 +159971,8 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=saturn.de
 @@||metrics.us.playstation.com/b/ss/
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
+@@||edge.adobedc.net/*/identity/acquire?$domain=goldmansachs.com
+goldmansachs.com##+js(prevent-fetch, edge.adobedc.net)
 @@||cdn.cquotient.com/js/*/gretel.min.js$domain=jp.drmartens.com
 @@||e.cquotient.com/recs/blgg-DoctorMartens/$domain=jp.drmartens.com
 @@||faq-widget.nakanohito.jp/faqwidget.js$domain=keio-passport.co.jp
