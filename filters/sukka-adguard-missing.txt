@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Thu, 14 May 2026 23:13:23 GMT
+! Last modified: Fri, 15 May 2026 06:04:54 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Thu, 14 May 2026 19:04:50 +0000
+!   - Last modified: Fri, 15 May 2026 04:01:47 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Thu, 14 May 2026 03:46:36 +0000
@@ -9952,6 +9952,7 @@ tranimeizle.*##a[href^="https://cutt.ly/"]
 ||vipifsa.com/api/popup
 vipifsa.com##+js(json-prune-fetch-response, ads, , propsToMatch, /api/video)
 animecix.tv##+js(set, Object.prototype.showInterstitialAd, false)
+kanald.com.tr##+js(set, googlefc, undefined)
 lxmanga.my##+js(set, skipAdblockCheck, true)
 qmh.*##+js(json-prune-xhr-response, data.header_script data.footer_script data.direct_link_ads data.direct_link_ads_vip_1 data.direct_link_ads_vip_2 data.direct_link_ads_play_vip_2 data.direct_link_ads_zoom_vip_2, , propsToMatch, /config)
 ||api.viphubss.shop/api/banner
