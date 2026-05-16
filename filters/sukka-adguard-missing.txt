@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sat, 16 May 2026 15:16:10 GMT
+! Last modified: Sat, 16 May 2026 19:36:07 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,13 +8,13 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sat, 16 May 2026 04:35:17 +0000
+!   - Last modified: Sat, 16 May 2026 18:27:40 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Thu, 14 May 2026 03:46:36 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Thu, 14 May 2026 14:11:34 +0000
+!   - Last modified: Sat, 16 May 2026 18:03:33 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
 !   - Last modified: Sat, 09 May 2026 08:24:49 +0000
@@ -10430,7 +10430,7 @@ uploadrar.*###commonId > a[target="_blank"]
 uploadrar.*##main > center > a.btn-primary
 uploadrar.*##form > center:has(.btn):has([href])
 uploadrar.*##.footer, span > .text-muted, .card, .m-2.submit-btn.btn-primary.btn
-uploadrar.*##.fs-5, p, ul, li, #how-to-open, .p-0.block, .download-controls, .ad-box + center
+uploadrar.*##.fs-5, p, ul, li, #how-to-open, .download-controls, .ad-box + center
 uploadrar.*##.ad-label, .adsbygoogle
 uploadrar.*##+js(acs, document.documentElement, break;case $.)
 uploadrar.*##+js(nano-stb, /.?/, *)
@@ -22434,6 +22434,11 @@ player4me.vip,seekplayer.vip##+js(nowoif)
 captown.capcom.com##.game-main[data-game-play-need-ads-modal-value="true"]:remove-attr(data-game-play-need-ads-modal-value)
 captown.capcom.com##+js(trusted-set, googletag.enums, json:{"OutOfPageFormat":{"REWARDED":true}})
 thetemp.email##+js(no-fetch-if, adsbygoogle)
+adhs-zentrum.de##+js(rmnt, script, adImage)
+@@||adhs-zentrum.de^$ghide
+adhs-zentrum.de##.adsbygoogle
+adhs-zentrum.de##div.box:has(.adsbygoogle)
+adhs-zentrum.de###babasbmsgx
 coolmathgames.com##+js(nano-sib)
 coolmathgames.com##+js(set, cmgpbjs, false)
 coolmathgames.com##+js(set, displayAdblockOverlay, false)
@@ -22945,6 +22950,8 @@ genpick.app##+js(trusted-replace-argument, document.getElementById, 0, json:"hea
 hotukdeals.com###comments > .box--content:has(#ad-belowDescription)
 hotukdeals.com##div.box--content:has(#ad-belowDetails)
 hotukdeals.com##div.box--content:has(#ad-belowComments)
+luisterradio.fm##div.max-w-full:has(> .uppercase)
+indoav.app##+js(nowoif)
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -28141,6 +28148,7 @@ $removeparam=adsterra_placement_id
 ||youtu.be^$removeparam=si
 ||youtube.com/shorts/$doc,removeparam=si
 ://youtube.com/@*?si=$doc,removeparam=si
+||youtube.com/post/$doc,removeparam=si
 $removeparam=refsrc,to=twitter.com|x.com
 $removeparam=ref_src,to=twitter.com|x.com
 $removeparam=ref_url,to=twitter.com|x.com
