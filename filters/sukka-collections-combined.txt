@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Wed, 20 May 2026 09:54:34 GMT
+! Last modified: Wed, 20 May 2026 12:39:10 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202605200941
+!   - Version: 202605201231
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 20 May 2026 09:41 UTC
+!   - Last modified: 20 May 2026 12:31 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
@@ -114,9 +114,9 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * NoCoin Filter List
 !   - URL: https://cdn.jsdelivr.net/gh/hoshsadiq/adblock-nocoin-list@master/nocoin.txt
-!   - Version: 227
+!   - Version: 228
 !   - Homepage: https://github.com/hoshsadiq/adblock-nocoin-list/
-!   - Last modified: 10 November 2025
+!   - Last modified: 20 May 2026
 ! * uBlock filters – Mobile
 !   - URL: https://ublockorigin.github.io/uAssetsCDN/filters/filters-mobile.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
@@ -22594,7 +22594,6 @@ twitch.tv#?#.tw-avatar > img.tw-border-radius-rounded:style(border-radius: unset
 ||g1thub.com^
 ||gay-hotvideo.net^
 ||go.bestmobiworld.com^$3p
-||go.fastspot.io^$3p
 ||go.megabanners.cf^$3p
 ||go.megabanners.cf^$websocket
 ||gridiogrid.com^$3p
