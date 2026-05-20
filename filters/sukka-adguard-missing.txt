@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Wed, 20 May 2026 17:30:22 GMT
+! Last modified: Wed, 20 May 2026 20:31:35 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -9623,7 +9623,6 @@ ofiii.com##.nonlinear_ad
 iplark.com##+js(aeld, DOMContentLoaded, adClosedTimestamp)
 bilibili.com#@#+js(json-prune-fetch-response, data.item.[-].business_info.ad_desc, '', /feed/rcmd)
 bilibili.com##+js(json-prune-fetch-response, data.item.[-].business_info.ad_desc, , propsToMatch, /feed/rcmd)
-||adblock.static-cloudflare.workers.dev^
 ||d16sc05it918j8.cloudfront.net^
 ||achang-tw.github.io^
 ||affiliates.one^$3p
