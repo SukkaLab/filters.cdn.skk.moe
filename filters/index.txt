@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Filters
-! Last modified: Sun, 17 May 2026 18:00:53 GMT
+! Last modified: Wed, 20 May 2026 09:56:47 GMT
 ! Expires: 1 hours
 ! Description: The filters from Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -302,7 +302,9 @@ yorg.io###ingame_chat
 yorg.io##+js(set-local-storage-item, sandboxDiscordIntentShown, 1)
 yorg.io##+js(set-local-storage-item, stat_max_base_level, 1919)
 yorg.io##+js(set-local-storage-item, stat_max_day_reached, 114514)
-cloudflare.com##a[href$="/dns/settings"]
+cloudflare.com##a[href$="/dns/convert-zone"]
+dash.cloudflare.com##div[data-settings-card="true"]:has-text(Convert to Primary DNS)
+dash.cloudflare.com##main[data-testid="dns-settings-page"]>div>div>div:has-text(Convert to Primary DNS)
 blog.csdn.net##.blog_container_aside
 blog.csdn.net##.recommend-box
 blog.csdn.net###csdn-toolbar
@@ -605,6 +607,9 @@ fontawesome.com##.wrap-ad
 1fichier.com##+js(nostif, /^/)
 1fichier.com##+js(nosiif, /^/)
 community.cloudflare.com##.house-ad
+community.cloudflare.com##.d-modal__backdrop
+community.cloudflare.com##.modal-container
+community.cloudflare.com##.sub-nav__wrapper
 www.boce.com##.money_left
 www.boce.com##.vipIcon
 ||webpack.docschina.org/docschina-logo*
@@ -651,8 +656,6 @@ vuejs.org##.sponsor-item
 ||dvr163.com/bck.htm$subdocument
 ||s3.picacomic.com/static/tobs/2862cdcd-a2f9-414b-8b81-5890da2802f5.jpg
 linux.do##.custom-gated-topic-container
-community.cloudflare.com##.d-modal__backdrop
-community.cloudflare.com##.modal-container
 ||img.draveness.me/2020-03-11-15839264230785-wechat-qr-code.png
 www.bandbbs.cn##.ad-container
 ||ny528.com/APK/PNG/$image
@@ -698,7 +701,6 @@ www.ionos.com##.exit-intent-ionos
 www.ionos.com##.fade.modal-backdrop
 www.zhihu.com##.Reward
 lowendaff.com##.joe_advert-large
-community.cloudflare.com##.sub-nav__wrapper
 ||xn--feus21h.xyz/static/team/uploadpic/$image
 www.3dmgame.com##.head_ent
 abdenasser.github.io##.app-promo-modal
