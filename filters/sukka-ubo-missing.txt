@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Thu, 21 May 2026 16:49:01 GMT
+! Last modified: Thu, 21 May 2026 20:13:18 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.4.67
+!   - Version: 2.1.4.68
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -159510,15 +159510,11 @@ d4?appid*type*
 ||dt.beyla.site^
 ||accscdn.m.taobao.com^
 ||apsrgeo.amap.com^
-||confe.dc.oppomobile.com^
-||conff.dc.oppomobile.com^
-||dragate.dc.oppomobile.com^
 ||esa-reg-eup.myoppo.com^
 ||obus-in.dc.heytapmobile.com^
 ||dragate-in-dc.heytapmobile.com^
 ||omes-sec.heytapmobile.com^
 ||moa-upload-online.coloros.com^
-||stat-in.dc.oppomobile.com^
 ||prod-analytics.royal.drmgms.com^
 ||logger.growstarry.com^
 ||beacon-api.aliyuncs.com^
@@ -159983,6 +159979,7 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=saturn.de
 @@||metrics.us.playstation.com/b/ss/
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
+@@||cdn.cxense.com/cx.js$domain=gizmodo.jp
 @@||assets.adobedtm.com^$domain=realtor.com
 @@||ssl.kaptcha.com/collect/$domain=app.airtm.com
 @@||edge.adobedc.net/*/identity/acquire?$domain=goldmansachs.com
