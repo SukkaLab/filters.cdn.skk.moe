@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Thu, 21 May 2026 06:34:57 GMT
+! Last modified: Thu, 21 May 2026 10:03:53 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,13 +8,13 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Thu, 21 May 2026 04:54:12 +0000
+!   - Last modified: Thu, 21 May 2026 09:45:22 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Tue, 19 May 2026 15:44:59 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Sun, 17 May 2026 14:34:42 +0000
+!   - Last modified: Thu, 21 May 2026 09:00:56 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
 !   - Last modified: Tue, 19 May 2026 15:26:42 +0000
@@ -27,7 +27,7 @@
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Wed, 20 May 2026 02:56:48 +0000
+!   - Last modified: Thu, 21 May 2026 09:24:30 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
 !   - Last modified: Tue, 19 May 2026 20:10:28 +0000
@@ -19852,6 +19852,9 @@ taste.com.au##.main-header:style(top: 0 !important)
 ||googletagmanager.com^$script,domain=decompiler.com,important
 @@*$script,3p,domain=decompiler.com
 decompiler.com##+js(set, ethicalads, true)
+decompiler.com##+js(rpnt, script, !==, ==)
+decompiler.com##+js(rpnt, script, ===, =|=)
+decompiler.com##+js(rpnt, script, .join, .faah)
 @@||ytlarge.com^$ghide
 @@||googlesyndication.com^$script,xhr,domain=ytlarge.com
 @@||fundingchoicesmessages.google.com^$script,xhr,domain=ytlarge.com
@@ -28222,6 +28225,7 @@ natgeotv.com##+js(set, Visitor, {})
 ||cdn.cuty.io/fps.js$script
 www.lenovo.com##+js(trusted-replace-argument, history.replaceState, 2, "''", condition, ?orgRef)
 ||upera.shop/ref/$doc,uritransform=/^\/ref\/[^\/]+//
+||api2.zoomit.ir/catalog/store-links/*/click?url=$urlskip=?url,doc
 androidpolice.com,makeuseof.com,movieweb.com,xda-developers.com##+js(cookie-remover, /articlesRead|previousPage/) 
 /^https?:\/\/chatgpt\.com\/ces\/v1\/[a-z]$/$xhr,domain=chatgpt.com|openai.com|sora.com,method=post
 airtel.in##+js(no-xhr-if, analytics/bulk-pixel)
@@ -32252,6 +32256,7 @@ moleson.rentalp.com##+js(trusted-set-cookie, USE_COOKIE_CONSENT_STATE, '{"firstP
 mediaguru.cz##+js(trusted-click-element, .b-cookie button[data-cookie-reject], , 500)
 tietokonekauppa.fi##+js(trusted-set-cookie, cookieConsent, {"consentAnalytics":"denied"\,"consentAds":"denied"}, 1year)
 etos.nl##+js(trusted-click-element, button#cookie-dismiss, !cookie:cookie-consent, 1000)
+united-domains.de##+js(trusted-click-element, .cookie-layer-dialog button.confirm-selection)
 dailymail.co.uk,dailymail.com##+js(trusted-click-element, div[data-project="mol-fe-cmp"] button[class*="consent"]:not([class*="reject"]))
 1001games.com,1001hry.cz,1001jeux.fr,1001jocuri.ro,1001jogos.com.br,1001jogos.pt,1001pelit.com,1001spiele.de,auth.hbomax.com,elkspel.nl,gamespot.com,giochixl.it,glamour.com,grajteraz.pl,isladejuegos.com,jatekokxl.hu,mtvuutiset.fi,paixnidiaxl.gr,pushsquare.com,spelo.se,spillespill.no,spilxl.dk,thejournal.ie,thetrainline.com,vkmag.com,zdnet.com##+js(trusted-set-cookie, OptanonAlertBoxClosed, $currentDate$, 1year)
 evaair.com##+js(trusted-set-cookie, _EVAcookieaccept, Y, 1year)
@@ -32790,7 +32795,6 @@ fletcherhotelscheveningen.nl,fletcherlandgoedhotelrenesse.nl##+js(trusted-set-co
 prada.com##+js(trusted-set-cookie, PRADACONSENT_V3, c1:0|c3:0|c6:0|c9:1|ts:1732678796088|consent:true|id:01936bb4433700035e746aa2453d0406f002006700995)
 sinergy.ch,agglo-valais-central.ch##+js(trusted-click-element, button.refuseAll, , 1000)
 falatozz.hu##+js(trusted-set-cookie, cookieAccepted, 'required,functional', , , reload, 1)
-united-domains.de##+js(trusted-set-cookie, CookieSettingsGroupId, 0193703c-779e-701d-bdba-fad9eea47938.13, , , reload, 1)
 biomedcentral.com##+js(trusted-click-element, button[data-cc-action="accept"], , 1000)
 hsbc.*,hsbcnet.com,hsbcinnovationbanking.com,create.hsbc,gbm.hsbc.com##+js(trusted-click-element, button[id="teal-consent-prompt-submit"], , 1000)
 hsbc.co.uk,internationalservices.hsbc.com,history.hsbc.com##+js(trusted-click-element, button[id="consent_prompt_submit"], , 1000)
