@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Fri, 22 May 2026 12:35:06 GMT
+! Last modified: Fri, 22 May 2026 16:37:23 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,13 +8,13 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Fri, 22 May 2026 11:21:36 +0000
+!   - Last modified: Fri, 22 May 2026 14:31:06 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Tue, 19 May 2026 15:44:59 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Thu, 21 May 2026 15:24:28 +0000
+!   - Last modified: Fri, 22 May 2026 14:35:23 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
 !   - Last modified: Thu, 21 May 2026 14:57:00 +0000
@@ -27,7 +27,7 @@
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Fri, 22 May 2026 10:07:30 +0000
+!   - Last modified: Fri, 22 May 2026 14:53:12 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
 !   - Last modified: Tue, 19 May 2026 20:10:28 +0000
@@ -19767,6 +19767,7 @@ skyblock.bz##.card[style]
 mathdf.com##+js(set, adBlockEnabled, false)
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,3p,redirect=google-ima.js,domain=powernationtv.com
 actionviewphotography.com,exporntoons.net,tyler-brown.com,ukdevilz.com##+js(acs, document.querySelectorAll, popMagic)
+/static/players/*/vast.js$1p
 realcanadiansuperstore.ca##+js(json-prune-fetch-response, layout.sections.mainContentCollection.components.[].data.productTiles.[-].sponsoredCreative.adGroupId, , propsToMatch, /search)
 pornwex.tv##+js(aeld, click, fp-screen)
 pornwex.tv##+js(acs, document.getElementById, puURL)
@@ -27900,7 +27901,6 @@ arstechnica.com,dermnetnz.org##.gsc-webResult a[data-cturl]:remove-attr(/^data-c
 /shopifycloud/media-analytics/v*/analytics.js
 www.youtube.com##+js(no-xhr-if, /\/api\/stats\/atr\?.+?&rt=\d+\.\d+.+?&volume=\d+&cbr=.+?&fexp=v1%[-%0-9C]{300\,}&.+?&muted=\d(&vis=3)?&docid=/ method:POST)
 /^https:\/\/(www\.)?[a-z0-9]+\.[a-z]+(\.[a-z]+)?\/[a-z0-9]{4}\/$/$script,1p,match-case
-||youtube.com/youtubei/v1/player/heartbeat
 ||youtube.com/youtubei/v1/log_event
 ||bdvmetricas.banvenez.com.ve^
 ||bilet.com/gtmcf/
@@ -32288,6 +32288,9 @@ united-domains.de##+js(trusted-click-element, .cookie-layer-dialog button.confir
 united-domains.de##^script#real-cookie-banner-pro-vendor-real-cookie-banner-pro-banner-js
 united-domains.de##div[consent-skip-blocker]:remove()
 diamantrad.com,lpi.org##+js(trusted-click-element, button#CookieBoxSaveButton, , 1000)
+uncrossy.com##+js(set, cookieManager, {})
+uncrossy.com##+js(set, cookieManager.initialize, noopFunc)
+uncrossy.com##+js(set, cookieManager.needsConsentBanner, falseFunc)
 dailymail.co.uk,dailymail.com##+js(trusted-click-element, div[data-project="mol-fe-cmp"] button[class*="consent"]:not([class*="reject"]))
 1001games.com,1001hry.cz,1001jeux.fr,1001jocuri.ro,1001jogos.com.br,1001jogos.pt,1001pelit.com,1001spiele.de,auth.hbomax.com,elkspel.nl,gamespot.com,giochixl.it,glamour.com,grajteraz.pl,isladejuegos.com,jatekokxl.hu,mtvuutiset.fi,paixnidiaxl.gr,pushsquare.com,spelo.se,spillespill.no,spilxl.dk,thejournal.ie,thetrainline.com,vkmag.com,zdnet.com##+js(trusted-set-cookie, OptanonAlertBoxClosed, $currentDate$, 1year)
 evaair.com##+js(trusted-set-cookie, _EVAcookieaccept, Y, 1year)
