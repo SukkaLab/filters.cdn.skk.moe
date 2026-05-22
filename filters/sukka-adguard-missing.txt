@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Fri, 22 May 2026 16:37:23 GMT
+! Last modified: Fri, 22 May 2026 20:13:28 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -14,10 +14,10 @@
 !   - Last modified: Tue, 19 May 2026 15:44:59 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Fri, 22 May 2026 14:35:23 +0000
+!   - Last modified: Fri, 22 May 2026 16:28:22 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
-!   - Last modified: Thu, 21 May 2026 14:57:00 +0000
+!   - Last modified: Fri, 22 May 2026 15:45:31 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
 !   - Last modified: Fri, 22 May 2026 01:52:18 +0000
@@ -27,7 +27,7 @@
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Fri, 22 May 2026 14:53:12 +0000
+!   - Last modified: Fri, 22 May 2026 15:45:31 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
 !   - Last modified: Tue, 19 May 2026 20:10:28 +0000
@@ -28251,6 +28251,7 @@ natgeotv.com##+js(set, Visitor, {})
 www.lenovo.com##+js(trusted-replace-argument, history.replaceState, 2, "''", condition, ?orgRef)
 ||upera.shop/ref/$doc,uritransform=/^\/ref\/[^\/]+//
 ||api2.zoomit.ir/catalog/store-links/*/click?url=$urlskip=?url,doc
+||offerdaily.ir/external^$doc,urlskip=/\/external\/(.*)/ -base64
 androidpolice.com,makeuseof.com,movieweb.com,xda-developers.com##+js(cookie-remover, /articlesRead|previousPage/) 
 /^https?:\/\/chatgpt\.com\/ces\/v1\/[a-z]$/$xhr,domain=chatgpt.com|openai.com|sora.com,method=post
 airtel.in##+js(no-xhr-if, analytics/bulk-pixel)
@@ -31628,6 +31629,7 @@ amboss.com##+js(set, ambossAnalytics.getUserAttribution, noopFunc)
 @@||cdn.sophi.io^$3p,script,from=abqjournal.com
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$redirect=google-ima.js,domain=mnetplus.world
 proxyorb.com##+js(aeld, load, dataset.ready, elements, script[src^="https://www.googletagmanager.com/gtag/js?id="])
+@@||stay22.com/embed/$frame,domain=eventim.ro
 ! uBlock filters – Quick fixes https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
 @@||hb.vntsm.com/v4/live/vms/sites/aternos.org/index.js$script,domain=aternos.org
 aternos.org##.header-center:style(margin-top:-5000px !important;)
@@ -34215,6 +34217,7 @@ ladbible.com##+js(trusted-click-element, .cmp-banner .accept-all)
 01net.com##+js(trusted-click-element, 'button[class^="sd-cmp"]:has(.sd-cmp-cWOb7)', , 1000)
 zenskirecenziraj.com##+js(trusted-set-cookie, zenski_cmp, basic)
 tlc.com##+js(trusted-click-element, .btn.btn-primary)
+eventim.ro##+js(trusted-click-element, #cmpwrapper >>> .cmpboxbtnyes, , 1000)
 ! uBlock filters – Annoyances https://ublockorigin.pages.dev/filters/annoyances.min.txt
 mimaletadepeliculas.blogspot.com##+js(aopr, document.oncontextmenu)
 mimaletadepeliculas.blogspot.com##+js(acs, document.onselectstart)
