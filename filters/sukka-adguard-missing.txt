@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Fri, 22 May 2026 23:33:20 GMT
+! Last modified: Sat, 23 May 2026 05:48:37 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Fri, 22 May 2026 14:31:06 +0000
+!   - Last modified: Fri, 22 May 2026 20:17:15 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Tue, 19 May 2026 15:44:59 +0000
@@ -19863,19 +19863,6 @@ pianetalecce.it##+js(acs, document.getElementById, ablk)
 hiraethtranslation.com##+js(rmnt, script, adsSrc)
 chasingthedonkey.com##+js(nowoif)
 taste.com.au##.main-header:style(top: 0 !important)
-||ethicalads.io^$script,domain=decompiler.com,important
-||googletagmanager.com^$script,domain=decompiler.com,important
-@@*$script,3p,domain=decompiler.com
-decompiler.com##+js(rpnt, script, !==, ==)
-decompiler.com##+js(rpnt, script, ===, =|=)
-decompiler.com##+js(rpnt, script, .join, .faah)
-decompiler.com##+js(rpnt, script, +', ==)
-decompiler.com##+js(rpnt, script, /\+\s*['"`]/, ==, excludes, progress)
-decompiler.com##+js(trusted-replace-argument, document.getElementById, 0, json:"bypassed", condition, /zip_button|zip|FileLink/)
-decompiler.com##+js(trusted-replace-argument, document.querySelector, 0, json:"#bypassed", condition, /(artifactFileContent|viewImage|firstDownloadFileLink|secondDownloadFileLink|download_zip_button)/)
-decompiler.com##+js(rpnt, script, ethical, `Object.defineProperty(window,'ethicalads',{value:{wait:Promise.resolve()},configurable:true,writable:true});ethical`)
-||decompiler.com^$script,replace=/return;//,domain=www.decompiler.com
-||decompiler.com^$script,replace=/!//,domain=www.decompiler.com
 @@||ytlarge.com^$ghide
 @@||googlesyndication.com^$script,xhr,domain=ytlarge.com
 @@||fundingchoicesmessages.google.com^$script,xhr,domain=ytlarge.com
