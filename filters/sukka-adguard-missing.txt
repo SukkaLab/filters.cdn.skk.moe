@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sun, 24 May 2026 19:43:51 GMT
+! Last modified: Sun, 24 May 2026 23:21:46 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sun, 24 May 2026 15:06:52 +0000
+!   - Last modified: Sun, 24 May 2026 18:00:41 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Tue, 19 May 2026 15:44:59 +0000
@@ -22992,6 +22992,7 @@ www.deeplol.gg##a[id^="add_to_Banner"]
 www.deeplol.gg###billboard
 www.deeplol.gg###desktop-takeover
 www.deeplol.gg###summoner_content_box div[class^="sc-"]:not(.bigTooltip, .diamond, [class*="flex"], [class*="master"], [class*="wrapper"], [id], [disabled], [style], [height], [width], [size]):has(> a[id^="add_to_Banner"])
+||wispbyte.com/client/scripts/wisp-guard.js$script
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
