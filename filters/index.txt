@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Filters
-! Last modified: Wed, 20 May 2026 09:56:47 GMT
+! Last modified: Mon, 25 May 2026 11:13:23 GMT
 ! Expires: 1 hours
 ! Description: The filters from Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -158,6 +158,8 @@ g.alicdn.com/alilog/$script,redirect=noop.js
 g.alicdn.com/axdata/yunlog*$redirect=noop.js
 g.alicdn.com/dawn/user-tracker*$redirect=noop.js
 g.alicdn.com/sj/securesdk$redirect=noop.js
+||railway.com/googletag/
+||railway.com/graphql/internal?q=eventBatchTrack
 ||render.com/pan/api/event
 ||r2cdn.perplexity.ai/js/count/
 www.dnsfilter.com##+js(aopw, window.analytics)
@@ -305,6 +307,7 @@ yorg.io##+js(set-local-storage-item, stat_max_day_reached, 114514)
 cloudflare.com##a[href$="/dns/convert-zone"]
 dash.cloudflare.com##div[data-settings-card="true"]:has-text(Convert to Primary DNS)
 dash.cloudflare.com##main[data-testid="dns-settings-page"]>div>div>div:has-text(Convert to Primary DNS)
+||dash.cloudflare.com/*/dns/convert-zone$all
 blog.csdn.net##.blog_container_aside
 blog.csdn.net##.recommend-box
 blog.csdn.net###csdn-toolbar
