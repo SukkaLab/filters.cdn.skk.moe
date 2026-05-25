@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Mon, 25 May 2026 13:43:12 GMT
+! Last modified: Mon, 25 May 2026 16:31:50 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Mon, 25 May 2026 04:10:35 +0000
+!   - Last modified: Mon, 25 May 2026 09:12:51 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Tue, 19 May 2026 15:44:59 +0000
@@ -30,7 +30,7 @@
 !   - Last modified: Sat, 23 May 2026 07:42:27 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
-!   - Last modified: Sat, 23 May 2026 16:11:41 +0000
+!   - Last modified: Mon, 25 May 2026 11:28:31 +0000
 ! --------------------------------------------------------------
 ! uBlock filters https://ublockorigin.pages.dev/filters/filters.min.txt
 *_ad_$media,domain=youtube.com,3p
@@ -9174,6 +9174,8 @@ calgaryherald.com,calgarysun.com,canada.com,canoe.com,driving.ca,edmontonjournal
 pcgamebenchmark.com,pcgamesn.com,pockettactics.com,wargamer.com##+js(trusted-replace-argument, HTMLScriptElement.prototype.setAttribute, 1, , condition, '/error-report|new Promise|;await new|:\[?window|&&window,|void 0\]|location\.href|void 0\|\|window|,window,/')
 autoguide.com,redesigndaily.com,thesimplifydaily.com,upgradedhome.com,upstyledaily.com##+js(set, loadShield, noopFunc)
 ||html-load.com^$script,xhr,domain=golfmonthly.com|pcgamer.com
+||html-load.com^$script,xhr,domain=melaterevancha.com|resultadostris.com
+melaterevancha.com,resultadostris.com##+js(trusted-replace-argument, HTMLScriptElement.prototype.setAttribute, 1, , condition, '/error-report|new Promise|;await new|:\[?window|&&window,|void 0\]|location\.href|void 0\|\|window|,window,/')
 ||html-load.com^$script,xhr,domain=babla.cn|babla.co.id|babla.co.th|babla.gr|babla.no|babla.ru|babla.vn|fxstreet.com|fxstreet.com.tr|fxstreet.de.com|fxstreet.es|fxstreet.fr|fxstreet.hk|fxstreet.hu|fxstreet.it|fxstreet.ru.com|gentside.co.uk|gentside.com|gentside.de|notebookcheck.biz|notebookcheck.com|notebookcheck.info|notebookcheck.it|notebookcheck.net|notebookcheck.nl|notebookcheck.org|notebookcheck.pl|notebookcheck.se|ohmymag.co.uk|ohmymag.com|ohmymag.de|wieistmeineip.at|wieistmeineip.ch|wieistmeineip.de|willyweather.co.uk|willyweather.com|willyweather.com.au|woxikon.bg|woxikon.co|woxikon.co.uk|woxikon.com|woxikon.com.br|woxikon.cl|woxikon.dk|woxikon.de|woxikon.fr|woxikon.es|woxikon.it|woxikon.mx|woxikon.nl|woxikon.pl|woxikon.pt|woxikon.ru|woxikon.se
 ||css-load.com^$domain=ygosu.com|loawa.com|bamgosu.site
 ||css-load.com^$redirect=noopjs,domain=honkailab.com
@@ -9269,6 +9271,9 @@ pcgamebenchmark.com,pcgamesn.com,pockettactics.com,wargamer.com##^script:has-tex
 pcgamebenchmark.com,pcgamesn.com,pockettactics.com,wargamer.com##^script[data-cfasync="false"][nowprocket]
 dodgerblue.com##^script:has-text(error-report.com)
 golfmonthly.com,pcgamer.com##^script:has-text(html-load.com)
+melaterevancha.com,resultadostris.com##^script[onload*="error-report.com"]
+melaterevancha.com,resultadostris.com##^script:has-text(await eval)
+melaterevancha.com,resultadostris.com##^script[data-cfasync="false"][nowprocket]
 interfootball.co.kr,a-ha.io,cboard.net,joongdo.co.kr,viva100.com,maketecheasier.com,tweaksforgeeks.com,m.inven.co.kr,mlbpark.donga.com##+js(rmnt, script, KCgpPT57bGV0IGU)
 bleepingcomputer.com,pravda.com.ua##+js(rmnt, script, Ad-Shield)
 ap7am.com,cinema.com.my,dolldivine.com,giornalone.it,iplocation.net,jamaicajawapos.com,jutarnji.hr,kompasiana.com,mediaindonesia.com,niice-woker.com,pep.ph,slobodnadalmacija.hr,upmedia.mg##+js(rmnt, script, adrecover.com)
@@ -9307,6 +9312,7 @@ anguscountyworld.co.uk,banburyguardian.co.uk,bedfordtoday.co.uk,biggleswadetoday
 aina.lt,alfa.lt,alkas.lt,alytusplius.lt,anyksta.lt,befa.lt,bilis.lt,etaplius.lt,manonamai.lt,mmm.lt,raskakcija.lt,respublika.lt,sekunde.lt,tv3.lt##+js(rmnt, script, html-load.com)
 pcgamebenchmark.com,pcgamesn.com,pockettactics.com,wargamer.com##+js(rmnt, script, ()=>eval)
 golfmonthly.com,pcgamer.com##+js(rmnt, script, html-load.com)
+melaterevancha.com,resultadostris.com##+js(rmnt, script, await eval)
 12thmanrising.com,allucanheat.com,aroundthefoghorn.com,arrowheadaddict.com,badgerofhonor.com,bamahammer.com,beargoggleson.com,beyondtheflag.com,birdswatcher.com,blackandteal.com,blogredmachine.com,bluemanhoop.com,boltbeat.com,bosoxinjection.com,buffalowdown.com,caneswarning.com,catcrave.com,chopchat.com,climbingtalshill.com,cubbiescrib.com,dailyknicks.com,dairylandexpress.com,dawgpounddaily.com,dawindycity.com,dawnofthedawg.com,detroitjockcity.com,dodgersway.com,ebonybird.com,fansided.com,flywareagle.com,gbmwolverine.com,gigemgazette.com,gmenhq.com,hailfloridahail.com,halohangout.com,hardwoodhoudini.com,horseshoeheroes.com,housethathankbuilt.com,huskercorner.com,insidetheiggles.com,jaysjournal.com,justblogbaby.com,kckingdom.com,kingjamesgospel.com,kingsofkauffman.com,lakeshowlife.com,lombardiave.com,mentalfloss.com,motorcitybengals.com,musketfire.com,nflspinzone.com,ninernoise.com,nugglove.com,onechicagocenter.com,phinphanatic.com,pistonpowered.com,predominantlyorange.com,ramblinfan.com,redbirdrants.com,reviewingthebrew.com,riggosrag.com,ripcityproject.com,risingapple.com,rumbunter.com,scarletandgame.com,section215.com,sidelionreport.com,slapthesign.com,sodomojo.com,southsideshowdown.com,stillcurtain.com,stormininnorman.com,stripehype.com,thatballsouttahere.com,thecelticbhoys.com,thejetpress.com,thelandryhat.com,thepewterplank.com,thesmokingcuban.com,thevikingage.com,thunderousintentions.com,undeadwalking.com,valleyofthesuns.com,whodatdish.com,winteriscoming.net,yanksgoyard.com##+js(nostif, [native code], 500)
 12thmanrising.com,allucanheat.com,aroundthefoghorn.com,arrowheadaddict.com,badgerofhonor.com,bamahammer.com,beargoggleson.com,beyondtheflag.com,birdswatcher.com,blackandteal.com,blogredmachine.com,bluemanhoop.com,boltbeat.com,bosoxinjection.com,buffalowdown.com,caneswarning.com,catcrave.com,chopchat.com,climbingtalshill.com,cubbiescrib.com,dailyknicks.com,dairylandexpress.com,dawgpounddaily.com,dawindycity.com,dawnofthedawg.com,detroitjockcity.com,dodgersway.com,ebonybird.com,fansided.com,flywareagle.com,gbmwolverine.com,gigemgazette.com,gmenhq.com,hailfloridahail.com,halohangout.com,hardwoodhoudini.com,horseshoeheroes.com,housethathankbuilt.com,huskercorner.com,insidetheiggles.com,jaysjournal.com,justblogbaby.com,kckingdom.com,kingjamesgospel.com,kingsofkauffman.com,lakeshowlife.com,lombardiave.com,mentalfloss.com,motorcitybengals.com,musketfire.com,nflspinzone.com,ninernoise.com,nugglove.com,onechicagocenter.com,phinphanatic.com,pistonpowered.com,predominantlyorange.com,ramblinfan.com,redbirdrants.com,reviewingthebrew.com,riggosrag.com,ripcityproject.com,risingapple.com,rumbunter.com,scarletandgame.com,section215.com,sidelionreport.com,slapthesign.com,sodomojo.com,southsideshowdown.com,stillcurtain.com,stormininnorman.com,stripehype.com,thatballsouttahere.com,thecelticbhoys.com,thejetpress.com,thelandryhat.com,thepewterplank.com,thesmokingcuban.com,thevikingage.com,thunderousintentions.com,undeadwalking.com,valleyofthesuns.com,whodatdish.com,winteriscoming.net,yanksgoyard.com##+js(trusted-replace-argument, HTMLScriptElement.prototype.setAttribute, 1, , condition, '/error-report|new Promise|;await new|:\[?window|&&window,|void 0\]|location\.href|void 0\|\|window|,window,/')
 ||asset.ad-shield.cc/images$image,3p,redirect=32x32.png
@@ -22119,6 +22125,8 @@ dailymotion.com##+js(set, __NATIVEADS_CANARY__, true)
 dailymotion.com##.WatchingDiscovery__adSection___eLtfR
 ||dmxleo.dailymotion.com/*.m3u8?auth=
 ||dmxleo.dailymotion.com^
+euronews.com>>##+js(set, DMP_ENABLE_ADS, false)
+||dmxleo.dailymotion.com/cdn/manifest/video/*.m3u8?af=*_VMAP_
 ||dmxleo.dailymotion.com/cdn/manifest/video/*?af=*monetization$xhr,1p
 www.parkers.co.uk##.async-hide:style(opacity: 1.0 !important)
 streamflash.sx##+js(trusted-rpnt, script, playerUnlocked = false, playerUnlocked = true)
@@ -37757,3 +37765,4 @@ anikaitv.to##+js(set, console.clear, trueFunc)
 megaplay.buzz##+js(set, devtoolsDetector.launch, noopFunc)
 elektroda.pl##+js(nostif, typeof loadElement)
 enternity.gr##+js(trusted-replace-argument, document.getElementById, 0, json:"header", condition, /^[A-Za-z]{12}$/)
+cografyahocasi.com##+js(acs, document.addEventListener, preventDefault, /^data:text\/javascript/)
