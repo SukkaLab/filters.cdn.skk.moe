@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Mon, 25 May 2026 10:49:54 GMT
+! Last modified: Mon, 25 May 2026 13:43:12 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.4.76
+!   - Version: 2.1.4.77
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -216,6 +216,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||marcuscash.one^
 ||tagmanager.andata.ru^
 ||statlytic.net^
 ||ezoicanalytics.com^
@@ -153484,6 +153485,7 @@ zmail.mtrl.me$image
 /^https?:\/\/(?!assets|script|static)(?:[0-9a-z]{10,13}|[0-9a-z]{6})\.[0-9A-Za-z.\-_]+\/(?=[0-9a-z+\/\-]*[A-Z])[0-9A-Za-z+\/\-]{80,106}$/$match-case,script,~3p
 /^https:\/\/cs\d{3}\.\w+\.com\/cscript\/\d{3}\/[\w\d]+\.js$/$script,3p,match-case
 /.well-known/private-click-measurement
+/hit-track.php
 /wp-content/plugins/jetpack/jetpack_vendor/automattic/woocommerce-analytics/*
 /phenomtrack.min.js$script
 /digibox.gif?c=$image
@@ -160156,6 +160158,8 @@ trendyol-milla.com##+js(set-constant, process.env, '')
 ||sstats.bitdefender.com^$xhr,redirect=noop.txt,~3p,important
 @@||sstats.bitdefender.com^$~3p
 sports.yahoo.com##+js(set-constant, rapidInstance.isModuleTracked, falseFunc)
+sports.yahoo.com##+js(set-constant, rapidInstance.getRapidAttribute, falseFunc)
+sports.yahoo.com##+js(set-constant, rapidInstance.addModuleProgression, noopFunc)
 sports.yahoo.com##+js(set-constant, rapidInstance.addModulesWithViewability, noopFunc)
 sports.yahoo.com##+js(set-constant, YAHOO.i13n, {})
 sports.yahoo.com##+js(set-constant, YAHOO.i13n.Rapid, noopFunc)
