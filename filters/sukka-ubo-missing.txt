@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Tue, 26 May 2026 17:35:18 GMT
+! Last modified: Tue, 26 May 2026 20:27:00 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.4.85
+!   - Version: 2.1.4.87
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -159995,6 +159995,9 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=saturn.de
 @@||metrics.us.playstation.com/b/ss/
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
+@@||cnstrc.com/js/cust/indigo_pAkokG.js$domain=indigo.ca
+@@||onlinestarten.net/assets/*sn1_dvt-prod.js$domain=247sports.com
+@@||onlinestarten.net^$xhr,domain=247sports.com
 pedalparts.co.kr##+js(set-constant, aCounterPageScriptGoodsView, noopFunc)
 @@||cdn.cxense.com/cx.js$domain=gizmodo.jp
 @@||assets.adobedtm.com^$domain=realtor.com
@@ -162326,6 +162329,8 @@ usatoday.com##+js(set, gnt.x.adm, )
 ||googletagmanager.com/gtag/js$important,redirect=google-analytics_analytics.js,script,xhr,domain=redstoneonline.jp
 ||sstats.bitdefender.com^$important,redirect=noop.txt,xhr
 ||metrics.streaks.jp^$redirect=noop.txt,xhr
+/r/?id=$image
+%2Fr%2F%3Fid%3D$image
 .cc.rs6.net/on.jsp$image
 .cc.rs6.net%2Fon.jsp$image
 /a360/public/statistic/*$image
@@ -162535,8 +162540,10 @@ c.crm-em.com$image
 click.email.ancestry.com$image
 e.mail.cnn.com$image
 esputnik.com$image
-/r/?id=$image
-%2Fr%2F%3Fid%3D$image
+postoffice.adobe.com/po-server/link/open$image
+postoffice.adobe.com%2Fpo-server%2Flink%2Fopen$image
+apo-prod.adobe.io/po-server/link/open$image
+apo-prod.adobe.io%2Fpo-server%2Flink%2Fopen$image
 sbs-mkt-stage1-res.adobe-campaign.com$image
 demdex.net/event?d_src=$image
 demdex.net%2Fevent%3Fd_src%3D$image
