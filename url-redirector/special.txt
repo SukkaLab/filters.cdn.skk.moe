@@ -1,0 +1,11 @@
+! Title: [sukka] Special Redirects
+! Last modified: Tue, 26 May 2026 00:29:15 GMT
+! Description: uBlock Origin / AdGuard uritransform rules
+! Homepage: https://github.com/SukkaW/Filters
+! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
+
+! >>>> uBlock Origin
+||vdownload.hembed.com$all,uritransform=/vdownload\.hembed\.com/docs.lucaairport.qzz.io\/https:\/\/vdownload.hembed.com/
+
+! >>>> AdGuard
+||vdownload.hembed.com$all,urltransform=/vdownload\.hembed\.com/docs.lucaairport.qzz.io\/https:\/\/vdownload.hembed.com/
