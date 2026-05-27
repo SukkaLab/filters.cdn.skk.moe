@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Wed, 27 May 2026 13:49:32 GMT
+! Last modified: Wed, 27 May 2026 17:34:24 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.4.88
+!   - Version: 2.1.4.89
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -162311,7 +162311,6 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 @@||blocket.se^*/xtcore.js
 @@||reseguiden.se^*.siteCatalyst.js
 ||acustomizedgift.com^$~xhr
-||glasscoyote.com^
 ||inventorycache.com^$~xhr
 ||oceancloudhosts.com^$~xhr
 ||d21y75miwcfqoq.cloudfront.net/436f3341$image,redirect=noop.txt
@@ -162321,6 +162320,7 @@ usatoday.com##+js(set, gnt.x.adm, )
 ||acustomizedgift.com^$redirect=noop.js,script
 ||fishingtoolsbox.com^$redirect=noop.js,script
 ||fjordsand.com^$redirect=noop.js,script
+||glasscoyote.com^$redirect=noop.js,script
 ||goddesslamps.com^$redirect=noop.js,script
 ||inventorycache.com^$redirect=noop.js,script
 ||kindhush.com^$redirect=noop.js,script
