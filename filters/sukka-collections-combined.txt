@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Wed, 27 May 2026 20:31:12 GMT
+! Last modified: Wed, 27 May 2026 23:38:52 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202605272021
+!   - Version: 202605272321
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 27 May 2026 20:21 UTC
+!   - Last modified: 27 May 2026 23:21 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
@@ -94,7 +94,7 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#english
 ! * 🎫 Ad Removal List for Unusual Ads
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/AdRemovalListForUnusualAds.txt
-!   - Version: 14May2026v1-Beta
+!   - Version: 27May2026v1-Beta
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * ☣️ Anti-Elsagate List
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/Anti-Elsagate%20List.txt
@@ -21405,10 +21405,10 @@ news.sohu.com##.area.footer
 ||dolby.com/globalassets/access/banners^$app=DolbyAccess.exe
 ||dolby.com/contentassets/*_testimonial-$app=DolbyAccess.exe
 ||pc.vibemate.com/surfease/*homepage_banner$app=Lovense_Remote.exe
-||account.aomeitech.com/ini/popup/pa^$app=PartAssist.exe|panotify.exe|amanhlp.exe
+||aomeitech.com/ini/popup/pa^$app=PartAssist.exe|panotify.exe|amanhlp.exe
 ||aomeisoftware.com/popup/pa^$app=PartAssist.exe|panotify.exe|amanhlp.exe
-||aomeisoftware.com/ini/recommend/pa/rec.html^$app=PartAssist.exe
 ||aomeisoftware.com/download/pa/papopup^
+||aomeisoftware.com/ini/recommend/pa^$app=PartAssist.exe
 ||google-analytics.com/collect^$app=MyTuner.Windows.exe
 ||api.mytuner.mobi^$csp=upgrade-insecure-requests
 $csp=upgrade-insecure-requests,app=MyTuner.Windows.exe
