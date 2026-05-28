@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Thu, 28 May 2026 10:34:33 GMT
+! Last modified: Thu, 28 May 2026 14:06:08 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.4.92
+!   - Version: 2.1.4.93
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -153976,8 +153976,9 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||pockettactics.com/cdn-cgi/trace
 ||wargamer.com/cdn-cgi/trace
-wargamer.com##+js(remove-node-text, script, nnAnalytics)
+pockettactics.com,pcgamesn.com,wargamer.com##+js(remove-node-text, script, nnAnalytics)
 ||dtkt.ua/clients/ping
 ||maltadaily.mt/api/ad-track|
 ||citlekci.com.tr/*/sendEventV2|
