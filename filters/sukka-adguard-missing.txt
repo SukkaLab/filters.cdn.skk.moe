@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Fri, 29 May 2026 20:38:56 GMT
+! Last modified: Fri, 29 May 2026 23:43:13 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -20,7 +20,7 @@
 !   - Last modified: Thu, 28 May 2026 15:59:41 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Thu, 28 May 2026 13:12:07 +0000
+!   - Last modified: Fri, 29 May 2026 19:39:00 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
 !   - Last modified: Wed, 27 May 2026 17:43:42 +0000
@@ -31573,15 +31573,15 @@ nontonx.com###rules-nontonx
 embed.wcostream.com##^script:has-text(/google_jobrunner|AdBlock|pubadx|embed\.html/i)
 embed.wcostream.com##+js(rmnt, script, /google_jobrunner|AdBlock|pubadx|embed\.html/i)
 @@||cdn.snigelweb.com/adengine/falixnodes.net/loader.js$script,domain=client.falixnodes.net
-@@||amazon-adsystem.com/bao-csm/aps-comm/aps_csm.js$script,domain=client.falixnodes.net
 @@||adengine.snigelweb.com/falixnodes.net/$script,domain=client.falixnodes.net
+@@||c.amazon-adsystem.com/aax2/apstag.js$script,domain=client.falixnodes.net
+@@||c.amazon-adsystem.com/bao-csm/aps-comm/aps_csm.js$xhr,domain=client.falixnodes.net
 client.falixnodes.net##+js(rpnt, script, /window\.googletag.*?enableServices\(\)\;/s)
 client.falixnodes.net##+js(rpnt, script, /googletag\.pubads\(\)\.addEventListener.*rewardedSlot\)\;\s+\}\);\s+\}/s)
-client.falixnodes.net##+js(rpnt, script, /window\.location\.href \= ('|")\/(please-disable|neptune|disableadblock|yeahblock|yupblock|verypleasedisable)('|")\;/)
-client.falixnodes.net##+js(aeld, error, function, elements, [src])
 client.falixnodes.net##+js(nosiif, /lovelylovely|veryveryplease|click\(\)|MouseEvent|dispatchEvent/)
 client.falixnodes.net##+js(nostif, /lovelylovely|veryveryplease|click\(\)|MouseEvent|dispatchEvent/)
-*$script,redirect-rule=none:5,domain=client.falixnodes.net
+client.falixnodes.net##+js(nostif, ]];if(typeof)
+client.falixnodes.net##+js(nostif, )}}\,5e3)}}}})
 cimanow.cc,freex2line.online##+js(norafif, ++)
 ||rm.freex2line.online/*.js|$domain=cimanow.cc
 ||global.novelpia.com/_nuxt/*.js|$script,replace=/if\(\w\.check_is_ad_free\(\)\)/if(true)/
