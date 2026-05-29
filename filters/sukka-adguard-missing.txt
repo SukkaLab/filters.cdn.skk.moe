@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Fri, 29 May 2026 17:44:27 GMT
+! Last modified: Fri, 29 May 2026 20:38:56 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,13 +8,13 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Fri, 29 May 2026 10:15:36 +0000
+!   - Last modified: Fri, 29 May 2026 14:01:12 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Thu, 28 May 2026 13:09:23 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Thu, 28 May 2026 13:55:30 +0000
+!   - Last modified: Fri, 29 May 2026 13:19:19 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
 !   - Last modified: Thu, 28 May 2026 15:59:41 +0000
@@ -7412,6 +7412,7 @@ buzzheavier.com##+js(aeld, click, removeChild)
 buzzheavier.com###unclear2
 buzzheavier.com##div.mx-auto.text-center > a[href][target="_blank"]
 buzzheavier.com,bzzhr.co,bzzhr.to##+js(acs, setTimeout, decodeURIComponent(escape)
+buzzheavier.com,bzzhr.co,bzzhr.to##+js(rmnt, script, \x)
 akirabox.com,akirabox.to##[href*="nordvpn.net"]
 akirabox.com,akirabox.to##+js(aeld, DOMContentLoaded, open)
 akirabox.com,akirabox.to##+js(nowoif, _blank)
@@ -22960,6 +22961,9 @@ ondebola.com##.solverde-affiliate-banner
 streamcash.to##+js(rmnt, script, /bait/i)
 streamcash.to###preroll-gate
 indoav.com##+js(nowoif)
+cjr.org###interVeil
+cjr.org###interContainer
+cjr.org##html[style="overflow: hidden;"]:style(overflow: auto !important;)
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -28112,8 +28116,6 @@ r.mail.wowvegas.com%2Ftr%2Fop%2F*$image
 *%2Fcmail.bitcasino.io%2F*$image
 /twitter.com/scribe/ibis?$image
 *%2Ftwitter.com%2Fscribe%2Fibis%3F*$image
-||api.x.com/1.1/graphql/error_log.json
-||x.com/i/api/1.1/graphql/user_flow.json
 /tracking.mail.shopee.$image
 *%2Ftracking.mail.shopee.$image
 /windscribe.com/pixel?$image
