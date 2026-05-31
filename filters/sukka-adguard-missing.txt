@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sun, 31 May 2026 11:51:05 GMT
+! Last modified: Sun, 31 May 2026 15:39:34 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,10 +8,10 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sun, 31 May 2026 10:31:23 +0000
+!   - Last modified: Sun, 31 May 2026 12:48:01 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
-!   - Last modified: Sat, 30 May 2026 07:23:54 +0000
+!   - Last modified: Sun, 31 May 2026 12:58:23 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
 !   - Last modified: Fri, 29 May 2026 13:19:19 +0000
@@ -21757,7 +21757,7 @@ condorsoft.co##+js(no-xhr-if, googlesyndication)
 ||poweredby.jads.co/js/jads.js$script,domain=216.219.94.112,redirect=noopjs
 /\.gsmarena\.com\/[0-9]+\.php3/$xhr,1p,domain=gsmarena.com
 /\.gsmarena\.com\/[0-9]+\.[a-z]+\?s?Search=/$xhr,1p,domain=gsmarena.com
-gsmarena.com##+js(aeld, DOMContentLoaded, doubleclick)
+gsmarena.com##+js(aeld, DOMContentLoaded, /doubleclick|offsetHeight/)
 gsmarena.com##+js(remove-cookie, DeviceID)
 remotejobzone.online##+js(no-fetch-if, adsbygoogle)
 cosmicapp.co,hentaicovid.org,sexwebvideo.com##+js(no-fetch-if, adsbygoogle)
@@ -27134,6 +27134,11 @@ top##body > center + .A + .post
 ||duskwander.com^$all
 ||divinex.at^$all
 ||ultraviolence.buzz^$all
+||unic0re.$all
+||unicore.pw^$all
+###hero a[download="Unicore.zip"]
+###download a[download="Unicore.zip"]
+###hero + div.marquee-wrap + section#games + section#features + #download
 ! uBlock filters – Privacy https://ublockorigin.pages.dev/filters/privacy.min.txt
 ||google-analytics.com/analytics.js$script,xhr,redirect=google-analytics_analytics.js:5
 ||google-analytics.com/cx/api.js$script,redirect=google-analytics.com/cx/api.js:5
