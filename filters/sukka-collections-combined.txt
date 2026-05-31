@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Sat, 30 May 2026 23:16:29 GMT
+! Last modified: Sun, 31 May 2026 06:35:36 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202605302301
+!   - Version: 202605310621
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 30 May 2026 23:01 UTC
+!   - Last modified: 31 May 2026 06:21 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
@@ -74,7 +74,7 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * ➗ Actually Legitimate URL Shortener Tool
 !   - URL: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt
-!   - Version: 29May2026v1
+!   - Version: 31May2026v1
 !   - Homepage: https://github.com/DandelionSprout/adfilt/discussions/163
 ! * 🐊 Imgur: Pure Imagery Experience
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/ImgurPureImageryExperience.txt
@@ -82,7 +82,7 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 🎛 Reddit Trash Removal Service
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/RedditTrashRemovalService.txt
-!   - Version: 21May2026v1-Beta
+!   - Version: 30May2026v1-Beta
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 🎓 Wikia: Pure Browsing Experience
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/WikiaPureBrowsingExperience.txt
@@ -90,7 +90,7 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 📱 Staying On The Phone Browser
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/stayingonbrowser/Staying%20On%20The%20Phone%20Browser
-!   - Version: 21May2026v1
+!   - Version: 30May2026v1
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#english
 ! * 🎫 Ad Removal List for Unusual Ads
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/AdRemovalListForUnusualAds.txt
@@ -18505,7 +18505,7 @@ $removeparam=phcursor
 $doc,removeparam=line_uid
 $removeparam=duckai
 $removeparam=/^ref=winstall$/
-$doc,image,removeparam=/^=$/,domain=discord.com|discordapp.net|amazon.*|adressa.no|polarismedia.no
+$doc,image,removeparam=/^=$/,domain=discord.com|discordapp.net|amazon.*|adressa.no|polarismedia.no|userbenchmark.com
 /^http.*[^?]\?$/$doc,removeparam=/^=$/
 $removeparam=slref
 $removeparam=t-src
@@ -20389,6 +20389,7 @@ $doc,removeparam=premiumVisit,domain=fic.fan|fanfictionero.com|ficmania.com|ficb
 ||youtube.com/live/$doc,removeparam=is
 ||donmai.us^$removeparam=z
 ||pcoptimum.ca^$doc,removeparam=moeq
+||userbenchmark.com^$removeparam=redirFrom
 $removeparam=w,domain=files.wordpress.com|store.playstation.com|s-microsoft.com|store-images.microsoft.com|dr.dk|if.com.au
 $removeparam=h,domain=files.wordpress.com|store.playstation.com|s-microsoft.com|store-images.microsoft.com|dr.dk
 $removeparam=width,domain=i-viaplay.com.akamaized.net|media.discordapp.net|tvno.nu
@@ -20455,9 +20456,9 @@ reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion##ul.ho
 reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion##ul.hover.sr-bar.flat-list > li:has(a[href*="/r/random/"])
 reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion##a[id^=SearchDropdown]:has(.icon-popular)
 ||quantcast.mgr.consensu.org$domain=reddit.com|reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion|imgur.com
-||reddit.com/r/conservative$document,domain=~its-a-racist-subreddit.*
-||reddit.com/r/conspiracy^$document,domain=~its-a-racist-subreddit.*
-||reddit.com/r/Republican^$document,domain=~its-a-racist-subreddit.*
+||reddit.com/r/conservative$document,domain=~it_is_a_racist_subreddit.*
+||reddit.com/r/conspiracy^$document,domain=~it_is_a_racist_subreddit.*
+||reddit.com/r/Republican^$document,domain=~it_is_a_racist_subreddit.*
 ||reddit.com/r/JusticeServed^$document
 ||reddit.com/r/antifurry_irl^$document
 ||reddit.com/r/yiffinhell^$document
@@ -20547,13 +20548,14 @@ reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion##div[s
 reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion##div[style^=max-width] > div[class*=" "] > div[class*=" "] > div:nth-of-type(2):last-of-type
 reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion##div[style^="height:"] > div > div[class$=" "][data-redditstyle=false]
 reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion##div:not([class]) > div:only-of-type > div[class$=" "][data-redditstyle=false]
-reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion,~old.reddit.com##.right-sidebar:has(> pdp-right-rail)
-reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion,~old.reddit.com##article:has(> [author-id="t2_g2unu1x5s" i][permalink^="/r/oddlyspecific/" i])
+reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion,~old.reddit.com,~old.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion##.right-sidebar:has(> pdp-right-rail)
+reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion,~old.reddit.com,~old.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion##article:has(> [author-id="t2_g2unu1x5s" i][permalink^="/r/oddlyspecific/" i])
 reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion##search-telemetry-tracker[data-faceplate-tracking-context*=post_id]:remove-attr(view-events)
 reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion##search-telemetry-tracker[data-faceplate-tracking-context*=post_id] a[rpl]:remove-attr(href)
 reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion##search-telemetry-tracker[data-faceplate-tracking-context*=post_id] a[rpl]:remove-attr(class)
 reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion##search-telemetry-tracker[data-faceplate-tracking-context*=post_id] a[rpl] > span:has(path[d^="M18.736 17.464l"])
 reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion##search-telemetry-tracker[data-faceplate-tracking-context*=post_id] a[rpl]:style(color:unset!important;text-decoration-color:unset!important;text-decoration-line:none!important)
+reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion##shreddit-post-text-body div[id$=post-rtjson-content] ul:style(padding-left:8px!important;padding-right:15px!important)
 reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion##.Post:has(a[href="/user/GallowBoob"])
 reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion##.Post:has(a[href="/user/pepsi_next"])
 reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion##.Post:has(a[href="/user/TooShiftyForYou"])
@@ -21126,6 +21128,8 @@ panewslab.com##button[data-grace-area-trigger]
 panewslab.com##div.leading-none ~ div:not([class]):last-of-type
 foodora.*##.bds-c-sticky-banner
 novosti.rs##.mobile-app
+threads.com###has-finished-comet-page + div[class^=__fb-][class*="-mode "]
+zalando.*##div[style="display:contents"]:not([data-trckng-component]):has(> div[style="display:contents"] > div[style^="min-height:"]:last-child:only-of-type)
 @@/jquery.smartbanner.js^
 .smartbanner.js$domain=~mcpedl.com
 ##div[data-test-id$=InterstitialUpsell]
@@ -21164,6 +21168,7 @@ instagram.com##div[class]:first-of-type:not(.html-div) + div.html-div:has(+ div:
 ##.app-branding-card:not(html,body,:empty)
 /pushApp/pushGooglePlay.png^
 /pushApp/pushAppStore.png^
+/app-download-banner/*.js|
 ##a[href*=".app.link/"]
 imgur.com##.AppBanner-text
 imgur.com##.PopOverBannerSmall
