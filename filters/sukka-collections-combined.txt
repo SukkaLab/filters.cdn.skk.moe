@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Sun, 31 May 2026 19:43:44 GMT
+! Last modified: Sun, 31 May 2026 23:31:32 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202605311931
+!   - Version: 202605312321
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 31 May 2026 19:31 UTC
+!   - Last modified: 31 May 2026 23:21 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
@@ -74,7 +74,7 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * ➗ Actually Legitimate URL Shortener Tool
 !   - URL: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt
-!   - Version: 31May2026v1
+!   - Version: 31May2026v2
 !   - Homepage: https://github.com/DandelionSprout/adfilt/discussions/163
 ! * 🐊 Imgur: Pure Imagery Experience
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/ImgurPureImageryExperience.txt
@@ -20390,6 +20390,7 @@ $doc,removeparam=premiumVisit,domain=fic.fan|fanfictionero.com|ficmania.com|ficb
 ||donmai.us^$removeparam=z
 ||pcoptimum.ca^$doc,removeparam=moeq
 ||userbenchmark.com^$removeparam=redirFrom
+ref=libreselfhosted.com$doc,removeparam=ref
 $removeparam=w,domain=files.wordpress.com|store.playstation.com|s-microsoft.com|store-images.microsoft.com|dr.dk|if.com.au
 $removeparam=h,domain=files.wordpress.com|store.playstation.com|s-microsoft.com|store-images.microsoft.com|dr.dk
 $removeparam=width,domain=i-viaplay.com.akamaized.net|media.discordapp.net|tvno.nu
