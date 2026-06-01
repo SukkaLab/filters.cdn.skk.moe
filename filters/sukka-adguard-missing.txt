@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sun, 31 May 2026 23:31:32 GMT
+! Last modified: Mon, 01 Jun 2026 07:23:59 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,10 +8,10 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sun, 31 May 2026 12:48:01 +0000
+!   - Last modified: Mon, 01 Jun 2026 04:27:25 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
-!   - Last modified: Sun, 31 May 2026 12:58:23 +0000
+!   - Last modified: Mon, 01 Jun 2026 03:10:34 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
 !   - Last modified: Fri, 29 May 2026 13:19:19 +0000
@@ -9905,7 +9905,13 @@ relampagomovies.com##+js(acs, document.addEventListener, window.open)
 superflixapi.best,warezcdn.lat##+js(aeld, , pop_)
 llanfairpwllgwyngy.com##+js(acs, document.addEventListener, POP_URL)
 llanfairpwllgwyngy.com##+js(trusted-replace-argument, eval, 0, repl:/"popactive":true/"popactive":false/)
-meuplayeronlinehd.com,multicanaistt.space##+js(acs, addEventListener, _0x)
+@@||meuplayeronlinehd.com^$ghide
+meuplayeronlinehd.com###adblock-overlay
+||multicanaistt.space/pop/pop.js$script
+||cdn.jsdelivr.net/npm/disable-devtool$script,domain=myapiplay.top
+myapiplay.top###popup-overlay
+meuplayeronlinehd.com##+js(ra, style, [style*="z-index"], stay)
+meuplayeronlinehd.com,multicanaistt.space##+js(aeld, load, detect)
 steamseries88.com##+js(rpnt, script, let playerType, 'window.addEventListener("load",()=>{if(typeof playMovie==="function"){playMovie()}});let playerType')
 isgfrm.com##+js(acs, document.createElement, .offsetHeight)
 isgfrm.com##+js(rmnt, script, /adbl|RegExp/i)
@@ -22655,13 +22661,6 @@ loverugbyleague.com,planetrugby.com##article.lg\:my-0.w-full.h-auto.my-5.mx-auto
 streamix.so##+js(nowoif)
 musiclutter.xyz##+js(rmnt, script, /adbl/i)
 eee1.lat,netcinebs.lat##+js(set, HTMLImageElement.prototype.onerror, undefined)
-@@||meuplayeronlinehd.com^$ghide
-meuplayeronlinehd.com##+js(nowoif)
-meuplayeronlinehd.com###adblock-overlay
-||multicanaistt.space/pop/pop.js$script
-||cdn.jsdelivr.net/npm/disable-devtool$script,domain=myapiplay.top
-myapiplay.top###popup-overlay
-meuplayeronlinehd.com##+js(ra, style, [style*="z-index"], stay)
 freedownload.flash-files.com##+js(rmnt, script, location)
 fitnesstipz.com##+js(noeval-if, ads)
 fitnesstipz.com##.adblock_title
@@ -22982,6 +22981,12 @@ fyxxr.to##.block-video > .table
 fyxxr.to##[href^="https://go.mavrtracktor.com/"]
 fyxxr.to##[href^="https://seduced.com/tour"]
 ||watchporn.to/banners/
+@@||airlive.net^$ghide
+airlive.net##div[id^="airli-"] > .adsbygoogle
+airlive.net##.custom-html-widget.textwidget > .adsbygoogle
+@@||athlete-insurance.com^$ghide
+athlete-insurance.com##body > div[style="padding:15px 0;background:#f8f9fa;border-bottom:1px solid #e9ecef;min-height:120px;width:100%;display:flex;align-items:center;justify-content:center;overflow:visible;"]
+athlete-insurance.com##.text-center.sidebar-card:has(i[class*="fa-ad"])
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -27139,6 +27144,8 @@ top##body > center + .A + .post
 ###hero a[download="Unicore.zip"]
 ###download a[download="Unicore.zip"]
 ###hero + div.marquee-wrap + section#games + section#features + #download
+||robtips50kj.blogspot.com^$all
+||checkmyapp.store^$all
 ! uBlock filters – Privacy https://ublockorigin.pages.dev/filters/privacy.min.txt
 ||google-analytics.com/analytics.js$script,xhr,redirect=google-analytics_analytics.js:5
 ||google-analytics.com/cx/api.js$script,redirect=google-analytics.com/cx/api.js:5
