@@ -1,5 +1,5 @@
 ! Title: [sukka] Special Redirects
-! Last modified: Mon, 01 Jun 2026 18:55:13 GMT
+! Last modified: Mon, 01 Jun 2026 19:10:01 GMT
 ! Description: uBlock Origin / AdGuard uritransform rules
 ! Homepage: https://github.com/SukkaW/Filters
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -10,6 +10,7 @@
 ||wikidot.com/local--files/$all,uritransform=/([^\/]+)\.wikidot\.com\/local--files\//docs.lucaairport.qzz.io\/https\/$1.wikidot.com\/local--files\//
 ||cdn.scpwiki.com$all,uritransform=/cdn\.scpwiki\.com/docs.lucaairport.qzz.io\/https\/cdn.scpwiki.com/
 ||scp-wiki-cdn.nyc3.cdn.digitaloceanspaces.com$all,uritransform=/scp-wiki-cdn\.nyc3\.cdn\.digitaloceanspaces\.com/docs.lucaairport.qzz.io\/https\/scp-wiki-cdn.nyc3.cdn.digitaloceanspaces.com/
+||www.wikidot.com/userkarma.php$all,uritransform=/www\.wikidot\.com\/userkarma\.php/docs.lucaairport.qzz.io\/https\/www.wikidot.com\/userkarma.php/
 
 ! >>>> AdGuard
 ||vdownload.hembed.com$all,urltransform=/vdownload\.hembed\.com/docs.lucaairport.qzz.io\/https\/vdownload.hembed.com/
@@ -17,3 +18,4 @@
 ||wikidot.com/local--files/$all,urltransform=/([^\/]+)\.wikidot\.com\/local--files\//docs.lucaairport.qzz.io\/https\/$1.wikidot.com\/local--files\//
 ||cdn.scpwiki.com$all,urltransform=/cdn\.scpwiki\.com/docs.lucaairport.qzz.io\/https\/cdn.scpwiki.com/
 ||scp-wiki-cdn.nyc3.cdn.digitaloceanspaces.com$all,urltransform=/scp-wiki-cdn\.nyc3\.cdn\.digitaloceanspaces\.com/docs.lucaairport.qzz.io\/https\/scp-wiki-cdn.nyc3.cdn.digitaloceanspaces.com/
+||www.wikidot.com/userkarma.php$all,urltransform=/www\.wikidot\.com\/userkarma\.php/docs.lucaairport.qzz.io\/https\/www.wikidot.com\/userkarma.php/
