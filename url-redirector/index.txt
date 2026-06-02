@@ -1,11 +1,11 @@
 ! Title: [sukka] URL Redirector
-! Last modified: Mon, 01 Jun 2026 19:10:01 GMT
+! Last modified: Tue, 02 Jun 2026 09:04:07 GMT
 ! Description: uBlock Origin / AdGuard uritransform rules
 ! Homepage: https://github.com/SukkaW/Filters
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
 
 ! >>>> uBlock Origin
-||necolas.github.io/normalize.css/*/normalize.css$all,uritransform=/necolas\.github\.io\/normalize\.css\/((?:\d+\.)+\d)\/normalize\.css/cdn.jsdelivr.net\/npm\/normalize.css@$1\/normalize.css/
+||necolas.github.io/normalize.css/*/normalize.css$all,uritransform=/necolas\.github\.io\/normalize\.css\/((?:\d+\.)+\d+)\/normalize\.css/cdn.jsdelivr.net\/npm\/normalize.css@$1\/normalize.css/
 ||necolas.github.io/normalize.css/latest/normalize.css$all,uritransform=/necolas\.github\.io\/normalize\.css\/latest\/normalize\.css/cdn.jsdelivr.net\/npm\/normalize.css@latest\/normalize.css/
 ://gravatar.com/avatar/$all,uritransform=/gravatar\.com/secure.gravatar.com/
 ||0.gravatar.com/avatar/$all,uritransform=/0\.gravatar\.com/secure.gravatar.com/
@@ -18,21 +18,31 @@
 ||en.gravatar.com/avatar/$all,uritransform=/en\.gravatar\.com/secure.gravatar.com/
 ||ajax.googleapis.com/ajax/libs/jquery$all,uritransform=/ajax\.googleapis\.com\/ajax\/libs\/jquery\/(\d+)(?:\.\d+)+\//cdn.jsdelivr.net\/npm\/jquery@$1\/dist\//
 ||ajax.googleapis.com/ajax/libs/bootstrap$all,uritransform=/ajax\.googleapis\.com\/ajax\/libs\/bootstrap\/(\d+)(?:\.\d+)+\//cdn.jsdelivr.net\/npm\/bootstrap@$1\/dist\//
-||bootstrapcdn.com/bootstrap/$all,uritransform=/([^\/]+)\.bootstrapcdn\.com\/bootstrap\/((?:\d+\.)+\d)\//cdn.jsdelivr.net\/npm\/bootstrap@$2\/dist\//
+||ajax.googleapis.com/ajax/libs/d3js/$all,uritransform=/ajax\.googleapis\.com\/ajax\/libs\/d3js\/((?:\d+\.)+\d+)\//cdn.jsdelivr.net\/npm\/d3@$1\/dist\//
+||ajax.googleapis.com/ajax/libs/hammerjs/$all,uritransform=/ajax\.googleapis\.com\/ajax\/libs\/hammerjs\/((?:\d+\.)+\d+)\//cdn.jsdelivr.net\/npm\/hammerjs@$1\//
+||ajax.googleapis.com/ajax/libs/indefinite-observable/$all,uritransform=/ajax\.googleapis\.com\/ajax\/libs\/indefinite-observable\/((?:\d+\.)+\d+)\//cdn.jsdelivr.net\/npm\/indefinite-observable@$1\/dist\//
+||ajax.googleapis.com/ajax/libs/jqueryui/*.js$all,uritransform=/ajax\.googleapis\.com\/ajax\/libs\/jqueryui\/((?:\d+\.)+\d+)\//cdn.jsdelivr.net\/npm\/jquery-ui-dist@$1\//
+||ajax.googleapis.com/ajax/libs/shaka-player/$all,uritransform=/ajax\.googleapis\.com\/ajax\/libs\/shaka-player\/((?:\d+\.)+\d+)\//cdn.jsdelivr.net\/npm\/shaka-player@$1\/dist\//
+||ajax.googleapis.com/ajax/libs/spf/$all,uritransform=/ajax\.googleapis\.com\/ajax\/libs\/spf\/((?:\d+\.)+\d+)\//cdn.jsdelivr.net\/npm\/spf@$1\/dist\//
+||ajax.googleapis.com/ajax/libs/swfobject/2.1/$all,uritransform=/ajax\.googleapis\.com\/ajax\/libs\/swfobject\/2\.1\//cdn.jsdelivr.net\/gh\/swfobject\/swfobject@2.1\//
+||ajax.googleapis.com/ajax/libs/swfobject/2.2/$all,uritransform=/ajax\.googleapis\.com\/ajax\/libs\/swfobject\/2\.2\//cdn.jsdelivr.net\/gh\/swfobject\/swfobject@2.2\//
+||ajax.googleapis.com/ajax/libs/threejs/$all,uritransform=/https?:\/\/ajax\.googleapis\.com\/ajax\/libs\/threejs\/r(\d+)\/(.+)/https:\/\/cdn.jsdelivr.net\/npm\/three@0.$1.0\/build\/$2/
+||ajax.googleapis.com/ajax/libs/webfont/*/webfont.js$all,uritransform=/ajax\.googleapis\.com\/ajax\/libs\/webfont\/((?:\d+\.)+\d+)\/webfont\.js/cdn.jsdelivr.net\/npm\/webfontloader@$1\/webfontloader.js/
+||bootstrapcdn.com/bootstrap/$all,uritransform=/([^\/]+)\.bootstrapcdn\.com\/bootstrap\/((?:\d+\.)+\d+)\//cdn.jsdelivr.net\/npm\/bootstrap@$2\/dist\//
 ||bootstrapcdn.com/font-awesome/$all,uritransform=/([^\/]+)\.bootstrapcdn\.com\/font-awesome\/(\d+)(?:\.\d+)+\//cdn.jsdelivr.net\/npm\/font-awesome@$2\//
-||use.fontawesome.com/releases/v5$all,uritransform=/use\.fontawesome\.com\/releases\/v((?:\d+\.)+\d)\//cdn.jsdelivr.net\/npm\/@fortawesome\/fontawesome-free@$1\//
-||use.fontawesome.com/releases/v6$all,uritransform=/use\.fontawesome\.com\/releases\/v((?:\d+\.)+\d)\//cdn.jsdelivr.net\/npm\/@fortawesome\/fontawesome-free@$1\//
-||use.fontawesome.com/releases/v7$all,uritransform=/use\.fontawesome\.com\/releases\/v((?:\d+\.)+\d)\//cdn.jsdelivr.net\/npm\/@fortawesome\/fontawesome-free@$1\//
-||use.fontawesome.com/releases/v4$all,uritransform=/use\.fontawesome\.com\/releases\/v((?:\d+\.)+\d)\/css\/font-awesome-css\.min\.css/cdn.jsdelivr.net\/npm\/font-awesome@$1\/css\/font-awesome.min.css/
-||use.fontawesome.com/releases/v4$all,uritransform=/use\.fontawesome\.com\/releases\/v((?:\d+\.)+\d)\/fonts\//cdn.jsdelivr.net\/npm\/font-awesome@$1\/fonts\//
-||code.jquery.com/jquery-*.slim.min.js$all,uritransform=/code\.jquery\.com\/jquery-((?:\d+\.)+\d)\.slim\.min\.js/cdn.jsdelivr.net\/npm\/jquery@$1\/dist\/jquery.slim.min.js/,domain=~ui.com
-||code.jquery.com/jquery-*.min.js$all,uritransform=/code\.jquery\.com\/jquery-((?:\d+\.)+\d)\.min\.js/cdn.jsdelivr.net\/npm\/jquery@$1\/dist\/jquery.min.js/,domain=~ui.com
+||use.fontawesome.com/releases/v5$all,uritransform=/use\.fontawesome\.com\/releases\/v((?:\d+\.)+\d+)\//cdn.jsdelivr.net\/npm\/@fortawesome\/fontawesome-free@$1\//
+||use.fontawesome.com/releases/v6$all,uritransform=/use\.fontawesome\.com\/releases\/v((?:\d+\.)+\d+)\//cdn.jsdelivr.net\/npm\/@fortawesome\/fontawesome-free@$1\//
+||use.fontawesome.com/releases/v7$all,uritransform=/use\.fontawesome\.com\/releases\/v((?:\d+\.)+\d+)\//cdn.jsdelivr.net\/npm\/@fortawesome\/fontawesome-free@$1\//
+||use.fontawesome.com/releases/v4$all,uritransform=/use\.fontawesome\.com\/releases\/v((?:\d+\.)+\d+)\/css\/font-awesome-css\.min\.css/cdn.jsdelivr.net\/npm\/font-awesome@$1\/css\/font-awesome.min.css/
+||use.fontawesome.com/releases/v4$all,uritransform=/use\.fontawesome\.com\/releases\/v((?:\d+\.)+\d+)\/fonts\//cdn.jsdelivr.net\/npm\/font-awesome@$1\/fonts\//
+||code.jquery.com/jquery-*.slim.min.js$all,uritransform=/code\.jquery\.com\/jquery-((?:\d+\.)+\d+)\.slim\.min\.js/cdn.jsdelivr.net\/npm\/jquery@$1\/dist\/jquery.slim.min.js/,domain=~ui.com
+||code.jquery.com/jquery-*.min.js$all,uritransform=/code\.jquery\.com\/jquery-((?:\d+\.)+\d+)\.min\.js/cdn.jsdelivr.net\/npm\/jquery@$1\/dist\/jquery.min.js/,domain=~ui.com
 ||code.jquery.com/ui/*/jquery-ui.min.js$all,uritransform=/code\.jquery\.com\/ui\/(\d+)(?:\.\d+)+\/jquery-ui\.min\.js/cdn.jsdelivr.net\/npm\/jquery-ui@$1\/dist\/jquery-ui.min.js/,domain=~ui.com
 ||sigma9.scpwikicn.com$all,uritransform=/sigma9\.scpwikicn\.com/cdn.jsdelivr.net\/gh\/SCP-CN-Tech\/sigma9@gh-pages/
 ||bhl.scpwikicn.com$all,uritransform=/bhl\.scpwikicn\.com/cdn.jsdelivr.net\/gh\/SCP-CN-Tech\/Black-Highlighter@gh-pages/
 
 ! >>>> AdGuard
-||necolas.github.io/normalize.css/*/normalize.css$all,urltransform=/necolas\.github\.io\/normalize\.css\/((?:\d+\.)+\d)\/normalize\.css/cdn.jsdelivr.net\/npm\/normalize.css@$1\/normalize.css/
+||necolas.github.io/normalize.css/*/normalize.css$all,urltransform=/necolas\.github\.io\/normalize\.css\/((?:\d+\.)+\d+)\/normalize\.css/cdn.jsdelivr.net\/npm\/normalize.css@$1\/normalize.css/
 ||necolas.github.io/normalize.css/latest/normalize.css$all,urltransform=/necolas\.github\.io\/normalize\.css\/latest\/normalize\.css/cdn.jsdelivr.net\/npm\/normalize.css@latest\/normalize.css/
 ://gravatar.com/avatar/$all,urltransform=/gravatar\.com/secure.gravatar.com/
 ||0.gravatar.com/avatar/$all,urltransform=/0\.gravatar\.com/secure.gravatar.com/
@@ -45,15 +55,25 @@
 ||en.gravatar.com/avatar/$all,urltransform=/en\.gravatar\.com/secure.gravatar.com/
 ||ajax.googleapis.com/ajax/libs/jquery$all,urltransform=/ajax\.googleapis\.com\/ajax\/libs\/jquery\/(\d+)(?:\.\d+)+\//cdn.jsdelivr.net\/npm\/jquery@$1\/dist\//
 ||ajax.googleapis.com/ajax/libs/bootstrap$all,urltransform=/ajax\.googleapis\.com\/ajax\/libs\/bootstrap\/(\d+)(?:\.\d+)+\//cdn.jsdelivr.net\/npm\/bootstrap@$1\/dist\//
-||bootstrapcdn.com/bootstrap/$all,urltransform=/([^\/]+)\.bootstrapcdn\.com\/bootstrap\/((?:\d+\.)+\d)\//cdn.jsdelivr.net\/npm\/bootstrap@$2\/dist\//
+||ajax.googleapis.com/ajax/libs/d3js/$all,urltransform=/ajax\.googleapis\.com\/ajax\/libs\/d3js\/((?:\d+\.)+\d+)\//cdn.jsdelivr.net\/npm\/d3@$1\/dist\//
+||ajax.googleapis.com/ajax/libs/hammerjs/$all,urltransform=/ajax\.googleapis\.com\/ajax\/libs\/hammerjs\/((?:\d+\.)+\d+)\//cdn.jsdelivr.net\/npm\/hammerjs@$1\//
+||ajax.googleapis.com/ajax/libs/indefinite-observable/$all,urltransform=/ajax\.googleapis\.com\/ajax\/libs\/indefinite-observable\/((?:\d+\.)+\d+)\//cdn.jsdelivr.net\/npm\/indefinite-observable@$1\/dist\//
+||ajax.googleapis.com/ajax/libs/jqueryui/*.js$all,urltransform=/ajax\.googleapis\.com\/ajax\/libs\/jqueryui\/((?:\d+\.)+\d+)\//cdn.jsdelivr.net\/npm\/jquery-ui-dist@$1\//
+||ajax.googleapis.com/ajax/libs/shaka-player/$all,urltransform=/ajax\.googleapis\.com\/ajax\/libs\/shaka-player\/((?:\d+\.)+\d+)\//cdn.jsdelivr.net\/npm\/shaka-player@$1\/dist\//
+||ajax.googleapis.com/ajax/libs/spf/$all,urltransform=/ajax\.googleapis\.com\/ajax\/libs\/spf\/((?:\d+\.)+\d+)\//cdn.jsdelivr.net\/npm\/spf@$1\/dist\//
+||ajax.googleapis.com/ajax/libs/swfobject/2.1/$all,urltransform=/ajax\.googleapis\.com\/ajax\/libs\/swfobject\/2\.1\//cdn.jsdelivr.net\/gh\/swfobject\/swfobject@2.1\//
+||ajax.googleapis.com/ajax/libs/swfobject/2.2/$all,urltransform=/ajax\.googleapis\.com\/ajax\/libs\/swfobject\/2\.2\//cdn.jsdelivr.net\/gh\/swfobject\/swfobject@2.2\//
+||ajax.googleapis.com/ajax/libs/threejs/$all,urltransform=/https?:\/\/ajax\.googleapis\.com\/ajax\/libs\/threejs\/r(\d+)\/(.+)/https:\/\/cdn.jsdelivr.net\/npm\/three@0.$1.0\/build\/$2/
+||ajax.googleapis.com/ajax/libs/webfont/*/webfont.js$all,urltransform=/ajax\.googleapis\.com\/ajax\/libs\/webfont\/((?:\d+\.)+\d+)\/webfont\.js/cdn.jsdelivr.net\/npm\/webfontloader@$1\/webfontloader.js/
+||bootstrapcdn.com/bootstrap/$all,urltransform=/([^\/]+)\.bootstrapcdn\.com\/bootstrap\/((?:\d+\.)+\d+)\//cdn.jsdelivr.net\/npm\/bootstrap@$2\/dist\//
 ||bootstrapcdn.com/font-awesome/$all,urltransform=/([^\/]+)\.bootstrapcdn\.com\/font-awesome\/(\d+)(?:\.\d+)+\//cdn.jsdelivr.net\/npm\/font-awesome@$2\//
-||use.fontawesome.com/releases/v5$all,urltransform=/use\.fontawesome\.com\/releases\/v((?:\d+\.)+\d)\//cdn.jsdelivr.net\/npm\/@fortawesome\/fontawesome-free@$1\//
-||use.fontawesome.com/releases/v6$all,urltransform=/use\.fontawesome\.com\/releases\/v((?:\d+\.)+\d)\//cdn.jsdelivr.net\/npm\/@fortawesome\/fontawesome-free@$1\//
-||use.fontawesome.com/releases/v7$all,urltransform=/use\.fontawesome\.com\/releases\/v((?:\d+\.)+\d)\//cdn.jsdelivr.net\/npm\/@fortawesome\/fontawesome-free@$1\//
-||use.fontawesome.com/releases/v4$all,urltransform=/use\.fontawesome\.com\/releases\/v((?:\d+\.)+\d)\/css\/font-awesome-css\.min\.css/cdn.jsdelivr.net\/npm\/font-awesome@$1\/css\/font-awesome.min.css/
-||use.fontawesome.com/releases/v4$all,urltransform=/use\.fontawesome\.com\/releases\/v((?:\d+\.)+\d)\/fonts\//cdn.jsdelivr.net\/npm\/font-awesome@$1\/fonts\//
-||code.jquery.com/jquery-*.slim.min.js$all,urltransform=/code\.jquery\.com\/jquery-((?:\d+\.)+\d)\.slim\.min\.js/cdn.jsdelivr.net\/npm\/jquery@$1\/dist\/jquery.slim.min.js/,domain=~ui.com
-||code.jquery.com/jquery-*.min.js$all,urltransform=/code\.jquery\.com\/jquery-((?:\d+\.)+\d)\.min\.js/cdn.jsdelivr.net\/npm\/jquery@$1\/dist\/jquery.min.js/,domain=~ui.com
+||use.fontawesome.com/releases/v5$all,urltransform=/use\.fontawesome\.com\/releases\/v((?:\d+\.)+\d+)\//cdn.jsdelivr.net\/npm\/@fortawesome\/fontawesome-free@$1\//
+||use.fontawesome.com/releases/v6$all,urltransform=/use\.fontawesome\.com\/releases\/v((?:\d+\.)+\d+)\//cdn.jsdelivr.net\/npm\/@fortawesome\/fontawesome-free@$1\//
+||use.fontawesome.com/releases/v7$all,urltransform=/use\.fontawesome\.com\/releases\/v((?:\d+\.)+\d+)\//cdn.jsdelivr.net\/npm\/@fortawesome\/fontawesome-free@$1\//
+||use.fontawesome.com/releases/v4$all,urltransform=/use\.fontawesome\.com\/releases\/v((?:\d+\.)+\d+)\/css\/font-awesome-css\.min\.css/cdn.jsdelivr.net\/npm\/font-awesome@$1\/css\/font-awesome.min.css/
+||use.fontawesome.com/releases/v4$all,urltransform=/use\.fontawesome\.com\/releases\/v((?:\d+\.)+\d+)\/fonts\//cdn.jsdelivr.net\/npm\/font-awesome@$1\/fonts\//
+||code.jquery.com/jquery-*.slim.min.js$all,urltransform=/code\.jquery\.com\/jquery-((?:\d+\.)+\d+)\.slim\.min\.js/cdn.jsdelivr.net\/npm\/jquery@$1\/dist\/jquery.slim.min.js/,domain=~ui.com
+||code.jquery.com/jquery-*.min.js$all,urltransform=/code\.jquery\.com\/jquery-((?:\d+\.)+\d+)\.min\.js/cdn.jsdelivr.net\/npm\/jquery@$1\/dist\/jquery.min.js/,domain=~ui.com
 ||code.jquery.com/ui/*/jquery-ui.min.js$all,urltransform=/code\.jquery\.com\/ui\/(\d+)(?:\.\d+)+\/jquery-ui\.min\.js/cdn.jsdelivr.net\/npm\/jquery-ui@$1\/dist\/jquery-ui.min.js/,domain=~ui.com
 ||sigma9.scpwikicn.com$all,urltransform=/sigma9\.scpwikicn\.com/cdn.jsdelivr.net\/gh\/SCP-CN-Tech\/sigma9@gh-pages/
 ||bhl.scpwikicn.com$all,urltransform=/bhl\.scpwikicn\.com/cdn.jsdelivr.net\/gh\/SCP-CN-Tech\/Black-Highlighter@gh-pages/
