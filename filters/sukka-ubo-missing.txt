@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Mon, 01 Jun 2026 23:44:14 GMT
+! Last modified: Tue, 02 Jun 2026 06:58:52 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.5.7
+!   - Version: 2.1.5.10
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -55042,6 +55042,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||countly.
 ||countly-
 |piwik.
+||stats.peachify.top^
 ||stats.index.hr^
 ||feast-events.guardianapis.com^
 ||analytics.pingaja.com^
@@ -153979,6 +153980,7 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||ader.naver.com^$domain=~search.naver.com,xhr
 ||songlyrics.com/js/um.js
 ||songlyrics.com/js/visits.js
 ||cdn.theconversation.com/static/tc/gtm_data_layer-*.js
@@ -162336,6 +162338,7 @@ usatoday.com##+js(set, gnt.x.adm, )
 ||acustomizedgift.com^$redirect=noop.js,script
 ||fishingtoolsbox.com^$redirect=noop.js,script
 ||fjordsand.com^$redirect=noop.js,script
+||fontserif.com^$redirect=noop.js,script
 ||glasscoyote.com^$redirect=noop.js,script
 ||goddesslamps.com^$redirect=noop.js,script
 ||inventorycache.com^$redirect=noop.js,script
