@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Tue, 02 Jun 2026 21:25:18 GMT
+! Last modified: Wed, 03 Jun 2026 00:02:39 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,13 +8,13 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Tue, 02 Jun 2026 15:01:41 +0000
+!   - Last modified: Tue, 02 Jun 2026 17:11:15 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Mon, 01 Jun 2026 11:50:30 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Tue, 02 Jun 2026 08:46:24 +0000
+!   - Last modified: Tue, 02 Jun 2026 17:27:01 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
 !   - Last modified: Tue, 02 Jun 2026 02:43:32 +0000
@@ -22998,6 +22998,7 @@ athlete-insurance.com##body > div[style="padding:15px 0;background:#f8f9fa;borde
 athlete-insurance.com##.text-center.sidebar-card:has(i[class*="fa-ad"])
 forums.redflagdeals.com##.sponsored-offer
 forums.redflagdeals.com##.ad_leaderboard_large
+jagledam.com##+js(rmnt, script, offsetHeight)
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -28044,7 +28045,6 @@ advocate-news.com,akronnewsreporter.com,bocopreps.com,bostonherald.com,broomfiel
 pitchfork.com##+js(href-sanitizer, a[href^="https://cna.st/"][data-offer-url^="https://"], [data-offer-url])
 ||vpnmentor.com/jssdk/track/
 vpnmentor.com##+js(cookie-remover, /_alooma/)
-||torrentfreak.com/js/script.js
 ||jiosaavn.com/stats.php^
 /\/[a-z]{8}\.js\?st=[0-9A-Z]{6,8}$/$script,1p,strict3p,match-case
 ||fundingchoicesmessages.google.com/i/$script,domain=globo.com,important
