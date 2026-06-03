@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Wed, 03 Jun 2026 00:02:39 GMT
+! Last modified: Wed, 03 Jun 2026 07:15:10 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,26 +8,26 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Tue, 02 Jun 2026 17:11:15 +0000
+!   - Last modified: Wed, 03 Jun 2026 04:50:05 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Mon, 01 Jun 2026 11:50:30 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Tue, 02 Jun 2026 17:27:01 +0000
+!   - Last modified: Wed, 03 Jun 2026 01:02:25 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
 !   - Last modified: Tue, 02 Jun 2026 02:43:32 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Tue, 02 Jun 2026 03:01:32 +0000
+!   - Last modified: Wed, 03 Jun 2026 01:02:25 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
 !   - Last modified: Wed, 27 May 2026 17:43:42 +0000
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Tue, 02 Jun 2026 08:57:26 +0000
+!   - Last modified: Wed, 03 Jun 2026 03:17:58 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
 !   - Last modified: Tue, 02 Jun 2026 02:48:53 +0000
@@ -9795,6 +9795,8 @@ kuyhaa.me##+js(acs, document.addEventListener, window.open)
 ||kuyhaa.me/pmbut.js
 ||kuyhaa.me/*.php
 map.naver.com##+js(json-edit-xhr-response, .layers.*[?.metadata.name=="POI_Ads"], propsToMatch, /PCWeb_Real.json)
+pcmap.place.naver.com##+js(rpnt, script, document.write, window.__APOLLO_STATE__=JSON.parse(JSON.stringify(window.__APOLLO_STATE__));document.write)
+pcmap.place.naver.com##+js(json-edit, .*[?.adId])
 aagag.com##+js(no-xhr-if, googlesyndication)
 shahied4u.me##+js(rmnt, script, /googlesyndication|adblock|keydown|popundersPerIP/i)
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=player.pl
@@ -11450,7 +11452,7 @@ freemagazines.top##+js(nostif, showModal)
 freemagazines.top##+js(acs, eval, replace)
 freemagazines.top##+js(rmnt, script, var Data)
 freemagazines.top##+js(no-xhr-if, /doubleclick|googlesyndication/)
-freemagazines.top##+js(aeld, DOMContentLoaded, atob)
+freemagazines.top##+js(aeld, DOMContentLoaded, /atob|overlay/)
 *$xhr,redirect-rule=nooptext,domain=freemagazines.top
 dl-protect.*##+js(nowoif)
 cryptowin.io##+js(acs, document.getElementById, 'body')
@@ -27643,6 +27645,7 @@ arstechnica.com,dermnetnz.org##.gsc-webResult a[data-cturl]:remove-attr(/^data-c
 /shopifycloud/media-analytics/v*/analytics.js
 www.youtube.com##+js(no-xhr-if, /\/api\/stats\/atr\?.+?&rt=\d+\.\d+.+?&volume=\d+&cbr=.+?&fexp=v1%[-%0-9C]{300\,}&.+?&muted=\d(&vis=3)?&docid=/ method:POST)
 /^https:\/\/(www\.)?[a-z0-9]+\.[a-z]+(\.[a-z]+)?\/[a-z0-9]{4,8}\/$/$script,1p,match-case
+@@/jsi18n/|$script,1p
 ||petametrics.com^$~script
 ||petametrics.com/*/__activity.
 ||paytr.com/securemetric/
@@ -32049,6 +32052,8 @@ tirerack.com##+js(trusted-click-element, #meru-cm button.meru-cc__bn[aria-label=
 handyhuellen.de,smartphonehoesjes.nl,ploonk.fr##+js(trusted-set-local-storage-item, mage_consent, '{"timestamp":$now$,"data":{"functional":true,"marketing":false}}')
 ispazio.net##+js(trusted-set-cookie, isp_consent, '{"v":1,"ts":$now$,"f":0,"e":0,"m":0,"a":0}')
 clubic.com##+js(trusted-click-element, .didomi-continue-without-agreeing)
+garuda-indonesia.com##+js(trusted-set-cookie, consent:cookie, '{"essentialCookies":true,"marketingCookies":false,"analyticCookies":false,"consentStatus":"Rejected","id":""}', , , domain, .garuda-indonesia.com)
+garuda-indonesia.com##+js(set-local-storage-item, cookies, agree)
 dailymail.co.uk,dailymail.com##+js(trusted-click-element, div[data-project="mol-fe-cmp"] button[class*="consent"]:not([class*="reject"]))
 1001games.com,1001hry.cz,1001jeux.fr,1001jocuri.ro,1001jogos.com.br,1001jogos.pt,1001pelit.com,1001spiele.de,auth.hbomax.com,elkspel.nl,gamespot.com,giochixl.it,glamour.com,grajteraz.pl,isladejuegos.com,jatekokxl.hu,mtvuutiset.fi,paixnidiaxl.gr,pushsquare.com,spelo.se,spillespill.no,spilxl.dk,thejournal.ie,thetrainline.com,vkmag.com,zdnet.com##+js(trusted-set-cookie, OptanonAlertBoxClosed, $currentDate$, 1year)
 evaair.com##+js(trusted-set-cookie, _EVAcookieaccept, Y, 1year)
