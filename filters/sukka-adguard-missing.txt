@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Thu, 04 Jun 2026 20:26:17 GMT
+! Last modified: Thu, 04 Jun 2026 23:39:01 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Thu, 04 Jun 2026 15:23:41 +0000
+!   - Last modified: Thu, 04 Jun 2026 18:07:24 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Thu, 04 Jun 2026 16:07:37 +0000
@@ -7379,6 +7379,7 @@ datanodes.to##div[class] > center > a[href][rel="nofollow"][target="_blank"]
 datanodes.to##+js(aeld, click, pop)
 datanodes.to##+js(acs, String.fromCharCode, atob)
 datanodes.to##+js(aeld, click, appendChild)
+datanodes.to##+js(rmnt, script, /\\x|_blank/)
 ||dohggte.com^
 ||loadingfreerar.top^$all
 vikingf1le.us.to##+js(nowoif, zigi_tag_id)
@@ -23019,6 +23020,7 @@ osmhelper.com##+js(rmnt, script, offsetHeight)
 drakkar.st##+js(nostif, getComputedStyle)
 ||docs.speedtest-tracker.dev/|$1p,xhr,method=post
 stirr.com##+js(rmnt, script, detect)
+duelingbook.com##div[id^="mes"]:remove()
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
