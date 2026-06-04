@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Wed, 03 Jun 2026 21:31:18 GMT
+! Last modified: Thu, 04 Jun 2026 00:03:33 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Wed, 03 Jun 2026 10:05:25 +0000
+!   - Last modified: Wed, 03 Jun 2026 20:51:57 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Mon, 01 Jun 2026 11:50:30 +0000
@@ -17,7 +17,7 @@
 !   - Last modified: Wed, 03 Jun 2026 13:35:07 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
-!   - Last modified: Tue, 02 Jun 2026 02:43:32 +0000
+!   - Last modified: Wed, 03 Jun 2026 20:44:36 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
 !   - Last modified: Wed, 03 Jun 2026 13:35:07 +0000
@@ -30,7 +30,7 @@
 !   - Last modified: Wed, 03 Jun 2026 13:24:57 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
-!   - Last modified: Tue, 02 Jun 2026 02:48:53 +0000
+!   - Last modified: Wed, 03 Jun 2026 19:31:57 +0000
 ! --------------------------------------------------------------
 ! uBlock filters https://ublockorigin.pages.dev/filters/filters.min.txt
 *_ad_$media,domain=youtube.com,3p
@@ -18976,10 +18976,10 @@ embedme.*,filemooon.top,finfang.*,hellnaw.*,moonembed.*,z12z0vla.*##+js(noeval-i
 2fb9tsgn.fun##+js(nowoif)
 2fb9tsgn.fun##+js(acs, Math, localStorage['\x)
 @@?*=$xhr,1p,strict1p,method=get,domain=2fb9tsgn.fun
-arbitrarydecisions.com,bysebuho.com,bysedikamoum.com,bysefujedu.com,bysejikuar.com,bysekoze.com,byseqekaho.com,byseraguci.com,bysesayeveum.com,bysesukior.com,bysetayico.com,bysewihe.com,dramathical.stream,filemoon.*,g9r6.com,ystream.id##+js(acs, EventTarget.prototype.addEventListener, delete window)
-0vg9r.com,398fitus.com,arbitrarydecisions.com,bysebuho.com,bysedikamoum.com,bysefujedu.com,bysejikuar.com,bysekoze.com,byseqekaho.com,byseraguci.com,bysesayeveum.com,bysesukior.com,bysetayico.com,bysewihe.com,dramathical.stream,f16px.com,f75s.com,filemoon.*,g9r6.com,ystream.id##+js(nostif, readyWait)
-0vg9r.com,398fitus.com,arbitrarydecisions.com,bysebuho.com,bysedikamoum.com,bysefujedu.com,bysejikuar.com,bysekoze.com,byseqekaho.com,byseraguci.com,bysesayeveum.com,bysesukior.com,bysetayico.com,bysewihe.com,dramathical.stream,f16px.com,f75s.com,g9r6.com,ystream.id##+js(nowoif)
-0vg9r.com,398fitus.com,arbitrarydecisions.com,bysebuho.com,bysedikamoum.com,bysefujedu.com,bysejikuar.com,bysekoze.com,byseqekaho.com,byseraguci.com,bysesayeveum.com,bysesukior.com,bysetayico.com,bysewihe.com,dramathical.stream,f16px.com,f75s.com,filemoon.*,g9r6.com,ystream.id##body.video-embed-mode > div[class][style]:not(#root)
+arbitrarydecisions.com,bysebuho.com,bysedikamoum.com,bysefujedu.com,bysejikuar.com,bysekoze.com,byseqekaho.com,byseraguci.com,bysesayeveum.com,bysesukior.com,bysetayico.com,bysewihe.com,dramathical.stream,filemoon.*,g9r6.com,mdplay.top,rupertisdivingintoocean.com,ystream.id##+js(acs, EventTarget.prototype.addEventListener, delete window)
+0vg9r.com,398fitus.com,arbitrarydecisions.com,bysebuho.com,bysedikamoum.com,bysefujedu.com,bysejikuar.com,bysekoze.com,byseqekaho.com,byseraguci.com,bysesayeveum.com,bysesukior.com,bysetayico.com,bysewihe.com,dramathical.stream,f16px.com,f75s.com,filemoon.*,g9r6.com,mdplay.top,rupertisdivingintoocean.com,ystream.id##+js(nostif, readyWait)
+0vg9r.com,398fitus.com,arbitrarydecisions.com,bysebuho.com,bysedikamoum.com,bysefujedu.com,bysejikuar.com,bysekoze.com,byseqekaho.com,byseraguci.com,bysesayeveum.com,bysesukior.com,bysetayico.com,bysewihe.com,dramathical.stream,f16px.com,f75s.com,g9r6.com,mdplay.top,rupertisdivingintoocean.com,ystream.id##+js(nowoif)
+0vg9r.com,398fitus.com,arbitrarydecisions.com,bysebuho.com,bysedikamoum.com,bysefujedu.com,bysejikuar.com,bysekoze.com,byseqekaho.com,byseraguci.com,bysesayeveum.com,bysesukior.com,bysetayico.com,bysewihe.com,dramathical.stream,f16px.com,f75s.com,filemoon.*,g9r6.com,mdplay.top,rupertisdivingintoocean.com,ystream.id##body.video-embed-mode > div[class][style]:not(#root)
 ||358g46.fun^$popup,doc
 ||dfuybl-bclxb.love^$popup,doc
 ||fbpbpmjjg-f.club^$popup,doc
@@ -23002,6 +23002,8 @@ athlete-insurance.com##.text-center.sidebar-card:has(i[class*="fa-ad"])
 forums.redflagdeals.com##.sponsored-offer
 forums.redflagdeals.com##.ad_leaderboard_large
 jagledam.com##+js(rmnt, script, offsetHeight)
+osmhelper.com##+js(rmnt, script, offsetHeight)
+||imasdk.googleapis.com/js/sdkloader/ima3.js$redirect=google-ima.js,domain=motorradonline.de
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -31386,6 +31388,7 @@ amboss.com##+js(set, ambossAnalytics.getUserAttribution, noopFunc)
 @@||cdn.sophi.io^$3p,script,from=abqjournal.com
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$redirect=google-ima.js,domain=mnetplus.world
 proxyorb.com##+js(aeld, load, dataset.ready, elements, script[src^="https://www.googletagmanager.com/gtag/js?id="])
+||criteo.com^$xhr,redirect=noop.txt,from=makro.plazavea.com.pe
 ! uBlock filters – Quick fixes https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
 @@||hb.vntsm.com/v4/live/vms/sites/aternos.org/index.js$script,domain=aternos.org
 aternos.org##.header-center:style(margin-top:-5000px !important;)
@@ -37518,3 +37521,4 @@ enternity.gr##+js(trusted-replace-argument, document.getElementById, 0, json:"he
 cografyahocasi.com##+js(acs, document.addEventListener, preventDefault, /^data:text\/javascript/)
 estadao.com.br##+js(trusted-set-local-storage-item, TUTORIAL_CLOSED_SNACKS_HOME, fechado)
 estadao.com.br##+js(set-local-storage-item, TUTORIAL_VIEWED_SNACKS_HOME, true)
+freemagazines.top##+js(trusted-rpnt, script, timeLeft > 0, timeLeft = 0, includes, clearInterval)
