@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Fri, 05 Jun 2026 13:24:57 GMT
+! Last modified: Fri, 05 Jun 2026 14:11:30 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,12 +8,16 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.5.28
+!   - Version: 2.1.5.29
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
 !   - Homepage: https://github.com/cjx82630/cjxlist
 !   - Last modified: 2026/03/11 09:15 +0800
+! * CJX's uBlock list
+!   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/refs/heads/master/cjx-ublock.txt
+!   - Homepage: https://github.com/cjx82630/cjxlist
+!   - Licence: https://github.com/cjx82630/cjxlist/blob/master/LICENSE
 ! --------------------------------------------------------------
 ! AdGuard Tracking Protection filter (Optimized) https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
 www.youtube.com##+js(no-xhr-if, /\/api\/stats\/atr\?.+?&rt=\d+\.\d+.+?&volume=\d+&cbr=.+?&fexp=v1%[-%0-9C]{300\,}&.+?&muted=\d(&vis=3)?&docid=/ method:POST)
@@ -154395,7 +154399,6 @@ olympics.com##section[data-cy="story-parts-wrapper"] > div:not([data-cy]):has(re
 ||marketplace.anyclip.com/v*/lre-events
 /log/client/messages$domain=momondo.com|kayak.com
 /s/vestigo/measure$domain=momondo.com|kayak.com
-||ir.ebaystatic.com/*/s_1x2.gif
 gamespot.com##+js(set-local-storage-item, ppid, $remove$)
 ||openway.deepseeksvc.com/v*/write/rum
 ||l.search.naver.com/n/responsive/*&no_qc=*&p=
@@ -155328,7 +155331,6 @@ hindustantimes.com##+js(set-local-storage-item, ht_cdp, $remove$)
 ||assets.aliexpress-media.com/g/lzd_sec/epssw/*/epssw.js
 ||assets.aliexpress-media.com/g/AWSC/uab/*/collina.js
 ||assets.alicdn.com/g/alilog/
-||admin.microsoft.com/api/instrument/logclient
 ||xgp.pl/wp-content/themes/asona-child-theme/scripts/ga-script.js
 /tracking-pixel$domain=get-to.link
 ||s.yimg.com/ss/analytics3.js
@@ -162350,7 +162352,6 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 @@||blocket.se^*/xtcore.js
 @@||reseguiden.se^*.siteCatalyst.js
 ||acustomizedgift.com^$~xhr
-||goodbark.com^
 ||inventorycache.com^$~xhr
 ||oceancloudhosts.com^$~xhr
 ||d21y75miwcfqoq.cloudfront.net/436f3341$image,redirect=noop.txt
@@ -164636,3 +164637,54 @@ m.babytree.com##script + a[class]
 ||zdw.w8.com.cn/p.ht?
 ||zhulang.com/zlpv.php
 ||zol.com.cn/cgimp/zc.js
+! CJX's uBlock list https://raw.githubusercontent.com/cjx82630/cjxlist/refs/heads/master/cjx-ublock.txt
+youminggu.com,yemancomic.com,zkk78.com,jinbaodm.com##+js(acis,document.write,location.href)
+youminggu.com,yemancomic.com,zkk78.com,jinbaodm.com##+js(nostif, location.href)
+yemancomic.com##+js(aopr,randoms)
+1010jiajiao.com##+js(aopr,jdrand)
+3g.163.com##+js(set,specialHideAd,true)
+3cinfo.net##+js(acis,eval,split)
+4399.com##+js(aopr,defaultbackgroundimg)
+1111.baidu.com,bdimg.com,tieba.baidu.com,tieba.com,xingqu.baidu.com##.special_conf_skin .wrap1:style(background:none !important;)
+1111.baidu.com,bdimg.com,tieba.baidu.com,tieba.com,xingqu.baidu.com###plat_recom_carousel[style$="380px;"]:style(height:80px !important;)
+233tw.com##+js(acis,onload)
+ahri8.top##+js(acis,document.querySelectorAll,popMagic)
+baomidou.com##+js(set, _AdBlockInit, true)
+bingfeng.tw##+js(nostif,newtag)
+chinaz.com###imgbd:style(background:none !important;)
+chinaz.com##.CCtop:style(margin-top:10px !important;)
+chinaz.com##.CClose
+cocomanhua.com##+js(aopr,jQuery.fn.html)
+cocomanhua.com##+js(aopr,__cad.cpm_popunder)
+cocomanhua.com##+js(aopr,__ad)
+ddrk.me,ddys.tv,ddys.art##+js(aopr,Object.prototype.ads.isInAdMode)
+dlkoo.com##+js(acis,setTimeout,testad)
+fpbsnc.com,lsntzzy3.com##+js(set,ps,noopFunc)
+||huya.com/leaf/*=vodadv&$redirect=noop-0.1s.mp3,domain=huya.com
+ip.cn##img[src*="/img/"]:style(height:101px !important;)
+juxia.com##.mian_body:style(background-image:none !important;)
+itdog.cn##+js(aopr,alert)
+league-funny.com##+js(aopr,onload)
+939394.xyz##+js(acis,atob)
+bde4.icu##+js(aopr,onload)
+nfmovies.com##+js(set,initAd,noopFunc)
+nfmovies.com##+js(set,adTime,0)
+nfmovies.com##+js(acis,$myui,probe)
+nfmovies.com###adright:style(margin-right:9000px !important;)
+bbs.pcbeta.com##div[style="width:998px;height:75px;border:1px solid #cdcdcd;border-top:3px solid #009ad9;margin:0 0 10px 0;background:#fff;"] + style + div[class]:style(height:270px !important;)
+pincong.rocks##+js(aopr, AWS.alert)
+qq.com##+js(json-prune,ad)
+rjno1.com##+js(acis, setTimeout)
+rjno1.com##+js(acis, onload)
+rjno1.com#?#div:-abp-has(> p:-abp-contains(ad block))
+ruanyifeng.com##+js(aopr, setTimeout)
+tingfm.com##+js(set, canRunAds, true)
+biquge.ac,zhuoshuge.com##+js(aopr,setTimeout)
+iqmxs.cc,kidsplayground.net,hutuxs.com,lakyworld.com,biquge543.com,biquge12345.com,biquge.ac,biquge321.com,20me.net,dingdian365.com,fwdadr.net,haijiaobooksw.top,bqug8.com,biqudd.com,biquge345.com,dingdian888.com,nicmar.net,xianguke.net,ykxs.cc,zhuoshuge.com,zuizhong.net##+js(acis, document.write, style)
+@@||tanx.com/ex?i=$script,domain=dlkoo.com,badfilter
+@@||bingfeng.tw^$generichide,badfilter
+||cibntv.net/youku/*$media,redirect=noopmp3-0.1s,domain=youku.com
+||valipl.cp31.ott.cibntv.net^$media,redirect=noopmp3-0.1s,domain=youku.com
+youku.com##+js(nano-stb, , ,0)
+@@||valipl.cp31.ott.cibntv.net^$xhr,domain=youku.com
+*$image,redirect-rule=1x1.gif,domain=youku.com
