@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Fri, 05 Jun 2026 14:11:30 GMT
+! Last modified: Fri, 05 Jun 2026 16:40:44 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.5.29
+!   - Version: 2.1.5.30
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -220,6 +220,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||umami.vidcore.net^
 ||handler.rgstats.com^
 ||identity.treeumapp.net^
 ||marcuscash.one^
@@ -153986,6 +153987,8 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||m365.cloud.microsoft/client_health_ping
+||realmadryt.pl/api/v1/client-log|$important
 ||track.psatcrm.com/tracker.js
 dn.pt##+js(set-local-storage-item, aries__uuid, $remove$)
 dn.pt##+js(set-local-storage-item, altair, $remove$)
