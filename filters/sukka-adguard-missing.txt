@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sat, 06 Jun 2026 19:48:43 GMT
+! Last modified: Sat, 06 Jun 2026 23:18:20 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sat, 06 Jun 2026 07:17:22 +0000
+!   - Last modified: Sat, 06 Jun 2026 16:59:23 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Thu, 04 Jun 2026 16:07:37 +0000
@@ -20,7 +20,7 @@
 !   - Last modified: Fri, 05 Jun 2026 12:53:34 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Sat, 06 Jun 2026 07:29:49 +0000
+!   - Last modified: Sat, 06 Jun 2026 16:03:44 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
 !   - Last modified: Wed, 27 May 2026 17:43:42 +0000
@@ -30,7 +30,7 @@
 !   - Last modified: Fri, 05 Jun 2026 17:17:34 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
-!   - Last modified: Sat, 06 Jun 2026 14:32:19 +0000
+!   - Last modified: Sat, 06 Jun 2026 20:00:37 +0000
 ! --------------------------------------------------------------
 ! uBlock filters https://ublockorigin.pages.dev/filters/filters.min.txt
 *_ad_$media,domain=youtube.com,3p
@@ -11908,7 +11908,6 @@ roshy.tv##.shortcode_widget
 ||xxxdessert.com/*_fe.js
 ||camlovers.tv^$script,1p
 @@||camlovers.tv/player/kt_player.js
-/flo.js|$domain=~courtesgroupe.fr
 ||goryachie-foto.net^$3p
 ||pub.contexthub.net^
 ||ptwmstc.com/npt/banner/
@@ -14050,7 +14049,6 @@ freebie-ac.jp##+js(trusted-rpnt, script, currentTime = 1500 * 2, currentTime = 0
 alluretube.com,anyxvideos.com,fetishtube.cc,italianporn.com.es,japanporn.tv,lovefap.com,mommysucks.com,mzansinudes.com,napiszar.com,of-model.com,onlineporn24.com,porntube15.com,sexavgo.com,sexdiaryz.*##+js(acs, decodeURI, decodeURIComponent)
 japanporn.tv##+js(acs, Math.floor, ExoLoader)
 ##div[style^="z-index: 999999; background-image: url(\"data:image/gif;base64,"][style$="position: absolute;"]
-.com/f_lo.js|$script,1p
 ||a.b.napiszar.com^
 ||japanporn.tv/rg3y/*$script
 9xmovie.*##+js(nowoif)
@@ -31578,25 +31576,12 @@ smsonline.cloud##html[data-theme][lang] [id^="img_"][style]:has(iframe[framebord
 ~bing.com,~dogdrip.net,~smsonline.cloud##div[style^="height:    250px; width:    300px;"]
 ~bing.com,~dogdrip.net,~smsonline.cloud##div[style^="width:    160px; height:    600px; margin: 0px auto; min-width: 160px; min-height: 600px;"]
 ~bing.com,~dogdrip.net,~smsonline.cloud##div[style^="width:    300px; height:    250px;"]
-~bing.com,~dogdrip.net,~smsonline.cloud##html[class^="img_"][amp4ads=""][i-amphtml-layout=""][i-amphtml-no-boilerplate=""][amp-version="2502032353000"]
-~bing.com,~dogdrip.net,~smsonline.cloud##html[class^="img_"][amp4ads=""][i-amphtml-layout=""][i-amphtml-no-boilerplate=""][amp-version="2507172035000"]
-~bing.com,~dogdrip.net,~smsonline.cloud##html[class^="img_"][amp4ads=""][i-amphtml-layout=""][i-amphtml-no-boilerplate=""][amp-version="2509031727000"]
 ~bing.com,~dogdrip.net,~smsonline.cloud##img[height="   250"][width="   300"]
 ~bing.com,~dogdrip.net,~smsonline.cloud##img[height="   90"][width="   728"]
 ~bing.com,~dogdrip.net,~smsonline.cloud##ins[style$="height:    90px; width:    728px;"]
-~bing.com,~dogdrip.net,~smsonline.cloud##*:not(body) > a[href^="https://content-loader.com/"]
-~bing.com,~dogdrip.net,~smsonline.cloud##*:not(body) > a[href^="https://html-load.com/"]
 ~bing.com,~dogdrip.net,~smsonline.cloud##amp-img[height="   120"]
 ~bing.com,~dogdrip.net,~smsonline.cloud##amp-img[width="   300"]
 ~bing.com,~dogdrip.net,~smsonline.cloud##amp-img[width="   336"]
-~bing.com,~dogdrip.net,~smsonline.cloud##div[id^="img_"][style^="margin:0;padding:0;display:block;position:fixed;left:0;"]
-~bing.com,~dogdrip.net,~smsonline.cloud##div[id^="img_"][data-google-query-id]
-~bing.com,~dogdrip.net,~smsonline.cloud##div[id^="img_"][style$="2147483647; justify-content: center;"]
-~bing.com,~dogdrip.net,~smsonline.cloud##div[id^="img_"][style$="display: block;"]
-~bing.com,~dogdrip.net,~smsonline.cloud##div[id^="img_"][style$="height: 90px;"]
-~bing.com,~dogdrip.net,~smsonline.cloud##div[id^="img_"][style$="max-height:100px;background-color:rgba(128, 128, 128, 0.4);"]
-~bing.com,~dogdrip.net,~smsonline.cloud##div[id^="img_"][style^="width: 100%;height: 90px;position: fixed;bottom: 0px;left: 0px;z-index:"]
-~bing.com,~dogdrip.net,~smsonline.cloud##div[id^="img_"] > button.gCloseButton
 ~bing.com,~dogdrip.net,~smsonline.cloud##div[id][class][style^="display"][style*="hidden"][style*="width:   "]
 ~bing.com,~dogdrip.net,~smsonline.cloud##ins[id][style*="--gn-ov-ad-height"]
 content-loader.com,css-load.com,html-load.com,img-load.com##html:not(:has(> head > style:only-child:has-text(width:399px;height:411px))):style(filter: opacity(0) !important; pointer-events: none !important;)
@@ -37467,7 +37452,7 @@ pogdesign.co.uk##+js(nostif, clientHeight)
 shein.com##+js(trusted-replace-outbound-text, String.prototype.trim, iframe, nonframe)
 odysee.com##body:style(cursor: revert !important)
 bhaskar.com##+js(set, Object.prototype.dbskrat, true)
-/\/inc\/embed\/index\.php/$frame,uritransform=//\/inc\/embed\/video-js-new.php/,from=wcoflix.tv,to=embed.wcostream.com
+/\/inc\/embed\/index\.php/$frame,uritransform=//\/inc\/embed\/video-js-new.php/,from=wco.tv|wcoflix.tv,to=embed.wcostream.com
 modxvm.com##+js(trusted-set-local-storage-item, xvmDialogLastShown, $now$)
 ##body div#notificationPopup.notificationPopupBlock
 imleagues.com##.mobile-hide-ad
