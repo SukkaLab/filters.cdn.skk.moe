@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sun, 07 Jun 2026 19:48:51 GMT
+! Last modified: Sun, 07 Jun 2026 23:31:31 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sun, 07 Jun 2026 15:23:28 +0000
+!   - Last modified: Sun, 07 Jun 2026 21:09:24 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Thu, 04 Jun 2026 16:07:37 +0000
@@ -6428,14 +6428,16 @@ jkdamours.com,jobsheel.com###btn6:style(display: block !important)
 jkdamours.com,jobsheel.com###tp-text, #btn6, .tp-btn:others()
 go.babylinks.in##+js(set, blurred, false)
 odiadance.com,sayphotobooth.com##+js(noeval-if, /chp_?ad/)
-odiadance.com,sayphotobooth.com##+js(set, count, 0)
 odiadance.com,sayphotobooth.com##+js(rpnt, script, 4000, 10)
-odiadance.com,sayphotobooth.com##+js(rpnt, script, /\d{4}/, 10)
 odiadance.com,sayphotobooth.com##+js(rpnt, script, /\d{5}/, 10)
-odiadance.com,sayphotobooth.com##+js(rpnt, script, document.cookie.includes("adclicked=true"), true)
 odiadance.com,sayphotobooth.com##+js(rpnt, script, "IFRAME", "BODY")
-odiadance.com,sayphotobooth.com###btn6, .tp-btn:style(display: block !important)
-odiadance.com,sayphotobooth.com###tp-text, #btn6, .tp-btn, .cf-turnstile, #link:others()
+odiadance.com,sayphotobooth.com##+js(rmnt, script, navigator.brave)
+odiadance.com,sayphotobooth.com##+js(rpnt, script, /visibilitychange/g, load)
+odiadance.com,sayphotobooth.com##+js(rpnt, script, /hidden/g, visible)
+odiadance.com,sayphotobooth.com##+js(rpnt, script, /blur|focus|pageshow/g, load)
+odiadance.com,sayphotobooth.com##+js(rpnt, #text, Link, wait 20 sec button will appear)
+odiadance.com,sayphotobooth.com##.BR-Overlay, .single-layout-1.ast-post-format-, #BR-Footer-Ads, .wp-post-image, #comments, .post-navigation.navigation, .ast-pagination, .ast-article-inner.ast-post-format-
+sayphotobooth.com#@#+js(adjust-setInterval, tp-time, *, 0.001)
 link.get2short.com##+js(set, blurred, false)
 sitm.al3rbygo.com,fawzy.xyz,crizyman.online,soft.cr3zyblog.com##+js(rpnt, script, /func.*justDetect.*warnarea.*?;/gm)
 sitm.al3rbygo.com,fawzy.xyz,crizyman.online,soft.cr3zyblog.com##+js(rmnt, script, getComputedStyle(el)
@@ -6985,22 +6987,9 @@ kbconlinegame.com,hamrojaagir.com,odijob.com##+js(rmnt, script, /fetch|popupshow
 jeuxenligne.xyz##form > [id][style="display: none;"]:style(display:block !important;)
 ||earnbitmoon.xyz/multiads/multiads.php
 edukaroo.com##+js(nano-sib, count, *, 0.001)
-jobnoid.net,stfly.me,dailyjobposting.xyz,biovetro.net,yrtourguide.com,technons.com,tournguide.com,digiztechno.com,shrtslug.biz##+js(no-xhr-if, method:HEAD)
-jobnoid.net,stfly.me,dailyjobposting.xyz,biovetro.net,yrtourguide.com,technons.com,tournguide.com,digiztechno.com,shrtslug.biz##+js(aost, fetch, http)
-jobnoid.net,stfly.me,dailyjobposting.xyz,biovetro.net,yrtourguide.com,technons.com,tournguide.com,digiztechno.com,shrtslug.biz##+js(rmnt, script, DetectAdblock)
-jobnoid.net,stfly.me,dailyjobposting.xyz,biovetro.net,yrtourguide.com,technons.com,tournguide.com,digiztechno.com,shrtslug.biz##p, .wp-block-heading, .wp-block-list, .lg\:leading-tight.mt-1.lg\:tracking-tight.font-bold.lg\:text-5xl.text-4xl, .font-medium.text-sm.tracking-wider.uppercase.text-blue-400, [href="https://t.me/shrtfly"], h2, .wp-block-embed__wrapper, [href*="uploadex.net/"]
-jobnoid.net,stfly.me,dailyjobposting.xyz,biovetro.net,yrtourguide.com,technons.com,tournguide.com,digiztechno.com,shrtslug.biz##+js(rpnt, script, /= 3;|= 2;/, = 0;, condition, count)
-jobnoid.net,stfly.me,dailyjobposting.xyz,biovetro.net,yrtourguide.com,technons.com,tournguide.com,digiztechno.com,shrtslug.biz##+js(rpnt, script, progress_original = 6;, progress_original = 3;)
-jobnoid.net,stfly.me,dailyjobposting.xyz,biovetro.net,yrtourguide.com,technons.com,tournguide.com,digiztechno.com,shrtslug.biz##+js(rpnt, script, progress_original = 10;, progress_original = 5;)
-jobnoid.net,stfly.me,dailyjobposting.xyz,biovetro.net,yrtourguide.com,technons.com,tournguide.com,digiztechno.com,shrtslug.biz##+js(rpnt, script, countdown = 5;, countdown = 3;)
-jobnoid.net,stfly.me,dailyjobposting.xyz,biovetro.net,yrtourguide.com,technons.com,tournguide.com,digiztechno.com,shrtslug.biz##+js(rpnt, script, = false;, = true;, condition, /focused|progress|blur/)
-jobnoid.net,stfly.me,dailyjobposting.xyz,biovetro.net,yrtourguide.com,technons.com,tournguide.com,digiztechno.com,shrtslug.biz##+js(rpnt, script, start_focused || !document.hidden, true)
-jobnoid.net,stfly.me,dailyjobposting.xyz,biovetro.net,yrtourguide.com,technons.com,tournguide.com,digiztechno.com,shrtslug.biz##+js(rpnt, script, focused || !document.hidden, true)
-jobnoid.net,stfly.me,dailyjobposting.xyz,biovetro.net,yrtourguide.com,technons.com,tournguide.com,digiztechno.com,shrtslug.biz##+js(trusted-set, document.activeElement, { "value": {"tagName": "IFRAME" }}, runAt, 3)
-jobnoid.net,stfly.me,dailyjobposting.xyz,biovetro.net,yrtourguide.com,technons.com,tournguide.com,digiztechno.com,shrtslug.biz##+js(rpnt, #text, on the image ↓↓, here)
-jobnoid.net,stfly.me,dailyjobposting.xyz,biovetro.net,yrtourguide.com,technons.com,tournguide.com,digiztechno.com,shrtslug.biz##.entry-header, hr, figure.wp-block-table, #right-sidebar, .inside-article > .entry-meta, .comments-area, .site-footer, .max-w-screen-lg.mt-6.prose-lg.prose.mx-auto > div:has(.clever-core-ads), div.w-full.flex.flex-wrap.items-center.justify-evenly.gap-3
-jobnoid.net,stfly.me,dailyjobposting.xyz,biovetro.net,yrtourguide.com,technons.com,tournguide.com,digiztechno.com,shrtslug.biz##+js(set, document.hidden, true)
-jobnoid.net,stfly.me,dailyjobposting.xyz,biovetro.net,yrtourguide.com,technons.com,tournguide.com,digiztechno.com,shrtslug.biz##+js(set, document.visibilityState, hidden)
+stly.link,financefernly.com,growgritly.com,guidetechly.com,napmap.net,jobnoid.net,stfly.me,dailyjobposting.xyz,biovetro.net,yrtourguide.com,technons.com,tournguide.com,digiztechno.com,shrtslug.biz##+js(no-xhr-if, method:HEAD)
+stly.link,financefernly.com,growgritly.com,guidetechly.com,napmap.net,jobnoid.net,stfly.me,dailyjobposting.xyz,biovetro.net,yrtourguide.com,technons.com,tournguide.com,digiztechno.com,shrtslug.biz##+js(aost, fetch, http)
+stly.link,financefernly.com,growgritly.com,guidetechly.com,napmap.net,jobnoid.net,stfly.me,dailyjobposting.xyz,biovetro.net,yrtourguide.com,technons.com,tournguide.com,digiztechno.com,shrtslug.biz##+js(rmnt, script, /Adblock/i)
 wbschemenews.com##+js(set, count, 0)
 wbschemenews.com###tp98, #btn6:style(display: block !important;)
 wbschemenews.com###tp98, #btn6, .captcha-check, b > p, #tp-text:others()
