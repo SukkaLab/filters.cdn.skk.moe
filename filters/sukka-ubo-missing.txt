@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Tue, 09 Jun 2026 16:48:06 GMT
+! Last modified: Tue, 09 Jun 2026 20:21:40 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.5.45
+!   - Version: 2.1.5.47
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -55048,6 +55048,30 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||countly.
 ||countly-
 |piwik.
+||alt.cobweb.com^
+||analytics.learndirect.com^
+||ctm.turnbull-scott.co.uk^
+||data.deschouwwitgoed.nl^
+||metrics.nautilus2.pl^
+||sst.amweb.nl^
+||sst.beckhuis.com^
+||sst.bike-eu.com^
+||sst.charrell.be^
+||sst.dearchitect.nl^
+||sst.desko.nl^
+||sst.distrifood.nl^
+||sst.missethoreca.nl^
+||sst.msm.nl^
+||sst.onlineveilingmeester.nl^
+||sst.parkingcentrumoosterdok.nl^
+||sst.salarisnet.nl^
+||sst.stickerei-stoiber.ch^
+||sst.stickerei-stoiber.de^
+||tagging.trined.nl^
+||tagging.utwente.nl^
+||tagging.voordeelvanger.nl^
+||tggng.suitable.de^
+||tds.vss-security.nl^
 ||tracking.vbr.ru^
 ||track.shiksha.com^
 ||stats.sailtheship.xyz^
@@ -55554,7 +55578,6 @@ prd.api.bleacherreport.com^
 ||tagging.seniorenalarmen.nl^
 ||tagging.stieglitz.nl^
 ||tagging.systemyzawieszen.pl^
-||tagging.utwente.nl^
 ||tagging.veda.ch^
 ||tagging.vhdakkapellen.nl^
 ||tagging.woodtex.be^
@@ -153501,6 +153524,7 @@ zmail.mtrl.me$image
 /^https?:\/\/(?!assets|script|static)(?:[0-9a-z]{10,13}|[0-9a-z]{6})\.[0-9A-Za-z.\-_]+\/(?=[0-9a-z+\/\-]*[A-Z])[0-9A-Za-z+\/\-]{80,106}$/$match-case,script,~3p
 /^https:\/\/cs\d{3}\.\w+\.com\/cscript\/\d{3}\/[\w\d]+\.js$/$script,3p,match-case
 /.well-known/private-click-measurement
+.js?tg=$~3p
 /advanced-ads-tracking/assets/dist/ga-tracking.js
 /hit-track.php
 /wp-content/plugins/jetpack/jetpack_vendor/automattic/woocommerce-analytics/*
@@ -153994,6 +154018,7 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||shuba.life/api/views
 ||cdn.viberu.ru/dist/tracking.*.js
 ||rugbypass.com/api/tracking/
 ||static0.pocketlintimages.com/assets/sentinel-events-tracker.*.js
@@ -160051,6 +160076,7 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=saturn.de
 @@||metrics.us.playstation.com/b/ss/
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
+@@||cdn.petametrics.com^$script,domain=meidasnews.com
 @@||smetrics.airmiles.ca/*identity/acquire?$domain=oauth.airmiles.ca
 @@||mpsnare.iesnare.com/snare.js$domain=aswbe.ana.co.jp
 @@||mpsnare.iesnare.com/script/logo.js$domain=aswbe.ana.co.jp
