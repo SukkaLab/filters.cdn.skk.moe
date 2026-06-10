@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Wed, 10 Jun 2026 20:47:03 GMT
+! Last modified: Wed, 10 Jun 2026 23:50:48 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.5.53
+!   - Version: 2.1.5.55
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -162471,6 +162471,8 @@ usatoday.com##+js(set, gnt.x.adm, )
 %2FCI0%2F0$image
 /ss/o/*/ho.gif$image
 %2Fss%2Fo%2F*%2Fho.gif$image
+api-euo.temu.com/callback/doha/open/track?
+api-euo.temu.com%2Fcallback%2Fdoha%2Fopen%2Ftrack%3F
 image.read.forbes.com$image
 conquerclub.com/stat.php?type=$image
 conquerclub.com%2Fstat.php%3Ftype%3D$image
@@ -162535,6 +162537,8 @@ i.groovehq.com/*@groovehq.com.gif$image
 i.groovehq.com%2F*%40groovehq.com.gif$image
 c.groovehq.com/*.gif$image
 c.groovehq.com%2F*.gif$image
+supersender.yandex.net/v1/$image
+supersender.yandex.net%2Fv1%2F$image
 click.sender.yandex.ru/px/$image
 click.sender.yandex.ru%2Fpx%2F$image
 feedback.send.yandex.ru/px/$image
