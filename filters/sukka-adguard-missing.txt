@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Wed, 10 Jun 2026 06:43:40 GMT
+! Last modified: Wed, 10 Jun 2026 10:33:52 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,13 +8,13 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Wed, 10 Jun 2026 05:36:41 +0000
+!   - Last modified: Wed, 10 Jun 2026 06:12:13 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Tue, 09 Jun 2026 17:12:50 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Tue, 09 Jun 2026 16:07:10 +0000
+!   - Last modified: Wed, 10 Jun 2026 06:26:00 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
 !   - Last modified: Tue, 09 Jun 2026 09:41:27 +0000
@@ -27,7 +27,7 @@
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Tue, 09 Jun 2026 05:45:03 +0000
+!   - Last modified: Wed, 10 Jun 2026 06:10:29 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
 !   - Last modified: Mon, 08 Jun 2026 05:45:16 +0000
@@ -11148,6 +11148,8 @@ xtits.*##.table
 xtits.*##.spot-holder
 *$frame,script,3p,denyallow=ahacdn.me|bimbolive.com|cloudflare.net,domain=xtits.*
 ||xtits.*^$csp=script-src * 'unsafe-inline'
+acapellas.eu##+js(nostif, getComputedStyle)
+acapellas.eu##+js(rmnt, script, runCheck)
 acapellas.eu##+js(acs, addEventListener, google_ad_client)
 descarga.xyz##+js(aopr, AaDetector)
 descarga.xyz##+js(aopw, atOptions)
@@ -28883,6 +28885,7 @@ pooembed.eu##+js(no-xhr-if, body:pageview method:POST)
 ||scripts.stay22.com^
 webex.com##+js(no-xhr-if, svc.webex.com/metrics)
 ||users.videasy.to^
+||acapellas.eu/track.php
 /edgemesh.*.js$script,domain=~edgemesh.com|~edgeno.de
 ||safelinkconverter.com^$script,3p
 /adsensebase.js$script
@@ -32335,7 +32338,10 @@ tredz.co.uk##+js(trusted-set-cookie, OptanonAlertBoxClosed, $currentDate$, 1year
 tredz.co.uk##+js(trusted-set-cookie, OptanonConsent, groups=C0001%3A1%2CC0002%3A0%2CC0003%3A1%2CC0004%3A0)
 getdigitalradio.com##+js(trusted-set-cookie, dsm-cookie-preferences, {%221%22:true%2C%222%22:true})
 cmpv2.finn.no##+js(trusted-click-element, button[title="Godta alle"], , 1000)
-cmp.e24.no,cmp.minmote.no,cmp.tek.no,cmp.vg.no##+js(trusted-click-element, .btns-container > button[title="Tilpass cookies"])
+e24.no,minmote.no,tek.no,vg.no##div[id^="sp_message_container_"]:style(z-index: -1 !important;)
+cmp.e24.no,cmp.minmote.no,cmp.tek.no,cmp.vg.no##.tcfv2-stack .pur-buttons-container > button:style(display: inline-block !important;)
+cmp.e24.no,cmp.minmote.no,cmp.tek.no,cmp.vg.no##button.sp_choice_type_SAVE_AND_EXIT:remove-attr(/^(aria-)?disabled$/)
+cmp.e24.no,cmp.minmote.no,cmp.tek.no,cmp.vg.no##+js(trusted-click-element, .btns-container > button[title="Tilpass cookies"], , 1000)
 cmp.e24.no,cmp.minmote.no,cmp.tek.no,cmp.vg.no##+js(trusted-click-element, '2000,.pm-main > .type-box:nth-of-type(1) .tcfv2-stack .pur-buttons-container > button:nth-of-type(2),100,.pm-main > .type-box:nth-of-type(2) .tcfv2-stack .pur-buttons-container > button:nth-of-type(2),100,.pm-main > .type-box:nth-of-type(3) .tcfv2-stack .pur-buttons-container > button:nth-of-type(2),100,.pm-main > .type-box:nth-of-type(4) .tcfv2-stack .pur-buttons-container > button:nth-of-type(2),100,button.sp_choice_type_SAVE_AND_EXIT')
 @@||cmp.*.no^$domain=e24.no|minmote.no|vg.no|tek.no
 @@||privacy-mgmt.com/mms^$domain=e24.no|minmote.no|vg.no|tek.no
