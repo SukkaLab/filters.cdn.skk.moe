@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Thu, 11 Jun 2026 20:38:28 GMT
+! Last modified: Thu, 11 Jun 2026 23:55:02 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Thu, 11 Jun 2026 12:25:25 +0000
+!   - Last modified: Thu, 11 Jun 2026 20:03:39 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Tue, 09 Jun 2026 17:12:50 +0000
@@ -6224,14 +6224,14 @@ premid.app##ins.adsbygoogle
 thejobsmovie.com##+js(nostif, adsBlocked)
 @@||techdracula.com^$ghide
 techdracula.com##ins.adsbygoogle
-@@*$ghide,domain=gplinks.*|qrixpe.com|powergam.online
-powergam.online,qrixpe.com##center, .main-content, .myTimerDiv, .myTimer, .SmileyBanner, .myWaitingDiv:others()
-powergam.online,qrixpe.com##+js(set, document.hidden, false)
-powergam.online,qrixpe.com##+js(aopw, AdBDetected)
-powergam.online,qrixpe.com##+js(set, navigator.brave, undefined)
-powergam.online,qrixpe.com##+js(trusted-set, document.activeElement, { "value": {"tagName": "IFRAME" }}, runAt, 2)
-powergam.online,qrixpe.com##+js(trusted-click-element, '31000, .VerifyBtn, 100, .NextBtn, 33000')
-powergam.online,qrixpe.com,gplinks.*,get2.in##+js(rpnt, script, intentUrl;, destination;)
+@@*$ghide,domain=gplinks.*|qrixpe.com|powergam.online|sanadegreecollege.in
+sanadegreecollege.in,powergam.online,qrixpe.com##center, .main-content, .myTimerDiv, .myTimer, .SmileyBanner, .myWaitingDiv:others()
+sanadegreecollege.in,powergam.online,qrixpe.com##+js(set, document.hidden, false)
+sanadegreecollege.in,powergam.online,qrixpe.com##+js(aopw, AdBDetected)
+sanadegreecollege.in,powergam.online,qrixpe.com##+js(set, navigator.brave, undefined)
+sanadegreecollege.in,powergam.online,qrixpe.com##+js(trusted-set, document.activeElement, { "value": {"tagName": "IFRAME" }}, runAt, 2)
+sanadegreecollege.in,powergam.online,qrixpe.com##+js(trusted-click-element, '31000, .VerifyBtn, 100, .NextBtn, 33000')
+sanadegreecollege.in,powergam.online,qrixpe.com,gplinks.*,get2.in##+js(rpnt, script, intentUrl;, destination;)
 ||tracki.click/ads/js/embed.js$script
 gplinks.*##a.exclude-pop.smartlink, .exclude-pop.quiz-container, #PlayQuiz, #quiz-frame, .exclude-popad
 gplinks.*##+js(set, blurred, false)
@@ -7573,6 +7573,7 @@ hindisink.com##+js(rpnt, script, /\d{4}/gms, 10, condition, count)
 hindisink.com##+js(aeld, visibilitychange)
 linkshortx.in##.bg_cover.footer-area
 linkshortx.in##+js(set, blurred, false)
+coinclix.co##+js(trusted-replace-argument, document.getElementById, 0, json:"header", condition, /ad-chk|aads-frame/)
 xnxx.com,xvideos.com###ad-header-mobile
 jprime.jp##.ad-overlay
 apkdone.com##.adplaceholder-top
@@ -19942,6 +19943,7 @@ chasingthedonkey.com##+js(nowoif)
 taste.com.au##.main-header:style(top: 0 !important)
 @@||media.ethicalads.io/media/client/ethicalads.min.js$script,domain=decompiler.com
 decompiler.com##+js(prevent-fetch, /ethicalads\.io|nitropay\.com/)
+@@*$script,1p,domain=decompiler.com
 @@||ytlarge.com^$ghide
 @@||googlesyndication.com^$script,xhr,domain=ytlarge.com
 @@||fundingchoicesmessages.google.com^$script,xhr,domain=ytlarge.com
