@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Thu, 11 Jun 2026 07:07:28 GMT
+! Last modified: Thu, 11 Jun 2026 10:58:30 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.5.56
+!   - Version: 2.1.5.58
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -55049,6 +55049,9 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||countly.
 ||countly-
 |piwik.
+||transporter.makemytrip.global^
+||cchome-stage.adobe.io^
+||cchome.adobe.io^
 ||analytics.trbna.com^
 ||udderstack.allstar.gg^
 ||plausible.root-nation.net^
@@ -154022,6 +154025,9 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||cdntbl.com/gtm/
+||tabletki.ua/analyticsdata/
+||services.account.adobe.com/log/message
 ||tralut.*.*/collect
 ||the-race.com/.ghost/analytics/
 ||api.prod.allstar.dev/methods/track
