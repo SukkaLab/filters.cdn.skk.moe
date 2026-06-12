@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Fri, 12 Jun 2026 20:28:35 GMT
+! Last modified: Fri, 12 Jun 2026 23:54:36 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Fri, 12 Jun 2026 11:38:17 +0000
+!   - Last modified: Fri, 12 Jun 2026 19:29:59 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Fri, 12 Jun 2026 09:48:18 +0000
@@ -22891,8 +22891,10 @@ pilotsglobal.com##.banner
 ondebola.com##+js(nostif, utilAds)
 ondebola.com##.adslot_horizontal_big_desktop_extra
 ondebola.com##.solverde-affiliate-banner
-streamcash.to##+js(nostif, getComputedStyle)
-streamcash.to###vc-overlay
+streamcash.to##+js(rmnt, script, .onerror)
+streamcash.to##+js(nowoif, _blank)
+streamcash.to###player-ui-layer[style="position:absolute;inset:0;z-index:99;cursor:pointer;"]
+streamcash.to##div.banner-zone
 indoav.com##+js(nowoif)
 cjr.org###interVeil
 cjr.org###interContainer
