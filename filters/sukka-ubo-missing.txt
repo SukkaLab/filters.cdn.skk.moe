@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Thu, 11 Jun 2026 23:55:02 GMT
+! Last modified: Fri, 12 Jun 2026 06:56:24 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.5.61
+!   - Version: 2.1.5.62
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -154025,6 +154025,8 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||gameinformer.com/modules/contrib/statistics/
+||gameinformer.com/*/js/tracking/
 ||cdntbl.com/gtm/
 ||tabletki.ua/analyticsdata/
 ||services.account.adobe.com/log/message
@@ -155595,7 +155597,6 @@ themirror.com##reach-topbox
 ||poco.de/api/tracking
 ||api.transcy.io/api/statistic/
 ||groceries.morrisons.com/events/
-||sts.marketingsuite.jp/sts/SocialEvent/Event
 ||peachjohn.co.jp/StaffContent/assets/js/staffstart-analytics.js
 ||d-rw.com/Scripts/tracker.js
 ||facebook.com/ajax/*_logging/
@@ -160093,6 +160094,7 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=saturn.de
 @@||metrics.us.playstation.com/b/ss/
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
+@@||app.lyrebirdhealth.com/_app/immutable/chunks/google-analytics*.js$domain=app.lyrebirdhealth.com
 @@||feliz-web.data.tm-awx.com/smile-web.min.js$domain=ok.co.uk
 @@||feliz.data.tm-awx.com/smile-web-v*/$domain=ok.co.uk
 @@||api.clerk.io/v*/log/click?payload=$domain=ringo.no
