@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sat, 13 Jun 2026 19:56:16 GMT
+! Last modified: Sat, 13 Jun 2026 23:34:15 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,19 +8,19 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sat, 13 Jun 2026 16:32:46 +0000
+!   - Last modified: Sat, 13 Jun 2026 21:42:20 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Fri, 12 Jun 2026 09:48:18 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Sat, 13 Jun 2026 05:30:45 +0000
+!   - Last modified: Sat, 13 Jun 2026 16:54:34 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
 !   - Last modified: Tue, 09 Jun 2026 09:41:27 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Sat, 13 Jun 2026 09:54:50 +0000
+!   - Last modified: Sat, 13 Jun 2026 16:40:52 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
 !   - Last modified: Wed, 27 May 2026 17:43:42 +0000
@@ -13795,8 +13795,6 @@ freehostbox.net,hatenablog.com,puzzle-ch.com#@##adframe:not(frameset):not([style
 ###ads-1:not([style^="position: absolute; left: -5000px"])
 ###ads-banner:not([style^="position: absolute; left: -5000px"])
 ###ads-footer:not([style^="position: absolute; left: -5000px"])
-###adspace:not([style^="position: absolute; left: -5000px"])
-ma-bank.net,rxlife.net,video.tv-tokyo.co.jp#@##adspace:not([style^="position: absolute; left: -5000px"])
 ###adsquare:not([style^="position: absolute; left: -5000px"])
 ###banner468:not([style^="position: absolute; left: -5000px"])
 ###banner728x90:not([style^="position: absolute; left: -5000px"])
@@ -21151,6 +21149,7 @@ servustv.com##.ha52x01.ha52x00.ha52x07
 servustv.com##.ha52x04.ha52x05.ha52x00.ha52x06
 servustv.com##._1tu2i3m0
 @@*$1p,xhr,method=head,domain=servustv.com
+servustv.com##+js(nostif, [native code], 30)
 filespayouts.com##+js(rmnt, script, window.open)
 /public/js/dublocker.js^$script,1p
 ||bigwarp.io^$csp=script-src 'self' data: 'unsafe-inline' 'unsafe-hashes' 'unsafe-eval' www.gstatic.com cdn.jsdelivr.net maxcdn.bootstrapcdn.com
@@ -22893,9 +22892,11 @@ ondebola.com##+js(nostif, utilAds)
 ondebola.com##.adslot_horizontal_big_desktop_extra
 ondebola.com##.solverde-affiliate-banner
 streamcash.to##+js(rmnt, script, .onerror)
-streamcash.to##+js(nowoif, _blank)
+streamcash.to##+js(nowoif)
 streamcash.to###player-ui-layer[style="position:absolute;inset:0;z-index:99;cursor:pointer;"]
 streamcash.to##div.banner-zone
+streamcash.to###main-video ~ div[style]
+@@||streamcash.to^$ghide
 indoav.com##+js(nowoif)
 cjr.org###interVeil
 cjr.org###interContainer
@@ -28746,6 +28747,8 @@ pooembed.eu##+js(no-xhr-if, body:pageview method:POST)
 webex.com##+js(no-xhr-if, svc.webex.com/metrics)
 ||users.videasy.to^
 ||acapellas.eu/track.php
+||tracking.cds.dmm.co.jp/v1/tracking/click?ic_key=$urlskip=/\?ic_key=ey[^.]+\.(ey[^.]+)\./ -base64 /"link_url":"([^"]+)"/
+||tracking.cds.dmm.com/v1/tracking/click?ic_key=$urlskip=/\?ic_key=ey[^.]+\.(ey[^.]+)\./ -base64 /"link_url":"([^"]+)"/
 /edgemesh.*.js$script,domain=~edgemesh.com|~edgeno.de
 ||safelinkconverter.com^$script,3p
 /adsensebase.js$script
@@ -31483,6 +31486,7 @@ smsonline.cloud##html[data-theme][lang] [id^="img_"][style]:has(iframe[framebord
 ~bing.com,~dogdrip.net,~smsonline.cloud##div[id][class][style^="display"][style*="hidden"][style*="width:   "]
 ~bing.com,~dogdrip.net,~smsonline.cloud##ins[id][style*="--gn-ov-ad-height"]
 content-loader.com,css-load.com,html-load.com,img-load.com##html:not(:has(> head > style:only-child:has-text(width:399px;height:411px))):style(filter: opacity(0) !important; pointer-events: none !important;)
+~bing.com,~dogdrip.net,~smsonline.cloud,*##iframe[id][height^="  "]:style(visibility: hidden !important;)
 /^https:\/\/(?:[a-z]{3,4}\.)?[0-9a-z-]{6,}\.(?:com|xyz)\/script\/(?:[-.0-9A-Za-z]+\.)?[-0-9A-Za-z]{2,30}\.js$/$script,3p,match-case,header=x-length
 ||html-load.com^$image,1p
 ||html-load.com/l/$xhr
