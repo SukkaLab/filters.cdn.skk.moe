@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sat, 13 Jun 2026 23:34:15 GMT
+! Last modified: Sun, 14 Jun 2026 06:59:02 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sat, 13 Jun 2026 21:42:20 +0000
+!   - Last modified: Sun, 14 Jun 2026 04:42:10 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Fri, 12 Jun 2026 09:48:18 +0000
@@ -22891,10 +22891,11 @@ pilotsglobal.com##.banner
 ondebola.com##+js(nostif, utilAds)
 ondebola.com##.adslot_horizontal_big_desktop_extra
 ondebola.com##.solverde-affiliate-banner
-streamcash.to##+js(rmnt, script, .onerror)
+streamcash.to##+js(rmnt, script, /\.onerror|offsetHeight/)
 streamcash.to##+js(nowoif)
 streamcash.to###player-ui-layer[style="position:absolute;inset:0;z-index:99;cursor:pointer;"]
 streamcash.to##div.banner-zone
+streamcash.to##.media-slot-bottom
 streamcash.to###main-video ~ div[style]
 @@||streamcash.to^$ghide
 indoav.com##+js(nowoif)
@@ -22933,6 +22934,8 @@ cdn.4animo.xyz##+js(rmnt, script, _buildOverlay)
 ||al5sm.com^$redirect=empty,domain=av1core.com
 sports-arena.space##+js(nostif, adblock)
 ##.flex a[href^="http://adpostup.com/"]
+||imasdk.googleapis.com/js/sdkloader/ima3.js$redirect=google-ima.js,domain=juliewomanwish.com
+juliewomanwish.com##+js(nowoif)
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
