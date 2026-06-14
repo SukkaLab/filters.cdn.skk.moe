@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sun, 14 Jun 2026 15:58:25 GMT
+! Last modified: Sun, 14 Jun 2026 20:01:13 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,13 +8,13 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sun, 14 Jun 2026 11:30:31 +0000
+!   - Last modified: Sun, 14 Jun 2026 13:36:21 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
-!   - Last modified: Fri, 12 Jun 2026 09:48:18 +0000
+!   - Last modified: Sun, 14 Jun 2026 16:42:23 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Sun, 14 Jun 2026 10:49:13 +0000
+!   - Last modified: Sun, 14 Jun 2026 12:46:57 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
 !   - Last modified: Tue, 09 Jun 2026 09:41:27 +0000
@@ -30,7 +30,7 @@
 !   - Last modified: Sun, 14 Jun 2026 10:58:30 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
-!   - Last modified: Sat, 13 Jun 2026 10:52:38 +0000
+!   - Last modified: Sun, 14 Jun 2026 13:35:55 +0000
 ! --------------------------------------------------------------
 ! uBlock filters https://ublockorigin.pages.dev/filters/filters.min.txt
 *_ad_$media,domain=youtube.com,3p
@@ -8863,7 +8863,7 @@ manhwass.com##+js(trusted-suppress-native-method, Document.prototype.querySelect
 shemaleraw.com,thecustomrom.com,wemove-charity.org##^script:has-text(deblocker)
 shemaleraw.com,thecustomrom.com,wemove-charity.org##+js(rmnt, script, deblocker)
 jnews5.com,kayoanime.com##+js(set, tie.ad_blocker_detector, false)
-animenew.com.br,bgmiesports.in,daotekno.com,idealight.it,minutemirror.com.pk,relampagomovies.com,sports-arena.space,techybuff.com,zataz.com##+js(nostif, bait)
+animenew.com.br,bgmiesports.in,daotekno.com,idealight.it,journalduweb.org,minutemirror.com.pk,relampagomovies.com,sports-arena.space,techybuff.com,zataz.com##+js(nostif, bait)
 dotesports.com,epicstream.com,fallbrook247.com,feral-heart.com,gamesgames.com,gamerevolution.com,gazettenet.com,girlsgogames.co.uk,insidenova.com,jetztspielen.de,kasvekuvvet.net,leitesculinaria.com,nbcnews.com,notevibes.com,practicalpainmanagement.com,prad.de,progameguides.com,ranker.com,realityblurb.com,ruinmyweek.com,sanangelolive.com,sanfoundry.com,selfhacked.com,siliconera.com,son.co.za,sporcle.com,stealthoptional.com,thesportster.com,upi.com,visualcapitalist.com,wegotthiscovered.com,primagames.com##+js(aopr, googletag)
 audizine.com,blackenterprise.com,cwtv.com,magesy.*,pastes.io##+js(acs, document.createElement, admiral)
 pc-builds.com,today.com,videogamer.com,wrestlinginc.com##+js(set, admiral, noopFunc)
@@ -8871,7 +8871,7 @@ pcbolsa.com##^script:has-text(/"v4ac1eiZr0"|""\)\.split\(","\)\[4\]|(\.localStor
 15min.lt,247sports.com,abc17news.com,addictinggames.com,agrodigital.com,aliontherunblog.com,allaboutthetea.com,allmovie.com,allmusic.com,allthingsthrifty.com,amessagewithabottle.com,arstechnica.com,audiomack.com,awkward.com,barcablaugranes.com,barnsleychronicle.com,bethcakes.com,betweenenglandandiowa.com,blazersedge.com,blogher.com,blu-ray.com,bluegraygal.com,boredpanda.com,briefeguru.de,brobible.com,cagesideseats.com,cbsnews.com,cbssports.com,celiacandthebeast.com,chaptercheats.com,cheatsheet.com,clickondetroit.com,commercialcompetentedigitale.ro,crooksandliars.com,dailydot.com,dailykos.com,dailyvoice.com,danslescoulisses.com,databazeknih.cz,decider.com,didyouknowfacts.com,dpreview.com,egoallstars.com,eldiariony.com,fark.com,femestella.com,flickr.com,fmradiofree.com,forums.hfboards.com,free-power-point-templates.com,freeconvert.com,frogsandsnailsandpuppydogtail.com,funtasticlife.com,fwmadebycarli.com,golfdigest.com,grunge.com,gulflive.com,homeglowdesign.com,honeygirlsworld.com,ibtimes.co.in,imgur.com,intouchweekly.com,iphoneincanada.ca,jasminemaria.com,kion546.com,last.fm,lettyskitchen.com,lifeandstylemag.com,lifeinleggings.com,lizzieinlace.com,localnews8.com,lonestarlive.com,macwelt.de,madeeveryday.com,maidenhead-advertiser.co.uk,mardomreport.net,melangery.com,miamiherald.com,mmamania.com,mostlymorgan.com,motherwellmag.com,musicfeeds.com.au,naszemiasto.pl,nationalpost.com,nationalreview.com,nbcsports.com,news.com.au,ninersnation.com,nordot.app,nothingbutnewcastle.com,nsjonline.com,nypost.com,observer.com,ontvtonight.com,pagesix.com,patheos.com,pauladeen.com,pcbolsa.com,pep.ph,phillyvoice.com,puckermom.com,pwinsider.com,reelmama.com,rlfans.com,royalmailchat.co.uk,sandrarose.com,sbnation.com,sheknows.com,sidereel.com,smartworld.it,sneakernews.com,soldionline.it,sport-fm.gr,sportsgamblingpodcast.com,spotofteadesigns.com,ssnewstelegram.com,stacysrandomthoughts.com,stylecaster.com,tablelifeblog.com,tastingtable.com,techcrunch.com,thecelticblog.com,thedailymeal.com,thegatewaypundit.com,theflowspace.com,themarysue.com,thenerdstash.com,thenerdyme.com,theprudentgarden.com,tiermaker.com,timesofisrael.com,tiscali.cz,tokfm.pl,torontosun.com,usmagazine.com,wallup.net,wannacomewith.com,wcnc.com,weather.com,wimp.com,windsorexpress.co.uk,woojr.com,worldoftravelswithkids.com,worldstar.com,worldstarhiphop.com,worldsurfleague.com,wyborkierowcow.pl,yourcountdown.to##+js(rmnt, script, `/"v4ac1eiZr0"|""\)\.split\(","\)\[4\]|(\.localStorage\)|JSON\.parse\(\w)\.getItem\("|["']_aQS0\w+["']|decodeURI\(decodeURI\("|<a href="https:\/\/getad%|"cmp\.updated"/`)
 followfollow.com,marketwatch.com,sporcle.com,wsj.com##+js(rmnt, script, admiral, excludes, \,\")
 huskermax.com,iphoneincanada.ca##+js(rmnt, script, adblockerDisabled, excludes, \,\")
-apnews.com,rust-servers.net##+js(rmnt, script, /admiral|-engaged/, excludes, \,\")
+apnews.com,hytale-servers.net,rust-servers.net##+js(rmnt, script, /admiral|-engaged/, excludes, \,\")
 ampav.com,artforum.com,artnews.com,atxtv.co,bgr.com,billboard.com,deadline.com,dickclark.com,footwearnews.com,goldderby.com,hollywoodreporter.com,indiewire.com,la3c.com,lifeisbeautiful.com,luminatedata.com,robbreport.com,rollingstone.com,shemedia.com,sourcingjournal.com,sportico.com,spy.com,sxsw.com,tvline.com,variety.com,vibe.com,wwd.com##^script.pmc-admiral
 ampav.com,artforum.com,artnews.com,atxtv.co,bgr.com,billboard.com,deadline.com,dickclark.com,footwearnews.com,goldderby.com,hollywoodreporter.com,indiewire.com,la3c.com,lifeisbeautiful.com,luminatedata.com,robbreport.com,rollingstone.com,shemedia.com,sourcingjournal.com,sportico.com,spy.com,sxsw.com,tvline.com,variety.com,vibe.com,wwd.com##+js(rmnt, script, adblockerDisabled, excludes, \,\")
 al.com,cleveland.com,lehighvalleylive.com,masslive.com,mlive.com,nj.com,oregonlive.com,pennlive.com,silive.com,syracuse.com##+js(rmnt, script, adblockerDisabled, excludes, \,\")
@@ -19782,7 +19782,6 @@ watchdirty.to##+js(set, flashvars.adv_pre_vast, '')
 watchdirty.to##.block-video > .table
 cinemitas.org,cinelatino.net,cineplus123.org,paraveronline.org,verpelis.gratis##+js(trusted-set, dtGonza.playeradstime, '"-1"')
 manoramaonline.com##+js(aopr, EV.Dab)
-||magsrv.com/ad-provider.js$xhr,redirect=noop.txt
 pianetalecce.it##+js(acs, document.getElementById, ablk)
 hiraethtranslation.com##+js(rmnt, script, adsSrc)
 chasingthedonkey.com##+js(nowoif)
@@ -22898,12 +22897,14 @@ pilotsglobal.com##.banner
 ondebola.com##+js(nostif, utilAds)
 ondebola.com##.adslot_horizontal_big_desktop_extra
 ondebola.com##.solverde-affiliate-banner
-streamcash.to##+js(rmnt, script, /\.onerror|offsetHeight/)
+streamcash.to##+js(rmnt, script, /\.onerror|offsetHeight|Bait|getComputedStyle/)
 streamcash.to##+js(nowoif)
+streamcash.to##+js(trusted-replace-argument, document.createElement, 0, json:"div", condition, /^a$/)
+streamcash.to##+js(rpnt, script, player.pause();)
 streamcash.to###player-ui-layer[style="position:absolute;inset:0;z-index:99;cursor:pointer;"]
 streamcash.to##div.banner-zone
 streamcash.to##.media-slot-bottom
-streamcash.to###main-video ~ div[style]
+streamcash.to###main-video ~ [style="position: absolute; inset: 0px; z-index: 99; cursor: pointer;"]
 @@||streamcash.to^$ghide
 indoav.com##+js(nowoif)
 cjr.org###interVeil
@@ -23704,6 +23705,7 @@ cracksmid.com##div[style=""] > center > center
 ||divibase.xyz^$all
 ||lincolnforestlakeproject.com^$all
 ||safeageplan.link^$all
+||safe-device.com^$all
 ||webuzz.me^$doc
 ||coup-ling.net^$all
 ||gokinjolove.jp^$all
@@ -27115,6 +27117,7 @@ top##body > center + .A + .post
 ||security-process.pages.dev^$all
 ##body > .page > #mainVerifyRow
 ##body > .page > .verify-row
+||bisque-bison-333202.hostingersite.com^$all
 ! uBlock filters – Privacy https://ublockorigin.pages.dev/filters/privacy.min.txt
 ||google-analytics.com/analytics.js$script,xhr,redirect=google-analytics_analytics.js:5
 ||google-analytics.com/cx/api.js$script,redirect=google-analytics.com/cx/api.js:5
@@ -28600,6 +28603,7 @@ abs-cbn.com##+js(set-session-storage-item, VR-INJECTOR-INSTANCES-MAP, $remove$)
 /ingest/*^ip=
 /ingress/*^ip=
 /hog/*^ip=
+/flags/*^ip=
 ||rldcr.madeincookware.com/tag?name=
 edikted.com##+js(remove-cookie, /_shopify_y|yotpo_pixel/, when, scroll keydown)
 ||api.bilibili.com/x/web-frontend/data/collector^
@@ -37490,3 +37494,6 @@ estadao.com.br##+js(trusted-set-local-storage-item, TUTORIAL_CLOSED_SNACKS_HOME,
 estadao.com.br##+js(set-local-storage-item, TUTORIAL_VIEWED_SNACKS_HOME, true)
 freemagazines.top##+js(trusted-rpnt, script, timeLeft > 0, timeLeft = 0, includes, clearInterval)
 zocbo.com###festivalPop
+simplywall.st###root ~ #action-menu ~ #modal-container
+simplywall.st###root:style(filter: none !important;)
+simplywall.st##+js(spoof-css, #root, filter, blur(6px))
