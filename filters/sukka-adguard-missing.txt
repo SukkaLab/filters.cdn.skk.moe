@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sun, 14 Jun 2026 23:38:57 GMT
+! Last modified: Mon, 15 Jun 2026 07:41:04 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sun, 14 Jun 2026 13:36:21 +0000
+!   - Last modified: Mon, 15 Jun 2026 04:03:38 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Sun, 14 Jun 2026 16:42:23 +0000
@@ -27,7 +27,7 @@
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Sun, 14 Jun 2026 10:58:30 +0000
+!   - Last modified: Mon, 15 Jun 2026 04:48:14 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
 !   - Last modified: Sun, 14 Jun 2026 13:35:55 +0000
@@ -20098,6 +20098,7 @@ sdna.gr###disqus_thread:style(display: block !important;)
 tempmail.ninja##aside[class] > div.mx-auto:has(> ins.adsbygoogle)
 tempmail.ninja##+js(trusted-set-attr, ins.adsbygoogle, data-ad-status, filled)
 tempmail.ninja##+js(trusted-create-html, ins.adsbygoogle, <div><iframe></iframe></div>)
+tempmail.ninja##+js(nostif, ads_not_loaded)
 pricearchive.org##+js(set-cookie, aalset, 1)
 allosurf.net##+js(nostif, detectAdblock)
 gobankingrates.com##+js(aeld, DOMContentLoaded, blockAdBlock)
@@ -22594,10 +22595,8 @@ maxroll.gg##.adsmanager-ad-container
 ||cdn-x.net^
 ||cdn-z.net^
 /^https:\/\/[a-z-]+\.cdn-[a-z]\.net\/$/$xhr,3p,to=net
-/^https:\/\/get[0-9]+\.host[0-9]+[a-z]\.cfd\/\?(?:tag|data)=[a-zA-Z0-9:_=-]+/$all,match-case,to=cfd
+/^https:\/\/get[0-9]+\.host[0-9]+[a-z]\.cfd\/\?[a-z]+=[a-zA-Z0-9:_=-]+/$all,match-case
 /^https:\/\/\d+\.cfd\/[a-z]{3}tag[a-z]{3}\/v\d\/[a-zA-Z0-9]+:C\d\.js\b/$script,3p,match-case,to=cfd
-/^https:\/\/get[0-9]+\.host[0-9]+[a-z]\.cfd\/\?tag=[a-zA-Z0-9:_=-]+/$all,match-case
-/^https:\/\/get[0-9]+\.host[0-9]+[a-z]\.cfd\/\?data=[a-zA-Z0-9:_=-]+/$all,match-case
 /^https:\/\/[0-9]+\.cfd\/[a-z][a-z][a-z]tag[a-z][a-z][a-z]\/v[0-9]\/[a-zA-Z0-9]+:C[0-9]\.js\b/$script,3p,match-case
 ||romhandbook.com/assets/lib/adblock-
 fullvideosporn.com##+js(nostif, /initPops|popLite|popunder/)
@@ -32024,6 +32023,8 @@ garuda-indonesia.com##+js(set-local-storage-item, cookies, agree)
 voelkner.de##+js(trusted-click-element, .js_cookie_content button[data-cookie_consent="0"], , 1000)
 schroders.com##+js(trusted-click-element, div[aria-labelledby="modal-title-cookieDisclaimerModal"] button[class*="SecondaryButton"])
 82-0.com##+js(trusted-set-local-storage-item, 82-consent-v1, '{"analytics_storage":"denied","ad_storage":"denied","ad_user_data":"denied","ad_personalization":"denied","decided":true}')
+filen.io,~app.filen.io##+js(trusted-set-cookie-reload, cookieConsent, onlyNeeded)
+app.filen.io##+js(trusted-set-local-storage-item, cookieConsent, '"needed"')
 dailymail.co.uk,dailymail.com##+js(trusted-click-element, div[data-project="mol-fe-cmp"] button[class*="consent"]:not([class*="reject"]))
 1001games.com,1001hry.cz,1001jeux.fr,1001jocuri.ro,1001jogos.com.br,1001jogos.pt,1001pelit.com,1001spiele.de,auth.hbomax.com,elkspel.nl,gamespot.com,giochixl.it,glamour.com,grajteraz.pl,isladejuegos.com,jatekokxl.hu,mtvuutiset.fi,paixnidiaxl.gr,pushsquare.com,spelo.se,spillespill.no,spilxl.dk,thejournal.ie,thetrainline.com,vkmag.com,zdnet.com##+js(trusted-set-cookie, OptanonAlertBoxClosed, $currentDate$, 1year)
 evaair.com##+js(trusted-set-cookie, _EVAcookieaccept, Y, 1year)
@@ -33779,7 +33780,6 @@ www.drk-hannover.de##+js(trusted-set-cookie, cc_cookie, '{"categories":["necessa
 www.drk-hannover.de##+js(set-cookie, cc_external, allow)
 lahella.fi##+js(trusted-set-local-storage-item, cookieOptions, '{"essential":true,"analytics":false,"socialMedia":true}')
 lahella.fi##+js(set-local-storage-item, cookieConsentGiven, 1)
-filen.io,~app.filen.io##+js(trusted-set-cookie-reload, cookieConsent, onlyNeeded)
 altibox.dk,altibox.no##+js(trusted-click-element, [id="CybotCookiebotDialogBodyButtonDecline"], , 2000)
 @@||consent.cookiebot.com/uc.js^$domain=altibox.dk|altibox.no
 altibox.dk,altibox.no##.CybotCookiebotDialogContentWrapper
