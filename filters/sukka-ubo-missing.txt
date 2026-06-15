@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Mon, 15 Jun 2026 12:44:02 GMT
+! Last modified: Mon, 15 Jun 2026 16:06:28 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.5.72
+!   - Version: 2.1.5.73
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -55050,6 +55050,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||countly.
 ||countly-
 |piwik.
+||adtech.abs-cbn.com^
 ||transporter.makemytrip.global^
 ||cchome-stage.adobe.io^
 ||cchome.adobe.io^
@@ -154023,6 +154024,10 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||rent.com/api/analytics|
+||session-api.cloud.pji.nu/sessions/*/events
+||prisjakt.no/_next/monitoring
+||prisjakt.no/rbr9/
 ||hdrezka.ax/api/logs/event
 ||assets.poool.fr/engage.min.js
 ||usine-digitale.fr/pf/resources/newrelic.js
