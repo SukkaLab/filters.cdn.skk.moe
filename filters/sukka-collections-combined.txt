@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Tue, 16 Jun 2026 00:03:15 GMT
+! Last modified: Tue, 16 Jun 2026 07:44:52 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202606152351
+!   - Version: 202606160731
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 15 Jun 2026 23:51 UTC
+!   - Last modified: 16 Jun 2026 07:31 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
@@ -74,7 +74,7 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * ➗ Actually Legitimate URL Shortener Tool
 !   - URL: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt
-!   - Version: 13June2026v1
+!   - Version: 16June2026v1
 !   - Homepage: https://github.com/DandelionSprout/adfilt/discussions/163
 ! * 🐊 Imgur: Pure Imagery Experience
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/ImgurPureImageryExperience.txt
@@ -20527,6 +20527,12 @@ ref=libreselfhosted.com$doc,removeparam=ref
 ||www.dropbox.com^$doc,removeparam=_ad
 ||www.dropbox.com^$doc,removeparam=_camp
 weekend-reading-link-$doc,removeparam=/^weekend-reading-link-\d{6}/
+||photoshop.adobe.com^$removeparam=promoid
+||photoshop.adobe.com^$removeparam=mv
+||apps.microsoft.com^$removeparam=hasHeroImage
+://get.microsoft.com/installer/download^$removeparam=referrer
+://get.microsoft.com/installer/download^$removeparam=source
+://get.microsoft.com/installer/download^$removeparam=ocid
 $removeparam=w,domain=files.wordpress.com|store.playstation.com|s-microsoft.com|store-images.microsoft.com|dr.dk|if.com.au
 $removeparam=h,domain=files.wordpress.com|store.playstation.com|s-microsoft.com|store-images.microsoft.com|dr.dk
 $removeparam=width,domain=i-viaplay.com.akamaized.net|media.discordapp.net|tvno.nu

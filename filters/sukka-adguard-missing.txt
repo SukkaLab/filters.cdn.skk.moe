@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Tue, 16 Jun 2026 00:03:15 GMT
+! Last modified: Tue, 16 Jun 2026 07:44:52 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Mon, 15 Jun 2026 16:35:38 +0000
+!   - Last modified: Tue, 16 Jun 2026 02:21:01 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Sun, 14 Jun 2026 16:42:23 +0000
@@ -27,7 +27,7 @@
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Mon, 15 Jun 2026 15:17:45 +0000
+!   - Last modified: Tue, 16 Jun 2026 04:11:19 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
 !   - Last modified: Sun, 14 Jun 2026 13:35:55 +0000
@@ -21721,7 +21721,7 @@ friv.com##+js(aeld, DOMContentLoaded, Visibility)
 friv.com##+js(nostif, Visibility)
 fileszero.com,viralharami.com,wstream.cloud##+js(rmnt, script, destroyContent)
 viralharami.com##+js(nostif, window.open)
-||imasdk.googleapis.com/js/sdkloader/ima3.js$redirect=google-ima.js,domain=radio.*|radio.at|radio.de|radio.dk|radio.es|radio.fr|radio.it|radio.net|radio.pl|radio.pt|radio.se
+||imasdk.googleapis.com/js/sdkloader/ima3.js$redirect=noopjs,domain=radio.*|radio.at|radio.de|radio.dk|radio.es|radio.fr|radio.it|radio.net|radio.pl|radio.pt|radio.se
 tek.no##+js(no-xhr-if, damoh)
 @@||discover-sharm.com^$ghide
 discover-sharm.com##+js(no-fetch-if, adsbygoogle)
@@ -22637,7 +22637,6 @@ borntobefuck.com##.ads-overlay
 borntobefuck.com##.vast-container
 chatgpt.com##+js(trusted-json-edit, [?.type=="ads"].visibility.status="hidden")
 ourcoincash.xyz,softdevelopp.com##+js(noeval-if, Adblock)
-radio.net##+js(trusted-replace-argument, Array.prototype.includes, 0, json:"none", condition, /^755$/)
 ||umamianal.vercel.app^$domain=willow.arlen.icu
 willow.arlen.icu##+js(nowoif)
 singletrackworld.com##+js(rmnt, script, onerror)
@@ -31695,6 +31694,8 @@ groupeapocom.com###website_cookies_bar
 @@||cdn.privacy-mgmt.com/unified/wrappermessagingwithoutdetection.js$domain=businessinsider.com,badfilter
 businessinsider.com##.related-posts
 /wrapperMessagingWithoutDetection.js$domain=autosport.com
+pinterest.com###__PWS_ROOT__ ~ div[class][style="z-index: 1000;"]:not([id])
+pinterest.com##body[style]:style(overflow: auto !important;)
 www.google.*##+js(trusted-click-element, button#W0wltc, , 500)
 gemini.google.com##+js(trusted-click-element, button[data-test-id="reject-button"], , 500)
 consent.google.*##+js(trusted-click-element, form[action] button[jsname="tWT92d"])
@@ -33958,7 +33959,7 @@ antena3.ro##+js(trusted-click-element, #onetrust-accept-btn-handler, , 1000)
 shop.a1.by##+js(trusted-set-cookie-reload, cookie_agreement_level, IlJFUVVJUkVEIg==)
 ~internet.a1.by,~myaccount.a1.by,~shop.a1.by,~support.a1.by,a1.by##+js(trusted-set-cookie-reload, cookie_agreement_level, FUNCTIONAL)
 @@||consentmanager.net^$script,domain=hrt.hr
-hrt.hr##+js(trusted-click-element, a.cmptxt_btn_yes)
+hrt.hr##+js(trusted-click-element, 'a[data-cmp-purpose][aria-label="Svrha: Društvene mreže"],200,a[data-cmp-purpose][aria-label="Svrha: Ostalo"],200,a.cmpboxbtnsave')
 ! uBlock filters – Annoyances https://ublockorigin.pages.dev/filters/annoyances.min.txt
 mimaletadepeliculas.blogspot.com##+js(aopr, document.oncontextmenu)
 mimaletadepeliculas.blogspot.com##+js(acs, document.onselectstart)
