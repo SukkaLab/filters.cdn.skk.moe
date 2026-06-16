@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Tue, 16 Jun 2026 07:44:52 GMT
+! Last modified: Tue, 16 Jun 2026 11:36:00 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Tue, 16 Jun 2026 02:21:01 +0000
+!   - Last modified: Tue, 16 Jun 2026 10:05:12 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Sun, 14 Jun 2026 16:42:23 +0000
@@ -11962,9 +11962,6 @@ kat.*,katbay.*,kickass.*,kickasshydra.*,kickasskat.*,kickass2.*,kickasstorrents.
 *$script,1p,domain=torrentproject2.*
 *$csp=script-src *,domain=torrentproject2.*
 *$frame,domain=torrentproject2.*
-uproxy.*##+js(aeld, , Pop)
-uproxy.*##+js(set, String.fromCharCode, trueFunc)
-uproxy.*##+js(nowoif)
 /istripper.js
 convert2mp3.club##+js(nowoif)
 convert2mp3.club###idIframe
