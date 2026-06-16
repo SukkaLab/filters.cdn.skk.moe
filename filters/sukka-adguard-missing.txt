@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Tue, 16 Jun 2026 15:24:04 GMT
+! Last modified: Tue, 16 Jun 2026 18:40:28 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Tue, 16 Jun 2026 10:05:12 +0000
+!   - Last modified: Tue, 16 Jun 2026 14:52:04 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Sun, 14 Jun 2026 16:42:23 +0000
@@ -7151,7 +7151,7 @@ earnbee.xyz###overlay
 datavaults.co###dummy
 datavaults.co###original:style(display: block !important;)
 datavaults.co##+js(set, clicked, 2)
-datavaults.co##+js(rmnt, script, /\\x|_blank/)
+datavaults.co##+js(rmnt, script, /"\\|\\x|dummy/)
 fastt.gg###startDownload
 fastt.gg##+js(nowoif, _blank)
 fastt.gg##+js(nano-sib, countdown, 1000)
@@ -22943,6 +22943,7 @@ hytale-servers.net##ins.adsbygoogle[data-ad-slot]
 hytale-servers.net##ins.adsbygoogle[data-ad-client]
 hytale-servers.net###topadspot
 hytale-servers.net###vote-form-block:style(display:block !important)
+sonyliv.com##+js(no-fetch-if, pubads.g.doubleclick.net)
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
