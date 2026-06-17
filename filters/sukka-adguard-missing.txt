@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Wed, 17 Jun 2026 07:28:58 GMT
+! Last modified: Wed, 17 Jun 2026 11:19:01 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,13 +8,13 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Wed, 17 Jun 2026 04:30:09 +0000
+!   - Last modified: Wed, 17 Jun 2026 09:57:50 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Sun, 14 Jun 2026 16:42:23 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Mon, 15 Jun 2026 16:18:01 +0000
+!   - Last modified: Wed, 17 Jun 2026 05:37:50 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
 !   - Last modified: Tue, 09 Jun 2026 09:41:27 +0000
@@ -9686,6 +9686,7 @@ kuyhaa.me##+js(acs, document.addEventListener, window.open)
 ||meong.club/go/?aHR0c*$doc,urlskip=/\/go\/\?(aHR0c.+)/ -base64
 ||kuyhaa.me/pmbut.js
 ||kuyhaa.me/*.php
+solispia.com##+js(trusted-rpnt, script, /document\.addEventListener\('DOMContentLoaded'\, function[\S\s]+?(const novelId\s*=\s*\d+;\s*const targetUrl\s*=.+?\d+";)[\S\s]+?verifying = true;\s*(try \{\s*const res[\S\s]+?ad_meta:)[\S\s]+?CMの準備中です...'\);\s*.*?\s*(try \{\s*const res[\S\s]+?return;\s*\})[\S\s]*/, document.addEventListener('DOMContentLoaded'\, async function(){$1 const sleep=ms=>new Promise(resolve=>setTimeout(resolve\,ms));$3 await sleep(5000+Math.floor(Math.random()*3000));$2 {"type":"reward"\,"amount": 2}})});const j=await res.json().catch(()=>null);}catch(e){}window.location.href=targetUrl;}))
 map.naver.com##+js(json-edit-xhr-response, .layers.*[?.metadata.name=="POI_Ads"], propsToMatch, /PCWeb_Real.json)
 pcmap.place.naver.com##+js(rpnt, script, document.write, window.__APOLLO_STATE__=JSON.parse(JSON.stringify(window.__APOLLO_STATE__));document.write)
 pcmap.place.naver.com##+js(json-edit, .*[?.adId])
@@ -9826,6 +9827,11 @@ cnnamador.com##+js(aeld, /^(click|mousedown|mousemove|touchstart|touchend|touchm
 cnnamador.com##.cards__item:has([href*="loboclick"])
 ||cnnamador.com/sw.js$script,1p
 ||adsloboclick.com^
+elamigosgames.net,elamigosgamez.net##+js(nostif, checkAdblockUser)
+elamigosgames.net,elamigosgamez.net##.content_store
+elamigosgames.net,elamigosgamez.net##.iframeDiv
+elamigosgamez.net##h3.my-4:has-text(/^Advertising/)
+||instant-gaming.com/api/banner/
 steamseries88.com##+js(rpnt, script, let playerType, 'window.addEventListener("load",()=>{if(typeof playMovie==="function"){playMovie()}});let playerType')
 isgfrm.com##+js(acs, document.createElement, .offsetHeight)
 isgfrm.com##+js(rmnt, script, /adbl|RegExp/i)
@@ -16574,10 +16580,6 @@ claimlite.club##+js(noeval-if, blocker)
 gadgets.es##+js(set, DHAntiAdBlocker, true)
 gadgets.es##+js(set, isAdBlockActive, false)
 rackusreads.com##+js(set, DHAntiAdBlocker, true)
-elamigosgamez.net##+js(nostif, checkAdblockUser)
-elamigosgamez.net##.content_store
-elamigosgamez.net##h3.my-4:has-text(/^Advertising/)
-elamigosgamez.net##.iframeDiv
 *$script,domain=wp.pl|money.pl|o2.pl|parenting.pl|pudelek.pl|autokult.pl|gadzetomania.pl|fotoblogia.pl|komorkomania.pl|polygamia.pl|abczdrowie.pl|benchmark.pl|kafeteria.pl|pysznosci.pl|dobreprogramy.pl|genialne.pl|autocentrum.pl|jastrzabpost.pl|deliciousmagazine.pl,redirect-rule=noopjs
 ||imasdk.googleapis.com/js/sdkloader/ima3_debug.js$script,domain=o2.pl,redirect=google-ima.js:10
 @@*$ghide,domain=wp.pl|money.pl|o2.pl|parenting.pl|pudelek.pl|autokult.pl|gadzetomania.pl|fotoblogia.pl|komorkomania.pl|polygamia.pl|abczdrowie.pl|benchmark.pl|kafeteria.pl|pysznosci.pl|dobreprogramy.pl|genialne.pl|autocentrum.pl|jastrzabpost.pl|deliciousmagazine.pl
@@ -18269,7 +18271,7 @@ serially.it##+js(xml-prune, xpath(//*[name()="Period"][.//*[name()="BaseURL" and
 serially.it##+js(json-prune, ads)
 pkbiosfix.com##+js(nostif, show)
 pkbiosfix.com##+js(rmnt, script, AdBlock)
-autoscout24.*##+js(nostif, /Detect|adblock|style\.display|\[native code]|\.call\(null\)/)
+autoscout24.*##+js(nostif, /Detect|adblock|style\.display|\.call\(null\)/)
 autoscout24.*##div[class^="AdContentBanner"]
 scsport.live###ads-back
 ||garticphone.com/videos/gio.mp4$media,1p,redirect=noopmp3-0.1s
@@ -22402,7 +22404,7 @@ zpaste.net,pixeldrain.com###sponsors
 ||zshorte.net/*.html$frame,3p
 *$script,3p,denyallow=cloudflare.com|cloudflare.net|fastly.net|fastlylb.net|google.com|googleapis.com|gstatic.com|hwcdn.net|jquery.com|jsdelivr.net|jwplatform.com|jwpcdn.com|recaptcha.net|arc.io,domain=zpaste.net
 ||anime-jl.net^$3p,script
-zpaste.net##+js(rmnt, script, window.open)
+zpaste.net##+js(rmnt, script, /"\\|\\x/)
 zpaste.net##a[onclick*="window.open"]
 ||amcnreil.pro^$all
 steamplay.*##+js(aopr, btoa)
@@ -22764,7 +22766,7 @@ techsynchron.com##+js(set-local-storage-item, pbs_action_taken, true)
 techsynchron.com##+js(trusted-set-local-storage-item, pbs_action_time, $now$)
 techsynchron.com##+js(rmnt, script, const popup)
 techsynchron.com##.sh-aawp-box
-blogspot.com##.widget.HTML > .widget-content > .my-responsive-banner-container
+blogspot.com##.my-responsive-banner-container
 blogspot.com##.widget.HTML > .widget-content > #floating-footer.floating-footer
 sita.sk#@#.ads-box
 sita.sk##.branding
@@ -27606,6 +27608,7 @@ www.youtube.com##+js(no-xhr-if, /\/api\/stats\/atr\?.+?&rt=\d+\.\d+.+?&volume=\d
 ||zoom.us/*/app-telemetry.
 ||zoom.us/*/fingerprintjs-
 ||zoom.us/user/anonymous/telemetry
+||observe.runpod.io/static/web-vitals.js
 ||petametrics.com^$~script
 ||petametrics.com/*/__activity.
 ||paytr.com/securemetric/
@@ -28603,7 +28606,6 @@ abs-cbn.com##+js(set-session-storage-item, VR-INJECTOR-INSTANCES-MAP, $remove$)
 /ingest/*^ip=
 /ingress/*^ip=
 /hog/*^ip=
-/flags/*^ip=
 ||rldcr.madeincookware.com/tag?name=
 edikted.com##+js(remove-cookie, /_shopify_y|yotpo_pixel/, when, scroll keydown)
 ||api.bilibili.com/x/web-frontend/data/collector^
