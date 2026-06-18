@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Thu, 18 Jun 2026 13:44:01 GMT
+! Last modified: Thu, 18 Jun 2026 17:29:07 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.5.90
+!   - Version: 2.1.5.92
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -154028,11 +154028,14 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||api.anyembed.xyz/api/user/event|
+thestar.com.my##+js(set-local-storage-item, nx_anon_id_v1, $remove$)
+||st-a.cdp.asia/insight.js
 ||ph.givebutter.com^$ping
 ||work.ua/api/v1/view-page/
 ||compo-de.frontnow.app/api/event|
 ||economx.hu/ident-fingerprint/
-||dex.hu/x.php
+||dex.hu/x.php$xhr
 ||senvio.ai/api/*/events/
 ||health.ems.onet.pl/*/metric/collector
 ||rent.com/api/analytics|
@@ -159086,6 +159089,7 @@ dlsdk.appsflyer.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||stats-sdk.tange365.com^
 ||dc.oppomobile.com^
 ||aki-gb-sdklog.kurogames.net^
 ||log1.pwsdk.com^
