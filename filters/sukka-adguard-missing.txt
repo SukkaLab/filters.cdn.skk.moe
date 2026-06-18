@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Wed, 17 Jun 2026 23:52:15 GMT
+! Last modified: Thu, 18 Jun 2026 07:11:58 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,13 +8,13 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Wed, 17 Jun 2026 11:00:03 +0000
+!   - Last modified: Thu, 18 Jun 2026 06:10:07 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Wed, 17 Jun 2026 14:06:50 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Wed, 17 Jun 2026 12:01:55 +0000
+!   - Last modified: Thu, 18 Jun 2026 03:41:24 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
 !   - Last modified: Tue, 09 Jun 2026 09:41:27 +0000
@@ -27,7 +27,7 @@
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Tue, 16 Jun 2026 04:11:19 +0000
+!   - Last modified: Thu, 18 Jun 2026 04:14:05 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
 !   - Last modified: Wed, 17 Jun 2026 12:03:34 +0000
@@ -9191,6 +9191,7 @@ gumtree.com##+js(json-prune, features.ad02 features.adshield)
 /scripts/delayed.js|$script,1p
 nextchessmove.com,reneweconomy.com.au##+js(rmnt, script, HTMLIFrameElement)
 /^https:\/\/[a-z]{12,20}\.com\/script\/[a-zA-Z0-9]+_[a-zA-Z0-9]+\.js$/$script,3p,match-case,to=com,from=nextchessmove.com|reneweconomy.com.au
+gamebanana.com##+js(rmnt, script, /admiral|adshield/)
 /^https:\/\/[a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z]?[a-z]?[a-z]?[a-z]?[a-z]?[a-z]?[a-z]?[a-z]?\.com\/script\/[a-zA-Z0-9]+_[a-zA-Z0-9]+\.js$/$script,3p,match-case,domain=nextchessmove.com|reneweconomy.com.au
 saabcentral.com##+js(acs, document.createElement, abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=)
 alkas.lt###stpd-tablet-1
@@ -9955,6 +9956,7 @@ motphimr.io##+js(trusted-set-session-storage-item, popup-ads-last-shown, $now$)
 rophimz.*##+js(set-session-storage-item, ads-clicked-under-last-click, 11)
 rophimz.*##+js(trusted-set-session-storage-item, shopee-ads-clicked, $now$)
 rophimz.*##+js(trusted-set-session-storage-item, shopee-ads-last-click, $now$)
+rophimz.*##+js(trusted-override-element-method, HTMLAnchorElement.prototype.click, a[target="_blank"][rel*="sponsored"])
 voznovel.com##+js(rmnt, script, shopeeLinks)
 voznovel.com##+js(aeld, click, shopeeLinks)
 ||phimcn.*/assets/pu.js
@@ -22904,10 +22906,11 @@ pilotsglobal.com##.banner
 ondebola.com##+js(nostif, utilAds)
 ondebola.com##.adslot_horizontal_big_desktop_extra
 ondebola.com##.solverde-affiliate-banner
-streamcash.to##+js(rmnt, script, /\.onerror|offsetHeight|Bait|getComputedStyle/)
+streamcash.to##+js(rmnt, script, /\.onerror|offsetHeight|Bait|getComputedStyle|dimCheck|getBoundingClientRect/)
 streamcash.to##+js(nowoif)
 streamcash.to##+js(trusted-replace-argument, document.createElement, 0, json:"div", condition, /^a$/)
 streamcash.to##+js(rpnt, script, player.pause();)
+streamcash.to##+js(rpnt, script, if (gate), player.play();if (false))
 streamcash.to###player-ui-layer[style="position:absolute;inset:0;z-index:99;cursor:pointer;"]
 streamcash.to##div.banner-zone
 streamcash.to##.media-slot-bottom
@@ -22955,6 +22958,7 @@ hytale-servers.net##ins.adsbygoogle[data-ad-client]
 hytale-servers.net###topadspot
 hytale-servers.net###vote-form-block:style(display:block !important)
 sonyliv.com##+js(no-fetch-if, pubads.g.doubleclick.net)
+chzzk.naver.com#%#//scriptlet('trusted-set-local-storage-item', 'homeSkinCollapsedUntil', '9999999999999')
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -27617,6 +27621,7 @@ www.youtube.com##+js(no-xhr-if, /\/api\/stats\/atr\?.+?&rt=\d+\.\d+.+?&volume=\d
 ||zoom.us/*/fingerprintjs-
 ||zoom.us/user/anonymous/telemetry
 ||observe.runpod.io/static/web-vitals.js
+/e/*^ip=*^beacon=
 ||petametrics.com^$~script
 ||petametrics.com/*/__activity.
 ||paytr.com/securemetric/
@@ -32040,6 +32045,7 @@ schroders.com##+js(trusted-click-element, div[aria-labelledby="modal-title-cooki
 82-0.com##+js(trusted-set-local-storage-item, 82-consent-v1, '{"analytics_storage":"denied","ad_storage":"denied","ad_user_data":"denied","ad_personalization":"denied","decided":true}')
 filen.io,~app.filen.io##+js(trusted-set-cookie-reload, cookieConsent, onlyNeeded)
 app.filen.io##+js(trusted-set-local-storage-item, cookieConsent, '"needed"')
+ing.be##+js(trusted-set-cookie, cookiesOptin, false, , , domain, .ing.be)
 dailymail.co.uk,dailymail.com##+js(trusted-click-element, div[data-project="mol-fe-cmp"] button[class*="consent"]:not([class*="reject"]))
 1001games.com,1001hry.cz,1001jeux.fr,1001jocuri.ro,1001jogos.com.br,1001jogos.pt,1001pelit.com,1001spiele.de,auth.hbomax.com,elkspel.nl,gamespot.com,giochixl.it,glamour.com,grajteraz.pl,isladejuegos.com,jatekokxl.hu,mtvuutiset.fi,paixnidiaxl.gr,pushsquare.com,spelo.se,spillespill.no,spilxl.dk,thejournal.ie,thetrainline.com,vkmag.com,zdnet.com##+js(trusted-set-cookie, OptanonAlertBoxClosed, $currentDate$, 1year)
 evaair.com##+js(trusted-set-cookie, _EVAcookieaccept, Y, 1year)
@@ -32710,7 +32716,8 @@ escherinhetpaleis.nl##.inset-0.fixed:has-text(This website uses cookies)
 escherinhetpaleis.nl##+js(trusted-set-cookie, esch-cookie-consent, '{"necessary":true,"statistics":false,"marketing":false}', , reload, 1)
 e-pribory.cz##+js(trusted-set-cookie, cookiesRules, '{"analytics":false,"personalized":false,"ads":false}')
 elisa.ee##+js(trusted-click-element, cds-button[id="cookie-allow-necessary-et"], , 1000)
-baseendpoint.brigitte.de,baseendpoint.gala.de,baseendpoint.haeuser.de,baseendpoint.stern.de,baseendpoint.urbia.de,cmp.tag24.de,cmp-sp.handelsblatt.com,cmpv2.berliner-zeitung.de,golem.de,gamestar.de,rockhard.de>>,consent.t-online.de,cmp-sp.handelsblatt.com##+js(trusted-click-element, button[title*="Zustimmen" i], ,  1000)
+baseendpoint.brigitte.de,baseendpoint.gala.de,baseendpoint.haeuser.de,baseendpoint.stern.de,baseendpoint.urbia.de,cmp.tag24.de,cmp-sp.handelsblatt.com,cmpv2.berliner-zeitung.de,golem.de,gamestar.de,consent.t-online.de,cmp-sp.handelsblatt.com,consent2.express.de##+js(trusted-click-element, button[title*="Zustimmen" i], ,  1000)
+rockhard.de>>##+js(trusted-click-element, button[title*="Zustimmen" i], ,  1000)
 sp-consent.stuttgarter-nachrichten.de,btc-echo.de>>,sp-consent.stuttgarter-zeitung.de##+js(trusted-click-element, button[title="Ich bin einverstanden"], , ,1000)
 regjeringen.no##+js(trusted-click-element, button[id="userSelectAll"], ,  1000)
 kanga.exchange##+js(trusted-set-cookie, cookies-consent|kanga, 1836378181|NECESSARY)
