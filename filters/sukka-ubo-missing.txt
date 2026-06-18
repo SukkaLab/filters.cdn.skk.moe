@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Thu, 18 Jun 2026 17:29:07 GMT
+! Last modified: Thu, 18 Jun 2026 20:41:02 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.5.92
+!   - Version: 2.1.5.94
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -55052,6 +55052,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||countly.
 ||countly-
 |piwik.
+||mcs-normal-*.capcutapi.com^
 ||performance-events.guardianapis.com^
 ||tracker-proxy.getmimo.com^
 ||adtech.abs-cbn.com^
@@ -154028,6 +154029,7 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||edit-api-*.capcut.com/lv/v1/event/
 ||api.anyembed.xyz/api/user/event|
 thestar.com.my##+js(set-local-storage-item, nx_anon_id_v1, $remove$)
 ||st-a.cdp.asia/insight.js
