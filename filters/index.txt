@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Filters
-! Last modified: Sat, 06 Jun 2026 13:10:25 GMT
+! Last modified: Sat, 20 Jun 2026 15:58:35 GMT
 ! Expires: 1 hours
 ! Description: The filters from Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -91,7 +91,7 @@ webcontainer.io#@#+js(sukka-defuse-service-worker)
 @@||github.com/*/web-vitals-
 @@||localhost$domain=skk.moe
 @@||fastly-analytics.com$domain=ip.skk.moe|localhost
-@@||api.ip.sb$domain=ip.skk.moe|localhost
+@@||ip.sb$domain=skk.moe|localhost
 @@||widget-mediator.zopim.com
 @@||bilivideo.com^$removeparam
 @@||bilivideo.cn^$removeparam
@@ -175,6 +175,7 @@ www.dnsfilter.com##+js(aopw, window.analytics)
 ||vemetric.com$3p
 ||affonso.io$3p
 ||himetrica.com/api$3p
+||sp1.baidu.com/*.gif$redirect=1x1.gif
 ||cnzz.com/z_stat.php$redirect=noop.js
 ||cnzz.com^$redirect=noop.txt
 ||static.doubleclick.net/instream/ad_status.js$redirect=noop.js
@@ -183,6 +184,7 @@ www.dnsfilter.com##+js(aopw, window.analytics)
 ||cdn.lgrckt-in.com/logger
 ||static.newsbreak.com/business/tracking/
 ||geoip.businessinsider.com
+||ciovita.com^$3p
 /ping.gif$redirect=1x1.gif
 /counters.gif$redirect=1x1.gif
 ||pixel.wp.com/g.gif$redirect=1x1.gif
@@ -263,6 +265,7 @@ intervals.icu##+js(trusted-set-local-storage-item, DonatePopup, 2099-12-31)
 ||nocookie.net/*/Sponsored$important
 ||nocookie.net/silversurfer$important
 ||fandom.com/*/AgeDeclaration/$image
+fandom.com###article-discussions
 fandom.com###age-gate
 ||change.org/api-proxy/graphql?op=SuggestedPetitionsFromPetitionSunrise
 ||change.org/api-proxy/graphql?op=SunriseVictoriousPetitionsFromPetition
@@ -365,6 +368,7 @@ t66y.com##+js(trusted-set, spJson, { "value": "[]" })
 netflav.com##+js(trusted-click-element, div.ads_video_close_button, , 500)
 zhihu.com##+js(trusted-click-element, '.Modal.signFlowModal button.Button.Modal-closeButton')
 dfzy.xyz##+js(trusted-set, window.navigator.userAgent, json:"Mozilla/5.0 quark/114514", runAt, 1)
+spot.cloudpilot.ai##.MuiBox-root.MuiPaper-elevation1.MuiPaper-rounded.MuiPaper-elevation.MuiPaper-root
 ||api.abema.io/v*/ip/check
 abema.tv##+js(trusted-prevent-xhr, ds-linear-abematv.akamaized.net/region, '')
 ||hanime.tv/country_code$redirect=noop.txt
@@ -821,3 +825,4 @@ www.justaftermidnight247.com##.blog-newsletter
 iboysoft.com##.delayed-popup-container
 iboysoft.com##.delayed-popup-overlay
 www.browserling.com###blackFridayOverlay
+open-design.ai##.newsletter-popup
