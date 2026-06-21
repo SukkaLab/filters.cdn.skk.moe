@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sun, 21 Jun 2026 20:06:55 GMT
+! Last modified: Sun, 21 Jun 2026 23:46:40 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -14,7 +14,7 @@
 !   - Last modified: Sat, 20 Jun 2026 22:48:17 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Sun, 21 Jun 2026 04:04:02 +0000
+!   - Last modified: Sun, 21 Jun 2026 20:44:07 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
 !   - Last modified: Tue, 09 Jun 2026 09:41:27 +0000
@@ -28836,6 +28836,7 @@ webex.com##+js(no-xhr-if, svc.webex.com/metrics)
 ||af.moshimo.com/af/c/click?*&url=$doc,urlskip=?url
 ||analytics.dawg.network^
 ||media.storiesig.info/get?__sig=*&uri=$urlskip=?uri,doc
+||click.convertkit-mail4.com/$doc,urlskip=/([^/]+$)/ -base64
 /edgemesh.*.js$script,domain=~edgemesh.com|~edgeno.de
 ||safelinkconverter.com^$script,3p
 /adsensebase.js$script
