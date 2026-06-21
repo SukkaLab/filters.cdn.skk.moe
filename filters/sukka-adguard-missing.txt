@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sat, 20 Jun 2026 23:37:34 GMT
+! Last modified: Sun, 21 Jun 2026 07:11:11 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,13 +8,13 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sat, 20 Jun 2026 18:56:54 +0000
+!   - Last modified: Sun, 21 Jun 2026 05:44:56 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
-!   - Last modified: Sat, 20 Jun 2026 15:58:42 +0000
+!   - Last modified: Sat, 20 Jun 2026 22:48:17 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Sat, 20 Jun 2026 18:58:58 +0000
+!   - Last modified: Sun, 21 Jun 2026 04:04:02 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
 !   - Last modified: Tue, 09 Jun 2026 09:41:27 +0000
@@ -19817,6 +19817,7 @@ taste.com.au##.main-header:style(top: 0 !important)
 ||server.ethicalads.io^$script,domain=decompiler.com,important
 ||media.ethicalads.io^$image,domain=decompiler.com,important
 ||yandex.ru^$script,domain=decompiler.com,important
+*$image,redirect-rule=32x32.png,domain=decompiler.com
 decompiler.com##+js(prevent-fetch, /ethicalads\.io|nitropay\.com/)
 @@||ytlarge.com^$ghide
 @@||googlesyndication.com^$script,xhr,domain=ytlarge.com
@@ -22492,7 +22493,6 @@ pdfdrive.to##+js(trusted-override-element-method, HTMLElement.prototype.click, [
 globetv.app##+js(trusted-set-local-storage-item, gtv_adfree_status_v1, '{"active":true,"checkedAt":$now$,"expiresAt":0,"emailMasked":null}')
 globetv.app##+js(nano-stb, adRendered, *, 0.001)
 globetv.app###preroll-overlay
-storiesig.info##+js(set, Object.prototype.clickAds.emit, noopFunc)
 storiesig.info##+js(nowoif, !storiesig)
 myvidplay.com##+js(nowoif)
 ||jsfilecdn.com^
@@ -22976,9 +22976,9 @@ cinehd.app##+js(no-fetch-if, method:HEAD)
 cinehd.app##.dark\:bg-black.pt-20.bg-white.w-full.z-10.relative > .lg\:px-8.md\:px-6.px-4.max-w-\[1440px\]:has(.native-ads-slot)
 ##body > #mdl-register.modal.anm-e.regnow
 /js/scriptjs/1/|$script,1p
-/^https:\/\/[a-z0-9-]{7,}\.(?:com|info)\/assets\/script$/$script,1p,match-case,to=com|info
-/^https:\/\/[a-z0-9-]{7,}\.(?:com|info)\/challenge\/(?:movie|show|episode)\/[\/a-z0-9-]+$/$doc,match-case,to=com|info
-/^https:\/\/[a-z0-9-]{7,}\.(?:com|info)\/(?:load|register)\/(?:movie|show|episode)\/[0-9]+(?:\/[0-9]{1,2}){0,2}\/?\?[a-z]+=[a-zA-Z0-9%&]+$/$doc,match-case,to=com|info
+/^https:\/\/[a-z0-9-]{7,}\.[a-z]{3,6}\/assets\/script$/$script,1p,match-case,to=~edu|~gov
+/^https:\/\/[a-z0-9-]{7,}\.[a-z]{3,6}\/challenge\/(?:movie|show|episode)\/[\/a-z0-9-]+$/$doc,match-case,to=~edu|~gov
+/^https:\/\/[a-z0-9-]{7,}\.[a-z]{3,6}\/(?:load|register)\/(?:movie|show|episode)\/[0-9]+(?:\/[0-9]{1,2}){0,2}\/?\?[a-z]+=[a-zA-Z0-9%&]+(?:&[a-z]+=[0-9a-z]+)?$/$doc,match-case,to=~edu|~gov
 ||sa-movie.com^$all
 ||w-solarmovies.com^$all
 ||proxyify.info^$all
@@ -22986,8 +22986,23 @@ cinehd.app##.dark\:bg-black.pt-20.bg-white.w-full.z-10.relative > .lg\:px-8.md\:
 ||dial2day.com^$all
 ||meimei-movie.com^$all
 ||clovermovies.com^$all
+||animevice.net^$all
+||gomoviescdn.online^$all
+||movienewsgo.xyz^$all
+||yifysearch.com^$all
 openlua.cloud##+js(set, HTMLScriptElement.prototype.onerror, undefined)
 @@||openlua.cloud^$ghide
+luciferdonghua.in##.afu-ab
+luciferdonghua.in##.afu-banner
+luciferdonghua.in##.kln
+luciferdonghua.in##.custom-html-widget
+misterdonghua.in,yurn.online##+js(nowoif)
+||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=misterdonghua.in
+autoembed.app##+js(no-fetch-if, /adsbygoogle|google-analytics|ads-twitter|doubleclick/)
+autoembed.app##+js(nostif, offsetHeight)
+autoembed.app##section[aria-label="Sponsored content"]
+*$script,3p,denyallow=cloudflare.com,domain=empirenovel.com
+||empirenovel.com/po.js
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -27162,7 +27177,8 @@ top##body > center + .A + .post
 ##body > .page > .verify-row
 ||bisque-bison-333202.hostingersite.com^$all
 ||karedeutschland.com^$all
-||lntrealty.com^$all,reason=malicious
+||daskljtitaskastvv.pro^$all,reason=malicious
+||beroniw.com^$all,reason=malicious
 ! uBlock filters – Privacy https://ublockorigin.pages.dev/filters/privacy.min.txt
 ||google-analytics.com/analytics.js$script,xhr,redirect=google-analytics_analytics.js:5
 ||google-analytics.com/cx/api.js$script,redirect=google-analytics.com/cx/api.js:5
@@ -28816,6 +28832,7 @@ webex.com##+js(no-xhr-if, svc.webex.com/metrics)
 ||dlsite.com/maniax/dlaf/=/aid/*/url/$urlskip=/\/url\/(http.+)/ -uricomponent
 ||af.moshimo.com/af/c/click?*&url=$doc,urlskip=?url
 ||analytics.dawg.network^
+||media.storiesig.info/get?__sig=*&uri=$urlskip=?uri,doc
 /edgemesh.*.js$script,domain=~edgemesh.com|~edgeno.de
 ||safelinkconverter.com^$script,3p
 /adsensebase.js$script
