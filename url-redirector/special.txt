@@ -1,11 +1,11 @@
 ! Title: [sukka] Special Redirects
-! Last modified: Sat, 20 Jun 2026 15:58:35 GMT
+! Last modified: Sun, 21 Jun 2026 13:50:36 GMT
 ! Description: uBlock Origin / AdGuard uritransform rules
 ! Homepage: https://github.com/SukkaW/Filters
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
 
 ! >>>> uBlock Origin
-||vdownload.hembed.com$all,uritransform=/vdownload\.hembed\.com/docs.lucaairport.qzz.io\/https\/vdownload.hembed.com/
+||hembed.com$all,uritransform=/([^\/]+)\.hembed\.com/docs.lucaairport.qzz.io\/https\/$1.hembed.com/
 ||wdfiles.com$all,uritransform=/([^\/]+)\.wdfiles\.com/docs.lucaairport.qzz.io\/https\/$1.wdfiles.com/
 ||wikidot.com/local--files/$all,uritransform=/([^\/]+)\.wikidot\.com\/local--files\//docs.lucaairport.qzz.io\/https\/$1.wikidot.com\/local--files\//
 ||cdn.scpwiki.com$all,uritransform=/cdn\.scpwiki\.com/docs.lucaairport.qzz.io\/https\/cdn.scpwiki.com/
@@ -13,7 +13,7 @@
 ||www.wikidot.com/userkarma.php$all,uritransform=/www\.wikidot\.com\/userkarma\.php/docs.lucaairport.qzz.io\/https\/www.wikidot.com\/userkarma.php/
 
 ! >>>> AdGuard
-||vdownload.hembed.com$all,urltransform=/vdownload\.hembed\.com/docs.lucaairport.qzz.io\/https\/vdownload.hembed.com/
+||hembed.com$all,urltransform=/([^\/]+)\.hembed\.com/docs.lucaairport.qzz.io\/https\/$1.hembed.com/
 ||wdfiles.com$all,urltransform=/([^\/]+)\.wdfiles\.com/docs.lucaairport.qzz.io\/https\/$1.wdfiles.com/
 ||wikidot.com/local--files/$all,urltransform=/([^\/]+)\.wikidot\.com\/local--files\//docs.lucaairport.qzz.io\/https\/$1.wikidot.com\/local--files\//
 ||cdn.scpwiki.com$all,urltransform=/cdn\.scpwiki\.com/docs.lucaairport.qzz.io\/https\/cdn.scpwiki.com/
