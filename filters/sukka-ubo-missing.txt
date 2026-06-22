@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Mon, 22 Jun 2026 07:43:00 GMT
+! Last modified: Mon, 22 Jun 2026 12:27:11 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.6.2
+!   - Version: 2.1.6.4
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -220,6 +220,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||codedrink.com^
 ||mfilterit.net^$3p
 ||clickhouse-collector.*.prod.plat.agency^
 ||metrics-web.help^
@@ -154033,6 +154034,10 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||ledevoir.com/js/analytics/
+||naturallieplantbased.com/?*&ver=$script,~3p
+||caf.fr/*/stormcaster.js
+||caf.fr/sites/default/files/smarttag/
 ||google.com/rmkt/collect/
 ||google.com/pagead/
 ||google.com/ccm/form-data/
@@ -158227,7 +158232,6 @@ msn.com##.trc_related_container
 ||wix.com/_api/blog-social-counters/
 ||sitebooster.com/sb/wix/p?$3p
 ||data.reactandshare.com/track.gif
-||merlininkazani.com/sayac
 ||ip-whois.net/img_ip*.php$3p
 ||4pna.com/clientscript/kr_scripts/rbs_scripts/rbs_banner_sender.min.js
 ||gecid.com/inc/bstat.php
