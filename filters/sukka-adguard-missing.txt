@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Mon, 22 Jun 2026 15:33:00 GMT
+! Last modified: Mon, 22 Jun 2026 18:19:42 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Mon, 22 Jun 2026 10:01:16 +0000
+!   - Last modified: Mon, 22 Jun 2026 15:37:53 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Mon, 22 Jun 2026 09:14:07 +0000
@@ -22798,8 +22798,13 @@ livetv.moviebite.cc##div.w-full:has(> div[data-ad-container])
 guessthemovie.name,guessthephrase.xyz##+js(no-fetch-if, method:/head/i)
 guessthemovie.name,guessthephrase.xyz##.fallback-side-ad
 /ads/*$domain=guessthemovie.name|guessthephrase.xyz
+@@||cdn-media.brightline.tv/config/v*.json$domain=adultswim.com
 ||adultswim-vodlive.cdn.turner.com/csmp/live/$xhr,removeparam=caid,domain=adultswim.com
 ||adultswim-vodlive.cdn.turner.com/csm/extlive/$xhr,removeparam=yo.po,domain=adultswim.com
+||adultswim-vodlive.cdn.turner.com/csm/extlive/$xhr,removeparam=yo.asd,domain=adultswim.com
+||medium.ngtv.io/v2/media/$removeparam=ssaiProfile,domain=adultswim.com
+@@||medium.ngtv.io/v2/media/live*$removeparam=ssaiProfile,domain=adultswim.com
+@@||medium.ngtv.io/v2/media/live*$domain=adultswim.com
 viduro.top##+js(nowoif)
 ||viduro.top/api/heartbeat
 embedseek.xyz##+js(nowoif, _blank)
@@ -23033,6 +23038,7 @@ autoembed.app##section[aria-label="Sponsored content"]
 *$script,3p,denyallow=cloudflare.com,domain=empirenovel.com
 *$xhr,3p,denyallow=cloudflare.com|googleapis.com,domain=empirenovel.com
 ||empirenovel.com/po.js
+leakgallery.com##+js(aost, String.prototype.replace, decideForPlacement)
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
