@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Filters
-! Last modified: Sun, 21 Jun 2026 13:50:35 GMT
+! Last modified: Mon, 22 Jun 2026 07:23:15 GMT
 ! Expires: 1 hours
 ! Description: The filters from Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -118,6 +118,7 @@ lingchenzi.com#@#.category-share
 /ajax/libs/nosleep/*
 ||unpkg.com/orejime
 ||jsdelivr.net/npm/orejime
+/gh/ad-shield
 /*/sign_d?*$all,important
 /*/resolve?*$all,important,domain=~dnscontrol.org
 /*/dns_resolve_backup?*$all,important
@@ -520,7 +521,8 @@ justauth.cn##+js(set, window._AdBlockInit, true)
 ||socket.dev/monitoring-tunnel
 ||roboflow.com/scripts/utm.js
 /seline.js
-||cdn.jsdelivr.net/npm/bitmovin-analytics
+||jsdelivr.net/npm/bitmovin-analytics
+||unpkg.com/bitmovin-analytics
 /yummi.js
 /script.outbound-links.js
 /script.outbound-links.file-downloads.js
