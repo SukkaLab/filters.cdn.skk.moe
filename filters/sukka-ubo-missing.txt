@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Tue, 23 Jun 2026 12:47:34 GMT
+! Last modified: Tue, 23 Jun 2026 16:41:51 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.6.11
+!   - Version: 2.1.6.13
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -57094,7 +57094,6 @@ prd.api.bleacherreport.com^
 ||ss.musthird.com^
 ||ssp*.rtb.beeline.ru^
 ||st-*.dynamicyield.com^
-||st.avsplow.com^
 ||st.dynamicyield.com^
 ||st.top100.ru^
 ||sta.tracedock.com^
@@ -154036,13 +154035,15 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+thesun.co.uk##+js(set-local-storage-item, /^optimizely_data/, $remove$)
+||onetwotrip.com/_api_misc/kismx/e^
+||onetwotrip.com/_avia/statistics/
 ||geeky-gadgets.net/api/event
 ||aviakassa.com/api/v*/logger
 mego.travel##+js(set-local-storage-item, /^snowplowOutQueue_/, $remove$)
 ||skyscanner.*/g/banana-tallyman/tallyman/track/
 ||skyscanner.*/g/aps/public/api/v1/
 ||skyscanner.*/slipstream/
-ricardocuisine.com##+js(set-local-storage-item, __anon_id, $remove$)
 ||twinfinite.net/*/gamurs-group-analytics/
 ||ledevoir.com/js/analytics/
 ||naturallieplantbased.com/?*&ver=$script,~3p
@@ -154413,7 +154414,6 @@ myhixel.com##+js(set-local-storage-item, user_id, $remove$)
 ||myhixel.com/apps/awin/
 ||img.lb.wbmdstatic.com/webmd_static_vue/file-explorer/webmd/js/mmtrack.js
 ||img.lb.wbmdstatic.com/webmd_static_vue/file-explorer/webmd/global-metrics/
-thegentlemansjournal.com##+js(set-local-storage-item, __anon_id, $remove$)
 ||zocdoc.com/metrics/
 ||api.4lapy.ru/api/v*/events/
 4lapy.ru##+js(set-local-storage-item, marketing, $remove$)
@@ -154690,7 +154690,6 @@ food4less.com##+js(set-local-storage-item, analytics-device, $remove$)
 ralphs.com,smithsfoodanddrug.com,frysfood.com,fredmeyer.com##+js(set-local-storage-item, analytics-device, $remove$)
 ||embeds.beehiiv.com/attribution.js
 thekrazycouponlady.com##+js(set-local-storage-item, /^ab\.storage\./, $remove$)
-thekrazycouponlady.com##+js(set-local-storage-item, __anon_id, $remove$)
 ||img.enuri.info/images/partner/dsac.min.js
 ||enuri.com/*/js/logTailFunc.js
 ||enuri.com/view/Loginsert_
@@ -154915,7 +154914,7 @@ express.co.uk,iflscience.com,nypost.com##+js(set-local-storage-item, SPOTIM_DEVI
 ||dashichang.work/Statistics/statistics.
 ||parchment.com/wp-content/themes/wp-parchment/assets/utm-tags.min.js
 ||elevenlabs.io/hog/
-flo.com.tr##+js(set-local-storage-item, __anon_id, $remove$)
+ricardocuisine.com,thegentlemansjournal.com,thekrazycouponlady.com,flo.com.tr##+js(set-local-storage-item, __anon_id, $remove$)
 ||market.samm.com/0/sendEventV2
 ezviz.ru##+js(set-local-storage-item, userUuid, $remove$)
 ||c.sberlead.ru/clickstream.bundle.js
@@ -160143,6 +160142,7 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=saturn.de
 @@||metrics.us.playstation.com/b/ss/
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
+@@||cdn.clerk.io/clerk.js$domain=jaktdepotet.no
 @@||tesco.com/akam/13/$domain=tesco.com
 @@||tag.search.sensefuel.live/tag$domain=bricoman.pl
 @@||cdn.optimizely.com/datafiles/*.json$domain=bbc.com
