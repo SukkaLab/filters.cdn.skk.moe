@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Filters
-! Last modified: Mon, 22 Jun 2026 07:23:15 GMT
+! Last modified: Tue, 23 Jun 2026 02:32:50 GMT
 ! Expires: 1 hours
 ! Description: The filters from Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -118,7 +118,7 @@ lingchenzi.com#@#.category-share
 /ajax/libs/nosleep/*
 ||unpkg.com/orejime
 ||jsdelivr.net/npm/orejime
-/gh/ad-shield
+/ad-shield$important
 /*/sign_d?*$all,important
 /*/resolve?*$all,important,domain=~dnscontrol.org
 /*/dns_resolve_backup?*$all,important
@@ -138,8 +138,9 @@ spotify.com##div[data-testid="test-ref-div"]
 ||polls.services.disqus.com^$subdocument
 ||support.nodeget.com^$3p
 gettr.com##esr-signup
-||goaffpro.app$3p
-||static.klaviyo.com$3p
+||goaffpro.app^$3p
+||static.klaviyo.com^$3p
+||keepandroidopen.org^$3p
 ||accounts.google.com/gsi/$frame,redirect=click2load.html,domain=~claude.ai
 ||accounts.google.com/gsi/$3p,domain=~claude.ai
 ||apis.google.com$3p,domain=udn.com
@@ -551,7 +552,6 @@ justauth.cn##+js(set, window._AdBlockInit, true)
 ||wwads.cn$script,redirect=noop.js
 ||acquia.com/ct
 ||v.bytes.media/vs.js$redirect=noop.js
-/ad-shield*$3p
 ||ad*.on.cc^$important
 ||app.moegirl.org.cn/insight-assets/images/20230413-moepad/800x300.png
 ||storage.moegirl.org.cn/console-plus/uploads/2024/02/01/a475bee2aa57da0e65f5341b78ccf551.png
@@ -828,3 +828,4 @@ iboysoft.com##.delayed-popup-container
 iboysoft.com##.delayed-popup-overlay
 www.browserling.com###blackFridayOverlay
 open-design.ai##.newsletter-popup
+f-droid.org##.banner--danger.banner
