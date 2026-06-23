@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Tue, 23 Jun 2026 06:29:37 GMT
+! Last modified: Tue, 23 Jun 2026 10:04:09 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Tue, 23 Jun 2026 04:37:20 +0000
+!   - Last modified: Tue, 23 Jun 2026 07:37:19 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Tue, 23 Jun 2026 04:26:55 +0000
@@ -15114,7 +15114,8 @@ komputerswiat.pl##+js(acs, $onet, adblock)
 vebo1.com##+js(aopr, adsRedirectPopups)
 ewrc-results.com##+js(set, canGetAds, true)
 ewrc-results.com##+js(no-fetch-if, method:/head/i)
-ewrc-results.com##+js(trusted-replace-argument, Array.prototype.includes, 0, json:"none", condition, /brave-api|script-content|bait|real/)
+ewrc-results.com##+js(set-local-storage-item, ewrc_ad_signal, $remove$)
+ewrc-results.com##+js(trusted-replace-argument, Storage.prototype.setItem, 1, , condition, bannerDismissed)
 ||media.ewrc-results.com/banners/
 ewrc-results.com##.rounded-lg.items-center.justify-center.h-full.w-full.flex:has(.adsbygoogle)
 ||cdn.ewrc-results.com/home-advertisements/
