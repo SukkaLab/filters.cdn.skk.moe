@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Wed, 24 Jun 2026 06:17:11 GMT
+! Last modified: Wed, 24 Jun 2026 09:51:49 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Wed, 24 Jun 2026 04:12:10 +0000
+!   - Last modified: Wed, 24 Jun 2026 05:19:56 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Tue, 23 Jun 2026 04:26:55 +0000
@@ -22945,7 +22945,7 @@ pilotsglobal.com##.banner
 ondebola.com##+js(nostif, utilAds)
 ondebola.com##.adslot_horizontal_big_desktop_extra
 ondebola.com##.solverde-affiliate-banner
-streamcash.to##+js(rmnt, script, /\.onerror|offsetHeight|Bait|getComputedStyle|dimCheck|getBoundingClientRect|x69|height===0|width===0|eval|banner-zone|no-store|\'flex\'|String\.fromCharCode|media-slot-bottom/)
+streamcash.to##+js(rmnt, script, /\.onerror|offsetHeight|Bait|getComputedStyle|dimCheck|getBoundingClientRect|x69|height===0|width===0|eval|banner-zone|no-store|\'flex\'|String\.fromCharCode|media-slot-bottom|String\.fromCodePoint|join\(''\)/)
 streamcash.to##+js(nowoif)
 streamcash.to##+js(trusted-replace-argument, document.createElement, 0, json:"div", condition, /^a$/)
 streamcash.to##+js(rpnt, script, player.pause();)
