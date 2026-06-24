@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Wed, 24 Jun 2026 12:30:18 GMT
+! Last modified: Wed, 24 Jun 2026 16:33:07 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.6.18
+!   - Version: 2.1.6.20
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -55055,6 +55055,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||countly.
 ||countly-
 |piwik.
+||appview.fafafa.ai^
 ||event-collector.analytics.onedio.com^
 ||obs.forseasky.com^
 ||blink.willowmovies.com^
@@ -55627,7 +55628,6 @@ prd.api.bleacherreport.com^
 ||pixel.vreview.tv^
 ||d3aicbrzoy14kh.cloudfront.net^
 ||metrics.motoblouz.com^
-||beacon-*.helpscout.net^
 ||fxgate.baidu.com^
 ||collector.bsg.brave.com^
 ||tracker.uira.live^
@@ -154035,6 +154035,8 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||ext-api.perfluence.net/pixel?
+||lighthouselabs.eu^$image
 ||dditsadn.com^$domain=livesex.com
 ||cdn.flowplayer.com/releases/native/3/stable/plugins/ga4.min.js
 ||ynet-pic1.yit.co.il/Common/Api/Scripts/GA4/ga4-ynetnews-*.js
@@ -160143,7 +160145,6 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=saturn.de
 @@||metrics.us.playstation.com/b/ss/
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
-@@||beacon-v*.helpscout.net^$domain=porkbun.com
 @@||cdn.clerk.io/clerk.js$domain=jaktdepotet.no
 @@||tesco.com/akam/13/$domain=tesco.com
 @@||tag.search.sensefuel.live/tag$domain=bricoman.pl
