@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Thu, 25 Jun 2026 12:33:53 GMT
+! Last modified: Thu, 25 Jun 2026 16:36:09 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -11,7 +11,7 @@
 !   - Last modified: Thu, 25 Jun 2026 10:54:25 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
-!   - Last modified: Thu, 25 Jun 2026 04:07:21 +0000
+!   - Last modified: Thu, 25 Jun 2026 13:23:16 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
 !   - Last modified: Thu, 25 Jun 2026 04:14:30 +0000
@@ -20,10 +20,10 @@
 !   - Last modified: Tue, 09 Jun 2026 09:41:27 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Thu, 25 Jun 2026 11:44:08 +0000
+!   - Last modified: Thu, 25 Jun 2026 12:04:27 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
-!   - Last modified: Mon, 22 Jun 2026 09:26:49 +0000
+!   - Last modified: Thu, 25 Jun 2026 14:42:11 +0000
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
@@ -23158,7 +23158,6 @@ majorgeeks.com##b:has(a[target^="reimage"])
 ||kuhoot.it^$doc
 ||gmboxx.com^
 ||mr.media-bucket.com^
-||pl.allsports4u.club^
 ||discount.s3blog.org^
 ||s3blog.org^$3p
 ||tplinkextender.net^
@@ -23177,7 +23176,6 @@ majorgeeks.com##b:has(a[target^="reimage"])
 ||mysecurify.com^
 ||developsincelock.com^
 ||gabriellalovecats.com^
-||jackielovedogs.com^
 ||tomorrowwillbehotmaybe.com^
 ||nextyourcontent.com^$all
 ||doctopdftech.com^$all
@@ -23249,7 +23247,6 @@ howtoremove.guide###gray_de
 /?pl=*&sm=$doc
 ||fortuneadvert.com^$all
 ||lalielynaualish.com^$all
-||casino-ice.fun^$all
 .com/go/*?clickid=$doc
 ?zoneid=*&cost=0.$doc
 /zcredirect?visitid=*&iframeDetected=false|$doc
@@ -23391,7 +23388,6 @@ howtoremove.guide###gray_de
 ||video.redwap.cam^$all
 ||cractica.xyz^$doc
 ||beyourxfriend.com^$all
-||bybygnom.com^$all
 ||paderrer.com^$all
 /jump/next.php?r=$doc
 /?clickid=*&t2=$doc
@@ -23410,7 +23406,6 @@ howtoremove.guide###gray_de
 ||register.blissfulltimes.com^$doc
 .com/pl?o=$doc
 ||geheimerseitensprung.com^$all
-||matches4you.info^$all
 ||reifenachbarn.com^$all
 /zclkredirect?visitid=$doc
 ||naughtymets.com^$all
@@ -23496,13 +23491,10 @@ howtoremove.guide###gray_de
 .top/t99b45h?t=$doc
 .com/k082rwq?t=$doc
 .com/t6pp7e3?t=$doc
-||derriar.site^$all
 /?utm_source=*&j1=1^$doc
 /video_app/new/adult/*/index.html?$doc
 /trk?s1=*&type=2&brid=$doc
-||alwix.com^$all
 ||alwix.site^$all
-||meetfindlove.com^$all
 /click.php?key=*&zoneid=$doc
 .co.in/01/?cid=$doc
 .co/?mlk=$doc
@@ -23532,7 +23524,6 @@ howtoremove.guide###gray_de
 /^https:\/\/[a-z]{2,3}\d\.biz\/go\/[0-9a-z]{15,18}$/$doc,to=biz
 /^https?:\/\/[0-9a-z]*\.?[-0-9a-z]{3,}\.[a-z]{2,11}\.?[a-z]{0,7}\/(?:[0-9a-z]{6,10}\/)?\/?(?:article\d{4}\.doc)?\?(?:cid=[0-9a-z]+&)?u=[0-9a-z]{7}(?:&t=\d+)?&o=[0-9a-z]{7}/$doc,frame,match-case
 /^https?:\/\/[0-9a-z]*\.?[-0-9a-z]{3,}\.[a-z]{2,11}\.?[a-z]{0,7}\/(?:[0-9a-z]{6,10}\/)?\/?(?:article\d{4}\.doc)?\?(?:cid=[0-9a-z]+&)?o=[0-9a-z]{7}(?:&t=\d+)?&u=[0-9a-z]{7}/$doc,frame,match-case
-.live/web/?sid=t*~$doc
 /?u1=*&o1=*&sid=t*~$doc
 /^https:\/\/(?:www\d\.)?[-a-z]{6,}\.(?:club|com|info|net|org)\/(?=[-_a-zA-Z]{0,42}\d)(?=[-_0-9a-z]{0,42}[A-Z])[-_0-9a-zA-Z]{43}\/\?cid=[-_0-9a-zA-Z]{10,36}(?:&qs\d=\S+)?&(?:s|pub)id=[-_0-9a-z{}]{1,32}(?:&s=0\.\d+)?(?:#\S+)?$/$doc,match-case,to=club|com|info|net|org
 /^https:\/\/(?:www\d\.)?[-a-z]{6,}\.(?:club|com|info|net|org)\/(?=[-_a-zA-Z]{0,42}\d)(?=[-_0-9a-z]{0,42}[A-Z])[-_0-9a-zA-Z]{43}\/\?(?:pub|s)id=[-_0-9a-z{}]{1,32}(?:&qs\d=\S+)?&cid=[-_0-9a-zA-Z]{10,36}(?:&s=0\.\d+)?(?:#\S+)?$/$doc,match-case,to=club|com|info|net|org
@@ -23567,10 +23558,8 @@ howtoremove.guide###gray_de
 ||games-blacksoft.com^$doc
 ||freefiles-upload.com^$doc
 ||projecthygieia.com^$all
-||fusionhacks.cc^$doc
 ||mysoft.rest^$all
 ||iridia.me^$doc
-.systems/signup?ad_domain=$doc,popup
 ||atnpx.com^
 ||webpushcloud.top^
 /index.php?uid=*&code=ad^$doc
@@ -23582,7 +23571,6 @@ howtoremove.guide###gray_de
 ||youtuba.com^$all
 ||bestbut.com^$all
 ||girhub.com^$all
-||gmkail.com^$all
 ||linkefdin.com^
 ||twitterr.com^$all
 ||yautube.com^$all
@@ -23663,27 +23651,21 @@ cracksmid.com##div[style=""] > center > center
 ||sustac.com^$all
 ||hostt.link^$doc
 ||ncracked.com^$doc
-||dr-community.online^$doc
 ||fullsetup.click^$doc
 ||fullsetup.pro^$doc
 ||akashopc.info^$doc
-||nsofthub.info^$doc
 ||techblogs.cc^$doc
 ||up-community.wiki^$doc
-||kaleempc.info^$doc
 ||serialsoft.org^$doc
 ||getprocrack.net^$doc
 ||crackdo.online^$doc
 ||upcommunity.click^$doc
-||tech-softwares.com^$doc
 .click/track/*?title=*&key=$doc,to=click
 ||crackingpatching.com^$doc
 ||patchedfiles.com^$doc
 ||filexstorage.site^$all
 ||worshippers.store^$all
 ||readyf1.click^$all
-||gotmylink.xyz^$all
-||clickmydown.xyz^$all
 ||filefindme.xyz^$all
 ||host9.link^$all
 ||sonvupload.xyz^$all
@@ -23692,7 +23674,6 @@ cracksmid.com##div[style=""] > center > center
 ||mysoftiloria.shop^$all
 ||yeahmylol.sbs^$all
 ||tostatess.icu^$all
-||anysoftdownload.com^$all
 ||softdownloadgithub.icu^$all
 ||newgitgerto.xyz^$all
 ||gitfrominstall.com^$all
@@ -23904,7 +23885,6 @@ cracksmid.com##div[style=""] > center > center
 ||s4fk.destin0.jp^$doc
 ||salon1999.net^$doc
 ||salonoshirase.net^$doc
-||shells.pairapple.net^$doc
 ||sns-pair.net^$doc
 ||space-high.com^$doc
 ||spirilp3000.com^$doc
@@ -23958,7 +23938,6 @@ cracksmid.com##div[style=""] > center > center
 ||ed-blissful.com^$doc
 ||eika-akie220202.com^$doc
 ||ev-upstart.com^$doc
-||for-tg.com^$doc
 ||fortune-mooon.com^$doc
 ||ft-flower.com^$doc
 ||fukugyou2022.net^$doc
@@ -24219,7 +24198,6 @@ cracksmid.com##div[style=""] > center > center
 ||chesscheckersvariation.com^$doc
 ||club-house.link^$doc
 ||cocoro-liberty.com^$doc
-||during-the-holiday.com^$doc
 ||every-blanched.com^$doc
 ||every-dark.com^$doc
 ||every-enjoy.com^$doc
@@ -24255,12 +24233,10 @@ cracksmid.com##div[style=""] > center > center
 ||telet.me^$doc
 ||tomikuji.com^$doc
 ||ugfdwmausxfy.net^$doc
-||uranai-hit.com^$doc
 ||web.fe-vrier.com^$doc
 ||whpbrmdss.com^$doc
 ||wkdk.jp^$doc
 ||dwoetbarcrooplsloiwh.com^$doc
-||ytjon-d2s1ah.com^$doc
 ||lets-tip315.com^$doc
 ||loveri.net^$doc
 ||lvli.jp^$doc
@@ -24331,7 +24307,6 @@ cracksmid.com##div[style=""] > center > center
 ||sachikru8.com^$doc
 ||koundayori.com^$doc
 ||kokocha.site^$doc
-||san-dast.net^$doc
 ||dedestin0.jp^$doc
 ||legamee.jp^$doc
 ||miraiah.jp^$doc
@@ -24348,10 +24323,8 @@ cracksmid.com##div[style=""] > center > center
 ||vivian.jp.net^$doc
 ||cha-nce.net^$doc
 ||mirusiru.online^$doc
-||mirusiru.site^$doc
 ||mobileverify.net^$doc
 ||grabgiftcard.net^$doc
-||appxfree.com^$doc
 ||kounnomichishirube.net^$doc
 ||lucksignpost0804.org^$doc
 ||lightning02s.com^$doc
@@ -24431,7 +24404,6 @@ cracksmid.com##div[style=""] > center > center
 ||recipe000.tokyo^$doc
 ||ado.wish-best.com^$doc
 ||keiunkan.com^$doc
-||falsettoy.click^$doc
 ||pc.mt3sys.com^$doc
 ||as25ap.com^$doc
 ||asap15.com^$doc
@@ -24493,15 +24465,12 @@ cracksmid.com##div[style=""] > center > center
 ||du0.jp^$doc
 ||hapinet.net^$doc
 ||kiseki.com^$doc
-||fukutoku-miyako.com^$doc
 ||ka73-urara.club^$doc
 ||uraaka.net^$doc
 ||peraichi.com/landing_pages/view/s8j8k/$doc
 ||gmatch.jp^$doc
 ||majiainc.com^$doc
 ||meet-up.jp^$doc
-||9npze.com^$doc
-||gsi3t.com^$doc
 ||n43vr.com^$doc
 ||qf6tm5ug.com^$doc
 ||candycandypop.com^$doc
@@ -24534,7 +24503,6 @@ cracksmid.com##div[style=""] > center > center
 ||ai-mono.jp^$doc
 ||again-agreement.com^$doc
 ||birth-bravery.com^$doc
-||cross-customer.com^$doc
 ||desk-dictionary.com^$doc
 ||event-experiment.com^$doc
 ||final-future.com^$doc
@@ -24761,17 +24729,12 @@ cracksmid.com##div[style=""] > center > center
 ||linez7820.com^$doc
 ||jp84434.com^$doc
 ||ghtzqkwm.sbs^$doc
-||gok.iumgs654s.com^$doc
 ||pfj.anbilip4.com^$doc
 ||ap.appl-er.com^$doc
 ||hougen-talk.com^$doc
 ||honeytalkgroup.com^$doc
 ||tomodachiproject.com^$doc
 ||official.treasure-fan.com^$doc
-||587jtu3.com^$doc
-||cvfr74t.com^$doc
-||dok47ws1.com^$doc
-||e5r6e9u.com^$doc
 ||jump-hi-quality55.com^$doc
 ||jump-hi-quality77.com^$doc
 ||sparkle-sparkle.net^$doc
@@ -24854,7 +24817,6 @@ cracksmid.com##div[style=""] > center > center
 ||typicallydiscrimination.com^$doc
 ||amoredate.com^$doc
 ||friend-match.net^$doc
-||ainu-syaman.frenchkiss.jp^$doc
 ||sanka.fun^$doc
 ||www.black-magic.jp^$doc
 ||www.onmyo.jp^$doc
@@ -25022,7 +24984,6 @@ cracksmid.com##div[style=""] > center > center
 ||please-zebra.com^$doc
 ||rating-shave.com^$doc
 ||saving-guard.com^$doc
-||thrive-one.jp^$doc
 ||k1nd-talk.com^$doc
 ||m1xm1x-real.com^$doc
 ||mixmix-real.com^$doc
@@ -25031,6 +24992,86 @@ cracksmid.com##div[style=""] > center > center
 ||amo.topescort.jp^$doc
 ||swlife.jp^$doc
 ||i.meetu.best^$doc
+||kokoai-deai.com^$doc
+||kokokaradeai.com^$doc
+||ukacclmza.net^$doc
+||uranaikan.com^$doc
+||amamorimo.com^$doc
+||amanerino.com^$doc
+||amanolimo.com^$doc
+||amemorino.com^$doc
+||kiseki-hakoniwa.com^$doc
+||lucky-garden.net^$doc
+||luckys-garden.com^$doc
+||kotoanata.jp^$doc
+||unlepre.jp^$doc
+||ars73ars.com^$doc
+||coco-dream.com^$doc
+||coco-dream.net^$doc
+||coco-yume.com^$doc
+||togen-utopia.com^$doc
+||brs.miteau.com^$doc
+||miruau.com^$doc
+||miteau.net^$doc
+||zettaiau.com^$doc
+||play.google.com/store/apps/details?id=com.miruau^$doc
+||ten-zaru.com^$doc
+||heart-1ink.com^$doc
+||gansenri.com^$doc
+||gensenli.com^$doc
+||gomsanri.com^$doc
+||senganri.com^$doc
+||musubi-net.com^$doc
+||loto-lab0.com^$doc
+||0120999900.net^$doc
+||angel-talk.jp^$doc
+||hentai-p.club^$doc
+||voice-actress.jp^$doc
+||m-lotosystems.com^$doc
+||8219.mobi^$doc
+||honeytalk.com^$doc
+||phonesex-maturelady.com^$doc
+||pictomo.net^$doc
+||smalove.com^$doc
+||koi.koi-palette.com^$doc
+||accessaccent.com^$doc
+||blenderbakery.com^$doc
+||cheerfulcharity.com^$doc
+||developdestiny.com^$doc
+||enjoyepisode.com^$doc
+||forestfortress.com^$doc
+||pairsvip.jp^$doc
+||paters.club^$doc
+||xy58.jp^$doc
+||izerokoi.jp^$doc
+||zerokoi.jp$doc
+||giftia.club^$doc
+||privage.club^$doc
+||arrow-fortune.com^$doc
+||kinun-birthday.com^$doc
+||linesys.jp^$doc
+||taihoumon.com^$doc
+||matchingclub.jp^$doc
+||eternal-love.net^$doc
+||ccd-15846.com^$doc
+||onceinalifetimemeeting.com^$doc
+||scolor.jp^$doc
+||mirioea.com^$doc
+||sma-lita.site^$doc
+||thrive-invest.jp^$doc
+||viewer-howdy.com^$doc
+||convey-pluck.com^$doc
+||friend-gather.com^$doc
+||hercules-progress.jp^$doc
+||prompt-abusive.com^$doc
+||happiness-cats.com^$doc
+||happiness-cats.net^$doc
+||shiawase-cat.com^$doc
+||otoromachat.com^$doc
+||bulkbreeding.com^$doc
+||disciplineavarice.com^$doc
+||champion.kiitos-kiitoksia.com^$doc
+||latterantithesis.com^$doc
 ||webogram.ru^$all
 ||xn--80affa3aj0al.xn--80asehdb^$all
 ||telegr.am/user_mgt/login$all
@@ -25043,7 +25084,6 @@ cracksmid.com##div[style=""] > center > center
 ||room2021.net^$all
 ||roomoshirase.net^$all
 ||smore91.net^$all
-||som419.net^$all
 ||touchoshirase.net^$all
 ||touchtacchi.net^$all
 ||wswsnews.net^$all
@@ -25267,7 +25307,6 @@ z13.web.core.windows.net##+js(aeld, DOMContentLoaded, fullscreenEnabled)
 ://api.*/?zqs=$doc
 ||bsc-testnet.bnbchain.org^$xhr
 ||cracksway.com^$all
-||gamingnewsanalyst.com^$all
 ||gamingdebates.com^$all
 ||bonzi.link^$all
 ||pccdirect.site^$all
@@ -25312,7 +25351,6 @@ z13.web.core.windows.net##+js(aeld, DOMContentLoaded, fullscreenEnabled)
 ||ytvancedpro.com^$all,domain=~revanced.app
 ||youtubevanced.$all,domain=~revanced.app
 ||youtuberevanced.*^$all,domain=~revanced.app
-||revancedmusic.com^$all,domain=~revanced.app
 ||revancedyoutube.org^$all,domain=~revanced.app
 ||revancedextended.$all,domain=~revanced.app
 ||revanced-extended.com^$all,domain=~revanced.app
@@ -25333,7 +25371,6 @@ z13.web.core.windows.net##+js(aeld, DOMContentLoaded, fullscreenEnabled)
 ||zlibrary.to^$all
 ||zlibrary-global.com^$all
 ||zlib-official.com^$all
-||z-library-proxy.com^$all
 ||protonge.com^$all
 ||bloxstrap.*^$doc,domain=~bloxstraplabs.com,to=~bloxstrap.pizzaboxer.xyz
 ||s8bet.com^$doc
@@ -25412,7 +25449,6 @@ www.cambe.pr.gov.br##+js(noeval-if, tigervip2)
 ||codeanyapp.com/klarna/$doc
 ||mybluehost.me/*/dir/ca/pay/$doc
 ||pub-*.r2.dev/gsecondcheck.html^$doc
-||uwelldeutschland.com^$all
 ||user.fm/files/*/AbsaOnlinePop.html^$doc
 ||user.fm/files/*/ProofOfPayment.HTML^$doc
 /^https?:\/\/server\.[a-z0-9]{4}\.com\/invite\/\d+\b/$doc,match-case,to=com
@@ -25426,7 +25462,6 @@ www.cambe.pr.gov.br##+js(noeval-if, tigervip2)
 ||firebaseapp.com/Autentimine^$doc
 ||dailyprizehub.com^$all
 ||singtelmyconnect.com^$all
-||pormota-coop-ee.com^$all
 /^https?:\/\/[a-z0-9]{6,7}\.lat\/[A-Z0-9]{5}$/$doc,match-case,to=lat
 ||viva-asorte.com^$all
 ||sorteiosbrasil.netlify.app^$all
@@ -25486,7 +25521,6 @@ www.cambe.pr.gov.br##+js(noeval-if, tigervip2)
 /offer.html?rechargenumber=$doc,to=~jio.com|~edu|~gov
 /\/offer\.(?:html|php)\?(?:mobile|rechargenumber)=\d{10}\b/$doc,match-case,to=~jio.com|~edu|~gov
 ||dbs.applerewardsstore.com^$all
-||pulseapp-24x7-service.github.io^$all
 ||rbchidraulica.com.br/info/verify^$all
 /isignesp.php^$doc,to=~edu|~gov|~apple.com
 /icloud2022-esp.php^$doc,to=~edu|~gov|~apple.com
@@ -25581,7 +25615,6 @@ www.cambe.pr.gov.br##+js(noeval-if, tigervip2)
 ||sites.google.com/mwhite55.appquestss.com/$doc
 ||orders-processed.com^$all
 ||reviewstudio.com/-/en/gp/mas/your-account/$doc
-||51eabay.com^$all
 ||ebaydw.$all,to=ebaydw.cc|ebaydw.com
 ||pages.dev/errors/validateCaptcha^$doc
 ||hologramid.cn^$all
@@ -25627,7 +25660,6 @@ www.cambe.pr.gov.br##+js(noeval-if, tigervip2)
 ||aitimaforou.web.app^$all
 ||dichvucong*.top^$all
 ||mygovaus-$doc,to=~my.gov.au
-||seeproc.com.br^$all
 ||student-finance-auth.firebaseapp.com^$all
 ||casadosvidrosmt.com.br/wp-admin/csii/$all
 ||smartaromas.com/income-individual_service_tax-gg-check-hm/$all
@@ -25745,7 +25777,6 @@ www.cambe.pr.gov.br##+js(noeval-if, tigervip2)
 ||sites.google.com/view/expressdhl^$all
 ||xn--d1aqfkf.xn--p1ai/bitrix/.../GlobalSources/$all
 ||app.farmaciadelmonestironline.com/SER/dnkdl/$all
-||cricketbettingpro.com/home.html/autoload.html^$all
 ||itmustbetime.com/content/uploads/products/china/china/index.php^$all
 ||dhl-express-ppd.infanion.com^$all
 ||elementor.cloud/*/ENGHUY645/$doc
@@ -25837,7 +25868,6 @@ www.cambe.pr.gov.br##+js(noeval-if, tigervip2)
 ||faecbook.vn^$all
 ||online-ops.mypasschange.com^$all
 ||page-suspension.com^$all
-||feacboolk.com^$all
 ||meta-for-business-$doc
 ||pages.dev/meta_for_business$doc
 /^https:\/\/sp\d{2,3}88(?:vn)?\.com\//$doc,to=com|~shopee.vn
@@ -25925,7 +25955,6 @@ www.cambe.pr.gov.br##+js(noeval-if, tigervip2)
 ||msoftupdate.*.linodeobjects.com^$all
 ||outloksupportbuzoningreso.glitch.me^$all
 ||outloksupport*.glitch.me^$doc
-||mysign-mircrosoft.com^$all
 ||scanlonchiro.com^$all
 ||telegramhcn.com^$all
 ||webtelegram.eu.org^$all
@@ -26226,7 +26255,6 @@ app##center#yangchen > iframe#external-frame[src="https://im136.mom/"]:not([clas
 ||uudaidacbiet-$doc
 /^https?:\/\/amazo[a-z]{2}\d\.com\//$doc,to=com|~amazon.com
 ||dienlanhmayxanh.com^$all
-||kythuatdmayxanh.com^$all
 ||khuyenmaithang-$doc
 ||han-muc-the-$doc
 ||hotrodacbiet-$doc
@@ -26337,14 +26365,12 @@ app##center#yangchen > iframe#external-frame[src="https://im136.mom/"]:not([clas
 ||onevanilla.click^$all
 ||bilbocine.com^$doc
 ||dailysmscollection.org^$doc
-||surgecardinfo.click^$doc
 ||panoramacharter.click^$doc
 ||mymercy.click^$doc
 ||direct2hr.click^$doc
 ||iqpoll.cn^$doc
 ||tempisite.com^$all
 ||sparrowwallet.net^$doc
-||electrum.is^$doc
 ||tracker.club-os.com^
 ||guide-orientation.tn/go_page.php?$doc
 @@||onelink.me/*://app/$doc
@@ -26444,10 +26470,7 @@ webflow.io##html.w-mod-js:not(.wf-active) > body:not([class]):not([id]) > a[clas
 ||freesoftwarecreative.com^$doc
 ||macgsapptrck.com^$all
 ||debridleech.com^$doc
-||trckkkk.com^$all
-||fastorfar.com^$all
 ||hopgp.com^$all
-||fast2cloud.com^$all
 ||ntischoolpune.org/*.php?$doc
 .php?iid=*&cid=$doc,to=~gov|~edu
 .php?cid=*&pnum=$doc,to=~gov|~edu
@@ -26538,7 +26561,6 @@ rapidkil.com.au##+js(aost, XMLHttpRequest, /wp-content)
 ||dtioykqj1u8de.cloudfront.net^$all
 ||partners-tds.com^$all
 ||likeyoumakehappy.xyz^$all
-||gtrewe.co.in^$all
 ||fiheos.co.in^$all
 ||sentinelbotcore.co.in^$all
 ||kexornero.co.in^$all
@@ -26618,12 +26640,8 @@ rapidkil.com.au##+js(aost, XMLHttpRequest, /wp-content)
 /^https:\/\/[0-9a-z]{6,8}\.[a-z]{2,10}\/[!.+,=?@\[][\/0-9a-z]{20,30}\.[-a-z]{2,7}$/$doc,to=agency|art|asia|auction|bar|beauty|beer|best|biz|bond|business|cam|cards|casa|click|cloud|coupons|courses|cv|digital|diy|fashion|food|forum|gay|guru|hair|info|life|live|living|link|ltd|my|ooo|property|pw|qpon|republican|rocks|run|sale|sbs|services|shop|skin|store|studio|support|surf|tattoo|tech|today|top|uno|watch|work,match-case
 /door/?ad_campaign_id=$doc
 ||en-trezor.io^$all
-||coiincmi.com^$all
 ||swap-ether.site^$all
-||io-swap.net^$all
 ||finance-superchain.net^$all
-||helplive-ledger.com^$all
-||kodiak-finance.org^$all
 ||us-ledger.io^$all
 ||en-bitcoin.org^$all
 ||io-sol.vip^$all
@@ -26659,7 +26677,6 @@ weightlossdiet.top##+js(acs, open, executeCode)
 ||job-apply-fast.com^$all
 ||jobapply-careers.com^$all
 ||jobs-apply-fast.com^$all
-||jobs-apply-now.com^$all
 ||jobs-apply.com^$all
 ||schedule-interview.com^$all
 ||schedule-job-application.com^$all
@@ -26669,7 +26686,6 @@ weightlossdiet.top##+js(acs, open, executeCode)
 ||talent-applications.com^$all
 ||talents-application.com^$all
 /^https:\/\/[a-z]{3,30}\.[a-z]{2,4}\/socket\.io\/socket\.io\.js$/$header=nel:/report_to":"cf-nel/,script,1p,strict1p,match-case,domain=ci|ge|eu|life
-||stellar-blade.click^$all
 ||grupocgcr.com^$all
 ||pastebin.store/js.js
 ||ncewb8eo.cloud^$all
@@ -26723,13 +26739,9 @@ weightlossdiet.top##+js(acs, open, executeCode)
 ||massgrave.hopto.org^$doc
 ||official-kmspico.com^$doc
 ||official-kmspico.org^$doc
-||oficial-kmspico.com^$doc
 .com/assets/index_1.html?theme=$frame,1p
 ||sasktel.mmspos.com^$all
 /^https:\/\/www\.[a-z]{12,}\.com\/[-a-z]*%E[%0-9A-F]{20,}-[-0-9a-z]{3,}%E[-%0-9A-Fa-z]{70,}-p-\d{3,5}\.html$/$doc,match-case
-||onepiecegoods.com^$doc
-||printslamdunk.com^$doc
-||jujutsukaisengoods.com^$doc
 ||cractivator.com^$all
 ||analytiwave.com^$all
 ||analyticanoden.com^$all
@@ -26743,7 +26755,6 @@ weightlossdiet.top##+js(acs, open, executeCode)
 ||problems-center.com^$all
 ||33ok.club^$all
 ||protect-myphone.com^$all
-||hltvorg.com^$all
 /^https:\/\/pub-[0-9a-f]{32}\.r2\.dev\/(?=[-%0-9a-z]*[A-Z])[-%0-9A-Za-z]+-\d+\.html$/$doc,domain=r2.dev,match-case
 ||phila.revenue*.cc^$all
 ||bitchats.app^$all
@@ -26758,7 +26769,6 @@ weightlossdiet.top##+js(acs, open, executeCode)
 ||guardan.io^$all
 /^https:\/\/[a-z]{5,10}\.[a-z]{5,10}\.[a-z]{3}\/y1\.html$/$doc,match-case,to=com|top|~weebly.com
 ://www.*.pro/y1.html|$doc
-||nachdiewelt.click^$all
 ||seloriva.com^$doc
 ||seloriva.net^$doc
 ||client.*-blockfi.com^$all
@@ -26776,11 +26786,7 @@ weightlossdiet.top##+js(acs, open, executeCode)
 ||simpleswap.to^$all
 ||simpleswap.ltd^$all
 ||simpleswap.online^$all
-||killmalware.click^$all
-||tring-tring.com^$all
-||vero-hr.click^$all
 ||villasmbuva.co.mz^$all
-||fejyhy.com^$all
 ||fenamu.com^$all
 ||unpkg.com/redirect-*/beamglea.js$script
 .com/article/auth=$doc
@@ -26812,10 +26818,7 @@ sport.elwatannews.com##+js(aost, Array.prototype.indexOf, isWin)
 ||cs2beneluxtour.com^$all
 ||eplproseason25.com^$all
 ||esportsbenelux.com^$all
-||gameseason22.com^$all
-||juniorsvote.com^$all
 ||ligabenelux.com^$all
-||proeslgaming.com^$all
 ||uniqlo-nz.com^$all
 ||git44share.quest^$all
 ||survey.dawn.com^$all
@@ -26839,7 +26842,6 @@ sport.elwatannews.com##+js(aost, Array.prototype.indexOf, isWin)
 ||dokopka.icu^$all
 ||aftop10.com^$all
 ||simpleswap-io.at^$doc
-||simple-swap.to^$doc
 ||simpleswap.cyou^$doc
 ||simplesvvap.lol^$doc
 ||changelly.casa^$doc
@@ -26872,7 +26874,6 @@ sport.elwatannews.com##+js(aost, Array.prototype.indexOf, isWin)
 ||kodiakfinance.net^$doc
 ||changenow-io.us^$doc
 ||exodus-wallets.io^$doc
-||sushiswap.to^$doc
 ||legder.at^$doc
 ||electrum-data.cc^$doc
 ||ff-exchahge.cyou^$doc
@@ -26902,11 +26903,9 @@ sport.elwatannews.com##+js(aost, Array.prototype.indexOf, isWin)
 ||curve-flnance.com^$doc
 ||suite-trezor.click^$doc
 ||washingtonpost-news.com^$doc
-||lido-elhereum.net^$doc
 ||v3-yearn.org^$doc
 ||v2-solavre.com^$doc
 ||app-defituna.github.io^$doc
-||yupoo-dhgate.ru^$doc
 ||perfume-yupoo.ru^$doc
 ||yupooz.com^$doc
 ||jersey-yupoo.com^$doc
@@ -26994,7 +26993,6 @@ sport.elwatannews.com##+js(aost, Array.prototype.indexOf, isWin)
 ||u-tronscan.com^$all
 ||amehuns.cc^$all
 ||stinglebom.cc^$all
-||hyper-liquid.to^$all
 ||orca-finance.org^$all
 ||changenow-swap.org^$all
 ||changenow-exchange.org^$all
@@ -27028,7 +27026,6 @@ sport.elwatannews.com##+js(aost, Array.prototype.indexOf, isWin)
 ||7zip.cloud^$all
 ||7-zip.com^$all
 ||subscriptionprocess.im^$all
-||acc-verification.world^$all
 ||rblx-copier.vercel.app^$all
 ||youtube.com/watch?v=ZsAUT2PmbZk$all
 ||youtube.com/@rblxtoolz$all
@@ -27060,7 +27057,6 @@ ublockorigin.app###main::before:style(content: 'This is not the official uBlock 
 /^https:\/\/storage\.googleapis\.com\/[a-z]{5,}\/[a-z]+_v\d\.html#\?act=/$doc,match-case,to=storage.googleapis.com
 ||vtg.lol^$all
 ||tranyasy.com.cn^$all
-||anysoft.click^$all
 ||zeof-defender.pro^$all
 ||laptopprivacyado.com^$all
 ||dyiket.com^$doc
@@ -27083,7 +27079,6 @@ ublockorigin.app###main::before:style(content: 'This is not the official uBlock 
 ||go-todesk.hl.cn^$all
 ||todesk-zh.cn^$all
 ||todesk-zh.hl.cn^$all
-||cn-idm.com^$all
 ||bandizip.net^$all
 ||bandizip.pro^$all
 ||bandisoft.org^$all
@@ -27191,7 +27186,6 @@ ublockorigin.app###main::before:style(content: 'This is not the official uBlock 
 ||cleanguard.tech^$all
 ||studio-obs.net^$all
 ||linkbrawlstars.store^$all
-||robloxt.cv^$all
 ||todeske.com^$all
 ||360guard-360.cn^$all
 ||360weishi-360.cn^$all
@@ -27202,21 +27196,17 @@ top##body > center + .A + .post
 ||labor-day-*.top^$doc
 ||16gift.com^$all
 ||top/single.php|$script,1p
-||599cdn.com^
 ||armour-inc-down.net^$all
 ||mkvtoolnix.org^$doc
 ||duskwander.com^$all
 ||divinex.at^$all
 ||ultraviolence.buzz^$all
 ||unic0re.$all
-||unicore.pw^$all
 ###hero a[download="Unicore.zip"]
 ###download a[download="Unicore.zip"]
 ###hero + div.marquee-wrap + section#games + section#features + #download
-||robtips50kj.blogspot.com^$all
 ||checkmyapp.store^$all
 ||shrtweb.site^$all
-||security-process.pages.dev^$all
 ##body > .page > #mainVerifyRow
 ##body > .page > .verify-row
 ||bisque-bison-333202.hostingersite.com^$all
@@ -31746,7 +31736,7 @@ getthispdf.com##+js(set, _adBlockState, undefined)
 getthispdf.com##+js(rmnt, script, /'onerror'|'offsetHe|'offsetWi/)
 gumtree.com#@#+js(trusted-set, experimentOverrides, json:"%5B%7B%20defaultValue%3A%20%22OFF%22%7D%5D")
 bus-location.1507t.xyz#@#.ad-area:not(.text-ad)
-bus-location.1507t.xyz##div[id]:has(> script[src^="https://adm.shinobi.jp"]):style(height: 1px !important; width 1px !important; position: fixed !important; z-index: 2147483647 !important;)
+bus-location.1507t.xyz##div[id]:empty:style(height: 1px !important; width 1px !important; position: fixed !important; z-index: 2147483647 !important;)
 ||cloudfront.net/?$script,redirect=noopjs,domain=meuplayeronlinehd.com|multicanaistt.space
 meuplayeronlinehd.com##+js(rmnt, script, _0x, excludes, /source|URLSearchParams/)
 meuplayeronlinehd.com###player:style(display: block !important;)
@@ -31770,7 +31760,7 @@ www.youtube.com##+js(trusted-json-edit-xhr-request, [?..userAgent*="adunit"]..cl
 www.youtube.com##+js(trusted-json-edit-xhr-request, [?..userAgent*="instream"]..playbackContext[?.contentPlaybackContext]+={"adPlaybackContext":{"adType":"AD_TYPE_INSTREAM"}}, propsToMatch, /player?)
 www.youtube.com##+js(trusted-json-edit-xhr-request, [?..userAgent*="eafg"]+={"params":"eAFgAQ"}, propsToMatch, /player?)
 www.youtube.com##+js(trusted-json-edit-xhr-response, '[?..minimumPlaybackRate==100]..playerConfig.granularVariableSpeedConfig+={"minimumPlaybackRate":25,"maximumPlaybackRate":200,"defaultPlaybackRateOptions":[{"label":"1.0","value":100,"isPremiumUpsell":false,"priority":5},{"label":"1.25","value":125,"isPremiumUpsell":false,"priority":2},{"label":"1.5","value":150,"isPremiumUpsell":false,"priority":3},{"label":"1.75","value":175,"isPremiumUpsell":false,"priority":0},{"label":"2.0","value":200,"isPremiumUpsell":false,"priority":4},{"label":"3.0","value":300,"isPremiumUpsell":true,"priority":1}]}', propsToMatch, /player?)
-www.youtube.com###toast:has(> #action-button a.yt-spec-button-shape-next[href^="https://support.google.com/youtube/answer/3037019"])
+www.youtube.com###toast:has(> #text-container > yt-formatted-string#text.yt-notification-action-renderer)
 www.youtube.com##+js(json-prune, contents.twoColumnBrowseResultsRenderer.tabs.[].tabRenderer.content.richGridRenderer.contents.[-].richItemRenderer.content.adSlotRenderer)
 www.youtube.com##+js(edit-object-on-setter, ytInitialData, $..richItemRenderer[?@..adSlotRenderer])
 ||ttvnw.net/v1/playlist$xhr,3p,replace=/#EXT-X-DATERANGE:ID="(stitched-ad|maf-ad|source|trigger)"\S+\n|#EXT-X-DATERANGE:ID=\S+?CLASS="twitch-(?:stream-source|trigger|maf-ad)"\S+\n|#EXT-X-DATERANGE:\S+?CLASS="twitch-ad-quartile".+?(?=(#EXT-X-DATERANGE|$))|(\n#EXT-X-DISCONTINUITY\s|#EXT-X-TWITCH-PREFETCH\S+)//gs
