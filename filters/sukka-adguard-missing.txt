@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Wed, 24 Jun 2026 23:35:40 GMT
+! Last modified: Thu, 25 Jun 2026 06:28:39 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -11,10 +11,10 @@
 !   - Last modified: Wed, 24 Jun 2026 19:17:20 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
-!   - Last modified: Tue, 23 Jun 2026 04:26:55 +0000
+!   - Last modified: Thu, 25 Jun 2026 04:07:21 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Wed, 24 Jun 2026 19:14:19 +0000
+!   - Last modified: Thu, 25 Jun 2026 04:14:30 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
 !   - Last modified: Tue, 09 Jun 2026 09:41:27 +0000
@@ -27221,6 +27221,9 @@ top##body > center + .A + .post
 ||beroniw.com^$all,reason=malicious
 ||claudverification-id.beer/api.php
 ||invites-tracker-app.com^$all
+||ledger-lives-desktop.io^$all
+||legder.*.us.com^$all
+/\/checking\.php\?t=[a-zA-Z0-9%]+$/$doc,match-case
 ! uBlock filters – Privacy https://ublockorigin.pages.dev/filters/privacy.min.txt
 ||google-analytics.com/analytics.js$script,xhr,redirect=google-analytics_analytics.js:5
 ||google-analytics.com/cx/api.js$script,redirect=google-analytics.com/cx/api.js:5
@@ -27601,7 +27604,7 @@ bing.com##+js(href-sanitizer, body a[href^="/rebates/welcome?url=http"], ?url)
 ||sofi.com/atr/p/v1/a?u=http$doc,urlskip=?u
 ||justwatch.com/a?*^r=http$doc,urlskip=?r
 ||click.trafficguard.ai/*^lpurl=http$doc,urlskip=?lpurl
-||awstrack.me/L0/http$doc,urlskip=/\/L0\/(http[^\/?#]+)/ -uricomponent -blocked
+||awstrack.me/L0/http$doc,urlskip=/\/L0\/(http[^\/?#]+)/ -uricomponent
 ||gate.sc^*url=http$doc,urlskip=?url
 ||page.link/*^ofl=http$doc,urlskip=?ofl
 ||invol.co/aff_m?*url=http$doc,urlskip=?url
