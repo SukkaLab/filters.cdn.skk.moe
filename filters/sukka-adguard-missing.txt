@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sat, 27 Jun 2026 15:39:13 GMT
+! Last modified: Sat, 27 Jun 2026 19:47:41 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,19 +8,19 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sat, 27 Jun 2026 14:19:50 +0000
+!   - Last modified: Sat, 27 Jun 2026 15:02:31 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Sat, 27 Jun 2026 13:52:27 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Sat, 27 Jun 2026 04:32:43 +0000
+!   - Last modified: Sat, 27 Jun 2026 15:21:21 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
 !   - Last modified: Sat, 27 Jun 2026 13:25:28 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Sat, 27 Jun 2026 14:42:43 +0000
+!   - Last modified: Sat, 27 Jun 2026 15:10:19 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
 !   - Last modified: Thu, 25 Jun 2026 14:42:11 +0000
@@ -19860,6 +19860,8 @@ taste.com.au##.main-header:style(top: 0 !important)
 decompiler.com##+js(prevent-fetch, /ethicalads\.io|nitropay\.com/)
 decompiler.com##+js(set, HTMLImageElement.prototype.onload, undefined)
 decompiler.com##+js(set, HTMLImageElement.prototype.onerror, undefined)
+decompiler.com##+js(aeld, load, img)
+decompiler.com##+js(aeld, error)
 @@||ytlarge.com^$ghide
 @@||googlesyndication.com^$script,xhr,domain=ytlarge.com
 @@||fundingchoicesmessages.google.com^$script,xhr,domain=ytlarge.com
@@ -28900,6 +28902,7 @@ webex.com##+js(no-xhr-if, svc.webex.com/metrics)
 ||click.convertkit-mail4.com/$doc,urlskip=/([^/]+$)/ -base64
 ||streamcash.to/embed/$ping
 ||tm.jsuol.com.br^
+||directg.jp/js/fingerprint2.js$script,redirect=fingerprint2.js,important
 /edgemesh.*.js$script,domain=~edgemesh.com|~edgeno.de
 ||safelinkconverter.com^$script,3p
 /adsensebase.js$script
@@ -31775,7 +31778,6 @@ tek.no,e24.no,minmote.no,vg.no#@#div[id^="sp_message_container_"]
 cmp.tek.no,cmp.e24.no,minmote.no,cmp.vg.no#@#+js(trusted-click-element, .message-row > button[title="Avvis alle"], , 2000)
 openchat-review.me##+js(set-local-storage-item, BLOCKED_FLAG_KEY, $remove$)
 openchat-review.me##+js(aost, document.querySelectorAll, security.js)
-game8.jp#@#.track_mario
 streamcash.to##+js(trusted-replace-argument, document.querySelector, 0, '', condition, /^\[id\=\"[0-9a-z]{10}\"\]$/)
 streamcash.to##+js(aost, decodeURIComponent, /[a-z]{3}/)
 akirabox.com,akirabox.to,bowfile.com,buzzheavier.com,bzzhr.co,bzzhr.to,datavaults.co,fuckingfast.*,multiup.io,rootz.so,usersdrive.com,vik1ngfile.site,zpaste.net#@#+js(set, Document.prototype.createElement.call, noopFunc)
