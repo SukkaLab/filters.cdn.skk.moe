@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sat, 27 Jun 2026 09:06:18 GMT
+! Last modified: Sat, 27 Jun 2026 11:46:29 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,19 +8,19 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sat, 27 Jun 2026 04:08:03 +0000
+!   - Last modified: Sat, 27 Jun 2026 09:11:36 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Fri, 26 Jun 2026 22:19:55 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Fri, 26 Jun 2026 22:15:48 +0000
+!   - Last modified: Sat, 27 Jun 2026 04:32:43 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
 !   - Last modified: Fri, 26 Jun 2026 04:57:33 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Sat, 27 Jun 2026 03:53:40 +0000
+!   - Last modified: Sat, 27 Jun 2026 05:31:13 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
 !   - Last modified: Thu, 25 Jun 2026 14:42:11 +0000
@@ -17992,7 +17992,7 @@ web1s.asia##+js(nano-sib, wait)
 sshkit.com,fastssh.com,howdy.id##+js(no-fetch-if, /adsbygoogle|doubleclick/)
 @@*$ghide,domain=sshkit.com|fastssh.com|howdy.id
 pluto.tv##+js(json-prune-fetch-response, adBreaks.[].startingOffset adBreaks.[].adBreakDuration adBreaks.[].ads adBreaks.[].startTime adBreak adBreakLocations, , propsToMatch, /session.json)
-pluto.tv##+js(xml-prune, 'xpath(//*[name()="Period"][.//*[name()="BaseURL" and contains(text(),"_ad") and contains(text(),"/mp4/")]] | //*[name()="MPD"]/@mediaPresentationDuration | //*[name()="Period"]/@start)', '', /\/episode\/.+?\.mpd\?/)
+pluto.tv##+js(xml-prune, 'xpath(//*[name()="Period"][.//*[name()="BaseURL" and contains(text(),"_ad") and contains(text(),"creative")]] | //*[name()="MPD"]/@mediaPresentationDuration | //*[name()="Period"]/@start)', '', /\/episode\/.+?\.mpd\?/)
 @@||a-fds.youborafds01.com/data?$xhr,domain=pluto.tv
 @@||imasdk.googleapis.com^$script,domain=oqee.tv
 ymovies.vip##+js(aopr, mm)
@@ -19855,6 +19855,8 @@ taste.com.au##.main-header:style(top: 0 !important)
 ||yandex.ru^$script,domain=decompiler.com,important
 *$image,redirect-rule=1x1.gif,domain=decompiler.com
 decompiler.com##+js(prevent-fetch, /ethicalads\.io|nitropay\.com/)
+decompiler.com##+js(set, HTMLImageElement.prototype.onload, undefined)
+decompiler.com##+js(set, HTMLImageElement.prototype.onerror, undefined)
 @@||ytlarge.com^$ghide
 @@||googlesyndication.com^$script,xhr,domain=ytlarge.com
 @@||fundingchoicesmessages.google.com^$script,xhr,domain=ytlarge.com
@@ -23051,6 +23053,9 @@ opatil.com##+js(rmnt, script, offsetParent)
 tieulam.info##+js(no-fetch-if, adsbygoogle, war:googlesyndication_adsbygoogle.js)
 hianime.ms###pi-step-ad
 hianime.ms##div[id="pi-step-play"]:style(display:block !important)
+hianime.ms##.pi-btn--play.pi-btn:watch-attr(disabled):remove-class(is-locked)
+hianime.ms##.pi-btn--play.pi-btn:remove-attr(disabled)
+hianime.ms##.pi-ads
 @@||starcima.com^$ghide
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
@@ -28883,6 +28888,7 @@ webex.com##+js(no-xhr-if, svc.webex.com/metrics)
 ||media.storiesig.info/get?__sig=*&uri=$urlskip=?uri,doc
 ||click.convertkit-mail4.com/$doc,urlskip=/([^/]+$)/ -base64
 ||streamcash.to/embed/$ping
+||tm.jsuol.com.br^
 /edgemesh.*.js$script,domain=~edgemesh.com|~edgeno.de
 ||safelinkconverter.com^$script,3p
 /adsensebase.js$script
@@ -31757,7 +31763,6 @@ cmp.tek.no,cmp.e24.no,minmote.no,cmp.vg.no#@#+js(trusted-click-element, .message
 openchat-review.me##+js(set-local-storage-item, BLOCKED_FLAG_KEY, $remove$)
 openchat-review.me##+js(aost, document.querySelectorAll, security.js)
 game8.jp#@#.track_mario
-allporncomic.com#@#iframe
 streamcash.to##+js(trusted-replace-argument, document.querySelector, 0, '', condition, /^\[id\=\"[0-9a-z]{10}\"\]$/)
 streamcash.to##+js(aost, decodeURIComponent, /[a-z]{3}/)
 akirabox.com,akirabox.to,bowfile.com,buzzheavier.com,bzzhr.co,bzzhr.to,datavaults.co,fuckingfast.*,multiup.io,rootz.so,usersdrive.com,vik1ngfile.site,zpaste.net#@#+js(set, Document.prototype.createElement.call, noopFunc)
