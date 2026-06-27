@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sat, 27 Jun 2026 19:47:41 GMT
+! Last modified: Sat, 27 Jun 2026 23:18:22 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sat, 27 Jun 2026 15:02:31 +0000
+!   - Last modified: Sat, 27 Jun 2026 21:29:40 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Sat, 27 Jun 2026 13:52:27 +0000
@@ -7412,10 +7412,11 @@ linkshortx.in##.bg_cover.footer-area
 linkshortx.in##+js(set, blurred, false)
 ||acscdn.com/script/aclib.js$script,redirect-rule=noopjs
 coinclix.co##+js(trusted-replace-argument, document.getElementById, 0, json:"header", condition, /ad-chk|aads-frame/)
-akirabox.com,akirabox.to,bowfile.com,buzzheavier.com,bzzhr.co,bzzhr.to,datavaults.co,fuckingfast.*,multiup.io,rootz.so,usersdrive.com,vik1ngfile.site,zpaste.net##+js(remove-node-text, script, /"\\|\\[ux]|\+\[\]/)
+akirabox.com,akirabox.to,bowfile.com,buzzheavier.com,bzzhr.co,bzzhr.to,datavaults.co,fuckingfast.*,multiup.io,usersdrive.com,vik1ngfile.site,zpaste.net##+js(remove-node-text, script, /"\\|\\[ux]|\+\[\]/)
 akirabox.com,akirabox.to,bowfile.com,buzzheavier.com,bzzhr.co,bzzhr.to,datavaults.co,fuckingfast.*,multiup.io,rootz.so,usersdrive.com,vik1ngfile.site,zpaste.net##+js(set, Element.prototype.closest, falseFunc)
 /^https:\/\/[a-z]+[0-9]+\.host[0-9]+[a-z]\.cfd\/\?[a-z]+=[a-zA-Z0-9:_=-]+/$all,match-case
 /^https:\/\/[a-z]+[0-9]+\.[a-z]+\.cfd\/\?[a-z]+=[a-zA-Z0-9:_=-]+/$all,match-case
+/^https:\/\/[a-z0-9]+\.[a-z0-9]+\.cfd\/\?[a-z]+=[a-zA-Z0-9+/=:_-]+/$popup,match-case
 ||cfd/rfdtagarg/*.js
 ||zeilink.net/api/public/ads
 ||cdn-n.net^
@@ -19862,6 +19863,7 @@ decompiler.com##+js(set, HTMLImageElement.prototype.onload, undefined)
 decompiler.com##+js(set, HTMLImageElement.prototype.onerror, undefined)
 decompiler.com##+js(aeld, load, img)
 decompiler.com##+js(aeld, error)
+decompiler.com##+js(set, Image.prototype.complete, false)
 @@||ytlarge.com^$ghide
 @@||googlesyndication.com^$script,xhr,domain=ytlarge.com
 @@||fundingchoicesmessages.google.com^$script,xhr,domain=ytlarge.com
@@ -22583,6 +22585,7 @@ mamamia.com.au##.header-main-container:style(top: 0 !important;)
 ||tv247us.vip^$csp=sandbox allow-forms allow-same-origin allow-scripts allow-modals allow-orientation-lock allow-pointer-lock allow-presentation allow-top-navigation
 ||player.*/adsconfig.json
 game-repack.site##+js(nowoif)
+game-repack.site##div > center > button[class][style][data-bound="true"]
 filecrate.store##+js(aeld, click, !adShown)
 vidara.so,vidara.to##+js(nowoif)
 vidara.so,vidara.to##+js(acs, document.createElement, /blocker|detected/)
@@ -23064,9 +23067,10 @@ hianime.ms##.pi-ads
 @@||starcima.com^$ghide
 starcima.com##+js(nowoif, _blank)
 starcima.com##+js(trusted-set-local-storage-item, sc_last_pop, $now$)
-||greekfun.net/assets/js/adblock-warning.js
+greekfun.net,morencius.com##+js(nowoif, _blank)
+@@||greekfun.net^$ghide
+morencius.com##body > div[style="position:fixed;inset:0;z-index:2147483647;background:black;opacity:0.01;height:437px;width:824px;cursor:pointer;"]
 ||greekfun.net/assets/js/managed-ads.js
-greekfun.net##+js(nowoif, _blank)
 carryflix.com##+js(no-fetch-if, mode:no-cors)
 interestingengineering.com##+js(nostif, =void 0)
 interestingengineering.com##.t-pt-3.t-gap-2.t-items-center.t-flex-col.t-flex.t-w-full:has-text(Advertisement)
