@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sun, 28 Jun 2026 15:40:20 GMT
+! Last modified: Sun, 28 Jun 2026 19:48:55 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,13 +8,13 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sun, 28 Jun 2026 10:46:45 +0000
+!   - Last modified: Sun, 28 Jun 2026 15:17:21 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Sat, 27 Jun 2026 13:52:27 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Sat, 27 Jun 2026 15:21:21 +0000
+!   - Last modified: Sun, 28 Jun 2026 14:50:39 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
 !   - Last modified: Sat, 27 Jun 2026 13:25:28 +0000
@@ -7109,6 +7109,10 @@ weshare.is##+js(aeld, blur)
 *$script,3p,denyallow=code.jquery.com|challenges.cloudflare.com,domain=filepv.com
 go.shortnest.com##+js(nowoif)
 go.shortnest.com##+js(nano-stb, , 6000)
+shortnest.com###dl-bbtn:style(display: none !important;)
+shortnest.com###cont-bbtn:style(display: block !important;)
+shortnest.com##+js(set, blurred, false)
+||shortnest.com/st?$doc,urlskip=?url
 ||qty3e.pro^$all
 savetub.com##+js(aopr, open)
 rokni.xyz,technicalline.store,quizrent.com##+js(no-fetch-if, adsbygoogle)
@@ -16442,6 +16446,7 @@ myanimelist.net##[class*="-pdatla"]
 myanimelist.net##.bookstore-detail-right
 myanimelist.net##div[class*="bookstores-recommend-plugin-"]:has(span[class="sponsored"])
 myanimelist.net##.ad-sas
+myanimelist.net##.js-scrollfix-bottom-rel.rightside > div[style]:has(.ad-sas)
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=winknews.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$script,domain=winknews.com
 disneyplus.com##+js(json-prune, stream.insertion.adSession stream.insertion.points stream.insertion stream.sources.*.insertion pods.0.ads)
@@ -19872,6 +19877,10 @@ decompiler.com##+js(aeld, load, img)
 decompiler.com##+js(aeld, error)
 decompiler.com##+js(set, Image.prototype.complete, false)
 decompiler.com##+js(set-constant, ResizeObserver, undefined)
+decompiler.com###artifactFileContent:style(display:block !important)
+decompiler.com###adblockWarning
+decompiler.com##body > div.container:has(#banner)
+decompiler.com##+js(set, Image.prototype.getBoundingClientRect, undefined)
 @@||ytlarge.com^$ghide
 @@||googlesyndication.com^$script,xhr,domain=ytlarge.com
 @@||fundingchoicesmessages.google.com^$script,xhr,domain=ytlarge.com
@@ -22595,6 +22604,8 @@ mamamia.com.au##.header-main-container:style(top: 0 !important;)
 ||player.*/adsconfig.json
 game-repack.site##+js(nowoif)
 worldofpcgames.com,game-repack.site##div > center > button[class][style]
+worldofpcgames.com##[href][target="_blank"][style*="cursor: pointer;"]
+worldofpcgames.com##[href*="cfd"]
 zpaste.net##div > center > button[class][style]
 zpaste.net##center > center > button[class][style]
 filecrate.store##+js(aeld, click, !adShown)
@@ -23089,6 +23100,9 @@ interestingengineering.com##.t-pt-3.t-gap-2.t-items-center.t-flex-col.t-flex.t-w
 lineup11.net##+js(nostif, /\{[a-z]+\(\)\}/)
 lineup11.net##+js(nosiif, .value||)
 talksport.com##+js(rmnt, script, abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789)
+||flybfree.ca/AdBlockDetect.js
+||freemusiclessons4u.com/AdBlockDetect.js
+||kingmahali.xyz/js/adBlockDetect.js
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -28730,6 +28744,7 @@ evropa2.cz##+js(set-local-storage-item, /cnc_alien_invasion_code|pixelsLastFired
 ||spexjs.com^
 ||buttondown.com/ladybird/subscribers/*/archive/$doc,uritransform=/\/subscribers\/[-0-9a-f]+\/archive\//\/archive\//
 myanimelist.net##+js(no-fetch-if, method:POST body:/content_view|impression|page_view/)
+||myanimelist.net/ux/
 ||script.wikia.nocookie.net/fandom-ae-assets/identity-service/$domain=fandom.com|tvguide.com
 ||gateway.us.zip.co/analytics^
 ||mercari.com/ko40/
@@ -28922,6 +28937,8 @@ webex.com##+js(no-xhr-if, svc.webex.com/metrics)
 ||streamcash.to/embed/$ping
 ||tm.jsuol.com.br^
 ||directg.jp/js/fingerprint2.js$script,redirect=fingerprint2.js,important
+/fingerprint2.js$script,redirect=fingerprint2.js
+/fingerprint2.min.js$script,redirect=fingerprint2.js
 /edgemesh.*.js$script,domain=~edgemesh.com|~edgeno.de
 ||safelinkconverter.com^$script,3p
 /adsensebase.js$script
