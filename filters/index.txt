@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Filters
-! Last modified: Sun, 28 Jun 2026 06:39:24 GMT
+! Last modified: Sun, 28 Jun 2026 17:57:09 GMT
 ! Expires: 1 hours
 ! Description: The filters from Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -347,9 +347,11 @@ favicon.ico$image,uritransform=/https:\/\/(.+)\/favicon.ico/https:\/\/favicone.c
 ||4khd.com/Statistics.php
 ||4khd.com/js/disabley.min.js
 windy.com##.premium-calendar #map-container::after:style(background-image: none!important)
+windy.com###leaflet-map:style(filter: none!important)
 windy.com##.get-premium--ribbon
 windy.com##.get-premium
 windy.com##.premium-button
+www.windy.com###startup-promo
 ||windy.com/*premium-watermark.svg$redirect=1x1.gif
 ##a[href*="//sjv.io"]
 ##a[href*="//l.labsda.com"]
@@ -782,7 +784,6 @@ www.juksy.com##[href^="https://news.google.com/publications/"]
 www.juksy.com##.js-idlePopup
 www.juksy.com##.idlePopup
 netflav.com##.ads_video_overlay_iframe
-www.windy.com###startup-promo
 learn.microsoft.com##.is-success.alert:has([href^="https://security.microsoft.com/trialHorizontalHub"])
 www.reddit.com###games_section
 vite.dev##.vp-sponsor-grid
