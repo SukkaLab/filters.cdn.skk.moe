@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sun, 28 Jun 2026 19:48:55 GMT
+! Last modified: Sun, 28 Jun 2026 23:31:30 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -30,7 +30,7 @@
 !   - Last modified: Sun, 28 Jun 2026 10:52:44 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
-!   - Last modified: Sun, 28 Jun 2026 05:41:13 +0000
+!   - Last modified: Sun, 28 Jun 2026 18:42:41 +0000
 ! --------------------------------------------------------------
 ! uBlock filters https://ublockorigin.pages.dev/filters/filters.min.txt
 *_ad_$media,domain=youtube.com,3p
@@ -36667,6 +36667,7 @@ thailandopen.org,theaircurrent.com,freereadnovel.online,piklodz.pl,secondlifetra
 ||freereadnovel.online/*?wccp_ver_num=
 studyflix.de##.reminder-modal
 studyflix.de##html:style(overflow: auto !important;)
+||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=studyflix.de
 espn.com##+js(aeld, contextmenu)
 walkthrough-indo.blogspot.com##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
 desijugar.net##+js(acs, document.onkeydown)
