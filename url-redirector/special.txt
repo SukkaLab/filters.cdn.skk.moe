@@ -1,5 +1,5 @@
 ! Title: [sukka] Special Redirects
-! Last modified: Mon, 29 Jun 2026 07:35:25 GMT
+! Last modified: Mon, 29 Jun 2026 10:00:44 GMT
 ! Description: uBlock Origin / AdGuard uritransform rules
 ! Homepage: https://github.com/SukkaW/Filters
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -13,6 +13,10 @@
 ||www.wikidot.com/userkarma.php$all,uritransform=/www\.wikidot\.com\/userkarma\.php/docs.lucaairport.qzz.io\/https\/www.wikidot.com\/userkarma.php/
 ||tiles.windy.com^$all,uritransform=/tiles\.windy\.com/docs.lucaairport.qzz.io\/https\/tiles.windy.com/
 ||ims.windy.com^$all,uritransform=/ims\.windy\.com/docs.lucaairport.qzz.io\/https\/ims.windy.com/
+||fourhoi.com^$all,uritransform=/fourhoi\.com/docs.lucaairport.qzz.io\/https\/fourhoi.com/
+||surrit.com^$all,uritransform=/surrit\.com/docs.lucaairport.qzz.io\/https\/surrit.com/
+||sixyik.com^$all,uritransform=/sixyik\.com/docs.lucaairport.qzz.io\/https\/sixyik.com/
+||fivetiu.com^$all,uritransform=/fivetiu\.com/docs.lucaairport.qzz.io\/https\/fivetiu.com/
 
 ! >>>> AdGuard
 ||hembed.com$all,urltransform=/([^\/]+)\.hembed\.com/docs.lucaairport.qzz.io\/https\/$1.hembed.com/
@@ -23,3 +27,7 @@
 ||www.wikidot.com/userkarma.php$all,urltransform=/www\.wikidot\.com\/userkarma\.php/docs.lucaairport.qzz.io\/https\/www.wikidot.com\/userkarma.php/
 ||tiles.windy.com^$all,urltransform=/tiles\.windy\.com/docs.lucaairport.qzz.io\/https\/tiles.windy.com/
 ||ims.windy.com^$all,urltransform=/ims\.windy\.com/docs.lucaairport.qzz.io\/https\/ims.windy.com/
+||fourhoi.com^$all,urltransform=/fourhoi\.com/docs.lucaairport.qzz.io\/https\/fourhoi.com/
+||surrit.com^$all,urltransform=/surrit\.com/docs.lucaairport.qzz.io\/https\/surrit.com/
+||sixyik.com^$all,urltransform=/sixyik\.com/docs.lucaairport.qzz.io\/https\/sixyik.com/
+||fivetiu.com^$all,urltransform=/fivetiu\.com/docs.lucaairport.qzz.io\/https\/fivetiu.com/
