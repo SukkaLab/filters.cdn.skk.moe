@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Mon, 29 Jun 2026 07:06:58 GMT
+! Last modified: Mon, 29 Jun 2026 11:24:38 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.6.32
+!   - Version: 2.1.6.34
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -55056,6 +55056,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||countly.
 ||countly-
 |piwik.
+||posthog.football24.ua^
 ||analytics.wispbyte.com^
 ||appview.fafafa.ai^
 ||event-collector.analytics.onedio.com^
@@ -154035,6 +154036,12 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||platform.grcv.io/json/rum
+||keyforsteam.de/analytics/script.js
+||i.hh.ru/js/External/TargetAds_WebSDK.js
+||hh.ru/shards/banner_real_view_analytics
+||app-web-server.imagen-ai-op.com/analytics/
+||myshows.me/v3/rpc/stat/
 ||pornhub.com/_i?
 ||phncdn.com/www-static/js/lib/user-clogs.js
 ||harant-test.ru/statistics.php
