@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Mon, 29 Jun 2026 17:12:39 GMT
+! Last modified: Mon, 29 Jun 2026 20:17:33 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,13 +8,13 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Mon, 29 Jun 2026 09:08:16 +0000
+!   - Last modified: Mon, 29 Jun 2026 17:43:58 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Sat, 27 Jun 2026 13:52:27 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Mon, 29 Jun 2026 04:58:58 +0000
+!   - Last modified: Mon, 29 Jun 2026 16:30:46 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
 !   - Last modified: Sat, 27 Jun 2026 13:25:28 +0000
@@ -16949,8 +16949,9 @@ reshare.pm##+js(nowoif)
 gamedrive.*##.code-block a[href][target="_blank"] > img[data-recalc-dims]
 gamedrive.*##a[href][target="_blank"][rel="noopener noreferrer"] > img
 gamedrive.*##.netflix-banner
-gamedrive.*##.hbo-banner
+gamedrive.*##.hbu-banner
 gamedrive.*##[id^="gridlove-module-"] > .gridlove-text-module-content > div:is(:has([data-format]), [onclick*='window.open'])
+gamedrive.*##div[class*="banner"][onclick]
 gamedrive.*##+js(aost, document.querySelector, /showModal|chooseAction|doAction|callbackAdsBlocked/)
 gamedrive.*##+js(acs,  String.fromCharCode, fetch)
 gamedrive.*##+js(acs, eval, replace)
@@ -19882,14 +19883,16 @@ decompiler.com##+js(set, HTMLImageElement.prototype.onerror, undefined)
 decompiler.com##+js(aeld, load, img)
 decompiler.com##+js(aeld, error)
 decompiler.com##+js(set, Image.prototype.complete, false)
-decompiler.com##+js(set-constant, ResizeObserver, undefined)
+decompiler.com##+js(set, createImageBitmap, {})
 decompiler.com###artifactFileContent:style(display:block !important)
 decompiler.com###adblockWarning
 decompiler.com##body > div.container:has(#banner)
 decompiler.com##+js(set, Image.prototype.getBoundingClientRect, undefined)
 decompiler.com##img[src*="media.ethicalads.io"]:style(width:240px !important;)
 decompiler.com##+js(set, Element.prototype.getBoundingClientRect, undefined)
-decompiler.com##+js(trusted-replace-argument, document.getElementById, 0, json:"adblockWarning", condition, artifactFileContent)
+decompiler.com##+js(trusted-replace-argument, document.querySelector, 0, json:"adblockWarning", condition, artifactFileContent)
+decompiler.com##+js(set, HTMLImageElement.prototype.naturalWidth, 240)
+decompiler.com##+js(set, createImageBitmap, undefined)
 @@||ytlarge.com^$ghide
 @@||googlesyndication.com^$script,xhr,domain=ytlarge.com
 @@||fundingchoicesmessages.google.com^$script,xhr,domain=ytlarge.com
@@ -27768,6 +27771,8 @@ spreaker.com##+js(href-sanitizer, body a[href^="https://spreaker.onelink.me/"][h
 dogdrip.net##+js(href-sanitizer, body a[href^="/link.php?url=http"], ?url)
 ||donanimhaber.com/ExternalLinkRedirect?*^url=http$doc,urlskip=?url
 donanimhaber.com##+js(href-sanitizer, body a[href^="/ExternalLinkRedirect?"][href*="url=http"], ?url)
+f6s.com##+js(aeld, , redirect)
+||f6s.com/redirect?url=http*$doc,urlskip=?url
 ||cdn.digg.com/fragments/homepage/static/view-frontpage.js
 arstechnica.com,dermnetnz.org##.gsc-webResult a[data-cturl]:remove-attr(/^data-ct/)
 /detroitchicago/dpv.gif?$image
@@ -28955,6 +28960,8 @@ webex.com##+js(no-xhr-if, svc.webex.com/metrics)
 /fingerprint2.js$script,redirect=fingerprint2.js
 /fingerprint2.min.js$script,redirect=fingerprint2.js
 ||curiosity.sheepesports.com^
+mashable.com##+js(href-sanitizer, a[href^="https://zdcs.link/"], ?u)
+||prydwen.gg/api/v1/ping/
 /edgemesh.*.js$script,domain=~edgemesh.com|~edgeno.de
 ||safelinkconverter.com^$script,3p
 /adsensebase.js$script
