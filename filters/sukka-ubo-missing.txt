@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Tue, 30 Jun 2026 10:02:25 GMT
+! Last modified: Tue, 30 Jun 2026 16:32:28 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.6.39
+!   - Version: 2.1.6.41
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -155137,7 +155137,7 @@ boredpanda.*##+js(set-local-storage-item, bp-analytics, $remove$)
 ||pwe.epochbase.com/libs/mixpanel-
 ||fatosdesconhecidos.com.br/wp-content/cache/*/analytics/tag.js
 ||skyscanner.co.kr/g/aps/public/api/v1/pixel/
-||wcs.naver.net/wcslog.js^
+||wcs.naver.net/wcslog.js^$domain=~map.vworld.kr
 ||gateway.us.zip.co/analytics^
 ||wzzm13.com/taboola_
 ||restaurantguru.com/ajax/logAB
@@ -160021,6 +160021,7 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=saturn.de
 @@||metrics.us.playstation.com/b/ss/
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
+@@||duckduckgo.com/local.js?tg=$~3p
 ||directg.jp/js/fingerprint2.js$script,redirect=fingerprint2.js
 @@||googletagmanager.com/gtm.js$domain=gocomics.com
 @@||cdn.clerk.io/clerk.js$domain=jaktdepotet.no

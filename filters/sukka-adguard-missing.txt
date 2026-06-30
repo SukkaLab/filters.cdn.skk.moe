@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Tue, 30 Jun 2026 10:02:25 GMT
+! Last modified: Tue, 30 Jun 2026 16:32:28 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,10 +8,10 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Tue, 30 Jun 2026 04:18:53 +0000
+!   - Last modified: Tue, 30 Jun 2026 09:31:37 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
-!   - Last modified: Tue, 30 Jun 2026 01:44:01 +0000
+!   - Last modified: Tue, 30 Jun 2026 14:01:04 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
 !   - Last modified: Mon, 29 Jun 2026 16:30:46 +0000
@@ -27,7 +27,7 @@
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Sun, 28 Jun 2026 10:52:44 +0000
+!   - Last modified: Tue, 30 Jun 2026 09:21:16 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
 !   - Last modified: Mon, 29 Jun 2026 04:21:38 +0000
@@ -7017,6 +7017,10 @@ financacerta.com,encurtads.net##+js(nostif, checkAdBlock)
 financacerta.com,encurtads.net###wpsafe-link:style(display: block !important;)
 financacerta.com,encurtads.net###wpsafe-link, .text-center.wpsafe-top > div > h1:others()
 financacerta.com,encurtads.net##+js(rmnt, script, popUp)
+lokerwfh.net,app.khaddavi.net###verify, #second_open_placeholder:others()
+lokerwfh.net,app.khaddavi.net##+js(no-fetch-if, googlesyn)
+lokerwfh.net,app.khaddavi.net##+js(nano-stb, /.?/, *)
+lokerwfh.net,sfl.gl##.z-0.overflow-hidden.relative.w-full.rounded-lg.to-\[\#0948EA\].from-\[\#5597FF\].bg-gradient-to-r.p-8.min-h-\[189px\]
 @@||safelinku.com^$script,domain=lokerwfh.net|khaddavi.net
 khaddavi.net,lokerwfh.net##[src*="blogger.googleusercontent.com"]
 khaddavi.net,lokerwfh.net##p
@@ -19885,14 +19889,13 @@ decompiler.com##+js(set, HTMLImageElement.prototype.onerror, undefined)
 decompiler.com##+js(aeld, load, img)
 decompiler.com##+js(aeld, error)
 decompiler.com##+js(set, Image.prototype.complete, false)
-decompiler.com##+js(set, createImageBitmap, {})
 decompiler.com###artifactFileContent:style(display:block !important)
 decompiler.com###adblockWarning
 decompiler.com##body > div.container:has(#banner)
-decompiler.com##+js(set, Image.prototype.getBoundingClientRect, undefined)
+decompiler.com##+js(prevent-canvas, 2d)
 decompiler.com##img[src*="media.ethicalads.io"]:style(width:240px !important;)
 decompiler.com##+js(set, Element.prototype.getBoundingClientRect, undefined)
-decompiler.com##+js(trusted-replace-argument, document.querySelector, 0, json:"adblockWarning", condition, artifactFileContent)
+decompiler.com##+js(trusted-replace-argument, document.getElementsByTagName, 0, json:"adblockWarning", condition, pre)
 decompiler.com##+js(set, HTMLImageElement.prototype.naturalWidth, 240)
 decompiler.com##+js(set, createImageBitmap, undefined)
 @@||ytlarge.com^$ghide
@@ -22651,9 +22654,16 @@ xitongku.com##+js(trusted-set-session-storage-item, updateTime, $now$)
 oxxfile.*##+js(prevent-fetch, ads_)
 oxxfile.*##+js(prevent-xhr, ads_)
 oxxfile.*##^[rel="preload"][href*="tracking-codes"]
-||/api/tracking-codes?type=ads_$xhr,domain=oxxfile.*
+/api/tracking-codes?type=ads_$xhr,domain=oxxfile.*
+###modern-player-root ~ div[id^="custom-invisible-overlay-"][class^="custom-popup-overlay-"]
+gupload.xyz##+js(aeld, click, adClickThrough)
+gupload.xyz##+js(trusted-json-edit, ..showAds=false)
+gupload.xyz##+js(rmnt, script, /document\.write|MouseEvent|z-index:9999/)
 gupload.xyz##+js(acs, EventTarget.prototype.addEventListener, open)
-||gupload.xyz/data/avasat/*.php$xhr,redirect=noop-vast3.xml
+gupload.xyz##div[class^="custom-popup-overlay-"]
+||gupload.xyz/data/*.php$xhr,redirect=noop-vast3.xml
+||gupload.xyz/data/player/adblock-detector
+||gzupload.com/api/direct/
 ||blinksbobblepadding.com^
 ||caseousalba.cyou^
 pixvid.org##+js(nowoif, _blank)
@@ -22870,6 +22880,7 @@ techsynchron.com##+js(set-local-storage-item, pbs_action_taken, true)
 techsynchron.com##+js(trusted-set-local-storage-item, pbs_action_time, $now$)
 techsynchron.com##+js(rmnt, script, const popup)
 techsynchron.com##.sh-aawp-box
+blogspot.com###sticky-bottom-widget
 blogspot.com##.my-responsive-banner-container
 blogspot.com##.widget.HTML > .widget-content > #floating-footer.floating-footer
 sita.sk#@#.ads-box
@@ -23122,6 +23133,10 @@ talksport.com##+js(rmnt, script, abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTU
 ||kingmahali.xyz/js/adBlockDetect.js
 chzzk.naver.com##+js(spoof-css, .banner_ad_wrapper, display, block)
 chzzk.naver.com##+js(no-xhr-if, /(veta.naver.com\/vas|veta.naver.com\/gfp|veta.naver.com\/call)/ method:OPTIONS)
+greeksubsmovies.net##+js(rmnt, script, offsetHeight)
+mylondon.news##div[data-testid^="commercial-"]
+mylondon.news##div[class^="Header_mastheadwebstrip-container"]
+mylondon.news##.sticky ~ header:style(top: 0 !important;)
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -23865,6 +23880,7 @@ cracksmid.com##div[style=""] > center > center
 ||safeageplan.link^$all
 ||safe-device.com^$all
 ||fanbox.help^$all
+||meetu.usd1.party^$doc
 ||webuzz.me^$doc
 ||coup-ling.net^$all
 ||gokinjolove.jp^$all
@@ -32248,6 +32264,9 @@ ing.be##+js(trusted-set-cookie, cookiesOptin, false, , , domain, .ing.be)
 web.magentatv.de##+js(trusted-set-local-storage-item, DTAG_GUEST_PRIVACY_FLAGS, '{"infoService":null,"infoToBroadcasters":false,"infoToThirdParty":null,"marketing":false,"personalAdvertising":false,"personalizedUi":false,"productImprovements":false,"thirdParty":false}')
 bahn.de##+js(trusted-set-cookie, CONSENTMGR, 'c1:1|c2:0|c3:0|c4:0|c5:0|c6:0|c7:0|c8:0|c9:0|c10:0|c11:0|c12:0|c13:0|c14:0|c15:0|c16:0|ts:$now$|consent:true|id:0', , , domain, .bahn.de)
 insights.assetmanagement.hsbc.com##+js(trusted-click-element, .reject-all > button)
+asket.com##+js(trusted-set-cookie, CookieConsent, "{stamp:'',necessary:true,preferences:false,statistics:false,marketing:false,method:'explicit'}")
+redact.dev##+js(trusted-set-cookie, tracking-consent, %7B%22version%22%3A1%2C%22consent%22%3A%7B%22essential%22%3Atrue%2C%22tracking%22%3Afalse%2C%22marketing%22%3Afalse%7D%2C%22timestamp%22%3A$now$%7D, , , reload, 1, dontOverwrite, 1)
+coolblue.de##+js(trusted-set-cookie, cookie-preferences, eyJ2ZXJzaW9uIjoiMjAyNTA1MDciLCJmdW5jdGlvbmFsIjp7ImNhIjp0cnVlfSwiYW5hbHl0aWNhbCI6eyJhdyI6ZmFsc2UsImNlIjpmYWxzZSwiZGQiOmZhbHNlLCJnYSI6ZmFsc2UsIm9wIjpmYWxzZSwidHAiOmZhbHNlfSwibWFya2V0aW5nIjp7ImZiIjpmYWxzZSwiZ21wIjpmYWxzZSwiaW4iOmZhbHNlLCJqcyI6ZmFsc2UsImtrIjpmYWxzZSwibGkiOmZhbHNlLCJtYSI6ZmFsc2UsInJkIjpmYWxzZSwic2MiOmZhbHNlLCJzdCI6ZmFsc2UsInR0IjpmYWxzZX19, , , domain, .coolblue.de, reload, 1)
 dailymail.co.uk,dailymail.com##+js(trusted-click-element, div[data-project="mol-fe-cmp"] button[class*="consent"]:not([class*="reject"]))
 1001games.com,1001hry.cz,1001jeux.fr,1001jocuri.ro,1001jogos.com.br,1001jogos.pt,1001pelit.com,1001spiele.de,auth.hbomax.com,elkspel.nl,gamespot.com,giochixl.it,glamour.com,grajteraz.pl,isladejuegos.com,jatekokxl.hu,mtvuutiset.fi,paixnidiaxl.gr,pushsquare.com,spelo.se,spillespill.no,spilxl.dk,thejournal.ie,thetrainline.com,vkmag.com,zdnet.com##+js(trusted-set-cookie, OptanonAlertBoxClosed, $currentDate$, 1year)
 evaair.com##+js(trusted-set-cookie, _EVAcookieaccept, Y, 1year)
@@ -32570,6 +32589,7 @@ elmundo.es,expansion.com##+js(trusted-click-element, button[id="ue-accept-notice
 eurobaustoff.com##+js(trusted-set-local-storage-item, ccm_consent, '{"/":{"gen":2,"ucid":"1","consent":true,"embeddings":["1e76acf","8ed8d9a","b429e86","f22e6ed","0b25af3","6079a42"],"created":"$currentDate$","updated":"$currentDate$","clickedButton":"acceptAll","iframeConsentDomains":[],"tcf":{"p":[],"lip":[],"sf":[],"v":[],"liv":[],"gad":[]},"lang":"de_DE"}}' )
 s-pankki.fi,srf.ch,alternate.de,bayer04.de,douglas.de,dr-beckmann.com,falke.com,fitnessfirst.de,flaschenpost.de,gloeckle.de,hornbach.nl,hypofriend.de,lactostop.de,neumann.com,post.ch,postbank.de,rts.ch,zalando.*##+js(trusted-click-element, #usercentrics-root >>> button[data-testid="uc-deny-all-button"], , 1000)
 immowelt.de,joyn.*,morenutrition.de##+js(trusted-click-element, #usercentrics-root >>> button[data-testid="uc-accept-all-button"], , 1000)
+alternate.de###usercentrics-cmp-ui
 @@||cookiebot.com^$~image,3p,domain=fastnedcharging.com
 fastnedcharging.com##+js(trusted-set-cookie, CookieConsent, {necessary:true%2Cpreferences:false%2Cstatistics:false%2Cmarketing:true})
 mapillary.com##+js(trusted-click-element, [data-testid="cookie-policy-banner-accept"], , 500)
@@ -33053,7 +33073,6 @@ aelia.pl##+js(trusted-set-local-storage-item, privacy_preferences_2024-04, '{"re
 lafi.fr##+js(trusted-click-element, button[onclick="SelectNone()"], , 1000)
 erli.pl##+js(trusted-set-local-storage-item, COOKIES_CONSENTS, '{"marketingAndStatistics":false,"personalization":false,"at":1}')
 skyscanner.*##+js(trusted-click-element, button[data-tracking-element-id="cookie_banner_essential_only"], , 1600)
-coolblue.*##+js(trusted-click-element, button[name="decline_cookie"], , 1000)
 chipotle.com##+js(trusted-click-element, button[id="ketch-banner-button-secondary"], , 1000)
 sanareva.*,atida.fr##+js(trusted-click-element, button.cmpt_customer--cookie--banner--continue, , 1000)
 bbva.*,bbvauk.com##+js(trusted-click-element, button.cookiesgdpr__rejectbtn, , 1000)
