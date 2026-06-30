@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Tue, 30 Jun 2026 16:32:28 GMT
+! Last modified: Tue, 30 Jun 2026 20:22:51 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.6.41
+!   - Version: 2.1.6.43
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -249,7 +249,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||t.journify.io^
 ||static.journify.io^
 ||umamix.fadunews.in^
-||acustomizedgift.com^$script,redirect=noop.js
 ||globalsiteanalytics.com^
 ||content-settings.com^
 ||config-factory.com^
@@ -153894,6 +153893,11 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||cdn.iz.ru/profiles/portal/themes/purple/js/statistics/custom_criteo*.js
+||news.gnezdo2.ru/gnezdo_news_tracker_new.js
+||cs.rambler.ru/api/v*/events
+||static.gazeta.ru/nm*/js/block_counter_v*.js
+||gazeta.ru/atlas/metrics/
 ||api.sales-ninja.me/*/events/
 ||static.ridicdn.net/books-backend/*/tracking/ridi-tracking-sdk.js
 ||ridibooks.com/_ext/g/js?id=
@@ -160021,6 +160025,7 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=saturn.de
 @@||metrics.us.playstation.com/b/ss/
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
+@@||st.top100.ru/top100/top100.js$domain=gazeta.ru|lenta.ru
 @@||duckduckgo.com/local.js?tg=$~3p
 ||directg.jp/js/fingerprint2.js$script,redirect=fingerprint2.js
 @@||googletagmanager.com/gtm.js$domain=gocomics.com
