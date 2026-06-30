@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Tue, 30 Jun 2026 06:34:04 GMT
+! Last modified: Tue, 30 Jun 2026 10:02:25 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -6667,7 +6667,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||aep-data.travelguard.com^
 ||aep.att.com^
 ||aep.chowtaifook.com^
-||aialp.aia.test.ajo.adobe.com^
 ||ainu.intel.sg^
 ||ainu.intel.vn^
 ||ajo-data.levtech-direct.jp^
@@ -6779,7 +6778,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||cdp.getswisscard.ch^
 ||cdp.miles-and-more-cards.ch^
 ||cdp.swisscard.ch^
-||check.tep.test.ajo.adobe.com^
 ||clickstrm.wf.com^
 ||collect.allianztravelinsurance.ca^
 ||collect.electrix.swiss^
@@ -6803,7 +6801,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||data-ssl.nijobs.com^
 ||data-ssl.retailchoice.com^
 ||data-ssl.totaljobs.com^
-||data.1337.test.ajo.adobe.com^
 ||data.7canibales.com^
 ||data.a.boutique.fff.fr^
 ||data.a.dfb-fanshop.de^
@@ -6833,16 +6830,12 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||data.a.universia.net^
 ||data.aca.unitedhealthcare.com^
 ||data.account.paypal.com^
-||data.acsappsvcs1.test.ajo.adobe.com^
 ||data.adobe.l-god.cn^
-||data.adobedemoamericas305.test.ajo.adobe.com^
 ||data.advicecomms.aware.com.au^
 ||data.adviser.nsandi.com^
 ||data.aem-showcase-internal.adobe.com^
 ||data.aepcomms.cjm.adobe.com^
 ||data.aftersales.smart.com^
-||data.aia.test.ajo.adobe.com^
-||data.ajo-campaigns-e2e-ind2-ultimate.test.ajo.adobe.com^
 ||data.ajo-dev.notifications.future.smart.com^
 ||data.ajo-dev.srv.smart.com^
 ||data.ajo-labs.adobedemosystem.com^
@@ -6868,28 +6861,8 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||data.alerts.norisbank.de^
 ||data.alerts.postbank.de^
 ||data.alhambraventure.com^
-||data.americanexpress.test.ajo.adobe.com^
 ||data.areavip.realmadrid.es^
 ||data.aupaathletic.com^
-||data.batch-accenture.test.ajo.adobe.com^
-||data.batch-ajocampaign-outboundaus5.test.ajo.adobe.com^
-||data.batch-ajocampaign-outboundcan2.test.ajo.adobe.com^
-||data.batch-ajocampaignorchestrationche2.test.ajo.adobe.com^
-||data.batch-ajocampaignorchestrationgbr9.test.ajo.adobe.com^
-||data.batch-ajocampaignorchestrationind2.test.ajo.adobe.com^
-||data.batch-ajocampaignoutbound.test.ajo.adobe.com^
-||data.batch-caixa.test.ajo.adobe.com^
-||data.batch-campaignorchestrationva6prod1.test.ajo.adobe.com^
-||data.batch-doc.test.ajo.adobe.com^
-||data.batch-na.test.ajo.adobe.com^
-||data.batch-nab.test.ajo.adobe.com^
-||data.batch-pm.test.ajo.adobe.com^
-||data.batch-prog1.test.ajo.adobe.com^
-||data.batch-telefonica.test.ajo.adobe.com^
-||data.batch-uhg.test.ajo.adobe.com^
-||data.batch-ulta.test.ajo.adobe.com^
-||data.batch-wunderman.test.ajo.adobe.com^
-||data.bloomingdales.test.ajo.adobe.com^
 ||data.brasil.santander.com.br^
 ||data.brokers.ampbanking.com.au^
 ||data.bulk.com^
@@ -6902,12 +6875,9 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||data.canarias7.es^
 ||data.candidatesexp.adobe.com^
 ||data.capella.edu^
-||data.carnival-uk-dev.test.ajo.adobe.com^
 ||data.carrera-empresas.com^
 ||data.carreraempresas.com^
 ||data.ccnotifications.coles.com.au^
-||data.certificate.test.ajo.adobe.com^
-||data.cip.test.ajo.adobe.com^
 ||data.ck-qa.circlek.com^
 ||data.ck.circlek.com^
 ||data.cloud.email.ikea.ae^
@@ -6995,11 +6965,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||data.e.mycare.commonspirit.org^
 ||data.e.racq.com.au^
 ||data.e.silverfernfarms.com^
-||data.e2eche2.test.ajo.adobe.com^
-||data.e2eprod.repackage.test.ajo.adobe.com^
-||data.e2eprod.repackageaus5.test.ajo.adobe.com^
-||data.e2eprod.repackagecan2.test.ajo.adobe.com^
-||data.e2eprod.repackagenld2.test.ajo.adobe.com^
 ||data.ebaseball-recommend.konami.net^
 ||data.ecomms.art.com.au^
 ||data.ecomms.beamconnect.com.au^
@@ -7092,10 +7057,8 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||data.epost.rhbank.no^
 ||data.epost.sb1.no^
 ||data.epost.sb1ostlandet.no^
-||data.es.test.ajo.adobe.com^
 ||data.et.scotiabank.com^
 ||data.etb.eus^
-||data.etihadpoc.test.ajo.adobe.com^
 ||data.exchangebravo.adobesandbox.com^
 ||data.experience.dcu.org^
 ||data.explore.phoenix.edu^
@@ -7113,11 +7076,9 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||data.financeiro.unime.edu.br^
 ||data.financeiro.unopar.br^
 ||data.gaztea.eus^
-||data.gm.test.ajo.adobe.com^
 ||data.gmfinancial.dev.cjmadobe.com^
 ||data.goldprice.chowtaifook.com^
 ||data.guau.eus^
-||data.gxv.test.ajo.adobe.com^
 ||data.hashoutsoftapacptrsd.adobesandbox.com^
 ||data.hcp.lilly.com^
 ||data.hinweis.aetkasmart.de^
@@ -7127,7 +7088,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||data.hinweis.whatsappsim.de^
 ||data.hoy.es^
 ||data.huelva24.com^
-||data.iag.test.ajo.adobe.com^
 ||data.ideal.es^
 ||data.inbound.e2e.cjmadobe.com^
 ||data.infinitymail.smart.com.ph^
@@ -7159,7 +7119,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||data.information.nettokom.de^
 ||data.information.optum.com^
 ||data.information.ortelmobile.de^
-||data.ingspain.test.ajo.adobe.com^
 ||data.innevento.com^
 ||data.innova-bilbao.com^
 ||data.internal.westernsydney.edu.au^
@@ -7304,7 +7263,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||data.newsletter.paypal.com^
 ||data.newsletters.attica-group.com^
 ||data.nordstrom.dev.ajo.adobe.com^
-||data.nordstrom.test.ajo.adobe.com^
 ||data.noreply.ambetterhealth.com^
 ||data.noreply.wellcare.com^
 ||data.notificaciones.galicia.ar^
@@ -7324,8 +7282,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||data.notify.gmfinancial.com^
 ||data.notify.humana.com^
 ||data.notify.macys.com^
-||data.oc.agent.test.ajo.adobe.com^
-||data.ocagent.test.ajo.adobe.com^
 ||data.oferplan.com^
 ||data.onboarding.clear.com.br^
 ||data.onboarding.rico.com.vc^
@@ -7337,7 +7293,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||data.participant.vanguard.com^
 ||data.pb.nordea.fi^
 ||data.pb.nordea.no^
-||data.petbarn.test.ajo.adobe.com^
 ||data.pos.anhanguera.com^
 ||data.pos.mackenzieposdigital.com.br^
 ||data.pos.pitagoras.com.br^
@@ -7349,14 +7304,11 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||data.pos.utp.br^
 ||data.post.sb1sornorge.no^
 ||data.postpaidmail.smart.com.ph^
-||data.premierleague.test.ajo.adobe.com^
 ||data.primeran.eus^
 ||data.products.disneydestinations.com^
 ||data.promo.casiocanada.com^
-||data.qr.test.ajo.adobe.com^
 ||data.qrgroup.qatarairways.com^
 ||data.racq.dev.cjmadobe.com^
-||data.rahu.test.ajo.adobe.com^
 ||data.realmadrid1.test.cjmadobe.com^
 ||data.registrations.attica-group.com^
 ||data.relacionamento.ampli.com.br^
@@ -7378,16 +7330,12 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||data.rt.msccruises.co.uk^
 ||data.rt.msccruises.de^
 ||data.rt.msccruises.ie^
-||data.rtcdpsummitlab.test.ajo.adobe.com^
 ||data.s.americasbest.com^
 ||data.s.nationalvision.com^
 ||data.s.pnc.com^
 ||data.salamancahoy.es^
 ||data.sansebastianmodafestival.com^
-||data.santandertesting.test.ajo.adobe.com^
-||data.santandertestingamerica.test.ajo.adobe.com^
 ||data.savings.nsandi.com^
-||data.sbux.test.ajo.adobe.com^
 ||data.service.5555555.co.il^
 ||data.service.9mil.co.il^
 ||data.service.belgiantrain.be^
@@ -7408,20 +7356,15 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||data.services.commsec.com.au^
 ||data.services.mittele.dk^
 ||data.servicing2.key.com^
-||data.shrm.test.ajo.adobe.com^
 ||data.signup.healthanswers.pfizer.com^
 ||data.sk.golden1center.com^
 ||data.sk.kingsteamstore.com^
 ||data.sk.sacramentokings.com^
 ||data.skistar1.test.cjmadobe.com^
-||data.skybet.test.ajo.adobe.com^
 ||data.smshello.consumercellular.com^
-||data.spiritairlines.test.ajo.adobe.com^
 ||data.srvc.cadillacfinancial.com^
 ||data.srvc.gmfinancial.com^
-||data.ssb.test.ajo.adobe.com^
 ||data.stagemail.galicia.ar^
-||data.starbucks.test.ajo.adobe.com^
 ||data.strayer.edu^
 ||data.study.westernsydney.edu.au^
 ||data.suenasur.com^
@@ -7434,24 +7377,16 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||data.sw-mail.algolia.com^
 ||data.system.boostmobile.com^
 ||data.tadigitalsnbx.adobesandbox.com^
-||data.tep.test.ajo.adobe.com^
 ||data.terraerural.com^
-||data.tesco.test.ajo.adobe.com^
-||data.test3.test.ajo.adobe.com^
 ||data.testing.aetkasmart.de^
 ||data.testing.alditalk-kundenbetreuung.de^
 ||data.testing.ayyildiz.de^
 ||data.testing.blau.de^
-||data.testing.nfr.test.ajo.adobe.com^
 ||data.testing.o2.de^
 ||data.testing.ortelmobile.de^
 ||data.testing.whatsappsim.de^
-||data.thenoshproject.test.ajo.adobe.com^
-||data.three.test.ajo.adobe.com^
 ||data.titan15-ns.cjmmse.com^
 ||data.titan15-ns.mse-raven.com^
-||data.titancert.test.ajo.adobe.com^
-||data.titancert1.test.ajo.adobe.com^
 ||data.todoalicante.es^
 ||data.topcomparativas.com^
 ||data.trans.americasbest.com^
@@ -7459,7 +7394,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||data.transactional.exetel.com.au^
 ||data.transactional.superloop.com^
 ||data.trial.ibm.com^
-||data.tsbuat.test.ajo.adobe.com^
 ||data.turismocastillalamancha.es^
 ||data.turium.es^
 ||data.uat.business.deutsche-bank.de^
@@ -7478,8 +7412,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||data.uatnews.fyrst.de^
 ||data.uatnews.norisbank.de^
 ||data.uatnews.postbank.de^
-||data.ubs.test.ajo.adobe.com^
-||data.ultimate-success-emea.test.ajo.adobe.com^
 ||data.umfrage.ortelmobile.de^
 ||data.update.movir.nl^
 ||data.updates.celestyal.com^
@@ -7493,7 +7425,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||data.vertrag.o2.de^
 ||data.vertrag.ortelmobile.de^
 ||data.visiontest.nationalvision.com^
-||data.visitqatar-dev.test.ajo.adobe.com^
 ||data.welife.es^
 ||data.wunderman.adobesandbox.com^
 ||data.wwfomarketing.adobevlab.com^
@@ -7508,7 +7439,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||dc.dellmed.utexas.edu^
 ||dc.entradas.com^
 ||dcs.pyur.com^
-||dev-lp-subdomain.carnival-uk-dev.test.ajo.adobe.com^
 ||dogo.intel.cn^
 ||dogo.intel.co.jp^
 ||dogo.intel.co.kr^
@@ -7650,8 +7580,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||l.promo.casiocanada.com^
 ||landing.emails1.cahoot.com^
 ||landing.emails1.santander.co.uk^
-||landing.santandertesting.test.ajo.adobe.com^
-||landing.ultimate-success-emea.test.ajo.adobe.com^
 ||landingpage.cloud.email.ikea.ae^
 ||landingpage.healthybluemo.com^
 ||lion-acc.ing.de^
@@ -7666,17 +7594,13 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||lp.email.pse.com^
 ||lp.email.techinsiders.org^
 ||lp.emeapot.techvaladobe.com^
-||lp.gxv.test.ajo.adobe.com^
 ||lp.member.unitedhealthcare.com^
 ||lp.msg.bankofmelbourne.com.au^
 ||lp.msg.banksa.com.au^
-||lp.petbarn.test.ajo.adobe.com^
 ||lp.qrgroup.qatarairways.com^
 ||lp.relacionamento.unic.br^
 ||lp.relacionamento.unopar.br^
 ||lp.sixflagsqiddiyacity.com^
-||lp.starbucks.test.ajo.adobe.com^
-||lp.thenoshproject.test.ajo.adobe.com^
 ||m.cncare.us^
 ||m.h.care^
 ||marketing.mail.chasecenter.com^
@@ -7751,12 +7675,9 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||preferences.email.gobrightline.com^
 ||preferences.eml.playtexbras.com^
 ||preferences.news.313presents.com^
-||preferences.premierleague.test.ajo.adobe.com^
-||preferences.ubs.test.ajo.adobe.com^
 ||provo.staples.ca^
 ||provo1.eway.ca^
 ||qasms.mcafee.com^
-||qr-non-member-unsubscribe-landing-page.qr.test.ajo.adobe.com^
 ||qsuper.ecomms.qsuper.qld.gov.au^
 ||raffle-entry.info.smart.com^
 ||rechenschieber.soccerdonna.de^
@@ -7794,9 +7715,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||s.columbiathreadneedle.pt^
 ||s.email-mobiledx.cjm.adobe.com^
 ||s.flyqatar.com^
-||s.gxv.test.ajo.adobe.com^
 ||s.petbarn.au^
-||s.petbarn.test.ajo.adobe.com^
 ||s.service.tiresplus.com^
 ||s.thereaderschoice.ca^
 ||sa.adidas.at^
@@ -7829,7 +7748,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||sanalytics.solarpotenzial.ch^
 ||sanalytics.tntsports.com.mx^
 ||sanalytics.zuerinet.ch^
-||santander-open-academy.cip.test.ajo.adobe.com^
 ||scadobe.bccard.com^
 ||scadobe.ohpointcard.com^
 ||scnd.landsend.fr^
@@ -8549,11 +8467,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||smetricsinstoreappra.carmax.com^
 ||smetricsmaxoffer.carmax.com^
 ||smetricsmobile.carmax.com^
-||sms-cuc.e2eprod.repackage.test.ajo.adobe.com^
-||sms-cuc.e2eprod.repackageaus5.test.ajo.adobe.com^
-||sms-cuc.e2eprod.repackagecan2.test.ajo.adobe.com^
-||sms-cuc.e2eprod.repackagenld2.test.ajo.adobe.com^
-||sms-nonprod.qr.test.ajo.adobe.com^
 ||sms.ajowwfo61.msa.adobevlab.com^
 ||sms.campaigns.jobs.army.mod.uk^
 ||sms.ck-qa.circlek.com^
@@ -8573,11 +8486,9 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||sms.notificaciones.galicia.ar^
 ||sms.orders.costco.com^
 ||sms.qamarketing.giftcards.com^
-||sms.rtcdpsummitlab.test.ajo.adobe.com^
 ||sms.srvc.cadillacfinancial.com^
 ||sms.transaction.americafirst.com^
 ||sms.transactional.exetel.com.au^
-||sms.ultimate-success-emea.test.ajo.adobe.com^
 ||sms.workshop.adobesandbox.com^
 ||sms.yashir.5555555.co.il^
 ||smsw.wundermanww-marketing.adobesandbox.com^
@@ -8638,7 +8549,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ste.siemens-healthineers.com^
 ||stracking.rogersbank.com^
 ||subscribe.test.novonordiskajotest.com^
-||subscription.es.test.ajo.adobe.com^
 ||subscriptionlist.customermail.sparcolruytgroup.be^
 ||subscriptions.communications.guard.me^
 ||subscriptions.experience.dcu.org^
@@ -8666,12 +8576,8 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||telemetry.schwinnfitness.com^
 ||telemetry.sentara.com^
 ||telemetry.sentarahealthplans.com^
-||tepshared.tep.test.ajo.adobe.com^
-||test-lp-preset.ssb.test.ajo.adobe.com^
-||test.e2eche2.test.ajo.adobe.com^
 ||test.marketing.seasmiles.com^
 ||test.news.xfinity.com^
-||test.ocagent.test.ajo.adobe.com^
 ||teste.clientemais.paodeacucar.com^
 ||testing.e2e-personalisationche2.e2e.cjmadobe.com^
 ||tr.ostermann.eu^
@@ -12986,7 +12892,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||bgznm.fab-art.co^
 ||bhgnm.biologica.com^
 ||bhuht.stackedskincare.com^
-||bidef.sokolovelaw.com^
 ||biesn.crossrope.com^
 ||bigsv.ontrackmeals.com^
 ||bipog.perfectwhitetee.com^
@@ -13009,7 +12914,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||bmtke.bemobilephysio.com.au^
 ||bnopq.hansohome.com^
 ||bnrfv.habrokathletics.com^
-||bobzk.sokolovelaw.com^
 ||bohee.med-gesund.de^
 ||bohtf.beardbrand.com^
 ||bpblv.katesylvester.co.nz^
@@ -13068,7 +12972,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||cocjl.statefortyeight.com^
 ||covpt.theprobar.com^
 ||cpiac.particleformen.com^
-||cpnll.sokolovelaw.com^
 ||cprgh.nuudcare.fr^
 ||cpvsm.evvy.com^
 ||cqdnr.musclesport.com^
@@ -13092,7 +12995,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||cznon.disputepanda.com^
 ||czrlp.luxebouquet.com.au^
 ||dambr.creditrepairexpo.com^
-||darki.sokolovelaw.com^
 ||davav.gentlemantoday.co^
 ||dbmgc.marleylilly.com^
 ||dbqst.hercasematters.com^
@@ -13107,7 +13009,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||dfgau.tryfum.com^
 ||dfmka.shapeez.com^
 ||dfrjz.ebf-org.com^
-||dfvsv.sokolovelaw.com^
 ||dghpj.italic.com^
 ||dguqe.outdoornativitysets.com^
 ||dhauc.earthhero.com^
@@ -13120,7 +13021,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||dkgto.plantishfuture.com^
 ||dkpmi.purdyandfigg.com^
 ||dljtc.paradiseunderthestars.com^
-||dluma.sokolovelaw.com^
 ||dmkoq.myaroma360.ca^
 ||dmlph.sundaycitizen.co^
 ||dmuni.rileybce.com^
@@ -13260,7 +13160,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||fkquf.sudowrite.com^
 ||fktds.uromend.com^
 ||floeh.monatsocialshop.com^
-||flpfl.sokolovelaw.com^
 ||flqjc.wearmntd.ca^
 ||fmlau.ocoabeauty.com^
 ||fmnas.innovativeweaves.com^
@@ -13281,7 +13180,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||fqqok.zipstring.com^
 ||fqvvn.getlemonhead.com^
 ||fritq.thatasset.com^
-||fsbou.sokolovelaw.com^
 ||fsgqf.apsecosmetics.com.br^
 ||fsnfo.mymedic.com^
 ||fspdu.dollarcurlclub.com^
@@ -13384,7 +13282,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||hbnqg.quickbeauty.com^
 ||hbtzh.iliabeauty.com^
 ||hbugs.hankypanky.com^
-||hcudl.sokolovelaw.com^
 ||hdjoi.omniluxled.com^
 ||hduuf.mesotheliomaclaimscenter.info^
 ||hfdlh.cymbiotika.com^
@@ -13424,7 +13321,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||htrog.threewarriors.com.au^
 ||httjs.davidscookies.com^
 ||huizj.deskr.co^
-||husdv.sokolovelaw.com^
 ||huzjg.ancientnutrition.com^
 ||hvbkb.dosaze.com^
 ||hvher.murdycreative.co^
@@ -13468,7 +13364,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ilnjj.breathesans.com^
 ||imata.signetlondon.com^
 ||imdej.drinkrenude.com^
-||imllk.sokolovelaw.com^
 ||imprc.gotpouches.com^
 ||innae.mftstamps.com^
 ||inopu.livingooddailybook.com^
@@ -13476,9 +13371,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||invdm.moonjuice.com^
 ||iodia.avironactive.com^
 ||iomao.spoonfulofcomfort.com^
-||iorzh.sokolovelaw.com^
 ||ioubm.nakedroot.com^
-||ipgeh.sokolovelaw.com^
 ||ipogh.magicmolecule.com^
 ||ipral.wearmntd.com^
 ||ipvhf.swingsetmall.com^
@@ -13501,7 +13394,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ivpvb.sunriverhoney.com^
 ||izgfa.visitorpixel.com^
 ||izgmr.medisave.co.uk^
-||izgve.sokolovelaw.com^
 ||jacsg.belaro.ro^
 ||jaoev.klova.com^
 ||jbanv.etrendygo.com^
@@ -13532,7 +13424,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||jmsgk.blenderseyewear.com^
 ||jmufp.yumwoof.com^
 ||jniic.pacas.com^
-||jnsol.sokolovelaw.com^
 ||jocgl.ruggable.de^
 ||jokvg.sillysanta.de^
 ||jpgln.eshopygoexpress.it^
@@ -13556,7 +13447,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||juemd.parikart.com^
 ||jugvl.transformationprotein.com^
 ||julpo.precise.credit^
-||jupki.sokolovelaw.com^
 ||juvkc.plantpeople.co^
 ||jvnlg.doamore.com^
 ||jvoaz.beautystat.com^
@@ -13610,10 +13500,8 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||knnfl.muddymats.com^
 ||knpid.mywonderpaws.com^
 ||knrgt.petscy.com^
-||kobjs.sokolovelaw.com^
 ||koheo.hausofinteriors.com^
 ||kohgc.kaizenfoodcompany.com^
-||kohns.sokolovelaw.com^
 ||kosjf.abbottlyon.com^
 ||kpesd.bboutique.co^
 ||kphgg.tulabluerope.com^
@@ -13628,7 +13516,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||kskml.mkmachining.com^
 ||kslii.skylar.com^
 ||ktalq.oseamalibu.com^
-||ktgth.sokolovelaw.com^
 ||ktibk.gymreapers.com^
 ||ktlrv.hotelcollection.no^
 ||kujts.aroma360official.com.br^
@@ -13686,7 +13573,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||lksiz.mydancerbox.com^
 ||llemc.xandrolab.com^
 ||lliep.etrendygo.com^
-||llitg.sokolovelaw.com^
 ||llkfq.yellowleafhammocks.com^
 ||llrce.goldandhoney.com^
 ||lmdmi.kindpatches.com^
@@ -13737,7 +13623,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||mbibf.healthbeauty-trends.com^
 ||mbuht.presscription.co.uk^
 ||mbvqq.rmsbeauty.com^
-||mdemk.sokolovelaw.com^
 ||mdhuf.rebelsrefinery.com^
 ||mdlpz.liversupportinstitute.com^
 ||mdntu.etrendygo.com^
@@ -13746,7 +13631,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||melda.koala.com^
 ||memjo.theshoecareshop.com^
 ||meqrn.saranoni.com^
-||merpm.sokolovelaw.com^
 ||mffjt.nuethix.com^
 ||mfvoa.etrgovinca.hu^
 ||mfzrr.mixperfume.com^
@@ -13809,7 +13693,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||mzvto.growthbomb.co.uk^
 ||mzzjl.bono.nl^
 ||naruk.saintluciferspice.com^
-||nbdtk.sokolovelaw.com^
 ||nbkft.thersipo.com^
 ||nbsdi.minisplitsystemsdirect.com^
 ||ncpbz.macrostax.com^
@@ -13865,7 +13748,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||nurij.fathead.com^
 ||nvfja.vipertecknives.com^
 ||nzbhg.gelblaster.com^
-||nzlji.sokolovelaw.com^
 ||nzpjz.deltachildren.com^
 ||oaiab.mykitsch.com^
 ||oapdi.deltoroshoes.com^
@@ -13877,11 +13759,9 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ocand.trustedhealthproducts.com^
 ||ocast.elevenaustralia.com^
 ||ocgzc.pandahub.com^
-||ochrm.sokolovelaw.com^
 ||ociqz.aroma360.de^
 ||octan.foundr.com^
 ||ocvig.soluxury.ca^
-||oddsq.sokolovelaw.com^
 ||odlfj.infiniteage.com^
 ||odqhk.adelanteshoes.com^
 ||ofpeg.trywellbe.de^
@@ -13938,7 +13818,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||paqkp.alignmedbrasil.com.br^
 ||patuv.aroma360.no^
 ||pbkpf.openfarmpet.ca^
-||pbreo.sokolovelaw.com^
 ||pbttg.laaksonen-korut.fi^
 ||pcftn.moonbrew.co^
 ||pculb.upheal.io^
@@ -13958,7 +13837,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||pgtrh.alicelanehome.com^
 ||phncc.kunjae.com^
 ||phoqg.ebf-org.se^
-||piqcg.sokolovelaw.com^
 ||pjaqm.fitkitchen.ca^
 ||pjsao.thegivenget.com^
 ||pjzae.hypnoschile.com^
@@ -14019,11 +13897,9 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||qgdgj.bugmd.com^
 ||qggie.inovaairpurifiers.com.au^
 ||qgzfu.tumblerware.com^
-||qhbnu.sokolovelaw.com^
 ||qhfvv.lomi.com^
 ||qhiqk.eshopygoexpress.ro^
 ||qhtqr.mindbodygreen.com^
-||qinka.sokolovelaw.com^
 ||qjbdm.apotheken-gesundheitstipps.com^
 ||qjlho.giairl.com^
 ||qjqil.execupgrades.com^
@@ -14036,7 +13912,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||qncvq.hoorayheroes.com.au^
 ||qndop.aroma360.com^
 ||qnjhb.gatorwaders.com^
-||qnmjv.sokolovelaw.com^
 ||qnqvm.nohohomehawaii.com^
 ||qnzma.beforeyouspeakcoffee.com^
 ||qogjk.hourraheros.be^
@@ -14128,7 +14003,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||rrebl.grip6.com^
 ||rredq.1906.shop^
 ||rrjfa.pfaslawfirms.com^
-||rrpcc.sokolovelaw.com^
 ||rrtng.brickwar2.com^
 ||rsavc.travelpro.com^
 ||rsnzt.studyfitnotes.com^
@@ -14147,7 +14021,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||rzvln.eshakti.com^
 ||sadnm.savagerace.com^
 ||sadqa.innerbloomca.com^
-||saihq.sokolovelaw.com^
 ||sajeb.ownabode.com^
 ||sapot.1000bulbs.com^
 ||sbarh.pondlehocky.com^
@@ -14270,7 +14143,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||tnvui.oddfrequency.com^
 ||tojdz.sillysanta.nl^
 ||tokhb.denatuuralsmedicijn.nl^
-||tokti.sokolovelaw.com^
 ||tqmsl.bullymake.com^
 ||trhfq.rimli.in^
 ||trnha.coophomegoods.com^
@@ -14349,7 +14221,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||uvtmt.cavhooah.com^
 ||uzkhd.centexautomation.net^
 ||vbefb.goclove.com^
-||vbrvt.sokolovelaw.com^
 ||vcgaj.poseidn.com^
 ||vchhr.hiyahealth.com^
 ||vckav.merakimedicinal.com^
@@ -14366,7 +14237,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||vgaaz.holyshilajit.com^
 ||vgcgz.decoratorswarehouse.com^
 ||vgjts.eshopygoexpress.bg^
-||vgkmi.sokolovelaw.com^
 ||vglar.casino.si^
 ||vgqhv.killcliff.com^
 ||vhfim.nuorganic.com^
@@ -14375,7 +14245,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||vhluj.andar.com^
 ||viavd.laticoleathers.com^
 ||vight.disputebeast.com^
-||virbe.sokolovelaw.com^
 ||vjagm.joinnalena.com^
 ||vjdaz.plantaform.com^
 ||vjecr.greenleaf-blends.nl^
@@ -14387,7 +14256,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||vljfo.lanimal.co^
 ||vlrst.rhinousainc.com^
 ||vmlvk.elevete.com.my^
-||vmtzf.sokolovelaw.com^
 ||vmzgn.dashingdiva.com^
 ||vndjz.wearspf.com^
 ||vnqtp.ziptowntees.com^
@@ -14406,11 +14274,9 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||vrmpb.brewsterbelt.com^
 ||vrpmi.drmbernstein.com^
 ||vrskf.clockcanvas.com^
-||vscoh.sokolovelaw.com^
 ||vsevs.budclubshop.com^
 ||vsfgd.searchatlas.com^
 ||vsima.chattanoogabeard.co^
-||vsogz.sokolovelaw.com^
 ||vtmmn.ancientaurajewelry.com^
 ||vtsgs.citybonfires.com^
 ||vtzad.focl.com^
@@ -14426,7 +14292,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||vzpua.emango.bg^
 ||vzuih.montessoribucuresti.ro^
 ||zacec.coverfx.com^
-||zaehb.sokolovelaw.com^
 ||zajio.ionlayer.com^
 ||zamkh.mygardyn.com^
 ||zaplh.splitnutrition.com^
@@ -14436,7 +14301,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||zbseb.underdoggames.com^
 ||zcmlj.teaonic.com^
 ||zcojp.buybluebird.com^
-||zctua.sokolovelaw.com^
 ||zcuce.greenleafblends.hu^
 ||zcvtu.fitssock.com^
 ||zdsdt.tusolwellness.com^
@@ -14459,7 +14323,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||zhnmv.weryze.com^
 ||zhrcu.trywellbe.ba^
 ||zicig.apothecaryandme.co.uk^
-||zicla.sokolovelaw.com^
 ||ziihi.joinkwikly.com^
 ||zismc.trygoomz.com^
 ||zispj.skinlaundry.com^
@@ -20699,7 +20562,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||cko.gisec.ae^
 ||cko.wamsaudi.com^
 ||covtk.medtronic.com^
-||ctelqtracking.wolterskluwer.com^
 ||customerjourney.mba.org^
 ||dbh1.milb.com^
 ||dbh2.milb.com^
@@ -21574,15 +21436,10 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||marketing2.invacare.eu.com^
 ||reply.infineon.com^
 ||servicenotifications.lseg.com^
-||belgium.wolterskluwer.com^
 ||ecommhpi.ext.hp.com^
 ||go.infos.belantis.de^
 ||info.deutscher-kitaleitungskongress.de^
 ||kampaania.aripaevmeedia.ee^
-||lrbelgium.wolterskluwer.com^
-||lrczech.wolterskluwer.com^
-||lrportugal.wolterskluwer.com^
-||lrspain.wolterskluwer.com^
 ||page.nationalrestaurantshow.com^
 ||pages.informafoodserviceevents.com^
 ||pages.informafoodservicemedia.com^
