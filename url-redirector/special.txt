@@ -1,5 +1,5 @@
 ! Title: [sukka] Special Redirects
-! Last modified: Tue, 30 Jun 2026 07:04:36 GMT
+! Last modified: Tue, 30 Jun 2026 08:32:30 GMT
 ! Description: uBlock Origin / AdGuard uritransform rules
 ! Homepage: https://github.com/SukkaW/Filters
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -13,6 +13,7 @@
 ||www.wikidot.com/userkarma.php$all,uritransform=/www\.wikidot\.com\/userkarma\.php/docs.lucaairport.qzz.io\/https\/www.wikidot.com\/userkarma.php/
 ||tiles.windy.com^$all,uritransform=/tiles\.windy\.com/docs.lucaairport.qzz.io\/https\/tiles.windy.com/
 ||ims.windy.com^$all,uritransform=/ims\.windy\.com/docs.lucaairport.qzz.io\/https\/ims.windy.com/
+||sat.windy.com^$all,uritransform=/sat\.windy\.com/docs.lucaairport.qzz.io\/https\/sat.windy.com/
 ||fourhoi.com^$all,uritransform=/fourhoi\.com/docs.lucaairport.qzz.io\/https\/fourhoi.com/
 
 ! >>>> AdGuard
@@ -24,4 +25,5 @@
 ||www.wikidot.com/userkarma.php$all,urltransform=/www\.wikidot\.com\/userkarma\.php/docs.lucaairport.qzz.io\/https\/www.wikidot.com\/userkarma.php/
 ||tiles.windy.com^$all,urltransform=/tiles\.windy\.com/docs.lucaairport.qzz.io\/https\/tiles.windy.com/
 ||ims.windy.com^$all,urltransform=/ims\.windy\.com/docs.lucaairport.qzz.io\/https\/ims.windy.com/
+||sat.windy.com^$all,urltransform=/sat\.windy\.com/docs.lucaairport.qzz.io\/https\/sat.windy.com/
 ||fourhoi.com^$all,urltransform=/fourhoi\.com/docs.lucaairport.qzz.io\/https\/fourhoi.com/
