@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Wed, 01 Jul 2026 12:48:18 GMT
+! Last modified: Wed, 01 Jul 2026 16:39:31 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Wed, 01 Jul 2026 09:52:46 +0000
+!   - Last modified: Wed, 01 Jul 2026 10:22:45 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Wed, 01 Jul 2026 02:52:54 +0000
@@ -7558,8 +7558,10 @@ play.xpass.top##+js(acs, document.createElement, document.head||)
 /\/[0-9a-f]{32}\.js/$script,xhr,3p,to=com,from=bembed.net|embedv.net|listeamed.net|moflix-stream.day|moflix-stream.fans|v6embed.xyz|vid-guard.com
 /\.\d{1,2}\.[0-9a-f]{32}\.js$/$script,3p,to=js.txxx.tube,from=txxx.com
 /\.[0-9][0-9]?\.[0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f]\.js$/$script,3p,from=txxx.com
-/index.js|$script,3p,domain=chessgames.com|safood.tw
+.js|$script,3p,to=click|space|workers.dev,from=chartgo.com|chessgames.com|safood.tw
+/vkvt4d.js|$script,3p,to=click|space|workers.dev
 ||willow-assets.space^
+||ad-blocker-*.workers.dev^
 ||stat-res.workers.dev^
 /\/t\/[0-9]{3}\/[0-9]{3}\/a[0-9]{4,9}\.js$/$script
 /\.cloudfront\.net\/\?[a-z]{3,5}=\d{6,7}$/$script,xhr,match-case
