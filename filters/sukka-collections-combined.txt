@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Fri, 03 Jul 2026 12:20:06 GMT
+! Last modified: Fri, 03 Jul 2026 16:00:43 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202607031212
+!   - Version: 202607031551
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 03 Jul 2026 12:12 UTC
+!   - Last modified: 03 Jul 2026 15:51 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
@@ -90,7 +90,7 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 📱 Staying On The Phone Browser
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/stayingonbrowser/Staying%20On%20The%20Phone%20Browser
-!   - Version: 30May2026v1
+!   - Version: 03July2026v1
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#english
 ! * 🎫 Ad Removal List for Unusual Ads
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/AdRemovalListForUnusualAds.txt
@@ -21287,6 +21287,7 @@ foodora.*##.bds-c-sticky-banner
 novosti.rs##.mobile-app
 threads.com###has-finished-comet-page + div[class^=__fb-][class*="-mode "]
 zalando.*##div[style="display:contents"]:not([data-trckng-component]):has(> div[style="display:contents"] > div[style^="min-height:"]:last-child:only-of-type)
+duck.ai###app form[data-chat-footer] > div:has(a:is([href*="://play.google.com/"],[href*="://apps.apple.com/"]))
 @@/jquery.smartbanner.js^
 .smartbanner.js$domain=~mcpedl.com
 ##div[data-test-id$=InterstitialUpsell]
