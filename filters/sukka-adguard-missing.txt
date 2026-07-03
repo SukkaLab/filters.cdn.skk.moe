@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Fri, 03 Jul 2026 19:53:02 GMT
+! Last modified: Fri, 03 Jul 2026 23:28:39 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Fri, 03 Jul 2026 11:59:45 +0000
+!   - Last modified: Fri, 03 Jul 2026 18:27:27 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Fri, 03 Jul 2026 09:35:43 +0000
@@ -17405,6 +17405,7 @@ jovemnerd.com.br###ad-wallpaper
 @@||ak.sv^$ghide
 rgb.vn##+js(nostif, siteAccessPopup)
 www.google.com##div[aria-label="Why this ad?"]:upward([data-pla="1"])
+www.google.com##div:has(> div > div[data-hb="isv"])
 totalcsgo.com##+js(rmnt, script, /adconfig/i)
 totalcsgo.com##.body-container:style(background-image: unset !important; cursor: auto !important;)
 ||totalcsgo.com/*/site-takeover/$image
@@ -23156,6 +23157,8 @@ apps2app.com##+js(rmnt, script, blur)
 apps2app.com##+js(nowoif, _blank)
 apps2app.com##.ads
 ilforumdeibrutti.is##+js(rmnt, script, hidden';)
+||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=i24news.tv
+@@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$script,domain=i24news.tv
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
