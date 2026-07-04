@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sat, 04 Jul 2026 15:29:53 GMT
+! Last modified: Sat, 04 Jul 2026 19:40:16 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sat, 04 Jul 2026 11:16:15 +0000
+!   - Last modified: Sat, 04 Jul 2026 17:59:29 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Sat, 04 Jul 2026 12:25:46 +0000
@@ -17408,7 +17408,7 @@ jovemnerd.com.br###ad-wallpaper
 @@||ak.sv^$ghide
 rgb.vn##+js(nostif, siteAccessPopup)
 www.google.com##div[aria-label="Why this ad?"]:upward([data-pla="1"])
-www.google.com##div:has(> div > div[data-hb="isv"])
+www.google.com##div[data-snf][data-snm]:has(> div[class] > div[data-hb="isv"])
 totalcsgo.com##+js(rmnt, script, /adconfig/i)
 totalcsgo.com##.body-container:style(background-image: unset !important; cursor: auto !important;)
 ||totalcsgo.com/*/site-takeover/$image
@@ -23170,6 +23170,7 @@ kawaii-anime.com##+js(nowoif, _blank)
 kawaii-anime.com##+js(set-session-storage-item, kw_ad_shown, 5)
 kawaii-anime.com##+js(set-session-storage-item, kw_ad_clicks, 2)
 kawaii-anime.com##+js(trusted-set-session-storage-item, kw_ad_last, $now$)
+phototrans.de,phototrans.eu,phototrans.hu,phototrans.pl##+js(rmnt, script, !adsbygoogle.loaded)
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
