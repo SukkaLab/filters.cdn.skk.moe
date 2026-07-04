@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sat, 04 Jul 2026 11:46:19 GMT
+! Last modified: Sat, 04 Jul 2026 15:29:53 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,16 +8,16 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Fri, 03 Jul 2026 18:27:27 +0000
+!   - Last modified: Sat, 04 Jul 2026 11:16:15 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
-!   - Last modified: Fri, 03 Jul 2026 09:35:43 +0000
+!   - Last modified: Sat, 04 Jul 2026 12:25:46 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
 !   - Last modified: Mon, 29 Jun 2026 16:30:46 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
-!   - Last modified: Sat, 27 Jun 2026 13:25:28 +0000
+!   - Last modified: Sat, 04 Jul 2026 10:50:44 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
 !   - Last modified: Fri, 03 Jul 2026 11:33:45 +0000
@@ -27,10 +27,10 @@
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Fri, 03 Jul 2026 16:40:33 +0000
+!   - Last modified: Sat, 04 Jul 2026 09:44:29 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
-!   - Last modified: Mon, 29 Jun 2026 04:21:38 +0000
+!   - Last modified: Sat, 04 Jul 2026 10:02:02 +0000
 ! --------------------------------------------------------------
 ! uBlock filters https://ublockorigin.pages.dev/filters/filters.min.txt
 *_ad_$media,domain=youtube.com,3p
@@ -8979,6 +8979,7 @@ athlonsports.com,autoblog.com,bikemag.com,dengarden.com,mensfitness.com,mensjour
 ||consent.wegotthiscovered.com^
 ||storage.googleapis.com/pravda-ad-script/
 ||s.w-x.co/helios/twc/
+||parkers.co.uk/polite-msg-js/
 ||07c225f3.online^$~css,domain=dogdrip.net|smsonline.cloud
 ||content-loader.com^$~css,domain=dogdrip.net|smsonline.cloud
 ||css-load.com^$~css,domain=dogdrip.net|smsonline.cloud
@@ -10017,6 +10018,7 @@ animevietsub.*##.mobile-catfixx
 animevietsub.*##.pc-catfixx
 animevietsub.*##.Ads
 animevietsub.*##.Adv
+animevietsub.*##a[href][target="_blank"] img[src^="https://lh3.googleusercontent.com/"]
 animevietsub.*##+js(rmnt, script, PopupManager)
 storage.googleapiscdn.com,stream.googleapiscdn.com##+js(aeld, DOMContentLoaded, _0x)
 ||pagead2.googlesyndication.com^$script,domain=storage.googleapiscdn.com|stream.googleapiscdn.com,important
@@ -16369,6 +16371,7 @@ javmix.app##+js(set, puShown, true)
 ||cdn-static3.com/cdn/push.min.js
 ://creative.*/widgets/Spot/lib.js$3p
 ://creative.*/widgets/v4/Universal?$frame,3p
+://creative.*/widgets/v4/MobileSlider?$frame,3p
 xtremetop100.com###sidebanner
 xtremetop100.com###sidebannerleft
 xtremetop100.com###topbanner
@@ -22879,9 +22882,10 @@ guessthemovie.name,guessthephrase.xyz##+js(no-fetch-if, method:/head/i)
 guessthemovie.name,guessthephrase.xyz##.fallback-side-ad
 /ads/*$domain=guessthemovie.name|guessthephrase.xyz
 @@||cdn-media.brightline.tv/config/v*.json$domain=adultswim.com
-||adultswim-vodlive.cdn.turner.com/csmp/live/$xhr,removeparam=caid,domain=adultswim.com
-||adultswim-vodlive.cdn.turner.com/csm/extlive/$xhr,removeparam=yo.po,domain=adultswim.com
-||adultswim-vodlive.cdn.turner.com/csm/extlive/$xhr,removeparam=yo.asd,domain=adultswim.com
+||adultswim-vodlive.cdn.turner.com^$removeparam=caid
+||adultswim-vodlive.cdn.turner.com^$removeparam=yo.po
+||adultswim-vodlive.cdn.turner.com^$removeparam=yo.asd
+||adultswim-vodlive.cdn.turner.com^$removeparam=yo.ap
 ||medium.ngtv.io/v2/media/$removeparam=ssaiProfile,domain=adultswim.com
 @@||medium.ngtv.io/v2/media/live*$removeparam=ssaiProfile,domain=adultswim.com
 @@||medium.ngtv.io/v2/media/live*$domain=adultswim.com
@@ -23159,6 +23163,13 @@ apps2app.com##.ads
 ilforumdeibrutti.is##+js(rmnt, script, hidden';)
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=i24news.tv
 @@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$script,domain=i24news.tv
+aninami.site##+js(trusted-set-local-storage-item, aninami-smartlink-last, $now$)
+aninami.site##+js(nowoif, _blank)
+kawaii-anime.com##+js(nostif, getComputedStyle)
+kawaii-anime.com##+js(nowoif, _blank)
+kawaii-anime.com##+js(set-session-storage-item, kw_ad_shown, 5)
+kawaii-anime.com##+js(set-session-storage-item, kw_ad_clicks, 2)
+kawaii-anime.com##+js(trusted-set-session-storage-item, kw_ad_last, $now$)
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -27348,6 +27359,10 @@ longhall.consulting##+js(rmnt, script, /document\.currentScript\.remove|0x0/)
 ||gtm-tools.xyz^$all
 ||cloudproxy.digital^$3p,xhr
 ##html.canvas > body.wp-singular + div[popover="manual"]
+||e261.net^$all
+||imtolenplex.com^$all
+||immanitys.com^$all
+||tagesschau.tech^$doc
 ! uBlock filters – Privacy https://ublockorigin.pages.dev/filters/privacy.min.txt
 ||google-analytics.com/analytics.js$script,xhr,redirect=google-analytics_analytics.js:5
 ||google-analytics.com/cx/api.js$script,redirect=google-analytics.com/cx/api.js:5
@@ -31604,6 +31619,10 @@ proxyorb.com##+js(aeld, load, dataset.ready, elements, script[src^="https://www.
 @@||stadt-zuerich.ch/etc/clientlibs/stzh/analytics/$script,1p
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$redirect=google-ima.js,domain=root.cz
 gocomics.com##+js(rpnt, script, document.querySelectorAll, `window.addEventListener("load",()=>{if(!document.querySelector("section[class^='ShowComicViewer-module-scss-module']")){return;}const script=document.createElement("script");script.src="https://cdn.viafoura.net/entry/index.js";document.head.appendChild(script)});document.querySelectorAll`)
+account.bhvr.com##+js(set, Osano, {})
+account.bhvr.com##+js(set, Osano.cm, {})
+account.bhvr.com##+js(set, Osano.cm.addEventListener, noopFunc)
+account.bhvr.com##+js(set, Osano.cm.removeEventListener, noopFunc)
 ! uBlock filters – Quick fixes https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
 @@||hb.vntsm.com/v4/live/vms/sites/aternos.org/index.js$script,domain=aternos.org
 aternos.org##.header-center:style(margin-top:-5000px !important;)
@@ -32430,8 +32449,6 @@ chrono24.*##+js(trusted-click-element, button.js-cookie-accept-all, , 2000)
 chrono24.*##+js(trusted-click-element, button[data-label="accept-button"], , 1000)
 chrono24.*##dialog.gdpr-layer
 wetter.com##+js(trusted-click-element, .cmp-scroll-padding .cmp-info[style] #cmp-paywall #cmp-consent #cmp-btn-accept, , 2000)
-wetter.com###cmp-style-reset
-wetter.com##body:style(overflow: auto !important; position: unset !important;)
 sj.se##+js(trusted-set-cookie, sj_consent_v1, '%7B%22consent%22%3A%7B%22PERSONALIZATION%22%3Afalse%2C%22MARKETING%22%3Afalse%7D%2C%22uuid%22%3A%22d599dc64-52b7-4dc7-bff3-1e18d5cebc1a%22%7D')
 youmath.it,eunews.it##+js(trusted-click-element, button#pt-accept-all)
 omgevingsloketinzage.omgeving.vlaanderen.be##+js(trusted-set-cookie, vl-cookie-consent-cookie-consent-date, $now$)
@@ -37260,7 +37277,6 @@ asheville.com##+js(nostif, adblock)
 theasianparent.com##+js(acs, document.onselectstart, disableselect)
 maxroll.gg##+js(set, nitroAds.loaded, true)
 @@||s.nitropay.com/n.svg$xhr,domain=maxroll.gg
-maxroll.gg##+js(trusted-replace-argument, document.getElementById, 0, json:"root", condition, onetrust-banner-sdk)
 ||solarmovie.vip/js/$script,1p,replace=/\(\{checkers\:.*?\]\}\)/({checkers:[]})/g
 solarmovie.*##+js(nostif, _detectLoop)
 chowhound.com,explore.com,foodie.com,foodrepublic.com,glam.com,grunge.com,healthdigest.com,housedigest.com,looper.com,mashed.com,moneydigest.com,nickiswift.com,outdoorguide.com,slashfilm.com,slashgear.com,tastingtable.com,thedailymeal.com,thelist.com,women.com,wrestlinginc.com##+js(aeld, copy)
