@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sun, 05 Jul 2026 09:23:20 GMT
+! Last modified: Sun, 05 Jul 2026 11:48:01 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sun, 05 Jul 2026 02:41:54 +0000
+!   - Last modified: Sun, 05 Jul 2026 09:47:28 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Sat, 04 Jul 2026 12:25:46 +0000
@@ -20,7 +20,7 @@
 !   - Last modified: Sat, 04 Jul 2026 10:50:44 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Sun, 05 Jul 2026 02:39:34 +0000
+!   - Last modified: Sun, 05 Jul 2026 09:21:24 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
 !   - Last modified: Thu, 25 Jun 2026 14:42:11 +0000
@@ -19912,16 +19912,9 @@ decompiler.com##+js(set, Element.prototype.getBoundingClientRect, undefined)
 decompiler.com##+js(trusted-replace-argument, document.getElementsByTagName, 0, json:"adblockWarning", condition, pre)
 decompiler.com##+js(set, HTMLImageElement.prototype.naturalWidth, 240)
 decompiler.com##+js(set, createImageBitmap, undefined)
-@@||ytlarge.com^$ghide
-@@||googlesyndication.com^$script,xhr,domain=ytlarge.com
-@@||fundingchoicesmessages.google.com^$script,xhr,domain=ytlarge.com
-@@||g.doubleclick.net/pagead/ads?$frame,domain=ytlarge.com
-||googleads.g.doubleclick.net/pagead/ads$frame,removeparam=/^(?:correlator|f[cr-w]|p[e-sv]|u_|ga_|url|dt|adk)/,domain=ytlarge.com
-@@*$script,frame,xhr,1p,domain=ytlarge.com
 .com/ad/$~image,third-party,domain=~mediaplex.com|~warpwire.com|~wsj.com,badfilter
 .com/adz/$badfilter
 ytlarge.com##.overflow-hidden.items-center.flex-col:has([id^="ezoic-pub-ad-"])
-ytlarge.com##ins.adsbygoogle[data-ad-slot]
 *.gif$domain=ytlarge.com
 seeklogo.com##+js(nowoif, shutterstock.com)
 filmizlehdizle.com,fullfilmizlesene.net##+js(rpnt, script,this.ads.length > this.ads_start, 1==2)
@@ -23171,6 +23164,7 @@ kawaii-anime.com##+js(set-session-storage-item, kw_ad_shown, 5)
 kawaii-anime.com##+js(set-session-storage-item, kw_ad_clicks, 2)
 kawaii-anime.com##+js(trusted-set-session-storage-item, kw_ad_last, $now$)
 phototrans.de,phototrans.eu,phototrans.hu,phototrans.pl##+js(rmnt, script, !adsbygoogle.loaded)
+phototrans.de,phototrans.eu,phototrans.hu,phototrans.pl##div.bus_content:first-child:has(.adsbygoogle)
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -31913,8 +31907,8 @@ tek.no,e24.no,minmote.no,vg.no#@#div[id^="sp_message_container_"]
 cmp.tek.no,cmp.e24.no,minmote.no,cmp.vg.no#@#+js(trusted-click-element, .message-row > button[title="Avvis alle"], , 2000)
 openchat-review.me##+js(set-local-storage-item, BLOCKED_FLAG_KEY, $remove$)
 openchat-review.me##+js(aost, document.querySelectorAll, security.js)
-streamcash.to##+js(trusted-replace-argument, document.querySelector, 0, '', condition, /^\[id\=\"[0-9a-z]{10}\"\]$/)
-streamcash.to##+js(aost, decodeURIComponent, /[a-z]{3}/)
+streamcash.to##+js(rmnt, script, /\${''}|body:JSON\.stringify/)
+streamcash.to##div[id]:has(button[onclick*="location.reload()"])
 akirabox.com,akirabox.to,bowfile.com,buzzheavier.com,bzzhr.co,bzzhr.to,datavaults.co,fuckingfast.*,multiup.io,rootz.so,usersdrive.com,vik1ngfile.site,zpaste.net#@#+js(set, Document.prototype.createElement.call, noopFunc)
 weathernews.jp#@#article > section.block:has(> div[style] > div[id^="div-gpt-ad"])
 ||kick.com/149e9513-01fa-4fb0-aad4-566afd725d1b/$badfilter
