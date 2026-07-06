@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sun, 05 Jul 2026 23:29:19 GMT
+! Last modified: Mon, 06 Jul 2026 06:48:11 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sun, 05 Jul 2026 16:28:00 +0000
+!   - Last modified: Mon, 06 Jul 2026 03:57:57 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Sat, 04 Jul 2026 12:25:46 +0000
@@ -20,7 +20,7 @@
 !   - Last modified: Sat, 04 Jul 2026 10:50:44 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Sun, 05 Jul 2026 09:21:24 +0000
+!   - Last modified: Sun, 05 Jul 2026 21:04:01 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
 !   - Last modified: Thu, 25 Jun 2026 14:42:11 +0000
@@ -21665,12 +21665,18 @@ onepiecepower.com##+js(aopr, aclib)
 freestreams-live.*>>,~chatango.com,~twitter.com,~youtube.com##+js(nowoif)
 freestreams-live.*>>,~chatango.com,~twitter.com,~youtube.com##+js(acs, EventTarget.prototype.addEventListener, delete window)
 freestreams-live.*>>,~chatango.com,~twitter.com,~youtube.com##+js(rmnt, script, adserverDomain)
-natomanga.com##.ads-contain
+mangabats.com,mangakakalot.gg,mangakakalove.com,manganato.gg,natomanga.com,nelomanga.net##.ads-contain
+mangabats.com,mangakakalot.gg,mangakakalove.com,manganato.gg,natomanga.com,nelomanga.net##.ads-contain-v2
+mangabats.com,mangakakalot.gg,mangakakalove.com,manganato.gg,natomanga.com,nelomanga.net##.banner-container
+mangabats.com,mangakakalot.gg,mangakakalove.com,manganato.gg,natomanga.com,nelomanga.net##.pinned-ad-popular
+mangabats.com,mangakakalot.gg,mangakakalove.com,manganato.gg,natomanga.com,nelomanga.net##a[href^="https://bit.ly/"]
+mangabats.com,mangakakalot.gg,mangakakalove.com,manganato.gg,natomanga.com,nelomanga.net##.owl-item:has(a[href^="https://bit.ly/"])
+/images/bns/*$domain=mangabats.com|mangakakalot.gg|mangakakalove.com|manganato.gg|natomanga.com|nelomanga.net
 ||natomanga.com/js/cat_
 ||natomanga.com/js/pu_
 /\/js\/(?:[a-z]+\/)?[a-z]+_[a-f0-9]{32}\.js\b/$script,1p,match-case,domain=mangabats.com|mangakakalot.gg|mangakakalove.com|manganato.gg|natomanga.com|nelomanga.net
 /js/ads/*$script,domain=mangabats.com|mangakakalot.gg|mangakakalove.com|manganato.gg|natomanga.com|nelomanga.net
-manganato.gg##+js(nowoif)
+mangabats.com,mangakakalot.gg,mangakakalove.com,manganato.gg,natomanga.com,nelomanga.net##+js(nowoif)
 cryptofaucet.club###claimform:style(display:block !important)
 cryptofaucet.club##.op2
 cryptofaucet.club###lgl
@@ -22774,6 +22780,7 @@ mathongo.com##+js(rpnt, script, if (bait), if (false))
 @@||quizrr.in^$ghide
 pokopow.com##+js(rmnt, script, var Data)
 beta.plus.rtl.de##+js(no-xhr-if, ad-ipd)
+plus.rtl.de##+js(no-xhr-if, smartclip)
 mrexcel.com###bc-advert-top-wrapper
 mrexcel.com###adn-sticky
 browser.lol#@#.google-ads
@@ -31855,8 +31862,8 @@ client.falixnodes.net##+js(rpnt, script, /window\.googletag.*?enableServices\(\)
 client.falixnodes.net##+js(rpnt, script, /googletag\.pubads\(\)\.addEventListener.*rewardedSlot\)\;\s+\}\);\s+\}/s)
 client.falixnodes.net##+js(nosiif, /lovelylovely|veryveryplease|click\(\)|MouseEvent|dispatchEvent/)
 client.falixnodes.net##+js(nostif, /lovelylovely|veryveryplease|click\(\)|MouseEvent|dispatchEvent/)
-client.falixnodes.net##+js(nostif, ]];if(typeof)
-client.falixnodes.net##+js(nostif, )}}\,5e3)}}}})
+client.falixnodes.net##+js(nostif, )}}}})
+client.falixnodes.net##+js(nostif, ]])!==)
 cimanow.cc,freex2line.online##+js(norafif, ++)
 ||rm.freex2line.online/*.js|$domain=cimanow.cc
 ||global.novelpia.com/_nuxt/*.js|$script,replace=/if\(\w\.check_is_ad_free\(\)\)/if(true)/
