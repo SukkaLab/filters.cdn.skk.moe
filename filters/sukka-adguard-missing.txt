@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Mon, 06 Jul 2026 20:16:23 GMT
+! Last modified: Mon, 06 Jul 2026 23:32:29 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -11,7 +11,7 @@
 !   - Last modified: Mon, 06 Jul 2026 16:14:51 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
-!   - Last modified: Sat, 04 Jul 2026 12:25:46 +0000
+!   - Last modified: Mon, 06 Jul 2026 16:33:58 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
 !   - Last modified: Mon, 29 Jun 2026 16:30:46 +0000
@@ -26728,7 +26728,8 @@ rapidkil.com.au##+js(aost, XMLHttpRequest, /wp-content)
 ||snapdrop.net^$all
 ||usadeepseek.com^$all
 ||gg.deepseek.$doc,to=~deepseek.com
-||deepseek.$all,to=deepseek.app|deepseek.top|~deepseek.com
+||deepseek.app^$all
+||deepseek.top^$all
 ||paytoll*.top/ezdrivema^$all
 -ez-pass.com^$doc
 ||thetollroads-$doc,to=top|xin|world
