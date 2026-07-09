@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Thu, 09 Jul 2026 02:49:17 GMT
+! Last modified: Thu, 09 Jul 2026 10:03:06 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.6.85
+!   - Version: 2.1.6.88
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -220,6 +220,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||rum.catchmetrics.io^
 ||mradx.net^
 ||fireanalytics.firestream.to^
 ||reportmyads.com^$3p
@@ -153414,6 +153415,7 @@ zmail.mtrl.me$image
 /^https?:\/\/(?!assets|script|static)(?:[0-9a-z]{10,13}|[0-9a-z]{6})\.[0-9A-Za-z.\-_]+\/(?=[0-9a-z+\/\-]*[A-Z])[0-9A-Za-z+\/\-]{80,106}$/$match-case,script,~3p
 /^https:\/\/cs\d{3}\.\w+\.com\/cscript\/\d{3}\/[\w\d]+\.js$/$script,3p,match-case
 /.well-known/private-click-measurement
+/libtrc/tr5?type=*pixel*
 /code/e.js|$~3p
 .js?tg=$~3p
 /advanced-ads-tracking/assets/dist/ga-tracking.js
@@ -153909,10 +153911,9 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||api.faphouse.com^$ping
 ||b2.mail.ru/count/$image
-||cdn.fonts.net/t/1.css?
 compo.de##+js(set-local-storage-item, rid, $remove$)
-||static.tblcontent.com/libtrc/tr5?type=loaderpixel
 ||tengrinews.kz/build/assets/analytic-
 ||cdn.eu.amplitude.com/libs/analytics-browser-
 ||trip.com/*/monitor/log
@@ -160646,7 +160647,7 @@ abema.tv##+js(remove-node-text, script, NREUM)
 @@||googletagmanager.com/gtm.js$domain=elcomercio.es|eldiariomontanes.es|elcorreo.com|lasprovincias.es|hoy.es
 @@||comeresaprensasl.tt.omtrdc.net/rest/v*/delivery$domain=elcomercio.es|eldiariomontanes.es|elcorreo.com|lasprovincias.es|hoy.es|ideal.es
 @@||forms.anthology.com^$domain=anthology.com
-@@||cdn.clerk.io/clerk.js$domain=globaltools.dk|globaltools.no|globaltools.se
+@@||googletagmanager.com/gtm.js$domain=globaltools.dk|globaltools.no|globaltools.se
 @@||googletagmanager.com/gtag/js$domain=bihann.com|nehannn.com
 @@||googletagservices.com/tag/js/gpt.js$domain=bihann.com|nehannn.com
 @@||googletagmanager.com/gtag/js$domain=oko.sh
