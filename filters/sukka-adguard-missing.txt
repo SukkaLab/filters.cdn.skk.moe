@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Thu, 09 Jul 2026 16:40:32 GMT
+! Last modified: Thu, 09 Jul 2026 20:08:38 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Thu, 09 Jul 2026 16:05:24 +0000
+!   - Last modified: Thu, 09 Jul 2026 16:10:56 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Thu, 09 Jul 2026 15:22:26 +0000
@@ -30,7 +30,7 @@
 !   - Last modified: Sat, 04 Jul 2026 09:44:29 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
-!   - Last modified: Tue, 07 Jul 2026 12:53:30 +0000
+!   - Last modified: Thu, 09 Jul 2026 16:15:07 +0000
 ! --------------------------------------------------------------
 ! uBlock filters https://ublockorigin.pages.dev/filters/filters.min.txt
 *_ad_$media,domain=youtube.com,3p
@@ -3901,13 +3901,6 @@ otakuindo.*##+js(aopr, Date.prototype.toUTCString)
 otakuindo.*##+js(nobab)
 penis-bilder.com##+js(aopr, popunder)
 penis-bilder.com##+js(nobab)
-sendvid.com##+js(nowoif, !/^https:\/\/sendvid\.com\/[0-9a-z]+$/)
-sendvid.com##[href*=".php"]
-sendvid.com###video-js-video > [href^="javascript:"]
-sendvid.com###vjs-logo-top-bar
-sendvid.com###ftr
-sendvid.com##a[href^="https://go.gsrv.dev/"]
-sendvid.com##a[href][target="_blank"][style^="display: block;position: fixed;"][style*="z-index:"]
 imgdawgknuttz.com##+js(aopw, atOptions)
 imgdawgknuttz.com##+js(acs, document.createElement, l.parentNode.insertBefore(s)
 imgdawgknuttz.com##+js(aost, atob, inlineScript)
@@ -22552,6 +22545,14 @@ fandom.com###incontent_boxad
 fandom.com##.ad-slot-wrapper
 fandom.com##li.top-results__item span:has-text(Sponsored):upward(li)
 ##.fandom-ad-sticky-container
+sendvid.com##+js(nowoif, !/^https:\/\/sendvid\.com\/[0-9a-z]+$/)
+sendvid.com##[href*=".php"]
+sendvid.com###video-js-video > [href^="javascript:"]
+sendvid.com###vjs-logo-top-bar
+sendvid.com###ftr
+sendvid.com##a[href^="https://go.gsrv.dev/"]
+sendvid.com##a[href][target="_blank"][style^="display: block;position: fixed;"][style*="z-index:"]
+sendvid.com##+js(rmnt, script, shouldPop)
 hostserverz.com##+js(no-xhr-if, googlesyndication)
 youboxtv.com##+js(rmnt, script, '"hidden"')
 beta.xfreehd.com##.col-md-12:has(a[href^="https://landing.brazzersnetwork.com/"])
@@ -34433,6 +34434,7 @@ anizone.to##.h-\[90px\].w-\[728px\]:has(iframe[src^="//ad.a-ads.com/"])
 scmp3.org,soundcloudmp3.org##+js(set, detectAdBlock, noopFunc)
 vaughn.live##.wrapper_content ~ .vs_modal_v9:style(opacity: 0 !important;)
 vaughn.live##.wrapper_content ~ .vs_modal_v9_background
+vaughn.live##body > .wrapper_content ~ iframe[height="1"] ~ div
 ||holyclock.com^$3p
 ||shomershabes.com^$3p
 ||shomershabes.co.il^$3p
