@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Fri, 10 Jul 2026 19:54:25 GMT
+! Last modified: Fri, 10 Jul 2026 23:14:53 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,13 +8,13 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Fri, 10 Jul 2026 11:56:58 +0000
+!   - Last modified: Fri, 10 Jul 2026 18:52:53 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Fri, 10 Jul 2026 11:05:23 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Thu, 09 Jul 2026 10:31:31 +0000
+!   - Last modified: Fri, 10 Jul 2026 18:44:06 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
 !   - Last modified: Thu, 09 Jul 2026 02:14:07 +0000
@@ -23188,6 +23188,8 @@ $script,redirect-rule=noopjs,to=~googletagmanager.com,from=boote-magazin.de
 ||upscore.com^$script,redirect=noopjs,domain=boote-magazin.de
 ||bf-ad.net^$script,redirect=noopjs,domain=boote-magazin.de
 peachify.top##+js(aeld, click, atob)
+216.219.94.112##+js(rmnt, script, .offsetParent)
+216.219.94.112###myDiv
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -29063,6 +29065,7 @@ mashable.com##+js(href-sanitizer, a[href^="https://zdcs.link/"], ?u)
 ||prydwen.gg/api/v1/ping/
 vaughn.live##+js(no-fetch-if, method:POST body:zaraz)
 ||vaughn.live/vsz/
+||x.com/i/api/1.1/flow/*.json
 /edgemesh.*.js$script,domain=~edgemesh.com|~edgeno.de
 ||safelinkconverter.com^$script,3p
 /adsensebase.js$script
