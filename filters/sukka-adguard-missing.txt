@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Fri, 10 Jul 2026 12:37:11 GMT
+! Last modified: Fri, 10 Jul 2026 16:33:46 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Fri, 10 Jul 2026 10:16:23 +0000
+!   - Last modified: Fri, 10 Jul 2026 11:56:58 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Fri, 10 Jul 2026 11:05:23 +0000
@@ -18599,8 +18599,8 @@ fullxh.com,megaxh.com,seexh.com,unlockxh4.com,xhaccess.com,xhadult2.com,xhadult3
 xhamster20.*##.yxd-jbanner
 xhamster20.*##.player-add-overlay
 ||xhamster*/api/*/vast
-play.nova.bg##+js(no-xhr-if, /googlesyndication|googima\.js/)
-play.nova.bg##+js(no-fetch-if, /googlesyndication|googima\.js/)
+play.nova.bg##+js(prevent-xhr, /googlesyndication|googima\.js|imasdk/)
+play.nova.bg##+js(prevent-fetch, /googlesyndication|googima\.js|imasdk/)
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=cdn.bg
 @@||thehouseofportable.com^$ghide
 @@||thehouseofportable.com^$script,1p
@@ -23015,7 +23015,8 @@ free-3dtextureshd.com##.adblock_subtitle
 free-3dtextureshd.com##.adblock_title
 ||weforads.com^
 ||cekpaste.id/url.php*^url=http$doc,urlskip=?url
-streamvid.dev##+js(acs, setTimeout, _0x)
+streamvid.dev##+js(acs, setTimeout, /_0x|window\.open/)
+streamvid.dev##+js(nowoif)
 streamvid.dev##.ad_mobile
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$redirect=google-ima.js,domain=njbeachcams.com,important
 vidquickly.com##+js(nano-sib, clearInterval)
