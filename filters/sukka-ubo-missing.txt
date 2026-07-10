@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Thu, 09 Jul 2026 23:39:09 GMT
+! Last modified: Fri, 10 Jul 2026 06:16:22 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.6.94
+!   - Version: 2.1.6.95
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -153984,6 +153984,7 @@ mego.travel##+js(set-local-storage-item, /^snowplowOutQueue_/, $remove$)
 ||skyscanner.*/g/banana-tallyman/tallyman/track/
 ||skyscanner.*/g/aps/public/api/v1/
 ||skyscanner.*/slipstream/
+||x.com/1.1/graphql/viewer_context.json
 ||twinfinite.net/*/gamurs-group-analytics/
 ||naturallieplantbased.com/?*&ver=$script,~3p
 ||caf.fr/*/stormcaster.js
@@ -158968,6 +158969,7 @@ link.gmapp*.net$image
 ||google-analytics.com/analytics.js$important,domain=getintopc.com|tech-platform.info
 ||rum-static.pingdom.net/*-*.js$script,redirect=noop.js,important,domain=leboncoin.fr
 ||bing.com/fd/ls/
+@@||static.cloudflareinsights.com^$domain=quasarzone.com
 @@||googletagmanager.com/gtm.js$domain=oto.net
 ||adeventtracker.spotify.com^
 ||ads-api.x.com^
