@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sat, 11 Jul 2026 19:34:55 GMT
+! Last modified: Sat, 11 Jul 2026 23:13:05 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -27,10 +27,10 @@
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Sat, 04 Jul 2026 09:44:29 +0000
+!   - Last modified: Sat, 11 Jul 2026 19:27:52 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
-!   - Last modified: Thu, 09 Jul 2026 16:15:07 +0000
+!   - Last modified: Sat, 11 Jul 2026 16:51:18 +0000
 ! --------------------------------------------------------------
 ! uBlock filters https://ublockorigin.pages.dev/filters/filters.min.txt
 *_ad_$media,domain=youtube.com,3p
@@ -34214,8 +34214,7 @@ oeq.org##+js(trusted-click-element, button#c-t-bn)
 fireflies.ai##+js(trusted-set-cookie, consentMode, '{"ad_storage":"denied","analytics_storage":"denied","functionality_storage":"granted","personalization_storage":"denied","ad_user_data":"denied","ad_personalization":"denied","security_storage":"granted"}')
 codewars.com##+js(trusted-click-element, a[fs-consent-element="deny"], , 2000)
 formazionepro.it##+js(trusted-click-element, button.c_link, , 1000)
-kotimikro.fi##+js(trusted-set-cookie, didomi_token, eyJ1c2VyX2lkIjoiMTlhNzk3OTItN2Q1NC02OGZlLTk4ZDctOGMyOTk0Y2UyYmYwIiwiY3JlYXRlZCI6IjIwMjUtMTEtMTJUMTk6MDk6MzQuNTQ5WiIsInVwZGF0ZWQiOiIyMDI1LTExLTEyVDE5OjE5OjE2LjE1NloiLCJ2ZW5kb3JzIjp7ImVuYWJsZWQiOlsiZ29vZ2xlIiwidHdpdHRlciIsImM6eW91dHViZSIsImM6YXdzLWNsb3VkZnJvbnQiLCJjOmJvbm5pZXJwdS1uYW1LZldaTCIsImM6cmV0eXBsbGMtWFJiTWl6YnAiLCJjOmdvb2dsZWFuYS00VFhuSmlnUiIsImM6a2lsa2F5YWFzLVZSWjJINmV6IiwiYzp3aW5naWZ5dnctR2pDUlZnRWQiLCJjOnZlY3Rhcnlpbi1ROHpNWUZhZSIsImM6c3BvdGlmeS1lbWJlZCIsImM6Z2VuaWFsbHktblpWM1VFUmoiLCJjOmp1eHRhcG9zZS1rM1UyM21QSCIsImM6bW91c2VmbG93IiwiYzp0aWt0b2stS1pBVVFMWjkiLCJjOnRoaW5nbGluay1QWEdlTW14OSIsImM6dGhlb3BsYXllLVo3NGp3eXRYIiwiYzpwbGF5YWRtZWQtMmtBVnhocVAiLCJjOmluc3RhZ3JhbSIsImM6bG9yZWFsLU5RWGtmRUZtIiwiYzp0d2VudHl0aHItY3J4cktycEciLCJjOnF1YWxpZmlvcy1ZTDZrMmZlMyIsImM6c25vd3Bsb3ctcEc0QkF5QnciLCJjOm9uZXNpZ25hbC1RM1g3aFh6SyIsImM6cGlhbm9jb21wLVg5RFdlejdpIiwiYzpibi1wcmljZXJ1bm5lciIsImM6cGludGVyZXN0IiwiYzpib25uaWVybmV3cyIsImM6YnVsbHNkay1rbkNNOHFndyIsImM6c3ltcGxpZnktZVVYS3JVeTkiLCJjOmJuLW9wZW5zcGVlZHRlc3QiLCJjOmJuLWVscHJpY2VkayIsImM6Ym4tYWx0b21iaWxlbiIsImM6ZGlkb21pIiwiYzpib25uaWVydmktYTg2TUNSUGQiLCJjOmJuLWdvb2dsZWNhbGVuZGFyIiwiYzpibi13ZWF0aGVyd2lkZ2V0ZGsiLCJjOnNpbmRyaWNvbi1NalprNllLUiJdfSwicHVycG9zZXMiOnsiZW5hYmxlZCI6WyJmdW5jdGlvbmFsLUdQVktpSEVOIl0sImRpc2FibGVkIjpbImdlb2xvY2F0aW9uX2RhdGEiLCJkZXZpY2VfY2hhcmFjdGVyaXN0aWNzIl19LCJ2ZW5kb3JzX2xpIjp7ImVuYWJsZWQiOlsiZ29vZ2xlIiwiYzpib25uaWVycHUtbmFtS2ZXWkwiLCJjOnJldHlwbGxjLVhSYk1pemJwIiwiYzpraWxrYXlhYXMtVlJaMkg2ZXoiLCJjOndpbmdpZnl2dy1HakNSVmdFZCIsImM6dmVjdGFyeWluLVE4ek1ZRmFlIiwiYzpqdXh0YXBvc2UtazNVMjNtUEgiLCJjOnRoaW5nbGluay1QWEdlTW14OSIsImM6dGhlb3BsYXllLVo3NGp3eXRYIiwiYzpwbGF5YWRtZWQtMmtBVnhocVAiLCJjOmxvcmVhbC1OUVhrZkVGbSIsImM6dHdlbnR5dGhyLWNyeHJLcnBHIiwiYzpxdWFsaWZpb3MtWUw2azJmZTMiLCJjOnNub3dwbG93LXBHNEJBeUJ3IiwiYzpvbmVzaWduYWwtUTNYN2hYeksiLCJjOmJvbm5pZXJhLXhVanpUTlB4IiwiYzpib25uaWVybmV3cyIsImM6YnVsbHNkay1rbkNNOHFndyIsImM6c3ltcGxpZnktZVVYS3JVeTkiXX0sInB1cnBvc2VzX2xpIjp7ImRpc2FibGVkIjpbImRldmljZV9jaGFyYWN0ZXJpc3RpY3MiXX0sInZlcnNpb24iOjIsImFjIjoiRE5pQWNBRmtBTmdCNWdJa2dZV0JRUUNnd0ZMZ0tkUVdsZ3VGQmY4REM4R2JBQUFBLkROaUFjQUZrQU5nQjVnSWtnWVdCUVFDZ3dGTGdLZFFXbGd1RkJmOERDOEdiQUFBQSJ9, 7889231)
-kotimikro.fi##+js(trusted-set-cookie, euconsent-v2, CQaxgwAQaxgwAAHABBENCEFgAAAAAAAAAAZQJpIR_G7dSWljMCJ3YPsEeIwP1dBpQoQgAgCBg2AAjBiU7IQCRWEQAAyKhoAKgQIAoxQBIABFCABEREAAIIAQIAAIAACAABEIICBggFABIWBQAAgOgYohEACAoAJEVBQhkAEAZNI4yViCyAgBihABKWAFAICYAAEEAAI4AAABYMAAImhIlYoAmAJoAEGAABCJAAlBIg4AAAAIAAABBLcAEw0KiCMsgAAIFAwggQACCoIAKBAEAAAQNEAAAYMCnICAC6wiQAgBQACBACAAEGAAIAABIAAIgAgAIBAABAIBAAAAAAABAAQMAAYALAQCAAEB0DFEAAAQJABIyIIFMCAABIICWSoQSAIEFUIAgSwAABATAQAAAAAFAAAALBQCAEgJGJBAExBNAAAQAABRAgAIJCDAABARAAAA.YAAAAAAAAAAA, 7889231)
+kotimikro.fi##+js(trusted-click-element, #didomi-notice-agree-button)
 memegenqc.app##+js(trusted-set-local-storage-item, memegenqc-cookie-consent, '{"analytics":false,"advertising":false,"timestamp":$now$}')
 loveholidays.com##+js(trusted-set-cookie, lvh_cookies_accepted, {%22GB%22:[%22essential%22]})
 firstchoice.co.uk##+js(trusted-set-cookie, CONSENTMGR, c1:1|c2:0|c3:0|c8:1|ts:$now$|consent:true)
@@ -37846,3 +37845,8 @@ homegymreview.co.uk##body * :not(input):not(textarea):style(user-select: text !i
 thesun.co.uk##dialog:remove()
 thesun.co.uk##:is(html,body):style(overflow: unset !important)
 alphacoders.com##+js(trusted-rpnt, script, countdown <= 0, countdown => 0)
+zhuanlan.zhihu.com##.Modal-wrapper
+zhuanlan.zhihu.com##.Modal-backdrop
+zhuanlan.zhihu.com##.MobileModal-wrapper
+zhuanlan.zhihu.com##body.WhiteBg-body:style(overflow: auto !important; position: initial !important;)
+zhuanlan.zhihu.com##html:style(overflow: auto !important; padding-right: 0 !important;)
