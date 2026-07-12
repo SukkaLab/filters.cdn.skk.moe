@@ -1,5 +1,5 @@
 ! Title: [sukka] Special Redirects
-! Last modified: Sun, 12 Jul 2026 11:08:29 GMT
+! Last modified: Sun, 12 Jul 2026 12:16:40 GMT
 ! Description: uBlock Origin / AdGuard uritransform rules
 ! Homepage: https://github.com/SukkaW/Filters
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -16,6 +16,7 @@
 ||sat.windy.com^$all,uritransform=/sat\.windy\.com/docs.lucaairport.qzz.io\/https\/sat.windy.com/
 ||rdr.windy.com^$all,uritransform=/rdr\.windy\.com/docs.lucaairport.qzz.io\/https\/rdr.windy.com/
 ||fourhoi.com^$all,uritransform=/fourhoi\.com/docs.lucaairport.qzz.io\/https\/fourhoi.com/
+||tiles.strava.com^$all,uritransform=/tiles\.strava\.com/docs.lucaairport.qzz.io\/https\/tiles.strava.com/
 
 ! >>>> AdGuard
 ||hembed.com$all,urltransform=/([^\/]+)\.hembed\.com/docs.lucaairport.qzz.io\/https\/$1.hembed.com/
@@ -29,3 +30,4 @@
 ||sat.windy.com^$all,urltransform=/sat\.windy\.com/docs.lucaairport.qzz.io\/https\/sat.windy.com/
 ||rdr.windy.com^$all,urltransform=/rdr\.windy\.com/docs.lucaairport.qzz.io\/https\/rdr.windy.com/
 ||fourhoi.com^$all,urltransform=/fourhoi\.com/docs.lucaairport.qzz.io\/https\/fourhoi.com/
+||tiles.strava.com^$all,urltransform=/tiles\.strava\.com/docs.lucaairport.qzz.io\/https\/tiles.strava.com/
