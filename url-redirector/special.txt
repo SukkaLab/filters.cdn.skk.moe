@@ -1,5 +1,5 @@
 ! Title: [sukka] Special Redirects
-! Last modified: Sun, 12 Jul 2026 13:09:18 GMT
+! Last modified: Sun, 12 Jul 2026 17:36:10 GMT
 ! Description: uBlock Origin / AdGuard uritransform rules
 ! Homepage: https://github.com/SukkaW/Filters
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -11,6 +11,7 @@
 ||cdn.scpwiki.com$all,uritransform=/cdn\.scpwiki\.com/docs.lucaairport.qzz.io\/https\/cdn.scpwiki.com/
 ||scp-wiki-cdn.nyc3.cdn.digitaloceanspaces.com$all,uritransform=/scp-wiki-cdn\.nyc3\.cdn\.digitaloceanspaces\.com/docs.lucaairport.qzz.io\/https\/scp-wiki-cdn.nyc3.cdn.digitaloceanspaces.com/
 ||www.wikidot.com/userkarma.php$all,uritransform=/www\.wikidot\.com\/userkarma\.php/docs.lucaairport.qzz.io\/https\/www.wikidot.com\/userkarma.php/
+||tile.openstreetmap.org^$all,uritransform=/(?:[^.\/]+\.)*tile\.openstreetmap\.org/docs.lucaairport.qzz.io\/https\/tile.openstreetmap.org/
 ||tiles.windy.com^$all,uritransform=/tiles\.windy\.com/docs.lucaairport.qzz.io\/https\/tiles.windy.com/
 ||ims.windy.com^$all,uritransform=/ims\.windy\.com/docs.lucaairport.qzz.io\/https\/ims.windy.com/
 ||sat.windy.com^$all,uritransform=/sat\.windy\.com/docs.lucaairport.qzz.io\/https\/sat.windy.com/
@@ -25,6 +26,7 @@
 ||cdn.scpwiki.com$all,urltransform=/cdn\.scpwiki\.com/docs.lucaairport.qzz.io\/https\/cdn.scpwiki.com/
 ||scp-wiki-cdn.nyc3.cdn.digitaloceanspaces.com$all,urltransform=/scp-wiki-cdn\.nyc3\.cdn\.digitaloceanspaces\.com/docs.lucaairport.qzz.io\/https\/scp-wiki-cdn.nyc3.cdn.digitaloceanspaces.com/
 ||www.wikidot.com/userkarma.php$all,urltransform=/www\.wikidot\.com\/userkarma\.php/docs.lucaairport.qzz.io\/https\/www.wikidot.com\/userkarma.php/
+||tile.openstreetmap.org^$all,urltransform=/(?:[^.\/]+\.)*tile\.openstreetmap\.org/docs.lucaairport.qzz.io\/https\/tile.openstreetmap.org/
 ||tiles.windy.com^$all,urltransform=/tiles\.windy\.com/docs.lucaairport.qzz.io\/https\/tiles.windy.com/
 ||ims.windy.com^$all,urltransform=/ims\.windy\.com/docs.lucaairport.qzz.io\/https\/ims.windy.com/
 ||sat.windy.com^$all,urltransform=/sat\.windy\.com/docs.lucaairport.qzz.io\/https\/sat.windy.com/
