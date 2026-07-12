@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sat, 11 Jul 2026 23:13:05 GMT
+! Last modified: Sun, 12 Jul 2026 05:39:10 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -27,7 +27,7 @@
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Sat, 11 Jul 2026 19:27:52 +0000
+!   - Last modified: Sat, 11 Jul 2026 23:54:39 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
 !   - Last modified: Sat, 11 Jul 2026 16:51:18 +0000
@@ -34300,6 +34300,7 @@ shop.a1.by##+js(trusted-set-cookie-reload, cookie_agreement_level, IlJFUVVJUkVEI
 hrt.hr##+js(trusted-click-element, 'a[data-cmp-purpose][aria-label="Svrha: Društvene mreže"],200,a[data-cmp-purpose][aria-label="Svrha: Ostalo"],200,a.cmpboxbtnsave')
 megateh.fi##+js(trusted-set-cookie, cookie_consent, %7B%22functional%22%3A1%2C%22analytics%22%3A0%2C%22ads%22%3A0%7D, 1day, , reload, 1)
 visualcrossing.com##+js(trusted-set-local-storage-item, vcstate, '{"required":{"necessary":true,"functional":false,"analysis":false,"ads":false,"hasSetCookies":1}}')
+kkjmk.net##+js(trusted-set-cookie, cookie-consent-v2, '{"necessary":true,"analytical":false,"marketing":false,"functional":true}', 1year)
 ! uBlock filters – Annoyances https://ublockorigin.pages.dev/filters/annoyances.min.txt
 mimaletadepeliculas.blogspot.com##+js(aopr, document.oncontextmenu)
 mimaletadepeliculas.blogspot.com##+js(acs, document.onselectstart)
