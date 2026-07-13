@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Sun, 12 Jul 2026 23:11:04 GMT
+! Last modified: Mon, 13 Jul 2026 05:49:30 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.7.10
+!   - Version: 2.1.7.13
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -54918,6 +54918,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||countly.
 ||countly-
 |piwik.
+||c.bubutv.top^
 ||anonymized-metrics.rmbl.ws^
 ||m.privatesportshop.es^
 ||analytics.pextra.cloud^
@@ -155240,7 +155241,6 @@ telegraph.co.uk##.more-stories
 ||app.dhgate.com/musr/logodata.do
 ||app.dhgate.com/mobileApiWeb/biz-FeedBack-log.do
 ||src.fwusercontent.com/mas|
-||api.intelligems.io/v3/track
 ||uber.com/v2/_events
 ||uber.com/go/_events
 hindustantimes.com##+js(set-local-storage-item, /^_c(b|hartbeat)/, $remove$)
@@ -162439,6 +162439,7 @@ usatoday.com##+js(set, gnt.x.adm, )
 ||acustomizedgift.com^$redirect=noop.js,script
 ||askdriver.com^$redirect=noop.js,script
 ||fishingtoolsbox.com^$redirect=noop.js,script
+||fjordsand.com^$redirect=noop.js,script
 ||fontserif.com^$redirect=noop.js,script
 ||glasscoyote.com^$redirect=noop.js,script
 ||goddesslamps.com^$redirect=noop.js,script
