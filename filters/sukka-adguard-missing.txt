@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Mon, 13 Jul 2026 16:43:48 GMT
+! Last modified: Mon, 13 Jul 2026 19:52:33 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Mon, 13 Jul 2026 13:18:17 +0000
+!   - Last modified: Mon, 13 Jul 2026 15:34:47 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Sat, 11 Jul 2026 02:14:37 +0000
@@ -7747,6 +7747,7 @@ newsbreak24.de##.aw-track-click
 newsbreak24.de###adup1
 transfermarkt.*##.noscript
 n-tv.de##+js(aopr, embedAddefend)
+||n-tv.de/sport/adDefend.js
 ||adnxs.com^$important,domain=bz-berlin.de|metal-hammer.de|musikexpress.de|rollingstone.de|stylebook.de
 ||googlesyndication.com^$script,important,domain=autobild.de|metal-hammer.de|musikexpress.de|rollingstone.de
 ||sascdn.com^$script,important,domain=autobild.de|metal-hammer.de|musikexpress.de|rollingstone.de
