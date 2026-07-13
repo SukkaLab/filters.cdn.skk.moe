@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Mon, 13 Jul 2026 19:52:33 GMT
+! Last modified: Mon, 13 Jul 2026 23:14:55 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Mon, 13 Jul 2026 15:34:47 +0000
+!   - Last modified: Mon, 13 Jul 2026 17:34:35 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Sat, 11 Jul 2026 02:14:37 +0000
@@ -20,7 +20,7 @@
 !   - Last modified: Mon, 13 Jul 2026 09:26:33 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Sun, 12 Jul 2026 03:53:21 +0000
+!   - Last modified: Mon, 13 Jul 2026 17:57:59 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
 !   - Last modified: Tue, 07 Jul 2026 15:53:20 +0000
@@ -16678,7 +16678,7 @@ wp.pl,money.pl,o2.pl,parenting.pl,pudelek.pl,autokult.pl,gadzetomania.pl,fotoblo
 wp.pl,money.pl,o2.pl,parenting.pl,pudelek.pl,autokult.pl,gadzetomania.pl,fotoblogia.pl,komorkomania.pl,polygamia.pl,abczdrowie.pl,benchmark.pl,kafeteria.pl,pysznosci.pl,dobreprogramy.pl,genialne.pl,autocentrum.pl,jastrzabpost.pl,deliciousmagazine.pl##body:style(overflow: auto !important;)
 ||v.wpimg.pl/*.html$frame
 wp.pl#@#[class^="css-"]
-wp.pl,money.pl,komorkomania.pl,autokult.pl,o2.pl,parenting.pl,abczdrowie.pl,pudelek.pl#@#body [class]:style(filter: none !important;)
+wp.pl,money.pl,komorkomania.pl,autokult.pl,o2.pl,parenting.pl,abczdrowie.pl,pudelek.pl#@#body [class]:style(filter: none !important)
 money.pl#@##app > div[class^="sc-"] > div[class]:not([class*=" "]):has(:scope > div[class*=" "]:only-child > img[src^="https://v.wpimg.pl/"][src$="=="][alt])
 money.pl,wp.pl#@#div[class]:has(>div[class]:first-child:has-text(REKLAMA):not(:has(>*)))
 money.pl,kobieta.wp.pl,gadzetomania.pl,fotoblogia.pl,komorkomania.pl,wiadomosci.wp.pl,tech.wp.pl,dom.wp.pl,facet.wp.pl,film.wp.pl,finanse.wp.pl,gry.wp.pl,gwiazdy.wp.pl,kobieta.wp.pl,ksiazki.wp.pl,kuchnia.wp.pl,moto.wp.pl,opinie.wp.pl,pogoda.wp.pl,teleshow.wp.pl,turystyka.wp.pl,wideo.wp.pl,wawalove.wp.pl,autokult.pl#@#+js(nostif, detected, 300)
@@ -16714,9 +16714,8 @@ o2.pl##section > h2:has-text(Oferty dla Ciebie:)
 o2.pl##div > h6:has-text(Oferty dla Ciebie)
 o2.pl,www.wp.pl##div:is([style="width:100%"], [style="width:100%;height:100%"]):has(> div[class] > img[src^="https://v.wpimg.pl/"][role="presentation"])
 o2.pl##.w-full:has(> div:not([class]) > div > div > a > img[src^="https://v.wpimg.pl/"])
-www.wp.pl###app-content > .relative > .w-full > div:first-child[style^="max-height: "]:has(> div:first-child > div:first-child > a > div:empty)
 www.wp.pl###site-header:style(min-height: 0px !important;)
-www.wp.pl###app-content > .relative > [data-cover="true"] > .relative > .w-full > .items-start > .sticky:has( > div > div + div:last-child > span:has-text(REKLAMA))
+www.wp.pl##div[class*=" "]:has(> div:first-child > div:first-child + div:last-child > span:only-child > span:only-child:has-text(REKLAMA))
 www.wp.pl##.max-w-mobile > div[class]:has(> div > div > iframe)
 www.wp.pl##.max-w-mobile > div:has(> div:first-child > div:only-child > div > span:has-text(Przewijaj w dół, by kontynuować))
 www.wp.pl##div[data-bdc="section-celebrities"] > .wp-inner-content > div:has(> div:first-child > a[href^="https://www.wp.pl/"]:only-child > img:only-child)
@@ -31917,6 +31916,9 @@ client.falixnodes.net##+js(nosiif, /lovelylovely|veryveryplease|click\(\)|MouseE
 client.falixnodes.net##+js(nostif, /lovelylovely|veryveryplease|click\(\)|MouseEvent|dispatchEvent/)
 client.falixnodes.net##+js(nostif, )}}}})
 client.falixnodes.net##+js(nostif, ]])!==)
+client.falixnodes.net##+js(nostif, ]/*)
+client.falixnodes.net##^script:has-text(=[].slice.call)
+client.falixnodes.net##+js(rmnt, script, =[].slice.call)
 cimanow.cc,freex2line.online##+js(norafif, ++)
 ||rm.freex2line.online/*.js|$domain=cimanow.cc
 ||global.novelpia.com/_nuxt/*.js|$script,replace=/if\(\w\.check_is_ad_free\(\)\)/if(true)/
