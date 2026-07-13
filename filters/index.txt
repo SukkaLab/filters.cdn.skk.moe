@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Filters
-! Last modified: Sun, 12 Jul 2026 17:36:09 GMT
+! Last modified: Mon, 13 Jul 2026 13:41:41 GMT
 ! Expires: 1 hours
 ! Description: The filters from Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -145,6 +145,7 @@ gettr.com##esr-signup
 ||fundraiseup.com^$3p
 ||lantern.io^$3p
 ||cp.computerworld.com
+/popups/popup.js$3p
 ||accounts.google.com/gsi/$frame,redirect=click2load.html,domain=~claude.ai
 ||accounts.google.com/gsi/$3p,domain=~claude.ai
 ||apis.google.com$3p,domain=udn.com
@@ -836,3 +837,5 @@ iboysoft.com##.delayed-popup-overlay
 www.browserling.com###blackFridayOverlay
 open-design.ai##.newsletter-popup
 f-droid.org##.banner--danger.banner
+qrator.net##.is-open.l-overlay
+qrator.net##body:style(overflow: unset !important)
