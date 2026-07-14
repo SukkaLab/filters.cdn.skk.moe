@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Tue, 14 Jul 2026 11:45:23 GMT
+! Last modified: Tue, 14 Jul 2026 15:44:56 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.7.24
+!   - Version: 2.1.7.28
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -220,6 +220,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||clktrkd.com^
 ||bidmachine.io^
 ||logws*.ati-host.net^
 ||rum.catchmetrics.io^
@@ -54918,6 +54919,8 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||countly.
 ||countly-
 |piwik.
+||trk.swipey.me^
+||evs.segment.complex.com^
 ||r.vares.top^
 ||umami.vidfast.
 ||akutagawa.consumer.gopuff.com^
@@ -153923,6 +153926,8 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+complex.com##+js(set-local-storage-item, poll_anonymous_id, $remove$)
+||media.complex.com/common/catalyst.js
 ||media-trend.mail.ru/pixel/
 ||reklama.mail.ru/*.gif
 ||r3.mail.ru/k?fver=
@@ -160106,7 +160111,7 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=saturn.de
 @@||metrics.us.playstation.com/b/ss/
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
-@@||trailblaze.my.salesforce-setup.com/_ui/common/config/field/*/d?id=*&type=
+@@.my.salesforce-setup.com/_ui/common/config/field/*/d?id=*&type=
 @@||static.cloudflareinsights.com^$domain=quasarzone.com,script
 @@||feliz.data.tm-awx.com^$domain=football.london
 @@||feliz-web.data.tm-awx.com^$domain=football.london
