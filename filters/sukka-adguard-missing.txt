@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Tue, 14 Jul 2026 15:44:56 GMT
+! Last modified: Tue, 14 Jul 2026 19:47:18 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Tue, 14 Jul 2026 04:58:51 +0000
+!   - Last modified: Tue, 14 Jul 2026 17:37:03 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Sat, 11 Jul 2026 02:14:37 +0000
@@ -20,7 +20,7 @@
 !   - Last modified: Tue, 14 Jul 2026 13:38:21 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Tue, 14 Jul 2026 01:39:06 +0000
+!   - Last modified: Tue, 14 Jul 2026 14:31:52 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
 !   - Last modified: Tue, 07 Jul 2026 15:53:20 +0000
@@ -11511,6 +11511,7 @@ mp4hentai.com###custom_html-5
 hentaihd.net##.active-item
 nypost.com##img[src$="/knewz_300x250.png"]:upward(.widget_text)
 nypost.com##.entry-content > .nyp-video-player
+nypost.com##+js(rmnt, script, parentNode.removeChild)
 xmegadrive.com##+js(set, flashvars.adv_pause_html, '')
 xmegadrive.com##.table
 nsfwmonster.com##+js(aeld, getexoloader)
@@ -12131,11 +12132,11 @@ celebritynakeds.com##.show-over-1000.async-reklam-placeholder
 oyohd.*##+js(nowoif)
 vidohd.com##+js(aopr, __Y)
 ||oyohd.*/cdn-cgi/trace$xhr,1p
-bigtitslust.com##+js(aopr, exoNoExternalUI38djdkjDDJsio96)
 lesbian8.com##+js(aeld, getexoloader)
 lesbian8.com##+js(aopr, decodeURI)
 amateur8.com,bigtitslust.com,freeporn8.com,lesbian8.com,maturetubehere.com,sortporn.com##+js(aopr, Q433)
 amateur8.com,bigtitslust.com,ebony8.com,freeporn8.com,lesbian8.com,maturetubehere.com,sortporn.com##+js(set, flashvars.adv_pre_vast, '')
+amateur8.com,bigtitslust.com,freeporn8.com##+js(aopw, __spotSettings)
 amateur8.com,amateur8.com,bigtitslust.com,ebony8.com,lesbian8.com,sortporn.com###lotal
 amateur8.com,bigtitslust.com,ebony8.com,maturetubehere.com,shemalesin.com,sortporn.com###player_add
 amateur8.com,bigtitslust.com,freeporn8.com,lesbian8.com,maturetubehere.com,sortporn.com##.footer-margin
@@ -23206,6 +23207,7 @@ peachify.top##+js(aeld, click, atob)
 216.219.94.112##+js(rmnt, script, .offsetParent)
 216.219.94.112###myDiv
 picnob.com##.slimlay
+/assets/js/anti-adblock.js|$script,1p,strict1p
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -31925,8 +31927,9 @@ client.falixnodes.net##+js(nostif, /lovelylovely|veryveryplease|click\(\)|MouseE
 client.falixnodes.net##+js(nostif, )}}}})
 client.falixnodes.net##+js(nostif, ]])!==)
 client.falixnodes.net##+js(nostif, ]/*)
-client.falixnodes.net##^script:has-text(=[].slice.call)
-client.falixnodes.net##+js(rmnt, script, =[].slice.call)
+client.falixnodes.net##+js(nostif, }/*)
+client.falixnodes.net##^script:has-text(/\=arguments\;if\(typeof /)
+client.falixnodes.net##+js(rmnt, script, /\=arguments\;if\(typeof /)
 cimanow.cc,freex2line.online##+js(norafif, ++)
 ||rm.freex2line.online/*.js|$domain=cimanow.cc
 ||global.novelpia.com/_nuxt/*.js|$script,replace=/if\(\w\.check_is_ad_free\(\)\)/if(true)/
