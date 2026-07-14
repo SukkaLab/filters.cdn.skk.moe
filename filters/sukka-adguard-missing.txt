@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Tue, 14 Jul 2026 08:28:19 GMT
+! Last modified: Tue, 14 Jul 2026 11:45:23 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Tue, 14 Jul 2026 02:36:59 +0000
+!   - Last modified: Tue, 14 Jul 2026 04:58:51 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Sat, 11 Jul 2026 02:14:37 +0000
@@ -30,7 +30,7 @@
 !   - Last modified: Mon, 13 Jul 2026 13:01:36 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
-!   - Last modified: Tue, 14 Jul 2026 01:44:24 +0000
+!   - Last modified: Tue, 14 Jul 2026 04:58:37 +0000
 ! --------------------------------------------------------------
 ! uBlock filters https://ublockorigin.pages.dev/filters/filters.min.txt
 *_ad_$media,domain=youtube.com,3p
@@ -16461,6 +16461,7 @@ myanimelist.net##[class*="-pdatla"]
 myanimelist.net##.bookstore-detail-right
 myanimelist.net##div[class*="bookstores-recommend-plugin-"]:has(span[class="sponsored"])
 myanimelist.net##.ad-sas
+myanimelist.net##a[href^="https://mangamirai.com/"]
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=winknews.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$script,domain=winknews.com
 disneyplus.com##+js(json-prune, stream.insertion.adSession stream.insertion.points stream.insertion stream.sources.*.insertion pods.0.ads)
@@ -34472,6 +34473,8 @@ flamecomics.xyz##+js(trusted-set-local-storage-item, adBlockedModal:lastDismiss,
 anizone.to##.h-\[90px\].w-\[728px\]:has(iframe[src^="//ad.a-ads.com/"])
 scmp3.org,soundcloudmp3.org##+js(set, detectAdBlock, noopFunc)
 vaughn.live##+js(trusted-click-element, button#vs_modal_v9_notice_dismiss)
+civitai.red##a[href="/pricing"] img
+civitai.red##div.relative.flex[style="min-height:90px"]:has(> button[aria-label="Close ad"])
 ||holyclock.com^$3p
 ||shomershabes.com^$3p
 ||shomershabes.co.il^$3p
