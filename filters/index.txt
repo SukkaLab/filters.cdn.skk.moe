@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Filters
-! Last modified: Mon, 13 Jul 2026 13:41:41 GMT
+! Last modified: Wed, 15 Jul 2026 05:46:03 GMT
 ! Expires: 1 hours
 ! Description: The filters from Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -720,6 +720,9 @@ www.ionos.com##.exit-intent-ionos
 www.ionos.com##.fade.modal-backdrop
 www.zhihu.com##.Reward
 lowendaff.com##.joe_advert-large
+lowendaff.com###custom_sponsor_widget
+lowendaff.com##.epcl-banner
+lowendaff.com###dmit-ads
 ||xn--feus21h.xyz/static/team/uploadpic/$image
 www.3dmgame.com##.head_ent
 abdenasser.github.io##.app-promo-modal
@@ -819,12 +822,10 @@ www.news.com.au##.LoaderBox
 ||static.freedownloadmanager.org/icon/
 ||gomami.io/assets/ad/$all
 ||awsstatic.com/onedam/marketing-channels/$image
-lowendaff.com###sticky_ads_wrapper
 ||tsx.is/logos/sevalla-full.svg$image
 ||leafletjs.com/dialog/$subdocument
 leafletjs.com###dialog
 leafletjs.com##body:style(overflow: unset !important)
-lowendaff.com###dmit-ads
 9to5mac.com##[href*="/amzn.to/"]
 9to5mac.com##[href*="amazon.com"]
 www.tomshardware.com##.fancy-box
