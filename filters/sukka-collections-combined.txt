@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Thu, 16 Jul 2026 15:46:50 GMT
+! Last modified: Thu, 16 Jul 2026 19:36:06 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202607161532
+!   - Version: 202607161922
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 16 Jul 2026 15:32 UTC
+!   - Last modified: 16 Jul 2026 19:22 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
@@ -74,7 +74,7 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * ➗ Actually Legitimate URL Shortener Tool
 !   - URL: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt
-!   - Version: 12July2026v2
+!   - Version: 16July2026v1
 !   - Homepage: https://github.com/DandelionSprout/adfilt/discussions/163
 ! * 🐊 Imgur: Pure Imagery Experience
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/ImgurPureImageryExperience.txt
@@ -20593,6 +20593,7 @@ buffalonews.com##+js(set, lee_trkLinkSrc, noopFunc)
 @@||startpage.com/sp/qi$removeparam=sc
 @@||flagpedia.net^$ping,xhr,removeparam=gtm
 @@/search.php$doc,removeparam=sid
+@@/search-redirection$doc,removeparam,domain=audible.*
 @@|wss://$removeparam
 @@||google.*/maps$doc,removeparam=utm_campaign
 @@/remote_interaction$doc,removeparam=ap_id
