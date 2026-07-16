@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Thu, 16 Jul 2026 08:35:28 GMT
+! Last modified: Thu, 16 Jul 2026 11:54:28 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.7.36
+!   - Version: 2.1.7.38
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -153937,6 +153937,7 @@ complex.com##+js(set-local-storage-item, poll_anonymous_id, $remove$)
 ||bissell.pl/datalayer/index/events
 ||grafana-app-proxy.consumer.gopuff.com/collect
 ||cchome.adobe.io/app/v*/logs^
+||flixtrz.com/api/analytics/watch-event|
 peacocktv.com##+js(set-local-storage-item, impressionTrackingSessionId, $remove$)
 ||czesciauto24.pl/securegtm/
 ||czesciauto24.pl/p/g^
@@ -153954,6 +153955,7 @@ x.com##+js(set-constant, __INITIAL_STATE__.featureSwitch.user.config.rweb_home_j
 compo.de##+js(set-local-storage-item, rid, $remove$)
 ||tengrinews.kz/build/assets/analytic-
 ||cdn.eu.amplitude.com/libs/analytics-browser-
+search.naver.com##+js(set-cookie-reload, NNB, 1, /, .naver.com)
 ||trip.com/*/monitor/log
 ||tripcdn.com/modules/ibu/xtracker/
 ||emule-security.org/tracker.js

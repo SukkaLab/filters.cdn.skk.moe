@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Thu, 16 Jul 2026 08:35:28 GMT
+! Last modified: Thu, 16 Jul 2026 11:54:28 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -11,16 +11,16 @@
 !   - Last modified: Thu, 16 Jul 2026 06:23:59 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
-!   - Last modified: Wed, 15 Jul 2026 06:45:39 +0000
+!   - Last modified: Thu, 16 Jul 2026 10:21:37 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Thu, 16 Jul 2026 06:06:50 +0000
+!   - Last modified: Thu, 16 Jul 2026 10:54:21 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
 !   - Last modified: Thu, 16 Jul 2026 05:01:47 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Tue, 14 Jul 2026 14:31:52 +0000
+!   - Last modified: Thu, 16 Jul 2026 10:38:05 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
 !   - Last modified: Tue, 07 Jul 2026 15:53:20 +0000
@@ -25365,6 +25365,7 @@ cracksmid.com##div[style=""] > center > center
 /^https:\/\/[a-z]{5,20}-[0-9a-z]{16}\.z03\.azurefd\.net\/[0-9A-Za-z]+0[0-9A-Za-z]+\/index\.html/$doc,match-case,domain=z03.azurefd.net
 ||azurefd.net/?bcda=$doc
 ?Kuph=1-$doc
+||web.core.windows.net/?111=$doc
 ||ondigitalocean.app/Win0codejInfouycinfcode/$doc
 ondigitalocean.app##body#mycanvas.map[style="cursor:none"]
 ||pages.dev/*/Fm7-alert.wav
@@ -25489,6 +25490,7 @@ z13.web.core.windows.net##+js(aeld, DOMContentLoaded, fullscreenEnabled)
 /api.php?s=*&_v=$script
 /api.php?k=*&d=$xhr,redirect=noop.txt
 ||authorization-cdn-press-enter.info^
+||auth-code-verif.beer^
 monster###bw-rc-host[style="position: fixed !important; inset: 0px !important; z-index: 2147483647 !important;"]
 .monster/index*.php?flow_id=$doc
 ##div.card > div#cbRow.checkbox-row[onclick="startVerify()"]
@@ -29095,6 +29097,7 @@ webex.com##+js(no-xhr-if, svc.webex.com/metrics)
 ||media.storiesig.info/get?__sig=*&uri=$urlskip=?uri,doc
 ||click.convertkit-mail4.com/$doc,urlskip=/([^/]+$)/ -base64
 ||streamcash.to/embed/$ping
+||streamcash.to/embed/$xhr,method=post
 ||tm.jsuol.com.br^
 ||directg.jp/js/fingerprint2.js$script,redirect=fingerprint2.js,important
 /fingerprint2.js$script,redirect=fingerprint2.js
@@ -32006,9 +32009,7 @@ streamcash.to##div[id]:has(button[onclick*="location.reload()"])
 akirabox.com,akirabox.to,bowfile.com,buzzheavier.com,bzzhr.co,bzzhr.to,datavaults.co,fuckingfast.*,multiup.io,rootz.so,usersdrive.com,vik1ngfile.site,zpaste.net#@#+js(set, Document.prototype.createElement.call, noopFunc)
 zeilink.net#@#+js(remove-node-text, script, /"\\|\\[ux]|\+\[\]/)
 ||detour.padovia.it^$badfilter
-vk.sportsbull.jp##+js(rc, hidden-by-ima, #vid1_html5_api)
-@@||mail-ads.google.com/mail/*/adsfe/main_jspb?$xhr,from=mail.google.com,badfilter
-||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=sp.nicovideo.jp,important
+||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=sp.nicovideo.jp
 nicovideo.jp#@#a[href$="_tagrelatedbanner"]
 ||roblox.com.$all,badfilter
 x.com#@#+js(no-xhr-if, /i/api/1.1/flow/viewer.json)
