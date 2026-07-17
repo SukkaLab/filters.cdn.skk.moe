@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Fri, 17 Jul 2026 08:29:06 GMT
+! Last modified: Fri, 17 Jul 2026 11:41:11 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Fri, 17 Jul 2026 05:32:02 +0000
+!   - Last modified: Fri, 17 Jul 2026 10:07:55 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Thu, 16 Jul 2026 10:21:37 +0000
@@ -20,7 +20,7 @@
 !   - Last modified: Fri, 17 Jul 2026 04:40:08 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Fri, 17 Jul 2026 02:05:50 +0000
+!   - Last modified: Fri, 17 Jul 2026 10:10:26 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
 !   - Last modified: Tue, 07 Jul 2026 15:53:20 +0000
@@ -22831,12 +22831,6 @@ dstat.space##+js(json-prune-fetch-response, *.*, , propsToMatch, /api/banners)
 dstat.space##+js(aeld, DOMContentLoaded, checkBanners)
 dstat.space##.p-4:has(> div[id^="banner-list-"])
 weebcentral.com##div[class][style]:has(> div.notranslate > iframe[sandbox*="allow-popups"])
-getthispdf.com##+js(rmnt, script, /popunder/i)
-getthispdf.com##+js(nostif, /detect|bait/i)
-getthispdf.com##+js(rpnt, script, loadAdPlacements();)
-getthispdf.com##+js(rmnt, script, checkBait)
-getthispdf.com##+js(nostif, ++;break;}}}}})
-getthispdf.com##+js(set, __adBlockState, undefined)
 forum.ixbt.com##+js(trusted-set-cookie-reload, s, '180,,4,,a')
 ||jads.co^$script,redirect=noop.js,domain=litomi.in
 litomi.in##+js(trusted-create-html, #juicy-ads-banner > div[data-juicy-ads-slot] > div, <iframe></iframe>)
@@ -31993,11 +31987,6 @@ magma.com##+js(set, Object.prototype.hasBottomPartnership, falseFunc)
 embedtv.best##+js(rpnt, script, (popupLoaded), (true))
 myanimelist.net##a.ga-click[data-ga-click-type="hia"]
 myanimelist.net##div[id$="_NXU_wrap"], div[id$="_NXU_TITLE_wrap"]
-@@||getthispdf.com/about.html$ghide
-getthispdf.com##.content > #pageAdSlot
-getthispdf.com##+js(rmnt, script, document.styleSheets)
-getthispdf.com##+js(set, _adBlockState, undefined)
-getthispdf.com##+js(rmnt, script, /'onerror'|'offsetHe|'offsetWi/)
 gumtree.com#@#+js(trusted-set, experimentOverrides, json:"%5B%7B%20defaultValue%3A%20%22OFF%22%7D%5D")
 bus-location.1507t.xyz#@#.ad-area:not(.text-ad)
 bus-location.1507t.xyz##div[id]:empty:style(height: 1px !important; width 1px !important; position: fixed !important; z-index: 2147483647 !important;)
