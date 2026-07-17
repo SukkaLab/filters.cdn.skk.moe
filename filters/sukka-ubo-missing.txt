@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Fri, 17 Jul 2026 15:39:12 GMT
+! Last modified: Fri, 17 Jul 2026 19:35:37 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.7.48
+!   - Version: 2.1.7.49
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -153956,8 +153956,7 @@ peacocktv.com##+js(set-local-storage-item, impressionTrackingSessionId, $remove$
 biznesenter.pl##+js(abort-current-script, document.createElement, gtm.start)
 ||bifrost-api.hotstar.com/v*/events
 ||linuxcommunity.io/assets/google-universal-analytics-*.js
-x.com##+js(set-constant, __INITIAL_STATE__.featureSwitch.defaultConfig.rweb_home_jot_context_enabled.value, false)
-x.com##+js(set-constant, __INITIAL_STATE__.featureSwitch.user.config.rweb_home_jot_context_enabled.value, false)
+x.com##+js(prevent-fetch, /i/api/1.1/flow/viewer.json)
 ||credistory.ru/api/Metrics/
 ||files.userlink.ai/public/tracking.js
 ||api.faphouse.com^$ping

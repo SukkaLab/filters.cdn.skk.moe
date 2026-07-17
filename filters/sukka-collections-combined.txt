@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Fri, 17 Jul 2026 15:39:12 GMT
+! Last modified: Fri, 17 Jul 2026 19:35:37 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202607171521
+!   - Version: 202607171922
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 17 Jul 2026 15:21 UTC
+!   - Last modified: 17 Jul 2026 19:22 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
@@ -17271,7 +17271,7 @@ delfi.lt##+js(aeld, copy)
 /plugins/wp-content-copy-protection^
 /plugins/wp-copy-protect-with-color-design^
 /secure-copy-content-protection-public.css^$css
-*,~tumblr.com,~deviantart.com,~facebook.com,~facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion,~github.com,~qwant.com##section:remove-class(image-copy-protection)
+*,~tumblr.com,~deviantart.com,~facebook.com,~facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion##section:remove-class(image-copy-protection)
 respublika.lt#?#[class^=com_]:style(user-select: unset !important; -webkit-user-select: unset !important; -moz-user-select: unset !important)
 hirunews.lk,ada.lk#?#body:style(user-select: unset !important; -webkit-user-select: unset !important; -moz-user-select: unset !important)
 ||laisvadienis.lt^$inline-script
