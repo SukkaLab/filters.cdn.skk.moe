@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Fri, 17 Jul 2026 05:25:36 GMT
+! Last modified: Fri, 17 Jul 2026 08:29:06 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.7.43
+!   - Version: 2.1.7.45
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -54920,6 +54920,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||countly.
 ||countly-
 |piwik.
+||franken-analytics.makeup.global^
 ||l.ovhcloud.com^
 ||mtag-*.wedevs.com^
 ||h2tcbox.baidu.com^
@@ -153929,6 +153930,8 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||grizly.*/metrics/
+||assets.mediadelivery.net/rum.js
 ipay.ztgame.com##+js(prevent-fetch, beacon.ztgame.com)
 ||sephora.com/js/ufe/isomorphic/thirdparty/fp.min.js
 ||celebtattler.com/world/cache/analytics.js
@@ -159685,7 +159688,6 @@ d4?appid*type*
 ||logs.gshopper.com^
 ||airlytics.airlock.twcmobile.weather.com^
 ||track.midway.run^
-||tdid.m.qq.com^
 ||d.reddit.com^
 ||splendapps.com/aid.php
 ||clog.mirrativ.com^

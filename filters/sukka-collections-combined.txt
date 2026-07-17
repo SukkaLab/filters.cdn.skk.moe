@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Fri, 17 Jul 2026 05:25:36 GMT
+! Last modified: Fri, 17 Jul 2026 08:29:06 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202607170512
+!   - Version: 202607170811
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 17 Jul 2026 05:12 UTC
+!   - Last modified: 17 Jul 2026 08:11 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
@@ -31,7 +31,7 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 💊 Dandelion Sprout's Anti-Malware List
 !   - URL: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout's%20Anti-Malware%20List.txt
-!   - Version: 09July2026v2
+!   - Version: 17July2026v1
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 🛃 Anti-'Adoptables and Artsite NFTs' List
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/AntiAdoptablesList.txt
@@ -15963,6 +15963,17 @@ drvhub.net##.driver-item__install
 -mac-install.github.io/.github/home.html|$doc,popup
 -windows-download.github.io/.github/home.html|$doc,popup
 .github.io/.github/?offer=$doc,popup
+||disk-director.github.io^$all
+||zaffersnouty.com^$all
+||sannapacewiczxgogi.github.io^$all
+||core-steady-pack.github.io^$all
+||cootercredit.com^$all
+||flowrdo.com^$all
+||softgot.net^$all
+||techrxv.com^$all
+-director-data-recovery.github.io/.github^$all
+||katukaposole.com^$all
+||fleecykobird.com^$all
 ||151.243.18.53^$all
 ||185.100.157.222^$all
 ||185.107.74.103^$all
