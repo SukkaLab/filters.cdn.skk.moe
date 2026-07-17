@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Fri, 17 Jul 2026 19:35:37 GMT
+! Last modified: Fri, 17 Jul 2026 23:10:14 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Fri, 17 Jul 2026 12:10:52 +0000
+!   - Last modified: Fri, 17 Jul 2026 19:37:30 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Thu, 16 Jul 2026 10:21:37 +0000
@@ -6980,13 +6980,15 @@ khaddavi.net,lokerwfh.net##+js(nowoif, _blank)
 ||ppcnqq.com^
 ||snhjsbs.shop^
 ||w0of-woof.com^
-upfilesgo.com,upfion.com,upfiles.app,upfiles-urls.com##fieldset, .faqs, footer
+@@*$ghide,domain=upfilesgo.com|upfion.com|upfiles.app|upfiles-urls.com
+@@||vhit.io/scripts/vhit.js$script,domain=upfilesgo.com|upfion.com|upfiles.app|upfiles-urls.com
+upfilesgo.com,upfion.com,upfiles.app,upfiles-urls.com##fieldset, .faqs, footer, .features
+upfilesgo.com,upfion.com,upfiles.app,upfiles-urls.com##.content:has(h2)
 upfilesgo.com,upfion.com,upfiles.app,upfiles-urls.com##+js(aeld, DOMContentLoaded, history.go)
 upfilesgo.com,upfion.com,upfiles.app,upfiles-urls.com##+js(aeld, click, shouldOpenPopUp)
 upfilesgo.com,upfion.com,upfiles.app,upfiles-urls.com##+js(set, blurred, false)
-@@||vhit.io/scripts/vhit.js$script,domain=upfilesgo.com|upfion.com|upfiles.app|upfiles-urls.com
-@@*$ghide,domain=upfilesgo.com|upfion.com|upfiles.app|upfiles-urls.com
 upfilesgo.com,upfion.com,upfiles.app,upfiles-urls.com##+js(no-fetch-if, method:HEAD)
+upfilesgo.com,upfion.com,upfiles.app,upfiles-urls.com##+js(aeld, /blur|focus/)
 rentry.co##article:has(#download-your-archive-file)
 ||sharecube.pro^$all
 ||flyshare.cfd^$all
