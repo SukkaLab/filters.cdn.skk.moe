@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Thu, 16 Jul 2026 23:12:19 GMT
+! Last modified: Fri, 17 Jul 2026 05:25:36 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,19 +8,19 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Thu, 16 Jul 2026 16:35:10 +0000
+!   - Last modified: Thu, 16 Jul 2026 22:14:27 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Thu, 16 Jul 2026 10:21:37 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Thu, 16 Jul 2026 10:54:21 +0000
+!   - Last modified: Fri, 17 Jul 2026 02:33:43 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
 !   - Last modified: Thu, 16 Jul 2026 16:35:10 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Thu, 16 Jul 2026 10:38:05 +0000
+!   - Last modified: Fri, 17 Jul 2026 02:05:50 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
 !   - Last modified: Tue, 07 Jul 2026 15:53:20 +0000
@@ -30,7 +30,7 @@
 !   - Last modified: Thu, 16 Jul 2026 06:27:05 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
-!   - Last modified: Thu, 16 Jul 2026 11:54:25 +0000
+!   - Last modified: Thu, 16 Jul 2026 20:45:32 +0000
 ! --------------------------------------------------------------
 ! uBlock filters https://ublockorigin.pages.dev/filters/filters.min.txt
 *_ad_$media,domain=youtube.com,3p
@@ -3889,7 +3889,7 @@ duden.de##[id*="billboard"]
 duden.de##.tabloid__side-column
 duden.de##body:style(margin-top: 0px !important;)
 @@||duden.de^$ghide
-duden.de##+js(aeld, , adsbygoogle)
+duden.de##+js(aeld, , /adsbygoogle|initDetection/)
 faresgame.com##+js(aopr, adBlockDetected)
 shemalepower.xyz##+js(nobab)
 shemalepower.xyz##+js(nowoif)
@@ -11485,8 +11485,8 @@ mp4hentai.com###custom_html-5
 hentaihd.net##.active-item
 nypost.com##img[src$="/knewz_300x250.png"]:upward(.widget_text)
 nypost.com##.entry-content > .nyp-video-player
-decider.com,nypost.com,pagesix.com##+js(rmnt, script, parentNode.removeChild)
-decider.com,nypost.com,pagesix.com##+js(acs, atob, parentNode.removeChild)
+decider.com,nypost.com,pagesix.com,the-sun.com,thescottishsun.co.uk,thesun.co.uk,thesun.ie##+js(rmnt, script, parentNode.removeChild)
+decider.com,nypost.com,pagesix.com,the-sun.com,thescottishsun.co.uk,thesun.co.uk,thesun.ie##+js(acs, atob, parentNode.removeChild)
 xmegadrive.com##+js(set, flashvars.adv_pause_html, '')
 xmegadrive.com##.table
 nsfwmonster.com##+js(aeld, getexoloader)
@@ -19092,7 +19092,6 @@ blisseyhusbands.com##+js(rmnt, script, deblocker)
 @@*$ghide,domain=countrychord.com|wazzuptechph.com|bigbrothergisthub.com|news9.co.ke|techprice.pk|scopenew.com|rokuguru.com|guided.news|techfinancials.co.za|scholarshipexpo.com|dailyparliamenttimes.com|theexchange.africa|thedailyhoosier.com|subhashyadav.org|thenews-chronicle.com|diyprojectslab.com
 obf-io.deobfuscate.io##.self-center.overflow-hidden:has(> img[src="/nexus_banner.webp"]:only-child)
 /^https:\/\/www\.thesun\.co\.uk\/[0-9a-z]{32}\.js$/$script,1p,match-case,domain=thesun.co.uk
-thesun.co.uk##+js(rmnt, script, charCodeAt)
 @@||servedbyadbutler.com/vast.spark$xhr,3p,domain=freerideworldtour.com|meta-video.com
 ||servedbyadbutler.com^$media,3p,redirect=noopmp3-0.1s,domain=freerideworldtour.com|meta-video.com
 x-x-x.tube##+js(aopr, popns)
@@ -29102,6 +29101,7 @@ mashable.com##+js(href-sanitizer, a[href^="https://zdcs.link/"], ?u)
 ||prydwen.gg/api/v1/ping/
 vaughn.live##+js(no-fetch-if, method:POST body:zaraz)
 ||vaughn.live/vsz/
+x.com##+js(trusted-edit-inbound-object, Object.entries, 0, '.log="[{\"_category_\":\"client_event\",\"format_version\":2,\"triggered_on\":0,\"event_info\":\"\",\"message\":\"\",\"items\":[],\"event_namespace\":{\"page\":\"\",\"component\":\"\",\"action\":\"\",\"client\":\"m5\"},\"client_event_sequence_start_timestamp\":0,\"client_event_sequence_number\":0,\"client_app_id\":\"\"}]"')
 telegraph.co.uk##.onward-journey
 /edgemesh.*.js$script,domain=~edgemesh.com|~edgeno.de
 ||safelinkconverter.com^$script,3p
@@ -32014,6 +32014,7 @@ zeilink.net#@#+js(remove-node-text, script, /"\\|\\[ux]|\+\[\]/)
 nicovideo.jp#@#a[href$="_tagrelatedbanner"]
 ||roblox.com.$all,badfilter
 x.com#@#+js(no-xhr-if, /i/api/1.1/flow/viewer.json)
+||x.com/i/api/1.1/flow/viewer.json$badfilter
 ||ads-twitter.com^$badfilter
 myanimelist.net#@#.js-scrollfix-bottom-rel.rightside > div[style]:has(.ad-sas)
 ! uBlock filters – Experimental https://ublockorigin.pages.dev/filters/experimental.min.txt
@@ -37899,8 +37900,6 @@ simplywall.st###root:style(filter: none !important;)
 simplywall.st##+js(spoof-css, #root, filter, blur(6px))
 homegymreview.co.uk##+js(rmnt, script, nocontextmenu)
 homegymreview.co.uk##body * :not(input):not(textarea):style(user-select: text !important; -webkit-touch-callout: text !important; -webkit-user-select: text !important; -moz-user-select: text !important; -khtml-user-select: text !important; -ms-user-select: text !important)
-thesun.co.uk##dialog:remove()
-thesun.co.uk##:is(html,body):style(overflow: unset !important)
 alphacoders.com##+js(trusted-rpnt, script, countdown <= 0, countdown => 0)
 zhuanlan.zhihu.com##.Modal-wrapper
 zhuanlan.zhihu.com##.Modal-backdrop
