@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Filters
-! Last modified: Wed, 15 Jul 2026 05:46:03 GMT
+! Last modified: Fri, 17 Jul 2026 19:58:49 GMT
 ! Expires: 1 hours
 ! Description: The filters from Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -335,6 +335,9 @@ hanime1.com##+js(rpnt, script, location.href = , window.redirect_prevented =)
 hanimeone.me##+js(rpnt, script, location.href = , window.redirect_prevented =)
 javchu.com##+js(rpnt, script, location.href = , window.redirect_prevented =)
 hanime1.me##div:has(> ins)
+hanime1.me##.sidebar-ad-grid
+hanime1.me##.ad-container-observer
+hanime1.me##.sponsor-bg
 post.smzdm.com##.m-contant > .aigc-lowcode-json
 post.smzdm.com##.m-contant::before:style(content: 'This is an LLM generated post thus blocked!' !important; font-size: 32px !important; color: red !important; font-weight: bold !important;)
 av.tube4us.top##a[href*="youtube.com/watch"]
@@ -840,3 +843,4 @@ open-design.ai##.newsletter-popup
 f-droid.org##.banner--danger.banner
 qrator.net##.is-open.l-overlay
 qrator.net##body:style(overflow: unset !important)
+cipherssecurity.com##.csp-overlay

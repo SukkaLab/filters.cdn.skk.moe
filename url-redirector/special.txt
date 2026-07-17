@@ -1,12 +1,12 @@
 ! Title: [sukka] Special Redirects
-! Last modified: Wed, 15 Jul 2026 05:46:03 GMT
+! Last modified: Fri, 17 Jul 2026 19:58:49 GMT
 ! Description: uBlock Origin / AdGuard uritransform rules
 ! Homepage: https://github.com/SukkaW/Filters
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
 
 ! >>>> uBlock Origin
 ||hembed.com$all,uritransform=/([^\/]+)\.hembed\.com/docs.lucaairport.qzz.io\/https\/$1.hembed.com/
-||wdfiles.com$all,uritransform=/([^\/]+)\.wdfiles\.com/docs.lucaairport.qzz.io\/https\/$1.wdfiles.com/
+||wdfiles.com$~doc,~sub_document,uritransform=/([^\/]+)\.wdfiles\.com/docs.lucaairport.qzz.io\/https\/$1.wdfiles.com/
 ||wikidot.com/local--files/$all,uritransform=/([^\/]+)\.wikidot\.com\/local--files\//docs.lucaairport.qzz.io\/https\/$1.wikidot.com\/local--files\//
 ||cdn.scpwiki.com$all,uritransform=/cdn\.scpwiki\.com/docs.lucaairport.qzz.io\/https\/cdn.scpwiki.com/
 ||scp-wiki-cdn.nyc3.cdn.digitaloceanspaces.com$all,uritransform=/scp-wiki-cdn\.nyc3\.cdn\.digitaloceanspaces\.com/docs.lucaairport.qzz.io\/https\/scp-wiki-cdn.nyc3.cdn.digitaloceanspaces.com/
@@ -22,7 +22,7 @@
 
 ! >>>> AdGuard
 ||hembed.com$all,urltransform=/([^\/]+)\.hembed\.com/docs.lucaairport.qzz.io\/https\/$1.hembed.com/
-||wdfiles.com$all,urltransform=/([^\/]+)\.wdfiles\.com/docs.lucaairport.qzz.io\/https\/$1.wdfiles.com/
+||wdfiles.com$~doc,~sub_document,urltransform=/([^\/]+)\.wdfiles\.com/docs.lucaairport.qzz.io\/https\/$1.wdfiles.com/
 ||wikidot.com/local--files/$all,urltransform=/([^\/]+)\.wikidot\.com\/local--files\//docs.lucaairport.qzz.io\/https\/$1.wikidot.com\/local--files\//
 ||cdn.scpwiki.com$all,urltransform=/cdn\.scpwiki\.com/docs.lucaairport.qzz.io\/https\/cdn.scpwiki.com/
 ||scp-wiki-cdn.nyc3.cdn.digitaloceanspaces.com$all,urltransform=/scp-wiki-cdn\.nyc3\.cdn\.digitaloceanspaces\.com/docs.lucaairport.qzz.io\/https\/scp-wiki-cdn.nyc3.cdn.digitaloceanspaces.com/
