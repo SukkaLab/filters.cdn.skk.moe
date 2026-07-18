@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Sat, 18 Jul 2026 05:06:03 GMT
+! Last modified: Sat, 18 Jul 2026 08:10:08 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.7.50
+!   - Version: 2.1.7.51
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -162486,8 +162486,6 @@ usatoday.com##+js(set, gnt.x.adm, )
 ||googletagmanager.com/gtag/js$important,redirect=google-analytics_analytics.js,script,xhr,domain=redstoneonline.jp
 ||sstats.bitdefender.com^$important,redirect=noop.txt,xhr
 ||metrics.streaks.jp^$redirect=noop.txt,xhr
-x.com##+js(set, __INITIAL_STATE__.featureSwitch.defaultConfig.rweb_home_jot_context_enabled.value, false)
-x.com##+js(set, __INITIAL_STATE__.featureSwitch.user.config.rweb_home_jot_context_enabled.value, false)
 ! CJX's Annoyance List https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 /wiseatom/banner/pack_
 /npm/disable-devtool
