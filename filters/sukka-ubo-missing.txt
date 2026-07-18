@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Fri, 17 Jul 2026 23:10:14 GMT
+! Last modified: Sat, 18 Jul 2026 05:06:03 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.7.49
+!   - Version: 2.1.7.50
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -153930,6 +153930,7 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||abs.twimg.com/responsive-web/client-web/loader.HomeTimelineAdblockNotice
 ||na.web.skill.music.a2z.com/api/elementClicked
 ||na.web.skill.music.a2z.com/api/audioAdStarted
 ||moviebite.cc/api/trakt/
@@ -154226,7 +154227,6 @@ play.xumo.com##+js(set-local-storage-item, _xumo_ifaId, $remove$)
 ||civitai.*/api/page-view
 ||civitai.*/api/trpc/track.addView
 ||matome.xvps.jp/beacon
-||s-cdn.anthropic.com/s.js
 ||claude.ai/api/event_logging/
 ||avito.ru/clickstream/events/
 ||mon.avito.ru^
@@ -162486,6 +162486,8 @@ usatoday.com##+js(set, gnt.x.adm, )
 ||googletagmanager.com/gtag/js$important,redirect=google-analytics_analytics.js,script,xhr,domain=redstoneonline.jp
 ||sstats.bitdefender.com^$important,redirect=noop.txt,xhr
 ||metrics.streaks.jp^$redirect=noop.txt,xhr
+x.com##+js(set, __INITIAL_STATE__.featureSwitch.defaultConfig.rweb_home_jot_context_enabled.value, false)
+x.com##+js(set, __INITIAL_STATE__.featureSwitch.user.config.rweb_home_jot_context_enabled.value, false)
 ! CJX's Annoyance List https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 /wiseatom/banner/pack_
 /npm/disable-devtool
