@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sun, 19 Jul 2026 19:35:49 GMT
+! Last modified: Sun, 19 Jul 2026 23:13:36 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,13 +8,13 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sun, 19 Jul 2026 13:41:55 +0000
+!   - Last modified: Sun, 19 Jul 2026 21:03:19 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Sun, 19 Jul 2026 12:39:36 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Sat, 18 Jul 2026 15:22:00 +0000
+!   - Last modified: Sun, 19 Jul 2026 20:53:13 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
 !   - Last modified: Sat, 18 Jul 2026 16:24:03 +0000
@@ -30,7 +30,7 @@
 !   - Last modified: Sun, 19 Jul 2026 03:37:19 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
-!   - Last modified: Sun, 19 Jul 2026 15:58:53 +0000
+!   - Last modified: Sun, 19 Jul 2026 20:52:20 +0000
 ! --------------------------------------------------------------
 ! uBlock filters https://ublockorigin.pages.dev/filters/filters.min.txt
 *_ad_$media,domain=youtube.com,3p
@@ -8819,7 +8819,7 @@ kaystls.site##+js(nostif, AdDetect)
 kaystls.site##.code-block
 fcsnew.net##+js(rmnt, script, adsBlocked)
 liddread.com##+js(rmnt, style, min-height:300px)
-itpassportgokaku.com,legiongamesgod.com,mc-hacks.net,meicho.marcsimz.com##+js(aopw, ai_front)
+gekkonen.net,itpassportgokaku.com,legiongamesgod.com,mc-hacks.net,meicho.marcsimz.com##+js(aopw, ai_front)
 adrianoluis.net,animecast.net,armyranger.com,articletz.com,bibliopanda.com,boxylucha.com,chibchat.com,doujinnote.com,duniailkom.com,ebooksyard.com,enciclopediaonline.com,entano.jp,eyalo.com,fotopixel.es,ichberlin.com,ireez.com,keepkoding.com,latribunadeautomocion.es,linemarlin.com,lumpiastudio.com,miaandme.org,mobility.com.ng,mygardening411.com,newstvonline.com,organismes.org,papagiovannipaoloii.altervista.org,rencah.com,riverdesdelatribuna.com.ar,rogoyume.jp,sakpot.com,sarkarinaukry.com,seamanmemories.com,swatalk.com,theorie-musik.de,topperpoint.com,torascripts.org,travel-the-states.com,vozz.vn##+js(aost, String.prototype.charCodeAt, ai_)
 thecakeboutiquect.com##+js(acs, b2a, ai_adb)
 daemon-hentai.com,pawastreams.pro##+js(acs, b2a, ai_adb, /^data:/)
@@ -29123,6 +29123,9 @@ mashable.com##+js(href-sanitizer, a[href^="https://zdcs.link/"], ?u)
 vaughn.live##+js(no-fetch-if, method:POST body:zaraz)
 ||vaughn.live/vsz/
 telegraph.co.uk##.onward-journey
+civitai.com##+js(no-fetch-if, faro.civitai.com)
+||civitai.com/api/internal/pulse
+||civitai.com/api/internal/ping
 /edgemesh.*.js$script,domain=~edgemesh.com|~edgeno.de
 ||safelinkconverter.com^$script,3p
 /adsensebase.js$script
@@ -37955,3 +37958,4 @@ zhuanlan.zhihu.com##.Modal-backdrop
 zhuanlan.zhihu.com##.MobileModal-wrapper
 zhuanlan.zhihu.com##body.WhiteBg-body:style(overflow: auto !important; position: initial !important;)
 zhuanlan.zhihu.com##html:style(overflow: auto !important; padding-right: 0 !important;)
+civitai.com##.dark\:bg-dark-9.dark\:border-dark-4:has([aria-label="Close ad"])
