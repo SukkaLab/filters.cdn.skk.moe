@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Filters
-! Last modified: Fri, 17 Jul 2026 20:11:37 GMT
+! Last modified: Sun, 19 Jul 2026 13:59:44 GMT
 ! Expires: 1 hours
 ! Description: The filters from Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -33,6 +33,7 @@ iplark.com##+js(sukka-defuse-devtools-detector)
 boomio.com##+js(sukka-defuse-devtools-detector)
 djxmaza.in##+js(sukka-defuse-devtools-detector)
 post.smzdm.com##+js(sukka-defuse-devtools-detector)
+dbzy1.com##+js(sukka-defuse-devtools-detector)
 ||tags.news.com.au/prod/adblock/adblock.js
 ###adb-mask
 ||crackle.com/vendor/adex.js
@@ -409,6 +410,7 @@ youtube.com##yt-lockup-view-model:has-text(YouTube featured)
 ||staticfile.org^$all,badfilter
 /edgecastcdn.net$badfilter
 /web-pixels
+/template/vipzy/images/ad.gif
 bad.news##.plyr__video-wrapper:style(width: 100%)
 bad.news##video.my-videos.video-js:style(max-width: 100% !important; max-height: 100% !important)
 /*/__phg/ingest*$all
