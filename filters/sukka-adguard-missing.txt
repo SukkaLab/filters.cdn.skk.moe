@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Tue, 21 Jul 2026 19:55:45 GMT
+! Last modified: Tue, 21 Jul 2026 22:15:17 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Tue, 21 Jul 2026 12:18:14 +0000
+!   - Last modified: Tue, 21 Jul 2026 14:58:30 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Tue, 21 Jul 2026 12:50:54 +0000
@@ -30,7 +30,7 @@
 !   - Last modified: Tue, 21 Jul 2026 12:22:18 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
-!   - Last modified: Mon, 20 Jul 2026 04:03:17 +0000
+!   - Last modified: Tue, 21 Jul 2026 18:36:58 +0000
 ! --------------------------------------------------------------
 ! uBlock filters https://ublockorigin.pages.dev/filters/filters.min.txt
 *_ad_$media,domain=youtube.com,3p
@@ -16705,7 +16705,7 @@ wp.pl,money.pl,o2.pl,parenting.pl,pudelek.pl,gadzetomania.pl,polygamia.pl,dobrep
 pysznosci.pl,fotoblogia.pl,komorkomania.pl,dobreprogramy.pl,autokult.pl,genialne.pl,gadzetomania.pl,polygamia.pl,jastrzabpost.pl,staszownews.pl,kurierostrowiecki.pl,ostrowiec24.info,panoramaplock.pl,7dni.pila.pl##div[class]:has(> style:first-child:has-text(flex: 0 0 100%) + div > div > style:first-child:has-text(flex: 0 0 100%) + div):not(:has([data-st-area^="czyt_dalej"]))
 autokult.pl,komorkomania.pl,fotoblogia.pl,kafeteria.pl,smaczneblogi.pl##div[class]:has(> div[class]:empty + img[src^="https://i.wpimg.pl/"])
 sportowefakty.wp.pl,kafeteria.pl,fitness.wp.pl,o2.pl,abczdrowie.pl##div[class*=" "]:has(> div:first-child > div:first-child:empty):matches-css(z-index: 0):matches-css(position: relative)
-~www.wp.pl,wp.pl,kafeteria.pl,smaczneblogi.pl,o2.pl,forum.kardiolo.pl,money.pl,fotoblogia.pl,parenting.pl,autokult.pl,gadzetomania.pl,komorkomania.pl,polygamia.pl##div[class*=" "]:has(> div:empty):matches-css(z-index: 0):matches-css(position: relative)
+~www.wp.pl,wp.pl,kafeteria.pl,smaczneblogi.pl,o2.pl,forum.kardiolo.pl,money.pl,fotoblogia.pl,parenting.pl,autokult.pl,gadzetomania.pl,komorkomania.pl,polygamia.pl,kobietyhistorii.pl##div[class*=" "]:has(> div:empty):matches-css(z-index: 0):matches-css(position: relative)
 o2.pl,horoskop.wp.pl,pysznosci.pl,www.wp.pl,genialne.pl,abczdrowie.pl,autocentrum.pl,jastrzabpost.pl##div[class]:has(> img[src] ~ div:empty):matches-css(z-index: 0):matches-css(position: relative)
 o2.pl##div[data-testid="homePageView"] > div[style="box-shadow: none;"]:has(> div[data-testid^="ad-placeholder-"])
 o2.pl##section > h2:has-text(Oferty dla Ciebie:)
@@ -16759,6 +16759,7 @@ forum.parenting.pl##aside > div:has(> div:first-child + div:empty + script:last-
 wiadomosci.wp.pl,sportowefakty.wp.pl,pudelek.pl,abczdrowie.pl,kafeteria.pl##div[class]:has(> div:only-child > div:only-child > a:first-child:has(> div:only-child:empty) + div:empty)
 jastrzabpost.pl##div:only-child:has(> div:first-child > div:first-child > a:only-child > img):has(> div:first-child > div:first-child + div:last-child:empty)
 wp.pl,pudelek.pl,benchmark.pl##div[class]:has(> div:first-child > a[class]:only-child > img[src^="https://v.wpimg.pl/"]:only-child):has(> div:first-child + div:last-child:empty)
+kobietyhistorii.pl###bottom-sticky-container
 wp.pl#@#div:matches-css-after(content:/R.*E.*K.*L.*A.*M.*A/):upward(1)
 wp.pl,money.pl##div:has(> a:first-child:has(> div:empty:only-child) + div:empty:last-child):remove()
 wp.pl##div:has(> div:first-child:has(> div:only-child > a > div:empty:only-child) + div:last-child:empty)
@@ -37577,6 +37578,7 @@ bbc.com##+js(nano-stb, viewClickAttributeId)
 patreon.com##+js(trusted-set-local-storage-item, halfSheetAppBannerDismissed, '{"halfSheetAppBannerDismissed":{"expiration":2000000000000,"data":true}}')
 www-liverpoolecho-co-uk.translate.goog,www-themirror-com.translate.goog,www-football-london.translate.goog,www-devonlive-com.translate.goog,www-cornwalllive-com.translate.goog,www-glasgowlive-co-uk.translate.goog,www-kentlive-news.translate.goog,www-essexlive-news.translate.goog,www-lincolnshirelive-co-uk.translate.goog,www-leeds--live-co-uk.translate.goog,www-insider-co-uk.translate.goog##+js(rmnt, script, loc.hostname)
 techcrunch-com.translate.goog##.loading-text:remove-class(loading-text)
+economictimes-indiatimes-com.translate.goog##+js(rmnt, script, var lh = location.host;) 
 xanimu.com,cosxplay.com##^script:has-text(adblock)
 xanimu.com,cosxplay.com##+js(rmnt, script, adblock)
 ||tver.jp/_next/static/chunks/pages/episodes/$script,replace=/e\.openQuestionnaireModal\?\?.+?\[e\.openQuestionnaireModal\,e\.controller\.play/e.controller.play)()}\,[e.controller.play/
@@ -37974,3 +37976,6 @@ zhuanlan.zhihu.com##.MobileModal-wrapper
 zhuanlan.zhihu.com##body.WhiteBg-body:style(overflow: auto !important; position: initial !important;)
 zhuanlan.zhihu.com##html:style(overflow: auto !important; padding-right: 0 !important;)
 civitai.com##.dark\:bg-dark-9.dark\:border-dark-4:has([aria-label="Close ad"])
+dejure.org##+js(set, ad_allowed, true)
+dejure.org#@##AdsDiv
+dejure.org##+js(remove-cookie, adblock_counter)
