@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Wed, 22 Jul 2026 08:45:40 GMT
+! Last modified: Wed, 22 Jul 2026 12:03:33 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -17,7 +17,7 @@
 !   - Last modified: Sun, 19 Jul 2026 20:53:13 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
-!   - Last modified: Sat, 18 Jul 2026 16:24:03 +0000
+!   - Last modified: Wed, 22 Jul 2026 07:14:25 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
 !   - Last modified: Tue, 21 Jul 2026 12:08:37 +0000
@@ -31748,6 +31748,7 @@ hikvision.com##+js(set, pa, {})
 hikvision.com##+js(set, pa.getVisitorId, noopFunc)
 hikvision.com##+js(set, pa.sendEvent, noopFunc)
 trustnet.com##+js(set, googletag.setConfig, noopFunc)
+tmz.com##.ad-header-wrapper:remove()
 ! uBlock filters – Quick fixes https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
 @@||hb.vntsm.com/v4/live/vms/sites/aternos.org/index.js$script,domain=aternos.org
 aternos.org##.header-center:style(margin-top:-5000px !important;)
