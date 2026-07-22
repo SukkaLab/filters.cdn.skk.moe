@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Wed, 22 Jul 2026 19:47:47 GMT
+! Last modified: Wed, 22 Jul 2026 23:17:07 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -30,7 +30,7 @@
 !   - Last modified: Wed, 22 Jul 2026 12:30:04 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
-!   - Last modified: Wed, 22 Jul 2026 15:24:41 +0000
+!   - Last modified: Wed, 22 Jul 2026 17:08:52 +0000
 ! --------------------------------------------------------------
 ! uBlock filters https://ublockorigin.pages.dev/filters/filters.min.txt
 *_ad_$media,domain=youtube.com,3p
@@ -37960,6 +37960,7 @@ docs.paloaltonetworks.com##+js(nostif, ad-block)
 anikaitv.to,anikototv.to##+js(set, console.log, trueFunc)
 anikaitv.to,anikototv.to##+js(set, console.clear, trueFunc)
 megaplay.buzz,vidtube.site##+js(set, devtoolsDetector.launch, noopFunc)
+||vidwish.live/lib/devtools-detector
 elektroda.pl##+js(nostif, typeof loadElement)
 enternity.gr##+js(trusted-replace-argument, document.getElementById, 0, json:"header", condition, /^[A-Za-z]{12}$/)
 cografyahocasi.com##+js(acs, document.addEventListener, preventDefault, /^data:text\/javascript/)
