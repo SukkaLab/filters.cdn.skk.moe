@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Fri, 24 Jul 2026 11:56:05 GMT
+! Last modified: Fri, 24 Jul 2026 15:43:55 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.7.96
+!   - Version: 2.1.7.99
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -153437,6 +153437,8 @@ zmail.mtrl.me$image
 /^https?:\/\/(?!assets|script|static)(?:[0-9a-z]{10,13}|[0-9a-z]{6})\.[0-9A-Za-z.\-_]+\/(?=[0-9a-z+\/\-]*[A-Z])[0-9A-Za-z+\/\-]{80,106}$/$match-case,script,~3p
 /^https:\/\/cs\d{3}\.\w+\.com\/cscript\/\d{3}\/[\w\d]+\.js$/$script,3p,match-case
 /.well-known/private-click-measurement
+/internal-stats-lite/p.php?
+/internal-stats/pixel/*
 /libtrc/tr5?type=*pixel*
 /code/e.js|$~3p
 .js?tg=$~3p
@@ -153933,6 +153935,8 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||vsonic.click/api/views/track
+||xcafe.com/track/impression?
 ||archive.org/includes/athena.js
 ||iportal.ru/static/mediadash/tracker.iife.min.js
 ||streamsports99.su/assets/trackingManager.*.js
@@ -160139,6 +160143,7 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=saturn.de
 @@||metrics.us.playstation.com/b/ss/
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
+@@||googletagmanager.com/gtm.js$domain=hokkaido-np.co.jp
 @@||shopify.com/authentication/$permissions=private-state-token-redemption=()
 ||online.spsglobal.com^$badfilter
 @@||an.gr-wcon.com/script/$domain=chipstore.de

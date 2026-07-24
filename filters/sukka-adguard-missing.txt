@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Fri, 24 Jul 2026 11:56:05 GMT
+! Last modified: Fri, 24 Jul 2026 15:43:55 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -27,7 +27,7 @@
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Thu, 23 Jul 2026 16:40:59 +0000
+!   - Last modified: Fri, 24 Jul 2026 13:01:50 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
 !   - Last modified: Fri, 24 Jul 2026 08:44:27 +0000
@@ -32767,6 +32767,7 @@ sogeti.com##+js(trusted-set-cookie, ConsentCookie, 'required:1,functional:1,anal
 transferxl.com##+js(trusted-set-cookie, txl_consent_status, functional, , , domain, transferxl.com)
 20min.ch##+js(trusted-set-cookie, OptanonConsent, groups=C0001%3A1%2CC0002%3A0%2CC0003%3A1%2CC0004%3A0%2CC0005%3A1%2CV2STACK42%3A0, , , domain, 20min.ch)
 20min.ch##+js(trusted-set-cookie, OptanonAlertBoxClosed, $currentDate$)
+20min.ch##+js(trusted-set-cookie, eupubconsent-v2, CQn0VdgQn0VdgAcABBDECoFgAAAAAEPgAAQ4L4JB_C7dbWFD-DZ3aLokeYwP99hBIsQhAAaAAmAFTBOQ4IQCw0EYBASAFCACGAIAo3RBIAJkEABEAUCAIIgFIQBEAAwQoBAKAABAgAERAgBACAgCCIAAUQAIAAANAkUAmAiAKYKEWEAgwIAACACBAAABAACAAQMACEAwBBAAAQIAQKBAgwJAuAKBAAEAARgAAAAAAAAAIAAAQAAAoACAACgABCAAEAAAAAAAAAAAAQAAAAAAAAACBAIAAAAAAEAEF5AATBQqIICiIBAgEBACBAAIKwgAgEAQAAJAAQAAJggIcAIAKKCJAAAAAAAAAAAAQYAAgAAEAAQiACAAAEAIEAAQAAYAEAAEAAAgAAAAoQAAAAQBAEAAIIAAAAACAKAAQIQAEAAALCAAIAAAFABAAEAAAABAAAAACAAQAAAAABAAQAAgQAEAXAFAAAAAAAAACAAAAAAAEAAgAAAAEAAAAAAAAgAAAAAAAAAAAEAAAAAAAAAAAAAAAgEAAAAAACACCAAgBNAA.YAAACHwAAAAA.IL4JB_C7dbWFH-DZ3aLokeYwf99hBIsQhAAaAAmAFTBOQ4IQC00EaBASAFCACGAIAo3RBIAJsEAhEAUCAIIgVIQBkAAwQoBAKAABAgAERQgBACAgCCIAAUQAIAAANA0UAmQiAKYKEWEAgwIAAKACBAIABAACAAQMAGEAwBBAAASIAwKBAgwJAuAKBAAEAARgAEAAAAAAAIABAQAAAoACAACgABCAAEAAAAAAAAIAAAQAAAAAAAAACBAIAAAAAAEAEAAA)
 allocine.fr,jeuxvideo.com,ozap.com,le10sport.com,ouest-france.fr,xataka.com##+js(trusted-click-element, button[onclick="Didomi.setUserAgreeToAll();"], , 1800)
 postnl.nl##+js(trusted-set-cookie, CookiePermissionInfo, '{"LastModifiedDate":"1","ExpirationDate":"1","Allow":true,"CategoryPermission":[{"Category":"Cat.8","Permission":true},{"Category":"Cat.9","Permission":true},{"Category":"Cat.10","Permission":false},{"Category":"Cat.12","Permission":false}]}')
 pharmacieauterive-ropars.mesoigner.fr##+js(trusted-set-cookie, userconsent, '{"analytics":false,"youtube":true}')
@@ -33269,6 +33270,7 @@ zitekick.dk,eltechno.dk##+js(trusted-click-element, button[data-dismiss="modal"]
 batteryempire.*##+js(trusted-click-element, button#js-agree-cookies-button, , 1000)
 maxi.rs##+js(trusted-click-element, button[data-testid="cookie-popup-reject"], , 1000)
 lepermislibre.fr##+js(trusted-click-element, button[aria-label="Close"], , 1000)
+metlifeeap.one.telushealth.com##+js(trusted-set-local-storage-item, lw-cookie-policy-preferences, '{"mandatory":true,"functional":false,"analytical":false,"lastModified":$now$}')
 garmin.com,invisalign.*,one4all.ie,osprey.com##+js(trusted-click-element, button#truste-consent-required, , 1000)
 estadao.com.br##+js(trusted-set-cookie, OESP_LGPD_ACEITE, VERDADEIRO)
 elavon.*##+js(trusted-set-cookie, cookiesPolicy, '{"analytics":false,"marketing":false,"functional":false,"essential":true}')
