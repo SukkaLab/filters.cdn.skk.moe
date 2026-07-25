@@ -1,5 +1,5 @@
 ! Title: [sukka] URL Redirector
-! Last modified: Tue, 21 Jul 2026 22:20:07 GMT
+! Last modified: Sat, 25 Jul 2026 19:23:30 GMT
 ! Description: uBlock Origin / AdGuard uritransform rules
 ! Homepage: https://github.com/SukkaW/Filters
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -48,7 +48,7 @@
 ||bhl.scpwikicn.com$all,uritransform=/bhl\.scpwikicn\.com/cdn.jsdelivr.net\/gh\/SCP-CN-Tech\/Black-Highlighter@gh-pages/
 ||raw.githubusercontent.com/ProjectInfinity-X/official_devices/$all,uritransform=/raw\.githubusercontent\.com\/ProjectInfinity-X\/official_devices\/(?:refs\/(?:heads|tags)\/)?([^\/]+)\//cdn.jsdelivr.net\/gh\/ProjectInfinity-X\/official_devices@$1\//,domain=~github.com|~npmjs.com|~githubusercontent.com
 ||raw.githubusercontent.com/Evolution-X/www_gitres/$all,uritransform=/raw\.githubusercontent\.com\/Evolution-X\/www_gitres\/(?:refs\/(?:heads|tags)\/)?([^\/]+)\//cdn.jsdelivr.net\/gh\/Evolution-X\/www_gitres@$1\//,domain=~github.com|~npmjs.com|~githubusercontent.com
-||raw.githubusercontent.com^$image,font,media,object,uritransform=/raw\.githubusercontent\.com\/([^\/]+)\/([^\/]+)\/(?:refs\/(?:heads|tags)\/)?((?!refs\/)[^\/]+)\//cdn.jsdelivr.net\/gh\/$1\/$2@$3\//,domain=~github.com|~npmjs.com|~githubusercontent.com
+||raw.githubusercontent.com^$~script,~xhr,~css,uritransform=/raw\.githubusercontent\.com\/([^\/]+)\/([^\/]+)\/(?:refs\/(?:heads|tags)\/)?((?!refs\/)[^\/]+)\//cdn.jsdelivr.net\/gh\/$1\/$2@$3\//,domain=~github.com|~npmjs.com|~githubusercontent.com
 
 ! >>>> AdGuard
 ||necolas.github.io/normalize.css/*/normalize.css$all,urltransform=/necolas\.github\.io\/normalize\.css\/((?:\d+\.)+\d+)\/normalize\.css/cdn.jsdelivr.net\/npm\/normalize.css@$1\/normalize.css/
@@ -94,4 +94,4 @@
 ||bhl.scpwikicn.com$all,urltransform=/bhl\.scpwikicn\.com/cdn.jsdelivr.net\/gh\/SCP-CN-Tech\/Black-Highlighter@gh-pages/
 ||raw.githubusercontent.com/ProjectInfinity-X/official_devices/$all,urltransform=/raw\.githubusercontent\.com\/ProjectInfinity-X\/official_devices\/(?:refs\/(?:heads|tags)\/)?([^\/]+)\//cdn.jsdelivr.net\/gh\/ProjectInfinity-X\/official_devices@$1\//,domain=~github.com|~npmjs.com|~githubusercontent.com
 ||raw.githubusercontent.com/Evolution-X/www_gitres/$all,urltransform=/raw\.githubusercontent\.com\/Evolution-X\/www_gitres\/(?:refs\/(?:heads|tags)\/)?([^\/]+)\//cdn.jsdelivr.net\/gh\/Evolution-X\/www_gitres@$1\//,domain=~github.com|~npmjs.com|~githubusercontent.com
-||raw.githubusercontent.com^$image,font,media,object,urltransform=/raw\.githubusercontent\.com\/([^\/]+)\/([^\/]+)\/(?:refs\/(?:heads|tags)\/)?((?!refs\/)[^\/]+)\//cdn.jsdelivr.net\/gh\/$1\/$2@$3\//,domain=~github.com|~npmjs.com|~githubusercontent.com
+||raw.githubusercontent.com^$~script,~xhr,~css,urltransform=/raw\.githubusercontent\.com\/([^\/]+)\/([^\/]+)\/(?:refs\/(?:heads|tags)\/)?((?!refs\/)[^\/]+)\//cdn.jsdelivr.net\/gh\/$1\/$2@$3\//,domain=~github.com|~npmjs.com|~githubusercontent.com
