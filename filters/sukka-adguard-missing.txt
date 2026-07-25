@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sat, 25 Jul 2026 11:35:05 GMT
+! Last modified: Sat, 25 Jul 2026 15:18:58 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Fri, 24 Jul 2026 19:50:30 +0000
+!   - Last modified: Sat, 25 Jul 2026 13:43:42 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Fri, 24 Jul 2026 14:15:37 +0000
@@ -27,10 +27,10 @@
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Sat, 25 Jul 2026 04:47:50 +0000
+!   - Last modified: Sat, 25 Jul 2026 13:55:57 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
-!   - Last modified: Sat, 25 Jul 2026 02:08:27 +0000
+!   - Last modified: Sat, 25 Jul 2026 13:46:29 +0000
 ! --------------------------------------------------------------
 ! uBlock filters https://ublockorigin.pages.dev/filters/filters.min.txt
 *_ad_$media,domain=youtube.com,3p
@@ -7522,13 +7522,15 @@ hdhub4u.fail,hubdrive.*,moviesubtitles.click,telegratuita.com##+js(aeld, DOMCont
 filmifen.com##+js(aeld, load, document.body.appendChild(s))
 play.xpass.top##+js(acs, document.createElement, document.head||)
 /\/[0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f]\/invoke\.js/$script,3p
-/\/[0-9a-z]{2}\/[0-9a-f]{32}\.js/$script,xhr,3p,match-case,method=get,to=com,from=ad|ag|app|bet|biz|blogspot.com|blue|boo|by|bz|casa|cash|cc|ceo|cfd|cx|click|cloud|club|com.se|cyou|dad|day|dev|download|forum|fun|gdn|ge|hair|homes|host|how|icu|in|info|is|lat|link|live|lol|ltd|md|me|media|mobi|moe|monster|one|onl|online|page|pe|pk|pro|pw|re|red|rest|sbs|sh|site|skin|space|stream|su|team|tel|to|today|top|tube|tv|wedding|world|ws|xyz|~edu.ag|~edu.by|~edu.bz|~edu.ge|~edu.in|~edu.md|~edu.me|~edu.pe|~edu.pk|~edu.so|~edu.ws|~gov.ag|~gov.by|~gov.bz|~gov.ge|~gov.in|~gov.md|~gov.me|~gov.pk|~gov.sh|~gov.so|~gov.to|~gov.tv|~gov.ws|~palaugov.pw|~proton.me|~twitch.tv
+/\/[0-9a-z]{2}\/[0-9a-f]{32}\.js/$script,xhr,3p,match-case,method=get,to=com,from=ad|ag|app|bet|biz|blogspot.com|blue|boo|by|bz|care|casa|cash|cc|ceo|cfd|cx|click|cloud|club|com.se|cyou|dad|day|dev|download|forum|fun|gdn|ge|hair|homes|host|how|icu|in|info|is|lat|link|live|lol|ltd|md|me|media|mobi|moe|monster|one|onl|online|page|pe|pk|pro|pw|re|red|rest|sbs|sh|site|skin|space|stream|su|team|tel|to|today|top|tube|tv|wedding|world|ws|xyz|~edu.ag|~edu.by|~edu.bz|~edu.ge|~edu.in|~edu.md|~edu.me|~edu.pe|~edu.pk|~edu.so|~edu.ws|~gov.ag|~gov.by|~gov.bz|~gov.ge|~gov.in|~gov.md|~gov.me|~gov.pk|~gov.sh|~gov.so|~gov.to|~gov.tv|~gov.ws|~palaugov.pw|~proton.me|~twitch.tv
 /\/[0-9a-z]{2}\/[0-9a-f]{32}\.js/$script,xhr,3p,match-case,method=get,to=com,from=123av.com|141jav.com|186.2.175.5|1piecemanga.com|4chanarchives.com|69shux.co|85po.com|aguea.net|animepelix.net|animerco.org|anizle.org|apkadmin.com|arakpop.net|asiaflix.net|bigwarp.art|blogspot.com|bookfrom.net|brobokep.org|cartoony.net|cdn9mc.com|clicknupload.cfd|comohoy.com|d-pdf.com|datavaults.co|desiupload.co|downsub.com|europixhd-official.com|filmnudes.com|filmpornoitaliano.org|flacdownloader.com|fmovies24-to.com|fsportshd.net|fztvseries.ng|hdpornflix.com|hentai2read.com|hianime.nz|hubdrive.space|indi-share.com|ironhentai.com|isekaitube.com|japaneseholes.com|javboys.com|javbraze.com|javhdporn.net|jgvdata.com|jpopsingles.eu|kisshentaiz.com|koreaboo.net|koshalworld.com|latinluchas.com|loadedfiles.org|loiflix.shop|madouqu.com|manhwa68.com|media.cm|megadiscografiascompletas.com|movielysium.net|monoschino2.com|moviemaniak.com|movies7.us|myxxgirl.com|nekopoi.care|niganpro.com|niraw.com|njav.com|novizer.com|nsfwgify.com|notunmovie.net|official.coomer.com.co|omegascans.org|onejav.com|onepiece-manga-online.net|pagalfree.com|pagalnew.com|pagalworld.us|pelimeli.com|pelis182.net|photocalltv.org|pixvid.org|player.subespanolvip.com|playmogo.com|plugincrack.com|pokopow.com|poophd.pm|popcornmovies.org|pornhoarder.net|pornincest.net|raw.senmanga.com|relampagomovies.com|seriesgod.com|sexiezpix.com|skidrowcodex.net|splay.id|spotidownloader.com|streampoi.com|surrit.store|sxyprn.com|tapepops.com|thecakeboutiquect.com|thefantazy.com|thepiratebay.org|tokyomotion.net|torbobit.net|torrentgalaxy-official.com|torrentjogos.com.br|towheree.com|uniquestream.net|vidboys.com|vidsonic.net|viduyy.com|xfantazy.com|xmegadrive.com
 /\/[0-9a-f]{32}\.js/$script,xhr,3p,to=com,from=bembed.net|embedv.net|listeamed.net|moflix-stream.day|moflix-stream.fans|v6embed.xyz|vid-guard.com
 /\.\d{1,2}\.[0-9a-f]{32}\.js$/$script,3p,to=js.txxx.tube,from=txxx.com
 /\.[0-9][0-9]?\.[0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f]\.js$/$script,3p,from=txxx.com
-.js|$script,3p,to=~cc|~com|~net|~org|~tw,from=chartgo.com|chessgames.com|safood.tw
-/itv0eg3.js|$script,3p,to=~com|~net|~org
+/^https:\/\/[a-z]{5,}-[a-z]{5,}\.space\/[a-z0-9]{6,8}\.js$/$script,3p,to=space,replace=/^function a0_0x.+//
+.js|$script,3p,to=~cc|~com|~net|~org|~tw,from=chartgo.com|chessgames.com|safood.tw|sqlservertutorial.net
+/8b3ytkn.js|$script,3p,to=~com|~net|~org
+||glade-static.space^
 ||willow-assets.space^
 ||ad-blocker-*.workers.dev^
 ||stat-res.workers.dev^
@@ -8943,6 +8945,7 @@ techcrunch.com##+js(aeld, load, .indexOf)
 techcrunch.com##+js(nostif, .indexOf)
 prydwen.gg##+js(json-prune-fetch-response, ads, , propsToMatch, /runtime-config)
 prydwen.gg##div.custom-banner-header
+tmz.com##+js(rmnt, script, loadAdmiralJs)
 komonews.com,wpgh53.com##+js(json-edit, ..props[?.id=="admiral-initializer"].children)
 athlonsports.com,autoblog.com,bikemag.com,dengarden.com,mensfitness.com,mensjournal.com,parade.com,paradehomeandgarden.com,paradepets.com,pethelpful.com,powder.com,shophq.com,surfer.com,thespun.com,thestreet.com,travelhost.com##+js(json-edit, ..props.children.*[?.key=="admiral-script"])
 athlonsports.com,autoblog.com,bikemag.com,dengarden.com,mensfitness.com,mensjournal.com,parade.com,paradehomeandgarden.com,paradepets.com,pethelpful.com,powder.com,shophq.com,surfer.com,thespun.com,thestreet.com,travelhost.com##+js(trusted-json-edit, ..props.config.ad.enabled=false)
@@ -9554,9 +9557,8 @@ xhamster.fm##+js(acs, pop_init)
 gayxx.net##+js(aopr, adsbyjuicy)
 ||flixbaba.net/utilsminhill.js
 explorecams.com,minecraft.buzz,rarepike.com##+js(aeld, np.detect)
-*,~amazon.*,~apple.com,~bing.com,~chatgpt.com,~claude.ai,~cloudflare.com,~dailymotion.com,~facebook.com,~github.com,~google.com,~hcaptcha.com,~instagram.com,~linkedin.com,~live.com,~microsoft.com,~mozilla.org,~netflix.com,~pinterest.com,~reddit.com,~tiktok.com,~twitch.tv,~twitter.com,~vscode.dev,~whatsapp.com,~wikipedia.org,~x.com,~yahoo.com,~yandex.*,~youtube.com##+js(prevent-clipboard-write, /^mshta |^(bash <<<|curl -kfsSL) \$\(echo.+? base64 -d|^cmd \/c.+?curl .+? http:\/\/(\d+\.){3}\d+.+?(\.exe|\.bat)|^powershell -w hidden .+?iwr http:\/\/(\d+\.){3}\d+.+?run\.exe|powershell .+?iex\(irm .+?(\d+\.){3}\d+|powershell .+?iex\(irm.+?-UseBasicParsing|\\PowerShell\.exe.+? -ep bypass .+ ?\$env:TEMP.+?::new\(\)|^powershell .+? -ep bypass .+?irm\(|^powershell .+?-ep bypass .+?\$env:TEMP.+?\.exe.+?Invoke-WebRequest|^powershell .+?Set-ExecutionPolicy Unrestricted.+?Invoke-WebRequest.+?run\.bat|^powershell -w h -c.+?iwr.+?\.exe.+?\$env:tmp|cmd.+?\/c.+?-nop.+?iex\(irm|(cmd|powershell).+?recaptcha|(cmd|powershell).+?#(Verification|          )|(cmd|powershell).+?          #/msi, domAlert, html|Copy paste blocked - 📋❗🛇 ${text})
-sites.google.com##+js(prevent-clipboard-write, /^mshta |^(bash <<<|curl -kfsSL) \$\(echo.+? base64 -d|^cmd \/c.+?curl .+? http:\/\/(\d+\.){3}\d+.+?(\.exe|\.bat)|^powershell -w hidden .+?iwr http:\/\/(\d+\.){3}\d+.+?run\.exe|powershell .+?iex\(irm .+?(\d+\.){3}\d+|powershell .+?iex\(irm.+?-UseBasicParsing|\\PowerShell\.exe.+? -ep bypass .+ ?\$env:TEMP.+?::new\(\)|^powershell .+? -ep bypass .+?irm\(|^powershell .+?-ep bypass .+?\$env:TEMP.+?\.exe.+?Invoke-WebRequest|^powershell .+?Set-ExecutionPolicy Unrestricted.+?Invoke-WebRequest.+?run\.bat|^powershell -w h -c.+?iwr.+?\.exe.+?\$env:tmp|cmd.+?\/c.+?-nop.+?iex\(irm|(cmd|powershell).+?recaptcha|(cmd|powershell).+?#(Verification|          )|(cmd|powershell).+?          #/msi, domAlert, html|Copy paste blocked - 📋❗🛇 - ${text})
-twitchcdn.net#@#+js(prevent-clipboard-write, /^mshta |^(bash <<<|curl -kfsSL) \$\(echo.+? base64 -d|^cmd \/c.+?curl .+? http:\/\/(\d+\.){3}\d+.+?(\.exe|\.bat)|^powershell -w hidden .+?iwr http:\/\/(\d+\.){3}\d+.+?run\.exe|powershell .+?iex\(irm .+?(\d+\.){3}\d+|powershell .+?iex\(irm.+?-UseBasicParsing|\\PowerShell\.exe.+? -ep bypass .+ ?\$env:TEMP.+?::new\(\)|^powershell .+? -ep bypass .+?irm\(|^powershell .+?-ep bypass .+?\$env:TEMP.+?\.exe.+?Invoke-WebRequest|^powershell .+?Set-ExecutionPolicy Unrestricted.+?Invoke-WebRequest.+?run\.bat|^powershell -w h -c.+?iwr.+?\.exe.+?\$env:tmp|cmd.+?\/c.+?-nop.+?iex\(irm|(cmd|powershell).+?recaptcha|(cmd|powershell).+?#(Verification|          )|(cmd|powershell).+?          #/msi, domAlert, html|Copy paste blocked - 📋❗🛇 ${text})
+*,~amazon.*,~apple.com,~bing.com,~chatgpt.com,~claude.ai,~cloudflare.com,~dailymotion.com,~facebook.com,~github.com,~google.com,~hcaptcha.com,~instagram.com,~linkedin.com,~live.com,~microsoft.com,~mozilla.org,~netflix.com,~pinterest.com,~reddit.com,~tiktok.com,~twitch.tv,~twitter.com,~vscode.dev,~whatsapp.com,~wikipedia.org,~x.com,~yahoo.com,~yandex.*,~youtube.com##+js(prevent-clipboard-write, /^mshta |^(bash <<<|curl -kfsSL) \$\(echo.+? base64 -d|^cmd \/c.+?curl .+? http:\/\/(\d+\.){3}\d+.+?(\.exe|\.bat)|^powershell -w hidden .+?iwr http:\/\/(\d+\.){3}\d+.+?run\.exe|powershell .+?iex\(irm .+?(\d+\.){3}\d+|powershell .+?iex\(irm.+?-UseBasicParsing|\\PowerShell\.exe.+? -ep bypass .+ ?\$env:TEMP.+?::new\(\)|^powershell .+? -ep bypass .+?irm\(|^powershell .+?-ep bypass .+?\$env:TEMP.+?\.exe.+?Invoke-WebRequest|^powershell .+?Set-ExecutionPolicy Unrestricted.+?Invoke-WebRequest.+?run\.bat|^powershell -w h -c.+?iwr.+?\.exe.+?\$env:tmp|cmd.+?\/c.+?-nop.+?iex\(irm|(cmd|powershell).+?recaptcha|(cmd|powershell).+?#(Verification|          )|(cmd|powershell).+?          #/msi, domAlert, Copy-paste blocked — 📋🛇❗ ${text})
+sites.google.com##+js(prevent-clipboard-write, /^mshta |^(bash <<<|curl -kfsSL) \$\(echo.+? base64 -d|^cmd \/c.+?curl .+? http:\/\/(\d+\.){3}\d+.+?(\.exe|\.bat)|^powershell -w hidden .+?iwr http:\/\/(\d+\.){3}\d+.+?run\.exe|powershell .+?iex\(irm .+?(\d+\.){3}\d+|powershell .+?iex\(irm.+?-UseBasicParsing|\\PowerShell\.exe.+? -ep bypass .+ ?\$env:TEMP.+?::new\(\)|^powershell .+? -ep bypass .+?irm\(|^powershell .+?-ep bypass .+?\$env:TEMP.+?\.exe.+?Invoke-WebRequest|^powershell .+?Set-ExecutionPolicy Unrestricted.+?Invoke-WebRequest.+?run\.bat|^powershell -w h -c.+?iwr.+?\.exe.+?\$env:tmp|cmd.+?\/c.+?-nop.+?iex\(irm|(cmd|powershell).+?recaptcha|(cmd|powershell).+?#(Verification|          )|(cmd|powershell).+?          #/msi, domAlert, Copy-paste blocked — 📋🛇❗ ${text})
 liveonlinesports.net##+js(acs, document.createElement, dataset.zone)
 /\.liveonlinesports\.net/[a-z0-9]{35}\.js$/$script,1p
 /\.liveonlinesports\.net/[a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9]\.js$/$script
@@ -19443,7 +19445,7 @@ decrypt.day#@#div[class*="content"] center.w-full
 blogcreativos.com##+js(noeval-if, ads)
 ###player div[style$="cursor: pointer; position: absolute; width: 100%; height: 100%; padding: 1rem; z-index: 2147483647;"]
 cryptorank.io##+js(nostif, ..., 300)
-cryptorank.io##tbody > tr:not(.init-scroll):has(a[href*="?"][target="_blank"])
+cryptorank.io##tbody > tr:not(.init-scroll) a[target="_blank"][href*="?"]:has(button)
 cryptorank.io##div[tabindex] > button:has-text(Buy $)
 cryptorank.io##tr.sc-a321a998-0:not(.init-scroll)
 ||api.cryptorank.io/v0/banners^
@@ -23238,6 +23240,7 @@ voyeur-house.org##+js(nowoif)
 kickbd.org##+js(set, HTMLScriptElement.prototype.onerror, undefined)
 kickbd.org##+js(set, __kbAdBait, true)
 thelabyrinth.co.kr##+js(no-fetch-if, method:HEAD)
+vinted.*##div[class^="_ads-module"]
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -32118,7 +32121,7 @@ groupeapocom.com###website_cookies_bar
 @@||cdn.privacy-mgmt.com/unified/wrappermessagingwithoutdetection.js$domain=businessinsider.com,badfilter
 businessinsider.com##.related-posts
 /wrapperMessagingWithoutDetection.js$domain=autosport.com
-pinterest.com##+js(trusted-click-element, xpath://div[@id="__PWS_ROOT__"]/following-sibling::div[@style="z-index: 1000;"]//div[@name="trap-focus"]/div[@role="dialog"]//button[.//div[text()="Reject all"]])
+||sindicateuropol.ro/wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js
 /wp-content/plugins/privacy-policy-popup/*
 yeshinvoice.co.il##.cookie
 kamaze.co.il##.privacy-consent
@@ -32487,6 +32490,8 @@ indonesiabusinesspost.com##+js(trusted-set-local-storage-item, cookieConsent, '{
 tfw.wales##+js(trusted-set-cookie, cookiesjsr, '{"base":false,"functional":false,"google_tag_ads":false,"recaptcha":false,"gtag":false}')
 docs.netbird.io##+js(trusted-click-element, xpath://div[@id="__next"]/div[@class="Toastify"]/following-sibling::div[1]//button[text()="Required only cookies"])
 satualumni.itb.ac.id##+js(trusted-set-local-storage-item, kc_cookie_consent, '{"analytics":false,"functional":false,"marketing":false,"ai":false,"necessary":true,"consentedAt":"$currentISODate$","version":"1.1"}')
+20min.ch##+js(trusted-click-element, #onetrust-consent-sdk button.ot-pc-refuse-all-handler)
+pinterest.com##+js(trusted-click-element, xpath://div[@id="__PWS_ROOT__"]/following-sibling::div[@style="z-index: 1000;"]//div[@name="trap-focus"]/div[@role="dialog"]//button[.//div[text()="Reject all"]])
 dailymail.co.uk,dailymail.com##+js(trusted-click-element, div[data-project="mol-fe-cmp"] button[class*="consent"]:not([class*="reject"]))
 1001games.com,1001hry.cz,1001jeux.fr,1001jocuri.ro,1001jogos.com.br,1001jogos.pt,1001pelit.com,1001spiele.de,auth.hbomax.com,elkspel.nl,gamespot.com,giochixl.it,glamour.com,grajteraz.pl,isladejuegos.com,jatekokxl.hu,mtvuutiset.fi,paixnidiaxl.gr,pushsquare.com,spelo.se,spillespill.no,spilxl.dk,thejournal.ie,thetrainline.com,vkmag.com,zdnet.com##+js(trusted-set-cookie, OptanonAlertBoxClosed, $currentDate$, 1year)
 evaair.com##+js(trusted-set-cookie, _EVAcookieaccept, Y, 1year)
@@ -32766,9 +32771,6 @@ onlia.ca##+js(trusted-set-cookie, CookiesConsent, '{"ad_storage":"denied","analy
 spieljochbahn.at##+js(trusted-set-cookie, omCookieConsent, 'group-1.1,group-3.1,dismiss')
 sogeti.com##+js(trusted-set-cookie, ConsentCookie, 'required:1,functional:1,analytic:0')
 transferxl.com##+js(trusted-set-cookie, txl_consent_status, functional, , , domain, transferxl.com)
-20min.ch##+js(trusted-set-cookie, OptanonConsent, groups=C0001%3A1%2CC0002%3A0%2CC0003%3A1%2CC0004%3A0%2CC0005%3A1%2CV2STACK42%3A0, , , domain, 20min.ch)
-20min.ch##+js(trusted-set-cookie, OptanonAlertBoxClosed, $currentDate$)
-20min.ch##+js(trusted-set-cookie, eupubconsent-v2, CQn0VdgQn0VdgAcABBDECoFgAAAAAEPgAAQ4L4JB_C7dbWFD-DZ3aLokeYwP99hBIsQhAAaAAmAFTBOQ4IQCw0EYBASAFCACGAIAo3RBIAJkEABEAUCAIIgFIQBEAAwQoBAKAABAgAERAgBACAgCCIAAUQAIAAANAkUAmAiAKYKEWEAgwIAACACBAAABAACAAQMACEAwBBAAAQIAQKBAgwJAuAKBAAEAARgAAAAAAAAAIAAAQAAAoACAACgABCAAEAAAAAAAAAAAAQAAAAAAAAACBAIAAAAAAEAEF5AATBQqIICiIBAgEBACBAAIKwgAgEAQAAJAAQAAJggIcAIAKKCJAAAAAAAAAAAAQYAAgAAEAAQiACAAAEAIEAAQAAYAEAAEAAAgAAAAoQAAAAQBAEAAIIAAAAACAKAAQIQAEAAALCAAIAAAFABAAEAAAABAAAAACAAQAAAAABAAQAAgQAEAXAFAAAAAAAAACAAAAAAAEAAgAAAAEAAAAAAAAgAAAAAAAAAAAEAAAAAAAAAAAAAAAgEAAAAAACACCAAgBNAA.YAAACHwAAAAA.IL4JB_C7dbWFH-DZ3aLokeYwf99hBIsQhAAaAAmAFTBOQ4IQC00EaBASAFCACGAIAo3RBIAJsEAhEAUCAIIgVIQBkAAwQoBAKAABAgAERQgBACAgCCIAAUQAIAAANA0UAmQiAKYKEWEAgwIAAKACBAIABAACAAQMAGEAwBBAAASIAwKBAgwJAuAKBAAEAARgAEAAAAAAAIABAQAAAoACAACgABCAAEAAAAAAAAIAAAQAAAAAAAAACBAIAAAAAAEAEAAA)
 allocine.fr,jeuxvideo.com,ozap.com,le10sport.com,ouest-france.fr,xataka.com##+js(trusted-click-element, button[onclick="Didomi.setUserAgreeToAll();"], , 1800)
 postnl.nl##+js(trusted-set-cookie, CookiePermissionInfo, '{"LastModifiedDate":"1","ExpirationDate":"1","Allow":true,"CategoryPermission":[{"Category":"Cat.8","Permission":true},{"Category":"Cat.9","Permission":true},{"Category":"Cat.10","Permission":false},{"Category":"Cat.12","Permission":false}]}')
 pharmacieauterive-ropars.mesoigner.fr##+js(trusted-set-cookie, userconsent, '{"analytics":false,"youtube":true}')
@@ -34523,6 +34525,11 @@ videohelper.com##body:style(-webkit-user-select: text !important; -ms-user-selec
 megatrax.com##.collection-tracks:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important; -webkit-user-drag: auto !important; user-drag: auto !important;)
 fpmmusic.com##+js(aeld, mousedown, , elements, .trackContainer)
 milesofmusik.com##+js(aeld, mousedown, , elements, .fancybox-container)
+javx357.com##+js(rmnt, script, disableRightClick)
+ing-sat.hu##+js(set, document.oncontextmenu, null)
+ing-sat.hu##+js(set, document.onmousedown, null)
+primariasector2.ro##+js(rmnt, script, .blockContextMenu)
+posturi.gov.ro##:root:style(user-select: unset !important)
 @@||socialblade.com^$ghide
 socialblade.com##.cas-container
 socialblade.com##.cas-wide-container
@@ -34580,8 +34587,9 @@ flamecomics.xyz##+js(trusted-set-local-storage-item, adBlockedModal:lastDismiss,
 anizone.to##.h-\[90px\].w-\[728px\]:has(iframe[src^="//ad.a-ads.com/"])
 scmp3.org,soundcloudmp3.org##+js(set, detectAdBlock, noopFunc)
 vaughn.live##+js(trusted-click-element, button#vs_modal_v9_notice_dismiss)
-civitai.red##a[href="/pricing"] img
-civitai.red##div.relative.flex[style="min-height:90px"]:has(> button[aria-label="Close ad"])
+civitai.com,civitai.red##a[href="/pricing"] img
+civitai.com,civitai.red##div.relative.flex[style="min-height:90px"]:has(> button[aria-label="Close ad"])
+civitai.com,civitai.red##+js(trusted-replace-argument, String.prototype.endsWith, 0, , condition, /edit)
 ||holyclock.com^$3p
 ||shomershabes.com^$3p
 ||shomershabes.co.il^$3p
@@ -37988,8 +37996,3 @@ civitai.com##.dark\:bg-dark-9.dark\:border-dark-4:has([aria-label="Close ad"])
 dejure.org##+js(set, ad_allowed, true)
 dejure.org#@##AdsDiv
 dejure.org##+js(remove-cookie, adblock_counter)
-ing-sat.hu##+js(set, document.oncontextmenu, null)
-ing-sat.hu##+js(set, document.onmousedown, null)
-javx357.com##+js(rmnt, script, disableRightClick)
-primariasector2.ro##+js(rmnt, script, .blockContextMenu)
-posturi.gov.ro##:root:style(user-select:unset!important)
