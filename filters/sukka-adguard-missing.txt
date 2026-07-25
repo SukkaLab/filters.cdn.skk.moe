@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sat, 25 Jul 2026 05:24:40 GMT
+! Last modified: Sat, 25 Jul 2026 08:24:53 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -27,10 +27,10 @@
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Fri, 24 Jul 2026 13:01:50 +0000
+!   - Last modified: Sat, 25 Jul 2026 04:47:50 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
-!   - Last modified: Fri, 24 Jul 2026 08:44:27 +0000
+!   - Last modified: Sat, 25 Jul 2026 02:08:27 +0000
 ! --------------------------------------------------------------
 ! uBlock filters https://ublockorigin.pages.dev/filters/filters.min.txt
 *_ad_$media,domain=youtube.com,3p
@@ -33647,7 +33647,6 @@ desktronic.*,dryrobe.com,hallmark.co.uk,hq-germany.com,tepedirect.com,loopearplu
 breeam.nl##+js(trusted-set-cookie, cookieConsent, '{"necessary":"1","statistics":"0","advertising":"0"}', , , reload, 1)
 letec.be##+js(trusted-set-cookie, GDPR_Consent, '{"essential":true,"functional":true,"analytical":false,"advertising":false}')
 smythstoys.com##+js(trusted-click-element, button.ios-modal-cookie, , 1000)
-cotswoldoutdoor.com##+js(trusted-set-cookie, consent_setting, analytics:0|functional:1|marketing:0, , ,reload, 1)
 neonet.pl##+js(trusted-set-local-storage-item, user_cookies_acceptance, '{"necessary":true,"analytics":false,"functional":false,"marketing":false}')
 universcine.com##+js(trusted-set-cookie, COOKIE_CONSENT, '{"technical-cookies":true,"analytics":false,"ads":false}')
 beam.co.uk##+js(trusted-click-element, div.privacy-more-information, , 600)
@@ -37993,3 +37992,4 @@ ing-sat.hu##+js(set, document.oncontextmenu, null)
 ing-sat.hu##+js(set, document.onmousedown, null)
 javx357.com##+js(rmnt, script, disableRightClick)
 primariasector2.ro##+js(rmnt, script, .blockContextMenu)
+posturi.gov.ro##:root:style(user-select:unset!important)
