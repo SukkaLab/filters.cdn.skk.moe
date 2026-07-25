@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sat, 25 Jul 2026 15:18:58 GMT
+! Last modified: Sat, 25 Jul 2026 19:37:35 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,13 +8,13 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sat, 25 Jul 2026 13:43:42 +0000
+!   - Last modified: Sat, 25 Jul 2026 15:52:59 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Fri, 24 Jul 2026 14:15:37 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Wed, 22 Jul 2026 15:23:12 +0000
+!   - Last modified: Sat, 25 Jul 2026 15:54:52 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
 !   - Last modified: Wed, 22 Jul 2026 07:14:25 +0000
@@ -27,10 +27,10 @@
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Sat, 25 Jul 2026 13:55:57 +0000
+!   - Last modified: Sat, 25 Jul 2026 19:20:50 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
-!   - Last modified: Sat, 25 Jul 2026 13:46:29 +0000
+!   - Last modified: Sat, 25 Jul 2026 14:26:49 +0000
 ! --------------------------------------------------------------
 ! uBlock filters https://ublockorigin.pages.dev/filters/filters.min.txt
 *_ad_$media,domain=youtube.com,3p
@@ -9766,10 +9766,11 @@ almelo1.nl##.almelo-ad
 shahied4u.me##+js(rmnt, script, /googlesyndication|adblock|keydown|popundersPerIP/i)
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=player.pl
 player.pl##+js(no-fetch-if, /gaid=, war:noop-vast2.xml)
-jelonka.com##+js(rmnt, script, div.offsetHeight)
 @@||jelonka.com^$ghide
 jelonka.com##.adsbygoogle
 jelonka.com##.kontener-reklam
+||jelonka.com/static/jelonka/js/news-ad-access-gate.js
+jelonka.com##.ad-area
 @@||static5.hsg.com.pl/icons/*/icon.png^$image
 auto-swiat.pl##+js(nostif, consent)
 lamoda.pl##body [class*="REKLAMA"]
@@ -16062,6 +16063,9 @@ seznamzpravy.cz##+js(nostif, 0x)
 @@||seznamzpravy.cz/ui/ui.html$frame,domain=seznamzpravy.cz
 seznamzpravy.cz##+js(ra, style, [style*="background-image: url"], stay)
 seznamzpravy.cz##+js(ra, href, [href*="click?"], stay)
+super.cz##+js(rmnt, script, /AdTop|customElements/)
+super.cz##.ogm-branding-advert + div:has(.js-ad)
+super.cz##.ogm-branding-advert
 proxer.me###stream_message_overlay
 allotech-dz.com##+js(acs, eval, replace)
 ||domain.com/ads.html$frame,3p,redirect=noopframe
@@ -29148,6 +29152,7 @@ civitai.com##+js(no-fetch-if, faro.civitai.com)
 ||civitai.com/api/internal/pulse
 ||civitai.com/api/internal/ping
 ||1shortlink.com/api/v1/full-pages?api_key=*&url=$urlskip=?url -base64,doc
+||jelonka.com/reklamy/track/impressions/
 /edgemesh.*.js$script,domain=~edgemesh.com|~edgeno.de
 ||safelinkconverter.com^$script,3p
 /adsensebase.js$script
@@ -32423,8 +32428,6 @@ pirha.fi##+js(trusted-set-cookie, p_cc, min, 1year)
 dimensione.com##+js(trusted-click-element, button#CybotCookiebotDialogBodyButtonDecline)
 hvr-amazon.my.site.com##+js(trusted-set-cookie, apex__cookiePreferences, Operational)
 bockscornerbrewery.com##+js(trusted-set-cookie, website_cookies_bar, '{"required": true, "optional": false}', 1year)
-vpd.fi##+js(trusted-set-cookie, amcookie_allowed, 1, 1year, , domain, www.vpd.fi)
-vpd.fi##+js(trusted-set-cookie, amcookie_disallowed, recently_viewed_product%2Crecently_viewed_product_previous%2Crecently_compared_product%2Crecently_compared_product_previous%2C_ga%2C_gid%2C_gat, 1year, , domain, www.vpd.fi)
 @@||cmp.pubtech.ai/*/pubtech-cmp-v2*.js$script,domain=everyeye.it
 @@||cmp-assets.pubtech.ai/vendorList/*.json$xhr,domain=everyeye.it
 everyeye.it##+js(trusted-click-element, #pubtech-cmp button[aria-label="Continue without accepting"])
@@ -32492,6 +32495,8 @@ docs.netbird.io##+js(trusted-click-element, xpath://div[@id="__next"]/div[@class
 satualumni.itb.ac.id##+js(trusted-set-local-storage-item, kc_cookie_consent, '{"analytics":false,"functional":false,"marketing":false,"ai":false,"necessary":true,"consentedAt":"$currentISODate$","version":"1.1"}')
 20min.ch##+js(trusted-click-element, #onetrust-consent-sdk button.ot-pc-refuse-all-handler)
 pinterest.com##+js(trusted-click-element, xpath://div[@id="__PWS_ROOT__"]/following-sibling::div[@style="z-index: 1000;"]//div[@name="trap-focus"]/div[@role="dialog"]//button[.//div[text()="Reject all"]])
+makeuseof.com>>##+js(trusted-click-element, button[title="More Options"])
+makeuseof.com>>##+js(trusted-click-element, button.sp_choice_type_REJECT_ALL, , 500)
 dailymail.co.uk,dailymail.com##+js(trusted-click-element, div[data-project="mol-fe-cmp"] button[class*="consent"]:not([class*="reject"]))
 1001games.com,1001hry.cz,1001jeux.fr,1001jocuri.ro,1001jogos.com.br,1001jogos.pt,1001pelit.com,1001spiele.de,auth.hbomax.com,elkspel.nl,gamespot.com,giochixl.it,glamour.com,grajteraz.pl,isladejuegos.com,jatekokxl.hu,mtvuutiset.fi,paixnidiaxl.gr,pushsquare.com,spelo.se,spillespill.no,spilxl.dk,thejournal.ie,thetrainline.com,vkmag.com,zdnet.com##+js(trusted-set-cookie, OptanonAlertBoxClosed, $currentDate$, 1year)
 evaair.com##+js(trusted-set-cookie, _EVAcookieaccept, Y, 1year)
@@ -34590,6 +34595,8 @@ vaughn.live##+js(trusted-click-element, button#vs_modal_v9_notice_dismiss)
 civitai.com,civitai.red##a[href="/pricing"] img
 civitai.com,civitai.red##div.relative.flex[style="min-height:90px"]:has(> button[aria-label="Close ad"])
 civitai.com,civitai.red##+js(trusted-replace-argument, String.prototype.endsWith, 0, , condition, /edit)
+jelonka.com##+js(trusted-set-local-storage-item, jelonka_news_ad_access_gate_first_detected_at, $now$)
+jelonka.com##+js(trusted-set-local-storage-item, jelonka_news_ad_access_gate_soft_dismissed_at, $now$)
 ||holyclock.com^$3p
 ||shomershabes.com^$3p
 ||shomershabes.co.il^$3p
