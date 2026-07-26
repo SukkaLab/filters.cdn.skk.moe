@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sun, 26 Jul 2026 08:39:42 GMT
+! Last modified: Sun, 26 Jul 2026 11:37:07 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -30,7 +30,7 @@
 !   - Last modified: Sat, 25 Jul 2026 19:20:50 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
-!   - Last modified: Sat, 25 Jul 2026 14:26:49 +0000
+!   - Last modified: Sun, 26 Jul 2026 10:47:41 +0000
 ! --------------------------------------------------------------
 ! uBlock filters https://ublockorigin.pages.dev/filters/filters.min.txt
 *_ad_$media,domain=youtube.com,3p
@@ -38004,3 +38004,4 @@ civitai.com##.dark\:bg-dark-9.dark\:border-dark-4:has([aria-label="Close ad"])
 dejure.org##+js(set, ad_allowed, true)
 dejure.org#@##AdsDiv
 dejure.org##+js(remove-cookie, adblock_counter)
+canale-tv.net,cool-tv.net##+js(rmnt, script, .preventDefault(), includes, contextmenu)
