@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Sun, 26 Jul 2026 11:37:07 GMT
+! Last modified: Sun, 26 Jul 2026 15:20:36 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202607261121
+!   - Version: 202607261511
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 26 Jul 2026 11:21 UTC
+!   - Last modified: 26 Jul 2026 15:11 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
@@ -31,7 +31,7 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 💊 Dandelion Sprout's Anti-Malware List
 !   - URL: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout's%20Anti-Malware%20List.txt
-!   - Version: 21July2026v1
+!   - Version: 26July2026v2
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 🛃 Anti-'Adoptables and Artsite NFTs' List
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/AntiAdoptablesList.txt
@@ -15992,6 +15992,8 @@ drvhub.net##.driver-item__install
 ://[2600:3c06::f03c:95ff:fed9:ce5e]^$all
 ://[2600:3c06::f03c:95ff:fedc:7282]^$all
 ://35.71.155.166^$all
+||tgdrive.app^$all
+||tg-drive-bx4f.onrender.com^$all
 ||0network.com^$all
 ||100conversions.com^$all
 ||1tag.ai^$all

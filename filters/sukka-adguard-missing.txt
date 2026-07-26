@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sun, 26 Jul 2026 11:37:07 GMT
+! Last modified: Sun, 26 Jul 2026 15:20:36 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sun, 26 Jul 2026 03:48:09 +0000
+!   - Last modified: Sun, 26 Jul 2026 12:21:47 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Fri, 24 Jul 2026 14:15:37 +0000
@@ -20,7 +20,7 @@
 !   - Last modified: Wed, 22 Jul 2026 07:14:25 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Fri, 24 Jul 2026 19:06:10 +0000
+!   - Last modified: Sun, 26 Jul 2026 12:15:35 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
 !   - Last modified: Tue, 07 Jul 2026 15:53:20 +0000
@@ -9993,6 +9993,7 @@ qmh.*##+js(json-prune-xhr-response, data.header_script data.footer_script data.d
 ||api.viphubss.shop/api/link-rotation/
 ||api.viphubss.shop/api/banner
 ||moneyoyo.com^$3p
+||static.accesstrade.vn^$3p
 streamobs.net##+js(aost, document.createElement, createAgeModal)
 streamobs.net##+js(nowoif, _blank, 1, obj)
 streamobs.net##.modal
@@ -31814,6 +31815,8 @@ web.facebook.com,www.facebook.com##+js(trusted-prevent-dom-bypass, Element.proto
 web.facebook.com,www.facebook.com##+js(trusted-prevent-dom-bypass, Element.prototype.insertAdjacentElement, Function.prototype.toString)
 web.facebook.com,www.facebook.com##+js(trusted-prevent-dom-bypass, Element.prototype.append, JSON.parse)
 web.facebook.com,www.facebook.com##+js(trusted-prevent-dom-bypass, Element.prototype.append, Function.prototype.toString)
+web.facebook.com,www.facebook.com##+js(trusted-prevent-dom-bypass, Element.prototype.prepend, JSON.parse)
+web.facebook.com,www.facebook.com##+js(trusted-prevent-dom-bypass, Element.prototype.prepend, Function.prototype.toString)
 ||static.xx.fbcdn.net/rsrc.php/$script,domain=web.facebook.com|www.facebook.com,replace=/return r instanceof ArrayBuffer/return r.constructor.name==="ArrayBuffer"/
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,3p,redirect=google-ima.js,domain=matthewhotelscience.com,important
 matthewhotelscience.com##+js(nowoif)
