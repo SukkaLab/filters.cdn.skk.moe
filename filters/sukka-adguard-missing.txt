@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sun, 26 Jul 2026 19:38:46 GMT
+! Last modified: Sun, 26 Jul 2026 23:14:08 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -11,10 +11,10 @@
 !   - Last modified: Sun, 26 Jul 2026 12:21:47 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
-!   - Last modified: Fri, 24 Jul 2026 14:15:37 +0000
+!   - Last modified: Sun, 26 Jul 2026 17:02:19 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Sat, 25 Jul 2026 15:54:52 +0000
+!   - Last modified: Sun, 26 Jul 2026 19:14:18 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
 !   - Last modified: Wed, 22 Jul 2026 07:14:25 +0000
@@ -23993,6 +23993,7 @@ cracksmid.com##div[style=""] > center > center
 ||meetu.usd1.party^$doc
 ||fanbox.autos^$all
 ||luxoriahub.shop^$all
+||claude-ai.cyou^$all
 ||webuzz.me^$doc
 ||coup-ling.net^$all
 ||gokinjolove.jp^$all
@@ -29155,6 +29156,7 @@ civitai.com##+js(no-fetch-if, faro.civitai.com)
 ||civitai.com/api/internal/ping
 ||1shortlink.com/api/v1/full-pages?api_key=*&url=$urlskip=?url -base64,doc
 ||jelonka.com/reklamy/track/impressions/
+$uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 /edgemesh.*.js$script,domain=~edgemesh.com|~edgeno.de
 ||safelinkconverter.com^$script,3p
 /adsensebase.js$script
