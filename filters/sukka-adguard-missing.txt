@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sun, 26 Jul 2026 05:41:58 GMT
+! Last modified: Sun, 26 Jul 2026 08:39:42 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sat, 25 Jul 2026 15:52:59 +0000
+!   - Last modified: Sun, 26 Jul 2026 03:48:09 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Fri, 24 Jul 2026 14:15:37 +0000
@@ -19508,6 +19508,7 @@ pimpandhost.com##+js(nano-stb, count)
 @@||cdnjs.cloudflare.com/ajax/libs/videojs-contrib-ads/6.9.0/videojs-contrib-ads.min.js$script,domain=tv.okezone.com
 ||redsky.target.com^$xhr,removeparam=include_sponsored
 target.com##+js(json-prune-fetch-response, data.search.products.[-].sponsored_ad.ad_source, , propsToMatch, url:/plp_search_v2?)
+target.com##+js(json-prune-fetch-response, data_source_modules.*.module_data.search_response.products.[-].sponsored_ad.ad_source, , propsToMatch, /pages/slp)
 target.com##div[class*="overlay"]:has(a[href*="health-policy"])
 target.com##body[style*="overflow"]:style(overflow-y: auto !important)
 animefever.cc##+js(no-xhr-if, googlesyndication)
