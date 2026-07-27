@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Mon, 27 Jul 2026 16:34:53 GMT
+! Last modified: Mon, 27 Jul 2026 19:58:21 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202607271621
+!   - Version: 202607271941
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 27 Jul 2026 16:21 UTC
+!   - Last modified: 27 Jul 2026 19:41 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
@@ -86,7 +86,7 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 🎓 Wikia: Pure Browsing Experience
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/WikiaPureBrowsingExperience.txt
-!   - Version: 02April2024v1-Beta
+!   - Version: 27July2026v1-Beta
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 📱 Staying On The Phone Browser
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/stayingonbrowser/Staying%20On%20The%20Phone%20Browser
@@ -20832,6 +20832,7 @@ fandom.com##.global-footer__section-advertise
 fandom.com##nav.is-community-bar-in .mobile-global-navigation__left
 fandom.com##nav.is-community-bar-in .mobile-global-navigation__community-bar
 fandom.com##div:not([class],[id],[style]):has(> [data-testid^=QuizBanner i])
+fandom.com##.rail-widget-summaries
 ! 📱 Staying On The Phone Browser https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/stayingonbrowser/Staying%20On%20The%20Phone%20Browser
 ###androidAppBanner
 ###AndroidMobileAppBanner
