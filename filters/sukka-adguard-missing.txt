@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sun, 26 Jul 2026 23:14:08 GMT
+! Last modified: Mon, 27 Jul 2026 06:01:34 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sun, 26 Jul 2026 12:21:47 +0000
+!   - Last modified: Mon, 27 Jul 2026 03:21:48 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Sun, 26 Jul 2026 17:02:19 +0000
@@ -27,7 +27,7 @@
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Sat, 25 Jul 2026 19:20:50 +0000
+!   - Last modified: Mon, 27 Jul 2026 00:59:48 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
 !   - Last modified: Sun, 26 Jul 2026 10:47:41 +0000
@@ -23012,6 +23012,7 @@ stereogum.com##+js(trusted-json-edit, .props.pageProps.globalData.publisherFeatu
 @@||stereogum.com^$ghide
 hyperosthemes.org##+js(no-fetch-if, adsbygoogle)
 scloud.ws##article > div[class][style^="text-align:"] > a[href]:not([href*="/"])
+scloud.ws##a[href^="javascript:"]
 purediablo.com##+js(set, nitroAds.abp, true)
 @@||cinewatch.top^$ghide
 nakastream.tv##+js(trusted-json-edit-fetch-response, .adsEnabled=false, propsToMatch, /access)
@@ -34437,6 +34438,7 @@ visualcrossing.com##+js(trusted-set-local-storage-item, vcstate, '{"required":{"
 kkjmk.net##+js(trusted-set-cookie, cookie-consent-v2, '{"necessary":true,"analytical":false,"marketing":false,"functional":true}', 1year)
 hel.fi##+js(trusted-click-element, .hds-cc__target >>> .hds-cc__all-cookies-button)
 finna.fi##+js(trusted-click-element, .js-accept-all, , 1000)
+hornbach.ro##+js(trusted-click-element, #usercentrics-cmp-ui >>> button.uc-deny-button)
 ! uBlock filters – Annoyances https://ublockorigin.pages.dev/filters/annoyances.min.txt
 mimaletadepeliculas.blogspot.com##+js(aopr, document.oncontextmenu)
 mimaletadepeliculas.blogspot.com##+js(acs, document.onselectstart)
