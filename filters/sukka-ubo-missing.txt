@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Mon, 27 Jul 2026 13:22:12 GMT
+! Last modified: Mon, 27 Jul 2026 16:34:53 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.8.8
+!   - Version: 2.1.8.10
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -54920,6 +54920,8 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||countly.
 ||countly-
 |piwik.
+||d3lw7s0briwuoi.cloudfront.net^
+||analytics.sutochno.ru^
 ||athena.archive.org^
 ||s1.bss.2gis.com^
 ||stat.ip.sb^
@@ -153935,6 +153937,9 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
+||wpastra.com/wp-content/plugins/cross-domain-tracker-for-affiliatewp/
+||autoline.link/weblog
+||karte.io/event
 ||api.housefeel.com.tw/api/collect
 ||cdp.nrs.ai/api/ingest
 ||vsonic.click/api/views/track
@@ -160779,6 +160784,7 @@ abema.tv##+js(remove-node-text, script, NREUM)
 @@||frosmo.com/recoApi/$domain=eeva.fi|terve.fi|lily.fi|meillakotona.fi|apu.fi
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics_analytics.js,domain=coolermaster.com
 ||cdn.permutive.app/*-web.js$script,redirect=noop.js,domain=theglobeandmail.com
+@@||xzeepb2clookuppsta001.blob.core.windows.net/comed/src/js/google-analytics.js$domain=secure1.comed.com
 @@||id.flybuys.com.au/*/fingerprint2.min.js
 @@||cdn.cxense.com/cx.cce.js$domain=euractiv.com
 @@||cdn.cxense.com/cx.js$domain=euractiv.com
@@ -161460,8 +161466,8 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 @@||a.klaviyo.com/media/js/onsite/onsite.js$domain=kravebeauty.com
 @@||a.klaviyo.com/onsite/api/*/modules?company_id=$domain=complyfoam.com
 @@||a.klaviyo.com/forms/api/*/full-forms?company_id=$domain=complyfoam.com
-@@||identity.mparticle.com/v*/identify$domain=nbc.com|amcplus.com
-@@||jssdkcdns.mparticle.com/js/v*/*/mparticle.js$domain=nbc.com|amcplus.com
+@@||identity.mparticle.com/v*/identify$domain=nbc.com|amcplus.com|ifc.com
+@@||jssdkcdns.mparticle.com/js/v*/*/mparticle.js$domain=nbc.com|amcplus.com|ifc.com
 @@||googletagmanager.com/gtm.js$domain=square-enix-games.com
 @@||google-analytics.com/analytics.js$domain=square-enix-games.com
 @@||google-analytics.com/plugins/ua/ec.js$domain=square-enix-games.com
