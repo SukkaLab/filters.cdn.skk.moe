@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Tue, 28 Jul 2026 16:15:34 GMT
+! Last modified: Tue, 28 Jul 2026 19:55:21 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -20,14 +20,14 @@
 !   - Last modified: Wed, 22 Jul 2026 07:14:25 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Sun, 26 Jul 2026 12:15:35 +0000
+!   - Last modified: Tue, 28 Jul 2026 12:41:04 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
 !   - Last modified: Tue, 07 Jul 2026 15:53:20 +0000
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Tue, 28 Jul 2026 10:18:50 +0000
+!   - Last modified: Tue, 28 Jul 2026 14:43:11 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
 !   - Last modified: Mon, 27 Jul 2026 16:59:59 +0000
@@ -32073,9 +32073,6 @@ streamcash.to##+js(rmnt, script, /\${''}|body:JSON\.stringify/)
 streamcash.to##div[id]:has(button[onclick*="location.reload()"])
 akirabox.com,akirabox.to,bowfile.com,buzzheavier.com,bzzhr.co,bzzhr.to,datavaults.co,fuckingfast.*,multiup.io,rootz.so,usersdrive.com,vik1ngfile.site,zpaste.net#@#+js(set, Document.prototype.createElement.call, noopFunc)
 zeilink.net#@#+js(remove-node-text, script, /"\\|\\[ux]|\+\[\]/)
-||detour.padovia.it^$badfilter
-||roblox.com.$all,badfilter
-||x.com/i/api/1.1/flow/viewer.json$badfilter
 decompiler.com##+js(set, OffscreenCanvas.prototype.getContext, undefined)
 decompiler.com##+js(nosiif, === false)
 decompiler.com##+js(aost, Element.prototype.removeChild, /blocked|tick/)
@@ -32514,6 +32511,7 @@ satualumni.itb.ac.id##+js(trusted-set-local-storage-item, kc_cookie_consent, '{"
 pinterest.com##+js(trusted-click-element, xpath://div[@id="__PWS_ROOT__"]/following-sibling::div[@style="z-index: 1000;"]//div[@name="trap-focus"]/div[@role="dialog"]//button[.//div[text()="Reject all"]])
 makeuseof.com>>##+js(trusted-click-element, button[title="More Options"])
 makeuseof.com>>##+js(trusted-click-element, button.sp_choice_type_REJECT_ALL, , 500)
+rainews.it##+js(trusted-click-element, button.AvacyOverlay__CloseWithoutConsent)
 dailymail.co.uk,dailymail.com##+js(trusted-click-element, div[data-project="mol-fe-cmp"] button[class*="consent"]:not([class*="reject"]))
 1001games.com,1001hry.cz,1001jeux.fr,1001jocuri.ro,1001jogos.com.br,1001jogos.pt,1001pelit.com,1001spiele.de,auth.hbomax.com,elkspel.nl,gamespot.com,giochixl.it,glamour.com,grajteraz.pl,isladejuegos.com,jatekokxl.hu,mtvuutiset.fi,paixnidiaxl.gr,pushsquare.com,spelo.se,spillespill.no,spilxl.dk,thejournal.ie,thetrainline.com,vkmag.com,zdnet.com##+js(trusted-set-cookie, OptanonAlertBoxClosed, $currentDate$, 1year)
 evaair.com##+js(trusted-set-cookie, _EVAcookieaccept, Y, 1year)
