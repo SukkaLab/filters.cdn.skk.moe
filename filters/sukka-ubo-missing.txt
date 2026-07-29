@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Wed, 29 Jul 2026 09:10:58 GMT
+! Last modified: Wed, 29 Jul 2026 12:21:31 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.8.28
+!   - Version: 2.1.8.29
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -219,6 +219,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||analytics.xxcontent.lol^
 ||aladinia.app^
 ||cdp.customer.io^
 ||cloud.monolytics.app^
@@ -153940,6 +153941,7 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
 @@||nlog.naver.com/n|$domain=search.naver.com|www.naver.com
+||static.danawa.com/globaljs/static/logger_trackEvent.js
 ||hentaihd.net/wp-content/plugins/animehub-insights/assets/js/track.js
 itmedia.co.jp##+js(set-local-storage-item, s_ubid, $remove$)
 online.tokyu-dept.co.jp##+js(set-constant, addProductClickEventToTemplate, '', , asFunction)
