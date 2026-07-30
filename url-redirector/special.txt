@@ -1,5 +1,5 @@
 ! Title: [sukka] Special Redirects
-! Last modified: Mon, 27 Jul 2026 08:48:25 GMT
+! Last modified: Thu, 30 Jul 2026 11:32:08 GMT
 ! Description: uBlock Origin / AdGuard uritransform rules
 ! Homepage: https://github.com/SukkaW/Filters
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -13,7 +13,7 @@
 ||www.wikidot.com/userkarma.php$all,uritransform=/www\.wikidot\.com\/userkarma\.php/docs.lucaairport.qzz.io\/https\/www.wikidot.com\/userkarma.php/
 ||www.wikidot.com/avatar.php$all,uritransform=/www\.wikidot\.com\/avatar\.php/docs.lucaairport.qzz.io\/https\/www.wikidot.com\/avatar.php/
 ||wikidot.com/local--favicon/$all,uritransform=/([^\/]+)\.wikidot\.com\/local--favicon\//docs.lucaairport.qzz.io\/https\/$1.wikidot.com\/local--favicon\//
-||tile.openstreetmap.org^$all,uritransform=/(?:[^.\/]+\.)*tile\.openstreetmap\.org/docs.lucaairport.qzz.io\/https\/tile.openstreetmap.org/
+||tile.openstreetmap.org^$all,uritransform=/(?:[^.\/]+\.)*tile\.openstreetmap\.org/docs.lucaairport.qzz.io\/https\/tile.openstreetmap.org/,domain=~openstreetmap.org
 ||github.com/*/releases/download$all,uritransform=/github\.com\//download.lucaairport.qzz.io\/https\/github.com\//
 ||tiles.windy.com^$all,uritransform=/tiles\.windy\.com/docs.lucaairport.qzz.io\/https\/tiles.windy.com/
 ||ims.windy.com^$all,uritransform=/ims\.windy\.com/docs.lucaairport.qzz.io\/https\/ims.windy.com/
@@ -31,7 +31,7 @@
 ||www.wikidot.com/userkarma.php$all,urltransform=/www\.wikidot\.com\/userkarma\.php/docs.lucaairport.qzz.io\/https\/www.wikidot.com\/userkarma.php/
 ||www.wikidot.com/avatar.php$all,urltransform=/www\.wikidot\.com\/avatar\.php/docs.lucaairport.qzz.io\/https\/www.wikidot.com\/avatar.php/
 ||wikidot.com/local--favicon/$all,urltransform=/([^\/]+)\.wikidot\.com\/local--favicon\//docs.lucaairport.qzz.io\/https\/$1.wikidot.com\/local--favicon\//
-||tile.openstreetmap.org^$all,urltransform=/(?:[^.\/]+\.)*tile\.openstreetmap\.org/docs.lucaairport.qzz.io\/https\/tile.openstreetmap.org/
+||tile.openstreetmap.org^$all,urltransform=/(?:[^.\/]+\.)*tile\.openstreetmap\.org/docs.lucaairport.qzz.io\/https\/tile.openstreetmap.org/,domain=~openstreetmap.org
 ||github.com/*/releases/download$all,urltransform=/github\.com\//download.lucaairport.qzz.io\/https\/github.com\//
 ||tiles.windy.com^$all,urltransform=/tiles\.windy\.com/docs.lucaairport.qzz.io\/https\/tiles.windy.com/
 ||ims.windy.com^$all,urltransform=/ims\.windy\.com/docs.lucaairport.qzz.io\/https\/ims.windy.com/
