@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Fri, 31 Jul 2026 19:56:11 GMT
+! Last modified: Fri, 31 Jul 2026 23:17:16 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Fri, 31 Jul 2026 14:19:47 +0000
+!   - Last modified: Fri, 31 Jul 2026 20:12:24 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Tue, 28 Jul 2026 04:25:07 +0000
@@ -18834,21 +18834,20 @@ erogen.su##+js(aopr, document.dispatchEvent)
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=yallo.tv
 ||adservice.google.com^$script,redirect=noopjs,domain=yallo.tv
 imasdk.googleapis.com##+js(no-fetch-if, secure.adnxs.com/ptv, war:noop-vast4.xml)
+@@*$image,domain=a2zupload.com
+@@||a2zupload.com^$ghide
+@@||googlesyndication.com/pagead/$script,domain=a2zupload.com
+@@||dl.a2zapk.*/getred.php$xhr,domain=a2zapk.*
+@@||tmp.a2zapk.*/js/advertisement/$frame,domain=a2zapk.*
 a2zapk.*##+js(acs, atob, decodeURIComponent)
 a2zapk.*##+js(aopr, AaDetector)
 a2zapk.*##+js(set, notifyMe, noopFunc)
 a2zapk.io##+js(aeld, click, location.href)
+a2zapk.*##+js(acs, $, alertmsg)
+a2zapk.*,a2zupload.com##ins.adsbygoogle
 ||prahmnatured.com^
 ||a2zapk.*/js/notification.js
-@@||a2zupload.com^$ghide
-@@||googlesyndication.com/pagead/$script,domain=a2zupload.com
-@@*$image,domain=a2zupload.com
-a2zapk.*,a2zupload.com##ins.adsbygoogle
-a2zapk.*##+js(acs, $, alertmsg)
-@@||dl.a2zapk.*/getred.php$xhr,domain=a2zapk.*
-@@||tmp.a2zapk.*/js/advertisement/$frame,domain=a2zapk.*
-||googlesyndication.com^$image,redirect=1x1.gif,domain=a2zapk.*
-||googlesyndication.com^$image,redirect=1x1.gif,domain=a2zapk.io
+||googlesyndication.com^$image,redirect=1x1.gif,domain=a2zapk.*|a2zapk.io|a2zapk.dev
 @@||virginmediatelevision.ie/player/$xhr,1p
 @@||virginmediatelevision.ie/includes/js/cookienotice.js.pagespeed.$script,1p
 play.virginmediatelevision.ie##+js(json-prune, avails)
