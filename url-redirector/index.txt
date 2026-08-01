@@ -1,5 +1,5 @@
 ! Title: [sukka] URL Redirector
-! Last modified: Thu, 30 Jul 2026 11:32:08 GMT
+! Last modified: Sat, 01 Aug 2026 11:40:47 GMT
 ! Description: uBlock Origin / AdGuard uritransform rules
 ! Homepage: https://github.com/SukkaW/Filters
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
