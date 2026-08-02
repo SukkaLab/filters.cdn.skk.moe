@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sun, 02 Aug 2026 08:37:40 GMT
+! Last modified: Sun, 02 Aug 2026 11:35:29 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sun, 02 Aug 2026 03:07:30 +0000
+!   - Last modified: Sun, 02 Aug 2026 07:12:01 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Sun, 02 Aug 2026 03:42:41 +0000
@@ -22832,6 +22832,7 @@ borntobefuck.com##+js(rmnt, script, window.open)
 borntobefuck.com##.ads-overlay
 borntobefuck.com##.vast-container
 chatgpt.com##+js(trusted-json-edit, [?.type=="ads"].visibility.status="hidden")
+chatgpt.com##+js(trusted-json-edit, ..suppress_ads=true)
 ourcoincash.xyz,softdevelopp.com##+js(noeval-if, Adblock)
 ||umamianal.vercel.app^$domain=willow.arlen.icu
 willow.arlen.icu##+js(nowoif)
@@ -23276,6 +23277,7 @@ voyeur-house.org##+js(nowoif)
 kickbd.org##+js(set, HTMLScriptElement.prototype.onerror, undefined)
 kickbd.org##+js(set, __kbAdBait, true)
 vinted.*##div[class^="_ads-module"]
+ozbargain.com.au##+js(nostif, OzB.adb)
 nosubapp.com##+js(nostif, detectAdBlock)
 ||nosubapp.com/ad/push
 mlsbd.co##+js(acs, document.addEventListener, window.open)
