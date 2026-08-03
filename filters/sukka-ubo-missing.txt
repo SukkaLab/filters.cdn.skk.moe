@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Mon, 03 Aug 2026 10:07:09 GMT
+! Last modified: Mon, 03 Aug 2026 13:20:14 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.8.47
+!   - Version: 2.1.8.48
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -240,8 +240,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||metrics-web.help^
 ||nehalist.io^
 ||insights.xyba.dev^
-||umami.vidup.to^
-||umami.vidcore.net^
 ||handler.rgstats.com^
 ||identity.treeumapp.net^
 ||umommy.online^
@@ -719,7 +717,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||kapetracking.com^
 ||yatr.ru^
 ||analytics-fe.digital-cloud.medallia.eu^
-||umami.aigenerations.net^
 ||brilliantcollector.com^$3p
 ||flag.lab.amplitude.com^$3p
 ||pop.devil.services^$3p
@@ -54936,7 +54933,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||trk.swipey.me^
 ||evs.segment.complex.com^
 ||r.vares.top^
-||umami.vidfast.
 ||akutagawa.consumer.gopuff.com^
 ||1414.hexa.su^
 ||c.bubutv.top^
@@ -55056,7 +55052,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||pixel-cdp.sberhealth.ru^
 ||static-rmr.reworldmediafactory.com^
 ||cca-lite.coinbase.com^
-||umami.syg.ma^
 ||event.dxmdp.com^
 ||beacon.cdnpure.com^
 ||r.cdnpure.com^
@@ -55719,7 +55714,6 @@ prd.api.bleacherreport.com^
 ||collector.superwall.me^
 ||services.haaretz.com^
 ||plausible.pronouns.cc^
-||umami.subdavis.com^
 ||lptag.liveperson.net^
 ||sks.mrkhub.com^
 ||measuring-pixel-service.alza.cz^
@@ -153517,6 +153511,7 @@ zmail.mtrl.me$image
 /com.snowplowanalytics.$domain=~snowplowanalytics.com
 .com.br/tracking.set^|
 .com.br/cliente/trackRemote^|
+||umami.
 .co/gr?id=
 /api/site/tracking-config/*
 /api/track|$3p,xhr

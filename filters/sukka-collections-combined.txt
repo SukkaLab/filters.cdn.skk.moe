@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Mon, 03 Aug 2026 10:07:09 GMT
+! Last modified: Mon, 03 Aug 2026 13:20:14 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202608030952
+!   - Version: 202608031312
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 03 Aug 2026 09:52 UTC
+!   - Last modified: 03 Aug 2026 13:12 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
@@ -62,7 +62,7 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt
 ! * 🚪 Browse websites without logging in
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/BrowseWebsitesWithoutLoggingIn.txt
-!   - Version: 08October2025v1
+!   - Version: 03August2026v1
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 💡 Pro-LED List
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/Pro-LED%20List.txt
@@ -17396,6 +17396,7 @@ the-dots.com##[class^=ContentPaywall]
 twitch.tv###twilight-sticky-footer-root
 pinterest.*##div[id$=unauth-container] div[data-test-id=pin-closeup-image] > div[style^="cursor: pointer;"]
 pinterest.com##div[style^="opacity:1;"] + div[style="bottom:0;z-index:0"]
+pinterest.*##[data-test-id^=fullPageSignupModal]
 douyin.com###summon-sdk-style + div:not([class], [id])
 douyin.com##script[src*=websdk] + div:not([class], [id])
 /tncms/api/access.js|$script,domain=westernstandard.com
