@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Filters
-! Last modified: Sat, 01 Aug 2026 11:40:47 GMT
+! Last modified: Mon, 03 Aug 2026 03:36:42 GMT
 ! Expires: 1 hours
 ! Description: The filters from Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -35,6 +35,7 @@ djxmaza.in##+js(sukka-defuse-devtools-detector)
 post.smzdm.com##+js(sukka-defuse-devtools-detector)
 dbzy1.com##+js(sukka-defuse-devtools-detector)
 novipnoad.*##+js(sukka-defuse-devtools-detector)
+macwk.com##+js(sukka-defuse-devtools-detector)
 ||tags.news.com.au/prod/adblock/adblock.js
 ###adb-mask
 ||crackle.com/vendor/adex.js
@@ -254,6 +255,7 @@ http://*$app=tv.danmaku.bili
 *:3478$app=tv.danmaku.bili
 /igd.xml$important
 ||biligame.com
+pornhub.com##+js(set, userClogTracking, noopFunc)
 strava.com###map-canvas:style(position: sticky!important; top: 0!important; z-index: 100;)
 strava.com###elevation-profile:style(position: sticky!important; top: 350px!important; z-index: 100; background-color: #fff;  border-bottom: 1px solid #dfdfe8 !important)
 ||cdn.super.com/remote-event-registry.json$xhr
@@ -853,3 +855,4 @@ qrator.net##.is-open.l-overlay
 qrator.net##body:style(overflow: unset !important)
 cipherssecurity.com##.csp-overlay
 sinonjs.org##.VPCarbonAds
+landian.news##.single-activity-ticker

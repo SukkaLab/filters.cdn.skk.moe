@@ -1,5 +1,5 @@
 ! Title: [sukka] Special Redirects
-! Last modified: Sat, 01 Aug 2026 11:40:47 GMT
+! Last modified: Mon, 03 Aug 2026 03:36:43 GMT
 ! Description: uBlock Origin / AdGuard uritransform rules
 ! Homepage: https://github.com/SukkaW/Filters
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -21,8 +21,8 @@
 ||rdr.windy.com^$all,uritransform=/rdr\.windy\.com/docs.lucaairport.qzz.io\/https\/rdr.windy.com/
 ||fourhoi.com^$all,uritransform=/fourhoi\.com/docs.lucaairport.qzz.io\/https\/fourhoi.com/
 ||tiles.strava.com^$all,uritransform=/tiles\.strava\.com/docs.lucaairport.qzz.io\/https\/tiles.strava.com/
-||youjizz.com^$~doc,~frame,uritransform=/([^\/]+)\.youjizz\.com/docs.lucaairport.qzz.io\/https\/$1.youjizz.com/
-||phncdn.com^$~doc,~frame,uritransform=/([^\/]+)\.phncdn\.com/docs.lucaairport.qzz.io\/https\/$1.phncdn.com/
+||youjizz.com^$~doc,~frame,~xhr,uritransform=/([^\/]+)\.youjizz\.com/docs.lucaairport.qzz.io\/https\/$1.youjizz.com/
+||phncdn.com^$~doc,~frame,~xhr,uritransform=/([^\/]+)\.phncdn\.com/docs.lucaairport.qzz.io\/https\/$1.phncdn.com/
 
 ! >>>> AdGuard
 ||hembed.com$all,urltransform=/([^\/]+)\.hembed\.com/docs.lucaairport.qzz.io\/https\/$1.hembed.com/
@@ -41,5 +41,5 @@
 ||rdr.windy.com^$all,urltransform=/rdr\.windy\.com/docs.lucaairport.qzz.io\/https\/rdr.windy.com/
 ||fourhoi.com^$all,urltransform=/fourhoi\.com/docs.lucaairport.qzz.io\/https\/fourhoi.com/
 ||tiles.strava.com^$all,urltransform=/tiles\.strava\.com/docs.lucaairport.qzz.io\/https\/tiles.strava.com/
-||youjizz.com^$~doc,~frame,urltransform=/([^\/]+)\.youjizz\.com/docs.lucaairport.qzz.io\/https\/$1.youjizz.com/
-||phncdn.com^$~doc,~frame,urltransform=/([^\/]+)\.phncdn\.com/docs.lucaairport.qzz.io\/https\/$1.phncdn.com/
+||youjizz.com^$~doc,~frame,~xhr,urltransform=/([^\/]+)\.youjizz\.com/docs.lucaairport.qzz.io\/https\/$1.youjizz.com/
+||phncdn.com^$~doc,~frame,~xhr,urltransform=/([^\/]+)\.phncdn\.com/docs.lucaairport.qzz.io\/https\/$1.phncdn.com/
