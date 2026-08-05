@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Wed, 05 Aug 2026 19:58:54 GMT
+! Last modified: Wed, 05 Aug 2026 23:18:50 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Wed, 05 Aug 2026 12:26:25 +0000
+!   - Last modified: Wed, 05 Aug 2026 17:25:55 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Tue, 04 Aug 2026 15:45:47 +0000
@@ -20,14 +20,14 @@
 !   - Last modified: Sun, 02 Aug 2026 11:29:40 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Mon, 03 Aug 2026 13:51:42 +0000
+!   - Last modified: Wed, 05 Aug 2026 17:21:57 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
 !   - Last modified: Tue, 07 Jul 2026 15:53:20 +0000
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Mon, 03 Aug 2026 16:22:31 +0000
+!   - Last modified: Wed, 05 Aug 2026 15:52:03 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
 !   - Last modified: Mon, 03 Aug 2026 00:38:57 +0000
@@ -217,9 +217,11 @@ web.facebook.com,www.facebook.com##+js(json-prune, require.0.3.0.__bbox.require.
 ||facebook.com/api/graphql/$xhr,replace=/\{"node":\{"role":"SEARCH_ADS"[^\n]+?cursor":[^}]+\}/{}/g,domain=web.facebook.com|www.facebook.com
 ||facebook.com/api/graphql/$xhr,replace=/\{"node":\{"__typename":"MarketplaceFeedAdStory"[^\n]+?"cursor":(?:null|"\{[^\n]+?\}"|[^\n]+?MarketplaceSearchFeedStoriesEdge")\}/{}/g,domain=web.facebook.com|www.facebook.com
 ||facebook.com/api/graphql/$xhr,replace=/\{"node":\{"__typename":"VideoHomeFeedUnitSectionComponent"[^\n]+?"sponsored_data":\{"ad_id"[^\n]+?"cursor":null\}/{}/,domain=web.facebook.com|www.facebook.com
+||static.xx.fbcdn.net/rsrc.php/*.js$script,replace=/"__typename":"SponsoredData"/"__typename":"SponsorData"/g
 web.facebook.com,www.facebook.com##+js(trusted-replace-xhr-response, /\{"node":\{"role":"SEARCH_ADS"[^\n]+?cursor":[^}]+\}/g, {}, /api/graphql)
 web.facebook.com,www.facebook.com##+js(trusted-replace-xhr-response, /\{"node":\{"__typename":"MarketplaceFeedAdStory"[^\n]+?"cursor":(?:null|"\{[^\n]+?\}"|[^\n]+?MarketplaceSearchFeedStoriesEdge")\}/g, {}, /api/graphql)
 web.facebook.com,www.facebook.com##+js(trusted-replace-xhr-response, /\{"node":\{"__typename":"VideoHomeFeedUnitSectionComponent"[^\n]+?"sponsored_data":\{"ad_id"[^\n]+?"cursor":null\}/, {}, /api/graphql)
+web.facebook.com,www.facebook.com##+js(rpnt, script, '/"[a-z0-9]{8}":true,/g', , condition, compat_iframe_token)
 web.facebook.com,www.facebook.com##+js(json-prune, require.0.3.0.__bbox.require.[].3.1.__bbox.result.data.node, require.0.3.0.__bbox.require.[].3.1.__bbox.result.data.node.story.sponsored_data.ad_id)
 web.facebook.com,www.facebook.com##+js(json-prune, require.0.3.0.__bbox.require.[].3.1.__bbox.result.data.marketplace_search.feed_units.edges.[-].node.story.sponsored_data.ad_id)
 web.facebook.com,www.facebook.com##+js(json-prune, require.0.3.0.__bbox.require.[].3.1.__bbox.result.data.viewer.marketplace_feed_stories.edges.[-].node.story.sponsored_data.ad_id)
@@ -6143,9 +6145,6 @@ javtiful.com##[href^="//"][rel="nofollow norefferer noopener"]
 supervideo.*##+js(aopr, AaDetector)
 /tag*.js$script,domain=supervideo.tv|supervideo.one|supervideo.cc
 ||intellipopup.com^$script,redirect=noopjs
-@@||enterinit.com^$ghide
-enterinit.com##.bs-wrap-gdpr-law
-enterinit.com##*::selection:style(background-color:#338FFF!important)
 ||cdn.jsdelivr.net/*/dist/js/wgd-core.min.js$script
 premid.app##+js(nosiif, innerHTML)
 premid.app##+js(nano-sib, clearInterval)
@@ -31969,8 +31968,7 @@ web.facebook.com,www.facebook.com##div[role="complementary"] div[data-visualcomp
 web.facebook.com,www.facebook.com##div[role="complementary"] a[attributionsrc][href^="http"][target="_blank"][role="link"][rel*="noreferrer"]:has(img[src])
 web.facebook.com,www.facebook.com##div[role="complementary"] h3 span[style^="-webkit-box-orient:vertical"]:has-text(/^Sponsored$/)
 web.facebook.com,www.facebook.com##+js(json-prune, require.0.3.0.__bbox.require.[].3.1.__bbox.result.data.serpResponse.results.edges.[-].rendering_strategy.view_model.story.sponsored_data.ad_id)
-web.facebook.com,www.facebook.com##+js(json-edit, .require..node[?.*.__typename=="SponsoredData"])
-web.facebook.com,www.facebook.com##+js(json-edit, ..edges..node[?.*.__typename=="SponsoredData"])
+web.facebook.com,www.facebook.com##+js(json-edit, ..node[?.*.__typename=="SponsoredData"])
 web.facebook.com,www.facebook.com##+js(json-edit, ..nodes.*[?.sponsored_data])
 web.facebook.com,www.facebook.com##+js(jsonl-edit-xhr-response, .data[?.category=="SPONSORED"].node, propsToMatch, /graphql)
 web.facebook.com,www.facebook.com##+js(jsonl-edit-xhr-response, ..node[?.*.__typename=="SponsoredData"], propsToMatch, /graphql)
@@ -31989,6 +31987,20 @@ web.facebook.com,www.facebook.com##+js(trusted-prevent-dom-bypass, Element.proto
 web.facebook.com,www.facebook.com##+js(trusted-prevent-dom-bypass, Element.prototype.before, Function.prototype.toString)
 web.facebook.com,www.facebook.com##+js(trusted-prevent-dom-bypass, Element.prototype.after, JSON.parse)
 web.facebook.com,www.facebook.com##+js(trusted-prevent-dom-bypass, Element.prototype.after, Function.prototype.toString)
+web.facebook.com,www.facebook.com##+js(trusted-prevent-dom-bypass, Node.prototype.appendChild, Object.getOwnPropertyDescriptor)
+web.facebook.com,www.facebook.com##+js(trusted-prevent-dom-bypass, Node.prototype.appendChild, XMLHttpRequest.prototype)
+web.facebook.com,www.facebook.com##+js(trusted-prevent-dom-bypass, Node.prototype.insertBefore, Object.getOwnPropertyDescriptor)
+web.facebook.com,www.facebook.com##+js(trusted-prevent-dom-bypass, Node.prototype.insertBefore, XMLHttpRequest.prototype)
+web.facebook.com,www.facebook.com##+js(trusted-prevent-dom-bypass, Element.prototype.after, Object.getOwnPropertyDescriptor)
+web.facebook.com,www.facebook.com##+js(trusted-prevent-dom-bypass, Element.prototype.after, XMLHttpRequest.prototype)
+web.facebook.com,www.facebook.com##+js(trusted-prevent-dom-bypass, Element.prototype.append, Object.getOwnPropertyDescriptor)
+web.facebook.com,www.facebook.com##+js(trusted-prevent-dom-bypass, Element.prototype.append, XMLHttpRequest.prototype)
+web.facebook.com,www.facebook.com##+js(trusted-prevent-dom-bypass, Element.prototype.before, Object.getOwnPropertyDescriptor)
+web.facebook.com,www.facebook.com##+js(trusted-prevent-dom-bypass, Element.prototype.before, XMLHttpRequest.prototype)
+web.facebook.com,www.facebook.com##+js(trusted-prevent-dom-bypass, Element.prototype.insertAdjacentElement, Object.getOwnPropertyDescriptor)
+web.facebook.com,www.facebook.com##+js(trusted-prevent-dom-bypass, Element.prototype.insertAdjacentElement, XMLHttpRequest.prototype)
+web.facebook.com,www.facebook.com##+js(trusted-prevent-dom-bypass, Element.prototype.prepend, Object.getOwnPropertyDescriptor)
+web.facebook.com,www.facebook.com##+js(trusted-prevent-dom-bypass, Element.prototype.prepend, XMLHttpRequest.prototype)
 ||static.xx.fbcdn.net/rsrc.php/$script,domain=web.facebook.com|www.facebook.com,replace=/return r instanceof ArrayBuffer/return r.constructor.name==="ArrayBuffer"/
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,3p,redirect=google-ima.js,domain=jessicachoosemake.com,important
 jessicachoosemake.com##+js(nowoif)
@@ -32680,6 +32692,7 @@ makeuseof.com>>##+js(trusted-click-element, button.sp_choice_type_REJECT_ALL, , 
 rainews.it##+js(trusted-click-element, button.AvacyOverlay__CloseWithoutConsent)
 vodafone.pt##+js(trusted-set-cookie, OPTOUTCONSENT, 1:1&2:0&3:0&4:0, , , domain, .vodafone.pt)
 alpinclub-berlin.de##+js(trusted-set-cookie, dav-cookie-banner-already-shown, $now$)
+ardushop.ro##+js(trusted-click-element, when-visible:#reject-all-gdpr)
 dailymail.co.uk,dailymail.com##+js(trusted-click-element, div[data-project="mol-fe-cmp"] button[class*="consent"]:not([class*="reject"]))
 1001games.com,1001hry.cz,1001jeux.fr,1001jocuri.ro,1001jogos.com.br,1001jogos.pt,1001pelit.com,1001spiele.de,auth.hbomax.com,elkspel.nl,gamespot.com,giochixl.it,glamour.com,grajteraz.pl,isladejuegos.com,jatekokxl.hu,mtvuutiset.fi,paixnidiaxl.gr,pushsquare.com,spelo.se,spillespill.no,spilxl.dk,thejournal.ie,thetrainline.com,vkmag.com,zdnet.com##+js(trusted-set-cookie, OptanonAlertBoxClosed, $currentDate$, 1year)
 evaair.com##+js(trusted-set-cookie, _EVAcookieaccept, Y, 1year)
