@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Wed, 05 Aug 2026 05:25:29 GMT
+! Last modified: Wed, 05 Aug 2026 09:07:03 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Tue, 04 Aug 2026 23:59:07 +0000
+!   - Last modified: Wed, 05 Aug 2026 06:58:09 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Tue, 04 Aug 2026 15:45:47 +0000
@@ -5063,8 +5063,8 @@ ligainsider.de##+js(acs, $, MutationObserver)
 @@||ligainsider.de^$ghide
 ligainsider.de##.new_add
 ligainsider.de##.mb-md.float-start:has(#ad-rectangle2)
-||ligainsider.de/public/desktop/js/li-probe
-||ligainsider.de/public/desktop/js/li-wall
+||ligainsider.de/public/*/js/li-probe
+||ligainsider.de/public/*/js/li-wall
 ||ligainsider.de/li-probe
 drrtyr.mx##+js(aeld,, adb)
 dirrty.remix.es##.ad_target
@@ -9170,7 +9170,7 @@ consejosytrucos.co,conselhosetruques.com,consiglietrucchi.com,poradyiwskazowki.p
 consejosytrucos.co,conselhosetruques.com,consiglietrucchi.com,poradyiwskazowki.pl,tippsundtricks.co,tips-and-tricks.co,tipsandtricksarab.com,tipsandtricksjapan.com,tipsandtrickskorea.com,tipsenweetjes.nl,trucs-et-astuces.co##^script:has-text(await eval)
 buienalarm.be,buienalarm.nl,meteoradar.co.uk,meteox.com,niederschlagsradar.de,sat24.com,weerplaza.nl,weerslag.nl##^script[src*="html-load.com"]
 buienalarm.be,buienalarm.nl,meteoradar.co.uk,meteox.com,niederschlagsradar.de,sat24.com,weerplaza.nl,weerslag.nl##^script[data-cfasync="false"][nowprocket]
-buienalarm.be,buienalarm.nl,meteoradar.co.uk,meteox.com,niederschlagsradar.de,sat24.com,weerslag.nl##^script:has-text(').join(String.fromCharCode')
+buienalarm.be,buienalarm.nl,meteoradar.co.uk,meteox.com,niederschlagsradar.de,sat24.com,weerslag.nl##^script:has-text(/\)\.join\(String\.fromCharCode|siteActivateScripts/)
 weerplaza.nl##^script:has-text(/:\[?window,/)
 fmradiofree.com,internetradio-horen.de,radio-australia.org,radio-danmark.dk,radio-hrvatska.com,radio-norge.org,radio-osterreich.at##^script[src*="html-load.com"]
 fmradiofree.com,internetradio-horen.de,radio-australia.org,radio-danmark.dk,radio-hrvatska.com,radio-norge.org,radio-osterreich.at##^script[data-cfasync="false"][nowprocket]
@@ -9229,7 +9229,7 @@ melaterevancha.com,resultadostris.com##+js(rmnt, script, await eval)
 autosport.com,insideevs.com,motor1.com,motorsport.com,motorsportjobs.com,motorsportstats.com,rideapart.com##+js(rmnt, script, html-load.com)
 faitsfizzle.fr,fizzlefacts.com,fizzlefakten.de,hechosfizzle.com##+js(rmnt, script, await eval)
 consejosytrucos.co,conselhosetruques.com,consiglietrucchi.com,poradyiwskazowki.pl,tippsundtricks.co,tips-and-tricks.co,tipsandtricksarab.com,tipsandtricksjapan.com,tipsandtrickskorea.com,tipsenweetjes.nl,trucs-et-astuces.co##+js(rmnt, script, await eval)
-buienalarm.be,buienalarm.nl,meteoradar.co.uk,meteox.com,niederschlagsradar.de,sat24.com,weerslag.nl##+js(rmnt, script, ').join(String.fromCharCode')
+buienalarm.be,buienalarm.nl,meteoradar.co.uk,meteox.com,niederschlagsradar.de,sat24.com,weerslag.nl##+js(rmnt, script, /\)\.join\(String\.fromCharCode|siteActivateScripts/)
 weerplaza.nl##+js(rmnt, script, '/:\[?window,/')
 fmradiofree.com,internetradio-horen.de,radio-australia.org,radio-danmark.dk,radio-hrvatska.com,radio-norge.org,radio-osterreich.at##+js(rmnt, script, /\)\.join\(String\.fromCharCode|html-load\.com/)
 gamingbible.com,ladbible.com,sportbible.com,thecontentbible.com,tyla.com,unilad.com##+js(rmnt, script, '"nowprocket"')
@@ -9275,7 +9275,7 @@ mail.yahoo.com##+js(set, AppState.reduxState.features.adshieldAdblockRecovery, f
 mail.yahoo.com##+js(trusted-json-edit-xhr-response, ..adshieldAdblockRecovery=false, propsToMatch, /fetchappbootstrapdata)
 mail.yahoo.com##+js(trusted-json-edit-xhr-response, ..adshieldAdblockRecovery.enabled=false, propsToMatch, /fetchappbootstrapdata)
 www.yahoo.com##+js(prevent-innerHTML, script, /error-report|nowprocket/)
-finance.yahoo.com##+js(rmnt, script, loadRecoveryScripts)
+finance.yahoo.com##+js(rmnt, script, loadRecoveryScripts, excludes, self.__next)
 hk01.com##+js(set, __NEXT_DATA__.runtimeConfig.enableShieldScript, false)
 scrumpoker-online.org##+js(set, Object.prototype._adShieldLoaded, true)
 rome2rio.com##+js(json-edit-fetch-response, .featureFlags.*[?.featureName=="AdShield"], propsToMatch, /configs)
@@ -17719,6 +17719,7 @@ eu-proxy.startpage.com##+js(set, ytInitialPlayerResponse.playerAds, undefined)
 eu-proxy.startpage.com##+js(set, ytInitialPlayerResponse.adPlacements, undefined)
 eu-proxy.startpage.com##+js(set, playerResponse.adPlacements, undefined)
 startpage.com###main > div[style]:not([class]):has(path)
+startpage.com###main > div[data-bvs][data-identifier]
 startpage.com##.search-form-relative-container + div[class^="css-"]:has(div[data-identifier])
 startpage.com##div[data-identifier="exoclick-native-impression"]
 x2download.com##+js(aopr, GeneratorAds)
