@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Thu, 06 Aug 2026 05:30:55 GMT
+! Last modified: Thu, 06 Aug 2026 09:07:32 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.8.66
+!   - Version: 2.1.8.69
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -54915,6 +54915,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||countly.
 ||countly-
 |piwik.
+||api.analytics.dobrosvyaz.com^
 ||tag-v*.kuzen.io^
 ||stats-cdn.polyspeak.ai^
 ||faro.civitai.
@@ -153937,7 +153938,11 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
 @@||nlog.naver.com/n|$domain=search.naver.com|www.naver.com
+||petersenshunting.com/js/convivaAppTracker.js
+||content.osgnetworks.tv/*/content/ga4.js
+||content.osgnetworks.tv/js/global/permutive.js
 ||deltaforcetools.gg/js/trackless-0.0.3.umd.min.js
+||cine.su/api/site-beacon|
 ||ac.cnstrc.com/v2/behavioral_action/
 ||openart.ai/4vu8/
 ||stolicaonego.ru/ajax/stat/
@@ -159097,6 +159102,7 @@ mcp.directory##+js(remove-cookie, dotcom_user)
 ||analytics-sprint.qoqa.com^
 ||analytics.qoqa.ch^
 ||analytics.qoqa.com^
+||tfpodf.ars.appsflyersdk.com^
 ||inapps.appsflyersdk.com^
 ||skadsdk.appsflyersdk.com^
 ||attr.appsflyersdk.com^
@@ -159112,6 +159118,7 @@ dlsdk.appsflyersdk.com^
 ||*launches.appsflyersdk.com^
 ||*conversions.appsflyersdk.com^
 ||*register.appsflyersdk.com^
+||lklfwu-inapps.appsflyersdk.com^
 ||adrevenue.appsflyer.com^
 ||api.appsflyer.com^
 ||api2.appsflyer.com^
@@ -159280,7 +159287,6 @@ dlsdk.appsflyer.com^
 ||wslog-global-dual.cool*cloud.com^
 ||weblogger-wss.cool*cloud.com^
 ||bstream.kzhi.tech^
-||lklfwu-inapps.appsflyersdk.com^
 ||mob2.welltastic-app.com^
 ||amplitude.thepure.app^
 ||amplilab.thepure.app^
