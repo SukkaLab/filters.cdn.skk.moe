@@ -1,5 +1,5 @@
 ! Title: [sukka] URL Redirector
-! Last modified: Fri, 07 Aug 2026 16:58:27 GMT
+! Last modified: Fri, 07 Aug 2026 17:26:48 GMT
 ! Description: uBlock Origin / AdGuard uritransform rules
 ! Homepage: https://github.com/SukkaW/Filters
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -47,9 +47,10 @@
 ||sigma9.scpwikicn.com$all,uritransform=/sigma9\.scpwikicn\.com/cdn.jsdelivr.net\/gh\/SCP-CN-Tech\/sigma9@gh-pages/
 ||bhl.scpwikicn.com$all,uritransform=/bhl\.scpwikicn\.com/cdn.jsdelivr.net\/gh\/SCP-CN-Tech\/Black-Highlighter@gh-pages/
 ||anime-sama.store/img/$all,uritransform=/anime-sama\.store\/img\//cdn.jsdelivr.net\/gh\/Anime-Sama\/IMG@img\//
-||raw.githubusercontent.com/ProjectInfinity-X/official_devices/$all,uritransform=/raw\.githubusercontent\.com\/ProjectInfinity-X\/official_devices\/(?:refs\/(?:heads|tags)\/)?([^\/]+)\//cdn.jsdelivr.net\/gh\/ProjectInfinity-X\/official_devices@$1\//,domain=~github.com|~npmjs.com|~githubusercontent.com
-||raw.githubusercontent.com/Evolution-X/www_gitres/$all,uritransform=/raw\.githubusercontent\.com\/Evolution-X\/www_gitres\/(?:refs\/(?:heads|tags)\/)?([^\/]+)\//cdn.jsdelivr.net\/gh\/Evolution-X\/www_gitres@$1\//,domain=~github.com|~npmjs.com|~githubusercontent.com
+||raw.githubusercontent.com/ProjectInfinity-X/official_devices/$all,uritransform=/raw\.githubusercontent\.com\/ProjectInfinity-X\/official_devices\/(?:refs\/(?:heads|tags)\/)?((?!refs\/)[^\/]+)\//cdn.jsdelivr.net\/gh\/ProjectInfinity-X\/official_devices@$1\//,domain=~github.com|~npmjs.com|~githubusercontent.com
+||raw.githubusercontent.com/Evolution-X/www_gitres/$all,uritransform=/raw\.githubusercontent\.com\/Evolution-X\/www_gitres\/(?:refs\/(?:heads|tags)\/)?((?!refs\/)[^\/]+)\//cdn.jsdelivr.net\/gh\/Evolution-X\/www_gitres@$1\//,domain=~github.com|~npmjs.com|~githubusercontent.com
 ||raw.githubusercontent.com^$~script,~xhr,~css,uritransform=/raw\.githubusercontent\.com\/([^\/]+)\/([^\/]+)\/(?:refs\/(?:heads|tags)\/)?((?!refs\/)[^\/]+)\//cdn.jsdelivr.net\/gh\/$1\/$2@$3\//,domain=~github.com|~npmjs.com|~viewscreen.githubusercontent.com
+||github.com/*/raw/$~script,~xhr,~css,uritransform=/github\.com\/([^\/]+)\/([^\/]+)\/raw\/(?:refs\/(?:heads|tags)\/)?((?!refs\/)[^\/]+)\//cdn.jsdelivr.net\/gh\/$1\/$2@$3\//,domain=~github.com|~npmjs.com|~viewscreen.githubusercontent.com
 
 ! >>>> AdGuard
 ||necolas.github.io/normalize.css/*/normalize.css$all,urltransform=/necolas\.github\.io\/normalize\.css\/((?:\d+\.)+\d+)\/normalize\.css/cdn.jsdelivr.net\/npm\/normalize.css@$1\/normalize.css/
@@ -94,6 +95,7 @@
 ||sigma9.scpwikicn.com$all,urltransform=/sigma9\.scpwikicn\.com/cdn.jsdelivr.net\/gh\/SCP-CN-Tech\/sigma9@gh-pages/
 ||bhl.scpwikicn.com$all,urltransform=/bhl\.scpwikicn\.com/cdn.jsdelivr.net\/gh\/SCP-CN-Tech\/Black-Highlighter@gh-pages/
 ||anime-sama.store/img/$all,urltransform=/anime-sama\.store\/img\//cdn.jsdelivr.net\/gh\/Anime-Sama\/IMG@img\//
-||raw.githubusercontent.com/ProjectInfinity-X/official_devices/$all,urltransform=/raw\.githubusercontent\.com\/ProjectInfinity-X\/official_devices\/(?:refs\/(?:heads|tags)\/)?([^\/]+)\//cdn.jsdelivr.net\/gh\/ProjectInfinity-X\/official_devices@$1\//,domain=~github.com|~npmjs.com|~githubusercontent.com
-||raw.githubusercontent.com/Evolution-X/www_gitres/$all,urltransform=/raw\.githubusercontent\.com\/Evolution-X\/www_gitres\/(?:refs\/(?:heads|tags)\/)?([^\/]+)\//cdn.jsdelivr.net\/gh\/Evolution-X\/www_gitres@$1\//,domain=~github.com|~npmjs.com|~githubusercontent.com
+||raw.githubusercontent.com/ProjectInfinity-X/official_devices/$all,urltransform=/raw\.githubusercontent\.com\/ProjectInfinity-X\/official_devices\/(?:refs\/(?:heads|tags)\/)?((?!refs\/)[^\/]+)\//cdn.jsdelivr.net\/gh\/ProjectInfinity-X\/official_devices@$1\//,domain=~github.com|~npmjs.com|~githubusercontent.com
+||raw.githubusercontent.com/Evolution-X/www_gitres/$all,urltransform=/raw\.githubusercontent\.com\/Evolution-X\/www_gitres\/(?:refs\/(?:heads|tags)\/)?((?!refs\/)[^\/]+)\//cdn.jsdelivr.net\/gh\/Evolution-X\/www_gitres@$1\//,domain=~github.com|~npmjs.com|~githubusercontent.com
 ||raw.githubusercontent.com^$~script,~xhr,~css,urltransform=/raw\.githubusercontent\.com\/([^\/]+)\/([^\/]+)\/(?:refs\/(?:heads|tags)\/)?((?!refs\/)[^\/]+)\//cdn.jsdelivr.net\/gh\/$1\/$2@$3\//,domain=~github.com|~npmjs.com|~viewscreen.githubusercontent.com
+||github.com/*/raw/$~script,~xhr,~css,urltransform=/github\.com\/([^\/]+)\/([^\/]+)\/raw\/(?:refs\/(?:heads|tags)\/)?((?!refs\/)[^\/]+)\//cdn.jsdelivr.net\/gh\/$1\/$2@$3\//,domain=~github.com|~npmjs.com|~viewscreen.githubusercontent.com

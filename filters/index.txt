@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Filters
-! Last modified: Fri, 07 Aug 2026 16:58:26 GMT
+! Last modified: Fri, 07 Aug 2026 17:26:47 GMT
 ! Expires: 1 hours
 ! Description: The filters from Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -170,13 +170,14 @@ www.speedtest.net##+js(set, dataLayer, [])
 ||api.ccsccorp.com/api/dlog/
 ||vercel.com/_stream/external/
 ||app.planhat.com/analytics/
-assets.alicdn.com/g/alilog*$redirect=noop.js
-g.alicdn.com/alilog/$script,redirect=noop.js
-g.alicdn.com/axdata/yunlog*$redirect=noop.js
-g.alicdn.com/dawn/user-tracker*$redirect=noop.js
-g.alicdn.com/sj/securesdk$redirect=noop.js
+||assets.alicdn.com/g/alilog*$redirect=noop.js
+||g.alicdn.com/alilog/$script,redirect=noop.js
+||g.alicdn.com/axdata/yunlog*$redirect=noop.js
+||g.alicdn.com/dawn/user-tracker*$redirect=noop.js
+||g.alicdn.com/sj/securesdk$redirect=noop.js
 ||railway.com/googletag/
 ||railway.com/graphql/internal?q=eventBatchTrack
+||developer.apple.com/assets/metrics/scripts/analytics.js
 ||render.com/pan/api/event
 ||r2cdn.perplexity.ai/js/count/
 www.dnsfilter.com##+js(aopw, window.analytics)
@@ -577,6 +578,7 @@ justauth.cn##+js(set, window._AdBlockInit, true)
 ||acquia.com/ct
 ||v.bytes.media/vs.js$redirect=noop.js
 ||ad*.on.cc^$important
+||accuweather.com/tags/common/body/ad-script
 ||app.moegirl.org.cn/insight-assets/images/20230413-moepad/800x300.png
 ||storage.moegirl.org.cn/console-plus/uploads/2024/02/01/a475bee2aa57da0e65f5341b78ccf551.png
 ||storage.moegirl.org.cn/console-plus/uploads/2024/01/16/b70a27db94200462fd06da4a5ab30b50.jpeg
