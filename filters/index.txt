@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Filters
-! Last modified: Tue, 04 Aug 2026 08:53:02 GMT
+! Last modified: Fri, 07 Aug 2026 14:36:32 GMT
 ! Expires: 1 hours
 ! Description: The filters from Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -55,10 +55,7 @@ pairdrop.net#@#+js(sukka-defuse-service-worker)
 bolt.new#@#+js(sukka-defuse-service-worker)
 stackblitz.com#@#+js(sukka-defuse-service-worker)
 webcontainer.io#@#+js(sukka-defuse-service-worker)
-peer.as##+js(sukka-ephemeral-cache-storage)
-youtube.com##+js(sukka-ephemeral-cache-storage)
-unifi.ui.com##+js(sukka-ephemeral-cache-storage)
-labs.strava.com##+js(sukka-ephemeral-cache-storage)
+*##+js(sukka-ephemeral-cache-storage)
 fandom.com##+js(sukka-defuse-cache-storage)
 ||youtube.com/embed/$3p,frame,redirect=click2load.html
 ||youtube-nocookie.com/embed/$3p,frame,redirect=click2load.html
@@ -133,8 +130,12 @@ lingchenzi.com#@#.category-share
 /*/dns_resolve_backup?*$all,important
 *://223.5.5.5^$important
 *://223.6.6.6^$important
+||223.5.5.5^$important
+||223.6.6.6^$important
 *://203.107.1.*^$important
+||203.107.1.$important
 *://180.76.76.*^$important
+||180.76.76.$important
 *://audio-ak-spotify-com.akamaized.net/*$header=content-range:/\/\d\d\d\d\d\d$/,redirect=noop-0.5s.mp3
 *://audio-akp-quic-spotify-com.akamaized.net/*$header=content-range:/\/\d\d\d\d\d\d$/,redirect=noop-0.5s.mp3
 *://audio-fa.scdn.co/*$header=content-range:/\/\d\d\d\d\d\d$/,redirect=noop-0.5s.mp3
