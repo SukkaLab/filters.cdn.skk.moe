@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Fri, 07 Aug 2026 11:07:34 GMT
+! Last modified: Fri, 07 Aug 2026 15:08:28 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,13 +8,13 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Fri, 07 Aug 2026 07:00:58 +0000
+!   - Last modified: Fri, 07 Aug 2026 12:56:26 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Thu, 06 Aug 2026 14:48:27 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Sat, 01 Aug 2026 04:27:44 +0000
+!   - Last modified: Fri, 07 Aug 2026 12:57:21 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
 !   - Last modified: Sun, 02 Aug 2026 11:29:40 +0000
@@ -8876,7 +8876,7 @@ manhwass.com##+js(trusted-suppress-native-method, Document.prototype.querySelect
 shemaleraw.com,thecustomrom.com,wemove-charity.org##^script:has-text(deblocker)
 shemaleraw.com,thecustomrom.com,wemove-charity.org##+js(rmnt, script, deblocker)
 jnews5.com,kayoanime.com##+js(set, tie.ad_blocker_detector, false)
-animenew.com.br,bgmiesports.in,daotekno.com,idealight.it,journalduweb.org,minutemirror.com.pk,relampagomovies.com,sports-arena.space,techybuff.com,zataz.com##+js(nostif, bait)
+animenew.com.br,bgmiesports.in,daotekno.com,idealight.it,fifties-beat.blogspot.com,journalduweb.org,minutemirror.com.pk,relampagomovies.com,sports-arena.space,techybuff.com,zataz.com##+js(nostif, bait)
 dotesports.com,epicstream.com,fallbrook247.com,feral-heart.com,gamesgames.com,gamerevolution.com,gazettenet.com,girlsgogames.co.uk,insidenova.com,jetztspielen.de,kasvekuvvet.net,leitesculinaria.com,nbcnews.com,notevibes.com,practicalpainmanagement.com,prad.de,progameguides.com,ranker.com,realityblurb.com,ruinmyweek.com,sanangelolive.com,sanfoundry.com,selfhacked.com,siliconera.com,son.co.za,sporcle.com,stealthoptional.com,thesportster.com,upi.com,visualcapitalist.com,wegotthiscovered.com,primagames.com##+js(aopr, googletag)
 audizine.com,blackenterprise.com,cwtv.com,magesy.*,pastes.io##+js(acs, document.createElement, admiral)
 pc-builds.com,today.com,videogamer.com,wrestlinginc.com##+js(set, admiral, noopFunc)
@@ -29390,6 +29390,7 @@ climaaovivo.com.br##+js(nosiif, location.reload)
 ||static.tblcontent.com/*/loader.privacy.js$redirect=noop.js,domain=israelnationalnews.com
 israelnationalnews.com##+js(rmnt, script, loadTaboola)
 igniteseurope.com##+js(no-xhr-if, igniteseurope.com/stats/)
+kick.com##+js(no-fetch-if, litix.io)
 ! uBlock filters – Unbreak https://ublockorigin.pages.dev/filters/unbreak.min.txt
 @@||awstrack.me/*auth.coindesk.com$doc,popup
 @@||awstrack.me/*cmd=ac-inactive-restore$doc,popup
