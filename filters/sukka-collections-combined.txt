@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Sat, 08 Aug 2026 10:51:42 GMT
+! Last modified: Sat, 08 Aug 2026 14:48:52 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202608081041
+!   - Version: 202608081441
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 08 Aug 2026 10:41 UTC
+!   - Last modified: 08 Aug 2026 14:41 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
@@ -74,7 +74,7 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * ➗ Actually Legitimate URL Shortener Tool
 !   - URL: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt
-!   - Version: 4August2026v1
+!   - Version: 8August2026v1
 !   - Homepage: https://github.com/DandelionSprout/adfilt/discussions/163
 ! * 🐊 Imgur: Pure Imagery Experience
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/ImgurPureImageryExperience.txt
@@ -20012,6 +20012,7 @@ $removeparam=pk_vid,doc
 ||xiaohongshu.com^$removeparam=xhsshare,doc
 ||xiaohongshu.com^$removeparam=appuid,doc
 ||xiaohongshu.com^$removeparam=apptime,doc
+||xiaohongshu.com^$removeparam=share_channel,doc
 ||login.afreecatv.com^$removeparam=szFrom
 ||typeform.com^$removeparam=typeform-source
 $removeparam=clickedFromCategory,domain=objectci.com|pieces.com|selected.com|vila.com
@@ -20113,7 +20114,7 @@ $doc,removeparam=method,domain=peacocktv.com
 ||cartoonbrew.com^$removeparam=cbtr
 ||researchgate.net^$doc,removeparam=_tp
 ||bet.com^$removeparam=xrs
-$doc,removeparam=share_id,domain=reddit.com|reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion|sky.it
+$doc,removeparam=share_id,domain=reddit.com|reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion|sky.it|xiaohongshu.com|snapchat.com
 ||xvideos.$doc,removeparam=sxcaf
 $doc,removeparam=iId,domain=reddit.com|reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion
 ||cmswire.com^$doc,removeparam=topic_id
@@ -20419,7 +20420,6 @@ $removeparam=/^ref=thediff\.co$/
 $removeparam=/^ref=underfl0w\.com$/
 ||blu-ray.com^$removeparam=retailerid
 $doc,removeparam=loclid
-||snapchat.com^$removeparam=share_id
 ||snapchat.com^$removeparam=/^timestamp=0$/
 ||ngfiles.com^$removeparam=/^f\d{4,}=$/
 $removeparam=/^has-promotion=$/
