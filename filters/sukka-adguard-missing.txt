@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sun, 09 Aug 2026 07:17:43 GMT
+! Last modified: Sun, 09 Aug 2026 10:53:00 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,13 +8,13 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sun, 09 Aug 2026 02:29:51 +0000
+!   - Last modified: Sun, 09 Aug 2026 09:41:31 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Fri, 07 Aug 2026 15:35:03 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Sat, 08 Aug 2026 07:02:00 +0000
+!   - Last modified: Sun, 09 Aug 2026 05:54:47 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
 !   - Last modified: Sun, 02 Aug 2026 11:29:40 +0000
@@ -7500,8 +7500,6 @@ britannica.com###game:style(height: 100% !important;)
 theverge.com##.duet--homepage--hero > div[class] > div[class] > div[class]:has(> div[data-concert="medrec_frontpage_hero_mobile"])
 temp-mail.io##main.mb-general > div[style="width:100%;height:50px;"]
 planefinder.net##+js(set, Object.prototype.showInterstitialModalIfRequired, noopFunc)
-||wpenginepowered.com/wp-json/api/advanced_placement/
-androidauthority.com##+js(json-edit, .props.pageProps.page.blocks.*[?..resource^="nc-ad"])
 *$script,xhr,3p,denyallow=ahcdn.com|ampproject.org|arc.io|b-cdn.net|blogger.com|bootstrapcdn.com|bunnycdn.ru|bytecdntp.com|cackle.me|chatango.com|cloudflare.com|cloudflare.net|cloudflarestorage.com|consentframework.com|disqus.com|disquscdn.com|dmca.com|doodcdn.io|ebacdn.com|embedstreams.top|facebook.com|facebook.net|fastcomments.com|fastly.net|fastlylb.net|fbcdn.net|fluidplayer.com|fontawesome.com|github.io|google.com|googleapis.com|graphcomment.com|gstatic.com|h-cdn.com|hcaptcha.com|hwcdn.net|ilfcdn.li|instagram.com|intensedebate.com|jquery.com|jsdelivr.net|jwpcdn.com|jwplatform.com|jwpsrv.com|linkvertise.com|media-amazon.com|media-imdb.com|pinterest.com|plyr.io|rabbitstream.net|recaptcha.net|rsc.cdn77.org|sharecast.ws|sharethis.com|shrink.pe|statically.io|staticfile.org|tawk.to|twimg.com|twitter.com|ulogin.ru|unpkg.com|userapi.com|vidazoo.com|vidembed.re|vixcloud.co|vk.com|vuukle.com|wp.com|x.com|yastatic.net|youaresoselfish.online|youtube.com|ytimg.com|zdassets.com|zencdn.net,domain=everia.club|files.im|filmpornofrancais.fr|gamesmountain.com|mangaplus.shueisha.tv|moredesi.com|nkiri.com|onlyfullporn.video|shueisharaw.tv|vjav.*
 *$script,xhr,3p,denyallow=ahcdn.com|ampproject.org|arc.io|b-cdn.net|blogger.com|bootstrapcdn.com|bunnycdn.ru|bytecdntp.com|cackle.me|chatango.com|cloudflare.com|cloudflare.net|cloudflarestorage.com|consentframework.com|disqus.com|disquscdn.com|dmca.com|doodcdn.io|ebacdn.com|embedstreams.top|facebook.com|facebook.net|fastcomments.com|fastly.net|fastlylb.net|fbcdn.net|fluidplayer.com|fontawesome.com|github.io|google.com|googleapis.com|graphcomment.com|gstatic.com|h-cdn.com|hcaptcha.com|hwcdn.net|ilfcdn.li|instagram.com|intensedebate.com|jquery.com|jsdelivr.net|jwpcdn.com|jwplatform.com|jwpsrv.com|linkvertise.com|media-amazon.com|media-imdb.com|pinterest.com|plyr.io|rabbitstream.net|recaptcha.net|rsc.cdn77.org|sharecast.ws|sharethis.com|shrink.pe|statically.io|staticfile.org|tawk.to|twimg.com|twitter.com|ulogin.ru|unpkg.com|userapi.com|vidazoo.com|vidembed.re|vixcloud.co|vk.com|vuukle.com|wp.com|x.com|yastatic.net|youaresoselfish.online|youtube.com|ytimg.com|zdassets.com|zencdn.net,domain=everia.club|files.im|filmpornofrancais.fr|gamesmountain.com|mangaplus.shueisha.tv|moredesi.com|nkiri.com|onlyfullporn.video|shueisharaw.tv|vjav.com|vjav.tube
 /^https?:\/\/(?:www\.|[0-9a-z]{7,10}\.)?[-0-9a-z]{5,}\.(?:com|org)\/\/?(?:[0-9a-z]{2}\/){2,3}[0-9a-f]{32}\.js/$script,xhr,3p,redirect=noop.js
@@ -7991,7 +7989,7 @@ transtxxx.com##+js(json-prune, video.channel)
 tporn.xxx##+js(rmnt, script, directBanner)
 ||tporn.xxx/static/da/
 10xflix.you,123-movies.*,123movieshd.*,123movieshub.*,123moviesme.*,1337x.*,1337x.ninjaproxy1.com,1bit.space,1bitspace.com,1stream.*,1tamilmv.*,2ddl.*,2umovies.*,3dporndude.com,3hiidude.*,4archive.org,4chanarchives.com,4horlover.com,4stream.*,560pmovie.com,5movies.*,7hitmovies.*,7starhd.*,9xmovie.*,9xmovies.koeln##^script[data-cfasync]:has-text(/h=decodeURIComponent|popundersPerIP/)
-aagmaal.*,acefile.co,adblockeronstape.*,adblockeronstreamtape.*,adblockplustape.*,adblockstreamtape.*,adblockstrtape.*,adblockstrtech.*,adblocktape.*,adclickersbot.com,adcorto.*,adslink.pw,adultstvlive.com,adz7short.space,aeblender.com,affordwonder.net,ahdafnews.blogspot.com,aiblog.tv,ak47sports.com,akuma.moe,alexsports.*,alexsports.*,alexsportss.*,alexsportz.*,allplayer.tk,amateurblog.tv,androidadult.com,anhsexjav.xyz,anidl.org,anime-loads.org,anime4i.vip,animeblkom.net,animefire.plus,animelek.me,animepahe.*,animesanka.*,animeshqip.org,animesorionvip.net,animespire.net,animestotais.xyz,animeyt.es,animixplay.*,aniplay.*,anroll.net,antiadtape.*,anymoviess.xyz,aotonline.org,asenshu.com,asiaflix.*,asialiveaction.com,asianclipdedhd.net,ask4movie.*,askim-bg.com,assistirtvonlinebr.net,asumsikedaishop.com,atomixhq.*,atomohd.*,avcrempie.com,avseesee.com,gettapeads.com##^script[data-cfasync]:has-text(/h=decodeURIComponent|popundersPerIP/)
+aagmaal.*,acefile.co,adblockeronstape.*,adblockeronstreamtape.*,adblockplustape.*,adblockstreamtape.*,adblockstrtape.*,adblockstrtech.*,adblocktape.*,adclickersbot.com,adcorto.*,adslink.pw,aeblender.com,affordwonder.net,ahdafnews.blogspot.com,aiblog.tv,ak47sports.com,akuma.moe,alexsports.*,alexsports.*,alexsportss.*,alexsportz.*,allplayer.tk,amateurblog.tv,androidadult.com,anhsexjav.xyz,anidl.org,anime-loads.org,anime4i.vip,animeblkom.net,animefire.*,animelek.me,animepahe.*,animesanka.*,animeshqip.org,animesorionvip.net,animespire.net,animestotais.xyz,animeyt.es,animixplay.*,aniplay.*,anroll.net,antiadtape.*,anymoviess.xyz,aotonline.org,asenshu.com,asiaflix.*,asialiveaction.com,asianclipdedhd.net,ask4movie.*,askim-bg.com,assistirtvonlinebr.net,asumsikedaishop.com,atomixhq.*,atomohd.*,avcrempie.com,avseesee.com,gettapeads.com##^script[data-cfasync]:has-text(/h=decodeURIComponent|popundersPerIP/)
 b9good.co,bajarjuegospcgratis.com,balkanteka.net,beastvid.tv,beinmatch.*,bellezashot.com,beruang.club,bestgirlsexy.com,bestporncomix.com,bhaai.*,bigwarp.*,bikinbayi.com,bikinitryon.net,birdurls.com,bitsearch.to,blackcockadventure.com,blackcockchurch.org,blackporncrazy.com,blizzboygames.net,blizzpaste.com,blkom.com,blog-peliculas.com,blurayufr.*,bobsvagene.club,bokep.im,bokep.top,bokepnya.com,bollyflix.cards,boyfuck.me,brilian-news.id,brokensilenze.net,brupload.net,buffstreams.*,buzter.xyz##^script[data-cfasync]:has-text(/h=decodeURIComponent|popundersPerIP/)
 caitlin.top,camchickscaps.com,camgirls.casa,canalesportivo.*,cashurl.in,ccurl.net,cdn1.site,cell47.com,charexempire.com,cizgivedizi.com,clickndownload.*,clicknupload.*,clik.pw,coin-free.com,coins100s.fun,comohoy.com,coolcast2.com,cordneutral.net,countylocalnews.com,cpmlink.net,crackstreamshd.click,crespomods.com,crisanimex.com,crunchyscan.fr,cuevana3.fan,cuevana3hd.com,cumception.com,cutpaid.com##^script[data-cfasync]:has-text(/h=decodeURIComponent|popundersPerIP/)
 daddylive.*,daddylivehd.*,daddylivestream.com,dailyuploads.net,darkmahou.org,datawav.club,daughtertraining.com,ddrmovies.*,deepgoretube.site,deltabit.co,depvailon.com,desiremovies.*,desivdo.com,desixx.net,detikkebumen.com,deutschepornos.me,devlib.*,diasoft.xyz,dipelis.junctionjive.co.uk,directupload.net,divxtotal.*,divxtotal1.*,dixva.com,djmaza.my,dlhd.*,doctormalay.com,dofusports.xyz,doods.cam,doodskin.lat,downloadrips.com,downvod.com,dphunters.mom,dragontranslation.com,dsvplay.com,dvdfullestrenos.com,dvdplay.*,dx-tv.com,dyngutter.net##^script[data-cfasync]:has-text(/h=decodeURIComponent|popundersPerIP/)
@@ -8019,7 +8017,7 @@ yabai.si,yeshd.net,youdbox.*,youjax.com,yourdailypornvideos.ws,yourupload.com,yo
 zerion.cc,zerocoin.top,zitss.xyz,zooqle.*,zpaste.net##^script[data-cfasync]:has-text(/h=decodeURIComponent|popundersPerIP/)
 pillowcase.su##^script[data-cfasync]:has-text(/h=decodeURIComponent|"popundersPerIP"/)
 10xflix.you,123-movies.*,123movieshd.*,123movieshub.*,123moviesme.*,1337x.*,1337x.ninjaproxy1.com,1bit.space,1bitspace.com,1stream.*,1tamilmv.*,2ddl.*,2umovies.*,3dporndude.com,3hiidude.*,4archive.org,4chanarchives.com,4horlover.com,4stream.*,560pmovie.com,5movies.*,7hitmovies.*,7starhd.*,9xmovie.*,9xmovies.koeln##+js(rmnt, script, /h=decodeURIComponent|popundersPerIP/)
-aagmaal.*,acefile.co,adblockeronstape.*,adblockeronstreamtape.*,adblockplustape.*,adblockstreamtape.*,adblockstrtape.*,adblockstrtech.*,adblocktape.*,adclickersbot.com,adcorto.*,adslink.pw,adultstvlive.com,adz7short.space,aeblender.com,affordwonder.net,ahdafnews.blogspot.com,aiblog.tv,ak47sports.com,akuma.moe,alexsports.*,alexsports.*,alexsportss.*,alexsportz.*,allplayer.tk,amateurblog.tv,androidadult.com,anhsexjav.xyz,anidl.org,anime-loads.org,anime4i.vip,animeblkom.net,animefire.plus,animelek.me,animepahe.*,animesanka.*,animesorionvip.net,animespire.net,animestotais.xyz,animeyt.es,animixplay.*,aniplay.*,anroll.net,antiadtape.*,anymoviess.xyz,aotonline.org,asenshu.com,asiaflix.*,asialiveaction.com,asianclipdedhd.net,ask4movie.*,askim-bg.com,assistirtvonlinebr.net,asumsikedaishop.com,atomixhq.*,atomohd.*,avcrempie.com,avseesee.com,gettapeads.com##+js(rmnt, script, /h=decodeURIComponent|popundersPerIP/)
+aagmaal.*,acefile.co,adblockeronstape.*,adblockeronstreamtape.*,adblockplustape.*,adblockstreamtape.*,adblockstrtape.*,adblockstrtech.*,adblocktape.*,adclickersbot.com,adcorto.*,adslink.pw,aeblender.com,affordwonder.net,ahdafnews.blogspot.com,aiblog.tv,ak47sports.com,akuma.moe,alexsports.*,alexsports.*,alexsportss.*,alexsportz.*,allplayer.tk,amateurblog.tv,androidadult.com,anhsexjav.xyz,anidl.org,anime-loads.org,anime4i.vip,animeblkom.net,animefire.*,animelek.me,animepahe.*,animesanka.*,animesorionvip.net,animespire.net,animestotais.xyz,animeyt.es,animixplay.*,aniplay.*,anroll.net,antiadtape.*,anymoviess.xyz,aotonline.org,asenshu.com,asiaflix.*,asialiveaction.com,asianclipdedhd.net,ask4movie.*,askim-bg.com,assistirtvonlinebr.net,asumsikedaishop.com,atomixhq.*,atomohd.*,avcrempie.com,avseesee.com,gettapeads.com##+js(rmnt, script, /h=decodeURIComponent|popundersPerIP/)
 b9good.co,bajarjuegospcgratis.com,balkanteka.net,beastvid.tv,beinmatch.*,bellezashot.com,beruang.club,bestgirlsexy.com,bestporncomix.com,bhaai.*,bigwarp.*,bikinbayi.com,bikinitryon.net,birdurls.com,bitsearch.to,blackcockadventure.com,blackcockchurch.org,blackporncrazy.com,blizzboygames.net,blizzpaste.com,blkom.com,blog-peliculas.com,blurayufr.*,bobsvagene.club,bokep.im,bokep.top,bokepnya.com,bollyflix.cards,boyfuck.me,brilian-news.id,brokensilenze.net,brupload.net,buffstreams.*,buzter.xyz##+js(rmnt, script, /h=decodeURIComponent|popundersPerIP/)
 caitlin.top,camchickscaps.com,camgirls.casa,canalesportivo.*,cashurl.in,ccurl.net,cdn1.site,cell47.com,charexempire.com,cizgivedizi.com,clickndownload.*,clicknupload.*,clik.pw,coin-free.com,coins100s.fun,comohoy.com,coolcast2.com,cordneutral.net,countylocalnews.com,cpmlink.net,crackstreamshd.click,crespomods.com,crisanimex.com,crunchyscan.fr,cuevana3.fan,cuevana3hd.com,cumception.com,cutpaid.com##+js(rmnt, script, /h=decodeURIComponent|popundersPerIP/)
 daddylive.*,daddylivehd.*,daddylivestream.com,dailyuploads.net,darkmahou.org,datawav.club,daughtertraining.com,ddrmovies.*,deepgoretube.site,deltabit.co,depvailon.com,desiremovies.*,desivdo.com,desixx.net,detikkebumen.com,deutschepornos.me,devlib.*,diasoft.xyz,dipelis.junctionjive.co.uk,directupload.net,divxtotal.*,divxtotal1.*,dixva.com,djmaza.my,dlhd.*,doctormalay.com,dofusports.xyz,doods.cam,doodskin.lat,downloadrips.com,downvod.com,dphunters.mom,dragontranslation.com,dsvplay.com,dvdfullestrenos.com,dvdplay.*,dx-tv.com,dyngutter.net##+js(rmnt, script, /h=decodeURIComponent|popundersPerIP/)
@@ -17272,7 +17270,7 @@ xgroovy.com##+js(aopr, VAST)
 */vast-client-browser.min.js$1p
 peakpx.com,pxfuel.com##.list_ads:style(height: 0px !important;)
 pikist.com##.lst_ads:style(height: 0px !important;)
-||androidauth.wpengine.com/wp-json/api/advanced_placement/
+/wp-json/api/advanced_placement/*
 androidauthority.com##main > div:last-child > div:has(> .ad)
 androidauthority.com##main > div > div:empty:matches-css(min-height: 250px):matches-css(min-width: 80%)
 androidauthority.com##main > div:last-child > div:has(> div:only-child:empty)
@@ -17280,6 +17278,7 @@ androidauthority.com##main > script + div:has(> div:only-child:empty)
 androidauthority.com##div:has(> div:only-child > .pw-incontent)
 androidauthority.com##aside > div > div > div > div > div:has(> div:only-child:empty)
 androidauthority.com##aside > div > div:empty
+androidauthority.com##+js(json-edit, .props.pageProps.page.blocks.*[?..resource^="nc-ad"])
 ||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$script,domain=paramountnetwork.com,redirect=noopjs
 freepublicporn.com##.before-list-boxes-mobile-singl
 freepublicporn.com##.inside-video-boxes-mobile2
