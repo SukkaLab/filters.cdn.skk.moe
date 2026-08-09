@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sat, 08 Aug 2026 22:49:32 GMT
+! Last modified: Sun, 09 Aug 2026 03:54:06 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sat, 08 Aug 2026 13:53:58 +0000
+!   - Last modified: Sat, 08 Aug 2026 22:44:53 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Fri, 07 Aug 2026 15:35:03 +0000
@@ -20,14 +20,14 @@
 !   - Last modified: Sun, 02 Aug 2026 11:29:40 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Fri, 07 Aug 2026 06:30:04 +0000
+!   - Last modified: Sat, 08 Aug 2026 19:54:26 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
 !   - Last modified: Fri, 07 Aug 2026 02:05:30 +0000
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Wed, 05 Aug 2026 15:52:03 +0000
+!   - Last modified: Sat, 08 Aug 2026 21:30:15 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
 !   - Last modified: Fri, 07 Aug 2026 06:41:46 +0000
@@ -7480,7 +7480,7 @@ timesofindia.indiatimes.com##+js(set, Object.prototype.isAdActive, false)
 redd.tube##+js(set, Object.prototype.vastOptions, {})
 redd.tube###closeable_widget
 mdpr.jp##+js(trusted-set-attr, #gn-rwd-target-hidden, class, rewareded)
-outlook.live.com##main > div[style] .vPfg_:has(.wOYnU) ~ *:style(transform: translateY(-80px) !important)
+outlook.live.com##+js(set, Object.prototype.showNativeAdFormat, 0)
 ||googlevideo.com/videoplayback*ctier=L&*%2Cxpc%2Cctier%2C$xhr,3p,domain=m.youtube.com|music.youtube.com
 dailymotion.com##+js(json-prune-fetch-response, advertising, , propsToMatch, /player/metadata)
 dailymotion.com##+js(json-prune-xhr-response, advertising, , propsToMatch, .json)
@@ -32067,12 +32067,8 @@ client.falixnodes.net##+js(rpnt, script, /window\.googletag.*?enableServices\(\)
 client.falixnodes.net##+js(rpnt, script, /googletag\.pubads\(\)\.addEventListener.*rewardedSlot\)\;\s+\}\);\s+\}/s)
 client.falixnodes.net##+js(nosiif, /lovelylovely|veryveryplease|click\(\)|MouseEvent|dispatchEvent/)
 client.falixnodes.net##+js(nostif, /lovelylovely|veryveryplease|click\(\)|MouseEvent|dispatchEvent/)
-client.falixnodes.net##+js(nostif, )}}}})
-client.falixnodes.net##+js(nostif, ]])!==)
-client.falixnodes.net##+js(nostif, ]/*)
-client.falixnodes.net##+js(nostif, }/*)
-client.falixnodes.net##^script:has-text(/\=arguments\;if\(typeof /)
-client.falixnodes.net##+js(rmnt, script, /\=arguments\;if\(typeof /)
+client.falixnodes.net##^script:has-text(/\=\(\[\]\+\[\]\)\[\(/)
+client.falixnodes.net##+js(rmnt, script, /\=\(\[\]\+\[\]\)\[\(/)
 ||global.novelpia.com/_nuxt/*.js|$script,replace=/if\(\w\.check_is_ad_free\(\)\)/if(true)/
 @@||global.novelpia.com^$ghide
 global.novelpia.com##+js(no-fetch-if, g.doubleclick.net, length:100000)
@@ -34505,6 +34501,7 @@ finna.fi##+js(trusted-click-element, .js-accept-all, , 1000)
 hornbach.ro##+js(trusted-click-element, #usercentrics-cmp-ui >>> button.uc-deny-button)
 offers-exchange.com##+js(trusted-set-local-storage-item, cookieConsent_1004, {"essential":true\,"analytics":false\,"timestamp":"$currentISODate$"})
 duck.ai##+js(trusted-set-local-storage-item, duckaiRetentionBrowserPromo, '{"dismissed":true,"firstShown":true,"newChatsSinceShown":0,"learnMoreChatId":null}')
+groupsumi.fi##+js(trusted-set-local-storage-item, @sumi/consent, {"essential":true\,"performance":false\,"functional":true\,"advertising":false})
 ! uBlock filters – Annoyances https://ublockorigin.pages.dev/filters/annoyances.min.txt
 mimaletadepeliculas.blogspot.com##+js(aopr, document.oncontextmenu)
 mimaletadepeliculas.blogspot.com##+js(acs, document.onselectstart)
