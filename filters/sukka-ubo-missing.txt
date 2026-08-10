@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Mon, 10 Aug 2026 04:08:57 GMT
+! Last modified: Mon, 10 Aug 2026 08:05:16 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.8.83
+!   - Version: 2.1.8.85
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -230,6 +230,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||logws*.ati-host.net^
 ||rum.catchmetrics.io^
 ||mradx.net^
+||lkqivtsnfvriw.website^
 ||fireanalytics.firestream.to^
 ||reportmyads.com^$3p
 ||pcx-events.revbox.co^
@@ -153936,6 +153937,8 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
 @@||nlog.naver.com/n|$domain=search.naver.com|www.naver.com
+||tracker.okazje.info.pl/tracker.js
+||narto-drama.com/presence/heartbeat
 11freunde.de##section[data-area*="Eigenwerbung"]
 epicgames.com##+js(no-xhr-if, /id/api/analytics)
 ||vodafone.com.au/js/ot2.min.js
