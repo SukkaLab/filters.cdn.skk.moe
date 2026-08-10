@@ -1,5 +1,5 @@
 ! Title: [sukka] Special Redirects
-! Last modified: Mon, 10 Aug 2026 21:24:32 GMT
+! Last modified: Mon, 10 Aug 2026 21:29:14 GMT
 ! Description: uBlock Origin / AdGuard uritransform rules
 ! Homepage: https://github.com/SukkaW/Filters
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -23,6 +23,7 @@
 ||rdr.windy.com^$all,uritransform=/rdr\.windy\.com/docs.lucaairport.qzz.io\/https\/rdr.windy.com/
 ||img.windy.com^$all,uritransform=/img\.windy\.com/docs.lucaairport.qzz.io\/https\/img.windy.com/
 ||node.windy.com^$all,uritransform=/node\.windy\.com/docs.lucaairport.qzz.io\/https\/node.windy.com/
+||imgproxy.windy.com^$all,uritransform=/imgproxy\.windy\.com/docs.lucaairport.qzz.io\/https\/imgproxy.windy.com/
 ||fourhoi.com^$all,uritransform=/fourhoi\.com/docs.lucaairport.qzz.io\/https\/fourhoi.com/
 ||tiles.strava.com^$all,uritransform=/tiles\.strava\.com/docs.lucaairport.qzz.io\/https\/tiles.strava.com/
 ||web-assets.strava.com^$all,uritransform=/web-assets\.strava\.com/docs.lucaairport.qzz.io\/https\/web-assets.strava.com/
@@ -52,6 +53,7 @@
 ||rdr.windy.com^$all,urltransform=/rdr\.windy\.com/docs.lucaairport.qzz.io\/https\/rdr.windy.com/
 ||img.windy.com^$all,urltransform=/img\.windy\.com/docs.lucaairport.qzz.io\/https\/img.windy.com/
 ||node.windy.com^$all,urltransform=/node\.windy\.com/docs.lucaairport.qzz.io\/https\/node.windy.com/
+||imgproxy.windy.com^$all,urltransform=/imgproxy\.windy\.com/docs.lucaairport.qzz.io\/https\/imgproxy.windy.com/
 ||fourhoi.com^$all,urltransform=/fourhoi\.com/docs.lucaairport.qzz.io\/https\/fourhoi.com/
 ||tiles.strava.com^$all,urltransform=/tiles\.strava\.com/docs.lucaairport.qzz.io\/https\/tiles.strava.com/
 ||web-assets.strava.com^$all,urltransform=/web-assets\.strava\.com/docs.lucaairport.qzz.io\/https\/web-assets.strava.com/
