@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Sun, 09 Aug 2026 22:52:25 GMT
+! Last modified: Mon, 10 Aug 2026 04:08:57 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202608092241
+!   - Version: 202608100351
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 09 Aug 2026 22:41 UTC
+!   - Last modified: 10 Aug 2026 03:51 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
@@ -74,7 +74,7 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * ➗ Actually Legitimate URL Shortener Tool
 !   - URL: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt
-!   - Version: 8August2026v1
+!   - Version: 10August2026v1
 !   - Homepage: https://github.com/DandelionSprout/adfilt/discussions/163
 ! * 🐊 Imgur: Pure Imagery Experience
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/ImgurPureImageryExperience.txt
@@ -18807,6 +18807,7 @@ $removeparam=sk,domain=aliexpress.*|bing.com
 ||bing.com/search?$removeparam=FPIG
 ||bing.com/apps^$removeparam=pc
 ||bing.com/apps^$removeparam=brand
+$doc,removeparam=entrypoint,domain=bing.com
 $removeparam=_trkparms
 $removeparam=_from
 $removeparam=sacat
@@ -20316,7 +20317,6 @@ ref=news.risky.biz$doc,removeparam=ref
 ||www.roblox.com^$removeparam=gameSearchSessionInfo
 ||www.roblox.com^$removeparam=treatmentType
 $doc,removeparam=ucid,domain=unicredit.it|steampowered.com
-$doc,removeparam=entrypoint,domain=bing.com
 ||sky.it^$doc,removeparam=zoneid
 $doc,removeparam=cnt,domain=lastampa.it|ilsecoloxix.it|huffingtonpost.*|themeditelegraph.com|ilgusto.it|italian.tech
 $doc,removeparam=esrc,domain=arstechnica.com|newyorker.com|wired.com
@@ -20559,6 +20559,7 @@ ref=sqliteviewer.app$doc,removeparam=ref
 ||loan.fairstone.ca^$doc,removeparam=jumpsource
 ||cricut.$removeparam=visitorId
 ||sonarsource.com^$doc,removeparam=tidelift
+||msn.com^$removeparam=bv
 $removeparam=w,domain=files.wordpress.com|store.playstation.com|s-microsoft.com|store-images.microsoft.com|dr.dk|if.com.au
 $removeparam=h,domain=files.wordpress.com|store.playstation.com|s-microsoft.com|store-images.microsoft.com|dr.dk
 $removeparam=width,domain=i-viaplay.com.akamaized.net|media.discordapp.net|tvno.nu
