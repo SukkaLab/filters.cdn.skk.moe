@@ -1,5 +1,5 @@
 ! Title: [sukka] Special Redirects
-! Last modified: Tue, 11 Aug 2026 13:29:01 GMT
+! Last modified: Tue, 11 Aug 2026 13:44:22 GMT
 ! Description: uBlock Origin / AdGuard uritransform rules
 ! Homepage: https://github.com/SukkaW/Filters
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -15,10 +15,10 @@
 ||wikidot.com/local--favicon/$all,~xhr,uritransform=/([^\/]+)\.wikidot\.com\/local--favicon\//docs.lucaairport.qzz.io\/https\/$1.wikidot.com\/local--favicon\//
 ||tile.openstreetmap.org^$all,~xhr,uritransform=/(?:[^.\/]+\.)*tile\.openstreetmap\.org/docs.lucaairport.qzz.io\/https\/tile.openstreetmap.org/,domain=~openstreetmap.org
 ||github.com/*/releases/download$all,~xhr,uritransform=/github\.com\//download.lucaairport.qzz.io\/https\/github.com\//
-||www.windy.com/img/$all,~xhr,uritransform=/www\.windy\.com\/img\//docs.lucaairport.qzz.io\/https\/www.windy.com\/img\//
-||www.windy.com//img/$all,~xhr,uritransform=/www\.windy\.com\/\/img\//docs.lucaairport.qzz.io\/https\/www.windy.com\/\/img\//
 ||node.windy.com^$all,~xhr,uritransform=/node\.windy\.com/docs.lucaairport.qzz.io\/https\/node.windy.com/
 ||imgproxy.windy.com^$all,~xhr,uritransform=/imgproxy\.windy\.com/docs.lucaairport.qzz.io\/https\/imgproxy.windy.com/
+||www.windy.com/img/$all,~xhr,uritransform=/www\.windy\.com\/img\//docs.lucaairport.qzz.io\/https\/www.windy.com\/img\//
+||www.windy.com//img/$all,~xhr,uritransform=/www\.windy\.com\/\/img\//docs.lucaairport.qzz.io\/https\/www.windy.com\/\/img\//
 ||fourhoi.com^$all,~xhr,uritransform=/fourhoi\.com/docs.lucaairport.qzz.io\/https\/fourhoi.com/
 ||tiles.strava.com^$all,~xhr,uritransform=/tiles\.strava\.com/docs.lucaairport.qzz.io\/https\/tiles.strava.com/
 ||web-assets.strava.com^$all,~xhr,uritransform=/web-assets\.strava\.com/docs.lucaairport.qzz.io\/https\/web-assets.strava.com/
@@ -49,10 +49,10 @@
 ||wikidot.com/local--favicon/$all,~xhr,urltransform=/([^\/]+)\.wikidot\.com\/local--favicon\//docs.lucaairport.qzz.io\/https\/$1.wikidot.com\/local--favicon\//
 ||tile.openstreetmap.org^$all,~xhr,urltransform=/(?:[^.\/]+\.)*tile\.openstreetmap\.org/docs.lucaairport.qzz.io\/https\/tile.openstreetmap.org/,domain=~openstreetmap.org
 ||github.com/*/releases/download$all,~xhr,urltransform=/github\.com\//download.lucaairport.qzz.io\/https\/github.com\//
-||www.windy.com/img/$all,~xhr,urltransform=/www\.windy\.com\/img\//docs.lucaairport.qzz.io\/https\/www.windy.com\/img\//
-||www.windy.com//img/$all,~xhr,urltransform=/www\.windy\.com\/\/img\//docs.lucaairport.qzz.io\/https\/www.windy.com\/\/img\//
 ||node.windy.com^$all,~xhr,urltransform=/node\.windy\.com/docs.lucaairport.qzz.io\/https\/node.windy.com/
 ||imgproxy.windy.com^$all,~xhr,urltransform=/imgproxy\.windy\.com/docs.lucaairport.qzz.io\/https\/imgproxy.windy.com/
+||www.windy.com/img/$all,~xhr,urltransform=/www\.windy\.com\/img\//docs.lucaairport.qzz.io\/https\/www.windy.com\/img\//
+||www.windy.com//img/$all,~xhr,urltransform=/www\.windy\.com\/\/img\//docs.lucaairport.qzz.io\/https\/www.windy.com\/\/img\//
 ||fourhoi.com^$all,~xhr,urltransform=/fourhoi\.com/docs.lucaairport.qzz.io\/https\/fourhoi.com/
 ||tiles.strava.com^$all,~xhr,urltransform=/tiles\.strava\.com/docs.lucaairport.qzz.io\/https\/tiles.strava.com/
 ||web-assets.strava.com^$all,~xhr,urltransform=/web-assets\.strava\.com/docs.lucaairport.qzz.io\/https\/web-assets.strava.com/
