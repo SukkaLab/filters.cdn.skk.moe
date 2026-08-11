@@ -1,5 +1,5 @@
 ! Title: [sukka] URL Redirector
-! Last modified: Tue, 11 Aug 2026 12:43:53 GMT
+! Last modified: Tue, 11 Aug 2026 13:05:29 GMT
 ! Description: uBlock Origin / AdGuard uritransform rules
 ! Homepage: https://github.com/SukkaW/Filters
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -41,10 +41,18 @@
 ||use.fontawesome.com/releases/v7*/webfonts/$all,~xhr,uritransform=/use\.fontawesome\.com\/releases\/v((?:\d+\.)+\d+)\/webfonts\//cdn.jsdelivr.net\/npm\/@fortawesome\/fontawesome-free@$1\/webfonts\//
 ||use.fontawesome.com/releases/v4$all,~xhr,uritransform=/use\.fontawesome\.com\/releases\/v((?:\d+\.)+\d+)\/css\/font-awesome-css\.min\.css/cdn.jsdelivr.net\/npm\/font-awesome@$1\/css\/font-awesome.min.css/
 ||use.fontawesome.com/releases/v4$all,~xhr,uritransform=/use\.fontawesome\.com\/releases\/v((?:\d+\.)+\d+)\/fonts\//cdn.jsdelivr.net\/npm\/font-awesome@$1\/fonts\//
-||code.jquery.com/jquery-3.*.slim.min.js$all,~xhr,uritransform=/code\.jquery\.com\/jquery-((?:\d+\.)+\d+)\.slim\.min\.js/cdn.jsdelivr.net\/npm\/jquery@$1\/dist\/jquery.slim.min.js/,domain=~ui.com
-||code.jquery.com/jquery-3.*.slim.js$all,~xhr,uritransform=/code\.jquery\.com\/jquery-((?:\d+\.)+\d+)\.slim\.js/cdn.jsdelivr.net\/npm\/jquery@$1\/dist\/jquery.slim.js/,domain=~ui.com
-||code.jquery.com/jquery-3.*.min.js$all,~xhr,uritransform=/code\.jquery\.com\/jquery-((?:\d+\.)+\d+)\.min\.js/cdn.jsdelivr.net\/npm\/jquery@$1\/dist\/jquery.min.js/,domain=~ui.com
-||code.jquery.com/jquery-3.*.js$all,~xhr,uritransform=/code\.jquery\.com\/jquery-((?:\d+\.)+\d+)\.js/cdn.jsdelivr.net\/npm\/jquery@$1\/dist\/jquery.js/,domain=~ui.com
+||code.jquery.com/jquery-3.*.slim.min.js$all,~xhr,uritransform=/code\.jquery\.com\/jquery-((?:\d+\.)+\d+(?:-(?:alpha|beta|rc)(?:\.?\d+)*)?)\.slim\.min\.js/cdn.jsdelivr.net\/npm\/jquery@$1\/dist\/jquery.slim.min.js/,domain=~ui.com
+||code.jquery.com/jquery-4.*.slim.min.js$all,~xhr,uritransform=/code\.jquery\.com\/jquery-((?:\d+\.)+\d+(?:-(?:alpha|beta|rc)(?:\.?\d+)*)?)\.slim\.min\.js/cdn.jsdelivr.net\/npm\/jquery@$1\/dist\/jquery.slim.min.js/,domain=~ui.com
+||code.jquery.com/jquery-3.*.slim.js$all,~xhr,uritransform=/code\.jquery\.com\/jquery-((?:\d+\.)+\d+(?:-(?:alpha|beta|rc)(?:\.?\d+)*)?)\.slim\.js/cdn.jsdelivr.net\/npm\/jquery@$1\/dist\/jquery.slim.js/,domain=~ui.com
+||code.jquery.com/jquery-4.*.slim.js$all,~xhr,uritransform=/code\.jquery\.com\/jquery-((?:\d+\.)+\d+(?:-(?:alpha|beta|rc)(?:\.?\d+)*)?)\.slim\.js/cdn.jsdelivr.net\/npm\/jquery@$1\/dist\/jquery.slim.js/,domain=~ui.com
+||code.jquery.com/jquery-3.*.min.js$all,~xhr,uritransform=/code\.jquery\.com\/jquery-((?:\d+\.)+\d+(?:-(?:alpha|beta|rc)(?:\.?\d+)*)?)\.min\.js/cdn.jsdelivr.net\/npm\/jquery@$1\/dist\/jquery.min.js/,domain=~ui.com
+||code.jquery.com/jquery-4.*.min.js$all,~xhr,uritransform=/code\.jquery\.com\/jquery-((?:\d+\.)+\d+(?:-(?:alpha|beta|rc)(?:\.?\d+)*)?)\.min\.js/cdn.jsdelivr.net\/npm\/jquery@$1\/dist\/jquery.min.js/,domain=~ui.com
+||code.jquery.com/jquery-3.*.js$all,~xhr,uritransform=/code\.jquery\.com\/jquery-((?:\d+\.)+\d+(?:-(?:alpha|beta|rc)(?:\.?\d+)*)?)\.js/cdn.jsdelivr.net\/npm\/jquery@$1\/dist\/jquery.js/,domain=~ui.com
+||code.jquery.com/jquery-4.*.js$all,~xhr,uritransform=/code\.jquery\.com\/jquery-((?:\d+\.)+\d+(?:-(?:alpha|beta|rc)(?:\.?\d+)*)?)\.js/cdn.jsdelivr.net\/npm\/jquery@$1\/dist\/jquery.js/,domain=~ui.com
+||code.jquery.com/jquery-4.*.slim.module.min.js$all,~xhr,uritransform=/code\.jquery\.com\/jquery-((?:\d+\.)+\d+(?:-(?:alpha|beta|rc)(?:\.?\d+)*)?)\.slim\.module\.min\.js/cdn.jsdelivr.net\/npm\/jquery@$1\/dist-module\/jquery.slim.module.min.js/,domain=~ui.com
+||code.jquery.com/jquery-4.*.slim.module.js$all,~xhr,uritransform=/code\.jquery\.com\/jquery-((?:\d+\.)+\d+(?:-(?:alpha|beta|rc)(?:\.?\d+)*)?)\.slim\.module\.js/cdn.jsdelivr.net\/npm\/jquery@$1\/dist-module\/jquery.slim.module.js/,domain=~ui.com
+||code.jquery.com/jquery-4.*.module.min.js$all,~xhr,uritransform=/code\.jquery\.com\/jquery-((?:\d+\.)+\d+(?:-(?:alpha|beta|rc)(?:\.?\d+)*)?)\.module\.min\.js/cdn.jsdelivr.net\/npm\/jquery@$1\/dist-module\/jquery.module.min.js/,domain=~ui.com
+||code.jquery.com/jquery-4.*.module.js$all,~xhr,uritransform=/code\.jquery\.com\/jquery-((?:\d+\.)+\d+(?:-(?:alpha|beta|rc)(?:\.?\d+)*)?)\.module\.js/cdn.jsdelivr.net\/npm\/jquery@$1\/dist-module\/jquery.module.js/,domain=~ui.com
 ||code.jquery.com/jquery-2.2.*.min.map$all,~xhr,uritransform=/code\.jquery\.com\/jquery-((?:\d+\.)+\d+)\.min\.map/cdn.jsdelivr.net\/npm\/jquery@$1\/dist\/jquery.min.map/,domain=~ui.com
 ||code.jquery.com/jquery-2.2.*.min.js$all,~xhr,uritransform=/code\.jquery\.com\/jquery-((?:\d+\.)+\d+)\.min\.js/cdn.jsdelivr.net\/npm\/jquery@$1\/dist\/jquery.min.js/,domain=~ui.com
 ||code.jquery.com/jquery-2.2.*.js$all,~xhr,uritransform=/code\.jquery\.com\/jquery-((?:\d+\.)+\d+)\.js/cdn.jsdelivr.net\/npm\/jquery@$1\/dist\/jquery.js/,domain=~ui.com
@@ -55,8 +63,7 @@
 ||code.jquery.com/jquery-2.1.*-*$all,~xhr,uritransform=/code\.jquery\.com\//cdn.jsdelivr.net\/gh\/jquery\/codeorigin.jquery.com@main\/cdn\//,domain=~ui.com
 ||code.jquery.com/jquery-2.2.*-*$all,~xhr,uritransform=/code\.jquery\.com\//cdn.jsdelivr.net\/gh\/jquery\/codeorigin.jquery.com@main\/cdn\//,domain=~ui.com
 ||code.jquery.com/jquery-3.*.map$all,~xhr,uritransform=/code\.jquery\.com\//cdn.jsdelivr.net\/gh\/jquery\/codeorigin.jquery.com@main\/cdn\//,domain=~ui.com
-||code.jquery.com/jquery-3.*-*$all,~xhr,uritransform=/code\.jquery\.com\//cdn.jsdelivr.net\/gh\/jquery\/codeorigin.jquery.com@main\/cdn\//,domain=~ui.com
-||code.jquery.com/jquery-4*$all,~xhr,uritransform=/code\.jquery\.com\//cdn.jsdelivr.net\/gh\/jquery\/codeorigin.jquery.com@main\/cdn\//,domain=~ui.com
+||code.jquery.com/jquery-4.*.map$all,~xhr,uritransform=/code\.jquery\.com\//cdn.jsdelivr.net\/gh\/jquery\/codeorigin.jquery.com@main\/cdn\//,domain=~ui.com
 ||code.jquery.com/jquery-migrate-1*$all,~xhr,uritransform=/code\.jquery\.com\//cdn.jsdelivr.net\/gh\/jquery\/codeorigin.jquery.com@main\/cdn\//,domain=~ui.com
 ||code.jquery.com/jquery-migrate-3*$all,~xhr,uritransform=/code\.jquery\.com\//cdn.jsdelivr.net\/gh\/jquery\/codeorigin.jquery.com@main\/cdn\//,domain=~ui.com
 ||code.jquery.com/jquery-migrate-4*$all,~xhr,uritransform=/code\.jquery\.com\//cdn.jsdelivr.net\/gh\/jquery\/codeorigin.jquery.com@main\/cdn\//,domain=~ui.com
@@ -111,10 +118,18 @@
 ||use.fontawesome.com/releases/v7*/webfonts/$all,~xhr,urltransform=/use\.fontawesome\.com\/releases\/v((?:\d+\.)+\d+)\/webfonts\//cdn.jsdelivr.net\/npm\/@fortawesome\/fontawesome-free@$1\/webfonts\//
 ||use.fontawesome.com/releases/v4$all,~xhr,urltransform=/use\.fontawesome\.com\/releases\/v((?:\d+\.)+\d+)\/css\/font-awesome-css\.min\.css/cdn.jsdelivr.net\/npm\/font-awesome@$1\/css\/font-awesome.min.css/
 ||use.fontawesome.com/releases/v4$all,~xhr,urltransform=/use\.fontawesome\.com\/releases\/v((?:\d+\.)+\d+)\/fonts\//cdn.jsdelivr.net\/npm\/font-awesome@$1\/fonts\//
-||code.jquery.com/jquery-3.*.slim.min.js$all,~xhr,urltransform=/code\.jquery\.com\/jquery-((?:\d+\.)+\d+)\.slim\.min\.js/cdn.jsdelivr.net\/npm\/jquery@$1\/dist\/jquery.slim.min.js/,domain=~ui.com
-||code.jquery.com/jquery-3.*.slim.js$all,~xhr,urltransform=/code\.jquery\.com\/jquery-((?:\d+\.)+\d+)\.slim\.js/cdn.jsdelivr.net\/npm\/jquery@$1\/dist\/jquery.slim.js/,domain=~ui.com
-||code.jquery.com/jquery-3.*.min.js$all,~xhr,urltransform=/code\.jquery\.com\/jquery-((?:\d+\.)+\d+)\.min\.js/cdn.jsdelivr.net\/npm\/jquery@$1\/dist\/jquery.min.js/,domain=~ui.com
-||code.jquery.com/jquery-3.*.js$all,~xhr,urltransform=/code\.jquery\.com\/jquery-((?:\d+\.)+\d+)\.js/cdn.jsdelivr.net\/npm\/jquery@$1\/dist\/jquery.js/,domain=~ui.com
+||code.jquery.com/jquery-3.*.slim.min.js$all,~xhr,urltransform=/code\.jquery\.com\/jquery-((?:\d+\.)+\d+(?:-(?:alpha|beta|rc)(?:\.?\d+)*)?)\.slim\.min\.js/cdn.jsdelivr.net\/npm\/jquery@$1\/dist\/jquery.slim.min.js/,domain=~ui.com
+||code.jquery.com/jquery-4.*.slim.min.js$all,~xhr,urltransform=/code\.jquery\.com\/jquery-((?:\d+\.)+\d+(?:-(?:alpha|beta|rc)(?:\.?\d+)*)?)\.slim\.min\.js/cdn.jsdelivr.net\/npm\/jquery@$1\/dist\/jquery.slim.min.js/,domain=~ui.com
+||code.jquery.com/jquery-3.*.slim.js$all,~xhr,urltransform=/code\.jquery\.com\/jquery-((?:\d+\.)+\d+(?:-(?:alpha|beta|rc)(?:\.?\d+)*)?)\.slim\.js/cdn.jsdelivr.net\/npm\/jquery@$1\/dist\/jquery.slim.js/,domain=~ui.com
+||code.jquery.com/jquery-4.*.slim.js$all,~xhr,urltransform=/code\.jquery\.com\/jquery-((?:\d+\.)+\d+(?:-(?:alpha|beta|rc)(?:\.?\d+)*)?)\.slim\.js/cdn.jsdelivr.net\/npm\/jquery@$1\/dist\/jquery.slim.js/,domain=~ui.com
+||code.jquery.com/jquery-3.*.min.js$all,~xhr,urltransform=/code\.jquery\.com\/jquery-((?:\d+\.)+\d+(?:-(?:alpha|beta|rc)(?:\.?\d+)*)?)\.min\.js/cdn.jsdelivr.net\/npm\/jquery@$1\/dist\/jquery.min.js/,domain=~ui.com
+||code.jquery.com/jquery-4.*.min.js$all,~xhr,urltransform=/code\.jquery\.com\/jquery-((?:\d+\.)+\d+(?:-(?:alpha|beta|rc)(?:\.?\d+)*)?)\.min\.js/cdn.jsdelivr.net\/npm\/jquery@$1\/dist\/jquery.min.js/,domain=~ui.com
+||code.jquery.com/jquery-3.*.js$all,~xhr,urltransform=/code\.jquery\.com\/jquery-((?:\d+\.)+\d+(?:-(?:alpha|beta|rc)(?:\.?\d+)*)?)\.js/cdn.jsdelivr.net\/npm\/jquery@$1\/dist\/jquery.js/,domain=~ui.com
+||code.jquery.com/jquery-4.*.js$all,~xhr,urltransform=/code\.jquery\.com\/jquery-((?:\d+\.)+\d+(?:-(?:alpha|beta|rc)(?:\.?\d+)*)?)\.js/cdn.jsdelivr.net\/npm\/jquery@$1\/dist\/jquery.js/,domain=~ui.com
+||code.jquery.com/jquery-4.*.slim.module.min.js$all,~xhr,urltransform=/code\.jquery\.com\/jquery-((?:\d+\.)+\d+(?:-(?:alpha|beta|rc)(?:\.?\d+)*)?)\.slim\.module\.min\.js/cdn.jsdelivr.net\/npm\/jquery@$1\/dist-module\/jquery.slim.module.min.js/,domain=~ui.com
+||code.jquery.com/jquery-4.*.slim.module.js$all,~xhr,urltransform=/code\.jquery\.com\/jquery-((?:\d+\.)+\d+(?:-(?:alpha|beta|rc)(?:\.?\d+)*)?)\.slim\.module\.js/cdn.jsdelivr.net\/npm\/jquery@$1\/dist-module\/jquery.slim.module.js/,domain=~ui.com
+||code.jquery.com/jquery-4.*.module.min.js$all,~xhr,urltransform=/code\.jquery\.com\/jquery-((?:\d+\.)+\d+(?:-(?:alpha|beta|rc)(?:\.?\d+)*)?)\.module\.min\.js/cdn.jsdelivr.net\/npm\/jquery@$1\/dist-module\/jquery.module.min.js/,domain=~ui.com
+||code.jquery.com/jquery-4.*.module.js$all,~xhr,urltransform=/code\.jquery\.com\/jquery-((?:\d+\.)+\d+(?:-(?:alpha|beta|rc)(?:\.?\d+)*)?)\.module\.js/cdn.jsdelivr.net\/npm\/jquery@$1\/dist-module\/jquery.module.js/,domain=~ui.com
 ||code.jquery.com/jquery-2.2.*.min.map$all,~xhr,urltransform=/code\.jquery\.com\/jquery-((?:\d+\.)+\d+)\.min\.map/cdn.jsdelivr.net\/npm\/jquery@$1\/dist\/jquery.min.map/,domain=~ui.com
 ||code.jquery.com/jquery-2.2.*.min.js$all,~xhr,urltransform=/code\.jquery\.com\/jquery-((?:\d+\.)+\d+)\.min\.js/cdn.jsdelivr.net\/npm\/jquery@$1\/dist\/jquery.min.js/,domain=~ui.com
 ||code.jquery.com/jquery-2.2.*.js$all,~xhr,urltransform=/code\.jquery\.com\/jquery-((?:\d+\.)+\d+)\.js/cdn.jsdelivr.net\/npm\/jquery@$1\/dist\/jquery.js/,domain=~ui.com
@@ -125,8 +140,7 @@
 ||code.jquery.com/jquery-2.1.*-*$all,~xhr,urltransform=/code\.jquery\.com\//cdn.jsdelivr.net\/gh\/jquery\/codeorigin.jquery.com@main\/cdn\//,domain=~ui.com
 ||code.jquery.com/jquery-2.2.*-*$all,~xhr,urltransform=/code\.jquery\.com\//cdn.jsdelivr.net\/gh\/jquery\/codeorigin.jquery.com@main\/cdn\//,domain=~ui.com
 ||code.jquery.com/jquery-3.*.map$all,~xhr,urltransform=/code\.jquery\.com\//cdn.jsdelivr.net\/gh\/jquery\/codeorigin.jquery.com@main\/cdn\//,domain=~ui.com
-||code.jquery.com/jquery-3.*-*$all,~xhr,urltransform=/code\.jquery\.com\//cdn.jsdelivr.net\/gh\/jquery\/codeorigin.jquery.com@main\/cdn\//,domain=~ui.com
-||code.jquery.com/jquery-4*$all,~xhr,urltransform=/code\.jquery\.com\//cdn.jsdelivr.net\/gh\/jquery\/codeorigin.jquery.com@main\/cdn\//,domain=~ui.com
+||code.jquery.com/jquery-4.*.map$all,~xhr,urltransform=/code\.jquery\.com\//cdn.jsdelivr.net\/gh\/jquery\/codeorigin.jquery.com@main\/cdn\//,domain=~ui.com
 ||code.jquery.com/jquery-migrate-1*$all,~xhr,urltransform=/code\.jquery\.com\//cdn.jsdelivr.net\/gh\/jquery\/codeorigin.jquery.com@main\/cdn\//,domain=~ui.com
 ||code.jquery.com/jquery-migrate-3*$all,~xhr,urltransform=/code\.jquery\.com\//cdn.jsdelivr.net\/gh\/jquery\/codeorigin.jquery.com@main\/cdn\//,domain=~ui.com
 ||code.jquery.com/jquery-migrate-4*$all,~xhr,urltransform=/code\.jquery\.com\//cdn.jsdelivr.net\/gh\/jquery\/codeorigin.jquery.com@main\/cdn\//,domain=~ui.com
