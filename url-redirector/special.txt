@@ -1,5 +1,5 @@
 ! Title: [sukka] Special Redirects
-! Last modified: Tue, 11 Aug 2026 14:28:56 GMT
+! Last modified: Tue, 11 Aug 2026 17:56:29 GMT
 ! Description: uBlock Origin / AdGuard uritransform rules
 ! Homepage: https://github.com/SukkaW/Filters
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,14 +18,6 @@
 ||node.windy.com^$all,~xhr,uritransform=/node\.windy\.com/docs.lucaairport.qzz.io\/https\/node.windy.com/
 ||imgproxy.windy.com^$all,~xhr,uritransform=/imgproxy\.windy\.com/docs.lucaairport.qzz.io\/https\/imgproxy.windy.com/
 ||fourhoi.com^$all,~xhr,uritransform=/fourhoi\.com/docs.lucaairport.qzz.io\/https\/fourhoi.com/
-||tiles.strava.com^$all,~xhr,uritransform=/tiles\.strava\.com/docs.lucaairport.qzz.io\/https\/tiles.strava.com/
-||web-assets.strava.com^$all,~xhr,uritransform=/web-assets\.strava\.com/docs.lucaairport.qzz.io\/https\/web-assets.strava.com/
-||content-a.strava.com^$all,~xhr,uritransform=/content-a\.strava\.com/docs.lucaairport.qzz.io\/https\/content-a.strava.com/
-||wre-assets.prod.mapping.strava.com^$all,~xhr,uritransform=/wre-assets\.prod\.mapping\.strava\.com/docs.lucaairport.qzz.io\/https\/wre-assets.prod.mapping.strava.com/
-||d3nn82uaxijpm6.cloudfront.net^$all,~xhr,uritransform=/d3nn82uaxijpm6\.cloudfront\.net/docs.lucaairport.qzz.io\/https\/d3nn82uaxijpm6.cloudfront.net/
-||dgtzuqphqg23d.cloudfront.net^$all,~xhr,uritransform=/dgtzuqphqg23d\.cloudfront\.net/docs.lucaairport.qzz.io\/https\/dgtzuqphqg23d.cloudfront.net/
-||dgalywyr863hv.cloudfront.net^$all,~xhr,uritransform=/dgalywyr863hv\.cloudfront\.net/docs.lucaairport.qzz.io\/https\/dgalywyr863hv.cloudfront.net/
-||d3o5xota0a1fcr.cloudfront.net^$all,~xhr,uritransform=/d3o5xota0a1fcr\.cloudfront\.net/docs.lucaairport.qzz.io\/https\/d3o5xota0a1fcr.cloudfront.net/
 ||tiles.windy.com^$all,xhr,uritransform=/tiles\.windy\.com/docs.lucaairport.qzz.io\/https\/tiles.windy.com/
 ||ims.windy.com^$all,xhr,uritransform=/ims\.windy\.com/docs.lucaairport.qzz.io\/https\/ims.windy.com/
 ||sat.windy.com^$all,xhr,uritransform=/sat\.windy\.com/docs.lucaairport.qzz.io\/https\/sat.windy.com/
@@ -34,6 +26,14 @@
 ||node.windy.com/citytile/$all,xhr,uritransform=/node\.windy\.com\/citytile\//docs.lucaairport.qzz.io\/https\/node.windy.com\/citytile\//
 ||www.windy.com/img/$all,xhr,uritransform=/www\.windy\.com\/img\//docs.lucaairport.qzz.io\/https\/www.windy.com\/img\//
 ||www.windy.com//img/$all,xhr,uritransform=/www\.windy\.com\/\/img\//docs.lucaairport.qzz.io\/https\/www.windy.com\/\/img\//
+||tiles.strava.com^$all,xhr,uritransform=/tiles\.strava\.com/docs.lucaairport.qzz.io\/https\/tiles.strava.com/
+||content-a.strava.com^$all,xhr,uritransform=/content-a\.strava\.com/docs.lucaairport.qzz.io\/https\/content-a.strava.com/
+||wre-assets.prod.mapping.strava.com^$all,xhr,uritransform=/wre-assets\.prod\.mapping\.strava\.com/docs.lucaairport.qzz.io\/https\/wre-assets.prod.mapping.strava.com/
+||web-assets.strava.com^$all,xhr,uritransform=/web-assets\.strava\.com/docs.lucaairport.qzz.io\/https\/web-assets.strava.com/
+||d3nn82uaxijpm6.cloudfront.net^$all,xhr,uritransform=/d3nn82uaxijpm6\.cloudfront\.net/docs.lucaairport.qzz.io\/https\/d3nn82uaxijpm6.cloudfront.net/
+||dgtzuqphqg23d.cloudfront.net^$all,xhr,uritransform=/dgtzuqphqg23d\.cloudfront\.net/docs.lucaairport.qzz.io\/https\/dgtzuqphqg23d.cloudfront.net/
+||dgalywyr863hv.cloudfront.net^$all,xhr,uritransform=/dgalywyr863hv\.cloudfront\.net/docs.lucaairport.qzz.io\/https\/dgalywyr863hv.cloudfront.net/
+||d3o5xota0a1fcr.cloudfront.net^$all,xhr,uritransform=/d3o5xota0a1fcr\.cloudfront\.net/docs.lucaairport.qzz.io\/https\/d3o5xota0a1fcr.cloudfront.net/
 ||youjizz.com^$~doc,~frame,~xhr,uritransform=/([^\/]+)\.youjizz\.com/docs.lucaairport.qzz.io\/https\/$1.youjizz.com/
 ||phncdn.com^$~doc,~frame,~xhr,uritransform=/([^\/]+)\.phncdn\.com/docs.lucaairport.qzz.io\/https\/$1.phncdn.com/
 ||youjizz.com^$~doc,~frame,~xhr,uritransform=/([^\/]+)\.youjizz\.com/docs.lucaairport.qzz.io\/https\/$1.youjizz.com/
@@ -53,14 +53,6 @@
 ||node.windy.com^$all,~xhr,urltransform=/node\.windy\.com/docs.lucaairport.qzz.io\/https\/node.windy.com/
 ||imgproxy.windy.com^$all,~xhr,urltransform=/imgproxy\.windy\.com/docs.lucaairport.qzz.io\/https\/imgproxy.windy.com/
 ||fourhoi.com^$all,~xhr,urltransform=/fourhoi\.com/docs.lucaairport.qzz.io\/https\/fourhoi.com/
-||tiles.strava.com^$all,~xhr,urltransform=/tiles\.strava\.com/docs.lucaairport.qzz.io\/https\/tiles.strava.com/
-||web-assets.strava.com^$all,~xhr,urltransform=/web-assets\.strava\.com/docs.lucaairport.qzz.io\/https\/web-assets.strava.com/
-||content-a.strava.com^$all,~xhr,urltransform=/content-a\.strava\.com/docs.lucaairport.qzz.io\/https\/content-a.strava.com/
-||wre-assets.prod.mapping.strava.com^$all,~xhr,urltransform=/wre-assets\.prod\.mapping\.strava\.com/docs.lucaairport.qzz.io\/https\/wre-assets.prod.mapping.strava.com/
-||d3nn82uaxijpm6.cloudfront.net^$all,~xhr,urltransform=/d3nn82uaxijpm6\.cloudfront\.net/docs.lucaairport.qzz.io\/https\/d3nn82uaxijpm6.cloudfront.net/
-||dgtzuqphqg23d.cloudfront.net^$all,~xhr,urltransform=/dgtzuqphqg23d\.cloudfront\.net/docs.lucaairport.qzz.io\/https\/dgtzuqphqg23d.cloudfront.net/
-||dgalywyr863hv.cloudfront.net^$all,~xhr,urltransform=/dgalywyr863hv\.cloudfront\.net/docs.lucaairport.qzz.io\/https\/dgalywyr863hv.cloudfront.net/
-||d3o5xota0a1fcr.cloudfront.net^$all,~xhr,urltransform=/d3o5xota0a1fcr\.cloudfront\.net/docs.lucaairport.qzz.io\/https\/d3o5xota0a1fcr.cloudfront.net/
 ||tiles.windy.com^$all,xhr,urltransform=/tiles\.windy\.com/docs.lucaairport.qzz.io\/https\/tiles.windy.com/
 ||ims.windy.com^$all,xhr,urltransform=/ims\.windy\.com/docs.lucaairport.qzz.io\/https\/ims.windy.com/
 ||sat.windy.com^$all,xhr,urltransform=/sat\.windy\.com/docs.lucaairport.qzz.io\/https\/sat.windy.com/
@@ -69,6 +61,14 @@
 ||node.windy.com/citytile/$all,xhr,urltransform=/node\.windy\.com\/citytile\//docs.lucaairport.qzz.io\/https\/node.windy.com\/citytile\//
 ||www.windy.com/img/$all,xhr,urltransform=/www\.windy\.com\/img\//docs.lucaairport.qzz.io\/https\/www.windy.com\/img\//
 ||www.windy.com//img/$all,xhr,urltransform=/www\.windy\.com\/\/img\//docs.lucaairport.qzz.io\/https\/www.windy.com\/\/img\//
+||tiles.strava.com^$all,xhr,urltransform=/tiles\.strava\.com/docs.lucaairport.qzz.io\/https\/tiles.strava.com/
+||content-a.strava.com^$all,xhr,urltransform=/content-a\.strava\.com/docs.lucaairport.qzz.io\/https\/content-a.strava.com/
+||wre-assets.prod.mapping.strava.com^$all,xhr,urltransform=/wre-assets\.prod\.mapping\.strava\.com/docs.lucaairport.qzz.io\/https\/wre-assets.prod.mapping.strava.com/
+||web-assets.strava.com^$all,xhr,urltransform=/web-assets\.strava\.com/docs.lucaairport.qzz.io\/https\/web-assets.strava.com/
+||d3nn82uaxijpm6.cloudfront.net^$all,xhr,urltransform=/d3nn82uaxijpm6\.cloudfront\.net/docs.lucaairport.qzz.io\/https\/d3nn82uaxijpm6.cloudfront.net/
+||dgtzuqphqg23d.cloudfront.net^$all,xhr,urltransform=/dgtzuqphqg23d\.cloudfront\.net/docs.lucaairport.qzz.io\/https\/dgtzuqphqg23d.cloudfront.net/
+||dgalywyr863hv.cloudfront.net^$all,xhr,urltransform=/dgalywyr863hv\.cloudfront\.net/docs.lucaairport.qzz.io\/https\/dgalywyr863hv.cloudfront.net/
+||d3o5xota0a1fcr.cloudfront.net^$all,xhr,urltransform=/d3o5xota0a1fcr\.cloudfront\.net/docs.lucaairport.qzz.io\/https\/d3o5xota0a1fcr.cloudfront.net/
 ||youjizz.com^$~doc,~frame,~xhr,urltransform=/([^\/]+)\.youjizz\.com/docs.lucaairport.qzz.io\/https\/$1.youjizz.com/
 ||phncdn.com^$~doc,~frame,~xhr,urltransform=/([^\/]+)\.phncdn\.com/docs.lucaairport.qzz.io\/https\/$1.phncdn.com/
 ||youjizz.com^$~doc,~frame,~xhr,urltransform=/([^\/]+)\.youjizz\.com/docs.lucaairport.qzz.io\/https\/$1.youjizz.com/
