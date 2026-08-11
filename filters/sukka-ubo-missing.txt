@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Tue, 11 Aug 2026 11:05:40 GMT
+! Last modified: Tue, 11 Aug 2026 12:44:13 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.8.95
+!   - Version: 2.1.8.96
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -153941,6 +153941,8 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
 @@||nlog.naver.com/n|$domain=search.naver.com|www.naver.com
+||emrldtp.com/collect
+||fortune.com/api/recommendations/feedback/view/
 ||gdebenz.ru/api/rum
 ||data.storyeditor.eu/se_analytics.js
 ||dragon.pdf2go.com/api/z|
@@ -153962,7 +153964,6 @@ epicgames.com##+js(no-xhr-if, /id/api/analytics)
 ||openart.ai/4vu8/
 ||stolicaonego.ru/ajax/stat/
 ||motoin.de/Scripts/emstrack.js
-||aichaoxing.com/res/cx_stat.js
 ||umommy.*/api/
 ||sammobile.com/wp-content/themes/*/settings/hits/
 ||e.meloming.com/static/web-vitals.js
