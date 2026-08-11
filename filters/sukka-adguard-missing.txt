@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Tue, 11 Aug 2026 15:15:37 GMT
+! Last modified: Tue, 11 Aug 2026 19:28:45 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,13 +8,13 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Tue, 11 Aug 2026 11:27:22 +0000
+!   - Last modified: Tue, 11 Aug 2026 14:26:37 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
-!   - Last modified: Fri, 07 Aug 2026 15:35:03 +0000
+!   - Last modified: Tue, 11 Aug 2026 13:33:48 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Tue, 11 Aug 2026 10:51:24 +0000
+!   - Last modified: Tue, 11 Aug 2026 15:16:33 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
 !   - Last modified: Mon, 10 Aug 2026 15:52:26 +0000
@@ -9455,12 +9455,12 @@ alejandrocenturyoil.com,bryantenunder.com,caseyimpactstation.com,charlessheimpro
 ||facesnotebook.com^$all
 ||highrevenuecpm.com^$all
 /\/[0-9a-z]{2}\/[0-9a-f]{32}\.js/$script,xhr,3p,match-case,method=get,to=com,top=pro|to|tv|~gov.to|~gov.tv|~twitch.tv
-/\/[0-9a-z]{2}\/[0-9a-f]{32}\.js/$script,xhr,3p,match-case,method=get,to=com,top=anihq.org|bestbondagevideos.com|voe.sx
-voe.sx>>,anihq.org>>,aniworld.to>>,bestbondagevideos.com>>,embed.tmp-url.pro>>,filmo.to>>,javboys.tv>>,s.to>>,~addtoany.com,~cloudflare.com,~facebook.com,~fastly.net,~twitter.com##+js(nowoif)
-voe.sx>>,anihq.org>>,aniworld.to>>,bestbondagevideos.com>>,embed.tmp-url.pro>>,filmo.to>>,javboys.tv>>,s.to>>,~addtoany.com,~cloudflare.com,~facebook.com,~fastly.net,~twitter.com##+js(set, console.clear, undefined)
-voe.sx>>,anihq.org>>,aniworld.to>>,bestbondagevideos.com>>,embed.tmp-url.pro>>,filmo.to>>,javboys.tv>>,s.to>>,~addtoany.com,~cloudflare.com,~facebook.com,~fastly.net,~twitter.com##+js(acs, globalThis, break;case)
-voe.sx>>,anihq.org>>,aniworld.to>>,bestbondagevideos.com>>,embed.tmp-url.pro>>,filmo.to>>,javboys.tv>>,s.to>>,~addtoany.com,~cloudflare.com,~facebook.com,~fastly.net,~twitter.com##+js(acs, WebAssembly, atob)
-voe.sx>>,anihq.org>>,aniworld.to>>,bestbondagevideos.com>>,embed.tmp-url.pro>>,filmo.to>>,javboys.tv>>,s.to>>,~addtoany.com,~cloudflare.com,~facebook.com,~fastly.net,~twitter.com##+js(trusted-json-edit, .check=false)
+/\/[0-9a-z]{2}\/[0-9a-f]{32}\.js/$script,xhr,3p,match-case,method=get,to=com,top=anihq.org|bestbondagevideos.com|filmifen.com|voe.sx
+voe.sx>>,anihq.org>>,aniworld.to>>,bestbondagevideos.com>>,embed.tmp-url.pro>>,filmifen.com>>,filmo.to>>,javboys.tv>>,s.to>>,~addtoany.com,~cloudflare.com,~facebook.com,~fastly.net,~twitter.com##+js(nowoif)
+voe.sx>>,anihq.org>>,aniworld.to>>,bestbondagevideos.com>>,embed.tmp-url.pro>>,filmifen.com>>,filmo.to>>,javboys.tv>>,s.to>>,~addtoany.com,~cloudflare.com,~facebook.com,~fastly.net,~twitter.com##+js(set, console.clear, undefined)
+voe.sx>>,anihq.org>>,aniworld.to>>,bestbondagevideos.com>>,embed.tmp-url.pro>>,filmifen.com>>,filmo.to>>,javboys.tv>>,s.to>>,~addtoany.com,~cloudflare.com,~facebook.com,~fastly.net,~twitter.com##+js(acs, globalThis, break;case)
+voe.sx>>,anihq.org>>,aniworld.to>>,bestbondagevideos.com>>,embed.tmp-url.pro>>,filmifen.com>>,filmo.to>>,javboys.tv>>,s.to>>,~addtoany.com,~cloudflare.com,~facebook.com,~fastly.net,~twitter.com##+js(acs, WebAssembly, atob)
+voe.sx>>,anihq.org>>,aniworld.to>>,bestbondagevideos.com>>,embed.tmp-url.pro>>,filmifen.com>>,filmo.to>>,javboys.tv>>,s.to>>,~addtoany.com,~cloudflare.com,~facebook.com,~fastly.net,~twitter.com##+js(trusted-json-edit, .check=false)
 ||iamcdn.net/players/player*.*mins.js$script,domain=freeplayervideo.com|nazarickol.com|player-cdn.com
 *$image,redirect-rule=32x32.png,domain=freeplayervideo.com|nazarickol.com|player-cdn.com
 freeplayervideo.com,nazarickol.com,player-cdn.com,playhydrax.com##+js(set, console.clear, undefined)
@@ -23330,6 +23330,9 @@ mangakuri.online##+js(rpnt, script, anti_adblock_enabled:true, anti_adblock_enab
 nuviatoon.com##+js(no-fetch-if, tag.min.js)
 puzzleshq.com##[class^="article_adContainer"]
 pemersatu.top##+js(rmnt, script, .offsetParent)
+hollywoodhinditracks2.blogspot.com##+js(acs, atob, decodeURIComponent)
+||go.mobisla.com^$3p
+||go.mobtrks.com^$3p
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -26141,7 +26144,7 @@ www.cambe.pr.gov.br##+js(noeval-if, tigervip2)
 /^https:\/\/steam\.(?:community)?workshop-?[a-z]+\.com\//$doc,to=com|~steamcommunity.com
 ||com/p/jcod-ppsr/huasdirjdo^$doc
 /redeemwalletcode/gift/*$doc,to=~steamcommunity.com|~steampowered.com
-||steamcommunity.$doc,to=~steamcommunity.com|~steamcommunity.rocks
+||steamcommunity.$doc,to=~steamcommunity.com|~steamcommunity.gg|~steamcommunity.rocks
 ||shengsizhanchang.com^$all
 ||register-turnamen.free.nf^$all
 ||napthepubg.mobi^$all
@@ -28016,6 +28019,10 @@ gamer.com.tw##+js(href-sanitizer, body a[href^="https://ref.gamer.com.tw/redir.p
 landian.news##+js(href-sanitizer, body a[href^="https://www.landian.news/go?url=http"], ?url)
 ||link.zhihu.com/?target=http$doc,urlskip=?target
 zhihu.com##+js(href-sanitizer, body a[href^="https://link.zhihu.com/?target=http"], ?target)
+||touchgal.ink/redirect?url=http$doc,urlskip=?url
+touchgal.ink##+js(href-sanitizer, body a[href^="/redirect?url=http"], ?url)
+||sspai.com/link?target=http$doc,urlskip=?target
+sspai.com##+js(href-sanitizer, body a[href^="https://sspai.com/link?target=http"], ?target)
 ||cdn.digg.com/fragments/homepage/static/view-frontpage.js
 arstechnica.com,dermnetnz.org##.gsc-webResult a[data-cturl]:remove-attr(/^data-ct/)
 /detroitchicago/dpv.gif?$image

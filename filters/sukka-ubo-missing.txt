@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Tue, 11 Aug 2026 15:15:37 GMT
+! Last modified: Tue, 11 Aug 2026 19:28:45 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.8.97
+!   - Version: 2.1.8.99
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -155501,7 +155501,6 @@ hindustantimes.com##+js(set-local-storage-item, ht_cdp, $remove$)
 ||assets.aliexpress-media.com/g/??alilog/aplus_plugin_aefront/index.js,alilog/mlog/aplus_int.js
 ||assets.aliexpress-media.com/g/lzd_sec/epssw/*/epssw.js
 ||assets.aliexpress-media.com/g/AWSC/uab/*/collina.js
-||assets.alicdn.com/g/alilog/
 ||xgp.pl/wp-content/themes/asona-child-theme/scripts/ga-script.js
 /tracking-pixel$domain=get-to.link
 ||s.yimg.com/ss/analytics3.js
@@ -156783,7 +156782,6 @@ ciudad.com.ar###cxense-wrapper
 ||bilet.yandex.com.tr/log/
 ||travel.yandex.ru/api/*/log/
 ||player.kwikmotion.com/packages/videojs-stat/
-||assets.alicdn.com/g/alilog/aplus_plugin_xwj/index.js
 ||s.click.aliexpress.com/af_pixel.htm
 ||onlyfans.com/*/stats-collect
 ||clickfunnels.com/cf.js
