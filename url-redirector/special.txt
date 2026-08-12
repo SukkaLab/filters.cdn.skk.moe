@@ -1,5 +1,5 @@
 ! Title: [sukka] Special Redirects
-! Last modified: Wed, 12 Aug 2026 19:12:14 GMT
+! Last modified: Wed, 12 Aug 2026 19:28:48 GMT
 ! Description: uBlock Origin / AdGuard uritransform rules
 ! Homepage: https://github.com/SukkaW/Filters
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -26,7 +26,6 @@
 ||www.windy.com/img/$all,xhr,uritransform=/www\.windy\.com\/img\//docs.lucaairport.qzz.io\/https\/www.windy.com\/img\//
 ||www.windy.com//img/$all,xhr,uritransform=/www\.windy\.com\/\/img\//docs.lucaairport.qzz.io\/https\/www.windy.com\/\/img\//
 ||tiles.strava.com^$all,xhr,uritransform=/tiles\.strava\.com/docs.lucaairport.qzz.io\/https\/tiles.strava.com/
-||content-a.strava.com^$all,xhr,uritransform=/content-a\.strava\.com/docs.lucaairport.qzz.io\/https\/content-a.strava.com/
 ||wre-assets.prod.mapping.strava.com^$all,xhr,uritransform=/wre-assets\.prod\.mapping\.strava\.com/docs.lucaairport.qzz.io\/https\/wre-assets.prod.mapping.strava.com/
 ||web-assets.strava.com^$all,xhr,uritransform=/web-assets\.strava\.com/docs.lucaairport.qzz.io\/https\/web-assets.strava.com/
 ||d3nn82uaxijpm6.cloudfront.net^$all,xhr,uritransform=/d3nn82uaxijpm6\.cloudfront\.net/docs.lucaairport.qzz.io\/https\/d3nn82uaxijpm6.cloudfront.net/
@@ -60,7 +59,6 @@
 ||www.windy.com/img/$all,xhr,urltransform=/www\.windy\.com\/img\//docs.lucaairport.qzz.io\/https\/www.windy.com\/img\//
 ||www.windy.com//img/$all,xhr,urltransform=/www\.windy\.com\/\/img\//docs.lucaairport.qzz.io\/https\/www.windy.com\/\/img\//
 ||tiles.strava.com^$all,xhr,urltransform=/tiles\.strava\.com/docs.lucaairport.qzz.io\/https\/tiles.strava.com/
-||content-a.strava.com^$all,xhr,urltransform=/content-a\.strava\.com/docs.lucaairport.qzz.io\/https\/content-a.strava.com/
 ||wre-assets.prod.mapping.strava.com^$all,xhr,urltransform=/wre-assets\.prod\.mapping\.strava\.com/docs.lucaairport.qzz.io\/https\/wre-assets.prod.mapping.strava.com/
 ||web-assets.strava.com^$all,xhr,urltransform=/web-assets\.strava\.com/docs.lucaairport.qzz.io\/https\/web-assets.strava.com/
 ||d3nn82uaxijpm6.cloudfront.net^$all,xhr,urltransform=/d3nn82uaxijpm6\.cloudfront\.net/docs.lucaairport.qzz.io\/https\/d3nn82uaxijpm6.cloudfront.net/
