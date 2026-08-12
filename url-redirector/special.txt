@@ -1,5 +1,5 @@
 ! Title: [sukka] Special Redirects
-! Last modified: Wed, 12 Aug 2026 18:28:43 GMT
+! Last modified: Wed, 12 Aug 2026 18:59:54 GMT
 ! Description: uBlock Origin / AdGuard uritransform rules
 ! Homepage: https://github.com/SukkaW/Filters
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -17,7 +17,6 @@
 ||github.com/*/releases/download$all,~xhr,uritransform=/github\.com\//download.lucaairport.qzz.io\/https\/github.com\//
 ||node.windy.com^$all,~xhr,uritransform=/node\.windy\.com/docs.lucaairport.qzz.io\/https\/node.windy.com/
 ||imgproxy.windy.com^$all,~xhr,uritransform=/imgproxy\.windy\.com/docs.lucaairport.qzz.io\/https\/imgproxy.windy.com/
-||fourhoi.com^$all,~xhr,uritransform=/fourhoi\.com/docs.lucaairport.qzz.io\/https\/fourhoi.com/
 ||tiles.windy.com^$all,xhr,uritransform=/tiles\.windy\.com/docs.lucaairport.qzz.io\/https\/tiles.windy.com/
 ||ims.windy.com^$all,xhr,uritransform=/ims\.windy\.com/docs.lucaairport.qzz.io\/https\/ims.windy.com/
 ||sat.windy.com^$all,xhr,uritransform=/sat\.windy\.com/docs.lucaairport.qzz.io\/https\/sat.windy.com/
@@ -52,7 +51,6 @@
 ||github.com/*/releases/download$all,~xhr,urltransform=/github\.com\//download.lucaairport.qzz.io\/https\/github.com\//
 ||node.windy.com^$all,~xhr,urltransform=/node\.windy\.com/docs.lucaairport.qzz.io\/https\/node.windy.com/
 ||imgproxy.windy.com^$all,~xhr,urltransform=/imgproxy\.windy\.com/docs.lucaairport.qzz.io\/https\/imgproxy.windy.com/
-||fourhoi.com^$all,~xhr,urltransform=/fourhoi\.com/docs.lucaairport.qzz.io\/https\/fourhoi.com/
 ||tiles.windy.com^$all,xhr,urltransform=/tiles\.windy\.com/docs.lucaairport.qzz.io\/https\/tiles.windy.com/
 ||ims.windy.com^$all,xhr,urltransform=/ims\.windy\.com/docs.lucaairport.qzz.io\/https\/ims.windy.com/
 ||sat.windy.com^$all,xhr,urltransform=/sat\.windy\.com/docs.lucaairport.qzz.io\/https\/sat.windy.com/
