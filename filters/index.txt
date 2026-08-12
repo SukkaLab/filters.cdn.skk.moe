@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Filters
-! Last modified: Tue, 11 Aug 2026 17:56:28 GMT
+! Last modified: Wed, 12 Aug 2026 18:28:43 GMT
 ! Expires: 1 hours
 ! Description: The filters from Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -218,6 +218,8 @@ wnacg.com##+js(set, lockdownInterface, noopFunc, runAt, 2)
 ||www.sohu.com$inline-script
 ||blog.gitcode.com$inline-script
 ||www.sohu.com$csp=script-src https://*.itc.cn 'self' 'unsafe-eval' 'unsafe-inline'
+||sohu.com/public-api/articles/pv
+||odin.sohu.com/odin/api/a/blockdata
 github.com##.markdown-body li>p:style(margin-top: 0 !important; margin-bottom: 0 !important)
 github.com###repository-container-header:not(:has(.js-repo-nav)) :is(#repo-stars-counter-star, #repo-stars-counter-unstar, #repo-network-counter, #repo-notifications-counter, .js-codespaces-details-container summary .Button-label):style(display: inline-block !important)
 github.com##article[data-hydro-view*="REPOSITORY_RECOMMENDATION"]
