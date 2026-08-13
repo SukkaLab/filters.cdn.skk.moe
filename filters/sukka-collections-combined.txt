@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Thu, 13 Aug 2026 11:11:17 GMT
+! Last modified: Thu, 13 Aug 2026 15:14:17 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202608131102
+!   - Version: 202608131502
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 13 Aug 2026 11:02 UTC
+!   - Last modified: 13 Aug 2026 15:02 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
@@ -31,7 +31,7 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 💊 Dandelion Sprout's Anti-Malware List
 !   - URL: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout's%20Anti-Malware%20List.txt
-!   - Version: 26July2026v2
+!   - Version: 13August2026v1
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 🛃 Anti-'Adoptables and Artsite NFTs' List
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/AntiAdoptablesList.txt
@@ -74,7 +74,7 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * ➗ Actually Legitimate URL Shortener Tool
 !   - URL: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt
-!   - Version: 11August2026v1
+!   - Version: 13August2026v1
 !   - Homepage: https://github.com/DandelionSprout/adfilt/discussions/163
 ! * 🐊 Imgur: Pure Imagery Experience
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/ImgurPureImageryExperience.txt
@@ -3033,7 +3033,7 @@ kinoafisha.ua##.turn-off-add-block-text
 stalkerportaal.ru##.video_adsense
 bookskeeper.ru,e-xecutive.ru##.warning
 forum.bestflowers.ru##.xenOverlay
-/^https?:\/\/pikabu\.ru\/ajax\/+[A-Za-z0-9_.-]{7,}\?[A-Za-z0-9]+=[0-9a-z_-]+/$xmlhttprequest,domain=pikabu.ru
+/^https?:\/\/pikabu\.ru\/ajax\/+[A-Za-z0-9_-]+(\.[A-Za-z0-9]{1,2})?\?[A-Za-z0-9]+=[0-9a-z_-]+/$xmlhttprequest,domain=pikabu.ru
 /cookie_check.min.js$domain=acetv.me
 /gogl_detector$script,domain=meddaily.ru|newsru.com
 @@||anidub.com/ads.js|$script,domain=anidub.com
@@ -3118,6 +3118,7 @@ bigpuzzle.ru##td[valign="top"][width="240px"][height="600"]
 ||kontrolnaya-rabota.ru^*/toastr.$script,stylesheet
 ||mobzon.ru/adbp/adbp.js
 ||nnm-club.ws/forum/docs/requests.js
+||pikabu.ru/ajax//$xmlhttprequest
 ||pwnews.net/des/antiblock.js$script
 ||rockstargame.su/adb_script$script
 ||rusnext.ru/advar.js$script
@@ -3431,7 +3432,7 @@ dailymotion.com##div[class^=AdDiscovery]
 dailymotion.com##div[class*=_adCell_]
 dailymotion.com#?#div[class^=DiscoveryQueueDisplay__sectionContainer_]:has-text(Browse more )
 ! 💊 Dandelion Sprout's Anti-Malware List https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout's%20Anti-Malware%20List.txt
-||top^$doc,domain=~caitlin.top|~callmebymygender.top|~corriente.top|~gdtot.top|~nicenature.top|~reminder.top|~magocoro.top|~castlevania.top|~suiten.top|~shucks.top|~1stream.top|~ambr.top|~changlam10.top|~changlam11.top|~pdcdn1.top|~pressplay.top|~chillx.top|~strims.top|~thedesk.top|~audioforyou.top|~awavenue.top|~reyhub.top|~iboxs.top|~adrules.top|~hostingowy.top|~to|~yggtorrent.top|~yggleak.top|~asiaon.top|~voxel.top|~passt.top|~polar.top|~rifton.top|~rugaming.top|~doubledouble.top|~hedon-haven.top|~outlands.top|~tk-web.top|~qpmegathread.top|~qmk.top|~mgytr.top|~girlskissing.top|~luxferre.top|~adderly.top|~supremecloud.top|~cldev.top|~medoed.top
+||top^$doc,domain=~caitlin.top|~callmebymygender.top|~corriente.top|~gdtot.top|~nicenature.top|~reminder.top|~magocoro.top|~castlevania.top|~suiten.top|~shucks.top|~1stream.top|~ambr.top|~changlam10.top|~changlam11.top|~pdcdn1.top|~pressplay.top|~chillx.top|~strims.top|~thedesk.top|~audioforyou.top|~awavenue.top|~reyhub.top|~iboxs.top|~adrules.top|~hostingowy.top|~to|~yggtorrent.top|~yggleak.top|~asiaon.top|~voxel.top|~passt.top|~polar.top|~rifton.top|~rugaming.top|~doubledouble.top|~hedon-haven.top|~outlands.top|~tk-web.top|~qpmegathread.top|~qmk.top|~mgytr.top|~girlskissing.top|~luxferre.top|~adderly.top|~supremecloud.top|~cldev.top|~medoed.top|~tooru.top
 @@||masto*.top^$doc
 @@/^.*(tech|project|linux).*\.top(/[a-z0-9_-]?.*)?$/$doc
 @@://blog.*.top^$doc
@@ -18876,6 +18877,7 @@ $removeparam=paipv,domain=facebook.*|facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3m
 ||instagram.com^$doc,removeparam=igsh
 $removeparam=rdid,domain=facebook.*|facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion
 $removeparam=_rdc
+||instagram.com^$doc,removeparam=igsi
 $removeparam=cp_ksver
 $removeparam=biw
 $removeparam=bih
