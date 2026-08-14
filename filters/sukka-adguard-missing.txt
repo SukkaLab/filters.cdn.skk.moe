@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Fri, 14 Aug 2026 19:17:23 GMT
+! Last modified: Fri, 14 Aug 2026 22:43:15 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Fri, 14 Aug 2026 14:20:28 +0000
+!   - Last modified: Fri, 14 Aug 2026 19:18:32 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Fri, 14 Aug 2026 16:01:23 +0000
@@ -6538,6 +6538,7 @@ highkeyfinance.com,amanguides.com###wpsafe-link:others()
 blog.disheye.com###gourl:style(display: block !important;)
 blog.disheye.com###gourl:others()
 amanguides.com,highkeyfinance.com##+js(rmnt, script, deblocker)
+*$script,redirect-rule=noopjs,domain=cuttty.com|cety.app|cutlink.net|cutnet.net|cuttlinks.com|exe-links.com|exe-urls.com|exego.app|exeygo.com|exnion.com
 @@*$ghide,domain=cuttty.com|cety.app|cutlink.net|cutnet.net|cuttlinks.com|exe-links.com|exe-urls.com|exego.app|exeygo.com|exnion.com
 @@||vhit.io/scripts/vhit.js$script,domain=cuttty.com|cety.app|cutlink.net|cutnet.net|cuttlinks.com|exe-links.com|exe-urls.com|exego.app|exeygo.com|exnion.com
 cuttty.com,cety.app,cutlink.net,cutnet.net,cuttlinks.com,exe-links.com,exe-urls.com,exego.app,exeygo.com,exnion.com##.steps-to-earn, .flex.share-icons-container, .register-banner, fieldset, .partners-container, .actions, .earning-steps, article:has(p), footer, header
@@ -6545,9 +6546,7 @@ cuttty.com,cety.app,cutlink.net,cutnet.net,cuttlinks.com,exe-links.com,exe-urls.
 cuttty.com,cety.app,cutlink.net,cutnet.net,cuttlinks.com,exe-links.com,exe-urls.com,exego.app,exeygo.com,exnion.com##+js(aeld, DOMContentLoaded, history.go)
 cuttty.com,cety.app,cutlink.net,cutnet.net,cuttlinks.com,exe-links.com,exe-urls.com,exego.app,exeygo.com,exnion.com##+js(nostif, offsetHeight)
 cuttty.com,cety.app,cutlink.net,cutnet.net,cuttlinks.com,exe-links.com,exe-urls.com,exego.app,exeygo.com,exnion.com##+js(aopr, app_vars.please_disable_adblock)
-cuttty.com,cety.app,cutlink.net,cutnet.net,cuttlinks.com,exe-links.com,exe-urls.com,exego.app,exeygo.com,exnion.com##+js(prevent-fetch, method:HEAD)
-cuttty.com,cety.app,cutlink.net,cutnet.net,cuttlinks.com,exe-links.com,exe-urls.com,exego.app,exeygo.com,exnion.com##+js(set, vhit.report, noopFunc)
-cuttty.com,cety.app,cutlink.net,cutnet.net,cuttlinks.com,exe-links.com,exe-urls.com,exego.app,exeygo.com,exnion.com##+js(set, vhit.detectAdblock, noopFunc)
+cuttty.com,cety.app,cutlink.net,cutnet.net,cuttlinks.com,exe-links.com,exe-urls.com,exego.app,exeygo.com,exnion.com##+js(no-fetch-if, /scorecardresearch\.com|outbrain\.com|taboola\.com|criteo\.net|rubiconproject\.com|adform\.net|casalemedia\.com/, , {"type": "opaque"})
 ||datadropspot.pro^$all
 @@*$ghide,domain=upfilesgo.com|upfion.com|upfiles.app|upfiles-urls.com
 @@||vhit.io/scripts/vhit.js$script,domain=upfilesgo.com|upfion.com|upfiles.app|upfiles-urls.com
