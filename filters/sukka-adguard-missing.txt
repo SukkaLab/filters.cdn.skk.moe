@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Fri, 14 Aug 2026 15:06:32 GMT
+! Last modified: Fri, 14 Aug 2026 19:17:23 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -11,7 +11,7 @@
 !   - Last modified: Fri, 14 Aug 2026 14:20:28 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
-!   - Last modified: Fri, 14 Aug 2026 11:01:09 +0000
+!   - Last modified: Fri, 14 Aug 2026 16:01:23 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
 !   - Last modified: Fri, 14 Aug 2026 06:04:56 +0000
@@ -25536,6 +25536,15 @@ sgp1.cdn.digitaloceanspaces.com###frame[title="encrypted shop"][allowfullscreen]
 ||amazonaws.com/_Fm7-alert.mp3
 ||on-forge.com/win*/alert-en.wav
 z13.web.core.windows.net##+js(aeld, DOMContentLoaded, fullscreenEnabled)
+||roykuashkimayo.$all
+||toolsmastercracked.$all
+||carrymedias.com^$all
+||homebuying-guide.com^$all
+||ladesona.com^$all
+||luiosmardc.ink^$all
+##body.user-clicked[style="cursor: auto;"] > #root > .app-container
+/images/script.mp3|$media,1p
+/images/bip.mp3|$media,1p
 /^https:\/\/[0-9a-z]{4}\.[a-z]{15,}\.monster\/\?[0-9a-f]{16,}$/$doc
 /^https:\/\/[0-9a-z][0-9a-z][0-9a-z][0-9a-z]\.[a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z]+\.monster\/\?[0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f]$/$doc
 /api.php?s=*&_v=$script
