@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Sat, 15 Aug 2026 10:39:43 GMT
+! Last modified: Sat, 15 Aug 2026 14:38:08 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -154299,7 +154299,6 @@ abc.net.au##+js(set-local-storage-item, snowplowOutQueue_Presentation Layer, $re
 ||simplywall.st/backend/flags/proxy/client/metrics
 ||doofinder.com/api/v*/stats/
 ||chatgpt.com/backend-api/beacons/
-||chatgpt.com/backend-api/sentinel/ping
 ||lg-chatbot.com/chatbot/v*/api/client_logger
 ||cv-library.co.uk/assets/js/ext/amplitude-
 ||cv-library.co.uk/assets/js/ext/clickstream.
@@ -154326,7 +154325,6 @@ play.xumo.com##+js(set-local-storage-item, _xumo_ifaId, $remove$)
 ||mon.avito.ru^
 ||cdn.amplitude.com/engagement-browser/
 ||www.history.com/editorial/vendor/
-||static.rebelboost.com/tracking/
 /rptracker.js$domain=rshb.ru
 burger-king.by##+js(set-local-storage-item, mindboxDeviceUUID, $remove$)
 ||ubisoft.com/*/global/tracking/
