@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Fri, 14 Aug 2026 22:43:15 GMT
+! Last modified: Sat, 15 Aug 2026 03:06:30 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Fri, 14 Aug 2026 19:18:32 +0000
+!   - Last modified: Fri, 14 Aug 2026 21:05:58 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Fri, 14 Aug 2026 16:01:23 +0000
@@ -30,7 +30,7 @@
 !   - Last modified: Tue, 11 Aug 2026 07:11:45 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
-!   - Last modified: Thu, 13 Aug 2026 04:52:11 +0000
+!   - Last modified: Sat, 15 Aug 2026 01:15:33 +0000
 ! --------------------------------------------------------------
 ! uBlock filters https://ublockorigin.pages.dev/filters/filters.min.txt
 *_ad_$media,domain=youtube.com,3p
@@ -6548,6 +6548,7 @@ cuttty.com,cety.app,cutlink.net,cutnet.net,cuttlinks.com,exe-links.com,exe-urls.
 cuttty.com,cety.app,cutlink.net,cutnet.net,cuttlinks.com,exe-links.com,exe-urls.com,exego.app,exeygo.com,exnion.com##+js(aopr, app_vars.please_disable_adblock)
 cuttty.com,cety.app,cutlink.net,cutnet.net,cuttlinks.com,exe-links.com,exe-urls.com,exego.app,exeygo.com,exnion.com##+js(no-fetch-if, /scorecardresearch\.com|outbrain\.com|taboola\.com|criteo\.net|rubiconproject\.com|adform\.net|casalemedia\.com/, , {"type": "opaque"})
 ||datadropspot.pro^$all
+*$script,redirect-rule=noopjs,domain=upfilesgo.com|upfion.com|upfiles.app|upfiles-urls.com
 @@*$ghide,domain=upfilesgo.com|upfion.com|upfiles.app|upfiles-urls.com
 @@||vhit.io/scripts/vhit.js$script,domain=upfilesgo.com|upfion.com|upfiles.app|upfiles-urls.com
 upfilesgo.com,upfion.com,upfiles.app,upfiles-urls.com##fieldset, .faqs, footer, .features
@@ -6555,10 +6556,8 @@ upfilesgo.com,upfion.com,upfiles.app,upfiles-urls.com##.content:has(h2)
 upfilesgo.com,upfion.com,upfiles.app,upfiles-urls.com##+js(aeld, DOMContentLoaded, history.go)
 upfilesgo.com,upfion.com,upfiles.app,upfiles-urls.com##+js(aeld, click, shouldOpenPopUp)
 upfilesgo.com,upfion.com,upfiles.app,upfiles-urls.com##+js(set, blurred, false)
-upfilesgo.com,upfion.com,upfiles.app,upfiles-urls.com##+js(no-fetch-if, method:HEAD)
 upfilesgo.com,upfion.com,upfiles.app,upfiles-urls.com##+js(aeld, /blur|focus/)
-upfilesgo.com,upfion.com,upfiles.app,upfiles-urls.com##+js(set, vhit.report, noopFunc)
-upfilesgo.com,upfion.com,upfiles.app,upfiles-urls.com##+js(set, vhit.detectAdblock, noopFunc)
+upfilesgo.com,upfion.com,upfiles.app,upfiles-urls.com##+js(no-fetch-if, /scorecardresearch\.com|outbrain\.com|taboola\.com|criteo\.net|rubiconproject\.com|adform\.net|casalemedia\.com/, , {"type": "opaque"})
 rentry.co##article:has(#download-your-archive-file)
 ||sharecube.pro^$all
 ||flyshare.cfd^$all
@@ -7415,6 +7414,8 @@ qr1.me-qr.com###relevantEvent
 qr1.me-qr.com##.px-0.col-12:has(>[class="adsbygoogle"])
 fibwatch.art##+js(rmnt, script, /showWarning|PASS_KEY/)
 ||urlshortlink.top/*^url=http$doc,urlskip=?url
+uploadao.com##+js(rmnt, script, zoneId)
+uploadao.com.dl0-ad-row
 xnxx.com,xvideos.com###ad-header-mobile
 jprime.jp##.ad-overlay
 apkdone.com##.adplaceholder-top
@@ -22725,11 +22726,13 @@ worldofpcgames.com##[href*="cfd"]
 zpaste.net##div > center > button[class][style]
 zpaste.net##center > center > button[class][style]
 filecrate.store##+js(aeld, click, !adShown)
-vidara.so,vidara.to##+js(nowoif)
-vidara.so,vidara.to##+js(acs, document.createElement, /blocker|detected/)
-||ssl.p.jwpcdn.com/player/*/googima.js$script,redirect=noopjs,domain=vidara.so|vidara.to
-vidara.to##+js(rmnt, script, document.getElementsByTagName)
-vidara.to##+js(set, HTMLScriptElement.prototype.onerror, undefined)
+*$script,redirect-rule=noopjs,domain=vidara.to|vidavra.com|vidara.so
+||ssl.p.jwpcdn.com/player/*/googima.js$script,redirect=noopjs,domain=vidara.so|vidara.to|vidavra.com
+vidara.so,vidara.to,vidavra.com##+js(nowoif)
+vidara.so,vidara.to,vidavra.com##+js(acs, document.createElement, /blocker|detected/)
+vidara.so,vidara.to,vidavra.com##+js(rmnt, script, document.getElementsByTagName)
+vidara.so,vidara.to,vidavra.com##+js(set, HTMLScriptElement.prototype.onerror, undefined)
+vidara.so,vidara.to,vidavra.com##div.max-w-3xl.mx-auto > div.relative.mb-5.rounded-xl.p-7.text-center
 myvidster.com##div.details_ads:nth-of-type(2)
 myvidster.com##td[height="90"]
 twitchnosub.com##+js(nostif, , 3200-)
@@ -34584,8 +34587,6 @@ pelispedia.*##+js(aopw, document.oncontextmenu)
 pelispedia.*##+js(ra, oncontextmenu)
 cine.to##+js(aopr, oncontextmenu)
 desbloqueador.*##+js(aopr, document.oncontextmenu)
-megapastes.com##+js(aopr, document.oncontextmenu)
-megapastes.com##+js(aopr, document.onselectstart)
 s0urce.io##+js(aeld, /^(contextmenu|copy)$/)
 dicionariocriativo.com.br##+js(aopr, getSelection)
 gay69.stream##+js(aopr, disableSelection)
