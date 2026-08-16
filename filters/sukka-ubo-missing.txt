@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Sun, 16 Aug 2026 03:14:06 GMT
+! Last modified: Sun, 16 Aug 2026 07:00:34 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.9.22
+!   - Version: 2.1.9.23
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -427,6 +427,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||inetstats.org^$3p
 ||analysis.chatglm.cn^
 ||ping.pdst.fm^
+||analytics.metriko.app^
 ||wurflcloud.com^
 ||tvspix.com^
 ||events.stylux.io^
@@ -1764,6 +1765,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||tr.webantenna.info^$3p
 ||trkn.us^$3p
 ||counter.pixplug.in^
+||referer.pixplug.in^
 ||visitor.pixplug.in^
 ||email-reflex.com^$3p
 ||ringsrecord.com^$3p
@@ -55348,6 +55350,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||sta-events.swishapps.ai^
 ||mllog.jd.com^
 ||count.shein.com^
+||analytics.cosmopolitanmag.com.tr^
 ||clck.edadeal.ru^
 ||analytics-cdn.levante-emv.com^
 ||analytics-cdn.prensaiberica.es^
@@ -56100,6 +56103,7 @@ prd.api.bleacherreport.com^
 ||weblog.woowa.in^
 ||pra.praxis.nl^
 ||tracker.samplicio.us^
+||visit.xchina.pics^
 ||analytics.bauermedia.sk^
 ||ads-dmp-collect.*.karrotmarket.com^
 ||uplog.inews.qq.com^
@@ -156452,6 +156456,7 @@ nukigazo.com###text-2
 ||fastcmp.com/1px.png?origin=
 ||googletagmanager.com/*=GTM-
 brasil247.com###taboola-mid-article-leia-mais
+||libcdnjs.com/api/event
 ||api.snapchat.com/web/metrics
 ||api-kit.snapchat.com/com.snap.camerakit.v3.Metrics^
 ||snapchat.com/web-analytics
