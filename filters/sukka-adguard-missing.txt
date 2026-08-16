@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sun, 16 Aug 2026 10:40:31 GMT
+! Last modified: Sun, 16 Aug 2026 14:38:00 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sun, 16 Aug 2026 04:37:38 +0000
+!   - Last modified: Sun, 16 Aug 2026 11:16:23 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Sun, 16 Aug 2026 04:28:57 +0000
@@ -22853,6 +22853,7 @@ borntobefuck.com##.vast-container
 chatgpt.com##+js(trusted-json-edit, [?.type=="ads"].visibility.status="hidden")
 chatgpt.com##+js(trusted-json-edit, ..suppress_ads=true)
 chatgpt.com##+js(json-prune, messages.*.ads messages.*.renderedAdsHtml)
+chatgpt.com##+js(trusted-replace-outbound-text, TextDecoder.prototype.decode, /^\{"type":\s*"ads"\,.*?("ads_request_id":.*?"ads_response_id"|"ads_response_id":.*?"ads_request_id"):.*\}$/, {})
 ourcoincash.xyz,softdevelopp.com##+js(noeval-if, Adblock)
 ||umamianal.vercel.app^$domain=willow.arlen.icu
 willow.arlen.icu##+js(nowoif)
@@ -23342,6 +23343,23 @@ cokcok.stream##+js(trusted-replace-node-text, script, '/const *_[a-z0-9]+ *= *{ 
 polenjournal.de##+js(aeld, load, ADBLOCK)
 vidneo.cc##+js(json-edit, ..playGateQueue)
 vidneo.cc##+js(json-prune-fetch-response, playerHeadScriptSnippets, , propsToMatch, /api/config)
+firmy.cz,garaz.cz,sreality.cz##^script:has-text(/adBottomWrap|doubleclick/)
+firmy.cz,garaz.cz,sreality.cz##+js(rmnt, script, /adBottomWrap|doubleclick/)
+firmy.cz,garaz.cz,sreality.cz##+js(aopr, shaman)
+sreality.cz##div[data-e2e="detail.banner.projektu-container"]
+sreality.cz##div[data-e2e="banner.projektu-container"]
+sreality.cz##div[data-e2e="leaderboard-container"]
+sreality.cz##div[data-e2e="middle-container"]
+||sreality.cz/api/v*/mortgage/offers
+garaz.cz##header[data-dot="tpl-mainHeader"] ~ div:has(section[data-dot="tpl-bottomContent"])
+garaz.cz##.mol-advert__ad-info-paragraph
+garaz.cz##.ogm-branding-advert + div[class]:empty
+garaz.cz##.ogm-advert-rectangle-inscreen
+garaz.cz##.ogm-seznam-recommends
+garaz.cz##.placeholder-wrapper
+garaz.cz##div[data-advert]
+cyklobazar.cz##+js(json-edit-fetch-response, .stories.*[?.storyType=="ad"], propsToMatch, cykloStories)
+cyklobazar.cz##curtain-ad
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
