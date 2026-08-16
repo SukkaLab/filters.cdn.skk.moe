@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sat, 15 Aug 2026 22:41:42 GMT
+! Last modified: Sun, 16 Aug 2026 03:14:06 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sat, 15 Aug 2026 17:28:57 +0000
+!   - Last modified: Sat, 15 Aug 2026 23:13:50 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Fri, 14 Aug 2026 16:01:23 +0000
@@ -22306,7 +22306,7 @@ animeyubi.com##+js(nowoif)
 temp-mail.lol##+js(no-fetch-if, method:/head/i)
 moviehax.biz###clickfakeplayer[href]:remove-attr(href)
 snopes.com##+js(nostif, =>)
-mtv.fi##+js(trusted-json-edit-fetch-response, .metadata.hideAds=true, propsToMatch, a2d.tv/play/)
+mtv.fi,mtvuutiset.fi##+js(trusted-json-edit-fetch-response, .metadata.hideAds=true, propsToMatch, a2d.tv/play/)
 narviks.nl##+js(rmnt, script, adb)
 artru.net##+js(acs, setTimeout, getComputedStyle)
 artru.net##.artru-ads
