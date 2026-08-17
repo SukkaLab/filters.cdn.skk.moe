@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Mon, 17 Aug 2026 03:14:35 GMT
+! Last modified: Mon, 17 Aug 2026 07:17:15 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.9.24
+!   - Version: 2.1.9.26
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -54922,6 +54922,8 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||countly.
 ||countly-
 |piwik.
+||cat.pexels.com^
+||affiliate.unisender.com^
 ||ling.willowmovies.com^
 ||stats.jerkmotion.com^
 ||v.voltmail.io^
@@ -153948,6 +153950,7 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
 @@||nlog.naver.com/n|$domain=search.naver.com|www.naver.com
+||api.redgifs.com/v*/events/
 ||statics.cedscdn.it/utils/src/js/shopalytics.js
 ||d26yk4zpyhjeeq.cloudfront.net/*/tracking/
 ||xullys.xyz/~api/analytics|
