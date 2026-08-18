@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Tue, 18 Aug 2026 19:02:36 GMT
+! Last modified: Tue, 18 Aug 2026 22:43:44 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202608181853
+!   - Version: 202608182231
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 18 Aug 2026 18:53 UTC
+!   - Last modified: 18 Aug 2026 22:31 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
@@ -106,7 +106,7 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * ↖ Anti-'Custom cursors' List
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/Anti-'Custom%20cursors'%20List.txt
-!   - Version: 18August2026v1-Beta
+!   - Version: 29April2026v1-Beta
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 💬 Twitch: Pure Viewing Experience
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/TwitchPureViewingExperience.txt
@@ -22283,7 +22283,6 @@ nerdelandslaget.no##html:style(cursor: auto !important)
 ##.n-cursor:not(html,body)
 .ani|$domain=~pixiv.net|~deviantart.com
 .cursor|$domain=~pixiv.net|~deviantart.com
-centerpointgaming.com##html:style(cursor:unset!important;--cursor-arrow:unset!important;--cursor-pointer:unset!important;--cursor-text:unset!important;--cursor-disabled:unset!important)
 ! 💬 Twitch: Pure Viewing Experience https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/TwitchPureViewingExperience.txt
 www.twitch.tv##.recommended-channels
 www.twitch.tv##.tw-flex-grow-1 > div:nth-of-type(1) > .side-nav-section:nth-of-type(2)
