@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Wed, 19 Aug 2026 07:07:32 GMT
+! Last modified: Wed, 19 Aug 2026 10:46:40 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.9.48
+!   - Version: 2.1.9.50
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -282126,6 +282126,8 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
 @@||nlog.naver.com/n|$domain=search.naver.com|www.naver.com
+||kantan.news/api/track/$xhr,redirect=noop.json
+||cdn.2way.app/prod2/tracking.js
 ||d3rsy74zmigk0i.cloudfront.net/linkExtractorKineticHarbor.js
 ||trees.com/a|
 ||trees.com/rtb
@@ -284853,6 +284855,7 @@ markezine.jp##.carouselBlock > li[id^="cx_"].c-headlineindex_listitem
 ||moe-online.ru/themes/default/front/js/stat/
 ||moe-online.ru/api/moe/stat/sendStat
 ||a.wa.autodesk.com/asp.js
+||io-tech.fi/io/www/delvr/lokiz.php
 ||data.qvc.com/cm?tid
 ciudad.com.ar###cxense-wrapper
 ||cdn-front.ciudad.com.ar/*/cxense-min.js

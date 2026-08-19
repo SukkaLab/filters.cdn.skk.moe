@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Wed, 19 Aug 2026 07:07:32 GMT
+! Last modified: Wed, 19 Aug 2026 10:46:40 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -30,7 +30,7 @@
 !   - Last modified: Tue, 18 Aug 2026 08:43:43 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
-!   - Last modified: Sun, 16 Aug 2026 05:22:31 +0000
+!   - Last modified: Wed, 19 Aug 2026 05:23:20 +0000
 ! --------------------------------------------------------------
 ! uBlock filters https://ublockorigin.pages.dev/filters/filters.min.txt
 *_ad_$media,domain=youtube.com,3p
@@ -34731,6 +34731,7 @@ zgbk.com##.detail .detail-con:not(.copycontent) .art-content p:style(pointer-eve
 hk01.com##+js(trusted-replace-argument, String.prototype.includes, 0, , condition, preview-cms)
 ||tvzonehd.com/anti-copy.js
 camere-live.ro##+js(rmnt, script, "'contextmenu'")
+dlstreams.st,dollardescent.net,hamis.romponalis.st##+js(rmnt, script, "'contextmenu'")
 @@||socialblade.com^$ghide
 socialblade.com##.cas-container
 socialblade.com##.cas-wide-container
