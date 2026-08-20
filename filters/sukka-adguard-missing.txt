@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Wed, 19 Aug 2026 22:44:14 GMT
+! Last modified: Thu, 20 Aug 2026 03:11:18 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Wed, 19 Aug 2026 17:07:02 +0000
+!   - Last modified: Thu, 20 Aug 2026 00:27:02 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Tue, 18 Aug 2026 12:29:49 +0000
@@ -30,7 +30,7 @@
 !   - Last modified: Wed, 19 Aug 2026 09:44:43 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
-!   - Last modified: Wed, 19 Aug 2026 05:23:20 +0000
+!   - Last modified: Wed, 19 Aug 2026 20:13:58 +0000
 ! --------------------------------------------------------------
 ! uBlock filters https://ublockorigin.pages.dev/filters/filters.min.txt
 *_ad_$media,domain=youtube.com,3p
@@ -16556,9 +16556,6 @@ ak4eg.*##+js(aeld, load, onload)
 ak4eg.*##+js(acs, u_cfg)
 khsm.io##+js(nosiif, visibility, 1000)
 @@||jsdelivr.net/gh/niihen/niihen.github.io/niihen-com/safelink/$script,domain=link.idblog.eu.org|niihen.com
-multiup.eu,multiup.io,multiup.org##+js(multiup)
-||multiup.io/download-fast/$doc,1p
-multiup.io##+js(acs, navigator, FingerprintJS)
 zubatecno.com###link1s-snp:style(display: block !important;)
 nammakalvi.com##+js(nostif, data?)
 hentaikai.com##+js(acs, document.createElement, script.src)
@@ -22518,6 +22515,8 @@ multiup.io,multiup.org,multiup.eu##.mfp-ready
 multiup.io,multiup.org,multiup.eu##div.text-center:has(a[class="btn btn-success"][href^="abp:subscribe"])
 *$popunder,3p,domain=multiup.io|multiup.org|multiup.eu
 ||multinews.me^$3p
+multiup.eu,multiup.io,multiup.org##+js(multiup)
+||multiup.io/download-fast/$doc,1p
 ondemandkorea.com##+js(aopr, pbjs.libLoaded)
 ondemandkorea.com##.banner_728x90
 ondemandkorea.com##.floatBanner
@@ -34799,6 +34798,7 @@ civitai.com,civitai.red##+js(trusted-replace-argument, String.prototype.endsWith
 jelonka.com##+js(trusted-set-local-storage-item, jelonka_news_ad_access_gate_first_detected_at, $now$)
 jelonka.com##+js(trusted-set-local-storage-item, jelonka_news_ad_access_gate_soft_dismissed_at, $now$)
 metacritic.com##+js(trusted-set-session-storage-item, BT_AM_SOFTWALL_DISMISSED, {"element":"continue-to-site"})
+hymnary.org##div#blockbanner
 ||holyclock.com^$3p
 ||shomershabes.com^$3p
 ||shomershabes.co.il^$3p
