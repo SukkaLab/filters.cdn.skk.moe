@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Thu, 20 Aug 2026 14:54:09 GMT
+! Last modified: Thu, 20 Aug 2026 19:04:16 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.9.61
+!   - Version: 2.1.9.63
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -219,6 +219,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||fairanalytics.de^$3p
 ||fml-x.com^$3p
 ||analytics.talentegy.com^
 ||cdn.mgln.ai^
@@ -282130,6 +282131,7 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
 @@||nlog.naver.com/n|$domain=search.naver.com|www.naver.com
+||reader.hqread.cc/online/heartbeat
 ||thehealthy.com/wp-content/plugins/tmbi-amazon-affiliate/
 ||thehealthy.com/wp-content/plugins/tmbi-permutive/
 ||thehealthy.com/wp-content/plugins/tmbi-data-analytics/
@@ -283431,7 +283433,6 @@ allrecipes.com##+js(set-local-storage-item, /_fpi|_duid/, $remove$)
 ||duckduckgo.com/t.js?q=
 ||data.product.lastpass.com/data/ptm.gif/
 ||sstats.adobe.com/*/collect?configId=
-||bhol.co.il/system/js/analytics.js
 bhol.co.il##+js(set-local-storage-item, analyticsUserId, $remove$)
 bhol.co.il##+js(set-session-storage-item, analyticsSessionId, $remove$)
 ||global.ketchcdn.com/web/v2/log?
