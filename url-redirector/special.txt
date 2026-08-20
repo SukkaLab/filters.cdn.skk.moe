@@ -1,5 +1,5 @@
 ! Title: [sukka] Special Redirects
-! Last modified: Tue, 18 Aug 2026 19:00:21 GMT
+! Last modified: Thu, 20 Aug 2026 05:34:02 GMT
 ! Description: uBlock Origin / AdGuard uritransform rules
 ! Homepage: https://github.com/SukkaW/Filters
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -28,6 +28,7 @@
 ||tiles.strava.com^$all,xhr,uritransform=/tiles\.strava\.com/docs.lucaairport.qzz.io\/https\/tiles.strava.com/
 ||wre-assets.prod.mapping.strava.com^$all,xhr,uritransform=/wre-assets\.prod\.mapping\.strava\.com/docs.lucaairport.qzz.io\/https\/wre-assets.prod.mapping.strava.com/
 ||web-assets.strava.com^$all,xhr,uritransform=/web-assets\.strava\.com/docs.lucaairport.qzz.io\/https\/web-assets.strava.com/
+||www.strava.com/assets/$all,xhr,uritransform=/www\.strava\.com\/assets\//docs.lucaairport.qzz.io\/https\/www.strava.com\/assets\//
 ||d3nn82uaxijpm6.cloudfront.net^$all,xhr,uritransform=/d3nn82uaxijpm6\.cloudfront\.net/docs.lucaairport.qzz.io\/https\/d3nn82uaxijpm6.cloudfront.net/
 ||dgtzuqphqg23d.cloudfront.net^$all,xhr,uritransform=/dgtzuqphqg23d\.cloudfront\.net/docs.lucaairport.qzz.io\/https\/dgtzuqphqg23d.cloudfront.net/
 ||dgalywyr863hv.cloudfront.net^$all,xhr,uritransform=/dgalywyr863hv\.cloudfront\.net/docs.lucaairport.qzz.io\/https\/dgalywyr863hv.cloudfront.net/
@@ -61,6 +62,7 @@
 ||tiles.strava.com^$all,xhr,urltransform=/tiles\.strava\.com/docs.lucaairport.qzz.io\/https\/tiles.strava.com/
 ||wre-assets.prod.mapping.strava.com^$all,xhr,urltransform=/wre-assets\.prod\.mapping\.strava\.com/docs.lucaairport.qzz.io\/https\/wre-assets.prod.mapping.strava.com/
 ||web-assets.strava.com^$all,xhr,urltransform=/web-assets\.strava\.com/docs.lucaairport.qzz.io\/https\/web-assets.strava.com/
+||www.strava.com/assets/$all,xhr,urltransform=/www\.strava\.com\/assets\//docs.lucaairport.qzz.io\/https\/www.strava.com\/assets\//
 ||d3nn82uaxijpm6.cloudfront.net^$all,xhr,urltransform=/d3nn82uaxijpm6\.cloudfront\.net/docs.lucaairport.qzz.io\/https\/d3nn82uaxijpm6.cloudfront.net/
 ||dgtzuqphqg23d.cloudfront.net^$all,xhr,urltransform=/dgtzuqphqg23d\.cloudfront\.net/docs.lucaairport.qzz.io\/https\/dgtzuqphqg23d.cloudfront.net/
 ||dgalywyr863hv.cloudfront.net^$all,xhr,urltransform=/dgalywyr863hv\.cloudfront\.net/docs.lucaairport.qzz.io\/https\/dgalywyr863hv.cloudfront.net/
