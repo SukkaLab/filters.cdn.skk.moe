@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Filters
-! Last modified: Thu, 20 Aug 2026 05:34:01 GMT
+! Last modified: Thu, 20 Aug 2026 15:43:13 GMT
 ! Expires: 1 hours
 ! Description: The filters from Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -182,6 +182,9 @@ www.speedtest.net##+js(set, dataLayer, [])
 ||g.alicdn.com/axdata/yunlog*$redirect=noop.js
 ||g.alicdn.com/dawn/user-tracker*$redirect=noop.js
 ||g.alicdn.com/sj/securesdk$redirect=noop.js
+/AWSC/uab/*/collina.js
+/AWSC/fireyejs/*/fireyejs.js
+/AWSC/nc/*/nc.js
 ||railway.com/googletag/
 ||railway.com/graphql/internal?q=eventBatchTrack
 ||developer.apple.com/assets/metrics/scripts/analytics.js
