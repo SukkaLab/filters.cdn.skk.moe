@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Thu, 20 Aug 2026 07:07:24 GMT
+! Last modified: Thu, 20 Aug 2026 10:47:43 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -11,7 +11,7 @@
 !   - Last modified: Thu, 20 Aug 2026 04:43:41 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
-!   - Last modified: Tue, 18 Aug 2026 12:29:49 +0000
+!   - Last modified: Thu, 20 Aug 2026 10:14:14 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
 !   - Last modified: Thu, 20 Aug 2026 03:31:01 +0000
@@ -25608,6 +25608,8 @@ monster###bw-rc-host[style="position: fixed !important; inset: 0px !important; z
 ||sites.google.com/view/codex-desktop-app$doc
 ||gta-six-leaks.com^$all
 ||whirlpoploaderfast.com^
+||analysis-id-lfg.info^
+||chief-ignite.pro^
 ##body > .main-wrapper > .main-content > .intro > #checkbox-window
 ##div.card > div#cbRow.checkbox-row[onclick="startVerify()"]
 gemfellowship.org##+js(rmnt, script, TextDecoder)
