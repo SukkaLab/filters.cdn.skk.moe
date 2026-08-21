@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Fri, 21 Aug 2026 07:08:46 GMT
+! Last modified: Fri, 21 Aug 2026 10:48:24 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.9.67
+!   - Version: 2.1.9.70
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -219,6 +219,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||xstats.st^$3p
 ||sumetrika.com^
 ||fairanalytics.de^$3p
 ||fml-x.com^$3p
@@ -282133,6 +282134,7 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
 @@||nlog.naver.com/n|$domain=search.naver.com|www.naver.com
+||meetingpoint-jl.de/api/*-track|
 ||reader.hqread.cc/online/heartbeat
 ||thehealthy.com/wp-content/plugins/tmbi-amazon-affiliate/
 ||thehealthy.com/wp-content/plugins/tmbi-permutive/
@@ -283022,7 +283024,7 @@ dominos.jp###_vis_opt_path_hides
 ||static.danawa.com/globaljs/static/bdl/dsac.min.js
 ||americantourister.co.kr/on/demandware.static/Sites-AmericanTouristerKR-Site/*/internal/jscript/dwac-*.js
 ||leboncoin.fr/piano-analytics/
-/web-stats$domain=softonic.com|softonic-ar.com|softonic-id.com|softonic-id.com|softonic.jp|softonic.kr|softonic.nl|softonic.pl|softonic.com.br|softonic.ru|softonic.se|softonic-th.com|softonic.com.tr|softonic.cn
+||softonic*/web-stats
 ||chatgpt.com/ces/v1/i^
 ||holistic.news/3unw/
 ||sp-cdn.linux-magazin.de/wrapper/metrics/
