@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Filters
-! Last modified: Thu, 20 Aug 2026 15:43:13 GMT
+! Last modified: Fri, 21 Aug 2026 18:48:15 GMT
 ! Expires: 1 hours
 ! Description: The filters from Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -289,6 +289,7 @@ www.deepl.com###dl_quotes_container
 ||gtm.deepl.com/gtm.js$redirect=googletagmanager_gtm.js
 deepl.com##+js(trusted-prevent-fetch, s.deepl.com/web/statistics, '{ "code": 1 }')
 intervals.icu##+js(trusted-set-local-storage-item, DonatePopup, 2099-12-31)
+intervals.icu##+js(trusted-prevent-xhr, //api/athletes/coaches/, {"coaches":[]})
 ||community.fandom.com
 ||nocookie.net/fandom-ae-assets/tracking-opt-in/$important
 ||nocookie.net/fandom-ae-assets/prebid*$important

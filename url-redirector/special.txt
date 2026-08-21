@@ -1,5 +1,5 @@
 ! Title: [sukka] Special Redirects
-! Last modified: Thu, 20 Aug 2026 15:43:14 GMT
+! Last modified: Fri, 21 Aug 2026 18:48:16 GMT
 ! Description: uBlock Origin / AdGuard uritransform rules
 ! Homepage: https://github.com/SukkaW/Filters
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -17,6 +17,7 @@
 ||github.com/*/releases/download$all,~xhr,uritransform=/github\.com\//download.lucaairport.qzz.io\/https\/github.com\//
 ||node.windy.com^$all,~xhr,uritransform=/node\.windy\.com/docs.lucaairport.qzz.io\/https\/node.windy.com/
 ||imgproxy.windy.com^$all,~xhr,uritransform=/imgproxy\.windy\.com/docs.lucaairport.qzz.io\/https\/imgproxy.windy.com/
+||storage.googleapis.com/intervals-icu-images/$all,~xhr,uritransform=/storage\.googleapis\.com\/intervals-icu-images\//docs.lucaairport.qzz.io\/https\/storage.googleapis.com\/intervals-icu-images\//
 ||tiles.windy.com^$all,xhr,uritransform=/tiles\.windy\.com/docs.lucaairport.qzz.io\/https\/tiles.windy.com/
 ||ims.windy.com^$all,xhr,uritransform=/ims\.windy\.com/docs.lucaairport.qzz.io\/https\/ims.windy.com/
 ||sat.windy.com^$all,xhr,uritransform=/sat\.windy\.com/docs.lucaairport.qzz.io\/https\/sat.windy.com/
@@ -51,6 +52,7 @@
 ||github.com/*/releases/download$all,~xhr,urltransform=/github\.com\//download.lucaairport.qzz.io\/https\/github.com\//
 ||node.windy.com^$all,~xhr,urltransform=/node\.windy\.com/docs.lucaairport.qzz.io\/https\/node.windy.com/
 ||imgproxy.windy.com^$all,~xhr,urltransform=/imgproxy\.windy\.com/docs.lucaairport.qzz.io\/https\/imgproxy.windy.com/
+||storage.googleapis.com/intervals-icu-images/$all,~xhr,urltransform=/storage\.googleapis\.com\/intervals-icu-images\//docs.lucaairport.qzz.io\/https\/storage.googleapis.com\/intervals-icu-images\//
 ||tiles.windy.com^$all,xhr,urltransform=/tiles\.windy\.com/docs.lucaairport.qzz.io\/https\/tiles.windy.com/
 ||ims.windy.com^$all,xhr,urltransform=/ims\.windy\.com/docs.lucaairport.qzz.io\/https\/ims.windy.com/
 ||sat.windy.com^$all,xhr,urltransform=/sat\.windy\.com/docs.lucaairport.qzz.io\/https\/sat.windy.com/
