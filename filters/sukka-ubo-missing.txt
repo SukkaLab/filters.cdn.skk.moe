@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Fri, 21 Aug 2026 10:48:24 GMT
+! Last modified: Fri, 21 Aug 2026 14:53:05 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.9.70
+!   - Version: 2.1.9.71
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -75447,7 +75447,6 @@ prd.api.bleacherreport.com^
 ||collector.superwall.me^
 ||services.haaretz.com^
 ||plausible.pronouns.cc^
-||lptag.liveperson.net^
 ||sks.mrkhub.com^
 ||measuring-pixel-service.alza.cz^
 ||analytics.valotool.com^
@@ -282134,6 +282133,7 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
 @@||nlog.naver.com/n|$domain=search.naver.com|www.naver.com
+||yandex.ru/appcry/event|
 ||meetingpoint-jl.de/api/*-track|
 ||reader.hqread.cc/online/heartbeat
 ||thehealthy.com/wp-content/plugins/tmbi-amazon-affiliate/
@@ -283431,7 +283431,6 @@ allrecipes.com##+js(set-local-storage-item, /_fpi|_duid/, $remove$)
 ||banking.dkb.de/api/metrics/$xhr
 ||cdn.dsmcdn.com/sfx/mergen/
 ||cdn.dsmcdn.com/sfint/production/demeter-prod-*.umd.js
-||ing.de/*/*ebtrekk*
 ||ingwb.com/*/ingwb-webtrekk
 ||derstandard.*/qpkdl/
 ||duckduckgo.com/t.js?q=
@@ -287250,6 +287249,9 @@ dreamprogs.net##td[width="88"][height="31"]
 ||ztat.net/*/webtrekk.min.js^
 ||google.com/log?$redirect=noop.txt,image,media,subdocument,stylesheet,script,xhr,other
 ||yandex.ru/clck/click|
+||ing.de/*/*ebtrekk*
+ing.de##+js(set-constant, wt, {})
+ing.de##+js(set-constant, wt.sendinfo, noopFunc)
 spletnik.ru##+js(set-local-storage-item, adrcid, $remove$)
 /^https:\/\/www\.purevpn\.[a-z]+\/[a-z0-9]{7}\/$/$script
 ||cfm.kt.com/js/adobe/staticsLogcodeLaunch.js
@@ -288528,7 +288530,6 @@ apteka22.ru##+js(set-constant, Ya, {})
 felixmobile.com.au###__next [style*="filter:blur"]:style(filter: none !important;)
 @@||optimizely.com^$image,domain=marinco.navico.com
 @@||adobedc.demdex.net^$xhr,domain=sc.com
-@@||lptag.liveperson.net^$domain=yesstyle.com
 @@||cdn.optimizely.com/datafiles/$domain=metro.at|metro.bg|metro-cc.hr|metro.fr|metro.it|metro-kz.com|metro.md|metro.pk|metro.ro|metro.rs|metro.sk|makro.es|metro-tr.com|metro.ua|makro.pt|metro.de
 @@||static.airbridge.io/sdk/latest/$domain=airbridge.io
 @@||samsclub.com/px/*/captcha/captcha.js$domain=samsclub.com
