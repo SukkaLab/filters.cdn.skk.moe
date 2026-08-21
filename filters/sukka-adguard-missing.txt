@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Thu, 20 Aug 2026 22:47:34 GMT
+! Last modified: Fri, 21 Aug 2026 03:17:47 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Thu, 20 Aug 2026 17:32:43 +0000
+!   - Last modified: Thu, 20 Aug 2026 21:42:13 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Thu, 20 Aug 2026 10:14:14 +0000
@@ -27,7 +27,7 @@
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Wed, 19 Aug 2026 09:44:43 +0000
+!   - Last modified: Thu, 20 Aug 2026 22:45:06 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
 !   - Last modified: Wed, 19 Aug 2026 20:13:58 +0000
@@ -23265,6 +23265,7 @@ talksport.com##+js(nostif, ()=>, 1000)
 ||kingmahali.xyz/js/adBlockDetect.js
 chzzk.naver.com##+js(spoof-css, .banner_ad_wrapper, display, block)
 chzzk.naver.com##+js(no-xhr-if, /(veta.naver.com\/vas|veta.naver.com\/gfp|veta.naver.com\/call)/ method:OPTIONS)
+chzzk.naver.com##+js(trusted-suppress-native-method, atob, c2V0UmVxdWVzdEhlYWRlcg==, prevent, isXhrTampered)
 greeksubsmovies.net##+js(rmnt, script, offsetHeight)
 mylondon.news##div[data-testid^="commercial-"]
 mylondon.news##div[class^="Header_mastheadwebstrip-container"]
@@ -34631,6 +34632,7 @@ offers-exchange.com##+js(trusted-set-local-storage-item, cookieConsent_1004, {"e
 duck.ai##+js(trusted-set-local-storage-item, duckaiRetentionBrowserPromo, '{"dismissed":true,"firstShown":true,"newChatsSinceShown":0,"learnMoreChatId":null}')
 groupsumi.fi##+js(trusted-set-local-storage-item, @sumi/consent, {"essential":true\,"performance":false\,"functional":true\,"advertising":false})
 nv-allesbestens.de##+js(trusted-click-element, '#BorlabsCookieBox input#checkbox-external-media,100,#BorlabsCookieBox a#CookieBoxSaveButton')
+glowfestival.fi##+js(trusted-click-element, .cky-btn-accept)
 ! uBlock filters – Annoyances https://ublockorigin.pages.dev/filters/annoyances.min.txt
 mimaletadepeliculas.blogspot.com##+js(aopr, document.oncontextmenu)
 mimaletadepeliculas.blogspot.com##+js(acs, document.onselectstart)
