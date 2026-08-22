@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sat, 22 Aug 2026 14:37:13 GMT
+! Last modified: Sat, 22 Aug 2026 18:51:39 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,13 +8,13 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sat, 22 Aug 2026 08:23:30 +0000
+!   - Last modified: Sat, 22 Aug 2026 16:54:38 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
-!   - Last modified: Fri, 21 Aug 2026 04:54:01 +0000
+!   - Last modified: Sat, 22 Aug 2026 14:34:04 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Fri, 21 Aug 2026 12:49:09 +0000
+!   - Last modified: Sat, 22 Aug 2026 16:06:41 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
 !   - Last modified: Wed, 19 Aug 2026 15:42:15 +0000
@@ -23401,6 +23401,7 @@ bergwelten.com##+js(nostif, /adblock|Error|getComputedStyle/)
 javplayer.com##+js(aeld, /click|pointerup/, handleUserAction)
 /^https:\/\/engine\.[a-z]+\.[a-z]+\/\?[0-9]+$/$xhr,3p
 ||youtubetoolkit.com/js/adblock-
+||antiadblockcore.com^
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -25482,7 +25483,7 @@ cracksmid.com##div[style=""] > center > center
 ?Kuph=1-$doc
 ||web.core.windows.net/?111=$doc
 ||ondigitalocean.app/Win0codejInfouycinfcode/$doc
-azurefd.net,azurestaticapps.net,ondigitalocean.app##body#mycanvas.map[style="cursor:none"]
+azurefd.net,azurestaticapps.net,ondigitalocean.app,web.core.windows.net##body#mycanvas.map[style="cursor:none"]
 ||azurefd.net/Win20Errfb020/index.html$doc
 sgp1.cdn.digitaloceanspaces.com###frame[title="encrypted shop"][allowfullscreen][allow="fullscreen"][src^="blob"][style="display: block;"]
 ||pages.dev/*/Fm7-alert.wav
@@ -25590,6 +25591,8 @@ sgp1.cdn.digitaloceanspaces.com###frame[title="encrypted shop"][allowfullscreen]
 ||web.core.windows.net/vault/stack-vendor.mp3
 ||github.io/*/js/esc.js
 ||github.io/*/js/flscn.js
+||github.io/*/before.js
+||github.io/*/fullscreen.js
 ||github.io/*/media/beep.mp3
 ||azurefd.net/media/beep.mp3
 ||azurefd.net/fullscreen.js
@@ -25600,7 +25603,14 @@ sgp1.cdn.digitaloceanspaces.com###frame[title="encrypted shop"][allowfullscreen]
 ||azurefd.net/media/msc.mp3
 ||amazonaws.com/_Fm7-alert.mp3
 ||on-forge.com/win*/alert-en.wav
+||ondigitalocean.app/esc.js
+||ondigitalocean.app/jupiter.js
+||ondigitalocean.app/noir.js
+||ondigitalocean.app/nvidia.js
+||ondigitalocean.app/b00p.mp3
+||ondigitalocean.app/webs.mp4
 z13.web.core.windows.net##+js(aeld, DOMContentLoaded, fullscreenEnabled)
+web.core.windows.net##+js(aeld, beforeunload, workerBomb)
 ||roykuashkimayo.$all
 ||toolsmastercracked.$all
 ||carrymedias.com^$all
@@ -29424,7 +29434,6 @@ igniteseurope.com##+js(no-xhr-if, igniteseurope.com/stats/)
 kick.com##+js(no-fetch-if, litix.io)
 xhamster.com##+js(no-xhr-if, /hpyjmp|marzaent/)
 xhamster.com##+js(no-fetch-if, /hpyjmp|marzaent/)
-||juneworewyjyna.com^
 play.hbomax.com##+js(no-xhr-if, brightline.tv)
 ! uBlock filters – Unbreak https://ublockorigin.pages.dev/filters/unbreak.min.txt
 @@||awstrack.me/*auth.coindesk.com$doc,popup
