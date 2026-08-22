@@ -1,5 +1,5 @@
 ! Title: [sukka] Special Redirects
-! Last modified: Sat, 22 Aug 2026 19:56:12 GMT
+! Last modified: Sat, 22 Aug 2026 20:42:21 GMT
 ! Description: uBlock Origin / AdGuard uritransform rules
 ! Homepage: https://github.com/SukkaW/Filters
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,6 +18,7 @@
 ||node.windy.com^$all,~xhr,uritransform=/node\.windy\.com/docs.lucaairport.qzz.io\/https\/node.windy.com/
 ||imgproxy.windy.com^$all,~xhr,uritransform=/imgproxy\.windy\.com/docs.lucaairport.qzz.io\/https\/imgproxy.windy.com/
 ||storage.googleapis.com/intervals-icu-images/$all,~xhr,uritransform=/storage\.googleapis\.com\/intervals-icu-images\//docs.lucaairport.qzz.io\/https\/storage.googleapis.com\/intervals-icu-images\//
+||d3g0gp89917ko0.cloudfront.net^$all,~xhr,uritransform=/d3g0gp89917ko0\.cloudfront\.net/docs.lucaairport.qzz.io\/https\/d3g0gp89917ko0.cloudfront.net/
 ||tiles.windy.com^$all,xhr,uritransform=/tiles\.windy\.com/docs.lucaairport.qzz.io\/https\/tiles.windy.com/
 ||ims.windy.com^$all,xhr,uritransform=/ims\.windy\.com/docs.lucaairport.qzz.io\/https\/ims.windy.com/
 ||sat.windy.com^$all,xhr,uritransform=/sat\.windy\.com/docs.lucaairport.qzz.io\/https\/sat.windy.com/
@@ -36,6 +37,7 @@
 ||d3o5xota0a1fcr.cloudfront.net^$all,xhr,uritransform=/d3o5xota0a1fcr\.cloudfront\.net/docs.lucaairport.qzz.io\/https\/d3o5xota0a1fcr.cloudfront.net/
 ||youjizz.com^$~doc,~frame,~xhr,uritransform=/([^\/]+)\.youjizz\.com/docs.lucaairport.qzz.io\/https\/$1.youjizz.com/
 ||phncdn.com^$~doc,~frame,~xhr,uritransform=/([^\/]+)\.phncdn\.com/docs.lucaairport.qzz.io\/https\/$1.phncdn.com/
+||interwiki.scpwikicn.com^$~doc,~frame,~xhr,uritransform=/([^\/]+)\.interwiki\.scpwikicn\.com/docs.lucaairport.qzz.io\/https\/$1.interwiki.scpwikicn.com/
 ||youjizz.com^$~doc,~frame,~xhr,uritransform=/([^\/]+)\.youjizz\.com/docs.lucaairport.qzz.io\/https\/$1.youjizz.com/
 ||phncdn.com^$~doc,~frame,~xhr,uritransform=/([^\/]+)\.phncdn\.com/docs.lucaairport.qzz.io\/https\/$1.phncdn.com/
 
@@ -53,6 +55,7 @@
 ||node.windy.com^$all,~xhr,urltransform=/node\.windy\.com/docs.lucaairport.qzz.io\/https\/node.windy.com/
 ||imgproxy.windy.com^$all,~xhr,urltransform=/imgproxy\.windy\.com/docs.lucaairport.qzz.io\/https\/imgproxy.windy.com/
 ||storage.googleapis.com/intervals-icu-images/$all,~xhr,urltransform=/storage\.googleapis\.com\/intervals-icu-images\//docs.lucaairport.qzz.io\/https\/storage.googleapis.com\/intervals-icu-images\//
+||d3g0gp89917ko0.cloudfront.net^$all,~xhr,urltransform=/d3g0gp89917ko0\.cloudfront\.net/docs.lucaairport.qzz.io\/https\/d3g0gp89917ko0.cloudfront.net/
 ||tiles.windy.com^$all,xhr,urltransform=/tiles\.windy\.com/docs.lucaairport.qzz.io\/https\/tiles.windy.com/
 ||ims.windy.com^$all,xhr,urltransform=/ims\.windy\.com/docs.lucaairport.qzz.io\/https\/ims.windy.com/
 ||sat.windy.com^$all,xhr,urltransform=/sat\.windy\.com/docs.lucaairport.qzz.io\/https\/sat.windy.com/
@@ -71,5 +74,6 @@
 ||d3o5xota0a1fcr.cloudfront.net^$all,xhr,urltransform=/d3o5xota0a1fcr\.cloudfront\.net/docs.lucaairport.qzz.io\/https\/d3o5xota0a1fcr.cloudfront.net/
 ||youjizz.com^$~doc,~frame,~xhr,urltransform=/([^\/]+)\.youjizz\.com/docs.lucaairport.qzz.io\/https\/$1.youjizz.com/
 ||phncdn.com^$~doc,~frame,~xhr,urltransform=/([^\/]+)\.phncdn\.com/docs.lucaairport.qzz.io\/https\/$1.phncdn.com/
+||interwiki.scpwikicn.com^$~doc,~frame,~xhr,urltransform=/([^\/]+)\.interwiki\.scpwikicn\.com/docs.lucaairport.qzz.io\/https\/$1.interwiki.scpwikicn.com/
 ||youjizz.com^$~doc,~frame,~xhr,urltransform=/([^\/]+)\.youjizz\.com/docs.lucaairport.qzz.io\/https\/$1.youjizz.com/
 ||phncdn.com^$~doc,~frame,~xhr,urltransform=/([^\/]+)\.phncdn\.com/docs.lucaairport.qzz.io\/https\/$1.phncdn.com/
