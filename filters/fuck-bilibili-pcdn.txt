@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Experimental Bilibili PCDN Defuser
-! Last modified: Sun, 23 Aug 2026 12:22:59 GMT
+! Last modified: Sun, 23 Aug 2026 12:36:29 GMT
 ! Expires: 1 hours
 ! Description: The filters from Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
