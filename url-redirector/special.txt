@@ -1,5 +1,5 @@
 ! Title: [sukka] Special Redirects
-! Last modified: Sat, 22 Aug 2026 20:42:21 GMT
+! Last modified: Sun, 23 Aug 2026 12:23:00 GMT
 ! Description: uBlock Origin / AdGuard uritransform rules
 ! Homepage: https://github.com/SukkaW/Filters
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -35,9 +35,9 @@
 ||dgtzuqphqg23d.cloudfront.net^$all,xhr,uritransform=/dgtzuqphqg23d\.cloudfront\.net/docs.lucaairport.qzz.io\/https\/dgtzuqphqg23d.cloudfront.net/
 ||dgalywyr863hv.cloudfront.net^$all,xhr,uritransform=/dgalywyr863hv\.cloudfront\.net/docs.lucaairport.qzz.io\/https\/dgalywyr863hv.cloudfront.net/
 ||d3o5xota0a1fcr.cloudfront.net^$all,xhr,uritransform=/d3o5xota0a1fcr\.cloudfront\.net/docs.lucaairport.qzz.io\/https\/d3o5xota0a1fcr.cloudfront.net/
+||interwiki.scpwikicn.com^$~doc,~frame,~xhr,uritransform=/interwiki\.scpwikicn\.com/docs.lucaairport.qzz.io\/https\/$1.interwiki.scpwikicn.com/
 ||youjizz.com^$~doc,~frame,~xhr,uritransform=/([^\/]+)\.youjizz\.com/docs.lucaairport.qzz.io\/https\/$1.youjizz.com/
 ||phncdn.com^$~doc,~frame,~xhr,uritransform=/([^\/]+)\.phncdn\.com/docs.lucaairport.qzz.io\/https\/$1.phncdn.com/
-||interwiki.scpwikicn.com^$~doc,~frame,~xhr,uritransform=/([^\/]+)\.interwiki\.scpwikicn\.com/docs.lucaairport.qzz.io\/https\/$1.interwiki.scpwikicn.com/
 ||youjizz.com^$~doc,~frame,~xhr,uritransform=/([^\/]+)\.youjizz\.com/docs.lucaairport.qzz.io\/https\/$1.youjizz.com/
 ||phncdn.com^$~doc,~frame,~xhr,uritransform=/([^\/]+)\.phncdn\.com/docs.lucaairport.qzz.io\/https\/$1.phncdn.com/
 
@@ -72,8 +72,8 @@
 ||dgtzuqphqg23d.cloudfront.net^$all,xhr,urltransform=/dgtzuqphqg23d\.cloudfront\.net/docs.lucaairport.qzz.io\/https\/dgtzuqphqg23d.cloudfront.net/
 ||dgalywyr863hv.cloudfront.net^$all,xhr,urltransform=/dgalywyr863hv\.cloudfront\.net/docs.lucaairport.qzz.io\/https\/dgalywyr863hv.cloudfront.net/
 ||d3o5xota0a1fcr.cloudfront.net^$all,xhr,urltransform=/d3o5xota0a1fcr\.cloudfront\.net/docs.lucaairport.qzz.io\/https\/d3o5xota0a1fcr.cloudfront.net/
+||interwiki.scpwikicn.com^$~doc,~frame,~xhr,urltransform=/interwiki\.scpwikicn\.com/docs.lucaairport.qzz.io\/https\/$1.interwiki.scpwikicn.com/
 ||youjizz.com^$~doc,~frame,~xhr,urltransform=/([^\/]+)\.youjizz\.com/docs.lucaairport.qzz.io\/https\/$1.youjizz.com/
 ||phncdn.com^$~doc,~frame,~xhr,urltransform=/([^\/]+)\.phncdn\.com/docs.lucaairport.qzz.io\/https\/$1.phncdn.com/
-||interwiki.scpwikicn.com^$~doc,~frame,~xhr,urltransform=/([^\/]+)\.interwiki\.scpwikicn\.com/docs.lucaairport.qzz.io\/https\/$1.interwiki.scpwikicn.com/
 ||youjizz.com^$~doc,~frame,~xhr,urltransform=/([^\/]+)\.youjizz\.com/docs.lucaairport.qzz.io\/https\/$1.youjizz.com/
 ||phncdn.com^$~doc,~frame,~xhr,urltransform=/([^\/]+)\.phncdn\.com/docs.lucaairport.qzz.io\/https\/$1.phncdn.com/
