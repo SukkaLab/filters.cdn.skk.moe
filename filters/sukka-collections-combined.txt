@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Sun, 23 Aug 2026 10:41:44 GMT
+! Last modified: Sun, 23 Aug 2026 14:38:44 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202608231022
+!   - Version: 202608231423
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 23 Aug 2026 10:22 UTC
+!   - Last modified: 23 Aug 2026 14:23 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
@@ -31,7 +31,7 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 💊 Dandelion Sprout's Anti-Malware List
 !   - URL: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout's%20Anti-Malware%20List.txt
-!   - Version: 13August2026v1
+!   - Version: 23August2026v1
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 🛃 Anti-'Adoptables and Artsite NFTs' List
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/AntiAdoptablesList.txt
@@ -13628,6 +13628,22 @@ http://secured21.*.com/|$all
 ://[2604:2dc0:100:4ed8::]^$all
 ://[2604:2dc0:104:da00::]^$all
 ||posthog.$all,domain=gov|loveisaskill.cloudflareaccess.com
+||ad-growth.it.com^$all
+||alertkitflare.org^$all
+||bestyofr.store^$all
+||clouding17.com^$all
+||energieadvimail.nl^$all
+||freeflowducts.com^$all
+||inboxthrust.org^$all
+||kajaland.net^$all
+||newslettersstream.com^$all
+||notification-redirection-link.com^$all
+||notificationredirectionlink.com^$all
+||puravivex.best^$all
+||trackallnotifrewa.com^$all
+||trustus-eu.uk^$all
+||103.29.182.53^$all
+||13.140.171.211^$all
 ||downloadprovider.me^$all
 ##a[href*=".downloadprovider.me/"]
 toorgle.net##.join
@@ -15993,6 +16009,13 @@ drvhub.net##.driver-item__install
 ://35.71.155.166^$all
 ||tgdrive.app^$all
 ||tg-drive-bx4f.onrender.com^$all
+||austinpoolservices.com^$all
+||desernk.me^$all
+||qed.uk.com^$all
+||resultsfastfind.com^$all
+||resultsfinderonline.com^$all
+/^(.*[/@])?questionprov\d{5,6}\.com(/.*)?$/$all
+||199.168.185.4^$all
 ||0network.com^$all
 ||100conversions.com^$all
 ||1tag.ai^$all
