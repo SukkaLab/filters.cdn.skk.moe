@@ -1,5 +1,5 @@
 ! Title: [sukka] Special Redirects
-! Last modified: Sun, 23 Aug 2026 12:36:29 GMT
+! Last modified: Mon, 24 Aug 2026 14:20:37 GMT
 ! Description: uBlock Origin / AdGuard uritransform rules
 ! Homepage: https://github.com/SukkaW/Filters
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -13,6 +13,7 @@
 ||www.wikidot.com/userkarma.php$all,~xhr,uritransform=/www\.wikidot\.com\/userkarma\.php/docs.lucaairport.qzz.io\/https\/www.wikidot.com\/userkarma.php/
 ||www.wikidot.com/avatar.php$all,~xhr,uritransform=/www\.wikidot\.com\/avatar\.php/docs.lucaairport.qzz.io\/https\/www.wikidot.com\/avatar.php/
 ||wikidot.com/local--favicon/$all,~xhr,uritransform=/([^\/]+)\.wikidot\.com\/local--favicon\//docs.lucaairport.qzz.io\/https\/$1.wikidot.com\/local--favicon\//
+||wikidot.com/common--theme/$image,~xhr,uritransform=/([^\/]+)\.wikidot\.com\/common--theme\//docs.lucaairport.qzz.io\/https\/$1.wikidot.com\/common--theme\//
 ||tile.openstreetmap.org^$all,~xhr,uritransform=/(?:[^.\/]+\.)*tile\.openstreetmap\.org/docs.lucaairport.qzz.io\/https\/tile.openstreetmap.org/,domain=~openstreetmap.org
 ||github.com/*/releases/download$all,~xhr,uritransform=/github\.com\//download.lucaairport.qzz.io\/https\/github.com\//
 ||node.windy.com^$all,~xhr,uritransform=/node\.windy\.com/docs.lucaairport.qzz.io\/https\/node.windy.com/
@@ -51,6 +52,7 @@
 ||www.wikidot.com/userkarma.php$all,~xhr,urltransform=/www\.wikidot\.com\/userkarma\.php/docs.lucaairport.qzz.io\/https\/www.wikidot.com\/userkarma.php/
 ||www.wikidot.com/avatar.php$all,~xhr,urltransform=/www\.wikidot\.com\/avatar\.php/docs.lucaairport.qzz.io\/https\/www.wikidot.com\/avatar.php/
 ||wikidot.com/local--favicon/$all,~xhr,urltransform=/([^\/]+)\.wikidot\.com\/local--favicon\//docs.lucaairport.qzz.io\/https\/$1.wikidot.com\/local--favicon\//
+||wikidot.com/common--theme/$image,~xhr,urltransform=/([^\/]+)\.wikidot\.com\/common--theme\//docs.lucaairport.qzz.io\/https\/$1.wikidot.com\/common--theme\//
 ||tile.openstreetmap.org^$all,~xhr,urltransform=/(?:[^.\/]+\.)*tile\.openstreetmap\.org/docs.lucaairport.qzz.io\/https\/tile.openstreetmap.org/,domain=~openstreetmap.org
 ||github.com/*/releases/download$all,~xhr,urltransform=/github\.com\//download.lucaairport.qzz.io\/https\/github.com\//
 ||node.windy.com^$all,~xhr,urltransform=/node\.windy\.com/docs.lucaairport.qzz.io\/https\/node.windy.com/
