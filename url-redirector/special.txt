@@ -1,5 +1,5 @@
 ! Title: [sukka] Special Redirects
-! Last modified: Mon, 24 Aug 2026 14:20:37 GMT
+! Last modified: Tue, 25 Aug 2026 18:38:32 GMT
 ! Description: uBlock Origin / AdGuard uritransform rules
 ! Homepage: https://github.com/SukkaW/Filters
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -19,6 +19,7 @@
 ||node.windy.com^$all,~xhr,uritransform=/node\.windy\.com/docs.lucaairport.qzz.io\/https\/node.windy.com/
 ||imgproxy.windy.com^$all,~xhr,uritransform=/imgproxy\.windy\.com/docs.lucaairport.qzz.io\/https\/imgproxy.windy.com/
 ||storage.googleapis.com/intervals-icu-images/$all,~xhr,uritransform=/storage\.googleapis\.com\/intervals-icu-images\//docs.lucaairport.qzz.io\/https\/storage.googleapis.com\/intervals-icu-images\//
+||upload.wikimedia.org^$all,~xhr,uritransform=/upload\.wikimedia\.org/docs.lucaairport.qzz.io\/https\/upload.wikimedia.org/
 ||d3g0gp89917ko0.cloudfront.net^$all,~xhr,uritransform=/d3g0gp89917ko0\.cloudfront\.net/docs.lucaairport.qzz.io\/https\/d3g0gp89917ko0.cloudfront.net/
 ||tiles.windy.com^$all,xhr,uritransform=/tiles\.windy\.com/docs.lucaairport.qzz.io\/https\/tiles.windy.com/
 ||ims.windy.com^$all,xhr,uritransform=/ims\.windy\.com/docs.lucaairport.qzz.io\/https\/ims.windy.com/
@@ -58,6 +59,7 @@
 ||node.windy.com^$all,~xhr,urltransform=/node\.windy\.com/docs.lucaairport.qzz.io\/https\/node.windy.com/
 ||imgproxy.windy.com^$all,~xhr,urltransform=/imgproxy\.windy\.com/docs.lucaairport.qzz.io\/https\/imgproxy.windy.com/
 ||storage.googleapis.com/intervals-icu-images/$all,~xhr,urltransform=/storage\.googleapis\.com\/intervals-icu-images\//docs.lucaairport.qzz.io\/https\/storage.googleapis.com\/intervals-icu-images\//
+||upload.wikimedia.org^$all,~xhr,urltransform=/upload\.wikimedia\.org/docs.lucaairport.qzz.io\/https\/upload.wikimedia.org/
 ||d3g0gp89917ko0.cloudfront.net^$all,~xhr,urltransform=/d3g0gp89917ko0\.cloudfront\.net/docs.lucaairport.qzz.io\/https\/d3g0gp89917ko0.cloudfront.net/
 ||tiles.windy.com^$all,xhr,urltransform=/tiles\.windy\.com/docs.lucaairport.qzz.io\/https\/tiles.windy.com/
 ||ims.windy.com^$all,xhr,urltransform=/ims\.windy\.com/docs.lucaairport.qzz.io\/https\/ims.windy.com/

@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Filters
-! Last modified: Mon, 24 Aug 2026 14:20:34 GMT
+! Last modified: Tue, 25 Aug 2026 18:38:31 GMT
 ! Expires: 1 hours
 ! Description: The filters from Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -217,6 +217,8 @@ www.dnsfilter.com##+js(aopw, window.analytics)
 /ping.gif$redirect=1x1.gif
 /counters.gif$redirect=1x1.gif
 ||pixel.wp.com/g.gif$redirect=1x1.gif
+/\/va\//
+/_vercel/insights
 *$removeparam=aff
 wnacg.com##+js(set, lockdownInterface, noopFunc, runAt, 2)
 *$script,domain=csdn.net|sina.cn|finance.cnr.cn|guancha.cn|blog.gitcode.com
