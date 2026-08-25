@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Tue, 25 Aug 2026 07:09:48 GMT
+! Last modified: Tue, 25 Aug 2026 10:50:02 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.9.90
+!   - Version: 2.1.9.92
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -284085,7 +284085,7 @@ idle-girl.com###custom_html-74
 ||hide.me/api/event|
 natuero-dougakan.com##.side-menu:has(script[src="//accaii.com/natuero/script.js"])
 ||turbovpn.com/api/mms/analytics/v1/events|
-||cdn.amplitude.com/libs/analytics-browser-*-min.js
+||cdn.amplitude.com/libs/analytics-browser-*min.js
 ||cdp.ems.onet.pl/*/me?domain=
 ||yandex.*/an/rtbcount/
 ||yandex.*/an/tracking/
@@ -284527,7 +284527,7 @@ device4game.ru##.tg-first-footer-widget
 ||urldefense.proofpoint.com^*analytics_insight.min.js
 ||uq.force.com/auraAnalytics^
 ||hurriyet.com.tr/banalytics.js
-lasisa.net,president.jp##.recommend
+lmaga.jp,lasisa.net,president.jp##.recommend
 ||sunknudsen.com/static/media/js/fathom
 ||assets.getpocket.com/web-utilities/public/static/te.js
 ||assets.askdoctors.jp/*/event-tracking
