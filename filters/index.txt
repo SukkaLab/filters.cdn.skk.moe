@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Filters
-! Last modified: Thu, 27 Aug 2026 04:41:58 GMT
+! Last modified: Thu, 27 Aug 2026 17:04:05 GMT
 ! Expires: 1 hours
 ! Description: The filters from Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -375,6 +375,7 @@ shirouto4.top##a[href*="youtube.com/watch"]
 favicon.ico$image,uritransform=/https:\/\/(.+)\/favicon.ico/https:\/\/favicone.com\/$1/,domain=av4.homes|shirouto4.top|av.tube4us.top,denyallow=cdn.staticdelivr.com|wp.com|favicone.com
 *$image,uritransform=/(.+)/https:\/\/cdn.staticdelivr.com\/img\/images?url=$1/,domain=av4.homes|shirouto4.top|av.tube4us.top,denyallow=cdn.staticdelivr.com|wp.com|favicone.com
 ||silca.cc/*/pro-tire-pressure-calculator^$csp=script-src 'unsafe-eval' 'unsafe-inline'
+||wolftoothcomponents.com/pages/tire-pressure-calculator^$csp=script-src 'self' 'unsafe-eval' 'unsafe-inline'
 4khd.com##+js(sukka-defuse-devtools-detector)
 ||4khd.com/interstitial.js
 4khd.com##+js(sukka-defuse-service-worker)
