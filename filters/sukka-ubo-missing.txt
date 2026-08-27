@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Wed, 26 Aug 2026 20:09:32 GMT
+! Last modified: Thu, 27 Aug 2026 03:21:12 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.10.6
+!   - Version: 2.1.10.8
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -2314,7 +2314,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||cnzz.com^$3p
 ||cnzz.net^$3p
 ||codata.ru^$3p
-||cointent.com^$3p
 ||collarity.com^$3p
 ||collserve.com^$3p
 ||comagic.ru^$3p
@@ -289277,7 +289276,6 @@ goodwillfinds.com##+js(set-constant, _etmc, [])
 ||btloader.com/tag?$redirect=noop.js,domain=voici.fr,script
 @@||googletagmanager.com/gtm.js$domain=brita.de
 @@||qualtrics.com/jfe/form/$subdocument
-||api.ipify.org/?format=json$xhr,redirect=noop.txt,domain=utils.surf
 @@||share.9cdn.net/share/long_cache/js/tracking/tracking.*.min.js$domain=nine.com.au
 @@||cdn.segmentify.com^$domain=gratis.com
 @@||cdn.segmentify.com/*/segmentify.js$domain=gratis.com
