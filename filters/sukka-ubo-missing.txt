@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Fri, 28 Aug 2026 06:09:41 GMT
+! Last modified: Fri, 28 Aug 2026 14:23:24 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.10.15
+!   - Version: 2.1.10.17
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -74641,6 +74641,8 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||countly.
 ||countly-
 |piwik.
+||posthog.worldshopping.global^
+||aka.asiae.co.kr^
 ||analytics.watchott.org^
 ||excess-ga.duolingo.com^
 ||excess.duolingo.com^
@@ -282147,6 +282149,9 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
 @@||nlog.naver.com/n|$domain=search.naver.com|www.naver.com
+||appli.mixh.jp/appli.mixh.jp/app/*-track.php
+||a.pixiv.org/yufulight-cdn/track.js
+bg-mania.jp##.section-pr-osusume
 ||automaton-media.com/rw7f/
 ||kobe-np.co.jp/api/audience-data
 news.golfdigest.co.jp##+js(remove-node-text, script, MkiTracUUID)
@@ -284543,7 +284548,7 @@ device4game.ru##.tg-first-footer-widget
 ||urldefense.proofpoint.com^*analytics_insight.min.js
 ||uq.force.com/auraAnalytics^
 ||hurriyet.com.tr/banalytics.js
-lmaga.jp,lasisa.net,president.jp##.recommend
+news.ntv.co.jp,lmaga.jp,lasisa.net,president.jp##.recommend
 ||sunknudsen.com/static/media/js/fathom
 ||assets.getpocket.com/web-utilities/public/static/te.js
 ||assets.askdoctors.jp/*/event-tracking
