@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sat, 29 Aug 2026 03:44:02 GMT
+! Last modified: Sat, 29 Aug 2026 09:05:42 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sat, 29 Aug 2026 01:37:59 +0000
+!   - Last modified: Sat, 29 Aug 2026 03:28:03 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Fri, 28 Aug 2026 15:44:20 +0000
@@ -27,7 +27,7 @@
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Fri, 28 Aug 2026 15:06:26 +0000
+!   - Last modified: Sat, 29 Aug 2026 06:01:45 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
 !   - Last modified: Thu, 27 Aug 2026 10:20:43 +0000
@@ -6613,7 +6613,7 @@ pngreal.com##.adb
 ryuugames.com###wpsafe-link:style(display: block !important;)
 ryuugames.com###wpsafe-wait1,#wpsafe-link:others()
 pahe.plus##footer, .text-left, #link-view > [href], .box-main > [href]
-pahe.plus##+js(set, blurred, false), 
+pahe.plus##+js(set, blurred, false)
 pahe.plus,intercelestial.com,teknoasian.com##+js(no-fetch-if, mode:no-cors)
 intercelestial.com,teknoasian.com##+js(nowoif)
 intercelestial.com,teknoasian.com##.right-sidebar.penci_sidebar.container,.penci-home-popular-posts.container,p,ul,li,[href*="s0-greate"],#sidebar,.post-pagination,.single-breadcrumb.penci-breadcrumb.container,.penci-move-title-above.post-image,#footer-section, .post-related, #comments
@@ -33447,7 +33447,7 @@ pons.com##+js(trusted-click-element, button[data-e2e="pure-accept-ads"], , 1000)
 pons.com##+js(trusted-set-cookie, pons-pure, consent-given, , , domain, .pons.com)
 cnn.com##+js(trusted-set-local-storage-item, wbdLTP, 687f8fa8)
 ncaa.com##+js(trusted-set-local-storage-item, wbdLTP, 6934f2b8)
-adidas.*##+js(trusted-click-element, button[data-auto-id="glass-gdpr-default-consent-reject-button-central"], '', 1000)
+adidas.*##+js(trusted-click-element, div.button-wrapper > button.reject-all, '', 1500)
 crumblcookies.com##+js(trusted-set-local-storage-item, userTrackingConsent, '{"necessary":true,"marketing":false}')
 privacy.topreality.sk,privacy.autobazar.eu##+js(trusted-click-element, button[aria-label="Prijať všetko"])
 ilmatieteenlaitos.fi##+js(trusted-set-cookie, FMI_COOKIE_CONSENT, %7B%22ts%22%3A%221970-01-01T00%3A00%3A00.000Z%22%2C%22allow%22%3A%7B%22necessary%22%3A%7B%22fmi_necessary%22%3A1%7D%2C%22preferences%22%3A%7B%22fmi_preferences%22%3A1%7D%2C%22analytics%22%3A%7B%22rs%22%3A1%2C%22userneeds%22%3A2%7D%2C%22other%22%3A%7B%22youtube%22%3A1%2C%22fyrebox%22%3A1%7D%7D%7D, 1year)
