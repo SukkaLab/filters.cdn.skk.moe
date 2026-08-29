@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sat, 29 Aug 2026 01:46:55 GMT
+! Last modified: Sat, 29 Aug 2026 03:44:02 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,13 +8,13 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Fri, 28 Aug 2026 15:18:19 +0000
+!   - Last modified: Sat, 29 Aug 2026 01:37:59 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Fri, 28 Aug 2026 15:44:20 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Fri, 28 Aug 2026 14:20:50 +0000
+!   - Last modified: Sat, 29 Aug 2026 01:44:23 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
 !   - Last modified: Wed, 26 Aug 2026 09:35:33 +0000
@@ -6612,10 +6612,13 @@ ezeviral.com,pngreal.com###overlay
 pngreal.com##.adb
 ryuugames.com###wpsafe-link:style(display: block !important;)
 ryuugames.com###wpsafe-wait1,#wpsafe-link:others()
-||intercelestial.com^$csp=script-src 'self' * 'unsafe-inline'
-intercelestial.com##+js(nano-stb, , *, 0.1)
-intercelestial.com###landing, .soractrl:others()
-linegee.net##.kecil:others()
+pahe.plus##footer, .text-left, #link-view > [href], .box-main > [href]
+pahe.plus##+js(set, blurred, false), 
+pahe.plus,intercelestial.com,teknoasian.com##+js(no-fetch-if, mode:no-cors)
+intercelestial.com,teknoasian.com##+js(nowoif)
+intercelestial.com,teknoasian.com##.right-sidebar.penci_sidebar.container,.penci-home-popular-posts.container,p,ul,li,[href*="s0-greate"],#sidebar,.post-pagination,.single-breadcrumb.penci-breadcrumb.container,.penci-move-title-above.post-image,#footer-section, .post-related, #comments
+intercelestial.com#@#+js(adjust-setTimeout, '', *, 0.1)
+/_ac/s/*.js|$script,1p
 laweducationinfo.com,godstoryinfo.com,armypowerinfo.com,phonereviewinfo.com,gknutshell.com,vichitrainfo.com,workproductivityinfo.com,dopomininfo.com,artoffocas.com##+js(trusted-replace-outbound-text, decodeURIComponent, Math.random() <= 0.15, false)
 laweducationinfo.com,godstoryinfo.com,armypowerinfo.com,phonereviewinfo.com,gknutshell.com,vichitrainfo.com,workproductivityinfo.com,dopomininfo.com,artoffocas.com##+js(set-cookie, __gads, 1)
 laweducationinfo.com,godstoryinfo.com,armypowerinfo.com,phonereviewinfo.com,gknutshell.com,vichitrainfo.com,workproductivityinfo.com,dopomininfo.com,artoffocas.com##+js(aopw, window.onload)
@@ -27753,7 +27756,7 @@ www.google.*##+js(href-sanitizer, #main a[href^="/url?q=http"], ?q)
 www.google.*###main a[href][ping^="/url?"]:remove-attr(ping)
 ||www.google.*/url?sa=*&source=*&cd=&ved=*&url=$urlskip=?url,doc,1p
 www.google.com##+js(aeld, mouseover, b.src, elements, #search #rso div[data-rpos] > div[data-ved])
-www.google.com##+js(rpnt, script, this.gbar_=, `window.addEventListener("mousemove",(()=>{W_jd&&document.querySelectorAll("#search #rso div[data-rpos]").forEach((t=>{let e=t.querySelector('div[data-hveid] span[jsaction^="trigger."] > a[href^="/goto?url="]');if(!e)return;let r=t.querySelector('div[id^="atritem-"]')?.attributes?.jsdata?.value?.split?.(";_;")?.[1];r&&Object.getOwnPropertySymbols(W_jd[r]).map((t=>{let l=W_jd[r][t];if("object"!=typeof l)return;let s=Object.values(l)?.[0]?.[32];if(console.log(s),s?.[3]?.[0]?.startsWith?.("http"))e.setAttribute("href",s[3][0]);else if(null!==s?.[3]){let t=Object.values(s?.[3]);t?.[0]?.[0]?.startsWith?.("http")&&e.setAttribute("href",t[0][0])}else null===s?.[3]&&s[11]?.[7]?.startsWith?.("http")&&(console.log(s),e.setAttribute("href",s[11][7]))}))}))}));this.gbar_=`)
+www.google.com##+js(rpnt, script, this.gbar_=, `window.addEventListener("mousemove",(()=>{W_jd&&document.querySelectorAll("#search #rso div[data-rpos]").forEach((t=>{let e=t.querySelector('div[data-hveid] span[jsaction^="trigger."] > a[href^="/goto?url="]');if(!e)return;let r=t.querySelector('div[id^="atritem-"]')?.attributes?.jsdata?.value?.split?.(";_;")?.[1];r&&Object.getOwnPropertySymbols(W_jd[r]).map((t=>{let l=W_jd[r][t];if("object"!=typeof l||null===l)return;let s=Object.values(l)?.[0]?.[32];if(s?.[3]?.[0]?.startsWith?.("http"))e.setAttribute("href",s[3][0]);else if(null!==s?.[3]){let t=Object.values(s?.[3]);t?.[0]?.[0]?.startsWith?.("http")&&e.setAttribute("href",t[0][0])}else null===s?.[3]&&s[11]?.[7]?.startsWith?.("http")&&e.setAttribute("href",s[11][7])}))}))}));this.gbar_=`)
 www.google.*##+js(set-attr, c-wiz[data-p] [data-query] a[target="_blank"][role="link"], rlhc, 1)
 liberation.fr,officedepot.fr,oui.sncf##+js(acs, document.createElement, '.js')
 sfr.fr##+js(aopr, _oEa)
