@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Mon, 31 Aug 2026 00:38:31 GMT
+! Last modified: Mon, 31 Aug 2026 08:41:53 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.10.24
+!   - Version: 2.1.10.29
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -2017,7 +2017,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||74.55.82.102^$3p
 ||77tracking.com^$3p
 ||79.125.117.123^$3p
-||7bpeople.com^$3p
 ||7eer.net^$3p
 ||99stats.com^$3p
 ||9nl.eu^$3p
@@ -74642,6 +74641,9 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||countly.
 ||countly-
 |piwik.
+||pausible.flaq.ai^
+||stats.reanime.to^
+||stats.flixcloud.cc^
 ||posthog.worldshopping.global^
 ||aka.asiae.co.kr^
 ||analytics.watchott.org^
@@ -75885,8 +75887,6 @@ prd.api.bleacherreport.com^
 ||a.opmnstr.com^
 ||analytics.aklamio.com^
 ||d17tqr44y57o31.cloudfront.net^
-||analytics-mkt.wemakeprice.com^
-||ad-log.wemakeprice.com^
 ||analytics.ubports.com^
 ||tracker.dcdn.baidu.com^
 ||apetite.index.hr^
@@ -76992,7 +76992,6 @@ prd.api.bleacherreport.com^
 ||weblog.hankookilbo.com^
 ||weblog.zdnet.co.kr^
 ||wl.yna.co.kr^
-||wlog.tmon.co.kr^
 ||wstat.ozon.ru^
 ||wt.soundestlink.com^
 ||wtsdc.uhc.com^
@@ -282149,6 +282148,8 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
 @@||nlog.naver.com/n|$domain=search.naver.com|www.naver.com
+||reanime.to/pv.js
+||flixcloud.cc/swetrix.js
 ||appli.mixh.jp/appli.mixh.jp/app/*-track.php
 ||a.pixiv.org/yufulight-cdn/track.js
 bg-mania.jp##.section-pr-osusume
@@ -284549,7 +284550,6 @@ device4game.ru##.tg-first-footer-widget
 ||uq.force.com/auraAnalytics^
 ||hurriyet.com.tr/banalytics.js
 news.ntv.co.jp,lmaga.jp,lasisa.net,president.jp##.recommend
-||sunknudsen.com/static/media/js/fathom
 ||assets.getpocket.com/web-utilities/public/static/te.js
 ||assets.askdoctors.jp/*/event-tracking
 ||livestream.com/sre/analytics-tracker/
@@ -284622,7 +284622,6 @@ cbssports.com##.taboola-recommends
 ||ezneering.com/wp-content/plugins/hashbar-wp-notification-bar/assets/js/analytics.js
 ||unagi*.amazon.*/events/
 ||systemed.fr/itya.js
-||weather.go.kr/w/resources/js/logger
 ||hellosmpl.com^$script,3p
 ||qualzz.com/assets/trackingScript/webtracking.js
 ||id.rambler.ru/api/v3/session/getRsidx
@@ -285272,7 +285271,6 @@ chinatimes.com##.popin-recommend
 ||petco.com/track-production/analytics.js
 ||publisher-assets.spot.im/ad/event-tracking/$xhr,redirect=noop.js,script
 ||ace-sync.toast.com/sendid?sid=*&uid=
-||search.tmon.co.kr/api/direct/*/searchstatapi/api/search/count/click/
 ||cdn.adrise.tv/*/appboy.min.js
 ||cdn.adrise.tv/*/sentry/
 ||eiu.com/n/wp-content/plugins/eiu-google-tag-manager/assets/dist/js/eiu-google-tag-manager.min.js
@@ -285891,7 +285889,6 @@ the-ans.jp##.side-reccomend
 ||cgeimage.commutil.kr/jscomm/*/logger.js
 ||www002.commutil.kr/adlog/adlog_arrviewset.php
 ||dtory.ebs.co.kr/wlo^
-||home.ebs.co.kr/ebsnews/logProce/logAjax
 ||ewaline.su/stats.js
 ||data.html5games.com/event/ad
 ||livehdcams.com/api/metrics
@@ -287250,7 +287247,6 @@ dreamprogs.net##td[width="88"][height="31"]
 ||visualstudio.com/v*/track$3p
 ||wdr.de/*/tracker/
 ||web-t.9gag.com^
-||webmetrics.nintendo-europe.com^
 ||webstat.freaks4u.com^
 ||weg.de/etc/designs/comvel/clientlibs/tracking
 ||widgets.pinterest.com/*/urls/count.json
