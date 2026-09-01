@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Tue, 01 Sep 2026 01:19:25 GMT
+! Last modified: Tue, 01 Sep 2026 07:51:45 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.10.38
+!   - Version: 2.1.10.41
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -75112,7 +75112,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||analytics.zdassets.com^
 ||analyzer*.fc2.com^
 ||analytics.flexclip.com^
-||iws2.io.naver.com^
 ||clog.tanshudata.com^
 ||gw.stape.fr^
 ||aws-analytics.nmg.com.hk^
@@ -76727,8 +76726,6 @@ prd.api.bleacherreport.com^
 ||sp.yorkdispatch.com^
 ||sp.zanesvilletimesrecorder.com^
 ||spade.twitch.tv^
-||spanids.dictionary.com^
-||spanids.thesaurus.com^
 ||spixel.socy.es^
 ||spoods.rce.veeseo.com^
 ||spr.bild.de^
@@ -76765,7 +76762,6 @@ prd.api.bleacherreport.com^
 ||static-trackers.adtarget.me^
 ||static.parsely.com^
 ||statistics.11880.com^
-||statistics.crowdynews.com^
 ||statistics.mailerlite.com^
 ||statistics.news1.kr^
 ||stats.aplus.com^
