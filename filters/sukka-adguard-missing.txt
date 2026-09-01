@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Tue, 01 Sep 2026 07:51:45 GMT
+! Last modified: Tue, 01 Sep 2026 11:42:25 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,13 +8,13 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Mon, 31 Aug 2026 21:38:56 +0000
+!   - Last modified: Tue, 01 Sep 2026 06:28:44 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Mon, 31 Aug 2026 17:49:12 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Sun, 30 Aug 2026 06:08:04 +0000
+!   - Last modified: Tue, 01 Sep 2026 06:32:44 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
 !   - Last modified: Mon, 31 Aug 2026 16:42:49 +0000
@@ -30,7 +30,7 @@
 !   - Last modified: Mon, 31 Aug 2026 05:04:00 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
-!   - Last modified: Mon, 31 Aug 2026 09:39:25 +0000
+!   - Last modified: Tue, 01 Sep 2026 06:31:01 +0000
 ! --------------------------------------------------------------
 ! uBlock filters https://ublockorigin.pages.dev/filters/filters.min.txt
 *_ad_$media,domain=youtube.com,3p
@@ -23465,6 +23465,12 @@ outlook.live.com##+js(trusted-rpfr, /"features":\[/, "features":["ads-shutdown-n
 unbox.ph##.elementor-widget-image:has(> .elementor-widget-container > a[href^="https://www.smcyberzone.com/"])
 unbox.ph##section:has(.elementor-widget-image > .elementor-widget-container > a[href^="https://shopee.ph/"]):style(height: 0 !important; visibility: hidden !important; padding: 0 !important;)
 games360rgh.com##+js(rmnt, script, .offsetHeight)
+workers.dev##+js(rmnt, script, _adblockerdetected)
+workers.dev##+js(remove-cookie, _adblockerdetected)
+||workers.dev/adblock.js
+firestream.to##+js(set, HTMLScriptElement.prototype.onerror, undefined)
+firestream.to##+js(rmnt, script, 'shift']());)
+||fmhyfxdijrmtf.site^
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -29474,6 +29480,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 ||sms24.me/numbers/pixel
 ||narto-drama.com/presence/heartbeat
 adhs-zentrum.de##+js(no-xhr-if, method:POST body:/"track"|adblock/)
+||firestream.to/api/videos/*/view
 /edgemesh.*.js$script,domain=~edgemesh.com|~edgeno.de
 ||safelinkconverter.com^$script,3p
 /adsensebase.js$script
@@ -38392,3 +38399,6 @@ readcomicsonline.lol##+js(nano-stb, e=>e-1)
 mail.yahoo.com##+js(trusted-click-element, #landshark .skip-link)
 t3.chat##+js(nostif, .abort();, 1000)
 parsatv.com##+js(rmnt, script, .offsetHeight)
+firestream.to##+js(set, console.clear, trueFunc)
+firestream.to##+js(set, console.table, trueFunc)
+firestream.to##+js(set, console.log, trueFunc)
