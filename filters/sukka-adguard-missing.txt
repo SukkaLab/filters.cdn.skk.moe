@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Wed, 02 Sep 2026 17:53:55 GMT
+! Last modified: Wed, 02 Sep 2026 21:07:32 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -11,7 +11,7 @@
 !   - Last modified: Wed, 02 Sep 2026 13:43:11 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
-!   - Last modified: Wed, 02 Sep 2026 13:53:10 +0000
+!   - Last modified: Wed, 02 Sep 2026 15:55:02 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
 !   - Last modified: Wed, 02 Sep 2026 13:49:25 +0000
@@ -24219,6 +24219,7 @@ cracksmid.com##div[style=""] > center > center
 ||luxoriahub.shop^$all
 ||claude-ai.cyou^$all
 ||aisyncad.com^$all
+||cdn.streameet.top^$all
 ||webuzz.me^$doc
 ||coup-ling.net^$all
 ||gokinjolove.jp^$all
@@ -25785,6 +25786,7 @@ igualdad.iaa.csic.es##+js(acs, String.prototype.toLowerCase, Contract)
 ||openai-backup.one^$all
 cizitensports.com##+js(rmnt, script, randomUUID)
 ###cf-challenge-root
+||sites.google.com/view/brewapp$doc
 ||cracksway.com^$all
 ||gamingdebates.com^$all
 ||bonzi.link^$all
@@ -27018,7 +27020,7 @@ rapidkil.com.au##+js(aost, XMLHttpRequest, /wp-content)
 ||govearali.org^$all
 ||claritydelivr.com^$all
 ||dntds.shop^$all
-/^https:\/\/[a-z]+\.[a-z]+\/[a-z]+\?rnd=[a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9]&ts=[0-9]+$/$script,xhr,3p,match-case
+/^https:\/\/[a-z]+\.[a-z]+\/[a-z]+\?rnd=[a-z0-9]{8}&ts=\d+$/$script,xhr,3p,match-case
 /jsrepo?rnd=$script,xhr,3p
 /teamrepo?rnd=$script,xhr,3p
 ||icu/captcha.html$doc,frame
