@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Fri, 04 Sep 2026 14:22:55 GMT
+! Last modified: Fri, 04 Sep 2026 17:36:06 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.10.77
+!   - Version: 2.1.10.80
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -74632,6 +74632,8 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||countly.
 ||countly-
 |piwik.
+||tracker.bigl.ua^
+||tracking.vivareal.com.br^
 ||clientlog.wanmei.com^
 ||jnt.welt.de^
 ||agrau.aii.sh^
@@ -288466,6 +288468,9 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=saturn.de
 @@||metrics.us.playstation.com/b/ss/
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
+@@||cdn.cxense.com/cx.cce.js$domain=j-cast.com
+@@||cdn.cxense.com/cx.js$domain=j-cast.com
+@@||api.cxense.com/public/widget/data?json=$domain=j-cast.com
 @@||googletagmanager.com/gtag/js$domain=gamelog.apexlegends-leaksnews.com
 @@||st-*.dynamicyield.com/st?sec=$domain=platekompaniet.no
 @@||st-*.dynamicyield.com/spa/json?sec=$domain=platekompaniet.no
