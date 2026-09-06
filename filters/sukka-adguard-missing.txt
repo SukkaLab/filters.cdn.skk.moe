@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sat, 05 Sep 2026 23:56:19 GMT
+! Last modified: Sun, 06 Sep 2026 07:09:38 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sat, 05 Sep 2026 16:52:48 +0000
+!   - Last modified: Sat, 05 Sep 2026 21:43:43 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Fri, 04 Sep 2026 08:14:37 +0000
@@ -17,17 +17,17 @@
 !   - Last modified: Sat, 05 Sep 2026 10:35:28 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
-!   - Last modified: Mon, 31 Aug 2026 16:42:49 +0000
+!   - Last modified: Sun, 06 Sep 2026 01:47:52 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Sat, 05 Sep 2026 15:42:23 +0000
+!   - Last modified: Sat, 05 Sep 2026 21:46:20 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
 !   - Last modified: Sat, 05 Sep 2026 04:18:58 +0000
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Wed, 02 Sep 2026 14:17:52 +0000
+!   - Last modified: Sat, 05 Sep 2026 22:51:39 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
 !   - Last modified: Fri, 04 Sep 2026 08:26:03 +0000
@@ -20472,7 +20472,6 @@ neodrive.xyz##+js(rmnt, script, FingerprintJS)
 ||jaya9bangladesh.com/?af=$doc,popup
 ||staletraffic.com^$popup,doc
 historicaerials.com##+js(nostif, /Executed|modal/)
-historicaerials.com##.border-bottom.container:has(#historicaerials_728x90_ATF)
 ||pagefair.net^
 canela.tv##+js(xml-prune, [breakId*="Roll"], , /content.vmap)
 canela.tv##+js(trusted-replace-fetch-response, /#EXT-X-KEY:METHOD=NONE\n#EXT(?:INF:[^\n]+|-X-DISCONTINUITY)\n.+?(?=#EXT-X-KEY)/gms, , /media.m3u8)
@@ -32185,6 +32184,8 @@ ds.163.com##+js(set, Sentry.init, noopFunc)
 ds.163.com##+js(set, Sentry.configureScope, noopFunc)
 @@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$script,domain=airtelxstream.in
 @@||googletagmanager.com/gtag/js$script,redirect-rule,domain=alltron.ch
+||cdn.shopify.com/extensions/*/ba_tracking.js$domain=ridge.com,important
+ridge.com##+js(set, baMet.register, noopFunc)
 ! uBlock filters – Quick fixes https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
 @@||hb.vntsm.com/v4/live/vms/sites/aternos.org/index.js$script,domain=aternos.org
 aternos.org##.header-center:style(margin-top:-5000px !important;)
@@ -32448,9 +32449,7 @@ tvtropes.org##+js(set, HTMLScriptElement.prototype.onerror, undefined)
 chzzkban.xyz##+js(no-fetch-if, pagead2.googlesyndication.com/pagead/js/adsbygoogle.js method:HEAD, emptyStr)
 chzzkban.xyz##+js(trusted-suppress-native-method, Node.prototype.contains, '{"className":"adsbygoogle"}', abort)
 historicaerials.com##+js(aeld, load, showFallbackModal)
-historicaerials.com##+js(trusted-create-html, #historicaerials_g_728x90_ATF, <div id="google_ads_iframe_/22597447651/historicaerials_g_728x90_ATF_0__container__"><iframe id="google_ads_iframe_/22597447651/historicaerials_g_728x90_ATF_0" width="1" height="1" data-load-complete="true"></iframe></div>)
-historicaerials.com##+js(trusted-create-html, #historicaerials_g_160x600_Left, <div id="google_ads_iframe_/22597447651/historicaerials_g_160x600_Left_0__container__"><iframe id="google_ads_iframe_/22597447651/historicaerials_g_160x600_Left_0" width="1" height="1" data-load-complete="true"></iframe></div>)
-historicaerials.com##+js(trusted-create-html, #historicaerials_g_160x600_Right, <div id="google_ads_iframe_/22597447651/historicaerials_g_160x600_Right_0__container__"><iframe id="google_ads_iframe_/22597447651/historicaerials_g_160x600_Right_0" width="1" height="1" data-load-complete="true"></iframe></div>)
+historicaerials.com##+js(trusted-create-html, #historicaerials_g_728x90_ATF, <div id="google_ads_iframe_/22597447651/historicaerials_g_728x90_ATF_0__container__"><iframe id="google_ads_iframe_/22597447651/historicaerials_g_728x90_ATF_0" width="2" height="2" data-load-complete="true"></iframe></div>)
 @@||historicaerials.com^$ghide
 magma.com##+js(set, Object.prototype.hasRightPartnership, falseFunc)
 magma.com##+js(set, Object.prototype.hasLeftPartnership, falseFunc)
@@ -34883,6 +34882,13 @@ glowfestival.fi##+js(trusted-click-element, .cky-btn-accept)
 gamescom.global##+js(trusted-set-cookie, OptanonConsent, groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0%2CC0005%3A0, , , domain, gamescom.global)
 gamescom.global##+js(trusted-set-cookie, OptanonAlertBoxClosed, $currentDate$)
 zonerai.com##+js(trusted-set-local-storage-item, 'cookie_consent', '{"necessary":true,"analytics":false,"marketing":false}')
+vpg.no##+js(trusted-click-element, #cookieConsentModal.show .js-cookie-configuration-button .btn-primary, , 2000)
+vpg.no##+js(trusted-click-element, input[id="cookie_ønskeliste-og-andre-funksjoner"]:not(:checked), , 2500)
+vpg.no##+js(trusted-click-element, 'xpath://button[@class="btn btn-primary js-offcanvas-cookie-submit"][normalize-space(.)="Lagre"]', , 3000)
+vpg.no##.modal-backdrop.fade
+vpg.no##.offcanvas-backdrop.fade
+vpg.no###cookieConsentModal
+vpg.no##.js-offcanvas-singleton.offcanvas-start
 ! uBlock filters – Annoyances https://ublockorigin.pages.dev/filters/annoyances.min.txt
 ilovevaldinon.it##+js(acs, document.oncontextmenu)
 ilovevaldinon.it##+js(aopr, disableSelection)
