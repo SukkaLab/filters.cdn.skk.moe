@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Filters
-! Last modified: Mon, 07 Sep 2026 18:17:49 GMT
+! Last modified: Mon, 07 Sep 2026 20:07:50 GMT
 ! Expires: 1 hours
 ! Description: The filters from Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -62,6 +62,7 @@ bilibili.com#@#+js(nowebrtc)
 ui.com#@#+js(nowebrtc)
 challenges.cloudflare.com#@#+js(nowebrtc)
 speed.cloudflare.com#@#+js(nowebrtc)
+meet.google.com#@#+js(nowebrtc)
 ||youtube.com/embed/$3p,frame,redirect=click2load.html
 ||youtube-nocookie.com/embed/$3p,frame,redirect=click2load.html
 ||youtube.com/embed/$3p,object,redirect=click2load.html
@@ -879,3 +880,7 @@ qrator.net##body:style(overflow: unset !important)
 cipherssecurity.com##.csp-overlay
 sinonjs.org##.VPCarbonAds
 landian.news##.single-activity-ticker
+||d-vps.com/api/stock/rail/*/image$image
+nytimes.com##.ribbon-container
+nytimes.com##.related-articles
+nytimes.com##.related-cont
