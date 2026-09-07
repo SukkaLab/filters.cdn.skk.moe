@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Mon, 07 Sep 2026 07:22:23 GMT
+! Last modified: Mon, 07 Sep 2026 12:38:14 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.10.87
+!   - Version: 2.1.10.89
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202603110915
@@ -74631,6 +74631,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||countly.
 ||countly-
 |piwik.
+||sogu.tripster.ru^
 ||a2.cineflix.st^
 ||tracker.bigl.ua^
 ||tracking.vivareal.com.br^
@@ -282146,6 +282147,8 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
 @@||nlog.naver.com/n|$domain=search.naver.com|www.naver.com
+tellows.jp/ping.php?p=
+||janitorai.com/jstats/
 .cineflix.st/api/script.js|
 ||yalispor.com.tr/u966/
 hokkaido-np.co.jp##.main > section:has(> #ai_recommend_section)
@@ -284376,6 +284379,7 @@ thehindu.com###sectiondivicymi
 ||uha-mikakuto.co.jp/parts/analytics.js
 ||static.lefigaro.fr/figanalytics/
 ||community.theta360.guide/assets/google-universal-analytics-v4
+||dpg.danawa.com/*/rest/*getStampEvent
 ||fap.bar/a.js
 -config.sensic.net/3pc.html
 -config.sensic.net/s2s-web.js
@@ -288470,6 +288474,7 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=saturn.de
 @@||metrics.us.playstation.com/b/ss/
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
+@@||cdn.jsdelivr.net/npm/@thumbmarkjs/thumbmarkjs/dist/thumbmark.umd.js$domain=archive.is
 @@||cdn.cxense.com/cx.cce.js$domain=j-cast.com
 @@||cdn.cxense.com/cx.js$domain=j-cast.com
 @@||api.cxense.com/public/widget/data?json=$domain=j-cast.com
