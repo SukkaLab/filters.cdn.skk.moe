@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Mon, 07 Sep 2026 12:38:14 GMT
+! Last modified: Mon, 07 Sep 2026 15:52:07 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,29 +8,29 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Mon, 07 Sep 2026 03:12:17 +0000
+!   - Last modified: Mon, 07 Sep 2026 15:41:58 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
-!   - Last modified: Fri, 04 Sep 2026 08:14:37 +0000
+!   - Last modified: Mon, 07 Sep 2026 14:55:15 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Sun, 06 Sep 2026 20:05:03 +0000
+!   - Last modified: Mon, 07 Sep 2026 11:24:24 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
 !   - Last modified: Sun, 06 Sep 2026 01:47:52 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Sun, 06 Sep 2026 20:23:40 +0000
+!   - Last modified: Mon, 07 Sep 2026 14:12:06 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
-!   - Last modified: Sun, 06 Sep 2026 13:30:50 +0000
+!   - Last modified: Mon, 07 Sep 2026 14:12:06 +0000
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Sat, 05 Sep 2026 22:51:39 +0000
+!   - Last modified: Mon, 07 Sep 2026 15:46:26 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
-!   - Last modified: Sun, 06 Sep 2026 13:43:38 +0000
+!   - Last modified: Mon, 07 Sep 2026 12:04:29 +0000
 ! --------------------------------------------------------------
 ! uBlock filters https://ublockorigin.pages.dev/filters/filters.min.txt
 *_ad_$media,domain=youtube.com,3p
@@ -6869,8 +6869,6 @@ expertvn.com##+js(rmnt, script, deblocker)
 trangchu.news##+js(rmnt, script, deblocker)
 trangchu.news##+js(no-xhr-if, /doubleclick|googlesyndication/)
 /fuckadb.js$badfilter
-megaurl.in##+js(ra, onclick, [onclick^="pop"])
-megaurl.in##+js(set, blurred, false)
 @@||megaurl.*^$ghide
 @@||expertvn.com^$ghide
 *$script,3p,denyallow=bootstrapcdn.com|cloudflare.com|google.com|googleapis.com|gstatic.com|hwcdn.net|jquery.com,domain=expertvn.com
@@ -8590,6 +8588,7 @@ pawastreams.pro##+js(acs, globalThis, adserverDomain, /^data:/)
 embedstreams.top,gogoanime.co.in,icelz.to,pornhoarder.net,streamtp1.com##+js(aopw, Adcash)
 hyhd.org,pornhoarder.net,redecanaishd.*,streamingnow.mov,watchfootballhighlights.com##+js(aopr, aclib)
 brobokep.org##+js(acs, addEventListener, aclib)
+jpopsingles.eu##+js(set, AtcshAltNm, true)
 asiaflix.in###af-dl-1
 buffsports.*##.h-100.position-absolute.w-100
 buffsports.*##.btn-danger.btn
@@ -9594,8 +9593,8 @@ m1xdrop.*,m1xdrop.com,m1xdrop.net,md3b0j6hj.com,mdbekjwqa.pw,mdfx9dc8n.net,miixd
 *$script,3p,denyallow=google.com|gstatic.com|hwcdn.net|jquery.com,domain=m1xdrop.com|m1xdrop.net|mixdrop23.net|mixdrop.*|mixdrp.*|~mixdrop.one|mixdroop.*|m1xdrop.bz
 miixdrop.net,miiixdrop.net,miiiixdrop.net,miiiiixdrop.net##+js(acs, addEventListener, adserverDomain)
 ###videojs ~ div[style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; z-index: 2147483646;"]
-watch-movies.com.pk>>,~addtoany.com,~cloudflare.com,~google.com,~ok.ru##+js(rmnt, script, /h=decodeURIComponent|popundersPerIP|dtnoppu|adserverDomain/)
-watch-movies.com.pk>>,~addtoany.com,~cloudflare.com,~google.com,~ok.ru##+js(nowoif)
+milfnut.com>>,watch-movies.com.pk>>,~addtoany.com,~cloudflare.com,~google.com,~ok.ru##+js(rmnt, script, /h=decodeURIComponent|popundersPerIP|dtnoppu|adserverDomain/)
+milfnut.com>>,watch-movies.com.pk>>,~addtoany.com,~cloudflare.com,~google.com,~ok.ru##+js(nowoif)
 ||brightadnetwork.com^
 adblockeronstape.*,adblockplustape.*,adblockstreamtape.*,adblockstrtape.*,adblockstrtech.*,adblocktape.*,advertape.net,advertisertape.com,antiadtape.*,gettapeads.com,noblocktape.*,stapadblockuser.*,stape.*,strcloud.*,streamadblocker.*,streamadblockplus.*,streamnoads.com,streamta.*,streamtape.*,streamtapeadblockuser.*,strtape.*,strtapeadblock.*,strtapeadblocker.*,strtpe.*,tapeadsenjoyer.com,tapeadvertisement.com,tapeantiads.com,tapeblocker.com,tapelovesads.org,tapenoads.com,tapepops.com,tapewithadblock.org,tpead.net,watchadsontape.com##^script:has-text(/WebAssembly|forceunder/)
 adblockeronstape.*,adblockplustape.*,adblockstreamtape.*,adblockstrtape.*,adblockstrtech.*,adblocktape.*,advertape.net,advertisertape.com,antiadtape.*,gettapeads.com,noblocktape.*,stapadblockuser.*,stape.*,strcloud.*,streamadblocker.*,streamadblockplus.*,streamnoads.com,streamta.*,streamtape.*,streamtapeadblockuser.*,strtape.*,strtapeadblock.*,strtapeadblocker.*,strtpe.*,tapeadsenjoyer.com,tapeadvertisement.com,tapeantiads.com,tapeblocker.com,tapelovesads.org,tapenoads.com,tapepops.com,tapewithadblock.org,tpead.net,watchadsontape.com##+js(rmnt, script, /WebAssembly|forceunder/)
@@ -16617,7 +16616,6 @@ telesrbija.com##+js(acs, Promise, Adb)
 javgg.co,javgg.net#@##AD_160
 *$script,3p,denyallow=cloudflare.com|fluidplayer.com|googleapis.com|strpst.com,domain=javcode.net|javgg.co|javgg.net
 paketmu.com##+js(no-fetch-if, googlesyndication)
-rapid-cloud.co##+js(set, navigator.brave, undefined)
 praxistipps.focus.de###G32:style(grid-template-rows: unset !important;)
 vuinsider.com##+js(nostif, show)
 vuinsider.com##.overlay-container
@@ -18851,6 +18849,9 @@ jpopsingles.eu##+js(no-xhr-if, googlesyndication)
 jpopsingles.eu##+js(set, detectedAdblock, noopFunc)
 jpopsingles.eu##[src="/ddl/dl-get.png"]
 jpopsingles.eu##[src="/ddl/dl-link.png"]
+jpopsingles.eu##.code-block
+jpopsingles.eu###start ~ div[align="center"]
+##.container a[href^="https://insensitiveshoweraudible.com/"]
 adslink.pw##+js(acs, EventTarget.prototype.addEventListener, delete window)
 adslink.pw##+js(rmnt, script, /popMagic|pop1stp/)
 adslink.pw##+js(no-fetch-if, /googlesyndication|googletagservices/)
@@ -23522,7 +23523,7 @@ gizguide.com##a[href^="https://bit.ly/"]
 puzzleship.com##+js(no-fetch-if, client=ca-pub-)
 puzzleship.com##+js(no-fetch-if, adsbygoogle.js)
 puzzleship.com##.ad_banner.adsbox970x90:style(display: block !important)
-wykop.pl##.pub-slot-wrapper:style(position: absolute !important; left: -4000px !important; visibility: hidden !important; pointer-events: none !important;)
+wykop.pl##.pub-slot-wrapper:style(position: absolute !important; left: 4000px !important; visibility: hidden !important; pointer-events: none !important;)
 wykop.pl##+js(spoof-css, .pub-slot-wrapper, left, 0px, visibility, visible)
 play.mercadolivre.com.br##+js(trusted-json-edit-fetch-response, $..durationInSeconds=0, propsToMatch, -ssai-vod-)
 play.mercadolivre.com.br##+js(mpegdash-prune, Period:has(> EventStream[schemeIdUri="urn:sva:advertising-wg:ad-id-signaling"]), /dash)
@@ -23532,6 +23533,8 @@ newsammo.com##+js(no-fetch-if, adsbygoogle)
 freezehost.pro##+js(rmnt, script, .offsetHeight)
 *$image,3p,denyallow=googleapis.com,domain=vipbox1.org
 @@||samplette.io^$ghide
+instamod.app##div[data-pop]:remove-attr(data-pop)
+instamod.app##+js(nowoif)
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -24261,6 +24264,7 @@ cracksmid.com##div[style=""] > center > center
 ||claude-ai.cyou^$all
 ||aisyncad.com^$all
 ||cdn.streameet.top^$all
+||new.point-youtools.com^$all
 ||webuzz.me^$doc
 ||coup-ling.net^$all
 ||gokinjolove.jp^$all
@@ -27812,7 +27816,7 @@ top##body > center + .A + .post
 ||hoka-uk.com^$all
 ||nextsave.trenched.cfd^$doc
 ||ggle-analytics.$all
-||whale-alert.$all
+||whale-alert.$all,to=~whale-alert.io
 ||cookie-whitelist.$all
 ||vipsunglassesindia.in^$all
 ||oakleysunglassesindia.com^$all
@@ -27823,6 +27827,7 @@ top##body > center + .A + .post
 ||prof-noemie-sgzopjv.work^$all
 /go/*^ref=*&subid1=*&subid2=$doc
 ^ofv_id=*&aff_pub_id=*&click_id=*&subid1=*&subid2=$doc
+||aw-huorong.com.cn$all
 ! uBlock filters – Privacy https://ublockorigin.pages.dev/filters/privacy.min.txt
 ||google-analytics.com/analytics.js$script,xhr,redirect=google-analytics_analytics.js:5
 ||google-analytics.com/cx/api.js$script,redirect=google-analytics.com/cx/api.js:5
@@ -28360,6 +28365,8 @@ www.youtube.com##+js(no-xhr-if, /\/api\/stats\/atr\?.+?&rt=\d+\.\d+.+?&volume=\d
 /^https:\/\/(www\.)?[a-z0-9-]+\.[a-z]+(\.[a-z]+)?\/gtm[a-z]+\/?$/$script,1p,match-case
 /^https:\/\/(www\.)?[a-z0-9-]+\.[a-z]+(\.[a-z]+)?\/metrics\/?$/$script,1p,match-case
 /^https:\/\/(www\.)?[a-z0-9-]+\.[a-z]+(\.[a-z]+)?\/securegtm\/?$/$script,1p,match-case
+||otrium.*/static/newrelic.js
+||otrium.*/measure/
 ||bdvmetricas.banvenez.com.ve^
 ||bilet.com/gtmcf/
 ||razorpay.com/build/razor-analytics/
@@ -32203,8 +32210,8 @@ youtube.com##+js(json-prune, playerResponse.adPlacements playerResponse.playerAd
 www.youtube.com##+js(rpnt, script, (function serverContract(), (()=>{if("YOUTUBE_PREMIUM_LOGO"===ytInitialData?.topbar?.desktopTopbarRenderer?.logo?.topbarLogoRenderer?.iconImage?.iconType||location.href.startsWith("https://www.youtube.com/tv#/")||location.href.startsWith("https://www.youtube.com/embed/"))return;const e=ytcfg.data_.INNERTUBE_CONTEXT.client.userAgent\,t=t=>{ytcfg.data_.INNERTUBE_CONTEXT.client.userAgent=t?e.replace?.(/(Mozilla\/5\.0 \([^)]+)/\,"$1; "+t):e}\,o=["channel"\,"lactmilli"];let r=!1\,n=o;document.addEventListener("DOMContentLoaded"\,(function(){const e=()=>{const e=document.getElementById("movie_player");if(!e||!window.location.href.includes("/watch?"))return void(n=o);const a=e.getPlayerResponse?.()\,i=e.getProgressState?.()\,s=e.getStatsForNerds?.();let l\,d;if(i&&i.duration>0&&(i.loaded<i.duration||i.duration-i.current>1)||a?.videoDetails?.isLive){if(!s?.debug_info?.startsWith?.("SSAP\, AD")){const o=a.videoDetails?.videoId\,c=a.playerConfig?.playbackStartConfig?.startSeconds??0\,u=e.getPlayerStateObject?.()?.isBuffering\,y=a.playabilityStatus?.errorScreen\,p=JSON.stringify(y?.playerErrorMessageRenderer?.subreason?.runs||y?.playerInterstitialRenderer?.content?.interstitialViewModel?.description?.commandRuns);return void("UNPLAYABLE"===a?.playabilityStatus?.status&&!y?.playerErrorMessageRenderer?.playerCaptchaViewModel&&p?.includes?.("WEB_PAGE_TYPE_UNKNOWN")&&p?.includes?.("https://support.google.com/youtube/answer/3037019")?(n=n.slice(1)\,n.length>0?t(n[0]):t("")\,r=!1\,e.loadVideoById(o\,c)):0===n.length?(r=!1\,t("")):u&&"0.00 s"===s?.buffer_health_seconds&&"0x0"===s?.resolution&&r?(t(n[0])\,r=!1\,e.loadVideoById(o\,c)):!r&&i.current-c<5&&location.href.includes("&list=")&&null===e.getPlaylistId?.()&&(l=document.querySelector("yt-playlist-manager")\,d=l?.getPlaylistData?.()\,d&&(l.setPlaylistData?.(d)\,l.setPlayerPlaybackControlData?.({playlistPanelRenderer:d}))))}i.duration>0&&e.seekTo?.(i.duration)}};e()\,new MutationObserver((()=>{e()})).observe(document\,{childList:!0\,subtree:!0})}))\,window.Map.prototype.has=new Proxy(window.Map.prototype.has\,{apply:(e\,t\,o)=>{if("onSnackbarMessage"===o?.[0]&&!r){const e=document.getElementById("movie_player");if(!e)return;const t=e.getStatsForNerds?.()\,o=e.getPlayerStateObject?.()?.isBuffering\,a=e.getPlayerResponse?.()?.playbackTracking?.videostatsPlaybackUrl?.baseUrl;o&&"0.00 s"===t?.buffer_health_seconds&&"0x0"===t?.resolution&&n.length>0&&(a.includes("reloadxhr")&&(n=n.slice(1))\,r=!0)}return Reflect.apply(e\,t\,o)}});const a={apply:(e\,t\,o)=>{const r=o[0];return"function"==typeof r&&r.toString().includes("onAbnormalityDetected")&&(o[0]=function(){})\,Reflect.apply(e\,t\,o)}};window.Promise.prototype.then=new Proxy(window.Promise.prototype.then\,a)})();(function serverContract(), sedCount, 1, excludes, MutationObserver)
 www.youtube.com##+js(trusted-json-edit-xhr-request, [?..userAgent*="channel"]..client[?.clientName=="WEB"]+={"clientScreen":"CHANNEL"}, propsToMatch, /player?)
 www.youtube.com##+js(trusted-json-edit-xhr-request, [?..userAgent*="lactmilli"]+={"params":"8AUB"}, propsToMatch, /player?)
-www.youtube.com##+js(trusted-json-edit-xhr-request, [?..userAgent*="lactmilli"]..playbackContext.contentPlaybackContext.lactMilliseconds="${now}", propsToMatch, /player?)
-www.youtube.com##+js(trusted-json-edit-xhr-request, [?..userAgent=/adunit|channel|lactmilli|instream|inline|eafg/]..referer=repl({"regex":"(?:#reloadxhr)?$"\,"replacement":"#reloadxhr"}), propsToMatch, /player?)
+www.youtube.com##+js(trusted-json-edit-xhr-request, [?..userAgent=/channel|lactmilli|instream/]..playbackContext.contentPlaybackContext.lactMilliseconds="${now}", propsToMatch, /player?)
+www.youtube.com##+js(trusted-json-edit-xhr-request, [?..userAgent=/adunit|channel|lactmilli|instream|inline|yahi|eafg/]..referer=repl({"regex":"(?:#reloadxhr)?$"\,"replacement":"#reloadxhr"}), propsToMatch, /player?)
 www.youtube.com##+js(set, ytcfg.data_.EXPERIMENT_FLAGS.all_web_enable_network_machine, false)
 www.youtube.com##+js(set, ytcfg.data_.EXPERIMENT_FLAGS.all_web_network_machine_raw_request, false)
 www.youtube.com##+js(nano-stb, [native code], 17000, 0.001)
@@ -32499,16 +32506,21 @@ igorslab.de###extras > #single-sticky + div[class]:not([id]):has(a[href][target=
 igorslab.de##.entry-content > #skio-article-bar ~ div[id][class]:not([class*="igorslab"]):has(a[href][target="_blank"] img)
 igorslab.de##a[target] img[src^="blob:"]
 igorslab.de##.herald-above-footer
-/^https:\/\/www\.igorslab\.de\/[a-z0-9]+\/[\/a-zA-Z0-9_-]+$/$image,1p,match-case,domain=igorslab.de,redirect=32x32.png
+/^https:\/\/www\.igorslab\.de\/[a-z0-9]+\/[\/a-zA-Z0-9_-]+$/$image,1p,match-case,redirect=32x32.png
+/^https:\/\/www\.igorslab\.de\/wp-content\/uploads\/202\d\/\d{2}\/(?=[a-z]*\d)(?=\d*[a-z])[0-9a-z]{7,15}\.(?:pn|jp)g$/$image,1p,match-case,redirect=32x32.png
+igorslab.de##a[href^="https://www.igorslab.de/"][target][rel]:matches-attr(href="/https:\/\/www\.igorslab\.de\/(?=[\/0-9_a-z-]*[A-Z])[\/0-9A-Z_a-z-]{130,}/")
+igorslab.de##span[aria-label][role="img"][style*="data:image"]
+igorslab.de##span[aria-label][role="img"][style*="data:image"] + a
 sugoren.com#@#.widget
 ||x.com/i/api/1.1/flow/timeline.json$badfilter
 ! uBlock filters – Experimental https://ublockorigin.pages.dev/filters/experimental.min.txt
 www.youtube.com#@#+js(rpnt, script, (function serverContract(), (()=>{if("YOUTUBE_PREMIUM_LOGO"===ytInitialData?.topbar?.desktopTopbarRenderer?.logo?.topbarLogoRenderer?.iconImage?.iconType||location.href.startsWith("https://www.youtube.com/tv#/")||location.href.startsWith("https://www.youtube.com/embed/"))return;const e=ytcfg.data_.INNERTUBE_CONTEXT.client.userAgent\,t=t=>{ytcfg.data_.INNERTUBE_CONTEXT.client.userAgent=t?e.replace?.(/(Mozilla\/5\.0 \([^)]+)/\,"$1; "+t):e}\,o=["channel"\,"lactmilli"];let r=!1\,n=o;document.addEventListener("DOMContentLoaded"\,(function(){const e=()=>{const e=document.getElementById("movie_player");if(!e||!window.location.href.includes("/watch?"))return void(n=o);const a=e.getPlayerResponse?.()\,i=e.getProgressState?.()\,s=e.getStatsForNerds?.();let l\,d;if(i&&i.duration>0&&(i.loaded<i.duration||i.duration-i.current>1)||a?.videoDetails?.isLive){if(!s?.debug_info?.startsWith?.("SSAP\, AD")){const o=a.videoDetails?.videoId\,c=a.playerConfig?.playbackStartConfig?.startSeconds??0\,u=e.getPlayerStateObject?.()?.isBuffering\,y=a.playabilityStatus?.errorScreen\,p=JSON.stringify(y?.playerErrorMessageRenderer?.subreason?.runs||y?.playerInterstitialRenderer?.content?.interstitialViewModel?.description?.commandRuns);return void("UNPLAYABLE"===a?.playabilityStatus?.status&&!y?.playerErrorMessageRenderer?.playerCaptchaViewModel&&p?.includes?.("WEB_PAGE_TYPE_UNKNOWN")&&p?.includes?.("https://support.google.com/youtube/answer/3037019")?(n=n.slice(1)\,n.length>0?t(n[0]):t("")\,r=!1\,e.loadVideoById(o\,c)):0===n.length?(r=!1\,t("")):u&&"0.00 s"===s?.buffer_health_seconds&&"0x0"===s?.resolution&&r?(t(n[0])\,r=!1\,e.loadVideoById(o\,c)):!r&&i.current-c<5&&location.href.includes("&list=")&&null===e.getPlaylistId?.()&&(l=document.querySelector("yt-playlist-manager")\,d=l?.getPlaylistData?.()\,d&&(l.setPlaylistData?.(d)\,l.setPlayerPlaybackControlData?.({playlistPanelRenderer:d}))))}i.duration>0&&e.seekTo?.(i.duration)}};e()\,new MutationObserver((()=>{e()})).observe(document\,{childList:!0\,subtree:!0})}))\,window.Map.prototype.has=new Proxy(window.Map.prototype.has\,{apply:(e\,t\,o)=>{if("onSnackbarMessage"===o?.[0]&&!r){const e=document.getElementById("movie_player");if(!e)return;const t=e.getStatsForNerds?.()\,o=e.getPlayerStateObject?.()?.isBuffering\,a=e.getPlayerResponse?.()?.playbackTracking?.videostatsPlaybackUrl?.baseUrl;o&&"0.00 s"===t?.buffer_health_seconds&&"0x0"===t?.resolution&&n.length>0&&(a.includes("reloadxhr")&&(n=n.slice(1))\,r=!0)}return Reflect.apply(e\,t\,o)}});const a={apply:(e\,t\,o)=>{const r=o[0];return"function"==typeof r&&r.toString().includes("onAbnormalityDetected")&&(o[0]=function(){})\,Reflect.apply(e\,t\,o)}};window.Promise.prototype.then=new Proxy(window.Promise.prototype.then\,a)})();(function serverContract(), sedCount, 1)
 www.youtube.com#@#+js(rpnt, script, (function serverContract(), (()=>{if("YOUTUBE_PREMIUM_LOGO"===ytInitialData?.topbar?.desktopTopbarRenderer?.logo?.topbarLogoRenderer?.iconImage?.iconType||location.href.startsWith("https://www.youtube.com/tv#/")||location.href.startsWith("https://www.youtube.com/embed/"))return;const e=ytcfg.data_.INNERTUBE_CONTEXT.client.userAgent\,t=t=>{ytcfg.data_.INNERTUBE_CONTEXT.client.userAgent=t?e.replace?.(/(Mozilla\/5\.0 \([^)]+)/\,"$1; "+t):e}\,o=["channel"\,"lactmilli"];let r=!1\,n=o;document.addEventListener("DOMContentLoaded"\,(function(){const e=()=>{const e=document.getElementById("movie_player");if(!e||!window.location.href.includes("/watch?"))return void(n=o);const a=e.getPlayerResponse?.()\,i=e.getProgressState?.()\,s=e.getStatsForNerds?.();let l\,d;if(i&&i.duration>0&&(i.loaded<i.duration||i.duration-i.current>1)||a?.videoDetails?.isLive){if(!s?.debug_info?.startsWith?.("SSAP\, AD")){const o=a.videoDetails?.videoId\,c=a.playerConfig?.playbackStartConfig?.startSeconds??0\,u=e.getPlayerStateObject?.()?.isBuffering\,y=a.playabilityStatus?.errorScreen\,p=JSON.stringify(y?.playerErrorMessageRenderer?.subreason?.runs||y?.playerInterstitialRenderer?.content?.interstitialViewModel?.description?.commandRuns);return void("UNPLAYABLE"===a?.playabilityStatus?.status&&!y?.playerErrorMessageRenderer?.playerCaptchaViewModel&&p?.includes?.("WEB_PAGE_TYPE_UNKNOWN")&&p?.includes?.("https://support.google.com/youtube/answer/3037019")?(n=n.slice(1)\,n.length>0?t(n[0]):t("")\,r=!1\,e.loadVideoById(o\,c)):0===n.length?(r=!1\,t("")):u&&"0.00 s"===s?.buffer_health_seconds&&"0x0"===s?.resolution&&r?(t(n[0])\,r=!1\,e.loadVideoById(o\,c)):!r&&i.current-c<5&&location.href.includes("&list=")&&null===e.getPlaylistId?.()&&(l=document.querySelector("yt-playlist-manager")\,d=l?.getPlaylistData?.()\,d&&(l.setPlaylistData?.(d)\,l.setPlayerPlaybackControlData?.({playlistPanelRenderer:d}))))}i.duration>0&&e.seekTo?.(i.duration)}};e()\,new MutationObserver((()=>{e()})).observe(document\,{childList:!0\,subtree:!0})}))\,window.Map.prototype.has=new Proxy(window.Map.prototype.has\,{apply:(e\,t\,o)=>{if("onSnackbarMessage"===o?.[0]&&!r){const e=document.getElementById("movie_player");if(!e)return;const t=e.getStatsForNerds?.()\,o=e.getPlayerStateObject?.()?.isBuffering\,a=e.getPlayerResponse?.()?.playbackTracking?.videostatsPlaybackUrl?.baseUrl;o&&"0.00 s"===t?.buffer_health_seconds&&"0x0"===t?.resolution&&n.length>0&&(a.includes("reloadxhr")&&(n=n.slice(1))\,r=!0)}return Reflect.apply(e\,t\,o)}});const a={apply:(e\,t\,o)=>{const r=o[0];return"function"==typeof r&&r.toString().includes("onAbnormalityDetected")&&(o[0]=function(){})\,Reflect.apply(e\,t\,o)}};window.Promise.prototype.then=new Proxy(window.Promise.prototype.then\,a)})();(function serverContract(), sedCount, 1, excludes, MutationObserver)
-www.youtube.com##+js(rpnt, script, (function serverContract(), '(()=>{if("YOUTUBE_PREMIUM_LOGO"===ytInitialData?.topbar?.desktopTopbarRenderer?.logo?.topbarLogoRenderer?.iconImage?.iconType||location.href.startsWith("https://www.youtube.com/tv#/")||location.href.startsWith("https://www.youtube.com/embed/"))return;const e=ytcfg.data_.INNERTUBE_CONTEXT.client.userAgent,t=t=>{ytcfg.data_.INNERTUBE_CONTEXT.client.userAgent=t?e.replace?.(/(Mozilla\/5\.0 \([^)]+)/,"$1; "+t):e},r=()=>{let e=document.getElementById("movie_player");return{player:e,response:e?.getPlayerResponse?.(),stats:e?.getStatsForNerds?.(),progress:e?.getProgressState?.(),buffer:e?.getPlayerStateObject?.()?.isBuffering}},o=(e,t,r)=>e&&"0.00 s"===t?.buffer_health_seconds&&"0x0"===t?.resolution&&r.length>0,a=e=>e?.playbackTracking?.videostatsPlaybackUrl?.baseUrl?.includes?.("reloadxhr"),n=["adunit","lactmilli","channel","instream","inline","eafg"];let s=!1,i=n;document.addEventListener("DOMContentLoaded",(function(){const e=()=>{let e,a,{player:l,response:p,stats:c,progress:d,buffer:y}=r();if(l&&window.location.href.includes("/watch?")){if(d&&d.duration>0&&(d.loaded<d.duration||d.duration-d.current>1)||p?.videoDetails?.isLive){if(!c?.debug_info?.startsWith?.("SSAP, AD")){const r=p.videoDetails?.videoId,n=p.playerConfig?.playbackStartConfig?.startSeconds??0,u=p.playabilityStatus?.errorScreen,f=JSON.stringify(u?.playerErrorMessageRenderer?.subreason?.runs||u?.playerInterstitialRenderer?.content?.interstitialViewModel?.description?.commandRuns);return void("UNPLAYABLE"===p?.playabilityStatus?.status&&!u?.playerErrorMessageRenderer?.playerCaptchaViewModel&&f?.includes?.("WEB_PAGE_TYPE_UNKNOWN")&&f?.includes?.("https://support.google.com/youtube/answer/3037019")?(i=i.slice(1),i.length>0?t(i[0]):t(""),s=!1,l.loadVideoById(r,n)):0===i.length?(s=!1,t("")):o(y,c,i)&&s?(t(i[0]),s=!1,l.loadVideoById(r,n)):!s&&d.current-n<5&&location.href.includes("&list=")&&null===l.getPlaylistId?.()&&(e=document.querySelector("yt-playlist-manager"),a=e?.getPlaylistData?.(),a&&(e.setPlaylistData?.(a),e.setPlayerPlaybackControlData?.({playlistPanelRenderer:a}))))}d.duration>0&&l.seekTo?.(d.duration)}}else i=n};e(),new MutationObserver((()=>{e()})).observe(document,{childList:!0,subtree:!0})})),window.Map.prototype.has=new Proxy(window.Map.prototype.has,{apply:(e,t,n)=>{if("onSnackbarMessage"===n?.[0]&&!s){let{player:e,response:t,stats:n,buffer:l}=r();e&&o(l,n,i)&&(a(t)&&(i=i.slice(1)),s=!0)}return Reflect.apply(e,t,n)}}),window.Array.prototype.push=new Proxy(window.Array.prototype.push,{apply:(e,t,n)=>{let l=n?.[0];if(l&&"object"==typeof l&&"Uint8Array"===l.constructor.name)for(const e of[105,104]){if(l.buffer?.byteLength!==e||l.length!==e)continue;let{player:t,response:n,stats:p,buffer:c}=r();if(t&&o(c,p,i)){a(n)&&(i=i.slice(1)),s=!0;break}}return Reflect.apply(e,t,n)}});const l={apply:(e,t,r)=>{const o=r[0];return"function"==typeof o&&o.toString().includes("onAbnormalityDetected")&&(r[0]=function(){}),Reflect.apply(e,t,r)}};window.Promise.prototype.then=new Proxy(window.Promise.prototype.then,l)})();(function serverContract()', sedCount, 1, excludes, MutationObserver)
+www.youtube.com##+js(rpnt, script, (function serverContract(), '(()=>{if("YOUTUBE_PREMIUM_LOGO"===ytInitialData?.topbar?.desktopTopbarRenderer?.logo?.topbarLogoRenderer?.iconImage?.iconType||location.href.startsWith("https://www.youtube.com/tv#/")||location.href.startsWith("https://www.youtube.com/embed/"))return;const e=ytcfg.data_.INNERTUBE_CONTEXT.client.userAgent,t=t=>{ytcfg.data_.INNERTUBE_CONTEXT.client.userAgent=t?e.replace?.(/(Mozilla\/5\.0 \([^)]+)/,"$1; "+t):e},r=()=>{let e=document.getElementById("movie_player");return{player:e,response:e?.getPlayerResponse?.(),stats:e?.getStatsForNerds?.(),progress:e?.getProgressState?.(),buffer:e?.getPlayerStateObject?.()?.isBuffering}},o=(e,t,r)=>e&&"0.00 s"===t?.buffer_health_seconds&&"0x0"===t?.resolution&&r.length>0,a=e=>e?.playbackTracking?.videostatsPlaybackUrl?.baseUrl?.includes?.("reloadxhr"),n=["channel","lactmilli","yahi","instream","adunit","inline","eafg"];let s=!1,i=n;document.addEventListener("DOMContentLoaded",(function(){const e=()=>{let e,a,{player:l,response:p,stats:c,progress:d,buffer:y}=r();if(l&&window.location.href.includes("/watch?")){if(d&&d.duration>0&&(d.loaded<d.duration||d.duration-d.current>1)||p?.videoDetails?.isLive){if(!c?.debug_info?.startsWith?.("SSAP, AD")){const r=p.videoDetails?.videoId,n=p.playerConfig?.playbackStartConfig?.startSeconds??0,u=p.playabilityStatus?.errorScreen,f=JSON.stringify(u?.playerErrorMessageRenderer?.subreason?.runs||u?.playerInterstitialRenderer?.content?.interstitialViewModel?.description?.commandRuns);return void("UNPLAYABLE"===p?.playabilityStatus?.status&&!u?.playerErrorMessageRenderer?.playerCaptchaViewModel&&f?.includes?.("WEB_PAGE_TYPE_UNKNOWN")&&f?.includes?.("https://support.google.com/youtube/answer/3037019")?(i=i.slice(1),i.length>0?t(i[0]):t(""),s=!1,l.loadVideoById(r,n)):0===i.length?(s=!1,t("")):o(y,c,i)&&s?(t(i[0]),s=!1,l.loadVideoById(r,n)):!s&&d.current-n<5&&location.href.includes("&list=")&&null===l.getPlaylistId?.()&&(e=document.querySelector("yt-playlist-manager"),a=e?.getPlaylistData?.(),a&&(e.setPlaylistData?.(a),e.setPlayerPlaybackControlData?.({playlistPanelRenderer:a}))))}d.duration>0&&l.seekTo?.(d.duration)}}else i=n};e(),new MutationObserver((()=>{e()})).observe(document,{childList:!0,subtree:!0})})),window.Map.prototype.has=new Proxy(window.Map.prototype.has,{apply:(e,t,n)=>{if("onSnackbarMessage"===n?.[0]&&!s){let{player:e,response:t,stats:n,buffer:l}=r();e&&o(l,n,i)&&(a(t)&&(i=i.slice(1)),s=!0)}return Reflect.apply(e,t,n)}}),window.Array.prototype.push=new Proxy(window.Array.prototype.push,{apply:(e,t,n)=>{let l=n?.[0];if(l&&"object"==typeof l&&"Uint8Array"===l.constructor.name)for(const e of[105,104]){if(l.buffer?.byteLength!==e||l.length!==e)continue;let{player:t,response:n,stats:p,buffer:c}=r();if(t&&o(c,p,i)){a(n)&&(i=i.slice(1)),s=!0;break}}return Reflect.apply(e,t,n)}});const l={apply:(e,t,r)=>{const o=r[0];return"function"==typeof o&&o.toString().includes("onAbnormalityDetected")&&(r[0]=function(){}),Reflect.apply(e,t,r)}};window.Promise.prototype.then=new Proxy(window.Promise.prototype.then,l)})();(function serverContract()', sedCount, 1, excludes, MutationObserver)
 www.youtube.com##+js(trusted-json-edit-xhr-request, [?..userAgent*="adunit"]..client[?.clientName=="WEB"]+={"clientScreen":"ADUNIT"}, propsToMatch, /player?)
 www.youtube.com##+js(trusted-json-edit-xhr-request, [?..userAgent*="instream"]..playbackContext[?.contentPlaybackContext]+={"adPlaybackContext":{"adType":"AD_TYPE_INSTREAM"}}, propsToMatch, /player?)
 www.youtube.com##+js(trusted-json-edit-xhr-request, [?..userAgent*="inline"]..playbackContext.contentPlaybackContext+={"isInlinePlaybackNoAd":true}, propsToMatch, /player?)
+www.youtube.com##+js(trusted-json-edit-xhr-request, [?..userAgent*="yahi"]+={"params":"YAHI"}, propsToMatch, /player?)
 www.youtube.com##+js(trusted-json-edit-xhr-request, [?..userAgent*="eafg"]+={"params":"eAFgAQ"}, propsToMatch, /player?)
 www.youtube.com##+js(trusted-json-edit-xhr-response, '[?..minimumPlaybackRate==100]..playerConfig.granularVariableSpeedConfig+={"minimumPlaybackRate":25,"maximumPlaybackRate":200,"defaultPlaybackRateOptions":[{"label":"1.0","value":100,"isPremiumUpsell":false,"priority":5},{"label":"1.25","value":125,"isPremiumUpsell":false,"priority":2},{"label":"1.5","value":150,"isPremiumUpsell":false,"priority":3},{"label":"1.75","value":175,"isPremiumUpsell":false,"priority":0},{"label":"2.0","value":200,"isPremiumUpsell":false,"priority":4},{"label":"3.0","value":300,"isPremiumUpsell":true,"priority":1}]}', propsToMatch, /player?)
 www.youtube.com###toast:has(> #text-container > yt-formatted-string#text.yt-notification-action-renderer)
@@ -32951,6 +32963,7 @@ erneuerbare-energien-aktuell.de,gearnews.com,glow25.de,h-f.at,hornetsecurity.com
 erneuerbare-energien-aktuell.de,gearnews.com,glow25.de,h-f.at,hoerbert.com,hornetsecurity.com,ifun.de,iphone-ticker.de,kampfkunst-herz.de,kayzen.io,oloid.de,straschu-ev.de,tcm-whieda.de,wasserkunst-hamburg.de,zahnspange-oelde.de##+js(trusted-click-element, button.brlbs-btn-accept-only-essential, , 1000)
 globus.ru##+js(trusted-set-local-storage-item, notifications-ls, '{"state":{"isCookieNotified":true},"version":0}')
 linsenplatz.de##+js(aeld, DOMContentLoaded, cookieConsent)
+consent.formula1.com##+js(trusted-click-element, button[aria-label="Essential only cookies"])
 dailymail.co.uk,dailymail.com##+js(trusted-click-element, div[data-project="mol-fe-cmp"] button[class*="consent"]:not([class*="reject"]))
 1001games.com,1001hry.cz,1001jeux.fr,1001jocuri.ro,1001jogos.com.br,1001jogos.pt,1001pelit.com,1001spiele.de,auth.hbomax.com,elkspel.nl,gamespot.com,giochixl.it,glamour.com,grajteraz.pl,isladejuegos.com,jatekokxl.hu,mtvuutiset.fi,paixnidiaxl.gr,pushsquare.com,spelo.se,spillespill.no,spilxl.dk,thejournal.ie,thetrainline.com,vkmag.com,zdnet.com##+js(trusted-set-cookie, OptanonAlertBoxClosed, $currentDate$, 1year)
 evaair.com##+js(trusted-set-cookie, _EVAcookieaccept, Y, 1year)
@@ -33046,8 +33059,6 @@ breitbart.com##+js(trusted-set-cookie, OptanonConsent, groups=C0003%3A1%2CC0002%
 saniweb.nl,bensanitair.nl##+js(trusted-set-cookie, cookiepreferences, necessary#true|marketing#false)
 uswitch.com##+js(trusted-set-cookie, cookie-preferences, '{"performance":false,"marketing":false,"functionality":true,"social":true,"essential":true}')
 ferienpiraten.ch,holidaypirates.com,piratinviaggio.it,travelpirates.com,urlaubspiraten.at,urlaubspiraten.de,vakantiepiraten.nl,viajerospiratas.es,voyagespirates.fr,wakacyjnipiraci.pl##+js(trusted-set-cookie, hp__gdpr_consent, !demographics=false!googletagmanager=false!facebook=true!twitter=true!instagram=true!youtube=true!optimize=false!helphero=false!fbpixel=false!iterable=false!kayakWidget=false!vimeo=true!lastminute=false!apple=true!google=true!hotjar=false!getYourGuide=false!gad=false, 1year, , reload, 1)
-formula1.com##[id^="sp_message_container_"]
-formula1.com##+js(trusted-click-element, [aria-label="REJECT ALL"], , 500)
 stadtmobil.de##+js(trusted-set-cookie, CookieConsent, {stamp:%27Uv9YOAVP5djCBw71lxhE4rNAfTObaGck2Sn3rKWf9dPCYpqcWvAlpA==%27%2Cnecessary:true%2Cpreferences:false%2Cstatistics:false%2Cmarketing:true%2Cmethod:%27explicit%27%2Cver:1}, 1year)
 coinbase.com##+js(trusted-set-cookie, cm_default_preferences, {%22consent%22:[%22necessary%22%2C%22functional%22]%2C%22region%22:%22DEFAULT%22})
 coinbase.com##+js(trusted-set-cookie, cm_eu_preferences, {%22consent%22:[%22necessary%22%2C%22functional%22]%2C%22region%22:%22EU%22})
@@ -38491,3 +38502,4 @@ parsatv.com##+js(rmnt, script, .offsetHeight)
 firestream.to##+js(set, console.clear, trueFunc)
 firestream.to##+js(set, console.table, trueFunc)
 firestream.to##+js(set, console.log, trueFunc)
+investidor10.com.br##+js(trusted-set-local-storage-item, guest_user_banner_aon_closed, $now$)
