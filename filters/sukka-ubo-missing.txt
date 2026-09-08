@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Tue, 08 Sep 2026 07:16:40 GMT
+! Last modified: Tue, 08 Sep 2026 11:22:57 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.10.91
+!   - Version: 2.1.10.94
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202609080647
@@ -74631,6 +74631,10 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||countly.
 ||countly-
 |piwik.
+||rta2.newscientist.com^
+||ureca.samsungapps.com^
+||orsdls.di.runestone.samsung.com^
+||shealth-analytics-api.samsunghealth.com^
 ||sogu.tripster.ru^
 ||a2.cineflix.st^
 ||tracker.bigl.ua^
@@ -282147,6 +282151,7 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
 @@||nlog.naver.com/n|$domain=search.naver.com|www.naver.com
+harpersbazaar.com##div[aria-labelledby="recirc-heading"]
 ||otrium.*/static/newrelic.js
 ||otrium.*/measure/
 ||tellows.jp/ping.php?p=
