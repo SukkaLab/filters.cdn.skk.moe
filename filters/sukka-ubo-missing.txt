@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Mon, 07 Sep 2026 21:35:09 GMT
+! Last modified: Tue, 08 Sep 2026 00:27:48 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -11,9 +11,9 @@
 !   - Version: 2.1.10.90
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
-!   - Version: 202603110915
+!   - Version: 202609080647
 !   - Homepage: https://github.com/cjx82630/cjxlist
-!   - Last modified: 2026/03/11 09:15 +0800
+!   - Last modified: 2026/09/08 06:47 +0800
 ! * CJX's uBlock list
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/refs/heads/master/cjx-ublock.txt
 !   - Homepage: https://github.com/cjx82630/cjxlist
@@ -292431,6 +292431,7 @@ m.babytree.com##script + a[class]
 @@/adview_pic_$domain=doutula.com|fastadmin.net|toolfk.com|xclient.info
 @@||fm.ipinyou.$domain=ipinyou.com.cn
 @@||fm.p0y.cn^$domain=ipinyou.com.cn
+||wmrmm.com^
 ||shinpa.me^
 ||dytt8899.com/js/tj.js
 ||xuan5.com^$3p
