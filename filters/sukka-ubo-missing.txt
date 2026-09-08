@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Tue, 08 Sep 2026 11:22:57 GMT
+! Last modified: Tue, 08 Sep 2026 14:33:11 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.10.94
+!   - Version: 2.1.10.96
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202609080647
@@ -282151,7 +282151,10 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
 @@||nlog.naver.com/n|$domain=search.naver.com|www.naver.com
+||bwapi.irunfar.com/log/
+||bwapi.irunfar.com/event/
 harpersbazaar.com##div[aria-labelledby="recirc-heading"]
+na2ka4.blog.fc2.com###inner2 > div.section2:has(> div.ninja-recommend-block)
 ||otrium.*/static/newrelic.js
 ||otrium.*/measure/
 ||tellows.jp/ping.php?p=
@@ -288481,6 +288484,7 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=saturn.de
 @@||metrics.us.playstation.com/b/ss/
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
+@@||assetsconfigcdn.org/v1/initialize?k=$domain=bloomberg.com
 @@||cdn.jsdelivr.net/npm/@thumbmarkjs/thumbmarkjs/dist/thumbmark.umd.js$domain=archive.is
 @@||cdn.cxense.com/cx.cce.js$domain=j-cast.com
 @@||cdn.cxense.com/cx.js$domain=j-cast.com
