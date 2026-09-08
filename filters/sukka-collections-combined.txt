@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Tue, 08 Sep 2026 14:33:11 GMT
+! Last modified: Tue, 08 Sep 2026 17:56:01 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202609081421
+!   - Version: 202609081741
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 08 Sep 2026 14:21 UTC
+!   - Last modified: 08 Sep 2026 17:41 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
@@ -216,6 +216,7 @@ koolhydraatarmerecepten.info##body > [style^="z-index: 1000000; "]
 ||ffmovies.lol/jss/dectector-2025.js
 ||freeiptvplayer.net/wp-content/uploads/$script
 ||full.video/btn.js
+||luluvdo.com/js/jdadbl.js
 ||pastedownload.com/template/nova/js/adb/
 ||polygon.com/fetch/next/mural/
 ||rockradio.com^*/blockadblock-$script,domain=rockradio.com
