@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Thu, 10 Sep 2026 00:17:23 GMT
+! Last modified: Thu, 10 Sep 2026 07:20:39 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.11.7
+!   - Version: 2.1.11.9
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202609080647
@@ -74633,6 +74633,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||countly.
 ||countly-
 |piwik.
+||metrics.earlygame.com^
 ||pla.uqload.vc^
 ||rta2.newscientist.com^
 ||ureca.samsungapps.com^
@@ -282155,6 +282156,7 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
 @@||nlog.naver.com/n|$domain=search.naver.com|www.naver.com
+||runtimewire.com/api/analytics/*/events|
 newsnow.com##+js(set-session-storage-item, nfPageCount, $remove$)
 newsnow.com##+js(set-session-storage-item, pageCount, $remove$)
 ||bwapi.irunfar.com/log/
