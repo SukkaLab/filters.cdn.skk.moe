@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Wed, 09 Sep 2026 21:00:39 GMT
+! Last modified: Thu, 10 Sep 2026 00:17:23 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Wed, 09 Sep 2026 10:26:01 +0000
+!   - Last modified: Wed, 09 Sep 2026 20:44:26 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Wed, 09 Sep 2026 09:03:23 +0000
@@ -30,7 +30,7 @@
 !   - Last modified: Tue, 08 Sep 2026 16:03:26 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
-!   - Last modified: Tue, 08 Sep 2026 16:00:32 +0000
+!   - Last modified: Wed, 09 Sep 2026 14:48:49 +0000
 ! --------------------------------------------------------------
 ! uBlock filters https://ublockorigin.pages.dev/filters/filters.min.txt
 *_ad_$media,domain=youtube.com,3p
@@ -23532,8 +23532,8 @@ gizguide.com##a[href^="https://bit.ly/"]
 puzzleship.com##+js(no-fetch-if, client=ca-pub-)
 puzzleship.com##+js(no-fetch-if, adsbygoogle.js)
 puzzleship.com##.ad_banner.adsbox970x90:style(display: block !important)
-wykop.pl##.pub-slot-wrapper:style(position: absolute !important; left: 4000px !important; visibility: hidden !important; pointer-events: none !important;)
-wykop.pl##+js(spoof-css, .pub-slot-wrapper, left, 0px, visibility, visible)
+wykop.pl##.pub-slot-wrapper:style(position: absolute !important; top: -4000px !important; visibility: hidden !important; pointer-events: none !important;)
+wykop.pl##+js(spoof-css, .pub-slot-wrapper, visibility, visible)
 play.mercadolivre.com.br##+js(trusted-json-edit-fetch-response, $..durationInSeconds=0, propsToMatch, -ssai-vod-)
 play.mercadolivre.com.br##+js(mpegdash-prune, Period:has(> EventStream[schemeIdUri="urn:sva:advertising-wg:ad-id-signaling"]), /dash)
 /services/*^ix=*&rt=$script,3p
@@ -35930,6 +35930,9 @@ camere-live.ro##+js(rmnt, script, "'contextmenu'")
 dlstreams.st,dollardescent.net,hamis.romponalis.st##+js(rmnt, script, "'contextmenu'")
 trucoon.com.br##*:style(-webkit-touch-callout: auto !important; -moz-touch-callout: auto !important; -ms-touch-callout: auto !important; -o-touch-callout: auto !important; touch-callout: auto !important; -webkit-user-select: auto !important; -moz-user-select: auto !important; -ms-user-select: auto !important; -o-user-select: auto !important; user-select: auto !important; -ms-touch-action: auto)
 orange.ro##+js(aeld, /^(?:pointerdown|mousedown)$/, , elements, .js-pachete-online-internet2)
+one.oregon.gov##+js(aeld, contextmenu, event.dispatch)
+one.oregon.gov##input[onpaste="return false"]:remove-attr(onpaste)
+one.oregon.gov##+js(ra, onpaste, input[onpaste="return false"], complete)
 @@||socialblade.com^$ghide
 socialblade.com##.cas-container
 socialblade.com##.cas-wide-container
