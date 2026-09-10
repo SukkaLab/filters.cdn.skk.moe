@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Thu, 10 Sep 2026 07:20:39 GMT
+! Last modified: Thu, 10 Sep 2026 11:23:52 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.11.9
+!   - Version: 2.1.11.12
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202609080647
@@ -219,6 +219,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||rer4.com^
 ||cloudx.io^
 ||lndrsapi.com^
 ||ac.conel.jp^
@@ -74633,6 +74634,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||countly.
 ||countly-
 |piwik.
+||events.plutus.ninja^
 ||metrics.earlygame.com^
 ||pla.uqload.vc^
 ||rta2.newscientist.com^
@@ -282156,6 +282158,10 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
 @@||nlog.naver.com/n|$domain=search.naver.com|www.naver.com
+||api.mindbox.ru/*/customer/track-visit?
+||api.mindbox.ru/*/js/operations/async?*&trackerName
+roomie.jp##.r-article ~ .r-section:has(> div[id^="logly-lift-"])
+roomie.jp##.r-sidesection[data-google-interstitial]
 ||runtimewire.com/api/analytics/*/events|
 newsnow.com##+js(set-session-storage-item, nfPageCount, $remove$)
 newsnow.com##+js(set-session-storage-item, pageCount, $remove$)
@@ -282335,8 +282341,8 @@ peacocktv.com##+js(set-local-storage-item, impressionTrackingSessionId, $remove$
 ||czesciauto24.pl/p/g^
 ||hexa.su/script.js
 ||candytm.pl/gtmgateway/
-/^https?:\/\/(android\.com\.pl|biznesenter\.pl)\/[a-z0-9]{1,4}\/$/$script,~3p,domain=android.com.pl|biznesenter.pl
-candytm.pl,biznesenter.pl##+js(abort-current-script, document.createElement, /gtm\.start|dataLayer/)
+/^https?:\/\/(android\.com\.pl|biznesenter\.pl|invezz\.com)\/[a-z0-9]{1,4}\/$/$script,~3p,domain=android.com.pl|biznesenter.pl|invezz.com
+invezz.com,candytm.pl,biznesenter.pl##+js(abort-current-script, document.createElement, /gtm\.start|dataLayer/)
 ||bifrost-api.hotstar.com/v*/events
 ||linuxcommunity.io/assets/google-universal-analytics-*.js
 ||credistory.ru/api/Metrics/
