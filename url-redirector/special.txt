@@ -1,5 +1,5 @@
 ! Title: [sukka] Special Redirects
-! Last modified: Wed, 09 Sep 2026 13:26:30 GMT
+! Last modified: Thu, 10 Sep 2026 05:20:39 GMT
 ! Description: uBlock Origin / AdGuard uritransform rules
 ! Homepage: https://github.com/SukkaW/Filters
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -17,6 +17,10 @@
 ||tile.openstreetmap.org^$all,~xhr,uritransform=/(?:[^.\/]+\.)*tile\.openstreetmap\.org/docs.lucaairport.qzz.io\/https\/tile.openstreetmap.org/,domain=~openstreetmap.org
 ||github.com/*/releases/download$all,~xhr,uritransform=/github\.com\//download.lucaairport.qzz.io\/https\/github.com\//
 *$image,denyallow=lucaairport.qzz.io,~xhr,uritransform=/^(https?):\/\//https:\/\/docs.lucaairport.qzz.io\/$1\//,domain=wikidot.com
+||s3.amazonaws.com$all,~xhr,uritransform=/https:\/\/s3\.amazonaws\.com\//https:\/\/docs.lucaairport.qzz.io\/https\/s3.amazonaws.com\//,domain=connect.garmin.com
+||connect.garmin.com/images/$all,~xhr,uritransform=/https:\/\/connect\.garmin\.com\/images\/badges\//https:\/\/docs.lucaairport.qzz.io\/https\/connect.garmin.com\/images\/badges\//,domain=connect.garmin.com
+||connect.garmin.com/web-react/static/$all,~xhr,uritransform=/https:\/\/connect\.garmin\.com\/web-react\//https:\/\/docs.lucaairport.qzz.io\/https\/connect.garmin.com\/web-react\//,domain=connect.garmin.com
+||connect.garmin.com/web-react/styles/$all,~xhr,uritransform=/https:\/\/connect\.garmin\.com\/web-react\//https:\/\/docs.lucaairport.qzz.io\/https\/connect.garmin.com\/web-react\//,domain=connect.garmin.com
 ||node.windy.com^$all,~xhr,uritransform=/node\.windy\.com/docs.lucaairport.qzz.io\/https\/node.windy.com/
 ||imgproxy.windy.com^$all,~xhr,uritransform=/imgproxy\.windy\.com/docs.lucaairport.qzz.io\/https\/imgproxy.windy.com/
 ||storage.googleapis.com/intervals-icu-images/$all,~xhr,uritransform=/storage\.googleapis\.com\/intervals-icu-images\//docs.lucaairport.qzz.io\/https\/storage.googleapis.com\/intervals-icu-images\//
@@ -56,6 +60,10 @@
 ||tile.openstreetmap.org^$all,~xhr,urltransform=/(?:[^.\/]+\.)*tile\.openstreetmap\.org/docs.lucaairport.qzz.io\/https\/tile.openstreetmap.org/,domain=~openstreetmap.org
 ||github.com/*/releases/download$all,~xhr,urltransform=/github\.com\//download.lucaairport.qzz.io\/https\/github.com\//
 *$image,denyallow=lucaairport.qzz.io,~xhr,urltransform=/^(https?):\/\//https:\/\/docs.lucaairport.qzz.io\/$1\//,domain=wikidot.com
+||s3.amazonaws.com$all,~xhr,urltransform=/https:\/\/s3\.amazonaws\.com\//https:\/\/docs.lucaairport.qzz.io\/https\/s3.amazonaws.com\//,domain=connect.garmin.com
+||connect.garmin.com/images/$all,~xhr,urltransform=/https:\/\/connect\.garmin\.com\/images\/badges\//https:\/\/docs.lucaairport.qzz.io\/https\/connect.garmin.com\/images\/badges\//,domain=connect.garmin.com
+||connect.garmin.com/web-react/static/$all,~xhr,urltransform=/https:\/\/connect\.garmin\.com\/web-react\//https:\/\/docs.lucaairport.qzz.io\/https\/connect.garmin.com\/web-react\//,domain=connect.garmin.com
+||connect.garmin.com/web-react/styles/$all,~xhr,urltransform=/https:\/\/connect\.garmin\.com\/web-react\//https:\/\/docs.lucaairport.qzz.io\/https\/connect.garmin.com\/web-react\//,domain=connect.garmin.com
 ||node.windy.com^$all,~xhr,urltransform=/node\.windy\.com/docs.lucaairport.qzz.io\/https\/node.windy.com/
 ||imgproxy.windy.com^$all,~xhr,urltransform=/imgproxy\.windy\.com/docs.lucaairport.qzz.io\/https\/imgproxy.windy.com/
 ||storage.googleapis.com/intervals-icu-images/$all,~xhr,urltransform=/storage\.googleapis\.com\/intervals-icu-images\//docs.lucaairport.qzz.io\/https\/storage.googleapis.com\/intervals-icu-images\//
