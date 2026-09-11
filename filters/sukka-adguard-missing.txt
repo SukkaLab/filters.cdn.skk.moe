@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Fri, 11 Sep 2026 00:13:10 GMT
+! Last modified: Fri, 11 Sep 2026 07:19:05 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,10 +8,10 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Thu, 10 Sep 2026 18:50:03 +0000
+!   - Last modified: Fri, 11 Sep 2026 04:25:49 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
-!   - Last modified: Wed, 09 Sep 2026 09:03:23 +0000
+!   - Last modified: Fri, 11 Sep 2026 02:31:42 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
 !   - Last modified: Mon, 07 Sep 2026 11:24:24 +0000
@@ -27,7 +27,7 @@
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Thu, 10 Sep 2026 12:24:55 +0000
+!   - Last modified: Fri, 11 Sep 2026 04:05:02 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
 !   - Last modified: Wed, 09 Sep 2026 14:48:49 +0000
@@ -23547,6 +23547,7 @@ kongregate.com##+js(nostif, .offsetHeight)
 ||js.gay-torrents.net/cleanup.js
 phys.org##+js(set-local-storage-item, scxNewsHits, $remove$)
 link.softoroom.org##+js(trusted-replace-node-text, script, /(setTimeout\([\s\S]*?createElement\('a'\)[\s\S]*?\}\,)\s*\d{4}(\);)/, $1 0$2)
+||glomex.cloud/v*/bid-slots?
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -25846,7 +25847,9 @@ cizitensports.com##+js(rmnt, script, randomUUID)
 ###cf-challenge-root
 ||sites.google.com/view/brewapp$doc
 ##.wp-singular > iframe[srcdoc][allowfullscreen][allow*="clipboard-write"][style*="2147483647"]
-/^https:\/\/[a-z]{7}\.sbs\/[a-z0-9]{8}\.js$/$script,3p,match-case,to=sbs
+/^https:\/\/[a-z]{7,}\.sbs\/[a-z0-9]{8}\.js$/$script,3p,match-case,to=sbs
+||sbs^$domain=testmyspeed.com
+||kusikowski.sbs^
 ||swewart.sbs^
 ||guiglen.sbs^
 webrick.com##+js(acs, atob, Uint8Array)
@@ -34903,7 +34906,9 @@ ladbible.com##+js(trusted-click-element, .cmp-banner .accept-all)
 01net.com##+js(trusted-click-element, 'button[class^="sd-cmp"]:has(.sd-cmp-cWOb7)', , 1000)
 zenskirecenziraj.com##+js(trusted-set-cookie, zenski_cmp, basic)
 tlc.com##+js(trusted-click-element, .btn.btn-primary)
-eventim.ro##+js(trusted-click-element, #cmpwrapper >>> .cmpboxbtnyes, , 1000)
+donaukurier.de#@#body:style(overflow: auto !important;)
+donaukurier.de#@##cmpwrapper
+donaukurier.de,eventim.ro##+js(trusted-click-element, #cmpwrapper >>> .cmpboxbtnyes)
 lequipe.fr##+js(trusted-click-element, .CmpUnsubscriber .Cmp__action--yes, , 1000)
 cmp.travelbook.de##+js(trusted-click-element, .cmp-banner button.accept-all)
 antena3.ro##+js(trusted-click-element, #onetrust-accept-btn-handler, , 1000)
