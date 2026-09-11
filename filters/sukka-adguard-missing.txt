@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Thu, 10 Sep 2026 20:56:49 GMT
+! Last modified: Fri, 11 Sep 2026 00:13:10 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Thu, 10 Sep 2026 12:19:08 +0000
+!   - Last modified: Thu, 10 Sep 2026 18:50:03 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Wed, 09 Sep 2026 09:03:23 +0000
@@ -4019,7 +4019,6 @@ letmejerk.com,letmejerk2.com,letmejerk3.com,letmejerk4.com,letmejerk5.com,letmej
 letmejerk.com,letmejerk2.com,letmejerk3.com,letmejerk4.com,letmejerk5.com,letmejerk6.com,letmejerk7.com##.th:has(> span.th-ad)
 ||letmejerk.com/*.php$script,1p
 ||mn-shop.com^$3p
-@@||dailythanthi.com^$ghide
 windowcleaningforums.co.uk##+js(nostif, show)
 windowcleaningforums.co.uk##[href="https://thrivewp.com/"]
 ||googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect=noopjs:10,domain=windowcleaningforums.co.uk
@@ -4036,9 +4035,6 @@ beautypageants.indiatimes.com##+js(aeld, scroll, _0x)
 cda.pl##.pb-video-click
 cda.pl##.pb-ad-video-player
 ||redcdn.pl/file/*/vstatic/*.mp4$media,redirect=noopmp3-0.1s,domain=cda.pl
-@@||maalaimalar.com^$ghide
-cinema.maalaimalar.com##.in.fade.modal-backdrop
-cinema.maalaimalar.com##body:style(overflow: auto !important;)
 topito.com##+js(aopr, document.bridCanRunAds)
 @@||neko-sama.fr^$ghide
 0rechner.de##+js(set, doads, true)
@@ -7380,7 +7376,7 @@ linkshortx.in##+js(set, blurred, false)
 coinclix.co##+js(trusted-replace-argument, document.getElementById, 0, json:"header", condition, /ad-chk|aads-frame/)
 swiftuploads.com##+js(rpnt, script, toUpperCase()+, toSomeCase()+)
 1cloudfile.com,akirabox.com,akirabox.to,bowfile.com,buzzheavier.com,bzzhr.co,bzzhr.to,cg-gamespc.net,datavaults.co,dodi-repacks.site,file-me.top,file-upload.org,filemirage.com,fuckingfast.*,game-repack.site,gamedrive.*,getfreegames.net,go.zovo.ink,koramaup.com,mirrored.to,multiup.io,nathanmichaelphoto.com,ranoz.gg,repack-games.com,reloadedsteam.com,rootz.so,steam-repacks.net,steamgg.net,steamunderground.net,swiftuploads.com,torupload.com,up-4ever.net,uploadrar.*,usersdrive.com,vik1ngfile.site,worldofpcgames.com,zeilink.net,zovo2.top,zpaste.net##+js(rmnt, script, '"+"', excludes, /self\.__next|recaptcha|document|window|const|var|let/)
-1cloudfile.com,akirabox.com,akirabox.to,bowfile.com,buzzheavier.com,bzzhr.co,bzzhr.to,cg-gamespc.net,datavaults.co,dodi-repacks.site,file-me.top,file-upload.org,filemirage.com,fuckingfast.*,game-repack.site,gamedrive.*,getfreegames.net,go.zovo.ink,koramaup.com,mirrored.to,multiup.io,nathanmichaelphoto.com,ranoz.gg,repack-games.com,reloadedsteam.com,rootz.so,steam-repacks.net,steamgg.net,steamunderground.net,swiftuploads.com,torupload.com,up-4ever.net,uploadrar.*,usersdrive.com,vik1ngfile.site,worldofpcgames.com,zeilink.net,zovo2.top,zpaste.net##+js(rmnt, script, /"\+"g|"\+"'a|self\.__next.*?\,typeof document|self\.__next&&|\|\|self\.__next\,\(|\("\+"t/g)
+1cloudfile.com,akirabox.com,akirabox.to,bowfile.com,buzzheavier.com,bzzhr.co,bzzhr.to,cg-gamespc.net,datavaults.co,dodi-repacks.site,file-me.top,file-upload.org,filemirage.com,fuckingfast.*,game-repack.site,gamedrive.*,getfreegames.net,go.zovo.ink,koramaup.com,mirrored.to,multiup.io,nathanmichaelphoto.com,ranoz.gg,repack-games.com,reloadedsteam.com,rootz.so,steam-repacks.net,steamgg.net,steamunderground.net,swiftuploads.com,torupload.com,up-4ever.net,uploadrar.*,usersdrive.com,vik1ngfile.site,worldofpcgames.com,zeilink.net,zovo2.top,zpaste.net##+js(rmnt, script, /"\+"g|"\+"'a|self\.__next.*?\,typeof document|self\.__next&&|\|\|self\.__next\,\(|\("\+"t|'\+'F|0\|\|window/g)
 1cloudfile.com,akirabox.com,akirabox.to,bowfile.com,buzzheavier.com,bzzhr.co,bzzhr.to,cg-gamespc.net,datavaults.co,dodi-repacks.site,file-me.top,file-upload.org,filemirage.com,fuckingfast.*,game-repack.site,gamedrive.*,getfreegames.net,go.zovo.ink,koramaup.com,mirrored.to,multiup.io,nathanmichaelphoto.com,ranoz.gg,repack-games.com,reloadedsteam.com,rootz.so,steam-repacks.net,steamgg.net,steamunderground.net,swiftuploads.com,torupload.com,up-4ever.net,uploadrar.*,usersdrive.com,vik1ngfile.site,worldofpcgames.com,zeilink.net,zovo2.top,zpaste.net##+js(prevent-innerHTML, script, !/document|window|const|var|let/)
 1cloudfile.com,akirabox.com,akirabox.to,bowfile.com,buzzheavier.com,bzzhr.co,bzzhr.to,cg-gamespc.net,datavaults.co,dodi-repacks.site,file-me.top,file-upload.org,filemirage.com,fuckingfast.*,game-repack.site,gamedrive.*,getfreegames.net,go.zovo.ink,koramaup.com,mirrored.to,multiup.io,nathanmichaelphoto.com,ranoz.gg,repack-games.com,reloadedsteam.com,rootz.so,steam-repacks.net,steamgg.net,steamunderground.net,swiftuploads.com,torupload.com,up-4ever.net,uploadrar.*,usersdrive.com,vik1ngfile.site,worldofpcgames.com,zeilink.net,zovo2.top,zpaste.net##+js(acs, RegExp.prototype.exec.constructor, '"+"')
 1cloudfile.com,akirabox.com,akirabox.to,bowfile.com,buzzheavier.com,bzzhr.co,bzzhr.to,cg-gamespc.net,datavaults.co,dodi-repacks.site,file-me.top,file-upload.org,filemirage.com,fuckingfast.*,game-repack.site,gamedrive.*,getfreegames.net,go.zovo.ink,koramaup.com,mirrored.to,multiup.io,nathanmichaelphoto.com,ranoz.gg,repack-games.com,reloadedsteam.com,rootz.so,steam-repacks.net,steamgg.net,steamunderground.net,swiftuploads.com,torupload.com,up-4ever.net,uploadrar.*,usersdrive.com,vik1ngfile.site,worldofpcgames.com,zeilink.net,zovo2.top,zpaste.net##+js(acs, Function.prototype.constructor, '"+"')
@@ -23457,7 +23453,7 @@ pemersatu.top##+js(rmnt, script, .offsetParent)
 hollywoodhinditracks2.blogspot.com##+js(acs, atob, decodeURIComponent)
 ||go.mobisla.com^$3p
 ||go.mobtrks.com^$3p
-cokcok.stream##+js(trusted-replace-node-text, script, '/const *_[a-z0-9]+ *= *{ *"media_file" *: *" *https:\\\/\\\/cdn[0-9]+\.cokcok\.[a-z0-9]+\\\/assets\\\/videos\\\/.+"click_through" *:.+};/', media_file, '')
+cokcok.stream##+js(rpnt, script, const _ad, const _ad = undefined; const ad)
 polenjournal.de##+js(aeld, load, ADBLOCK)
 vidneo.cc##+js(json-edit, ..playGateQueue)
 vidneo.cc##+js(json-prune-fetch-response, playerHeadScriptSnippets, , propsToMatch, /api/config)
@@ -23534,7 +23530,7 @@ puzzleship.com##+js(no-fetch-if, client=ca-pub-)
 puzzleship.com##+js(no-fetch-if, adsbygoogle.js)
 puzzleship.com##.ad_banner.adsbox970x90:style(display: block !important)
 wykop.pl##.pub-slot-wrapper:style(position: absolute !important; top: -4000px !important; visibility: hidden !important; pointer-events: none !important;)
-wykop.pl##+js(spoof-css, .pub-slot-wrapper, visibility, visible)
+wykop.pl##+js(spoof-css, .pub-slot-wrapper, visibility, visible, top, 0px)
 play.mercadolivre.com.br##+js(trusted-json-edit-fetch-response, $..durationInSeconds=0, propsToMatch, -ssai-vod-)
 play.mercadolivre.com.br##+js(mpegdash-prune, Period:has(> EventStream[schemeIdUri="urn:sva:advertising-wg:ad-id-signaling"]), /dash)
 /services/*^ix=*&rt=$script,3p
@@ -23550,6 +23546,7 @@ eurostream.cfd##+js(nowoif)
 kongregate.com##+js(nostif, .offsetHeight)
 ||js.gay-torrents.net/cleanup.js
 phys.org##+js(set-local-storage-item, scxNewsHits, $remove$)
+link.softoroom.org##+js(trusted-replace-node-text, script, /(setTimeout\([\s\S]*?createElement\('a'\)[\s\S]*?\}\,)\s*\d{4}(\);)/, $1 0$2)
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
