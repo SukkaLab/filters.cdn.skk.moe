@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sat, 12 Sep 2026 07:11:37 GMT
+! Last modified: Sat, 12 Sep 2026 10:50:49 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,10 +8,10 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sat, 12 Sep 2026 03:25:25 +0000
+!   - Last modified: Sat, 12 Sep 2026 10:24:43 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
-!   - Last modified: Fri, 11 Sep 2026 11:10:25 +0000
+!   - Last modified: Sat, 12 Sep 2026 09:05:04 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
 !   - Last modified: Fri, 11 Sep 2026 06:24:32 +0000
@@ -22955,6 +22955,7 @@ chatgpt.com##+js(trusted-json-edit, [?.type=="ads"].visibility.status="hidden")
 chatgpt.com##+js(trusted-json-edit, ..suppress_ads=true)
 chatgpt.com##+js(json-prune, messages.*.ads messages.*.renderedAdsHtml)
 chatgpt.com##+js(trusted-replace-outbound-text, TextDecoder.prototype.decode, /<template data-assistant-ads-html=""><aside aria-label.+?<\/aside><\/template>/)
+chatgpt.com##+js(trusted-replace-outbound-text, TextDecoder.prototype.decode, /<template for="conversation-partial-control" data-web-mobile-dpu-apply="append"><span data-conversation-control="assistant-ads".+?<\/aside><\/template><\/span><\/template>/)
 ourcoincash.xyz,softdevelopp.com##+js(noeval-if, Adblock)
 ||umamianal.vercel.app^$domain=willow.arlen.icu
 willow.arlen.icu##+js(nowoif)
@@ -25861,6 +25862,8 @@ cizitensports.com##+js(rmnt, script, randomUUID)
 webrick.com##+js(acs, atob, Uint8Array)
 ##html > #bw-rc-host
 ||keelhaulably.com^
+pentest.blog##+js(rmnt, script, (self);)
+pentest.blog##+js(acs, atob, new )
 ||cracksway.com^$all
 ||gamingdebates.com^$all
 ||bonzi.link^$all
