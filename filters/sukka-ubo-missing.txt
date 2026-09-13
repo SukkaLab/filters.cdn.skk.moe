@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Sun, 13 Sep 2026 07:30:10 GMT
+! Last modified: Sun, 13 Sep 2026 11:56:06 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.11.27
+!   - Version: 2.1.11.29
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202609080647
@@ -74638,7 +74638,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||countly-
 |piwik.
 ||7lzwgj.donaukurier.de^
-||events.plutus.ninja^
 ||metrics.earlygame.com^
 ||pla.uqload.vc^
 ||rta2.newscientist.com^
@@ -282161,6 +282160,7 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
 @@||nlog.naver.com/n|$domain=search.naver.com|www.naver.com
+na2ka4.blog.fc2.com###inner2 > div.section2:has(> div.ninja-recommend-block)
 ||pornhub.com/utils/reportTimeWatched
 ||supportecom.ru/server.php?rqst=track
 ||independent.co.uk/Agent/GA/
@@ -282180,7 +282180,6 @@ newsnow.com##+js(set-session-storage-item, pageCount, $remove$)
 ||bwapi.irunfar.com/log/
 ||bwapi.irunfar.com/event/
 harpersbazaar.com##div[aria-labelledby="recirc-heading"]
-na2ka4.blog.fc2.com###inner2 > div.section2:has(> div.ninja-recommend-block)
 ||otrium.*/static/newrelic.js
 ||otrium.*/measure/
 ||tellows.jp/ping.php?p=
