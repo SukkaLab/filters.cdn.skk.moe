@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sun, 13 Sep 2026 17:24:48 GMT
+! Last modified: Sun, 13 Sep 2026 20:55:37 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sun, 13 Sep 2026 09:22:56 +0000
+!   - Last modified: Sun, 13 Sep 2026 14:55:34 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Sun, 13 Sep 2026 09:45:23 +0000
@@ -18889,6 +18889,7 @@ hentaihaven.xxx##.popecrazy
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=hentaihaven.xxx
 ||hentaihaven.icu/wp-content/plugins/sscript-manager/
 hentaihaven.xxx##+js(aopw, Script_Manager)
+itv.com##+js(trusted-json-edit-xhr-response, .Playlist.ContentBreaks.*.TimeCode="99:59:59:999", propsToMatch, /playlist)
 itv.com##+js(xml-prune, VAST > Ad, , /tserver)
 itv.com##+js(nowoif)
 ||toots-a.akamaihd.net/priority/*$media,redirect=noopmp3-0.1s,domain=itv.com
