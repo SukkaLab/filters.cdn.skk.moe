@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sun, 13 Sep 2026 00:02:12 GMT
+! Last modified: Sun, 13 Sep 2026 07:30:10 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sat, 12 Sep 2026 20:10:51 +0000
+!   - Last modified: Sun, 13 Sep 2026 05:21:37 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Sat, 12 Sep 2026 09:05:04 +0000
@@ -17,7 +17,7 @@
 !   - Last modified: Fri, 11 Sep 2026 06:24:32 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
-!   - Last modified: Fri, 11 Sep 2026 04:50:03 +0000
+!   - Last modified: Sun, 13 Sep 2026 05:05:36 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
 !   - Last modified: Sat, 12 Sep 2026 13:36:00 +0000
@@ -7402,6 +7402,7 @@ fuckingfast.*##+js(remove-node-text, script, '"+"')
 ||wp-lib.dev^
 ||srv.ui-wp.dev^
 ||js.core-ui.dev^
+||||unnajd.com^^
 /^https:\/\/[a-z-]+\.cdn-[a-z]\.net\/$/$xhr,3p
 /^https:\/\/\d+\.cfd\/[a-z]{3}tag[a-z]{3}\/v\d\/[a-zA-Z0-9]+:C\d\.js\b/$script,3p,match-case,to=cfd
 /^https:\/\/[0-9]+\.cfd\/[a-z][a-z][a-z]tag[a-z][a-z][a-z]\/v[0-9]\/[a-zA-Z0-9]+:C[0-9]\.js\b/$script,3p,match-case
@@ -14942,6 +14943,8 @@ scrambled.world,shellshock.io##.house-small
 scrambled.world,shellshock.io##.overlay_dark.overlay
 scrambled.world,shellshock.io###spinnerOverlay
 scrambled.world###big-house-ad
+algebra.*,biologyclass.club,combateggs.com,deadlyegg.com,deathegg.*,eggbattle.com,eggboy.*,eggcombat.com,egg.dance,eggfacts.fun,egggames.best,egghead.institute,eggisthenewblack.com,eggsarecool.com,eggshock.*,eggshooter.*,eggtown.org,eggwars.io,geometry.*,hardshell.life,humanorganising.org,mathactivity.*,mathdrills.*,mathfun.rocks,mathgames.world,math.international,mathlete.*,overeasy.club,risenegg.com,scrambled.*,shellgame.*,shellplay.*,shellshockers.*,shellshock.*,shellsocks.com,shockers.one,softboiled.club,urbanegger.com,violentegg.*,yolk.*,zygote.cafe##+js(rpnt, script, const PerformanceTracker, 'aiptag.cmd.display.push=a=>{},aiptag.cmd.player.push=a=>a(),aipPlayer=class{constructor(a){this.o=a}startPreRoll(a,s){this.o.AIP_REWARDEDCOMPLETE()}},aipAPItag={sdkBlocked:!1};const PerformanceTracker')
+##.main-aside > .house-ad-wrapper
 hentaiworld.tv##+js(aeld, getexoloader)
 hentaiworld.tv##+js(nowoif, /xlirdr|hotplay\-games|hyenadata/)
 hentaiworld.tv###imagelink
@@ -23565,6 +23568,8 @@ v2ex.com##ins.adsbygoogle[data-ad-slot]
 aniwixi.xyz##body > [style^="position: fixed; top: 0; left: 0;"][style*="z-index: 999999;"][target="_blank"]
 aniwixi.xyz##+js(aeld, , triggerPopunder)
 aniwixi.xyz###wixi-single-ad-overlay
+svetserialu.to##+js(rmnt, script, /detect/i)
+svetserialu.to##body > .loader ~ div[class][style]:not([id])
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -29835,6 +29840,8 @@ kotaku.com#@##dfp-ad-2
 kotaku.com#@##dfp-ad-1
 ||x.kinja-static.com/assets/packaged-js/OnionAM.$script,domain=avclub.com|clickhole.com|deadspin.com|earther.com|gizmodo.com|jalopnik.com|jezebel.com|kotaku.com|lifehacker.com|splinternews.com|theinventory.com|theonion.com|theroot.com|thetakeout.com
 @@||d1xrtnyoeeet33.cloudfront.net/assets/js/lib/*$script,domain=calgaryherald.com|calgarysun.com|canoe.com|edmontonsun.com|financialpost.com|leaderpost.com|lfpress.com|montrealgazette.com|nationalpost.com|ottawacitizen.com|ottawasun.com|theprovince.com|thestarphoenix.com|torontosun.com|vancouversun.com|windsorstar.com|winnipegsun.com
+calgaryherald.com,calgarysun.com,canada.com,canoe.com,driving.ca,edmontonjournal.com,edmontonsun.com,financialpost.com,leaderpost.com,lfpress.com,montrealgazette.com,nationalpost.com,ontariofarmer.com,ottawacitizen.com,ottawasun.com,thegrowthop.com,theprovince.com,thestarphoenix.com,tj.news,torontosun.com,vancouversun.com,windsorstar.com,winnipegsun.com##+js(set, Object.prototype.adService.initialize, noopFunc)
+@@||cdn.q0losid.com/prod/pni/loader.min.js$domain=calgaryherald.com|calgarysun.com|canada.com|canoe.com|driving.ca|edmontonjournal.com|edmontonsun.com|financialpost.com|intelligencer.ca|leaderpost.com|lfpress.com|montrealgazette.com|nationalpost.com|ontariofarmer.com|ottawacitizen.com|ottawasun.com|standard-freeholder.com|thegrowthop.com|theprovince.com|thestarphoenix.com|tj.news|torontosun.com|vancouversun.com|windsorstar.com|winnipegsun.com
 @@||cbsistatic.com/*/comscore.streaming.$script,domain=cbsnews.com
 ||imasdk.googleapis.com/js/sdkloader/ima3_debug.js$domain=cbsnews.com,redirect=google-ima.js,important
 cbsnews.com>>##+js(no-fetch-if, v.fwmrm.net/ad/g/, war:noop-vmap1.xml)
@@ -32238,6 +32245,7 @@ ds.163.com##+js(set, Sentry.configureScope, noopFunc)
 @@||googletagmanager.com/gtag/js$script,redirect-rule,domain=alltron.ch
 ||cdn.shopify.com/extensions/*/ba_tracking.js$domain=ridge.com,important
 ridge.com##+js(set, baMet.register, noopFunc)
+hktvmall.com##+js(set, Object.prototype.componentInScreen, noopFunc)
 ! uBlock filters – Quick fixes https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
 @@||hb.vntsm.com/v4/live/vms/sites/aternos.org/index.js$script,domain=aternos.org
 aternos.org##.header-center:style(margin-top:-5000px !important;)
