@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Sun, 13 Sep 2026 11:56:06 GMT
+! Last modified: Sun, 13 Sep 2026 14:24:30 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202609131142
+!   - Version: 202609131412
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 13 Sep 2026 11:42 UTC
+!   - Last modified: 13 Sep 2026 14:12 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
@@ -74,7 +74,7 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * ➗ Actually Legitimate URL Shortener Tool
 !   - URL: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt
-!   - Version: 12September2026v2
+!   - Version: 13September2026v3
 !   - Homepage: https://github.com/DandelionSprout/adfilt/discussions/163
 ! * 🐊 Imgur: Pure Imagery Experience
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/ImgurPureImageryExperience.txt
@@ -18992,6 +18992,7 @@ $doc,removeparam=sca_upv,domain=www.google.*|ipv6.google.com
 ||workspace.google.com^$removeparam=from
 @@://www.google.*/maps^$removeparam=utm_campaign
 @@://ipv6.google.com/maps^$removeparam=utm_campaign
+||support.google.com^$doc,removeparam=ctx
 ||tiktok.com^$removeparam=_r
 $removeparam=share_ab_group
 $removeparam=u_code
@@ -19567,8 +19568,8 @@ $removeparam=_ref,domain=fanatics.com|nhl.com
 ||xg4ken.com^$removeparam=kpid
 ||xg4ken.com^$removeparam=criteriaid
 ||xg4ken.com^$removeparam=locphy
-||macys.com^$removeparam=trackingid
-$removeparam=/^m_.*$/,domain=macys.com|macysinc.com
+$doc,removeparam=trackingid,domain=adobe.com|macys.com
+$doc,removeparam=/^m_.*$/,domain=macys.com|macysinc.com
 $removeparam=CAGPSPN
 ||wsj.com^$removeparam=inttrackingcode
 ||bindright.com^$removeparam=camp_id
@@ -20600,6 +20601,7 @@ ref=sqliteviewer.app$doc,removeparam=ref
 ||canadapost-postescanada.ca^$doc,removeparam=bid
 ||canadapost-postescanada.ca^$doc,removeparam=rid
 ||spotfund.com^$doc,removeparam=SFID
+||quora.com^$doc,removeparam=qv_src
 $removeparam=w,domain=files.wordpress.com|store.playstation.com|s-microsoft.com|store-images.microsoft.com|dr.dk|if.com.au
 $removeparam=h,domain=files.wordpress.com|store.playstation.com|s-microsoft.com|store-images.microsoft.com|dr.dk
 $removeparam=width,domain=i-viaplay.com.akamaized.net|media.discordapp.net|tvno.nu
