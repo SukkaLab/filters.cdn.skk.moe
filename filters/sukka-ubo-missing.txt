@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Mon, 14 Sep 2026 07:56:06 GMT
+! Last modified: Mon, 14 Sep 2026 12:53:44 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.11.34
+!   - Version: 2.1.11.38
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202609080647
@@ -74637,6 +74637,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||countly.
 ||countly-
 |piwik.
+||p.food.ru^
 ||7lzwgj.donaukurier.de^
 ||metrics.earlygame.com^
 ||pla.uqload.vc^
@@ -282162,10 +282163,12 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
 @@||nlog.naver.com/n|$domain=search.naver.com|www.naver.com
+ellegirl.jp##div[aria-label="Recommended articles carousel"]
 ||wargamings.net/track.js
 ||media-analytic.com/gtag.js
 na2ka4.blog.fc2.com###inner2 > div.section2:has(> div.ninja-recommend-block)
 ||pornhub.com/utils/reportTimeWatched
+||live.dealer-asset.co/globalscripts/analytics.min.js
 ||supportecom.ru/server.php?rqst=track
 ||independent.co.uk/Agent/GA/
 ||independent.co.uk/_build/prebid_
@@ -282183,6 +282186,7 @@ newsnow.com##+js(set-session-storage-item, nfPageCount, $remove$)
 newsnow.com##+js(set-session-storage-item, pageCount, $remove$)
 ||bwapi.irunfar.com/log/
 ||bwapi.irunfar.com/event/
+||animegratis.net/js/layout-signal.js
 harpersbazaar.com##div[aria-labelledby="recirc-heading"]
 ||otrium.*/static/newrelic.js
 ||otrium.*/measure/
@@ -288510,6 +288514,7 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=saturn.de
 @@||metrics.us.playstation.com/b/ss/
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
+@@||sgtm.viking.de/gtm.js$domain=viking.de
 @@||pub-static.fotor.com/static/web/lib/sensors/sensorsdata.min.js
 @@||featureassets.org/v1/initialize?k=$domain=bloomberg.com
 @@||assetsconfigcdn.org/v1/initialize?k=$domain=bloomberg.com
