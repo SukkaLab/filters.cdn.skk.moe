@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Mon, 14 Sep 2026 12:53:44 GMT
+! Last modified: Mon, 14 Sep 2026 16:22:33 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.11.38
+!   - Version: 2.1.11.42
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202609080647
@@ -219,6 +219,19 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||a.ussp.io^
+||bidderstack.com^
+||cs.ifedata.ru^
+||myweb3id.io^
+||targetrtb.com^
+||mpartner.digital^
+||onetarget.ru^
+||intent.ai^
+||rtb.dynotech.io^
+||sp.linkssp.ru^
+||sync.adsp.io^
+||sync.gonet-ads.com^
+||smartcallback.ru^
 ||mydatascript.bubbleup.com^
 ||getads.ru^
 ||disutgh7q0ncc.cloudfront.net^
@@ -281653,6 +281666,7 @@ zmail.mtrl.me$image
 /^https?:\/\/(?!assets|script|static)(?:[0-9a-z]{10,13}|[0-9a-z]{6})\.[0-9A-Za-z.\-_]+\/(?=[0-9a-z+\/\-]*[A-Z])[0-9A-Za-z+\/\-]{80,106}$/$match-case,script,~3p
 /^https:\/\/cs\d{3}\.\w+\.com\/cscript\/\d{3}\/[\w\d]+\.js$/$script,3p,match-case
 /.well-known/private-click-measurement
+.io/yndx^
 /jc/gtm.js
 /static/modules/js/AssertiveYield/*
 /get/live/web/_/*$script,~3p
@@ -282163,6 +282177,8 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
 @@||nlog.naver.com/n|$domain=search.naver.com|www.naver.com
+||app.easy.tools/api/stats
+||yandex.*/an/count/$ping
 ellegirl.jp##div[aria-label="Recommended articles carousel"]
 ||wargamings.net/track.js
 ||media-analytic.com/gtag.js
@@ -287839,7 +287855,6 @@ dlsdk.appsflyer.com^
 ||ulog*.gifshow.com^
 ||logapi-and.zhipin.com^
 ||counters.booking.com^
-||nr.bidderstack.com^
 ||stbid.ru^
 ||stat.nsc-lab.io^
 d4?appid*type*
@@ -288514,6 +288529,7 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=saturn.de
 @@||metrics.us.playstation.com/b/ss/
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
+@@||rj.com/layouts/system/VisitorIdentification.js$domain=rj.com
 @@||sgtm.viking.de/gtm.js$domain=viking.de
 @@||pub-static.fotor.com/static/web/lib/sensors/sensorsdata.min.js
 @@||featureassets.org/v1/initialize?k=$domain=bloomberg.com
