@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Tue, 15 Sep 2026 11:47:17 GMT
+! Last modified: Tue, 15 Sep 2026 15:01:56 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -11,13 +11,13 @@
 !   - Last modified: Tue, 15 Sep 2026 06:15:28 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
-!   - Last modified: Mon, 14 Sep 2026 12:51:34 +0000
+!   - Last modified: Tue, 15 Sep 2026 13:31:16 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
 !   - Last modified: Sun, 13 Sep 2026 10:22:27 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
-!   - Last modified: Tue, 15 Sep 2026 02:40:58 +0000
+!   - Last modified: Tue, 15 Sep 2026 10:19:46 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
 !   - Last modified: Mon, 14 Sep 2026 13:52:52 +0000
@@ -25820,13 +25820,15 @@ cizitensports.com##+js(rmnt, script, randomUUID)
 ###cf-challenge-root
 ||sites.google.com/view/brewapp$doc
 ##.wp-singular > iframe[srcdoc][allowfullscreen][allow*="clipboard-write"][style*="2147483647"]
-/^https:\/\/[a-z]{7,}\.sbs\/[a-z0-9]{8}\.js$/$script,3p,match-case,to=sbs
-||sbs^$domain=testmyspeed.com
+/^https:\/\/[a-z]{7,}\.[a-z]{3,4}\/[a-z0-9]{8}\.js$/$script,3p,match-case,to=club|sbs
+/\/[a-z0-9]{8}\.js$/$script,3p,match-case,domain=testmyspeed.com
+||nutmann.club^
 ||kusikowski.sbs^
 ||swewart.sbs^
 ||guiglen.sbs^
 webrick.com##+js(acs, atob, Uint8Array)
 ##html > #bw-rc-host
+aspireatlas.com##+js(rmnt, script, String.fromCharCode)
 ||keelhaulably.com^
 pentest.blog##+js(rmnt, script, (self);)
 pentest.blog##+js(acs, atob, new )
@@ -25883,6 +25885,7 @@ pentest.blog##+js(acs, atob, new )
 ||vanced.pro^$all,domain=~revanced.app
 ||vancedmanager.$all,domain=~revanced.app
 ||revancedapps.$all,domain=~revanced.app
+||vanced.to^$doc
 ||luckypatcher.*^$all,domain=~luckypatchers.com
 ||luckypatchers.*^$all,domain=~luckypatchers.com,to=~luckypatchers.com
 ||luckypatcherwin.com^$all,domain=~luckypatchers.com
@@ -32146,6 +32149,7 @@ ridge.com##+js(set, baMet.register, noopFunc)
 hktvmall.com##+js(set, Object.prototype.componentInScreen, noopFunc)
 @@||mapper.nekostream.site/api/mal/*/*/$xhr,strict3p
 ||fvrd.ca/*/AppMeasurement.js$redirect=noopjs
+@@||pagead2.googlesyndication.com/tag/js/gpt.js$script,redirect-rule,domain=kick.com
 ! uBlock filters – Quick fixes https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
 @@||hb.vntsm.com/v4/live/vms/sites/aternos.org/index.js$script,domain=aternos.org
 aternos.org##.header-center:style(margin-top:-5000px !important;)
