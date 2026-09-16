@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Wed, 16 Sep 2026 07:43:36 GMT
+! Last modified: Wed, 16 Sep 2026 11:40:12 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.11.59
+!   - Version: 2.1.11.61
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202609080647
@@ -74651,6 +74651,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||countly.
 ||countly-
 |piwik.
+||counter.wargamings.net^
 ||gadata.motorpresse.de^
 ||p.food.ru^
 ||7lzwgj.donaukurier.de^
@@ -282180,6 +282181,7 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
 @@||nlog.naver.com/n|$domain=search.naver.com|www.naver.com
+||wargamings.net/png.php?id=
 ||iplayer.is/lib/tk.js
 ||index.hr/api/stats/
 ||omr.com/reviews/gtm-
@@ -288537,6 +288539,7 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=saturn.de
 @@||metrics.us.playstation.com/b/ss/
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
+@@||data.tm-awx.com$domain=gloucestershirelive.co.uk
 @@||rj.com/layouts/system/VisitorIdentification.js$domain=rj.com
 @@||sgtm.viking.de/gtm.js$domain=viking.de
 @@||pub-static.fotor.com/static/web/lib/sensors/sensorsdata.min.js
@@ -288566,6 +288569,8 @@ d4?appid*type*
 @@||techlab-cdn.com/e/$domain=sephora.com
 @@.my.salesforce-setup.com/_ui/common/config/field/*/d?id=*&type=
 @@||static.cloudflareinsights.com^$domain=quasarzone.com,script
+@@||feliz.data.tm-awx.com^$domain=cheshire-live.co.uk
+@@||feliz-web.data.tm-awx.com^$domain=cheshire-live.co.uk
 @@||feliz.data.tm-awx.com^$domain=football.london
 @@||feliz-web.data.tm-awx.com^$domain=football.london
 @@||cdn.clerk.io/clerk.js$domain=avxperten.at|avxperten.be|avxperten.com|avxperten.cy|avxperten.cz|avxperten.de|avxperten.dk|avxperten.ee|avxperten.es|avxperten.fi|avxperten.fr|avxperten.gr|avxperten.hr|avxperten.hu|avxperten.it|avxperten.lt|avxperten.lu|avxperten.lv|avxperten.nl|avxperten.no|avxperten.pl|avxperten.pt|avxperten.ro|avxperten.se|avxperten.si|avxperten.sk|brukas.no

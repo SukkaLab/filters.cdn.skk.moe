@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Wed, 16 Sep 2026 07:43:36 GMT
+! Last modified: Wed, 16 Sep 2026 11:40:12 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202609160731
+!   - Version: 202609161132
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 16 Sep 2026 07:31 UTC
+!   - Last modified: 16 Sep 2026 11:32 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
@@ -120,7 +120,7 @@
 ! * uBlock filters – Mobile
 !   - URL: https://ublockorigin.github.io/uAssetsCDN/filters/filters-mobile.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Sat, 12 Sep 2026 13:12:15 +0000
+!   - Last modified: Wed, 16 Sep 2026 11:18:11 +0000
 ! * CJX's uBlock list
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-ublock.txt
 !   - Homepage: https://github.com/cjx82630/cjxlist
@@ -22714,6 +22714,7 @@ nytimes.com###acm-wrapper
 ||nytimes.com/games-assets/v2/spelling-bee.*.js$script,domain=www.nytimes.com,replace=/\.includes\("cr"\)/.includes("")/
 www.nytimes.com##+js(trusted-replace-argument, matchMedia.call, 1, json:"none", condition, max-width)
 www.nytimes.com##+js(trusted-json-edit-fetch-response, ..show_ads=false, propsToMatch, /statsig/initialize?)
+www.nytimes.com##+js(trusted-json-edit-fetch-response, v2:$.param_stores.*./^interstitial_/.value.shouldShow=false, propsToMatch, /statsig/initialize?)
 www.nytimes.com##+js(set, Object.prototype.hasAd, false)
 *##.ads_all > .ads_w
 liquipedia.net##.mobile-sticky-ad
