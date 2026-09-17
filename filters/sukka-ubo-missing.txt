@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Thu, 17 Sep 2026 00:37:34 GMT
+! Last modified: Thu, 17 Sep 2026 07:44:07 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.11.67
+!   - Version: 2.1.11.68
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202609080647
@@ -282183,6 +282183,8 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
 @@||nlog.naver.com/n|$domain=search.naver.com|www.naver.com
+||s.omsolution.net/omStatApi/
+karofilm.ru,cinemastar.ru##+js(set-local-storage-item, device_uuid, $remove$)
 ||gorbilet.ru/blog/js/metrics.js
 ||mediaexpert.pl/_internal/metrics/
 ||wargamings.net/png.php?id=
@@ -282460,6 +282462,7 @@ mego.travel##+js(set-local-storage-item, /^snowplowOutQueue_/, $remove$)
 ||skyscanner.*/g/aps/public/api/v1/
 ||skyscanner.*/slipstream/
 ||x.com/1.1/graphql/viewer_context.json
+||x.com/i/api/1.1/graphql/viewer_context.json
 ||twinfinite.net/*/gamurs-group-analytics/
 ||naturallieplantbased.com/?*&ver=$script,~3p
 ||caf.fr/*/stormcaster.js
