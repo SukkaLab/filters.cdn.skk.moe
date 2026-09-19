@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sat, 19 Sep 2026 07:22:25 GMT
+! Last modified: Sat, 19 Sep 2026 11:03:21 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Fri, 18 Sep 2026 17:39:55 +0000
+!   - Last modified: Sat, 19 Sep 2026 10:47:03 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Sat, 19 Sep 2026 01:32:22 +0000
@@ -27,7 +27,7 @@
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Wed, 16 Sep 2026 11:29:52 +0000
+!   - Last modified: Sat, 19 Sep 2026 07:38:11 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
 !   - Last modified: Wed, 16 Sep 2026 05:16:44 +0000
@@ -17972,6 +17972,7 @@ embedrise.com,lulustream.com,lulustream.live,luluvdo.com,luluvid.com,playfmovies
 lulustream.com,lulustream.live,luluvdo.com##+js(aeld, click, popunder)
 lulu.st,lulustream.com,lulustream.live,luluvdo.com,luluvid.com##+js(acs, WebAssembly, Promise)
 lulu.st,lulustream.com,lulustream.live,luluvdo.com,luluvid.com##+js(acs, document.write, unescape)
+lulu.st,lulustream.com,lulustream.live,luluvdo.com,luluvid.com##+js(rmnt, script, /detect/i)
 luluvid.com##+js(rmnt, script, popundersPerIP)
 vtplayer.online,vvtplayer.*##+js(set, adblockcheck, false)
 ||unpkg.com/videojs-vast-vpaid@2.0.2/bin/videojs_5.vast.vpaid.min.js$script,domain=playfmovies.*|vtplayer.online|vvtplayer.*
@@ -23410,7 +23411,7 @@ boote-magazin.de##+js(no-fetch-if, bf-ad.net)
 $script,redirect-rule=noopjs,to=~googletagmanager.com,from=boote-magazin.de
 ||upscore.com^$script,redirect=noopjs,domain=boote-magazin.de
 ||bf-ad.net^$script,redirect=noopjs,domain=boote-magazin.de
-peachify.top##+js(aeld, click, atob)
+peachify.top##+js(aeld, click, atob, protect, 1)
 216.219.94.112##+js(rmnt, script, .offsetParent)
 216.219.94.112###myDiv
 picnob.com##.slimlay
@@ -34929,6 +34930,8 @@ vpg.no##.offcanvas-backdrop.fade
 vpg.no###cookieConsentModal
 vpg.no##.js-offcanvas-singleton.offcanvas-start
 notthebee.com##+js(trusted-click-element, ';when-visible:xpath:/html/body/div[contains(@class,"bottom-0")]/div[@role="dialog"]//button[contains(text(),"Accept Cookies")]')
+shop-sks.com##+js(trusted-click-element, .js-cookie-accept-all-button > button, , 4000)
+shop-sks.com##.cookie-permission-container
 ! uBlock filters – Annoyances https://ublockorigin.pages.dev/filters/annoyances.min.txt
 ilovevaldinon.it##+js(acs, document.oncontextmenu)
 ilovevaldinon.it##+js(aopr, disableSelection)
