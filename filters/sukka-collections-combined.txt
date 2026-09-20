@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Sat, 19 Sep 2026 20:48:47 GMT
+! Last modified: Sun, 20 Sep 2026 00:10:14 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202609192042
+!   - Version: 202609200003
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 19 Sep 2026 20:42 UTC
+!   - Last modified: 20 Sep 2026 00:03 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
@@ -74,7 +74,7 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * ➗ Actually Legitimate URL Shortener Tool
 !   - URL: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt
-!   - Version: 19September2026v11
+!   - Version: 19September2026v13
 !   - Homepage: https://github.com/DandelionSprout/adfilt/discussions/163
 ! * 🐊 Imgur: Pure Imagery Experience
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/ImgurPureImageryExperience.txt
@@ -18908,6 +18908,7 @@ $removeparam=_rdc
 ||instagram.com^$doc,removeparam=igsi
 ||instagram.com^$doc,removeparam=stkn
 ||instagram.com^$doc,removeparam=click_source
+||instagram.com^$doc,removeparam=ndid
 $removeparam=cp_ksver
 $removeparam=biw
 $removeparam=bih
@@ -20617,10 +20618,10 @@ ref=sqliteviewer.app$doc,removeparam=ref
 ||qobuz.com^$doc,removeparam=qbzs
 ||weather.com^$doc,removeparam=aw_campaign
 ||weather.com^$doc,removeparam=Campaign_Name
-||weather.com^$doc,removeparam=lctg
+$doc,removeparam=lctg,domain=bleacherreport.com|weather.com
 $doc,removeparam=rilt,domain=shutterfly.com|shutterflyinc.com
 $doc,removeparam=mpch,domain=shutterfly.com|shutterflyinc.com
-||weather.com^$doc,removeparam=enc_em
+ $doc,removeparam=enc_em,domain=bleacherreport.com|weather.com
 ||cnn.com^$doc,removeparam=Profile
 ||microsoft.com^$doc,removeparam=UID
 $removeparam=w,domain=files.wordpress.com|store.playstation.com|s-microsoft.com|store-images.microsoft.com|dr.dk|if.com.au
