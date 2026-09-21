@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Mon, 21 Sep 2026 16:29:12 GMT
+! Last modified: Mon, 21 Sep 2026 19:27:44 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,19 +8,19 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Mon, 21 Sep 2026 08:44:08 +0000
+!   - Last modified: Mon, 21 Sep 2026 12:31:25 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
-!   - Last modified: Sun, 20 Sep 2026 15:40:53 +0000
+!   - Last modified: Mon, 21 Sep 2026 13:22:28 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Fri, 18 Sep 2026 05:00:32 +0000
+!   - Last modified: Mon, 21 Sep 2026 15:41:26 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
 !   - Last modified: Thu, 17 Sep 2026 16:19:33 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Sun, 20 Sep 2026 14:45:27 +0000
+!   - Last modified: Mon, 21 Sep 2026 11:30:07 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
 !   - Last modified: Fri, 18 Sep 2026 16:05:49 +0000
@@ -1026,11 +1026,11 @@ $image,3p,denyallow=cdn77.org|fpbns.net|globalcdn.co|others-cdn.com|rncdn7.com|s
 @@/^https:\/\/www\.pussyspace\.(?:com|net)\/upload\/cat\.image\/[_3a-z]{2,16}\.jpg$/$image,domain=pussyspace.com|pussyspace.net
 @@/^https:\/\/www\.pussyspace\.(?:com|net)\/upload\/poster_img_url\/par\/c3Rhci9[%0-9A-Za-z]{16,32}&size_width\/par\/160\/l\.jpg$/$image,domain=pussyspace.com|pussyspace.net
 @@/^https:\/\/[a-z]\.pussyspace\.(com|net)\/xv7\/[0-9a-f]+-([0-9a-f]+-){3}[0-9a-f]{12}\/\d\/xv_\d{1,2}_t\.jpg$/$image,domain=pussyspace.com|pussyspace.net
-@@/^https:\/\/[a-z]\.pussyspace\.(com|net)\/(yip?|xvs)\/videos\/20\d{4}\/\d{2}\/\d+\/(original|thumbs_\d{2})\/\d{0,2}(\(m=e[0-9A-Za-z]+(?:aaaa)?\)\(mh=[-_0-9A-Za-z]+\))?\d{0,2}\.jpg$/$image,domain=pussyspace.com|pussyspace.net
+@@/^https:\/\/[a-z]\.pussyspace\.(com|net)\/(yip?|xvs)\/videos\/20\d{4}\/\d{2}\/\d+\/(original|thumbs_\d{2})\/\d{0,2}(\(m=e[0-9A-Za-z]+(aaaa)?\)\(mh=[-_0-9A-Za-z]+\))?\d{0,2}\.jpg$/$image,domain=pussyspace.com|pussyspace.net
 @@/^https:\/\/[a-z]\.pussyspace\.(com|net)\/(yip?|xvs)\/videos\/thumbs169l\/[0-9a-f]{2}\/[0-9a-f]{2}\/[0-9a-f]{2}\/[0-9a-f]+(-\d)?\/[0-9a-f]+\.\d{1,2}\.jpg$/$image,domain=pussyspace.com|pussyspace.net
 @@/^https:\/\/[a-z]\.pussyspace\.(com|net)\/(yip?|xvs)\/videos\/thumbs_5\/\d{1,2}(\(m=e[0-9A-Za-z]{5,7}aaaa\)\(mh=[-_0-9A-Za-z]+\))?\.jpg$/$image,domain=pussyspace.com|pussyspace.net
 @@/^https:\/\/[a-z]\.pussyspace\.(com|net)\/[a-z]?jz\/([0-9a-f]\/){3,5}[0-9a-f]+-?(\d{1,3}|((\d{3,4}-){3}h264)?\.(mp4-\d{1,2}|flv-\d))\.jpg$/$image,domain=pussyspace.com|pussyspace.net
-@@/^https:\/\/[a-z]\.pussyspace\.(com|net)\/sb\/t\/\d+\/(\d|[0-9a-f]{2})\/(?:\d|[0-9a-f]{2})\/w:300\/t\d{1,2}-enh\/([0-9a-z]+-)*[0-9a-z]+\.jpg$/$image,domain=pussyspace.com|pussyspace.net
+@@/^https:\/\/[a-z]\.pussyspace\.(com|net)\/sb\/t\/\d+\/(\d|[0-9a-f]{2})\/(\d|[0-9a-f]{2})\/w:300\/t\d{1,2}-enh\/([0-9a-z]+-)*[0-9a-z]+\.jpg$/$image,domain=pussyspace.com|pussyspace.net
 @@/^https:\/\/www\.pussyspace\.(com|net)\/upload\/cat\.image\/[_3a-z]{2,}\.jpg$/$image,domain=pussyspace.com|pussyspace.net
 @@/^https:\/\/www\.pussyspace\.(com|net)\/upload\/poster_img_url\/par\/c3Rhci9[%0-9A-Za-z]+&size_width\/par\/160\/l\.jpg$/$image,domain=pussyspace.com|pussyspace.net
 @@/^https:\/\/[a-z]\.pussyspace\.[cn][oe][mt]\/xv7\/[0-9a-f]+-[0-9a-f]+-[0-9a-f]+-[0-9a-f]+-[0-9a-f]+\/[0-9]\/xv_[0-9][0-9]?_t\.jpg$/$image,domain=pussyspace.com|pussyspace.net
@@ -9072,8 +9072,8 @@ dogdrip.net##ins.adsbygoogle:style(height: 1px !important; visibility: hidden !i
 ||com/layout/*.js|$script,3p,domain=index.hr
 /^https:\/\/[a-z]{3,}\.[a-z]{7,}\.com\/[a-z]{3,}\/[a-f0-9]{8}\.js$/$script,3p,match-case,to=com,header=location:https://stg.*
 /^https:\/\/[a-z]{3,}\.[a-z]{7,}\.com\/[a-z]{3,}\/[a-f0-9]{8}\.js$/$script,3p,match-case,to=com,header=etag:w/"*-17*"
-/^https:\/\/[a-z]{3,}\.[a-z]{7,}\.com\/[a-z]{3,}\/[a-f0-9]{8}\.js$/$script,3p,match-case,to=com,from=fandom.com|index.hr
-/^https:\/\/[a-z][a-z][a-z]+\.[a-z][a-z][a-z][a-z][a-z][a-z][a-z]+\.com\/[a-z][a-z][a-z]+\/[a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9]\.js$/$script,3p,match-case,domain=fandom.com|index.hr
+/^https:\/\/[a-z]{3,}\.[a-z]{7,}\.com\/[a-z]{3,}\/[a-f0-9]{8}\.js$/$script,3p,match-case,to=com,from=euronews.com|fandom.com|index.hr
+/^https:\/\/[a-z][a-z][a-z]+\.[a-z][a-z][a-z][a-z][a-z][a-z][a-z]+\.com\/[a-z][a-z][a-z]+\/[a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9]\.js$/$script,3p,match-case,domain=euronews.com|fandom.com|index.hr
 ||html-load.com^$important,domain=agriculture.com|learnreligions.com|napjainkportal.hu|netflixlife.com|travelandleisure.com
 ||html-load.com^$script,xhr,domain=pickleball.com|pickleballclubs.com|pickleballleagues.com|pickleballteamleagues.com|pickleballtournaments.com|ppatour.com
 ||html-load.com^$script,xhr,domain=365cincinnati.com|a-love-of-rottweilers.com|a-z-animals.com|acedarspoon.com|acouplecooks.com|addapinch.com|adrenaline.com.br|aheadofthyme.com|amandascookin.com|amybakesbread.com|andrewzimmern.com|androidheadlines.com|aprettylifeinthesuburbs.com|askpython.com|assessmentcentrehq.com|atlasandboots.com|averiecooks.com|awealthofcommonsense.com|awellstyledlife.com|backforseconds.com|bakedbree.com|bakedbyrachel.com|bakeitwithlove.com|barbarabakes.com|bible-knowledge.com|bombshellbling.com|breastfeedingplace.com|brighteyedbaker.com|browneyedbaker.com|businesswritingblog.com|budgetbytes.com|butterbeready.com|cadryskitchen.com|cafedelites.com|campsitephotos.com|canarystreetcrafts.com|celebritynetworth.com|chocolatecoveredkatie.com|chocolatewithgrace.com|chumplady.com|classyyettrendy.com|cleananddelicious.com|cleanandscentsible.com|closetcooking.com|connoisseurusveg.com|cookieandkate.com|cookiedoughandovenmitt.com|cookincanuck.com|cookingclassy.com|crayonsandcravings.com|creative-culinary.com|crunchycreamysweet.com|culinaryhill.com|curbsideclassic.com|currytrail.in|cyclingabout.com|dailydishrecipes.com|damndelicious.net|dancearoundthekitchen.com|diethood.com|dinneratthezoo.com|driveteslacanada.ca|eatingonadime.com|eatlittlebird.com|elliott.org|evolvingtable.com|extrapetite.com|emilybites.com|famivita.com|favfamilyrecipes.com|feastingathome.com|feedmephoebe.com|feelgoodfoodie.net|foodfaithfitness.com|forkknifeswoon.com|foxeslovelemons.com|foxyfolksy.com|framedcooks.com|freeride.com|fromvalerieskitchen.com|frvr.com|galonamission.com|gamingsmart.com|garminrumors.com|gcaptain.com|gearpatrol.com|gimmesomeoven.com|godairyfree.org|greaterlongisland.com|greensnchocolate.com|happyveggiekitchen.com|healthyfitnessmeals.com|healthylittlefoodies.com|homemadehome.com|hoosierhomemade.com|howsweeteats.com|hummingbirdhigh.com|hummusapien.com|hungrypaprikas.com|iambaker.net|iamhomesteader.com|ibreatheimhungry.com|idownloadblog.com|iheartnaptime.net|inspiralized.com|isabeleats.com|jocooks.com|joyfoodsunshine.com|juliasalbum.com|julieblanner.com|juliescafebakery.com|julieseatsandtreats.com|justonecookbook.com|kimscravings.com|kingshotcalculator.com|kirbiecravings.com|kitchendivas.com|kitchenfunwithmy3sons.com|laughingspatula.com|laurafuentes.com|leahingram.com|littlehouseliving.com|littlesunnykitchen.com|louisianacookin.com|makeitdairyfree.com|makingthymeforhealth.com|mamainastitch.com|marvel.church|medievalists.net|melskitchencafe.com|mexicanfoodjournal.com|minimalistbaker.com|momsdish.com|mountainmamacooks.com|mybakingaddiction.com|mycolombianrecipes.com|mygolfspy.com|myquietkitchen.com|natashaskitchen.com|neighborfoodblog.com|newlifeonahomestead.com|nocrumbsleft.net|nomnompaleo.com|nourishedbynic.com|nutmegnanny.com|ohsheglows.com|onceuponachef.com|onelittleproject.com|onionringsandthings.com|pancakerecipes.com|pantrymama.com|pinchofyum.com|pipandebby.com|platingsandpairings.com|premeditatedleftovers.com|pumpkinnspice.com|rdr2.org|recipetineats.com|redcurrantbakery.com|runningonrealfood.com|runningtothekitchen.com|runtothefinish.com|seededatthetable.com|shakentogetherlife.com|shugarysweets.com|simply-delicious-food.com|simplywhisked.com|skinnytaste.com|spicysouthernkitchen.com|studyfinds.org|stylegirlfriend.com|sundaysuppermovement.com|tasteandtellblog.com|the-girl-who-ate-everything.com|the5krunner.com|thebakermama.com|thebestideasforkids.com|theendlessmeal.com|thefitchen.com|thefoodieaffair.com|thekitchenmagpie.com|themediterraneandish.com|theplantbasedschool.com|therecipecritic.com|thescranline.com|thewanderlustkitchen.com|thewoksoflife.com|thurrott.com|tidymom.net|twopeasandtheirpod.com|umamigirl.com|unefemme.net|unixmen.com|vincenzosplate.com|visualcapitalist.com|wellnessbykay.com|wellplated.com|welt.de|whatgreatgrandmaate.com|whatjewwannaeat.com|whipperberry.com|workweeklunch.com|yourcupofcake.com|yourhomebasedmom.com
@@ -23620,6 +23620,7 @@ dilar.tube##+js(set, HTMLImageElement.prototype.onerror, undefined)
 dilar.tube##+js(no-fetch-if, method:HEAD)
 ||dilar.tube/api/ads_settings
 ||dilar.tube/ads-config.json
+sms-ol.com##+js(rmnt, script, .showModal())
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -24343,6 +24344,7 @@ cracksmid.com##div[style=""] > center > center
 ||app.suckmongif.com^$all
 ||rerrioara.live^$3p
 ||gbelitesolutions.com^$all
+||app-download.kuashouban.com^$all
 ||webuzz.me^$doc
 ||coup-ling.net^$all
 ||gokinjolove.jp^$all
@@ -28118,6 +28120,7 @@ utreon.com##+js(no-xhr-if, utreon.com/pl/api/event method:POST)
 ||net/*/ModalEngage|$script,3p
 ||com/*/Sticky2,ModalEngage|$script,3p
 ||com/*/Sticky2|$script,3p
+##.DCDOr
 zhihu.com##+js(no-xhr-if, log-sdk.ksapisrv.com/rest/wd/common/log/collect method:POST)
 ||torimochi.line-apps.com^$image,redirect=1x1.gif
 ||api.bilibili.com/x/internal/gaia-gateway/ExClimbWuzhi$xhr,1p
@@ -29662,6 +29665,7 @@ adhs-zentrum.de##+js(no-xhr-if, method:POST body:/"track"|adblock/)
 ||umami-*.sufrah.net^
 ||igorslab.de/?ilgha_jump=$urlskip=/\?ilgha_jump=(ey[^.]+)\..+/ -base64 /"u":"(https?:[^"]+)"/
 ||cinefreak.net/generate.php?id=$urlskip=?id -base64
+||mtm.sms-ol.com^
 /edgemesh.*.js$script,domain=~edgemesh.com|~edgeno.de
 ||safelinkconverter.com^$script,3p
 /adsensebase.js$script
@@ -32614,21 +32618,17 @@ igorslab.de##img[src^="blob:http"]
 igorslab.de##.herald-above-footer
 /^https:\/\/www\.igorslab\.de\/[0-9a-z]{7,}\/A[\/0-9A-Z_a-z-]{100,}$/$image,1p,match-case,redirect=2x2.png
 /^https:\/\/www\.igorslab\.de\/wp-content\/uploads\/202\d\/\d{2}\/(?=[a-z]*\d)(?=\d*[a-z])[0-9a-z]{7,15}\.(?:pn|jp)g(?:\?[0-9A-Z_a-z-]{7,}=[0-9A-Z_a-z-]{7,})?$/$image,1p,match-case,redirect=2x2.png
-igorslab.de##a[href^="/"][style][rel][target]
+igorslab.de##a[href^="/"][rel][target]
+igorslab.de/community/#@#a[href^="/"][rel][target]
 igorslab.de##span[aria-label][role="img"][style*="data:image"]
 igorslab.de##span[style]:has(svg path)
 igorslab.de##span[aria-label][role="img"][style*="data:image"] + a
-igorslab.de##svg image[href^="data:image/"]
+igorslab.de##svg
 igorslab.de##[class]:has-text(/^\s*(Advertisement|Werbung|广告)\s*$/)
 igorslab.de##div[class]:matches-css-before(content: /^\s*\"(Advertise۞nt|Werbung|广告)\"\s*$/)
 igorslab.de##[aria-label="Advertisement" i]
 igorslab.de##[aria-label="Werbung" i]
 igorslab.de##[aria-label="广告"]
-igorslab.de##[aria-label="Advertisement" i] + svg
-igorslab.de##[aria-label="Werbung" i] + svg
-igorslab.de##[aria-label="广告"] + svg
-igorslab.de##svg:has(~ [aria-label])
-igorslab.de##svg:has(~ * [aria-label])
 igorslab.de##img:remove-attr(/data-.+/)
 igorslab.de/community/#@#img:remove-attr(/data-.+/)
 igorslab.de##+js(no-fetch-if, %22vt%22)
@@ -32637,8 +32637,10 @@ igorslab.de##.ilgha-scale-frame:has-text(/Similar products|Ähnliche Artikel|相
 igorslab.de##div[style*="max-width:980px;"]
 igorslab.de##div[style^="display:block;position:relative;max-width:"]
 igorslab.de##div[class]:matches-attr("/^(?!data|aria)[0-9a-z]+[-_][0-9a-z]+$/")
+igorslab.de##div[class]:matches-attr("/^(?!data|aria).+$/"="/^[0-9A-Z_a-z]+_/")
 igorslab.de###extras, #ilab-consent-banner, #ilab-consent-reopen-wrap, .entry-header, .footer-bottom, .herald-entry-content, .herald-header-wraper, .herald-main-content, .herald-module, .widget:others()
 igorslab.de/community/#@##extras, #ilab-consent-banner, #ilab-consent-reopen-wrap, .entry-header, .footer-bottom, .herald-entry-content, .herald-header-wraper, .herald-main-content, .herald-module, .widget:others()
+igorslab.de##[style*="!important"]
 wolt.com#@#div:has(> div > div > div > div > div > div > p:has-text(Sponsored))
 wolt.com#@#div:has(> div > div > div > div > div > p:has-text(Sponsored))
 ! uBlock filters – Experimental https://ublockorigin.pages.dev/filters/experimental.min.txt
