@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Mon, 21 Sep 2026 22:02:47 GMT
+! Last modified: Tue, 22 Sep 2026 00:53:02 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.11.99
+!   - Version: 2.1.12.0
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202609080647
@@ -74809,7 +74809,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||dlso-ap96.macgamingdb.app^
 ||fm-analytics.cloudbees.io^
 ||mlm-tracking.meinestadt.de^
-||stats.temptcdn.com^
 ||opt.mocortech.com^
 ||analytics-proxy-501188673100.us-central1.run.app^
 ||analytics.studiodesignapp.com^
@@ -76433,7 +76432,6 @@ prd.api.bleacherreport.com^
 ||hwa.his.huawei.com^
 ||i.bigin.io^
 ||ibeat.indiatimes.com^
-||ichnaea-web.netflix.com^
 ||ichnaea.netflix.com^
 ||img.opentracker.net
 ||in.cuebiq.com^
@@ -282653,6 +282651,7 @@ abc.net.au##+js(set-local-storage-item, snowplowOutQueue_Presentation Layer, $re
 ||rudderstack.com/v1/batch?writeKey=
 ||simplywall.st/backend/flags/proxy/client/metrics
 ||doofinder.com/api/v*/stats/
+||chatgpt.com/backend-api/sentinel/ping
 ||lg-chatbot.com/chatbot/v*/api/client_logger
 ||cv-library.co.uk/assets/js/ext/amplitude-
 ||cv-library.co.uk/assets/js/ext/clickstream.
