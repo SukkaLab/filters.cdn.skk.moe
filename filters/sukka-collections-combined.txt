@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Wed, 23 Sep 2026 18:24:15 GMT
+! Last modified: Wed, 23 Sep 2026 21:34:49 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202609231814
+!   - Version: 202609232122
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 23 Sep 2026 18:14 UTC
+!   - Last modified: 23 Sep 2026 21:22 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
@@ -106,7 +106,7 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * ↖ Anti-'Custom cursors' List
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/Anti-'Custom%20cursors'%20List.txt
-!   - Version: 18August2026v1-Beta
+!   - Version: 23September2026v1-Beta
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 💬 Twitch: Pure Viewing Experience
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/TwitchPureViewingExperience.txt
@@ -22330,7 +22330,6 @@ cursor_hover.$image
 yakusokunoneverland.fandom.com#?#*:style(cursor: unset !important)
 _Cursor1.png^
 ||nocookie.net/*/Cursor1.
-##.theme-custom-cursor:not(html,body)
 tumblr.com##.custom-cursor:style(cursor: unset !important)
 tumblr.com##.custom-cursor a:style(cursor: pointer !important)
 tumblr.com,strategix.dk##body:style(cursor: unset !important)
@@ -22358,6 +22357,10 @@ nerdelandslaget.no##html:style(cursor: auto !important)
 /Cursor_Icon.png|
 /Indicator_Arrow_Icon.png|
 ##.n-cursor:not(html,body)
+##.theme-custom-cursor:not(html,body)
+||hfs-studio.com/*_Cursor_$image
+webon-studio.pl##div.fixed.border[style]:empty
+webon-studio.pl##html.has-custom-cursor:remove-class(has-custom-cursor)
 .ani|$domain=~pixiv.net|~deviantart.com
 .cursor|$domain=~pixiv.net|~deviantart.com
 centerpointgaming.com##html:style(cursor:unset!important;--cursor-arrow:unset!important;--cursor-pointer:unset!important;--cursor-text:unset!important;--cursor-disabled:unset!important)
