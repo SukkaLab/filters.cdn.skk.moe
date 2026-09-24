@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Thu, 24 Sep 2026 15:07:36 GMT
+! Last modified: Thu, 24 Sep 2026 18:25:25 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.12.20
+!   - Version: 2.1.12.22
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202609080647
@@ -282190,6 +282190,7 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
 @@||nlog.naver.com/n|$domain=search.naver.com|www.naver.com
+||status.tbank-online.com/front/log/
 ||ispazio.net/wp-content/plugins/wc-site-stats/
 ||tracker.telegram.hr^
 ||beam.telegram.hr^
@@ -285641,7 +285642,6 @@ textologia.ru##.bot_right
 ||paypal.com/tagmanager/pptm.js
 ||dap.dmm.co.jp/imp?
 ||ebbs.jp/spa.php?
-||atlassian.com/gateway/api/*/batch
 ||api.atlassian.com/metal/ingest
 ||ing.com.tr/assets/scripts/dataroid.websdk-
 ||d2jjzw81hqbuqv.cloudfront.net/assets/*/autotrack-
@@ -288570,6 +288570,7 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=saturn.de
 @@||metrics.us.playstation.com/b/ss/
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
+@@||bookshop.org/astro-assets/google-analytics.*.js$domain=bookshop.org
 comed.com##+js(set-constant, setupGoogleAnalytics, noopFunc)
 @@||integrations.fitanalytics.com/shop/bergfreunde/pdp.js$domain=bergfreunde.de|berg-freunde.at|berg-freunde.ch|bergfreunde.nl|bergfreunde.be|bergfreunde.it|bergfreunde.es|bergfreunde.eu|bergfreunde.dk|bergfreunde.se|bergfreunde.no|bergfreunde.fi|alpinetrek.co.uk|alpiniste.fr|campz.ie
 @@||widget.fitanalytics.com/widget_zepto.js$domain=bergfreunde.de|berg-freunde.at|berg-freunde.ch|bergfreunde.nl|bergfreunde.be|bergfreunde.it|bergfreunde.es|bergfreunde.eu|bergfreunde.dk|bergfreunde.se|bergfreunde.no|bergfreunde.fi|alpinetrek.co.uk|alpiniste.fr|campz.ie
