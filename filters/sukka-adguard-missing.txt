@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sat, 26 Sep 2026 11:28:19 GMT
+! Last modified: Sat, 26 Sep 2026 14:30:30 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sat, 26 Sep 2026 06:04:04 +0000
+!   - Last modified: Sat, 26 Sep 2026 12:24:43 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Fri, 25 Sep 2026 15:30:29 +0000
@@ -27,7 +27,7 @@
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Sat, 19 Sep 2026 17:12:39 +0000
+!   - Last modified: Sat, 26 Sep 2026 11:11:53 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
 !   - Last modified: Fri, 25 Sep 2026 15:26:09 +0000
@@ -7566,9 +7566,9 @@ hdhub4u.fail,hubdrive.*,moviesubtitles.click,telegratuita.com##+js(aeld, DOMCont
 filmifen.com##+js(aeld, load, document.body.appendChild(s))
 play.xpass.top##+js(acs, document.createElement, document.head||)
 /\/[0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f]\/invoke\.js/$script,3p,important
-/^https:\/\/[-0-9a-z]{5,}\.com\/\d{1,2}\/[0-9a-f]{32}\.js$/$script,3p,match-case
-/^https:\/\/[-0-9a-z]{5,}\.com\/\d{1,2}\/[0-9a-f]{22,}\.js$/$script,3p,match-case
-/^https:\/\/[-0-9a-z][-0-9a-z][-0-9a-z][-0-9a-z][-0-9a-z]+\.com\/\[0-9][0-9]?\/[0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f]\.js$/$script,3p,match-case
+/^https:\/\/[-0-9a-z]{5,}\.(?:com|org)\/\d{1,2}\/[0-9a-f]{32}$/$script,3p,match-case,to=com|org
+/^https:\/\/[-0-9a-z]{5,}\.(com|org)\/\d{1,2}\/[0-9a-f]{23,}$/$script,3p,match-case,to=com|org
+/^https:\/\/[-0-9a-z][-0-9a-z][-0-9a-z][-0-9a-z][-0-9a-z]+\.[co][or][mg]\/\[0-9][0-9]?\/[0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f]$/$script,3p,match-case
 /\/[0-9a-z]{2}\/[0-9a-f]{32}\.js/$script,xhr,3p,match-case,method=get,to=com,from=ad|ag|app|bet|biz|blogspot.com|blue|boo|by|bz|care|casa|cash|cc|ceo|cfd|cx|click|cloud|club|com.se|cyou|dad|day|dev|download|farm|forum|fun|gdn|ge|hair|homes|host|how|icu|in|info|is|lat|link|live|lol|ltd|md|me|media|mobi|moe|monster|one|onl|online|page|party|pe|pink|pk|pro|pw|re|red|rest|sbs|sh|site|skin|space|stream|su|team|tel|to|today|top|tube|tv|vip|wedding|world|ws|xyz|~edu.ag|~edu.by|~edu.bz|~edu.ge|~edu.in|~edu.md|~edu.me|~edu.pe|~edu.pk|~edu.so|~edu.ws|~gov.ag|~gov.by|~gov.bz|~gov.ge|~gov.in|~gov.md|~gov.me|~gov.pk|~gov.sh|~gov.so|~gov.to|~gov.tv|~gov.ws|~palaugov.pw|~proton.me|~twitch.tv
 /\/[0-9a-z]{2}\/[0-9a-f]{32}\.js/$script,xhr,3p,match-case,method=get,to=com,from=123av.com|141jav.com|186.2.175.5|1piecemanga.com|4chanarchives.com|69shux.co|85po.com|aguea.net|animepelix.net|animerco.org|anizle.org|apkadmin.com|arakpop.net|asiaflix.net|bigwarp.art|blogspot.com|bookfrom.net|brobokep.org|cartoony.net|cdn9mc.com|clicknupload.cfd|comohoy.com|d-pdf.com|datavaults.co|desiupload.co|downsub.com|europixhd-official.com|filmnudes.com|filmpornoitaliano.org|flacdownloader.com|fmovies24-to.com|fsportshd.net|fztvseries.ng|hdpornflix.com|hentai2read.com|hianime.nz|hubdrive.space|indi-share.com|ironhentai.com|isekaitube.com|japaneseholes.com|javboys.com|javbraze.com|javhdporn.net|jgvdata.com|jpopsingles.eu|kisshentaiz.com|koreaboo.net|koshalworld.com|latinluchas.com|loadedfiles.org|loiflix.shop|madouqu.com|manhwa68.com|media.cm|megadiscografiascompletas.com|movielysium.net|monoschino2.com|moviemaniak.com|movies7.us|myxxgirl.com|nekopoi.care|niganpro.com|niraw.com|njav.com|novizer.com|nsfwgify.com|notunmovie.net|official.coomer.com.co|omegascans.org|onejav.com|onepiece-manga-online.net|pagalfree.com|pagalnew.com|pagalworld.us|pelimeli.com|pelis182.net|photocalltv.org|pixvid.org|player.subespanolvip.com|playmogo.com|plugincrack.com|pokopow.com|poophd.pm|popcornmovies.org|pornhoarder.net|pornincest.net|raw.senmanga.com|relampagomovies.com|seriesgod.com|sexiezpix.com|skidrowcodex.net|snipcash.com|splay.id|spotidownloader.com|streampoi.com|surrit.store|sxyprn.com|tapepops.com|thecakeboutiquect.com|thefantazy.com|thepiratebay.org|tokyomotion.net|torbobit.net|torrentgalaxy-official.com|torrentjogos.com.br|towheree.com|uniquestream.net|vidboys.com|vidsonic.net|viduyy.com|xfantazy.com|xmegadrive.com
 /\/[0-9a-f]{32}\.js/$script,xhr,3p,to=com,from=bembed.net|embedv.net|listeamed.net|moflix-stream.day|moflix-stream.fans|v6embed.xyz|vid-guard.com
@@ -7623,13 +7623,14 @@ play.xpass.top##+js(acs, document.createElement, document.head||)
 ?tb=https%3A%2F%2F%HOST%%2Fapi%2Fback%2Fxetergewx3&sId=vast$script,xhr,3p,to=co|com|info|pro|xyz
 braflix.uk##+js(rmnt, script, random)
 ||onepyrincehyarey.org^
-||accusationretrieval.com^
+||bellnewyork.org^
 ||breedsmuteexams.com^
+||capitalhospitals.org^
 ||chalkedwhiningromance.com^
-||comradegoodsfloor.com^
 ||confidecross.com^
 ||degreeeruptionpredator.com^
 ||demolishwrestconclusions.com^
+||doubtfulimpatient.com^
 ||oblivioncertain.com^
 ||performanceingredientgoblet.com^
 ||politicallygreek.com^
@@ -8590,12 +8591,12 @@ filmisub.cc##+js(aeld, DOMContentLoaded, window.open)
 /aas/r45d/vki/*$script,redirect=noop.js
 /^https:\/\/[a-z]{8,12}\.com\/en\/(?:[a-z]{2,10}\/){0,2}[a-z]{2,}\?(?:[a-z]+=[^&=?\s]*?&)*?id=[12]\d{6}\b/$script,3p,match-case,to=com
 /^https:\/\/www\.gayxnow\.com\/[a-z][a-z][a-z][a-z][a-z][a-z]?\.js$/$script
-/^https:\/\/[0-9a-z]{6,12}\.(?:com|in)(?:\/[a-z]{2,10}){1,3}(?:\?id=\d+)?$/$script,3p,match-case,header=etag:/^W\/"[0-9a-z]+-[0-9a-zA-Z]+(?:\/[0-9a-zA-Z]+)?"$/,from=~edu|~gov,to=com|in
-/^https:\/\/[0-9a-z]{6,12}\.(?:com|in)(?:\/[a-z]{2,10}){1,3}$/$script,3p,match-case,from=~edu|~gov,to=com|in,header=etag:W/"*-*"
-/^https:\/\/[0-9a-z]{6,12}\.com(?:\/[a-z]{2,10}){1,3}\?id=\d+$/$script,3p,match-case,from=~edu|~gov,to=com,header=etag:W/"*-*"
-/^https:\/\/[0-9a-z]{6,12}\.in(?:\/[a-z]{2,10}){1,3}\?id=\d+$/$script,3p,match-case,from=~edu|~gov,to=in,header=etag:W/"*-*"
-/^https:\/\/[a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z]+\.com\/en\/([a-z][a-z]+\/)?([a-z][a-z]+\/)?[a-z][a-z]+\?([a-z]+=[^&=? ]*&)*id=[12][0-9][0-9][0-9][0-9][0-9][0-9]/$script,third-party,match-case
-/^https:\/\/[0-9a-z][0-9a-z][0-9a-z][0-9a-z][0-9a-z][0-9a-z][0-9a-z]?[0-9a-z]?[a-z]?[a-z]?[a-z]?[a-z]?\.[ci][on]m?\/[a-z][a-z][a-z]?[a-z]?[a-z]?[a-z]?[a-z]?[a-z]?[a-z]?[a-z]?(\/[a-z][a-z][a-z]?[a-z]?[a-z]?[a-z]?[a-z]?[a-z]?[a-z]?[a-z]?)?(\/[a-z][a-z][a-z]?[a-z]?[a-z]?[a-z]?[a-z]?[a-z]?[a-z]?[a-z]?)?(\?id=[0-9]+)?$/$script,3p,match-case,domain=biz|cr|help|tube|dvdgayonline.com|novelcrow.com|simply-hentai.com
+/^https:\/\/[0-9a-z]{6,12}\.(?:com|in)(?:\/[a-z]{2,10}){1,3}(?:\?id=\d+)?$/$script,xhr,3p,match-case,header=etag:/^W\/"[0-9a-z]+-[0-9a-zA-Z]+(?:\/[0-9a-zA-Z]+)?"$/,from=~edu|~gov,to=com|in
+/^https:\/\/[0-9a-z]{6,12}\.(?:com|in)(?:\/[a-z]{2,10}){1,3}$/$script,xhr,3p,match-case,from=~edu|~gov,to=com|in,header=etag:W/"*-*"
+/^https:\/\/[0-9a-z]{6,12}\.com(?:\/[a-z]{2,10}){1,3}\?id=\d+$/$script,xhr,3p,match-case,from=~edu|~gov,to=com,header=etag:W/"*-*"
+/^https:\/\/[0-9a-z]{6,12}\.in(?:\/[a-z]{2,10}){1,3}\?id=\d+$/$script,xhr,3p,match-case,from=~edu|~gov,to=in,header=etag:W/"*-*"
+/^https:\/\/[a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z]+\.com\/en\/([a-z][a-z]+\/)?([a-z][a-z]+\/)?[a-z][a-z]+\?([a-z]+=[^&=? ]*&)*id=[12][0-9][0-9][0-9][0-9][0-9][0-9]/$script,xhr,3p,match-case
+/^https:\/\/[0-9a-z][0-9a-z][0-9a-z][0-9a-z][0-9a-z][0-9a-z][0-9a-z]?[0-9a-z]?[a-z]?[a-z]?[a-z]?[a-z]?\.[ci][on]m?\/[a-z][a-z][a-z]?[a-z]?[a-z]?[a-z]?[a-z]?[a-z]?[a-z]?[a-z]?(\/[a-z][a-z][a-z]?[a-z]?[a-z]?[a-z]?[a-z]?[a-z]?[a-z]?[a-z]?)?(\/[a-z][a-z][a-z]?[a-z]?[a-z]?[a-z]?[a-z]?[a-z]?[a-z]?[a-z]?)?(\?id=[0-9]+)?$/$script,xhr,3p,match-case,domain=biz|cr|help|tube|dvdgayonline.com|novelcrow.com|simply-hentai.com
 /public/assets/js/popunder.js^$script
 /public/assets/js/popunderClickadu.js^$script
 ||rule34vault.com/ngsw-worker.js
@@ -8707,6 +8708,7 @@ actvid.*##.block_area iframe:upward(.block_area)
 ||streamex.sh/pop.js
 ||templetoons.com/api/ads/
 ||player.videasy.*/scripts/ab.js
+||player.vidlove.cc/rt.js
 ||64gkf7zhlwqn6y4eutgq1hjjo9y.rest^
 ||beixisys.com^
 ||mysticechohaven.com^
@@ -8819,7 +8821,7 @@ zdrz.xyz,zecchino-doro.it,zeijakunahiko.com,zien.pl,ziminvestors.com,ziontutoria
 bedavahesap.org##+js(no-xhr-if, adsbygoogle)
 fastcars1.com##center
 pcoptimizedsettings.com,oldcamera.pl,ralli.ee,stbemuiptv.com,thesaltysoldier.com,tvappapk.com,vipotv.com,whentostream.com,xcandid.vip##+js(noeval-if, js_func_decode_base_64)
-dongknows.com,hardwaretimes.com##+js(acs, document.createElement, js_func_decode_base_64)
+dongknows.com,hardwaretimes.com,jpopsingles.eu##+js(acs, document.createElement, js_func_decode_base_64)
 thesaltysoldier.com##.boxzilla-overlay
 thesaltysoldier.com##.boxzilla-the-salty-soldier-uncensored
 thefightingcock.co.uk##+js(noeval-if, decodeURIComponent(atob)
@@ -9730,6 +9732,7 @@ itmedia.co.jp##.is-recommend:empty
 itmedia.co.jp##.format--subheading:has(+ .is-recommend:empty)
 lifehacker.jp###mainContent > div[class^="articles_pArticles_Title_"]:has(+ div[class^="displayhandler_"] > div > div[id^="cxMore"])
 harpersbazaar.com##div[aria-labelledby="recirc-heading"]
+s.response.jp##.sp-ifad
 jin115.com,livedoor.biz#?#.plugin-memo:has(> div.side > script[src*="ziyu.net/"])
 okutta.net##.article__footer > div[style="height:500px; overflow-y:scroll;"]
 cartune.me##.contents-inner > div:has(> div#taboola-alternating-thumbnails-a)
@@ -10141,7 +10144,7 @@ cg-gamespc.net,elamigosgames.net,elamigosgamez.net##.iframeDiv
 elamigosgamez.net##h3.my-4:has-text(/^Advertising/)
 ||instant-gaming.com/api/banner/
 ||adme2.click^
-rdembed.*##+js(aeld, click, pop_)
+comeumamao.monster,rdembed.*,repositoratacadao.cyou##+js(aeld, click, pop_)
 rdembed.*##+js(nowoif)
 steamseries88.com##+js(rpnt, script, let playerType, 'window.addEventListener("load",()=>{if(typeof playMovie==="function"){playMovie()}});let playerType')
 isgfrm.com##+js(acs, document.createElement, .offsetHeight)
@@ -23671,6 +23674,9 @@ bhoomtv.org##+js(rmnt, script, /adblock/i)
 mangatrend.org##+js(rmnt, script, shown_at)
 ||okteve.com/xplay/ad-serve.php
 ||okteve.com/xplay/ad-click.php
+hao123.com##+js(json-edit-xhr-response, .data.*[?.hasAd==true], propsToMatch, /card/fill)
+||rule34.world/api/v*/infrastructure/dynamic-meta/user|
+rule34.world##+js(set-local-storage-item, /^app:/, $remove$)
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -32832,6 +32838,8 @@ beitberl.ac.il,shimur.org###MavilixCookiesBox
 ||rcommoncf.entrata.com/privacy_controller/
 ||cdn.shopify.com/extensions/*/gdpr-cookie-consent-
 ||cdn.privacy-mgmt.com/consent/$domain=support.theguardian.com,important
+metro-cc.hr##cms-cookie-disclaimer
+metro-cc.hr##body:style(overflow: auto !important;)
 www.google.*##+js(trusted-click-element, button#W0wltc, , 500)
 gemini.google.com##+js(trusted-click-element, button[data-test-id="reject-button"], , 500)
 consent.google.*##+js(trusted-click-element, form[action] button[jsname="tWT92d"])
@@ -33193,6 +33201,7 @@ globus.ru##+js(trusted-set-local-storage-item, notifications-ls, '{"state":{"isC
 linsenplatz.de##+js(aeld, DOMContentLoaded, cookieConsent)
 consent.formula1.com##+js(trusted-click-element, button[aria-label="Essential only cookies"])
 thomas-krenn.com##+js(trusted-set-cookie, copol_www_thomas-krenn_com_optin_categories, %5B%22essential%22%5D, , , domain, .www.thomas-krenn.com)
+platoapp.com##+js(trusted-set-local-storage-item, trackingConsent, not-granted)
 dailymail.co.uk,dailymail.com##+js(trusted-click-element, div[data-project="mol-fe-cmp"] button[class*="consent"]:not([class*="reject"]))
 1001games.com,1001hry.cz,1001jeux.fr,1001jocuri.ro,1001jogos.com.br,1001jogos.pt,1001pelit.com,1001spiele.de,auth.hbomax.com,elkspel.nl,gamespot.com,giochixl.it,glamour.com,grajteraz.pl,isladejuegos.com,jatekokxl.hu,mtvuutiset.fi,paixnidiaxl.gr,pushsquare.com,spelo.se,spillespill.no,spilxl.dk,thejournal.ie,thetrainline.com,vkmag.com,zdnet.com##+js(trusted-set-cookie, OptanonAlertBoxClosed, $currentDate$, 1year)
 evaair.com##+js(trusted-set-cookie, _EVAcookieaccept, Y, 1year)
