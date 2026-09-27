@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sat, 26 Sep 2026 21:16:35 GMT
+! Last modified: Sun, 27 Sep 2026 00:40:20 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sat, 26 Sep 2026 16:39:24 +0000
+!   - Last modified: Sat, 26 Sep 2026 17:54:09 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Fri, 25 Sep 2026 15:30:29 +0000
@@ -23680,6 +23680,10 @@ rule34.world##+js(set-local-storage-item, /^app:/, $remove$)
 fapnut.net##+js(rmnt, script, adConfig)
 fapnut.net##.rtsc-sponsored-card
 fapnut.net##[href="https://theporndude.com/"]
+naijavault.com##+js(rmnt, script, .offsetHeight)
+todaytvseries1.com##+js(rmnt, script, protectedDomains)
+todaytvseries1.com##a[href*="archive.org"],a[href*="renewyep.com"],a[href*="renewgap.com"],a[href*="renewback.site"]:style(pointer-events:auto !important;cursor:pointer !important)
+||todaytvseries1.com/ads/
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
