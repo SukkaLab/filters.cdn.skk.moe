@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sun, 27 Sep 2026 12:06:02 GMT
+! Last modified: Sun, 27 Sep 2026 15:10:30 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -11,7 +11,7 @@
 !   - Last modified: Sun, 27 Sep 2026 06:49:14 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
-!   - Last modified: Fri, 25 Sep 2026 15:30:29 +0000
+!   - Last modified: Sun, 27 Sep 2026 13:27:24 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
 !   - Last modified: Sun, 27 Sep 2026 06:52:43 +0000
@@ -23,7 +23,7 @@
 !   - Last modified: Sat, 26 Sep 2026 16:33:09 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
-!   - Last modified: Fri, 18 Sep 2026 16:05:49 +0000
+!   - Last modified: Sun, 27 Sep 2026 12:58:20 +0000
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
@@ -26043,6 +26043,15 @@ darumasushiantofagasta.cl##+js(aost, Function, /bxslider|wow/)
 ||cloudflare-check.net^$all
 /\/t\.js\?site=[a-f0-9]{32}\b/$script,3p,match-case
 ##body.wp-singular > div[id$="-overlay"] > div[id$="-container"] > div[class*="-container"] > div[id$="-checkbox-window"]
+||lichsuvanhoa.net^$all
+||diabetescareth.com^$all
+||clickzona.net^$all
+||trackerredirect.online^$all
+||campaigntracker.icu^$all
+||entry-verifed-cdn.
+/^https:\/\/[a-z]{15,}\.[a-z]{3,}\/embed\.js\?v=\d+$/$script,3p,match-case,to=~com|~net|~org
+/^https:\/\/[a-z]{8,}\.[a-z]+\/[a-zA-Z][a-z]+_[Pp]roliv\/api\?ver=\d\.\d\.\d$/$script,3p,match-case
+/^https:\/\/[-a-z]{9,}\.net\/embed\/[a-f0-9]{16}\?embed=1&host=/$frame,3p,match-case,to=net
 ||cracksway.com^$all
 ||gamingdebates.com^$all
 ||bonzi.link^$all
@@ -32774,6 +32783,7 @@ www.youtube.com##+js(trusted-json-edit-xhr-response, '[?..minimumPlaybackRate==1
 www.youtube.com###toast:has(> #text-container > yt-formatted-string#text.yt-notification-action-renderer)
 www.youtube.com##+js(json-prune, contents.twoColumnBrowseResultsRenderer.tabs.[].tabRenderer.content.richGridRenderer.contents.[-].richItemRenderer.content.adSlotRenderer)
 www.youtube.com##+js(edit-object-on-setter, ytInitialData, $..richItemRenderer[?@..adSlotRenderer])
+www.youtube.com##+js(json-prune-xhr-response, contents.tvBrowseRenderer.content.tvSurfaceContentRenderer.content.sectionListRenderer.contents.[-].adSlotRenderer contents.tvBrowseRenderer.content.tvSurfaceContentRenderer.content.sectionListRenderer.contents.[].shelfRenderer.content.horizontalListRenderer.items.[-].adSlotRenderer, , propsToMatch, url:/browse)
 ||ttvnw.net/v1/playlist$xhr,3p,replace=/#EXT-X-DATERANGE:ID="(stitched-ad|maf-ad|source|trigger)"\S+\n|#EXT-X-DATERANGE:ID=\S+?CLASS="twitch-(?:stream-source|trigger|maf-ad)"\S+\n|#EXT-X-DATERANGE:\S+?CLASS="twitch-ad-quartile".+?(?=(#EXT-X-DATERANGE|$))|(\n#EXT-X-DISCONTINUITY\s|#EXT-X-TWITCH-PREFETCH\S+)//gs
 www.twitch.tv##[data-a-target="video-ad-label"]
 www.twitch.tv##[data-a-target="video-ad-countdown"]
