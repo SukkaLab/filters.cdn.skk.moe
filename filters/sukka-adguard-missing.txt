@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Mon, 28 Sep 2026 20:33:28 GMT
+! Last modified: Mon, 28 Sep 2026 23:21:42 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -11,7 +11,7 @@
 !   - Last modified: Mon, 28 Sep 2026 11:54:05 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
-!   - Last modified: Mon, 28 Sep 2026 10:26:47 +0000
+!   - Last modified: Mon, 28 Sep 2026 15:55:35 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
 !   - Last modified: Sun, 27 Sep 2026 06:52:43 +0000
@@ -26056,6 +26056,9 @@ darumasushiantofagasta.cl##+js(aost, Function, /bxslider|wow/)
 /checking?domain=*&captchashowed=$xhr,3p
 ||ikeymate.co.nz^$all
 ||59na.com^$all
+##body > .cf-page-wrap
+||third-party.com^$all
+##body > .main-wrapper > .main-content > .intro > .checkbox-window
 ||cracksway.com^$all
 ||gamingdebates.com^$all
 ||bonzi.link^$all
