@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Filters
-! Last modified: Sat, 12 Sep 2026 17:54:41 GMT
+! Last modified: Mon, 28 Sep 2026 04:32:50 GMT
 ! Expires: 1 hours
 ! Description: The filters from Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -136,6 +136,7 @@ google.*#@#div[data-q][data-al]
 lingchenzi.com#@#.category-share
 @@||sentry.io^$domain=ui.com
 *$script,from=thepiratebay.org,badfilter
+||buttons.github.io/buttons.js$3p,badfilter
 .com/bn.js$3p,badfilter
 .com/bn.js$3p,domain=~nr.staticblitz.com
 ||bad.third-party.site
