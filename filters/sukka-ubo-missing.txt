@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Tue, 29 Sep 2026 02:01:21 GMT
+! Last modified: Tue, 29 Sep 2026 08:35:47 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.12.48
+!   - Version: 2.1.12.50
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202609080647
@@ -74651,6 +74651,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||countly.
 ||countly-
 |piwik.
+||tracking.dpmlol.com^
 ||beam.telegram.hr^
 ||tracker.telegram.hr^
 ||campaign.telegram.hr^
@@ -282222,7 +282223,7 @@ app.socios.com##+js(set-local-storage-item, deviceId, $remove$)
 ||s.omsolution.net/omStatApi/
 karofilm.ru,cinemastar.ru##+js(set-local-storage-item, device_uuid, $remove$)
 ||gorbilet.ru/blog/js/metrics.js
-$xhr,~3p,method=post,domain=srnky.com|aii.sh|lnbz.la|clksz.com
+/^https:\/\/[a-z][a-z][a-z]+\.[a-z][a-z]+\/[a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9]\/[a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9]$/$~3p,method=post,domain=srnky.com|aii.sh|lnbz.la|clksz.com
 ||mediaexpert.pl/_internal/metrics/
 ||wargamings.net/png.php?id=
 ||iplayer.is/lib/tk.js
