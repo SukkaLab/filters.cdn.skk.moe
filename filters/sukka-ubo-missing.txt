@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Thu, 01 Oct 2026 01:18:56 GMT
+! Last modified: Thu, 01 Oct 2026 09:00:38 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,12 +8,12 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.12.62
+!   - Version: 2.1.12.64
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
-!   - Version: 202609080647
+!   - Version: 202610011010
 !   - Homepage: https://github.com/cjx82630/cjxlist
-!   - Last modified: 2026/09/08 06:47 +0800
+!   - Last modified: 2026/10/01 10:10 +0800
 ! * CJX's uBlock list
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/refs/heads/master/cjx-ublock.txt
 !   - Homepage: https://github.com/cjx82630/cjxlist
@@ -219,6 +219,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||ymzu9eeo1y.ru^
 ||justice.hls.lol^
 ||a.ussp.io^
 ||bidderstack.com^
@@ -75619,7 +75620,6 @@ prd.api.bleacherreport.com^
 ||sgmcdn.racingpost.com^
 ||logs.8thwall.com^
 ||segment-api.goodrx.com^
-||realtimeanalytics.yext.com^
 ||analytics.verfacto.com^
 ||flask.us.nextdoor.com^
 ||newsstat.dallasnews.com^
@@ -282194,6 +282194,9 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
 @@||nlog.naver.com/n|$domain=search.naver.com|www.naver.com
+||thecrossnet.io/av^
+||net.hr/static/required/js/se_ads.js
+bunshun.jp##.recommend:has(> #taboola-below-article-thumbnails-desktop)
 glam.jp##.yarpp-related
 toyokeizai.net##.--recommend
 ||tychy24.net/wp-json/iawp/search
@@ -291458,6 +291461,7 @@ usatoday.com##+js(set, gnt.x.adm, )
 ||bilinovel.com/scripts/m7lk48m5hgztxn.
 ||uiadmin.net/uview-plus/assets/js/3.1b3a95a0.
 ||eastmoney.com/trade/fundfavortonglan.
+55188.com###recommended-by-admin
 eastmoney.com##p > a[href*="acttg.eastmoney.com"]
 5eplay.com##footer
 5eplay.com##.right-aside-box
