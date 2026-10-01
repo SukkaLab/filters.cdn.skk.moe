@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Thu, 01 Oct 2026 09:00:38 GMT
+! Last modified: Thu, 01 Oct 2026 13:21:02 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.12.64
+!   - Version: 2.1.12.67
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202610011010
@@ -282194,6 +282194,8 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
 @@||nlog.naver.com/n|$domain=search.naver.com|www.naver.com
+||workers.dev/ripa/event|
+||autodoc.dk/securegtm/
 ||thecrossnet.io/av^
 ||net.hr/static/required/js/se_ads.js
 bunshun.jp##.recommend:has(> #taboola-below-article-thumbnails-desktop)
@@ -287551,6 +287553,11 @@ dlsdk.appsflyer.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||api-sdk.beaconbank.jp^
+||stream-log.profilepassport.jp^
+|||nt-stream-log.profilepassport.jp^
+|||pp3-sdk-api.profilepassport.jp^
+|||pp3-sdkdata-v2-ut.profilepassport.jp^
 ||metrics.li^
 ||bid.ctv.house^
 ||log.calomeal.com^
