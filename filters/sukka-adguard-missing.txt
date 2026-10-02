@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Fri, 02 Oct 2026 12:40:19 GMT
+! Last modified: Fri, 02 Oct 2026 16:16:44 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Fri, 02 Oct 2026 06:10:28 +0000
+!   - Last modified: Fri, 02 Oct 2026 14:13:25 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Thu, 01 Oct 2026 11:14:23 +0000
@@ -22081,6 +22081,8 @@ sextb.net##.right:has(script)
 /vast-player-oxserver.js
 ||non.arabshentai.com^
 ||minochinos.com/assets/jquery/static.js
+f4scdn.com##+js(nowoif, _blank)
+||affectionatestorage.com^
 sextb.*#@#.ad-placeholder:not(#detect, #detect_ad_empire, #filter_ads_by_classname, .adsbox)
 audinifer.com,vibuxer.com##+js(rmnt, script, window.open)
 audinifer.com,vibuxer.com##body > div[style*="2147483647"]
