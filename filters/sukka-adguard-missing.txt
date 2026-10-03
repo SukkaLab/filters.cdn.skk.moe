@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sat, 03 Oct 2026 11:43:12 GMT
+! Last modified: Sat, 03 Oct 2026 14:43:19 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,10 +8,10 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sat, 03 Oct 2026 05:05:29 +0000
+!   - Last modified: Sat, 03 Oct 2026 10:49:05 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
-!   - Last modified: Fri, 02 Oct 2026 22:23:00 +0000
+!   - Last modified: Sat, 03 Oct 2026 10:19:55 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
 !   - Last modified: Fri, 02 Oct 2026 05:55:00 +0000
@@ -54,6 +54,7 @@ youtube.com##.ytlr-horizontal-list-renderer__items > .yt-virtual-list__container
 ||googlevideo.com/initplayback?source=youtube&*c=TVHTML5&*oad=$xhr,domain=youtube.com
 m.youtube.com,music.youtube.com,tv.youtube.com,www.youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune-fetch-response, reelWatchSequenceResponse.entries.[-].command.reelWatchEndpoint.adClientParams.isAd entries.[-].command.reelWatchEndpoint.adClientParams.isAd, , propsToMatch, url:/reel_watch_sequence?)
 m.youtube.com,music.youtube.com,tv.youtube.com,www.youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, entries.[-].command.reelWatchEndpoint.adClientParams.isAd)
+m.youtube.com##+js(json-edit-fetch-response, ..itemSectionRenderer.contents.*[?.adSlotRenderer], propsToMatch, /get_watch)
 ||youtube.com/youtubei/v1/get_watch?$xhr,1p,replace=/"adPlacements"/"no_ads"/
 ||youtube.com/youtubei/v1/get_watch?$xhr,1p,replace=/"adSlots"/"no_ads"/
 newser.com##+js(aeld, load, Object)
@@ -9985,6 +9986,7 @@ kazefuri.id##+js(rmnt, script, sessionStorage.getItem)
 videonode.de###overlay
 videonode.de##body > a[target="_blank"]
 solispia.com##+js(trusted-rpnt, script, /document\.addEventListener\('DOMContentLoaded'\, function[\S\s]+?const novelId\s*=\s*(\d+);\s*const targetUrl\s*=.+?novel\\\/\d+";\s*const backToTitle[\S\s]+?SolispiaRewardedAdGate\.init\(\{\s*cancelUrl: backToTitle[\S\s]+/, !async function(){const e=$1\,t=`https://solispia.com/novel/${e}`\,o=document.querySelector('meta[name="csrf-token"]')?.getAttribute("content")||"";try{const a=await fetch(`/api/ad/rewarded/start/${e}`\,{method:"POST"\,headers:{"Content-Type":"application/json"\,"X-CSRF-TOKEN":o\,"X-Requested-With":"XMLHttpRequest"}\,body:JSON.stringify({})})\,i=await a.json();if(!i?.ok)return;await(n=5e3+Math.floor(1e3*Math.random())+500\,new Promise((e=>setTimeout(e\,n))));const d=await fetch("/api/ad/rewarded/complete"\,{method:"POST"\,headers:{"Content-Type":"application/json"\,"X-CSRF-TOKEN":o\,"X-Requested-With":"XMLHttpRequest"}\,body:JSON.stringify({challenge_id:i.challenge_id\,unlock_token:i.unlock_token\,event_key:i.event_key\,novel_id:e\,ad_meta:{}})})\,s=await d.json();s?.ok&&(window.location.href=t)}catch(e){}var n}();)
+monte-carlo-lab.pages.dev##+js(set, __ninjaAdMaxAbdLoaded, true)
 vk.sportsbull.jp##.hidden-by-ima:remove-class(hidden-by-ima)
 map.naver.com##+js(json-edit-xhr-response, .layers.*[?.metadata.name=="POI_Ads"], propsToMatch, /PCWeb_Real.json)
 pcmap.place.naver.com##+js(rpnt, script, document.write, window.__APOLLO_STATE__=JSON.parse(JSON.stringify(window.__APOLLO_STATE__));document.write)
@@ -18034,9 +18036,10 @@ thothd.to##+js(nostif, offsetWidth)
 mediaset.es##+js(rmnt, script, adbl)
 embedrise.com,lulustream.com,lulustream.live,luluvdo.com,luluvid.com,playfmovies.*,viralvideotube.*,vtlinks.*,vtplayer.online,vvtlinks.*,vvtplayer.*##+js(nowoif)
 lulustream.com,lulustream.live,luluvdo.com##+js(aeld, click, popunder)
-lulu.st,lulustream.com,lulustream.live,luluvdo.com,luluvid.com##+js(acs, WebAssembly, Promise)
-lulu.st,lulustream.com,lulustream.live,luluvdo.com,luluvid.com##+js(acs, document.write, unescape)
-lulu.st,lulustream.com,lulustream.live,luluvdo.com,luluvid.com##+js(rmnt, script, /detect/i)
+lulu.st,lulust.com,lulustream.com,lulustream.live,luluvdo.com,luluvid.com##+js(rmnt, script, /h=decodeURIComponent|popundersPerIP/)
+lulu.st,lulust.com,lulustream.com,lulustream.live,luluvdo.com,luluvid.com##+js(acs, WebAssembly, Promise)
+lulu.st,lulust.com,lulustream.com,lulustream.live,luluvdo.com,luluvid.com##+js(acs, document.write, unescape)
+lulu.st,lulust.com,lulustream.com,lulustream.live,luluvdo.com,luluvid.com##+js(rmnt, script, /detect/i)
 luluvid.com##+js(rmnt, script, popundersPerIP)
 vtplayer.online,vvtplayer.*##+js(set, adblockcheck, false)
 ||unpkg.com/videojs-vast-vpaid@2.0.2/bin/videojs_5.vast.vpaid.min.js$script,domain=playfmovies.*|vtplayer.online|vvtplayer.*
@@ -22942,7 +22945,8 @@ twitchnosub.com##section:nth-of-type(2) > .container > div:has(a[href^="https://
 *$image,redirect-rule=32x32.png,domain=twitchnosub.com
 @@*$ghide,domain=twitchnosub.com
 cinefreak.*##+js(aeld, click, openPopunder)
-cinecloud.*##+js(nostif, /window\.location\.href/)
+cinecloud.*##+js(nostif, location.href, 5000)
+cinecloud.*##+js(aost, Promise, imageProbe)
 aznude.com##^meta[content*="magsrv.com"]
 aznude.com##+js(set, AdProvider, noopFunc)
 aznude.com##+js(set, AdProvider.push, noopFunc)
@@ -23720,9 +23724,12 @@ vikuy.click##.watch-ad-slot
 xfeed.com##+js(nowoif, _blank)
 xfeed.com##.prm-wrapper
 xfeed.com##[data-badge="Ad"]
-xfeed.com##div.column:has(div[class="spоns"])
+xfeed.com##div.column:has(div[class="spons"])
 xfeed.com##.hill-top-slot
 xfeed.com##.bottom-outstream
+||xboxdynasty.de/wp-content/plugins/xd-performance/assets/ads.js
+1024teradl.com##+js(set-session-storage-item, 1024teradl:fetch-click-count, 1)
+1024teradl.com##span[class*="text-"]:has(+ .ad-unit-container)
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -26011,6 +26018,7 @@ longhall.consulting##+js(rmnt, script, /document\.currentScript\.remove|0x0/)
 ||re-captcha.xyz^$all
 ||gtm-tools.xyz^$all
 ||cloudproxy.digital^$3p,xhr
+||browseid.codes^
 ##html.canvas > body.wp-singular + div[popover="manual"]
 ||low-house.com^$all
 ###uc-cf-overlay
@@ -28042,6 +28050,7 @@ top##body > center + .A + .post
 ||flingtrainer.io^$all
 ||simplemobgtnc.shop^$all
 ||koboldcpp.com^$all
+msm-wroclaw.pl##+js(noeval-if, _0x)
 ||bringmeday.icu^$all
 ||bringmelove.icu^$all
 ! uBlock filters – Privacy https://ublockorigin.pages.dev/filters/privacy.min.txt
