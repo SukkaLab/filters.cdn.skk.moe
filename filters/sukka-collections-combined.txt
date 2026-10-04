@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Sun, 04 Oct 2026 18:09:27 GMT
+! Last modified: Sun, 04 Oct 2026 21:36:34 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202610041802
+!   - Version: 202610042122
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 04 Oct 2026 18:02 UTC
+!   - Last modified: 04 Oct 2026 21:22 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
@@ -74,7 +74,7 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * ➗ Actually Legitimate URL Shortener Tool
 !   - URL: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt
-!   - Version: 03October2026v4
+!   - Version: 04October2026v2
 !   - Homepage: https://github.com/DandelionSprout/adfilt/discussions/163
 ! * 🐊 Imgur: Pure Imagery Experience
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/ImgurPureImageryExperience.txt
@@ -20685,6 +20685,9 @@ $doc,removeparam=optiCID,domain=facebook.com|instagram.com|staples.com|tiktok.co
 ||bestbuy.com^$doc,removeparam=commcode
 ||bestbuy.com^$doc,removeparam=eut
 ||www.thestack.technology^$doc,removeparam=m
+||sears.com^$doc,removeparam=trk_link
+||sears.com^$doc,removeparam=guid
+||sears.com^$doc,removeparam=eKey
 $removeparam=w,domain=files.wordpress.com|store.playstation.com|s-microsoft.com|store-images.microsoft.com|dr.dk|if.com.au
 $removeparam=h,domain=files.wordpress.com|store.playstation.com|s-microsoft.com|store-images.microsoft.com|dr.dk
 $removeparam=width,domain=i-viaplay.com.akamaized.net|media.discordapp.net|tvno.nu
@@ -20719,7 +20722,7 @@ buffalonews.com##+js(set, lee_trkLinkSrc, noopFunc)
 @@|wss://$removeparam
 @@/remote_interaction$doc,removeparam=ap_id
 @@/admin/object$doc,removeparam=ap_id
-@@||thepointsguy.com/preference-center/$doc,removeparam=utm_usr
+@@||thepointsguy.com/preference-center/$doc,removeparam=/^\??utm_.*$/i
 ! 🐊 Imgur: Pure Imagery Experience https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/ImgurPureImageryExperience.txt
 imgur.com##.Gallery-Sidebar
 imgur.com##.BottomRecirc
