@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Mon, 05 Oct 2026 00:59:16 GMT
+! Last modified: Mon, 05 Oct 2026 09:09:10 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.12.78
+!   - Version: 2.1.12.80
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202610011010
@@ -74653,6 +74653,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||countly.
 ||countly-
 |piwik.
+||evs.segwww.incident.io^
 ||nao.kagane.to^
 ||users.vidy.st^$3p
 ||tracking.dpmlol.com^
@@ -75032,7 +75033,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||sgtm.ixbt.site^
 ||darnuid.netflix.com^
 ||analytics.thekrazycouponlady.com^
-||usage.trackjs.com^
 ||coll.lovense.com^
 ||bilog.lovense-api.com^
 ||log.lovense-api.com^
@@ -75106,6 +75106,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||bdvmetricas.banvenez.com.ve^
 ||logstash-*.radio-canada.ca^
 ||leo.hepsiburada.com^
+||usage.trackjs.com^
 ||rainbow-prod-jdlog.ldoverseas.com^
 ||posthog.lingvanex.com^
 ||analytics.vgtimes.
@@ -75257,20 +75258,17 @@ prd.api.bleacherreport.com^
 ||tagging.argentorshop.be^
 ||tagging.avetica.nl^
 ||tagging.bedrijventekoop.nl^
-||tagging.boataround.com^
 ||tagging.bourbon-sleeckx.com^
 ||tagging.debontewever.nl^
 ||tagging.dekeij.nl^
 ||tagging.egveranda.nl^
 ||tagging.eric-bompard.com^
-||tagging.hansimglueck-burgergrill.de^
 ||tagging.ifa-formation.fr^
 ||tagging.in-garden.nl^
 ||tagging.innopet.nl^
 ||tagging.kersbergen.nl^
 ||tagging.kroftman.com^
 ||tagging.la-toulousaine.com^
-||tagging.lei-manager.com^
 ||tagging.loonserviceburo.nl^
 ||tagging.medexs.com^
 ||tagging.michelonfray.com^
@@ -75411,7 +75409,6 @@ prd.api.bleacherreport.com^
 ||publictelemetry.tophat.com^
 ||csp-report.marketing.aws.dev^
 ||cpu.baidu.com^
-||analytics-ingestion-production.tubitv.com^
 ||pixel.web.roku.com^
 ||analytics.cloudevo.ai^
 ||lgforbes.akamaized.net^
@@ -75472,6 +75469,7 @@ prd.api.bleacherreport.com^
 ||relay-event.talkie-ai.com^
 ||data-ingestion.flowgpt.com^
 ||tianji.flowgpt.com^
+||analytics-ingestion-production.tubitv.com^
 ||retail-client-events-service.internal.salsify.com^
 ||servo-report.keepstreams.*^
 ||tag.aftvnews.com^
@@ -75502,11 +75500,11 @@ prd.api.bleacherreport.com^
 ||track2.tprg.ru^
 ||to.torrentfreak.com^
 ||l.premium.naver.com^
-||analytics.raenonx.cc^
 ||chocolatine.apexlegendsstatus.com^
 ||metrics.swap.gg^$xhr,script
 ||collector.superwall.me^
 ||services.haaretz.com^
+||analytics.raenonx.cc^
 ||plausible.pronouns.cc^
 ||sks.mrkhub.com^
 ||measuring-pixel-service.alza.cz^
@@ -75592,7 +75590,6 @@ prd.api.bleacherreport.com^
 ||analytics.sonjj.com^
 ||ephemeralcounters.api.roblox.com^
 ||px.adfulplatform.com^
-||d9jj3mjthpub.cloudfront.net^
 ||geo.wpforms.com^
 ||analytics.junia.ai^
 ||ad.dl.mz.de^
@@ -75668,8 +75665,11 @@ prd.api.bleacherreport.com^
 ||securemvt.apple.com^
 ||metrics.apple.com^
 ||tagging.anaxago.com^
+||tagging.boataround.com^
 ||tagging.bokus.com^
 ||tagging.eqs.com^
+||tagging.hansimglueck-burgergrill.de^
+||tagging.lei-manager.com^
 ||tagging.src-reizen.nl^
 ||tagging.swat.io^
 ||tracking.di.se^
@@ -75723,6 +75723,7 @@ prd.api.bleacherreport.com^
 ||analytics.nova.foxsports.com^
 ||analytics.theta360.com^
 ||log.ifood.tv^
+||d9jj3mjthpub.cloudfront.net^
 ||wwwstat.rz.uni-leipzig.de^
 ||analytics.fap.bar^
 ||clicks.hurriyet.com^
@@ -282763,7 +282764,6 @@ gol.ru##+js(set-local-storage-item, uniqueClientId, $remove$)
 ||api.tezfiles.com/*/analytics/
 ||tezfiles.com/log|
 ||cdns.ozon.ru/v*/mc|
-||dev.ozon.ru/p-api/tracker/
 ||web-api.napopravku.ru/api-internal/analytics/
 ||c-date.*/customerm/
 ||stat.tildaapi.com/event/
@@ -283374,7 +283374,7 @@ express.co.uk,iflscience.com,nypost.com##+js(set-local-storage-item, SPOTIM_DEVI
 ||dashichang.work/Statistics/statistics.
 ||parchment.com/wp-content/themes/wp-parchment/assets/utm-tags.min.js
 ||elevenlabs.io/hog/
-ricardocuisine.com,thegentlemansjournal.com,thekrazycouponlady.com,flo.com.tr##+js(set-local-storage-item, __anon_id, $remove$)
+incident.io,ricardocuisine.com,thegentlemansjournal.com,thekrazycouponlady.com,flo.com.tr##+js(set-local-storage-item, __anon_id, $remove$)
 ||market.samm.com/0/sendEventV2
 ezviz.ru##+js(set-local-storage-item, userUuid, $remove$)
 ||c.sberlead.ru/clickstream.bundle.js
@@ -285908,7 +285908,6 @@ news.mynavi.jp##.articleList-attention
 ||dubox.com/statistics^
 ||cloud.weborama.design/nonio.js
 ||comunidade.globalmediagroup.pt//tracker/tracker.ashx
-||analytics.google.com/g/collect?
 ||google.*/ads/ga-audiences?
 ||events.genndi.com/tracker
 ||mcrypto.club/track
@@ -286181,7 +286180,6 @@ android-tools.ru###text-8
 ||leadpages.net/*/tracking.js
 ||api.leadpages.io/analytics/$domain=~my.leadpages.net
 ||heute.at/*/render/common/js/tracking.js
-||pv.ltn.com.tw/impression?
 ||pv.ltn.com.tw/RI_Server?a=
 ||chesterstandard.co.uk/resources/static/standard/texts/js/VisitorAPI.js
 ||cdn.abcotvs.net/abcotv/assets/news/global/js/analytics/VideoHeartbeat.min.js
@@ -287613,9 +287611,9 @@ dlsdk.appsflyer.com^
 ||beacon.ztgame.com^
 ||api-log-upload.wenext.technology^
 ||events-noneu.truecaller.com^
-||log-*.isnssdk.com^
 ||profiler-collector.dalyfeds.com^
 ||reporttk.com^
+||log-*.isnssdk.com^
 ||track.hily.com^
 ||ping*.bidease.com^
 ||ntus.bidease.com^
@@ -288036,9 +288034,6 @@ d4?appid*type*
 ||client-telemetry.hingeprod.net^
 ||event.karrotmarket.com^
 ||iot-in-logser.realme.com^
-||push-api.topaz-analytics.com^
-||analytics.wildlifestudios.com^
-||opentelemetry-collector.shared-services.us-east-1.general.prod.wildlife.io^
 ||mediation.mwmadnetworks.com^
 ||meitustat.com^
 ||analysis.vesync.com^
@@ -288048,6 +288043,9 @@ d4?appid*type*
 ||stats.rustore.ru^
 ||vk-analytics.ru^
 ||tracking.iwhop.cn^
+||push-api.topaz-analytics.com^
+||analytics.wildlifestudios.com^
+||opentelemetry-collector.shared-services.us-east-1.general.prod.wildlife.io^
 ||app-analytics-services.com^
 ||sg.log.ulivetv.net^
 ||events.funnelish.com^
