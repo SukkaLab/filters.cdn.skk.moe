@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Mon, 05 Oct 2026 09:09:10 GMT
+! Last modified: Mon, 05 Oct 2026 14:45:38 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.12.80
+!   - Version: 2.1.12.83
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202610011010
@@ -74653,6 +74653,8 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||countly.
 ||countly-
 |piwik.
+||apm.volccdn.com^
+||apmplus.volces.com^
 ||evs.segwww.incident.io^
 ||nao.kagane.to^
 ||users.vidy.st^$3p
@@ -282196,6 +282198,11 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
 @@||nlog.naver.com/n|$domain=search.naver.com|www.naver.com
+||independentaustralia.net/_js/realtrack.js
+||mizuhobank.co.jp/bk-common/pc/js/rt_track_event.js
+||mizuhobank.co.jp/common/js/rt_track.js
+||lf3-data.volccdn.com/obj/data-static/log-sdk/
+||news-postseven.com/wp-content/common/visitdata.js
 /vite/assets/Viafoura/Core/Events.*.js$domain=imore.com|coachweb.com
 /.events-handler/*$domain=imore.com|coachweb.com
 ||coachweb.com/vite/assets/JwPlayer/Shared/TrackingEvents.*.js
@@ -288590,6 +288597,8 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=saturn.de
 @@||metrics.us.playstation.com/b/ss/
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
+@@||googletagmanager.com/gtm.js$domain=mizuhobank.co.jp
+@@||googletagmanager.com/gtm.js$domain=unicef.or.jp
 @@||stenger-bike.de/theme/*/js/storefront/google-analytics.plugin.*.js$domain=stenger-bike.de
 @@||cdn.petametrics.com/*-nbc.js?ts=$domain=bringmethenews.com|athlonsports.com|paulickreport.com|mmaweekly.com
 @@||googletagmanager.com/gtm.js$domain=shonenjumpplus.com
