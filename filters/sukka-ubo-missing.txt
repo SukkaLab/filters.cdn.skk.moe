@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Tue, 06 Oct 2026 13:21:26 GMT
+! Last modified: Tue, 06 Oct 2026 16:49:20 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.12.90
+!   - Version: 2.1.12.92
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202610011010
@@ -74655,6 +74655,9 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||countly.
 ||countly-
 |piwik.
+||tips.delt.io^
+||unami.delt.io^
+||servt.ergadx.com^
 ||one01.stright.bizris.com^
 ||analytics.infomaniak.com^
 ||biprx.n12.co.il^
@@ -282202,6 +282205,8 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
 @@||nlog.naver.com/n|$domain=search.naver.com|www.naver.com
+||a.nel.cloudflare.com/report/
+||delt.io/a/
 v-1.co.il##+js(set-local-storage-item, v1_device_id, $remove$)
 ||api.cdnlivetv.tv/p2p-stats
 ||independentaustralia.net/_js/realtrack.js
