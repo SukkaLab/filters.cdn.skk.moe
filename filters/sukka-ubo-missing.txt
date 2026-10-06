@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Tue, 06 Oct 2026 02:20:41 GMT
+! Last modified: Tue, 06 Oct 2026 09:02:33 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.12.87
+!   - Version: 2.1.12.89
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202610011010
@@ -219,6 +219,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||buballmighty.com^
 ||heatmap-tracking-do-to-s3-worker-prod.flipdesk.workers.dev^
 ||ymzu9eeo1y.ru^
 ||justice.hls.lol^
@@ -74653,6 +74654,9 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||countly.
 ||countly-
 |piwik.
+||one01.stright.bizris.com^
+||analytics.infomaniak.com^
+||biprx.n12.co.il^
 ||apm.volccdn.com^
 ||apmplus.volces.com^
 ||evs.segwww.incident.io^
@@ -282197,6 +282201,7 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
 @@||nlog.naver.com/n|$domain=search.naver.com|www.naver.com
+v-1.co.il##+js(set-local-storage-item, v1_device_id, $remove$)
 ||api.cdnlivetv.tv/p2p-stats
 ||independentaustralia.net/_js/realtrack.js
 ||mizuhobank.co.jp/bk-common/pc/js/rt_track_event.js
@@ -282528,7 +282533,7 @@ mego.travel##+js(set-local-storage-item, /^snowplowOutQueue_/, $remove$)
 ||x.com/i/api/1.1/graphql/viewer_context.json
 ||twinfinite.net/*/gamurs-group-analytics/
 ||naturallieplantbased.com/?*&ver=$script,~3p
-||caf.fr/*/stormcaster.js
+/stormcaster.js$domain=caf.fr|v-1.co.il
 ||caf.fr/sites/default/files/smarttag/
 ||google.com/rmkt/collect/
 ||google.com/pagead/
@@ -288597,10 +288602,13 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=saturn.de
 @@||metrics.us.playstation.com/b/ss/
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
+@@||power.mhi.com/modules/contrib/google_tag/js/gtm.js$domain=power.mhi.com
+@@||googletagmanager.com/gtm.js$domain=power.mhi.com
 @@||cmp.optimizely.com/assets/$image,domain=roadscholar.org
 @@||googletagmanager.com/gtm.js$domain=news-postseven.com
 @@||googletagmanager.com/gtm.js$domain=mizuhobank.co.jp
 @@||googletagmanager.com/gtm.js$domain=unicef.or.jp
+@@||googletagmanager.com/gtag/js$domain=unicef.or.jp
 @@||stenger-bike.de/theme/*/js/storefront/google-analytics.plugin.*.js$domain=stenger-bike.de
 @@||cdn.petametrics.com/*-nbc.js?ts=$domain=bringmethenews.com|athlonsports.com|paulickreport.com|mmaweekly.com
 @@||googletagmanager.com/gtm.js$domain=shonenjumpplus.com
