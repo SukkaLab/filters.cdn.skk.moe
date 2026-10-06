@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Mon, 05 Oct 2026 21:29:04 GMT
+! Last modified: Tue, 06 Oct 2026 00:08:48 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Mon, 05 Oct 2026 15:33:00 +0000
+!   - Last modified: Mon, 05 Oct 2026 19:18:37 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Mon, 05 Oct 2026 12:24:44 +0000
@@ -9053,6 +9053,9 @@ prydwen.gg##div.custom-banner-header
 tmz.com##+js(rmnt, script, loadAdmiralJs)
 whatismyip.com##+js(set, __disableAds, true)
 komonews.com,wpgh53.com##+js(rpnt, script, '/admiral-initializer\\",\\"children\\":\\"[^"]+\\"/', 'admiral-initializer\",\"children\":\"\"')
+komonews.com###deeper-dive-container-0
+komonews.com##.TaboolaHomepageFeed_taboolaWrapper__dtrdt
+komonews.com##[data-slot-label^="DisplayAd"]
 athlonsports.com,autoblog.com,bikemag.com,dengarden.com,mensfitness.com,mensjournal.com,parade.com,paradehomeandgarden.com,paradepets.com,pethelpful.com,powder.com,shophq.com,surfer.com,thespun.com,thestreet.com,travelhost.com##+js(json-edit, ..props.children.*[?.key=="admiral-script"])
 athlonsports.com,autoblog.com,bikemag.com,dengarden.com,mensfitness.com,mensjournal.com,parade.com,paradehomeandgarden.com,paradepets.com,pethelpful.com,powder.com,shophq.com,surfer.com,thespun.com,thestreet.com,travelhost.com##+js(trusted-json-edit, ..props.config.ad.enabled=false)
 athlonsports.com,autoblog.com,bikemag.com,dengarden.com,mensfitness.com,mensjournal.com,parade.com,paradehomeandgarden.com,paradepets.com,pethelpful.com,powder.com,shophq.com,surfer.com,thespun.com,thestreet.com,travelhost.com##+js(trusted-json-edit, ..Admiral.isEnabled=false)
@@ -23746,10 +23749,11 @@ ss.randomkzn.com##+js(set, SiteGuard, undefined)
 ||smry.ai/api/context|
 ||code.trygravity.ai^
 ||vlcapi.net^
-@@||hogtiehub.com/ads/prebid-ads.js$1p
+hogtiehub.com##+js(set, HTMLScriptElement.prototype.onload, noopFunc)
 hogtiehub.com##+js(aeld, , enforce)
 hogtiehub.com##+js(no-fetch-if, highperformanceformat)
 hogtiehub.com##.ad-bottom-grid
+hogtiehub.com##.ad-top-shell
 ||textmatchcut.app/ad-gate.js
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc

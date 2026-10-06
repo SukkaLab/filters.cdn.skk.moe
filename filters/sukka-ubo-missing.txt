@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Mon, 05 Oct 2026 21:29:04 GMT
+! Last modified: Tue, 06 Oct 2026 00:08:48 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.12.86
+!   - Version: 2.1.12.87
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202610011010
@@ -74699,7 +74699,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||pixel-frontend.avito.ru^
 ||pausible.flaq.ai^
 ||stats.reanime.to^
-||stats.flixcloud.cc^
 ||posthog.worldshopping.global^
 ||aka.asiae.co.kr^
 ||analytics.watchott.org^
@@ -288598,6 +288597,7 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=saturn.de
 @@||metrics.us.playstation.com/b/ss/
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
+@@||cmp.optimizely.com/assets/$image,domain=roadscholar.org
 @@||googletagmanager.com/gtm.js$domain=news-postseven.com
 @@||googletagmanager.com/gtm.js$domain=mizuhobank.co.jp
 @@||googletagmanager.com/gtm.js$domain=unicef.or.jp
