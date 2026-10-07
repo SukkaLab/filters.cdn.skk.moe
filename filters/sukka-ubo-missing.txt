@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Wed, 07 Oct 2026 01:35:59 GMT
+! Last modified: Wed, 07 Oct 2026 08:44:08 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.12.96
+!   - Version: 2.1.13.0
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202610011010
@@ -74655,6 +74655,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||countly.
 ||countly-
 |piwik.
+||data.petri.com^
 ||c3.wildwolf.name^
 ||tips.delt.io^
 ||unami.delt.io^
@@ -282205,6 +282206,8 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
 @@||nlog.naver.com/n|$domain=search.naver.com|www.naver.com
+||collector-pxebumdlwe.px-cloud.net/b/s/beacon
+||isratrip.net/platform/api/pub_funnel.php
 ||a.nel.cloudflare.com/report/
 ||delt.io/a/
 v-1.co.il##+js(set-local-storage-item, v1_device_id, $remove$)
@@ -288608,6 +288611,8 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=saturn.de
 @@||metrics.us.playstation.com/b/ss/
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
+@@||rtl.nl/_astro/snowplow.*.js$domain=rtl.nl
+@@||st-*.dynamicyield.com/st?$script,domain=easytoys.pl|easytoys.nl|easytoys.be|easytoys.es|easytoys.it
 @@||liveapi.yext.com^$domain=answers.business.lloydsbank.com
 @@||power.mhi.com/modules/contrib/google_tag/js/gtm.js$domain=power.mhi.com
 @@||googletagmanager.com/gtm.js$domain=power.mhi.com
