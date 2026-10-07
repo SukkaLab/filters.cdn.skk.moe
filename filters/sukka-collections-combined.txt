@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Wed, 07 Oct 2026 19:59:08 GMT
+! Last modified: Wed, 07 Oct 2026 23:10:19 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202610071952
+!   - Version: 202610072302
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 07 Oct 2026 19:52 UTC
+!   - Last modified: 07 Oct 2026 23:02 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
@@ -74,7 +74,7 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * ➗ Actually Legitimate URL Shortener Tool
 !   - URL: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt
-!   - Version: 07October2026v6
+!   - Version: 07October2026v7
 !   - Homepage: https://github.com/DandelionSprout/adfilt/discussions/163
 ! * 🐊 Imgur: Pure Imagery Experience
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/ImgurPureImageryExperience.txt
@@ -20614,9 +20614,9 @@ ref=sqliteviewer.app$doc,removeparam=ref
 ||quora.com^$doc,removeparam=qv_src
  $doc,removeparam=CLRTags,domain=microsoft.com|windows.com
 ||americanexpress.com^$doc,removeparam=inav
-$doc,removeparam=sc_src,domain=ecoflow.com|eufymake.com
-$doc,removeparam=sc_lid,domain=ecoflow.com|eufymake.com
-$doc,removeparam=sc_llid,domain=ecoflow.com|eufymake.com
+$doc,removeparam=sc_src,domain=ecoflow.com|eufymake.com|newbalance.com
+$doc,removeparam=sc_lid,domain=ecoflow.com|eufymake.com|newbalance.com
+$doc,removeparam=sc_llid,domain=ecoflow.com|eufymake.com|newbalance.com
 $doc,removeparam=correlationId,domain=adobe.com|costco.com
 ||ck12.org^$doc,removeparam=_mid
 ||ck12.org^$doc,removeparam=_eid
