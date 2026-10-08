@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Thu, 08 Oct 2026 19:56:47 GMT
+! Last modified: Thu, 08 Oct 2026 23:26:07 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -30,7 +30,7 @@
 !   - Last modified: Wed, 07 Oct 2026 05:52:49 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
-!   - Last modified: Tue, 06 Oct 2026 13:39:58 +0000
+!   - Last modified: Thu, 08 Oct 2026 17:51:21 +0000
 ! --------------------------------------------------------------
 ! uBlock filters https://ublockorigin.pages.dev/filters/filters.min.txt
 *_ad_$media,domain=youtube.com,3p
@@ -38926,4 +38926,4 @@ firestream.to##+js(set, console.log, trueFunc)
 investidor10.com.br##+js(trusted-set-local-storage-item, guest_user_banner_aon_closed, $now$)
 snowcrows.com##+js(rmnt, script, .onerror)
 dokkandb.com##+js(trusted-set-local-storage-item, adBlockPromptDismissedAt, $now$)
-flickzone.org,sflix.gd##+js(trusted-click-element, button#b, ,100)
+flickzone.org,sflix.gd##+js(trusted-click-element, button#b, '', 750)
