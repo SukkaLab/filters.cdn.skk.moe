@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Thu, 08 Oct 2026 01:59:52 GMT
+! Last modified: Thu, 08 Oct 2026 09:02:45 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,19 +8,19 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Wed, 07 Oct 2026 13:03:17 +0000
+!   - Last modified: Thu, 08 Oct 2026 06:38:31 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Wed, 07 Oct 2026 13:10:06 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Mon, 05 Oct 2026 10:20:29 +0000
+!   - Last modified: Wed, 07 Oct 2026 23:28:07 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
 !   - Last modified: Wed, 07 Oct 2026 11:27:09 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Wed, 07 Oct 2026 12:49:02 +0000
+!   - Last modified: Thu, 08 Oct 2026 05:52:45 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
 !   - Last modified: Tue, 29 Sep 2026 15:40:47 +0000
@@ -2295,19 +2295,6 @@ cut-fly.com##+js(set, blurred, false)
 cut-fly.com##.banner-inner
 cut-fly.com##form#go-popup:remove()
 gioialive.it##+js(nostif, rbm_block_active, 1000)
-investing.com##+js(no-fetch-if, ads)
-investing.com##[class^="outbrain_outbrain-wrapper"]
-investing.com##[class*="adBlock"]
-investing.com##[class*="overlay_overlay"]
-investing.com##body:style(overflow: auto !important)
-investing.com###__next > .fixed
-||investing.com/*/ad-notification-popup
-investing.com##[class^="ad-notification"]
-investing.com##[id^="adNotification"]
-investing.com##+js(set, adNotificationDetected, false)
-investing.com##[class*="notification_notification"]
-investing.com##div[class]:has(> :is(.ad-blockers-section, [class*="adNotification"]))
-investing.com##.border-b:has(> .box-content[data-test="ad-slot-visible"])
 ausfile.com##+js(aopw, Fingerprint2)
 ausfile.com##+js(aopw, SubmitDownload1)
 ausfile.com##+js(nano-stb)
@@ -7674,9 +7661,9 @@ braflix.uk##+js(rmnt, script, random)
 /^https:\/\/[a-z]{2}\.[a-z]{7,14}\.com\/[rt][0-9A-Za-z]{10,16}\/[A-Za-z]{4,5}(?:\?|$)/$script,xhr,3p,match-case
 /^https:\/\/[a-z]{2}\.[a-z]{7,14}\.com\/[rt][0-9A-Za-z]{10,16}\/\d{3,6}(?:\?|$)/$script,xhr,3p,match-case
 /^https:\/\/[a-z]{2}\.[a-z]{7,14}\.shop\/i[0-9A-Za-z]{10,16}\/[A-Za-z]{4,5}\b/$frame,3p,match-case
-/^https:\/\/[0-9a-z]*\.?[0-9a-z]+\.cfd\/[a-z][0-9A-Za-z]{10,22}\/(\d{6}|[A-Za-z]{5})$/$script,3p,to=cfd
-/^https:\/\/[0-9a-z]*\.?[0-9a-z]+\.rest\/[a-z][0-9A-Za-z]{10,22}\/(\d{6}|[A-Za-z]{5})$/$script,3p,to=rest
-/^https:\/\/[0-9a-z]*\.?[0-9a-z]+\.cyou\/i[0-9A-Za-z]{10,22}\/[A-Za-z]{5}\?$/$popup,3p,to=cyou
+/^https:\/\/[0-9a-z]*\.?[0-9a-z]+\.cfd\/[a-z][0-9A-Za-z]{10,22}\/(\d{6}|[A-Za-z]{5})$/$script,3p,match-case,to=cfd
+/^https:\/\/[0-9a-z]*\.?[0-9a-z]+\.rest\/[a-z][0-9A-Za-z]{10,22}\/(\d{6}|[A-Za-z]{5})$/$script,3p,match-case,to=rest
+/^https:\/\/[0-9a-z]*\.?[0-9a-z]+\.cyou\/i[0-9A-Za-z]{10,22}\/[A-Za-z]{5}\?$/$popup,match-case
 /^https?:\/\/[a-z]?[a-z]?\.?[a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z]?[a-z]?[a-z]?[a-z]?[a-z]?[a-z]?[a-z]?\.com\/[rt][0-9A-Za-z][0-9A-Za-z][0-9A-Za-z][0-9A-Za-z][0-9A-Za-z][0-9A-Za-z][0-9A-Za-z][0-9A-Za-z][0-9A-Za-z][0-9A-Za-z][0-9A-Za-z]?[0-9A-Za-z]?[0-9A-Za-z]?[0-9A-Za-z]?[0-9A-Za-z]?[0-9A-Za-z]?\/[A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z]?$/$script,xhr,3p,match-case
 /^https?:\/\/[a-z]?[a-z]?\.?[a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z]?[a-z]?[a-z]?[a-z]?[a-z]?[a-z]?[a-z]?\.com\/[rt][0-9A-Za-z][0-9A-Za-z][0-9A-Za-z][0-9A-Za-z][0-9A-Za-z][0-9A-Za-z][0-9A-Za-z][0-9A-Za-z][0-9A-Za-z][0-9A-Za-z][0-9A-Za-z]?[0-9A-Za-z]?[0-9A-Za-z]?[0-9A-Za-z]?[0-9A-Za-z]?[0-9A-Za-z]?\/[A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z]?\?/$script,xhr,3p,match-case
 /^https?:\/\/[a-z]?[a-z]?\.?[a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z]?[a-z]?[a-z]?[a-z]?[a-z]?[a-z]?[a-z]?\.com\/[rt][0-9A-Za-z][0-9A-Za-z][0-9A-Za-z][0-9A-Za-z][0-9A-Za-z][0-9A-Za-z][0-9A-Za-z][0-9A-Za-z][0-9A-Za-z][0-9A-Za-z][0-9A-Za-z]?[0-9A-Za-z]?[0-9A-Za-z]?[0-9A-Za-z]?[0-9A-Za-z]?[0-9A-Za-z]?\/[0-9][0-9][0-9][0-9]?[0-9]?[0-9]?$/$script,xhr,3p,match-case
@@ -18987,11 +18974,11 @@ hentaihaven.xxx##.popecrazy
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=hentaihaven.xxx
 ||hentaihaven.icu/wp-content/plugins/sscript-manager/
 hentaihaven.xxx##+js(aopw, Script_Manager)
-itv.com##+js(trusted-json-edit-xhr-response, .Playlist.ContentBreaks.*.TimeCode="99:59:59:999", propsToMatch, /playlist)
 itv.com##+js(xml-prune, VAST > Ad, , /tserver)
 itv.com##+js(nowoif)
 ||toots-a.akamaihd.net/priority/*$media,redirect=noopmp3-0.1s,domain=itv.com
 ||toots-a.akamaihd.net/priority/*$media,redirect=noopmp4-1s,domain=itv.com
+||ar.prd.content.itv.com/media/$media,redirect=noopmp3-0.1s,domain=itv.com
 itv.com##.stage__upsell-button
 itv.com##.seek-bar__ad
 wsj.com##[class*="sponsored"]
@@ -22834,6 +22821,20 @@ boards.net,freeforums.net,proboards.com##[id^="ad-"]
 boards.net,freeforums.net,proboards.com###remove_ads_link
 boards.net,freeforums.net,proboards.com###ad1
 freeforums.net##div[id^="FreeForums_net_InThread"]
+investing.com##+js(no-fetch-if, ads)
+investing.com##[class^="outbrain_outbrain-wrapper"]
+investing.com##[class*="adBlock"]
+investing.com##[class*="overlay_overlay"]
+investing.com##body:style(overflow: auto !important)
+investing.com###__next > .fixed
+||investing.com/*/ad-notification-popup
+investing.com##[class^="ad-notification"]
+investing.com##[id^="adNotification"]
+investing.com##+js(set, adNotificationDetected, false)
+investing.com##[class*="notification_notification"]
+investing.com##div[class]:has(> :is(.ad-blockers-section, [class*="adNotification"]))
+investing.com##.border-b:has(> .box-content[data-test="ad-slot-visible"])
+investing.com##+js(trusted-replace-argument, String.prototype.startsWith, 0, , condition, /ad-free-subscription)
 hostserverz.com##+js(no-xhr-if, googlesyndication)
 youboxtv.com##+js(rmnt, script, '"hidden"')
 beta.xfreehd.com##.col-md-12:has(a[href^="https://landing.brazzersnetwork.com/"])
@@ -23634,7 +23635,6 @@ pixhost.*##+js(rmnt, script, AdProvider)
 pixhost.*##.content-companion
 selfhostt.com,ssdhostting.com##+js(no-xhr-if, googlesyndication)
 bdjobs.com##+js(json-edit, .bannerConfig..advertise.*)
-||goodreads.com/weblab
 ||startuphub.ai/api/*^placement=
 /wp-content/plugins/adblock-detector/*$script
 outlook.live.com##+js(trusted-rpfr, /"features":\[/, "features":["ads-shutdown-nativeAds"\,"ads-shutdown-displayAds"\,, /\/owa\/startupdata\.ashx/)
@@ -23759,6 +23759,10 @@ hogtiehub.com##.ad-bottom-grid
 hogtiehub.com##.ad-top-shell
 ||textmatchcut.app/ad-gate.js
 sportando.basketball##div[style^="min-height:600px!important;background-color:#eee!important;"]:has(> div[id^="div-gpt-ad"])
+lnk.lt##+js(aeld, error, /^function\([a-z]\)\{[a-z]\([a-z]\)\}$|!1/)
+lnk.lt##+js(no-fetch-if, adsbygoogle)
+##.post-template-default a[href^="https://go."][href*="/smartpop/"]
+##.post-template-default a[href^="https://www.ourdreamersai13.com/"]
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -28188,14 +28192,12 @@ search.brave.com##+js(no-fetch-if, body:browser)
 /^https?:\/\/(?!assets|script|static)(?:[0-9a-z]{10,13}|[0-9a-z]{6})\.[0-9A-Za-z.\-_]+\/(?=[0-9a-z+\/\-]*[A-Z])[0-9A-Za-z+\/\-]{80,106}$/$script,1p,match-case,strict3p
 /dataunlocker$script,1p,domain=~dataunlocker.com
 ||data-saver-cindi.herokuapp.com^
-||franchiseplus.nl^$csp=script-src * 'unsafe-inline' 'wasm-unsafe-eval' data: blob: mediastream: filesystem:
 ||a.stateless.me^
-dataunlocker.com,androidacy.com,bolighub.dk##+js(set, _hjSettings, undefined)
-dataunlocker.com,androidacy.com,bolighub.dk##+js(set, google_tag_manager, undefined)
-@@||stats.g.doubleclick.net/g/$xhr,domain=androidacy.com
-||stats.g.doubleclick.net/g/$removeparam,domain=androidacy.com
+||bolighub.dk/tma/$script,1p
+dataunlocker.com,bolighub.dk##+js(set, _hjSettings, undefined)
+dataunlocker.com,bolighub.dk##+js(set, google_tag_manager, undefined)
 ||dataunlocker.com/d/$script,1p,replace=/Copyright .*//s
-/\/[1-z0-9]{10,20}\/[1-z0-9]{60,300}$/$script,1p,replace=/Copyright .*//s,domain=androidacy.com|bolighub.dk
+/\/[1-z0-9]{3,20}\/[1-z0-9]{40,300}$/$script,1p,replace=/Copyright .*//s,domain=bolighub.dk
 comicleaks.com,ping.gg,nookgaming.com,creatordrop.com,bitdomain.biz,fort-shop.kiev.ua,accuretawealth.com,tracktheta.com,adaptive.marketing,camberlion.com,segops.madisonspecs.com,stresshelden-coaching.de,controlconceptsusa.com,ryaktive.com,tip.etip-staging.etip.io##^script:has-text("join('')")
 furucombo.app##^script:has-text('join("")')
 intercity.technology,freelancer.taxmachine.be,kodalia.com,adria.gg,fjlaboratories.com,abhijith.page,helpmonks.com##^script:has-text(api.dataunlocker.com)
@@ -32881,6 +32883,8 @@ elektroda.pl##.topic-lists-wrap > ul > li:not(.post) a:has(source)
 elektroda.pl##.the-content > section:has(> div[id] > div > div > a[rel*="nofollow"])
 elektroda.pl##div[class*="no-padd"] > div[class*="col-"]:has(> [id] > [style] > form)
 elektroda.pl##div:has(> form[action][onsubmit*="("] table[style*="background"])
+elektroda.pl##.row > .col-md-12 > div:has(.adsbygoogle)
+elektroda.pl##.ad-resize.container:style(padding:0 !important)
 /wp-json/*$domain=genshin-soku.com|monhan-soku.com|xn--gckdevd5myivf.site|yamiisoku.com
 genshin-soku.com,monhan-soku.com,xn--gckdevd5myivf.site,yamiisoku.com##[href*="amazon.co.jp" i]
 genshin-soku.com,monhan-soku.com,xn--gckdevd5myivf.site,yamiisoku.com##[href*="amzn.to" i]:not(.aedr-form__purchase[href="https://amzn.to/4g4yOhg"])
