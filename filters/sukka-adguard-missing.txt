@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Fri, 09 Oct 2026 19:32:16 GMT
+! Last modified: Fri, 09 Oct 2026 22:43:44 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Fri, 09 Oct 2026 15:15:25 +0000
+!   - Last modified: Fri, 09 Oct 2026 18:25:45 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Fri, 09 Oct 2026 06:19:05 +0000
@@ -20,7 +20,7 @@
 !   - Last modified: Thu, 08 Oct 2026 14:31:37 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Fri, 09 Oct 2026 15:54:57 +0000
+!   - Last modified: Fri, 09 Oct 2026 19:04:57 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
 !   - Last modified: Fri, 09 Oct 2026 12:36:09 +0000
@@ -16883,7 +16883,7 @@ gadgets.es##+js(set, DHAntiAdBlocker, true)
 gadgets.es##+js(set, isAdBlockActive, false)
 rackusreads.com##+js(set, DHAntiAdBlocker, true)
 *$script,domain=wp.pl|money.pl|o2.pl|parenting.pl|pudelek.pl|autokult.pl|gadzetomania.pl|fotoblogia.pl|komorkomania.pl|polygamia.pl|abczdrowie.pl|benchmark.pl|kafeteria.pl|pysznosci.pl|dobreprogramy.pl|genialne.pl|autocentrum.pl|jastrzabpost.pl|deliciousmagazine.pl,redirect-rule=noopjs
-||imasdk.googleapis.com/js/sdkloader/ima3_debug.js$script,domain=o2.pl,redirect=google-ima.js:10
+@@||imasdk.googleapis.com/js/sdkloader/ima3_debug.js$script,domain=o2.pl|vibez.pl
 @@*$ghide,domain=wp.pl|money.pl|o2.pl|parenting.pl|pudelek.pl|autokult.pl|gadzetomania.pl|fotoblogia.pl|komorkomania.pl|polygamia.pl|abczdrowie.pl|benchmark.pl|kafeteria.pl|pysznosci.pl|dobreprogramy.pl|genialne.pl|autocentrum.pl|jastrzabpost.pl|deliciousmagazine.pl
 wp.pl,money.pl,o2.pl,parenting.pl,pudelek.pl,autokult.pl,gadzetomania.pl,fotoblogia.pl,komorkomania.pl,polygamia.pl,abczdrowie.pl,benchmark.pl,kafeteria.pl,pysznosci.pl,dobreprogramy.pl,genialne.pl,autocentrum.pl,jastrzabpost.pl,deliciousmagazine.pl#@#.ads
 wp.pl,money.pl,o2.pl,parenting.pl,pudelek.pl,autokult.pl,gadzetomania.pl,fotoblogia.pl,komorkomania.pl,polygamia.pl,abczdrowie.pl,benchmark.pl,kafeteria.pl,pysznosci.pl,dobreprogramy.pl,genialne.pl,autocentrum.pl,jastrzabpost.pl,deliciousmagazine.pl#@#.ad
@@ -16915,6 +16915,7 @@ sportowefakty.wp.pl#@#+js(aopr, Object.prototype.bodyCode)
 abczdrowie.pl#@#.article__textbox
 abczdrowie.pl#@#[class^="content-aside__"], div[class^="article "], div[class^="article__textbox "]
 pogoda.wp.pl#@#.desktop > div[class*=" "]:has(div)
+money.pl#@#div:has(> [src^="https://v.wpimg.pl/"]:not([alt], [loading]))
 ~przegladsportowy.pl,~fakt.pl,~forbes.pl,~auto-swiat.pl,~noizz.pl,~plejada.pl,~businessinsider.com.pl,~komputerswiat.pl,~onet.pl,pl#@#[id^="crt-"]
 wp.pl,money.pl,o2.pl,parenting.pl,pudelek.pl,autokult.pl,gadzetomania.pl,fotoblogia.pl,komorkomania.pl,polygamia.pl,abczdrowie.pl,benchmark.pl,kafeteria.pl,pysznosci.pl,dobreprogramy.pl,genialne.pl,autocentrum.pl,jastrzabpost.pl,deliciousmagazine.pl,forum.kardiolo.pl##body > div[class]:has(> div:first-child:empty + div:last-child > svg[width="95"][height="95"]:only-child > path)
 wp.pl,~www.wp.pl,money.pl,o2.pl,parenting.pl,pudelek.pl,autokult.pl,gadzetomania.pl,fotoblogia.pl,komorkomania.pl,polygamia.pl,abczdrowie.pl,open.fm,benchmark.pl,kafeteria.pl,pysznosci.pl,dobreprogramy.pl,genialne.pl,autocentrum.pl,jastrzabpost.pl##div[style="position: relative; top: 0px;"]:has(> a[target="_blank"])
@@ -16982,6 +16983,10 @@ jastrzabpost.pl##div:only-child:has(> div:first-child > div:first-child > a:only
 wp.pl,pudelek.pl,benchmark.pl##div[class]:has(> div:first-child > a[class]:only-child > img[src^="https://v.wpimg.pl/"]:only-child):has(> div:first-child + div:last-child:empty)
 kobietyhistorii.pl,przezwieki.pl###bottom-sticky-container > #stickyEl
 ~www.wp.pl,wp.pl,pudelek.pl,kobietyhistorii.pl,przezwieki.pl##[class]:has(> img[role="presentation"].absolute:first-child + div):has(> .h-0:empty + script:last-child)
+~www.wp.pl,wp.pl,pudelek.pl,kobietyhistorii.pl,przezwieki.pl##[class]:has(> [class]:only-child > img[role="presentation"].absolute:first-child + div):has(> [class] > .h-0:empty + script:last-child)
+pudelek.pl##.gallery-body-grid > aside[role="complementary"]:has(> .w-full > div > .h-0:empty)
+pudelek.pl##.wp-stream-box:has(> div > .h-0:empty)
+przezwieki.pl##.wp-cockroach-teaser:has(> .size-full > [data-position] > a[data-before="REKLAMA"])
 przezwieki.pl##.wp-main-home > a:first-child[target="_blank"][rel="noopener noreferrer"]:has(> picture > img.wp-media-image)
 wp.pl#@#div:matches-css-after(content:/R.*E.*K.*L.*A.*M.*A/):upward(1)
 wp.pl,money.pl##div:has(> a:first-child:has(> div:empty:only-child) + div:empty:last-child):remove()
@@ -16993,7 +16998,6 @@ wp.pl,o2.pl,benchmark.pl,autokult.pl##.wp-comments-adv-wrapper:not(:has(> .wp-co
 kurierostrowiecki.pl,ostrowiec24.info,panoramaplock.pl,7dni.pila.pl###bottom-sticky-ads-container
 gamingmode.pl,kociakolyska.pl,metropoliatorunska.pl,spotbox.pl,terazwloclawek.pl,xcook.pl,przezwieki.pl,kobietyhistorii.pl##div[class]:has(> div > a + a[href^="https://adinfo.wp.pl/"])
 @@||googletagmanager.com/gtm.js$script,domain=abczdrowie.pl
-||imasdk.googleapis.com/js/sdkloader/ima3_debug.js$script,redirect=google-ima.js,domain=vibez.pl
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=dobreprogramy.pl
 ||ssp.wp.pl^
 tv.wp.pl#@#body > div:nth-of-type(1)[style^="display: block;"]:not(#page)
@@ -23792,6 +23796,9 @@ lnk.lt##+js(no-fetch-if, adsbygoogle)
 ##.post-template-default a[href^="https://www.ourdreamersai13.com/"]
 ||boomlify.com/banner-config.json
 boomlify.com##+js(set-local-storage-item, boomlify-banner-store, $remove$)
+gowatchseries.net##+js(nostif, /bait|AdBlock/i)
+gowatchseries.net##+js(nowoif, _blank)
+gowatchseries.net###gw-ad-root
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -32805,7 +32812,9 @@ meuplayeronlinehd.com###player:style(display: block !important;)
 openchat-review.me##+js(set-local-storage-item, BLOCKED_FLAG_KEY, $remove$)
 openchat-review.me##+js(aost, document.querySelectorAll, security.js)
 streamcash.to##+js(rmnt, script, /\${''}|body:JSON\.stringify/)
-streamcash.to##div[id]:has(button[onclick*="location.reload()"])
+streamcash.to##+js(trusted-replace-argument, document.getElementById, 0, '', condition, pv-notice)
+streamcash.to##span[id][style*="z-index: 2147483647;"]
+streamcash.to##div[id][style*="40px"]
 decompiler.com##+js(set, OffscreenCanvas.prototype.getContext, undefined)
 decompiler.com##+js(nosiif, === false)
 decompiler.com##+js(aost, Element.prototype.removeChild, /blocked|tick/)
