@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Filters
-! Last modified: Mon, 28 Sep 2026 17:08:06 GMT
+! Last modified: Sat, 10 Oct 2026 06:55:42 GMT
 ! Expires: 1 hours
 ! Description: The filters from Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -904,3 +904,13 @@ landian.news##.single-activity-ticker
 nytimes.com##.ribbon-container
 nytimes.com##.related-articles
 nytimes.com##.related-cont
+washingtonpost.com##.paywall-overlay
+washingtonpost.com##.checkout-paywall-overlay
+washingtonpost.com##body:style(position: initial !important; width: initial !important; height: initial !important; min-width: initial !important; max-width: initial !important)
+||static.cleanip.io/ads/$image
+||chahu.com/ads/$image
+||chahu.com/*/ads/$image
+||chahu.com/logos/$image
+zhuanlan.zhihu.com##.HotSearchCard
+tao.zz.ac###noad
+www.chinapress.com.my##.prompt-login-wrapper-2
