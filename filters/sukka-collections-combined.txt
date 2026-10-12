@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Mon, 12 Oct 2026 19:48:33 GMT
+! Last modified: Mon, 12 Oct 2026 22:08:19 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202610121942
+!   - Version: 202610122202
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 12 Oct 2026 19:42 UTC
+!   - Last modified: 12 Oct 2026 22:02 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
@@ -74,7 +74,7 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * ➗ Actually Legitimate URL Shortener Tool
 !   - URL: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt
-!   - Version: 12October2026v12
+!   - Version: 12October2026v3
 !   - Homepage: https://github.com/DandelionSprout/adfilt/discussions/163
 ! * 🐊 Imgur: Pure Imagery Experience
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/ImgurPureImageryExperience.txt
@@ -19598,7 +19598,7 @@ $removeparam=CAGPSPN
 ||lendgo.com^$removeparam=apr
 $removeparam=rt,domain=lendgo.com|bilibili.com
 ||lendgo.com^$removeparam=lt
-$doc,removeparam=lid,domain=baidu.com|chewy.com|clickserve.dartsearch.net|flipkart.com|instagram.com|weather.com|harborfreight.com|sonypictures.com
+$doc,removeparam=lid,domain=baidu.com|chewy.com|clickserve.dartsearch.net|flipkart.com|instagram.com|weather.com|harborfreight.com|sonypictures.com|mcdonalds.com
 $removeparam=referaldomain,domain=microcenter.com
 $removeparam=web,domain=microcenter.com|tomtop.com
 ||unieuro.it^$removeparam=dedup
