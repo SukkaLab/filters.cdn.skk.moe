@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Tue, 13 Oct 2026 09:28:34 GMT
+! Last modified: Tue, 13 Oct 2026 14:15:36 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.13.40
+!   - Version: 2.1.13.44
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202610011010
@@ -78346,6 +78346,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||countly.
 ||countly-
 |piwik.
+||tracking.broadpeak.io^
 ||a.wing.st^
 ||metrics.elcomercio.es^
 ||sw.vidmoly.
@@ -304260,6 +304261,8 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
 @@||nlog.naver.com/n|$domain=search.naver.com|www.naver.com
+||turizmguncel.com/api/track|
+||pixhost.to/m7v2q9/
 ||d.linker-network.me/viewable|
 rtvi.com##+js(set-local-storage-item, viewer-id, $remove$)
 ||click-guard.site/api/collect
@@ -310687,9 +310690,11 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=saturn.de
 @@||metrics.us.playstation.com/b/ss/
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
+@@||googletagmanager.com/gtm.js$domain=nove.tv
+@@||googletagmanager.com/gtag/$domain=nove.tv
 @@||show.revico.jp/providejs/tagmanager.js$domain=workman.jp
 @@||static.vocstatic.com/voonto2/*/voonto.js$domain=elcomercio.es
-||lf3-data.volccdn.com/obj/data-static/log-sdk/collect/*/collect-rangers-$redirect=noop.js,domain=kimi.com,script
+||lf3-data.volccdn.com/obj/data-static/log-sdk/collect/*/collect-rangers-$script,redirect=noop.js,domain=kimi.com|kimi.ai
 @@||rtoaster.jp^$script,domain=nitori-net.jp
 @@||rtl.nl/_astro/snowplow.*.js$domain=rtl.nl
 @@||st-*.dynamicyield.com/st?$script,domain=easytoys.pl|easytoys.nl|easytoys.be|easytoys.es|easytoys.it
