@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Mon, 12 Oct 2026 22:08:19 GMT
+! Last modified: Tue, 13 Oct 2026 00:49:38 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,13 +8,13 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Mon, 12 Oct 2026 14:37:01 +0000
+!   - Last modified: Mon, 12 Oct 2026 21:25:13 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Sun, 11 Oct 2026 07:47:42 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Sun, 11 Oct 2026 20:28:05 +0000
+!   - Last modified: Mon, 12 Oct 2026 20:02:16 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
 !   - Last modified: Thu, 08 Oct 2026 14:31:37 +0000
@@ -17005,7 +17005,7 @@ wp.pl##div:has(> div:first-child:has(> div:only-child > a > div:empty:only-child
 wp.pl##div:has(> div:first-child:has(> iframe:only-child) + div:last-child:empty)
 wp.pl,abczdrowie.pl,parenting.pl,o2.pl,kurierostrowiecki.pl,ostrowiec24.info,panoramaplock.pl,7dni.pila.pl##div:has(> div:first-child:has(> a:first-child > img[src^="https://v.wpimg.pl/"]) + div:empty:last-child)
 money.pl##body > div:has(> div:only-child:empty)
-wp.pl,o2.pl,benchmark.pl,autokult.pl,pudelek.pl##.wp-comments-adv-wrapper:not(:has(> .wp-comments-moth-teaser-container)):has(> .wp-comments-adv[data-testid^="ad-slot-"])
+wp.pl,o2.pl,benchmark.pl,autokult.pl,pudelek.pl,money.pl##.wp-comments-adv-wrapper:not(:has(> .wp-comments-moth-teaser-container)):has(> .wp-comments-adv[data-testid^="ad-slot-"])
 kurierostrowiecki.pl,ostrowiec24.info,panoramaplock.pl,7dni.pila.pl###bottom-sticky-ads-container
 gamingmode.pl,kociakolyska.pl,metropoliatorunska.pl,spotbox.pl,terazwloclawek.pl,xcook.pl,przezwieki.pl,kobietyhistorii.pl##div[class]:has(> div > a + a[href^="https://adinfo.wp.pl/"])
 @@||googletagmanager.com/gtm.js$script,domain=abczdrowie.pl
@@ -23814,6 +23814,8 @@ boomlify.com##+js(set-local-storage-item, boomlify-banner-store, $remove$)
 gowatchseries.net##+js(nostif, /bait|AdBlock/i)
 gowatchseries.net##+js(nowoif, _blank)
 gowatchseries.net###gw-ad-root
+guiafinanceiro.top##+js(set, adb_failed, false)
+guiafinanceiro.top##+js(rpnt, script, = '30', = '0')
 sudinfo.be##.pane-partenaires-outbrain-sidebar
 partner.nonamejose.sx##+js(set-local-storage-item, removeAdv, true)
 partner.nonamejose.sx##+js(nostif, , 15000)
@@ -29923,6 +29925,7 @@ oklivetv.com##+js(no-fetch-if, method:POST body:tracker)
 ||oklivetv.com/p/e
 ||t.xfeed.com^
 ||ua.xstory-fr.com^
+||metricsjs.link^
 ||sentry.efabrica.sk^
 /edgemesh.*.js$script,domain=~edgemesh.com|~edgeno.de
 ||safelinkconverter.com^$script,3p
@@ -31966,9 +31969,6 @@ instapundit.com#@#.postad
 sharpen-free-design-generator.netlify.app##+js(set, fathom, {})
 sharpen-free-design-generator.netlify.app##+js(set, fathom.trackGoal, noopFunc)
 buytesmart.com##body[style*="display: none"]:remove-attr(style)
-||img.service.belboon.com^$badfilter
-||partner.service.belboon.com^$badfilter
-||ui.service.belboon.com^$badfilter
 /nielsen.js$badfilter
 help.cashctrl.com##+js(set, Origami, {})
 help.cashctrl.com##+js(set, Origami.fastclick, noopFunc)
