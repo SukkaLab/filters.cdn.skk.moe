@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Wed, 14 Oct 2026 07:41:43 GMT
+! Last modified: Wed, 14 Oct 2026 11:57:17 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.13.48
+!   - Version: 2.1.13.51
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202610011010
@@ -681,7 +681,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||api.taboola.sve.cc^
 ||identitypxl.com^
 ||logg9r.io^
-||api.statsig.com^
+||events.statsigapi.net^
 ||beyondwickedmapping.org^
 ||mktp-base.mktplatforms.com^
 ||f-tra.com^$3p
@@ -79086,7 +79086,6 @@ prd.api.bleacherreport.com^
 ||evts.ecocart.io^
 ||e.fomo.com^
 ||iq.afterpay.com^
-||events.statsigapi.net^
 ||fourier.aliexpress.com^
 ||sofire.1024tera.com^
 ||market-click-baobab.yandex.ru^
@@ -304262,6 +304261,8 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
 @@||nlog.naver.com/n|$domain=search.naver.com|www.naver.com
+||alloha.yani.tv/errors
+||alloha.yani.tv/events
 ||hsmoa.com/media/buzzni_rt.min.js
 ||mall.hanssem.com/resources/js/log/
 ||tcafe21.com/plugin/perf/
@@ -313097,6 +313098,7 @@ usatoday.com##+js(set, gnt.x.adm, )
 ||backtension.com^$redirect=noop.js,script
 ||curbneon.com^$redirect=noop.js,script
 ||dogbedscentral.com^$redirect=noop.js,script
+||duetcode.com^$redirect=noop.js,script
 ||endhairfall.com^$redirect=noop.json,xhr
 ||fishingtoolsbox.com^$redirect=noop.js,script
 ||fjordsand.com^$redirect=noop.js,script
