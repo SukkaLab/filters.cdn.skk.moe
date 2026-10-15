@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Thu, 15 Oct 2026 07:29:32 GMT
+! Last modified: Thu, 15 Oct 2026 11:34:19 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Thu, 15 Oct 2026 04:18:24 +0000
+!   - Last modified: Thu, 15 Oct 2026 08:41:52 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Tue, 13 Oct 2026 12:37:28 +0000
@@ -8229,6 +8229,7 @@ daftsex.net##.videos > div:not([id])
 ||kinkbook.com/ad_media/
 fap16.net##.adsplx300
 &ag_custom_vlmspot=
+&ag_custom_domain=
 fitnakedgirls.com##+js(nowoif)
 bunkr.*##+js(aopr, popMagic.init)
 bunkr.*,bunkr-albums.io##+js(acs, WebAssembly, Promise)
@@ -21796,7 +21797,7 @@ uindex.org##[style*="650"]
 streamup.ws##+js(set, detectSandbox, noopFunc)
 streamup.ws##+js(aeld, DOMContentLoaded, Promise)
 streamup.ws##+js(nostif, push)
-s1p1cd.com,strmup.to,strmup.cc,strmup.ws,vidnest.io,vidnest.live##+js(nowoif)
+s1p1cd.com,strmup.to,strmup.cc,strmup.ws,vidnest.*##+js(nowoif)
 vidnest.io,vidnest.live##+js(nostif, location.replace, 100)
 vidnest.io,vidnest.live##+js(acs, EventTarget.prototype.addEventListener, open)
 vidnest.io,vidnest.live##+js(nostif, bait.remove)
@@ -22630,6 +22631,8 @@ lookmovie.pn,lookmovie2.*##+js(trusted-json-edit-xhr-response, ..adTimeout=0, pr
 lookmovie2.*##+js(rmnt, script, /popunder/i)
 thenewsdrill.com##+js(no-fetch-if, method:HEAD)
 csst.at##a[href^="https:"] > [alt*="banner"]
+csst.at##a[rel~="sponsored"]
+csst.at##+js(acs, document.querySelectorAll, .ad-slot)
 fortnitetracker.com##+js(nostif, nitroAds)
 daozoid.com##+js(aost, document.getElementById, adsBlocked)
 videyx.cam##+js(no-fetch-if, method:HEAD)
@@ -23059,10 +23062,14 @@ lofi-nopixel.com,lofi-onx.com,lofi-prodigy.com,lofi-prestige.com##div[data-testi
 lofi-nopixel.com,lofi-onx.com,lofi-prodigy.com,lofi-prestige.com##aside[data-testid="ad-rail"]
 lofi-nopixel.com,lofi-onx.com,lofi-prodigy.com,lofi-prestige.com##div[data-testid="ad-in-feed"]
 lofi-nopixel.com,lofi-onx.com,lofi-prodigy.com,lofi-prestige.com##div[data-testid="ad-anchor-spacer"]
+kaa.lt##div.row > div[class^="col-"]:has(> .show-item > .native-ad-cover)
 kaa.lt##+js(acs, EventTarget.prototype.addEventListener, window.open)
 kaa.lt##+js(set, KAA.state.revspot, undefined)
+kaa.lt##+js(set, KAA.state.popads, undefined)
+kaa.lt##+js(aeld, , /popMagic|shield/)
 kaa.lt##+js(nosiif, enforceVideoShield)
 kaa.lt##+js(nowoif, _blank)
+||xgamehub.net/kaa/
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$redirect=noopjs,domain=nuovo.vidplayer.live
 nuovo.vidplayer.live##+js(trusted-json-edit, ..allowAdblock=true)
 nuovo.vidplayer.live##+js(nowoif, _blank)
