@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Fri, 16 Oct 2026 11:28:15 GMT
+! Last modified: Fri, 16 Oct 2026 14:51:38 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -304344,7 +304344,6 @@ _analytics.js?
 /js/sync?visitor_id=
 /pixel/?block_id=*&hash=*&host=
 .demandbase.*.js
-/zaius.gif?
 /common/tracking/webtrekk
 /bbtstats/*
 /px.js?ch=
