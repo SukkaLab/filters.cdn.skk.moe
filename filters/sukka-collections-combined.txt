@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Fri, 16 Oct 2026 00:26:59 GMT
+! Last modified: Fri, 16 Oct 2026 07:13:59 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202610160012
+!   - Version: 202610160702
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 16 Oct 2026 00:12 UTC
+!   - Last modified: 16 Oct 2026 07:02 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
@@ -94,7 +94,7 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#english
 ! * 🎫 Ad Removal List for Unusual Ads
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/AdRemovalListForUnusualAds.txt
-!   - Version: 15June2026v1-Beta
+!   - Version: 15October2026v1-Beta
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * ☣️ Anti-Elsagate List
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/Anti-Elsagate%20List.txt
@@ -3040,7 +3040,7 @@ kinoafisha.ua##.turn-off-add-block-text
 stalkerportaal.ru##.video_adsense
 bookskeeper.ru,e-xecutive.ru##.warning
 forum.bestflowers.ru##.xenOverlay
-/^https?:\/\/pikabu\.ru\/ajax\/{1,2}[^?]+\?[A-Za-z0-9]+=_*(?:%20)?[0-9a-f]{22,}_[a-z0-9_]+/$xmlhttprequest,domain=pikabu.ru
+/^https?:\/\/pikabu\.ru\/ajax\/{1,2}[^?]+\?[A-Za-z0-9]+=[A-Za-z0-9_%-]*[0-9a-f]{20,}_[a-z0-9_]+/$xmlhttprequest,domain=pikabu.ru
 /cookie_check.min.js$domain=acetv.me
 /gogl_detector$script,domain=meddaily.ru|newsru.com
 @@||anidub.com/ads.js|$script,domain=anidub.com
@@ -21768,6 +21768,7 @@ $csp=upgrade-insecure-requests,app=MyTuner.Windows.exe
 ||bluestacks.com/app_player_*/get_exit_popup_mobile_apps^
 ||bluestacks.com/app_player_*/get_b2b_apps^
 ||cloud.bluestacks.com/bs*/promotions^
+||adxv.zum.com^
 ! ☣️ Anti-Elsagate List https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/Anti-Elsagate%20List.txt
 www.youtube.com,35.190.94.206,206.94.190.35.bc.googleusercontent.com#?##dismissable,[lockup],ytd-metadata-row-renderer,.watchable-tile:has-text(Nursery)
 www.youtube.com,35.190.94.206,206.94.190.35.bc.googleusercontent.com#?##dismissable,[lockup],ytd-metadata-row-renderer,.watchable-tile:has-text(/Finger\sFamily/i)
