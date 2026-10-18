@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Sun, 18 Oct 2026 17:22:51 GMT
+! Last modified: Sun, 18 Oct 2026 20:52:31 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202610181712
+!   - Version: 202610182042
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 18 Oct 2026 17:12 UTC
+!   - Last modified: 18 Oct 2026 20:42 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
@@ -94,7 +94,7 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#english
 ! * 🎫 Ad Removal List for Unusual Ads
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/AdRemovalListForUnusualAds.txt
-!   - Version: 15October2026v1-Beta
+!   - Version: 18October2026v1-Beta
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * ☣️ Anti-Elsagate List
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/Anti-Elsagate%20List.txt
@@ -21770,6 +21770,10 @@ $csp=upgrade-insecure-requests,app=MyTuner.Windows.exe
 ||bluestacks.com/app_player_*/get_b2b_apps^
 ||cloud.bluestacks.com/bs*/promotions^
 ||adxv.zum.com^
+://mandrillapp.com/track/open.php?u=$app=thunderbird.exe
+-notifyp.svc.ms/api/v2/tracking^$app=thunderbird.exe
+://email.mailgun.patreon.com/o^$app=thunderbird.exe
+.awstrack.me^$app=thunderbird.exe
 ! ☣️ Anti-Elsagate List https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/Anti-Elsagate%20List.txt
 www.youtube.com,35.190.94.206,206.94.190.35.bc.googleusercontent.com#?##dismissable,[lockup],ytd-metadata-row-renderer,.watchable-tile:has-text(Nursery)
 www.youtube.com,35.190.94.206,206.94.190.35.bc.googleusercontent.com#?##dismissable,[lockup],ytd-metadata-row-renderer,.watchable-tile:has-text(/Finger\sFamily/i)
