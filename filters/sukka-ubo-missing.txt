@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Mon, 19 Oct 2026 19:55:55 GMT
+! Last modified: Mon, 19 Oct 2026 22:27:20 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.13.78
+!   - Version: 2.1.13.80
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202610011010
@@ -29513,7 +29513,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||we.trk.the-savings-guru.com^
 ||winnersmindset.org^
 ||woof.psi-lekarna.cz^
-||www.vcrnads.com^
 ||a.healthy-publishing.com^
 ||a.vital-health-path.com^
 ||ads.drviniciusandrade.com.br^
@@ -36908,6 +36907,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||load.st.carloanfirst.co.uk^
 ||load.st.feestfabriek.nl^
 ||load.st.fussballreisen.com^
+||load.st.growking24.com^
 ||load.st.kirsch-vs.de^
 ||load.st.malier.pl^
 ||load.st.masterminds-event.nl^
@@ -58257,6 +58257,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||load.ggl.ma-deco-tendance.fr^
 ||load.ggl.ma-peluche.fr^
 ||load.ggl.magic-plush.com^
+||load.ggl.maison-orthopedique.fr^
 ||load.ggl.malampechampignon.fr^
 ||load.ggl.malampedechevet.com^
 ||load.ggl.mein-pluschtier.de^
@@ -58275,6 +58276,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||load.ggl.tabloide.fr^
 ||load.ggl.tabloide.it^
 ||load.ggl.tendance-jeans.com^
+||load.ggl.tousenpyjama.com^
 ||load.ggl.univers-plaid.com^
 ||load.ggl.universpokemon.com^
 ||load.ggl.veilleuse.fr^
@@ -58776,6 +58778,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||load.gtm.yalume.com.br^
 ||load.gtm.yassamineinternationalschool.com^
 ||load.gtm.yogateria.com.br^
+||load.gtm.zaro.bd^
 ||load.gtm1.ecu.edu.au^
 ||load.gtm2.ecu.edu.au^
 ||load.gtm2.educationone.com.br^
@@ -59170,6 +59173,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||load.server.dragiovannadasilva.com^
 ||load.server.easytransfer.is^
 ||load.server.ehumu.com.bd^
+||load.server.elaraltd.com^
 ||load.server.elpatronfranquia.com.br^
 ||load.server.empreender40mais.com^
 ||load.server.empureo.com^
@@ -80165,6 +80169,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||countly.
 ||countly-
 |piwik.
+||tracks.hackmd.io^
 ||bigdata-scfx-push.kucoin.plus^
 ||config.trackingplan.com^
 ||eu-tracks.trackingplan.com^
