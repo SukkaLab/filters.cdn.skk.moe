@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Mon, 19 Oct 2026 07:51:26 GMT
+! Last modified: Mon, 19 Oct 2026 13:22:41 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Mon, 19 Oct 2026 04:48:53 +0000
+!   - Last modified: Mon, 19 Oct 2026 09:44:09 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Sun, 18 Oct 2026 16:52:25 +0000
@@ -20,7 +20,7 @@
 !   - Last modified: Sun, 18 Oct 2026 07:31:20 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Sun, 18 Oct 2026 11:14:28 +0000
+!   - Last modified: Mon, 19 Oct 2026 08:16:39 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
 !   - Last modified: Thu, 15 Oct 2026 18:42:02 +0000
@@ -30,7 +30,7 @@
 !   - Last modified: Sat, 17 Oct 2026 01:36:37 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
-!   - Last modified: Sun, 18 Oct 2026 12:16:27 +0000
+!   - Last modified: Mon, 19 Oct 2026 11:05:54 +0000
 ! --------------------------------------------------------------
 ! uBlock filters https://ublockorigin.pages.dev/filters/filters.min.txt
 *_ad_$media,domain=youtube.com,3p
@@ -18825,7 +18825,7 @@ fullxh.com,megaxh.com,seexh.com,unlockxh4.com,xhaccess.com,xhadult2.com,xhadult3
 *$frame,3p,denyallow=google.com|recaptcha.net|xh.video,domain=fullxh.com|megaxh.com|seexh.com|unlockxh4.com|xhaccess.com|xhadult2.com|xhadult3.com|xhamster.*|xhamster10.*|xhamster11.*|xhamster12.*|xhamster13.*|xhamster14.*|xhamster15.*|xhamster16.*|xhamster17.*|xhamster18.*|xhamster19.*|xhamster20.*|xhamster2.*|xhamster3.*|xhamster4.*|xhamster42.*|xhamster46.*|xhamster5.*|xhamster7.*|xhamster8.*|xhamsterporno.mx|xhbig.com|xhbranch5.com|xhchannel.com|xhdate.world|xhlease.world|xhmoon5.com|xhofficial.com|xhopen.com|xhplanet1.com|xhplanet2.com|xhreal2.com|xhreal3.com|xhspot.com|xhtotal.com|xhtree.com|xhvictory.com|xhwebsite.com|xhwebsite5.com|xhwide5.com
 fullxh.com,megaxh.com,seexh.com,unlockxh4.com,xhaccess.com,xhadult2.com,xhadult3.com,xhamster.*,xhamster1.*,xhamster10.*,xhamster11.*,xhamster12.*,xhamster13.*,xhamster14.*,xhamster15.*,xhamster16.*,xhamster17.*,xhamster18.*,xhamster19.*,xhamster20.*,xhamster2.*,xhamster3.*,xhamster4.*,xhamster42.*,xhamster46.*,xhamster5.*,xhamster7.*,xhamster8.*,xhamsterporno.mx,xhbig.com,xhbranch5.com,xhchannel.com,xhdate.world,xhlease.world,xhmoon5.com,xhofficial.com,xhopen.com,xhplanet1.com,xhplanet2.com,xhreal2.com,xhreal3.com,xhspot.com,xhtotal.com,xhtree.com,xhvictory.com,xhwebsite.com,xhwebsite5.com,xhwide5.com##.thumb-list-mobile-item--widget
 fullxh.com,megaxh.com,seexh.com,unlockxh4.com,xhaccess.com,xhadult2.com,xhadult3.com,xhamster.*,xhamster1.*,xhamster10.*,xhamster11.*,xhamster12.*,xhamster13.*,xhamster14.*,xhamster15.*,xhamster16.*,xhamster17.*,xhamster18.*,xhamster19.*,xhamster20.*,xhamster2.*,xhamster3.*,xhamster4.*,xhamster42.*,xhamster46.*,xhamster5.*,xhamster7.*,xhamster8.*,xhamsterporno.mx,xhbig.com,xhbranch5.com,xhchannel.com,xhdate.world,xhlease.world,xhmoon5.com,xhofficial.com,xhopen.com,xhplanet1.com,xhplanet2.com,xhreal2.com,xhreal3.com,xhspot.com,xhtotal.com,xhtree.com,xhvictory.com,xhwebsite.com,xhwebsite5.com,xhwide5.com##ul.thumb-list-mobile > :not(.thumb-list-mobile-item--type-video)
-/^https:\/\/bbs\.[a-z0-9-]+\.[cd][eo][ms]i?\/[a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9]$/$xhr,1p,domain=~pbh-btn.com
+/^https:\/\/bbs\.[a-z0-9-]*xh[a-z0-9-]*\.[cd][eo][ms]i?\/[a-zA-Z0-9-][a-zA-Z0-9-][a-zA-Z0-9-][a-zA-Z0-9-][a-zA-Z0-9-]$/$xhr,1p
 ||cdn.*.com/sdk/v*/dd.master.spot.js$script,3p
 ||cdn.*.com/sdk/v*/dd.interstitial.ts.js$script,3p
 /api/models/vast?userId=*&adblocked=$xhr,1p
@@ -32707,11 +32707,11 @@ web.facebook.com,www.facebook.com##+js(trusted-prevent-dom-bypass, Element.proto
 web.facebook.com,www.facebook.com##+js(trusted-prevent-dom-bypass, Element.prototype.prepend, Object.getOwnPropertyDescriptor)
 web.facebook.com,www.facebook.com##+js(trusted-prevent-dom-bypass, Element.prototype.prepend, XMLHttpRequest.prototype)
 ||static.xx.fbcdn.net/rsrc.php/$script,domain=web.facebook.com|www.facebook.com,replace=/return r instanceof ArrayBuffer/return r.constructor.name==="ArrayBuffer"/
-||imasdk.googleapis.com/js/sdkloader/ima3.js$script,3p,redirect=google-ima.js,domain=claireguessthousand.com,important
-claireguessthousand.com##+js(nowoif)
-claireguessthousand.com##+js(set, console.clear, undefined)
-claireguessthousand.com##+js(acs, globalThis, break;case)
-claireguessthousand.com##+js(acs, WebAssembly, atob)
+||imasdk.googleapis.com/js/sdkloader/ima3.js$script,3p,redirect=google-ima.js,domain=derricknationtop.com,important
+derricknationtop.com##+js(nowoif)
+derricknationtop.com##+js(set, console.clear, undefined)
+derricknationtop.com##+js(acs, globalThis, break;case)
+derricknationtop.com##+js(acs, WebAssembly, atob)
 ||claireguessthousand.com^$badfilter
 @@||pagead2.googlesyndication.com^$script,domain=next-episode.net
 @@*$image,xhr,script,domain=japscan.foo|japscan.lol|japscan.si|japscan.vip
@@ -39137,6 +39137,7 @@ investidor10.com.br##+js(trusted-set-local-storage-item, guest_user_banner_aon_c
 snowcrows.com##+js(rmnt, script, .onerror)
 dokkandb.com##+js(trusted-set-local-storage-item, adBlockPromptDismissedAt, $now$)
 flickzone.org,sflix.gd##+js(trusted-click-element, button#b, '', 750)
+sflix.gd##+js(rmnt, script, location.pathname, includes, hv=)
 alensat.com##+js(aeld, contextmenu, preventDefault)
 firestream.site##+js(set, console.clear, trueFunc)
 firestream.site##+js(set, console.log, trueFunc)
