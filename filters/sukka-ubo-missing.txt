@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Mon, 19 Oct 2026 13:22:41 GMT
+! Last modified: Mon, 19 Oct 2026 16:59:46 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.13.75
+!   - Version: 2.1.13.77
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202610011010
@@ -304556,10 +304556,12 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
 @@||nlog.naver.com/n|$domain=search.naver.com|www.naver.com
+||partner-events.favicdn.net/*/partnerEventsTracking.js
+||diablochairs.com/static/*/RedChamps_OrderAnalyticalInfo/js/referral.min.js
+||diablochairs.com/datalayer/index/events?
 ||kucoin.com/_api/polar/frontend/web_events/
 ||fenixplay.xyz/api/stats/
 ||bookbear.kr/js/site_log.js
-||yimg.com/*/ymanalytics-core.js
 ||faz.net/api/fpid/
 ||plapi.cdnvideohub.com/*/events
 ||edge.fedy.io^$domain=ensonhaber.com
@@ -309971,6 +309973,7 @@ dlsdk.appsflyer.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||mobile-telemetry.multiball.forzafootball.net^
 ||gpskeeper.popinfo.jp^
 ||api-sdk-tracking.beaconbank.jp^
 ||api-sdk.beaconbank.jp^
