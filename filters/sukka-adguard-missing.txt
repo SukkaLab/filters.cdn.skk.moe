@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Tue, 20 Oct 2026 11:42:06 GMT
+! Last modified: Tue, 20 Oct 2026 15:06:57 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,10 +8,10 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Tue, 20 Oct 2026 09:17:46 +0000
+!   - Last modified: Tue, 20 Oct 2026 12:22:19 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
-!   - Last modified: Tue, 20 Oct 2026 03:39:46 +0000
+!   - Last modified: Tue, 20 Oct 2026 13:41:36 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
 !   - Last modified: Sun, 18 Oct 2026 10:08:44 +0000
@@ -23491,7 +23491,7 @@ hytale-servers.net###topadspot
 hytale-servers.net###vote-form-block:style(display:block !important)
 sonyliv.com##+js(no-fetch-if, pubads.g.doubleclick.net)
 chzzk.naver.com#%#//scriptlet('trusted-set-local-storage-item', 'homeSkinCollapsedUntil', '9999999999999')
-ewybory.eu##+js(rmnt, script, /bait/i)
+ewybory.eu##+js(rmnt, script, /AdClasses|bait/i)
 cinehd.app##+js(nostif, getComputedStyle)
 cinehd.app##+js(no-fetch-if, method:HEAD)
 cinehd.app##.dark\:bg-black.pt-20.bg-white.w-full.z-10.relative > .lg\:px-8.md\:px-6.px-4.max-w-\[1440px\]:has(.native-ads-slot)
@@ -24629,6 +24629,8 @@ cracksmid.com##div[style=""] > center > center
 ||calmnotice.site^$all
 ||cdn.hgianignh.cfd/apks/$all
 ||dramajp.com^$all
+||demonhunterz.com^$all
+||mgmylc.cc^$all
 ||webuzz.me^$doc
 ||coup-ling.net^$all
 ||gokinjolove.jp^$all
