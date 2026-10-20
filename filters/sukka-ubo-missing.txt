@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Tue, 20 Oct 2026 01:06:15 GMT
+! Last modified: Tue, 20 Oct 2026 07:38:03 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.13.80
+!   - Version: 2.1.13.82
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202610011010
@@ -315988,6 +315988,7 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
 @@||nlog.naver.com/n|$domain=search.naver.com|www.naver.com
+||external.citynews.it/~shared/do/api/plausible/
 ||partner-events.favicdn.net/*/partnerEventsTracking.js
 ||diablochairs.com/static/*/RedChamps_OrderAnalyticalInfo/js/referral.min.js
 ||diablochairs.com/datalayer/index/events?
@@ -320371,6 +320372,7 @@ abp?type=js&session$domain=prosieben.de|sat1.de|kabeleins.de|sixx.de|prosiebenma
 ||prlog.ru/images/counter/$3p
 ||quantserve.com^*.swf?$3p
 ||quantserve.com^*^a=$3p
+||qualtrics.com^*/metrics
 ||quantserve.com/api/
 ||quantserve.com/pixel$3p
 ||qoo.by/counter.js$3p
@@ -321983,7 +321985,6 @@ d4?appid*type*
 ||h-adashx4ae.ut.taobao.com^
 ||audid-api.taobao.com^
 ||analytics.ff.avast.com^
-||node.aibeacon.jp^
 ||wsmetrics.batch.com^
 ||log.isnssdk.com^
 ||log-tb.isnssdk.com^
@@ -322535,6 +322536,7 @@ goldmansachs.com##+js(prevent-fetch, edge.adobedc.net)
 @@||cdn.cxense.com/cx.js$domain=hochi.news
 @@||api.cxense.com/public/widget/data?json=$domain=hochi.news
 @@||dd.subito.it.first-party-js.datadome.co^$script,xhr,domain=areariservata.subito.it
+@@||g.alicdn.com/alilog/mlog/aplus_$script,domain=youku.tv
 @@||g.alicdn.com/alilog/mlog/aplus_o.js$domain=v.youku.com
 @@||log.mmstat.com/eg.js$domain=v.youku.com
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$script,redirect=googletagservices_gpt.js,domain=parade.com
