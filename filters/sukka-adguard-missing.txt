@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Tue, 20 Oct 2026 21:42:33 GMT
+! Last modified: Wed, 21 Oct 2026 00:40:06 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Tue, 20 Oct 2026 12:22:19 +0000
+!   - Last modified: Tue, 20 Oct 2026 20:10:39 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Tue, 20 Oct 2026 13:41:36 +0000
@@ -20,7 +20,7 @@
 !   - Last modified: Tue, 20 Oct 2026 05:31:41 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Mon, 19 Oct 2026 08:16:39 +0000
+!   - Last modified: Tue, 20 Oct 2026 16:07:48 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
 !   - Last modified: Thu, 15 Oct 2026 18:42:02 +0000
@@ -3875,7 +3875,7 @@ duden.de##[id*="billboard"]
 duden.de##.tabloid__side-column
 duden.de##body:style(margin-top: 0px !important;)
 @@||duden.de^$ghide
-duden.de##+js(aeld, , /adsbygoogle|initDetection/)
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xhr,domain=duden.de
 faresgame.com##+js(aopr, adBlockDetected)
 shemalepower.xyz##+js(nobab)
 shemalepower.xyz##+js(nowoif)
@@ -9589,7 +9589,7 @@ voe.sx>>,anihq.org>>,aniworld.to>>,bestbondagevideos.com>>,embed.tmp-url.pro>>,f
 *$image,redirect-rule=32x32.png,domain=freeplayervideo.com|nazarickol.com|player-cdn.com
 freeplayervideo.com,nazarickol.com,player-cdn.com,playhydrax.com##+js(set, console.clear, undefined)
 freeplayervideo.com,nazarickol.com,player-cdn.com,playhydrax.com##+js(ra, style, #over)
-fullfreeimage.com,freeplayervideo.com,hydraxcdn.biz,imagelovers.com,nazarickol.com,player-cdn.com,playhydrax.com##+js(nowoif, /^/, 1)
+ab.nanacdn.com,fullfreeimage.com,freeplayervideo.com,hydraxcdn.biz,imagelovers.com,nazarickol.com,player-cdn.com,playhydrax.com##+js(nowoif, /^/, 1)
 jav.guru##.inside-right-sidebar > aside.widget_custom_html
 jav.guru###text-76
 jav.guru###text-92
@@ -9597,16 +9597,16 @@ jav.guru###text-93
 /cdn-cgi/trace$xhr,1p,domain=abysscdn.com|playhydrax.com
 abysscdn.com##div[style*="z-index:100000"]
 abysscdn.com##.playover
-abysscdn.com,playhydrax.com##+js(set, document.ontouchend, null)
-abysscdn.com,playhydrax.com##+js(set, document.onclick, null)
-abysscdn.com,fembedx.top,fullfreeimage.com,hihihaha1.xyz,hydraxcdn.biz,imagelovers.com,player-cdn.com,playembedapi.site,playermeow.com,playhydrax.com##+js(trusted-replace-outbound-text, Array.prototype.shift, /^.+$/s, '', condition, https)
-/favicon.ico|$image,3p,domain=abysscdn.com|fullfreeimage.com|hihihaha1.xyz|hihihaha2.xyz|hydraxcdn.biz|imagelovers.com|player-cdn.com|playermeow.com|playhydrax.com
-abysscdn.com,fembedx.top,fullfreeimage.com,hihihaha1.xyz,hihihaha2.xyz,hydraxcdn.biz,imagelovers.com,mov18plus.cloud,playembedapi.site,player-cdn.com,playermeow.com,playhydrax.com##+js(aost, HTMLElement.prototype.click, _0x)
-abysscdn.com,abyssplayer.com,fembedx.top,fullfreeimage.com,hydraxcdn.biz,imagelovers.com,playembedapi.site,playermeow.com,playhydrax.com###overlay
+ab.nanacdn.com,abysscdn.com,playhydrax.com##+js(set, document.ontouchend, null)
+ab.nanacdn.com,abysscdn.com,playhydrax.com##+js(set, document.onclick, null)
+ab.nanacdn.com,abysscdn.com,fembedx.top,fullfreeimage.com,hihihaha1.xyz,hydraxcdn.biz,imagelovers.com,player-cdn.com,playembedapi.site,playermeow.com,playhydrax.com##+js(trusted-replace-outbound-text, Array.prototype.shift, /^.+$/s, '', condition, https)
+/favicon.ico|$image,3p,domain=ab.nanacdn.com|abysscdn.com|fullfreeimage.com|hihihaha1.xyz|hihihaha2.xyz|hydraxcdn.biz|imagelovers.com|player-cdn.com|playermeow.com|playhydrax.com
+ab.nanacdn.com,abysscdn.com,fembedx.top,fullfreeimage.com,hihihaha1.xyz,hihihaha2.xyz,hydraxcdn.biz,imagelovers.com,mov18plus.cloud,playembedapi.site,player-cdn.com,playermeow.com,playhydrax.com##+js(aost, HTMLElement.prototype.click, _0x)
+ab.nanacdn.com,abysscdn.com,abyssplayer.com,fembedx.top,fullfreeimage.com,hydraxcdn.biz,imagelovers.com,playembedapi.site,playermeow.com,playhydrax.com###overlay
 ||com/ick.infonium.org^$frame,1p
 ||infonium.org^$frame,3p
-abysscdn.com,fullfreeimage.com,hihihaha1.xyz,hihihaha2.xyz,playhydrax.com,rufiiguta.com##.loading-overlay ~ div[style^="position: relative;"]
-abysscdn.com,fullfreeimage.com,hihihaha1.xyz,hihihaha2.xyz,playhydrax.com,rufiiguta.com##.loading-overlay:has-text(ad)
+ab.nanacdn.com,abysscdn.com,fullfreeimage.com,hihihaha1.xyz,hihihaha2.xyz,playhydrax.com,rufiiguta.com##.loading-overlay ~ div[style^="position: relative;"]
+ab.nanacdn.com,abysscdn.com,fullfreeimage.com,hihihaha1.xyz,hihihaha2.xyz,playhydrax.com,rufiiguta.com##.loading-overlay:has-text(ad)
 myzoversion.blogspot.com###content-locker
 mov18plus.cloud##+js(nowoif)
 mov18plus.cloud##+js(rpnt, script, /.+/gms, 'document.addEventListener("load",()=>{if (typeof jwplayer!="undefined"&&typeof jwplayer().play=="function"){jwplayer().play();}})', condition, FuckAdBlock)
@@ -13501,12 +13501,6 @@ eductin.com##+js(nostif, show)
 ear-phone-review.com##+js(nostif, nextFunction)
 @@||ear-phone-review.com^$ghide
 switch520.com##+js(acs, eval, replace)
-||4u2movie.com^$3p,media,redirect=noopmp3-0.1s
-embed.nana2play.com##.click_block
-embed.nana2play.com##+js(nostif, debugger)
-embed.nana2play.com##+js(nano-stb, load_ads)
-||googles.video^
-||ad.mail.ru^$3p
 ask4movie.*##+js(aopr, AaDetector)
 ask4movie.*##+js(nowoif)
 riotbits.com##+js(aost, String.prototype.charCodeAt, ai_)
@@ -23894,6 +23888,8 @@ emudesk.com##+js(no-fetch-if, method:HEAD)
 ||butacadigital.pages.dev/js/ads-adblock.js
 sledujfilmy.io##+js(set-cookie, popupAdSeen, 3, , reload, 1)
 playarcady.com##+js(rmnt, script, window.open)
+nanamovies.co##a[target="_blank"] > img
+embed.nana2play.com##.vast-ad-overlay:remove()
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -32972,7 +32968,7 @@ igorslab.de##.herald-sticky
 igorslab.de##img[src^="blob:http"]
 /^https:\/\/www\.igorslab\.de\/(?:[0-9a-z-]{7,}\/)+A[\/0-9A-Z_a-z-]{100,}(?:[0-9a-z-]{7,}\/)*$/$image,1p,match-case
 /^https:\/\/www\.igorslab\.de\/wp-content\/uploads\/202\d\/\d{2}\/(?=[a-z]*\d)(?=\d*[a-z])[0-9a-z]{7,15}\.(?:pn|jp)g(?:\?[0-9A-Z_a-z-]{7,}=[0-9A-Z_a-z-]{7,})?$/$image,1p,match-case
-*$script,xhr,3p,denyallow=google.com,domain=igorslab.de
+*$script,xhr,3p,denyallow=google.com|jsdelivr.net,domain=igorslab.de
 ||igorslab.de^$script,xhr,1p
 ||igorslab.de/?$image
 ||igorslab.de/wp-content/*/ajax-handler.php$image
@@ -32993,6 +32989,7 @@ igorslab.de##img[src^="blob:http"]
 ||igorslab.de/wp-content/uploads/2023/04/Igors_Lab_ARCTIC_MX-7_980x100_
 ||igorslab.de/wp-content/uploads/2023/11/980x125-2.png
 ||igorslab.de/wp-content/uploads/2024/01/Palit_RTX50_300_250_en.jpg
+||igorslab.de/wp-content/uploads/2024/09/0926_VGA_Autumn-Pack_900x125.jpg
 ||igorslab.de/wp-content/uploads/2024/09/Igors_Lab_980x125.jpg
 ||igorslab.de/wp-content/uploads/2025/03/DP_H_DE.png
 ||igorslab.de/wp-content/uploads/2024/07/SHARKOON_Igors_Lab_SKILLER_SGM50W_301x251px.jpg
@@ -33011,11 +33008,13 @@ igorslab.de##img[src^="blob:http"]
 ||igorslab.de/wp-content/uploads/2026/10/Solstice-H.png
 ||igorslab.de/wp-content/uploads/2026/10/Solstice-V.png
 @@/^https:\/\/www\.igorslab\.de\/wp-content\/themes\/igor\/js\/jquery-\d\.\d{1,2}\.\d{1,2}\.min\.js\?ver=/$script,1p,match-case
+@@||www.igorslab.de/wp-content/uploads/20*.pdf^$xhr,1p
 @@||www.igorslab.de/community/$script,xhr
 @@||www.igorslab.de/cdn-cgi/challenge-platform/$script,xhr
 @@||www.igorslab.de/cdn-cgi/scripts/*/cloudflare-static/rocket-loader.min.js
 @@||www.igorslab.de/wp-content/plugins/XFWP/assets/js/xfwp-admin.js
 @@||www.igorslab.de/wp-content/plugins/ba-plus-before-after-image-slider/assets/s201-bai.js
+@@||www.igorslab.de/wp-content/plugins/igorslab-advanced-pdf-viewer/assets/viewer.js
 @@||www.igorslab.de/wp-content/plugins/igorslab-ai-seo-performance-suite/assets/js/consent.js
 @@||www.igorslab.de/wp-content/plugins/igorslab-geizhals-auto/assets/ilgha-frontend.js
 @@||www.igorslab.de/wp-content/plugins/igorslab-youtube-latest-shortcode/assets/frontend.js
