@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Thu, 22 Oct 2026 00:42:47 GMT
+! Last modified: Thu, 22 Oct 2026 07:38:28 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Wed, 21 Oct 2026 16:51:13 +0000
+!   - Last modified: Thu, 22 Oct 2026 06:10:25 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Wed, 21 Oct 2026 04:56:18 +0000
@@ -30,7 +30,7 @@
 !   - Last modified: Mon, 19 Oct 2026 15:53:51 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
-!   - Last modified: Wed, 21 Oct 2026 13:34:49 +0000
+!   - Last modified: Thu, 22 Oct 2026 06:11:08 +0000
 ! --------------------------------------------------------------
 ! uBlock filters https://ublockorigin.pages.dev/filters/filters.min.txt
 *_ad_$media,domain=youtube.com,3p
@@ -15624,7 +15624,6 @@ iptvapps.net##[id*=id]:has([src*="/ads/"])
 cloudcomputingtopics.net##+js(set, distance, 0)
 null-scripts.net,nullscripts.net##+js(nostif, show)
 @@||nullscripts.net^$ghide
-video-to-mp3-converter.com##+js(nowoif, !/^\//)
 seriesmetro.net##+js(aopr, afStorage)
 ||desktopnexus.com/pb-ads/
 desktopnexus.com###rightcolumn > .rbox > .rboxInner img[alt="Advertisement"]:upward(.rbox)
@@ -23903,6 +23902,8 @@ sledujfilmy.io##+js(set-cookie, popupAdSeen, 3, , reload, 1)
 playarcady.com##+js(rmnt, script, window.open)
 nanamovies.co##a[target="_blank"] > img
 embed.nana2play.com##.vast-ad-overlay:remove()
+kickasssubtitles.com##+js(rmnt, script, overflow = 'hidden')
+kickasssubtitles.com##.js-app-external.app-external:has(#banner-placeholder)
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -37140,7 +37141,7 @@ agerpres.ro##+js(aeld, contextmenu, preventDefault)
 radnuk.com.ua##+js(set, document.oncopy, undefined)
 radnuk.com.ua##.articles-content[oncopy]:remove-attr(oncopy)
 radnuk.com.ua##+js(ra, oncopy, .articles-content[oncopy], complete)
-kaembed.net,mfw09.org,streamingunity.fun,vixcloud.co##+js(set, HTMLDivElement.prototype.oncontextmenu, null)
+kaembed.net,mfw09.org,streamingunity.fun,vixcloud.*##+js(set, HTMLDivElement.prototype.oncontextmenu, null)
 @@||socialblade.com^$ghide
 socialblade.com##.cas-container
 socialblade.com##.cas-wide-container
