@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Fri, 23 Oct 2026 11:43:28 GMT
+! Last modified: Fri, 23 Oct 2026 15:07:03 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.14.4
+!   - Version: 2.1.14.6
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202610011010
@@ -220,6 +220,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||a.cdn-lab.shop^
 ||stats.curd.io^
 ||jisao12.cyou^
 ||ptrack.xyz^
@@ -322680,6 +322681,8 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
 @@||nlog.naver.com/n|$domain=search.naver.com|www.naver.com
+||miniwebtool.com/js/mwt-analytics.
+||cinevid.st/tracker.js
 ||api.atmosvere.eu/api/*/traffic/*/collect-update
 ||query.reachit.network/*?l=
 ||cdn.brita.net/.resources/scripts/gtmEventTracking-*.js
