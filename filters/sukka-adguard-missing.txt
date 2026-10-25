@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sun, 25 Oct 2026 07:37:38 GMT
+! Last modified: Sun, 25 Oct 2026 11:35:40 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sun, 25 Oct 2026 04:24:21 +0000
+!   - Last modified: Sun, 25 Oct 2026 09:36:12 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Sun, 25 Oct 2026 04:29:20 +0000
@@ -30,7 +30,7 @@
 !   - Last modified: Sat, 24 Oct 2026 13:40:20 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
-!   - Last modified: Sun, 25 Oct 2026 04:04:47 +0000
+!   - Last modified: Sun, 25 Oct 2026 09:46:25 +0000
 ! --------------------------------------------------------------
 ! uBlock filters https://ublockorigin.pages.dev/filters/filters.min.txt
 *_ad_$media,domain=youtube.com,3p
@@ -6565,6 +6565,7 @@ ryuugames.com###wpsafe-link:style(display: block !important;)
 ryuugames.com###wpsafe-wait1,#wpsafe-link:others()
 pahe.plus##footer, .text-left, #link-view > [href], .box-main > [href]
 pahe.plus##+js(set, blurred, false)
+pahe.plus##+js(aopr, app_vars.force_disable_adblock)
 *$xhr,redirect-rule=nooptext,domain=intercelestial.com|teknoasian.com|linegee.net|pahe.plus
 @@*$xhr,image,script,frame,stylesheet,1p,domain=intercelestial.com|teknoasian.com|linegee.net|pahe.plus
 @@*$ghide,domain=intercelestial.com|teknoasian.com|linegee.net|pahe.plus
@@ -6575,6 +6576,30 @@ intercelestial.com#@#+js(adjust-setTimeout, '', *, 0.1)
 /_ac/s/*.js|$script,1p
 ||dvwztnx4ab3fl.cloudfront.net^$script
 ||antiadblockcore.org^
+clksz.com,tpi.li,oii.la,srnky.com##^script:has-text(/;break;case \$\.|adb_detected|AdBlockCheck/)
+clksz.com,tpi.li,srnky.com##+js(remove-node-text, script, /adb_detected|AdBlockCheck|;break;case \$\./i)
+clksz.com,tpi.li,oii.la,srnky.com##+js(nowoif)
+tpi.li,oii.la##+js(no-fetch-if, googlesyndication)
+clksz.com,tpi.li,oii.la,srnky.com##+js(no-xhr-if, /pagead2\.googlesyndication\.com|inklinkor\.com/)
+clksz.com,tpi.li,oii.la,srnky.com##+js(acs, EventTarget.prototype.addEventListener, delete window)
+clksz.com,tpi.li,oii.la,srnky.com##+js(aeld, DOMContentLoaded, checkAdblockUser)
+clksz.com,tpi.li,oii.la,srnky.com##+js(nostif, checkAdblock)
+clksz.com,tpi.li,oii.la,srnky.com##+js(set, blurred, false)
+clksz.com,tpi.li,oii.la,srnky.com##+js(rpnt, script, offsetHeight, offsetHeight+100)
+clksz.com,tpi.li,oii.la,srnky.com##a[href][target="_blank"]
+clksz.com,tpi.li,oii.la,srnky.com##.td-post-template-default.td-container, .banner-inner
+healthylifez.com,policiesreview.com,hosttbuzz.com,loanbixby.com,ensuretips.com##+js(nowoif)
+healthylifez.com,policiesreview.com,hosttbuzz.com,loanbixby.com,ensuretips.com##+js(nano-sib, /countdown--|getElementById/, *, 0.001)
+healthylifez.com,policiesreview.com,hosttbuzz.com,loanbixby.com,ensuretips.com##+js(nano-stb, getElementById, *, 0.001)
+healthylifez.com,policiesreview.com,hosttbuzz.com,loanbixby.com,ensuretips.com###getnewlink, .wp2continuelink, .getmylink:style(display: block !important;)
+healthylifez.com,policiesreview.com,hosttbuzz.com,loanbixby.com,ensuretips.com###getnewlink, .wp2continuelink, .getmylink, #newtimer:others()
+financeguidz.com,lnbzi.com,techbixby.com##+js(nowoif)
+lnbzi.com##+js(set, blurred, false)
+@@.js$xhr,domain=aii.sh|clksz.com|linegee.net|lnbzi.com|pahe.plus|srnky.com
+@@||clksz.com^$ghide
+@@||srnky.com^$ghide
+||aii.sh/webroot/cloud_theme/img/downloadbaner.png
+$script,1p,replace=/\['ok'\]=!!\[\]/['ok']=![]/g,domain=aii.sh|clksz.com|linegee.net|lnbzi.com|pahe.plus|srnky.com
 laweducationinfo.com,godstoryinfo.com,armypowerinfo.com,phonereviewinfo.com,gknutshell.com,vichitrainfo.com,workproductivityinfo.com,dopomininfo.com,artoffocas.com##+js(trusted-replace-outbound-text, decodeURIComponent, Math.random() <= 0.15, false)
 laweducationinfo.com,godstoryinfo.com,armypowerinfo.com,phonereviewinfo.com,gknutshell.com,vichitrainfo.com,workproductivityinfo.com,dopomininfo.com,artoffocas.com##+js(set-cookie, __gads, 1)
 laweducationinfo.com,godstoryinfo.com,armypowerinfo.com,phonereviewinfo.com,gknutshell.com,vichitrainfo.com,workproductivityinfo.com,dopomininfo.com,artoffocas.com##+js(aopw, window.onload)
@@ -6659,31 +6684,6 @@ segurosdevida.site###wpsafe-generate, #wpsafe-link:style(display: block !importa
 segurosdevida.site##[id^="wpsafe-wait"], #content-wrapper
 ikramlar.online##+js(noeval-if, /chp_?ad/)
 ikramlar.online##+js(no-fetch-if, googlesyndication)
-clksz.com,tpi.li,oii.la,srnky.com##^script:has-text(/;break;case \$\.|adb_detected|AdBlockCheck/)
-clksz.com,tpi.li,srnky.com##+js(remove-node-text, script, /adb_detected|AdBlockCheck|;break;case \$\./i)
-clksz.com,tpi.li,oii.la,srnky.com##+js(nowoif)
-tpi.li,oii.la##+js(no-fetch-if, googlesyndication)
-clksz.com,tpi.li,oii.la,srnky.com##+js(no-xhr-if, /pagead2\.googlesyndication\.com|inklinkor\.com/)
-clksz.com,tpi.li,oii.la,srnky.com##+js(acs, EventTarget.prototype.addEventListener, delete window)
-clksz.com,tpi.li,oii.la,srnky.com##+js(aeld, DOMContentLoaded, checkAdblockUser)
-clksz.com,tpi.li,oii.la,srnky.com##+js(nostif, checkAdblock)
-clksz.com,tpi.li,oii.la,srnky.com##+js(set, blurred, false)
-clksz.com,tpi.li,oii.la,srnky.com##+js(rpnt, script, offsetHeight, offsetHeight+100)
-clksz.com,tpi.li,oii.la,srnky.com##a[href][target="_blank"]
-clksz.com,tpi.li,oii.la,srnky.com##.td-post-template-default.td-container, .banner-inner
-healthylifez.com,policiesreview.com,hosttbuzz.com,loanbixby.com,ensuretips.com##+js(nowoif)
-healthylifez.com,policiesreview.com,hosttbuzz.com,loanbixby.com,ensuretips.com##+js(nano-sib, /countdown--|getElementById/, *, 0.001)
-healthylifez.com,policiesreview.com,hosttbuzz.com,loanbixby.com,ensuretips.com##+js(nano-stb, getElementById, *, 0.001)
-healthylifez.com,policiesreview.com,hosttbuzz.com,loanbixby.com,ensuretips.com###getnewlink, .wp2continuelink, .getmylink:style(display: block !important;)
-healthylifez.com,policiesreview.com,hosttbuzz.com,loanbixby.com,ensuretips.com###getnewlink, .wp2continuelink, .getmylink, #newtimer:others()
-financeguidz.com,lnbzi.com,techbixby.com##+js(nowoif)
-lnbzi.com##+js(set, blurred, false)
-pahe.plus##+js(aopr, app_vars.force_disable_adblock)
-@@.js$xhr,domain=aii.sh|clksz.com|linegee.net|lnbzi.com|pahe.plus|srnky.com
-@@||clksz.com^$ghide
-@@||srnky.com^$ghide
-||aii.sh/webroot/cloud_theme/img/downloadbaner.png
-$script,1p,replace=/\['ok'\]=!!\[\]/['ok']=![]/g,domain=aii.sh|clksz.com|linegee.net|lnbzi.com|pahe.plus|srnky.com
 techacode.com##+js(nostif, nextFunction, 250)
 techacode.com##+js(nobab)
 techacode.com##+js(noeval-if, adb)
@@ -9605,12 +9605,12 @@ alejandrocenturyoil.com,bryantenunder.com,caseyimpactstation.com,charlessheimpro
 ||facesnotebook.com^$all
 ||highrevenuecpm.com^$all
 /\/[0-9a-z]{2}\/[0-9a-f]{32}\.js/$script,xhr,3p,match-case,method=get,to=com,top=pro|to|top|tv|win|~gov.to|~gov.tv|~twitch.tv
-/\/[0-9a-z]{2}\/[0-9a-f]{32}\.js/$script,xhr,3p,match-case,method=get,to=com,top=anihq.org|bestbondagevideos.com|filmifen.com|voe.sx
-voe.sx>>,anihq.org>>,aniworld.to>>,bestbondagevideos.com>>,embed.tmp-url.pro>>,filmifen.com>>,filmo.to>>,hogtiehub.com>>,javboys.tv>>,nupload.top>>,playarcady.com>>,s.to>>,seriesflixhd.*>>,~addtoany.com,~cloudflare.com,~facebook.com,~fastly.net,~twitter.com##+js(nowoif)
-voe.sx>>,anihq.org>>,aniworld.to>>,bestbondagevideos.com>>,embed.tmp-url.pro>>,filmifen.com>>,filmo.to>>,hogtiehub.com>>,javboys.tv>>,nupload.top>>,playarcady.com>>,s.to>>,seriesflixhd.*>>,~addtoany.com,~cloudflare.com,~facebook.com,~fastly.net,~twitter.com##+js(set, console.clear, undefined)
-voe.sx>>,anihq.org>>,aniworld.to>>,bestbondagevideos.com>>,embed.tmp-url.pro>>,filmifen.com>>,filmo.to>>,hogtiehub.com>>,javboys.tv>>,nupload.top>>,playarcady.com>>,s.to>>,seriesflixhd.*>>,~addtoany.com,~cloudflare.com,~facebook.com,~fastly.net,~twitter.com##+js(acs, globalThis, break;case)
-voe.sx>>,anihq.org>>,aniworld.to>>,bestbondagevideos.com>>,embed.tmp-url.pro>>,filmifen.com>>,filmo.to>>,hogtiehub.com>>,javboys.tv>>,nupload.top>>,playarcady.com>>,s.to>>,seriesflixhd.*>>,~addtoany.com,~cloudflare.com,~facebook.com,~fastly.net,~twitter.com##+js(acs, WebAssembly, atob)
-voe.sx>>,anihq.org>>,aniworld.to>>,bestbondagevideos.com>>,embed.tmp-url.pro>>,filmifen.com>>,filmo.to>>,hogtiehub.com>>,javboys.tv>>,nupload.top>>,playarcady.com>>,s.to>>,seriesflixhd.*>>,~addtoany.com,~cloudflare.com,~facebook.com,~fastly.net,~twitter.com##+js(trusted-json-edit, .check=false)
+/\/[0-9a-z]{2}\/[0-9a-f]{32}\.js/$script,xhr,3p,match-case,method=get,to=com,top=anihq.org|bestbondagevideos.com|filmifen.com|hogtiehub.com|playarcady.com|supjav.com|voe.sx
+voe.sx>>,anihq.org>>,aniworld.to>>,bestbondagevideos.com>>,embed.tmp-url.pro>>,filmifen.com>>,filmo.to>>,hogtiehub.com>>,javboys.tv>>,nupload.top>>,playarcady.com>>,s.to>>,supjav.com>>,seriesflixhd.*>>,~addtoany.com,~cloudflare.com,~facebook.com,~fastly.net,~twitter.com##+js(nowoif)
+voe.sx>>,anihq.org>>,aniworld.to>>,bestbondagevideos.com>>,embed.tmp-url.pro>>,filmifen.com>>,filmo.to>>,hogtiehub.com>>,javboys.tv>>,nupload.top>>,playarcady.com>>,s.to>>,supjav.com>>,seriesflixhd.*>>,~addtoany.com,~cloudflare.com,~facebook.com,~fastly.net,~twitter.com##+js(set, console.clear, undefined)
+voe.sx>>,anihq.org>>,aniworld.to>>,bestbondagevideos.com>>,embed.tmp-url.pro>>,filmifen.com>>,filmo.to>>,hogtiehub.com>>,javboys.tv>>,nupload.top>>,playarcady.com>>,s.to>>,supjav.com>>,seriesflixhd.*>>,~addtoany.com,~cloudflare.com,~facebook.com,~fastly.net,~twitter.com##+js(acs, globalThis, break;case)
+voe.sx>>,anihq.org>>,aniworld.to>>,bestbondagevideos.com>>,embed.tmp-url.pro>>,filmifen.com>>,filmo.to>>,hogtiehub.com>>,javboys.tv>>,nupload.top>>,playarcady.com>>,s.to>>,supjav.com>>,seriesflixhd.*>>,~addtoany.com,~cloudflare.com,~facebook.com,~fastly.net,~twitter.com##+js(acs, WebAssembly, atob)
+voe.sx>>,anihq.org>>,aniworld.to>>,bestbondagevideos.com>>,embed.tmp-url.pro>>,filmifen.com>>,filmo.to>>,hogtiehub.com>>,javboys.tv>>,nupload.top>>,playarcady.com>>,s.to>>,supjav.com>>,seriesflixhd.*>>,~addtoany.com,~cloudflare.com,~facebook.com,~fastly.net,~twitter.com##+js(trusted-json-edit, .check=false)
 ||iamcdn.net/players/player*.*mins.js$script,domain=freeplayervideo.com|nazarickol.com|player-cdn.com
 *$image,redirect-rule=32x32.png,domain=freeplayervideo.com|nazarickol.com|player-cdn.com
 freeplayervideo.com,nazarickol.com,player-cdn.com,playhydrax.com##+js(set, console.clear, undefined)
@@ -10059,6 +10059,7 @@ jelonka.com##.adsbygoogle
 jelonka.com##.kontener-reklam
 ||jelonka.com/static/jelonka/js/news-ad-access-gate.js
 jelonka.com##.ad-area
+jelonka.com##+js(trusted-replace-argument, document.querySelector, 0, '', condition, /news-ad-access-gate/)
 @@||static5.hsg.com.pl/icons/*/icon.png^$image
 auto-swiat.pl##+js(nostif, consent)
 lamoda.pl##body [class*="REKLAMA"]
@@ -10293,6 +10294,7 @@ tranimeizle.*##a[href^="https://cutt.ly/"]
 vipifsa.com##+js(json-prune-fetch-response, ads, , propsToMatch, /api/video)
 animecix.tv##+js(set, Object.prototype.showInterstitialAd, false)
 kanald.com.tr##+js(set, googlefc, undefined)
+buders.com##+js(aeld, load, getComputedStyle)
 lxmanga.my##+js(set, skipAdblockCheck, true)
 qmh.*##+js(json-prune-xhr-response, data.header_script data.footer_script data.direct_link_ads data.direct_link_ads_vip_1 data.direct_link_ads_vip_2 data.direct_link_ads_play_vip_2 data.direct_link_ads_zoom_vip_2, , propsToMatch, /config)
 ||qmh.*/assets/js/simpleblocker.js
@@ -23942,6 +23944,9 @@ vsthemes.org##+js(trusted-click-element, section.nospace > a.button.nospace[href
 rennlist.com##+js(set, googletag.setConfig, noopFunc)
 ||stream.broadpeak.io^$xhr,removeparam=slau,domain=go3.lt
 ||stream.broadpeak.io^$xhr,removeparam=csid,domain=go3.lt
+anikoto.*,anikototv.to###networkloop-ad
+||cdn.kotocdn.site/ad.js^
+/ad?spotid=$frame
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -39773,10 +39778,10 @@ camereliveromania.ro##+js(rmnt, script, /wpcp|contextmenu/)
 dozaanimata.net##+js(trusted-create-html, html, <details open style='display:none' ontoggle='(function(){     window.addEventListener("contextmenu"\, (e) => { e.stopImmediatePropagation(); return true; }\, true);     const allow = (e) => { e.stopImmediatePropagation(); return true; };     document.addEventListener("selectstart"\, allow\, true);     document.addEventListener("copy"\, allow\, true);     window.addEventListener("keydown"\, (e) => {         if ((e.ctrlKey || e.metaKey) && (e.key === "c" || e.key === "a")) {             e.stopImmediatePropagation();         }     }\, true);     document.querySelectorAll("*").forEach(el => {         el.oncontextmenu = null;         el.onselectstart = null;         el.oncopy = null;         el.onkeydown = null;         el.style.userSelect = "auto";     }); })();'></details>)
 fontsquirrel.com###bottom_banner_ad_container
 docs.paloaltonetworks.com##+js(nostif, ad-block)
-anikaitv.to,anikototv.to##+js(set, console.log, trueFunc)
-anikaitv.to,anikototv.to##+js(set, console.clear, trueFunc)
+anikoto.*,anikaitv.to,anikototv.to##+js(set, console.log, trueFunc)
+anikoto.*,anikaitv.to,anikototv.to##+js(set, console.clear, trueFunc)
 megaplay.buzz,vidtube.site##+js(set, devtoolsDetector.launch, noopFunc)
-||vidwish.live/lib/devtools-detector
+/lib/devtools-detector
 elektroda.pl##+js(nostif, typeof loadElement)
 enternity.gr##+js(trusted-replace-argument, document.getElementById, 0, json:"header", condition, /^[A-Za-z]{12}$/)
 cografyahocasi.com##+js(acs, document.addEventListener, preventDefault, /^data:text\/javascript/)
@@ -39804,8 +39809,8 @@ firestream.to##+js(set, console.log, trueFunc)
 investidor10.com.br##+js(trusted-set-local-storage-item, guest_user_banner_aon_closed, $now$)
 snowcrows.com##+js(rmnt, script, .onerror)
 dokkandb.com##+js(trusted-set-local-storage-item, adBlockPromptDismissedAt, $now$)
-flickzone.org,sflix.gd##+js(trusted-click-element, button#b, '', 750)
-sflix.gd##+js(rmnt, script, location.pathname, includes, hv=)
+streamdumpling.cyou,flixdrop.cyou##+js(trusted-click-element, button#b, '', 750)
+flixdrop.cyou##+js(rmnt, script, location.pathname, includes, hv=)
 alensat.com##+js(aeld, contextmenu, preventDefault)
 firestream.site##+js(set, console.clear, trueFunc)
 firestream.site##+js(set, console.log, trueFunc)
