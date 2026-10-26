@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Mon, 26 Oct 2026 19:56:21 GMT
+! Last modified: Mon, 26 Oct 2026 22:45:55 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.14.18
+!   - Version: 2.1.14.19
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202610011010
@@ -28603,8 +28603,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||whatif.de.adobe.com^
 ||whatif.uk.adobe.com^
 ||workforce-optimization.insperity.com^
-||www.bring-your-device.com^
-||www.compare3par.com^
 ||1886.olympia.co.uk^
 ||constellation.epghealth.com^
 ||event.sharjahart.org^
@@ -37112,6 +37110,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||load.mtgs.areon.eu^
 ||load.mtgs.hotellomnica.sk^
 ||load.mtgs.lolipop.hu^
+||load.mtgs.northfinder.sk^
 ||load.mtgs.pracuj-v-nemecku.sk^
 ||load.mtgs.turnago.cz^
 ||load.mtgs.turnago.sk^
@@ -62358,6 +62357,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||load.sgtm.pleiadesconsultancy.com^
 ||load.sgtm.popshowtv.com.br^
 ||load.sgtm.progressiveperformance.com^
+||load.sgtm.psoriasisandeczema.com.au^
 ||load.sgtm.purecurepk.com^
 ||load.sgtm.qalibags.com^
 ||load.sgtm.quantum-way.com^
@@ -62441,6 +62441,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||load.sgtm.themerchguild.com^
 ||load.sgtm.thewarehouse.salon^
 ||load.sgtm.thinkos.io^
+||load.sgtm.thrifty.tax^
 ||load.sgtm.thryvesuperfoods.com^
 ||load.sgtm.thyroidhealthreset.com^
 ||load.sgtm.tiedsunwear.com^
@@ -62947,6 +62948,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||load.sst.ambitiocorp.com^
 ||load.sst.andersonlongevityclinic.com^
 ||load.sst.anton-emma.de^
+||load.sst.anwalt-migrationsrecht-koeln.de^
 ||load.sst.aob.nl^
 ||load.sst.aobmedezeggenschap.nl^
 ||load.sst.apexmediapromotions.com^
@@ -63271,6 +63273,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||load.sst.randehomesolutions.com^
 ||load.sst.ratepro.co^
 ||load.sst.rbbioworks.com^
+||load.sst.rechtsschutz-klar.de^
 ||load.sst.reconomyconnect.com^
 ||load.sst.reliancecollege.org^
 ||load.sst.renewhomeexteriors.com^
@@ -83162,8 +83165,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||wut.usadirtbike.com^
 ||ww.bookyourvisitnow.com^
 ||wwpiwhdy.therollinrust.com^
-||www.branchedflow.com^
-||www.ss.skapdesign.se^
 ||www2.acclivet.com^
 ||wxncwyzp.soriox.com^
 ||wyb.anacional.net^
@@ -83482,6 +83483,9 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||gtm.drpedropaschoal.com^
 ||load.ssgtm.kiilto.lv^
 ||ssl.mojprad.info^
+||load.sstrk.green-acres.co.uk^
+||load.sstrk.green-acres.gr^
+||load.sstrk.green-acres.hr^
 ||load.st.foodango.cz^
 ||load.st.growking24.com^
 ||mens.bloomwearbd.com^
