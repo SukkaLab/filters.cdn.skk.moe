@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Tue, 27 Oct 2026 15:53:31 GMT
+! Last modified: Tue, 27 Oct 2026 19:26:21 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.14.25
+!   - Version: 2.1.14.29
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202610011010
@@ -220,6 +220,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||metrics.selectel.ru^
 ||collect.pravdastat.com^
 ||search-monitor.11st.co.kr^
 ||a.cdn-lab.shop^
@@ -83818,12 +83819,14 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||countly.
 ||countly-
 |piwik.
+||analytics.dulo.
 ||umami.vidfast.vc^
 ||umami.vidup.to^
 ||cnt.iceporn.
 ||bigdata.downza.com^
 ||zenstats.yzhy19.cn^
 ||data.vzhh.de^
+||telemetry.paypay.ne.jp^
 ||applytics.zwyr157wwiu6eior.com^
 ||zwjvbnvhnzme.heise.de^
 ||b.allegrocdp.com^
@@ -84847,7 +84850,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||a2.cineflix.st^
 ||tracker.bigl.ua^
 ||tracking.vivareal.com.br^
-||stats.dulo.
 ||clientlog.wanmei.com^
 ||jnt.welt.de^
 ||emergency.zeta-ai.io^
@@ -340751,6 +340753,7 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 ||m.11st.co.kr/MW/js/statistics/$script
 ||search.11st.co.kr/js/searchWebFront/search/public/rakeLog-mobile-search.js
 ||gleams.dev/api/customers/usage-beacon
+||tokenpost.kr/tracking/ajax/$xhr
 ||electroverse.com/view/insights/script.js
 ||miniwebtool.com/js/mwt-analytics.
 ||cinevid.st/tracker.js
@@ -341195,7 +341198,6 @@ kio.ac##+js(set-local-storage-item, affiliate_advertiser_stats, $remove$)
 ||cdn.viberu.ru/dist/tracking.*.js
 ||rugbypass.com/api/tracking/
 ||static0.pocketlintimages.com/assets/sentinel-events-tracker.*.js
-||dulo.*/api/ping
 ||happycow.net/analytics_socket|
 ||operationsports.com/plow-lite-bundle
 ||shingakunet.com/rnet/dlpo/

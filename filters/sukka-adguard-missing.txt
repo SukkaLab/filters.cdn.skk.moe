@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Tue, 27 Oct 2026 15:53:31 GMT
+! Last modified: Tue, 27 Oct 2026 19:26:21 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Tue, 27 Oct 2026 10:13:36 +0000
+!   - Last modified: Tue, 27 Oct 2026 14:41:07 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Tue, 27 Oct 2026 10:17:31 +0000
@@ -30,7 +30,7 @@
 !   - Last modified: Sat, 24 Oct 2026 13:40:20 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
-!   - Last modified: Mon, 26 Oct 2026 08:59:48 +0000
+!   - Last modified: Tue, 27 Oct 2026 13:54:23 +0000
 ! --------------------------------------------------------------
 ! uBlock filters https://ublockorigin.pages.dev/filters/filters.min.txt
 *_ad_$media,domain=youtube.com,3p
@@ -9364,7 +9364,7 @@ brawlytix.com##+js(rmnt, script, nowprocket)
 savvytime.com##+js(rmnt, script, '"nowprocket"')
 scribd.com##+js(rmnt, script, adShieldError)
 reuters.com##+js(rmnt, script, adshieldScript)
-minecraftskins.com,murlok.io,neopets.com##+js(rmnt, script, window.__as_)
+bloxd.io,minecraftskins.com,murlok.io,neopets.com##+js(rmnt, script, window.__as_)
 aternos.org##+js(rmnt, script, /\:window\,/)
 1geki.jp,373news.com,50states.com,actugaming.net,aerotrader.com,alc.co.jp,altarofgaming.com,anagram-solver.io,areaconnect.com,as-web.jp,atvtrader.com,aucfree.com,autoby.jp,autoc-one.jp,autofrage.net,automobile-catalog.com,bab.la,babla.*,baseballchannel.jp,buchstaben.com,cadryskitchen.com,cafedelites.com,calculatorsoup.com,carscoops.com,campsitephotos.com,canarystreetcrafts.com,celebritynetworth.com,cesoirtv.com,chanto.jp.net,chef-in-training.com,chocolatecoveredkatie.com,cinetrafic.fr,collinsdictionary.com,commercialtrucktrader.com,computerfrage.net,convertcase.net,crosswordsolver.com,culturequizz.com,curbsideclassic.com,cycletrader.com,dallashoopsjournal.com,dayspedia.com,dexerto.com,dict.cc,dictionary.cambridge.org,dictionnaire.lerobert.com,dnevno.hr,donbalon.com,driveteslacanada.ca,dropgame.jp,ecranlarge.com,eigachannel.jp,equipmenttrader.com,ev-times.com,finanzfrage.net,fixthecfaa.com,flagle.io,footballchannel.jp,freeconvert.com,freemcserver.net,freeride.com,futabanet.jp,futabasha-change.com,fxstreet-id.com,fxstreet-vn.com,fxstreet.*,game8.jp,games.arkadium.com,gamewith.jp,gazetaprawna.pl,geogridgame.com,geoguessr.com,gerbeaud.com,gesundheitsfrage.net,gifu-np.co.jp,gigafile.nu,globalrph.com,golf-live.at,grapee.jp,gutefrage.net,hang.hu,happymoments.lol,harmonikum.co,hb-nippon.com,heureka.cz,hochi.news,horairesdouverture24.fr,hotcopper.co.nz,hotcopper.com.au,hvac-talk.com,ib-game.jp,idokep.hu,indianhealthyrecipes.com,indiatimes.com,infor.pl,insider-gaming.com,invoice-generator.com,iphoneincanada.ca,iza.ne.jp,j-cast.com,j-town.net,j7p.jp,jablickar.cz,javatpoint.com,jigsawexplorer.com,jiji.com,jikayosha.jp,jocjapantravel.com,judgehype.com,kinmaweb.jp,km77.com,kobe-journal.com,krepsinis.net,kreuzwortraetsel.de,kstp.com,kurashinista.jp,kyoteibiyori.com,lacuarta.com,lacuarta.com,laleggepertutti.it,langenscheidt.com,laposte.net,laughingsquid.com,lawyersgunsmoneyblog.com,ldoceonline.com,lessdebt.com,lettersolver.com,liliputing.com,listentotaxman.com,livenewschat.eu,logicieleducatif.fr,luremaga.jp,mafab.hu,mahjongchest.com,mainichi.jp,majorleaguepickleball.co,maketecheasier.com,malaymail.com,mamastar.jp,marineinsight.com,mathplayzone.com,meteo60.fr,midhudsonnews.com,minesweeperquest.com,minkou.jp,modhub.us,modsbase.com,modsfire.com,moin.de,motor-fan.jp,motorbikecatalog.com,motorradfrage.net,motscroises.fr,movie-locations.com,muragon.com,mykoreankitchen.com,namemc.com,nana-press.com,natalie.mu,nationaltoday.com,nbadraft.net,newatlas.com,news.zerkalo.io,newsinlevels.com,newsweekjapan.jp,newsyou.info,niketalk.com,nintendoeverything.com,nlab.itmedia.co.jp,noorderland.nl,nouvelobs.com,nyitvatartas24.hu,oeffnungszeitenbuch.de,onlineradiobox.com,operawire.com,optionsprofitcalculator.com,oraridiapertura24.it,overclock.net,oxfordlearnersdictionaries.com,palabr.as,pashplus.jp,percentagecalculator.net,persoenlich.com,petitfute.com,petitrobert.fr,play-games.com,pllive.xmediaeg.com,pons.com,popdaily.com.tw,powerpyx.com,pptvhd36.com,profitline.hu,puzzlegarage.com,pwctrader.com,quefaire.be,raetsel-hilfe.de,raider.io,ranking.net,rarethief.com,references.be,reisefrage.net,relevantmagazine.com,reptilesmagazine.com,roleplayer.me,rostercon.com,russianmachineneverbreaks.com,rvtrader.com,samsungmagazine.eu,sankei.com,sanspo.com,scribens.com,scribens.fr,siennachat.com,skyandtelescope.org,slashdot.org,snowmobiletrader.com,soccerdigestweb.com,solitairehut.com,sotolover.com,sourceforge.net,southhemitv.com,soxprospects.com,spaghetti-interactive.it,speisekarte.de,spendwithpennies.com,sportlerfrage.net,statecollege.com,stayglam.com,steamidfinder.com,stocktwits.com,sudokutable.com,superhonda.com,syosetu.com,szamoldki.hu,talkwithstranger.com,tastesbetterfromscratch.com,tbs.co.jp,techdico.com,the-crossword-solver.com,thecelticblog.com,thedigestweb.com,thefirearmblog.com,traicy.com,transparentcalifornia.com,transparentnevada.com,trilltrill.jp,tunebat.com,tvtv.ca,tvtv.us,tweaktown.com,twn.hu,tyda.se,ufret.jp,universalis.fr,uptodown.com,uscreditcardguide.com,v8sleuth.com.au,verkaufsoffener-sonntag.com,videocelts.com,vimm.net,wallpapers.com,wamgame.jp,wanderworthy.com,watchdocumentaries.com,wattedoen.be,wdwnt.com,wdwnt.jp,webdesignledger.com,weldingweb.com,welt.de,wetteronline.de,wfmz.com,whec.com,wieistmeineip.*,wielerflits.be,wielerflits.nl,winbuzzer.com,winfuture.de,word-grabber.com,wordfinderx.com,wordhippo.com,worldjournal.com,worldle.teuteuf.fr,wort-suchen.de,woxikon.*,young-machine.com,yugioh-starlight.com,yutura.net,zagreb.info,zakzak.co.jp##+js(rmnt, script, html-load.com)
 optionsprofitcalculator.com##+js(rmnt, script, /\(async\(\)=>\{try\{(const|var)/)
@@ -9726,10 +9726,11 @@ f4scdn.com##+js(no-fetch-if, adsbygoogle)
 gaqghe.com##+js(nowoif)
 hdmozi.hu,yabaisub.cloud###fakeplayer
 hdmozi.hu,yabaisub.cloud##+js(trusted-click-element, #player-option-1, , 500)
-favoyeurtube.net>>,primewire.*>>,tokuzilla.net>>,tokuzl.net>>,tukoz.com>>,~cloudflare.com##+js(json-prune, ads playerAds)
-favoyeurtube.net>>,primewire.*>>,tokuzilla.net>>,tokuzl.net>>,tukoz.com>>,~cloudflare.com##+js(trusted-json-edit, ..allowAdblock=true)
-embedseek.xyz,nuovo.vidplayer.live,p2pplay.pro,primevid.click,streamcasthub.store,strp2p.site##+js(json-prune, ads playerAds)
-||imasdk.googleapis.com/js/sdkloader/ima3.js$redirect=noopjs,domain=favoyeurtube.net|tokuzilla.net|tokuzl.net|tukoz.com|embedseek.xyz|nuovo.vidplayer.live|p2pplay.pro|primevid.click|streamcasthub.store|strp2p.site
+hdmozi.hu##+js(rmnt, script, popup)
+favoyeurtube.net>>,hdmozi.hu>>,primewire.*>>,tokuzilla.net>>,tokuzl.net>>,tukoz.com>>,~cloudflare.com##+js(json-prune, ads playerAds)
+favoyeurtube.net>>,hdmozi.hu>>,primewire.*>>,tokuzilla.net>>,tokuzl.net>>,tukoz.com>>,~cloudflare.com##+js(trusted-json-edit, ..allowAdblock=true)
+embedseek.xyz,nuovo.vidplayer.live,p2pplay.pro,primevid.click,rpmstream.live,streamcasthub.store,strp2p.site##+js(json-prune, ads playerAds)
+||imasdk.googleapis.com/js/sdkloader/ima3.js$redirect=noopjs,domain=favoyeurtube.net|tokuzilla.net|tokuzl.net|tukoz.com|embedseek.xyz|hdmozi.hu|nuovo.vidplayer.live|p2pplay.pro|primevid.click|streamcasthub.store|strp2p.site
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$redirect=noopjs,domain=anichin.rpmvid.com|disneycdn.net|rpmhub.site|rpmlive.online|rpmplay.me|rpmplay.xyz|rpmstream.live|rpmvip.com|vidplayer.live
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$redirect=noopjs,domain=strp2p.com,important
 rpmplay.xyz##+js(aopr, open)
@@ -37216,6 +37217,12 @@ radnuk.com.ua##.articles-content[oncopy]:remove-attr(oncopy)
 radnuk.com.ua##+js(ra, oncopy, .articles-content[oncopy], complete)
 kaembed.*,mfw09.org,streamingunity.*,vixcloud.*##+js(set, HTMLDivElement.prototype.oncontextmenu, null)
 movy.sx##+js(prevent-addEventListener, contextmenu)
+jagledam.com##+js(aeld, contextmenu)
+jagledam.com##+js(set, document.oncontextmenu, null)
+jagledam.com##+js(set, HTMLDivElement.prototype.oncontextmenu, null)
+vidara.*,gasobni.com,vidmoly.*,bysezejataos.com,n1mwq.org,firestream.*##+js(aeld, contextmenu)
+vidara.*,gasobni.com,vidmoly.*,bysezejataos.com,n1mwq.org,firestream.*##+js(aopr, HTMLElement.prototype.oncontextmenu)
+b98.tv,supercartoons.net,funniermoments.net,toontales.net##+js(set, HTMLDivElement.prototype.oncontextmenu, null)
 @@||socialblade.com^$ghide
 socialblade.com##.cas-container
 socialblade.com##.cas-wide-container
