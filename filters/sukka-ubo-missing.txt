@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Tue, 27 Oct 2026 01:29:57 GMT
+! Last modified: Tue, 27 Oct 2026 07:55:38 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.14.19
+!   - Version: 2.1.14.20
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202610011010
@@ -220,6 +220,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||collect.pravdastat.com^
 ||search-monitor.11st.co.kr^
 ||a.cdn-lab.shop^
 ||stats.curd.io^
@@ -346033,7 +346034,6 @@ dreamprogs.net##td[width="88"][height="31"]
 ||yandex.ru/clck/click|
 ||phncdn.com/www-static/js/lib/user-clogs.js
 pornhub.com##+js(set-constant, userClogTracking, noopFunc)
-pornhub.com##+js(set-constant, updateClogTracking, noopFunc)
 ||ing.de/*/*ebtrekk*
 ing.de##+js(set-constant, wt, {})
 ing.de##+js(set-constant, wt.sendinfo, noopFunc)
