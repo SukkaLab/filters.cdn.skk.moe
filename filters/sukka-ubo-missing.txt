@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Wed, 28 Oct 2026 08:38:28 GMT
+! Last modified: Wed, 28 Oct 2026 12:59:59 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.14.32
+!   - Version: 2.1.14.35
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202610011010
@@ -340743,6 +340743,10 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
 @@||nlog.naver.com/n|$domain=search.naver.com|www.naver.com
+||live-xo.lovable.app/~api/analytics
+||live-xo.lovable.app/*/trackevents
+||bigjoy.com.tr/metrics/
+||bigjoy.com.tr/api/analytics/
 ||zenox.lol/api/analytics/ping|
 ||data.dailyhunt.in/topics/analytics-events
 ||iceporn.net/ajax/log/
@@ -340757,7 +340761,7 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 ||m.11st.co.kr/MW/js/statistics/$script
 ||search.11st.co.kr/js/searchWebFront/search/public/rakeLog-mobile-search.js
 ||gleams.dev/api/customers/usage-beacon
-||tokenpost.kr/tracking/ajax/$xhr
+||tokenpost.kr/tracking/ajax/
 ||electroverse.com/view/insights/script.js
 ||miniwebtool.com/js/mwt-analytics.
 ||cinevid.st/tracker.js
