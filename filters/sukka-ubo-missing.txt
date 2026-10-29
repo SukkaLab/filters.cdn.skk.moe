@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Thu, 29 Oct 2026 13:06:37 GMT
+! Last modified: Thu, 29 Oct 2026 16:56:27 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.14.42
+!   - Version: 2.1.14.45
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202610011010
@@ -220,6 +220,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||apmginternational.matomo.cloud^
 ||metrics.selectel.ru^
 ||collect.pravdastat.com^
 ||search-monitor.11st.co.kr^
@@ -83819,6 +83820,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||countly.
 ||countly-
 |piwik.
+||op.fintables.com^
 ||stats.spidersense.xyz^
 ||umami.vidcore.net^
 ||analytics.dulo.
@@ -84820,7 +84822,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||evs.segwww.incident.io^
 ||nao.kagane.to^
 ||users.vidy.st^$3p
-||tracking.dpmlol.com^
 ||beam.telegram.hr^
 ||tracker.telegram.hr^
 ||campaign.telegram.hr^
@@ -340742,6 +340743,11 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
 @@||nlog.naver.com/n|$domain=search.naver.com|www.naver.com
+||hepsiburada.com/metrics/
+||matomo.cloud/apmginternational.matomo.cloud/
+||mautic.apmg-international.com/mtc.js
+||stats.thuisarts.nl/plugins/HeatmapSessionRecording/
+||stats.thuisarts.nl/piwik.php
 ||backenmachtgluecklich.de/__bmg-edge/
 ||live-xo.lovable.app/~api/analytics
 ||live-xo.lovable.app/*/trackevents

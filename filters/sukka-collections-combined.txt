@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Thu, 29 Oct 2026 13:06:37 GMT
+! Last modified: Thu, 29 Oct 2026 16:56:27 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202610291252
+!   - Version: 202610291642
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 29 Oct 2026 12:52 UTC
+!   - Last modified: 29 Oct 2026 16:42 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
@@ -74,7 +74,7 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * ➗ Actually Legitimate URL Shortener Tool
 !   - URL: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt
-!   - Version: 28October2026v4
+!   - Version: 29October2026v1
 !   - Homepage: https://github.com/DandelionSprout/adfilt/discussions/163
 ! * 🐊 Imgur: Pure Imagery Experience
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/ImgurPureImageryExperience.txt
@@ -19470,9 +19470,9 @@ $doc,removeparam=cmp,domain=agentprovocateur.com|brooksbrothers.com|cbc.ca|cox.c
 $removeparam=cp,domain=converse.com|nike.com|nextdoor.com|duckduckgo.com|duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion
 $removeparam=ecmp,domain=4wheelparts.com
 $removeparam=kc,domain=autoanything.com
-$removeparam=/^linkshareid=.*$/i,domain=bloomingdales.com|macys.com
+$doc,removeparam=/^linkshareid=.*$/i,domain=bloomingdales.com|macys.com
 $removeparam=mc,domain=bose.*|hallmark.com
-$removeparam=mid,domain=agentprovocateur.com|change.org|columbia.com|dxl.com|facebook.com|hanes.com|instagram.com|josbank.com|links.e.malwarebytes.com|onehanesplace.com|productshopper.*|columbiasportswear.*|saksfifthavenue.com|saksoff5th.com|staples.com|sorel.com|lookmovie211.xyz|tiktok.com|verabradley.com|x.com
+$doc,removeparam=mid,domain=agentprovocateur.com|change.org|columbia.com|dxl.com|hanes.com|instagram.com|josbank.com|links.e.malwarebytes.com|onehanesplace.com|productshopper.*|columbiasportswear.*|saksfifthavenue.com|saksoff5th.com|staples.com|sorel.com|lookmovie211.xyz|tiktok.com|verabradley.com|x.com
 $removeparam=mktvar002,domain=autodesk.com
 $removeparam=mp_id,domain=blinds.com
 $removeparam=ogmap,domain=coach.com|loft.com
