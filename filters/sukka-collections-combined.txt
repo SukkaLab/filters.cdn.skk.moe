@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Thu, 29 Oct 2026 01:51:05 GMT
+! Last modified: Thu, 29 Oct 2026 08:33:54 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202610290142
+!   - Version: 202610290822
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 29 Oct 2026 01:42 UTC
+!   - Last modified: 29 Oct 2026 08:22 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
@@ -74,7 +74,7 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * ➗ Actually Legitimate URL Shortener Tool
 !   - URL: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt
-!   - Version: 28October2026v3
+!   - Version: 28October2026v4
 !   - Homepage: https://github.com/DandelionSprout/adfilt/discussions/163
 ! * 🐊 Imgur: Pure Imagery Experience
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/ImgurPureImageryExperience.txt
@@ -19429,7 +19429,7 @@ $removeparam=rank,domain=nytimes.com|nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x
 ||malwarebytes.com^$removeparam=guard
 $removeparam=x-source,domain=malwarebytes.com|parallels.com
 ||malwarebytes.com^$removeparam=ADDITIONAL_x-source
-$removeparam=did,domain=columbiasportswear.*|aws|aws.amazon.*
+$doc,removeparam=did,domain=aws|aws.amazon.*|columbiasportswear.*|investopedia.com|people.inc
 ||ozon.ru^$removeparam=advert
 ||mediamarket.$removeparam=rbtc
 ||sitepoint.com^$removeparam=fromBlog
@@ -20645,7 +20645,7 @@ $doc,removeparam=correlationId,domain=adobe.com|costco.com
 ||qobuz.com^$doc,removeparam=qbzs
 ||weather.com^$doc,removeparam=aw_campaign
 ||weather.com^$doc,removeparam=Campaign_Name
-$doc,removeparam=lctg,domain=bleacherreport.com|weather.com
+$doc,removeparam=lctg,domain=bleacherreport.com|investopedia.com|weather.com
 $doc,removeparam=rilt,domain=shutterfly.com|shutterflyinc.com
 $doc,removeparam=mpch,domain=shutterfly.com|shutterflyinc.com
  $doc,removeparam=enc_em,domain=bleacherreport.com|weather.com
@@ -20725,8 +20725,6 @@ $doc,removeparam=smtrctid,domain=samsclub.com|walmart.com
 ||simon.com^$doc,removeparam=bt_ts
 ||ck12.org^$doc,removeparam=refcode
 $doc,removeparam=hid,domain=investopedia.com|people.inc
-$removeparam=did,domain=investopedia.com|people.inc
-||investopedia.com^$removeparam=lctg
 $doc,removeparam=lr_input,domain=investopedia.com|people.inc
 ||investopedia.com^$doc,removeparam=inv_to_sim
 $removeparam=w,domain=files.wordpress.com|store.playstation.com|s-microsoft.com|store-images.microsoft.com|dr.dk|if.com.au
