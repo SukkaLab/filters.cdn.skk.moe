@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Fri, 30 Oct 2026 08:41:49 GMT
+! Last modified: Fri, 30 Oct 2026 12:59:51 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.14.49
+!   - Version: 2.1.14.50
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202610011010
@@ -220,6 +220,9 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||radar.snitcher.com^
+||cdn.snitcher.com^
+||claydar.com^
 ||analytics.searchspring.net^
 ||apmginternational.matomo.cloud^
 ||metrics.selectel.ru^
@@ -340746,6 +340749,8 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
 @@||nlog.naver.com/n|$domain=search.naver.com|www.naver.com
+||hinoki.security/analytics/
+||hinoki.security/ingest/
 ||api.cookist.it/views/
 ||rxless.com/beacon/
 ||hepsiburada.com/metrics/
@@ -340881,7 +340886,6 @@ app.socios.com##+js(set-local-storage-item, deviceId, $remove$)
 ||storage.googleapis.com/*/js/comscore.js
 ||eurozpravy.cz/js/matomo-events.js
 ||footmercato.net/lib/prebid$script
-||api.claydar.com/tracker/
 /wp-content/uploads/*/*.js?id=G-$domain=fcportables.com
 ||finanzen.*/api/page-visits/track
 ||cdn.shopify.com/extensions/*/affliate-by-secomapp-125/
