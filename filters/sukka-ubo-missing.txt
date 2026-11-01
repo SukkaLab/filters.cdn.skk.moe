@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Sun, 01 Nov 2026 01:15:16 GMT
+! Last modified: Sun, 01 Nov 2026 09:19:07 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -110940,7 +110940,6 @@ email.co.innovatodesign.com$image
 email.co.innovatodesign.sbs$image
 email.co.intimatediamond.com$image
 email.co.ipsystemsusa.com$image
-email.co.irries.com$image
 email.co.irvacollection.com$image
 email.co.ivadress.com$image
 email.co.jacksonandblake.com$image
@@ -170288,7 +170287,6 @@ email.gh-mail.hopskipdrive.com$image
 email.gh-mail.horacemann.com$image
 email.gh-mail.horizontrading.io$image
 email.gh-mail.hotelengine.com$image
-email.gh-mail.hotjar.com$image
 email.gh-mail.hotmart.com$image
 email.gh-mail.housebuyersofamerica.com$image
 email.gh-mail.housecallpro.com$image
@@ -308562,7 +308560,6 @@ email.success.fitnessvirgins.co$image
 email.success.freshservice.com$image
 email.success.freshworks.com$image
 email.success.gotbrightmoney.co$image
-email.success.hotjar.com$image
 email.success.investorlife.com$image
 email.success.jeremyhaynesai.com$image
 email.success.joinbebold.com$image
