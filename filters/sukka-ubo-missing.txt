@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Tue, 03 Nov 2026 14:20:19 GMT
+! Last modified: Tue, 03 Nov 2026 17:51:22 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.14.75
+!   - Version: 2.1.14.76
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202610011010
@@ -220,6 +220,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||trueanthem.com^$3p
 ||radar.snitcher.com^
 ||cdn.snitcher.com^
 ||claydar.com^
@@ -84908,6 +84909,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||countly.
 ||countly-
 |piwik.
+||api-node.corvexa.cloud^
 ||collector.wawlabs.com^
 ||telemetry.ecosoft.group^
 ||stats.cleanip.io^
@@ -86175,7 +86177,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||cs.avito.ru^
 ||logsk.glomancloud.gr^
 ||insights-tag.convertkit.com^
-||b.trueanthem.com^
 ||matomo.eduwill.net^
 ||telemetry.eyeo.com^
 ||frontier.capcutw.us^
