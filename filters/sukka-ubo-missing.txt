@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Mon, 02 Nov 2026 22:48:06 GMT
+! Last modified: Tue, 03 Nov 2026 01:03:57 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.14.68
+!   - Version: 2.1.14.69
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202610011010
@@ -6370,7 +6370,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||winstonsalembusinesssettlement.e.epiqnotification.com^
 ||workwonders.hallstar.com^
 ||ww2.jibunu.com^
-||www.marketing.notifymd.com^
 ||www1.3dcent.com^
 ||www1.leddental.com^
 ||www1.mcs.co.uk^
@@ -28781,7 +28780,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||success.relationshipone.com^
 ||survey.relationshipone.com^
 ||user.relationshipone.com^
-||www.tracking.adp.in^
 ||accelerate.nuance.com^
 ||ama.tsysmerchantsolutions.com^
 ||aosmith.advancedtech.com^
@@ -30027,7 +30025,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||site.cx.anb.com.sa^
 ||site.cx.anb.sa^
 ||test.yanbucement.com^
-||www.mylanpharma.com^
 ||te.lascana.at^
 ||te.lascana.ch^
 ||te.myhermes.de^
@@ -30778,8 +30775,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||waves.elliottswave.com^
 ||we.trk.the-savings-guru.com^
 ||woof.psi-lekarna.cz^
-||www.dctrckng.com^
-||www.trcktoday.com^
 ||a.healthy-publishing.com^
 ||a.vital-health-path.com^
 ||ads.drviniciusandrade.com.br^
@@ -37532,6 +37527,8 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||load.mtgs.hotellomnica.sk^
 ||load.mtgs.lolipop.hu^
 ||load.mtgs.northfinder.sk^
+||load.mtgs.panakei.cz^
+||load.mtgs.panakei.sk^
 ||load.mtgs.pracuj-v-nemecku.sk^
 ||load.mtgs.turnago.cz^
 ||load.mtgs.turnago.sk^
@@ -38275,6 +38272,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||load.ss.polarboxstyle.es^
 ||load.ss.priess.no^
 ||load.ss.privathospitaletkollund.dk^
+||load.ss.prodeuren.nl^
 ||load.ss.profitfarm.it^
 ||load.ss.quooker.dk^
 ||load.ss.r3datarecovery.com^
@@ -38612,6 +38610,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||load.sst.mynametags.sa^
 ||load.sst.myvial.de^
 ||load.sst.namastrip-online.com^
+||load.sst.nattelyst.fi^
 ||load.sst.naturalpaint.ro^
 ||load.sst.nawia.fi^
 ||load.sst.neetsheet.in^
@@ -60781,6 +60780,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||load.api.comohabla.com^
 ||load.api.consejosyrecetas.com^
 ||load.api.consultoria.xtracker.com.br^
+||load.api.conversasqueconectam.com^
 ||load.api.daniellecadete.com.br^
 ||load.api.dirrix.com^
 ||load.api.drajosyannesimao.com.br^
@@ -60941,6 +60941,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||load.cafe.equilibraqueflui.com.br^
 ||load.cafe.gustavobork.com.br^
 ||load.cafe.lonardistribuidora.com.br^
+||load.cafe.prosulrs.net.br^
 ||load.cafe.vortexfunnels.com.br^
 ||load.cafrgtm.revolutionfermentation.ca^
 ||load.caga.curacaoactivities.com^
@@ -61434,6 +61435,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||load.ggl.mon-jouet-educatif.com^
 ||load.ggl.mon-mocassin.com^
 ||load.ggl.mon-sac-a-dos.fr^
+||load.ggl.my-plush.ie^
 ||load.ggl.petites-pirates.com^
 ||load.ggl.plafonniermoderne.com^
 ||load.ggl.tabloide.de^
@@ -61441,6 +61443,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||load.ggl.tabloide.it^
 ||load.ggl.tendance-jeans.com^
 ||load.ggl.univers-plaid.com^
+||load.ggl.univers-viking.com^
 ||load.ggl.universpokemon.com^
 ||load.ggl.veilleuse.fr^
 ||load.gift.proyex.io^
@@ -62211,6 +62214,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||load.inglewood.themiraclestudios.com^
 ||load.ink.joza-ink.com^
 ||load.ink.malakatattoo.com^
+||load.insidercto.comoterorgasmo.com.br^
 ||load.insidermsd.menopausasemduvida.com^
 ||load.insight.ateliersantita.com^
 ||load.insight.moudier.com^
@@ -62698,6 +62702,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||load.server.bipocontabilidade.empresa-br.com^
 ||load.server.bodycruz.com.br^
 ||load.server.buildersstirling.co.uk^
+||load.server.bvsoficina.com.br^
 ||load.server.calcadosjotape.com.br^
 ||load.server.casadaspedrasbrasileiras.com.br^
 ||load.server.chargepointev.co.uk^
@@ -62777,6 +62782,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||load.server.matakanaessentials.co.nz^
 ||load.server.maxframe.com.br^
 ||load.server.mdrxlabs.com^
+||load.server.mercipapelariafina.com.br^
 ||load.server.mexhome.com^
 ||load.server.mm-automatico.online^
 ||load.server.mnc21.com.br^
@@ -63030,6 +63036,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||load.sgtm.graes.co^
 ||load.sgtm.grofyc.com^
 ||load.sgtm.grudado.com.br^
+||load.sgtm.gvsportsedu.com^
 ||load.sgtm.hairfibersofficial.com^
 ||load.sgtm.halaaz.com^
 ||load.sgtm.halftime.org^
@@ -84555,7 +84562,9 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||gtm.drpedropaschoal.com^
 ||load.ssgtm.kiilto.lv^
 ||ssl.mojprad.info^
+||load.sstrk.green-acres.co.il^
 ||load.sstrk.green-acres.co.uk^
+||load.sstrk.green-acres.com^
 ||load.sstrk.green-acres.gr^
 ||load.sstrk.green-acres.hr^
 ||load.st.foodango.cz^
