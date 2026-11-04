@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Filters
-! Last modified: Sat, 10 Oct 2026 06:55:42 GMT
+! Last modified: Wed, 04 Nov 2026 06:09:45 GMT
 ! Expires: 1 hours
 ! Description: The filters from Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -79,6 +79,10 @@ ui.com#@#+js(nowebrtc)
 challenges.cloudflare.com#@#+js(nowebrtc)
 speed.cloudflare.com#@#+js(nowebrtc)
 meet.google.com#@#+js(nowebrtc)
+butterfly-effect.dev#@#+js(nowebrtc)
+ampcode.com#@#+js(nowebrtc)
+manus.im#@#+js(nowebrtc)
+teams.live.com#@#+js(nowebrtc)
 ||youtube.com/embed/$3p,frame,redirect=click2load.html
 ||youtube-nocookie.com/embed/$3p,frame,redirect=click2load.html
 ||youtube.com/embed/$3p,object,redirect=click2load.html
@@ -121,6 +125,7 @@ meet.google.com#@#+js(nowebrtc)
 @@||ip.sb$domain=skk.moe|localhost
 @@||widget-mediator.zopim.com
 @@||bilivideo.com^$removeparam
+@@||bilivideos.com^$removeparam=nettype
 @@||bilivideo.cn^$removeparam
 @@||cloudflare.com/cdn-cgi/trace$domain=skk.moe|localhost
 google.*#@#style + div[data-mcpr][style^="margin-bottom:"]:has(div[data-async-type="folsrch"])
@@ -188,6 +193,8 @@ gettr.com##esr-signup
 ||kwizly.com/embed$3p
 ||archive.org/includes/donate
 www.speedtest.net##+js(set, dataLayer, [])
+fulicat.com##+js(set, LA, {})
+fulicat.com##+js(set, LA.init, noopFunc)
 ||bitmovin.com/analytics
 ||umami.*/*.js
 ||plausible.*/*.js
@@ -211,6 +218,7 @@ www.speedtest.net##+js(set, dataLayer, [])
 ||railway.com/googletag/
 ||railway.com/graphql/internal?q=eventBatchTrack
 ||developer.apple.com/assets/metrics/scripts/analytics.js
+||22112211.xyz^
 ||render.com/pan/api/event
 ||r2cdn.perplexity.ai/js/count/
 www.dnsfilter.com##+js(aopw, window.analytics)
@@ -225,6 +233,7 @@ www.dnsfilter.com##+js(aopw, window.analytics)
 ||vemetric.com$3p
 ||affonso.io$3p
 ||himetrica.com/api$3p
+||dreamdata.io^$3p
 ||sp1.baidu.com/*.gif$redirect=1x1.gif
 ||cnzz.com/z_stat.php$redirect=noop.js
 ||cnzz.com^$redirect=noop.txt
@@ -242,6 +251,7 @@ www.dnsfilter.com##+js(aopw, window.analytics)
 /\/va\//
 /_vercel/insights
 *$removeparam=aff
+||dzas9mj7ubt6.cloudfront.net/*.mp4$redirect=noop-1s.mp4
 wnacg.com##+js(set, lockdownInterface, noopFunc, runAt, 2)
 *$script,domain=csdn.net|sina.cn|finance.cnr.cn|guancha.cn|blog.gitcode.com
 *$frame,domain=csdn.net|sina.cn|finance.cnr.cn|guancha.cn|blog.gitcode.com
@@ -914,3 +924,5 @@ washingtonpost.com##body:style(position: initial !important; width: initial !imp
 zhuanlan.zhihu.com##.HotSearchCard
 tao.zz.ac###noad
 www.chinapress.com.my##.prompt-login-wrapper-2
+www.singtaousa.com##.kadence-conversion
+www.singtaousa.com##.kadence-conversion-overlay
