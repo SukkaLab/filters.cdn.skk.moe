@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Wed, 04 Nov 2026 23:45:18 GMT
+! Last modified: Thu, 05 Nov 2026 02:30:44 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Wed, 04 Nov 2026 17:36:51 +0000
+!   - Last modified: Thu, 05 Nov 2026 00:33:15 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Wed, 04 Nov 2026 14:15:44 +0000
@@ -17,7 +17,7 @@
 !   - Last modified: Tue, 03 Nov 2026 14:30:57 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
-!   - Last modified: Mon, 02 Nov 2026 05:41:32 +0000
+!   - Last modified: Thu, 05 Nov 2026 00:33:15 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
 !   - Last modified: Wed, 04 Nov 2026 04:47:12 +0000
@@ -27,7 +27,7 @@
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Sun, 01 Nov 2026 02:04:03 +0000
+!   - Last modified: Thu, 05 Nov 2026 02:07:12 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
 !   - Last modified: Wed, 04 Nov 2026 11:26:05 +0000
@@ -5088,7 +5088,6 @@ n-tv.de,rtl.de##+js(set-constant, Object.prototype.adReinsertion.homad.enabled, 
 player.rtl2.de##+js(set, getHomadConfig, noopFunc)
 ||damoh.welect.de^
 welt.de##+js(trusted-prevent-fetch, aud.springserve.com, <VAST version="3.0"></VAST>)
-welt.de##+js(no-fetch-if, aud.springserve.com, war:noop-vast3.xml)
 ||damoh.gmx.*/*$media,redirect=noop-0.1s.mp3,1p
 ||united-infos.net^$domain=gmx.*|web.de
 focus.de,kicker.de##+js(json-prune, enabled, force_disabled)
@@ -10091,7 +10090,7 @@ aagag.com##+js(no-xhr-if, googlesyndication)
 almelo1.nl##.almelo-ad
 shahied4u.me##+js(rmnt, script, /googlesyndication|adblock|keydown|popundersPerIP/i)
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=player.pl
-player.pl##+js(no-fetch-if, /gaid=, war:noop-vast2.xml)
+player.pl##+js(trusted-prevent-fetch, /gaid=, <VAST version="2.0"></VAST>)
 @@||jelonka.com^$ghide
 jelonka.com##.adsbygoogle
 jelonka.com##.kontener-reklam
@@ -12817,7 +12816,7 @@ tekfiz.com##ins.adsbygoogle
 files.fm##+js(aopr, canRunAds)
 ||cdn.flashtalking.com^$media,redirect=noopmp3-0.1s,domain=app.plex.tv
 app.plex.tv##+js(json-prune, MediaContainer.Metadata.[].Ad)
-imasdk.googleapis.com##+js(no-xhr-if, vod.provider.plex.tv/ad?, war:noop-vast3.xml)
+imasdk.googleapis.com##+js(trusted-prevent-xhr, vod.provider.plex.tv/ad?, <VAST version="3.0"></VAST>)
 ||vod.provider.plex.tv/ad?$xhr,redirect=noopvast-3.0
 watch.plex.tv##+js(no-fetch-if, doubleclick.com, , opaque)
 ||neonime.*/wp-content/themes/grifus/images/donate/yunita/
@@ -17381,7 +17380,6 @@ phineypet.com###content > form[id]:has(> center > button):style(display: block !
 ||phineypet.com/2x.png
 ||phineypet.com/300x600.png
 fapdrop.com##+js(aost, atob, eval)
-fapdrop.com##+js(no-fetch-if, doubleclick.net/instream/ad_status.js, war:doubleclick_instream_ad_status.js)
 fapdrop.com##+js(nostif, redURL)
 fapdrop.com##[href^="https://t.crdefault1.com/"]
 fapdrop.com##.king-ads
@@ -19108,7 +19106,7 @@ erogen.su##+js(aopr, document.dispatchEvent)
 @@||api.production.k8s.y3o.tv/*/video-ads$xhr,domain=yallo.tv
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=yallo.tv
 ||adservice.google.com^$script,redirect=noopjs,domain=yallo.tv
-imasdk.googleapis.com##+js(no-fetch-if, secure.adnxs.com/ptv, war:noop-vast4.xml)
+imasdk.googleapis.com##+js(trusted-prevent-fetch, secure.adnxs.com/ptv, <VAST version="4.0"></VAST>)
 @@*$image,domain=a2zupload.com
 @@||a2zupload.com^$ghide
 @@||googlesyndication.com/pagead/$script,domain=a2zupload.com
@@ -19561,7 +19559,6 @@ mrbenne.com##+js(rmnt, script, /fairAdblock|popMagic/)
 ebaticalfel.com,fansmega.com,iedprivatedqu.com,stownrusis.com##+js(nowoif)
 @@||cloudfront.net^$script,domain=ebaticalfel.com|fansmega.com|iedprivatedqu.com|stownrusis.com
 ||buyvisblog.com^$all
-botrix.live##+js(no-fetch-if, googlesyndication, war:google-ima.js)
 *$script,redirect-rule=noopjs,3p,domain=expressnews.com
 daotranslate.*##+js(acs, document.getElementById, deblocker, /^data:text\/javascript/)
 *$script,redirect-rule=noopjs,3p,domain=sfchronicle.com
@@ -20562,7 +20559,6 @@ filmy4wap.co.in,filmy4waps.org##+js(rmnt, script, /h=decodeURIComponent|popunder
 leakshaven.com##+js(no-fetch-if, googlesyndication)
 flaticon.com##.soul-p-nsba
 flaticon.com##+js(json-prune-fetch-response, data.[].affiliate_url, , propsToMatch, cdnpk.net/v2/images/search?)
-flaticon.com##+js(no-fetch-if, cdnpk.net/Rest/Media/, war:noop.json)
 ||cdnpk.net/sponsor/
 ||api.gettyimages.com/v3/search/images/creative?*referral_destinations$xhr,domain=flaticon.com
 ##.ads-btns
@@ -30818,8 +30814,8 @@ calgaryherald.com,calgarysun.com,canada.com,canoe.com,driving.ca,edmontonjournal
 @@||cdn.q0losid.com/prod/pni/loader.min.js$domain=calgaryherald.com|calgarysun.com|canada.com|canoe.com|driving.ca|edmontonjournal.com|edmontonsun.com|financialpost.com|intelligencer.ca|leaderpost.com|lfpress.com|montrealgazette.com|nationalpost.com|ontariofarmer.com|ottawacitizen.com|ottawasun.com|standard-freeholder.com|thegrowthop.com|theprovince.com|thestarphoenix.com|tj.news|torontosun.com|vancouversun.com|windsorstar.com|winnipegsun.com
 @@||cbsistatic.com/*/comscore.streaming.$script,domain=cbsnews.com
 ||imasdk.googleapis.com/js/sdkloader/ima3_debug.js$domain=cbsnews.com,redirect=google-ima.js,important
-cbsnews.com>>##+js(no-fetch-if, v.fwmrm.net/ad/g/, war:noop-vmap1.xml)
-cbsnews.com>>##+js(no-xhr-if, v.fwmrm.net/ad/g/, war:noop-vmap1.xml)
+cbsnews.com>>##+js(trusted-prevent-fetch, v.fwmrm.net/ad/g/, <vmap:VMAP xmlns:vmap="http://www.iab.net/videosuite/vmap" version="1.0"></vmap:VMAP>)
+cbsnews.com>>##+js(trusted-prevent-xhr, v.fwmrm.net/ad/g/, <vmap:VMAP xmlns:vmap="http://www.iab.net/videosuite/vmap" version="1.0"></vmap:VMAP>)
 @@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$domain=cbsnews.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3_dai_debug.js$domain=cbsnews.com
 @@||tealium.cbsnews.com/site/prod/utag.js^$1p
@@ -32925,8 +32921,8 @@ topgear.com##+js(set, _sp_.config.events.onSPPMObjectReady, noopFunc)
 @@||worldsurfleague.com/js/videojs8/nuevo/plugins/videojs-contrib-ads.min.js^$script,1p
 @@||micro.rubiconproject.com/prebid/dynamic/$script,domain=worldsurfleague.com
 @@||securepubads.g.doubleclick.net/pagead/ima_ppub_config$xhr,domain=worldsurfleague.com
-imasdk.googleapis.com##+js(no-xhr-if, worldsurfleague.com, war:noop-vmap1.0.xml)
-||pubads.g.doubleclick.net/gampad/ads?*www.worldsurfleague.com$xhr,redirect=noop-vmap1.0.xml:5,domain=imasdk.googleapis.com
+imasdk.googleapis.com##+js(trusted-prevent-xhr, worldsurfleague.com, <vmap:VMAP xmlns:vmap="http://www.iab.net/videosuite/vmap" version="1.0"></vmap:VMAP>)
+||pubads.g.doubleclick.net/gampad/ads?*www.worldsurfleague.com$xhr,redirect=noop-vmap1.xml:5,domain=imasdk.googleapis.com
 eservice.directauto.com##+js(set, gtm, {})
 eservice.directauto.com##+js(set, gtm.trackEvent, noopFunc)
 ||imasdk.googleapis.com/js/sdkloader/ima3_debug.js$script,redirect=google-ima.js,domain=mais.sbt.com.br,important
@@ -36086,6 +36082,7 @@ automicgold.com##+js(trusted-set-cookie, cookieyes-consent, consentid:0\,consent
 jysk.no##+js(trusted-set-cookie, OptanonConsent, groups=C0001%3A1%2CC0003%3A0%2CC0004%3A0%2CC0002%3A1, , , domain, jysk.no)
 jysk.no##+js(trusted-set-cookie, OptanonAlertBoxClosed, $currentDate$, , , domain, jysk.no)
 edition.cnn.com##+js(trusted-click-element, when-visible:button#onetrust-reject-all-handler)
+alpsgo.it##+js(trusted-set-cookie, dp_cookieconsent_status, '{"status":"approved","checkboxes":[{"name":"statistics","checked":false},{"name":"marketing","checked":false}]}')
 ! uBlock filters – Annoyances https://ublockorigin.pages.dev/filters/annoyances.min.txt
 ilovevaldinon.it##+js(acs, document.oncontextmenu)
 ilovevaldinon.it##+js(aopr, disableSelection)
