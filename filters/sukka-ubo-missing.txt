@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Fri, 06 Nov 2026 09:27:44 GMT
+! Last modified: Fri, 06 Nov 2026 14:19:17 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.14.96
+!   - Version: 2.1.14.98
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202610011010
@@ -377399,6 +377399,7 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
 @@||nlog.naver.com/n|$domain=search.naver.com|www.naver.com
+||winfuture.de/wfk/?id=GTM-
 ||tools.finanztip.de/track/
 ||kitco.com/api/cms-proxy?
 ||api.biggo.com/api/v*/view-attest?
@@ -380877,7 +380878,6 @@ today.ua##.li-bi-container
 ||bmscdn.com/m6/scripts/libs/bms-analytics.js
 ||proxy.tproger.ru/yandex-metrika.js
 ||wurking.global.ssl.fastly.net/ingestly-ingest/
-||static.foxnews.com/static/leap/sites/fnc/metrics.js
 ||web.snrbox.com/*?tracker=
 ||web.snrbox.com/tck/$xhr,redirect=noop.txt
 ||fenerbahce.org/cmsapi/webanalytics/
