@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Fri, 06 Nov 2026 02:31:28 GMT
+! Last modified: Fri, 06 Nov 2026 09:27:44 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,16 +8,16 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Thu, 05 Nov 2026 11:16:43 +0000
+!   - Last modified: Fri, 06 Nov 2026 04:05:12 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
-!   - Last modified: Thu, 05 Nov 2026 13:57:40 +0000
+!   - Last modified: Fri, 06 Nov 2026 04:03:59 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
 !   - Last modified: Tue, 03 Nov 2026 14:30:57 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
-!   - Last modified: Thu, 05 Nov 2026 00:33:15 +0000
+!   - Last modified: Fri, 06 Nov 2026 02:39:15 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
 !   - Last modified: Wed, 04 Nov 2026 04:47:12 +0000
@@ -18891,8 +18891,6 @@ fullxh.com,megaxh.com,seexh.com,unlockxh4.com,xhaccess.com,xhadult2.com,xhadult3
 fullxh.com,megaxh.com,seexh.com,unlockxh4.com,xhaccess.com,xhadult2.com,xhadult3.com,xhamster.*,xhamster1.*,xhamster10.*,xhamster11.*,xhamster12.*,xhamster13.*,xhamster14.*,xhamster15.*,xhamster16.*,xhamster17.*,xhamster18.*,xhamster19.*,xhamster20.*,xhamster2.*,xhamster3.*,xhamster4.*,xhamster42.*,xhamster46.*,xhamster5.*,xhamster7.*,xhamster8.*,xhamsterporno.mx,xhbig.com,xhbranch5.com,xhchannel.com,xhdate.world,xhlease.world,xhmoon5.com,xhofficial.com,xhopen.com,xhplanet1.com,xhplanet2.com,xhreal2.com,xhreal3.com,xhspot.com,xhtotal.com,xhtree.com,xhvictory.com,xhwebsite.com,xhwebsite5.com,xhwide5.com##.thumb-list-mobile-item--widget
 fullxh.com,megaxh.com,seexh.com,unlockxh4.com,xhaccess.com,xhadult2.com,xhadult3.com,xhamster.*,xhamster1.*,xhamster10.*,xhamster11.*,xhamster12.*,xhamster13.*,xhamster14.*,xhamster15.*,xhamster16.*,xhamster17.*,xhamster18.*,xhamster19.*,xhamster20.*,xhamster2.*,xhamster3.*,xhamster4.*,xhamster42.*,xhamster46.*,xhamster5.*,xhamster7.*,xhamster8.*,xhamsterporno.mx,xhbig.com,xhbranch5.com,xhchannel.com,xhdate.world,xhlease.world,xhmoon5.com,xhofficial.com,xhopen.com,xhplanet1.com,xhplanet2.com,xhreal2.com,xhreal3.com,xhspot.com,xhtotal.com,xhtree.com,xhvictory.com,xhwebsite.com,xhwebsite5.com,xhwide5.com##ul.thumb-list-mobile > :not(.thumb-list-mobile-item--type-video)
 /^https:\/\/bbs\.[a-z0-9-]*xh[a-z0-9-]*\.[cd][eo][ms]i?\/[a-zA-Z0-9-][a-zA-Z0-9-][a-zA-Z0-9-][a-zA-Z0-9-][a-zA-Z0-9-]$/$xhr,1p
-||cdn.*.com/sdk/v*/dd.master.spot.js$script,3p
-||cdn.*.com/sdk/v*/dd.interstitial.ts.js$script,3p
 /api/models/vast?userId=*&adblocked=$xhr,1p
 &spotPageType=*&statsUID=$frame,xhr
 /v2/for-page?body=%$xhr
@@ -23605,15 +23603,16 @@ autoembed.app##section[aria-label="Sponsored content"]
 ||empirenovel.com/po.js
 @@||leakgallery.com^$ghide
 ##.page-layout a[href^="https://hashcounts.com/"]
+leakgallery.com##app-page-lead
 leakgallery.com##app-top-strip:remove()
 leakgallery.com##a[rel~="sponsored"]
 leakgallery.com##+js(no-fetch-if, method:HEAD)
 leakgallery.com##+js(set-cookie, adblock, 0)
 *$script,3p,redirect-rule=noopjs,to=~googletagmanager.com,from=leakgallery.com
 *$script,3p,redirect=noopjs,to=pemsrv.com|tsyndicate.com,from=leakgallery.com
-||api.leakgallery.com/r/z?
-||cdn.*.com/sdk/v*/dd.*.js|$script,3p
-/\/r\/z\?z=[0-9]+&sub=[0-9]+/$xhr,1p,match-case
+||api.leakgallery.com/cfg/*/z?
+||api.leakgallery.com/cfg/*/cpc?
+||cdn.*.com/sdk/v*/dd.*.js^$script,3p
 scmp.com##+js(no-xhr-if, googlesyndication)
 scmp.com##+js(remove-cookie, __adblocker)
 opatil.com##+js(rmnt, script, offsetParent)
@@ -26523,7 +26522,6 @@ cracksmid.com##div[style=""] > center > center
 ||tennoito.jp^$doc
 ||cla-fando.com^$doc
 ||weclo-offer.online^$doc
-||lovean.jp^$doc
 ||yx5s6.com^$doc
 ||xrfg0dt.com^$doc
 ||pascal2417.com^$doc
@@ -33235,6 +33233,7 @@ funradio.fr##+js(trusted-set, getUserConsentStatus, json:{"dailymotion":true}, a
 ||log.nordot.jp^$badfilter
 ||log.nordot.jp/pageview
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$script,redirect-rule=googletagservices_gpt.js:5,domain=theglobeandmail.com
+@@||h-visa2.online-metrix.net^$frame,domain=src.visa.com
 ! uBlock filters – Quick fixes https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
 @@||hb.vntsm.com/v4/live/vms/sites/aternos.org/index.js$script,domain=aternos.org
 @@||cdn.snigelweb.com/adengine/aternos.org/loader.js$script,domain=aternos.org
