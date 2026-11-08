@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Sun, 08 Nov 2026 18:49:42 GMT
+! Last modified: Sun, 08 Nov 2026 22:14:42 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202611081842
+!   - Version: 202611082202
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 08 Nov 2026 18:42 UTC
+!   - Last modified: 08 Nov 2026 22:02 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
@@ -31,7 +31,7 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 💊 Dandelion Sprout's Anti-Malware List
 !   - URL: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout's%20Anti-Malware%20List.txt
-!   - Version: 08November2026v2
+!   - Version: 08November2026v3
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 🛃 Anti-'Adoptables and Artsite NFTs' List
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/AntiAdoptablesList.txt
@@ -7157,7 +7157,7 @@ zombooru.com##a[href$="ttp://www.hard55.com"]
 ||crtjmp.com^$all
 ||crtmainjmp.com^$all
 ||jsmcrjmp.com^$all
-|||protojsmgw.com^$all
+||protojsmgw.com^$all
 ||ptbbjmp.com^$all
 ||ptcrwmjmp.com^$all
 ||ptentry.com^$all
@@ -13416,7 +13416,7 @@ http://secured21.*.com/|$all
 ||freedomwallapp.com^$all
 ||freedomwallnet.com^$all
 ||gangorgy-party.com^$all
-|||ghostaccesscloud.com^$all
+||ghostaccesscloud.com^$all
 ||ghostdatashield.com^$all
 ||ghostdeviceprotect.com^$all
 ||ghostprivacybarrier.com^$all
@@ -16736,7 +16736,6 @@ google.*###rso > div[class]:has(h3:has-text(/^.*(H\ow\st\o|fre{2})\s(\instal{2}|
 ||youtuba.com^$all
 ||youutube.com^$all
 ||youvetube.com^$all
-|!#endif
 ! 🛃 Anti-'Adoptables and Artsite NFTs' List https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/AntiAdoptablesList.txt
 weasyl.com##a[href*=adopt]
 weasyl.com##a[href*=auction]
