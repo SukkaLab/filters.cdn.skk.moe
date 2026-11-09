@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Mon, 09 Nov 2026 09:52:10 GMT
+! Last modified: Mon, 09 Nov 2026 16:27:18 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.15.9
+!   - Version: 2.1.15.14
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202610011010
@@ -85833,6 +85833,10 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||countly.
 ||countly-
 |piwik.
+||tracklet.prod.tech.as-nmt.de^
+||stats.vidbolt.pro^
+||analytics.redflix.ac^
+||t.games.gg^
 ||visor.sbrf.ru^
 ||fluid-player-analytics.sky.it^
 ||pbs.yahoo.com^
@@ -377399,6 +377403,15 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
 @@||nlog.naver.com/n|$domain=search.naver.com|www.naver.com
+||check24.de/files/give_img.php
+||chat.bot.check24.de/faro/collect
+||search.check24.de/tag.gif
+||ketchcdn.com/web/v*/log?
+||billiger.de/l/
+||cm-dynamic.billiger.de/delivery/info/?id=
+||api.poool.fr/api/*/access/events.track.pageView
+||rf.nfl.com/ping/
+||winfuture.de/ajax/zs
 /api/track|$domain=turizmguncel.com|brutto-netto-rechner.digital
 ||winfuture.de/wfk/?id=GTM-
 ||tools.finanztip.de/track/
@@ -377552,7 +377565,7 @@ carparts.com,kupibilet.ru##+js(set-local-storage-item, optimizely-vuid, $remove$
 s.response.jp##.vsi-pickup-list
 ||status.tbank-online.com/front/log/
 ||ispazio.net/wp-content/plugins/wc-site-stats/
-app.socios.com##+js(set-local-storage-item, deviceId, $remove$)
+nfl.com,app.socios.com##+js(set-local-storage-item, deviceId, $remove$)
 ||im.np-payment-gateway.com/bff/atone/event/tracking
 ||storage.googleapis.com/*/js/comscore.js
 ||eurozpravy.cz/js/matomo-events.js
@@ -382883,6 +382896,7 @@ dlsdk.appsflyer.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||lw-c-log.lastwarapp.net^
 ||mkt.supercell.com^
 ||collector.snowplow.supercell.com^
 ||api-abtest-cdn.learnings.ai^
