@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Mon, 09 Nov 2026 01:45:05 GMT
+! Last modified: Mon, 09 Nov 2026 09:52:10 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.15.7
+!   - Version: 2.1.15.9
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202610011010
@@ -897,7 +897,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||getui.net^$3p
 ||getui.com^$3p
 ||scripts.jixie.media^$3p
-||pt.wisernotify.com^
 ||citrusad.net^$3p
 ||pubperf.com^$3p
 ||stats.getaim.org^
@@ -382735,6 +382734,10 @@ dreamprogs.net##td[width="88"][height="31"]
 ||ztat.net/*/webtrekk.min.js^
 ||google.com/log?$redirect=noop.txt,image,media,subdocument,stylesheet,script,xhr,other
 ||yandex.ru/clck/click|
+||zeelool.com/*-metrics/
+zeelool.com##+js(no-xhr-if, metrics/collect)
+zeelool.com##+js(prevent-fetch, metrics/collect)
+zeelool.com##+js(no-setTimeout-if, batchInterval)
 ||phncdn.com/www-static/js/lib/user-clogs.js
 pornhub.com##+js(set-constant, userClogTracking, noopFunc)
 ||ing.de/*/*ebtrekk*
