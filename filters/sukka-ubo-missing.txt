@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Tue, 10 Nov 2026 09:55:47 GMT
+! Last modified: Tue, 10 Nov 2026 14:56:15 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.15.20
+!   - Version: 2.1.15.23
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202610011010
@@ -377403,6 +377403,8 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
 @@||nlog.naver.com/n|$domain=search.naver.com|www.naver.com
+||baqend.com/v*/speedkit/signals?
+||cdn.jsdelivr.net/npm/@datacite/datacite-tracker
 ||migros.com.tr/analytics/
 ||check24.de/files/give_img.php
 ||chat.bot.check24.de/faro/collect
@@ -377571,7 +377573,7 @@ nfl.com,app.socios.com##+js(set-local-storage-item, deviceId, $remove$)
 ||storage.googleapis.com/*/js/comscore.js
 ||eurozpravy.cz/js/matomo-events.js
 ||footmercato.net/lib/prebid$script
-/wp-content/uploads/*/*.js?id=G-$domain=fcportables.com
+/wp-content/uploads/*/*.js?id=G-$domain=fcportables.com|zenoplay.to
 ||finanzen.*/api/page-visits/track
 ||cdn.shopify.com/extensions/*/affliate-by-secomapp-125/
 ||wlct-one.de/api/*/mtrcs/
