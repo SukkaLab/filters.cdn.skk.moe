@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Wed, 11 Nov 2026 17:58:59 GMT
+! Last modified: Wed, 11 Nov 2026 21:24:50 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,13 +8,13 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Wed, 11 Nov 2026 13:54:42 +0000
+!   - Last modified: Wed, 11 Nov 2026 19:25:45 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
-!   - Last modified: Wed, 11 Nov 2026 06:30:51 +0000
+!   - Last modified: Wed, 11 Nov 2026 16:29:40 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Wed, 11 Nov 2026 06:45:42 +0000
+!   - Last modified: Wed, 11 Nov 2026 15:49:48 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
 !   - Last modified: Fri, 06 Nov 2026 02:39:15 +0000
@@ -6562,6 +6562,7 @@ clksz.com,tpi.li,oii.la,srnky.com##+js(no-xhr-if, /pagead2\.googlesyndication\.c
 clksz.com,tpi.li,oii.la,srnky.com##+js(acs, EventTarget.prototype.addEventListener, delete window)
 clksz.com,tpi.li,oii.la,srnky.com##+js(aeld, DOMContentLoaded, /checkAdblockUser|bypOnSyntheticClick/)
 clksz.com,tpi.li,oii.la,srnky.com##+js(nostif, checkAdblock)
+clksz.com,tpi.li,oii.la,srnky.com##+js(nosiif, -0x)
 clksz.com,tpi.li,oii.la,srnky.com##+js(set, blurred, false)
 clksz.com,tpi.li,oii.la,srnky.com##+js(rpnt, script, offsetHeight, offsetHeight+100)
 clksz.com,tpi.li,oii.la,srnky.com##a[href][target="_blank"]
@@ -9084,7 +9085,7 @@ carscoops.com,eurointegration.com.ua,flatpanelshd.com,footballtransfer.com.ua,fo
 automobile-catalog.com,motorbikecatalog.com,maketecheasier.com##+js(nostif, loader.min.js)
 mlbpark.donga.com##+js(nostif, content-loader.com)
 cboard.net###left-ba
-*$doc,csp=script-src-attr 'none',to=m.economictimes.com|nextchessmove.com|ondemandkorea.com|tbsradio.jp
+*$doc,csp=script-src-attr 'none',to=nextchessmove.com|ondemandkorea.com|tbsradio.jp
 dogdrip.net##ins.adsbygoogle:style(height: 1px !important; visibility: hidden !important;)
 ||ad-shield.cc^
 ||07c225f3.online^$font,ping
@@ -28955,6 +28956,9 @@ msm-wroclaw.pl##+js(noeval-if, _0x)
 ||ludashisafe.com^$all
 ||gtagrok.com^$all
 ||pondmart.shop^$all
+||4kwallpapers.top^$all
+||pcsofts.site^$all
+||gover.top^$all
 ! uBlock filters – Privacy https://ublockorigin.pages.dev/filters/privacy.min.txt
 ||google-analytics.com/analytics.js$script,xhr,redirect=google-analytics_analytics.js:5
 ||google-analytics.com/cx/api.js$script,redirect=google-analytics.com/cx/api.js:5
@@ -30820,6 +30824,7 @@ xhamster.com##+js(no-xhr-if, /hpyjmp|marzaent/)
 xhamster.com##+js(no-fetch-if, /hpyjmp|marzaent/)
 cnn.com,play.discoveryplus.com,play.hbomax.com##+js(no-xhr-if, brightline.tv)
 cnn.com,play.discoveryplus.com,play.hbomax.com##+js(no-fetch-if, litix.io)
+m.economictimes.com##+js(nosiif, _grx)
 ! uBlock filters – Unbreak https://ublockorigin.pages.dev/filters/unbreak.min.txt
 @@||awstrack.me/*auth.coindesk.com$doc,popup
 @@||awstrack.me/*cmd=ac-inactive-restore$doc,popup
