@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Fri, 13 Nov 2026 20:53:59 GMT
+! Last modified: Fri, 13 Nov 2026 23:40:31 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Fri, 13 Nov 2026 15:51:45 +0000
+!   - Last modified: Fri, 13 Nov 2026 16:33:24 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Fri, 13 Nov 2026 13:10:12 +0000
@@ -24147,6 +24147,7 @@ checktls.com##+js(set, adsbygoogle, {})
 checktls.com##+js(set, google_tag_manager, {})
 checktls.com##+js(set, adsbygoogle.loaded, true)
 yupflix.com,yupflix.org##+js(rmnt, script, /bait|com\.android\.chrome/)
+fmodpro.com##+js(rmnt, script, /onerror|offsetHeight|no-store/)
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
