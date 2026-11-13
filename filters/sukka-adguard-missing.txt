@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Thu, 12 Nov 2026 23:42:11 GMT
+! Last modified: Fri, 13 Nov 2026 02:39:49 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,13 +8,13 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Thu, 12 Nov 2026 17:49:32 +0000
+!   - Last modified: Thu, 12 Nov 2026 19:49:56 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Thu, 12 Nov 2026 16:59:43 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Thu, 12 Nov 2026 04:24:52 +0000
+!   - Last modified: Thu, 12 Nov 2026 19:33:05 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
 !   - Last modified: Fri, 06 Nov 2026 02:39:15 +0000
@@ -20782,8 +20782,9 @@ genelify.com##^script:has-text(detectedAdblock)
 genelify.com##+js(rmnt, script, detectedAdblock)
 basseqwevewcewcewecwcw.xyz##+js(nowoif)
 sheepesports.com##+js(no-fetch-if, /googlesyndication|doubleclick/)
-sheepesports.com##div.h-full.p-4.xl\:block.hidden > .h-full:has-text(allowing ads)
-sheepesports.com##.min-w-0 > .min-w-0 > div > .border-b.justify-center.items-center.flex:has-text(allowing ads)
+sheepesports.com##div.xl\:block.hidden > .h-full:has([style^="aspect-ratio:300 /"])
+sheepesports.com##.my-8.gap-2.items-center
+sheepesports.com##.px-5.my-10.max-w-\[70rem\]
 ebook-hell.to##+js(nowoif)
 ||ebook-hell.to/jquery/jspololife.js
 ibooks.to##+js(rmnt, script, ai_adb)
@@ -30691,7 +30692,7 @@ webex.com##+js(no-xhr-if, svc.webex.com/metrics)
 ||directg.jp/js/fingerprint2.js$script,redirect=fingerprint2.js,important
 /fingerprint2.js$script,redirect=fingerprint2.js
 /fingerprint2.min.js$script,redirect=fingerprint2.js
-||curiosity.sheepesports.com^
+||rainbow.sheepesports.com^
 mashable.com##+js(href-sanitizer, a[href^="https://zdcs.link/"], ?u)
 ||prydwen.gg/api/v1/ping/
 vaughn.live##+js(no-fetch-if, method:POST body:zaraz)
