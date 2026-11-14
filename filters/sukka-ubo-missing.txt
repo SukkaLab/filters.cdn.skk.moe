@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Fri, 13 Nov 2026 23:40:31 GMT
+! Last modified: Sat, 14 Nov 2026 02:29:00 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.15.49
+!   - Version: 2.1.15.50
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202610011010
@@ -30142,7 +30142,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||fpa-events.texasmonthly.com^
 ||fpa-events.thebeat.travel^
 ||fpa-events.thedailybeast.com^
-||fpa-events.theintercept.com^
 ||fpa-events.themarshallproject.org^
 ||fpa-events.thetrace.org^
 ||fpa-events.thinkglobalhealth.org^
@@ -88364,7 +88363,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||tdum.alibaba.com^
 ||analytics.simpler.so^
 ||api-ktm.kkday.com^
-||riskpoc.trip.com^
 ||ubt-sgp.trip.com^
 ||events.asurion.com^
 ||collector.moderntv.eu^
@@ -379125,7 +379123,6 @@ kbb.com##+js(set-local-storage-item, /^optimizely/, $remove$)
 ||caido.io/stats/
 ||bubilet.com.tr/metrics/
 ||pandaproxy.production.cafemedia.com/topics/clickstream-event
-||api.firecrown.com/v1/events
 ||autoguide.com/api/posts/*/impressions
 ||global.one.yomiuri.co.jp/ssc-ym-client.v*.js
 ||247wallst.com/b66d/|$script
@@ -379946,6 +379943,7 @@ adultportal.jp###custom_html-12
 ||amazon.com/1/action-impressions/
 ://a.klaviyo.com^
 misterworker.com##.custom_text_home:has(> #mw-clerk-sliderhp)
+||trip.com/bee/collect
 ||ssl.pstatic.net/static.news/mnews/resources/*/js/generated/statistics_jquery.js
 ||donga.com/proc/ad_history
 ||bazu.cc/api/baidu_tui.php
