@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sat, 14 Nov 2026 19:09:52 GMT
+! Last modified: Sat, 14 Nov 2026 22:31:41 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sat, 14 Nov 2026 16:22:58 +0000
+!   - Last modified: Sat, 14 Nov 2026 18:16:00 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Sat, 14 Nov 2026 14:53:53 +0000
@@ -16216,6 +16216,10 @@ link.codevn.net##+js(set, blurred, false)
 ios.codevn.net##+js(nosiif, offsetHeight)
 @@||redketchup.io^$script,1p
 redketchup.io##+js(rpnt, script, ?30:0, ?0:0)
+redketchup.io##+js(trusted-set, document.visibilityState, json:"visible")
+redketchup.io##+js(set, googletag.cmd.push, noopFunc)
+redketchup.io##+js(nostif, /googletag\.pubads|\/PreBid\.js/)
+||securepubads.g.doubleclick.net/tag/js/gpt.js$script,redirect=noopjs:6,domain=redketchup.io
 redketchup.io##.potato_modal
 bestfonts.pro##+js(rc, download-font-button2, .download-font-button)
 bestfonts.pro##.loader-wrap
