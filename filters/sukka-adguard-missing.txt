@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sun, 15 Nov 2026 19:46:47 GMT
+! Last modified: Sun, 15 Nov 2026 22:56:52 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -27,7 +27,7 @@
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Sat, 14 Nov 2026 13:05:16 +0000
+!   - Last modified: Sun, 15 Nov 2026 19:32:18 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
 !   - Last modified: Sun, 15 Nov 2026 13:46:53 +0000
@@ -36212,6 +36212,7 @@ jysk.no##+js(trusted-set-cookie, OptanonAlertBoxClosed, $currentDate$, , , domai
 edition.cnn.com##+js(trusted-click-element, when-visible:button#onetrust-reject-all-handler)
 alpsgo.it##+js(trusted-set-cookie, dp_cookieconsent_status, '{"status":"approved","checkboxes":[{"name":"statistics","checked":false},{"name":"marketing","checked":false}]}')
 profit.ro##+js(trusted-click-element, #onetrust-accept-btn-handler)
+historianet.fi##+js(trusted-click-element, #didomi-notice-agree-button)
 ! uBlock filters – Annoyances https://ublockorigin.pages.dev/filters/annoyances.min.txt
 ilovevaldinon.it##+js(acs, document.oncontextmenu)
 ilovevaldinon.it##+js(aopr, disableSelection)
