@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Sun, 15 Nov 2026 13:58:30 GMT
+! Last modified: Sun, 15 Nov 2026 17:12:13 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202611151353
+!   - Version: 202611151702
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 15 Nov 2026 13:53 UTC
+!   - Last modified: 15 Nov 2026 17:02 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
@@ -74,7 +74,7 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * ➗ Actually Legitimate URL Shortener Tool
 !   - URL: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt
-!   - Version: 13November2026v1
+!   - Version: 15November2026v3
 !   - Homepage: https://github.com/DandelionSprout/adfilt/discussions/163
 ! * 🐊 Imgur: Pure Imagery Experience
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/ImgurPureImageryExperience.txt
@@ -18780,7 +18780,7 @@ $removeparam=_sacat,domain=~ebay.*
 $removeparam=crlp,domain=ebay.*
 $removeparam=MT_ID,domain=ebay.*
 $removeparam=geo_id,domain=ebay.*
-$removeparam=device,domain=ebay.*|obs.no
+$doc,removeparam=device,domain=docs.channel.io|ebay.*|obs.no
 $removeparam=cmpgn,domain=ebay.*
 ||ebay.*/itm/$removeparam=LH_BIN
 $removeparam=rpp_cid
@@ -19689,7 +19689,7 @@ $removeparam=from_country,domain=shein.com
 $removeparam=_t,domain=shein.com
 $removeparam=sr_id,domain=reddit.app.link
 $removeparam=sr_name,domain=reddit.app.link
-$removeparam=domain,domain=reddit.app.link
+$doc,removeparam=domain,domain=docs.channel.io|reddit.app.link
 $removeparam=geoip_country,domain=reddit.app.link
 $removeparam=user_agent,domain=reddit.app.link
 $removeparam=referrer_domain,domain=reddit.app.link
@@ -19899,7 +19899,7 @@ $removeparam=ifs,domain=pcgamesn.com|pockettactics.com|thedigitalfix.com|theload
 ||bandcamp.com^$removeparam=search_rank
 ||bstn.com^$removeparam=indexName
 ||bstn.com^$removeparam=objectID
-$doc,removeparam=queryID,domain=bstn.com|suomalainen.com
+$doc,removeparam=queryID,domain=bstn.com
 ||app.slack.com^$removeparam=entry_point
 ||nicovideo.jp/comic^$removeparam=track
 ||onenote.com^$removeparam=nf
@@ -20637,6 +20637,8 @@ $doc,removeparam=lr_input,domain=investopedia.com|people.inc
 ||oldphoneworks.com^$doc,removeparam=_su_rec_id
 ||amazon.com^$doc,removeparam=btn_ref
 ||delta.com^$doc,removeparam=mkcpgn
+||suomalainen.com^$doc,removeparam=queryId
+||wealthsimple.com^$doc,removeparam=ajs_aid
 $removeparam=w,domain=files.wordpress.com|store.playstation.com|s-microsoft.com|store-images.microsoft.com|dr.dk|if.com.au
 $removeparam=h,domain=files.wordpress.com|store.playstation.com|s-microsoft.com|store-images.microsoft.com|dr.dk
 $removeparam=width,domain=i-viaplay.com.akamaized.net|media.discordapp.net|tvno.nu
