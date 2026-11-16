@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Mon, 16 Nov 2026 15:51:43 GMT
+! Last modified: Mon, 16 Nov 2026 20:29:57 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.15.66
+!   - Version: 2.1.15.68
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202610011010
@@ -85608,6 +85608,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||countly-
 |piwik.
 ||stats.proxypurity.com^
+||cast-imp.jtbc.co.kr^
 ||20251117mix.zgstongji.vip^
 ||2702.anglicanledger.org^
 ||98f316a886735460.pornfans.st^
@@ -379474,7 +379475,6 @@ olympics.com##section[data-cy="story-parts-wrapper"] > div:not([data-cy]):has(re
 ||rawpixel.com/external/gtag.js
 moebelix.*##+js(set-local-storage-item, coveo_cid, $remove$)
 ||appmifile.com/i18n/ga*/
-||cast-imp.jtbc.co.kr/trac?event=
 ||bsp-proxy.wetransfer.net/pico/v*/web-events
 ||wetransfer.com/api/web-metrics
 ||tokbox.com/prod/logging/
