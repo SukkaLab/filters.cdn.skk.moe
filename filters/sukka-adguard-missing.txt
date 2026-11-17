@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Tue, 17 Nov 2026 10:46:41 GMT
+! Last modified: Tue, 17 Nov 2026 16:03:38 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Tue, 17 Nov 2026 00:05:15 +0000
+!   - Last modified: Tue, 17 Nov 2026 12:21:37 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Mon, 16 Nov 2026 05:36:08 +0000
@@ -23904,6 +23904,7 @@ second-hand.it##.werbung-container
 planetminecraft.com##+js(nano-sib, countdown)
 up-4ever.net##+js(rmnt, script, .offsetHeight)
 up-4ever.net##.u4dl-spotcol.u4dl-choice
+||up-4ever.net/js/bravenote.js
 reuters.com##+js(rmnt, script, rcom_bdScriptLoaded)
 dilar.tube##+js(set, HTMLImageElement.prototype.onerror, undefined)
 dilar.tube##+js(no-fetch-if, method:HEAD)
@@ -24209,6 +24210,7 @@ applescoop.org##.story-content .ad
 applescoop.org##.as-ad-rail
 applescoop.org##.as-ad
 ||laviola.it/jaqisharam.js
+anytimesbook.com##+js(rmnt, script, .offsetWidth)
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^

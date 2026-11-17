@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Tue, 17 Nov 2026 10:46:41 GMT
+! Last modified: Tue, 17 Nov 2026 16:03:38 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.15.73
+!   - Version: 2.1.15.76
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202610011010
@@ -220,6 +220,9 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||bianopixel.com^
+||connect.liblynx.com^
+||badge.dimensions.ai^
 ||viewanalitycs.org^
 ||stats.raiansar.com^
 ||actone.app^
@@ -378540,6 +378543,12 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
 @@||nlog.naver.com/n|$domain=search.naver.com|www.naver.com
+||krepsinis.net/gtgmetrics/
+||liderlamp.pl/mx7v2/
+woman.mynavi.jp##+js(remove-node-text, script, am_FPID)
+woman.mynavi.jp##+js(remove-cookie, am_FPID)
+||anime-go.org/theme/assets/js/presence.js
+||ceramet.net/v*/stat_views
 ||redpocket.com/js/trackweb.js
 ||unpkg.com/analytics-plugin-trackable
 thairath.co.th##body > div[class^="css-"]:not([aria-label]):has(> div[class^="css-"] > div[id^="taboola-"])
