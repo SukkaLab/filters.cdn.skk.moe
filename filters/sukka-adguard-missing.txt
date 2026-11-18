@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Wed, 18 Nov 2026 18:51:31 GMT
+! Last modified: Wed, 18 Nov 2026 21:56:17 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,13 +8,13 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Wed, 18 Nov 2026 11:33:49 +0000
+!   - Last modified: Wed, 18 Nov 2026 14:44:23 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Mon, 16 Nov 2026 05:36:08 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Wed, 18 Nov 2026 09:45:57 +0000
+!   - Last modified: Wed, 18 Nov 2026 18:29:51 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
 !   - Last modified: Mon, 16 Nov 2026 03:25:26 +0000
@@ -6479,6 +6479,7 @@ upfilesgo.com,upfion.com,upfiles.app,upfiles-urls.com##+js(aeld, click, shouldOp
 upfilesgo.com,upfion.com,upfiles.app,upfiles-urls.com##+js(set, blurred, false)
 upfilesgo.com,upfion.com,upfiles.app,upfiles-urls.com##+js(aeld, /blur|focus/)
 upfilesgo.com,upfion.com,upfiles.app,upfiles-urls.com##+js(no-fetch-if, /scorecardresearch\.com|outbrain\.com|taboola\.com|criteo\.net|rubiconproject\.com|adform\.net|casalemedia\.com|adservice\.google\.com/, , {"type": "opaque"})
+upfilesgo.com##+js(set, vhit.detectAdblock, falseFunc)
 rentry.co##article:has(#download-your-archive-file)
 ||sharecube.pro^$all
 ||flyshare.cfd^$all
@@ -6898,7 +6899,6 @@ dropgalaxy.*,financemonk.net##+js(rpnt, script, event.message);, 'event.message)
 dropgalaxy.*,financemonk.net##iframe[id^="google_ads_iframe_/"], div[id^="adm-container-"]:style(clip-path: circle(0) !important;)
 dropgalaxy.*,financemonk.net##+js(nowoif)
 dropgalaxy.*,financemonk.net##+js(rpnt, script, /\.cloudfront\.net|window\.open/g, false)
-dropgalaxy.*,financemonk.net##+js(no-fetch-if, adsbygoogle, war:googlesyndication_adsbygoogle.js)
 dropgalaxy.*,financemonk.net##+js(rpnt, script, false;, true;, condition, rundirectad)
 dropgalaxy.com##div.page.pt-5.container:has-text(adblockers)
 dropgalaxy.com##[id^="TR-"]
@@ -18434,7 +18434,6 @@ cimanow.cc##+js(aopr, navigator.brave)
 ||rm.freex2line.online/*.js|$domain=cimanow.cc
 cimanow.cc##section[aria-label="details"] a[id][target="_blank"]
 cimanow.cc##[href*="blockID"]:style(clip-path: circle(0) !important;)
-cimanow.cc##+js(no-fetch-if, url:doubleclick.net, war:googletagservices_gpt.js)
 cimanow.cc##+js(no-xhr-if, criteo)
 cimanow.cc##+js(set, HTMLImageElement.prototype.onerror, undefined)
 cimanow.cc,freex2line.online##+js(norafif, ++)
@@ -18447,8 +18446,6 @@ cimanow.cc,freex2line.online##+js(trusted-suppress-native-method, fetch, '"flash
 @@||tpc.googlesyndication.com^$xhr,domain=freex2line.online
 ||freex2line.online/*/?redirect$doc,urlskip=?redirect -base64
 ||tpc.googlesyndication.com/pimgad/$image,redirect=32x32.png,domain=freex2line.online
-freex2line.online##+js(no-fetch-if, url:doubleclick.net, war:googletagservices_gpt.js)
-freex2line.online##+js(no-xhr-if, tpc.googlesyndication.com, war:32x32.png)
 freex2line.online##a[href*="/jump/next.php?r="]:style(clip-path: circle(0) !important;)
 freex2line.online##body > a[id][href][target^="_blank"]:style(clip-path: circle(0) !important;)
 freex2line.online##+js(aeld, popstate)
@@ -18701,7 +18698,6 @@ radiosupernova.pl##.zpr_inside_2
 mjakmama24.pl##+js(nostif, removeChild)
 eurosport.tvn24.pl##.ad, .fake
 teksnologi.com##+js(rmnt, script, deblocker)
-loot-link.com,lootdest.*##+js(no-fetch-if, adsbygoogle, war:googlesyndication_adsbygoogle.js)
 @@*$ping,domain=loot-link.com|lootdest.*
 sethphat.com##+js(nano-stb, total, 1000, 0.001)
 upapk.io##+js(nano-stb, tick, 1000, 0.001)
@@ -21526,7 +21522,6 @@ hdmp4mania2.com,o2tvseries.com##.gsc-promotion
 colnect.com##+js(set, aaw, {})
 colnect.com##+js(set, aaw.processAdsOnPage, noopFunc)
 colnect.com##+js(set-local-storage-item, adblock_warning_pages_count, $remove$)
-colnect.com##+js(no-fetch-if, adsbygoogle, war:googlesyndication_adsbygoogle.js)
 colnect.com##+js(set, CAD.pageblockerWarning, noopFunc)
 adultgamesworld.com##+js(set, doOpen, undefined)
 whoisnovel.com##+js(acs, document.readyState, adsBlocked)
@@ -22270,7 +22265,6 @@ tarnkappe.info##+js(prevent-innerHTML, div, Werbeblocker)
 tarnkappe.info##+js(nostif, getComputedStyle)
 tarnkappe.info##.card:has(> section > .around-desktop-ad)
 tarnkappe.info##.tarnads_general.desktop-only
-rajssoid.online##+js(no-fetch-if, adsbygoogle, war:googlesyndication_adsbygoogle.js)
 hentaianimezone.com##+js(acs, onload, puHref)
 myperfectweather.com##+js(aeld, load, adblock)
 neilpatel.com##+js(no-xhr-if, /googletagmanager|ip-api/)
@@ -22302,7 +22296,6 @@ best-hit.tv#@##gStickyAd
 dynamix.top##+js(rpnt, script, !document.getElementById, document.getElementById)
 pendujatt.com.se##+js(rpnt, script, window.dataLayer =, '(()=>{document.querySelectorAll(`form:has(> input[value$=".mp3"])`).forEach(el=>{let url=el.querySelector("input").getAttribute("value");el.setAttribute("action",url)})})();window.dataLayer =', sedCount, 1)
 windowsonarm.org##+js(no-fetch-if, doubleclick)
-moutogami.com##+js(no-fetch-if, adsbygoogle, war:googlesyndication_adsbygoogle.js)
 ditjesendatjes.nl##+js(rpnt, script, ',availableAds:[', ',availableAds:[],noAds:[', sedCount, 1)
 crimsonscrolls.net##+js(acs, document.addEventListener, adblock)
 criticker.com##+js(json-prune, bannerad sidebar ti_sidebar)
@@ -22312,7 +22305,6 @@ briefly.co.za##.c-adv
 briefly.co.za##.c-adv-branding__top
 sourceb.in##.carbon
 artificialnudes.com,asianal.xyz,asianmassage.xyz,bdsmkingdom.xyz,brunettedeepthroat.com,compilationtube.xyz,coolporno.net,cosplaynsfw.xyz,crazytoys.xyz,deepswapnude.com,fikfak.net,flexxporn.com,handypornos.net,hardcorelesbian.xyz,heimporno.com,instaporno.net,latinabbw.xyz,lesbianvideotube.com,nsfwhowto.xyz,platinporno.com,pornahegao.xyz,pornfeet.xyz,pornobait.com,pornretro.xyz,realbbc.xyz,redheaddeepthroat.com,romanticlesbian.com,sexfilmkiste.com,sexontheboat.xyz,sexroute.net,sommerporno.com,towheaddeepthroat.com,traumporno.com,xxporner.com##+js(set, dclm_ajax_var.disclaimer_redirect_url, '')
-india.marathinewz.in##+js(no-fetch-if, adsbygoogle, war:googlesyndication_adsbygoogle.js)
 freegames.com##+js(nostif, moneyDetect)
 cdn1.site##+js(nowoif)
 cdn1.site##+js(rmnt, script, justDetectAdblock)
@@ -30825,6 +30817,7 @@ tiktok.com##+js(set-local-storage-item, /__tea_cache_events_.*/, $remove$)
 /prod/pni/fp.min.js?
 fcportables.com,filecatchers.com##+js(no-fetch-if, method:POST body:/detect|trigger/)
 ||suikora.com/api/views
+||optimizely.com/js/$script,redirect=optimizely.js
 /edgemesh.*.js$script,domain=~edgemesh.com|~edgeno.de
 ||safelinkconverter.com^$script,3p
 /adsensebase.js$script
