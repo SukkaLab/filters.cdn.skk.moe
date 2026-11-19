@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Thu, 19 Nov 2026 00:29:47 GMT
+! Last modified: Thu, 19 Nov 2026 03:35:01 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Wed, 18 Nov 2026 14:44:23 +0000
+!   - Last modified: Thu, 19 Nov 2026 00:36:52 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Mon, 16 Nov 2026 05:36:08 +0000
@@ -30,7 +30,7 @@
 !   - Last modified: Sun, 15 Nov 2026 19:32:18 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
-!   - Last modified: Wed, 18 Nov 2026 12:21:18 +0000
+!   - Last modified: Thu, 19 Nov 2026 00:54:40 +0000
 ! --------------------------------------------------------------
 ! uBlock filters https://ublockorigin.pages.dev/filters/filters.min.txt
 *_ad_$media,domain=youtube.com,3p
@@ -24205,6 +24205,8 @@ anytimesbook.com##+js(rmnt, script, .offsetWidth)
 suikora.com##+js(no-fetch-if, /googlesyndication|doubleclick|favicon.ico/)
 ||abscloud.org^$script,redirect=noop.js,domain=suikora.com
 suikora.com##+js(nowoif, _blank)
+liddread.com##+js(rmnt, script, AdBlock)
+liddread.com##div[data-type="_mgwidget"]
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -36503,13 +36505,12 @@ fatgirlskinny.net##html:style(overflow:auto !important)
 economica.net##+js(aeld, copy)
 kuroko-analyze.com##+js(ra, oncontextmenu, body)
 safetxt.net##+js(acs, $, contextmenu)
+||cdn.jsdelivr.net/npm/disable-devtool@latest$script,domain=safetxt.net
 liveroger.com##body:style(-webkit-touch-callout:text !important;-webkit-user-select:text !important;-khtml-user-select:text !important;-moz-user-select:text !important;-ms-user-select:text !important;user-select:text !important)
 mediafax.ro##+js(aeld, copy)
 free-barcode-generator.net##[id^="reklamy"]
 gomovies.*##+js(acs, document.oncontextmenu)
 gomovies.*##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
-newsforbolly.org##+js(acs, document.oncontextmenu)
-newsforbolly.org##+js(ra, onkeydown)
 thefreethoughtproject.com##.pum
 thefreethoughtproject.com##html:style(overflow:auto !important)
 nytimes.com###modal-portal-regiwall
@@ -36519,8 +36520,6 @@ clubulbebelusilor.ro##*:style(-webkit-touch-callout: default !important; -webkit
 clubulbebelusilor.ro##+js(aeld, contextmenu)
 seotechman.com##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
 seotechman.com##*::selection:style(background-color:#338FFF!important)
-katosatoshi.jp##+js(ra, oncontextmenu, body)
-katosatoshi.jp##body:style(-webkit-user-select:text!important;-moz-user-select:text!important;-ms-user-select:text!important;user-select:text!important)
 zeeebatch.blogspot.com##+js(acs, document.onmousedown)
 zeeebatch.blogspot.com##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
 techdracula.com##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
@@ -36533,7 +36532,6 @@ digital.lasegunda.com##+js(aeld, contextmenu)
 digital.lasegunda.com##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
 mhwg.org##+js(ra, oncontextmenu|onselectstart|style, #body_game)
 /wp-content/plugins/secure-copy-content-protection/*$script
-mesquitaonline.com##+js(aeld, , mdp)
 poeapp.com##.sponsor, div.wrapper
 blasianluvforever.com##+js(acs, document.oncontextmenu)
 blasianluvforever.com##+js(aopr, disableSelection)
@@ -37018,7 +37016,6 @@ ndtvprofit.com##+js(aopr, document.oncopy)
 tuborstb.co##+js(nostif, debugger)
 vembed.*##+js(rmnt, script, devtools)
 netu.*,netuplayer.top,stbnetu.xyz##+js(set, devtoolsDetector.launch, noopFunc)
-stblion.xyz##+js(rmnt, script, while(!![]){try{var)
 firescans.xyz##+js(acs, jQuery, hmwp_is_devtool)
 ||unic.com.vn/js/disable-copy.js$script
 ||unic.com.vn/css/chongcopy.css$css
@@ -37050,7 +37047,6 @@ wear.jp##+js(trusted-set-session-storage-item, status_of_app_redirect_half_modal
 einthusan.tv##+js(set, login_completed, true)
 radartest.com##+js(acs, document.onmousedown, disableclick)
 skuola.net##+js(aeld, /contextmenu|copy/)
-4kwebplay.xyz,qqwebplay.xyz,lewblivehdplay.ru,claplivehdplay.ru,tutlehd4.com##+js(ra, oncontextmenu)
 cabinetexpert.ro##+js(aopw, disableEnterKey)
 cabinetexpert.ro##+js(aopw, document.ondragstart)
 cabinetexpert.ro##style:has-text(@media print):remove()
@@ -37068,14 +37064,10 @@ hansa-online.de##+js(ra, oncontextmenu, body, complete)
 indahonline.com##+js(aost, $, /mainseto.js:286:1)
 videocardz.com##*:style(user-select: text !important; -ms-user-select: text !important; -moz-user-select: text !important; -khtml-user-select: text !important; -webkit-user-select: text !important; -webkit-touch-callout: default !important;)
 tinyhouse-baluchon.fr##+js(acs, document.oncontextmenu)
-southcloud.tv##+js(set, console.clear, undefined)
 japonhentai.com##+js(acs, addEventListener, ays_tooltip)
 japonhentai.com##^style:has-text(::selection)
 japonhentai.com##+js(rmnt, style, ::selection)
 duracell.de##+js(aeld, contextmenu)
-broflix.cc##+js(aeld, /contextmenu|keydown/, preventDefault)
-rds.live##+js(rmnt, script, contextmenu)
-rds.live##*:style(user-select: text !important; -ms-user-select: text !important; -moz-user-select: text !important; -khtml-user-select: text !important; -webkit-user-select: text !important; -webkit-touch-callout: default !important;)
 nihongoaz.com##^script:has-text(contentprotector)
 nihongoaz.com##+js(rmnt, script, contentprotector)
 nihongoaz.com##body:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important; -webkit-tap-highlight-color: revert !important; cursor: revert !important;)
@@ -37094,11 +37086,9 @@ infotrucker.ro##*:style(-webkit-touch-callout: default !important; -webkit-user-
 2mnews.ro##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important; -webkit-tap-highlight-color: revert !important; cursor: revert !important;)
 adevarurisecrete.com##+js(rmnt, script, /oncontextmenu|wccp/)
 adevarurisecrete.com##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important; -webkit-tap-highlight-color: revert !important; cursor: revert !important;)
-liddread.com##+js(rmnt, script, /wpcp|contextmenu|unselectable/)
-liddread.com##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important; -webkit-tap-highlight-color: revert !important; cursor: revert !important;)
-bintv.fun,bintvs.fun##+js(rpnt, script, keydown, ooo)
-bintv.fun,bintvs.fun##+js(rpnt, script, onkeydown, ooo)
-bintv.fun,bintvs.fun##+js(rpnt, script, contextmenu, ccc)
+bintvs.fun##+js(rpnt, script, keydown, ooo)
+bintvs.fun##+js(rpnt, script, onkeydown, ooo)
+bintvs.fun##+js(rpnt, script, contextmenu, ccc)
 ||cdn.jsdelivr.net/npm/disable-devtool@latest$script,domain=bintvs.fun
 vitsienvitsit.fi##.vitsiUnselectable:style(user-select: text !important)
 popcornmovies.io##+js(set, console.clear, trueFunc)
@@ -39900,3 +39890,7 @@ tvivu.com##+js(nostif, .adsbygoogle?.loaded)
 perlentaucher.de##+js(set, adblockerIsEnabled, false)
 fsicomics.com##+js(rpnt, script, > 0, < 0, includes, clearInterval)
 theguardian.com##.maybe-later
+stadt-bremerhaven.de##+js(rmnt, script, Adblocker)
+liddread.com##+js(rmnt, script, /wpcp|contextmenu|unselectable/)
+liddread.com##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important; -webkit-tap-highlight-color: revert !important; cursor: revert !important;)
+/wp-content/plugins/content-shield-pro/assets/csp-front.min.js$script
