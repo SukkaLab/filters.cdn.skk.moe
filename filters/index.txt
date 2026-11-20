@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Filters
-! Last modified: Fri, 20 Nov 2026 07:58:26 GMT
+! Last modified: Fri, 20 Nov 2026 07:58:56 GMT
 ! Expires: 1 hours
 ! Description: The filters from Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -789,10 +789,6 @@ copvpn.com##.hidden
 www.ionos.com##.exit-intent-ionos
 www.ionos.com##.fade.modal-backdrop
 www.zhihu.com##.Reward
-lowendaff.com##.joe_advert-large
-lowendaff.com###custom_sponsor_widget
-lowendaff.com##.epcl-banner
-lowendaff.com###dmit-ads
 ||xn--feus21h.xyz/static/team/uploadpic/$image
 www.3dmgame.com##.head_ent
 abdenasser.github.io##.app-promo-modal
@@ -929,3 +925,5 @@ tao.zz.ac###noad
 www.chinapress.com.my##.prompt-login-wrapper-2
 www.singtaousa.com##.kadence-conversion
 www.singtaousa.com##.kadence-conversion-overlay
+lowendaff.com##a.brand-card.partner-card
+lowendaff.com##.follow-banner
