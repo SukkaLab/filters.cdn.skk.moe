@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Fri, 20 Nov 2026 03:23:53 GMT
+! Last modified: Fri, 20 Nov 2026 10:05:15 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.15.95
+!   - Version: 2.1.15.97
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202610011010
@@ -85624,6 +85624,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||a.famorigins.com^
 ||a.gigl.ist^
 ||a.meloja.com.br^
+||a.menards.com^
 ||a.setup.moe^
 ||a3.mtindex.top^
 ||anal.ytics.de^
@@ -378541,6 +378542,8 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
 @@||nlog.naver.com/n|$domain=search.naver.com|www.naver.com
+||ev.chitchat.tv/e/
+||ev.chitchat.tv/i/*/e/
 ||strike.fox.com/static/fnc/video/Prebidbidder.js
 ||strike.fox.com/static/fnc/video/Amazonbidder.js
 ||static.foxnews.com/static/isa/app/lib/VisitorAPI.orig.js
@@ -385117,6 +385120,8 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=saturn.de
 @@||metrics.us.playstation.com/b/ss/
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
+kick.com##+js(prevent-fetch, litix.io)
+kick.com##+js(no-setTimeout-if, startBeaconSending)
 ||googletagmanager.com/gtag/js$redirect=noop.js,domain=propertyguru.com.my,script
 @@||googletagmanager.com/gtag/js$domain=5ch.io
 @@||googletagmanager.com/gtm.js$domain=support.brother.com
