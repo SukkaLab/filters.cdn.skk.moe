@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Filters
-! Last modified: Wed, 04 Nov 2026 06:09:45 GMT
+! Last modified: Fri, 20 Nov 2026 07:58:26 GMT
 ! Expires: 1 hours
 ! Description: The filters from Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -82,7 +82,10 @@ meet.google.com#@#+js(nowebrtc)
 butterfly-effect.dev#@#+js(nowebrtc)
 ampcode.com#@#+js(nowebrtc)
 manus.im#@#+js(nowebrtc)
+butterfly-effect.cn#@#+js(nowebrtc)
+manus.cn#@#+js(nowebrtc)
 teams.live.com#@#+js(nowebrtc)
+openpacketloss.com#@#+js(nowebrtc)
 ||youtube.com/embed/$3p,frame,redirect=click2load.html
 ||youtube-nocookie.com/embed/$3p,frame,redirect=click2load.html
 ||youtube.com/embed/$3p,object,redirect=click2load.html
