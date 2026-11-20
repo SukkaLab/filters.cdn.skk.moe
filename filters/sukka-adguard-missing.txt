@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Fri, 20 Nov 2026 10:05:15 GMT
+! Last modified: Fri, 20 Nov 2026 15:29:56 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Thu, 19 Nov 2026 22:39:20 +0000
+!   - Last modified: Fri, 20 Nov 2026 10:15:37 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Thu, 19 Nov 2026 19:00:23 +0000
@@ -17,7 +17,7 @@
 !   - Last modified: Thu, 19 Nov 2026 20:08:07 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
-!   - Last modified: Thu, 19 Nov 2026 20:03:32 +0000
+!   - Last modified: Fri, 20 Nov 2026 11:05:13 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
 !   - Last modified: Thu, 19 Nov 2026 12:02:41 +0000
@@ -14187,8 +14187,7 @@ pinterest.*##a[href*="&epik="]:upward([data-grid-item])
 pinterest.*##[data-grid-item]:has([data-test-pin-id] a[href^="http"][rel] [data-test-id="pincard-oneTap-with-link"])
 pinterest.*##div[role="listitem"]:has(div[data-test-id="related-pins-name"] > div[role="button"] > div + div > div[style="-webkit-line-clamp: 1;"]):not(:has(a[href*="/pin/"]))
 pinterest.*##+js(trusted-rpfr, '/\{"node":\{"__typename":"Pin"[^}]+"board":\{[^}]+"owner":\{[^}]+\}[^}]+\}[^}]+"isPromoted":true.+?"cursor":null\},/g', '', /stream)
-pinterest.*##+js(json-prune, resource_response.data.[-].pin_promotion_id resource_response.data.results.[-].pin_promotion_id)
-pinterest.*##+js(json-prune, initialReduxState.pins.{-}.pin_promotion_id initialReduxState.resources.UserHomefeedResource.*.data.[-].pin_promotion_id)
+pinterest.*##+js(json-edit, ..data.*[?.is_promoted==true])
 @@*$ghide,domain=pinterest.*
 distrowatch.org##[href*="3cx"]:upward(tbody)
 distrowatch.org##[href^="https://pbxinaflash.com/"]
@@ -33445,6 +33444,9 @@ funradio.fr##+js(trusted-set, getUserConsentStatus, json:{"dailymotion":true}, a
 @@||googletagmanager.com/gtag/js$domain=masstransitmag.com
 @@||google-analytics.com/analytics.js$domain=masstransitmag.com
 @@||google-analytics.com/plugins/ua/linkid.js$domain=masstransitmag.com
+||sy.ameblo.jp^$badfilter
+||sy.ameba.jp^$badfilter
+||sy.amebame.com^$badfilter
 ! uBlock filters – Quick fixes https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
 @@||hb.vntsm.com/v4/live/vms/sites/aternos.org/index.js$script,domain=aternos.org
 @@||cdn.snigelweb.com/adengine/aternos.org/loader.js$script,domain=aternos.org
