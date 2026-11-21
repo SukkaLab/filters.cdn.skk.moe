@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sat, 21 Nov 2026 20:30:57 GMT
+! Last modified: Sat, 21 Nov 2026 23:27:04 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sat, 21 Nov 2026 16:02:13 +0000
+!   - Last modified: Sat, 21 Nov 2026 22:45:17 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Thu, 19 Nov 2026 19:00:23 +0000
@@ -27,7 +27,7 @@
 ! * uBlock filters – Cookie Notices
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances-cookies.txt
 !   - Homepage: https://github.com/uBlockOrigin/uAssets
-!   - Last modified: Thu, 19 Nov 2026 17:13:46 +0000
+!   - Last modified: Sat, 21 Nov 2026 18:48:08 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
 !   - Last modified: Thu, 19 Nov 2026 17:24:31 +0000
@@ -21770,6 +21770,7 @@ gkstreams.*##.ad-banner
 ##button.btn[data-openuri*="/4/"]
 ||kakarotfoot.ru/player/lib.js
 ||strmfree.st/analytics.js^
+||strmfree.pk/analytics.js^
 ||ucast.pro^
 @@||blockietv.xyz/adbdetect/
 /\/[0-9a-f]{32}\.js/$script,xhr,3p,to=com,from=7fractals.icu|alexsports.*|allevertakstream.space|capo6play.com|capoplay.net|cr7-soccer.store|dropbang.net|meltol.net|nativesurge.net|sportstohfa.online|stellarthread.com|sterham.net|streamshunters.eu|totalsportek1000.com|vipstand.pm|worldsports.*
@@ -24190,6 +24191,7 @@ torrentkong.cc##+js(rmnt, noscript, kgate)
 torrentkong.cc##+js(nostif, __kgrun)
 whispersinthecorridors.in##.wh-popad
 whispersinthecorridors.in##body:style(overflow: auto !important)
+startpage.com##+js(rpnt, script, /"(?:(?:ad_admiral|adblock_paywall)":[^\,}]*|experiment_id":"(?:hard_block|adblock_paywall)_[^"]*")\,?/, , sedCount, 1)
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -34193,6 +34195,7 @@ diamantrad.com,lpi.org##+js(trusted-click-element, button#CookieBoxSaveButton, ,
 urlando.de##+js(trusted-set-cookie, urlando_consent, '{"analytics":false,"marketing":false,"timestamp":"$currentISODate$"}')
 admind-ai.com##+js(trusted-set-local-storage-item, admind_cookie_consent_v1, '{"necessary":true,"analytics":false,"preferences":false,"timestamp":"$currentISODate$","version":1}')
 tirerack.com##+js(trusted-click-element, #meru-cm button.meru-cc__bn[aria-label="Reject All"], , 2000)
+marykay.com##+js(trusted-click-element, button[aria-label="Reject All"], , 1000)
 handyhuellen.de,smartphonehoesjes.nl,ploonk.fr##+js(trusted-set-local-storage-item, mage_consent, '{"timestamp":$now$,"data":{"functional":true,"marketing":false}}')
 ispazio.net##+js(trusted-set-cookie, isp_consent, '{"v":1,"ts":$now$,"f":0,"e":0,"m":0,"a":0}')
 clubic.com##+js(trusted-click-element, .didomi-continue-without-agreeing)
