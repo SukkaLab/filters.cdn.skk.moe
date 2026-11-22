@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Sun, 22 Nov 2026 02:16:56 GMT
+! Last modified: Sun, 22 Nov 2026 09:50:10 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.16.12
+!   - Version: 2.1.16.13
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202610011010
@@ -30090,7 +30090,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||fpa-cdn.kveller.com^
 ||fpa-cdn.missionlocal.org^
 ||fpa-cdn.myjewishlearning.com^
-||fpa-cdn.nbcnews.com^
 ||fpa-cdn.newsday.com^
 ||fpa-cdn.newsweek.com^
 ||fpa-cdn.olympic.ca^
@@ -30108,7 +30107,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||fpa-cdn.themarshallproject.org^
 ||fpa-cdn.thetrace.org^
 ||fpa-cdn.thinkglobalhealth.org^
-||fpa-cdn.today.com^
 ||fpa-cdn.travelagentacademy.com^
 ||fpa-cdn.travelagewest.com^
 ||fpa-events.adweek.com^
@@ -30129,7 +30127,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||fpa-events.kveller.com^
 ||fpa-events.missionlocal.org^
 ||fpa-events.myjewishlearning.com^
-||fpa-events.nbcnews.com^
 ||fpa-events.newsday.com^
 ||fpa-events.newsweek.com^
 ||fpa-events.olympic.ca^
@@ -30147,7 +30144,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||fpa-events.themarshallproject.org^
 ||fpa-events.thetrace.org^
 ||fpa-events.thinkglobalhealth.org^
-||fpa-events.today.com^
 ||fpa-events.travelagentacademy.com^
 ||fpa-events.travelweekly-asia.com^
 ||fpa-events.travelweekly.com^
@@ -88059,7 +88055,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||analytics.crewly.pl^
 ||d3lw7s0briwuoi.cloudfront.net^
 ||analytics.sutochno.ru^
-||athena.archive.org^
 ||s1.bss.2gis.com^
 ||stat.ip.sb^
 ||franken-analytics.makeup.global^
@@ -89422,6 +89417,7 @@ prd.api.bleacherreport.com^
 ||analytics.74.ru^
 ||analytics.adfreetime.com^
 ||analytics.appservice.tech^
+||analytics.archive.org^
 ||analytics.atlassian.com^
 ||analytics.bi.encuentra24.com^
 ||analytics.bloomberg.com^
