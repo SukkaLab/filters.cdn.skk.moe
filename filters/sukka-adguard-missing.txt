@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Mon, 23 Nov 2026 18:15:35 GMT
+! Last modified: Mon, 23 Nov 2026 22:02:53 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,10 +8,10 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Sun, 22 Nov 2026 18:44:56 +0000
+!   - Last modified: Mon, 23 Nov 2026 13:03:47 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
-!   - Last modified: Sun, 22 Nov 2026 19:52:11 +0000
+!   - Last modified: Mon, 23 Nov 2026 18:25:17 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
 !   - Last modified: Thu, 19 Nov 2026 20:08:07 +0000
@@ -20,7 +20,7 @@
 !   - Last modified: Sat, 21 Nov 2026 14:22:06 +0000
 ! * uBlock filters – Quick fixes
 !   - URL: https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
-!   - Last modified: Sun, 22 Nov 2026 14:22:16 +0000
+!   - Last modified: Mon, 23 Nov 2026 17:44:34 +0000
 ! * uBlock filters – Experimental
 !   - URL: https://ublockorigin.pages.dev/filters/experimental.min.txt
 !   - Last modified: Tue, 17 Nov 2026 02:41:18 +0000
@@ -97,6 +97,7 @@ allmusic.com##.advertising
 redtube.*###paid_tabs_list
 pornhub.*##div[id^="customSkin"]
 pornhub.*##div.container:style(margin-top: 0px !important)
+pornhub.*##.adsRemoveButtonWrapper
 youjizz.com##+js(noeval)
 youjizz.com###desktopFooterPr
 youjizz.com##.top_pr
@@ -24151,6 +24152,8 @@ wasmarcade.com##+js(nowoif, _blank)
 imgtag.co.kr##+js(nosiif, adsbygoogle)
 imgtag.co.kr##.en-pt--ad
 imgtag.co.kr##.itgp-ad
+dropdrive.rip##+js(trusted-set-attr, script, data-download-probe, 'ready')
+dropdrive.rip##+js(nostif, offsetHeight)
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -24640,6 +24643,7 @@ howtoremove.guide###gray_de
 ||projecthygieia.com^$all
 ||iridia.me^$doc
 ||nexuismods.com^$all
+||nexosmods.com^$doc
 ||nexusmops.com^$doc
 ||nexusmcds.com^$doc
 ||atnpx.com^
@@ -33735,6 +33739,7 @@ socialxup.com##^responseheader(location)
 socialxup.com##a[data-track="related_click"]:not(:has(> div[class="flex flex-col items-center text-center"] > img[src^="/avatar/"][src$=".png"][height="48"][width="48"][style="color: transparent;"] + p + p[class="text-xs text-gray-500 truncate w-full"] + p[class="text-xs text-blue-600 mt-1"]:has-text(/^\d+(,\d+)* フォロワー$/)))
 socialxup.com##a[data-track="home_popular_tweet_profile_click"]:not(:has-text(/^@[0-9A-Z_a-z]+$/)):not(:has(> img:only-child))
 socialxup.com#@#a[href^="/"]:not([data-track], :has(> img[src^="/avatar/"])):matches-attr("href"="/^\/(?=[A-Z_a-z]*[0-9])[0-9A-Z_a-z]+$/"):not(:contains(/注目|達成|凍結|増加|減少|フォロワー/))
+socialxup.com##.promo-card
 socialxup.com#@#+js(aeld, click, /\[native code\]|^\s*e\s*=>\s*.+\(\s*e\s*\)\s*$/)
 ||api.community.fox.com/*/metrics$badfilter
 ! uBlock filters – Experimental https://ublockorigin.pages.dev/filters/experimental.min.txt

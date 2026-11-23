@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Mon, 23 Nov 2026 18:15:35 GMT
+! Last modified: Mon, 23 Nov 2026 22:02:53 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202611231806
+!   - Version: 202611232153
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 23 Nov 2026 18:06 UTC
+!   - Last modified: 23 Nov 2026 21:53 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
@@ -74,7 +74,7 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * ➗ Actually Legitimate URL Shortener Tool
 !   - URL: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt
-!   - Version: 21November2026v1
+!   - Version: 23November2026v1
 !   - Homepage: https://github.com/DandelionSprout/adfilt/discussions/163
 ! * 🐊 Imgur: Pure Imagery Experience
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/ImgurPureImageryExperience.txt
@@ -20414,7 +20414,6 @@ $doc,removeparam=adsterra_placement_id
 ||asuswebstorage.com^$removeparam=x-asc-sid-version
 ||asuswebstorage.com^$removeparam=x-asc-device-name
 ||asuswebstorage.com^$removeparam=x-asc-os-version
-||asuswebstorage.com^$removeparam=tlt
 featured_on=talkpython$doc,removeparam=featured_on
 ref=51st.news$doc,removeparam=ref
 ref=academy.socos.org$doc,removeparam=ref
