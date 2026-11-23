@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Sun, 22 Nov 2026 23:39:15 GMT
+! Last modified: Mon, 23 Nov 2026 02:50:59 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.16.17
+!   - Version: 2.1.16.19
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202610011010
@@ -88245,7 +88245,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||cdn-px-v1.metrix.az^
 ||cs.avito.ru^
 ||logsk.glomancloud.gr^
-||insights-tag.convertkit.com^
 ||matomo.eduwill.net^
 ||telemetry.eyeo.com^
 ||frontier.capcutw.us^
@@ -378836,7 +378835,6 @@ news.golfdigest.co.jp##.recommend_articles
 ||raptorsupplies.*/js/ga4-events.js
 ||raptorsupplies.*/js/analytics.js
 ||raptorsupplies.*/js/posthog.js
-||theverge.com/SendEventData
 ||olympusxyz.com/_nuxt/CIJNsars.js
 ||leakgallery.com/api/lg/
 ||xn--pckua2a7gp15o89zb.com/api/am/v1/t?
@@ -379846,7 +379844,6 @@ pelikan.*##+js(set-local-storage-item, PAPVisitorId, $remove$)
 bloomberg.com##+js(set-local-storage-item, /statsig|youboraDeviceUUID/, $remove$)
 ||teltarif.de/cgi-bin/jswarn
 ||sgimage.netmarble.com/js/gtm/
-||sr-cdn.shiprocket.in/sr-promise/static/uc.js
 ||bobbibrown.com.tr/sites/all/libraries/analytics/
 ||bobbibrown.com.tr/js-repo/elc-service-analytics/
 ||static-dc.autodesk.net/etc.clientlibs/*/testandtarget/clientlibs/testandtarget/atjs-integration.min.js
