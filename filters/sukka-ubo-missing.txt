@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Tue, 24 Nov 2026 12:34:02 GMT
+! Last modified: Tue, 24 Nov 2026 17:50:07 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.16.29
+!   - Version: 2.1.16.30
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202610011010
@@ -88473,6 +88473,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||countly.
 ||countly-
 |piwik.
+||ingest.t3.codes^
 ||stats.proxypurity.com^
 ||cast-imp.jtbc.co.kr^
 ||20251117mix.zgstongji.vip^
@@ -404484,6 +404485,7 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
 @@||nlog.naver.com/n|$domain=search.naver.com|www.naver.com
+||wispbyte.com/client/api/analytics/
 ||ninjaone.com/wp-content/themes/ninjaone/js/analytics/
 ||fp.yangcong345.com/fe-monitor-
 ||topic.ykt.cbern.com.cn/web/ncet-xedu/tracker/track_default_config.js
