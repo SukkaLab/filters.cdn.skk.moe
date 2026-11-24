@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Tue, 24 Nov 2026 01:39:56 GMT
+! Last modified: Tue, 24 Nov 2026 03:58:52 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -29494,7 +29494,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||eloqua10.relationshipone.com^
 ||finance.siemens-info.com^
 ||fun.relationshipone.com^
-||fund.eloqua.org^
 ||fusion.relationshipone.com^
 ||go.bajafresh.com^
 ||go.mamboseafood.com^
@@ -29655,8 +29654,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||whatif.se.adobe.com^
 ||whatif.uk.adobe.com^
 ||workforce-optimization.insperity.com^
-||www.eloqua.org^
-||www.omega-performance.com.cn^
 ||1886.olympia.co.uk^
 ||constellation.epghealth.com^
 ||event.mazars.nl^
@@ -29968,7 +29965,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||uk-go.experian.com^
 ||vn-go.experian.com^
 ||volkswagen.euroshop.com.pe^
-||www.deltekelevate.com^
 ||apply.ubmfashion.com^
 ||communicate.cision.no^
 ||communicate.prweb.com^
@@ -31765,7 +31761,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||winnersmindset.org^
 ||woof.psi-lekarna.cz^
 ||woof.psia-apteka.com^
-||www.iiillililllillillilillililililllliiiillllliilili.com^
 ||a.healthy-publishing.com^
 ||a.vital-health-path.com^
 ||ads.drviniciusandrade.com.br^
@@ -38157,6 +38152,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||load.futureproof.jmpartners.nl^
 ||load.futureproof.kasparov-bi.nl^
 ||load.futureproof.kumasol.nl^
+||load.futureproof.prosolic.nl^
 ||load.futureproof.werkenbij.foresco.eu^
 ||load.futureproof.werkenbijforesco.eu^
 ||load.fwd-mtg.revelo.de^
@@ -38442,6 +38438,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||load.gtm.nuovavitabio.com^
 ||load.gtm.ofertasinternet.es^
 ||load.gtm.olpahank.nl^
+||load.gtm.olyeurope.com^
 ||load.gtm.ondigisolutions.com^
 ||load.gtm.onverwachtehoek.nl^
 ||load.gtm.oppostiboutique.com^
@@ -38828,6 +38825,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||load.mtgs.areon.eu^
 ||load.mtgs.hotellomnica.sk^
 ||load.mtgs.lolipop.hu^
+||load.mtgs.mojnabytok.sk^
 ||load.mtgs.northfinder.sk^
 ||load.mtgs.panakei.cz^
 ||load.mtgs.panakei.sk^
@@ -39026,6 +39024,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||load.serverside.secretosdelagua.com^
 ||load.serverside.topboden.de^
 ||load.serveur.estampe-bougie.com^
+||load.services.reveilshop.fr^
 ||load.sg.signital.com^
 ||load.sga.ncmgo.com^
 ||load.sga.nooralmal.com^
@@ -39716,6 +39715,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||load.sst.brepen.nl^
 ||load.sst.brepen.pt^
 ||load.sst.brepen.se^
+||load.sst.buddyschoice.dk^
 ||load.sst.burgerbaren.com^
 ||load.sst.butlers.com^
 ||load.sst.cane-line.be^
@@ -39824,6 +39824,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||load.sst.mynametags.sa^
 ||load.sst.myvial.de^
 ||load.sst.nattelyst.fi^
+||load.sst.nattelyst.se^
 ||load.sst.naturalpaint.ro^
 ||load.sst.netco-bodycam.com^
 ||load.sst.neuroganhemp.com^
@@ -40206,6 +40207,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||load.tss.inview.ch^
 ||load.tss.tribudexplorateurs.com^
 ||load.tt.klarearplugs.com^
+||load.tt.ursus.be^
 ||load.tthdxkqy.holdbar.com^
 ||load.ttoolsc.ttools.at^
 ||load.tuo.wavrr.app^
@@ -50036,9 +50038,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||wuikniot.sofieschnoor.dk^
 ||wwc8h2sv.demiselbijoux.com^
 ||wwi.gosafari.de^
-||www.codigodivinodelabiblia.com.br^
-||www.gtm.locon.dk^
-||www.sgtm.andreadegiorgio.it^
 ||www2.maartenmechelen.be^
 ||www2.mamawillow.com^
 ||www2.ongle24.be^
@@ -63049,6 +63048,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||load.api.allqui.com^
 ||load.api.anafarinon.com.br^
 ||load.api.appmois.com^
+||load.api.arkrix.com^
 ||load.api.ascendbuildstx.com^
 ||load.api.assessoriaeixodigital.com.br^
 ||load.api.athionesfernandes.com.br^
@@ -63249,6 +63249,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||load.capi.leadiasjunior.com^
 ||load.capi.macrofitcoaching.co^
 ||load.capi.myglobalgroup.com^
+||load.capi.nexus.edu.sg^
 ||load.capi.rentsmartrac.com^
 ||load.capi.reveyes.online^
 ||load.capi.rockymountainoils.com^
@@ -64245,6 +64246,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||load.gtm.orangemud.com^
 ||load.gtm.organiturismo.com.br^
 ||load.gtm.organizamente.app^
+||load.gtm.osjchiquinhagonzaga.org.br^
 ||load.gtm.overlandgcc.com^
 ||load.gtm.overnightsmile.com^
 ||load.gtm.oya-yoga.fr^
@@ -64703,6 +64705,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||load.monitor.derisbooks.com.br^
 ||load.moticon.com^
 ||load.moto.thecriptopro.com^
+||load.mr.capivaramaquinas.com^
 ||load.mrsimplesteakhouse.mrsimplesteakhouse.com^
 ||load.msc.employeeadvocateservices.com^
 ||load.msp.transparentmeds.co^
@@ -65245,6 +65248,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||load.sgtm.doctorkeyclinic.com^
 ||load.sgtm.dogologyuniversity.com^
 ||load.sgtm.dolcasugar.com^
+||load.sgtm.dotstech.com^
 ||load.sgtm.drfionatassoni.store^
 ||load.sgtm.drouintreeservices.com.au^
 ||load.sgtm.drsnip.com.au^
@@ -65712,6 +65716,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||load.ss.getvistafocus.com^
 ||load.ss.getwavemax.com^
 ||load.ss.gigglefinance.com^
+||load.ss.gpc.pe^
 ||load.ss.grums.dk^
 ||load.ss.gsfitness.net^
 ||load.ss.guoman.com^
@@ -65783,6 +65788,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||load.ss.millersmenswears.com^
 ||load.ss.mindframes.ai^
 ||load.ss.monetizagram.com^
+||load.ss.monkeysweb.it^
 ||load.ss.mosaikskin.com^
 ||load.ss.mosakventas.com^
 ||load.ss.muevalo.com^
@@ -65814,6 +65820,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||load.ss.outsourcingstaff.ph^
 ||load.ss.outwardbound.org^
 ||load.ss.paramayoristas.com^
+||load.ss.pemcoeng.com^
 ||load.ss.perryfamilydentistry.bookyourvisitnow.com^
 ||load.ss.peterkell.com^
 ||load.ss.pfoten-paradies.com^
@@ -66291,6 +66298,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||load.sst.speedingticketkc.com^
 ||load.sst.splendourinstone.com.au^
 ||load.sst.srsecurevision.xyz^
+||load.sst.starmamas.com^
 ||load.sst.store.set3.com^
 ||load.sst.sugardetoxchallenge.com^
 ||load.sst.surfacescare.com.au^
@@ -87784,8 +87792,6 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||wut.usadirtbike.com^
 ||ww.bookyourvisitnow.com^
 ||wwpiwhdy.therollinrust.com^
-||www.buyufoods.com^
-||www.measurement.mypopsockets.us^
 ||www2.acclivet.com^
 ||wxncwyzp.soriox.com^
 ||wyb.anacional.net^
