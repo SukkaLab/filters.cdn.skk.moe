@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in uBO (but exist in AdGuard)
-! Last modified: Thu, 26 Nov 2026 10:58:15 GMT
+! Last modified: Thu, 26 Nov 2026 16:57:38 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * AdGuard Tracking Protection filter (Optimized)
 !   - URL: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-!   - Version: 2.1.16.46
+!   - Version: 2.1.16.51
 ! * CJX's Annoyance List
 !   - URL: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 !   - Version: 202610011010
@@ -220,6 +220,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||adcanvas.com^$3p
 ||clerk-telemetry.com^
 ||ghtinc.com^
 ||download.gameanalytics.com^
@@ -88478,6 +88479,7 @@ biteki.com##.slick-slide > div[id] + script:upward(1):remove()
 ||countly.
 ||countly-
 |piwik.
+||pan.pazarama.com^
 ||telemetry.*.oci.oraclecloud.com^
 ||dsh-otel-collector.deepseeksvc.com^
 ||stats.proxypurity.com^
@@ -404493,6 +404495,9 @@ mexc.com##+js(set-local-storage-item, _yjsu_yjad, $remove$)
 ||google-analytics.com^$object,redirect=noop.js,script
 ||googletagmanager.com/gtag/$3p,object,redirect=noop.js,script
 @@||nlog.naver.com/n|$domain=search.naver.com|www.naver.com
+||pazarama.com/event-collector-worker.js
+||busbud.com/metrics/
+||shiftdelete.net/api/olay|
 ||html5.gamedistribution.com/*/gameanalytics.js
 ||pexels.com/*/vendor/snowplow
 ||r34tube.com/clk/c|
@@ -405899,7 +405904,6 @@ hopper.com##+js(set-local-storage-item, ld:$anonUserId, $remove$)
 ||linkedin.com/apfc/collect
 ||microsoft.com/echo/etc.clientlibs/microsoft/clientlibs/cookie-compliance-manager.*.min.js
 ||microsoft.com/echo/etc.clientlibs/cascade.component.authoring/clientlibs/clientlib-jquery-cookie.*.min.js
-||microsoft.com/echo/etc.clientlibs/microsoft/components/structure/page/clientlibs/experimentation.*.min.js
 ||microsoft.com/echo/etc.clientlibs/microsoft/components/structure/page/clientlibs/visitor.*.min.js
 ||usolie.info/bs/sm
 donanimhaber.com##+js(href-sanitizer, a[href^="/ExternalLinkRedirect?"], ?url)
