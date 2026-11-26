@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Thu, 26 Nov 2026 04:10:26 GMT
+! Last modified: Thu, 26 Nov 2026 10:58:15 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,7 +8,7 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Wed, 25 Nov 2026 17:22:18 +0000
+!   - Last modified: Thu, 26 Nov 2026 03:48:37 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Mon, 23 Nov 2026 18:25:17 +0000
@@ -30,7 +30,7 @@
 !   - Last modified: Sat, 21 Nov 2026 18:48:08 +0000
 ! * uBlock filters – Annoyances
 !   - URL: https://ublockorigin.pages.dev/filters/annoyances.min.txt
-!   - Last modified: Wed, 25 Nov 2026 04:47:43 +0000
+!   - Last modified: Thu, 26 Nov 2026 03:52:30 +0000
 ! --------------------------------------------------------------
 ! uBlock filters https://ublockorigin.pages.dev/filters/filters.min.txt
 *_ad_$media,domain=youtube.com,3p
@@ -6554,6 +6554,7 @@ pahe.ink##+js(trusted-replace-outbound-text, decodeURIComponent, /^__x[0-9a-f]{7
 pahe.ink##+js(trusted-replace-outbound-text, decodeURIComponent, /^[0-9a-f]__$/)
 pahe.ink,intercelestial.com##+js(aeld, click, /(?=[\s\S]*(?:isTrusted|defaultPrevented|button))(?=[\s\S]*(?:ctrlKey|metaKey|shiftKey|altKey))(?=[\s\S]*(?:getAttribute|tagName))(?=[\s\S]*Date\s*\.\s*now)/, elements, document)
 /^https:\/\/pahe\.ink\/[-a-z0-9\/]+$/$script,1p,match-case
+pahe.ink##^script:min-text-length(50000)
 aii.sh,lnbzi.com,clksz.com,tpi.li,oii.la,srnky.com##+js(trusted-replace-outbound-text, decodeURIComponent, /^__x[0-9a-f]{7}$/, document)
 aii.sh,lnbzi.com,clksz.com,tpi.li,oii.la,srnky.com##+js(trusted-replace-outbound-text, decodeURIComponent, /^[0-9a-f]__$/)
 clksz.com,tpi.li,oii.la,srnky.com##^script:has-text(/;break;case \$\.|adb_detected|AdBlockCheck/)
@@ -37113,7 +37114,7 @@ fileditchvids.st##+js(aeld, contextmenu)
 fiio.com##+js(aeld, /dragstart|selectstart|touchstart|mouse/, , elements, .w-slide)
 fiio.com##.w-slide div[ctype="text"]:style(cursor: auto !important; height: auto !important;)
 historicaerials.com##+js(alert-buster)
-adult-tv-channels.com,blacktv.top,boomboxradio.ru,cdniptvpotok.com,cdntvmedia.com,euroball.ru,eurotvsport1.ru,hdrezka.*,hello-rezka.*,hochu.tv,hotelki.tv,klubnichka.live,ontivi.net,live.domatv.net,guljaj.com,kingp2p.top,kinobro.online,magtv.top,mediamaniya.site,myru.top,nsk-tv.narod.ru,ontvtime-tv.top,oxax.tv,pokaz.me,rapp.su,ritsatv.ru,rustv.fun,rutele.top,rutv.pw,seir-sanduk.*,seirsanduk.*,smotret-tv.*,smotrettv.*,smotrim-tv.*,smotreshka-tv.*,smotritv.su,smotrufilm.ru,sportplu-s.ru,telik.live,tennis-live.su,telek.online,tivix.co,tv11.ruvideo.site,tvin.su,tvline.live,tvtut.top,voha.tv,viks.tv,vsetv.click##+js(set, HTMLDivElement.prototype.oncontextmenu, null)
+adult-tv-channels.com,armdb.org,blacktv.top,boomboxradio.ru,cdniptvpotok.com,cdntvmedia.com,euroball.ru,eurotvsport1.ru,hdrezka.*,hello-rezka.*,hochu.tv,hotelki.tv,klubnichka.live,incvideo1.online,ontivi.net,live.domatv.net,guljaj.com,kingp2p.top,kinobro.online,magtv.top,mediamaniya.site,myru.top,nsk-tv.narod.ru,ontvtime-tv.top,oxax.tv,pokaz.me,rapp.su,ritsatv.ru,rustv.fun,rutele.top,rutv.pw,seir-sanduk.*,seirsanduk.*,smotret.*,smotret-tv.*,smotrettv.*,smotrim-tv.*,smotreshka-tv.*,smotritv.su,smotrufilm.ru,sportplu-s.ru,telik.live,telluri.ru,tennis-live.su,telek.online,tivix.co,tv11.ruvideo.site,tv-1-kinoserial.net,tvin.su,tvline.live,tvtut.top,voha.tv,vibe-tv.*,viks.tv,vsetv.click,yootv.online##+js(set, HTMLDivElement.prototype.oncontextmenu, null)
 antena1.live,canale-tv.net,rd-s.live,rdslive.net,tvonline24.net,weeb.tv##+js(aeld, contextmenu)
 bhoomtv.*,porntv.us,rustv.fun,xxxtv.us##+js(ra, oncontextmenu|onkeydown|onselectstart, body, complete)
 bhoomtv.*,porntv.us,xxxtv.us##+js(rmnt, script, contextmenu)
