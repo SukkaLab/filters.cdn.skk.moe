@@ -1,5 +1,5 @@
 ! Title: [sukka] Sukka Collections Combined
-! Last modified: Fri, 27 Nov 2026 10:56:30 GMT
+! Last modified: Fri, 27 Nov 2026 16:43:04 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -18,10 +18,10 @@
 !   - URL: https://cdn.jsdelivr.net/gh/easylist/easylist@master/custom-lists/youtube-whatdoyoulikedoforfun.txt
 ! * Adblock Warning Removal List
 !   - URL: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-!   - Version: 202611271042
+!   - Version: 202611271632
 !   - Homepage: https://github.com/easylist/antiadblockfilters
 !   - Licence: https://easylist.to/pages/licence.html
-!   - Last modified: 27 Nov 2026 10:42 UTC
+!   - Last modified: 27 Nov 2026 16:32 UTC
 ! * BarbBlock
 !   - URL: https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 !   - Homepage: https://paulgb.github.io/
@@ -31,7 +31,7 @@
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 💊 Dandelion Sprout's Anti-Malware List
 !   - URL: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout's%20Anti-Malware%20List.txt
-!   - Version: 20November2026v1
+!   - Version: 27November2026v1
 !   - Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 ! * 🛃 Anti-'Adoptables and Artsite NFTs' List
 !   - URL: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/AntiAdoptablesList.txt
@@ -15934,6 +15934,60 @@ drvhub.net##.driver-item__install
 ||ibarrareal.es^$all
 ||giraffic.com^$all
 ||giraffic.net^$all
+||amrox.org^$all
+||androidsetting.com^$all
+||bomakied.co.in^$all
+||ditikan.xyz^$all
+||inhawsta.com^$all
+||tedasmer.com^$all
+||ablilancalifers.co.in^$all
+||bleddled.com^$all
+||cadinste.co.in^$all
+||chicatioeum.co.in^$all
+||conioness.com^$all
+||copatorm.com^$all
+||crapliquid.co.in^$all
+||deveneptoping.co.in^$all
+||ditothonable.com^$all
+||doepiseverkeb.com^$all
+||feateriession.co.in^$all
+||fishandelint.co.in^$all
+||fisicule.co.in^$all
+||fladeshkasesdip.com^$all
+||garallegist.com^$all
+||gestoloreving.com^$all
+||gopously.co.in^$all
+||hoderabled.co.in^$all
+||hypindrehrimpo.com^$all
+||ingatess.co.in^$all
+||insinton.com^$all
+||cracethromellau.com^$all
+||kionchiothess.com^$all
+||matonstenhung.com^$all
+||mencepte.co.in^$all
+||merochemenes.com^$all
+||mismenalchysirs.com^$all
+||mistyptewhan.co.in^$all
+||nionstines.com^$all
+||nogionism.co.in^$all
+||ovetainsennes.co.in^$all
+||parialatus.com^$all
+||partimbideper.com^$all
+||premablegonit.co.in^$all
+||prentione.com^$all
+||pretashatiocy.com^$all
+||rawaders.com^$all
+||secatics.com^$all
+||seloclocous.com^$all
+||slectane.co.in^$all
+||suricale.co.in^$all
+||todficalash.com^$all
+||trationzeress.com^$all
+||unastprante.com^$all
+||uroonomyistage.co.in^$all
+||wouperanorott.co.in^$all
+||seurploges.com^$all
+://13.36.139.59^$all
 ||0network.com^$all
 ||100conversions.com^$all
 ||1tag.ai^$all
