@@ -1,5 +1,5 @@
 ! Title: [sukka] Filters missing in AdGuard (but exist in uBO)
-! Last modified: Sat, 28 Nov 2026 03:57:00 GMT
+! Last modified: Sat, 28 Nov 2026 10:30:58 GMT
 ! Expires: 8 hours
 ! Description: Some third party filter lists collected and combined by Sukka
 ! License: https://github.com/SukkaW/Filters/blob/master/LICENSE
@@ -8,13 +8,13 @@
 ! Included filters:
 ! * uBlock filters
 !   - URL: https://ublockorigin.pages.dev/filters/filters.min.txt
-!   - Last modified: Fri, 27 Nov 2026 22:03:51 +0000
+!   - Last modified: Sat, 28 Nov 2026 09:58:11 +0000
 ! * uBlock filters – Badware risks
 !   - URL: https://ublockorigin.pages.dev/filters/badware.min.txt
 !   - Last modified: Mon, 23 Nov 2026 18:25:17 +0000
 ! * uBlock filters – Privacy
 !   - URL: https://ublockorigin.pages.dev/filters/privacy.min.txt
-!   - Last modified: Fri, 27 Nov 2026 12:25:32 +0000
+!   - Last modified: Sat, 28 Nov 2026 08:25:31 +0000
 ! * uBlock filters – Unbreak
 !   - URL: https://ublockorigin.pages.dev/filters/unbreak.min.txt
 !   - Last modified: Sat, 21 Nov 2026 14:22:06 +0000
@@ -24090,10 +24090,6 @@ greekfun.net##+js(json-prune, *, pop_type)
 rule34video.co##+js(aeld, click, open)
 gcinee.com##+js(rmnt, script, offsetHeight)
 @@||anime3rb.com^$ghide
-@@||maimuna.*-probe-$image,domain=maimuna.to
-@@||maimuna.to^$image,1p
-@@||maimuna.to^$ghide
-maimuna.to##div[id^="maimunka-ad-"]
 erogames.to##+js(set, checkJuicyPopBlocked, noopFunc)
 ||owo.lewd.ninja^$3p
 checktls.com##+js(set, adsbygoogle, {})
@@ -24157,6 +24153,13 @@ sofaflix.icu##[aria-label*="Quảng cáo"]
 turtle4up.top##+js(nowoif)
 turtle4up.top##+js(json-prune-fetch-response, data.ads_onload ads_onload)
 turtle4up.top##+js(json-prune, stream.ads data.ads_onload ads_onload)
+@@||maimuna.*-probe-$image,domain=maimuna.to
+@@||maimuna.to^$image,1p
+@@||maimuna.to^$ghide
+maimuna.to##div[id^="maimunka-ad-"]
+maimuna.to##+js(spoof-css, div[id^="maimunka-ad-"], display, block)
+5play.app##+js(nowoif, _blank)
+5play.app##+js(rpnt, script, count < 0, count > 0)
 ! uBlock filters – Badware risks https://ublockorigin.pages.dev/filters/badware.min.txt
 ||01net.com/telecharger/$doc
 ||flexytalk.net^
@@ -30757,6 +30760,7 @@ fcportables.com,filecatchers.com##+js(no-fetch-if, body:\\u)
 ||fcportables.com/p4on3l/
 ||filecatchers.com/k5yy6w/
 ||suikora.com/api/views
+||9news.com/*/*/*/db/*/*/*/*?v=*-*-*-*-$1p
 ||optimizely.com/js/$script,redirect=optimizely.js
 /edgemesh.*.js$script,domain=~edgemesh.com|~edgeno.de
 ||safelinkconverter.com^$script,3p
